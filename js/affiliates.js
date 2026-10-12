@@ -62,9 +62,14 @@
         amazonUrl: 'https://www.amazon.com/s?k=RTX+5060+Ti+8GB+graphics+card',
         note: 'renders iRacing and NVENC-encodes the stream on the same chip'
       },
+      /* 2026-10-12: /dp/B0CQ4HPJYV (the AMD-listed 5700) had no new offer on
+         amazon.com — only a used one — so the link led to "Buy Used". Stock for
+         this CPU moves between third-party sellers, so it is now a keyword
+         search with the AMD brand facet (rule 2), which always lands on the
+         live 5700 listings. */
       'cpu-ryzen-7-5700': {
         name: 'AMD Ryzen 7 5700',
-        amazonUrl: 'https://www.amazon.com/dp/B0CQ4HPJYV',
+        amazonUrl: 'https://www.amazon.com/s?k=AMD+Ryzen+7+5700+processor&rh=p_89%3AAMD',
         note: '8 cores — plenty for iRacing plus OBS on one PC'
       },
       'monitor-1440p-120': {
@@ -115,15 +120,28 @@
         amazonUrl: 'https://www.amazon.com/s?k=Fanatec+ClubSport+DD%2B',
         note: 'high-end, deep licensed-rim catalog'
       },
+      /* 2026-10-12: /dp/B0DDWH41HB (the 512 GB Batman bundle) had no buy box on
+         amazon.com ("See All Buying Options" only). Quest 3 ships in rotating
+         retailer bundles, which is exactly how that ASIN died, so this is a
+         keyword search + the Meta brand facet (rule 2): the 512 GB headset
+         that Amazon itself ships is the first result. */
       'meta-quest-3': {
         name: 'Meta Quest 3',
-        amazonUrl: 'https://www.amazon.com/dp/B0DDWH41HB',
+        amazonUrl: 'https://www.amazon.com/s?k=Meta+Quest+3+512GB+VR+headset&rh=p_89%3AMeta',
         note: 'the most common way into PCVR sim racing'
       },
+      /* 2026-10-12: /dp/B083MNB4D8 renders as a variation page titled "T-3PM"
+         with "Choose from options" and no buyable offer; the other T-LCM
+         listings (B07YFDL1JW, and B092QP4H2W renewed) show no price either.
+         So the T-LCM cannot be bought new on amazon.com today. The
+         link is now a Thrustmaster-facet search for load-cell pedals, which
+         opens the Raceline Pedals III line that IS in stock. The name and note
+         say so rather than pretending the T-LCM is on sale. Revisit when the
+         posts that recommend the T-LCM by name are rewritten. */
       'thrustmaster-t-lcm': {
-        name: 'Thrustmaster T-LCM Pedals',
-        amazonUrl: 'https://www.amazon.com/dp/B083MNB4D8',
-        note: 'cheapest genuine load cell, works with any base over USB'
+        name: 'Thrustmaster Load Cell Pedals (T-LCM / Raceline III LC)',
+        amazonUrl: 'https://www.amazon.com/s?k=Thrustmaster+load+cell+pedals&rh=p_89%3AThrustmaster',
+        note: 'budget load-cell brake over USB — the T-LCM itself is out of stock new on Amazon right now, so this opens Thrustmaster’s current Raceline pedals'
       },
       'moza-sr-p': {
         name: 'MOZA SR-P Load Cell Pedals',
@@ -146,7 +164,9 @@
     }
   };
 
-  var DISCLOSURE = 'Some links are affiliate links — I may earn a commission at no cost to you.';
+  /* The first sentence is the statement Amazon's Associates Operating Agreement
+   * requires on any page that carries Amazon links. Do not paraphrase it. */
+  var DISCLOSURE = 'As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.';
 
   /* Build the outbound URL for a product key.
    * Appends ?tag= ONLY once a real Associates tag is configured. */

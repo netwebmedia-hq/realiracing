@@ -109,7 +109,10 @@ function loadAllowedGearKeys() {
 // links exist in the served HTML: crawlable, and working even if JS fails. The
 // runtime renderGearBox() call each post still carries then finds a populated
 // container and no-ops.
-const { loadAffiliateConfig, renderGearBoxHtml, gearItemListLd } = require('./lib/affiliates-ssr.js');
+const {
+  loadAffiliateConfig, renderGearBoxHtml, gearItemListLd,
+  PAGE_DISCLOSURE, enforceAmazonTags, linkProductMentions,
+} = require('./lib/affiliates-ssr.js');
 
 const FALLBACK_GEAR_KEYS = ['moza-r9', 'cockpit'];
 
@@ -296,7 +299,12 @@ function renderPostHtml(post, related, allowedGearKeys) {
   const gearLd = gearItemListLd(affCfg, gearKeys, url, 'The gear in this guide');
 
   const faqs = Array.isArray(post.faqs) && post.faqs.length ? post.faqs : buildFallbackFaqs(post);
-  const bodyHtml = renderSections(post.sections);
+  // 2026-10-12 money audit: (1) any raw amazon.com href the model wrote in prose
+  // gets the Associates tag + rel=sponsored, (2) the first in-text mention of
+  // each catalog product becomes a tagged link (max 5 per page), so the reader
+  // can click at the moment they decide — not only from the gear box below.
+  const taggedBody = enforceAmazonTags(renderSections(post.sections), affCfg).html;
+  const bodyHtml = linkProductMentions(taggedBody, affCfg, { max: 5 }).html;
 
   const faqJsonLd = faqs.map(f => `    {
       "@type": "Question",
@@ -403,7 +411,7 @@ ${faqJsonLd}
 ${photos.figureHtml(photo)}
 
     <div class="article-body">
-      <p class="disclosure">Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+      <p class="disclosure">${PAGE_DISCLOSURE}</p>
 
 ${bodyHtml}
 
@@ -479,9 +487,31 @@ function buildCardHtml(post) {
     </a>`;
 }
 
-function rebuildBlogIndex(newPosts) {
+// Card data for an already-published post, read back out of its own HTML. Used
+// to put posts that fell off the index back on it (see rebuildBlogIndex).
+function readPublishedCardMeta(slug) {
+  const html = fs.readFileSync(path.join(BLOG_DIR, slug + '.html'), 'utf8');
+  const pick = (re) => unescapeHtml(((html.match(re) || [, ''])[1] || '').trim());
+  const meta = html.match(/<div class="article-meta">([\s\S]*?)<\/div>/);
+  const spans = meta
+    ? [...meta[1].matchAll(/<span(?: class="author")?>([\s\S]*?)<\/span>/g)].map(m => stripTags(m[1]).trim()).filter(t => t && t !== '·')
+    : [];
+  const updated = spans.find(t => /^Updated /.test(t)) || '';
+  const readTime = spans.find(t => /read$/i.test(t)) || '';
+  return {
+    slug,
+    title: pick(/<h1>([\s\S]*?)<\/h1>/),
+    tag: pick(/<p class="section-label">([^<]*)<\/p>/),
+    description: pick(/<meta name="description" content="([^"]*)"/),
+    author: spans[0] || 'Carlos Martinez',
+    dateLabel: updated.replace(/^Updated /, ''),
+    readTime,
+  };
+}
+
+function rebuildBlogIndex(newPosts, opts) {
   const idxPath = path.join(BLOG_DIR, 'index.html');
-  if (!fs.existsSync(idxPath) || !newPosts.length) return false;
+  if (!fs.existsSync(idxPath)) return false;
   let html = fs.readFileSync(idxPath, 'utf8');
 
   const cardRe = /<a class="blog-card" href="([^"]+)">[\s\S]*?<\/a>/g;
@@ -502,6 +532,25 @@ function rebuildBlogIndex(newPosts) {
     date: new Date(post.published || Date.now())
   }));
 
+  // Self-heal: any published post with no card on the index gets one. The grid
+  // regex below stopped matching when a </main> landed between the grid and the
+  // footer, so for weeks every publish logged "grid marker not found", left the
+  // index unchanged and returned - and 12 posts, four of them buyer's guides,
+  // never got a card or a crawlable link from /blog/.
+  const have = new Set(existing.map(e => e.slug).concat([...newSlugs]));
+  const orphans = fs.readdirSync(BLOG_DIR)
+    .filter(f => f.endsWith('.html') && f !== 'index.html')
+    .map(f => f.replace(/\.html$/, ''))
+    .filter(slug => !have.has(slug));
+  for (const slug of orphans) {
+    const meta = readPublishedCardMeta(slug);
+    if (!meta.title) continue;
+    const d = new Date(meta.dateLabel);
+    added.push({ slug, html: buildCardHtml(meta), date: isNaN(d) ? new Date(0) : d });
+    console.log('  index: restored card for ' + slug);
+  }
+  if (!added.length && !(opts && opts.force)) return false;
+
   const all = existing.filter(e => !newSlugs.has(e.slug))
     .concat(added)
     .sort((a, b) => b.date - a.date);
@@ -509,7 +558,7 @@ function rebuildBlogIndex(newPosts) {
   const cardsHtml = all.map(c => '    ' + c.html).join('\n\n');
 
   const rebuilt = html.replace(
-    /(<div class="blog-grid">)[\s\S]*?(\n\s*<\/div>\s*\n\s*<footer>)/,
+    /(<div class="blog-grid">)[\s\S]*?(\n\s*<\/div>\s*\n\s*(?:<\/main>\s*\n\s*)?<footer>)/,
     (_, g1, g2) => g1 + '\n\n' + cardsHtml + '\n\n' + g2
   );
 
@@ -549,6 +598,12 @@ function updateSitemap(newPosts) {
 // ─── Main ─────────────────────────────────────────────────────────────────────
 if (!fs.existsSync(QUEUE_DIR)) {
   console.log('no queue dir:', QUEUE_DIR);
+  process.exit(0);
+}
+
+if (process.argv.includes('--reindex')) {
+  // Index repair only: no queue is read and nothing is published.
+  console.log(rebuildBlogIndex([], { force: true }) ? 'Updated blog/index.html.' : 'blog/index.html unchanged.');
   process.exit(0);
 }
 
