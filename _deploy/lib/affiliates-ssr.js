@@ -125,4 +125,162 @@ function gearItemListLd(cfg, keys, pageUrl, title) {
   return { '@context': 'https://schema.org', '@type': 'ItemList', name: title || 'The gear in this guide', itemListElement: items };
 }
 
-module.exports = { loadAffiliateConfig, affUrlFor, renderGearBoxHtml, gearItemListLd, RIG_KEYS, esc };
+/* ─── Amazon Associates compliance + in-text links (added 2026-10-12) ─────────
+ *
+ * Three things the gear box alone did not do, found in the 2026-10-12 money
+ * audit of all 153 pages:
+ *
+ * 1. The Operating Agreement requires the statement "As an Amazon Associate I
+ *    earn from qualifying purchases." on pages that carry Amazon links. Every
+ *    page had a generic affiliate disclosure and none had that sentence. A
+ *    missing statement is grounds for closing the account — the only earner on
+ *    this site — so it is now part of the page template and of DISCLOSURE in
+ *    js/affiliates.js.
+ *
+ * 2. Nothing stopped a model-written paragraph from carrying a bare amazon.com
+ *    href. The gear box always got the tag; prose links did not (six published
+ *    queue entries shipped that way in July and were only caught by later
+ *    backfills). enforceAmazonTags() runs over every rendered body.
+ *
+ * 3. Products named in prose ("the G923 is …", "CSL DD …") were plain text; the
+ *    only link was in the gear box at the bottom. linkProductMentions() links
+ *    the FIRST mention of each catalog product, once, capped per page, so the
+ *    reader can click at the moment they are deciding. */
+
+const AMAZON_STATEMENT = 'As an Amazon Associate I earn from qualifying purchases.';
+
+/* The paragraph at the top of every article. Keep AMAZON_STATEMENT first. */
+const PAGE_DISCLOSURE =
+  AMAZON_STATEMENT + ' Some links on this page may earn RealIRacing a commission at no extra cost to you. ' +
+  'Gear I personally race on is called out as such; other picks are researched recommendations.';
+
+/* How each catalog key is written in prose. Anchored on a distinctive model
+ * token so "R9" inside an unrelated word never matches; the optional brand
+ * prefix is swallowed so the whole product name becomes the anchor text.
+ * Keys with no pattern here simply get no in-text link. */
+const MENTION_PATTERNS = {
+  'moza-r9': /\b(?:MOZA |Moza )R9\b/,
+  'moza-r5': /\b(?:MOZA |Moza )R5\b/,
+  'moza-r12': /\b(?:MOZA |Moza )R12\b/,
+  'moza-cs-v2': /\b(?:MOZA |Moza )?CS V2\b/,
+  'moza-crp2': /\b(?:MOZA |Moza )?CRP2\b/,
+  'moza-sr-p': /\b(?:MOZA |Moza )?SR-P\b/,
+  'logitech-g923': /\b(?:Logitech )?G923\b/,
+  'thrustmaster-t300': /\b(?:Thrustmaster )?T300(?:RS)?(?: RS)?(?: GT)?\b/,
+  'fanatec-csl-dd': /\b(?:Fanatec )?CSL DD\b/,
+  'fanatec-clubsport-dd': /\b(?:Fanatec )?ClubSport DD\+?/,
+  'thrustmaster-t-lcm': /\b(?:Thrustmaster )?T-LCM\b/,
+  'meta-quest-3': /\b(?:Meta )?Quest 3\b(?!S)/,
+  'gpu-rtx-5060-ti': /\bRTX 5060 Ti\b/,
+  'cpu-ryzen-7-5700': /\bRyzen 7 5700\b/,
+  'whoop': /\bWHOOP\b/,
+};
+
+const AMAZON_HOST = /^https?:\/\/(?:www\.)?amazon\.[a-z.]+\//i;
+
+/* Make every Amazon <a> in `html` carry the Associates tag and
+ * rel="sponsored noopener". Returns { html, fixed } where fixed counts anchors
+ * that were changed. Short links (amzn.to, a.co) cannot be tagged by us and are
+ * left alone for the CI validator to flag. */
+function enforceAmazonTags(html, cfg) {
+  const tag = cfg && cfg.amazonTag;
+  if (!tag || tag === 'PENDING-20') return { html, fixed: 0 };
+  let fixed = 0;
+  const out = String(html).replace(/<a\b[^>]*>/gi, (anchor) => {
+    const hm = anchor.match(/\bhref="([^"]*)"/i);
+    if (!hm) return anchor;
+    const href = hm[1];
+    if (!AMAZON_HOST.test(href.replace(/&amp;/g, '&'))) return anchor;
+    let next = anchor;
+    let nh = href;
+    if (/(\?|&amp;|&)tag=/.test(nh)) {
+      nh = nh.replace(/(\?|&amp;|&)tag=[^&"]*/, '$1tag=' + encodeURIComponent(tag));
+    } else {
+      nh += (nh.indexOf('?') === -1 ? '?' : '&amp;') + 'tag=' + encodeURIComponent(tag);
+    }
+    if (nh !== href) next = next.replace(/\bhref="[^"]*"/i, 'href="' + nh + '"');
+    const rm = next.match(/\brel="([^"]*)"/i);
+    if (!rm) next = next.replace(/^<a\b/i, '<a rel="sponsored noopener"');
+    else if (!/\bsponsored\b/.test(rm[1])) next = next.replace(/\brel="[^"]*"/i, 'rel="sponsored ' + rm[1].trim() + '"');
+    if (!/\btarget=/.test(next)) next = next.replace(/^<a\b/i, '<a target="_blank"');
+    if (next !== anchor) fixed++;
+    return next;
+  });
+  return { html: out, fixed };
+}
+
+/* Link the first in-text mention of each catalog product that has no inline
+ * affiliate link yet. `html` is an HTML fragment (the article body). Text
+ * inside <a>, headings, <script>, <style>, <code>, <figcaption> and
+ * <p class="disclosure"> is never touched. Returns { html, linked: [keys] }. */
+function linkProductMentions(html, cfg, opts) {
+  const max = (opts && opts.max) || 5;
+  const src = String(html);
+  const already = new Set();
+  for (const m of src.matchAll(/data-aff="([a-z0-9-]+)"/g)) already.add(m[1]);
+
+  const tokens = src.split(/(<[^>]*>)/).filter((t) => t !== '');
+  const skipTags = new Set(['a', 'script', 'style', 'code', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'button', 'figcaption']);
+  const voidTags = new Set(['br', 'img', 'hr', 'meta', 'link', 'input']);
+  const depth = {};
+  let disclosureDepth = 0; // inside <p class="disclosure">
+  const eligible = new Array(tokens.length).fill(false);
+  for (let i = 0; i < tokens.length; i++) {
+    const t = tokens[i];
+    const tm = t.match(/^<(\/?)([a-zA-Z][a-zA-Z0-9]*)\b([^>]*)>$/);
+    if (!tm) { // text
+      eligible[i] = !t.startsWith('<') && Object.keys(depth).every((k) => depth[k] <= 0) && disclosureDepth <= 0;
+      continue;
+    }
+    const closing = tm[1] === '/';
+    const name = tm[2].toLowerCase();
+    if (/\/\s*>$/.test(t) || voidTags.has(name)) continue;
+    if (skipTags.has(name)) depth[name] = (depth[name] || 0) + (closing ? -1 : 1);
+    if (name === 'p') {
+      if (!closing && /class="[^"]*\bdisclosure\b/.test(tm[3])) disclosureDepth = 1;
+      else if (closing) disclosureDepth = 0;
+    }
+  }
+
+  // earliest match per key, in document order
+  const found = [];
+  for (const [key, re] of Object.entries(MENTION_PATTERNS)) {
+    if (already.has(key) || !cfg.products[key]) continue;
+    for (let i = 0; i < tokens.length; i++) {
+      if (!eligible[i]) continue;
+      const m = re.exec(tokens[i]);
+      if (m) { found.push({ key, i, start: m.index, end: m.index + m[0].length, text: m[0] }); break; }
+    }
+  }
+  found.sort((a, b) => a.i - b.i || a.start - b.start);
+
+  // drop overlaps inside one token, then cap
+  const chosen = [];
+  for (const f of found) {
+    const prev = chosen[chosen.length - 1];
+    if (prev && prev.i === f.i && f.start < prev.end) continue;
+    // links already in the text count toward the cap, so a re-run is a no-op
+    if (chosen.length >= max - already.size) break;
+    chosen.push(f);
+  }
+
+  // apply right-to-left so earlier offsets stay valid
+  const byToken = {};
+  for (const c of chosen) (byToken[c.i] = byToken[c.i] || []).push(c);
+  for (const idx of Object.keys(byToken)) {
+    const list = byToken[idx].sort((a, b) => b.start - a.start);
+    let text = tokens[idx];
+    for (const c of list) {
+      const a = '<a href="' + esc(affUrlFor(cfg, c.key)) + '" data-aff="' + c.key +
+        '" target="_blank" rel="sponsored noopener">' + c.text + '</a>';
+      text = text.slice(0, c.start) + a + text.slice(c.end);
+    }
+    tokens[idx] = text;
+  }
+  return { html: tokens.join(''), linked: chosen.map((c) => c.key) };
+}
+
+module.exports = {
+  loadAffiliateConfig, affUrlFor, renderGearBoxHtml, gearItemListLd, RIG_KEYS, esc,
+  AMAZON_STATEMENT, PAGE_DISCLOSURE, MENTION_PATTERNS, enforceAmazonTags, linkProductMentions,
+};

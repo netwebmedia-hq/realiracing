@@ -35,6 +35,14 @@ jobs:
       - name: Validate batch parse contract
         run: node _ci/validate-batch-parse.mjs
 
+      # Amazon Associates is this site's only verified earner. Fails the deploy
+      # (before anything reaches InMotion) if any Amazon link is untagged, lacks
+      # rel="sponsored", or sits on a page without the Operating-Agreement
+      # statement — all three were found live on 2026-10-12. The blog generator
+      # now enforces these at render time, so this is the backstop.
+      - name: Validate Amazon Associates compliance
+        run: node _ci/validate-affiliate-links.mjs
+
       - name: Preflight — verify secrets
         id: preflight
         run: |
