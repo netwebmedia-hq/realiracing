@@ -1,0 +1,14 @@
+{
+  "raceName": "iRacing Highlights",
+  "channelName": "@realiracing",
+  "cta": "LIKE · SUBSCRIBE · FOLLOW",
+  "accentColor": "#E8FF00",
+  "introSeconds": 2,
+  "outroSeconds": 2.5,
+  "clips": [
+    { "src": "clips/clip1.mp4", "start": 0, "duration": 3, "title": "RACE START", "subtitle": "Lap 1", "titlePosition": "bottom-left", "playbackRate": 1 },
+    { "src": "clips/clip2.mp4", "start": 0, "duration": 4, "title": "OVERTAKE", "subtitle": "Turn 4", "titlePosition": "bottom-left", "playbackRate": 1 },
+    { "src": "clips/clip3.mp4", "start": 0, "duration": 3, "title": "FASTEST LAP", "subtitle": "Personal Best", "titlePosition": "bottom-left", "playbackRate": 1 },
+    { "src": "clips/clip4.mp4", "start": 0, "duration": 3, "title": "FINAL PUSH", "subtitle": "Last 2 Laps", "titlePosition": "bottom-left", "playbackRate": 1 }
+  ]
+}
