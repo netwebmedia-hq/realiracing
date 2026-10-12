@@ -10,7 +10,7 @@ const fs = require('fs');
 const path = require('path');
 process.chdir(path.join(__dirname, '..'));
 const DRY = process.argv.includes('--dry-run');
-const SKIP = new Set(['node_modules', '.git', '_deploy', '_ci', 'slides', 'remotion-highlights', 'assets']);
+const SKIP = new Set(['node_modules', '.git', '_deploy', '_ci', 'slides', 'hyperframes-highlights', 'assets']);
 const RE = /(realiracing\.com\/go<\/a>)(\s*<\/p>)/;
 const RE_PACKS = /(<a href="\/gear\.html">My Rig<\/a>)(<\/p>)/; // packs/ footer variant
 let changed = 0, already = 0; const noMatch = [];

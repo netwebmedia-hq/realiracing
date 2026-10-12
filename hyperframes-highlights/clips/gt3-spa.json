@@ -1,0 +1,18 @@
+{
+  "_comment": "GT3 @ SPA - today's stream highlights. All 7 clips cut from ONE source (clips/stream_today.mp4). Every `start` is still 0 (placeholder, same as the Remotion variant's TODOs): replace each with the real stream timestamp, e.g. \"1:23:45\" or seconds.",
+  "raceName": "GT3 @ SPA",
+  "channelName": "@realiracing",
+  "cta": "LIKE · SUBSCRIBE · FOLLOW",
+  "accentColor": "#E8FF00",
+  "introSeconds": 2,
+  "outroSeconds": 2.5,
+  "clips": [
+    { "src": "clips/stream_today.mp4", "start": 0, "duration": 3,   "title": "LIGHTS OUT",    "subtitle": "La Source · Lap 1",  "titlePosition": "bottom-left", "playbackRate": 1,   "note": "TODO: race start timestamp" },
+    { "src": "clips/stream_today.mp4", "start": 0, "duration": 3.5, "title": "EAU ROUGE",     "subtitle": "Full Send",          "titlePosition": "bottom-left", "playbackRate": 1,   "note": "TODO: first run through Eau Rouge" },
+    { "src": "clips/stream_today.mp4", "start": 0, "duration": 4,   "title": "THE MOVE",      "subtitle": "Les Combes",         "titlePosition": "bottom-left", "playbackRate": 1,   "note": "TODO: key overtake (likely into Les Combes)" },
+    { "src": "clips/stream_today.mp4", "start": 0, "duration": 3,   "title": "FLAT THROUGH",  "subtitle": "Pouhon",             "titlePosition": "bottom-left", "playbackRate": 0.6, "note": "TODO: fast section through Pouhon (slow-mo)" },
+    { "src": "clips/stream_today.mp4", "start": 0, "duration": 4,   "title": "SIDE BY SIDE",  "subtitle": "Bus Stop Chicane",   "titlePosition": "bottom-left", "playbackRate": 1,   "note": "TODO: close battle / defensive lap" },
+    { "src": "clips/stream_today.mp4", "start": 0, "duration": 3,   "title": "FASTEST LAP",   "subtitle": "Personal Best",      "titlePosition": "bottom-left", "playbackRate": 1,   "note": "TODO: fastest lap (or a clean sector push)" },
+    { "src": "clips/stream_today.mp4", "start": 0, "duration": 3.5, "title": "CHECKERED",     "subtitle": "Spa · GT3",          "titlePosition": "bottom-left", "playbackRate": 1,   "note": "TODO: crossing the line" }
+  ]
+}

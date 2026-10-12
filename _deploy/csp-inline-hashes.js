@@ -26,7 +26,7 @@ const htaccessPath = path.join(root, '.htaccess');
 
 function walk(dir, out = []) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
-    if (['.git', '.github', 'node_modules', '_deploy', '_stage', 'remotion-highlights'].includes(e.name)) continue;
+    if (['.git', '.github', 'node_modules', '_deploy', '_stage', 'hyperframes-highlights'].includes(e.name)) continue;
     const p = path.join(dir, e.name);
     if (e.isDirectory()) walk(p, out);
     else if (e.name.endsWith('.html')) out.push(p);

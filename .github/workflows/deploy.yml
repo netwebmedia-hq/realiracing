@@ -49,7 +49,7 @@ jobs:
           mkdir -p _stage
           # Copy everything except dev/build artifacts
           rsync -a --exclude='.git' --exclude='.github' --exclude='node_modules' \
-            --exclude='.DS_Store' --exclude='Thumbs.db' --exclude='remotion-highlights' \
+            --exclude='.DS_Store' --exclude='Thumbs.db' --exclude='hyperframes-highlights' \
             --exclude='extract-slides.html' --exclude='_stage' \
             --exclude='_deploy' \
             . _stage/
@@ -86,7 +86,7 @@ jobs:
             **/.DS_Store
             **/Thumbs.db
             **/node_modules/**
-            **/remotion-highlights/**
+            **/hyperframes-highlights/**
             **/extract-slides.html
             **/_deploy/**
 

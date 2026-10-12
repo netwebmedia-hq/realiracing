@@ -1,0 +1,23 @@
+{
+  "name": "hyperframes-highlights",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "@realiracing highlight reel (HyperFrames: HTML + GSAP). Replaces the former Remotion project.",
+  "scripts": {
+    "build:16x9": "node scripts/build.mjs 16x9",
+    "build:9x16": "node scripts/build.mjs 9x16",
+    "build:1x1": "node scripts/build.mjs 1x1",
+    "preview": "node scripts/build.mjs 16x9 && npx --yes hyperframes@0.8.149 preview",
+    "preview:9x16": "node scripts/build.mjs 9x16 && npx --yes hyperframes@0.8.149 preview",
+    "preview:1x1": "node scripts/build.mjs 1x1 && npx --yes hyperframes@0.8.149 preview",
+    "check:16x9": "node scripts/build.mjs 16x9 && npx --yes hyperframes@0.8.149 check",
+    "check:9x16": "node scripts/build.mjs 9x16 && npx --yes hyperframes@0.8.149 check",
+    "check:1x1": "node scripts/build.mjs 1x1 && npx --yes hyperframes@0.8.149 check",
+    "check": "npm run check:16x9 && npm run check:9x16 && npm run check:1x1",
+    "render:16x9": "node scripts/build.mjs 16x9 && npx --yes hyperframes@0.8.149 render --output renders/highlights-16x9.mp4",
+    "render:9x16": "node scripts/build.mjs 9x16 && npx --yes hyperframes@0.8.149 render --output renders/highlights-9x16.mp4",
+    "render:1x1": "node scripts/build.mjs 1x1 && npx --yes hyperframes@0.8.149 render --output renders/highlights-1x1.mp4",
+    "render:all": "npm run render:16x9 && npm run render:9x16 && npm run render:1x1"
+  }
+}
