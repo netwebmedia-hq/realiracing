@@ -186,6 +186,10 @@ function enforceAmazonTags(html, cfg) {
   const tag = cfg && cfg.amazonTag;
   if (!tag || tag === 'PENDING-20') return { html, fixed: 0 };
   let fixed = 0;
+  // Short links (amzn.to, a.co) cannot be tagged or audited here and would fail
+  // the deploy gate in _ci/validate-affiliate-links.mjs, stalling publishing.
+  // Unwrap them to plain text; the gear box and in-text links still carry the tag.
+  html = String(html).replace(/<a\b[^>]*\bhref="https?:\/\/(?:amzn\.[a-z]+|a\.co)\/[^"]*"[^>]*>([\s\S]*?)<\/a>/gi, (_, inner) => { fixed++; return inner; });
   const out = String(html).replace(/<a\b[^>]*>/gi, (anchor) => {
     const hm = anchor.match(/\bhref="([^"]*)"/i);
     if (!hm) return anchor;

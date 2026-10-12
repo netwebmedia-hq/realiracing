@@ -388,6 +388,7 @@ Each object must have exactly these fields:
 
 Rules:
 - Every slug must be unique within this batch and not in the used-slugs list above
+- Never write an amazon.com, amzn.to or a.co URL in any field. Product links are added automatically: the gear box from gearKeys, and the first in-text mention of each catalog product (so use the plain product name, e.g. "MOZA R9", "G923", "CSL DD")
 - gearKeys MUST only use keys from the allowed list verbatim (exact key strings, e.g. "moza-r9" not "MOZA R9")
 - Include at least one internal cross-reference per post as an inline <a href="some-other-slug.html"> where it's genuinely relevant (use plausible existing RealIRacing slugs like "best-sim-racing-wheels-iracing.html", "moza-r9-iracing-settings.html", "best-sim-racing-cockpit-2026.html", "best-sim-racing-pedals-iracing-2026.html" — these already exist on the site)
 - Each post must stand alone as genuinely useful content a real sim racer would want to read`;
