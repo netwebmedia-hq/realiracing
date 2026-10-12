@@ -1,0 +1,125 @@
+{
+  "slug": "gearing-ratios-unknown-track-strategy",
+  "tag": "Setup Guides · Gearing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "How to Choose Gear Ratios for a Track You've Never Driven",
+  "description": "Walk into an unfamiliar track with confidence. Learn the gearing strategy I use on my MOZA R9 rig to lock in ratios before you've turned a lap.",
+  "sections": [
+    {
+      "p": "The first time I loaded up a new track in iRacing, I spent an hour fiddling with gearing, making incremental changes lap after lap, wondering why my lap times weren't improving. I'd lower a gear, gain 0.2 mph on the straight, lose composure in turn 5, and fall back to square one. The problem wasn't the math—it was that I had no baseline to work from. On my MOZA R9 rig, with repeatable brake pressure from the CRP2 pedals, gearing became the one variable I could actually diagnose methodically. Now when I walk into Silverstone or COTA for the first time, I don't guess. I build."
+    },
+    {
+      "p": "Choosing gear ratios for an unknown track isn't about finding the \"perfect\" setup on day one. It's about making an educated first guess, then knowing which direction to adjust based on what your telemetry tells you. The car feels slow on the straights? Taller gears. Rpms climbing too high mid-corner? Shorter gears. Once you separate the real problems from the imaginary ones, you can close in on a workable ratio in two or three sessions instead of ten."
+    },
+    {
+      "h2": "Start With the Baseline Ratio"
+    },
+    {
+      "p": "Every car in iRacing ships with a stock gear ratio in its setup file. That ratio exists for a reason: it's engineered to be safe and competitive across a broad range of tracks. The Porsche 992 Cup, Ferrari 488, Lamborghini Huracán GT3—they all have ratios that work acceptably from Monza to Road America. This isn't your final answer, but it's your starting point, and it's better than a random guess."
+    },
+    {
+      "p": "Before you change anything, load the baseline setup and run a handful of hot laps. You're not trying to be fast. You're just establishing a feel. Pay attention to two things: how the engine sounds on the longest straight (is it clearly off boost, wound up near the limiter, or somewhere rational in between?), and whether you feel a moment in high-speed corners where you're waiting for the next gear. These two sensations tell you everything you need to know about whether you need a bigger ratio (taller gears) or a smaller one (shorter gears)."
+    },
+    {
+      "h2": "The Straight-Line Telemetry Check"
+    },
+    {
+      "p": "This is where telemetry becomes your best friend. Fire up the telemetry replay—I use the built-in iRacing replay with telemetry overlay—and look at your top speed on the longest, flattest straight. Find the moment you lift off the throttle for braking. What rpm are you at? If you're hitting the rev limiter before turn-in, you've got short gears and you need to go taller. If you're cruising at 5,500 rpm on a straight where other cars are at 6,800, you're leaving performance on the table and probably need shorter gears."
+    },
+    {
+      "p": "The goal isn't to hit a magic rpm number—that varies by car and track. The goal is to see whether you're clearly overrevving or underrevving. On tracks like Monza or Daytona where straights are long and fuel-saving matters, you might tolerate being slightly tall. On technical circuits like Imola, you want ratios that keep the engine in the sweet spot through the whole lap. Telemetry shows you if you're in that zone or if you're off by a full ratio."
+    },
+    {
+      "h2": "Corner Behavior and Gear Selection"
+    },
+    {
+      "p": "Mid-corner, you want to feel stable and in control. If you're exiting a corner and the car feels sluggish—like it's searching for the next gear and losing momentum—your ratio might be too tall. The engine isn't in the power band for that speed, so you're losing drive. Conversely, if you exit a corner and immediately hit the limiter before you've finished accelerating, your gears are too short and you're wasting energy at high rpm where efficiency drops."
+    },
+    {
+      "list": [
+        "<strong>Tall gears:</strong> Better top speed and fuel economy; can feel sluggish exiting slow corners; useful on tracks with long straights like Monza or Road America",
+        "<strong>Short gears:</strong> Snappier acceleration and mid-range response; higher fuel consumption; easier to control on technical circuits like Suzuka or Bathurst",
+        "<strong>Compromise ratios:</strong> Work reasonably well everywhere but optimize nowhere; your starting point before you specialize"
+      ]
+    },
+    {
+      "h2": "Reading Your First Lap Times"
+    },
+    {
+      "p": "After three or four laps on the baseline ratio, you should have a ballpark sector time. Now make one adjustment. If your telemetry showed you were overrevving on the straight, go one ratio taller. If you felt sluggish corner-to-corner, go one ratio shorter. Change only one thing and run another five laps. Your lap time will either improve, stay similar, or get worse. That direction tells you whether you guessed right."
+    },
+    {
+      "p": "On my rig, I found that the Ferrari 488 GT3 at Silverstone felt better with one ratio taller than stock because the high-speed sections (Copse, Maggotts, Becketts) made short gears feel wasteful. Three laps on the taller ratio confirmed it: I was 0.3 seconds faster mid-corner and only giving up 1 mph on the straight. That's a trade I take every time. But I found this through observation, not hope."
+    },
+    {
+      "tip": "Telemetry is honest. Your gut feeling about gearing is usually right in direction—\"feels slow\" or \"feels wound up\"—but it's often wrong in magnitude. Check the numbers before you make your second change.",
+      "tipLabel": "Measure, Don't Feel"
+    },
+    {
+      "h2": "The Two-Ratio Window"
+    },
+    {
+      "p": "On most road courses, the optimal ratio falls within a small window—usually one full gear ratio up or down from the stock setup. Bigger changes than that are usually a sign that either you've misread the telemetry or the baseline setup was way off (rare). If you find yourself considering a change of two ratios or more, go back to telemetry and ask why. A two-ratio swing usually means you're chasing a symptom that isn't actually about gearing."
+    },
+    {
+      "p": "Oval tracks and drag-focused setups are the exception. On a speedway like Indianapolis or Daytona where you're flat-out for 80% of the lap, gear choice is more aggressive. But for most road courses, stay disciplined. Small, measurable changes beat big guesses every time."
+    },
+    {
+      "h2": "Fuel Strategy and Gearing Trade-offs"
+    },
+    {
+      "p": "Shorter gears burn more fuel. Taller gears conserve it. On a sprint race where fuel doesn't matter, that trade is free money—go shorter and grab the acceleration advantage. On an endurance race where fuel strategy is your entire weekend, you might accept slightly taller gears to stretch your stint lengths. This isn't about finding a \"perfect\" ratio. It's about knowing what you're trading away."
+    },
+    {
+      "p": "Before you lock in a ratio for a long race, check how many laps per tank you get with that gearing. Run a ten-lap stint, note your fuel consumption, and do the math. If the car asks for an extra pit stop because of short gears, that's a pit loss that might cost more time than the acceleration gain. Telemetry tells you fuel burn per lap too. Use it."
+    },
+    {
+      "h2": "Your First-Session Workflow"
+    },
+    {
+      "olist": [
+        "Load the baseline setup and run five laps. Note top speed on the longest straight and how the car feels mid-corner.",
+        "Pull telemetry. Check your rpm at full throttle and at turn-in. Are you clearly over or under where you should be?",
+        "Make one small adjustment—one ratio taller or shorter. Run five more laps.",
+        "Compare lap times and feel. Did it improve? Does telemetry show better engine behavior?",
+        "If yes, hold that ratio and move to other setup work. If no, revert and try the other direction.",
+        "After 15-20 laps total, you should have a solid first-pass ratio that feels right and tests well."
+      ]
+    },
+    {
+      "tip": "The best gear ratio is the one you can repeat. On my CRP2 pedals and R9 wheelbase, I can build muscle memory for a given throttle map and brake pressure over laps. Gearing that keeps the engine in a predictable power band makes the car easier to drive consistently. Consistency beats raw pace when you're learning a track.",
+      "tipLabel": "Consistency Over Peak Speed"
+    },
+    {
+      "h2": "When to Ignore This and Just Copy a Setup"
+    },
+    {
+      "p": "If you're joining a league race in 45 minutes and you need a gearing choice now, check the setup shop or ask teammates what they're running. There's no shame in starting with proven data. But if you have a practice session, an hour, and access to telemetry, walking through this workflow teaches you something about how gearing affects your car that you'll carry to every track. That knowledge is worth more than a setup file."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I change gearing or brake bias first when I'm trying to improve lap time?",
+      "a": "Change gearing first if telemetry clearly shows you're over- or underrevving. Change brake bias first if you feel unstable on corner entry or exit. Gearing affects engine behavior and energy; brake bias affects balance and confidence. Fix the one that's obviously broken, then work on the other. On my rig, I always check straight-line speed in telemetry before I touch brakes."
+    },
+    {
+      "q": "Can I use the same ratio for qualifying and race?",
+      "a": "Yes, usually. Qualifying runs are short and don't care about fuel, so some drivers go one ratio shorter for raw speed. But if the shorter ratio hurts your consistency or confidence, the risk of a mistake outweighs the gain. I stay on my race ratio for qualifying unless telemetry shows I'm clearly losing top speed. Confidence matters more than 0.05 seconds on a flying lap."
+    },
+    {
+      "q": "How much lap time does a one-ratio change actually cost or gain?",
+      "a": "It varies by track and car, but typically 0.2 to 0.5 seconds. Longer straights mean bigger time swings. A one-ratio shift at Monza might cost 0.4 seconds; at Lime Rock it might be 0.1. Always confirm with telemetry and lap times before you assume."
+    },
+    {
+      "q": "Is there a formula or calculator I can use to choose a gear ratio?",
+      "a": "iRacing setup databases and forums have calculators, but they're only useful if you know your target top speed and corner rpm. Without track-specific data from your own driving, they're guesses. Use the telemetry workflow instead: baseline, measure, adjust one ratio, repeat. That method works every time because it's based on what your car actually does, not a spreadsheet."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2"
+  ],
+  "published": "2026-10-12",
+  "dateLabel": "October 12, 2026"
+}

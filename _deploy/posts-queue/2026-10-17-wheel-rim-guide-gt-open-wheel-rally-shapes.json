@@ -1,0 +1,151 @@
+{
+  "slug": "wheel-rim-guide-gt-open-wheel-rally-shapes",
+  "tag": "Buyer's Guide · Hardware",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Wheel Rim Shapes Compared: GT, Open-Wheel, and Rally Rims",
+  "description": "GT, open-wheel, and rally wheel rims have different grip points and feedback profiles. Learn which rim shape matches your iRacing categories.",
+  "sections": [
+    {
+      "p": "When I started sim racing seriously on my MOZA R9, I thought a wheel rim was just a wheel rim. Then I ran the same car with three different rim profiles in succession—a GT wheel, an open-wheel rim, and a rally wheel—and the brake input difference alone was impossible to ignore. The rim shape affects where your hands sit, how pressure transfers through your palms and fingers, and how naturally you can modulate pedal inputs under load. I've been running a MOZA CS V2 for the last two seasons, but I rotate between rim shapes depending on the series I'm racing, and the setup choice matters more than most sim racers realize."
+    },
+    {
+      "p": "Rim choice isn't about ego or aesthetics—it's about how force and feedback translate through your hands and arms to your steering inputs. I'll walk through the three main profiles, show you the geometry differences that actually matter, and help you pick the right shape for the cars you race most."
+    },
+    {
+      "h2": "GT Wheel Rims: The Everyday Sim Racer's Shape"
+    },
+    {
+      "p": "A GT rim is the most forgiving profile I own. It's typically ~350–370 mm in diameter with a broader grip diameter and a flatter bottom spoke section. The grip surface is wider than an open-wheel rim, and the weight distribution favors a relaxed hand position. When I'm running the Ferrari 488 GT3 Evo or the Lamborghini Huracán in endurance events, the GT rim feels like home—my wrists sit in a neutral angle, and I can work the brake and accelerator smoothly without fighting the wheel geometry."
+    },
+    {
+      "p": "The GT profile also tends to have more pronounced thumb grips or knurled surfaces on the lower spokes, which helps during sustained cornering when you're working the wheel in small, precise corrections. On my R9, the feedback is clear without being harsh, and the broader grip surface means I'm less likely to accidentally over-modulate inputs during trail-braking into turn-in. The downside? The larger diameter and heavier feel can make snappy directional changes feel sluggish, and if you're used to open-wheel driving, the GT rim can feel almost soft in comparison."
+    },
+    {
+      "list": [
+        "Diameter: ~350–370 mm (typically closer to 370 mm)",
+        "Grip surface: Wider, more distributed pressure area",
+        "Spoke count: Usually 2 or 3 main grips on the sides",
+        "Thumb grip knurling: Often pronounced and textured",
+        "Weight feel: Heavier rotational inertia at full size",
+        "Best for: GT3, GT4, road courses, endurance racing, high-downforce cars"
+      ]
+    },
+    {
+      "h2": "Open-Wheel Rims: Precision and Fast Input"
+    },
+    {
+      "p": "Open-wheel rims are thinner, sharper, and demand respect. They're typically ~330 mm in diameter, often with a narrower grip zone and minimal padding. When I switch to my open-wheel rim for Formula cars like the Dallara IR18, the change is immediate: my hands want to sit higher and farther apart, and every input feels more direct. The steering ratio feels tighter because the reduced grip diameter naturally amplifies hand movement into larger steering wheel angles."
+    },
+    {
+      "p": "The thin profile and reduced grip surface mean your hands and fingers do more of the work, and there's less damping between your input and the steering rack. On my R9, this creates a crisp, almost unforgiving feedback loop—if I'm sloppy on corner entry, I feel it instantly. The benefit is precision: you can make 2- or 3-degree corrections without accidentally over-steering, and the rim naturally encourages a smoother, more methodical line. The downside is hand fatigue during long sessions, especially if you're gripping too tightly. I learned that the hard way—loose grip, let the rim do the talking, and you'll have better feedback and less arm pump by lap 20."
+    },
+    {
+      "list": [
+        "Diameter: ~330 mm (sometimes 320–340 mm)",
+        "Grip surface: Narrow, usually circular cross-section",
+        "Spoke count: Minimal, often single thin grips or buttons",
+        "Thumb grip knurling: Sparse or absent",
+        "Weight feel: Lighter, faster rotational response",
+        "Best for: Formula cars, single-seaters, road courses, high-feedback driving"
+      ]
+    },
+    {
+      "h2": "Rally Rims: Aggression and Rotational Speed"
+    },
+    {
+      "p": "Rally rims are the wild card. They're usually ~300–320 mm in diameter, often with a pronounced hand grip cutout at the bottom and sometimes a horizontal spoke at the 6 o'clock position. The smaller diameter means you get faster rotational response—you can whip the wheel through 90 degrees in a single motion without the long arc time that an open-wheel rim would require. When I'm running dirt sprint cars or rallycross in iRacing, the rally rim's compact profile is essential for the rapid left-right corrections those events demand."
+    },
+    {
+      "p": "The hand grip cutout (often at the bottom of the wheel) lets you push or pull aggressively without your hands colliding with the spokes. Rally rims also often include a thick horizontal bar or spoke at the bottom, which serves a practical purpose: it's something to push against during rapid direction changes, and it naturally guides your hands to a ready position for the next input. On my R9, the feedback is crisp and direct—there's almost no inertia to overcome, and the wheel wants to snap back to center. The tradeoff is that the smaller diameter and aggressive geometry can feel twitchy on high-downforce road courses where small, precise inputs matter more than speed."
+    },
+    {
+      "list": [
+        "Diameter: ~300–320 mm (sometimes even smaller)",
+        "Grip surface: Compact, with hand-grip cutout at bottom",
+        "Spoke count: Usually 2–3, often with horizontal bottom spoke",
+        "Thumb grip knurling: Moderate, positioned for rally-style inputs",
+        "Weight feel: Lightest, fastest rotational inertia",
+        "Best for: Rallycross, dirt racing, rapid direction changes, short-course events"
+      ]
+    },
+    {
+      "h2": "How Rim Diameter Affects Your Input Speed and Precision"
+    },
+    {
+      "p": "The single biggest factor in how a rim feels is its diameter. I think of it this way: a smaller wheel diameter means shorter lever arm, so the same hand movement creates a larger steering wheel angle. On a ~300 mm rally rim, a 6-inch hand movement might rotate the rim 30 degrees. On a ~370 mm GT rim, the same 6-inch hand movement only rotates it maybe 18 degrees. This isn't just a feel thing—it changes your muscle memory and the speed at which you can make corrections."
+    },
+    {
+      "p": "When I'm running dirt or rally events, I want that small diameter because the car's weight transfer is rapid and the track surface is less predictable. I need to make big steering inputs fast. But when I'm on a road course like Spa in a high-downforce GT car, a larger rim diameter naturally slows my inputs down, which is exactly what I want—precision and smooth modulation matter more than speed."
+    },
+    {
+      "tip": "Rim diameter is more important than rim thickness for changing how fast or slow your inputs feel. A 340 mm GT rim will feel slower and more deliberate than a 320 mm open-wheel rim, even if both have similar grip surfaces.",
+      "tipLabel": "Diameter vs. Feel"
+    },
+    {
+      "h2": "Choosing the Right Rim for Your Series"
+    },
+    {
+      "p": "Your choice doesn't have to be locked in forever. Many sim racers own two or three rims and swap them depending on the season or series. That said, if you're racing one category primarily—say, GT3 or Formula cars—committing to the right rim profile from day one saves you from relearning muscle memory every time you switch."
+    },
+    {
+      "p": "For <a href=\"best-sim-racing-wheels-iracing.html\">most sim racers starting out</a>, a GT rim is the safest first purchase. It's forgiving enough to help you build consistency while you're learning throttle and brake modulation. Once you've got a few hundred laps of confidence, if you want to branch into open-wheel or dirt, a specialized rim is a worthwhile investment. On my MOZA CS V2, the modularity makes this easy—I can swap rims in about 30 seconds."
+    },
+    {
+      "olist": [
+        "Identify the series you race most: GT, open-wheel, or rallycross.",
+        "Start with the rim profile that matches that series.",
+        "Run 10–15 laps and note how your inputs feel—too slow, too fast, or just right.",
+        "If you're happy, you're done. If not, try the adjacent profile.",
+        "Once you find your fit, commit to it for at least 20 laps to let your hands adapt."
+      ]
+    },
+    {
+      "h2": "The Role of FFB Strength and Rim Profile"
+    },
+    {
+      "p": "One thing many sim racers miss: your FFB strength and rim profile work together. If I run a light GT rim with super-high FFB on my R9, the feedback can feel overwhelming because the reduced inertia means the wheel responds faster to force commands. Conversely, if I'm running a heavy, large-diameter GT rim with weak FFB, the feedback can feel numb. There's no magic setting, but it's worth adjusting your FFB peak torque and damping after you switch rim profiles. I usually dial in 5–10% less FFB with open-wheel rims and 10–15% more with rally rims, just to keep the feedback linear across different profiles."
+    },
+    {
+      "p": "Your <a href=\"moza-r9-iracing-settings.html\">FFB settings</a> aren't just about peak torque—they're about the conversation between the game, your wheelbase, and the rim you're holding. Spend time tuning this trio together, and you'll notice a huge jump in consistency and confidence."
+    },
+    {
+      "h2": "Real Talk: Are Specialty Rims Worth the Money?"
+    },
+    {
+      "p": "If you race primarily one series, yes. If you race four different series across four weeks, yes—a specialty rim for each discipline is worth it, and most quality rims cost between ~$80–$200. Compare that to the cost of a quality <a href=\"best-sim-racing-pedals-iracing-2026.html\">load-cell brake pedal</a> or a good direct-drive wheelbase, and rim investment is cheap. What's not worth it? Buying a rim just because it looks cool or because a streamer uses it. Buy the profile that matches your racing, not the brand logo."
+    },
+    {
+      "p": "I own three rims because I race three main series. That's probably overkill for most people, but for serious league racers or endurance racers who run multiple cars across multiple events, having the right tool for the job pays off in lap-time consistency and reduced fatigue over long sessions."
+    },
+    {
+      "tip": "Specialty rims are an upgrade, not a foundation. If you're still learning smooth inputs, a GT rim will serve you well for 500+ laps. Upgrade to a specialized profile once you're consistently hitting your target lap times.",
+      "tipLabel": "Progression"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I use a rally rim for road racing?",
+      "a": "Yes, but it's not ideal. A rally rim will feel twitchy and over-responsive on a road course because the small diameter amplifies every hand movement into large steering inputs. You can drive fast with it, but you'll work harder to stay smooth. For road racing, a GT or open-wheel rim is better suited."
+    },
+    {
+      "q": "Is a smaller-diameter rim always faster?",
+      "a": "No. Smaller diameter means faster rotational response, which is an advantage in tight courses with rapid direction changes. On flowing road courses, a larger diameter often allows smoother, more precise inputs, which can be faster overall. The car and track matter as much as the rim."
+    },
+    {
+      "q": "Do I need to adjust my FFB settings when I switch rim profiles?",
+      "a": "Usually yes, by small amounts. Smaller, lighter rims respond more sensitively to FFB forces, so reducing FFB slightly (5-10%) can keep feedback linear. Larger, heavier rims might need a small FFB bump to maintain the same perceived force. Experiment within ±10% of your baseline."
+    },
+    {
+      "q": "What's the most versatile rim shape for someone racing multiple series?",
+      "a": "A GT rim. Its ~350-370 mm diameter and forgiving grip profile work reasonably well for GT3, road courses, and even lower-speed rallycross. It won't be optimal for pure Formula cars or high-speed rally, but it's a solid all-arounder if you can only own one rim."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-cs-v2",
+    "moza-crp2"
+  ],
+  "published": "2026-10-12",
+  "dateLabel": "October 12, 2026"
+}

@@ -1,0 +1,150 @@
+{
+  "slug": "when-to-stop-setup-tuning-baseline-racing",
+  "tag": "Setup Guides · Strategy",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "When to Stop Tuning Your Setup: Baseline vs. the Setup Shop Trap",
+  "description": "Know when baseline setups win races and when chasing setup shops costs you lap time and sanity.",
+  "sections": [
+    {
+      "p": "I've spent hours—too many hours—in the setup shop. Not because I'm thorough. Because I didn't know when to stop. On my MOZA R9 direct drive wheelbase, every adjustment feels immediate and seductive: bump the spring rate, add front ARB, dial brake bias one more click. The telemetry screen glows. The lap time drops 0.03 seconds. So you tune again. And again. Then you quit the session and load in fresh, and your 'perfect' setup feels alien because you've only ever driven it in one condition, on one tire life, at one fuel level."
+    },
+    {
+      "p": "The truth: baseline setups win more races than dialed-in ones, because baseline setups come with a margin of confidence built in. A setup shop special—something optimized to the tenth of a millimeter—is fragile. One session change, one weather shift, one unexpected tire age, and it's slower than the baseline. I've learned this the hard way. Here's how to know when you've tuned enough."
+    },
+    {
+      "h2": "Baseline Setups Are Designed to Forgive"
+    },
+    {
+      "p": "iRacing's baseline setups—the ones that ship with each car and track combo—exist for a reason. They're not optimal. They're *stable*. A baseline MX-5 setup at Road America won't be razor-sharp on one lap, but it'll be within a tenth on lap five, lap fifty, on cold tires, on hot tires, and when you're tired and hit a curb hard."
+    },
+    {
+      "p": "Setup shops—custom-tuned rigs like the ones you buy from specialists who sell a hundred Assetto Corsa Competizione setups a week—are the opposite. They're optimized for one narrow window: a clean qualifying lap, one tire age, 22°C ambient, no fuel sloshing, no traffic, and a driver who knows the line perfectly. The second any variable shifts, the setup's advantage evaporates."
+    },
+    {
+      "p": "I used to think this was obvious. It wasn't. I'd buy a $15 setup, spend two hours learning it, then load into race trim—higher fuel, different tire temps, traffic—and wonder why I was slower than the guy on the baseline. The answer: I wasn't driving better on a better setup. I was driving worse on a fragile one."
+    },
+    {
+      "h2": "The Setup Shop Trap: Why 'Optimized' Feels Wrong"
+    },
+    {
+      "p": "Here's the pattern I fell into: you start with baseline, it feels loose or understeer-y or the brakes feel spongy. You search for a setup. You find one with five-star reviews and a title like 'ULTIMATE QUALIFYING KILLER.' You download it. First lap, you're 0.2 seconds faster. It feels amazing."
+    },
+    {
+      "p": "Then, about lap eight, something shifts. The front end isn't as sharp anymore. By lap twenty, in race conditions, the setup that felt like magic now feels twitchy or numb, depending on what you changed. You're frustrated. So you tune it. Add damping. Reduce spring rates. Lower front wing. You're chasing a feeling that's already gone."
+    },
+    {
+      "list": [
+        "The qualifying-optimized setup was built for cold tires and low fuel—not the 45-minute race you're about to run.",
+        "Each small adjustment you make compounds: lower spring rate + stiffer damping + flatter wing = a setup that works in zero real-world conditions.",
+        "You've now spent two hours driving <strong>the setup</strong> instead of driving <strong>the track</strong>. Your muscle memory is tied to a car that won't behave the same in race trim.",
+        "When race start comes and the car feels different, you panic and adjust again. In the race. While other drivers are focused."
+      ]
+    },
+    {
+      "tip": "The fastest driver at your local league isn't using the most optimized setup. They're using a setup they've driven in 50 practice laps, 10 races, and two weather cycles. They know how it behaves when it's tired.",
+      "tipLabel": "Consistency Beats Optimization"
+    },
+    {
+      "h2": "How to Know When to Stop Tuning"
+    },
+    {
+      "h3": "Stop Point 1: The Lap Time Plateau"
+    },
+    {
+      "p": "You're spinning setup adjustments when your lap time stops falling. Not when it plateaus at your limit—when the *setup itself* stops improving lap time. On my MOZA R9 with the CRP2 load cell pedals, I know I've hit this when I make a change and see the same delta from baseline, or drift between -0.02 and +0.01 seconds. At that point, every additional tweak is tuning for feel, not performance. And feel is subjective."
+    },
+    {
+      "p": "The practical rule: if your last five setup changes were each smaller than 0.05 seconds, stop. You're no longer optimizing. You're guessing."
+    },
+    {
+      "h3": "Stop Point 2: You've Tuned Across Tire Ages"
+    },
+    {
+      "p": "A real setup should work across a tire life—or at least the first 50% of it. If you've adjusted your setup only for fresh qualifying tires, you've built a house on sand. Do this instead: tune on fresh tires for qualifying pace, then do three full stint simulations and write down how the car *changes*. If you're adjusting setup between stints, your baseline work isn't done."
+    },
+    {
+      "olist": [
+        "Load baseline. Do 5 qualifying laps, note pace.",
+        "Pit, refuel to race fuel (50 liters for a 45-minute endurance race, for example), do 15 clean laps.",
+        "Note the delta. If it's more than 0.2 seconds, the baseline might need one or two adjustments—brake bias, wing angle, fuel-load compensation.",
+        "Stop. Don't chase it further. One adjustment per session maximum."
+      ]
+    },
+    {
+      "h3": "Stop Point 3: You're Adjusting the Same Parameter Twice"
+    },
+    {
+      "p": "If you've already tuned spring rates and you're back tuning spring rates because the car 'still doesn't feel right,' stop. You're in a loop. What you actually need is either: (a) more laps to adjust your *driving*, not the setup, or (b) to go back to baseline and start over with a clearer mind. The MOZA R9's strong force feedback makes this tempting—every nuance is telegraphed, and your brain wants to fix it with a dial. Resist."
+    },
+    {
+      "h2": "When Setup Shops Actually Make Sense"
+    },
+    {
+      "p": "I'm not saying never buy a setup. Setups are useful at three specific moments:"
+    },
+    {
+      "list": [
+        "<strong>You're new to a track.</strong> A baseline feels alien; a setup built by someone who's done 500 laps there can be a shortcut to familiarity. Use it for one session, then transition to baseline if that session felt solid.",
+        "<strong>You're driving a car for the first time.</strong> The Ferrari 488 GT3 or Lamborghini Huracán GT4 handles differently than what you know. A setup from a specialist can teach you the car's personality faster than tweaking baseline yourself.",
+        "<strong>You're racing a series where setup is part of the sport.</strong> In organized league racing, custom setups are expected and tuned for the exact combo (track, weather, fuel load) you'll face. Buy it two days before race, drive it once in practice, then commit."
+      ]
+    },
+    {
+      "p": "In all other cases—practice, hotlapping, new drivers, casual racing—baseline is faster because you'll stop tuning and start *driving*."
+    },
+    {
+      "h2": "The Real Gain: Switching from Setup Fiddling to Driver Development"
+    },
+    {
+      "p": "Here's what changed for me: I set a rule. Baseline for the first session. One setup adjustment per session after that—and only if lap times are still falling after 15 laps. Everything else is driving practice. <a href=\"best-sim-racing-pedals-iracing-2026.html\">Load cell pedals like the CRP2 made a bigger difference</a> than any setup I've ever bought, because they let me feel brake modulation, which meant I could stop blaming the setup and start blaming my foot."
+    },
+    {
+      "p": "The drivers beating me aren't tuning more. They're driving more of the same car, lap after lap, race after race. They know how the baseline responds to fuel load. They know how many clicks to add when it rains. They're not chasing the setup optimal—they're executing the setup consistent."
+    },
+    {
+      "tip": "One metric changed everything for me: instead of tracking my best lap time, I tracked my lap-time standard deviation across a 30-lap stint. The lower the spread, the more raceable the setup. Optimization doesn't matter if you can't repeat it.",
+      "tipLabel": "Track Consistency, Not Peak Pace"
+    },
+    {
+      "h2": "The Decision Tree: Baseline or Setup Shop"
+    },
+    {
+      "p": "Use this when you're tempted to buy or tune further:"
+    },
+    {
+      "olist": [
+        "Have I driven this car/track combo baseline for more than 20 laps? → No: stop here, keep baseline.",
+        "Is my lap time still improving after every 5-lap session? → Yes: keep baseline, improve driving.",
+        "Have I tuned this setup more than twice in one session? → Yes: save the file and test it fresh tomorrow; if it's not better, revert to baseline.",
+        "Am I considering a setup shop to solve a 'feel' problem (spongy brakes, loose rear, etc.) rather than a pace problem? → Yes: try one calibration change to your brakes or ARB, then stop. Buy a setup only if that doesn't work.",
+        "Am I about to enter a race? → Yes: use baseline unless it's an organized league with custom-tuned setups as the standard."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many laps should I do in baseline before buying a custom setup?",
+      "a": "At least 20 clean laps in consistent conditions. If you're still improving at lap 20, you haven't learned the baseline yet—better setup won't help. If lap times stabilize at lap 15 and you're consistently 0.3 seconds off pace, then a setup shop might be worth trying. But test it in a full 30-lap practice first before race day."
+    },
+    {
+      "q": "Can a custom setup ever be faster than baseline for a full race?",
+      "a": "Yes, but only if you've driven it for hours and it matches your driving style and the exact conditions you'll race in. Even then, the advantage is usually 0.05 to 0.1 seconds—less than the lap-time variance from traffic or a single mistake. Baseline wins 90% of the time because you can repeat it under pressure."
+    },
+    {
+      "q": "Why does my custom setup feel amazing in the first lap but worse after 20 laps?",
+      "a": "Custom setups are usually optimized for fresh, cold tires at low fuel. After 20 laps, tires are hot and grip has shifted; fuel load changes weight transfer. The setup no longer matches the conditions. A baseline is tuned to forgive this transition. This is why consistency beats optimization."
+    },
+    {
+      "q": "Should I adjust my setup differently for qualifying versus race pace?",
+      "a": "No. Use the same setup for both. A baseline setup will give you qualifying pace within 0.1 to 0.2 seconds of a setup-shop qualifying tune, but it'll be much faster in the race because you haven't trained your muscle memory on a fragile optimized car. Optimize your *driving* for qualifying instead—more aggressive lines, later braking—not the setup."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2",
+    "cockpit"
+  ],
+  "published": "2026-10-12",
+  "dateLabel": "October 12, 2026"
+}

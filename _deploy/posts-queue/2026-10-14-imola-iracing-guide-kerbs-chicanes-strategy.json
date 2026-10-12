@@ -1,0 +1,143 @@
+{
+  "slug": "imola-iracing-guide-kerbs-chicanes-strategy",
+  "tag": "Track Guide · iRacing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Imola iRacing Guide: Kerbs, Chicanes, and Late Braking Zones",
+  "description": "Master Imola's technical layout with specific braking points, kerb-riding lines, and chicane entry strategies. Real-world line analysis for consistent lap times.",
+  "sections": [
+    {
+      "p": "Imola demands precision in ways that most iRacing road courses don't. It's not fast—it's physically demanding and unforgiving. Every corner has a bite, and the kerbs aren't decoration; they're structural elements you'll either use for grip or learn to fear. On my rig, I've spent enough hours here that I know the exact throttle-off point at Rivazza and the exact apex speed where the rear lets go at Acqua Minerale. This guide walks you through Imola's most demanding sections with the technical detail you need to lower your lap time without punting yourself into the wall."
+    },
+    {
+      "p": "Imola's 4.9 km layout is deceptively compact, but corner complexity, mid-corner braking, and aggressive kerbing make it feel much longer. Unlike Monza or Silverstone, Imola rewards rhythm and brake modulation over pure pace. You'll find yourself trail-braking deeper than you'd expect, managing weight transfer with the load cell, and using kerbs as speed regulators—not shortcuts."
+    },
+    {
+      "h2": "Sector 1: San Donato to Rivazza"
+    },
+    {
+      "p": "The run into Turn 1 (San Donato) is deceptively long. You'll brake in a straight line from roughly the 200-m board, aiming for full brake pressure by ~150 m. The entry is wide, but the exit tightens; your first apex is early in the corner, and you need to position for a mid-corner acceleration point. Feed throttle early—this corner feeds Rivazza, and momentum out of San Donato determines your exit speed into the chicane."
+    },
+    {
+      "p": "Rivazza (Turns 2–3) is Imola's signature technical section. It's a double chicane with a kink between the two apexes. Entry speed matters more than you'd think. Most drivers brake too hard and arrive too slow, killing the natural flow. Instead, modulate brake pressure mid-corner to carry speed through Turn 2's apex, then rotate the wheel aggressively for Turn 3. The kerb on the left at Turn 2's exit and the right-side kerb at Turn 3's entry can be used—but aggressively: ride them and you'll gain mechanical grip; abuse them and the suspension loads asymmetrically, throwing off your balance into the long Acque Minerale complex."
+    },
+    {
+      "h3": "Kerb Management at Rivazza"
+    },
+    {
+      "list": [
+        "Turn 2 exit: The left-side kerb is rideable; your right-side wheels should touch it. Helps tighten the radius and load the outside tyre.",
+        "Turn 3 entry: The right-side kerb is aggressive. Two wheels on it is fine; three wheels and you'll unload the left side, causing mid-corner understeer.",
+        "Turn 3 exit: Stay off the kerb entirely. The pavement ends abruptly, and riding it will pitch the nose down into Acqua Minerale's braking zone."
+      ]
+    },
+    {
+      "h3": "Acqua Minerale (Turns 4–5)"
+    },
+    {
+      "p": "This is a 90-degree right-hander followed immediately by a 90-degree left. It's not a chicane; it's two separate corners with a microsecond of straight between them. Brake hard into Turn 4, carry mid-corner throttle (not heavy acceleration), and position for the exit kerb. The outside kerb on the left at Turn 4's exit can be ridden softly to tighten your radius and set up for Turn 5. However, aggressive kerb contact here kills your rotation into Turn 5, so be surgical with how much of the kerb you use."
+    },
+    {
+      "p": "Turn 5 entry requires a rotation input; you're essentially mid-corner when you start the left input. This is where many drivers over-brake. The brake-into-Turn-4 work is done; if you're still braking at Turn 5 entry, you're too aggressive. Modulate off the brake by Turn 4 exit, carry threshold throttle, and trust the line. The exit kerb (right side) is friendlier; riding it helps load the outside tyre and gives you a better run up to Tosa."
+    },
+    {
+      "tip": "Acqua Minerale flows best when you treat it as one continuous corner with two direction changes, not two separate braking events. If you find yourself still on the brakes at Turn 5 entry, brake earlier into Turn 4 and let brake pressure bleed off naturally between the two apexes.",
+      "tipLabel": "Rhythm Over Aggression"
+    },
+    {
+      "h2": "The High-Speed Section: Tosa and Piratella"
+    },
+    {
+      "p": "Tosa (Turn 6) is a fast right-hander flowing uphill. Brake hard approaching it, hit the apex around the mid-point of the corner, and gradually feed throttle. The kerb on the outside (left) is rideable but soft; heavy contact will pitch the nose and lose mid-corner grip. Most of your speed gain here comes from exiting clean—not from braking later or clipping the kerb harder. I focus on smooth throttle application and early acceleration rather than aggressive trail-braking."
+    },
+    {
+      "p": "Piratella (Turn 7) is a fast left-hander. It looks like you should brake for it, but you shouldn't. Decelerate out of Tosa, let the car settle, and turn in with minimal brake input. This is a corner where smooth steering input and progressive throttle make the difference. The inside kerb is bumpy; avoid it. The outside kerb (right) can be used lightly to extend your radius, but aggressive riding will unload the inside tyre and cause push. Accelerate hard out of Piratella; it feeds the long straight to Panigazzi."
+    },
+    {
+      "h2": "Sector 2: Panigazzi and Imolese"
+    },
+    {
+      "p": "Panigazzi (Turn 8) is a technical downhill left-hander preceded by a slight kink. Brake on the straight, carry brake pressure into the corner, and modulate off as you approach the apex. The line is tight; apexing too early or too late kills your exit. The kerb on the right at the apex can be ridden, but the road dips on the exit; aggressive kerb contact can cause a sudden loss of grip as you transition to tarmac. Trail-brake to the apex, load the outside tyre, and exit conservatively."
+    },
+    {
+      "p": "The quick right-hander leading into Imolese (Turn 9) requires minimal braking. Let the car roll through it, maintain throttle, and set up for the long left-hander. Imolese is a sweeping corner taken at reasonable speed; brake moderately, turn in early, apex mid-corner, and progressively accelerate. The outside kerb (right) is not rideable at racing speed; the inside kerb (left) is soft and can be used. Exit clean; the run to Rivazza-Variante (Turn 10) is straightforward."
+    },
+    {
+      "tip": "Panigazzi often sees lock-ups and sudden understeer on exit due to drivers trail-braking too aggressively or riding the exit kerb too hard. Short braking distances, modulated brake pressure, and smooth throttle application work better than aggressive inputs.",
+      "tipLabel": "Modulation Over Pressure"
+    },
+    {
+      "h2": "Rivazza-Variante: The Chicane That Catches Everyone"
+    },
+    {
+      "p": "The chicane before the main straight (Turns 10–11) is deceptively easy to mess up. It's similar to Rivazza but faster and more flowing. Brake moderately into Turn 10, carry that brake deep into the corner, and modulate off as you approach the apex. The left-side kerb at Turn 10's exit is aggressive; riding it too hard will upset the balance heading into Turn 11. Instead, use it softly to tighten your radius and load the outside tyre."
+    },
+    {
+      "p": "Turn 11 entry requires rotation input; you're already turning when you need to transition directions. The brake should be completely off by Turn 10 apex. The right-side kerb at Turn 11's entry is rideable and helps tighten your radius. The exit kerb (left side) can be used more aggressively than Turn 10, and riding it helps load your inside tyre and gives you better traction for the straight. This is one of the few sections where aggressive kerb contact pays dividends."
+    },
+    {
+      "h2": "Braking Zones: Precise Brake Points for Consistency"
+    },
+    {
+      "olist": [
+        "San Donato (Turn 1): Brake from the 200-m board, full pressure by ~150 m. Speed at apex: ~100 mph (depending on car).",
+        "Rivazza Turn 2: Light trail-braking from ~80 m before the corner. Modulate brake pressure to ~50% as you approach the apex.",
+        "Acqua Minerale Turn 4: Brake from the 150-m board, full pressure by ~100 m. Rolling off brakes by Turn 4 apex.",
+        "Tosa (Turn 6): Brake from the 120-m board, full pressure by ~80 m. Most aggressive braking zone on track.",
+        "Panigazzi (Turn 8): Brake from the 100-m board, trail-brake to ~75 m from the corner. Modulated braking all the way to apex.",
+        "Rivazza-Variante Turn 10: Brake from the 100-m board, light trail-braking to the apex. ~60% brake pressure at apex."
+      ]
+    },
+    {
+      "tip": "Imola's braking zones are shorter than you'd expect, and modulated braking (trail-braking) is more effective than threshold braking at most corners. Load-cell pedals shine here; even a small pressure variance changes your balance mid-corner. I find that easing brake pressure steadily as I turn yields better corner-exit grip than abrupt brake-offs.",
+      "tipLabel": "Load-Cell Advantage"
+    },
+    {
+      "h2": "Setup Considerations for Imola's Demands"
+    },
+    {
+      "p": "Imola's kerbs and mid-corner braking favor a setup that's responsive but not twitchy. I run a slightly softer front anti-roll bar than I would at a fast circuit like Spa, which helps manage the constant direction changes and mid-corner brake inputs. Brake bias is usually biased toward the rear more than at other circuits because Imola's corners are so technical; you're often still slowing mid-corner, and rearward brake bias helps rotate the car without over-slowing the front."
+    },
+    {
+      "p": "Damping (specifically bound and rebound) should favor medium-to-stiff settings to manage the kerb hits at Rivazza and Rivazza-Variante. Soft damping will allow the car to wallow over aggressive kerbs, killing mid-corner grip. My brake pressure curve is aggressive early (to generate peak deceleration quickly) but smooth in the modulation phase (to allow fine control during trail-braking). See my guide on <a href=\"brake-pressure-curves-iracing-series.html\">brake pressure curves</a> for the exact calibration process."
+    },
+    {
+      "h2": "Common Mistakes and How to Fix Them"
+    },
+    {
+      "list": [
+        "Over-braking at Acqua Minerale: Brake too hard into Turn 4 and you'll understeer into Turn 5. Solution: Brake earlier and lighter; modulate pressure smoothly between the two apexes.",
+        "Aggressive kerb riding at Rivazza: Riding the exit kerbs hard upsets the suspension for the next corner. Solution: Use kerbs for grip, not as track extensions. Light contact, not aggressive abuse.",
+        "Losing time at Panigazzi due to mid-corner braking issues: Trail-braking into the apex and losing grip mid-corner. Solution: Brake further away and modulate smoothly; let brake pressure bleed off naturally as you turn.",
+        "Losing traction out of Rivazza-Variante: Aggressive exit-kerb riding unloads the inside tyre. Solution: Use kerbs but keep weight on all four corners. Smooth throttle application, not aggressive power-down."
+      ]
+    },
+    {
+      "p": "Imola rewards precision and rhythm over raw pace. Spend time learning the modulation points—where brakes come off, where throttle builds, where kerbs help—and your lap times will drop consistently. The circuit is short enough that mistakes compound quickly, but technical enough that mastering its sections yields real performance gains."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the fastest line through Rivazza?",
+      "a": "Brake into Turn 2 from roughly 80 m before the corner, trail-brake to about 50% pressure as you approach the apex, ride the left-side exit kerb lightly to tighten your radius, then rotate aggressively for Turn 3. Use the right-side entry kerb at Turn 3 to load the outside tyre, but don't abuse it. The goal is carrying speed through both apexes as one flowing section, not braking hard and crawling through. Smooth modulation of brake pressure and progressive steering input work better than aggressive inputs."
+    },
+    {
+      "q": "Should I use the kerbs at Imola or avoid them?",
+      "a": "Use them, but intelligently. Kerbs are grip regulators at Imola, not shortcuts. Light-to-moderate kerb contact helps load tyres and tighten radius; aggressive contact upsets suspension and loses grip mid-corner. Rivazza-Variante exit kerbs are the exception—riding them aggressively helps. Panigazzi and Acqua Minerale exit kerbs should be avoided or used very lightly. Always prioritize smooth weight transfer over aggressive kerb usage."
+    },
+    {
+      "q": "What brake bias and pressure curve do you recommend for Imola?",
+      "a": "I run rear brake bias about 2–3% higher than my baseline (roughly 52–53% rear on most GT3 cars) because Imola's mid-corner braking and technical corners demand rotation. Brake pressure curve should be aggressive early (steep initial ramp to peak pressure) but smooth in the modulation phase. Calibrate using load-cell pedal feel; you want fine control during trail-braking, which means gradual pressure changes are better than sharp on-off inputs. Test on slower corners first (Panigazzi, Acqua Minerale) before committing to the main braking zones."
+    },
+    {
+      "q": "How do I stop losing time at Tosa and Piratella?",
+      "a": "Tosa is lost to over-braking. Brake earlier and lighter, then let the car roll through the corner. Piratella shouldn't need much braking at all—just let the car settle out of Tosa and carry speed. Both corners benefit from smooth steering input and progressive throttle rather than aggressive braking or mid-corner adjustments. If you're losing grip, you're probably still on the brakes too hard. Decelerate before Tosa, then focus on smooth inputs and throttle management through both corners."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2"
+  ],
+  "published": "2026-10-12",
+  "dateLabel": "October 12, 2026"
+}

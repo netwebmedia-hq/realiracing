@@ -1,0 +1,131 @@
+{
+  "slug": "strength-of-field-iracing-explained",
+  "tag": "iRacing Tips · Ratings",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Understanding Strength of Field in iRacing: What SOF Really Means",
+  "description": "Strength of Field (SOF) determines your iRacing incident and safety rating gains. Learn how it's calculated and why racing weak fields costs you more mistakes.",
+  "sections": [
+    {
+      "p": "Strength of Field—or SOF—is the stat that quietly decides whether finishing a tough race nets you safety rating or costs you a grid position. Most drivers glance at it after the session ends, if at all. But SOF directly shapes how much risk you can afford to take, how much a spin costs you, and whether your iRating climbs or stalls. On my MOZA R9 rig, I've learned the hard way that understanding SOF changes how you approach every session: it's the difference between a calculated pass and a reckless one."
+    },
+    {
+      "p": "The core truth is simple—iRacing rewards you most when you race drivers better than you, and punishes you hardest when you race drivers worse than you. SOF is the engine behind that logic. Miss that, and you'll chase small iRating gains in weak fields while bleeding safety rating, or you'll avoid competitive fields and plateau. This guide explains what SOF is, how it's calculated, and how to use it to make faster progress without grinding through months of low-field racing."
+    },
+    {
+      "h2": "What Strength of Field Actually Measures"
+    },
+    {
+      "p": "Strength of Field is iRacing's way of measuring the average iRating of everyone who participated in a race. The higher the SOF number, the stronger the competition. A ~2500 SOF session is competitive and hostile; a ~1500 SOF session is a rookie field; anything below ~1000 is likely lightly populated or entirely new drivers."
+    },
+    {
+      "p": "iRacing publishes SOF after the session ends, and it factors into both your iRating and safety rating adjustments. The key: your gain or loss is scaled by how strong that field was. Beat a field of iRating 3000+ drivers and you gain meaningful iRating. Finish well in a field averaging iRating 1200 and your gain is minimal—maybe +3 iRating—because iRacing assumes you were favored. Conversely, a wreck in that weak field hits your safety rating harder than the same wreck in a ~2500 SOF race, because you had every advantage."
+    },
+    {
+      "tip": "SOF is published immediately after a race ends in the session results. If you're tracking iRating progress, note it every time—it's the context you need to understand whether your gain was real or just a weak field.",
+      "tipLabel": "Track SOF with every finish"
+    },
+    {
+      "h2": "How SOF Affects Your iRating Gains"
+    },
+    {
+      "p": "The iRating system is a zero-sum ladder. Every point you gain, someone else loses. When you finish third in a strong SOF field, iRacing redistributes iRating from other competitors to you. But the pool is different depending on field strength."
+    },
+    {
+      "list": [
+        "High SOF (2500+): A single second-place finish can net you +30 to +60 iRating, depending on your current rating relative to the field.",
+        "Medium SOF (1800–2200): Top finishes typically earn +15 to +30 iRating. Most competitive series hover here.",
+        "Low SOF (below 1200): A win might earn you +5 to +12 iRating. The field is too weak to reward you meaningfully.",
+        "Losses scale inversely—a DNF or bad finish costs you more iRating in weak fields because you were expected to win."
+      ]
+    },
+    {
+      "p": "This is why <a href=\"best-sim-racing-wheels-iracing.html\">many drivers focus on consistency in competitive series</a> rather than chasing wins in thin fields. A few strong finishes in high-SOF races build your rating faster than grinding race after race in a weak series where you're favored and every mistake is magnified by the rating system."
+    },
+    {
+      "h2": "SOF and Safety Rating: The Invisible Penalty"
+    },
+    {
+      "p": "The safety rating hit from incidents is also modulated by SOF, but in a way that surprises most drivers. A wreck with 15 other drivers is worse in a weak field than in a packed competitive session—because iRacing assumes you had better control of the situation."
+    },
+    {
+      "p": "If you spin out trying a risky pass in a ~2000 SOF race, you lose safety rating based on the incident type and severity. But if you spin out in a ~900 SOF field with five other drivers, the same incident can cost you more safety rating percentage-wise. The logic: you had every advantage, and you still wrecked. That suggests carelessness, not bad luck."
+    },
+    {
+      "tip": "A weak field is not a license to experiment. Your safety rating suffers more heavily from mistakes when you're the favorite. Save the aggression for strong-field races where calculated risk-taking is expected.",
+      "tipLabel": "Weak fields punish mistakes harder"
+    },
+    {
+      "h2": "Reading SOF Before You Enter a Session"
+    },
+    {
+      "p": "You can't see SOF before you enter a session—it's only calculated after the race ends. But you can infer it. Look at how many drivers are registered and when the race runs. Peak-time races in popular series (like the Porsche Cup or F2 Sprint races) average ~2200–2800 SOF. Odd-hour sessions or less popular cars average ~1200–1600."
+    },
+    {
+      "p": "Rookie series and lower-license classes pull thin fields with SOF in the 800–1400 range. That doesn't make them useless—learning car control and racecraft with low consequences is valuable—but don't expect massive iRating jumps. A race car driver doesn't measure progress by crushing club racing; they measure it by results in competitive fields."
+    },
+    {
+      "list": [
+        "Peak-time races (6–10 PM in your region): ~2200–2800 SOF",
+        "Off-peak competitive series (noon–4 PM): ~1600–2100 SOF",
+        "Seasonal/niche cars (prototype, vintage, oddball builds): ~1000–1500 SOF",
+        "Rookie series and D-class: ~700–1200 SOF"
+      ]
+    },
+    {
+      "h2": "Why SOF Matters for Your Progression"
+    },
+    {
+      "p": "The players climbing the iRating ladder fastest aren't grinding weak fields for easy wins. They're finding the highest-SOF races they can reasonably compete in and finishing top-five consistently. A top-five in a ~2500 SOF race gets you to ~3000 iRating much faster than ten podiums in a ~1200 field."
+    },
+    {
+      "p": "This also ties directly to the racing itself. When you're on a MOZA R9 rig with <a href=\"moza-r9-iracing-settings.html\">proper FFB tuning</a>, you're learning car behavior and feedback. That learning accelerates in high-SOF fields because the competition is sharper and the gaps tighter. You're also building habits—defensive lines, brake markers, smooth inputs—that stick with you. Rack up 20 races in a weak field with sloppy driving and you've reinforced bad habits. Rack up five races in a competitive field with focused, clean racing and you've cemented good ones."
+    },
+    {
+      "h2": "Balancing Learning and Rating Progress"
+    },
+    {
+      "p": "New drivers should not jump straight into ~2500 SOF races. The value of finishing in a strong field depends on not crashing. If you're a C-class driver with ~1400 iRating, a strong SOF road race might have 8–10 cars above iRating 2000. One collision with a faster driver costs you far more iRating than a win in a weak field earns you, and worse, you get nothing from the race except a damaged safety rating."
+    },
+    {
+      "p": "The sweet spot is racing fields where your iRating is around the median or slightly below. A ~1800 iRating driver in a ~2000 SOF race is positioned well: you're racing people better than you, but not so far out of your depth that one mistake erases a season of progress. As you improve, your ideal SOF creeps up. At ~2200 iRating, you're aiming for ~2300–2600 SOF races."
+    },
+    {
+      "tip": "Your target SOF should be 100–400 points higher than your current iRating. Any higher and you're favored to lose iRating; any lower and your gains are minimal.",
+      "tipLabel": "Find your ideal SOF range"
+    },
+    {
+      "h2": "The Long View: SOF and Seasonal Progression"
+    },
+    {
+      "p": "Over a full season, SOF variation averages out. A few weak-field wins and a couple of high-SOF top-fives blend into your overall iRating trend. But month to month, where you choose to race shapes your trajectory. Drivers who chase high-SOF races climb faster. Drivers who grind weak fields plateau or drop, because one wreck in a favorable field erases three weak-field wins in rating adjustment."
+    },
+    {
+      "p": "Track your SOF along with your results. After ten races, you'll see a pattern. If your average SOF is below 1600 and you're not seeing iRating movement, that's your signal to seek tougher fields. If your SOF averages 2400 and you're crashing regularly, it's time to focus on consistency and accept smaller iRating gains until your safety rating rises. The rating system is transparent once you understand SOF—it's not punishing you for lost races, it's rewarding you for the difficulty of the competition you chose."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I see Strength of Field before I enter a race session?",
+      "a": "No. SOF is calculated and published only after the race ends, based on all drivers who actually participated. You can estimate it by looking at typical entry counts for that series and time of day, but you won't know the exact number until results are posted."
+    },
+    {
+      "q": "Why did I lose iRating after a second-place finish?",
+      "a": "If the SOF was low enough—typically below 1000—and your iRating is much higher than the field average, iRacing can assign a net loss even for a strong finish. You're expected to win, so the system redistributes your iRating to the field. This is rare for competitive drivers but common when high-rated players drop into rookie or lowly-populated series."
+    },
+    {
+      "q": "How much does one high-SOF race affect my overall iRating?",
+      "a": "A single top-five finish in a ~2500 SOF race typically moves your iRating by +30 to +60 points, depending on your current rating and how you ranked relative to the field. Over time, consistent high-SOF results add up much faster than grinding weak fields."
+    },
+    {
+      "q": "Should I avoid low-SOF races entirely?",
+      "a": "No. Low-SOF races are valuable for learning new tracks or cars without the pressure of a steep iRating penalty. But don't treat them as your primary progression path. Use them to build confidence, then move to competitive fields where your improvements earn measurable iRating gains."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2"
+  ],
+  "published": "2026-10-12",
+  "dateLabel": "October 12, 2026"
+}

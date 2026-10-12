@@ -1,0 +1,158 @@
+{
+  "slug": "mid-ohio-speedway-iracing-setup-guide",
+  "tag": "Track Guides · Setup",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Mid-Ohio Speedway iRacing Guide: Setup, Lines, Braking Points",
+  "description": "Master Mid-Ohio's tight technical layout with detailed braking points, turn-in markers, and setup adjustments for consistent pace on this demanding road course.",
+  "published": "2026-10-12",
+  "dateLabel": "October 12, 2026",
+  "sections": [
+    {
+      "p": "Mid-Ohio Speedway is one of iRacing's best-kept technical challenges. It's not a high-speed destination like Road America or a character-driven road course like Road Atlanta—it's pure, grinding precision. The track punishes late apexes and inconsistency in a way that feels immediate and honest. I've spent enough laps there to know that a tenth of a second lost in Turn 5 or a sloppy mid-corner adjustment at Turn 10 will compound by lap's end. This guide covers my approach to the track: how I've tuned the MOZA R9 and CRP2 setup, where the critical braking points live, and how to thread the needle through Mid-Ohio's tightest sections."
+    },
+    {
+      "p": "Mid-Ohio rewards smooth inputs and rewards them hard. The track is 2.258 miles of constant small corrections, weight transfers, and throttle precision. There's no place to coast or zone out. If you're used to high-speed road courses, expect a mental shift—Mid-Ohio demands active steering and brake modulation every single lap."
+    },
+    {
+      "h2": "Track Layout and Key Characteristics"
+    },
+    {
+      "p": "Mid-Ohio's layout is a series of tight-to-medium corners linked by short straights. The two real passing zones are the run into Turn 1 and the approach to the chicane at Turns 9–10. Everything else is about managing space and hitting your marks. The track is relatively narrow compared to other iRacing road courses, and curb usage is critical—you want to exploit the inside kerb on technical corners without losing grip or bottoming out."
+    },
+    {
+      "list": [
+        "Turn 1 (hairpin): Heavy braking zone; late apex and easy throttle exit to set up Turn 2",
+        "Turns 2–3 (Carousel): High-speed esses; maintain momentum and clip the kerbs early; easy to lose it here if you're greedy",
+        "Turn 5: Technical right-hand corner; very easy to miss the apex; mid-corner lift often necessary",
+        "Turns 6–7 (Keyhole): Slow-speed, high-steering-angle sequence; requires patience and smooth steering",
+        "Turn 9–10 (Chicane): Braking zone before the chicane; clip both kerbs on entry; throttle hard onto the straight",
+        "Turn 11–12 (Final Complex): Quick left-right into the main straight; get this right and you carry momentum to the braking zone"
+      ]
+    },
+    {
+      "h2": "Braking Points and Turn-In Markers"
+    },
+    {
+      "p": "Mid-Ohio's braking is all about precision. The straights are short enough that trail braking is your primary tool; very few corners reward a hard-and-straight brake to turn-in. I use the start of the painted curbing or small details in the trackside environment as turn-in markers, since Mid-Ohio lacks major grandstands or obvious visual cues."
+    },
+    {
+      "list": [
+        "<strong>Turn 1:</strong> Brake at the end of the long straight, just before the 100-meter board. Trail brake deep, aiming for a late apex. Let the car settle before mid-corner, then light throttle to set up Turn 2.",
+        "<strong>Turn 5:</strong> Brake as you crest the hill; the track drops and visibility is limited. Turn in early (earlier than you think), clip the apex, and be prepared to lift mid-corner if the car is loose. This is where lap times are lost.",
+        "<strong>Turn 6 (Keyhole entry):</strong> Light tap on the brakes; this is a low-speed corner where steering input and line precision matter more than brake force. Smooth in, smooth out.",
+        "<strong>Turn 9 (Chicane entry):</strong> Steady brake pressure; trail brake slightly into the apex. Be smooth—excessive brake pressure or late-apex attempts cost you the chicane entirely.",
+        "<strong>Turn 11:</strong> Minimal braking; this should be a quick weight transfer. Clip the inside kerb and stand on the throttle onto the straight."
+      ]
+    },
+    {
+      "tip": "Mid-Ohio rewards left-foot braking, especially with load-cell pedals. I trail brake into Turns 1, 5, and 9 with my left foot already prepping throttle input. It cuts a tenth of a second out of corner exit and reduces mid-corner instability.",
+      "tipLabel": "Left-Foot Braking Edge"
+    },
+    {
+      "h2": "MOZA R9 Force Feedback Tuning"
+    },
+    {
+      "p": "On my rig, I run the R9 at ~9 N·m peak torque, but I dial down the overall strength significantly for Mid-Ohio. The track's constant steering input and tight radius corners mean that heavy FFB fatigues your arms without adding precision. I tune for clarity and response, not brute force."
+    },
+    {
+      "list": [
+        "Peak torque: ~7–8 N·m (using iRacing's 80–85% slider)",
+        "Minimum force: ~10–15% (prevents dead center and keeps road texture present)",
+        "Damping: ~15–20% (reduces arm fatigue from constant steering corrections; high damping feels numb here)",
+        "FFB from steering: 1.0 (full lock-to-lock response; Mid-Ohio's line precision demands it)",
+        "Friction: ~5–8% (just enough to settle the wheel between inputs)"
+      ]
+    },
+    {
+      "p": "What I'm looking for on the R9 is the ability to feel throttle response and mid-corner weight shift instantly. Mid-Ohio's corners are tight enough that you're constantly micro-correcting steering; if the FFB lag or feels numb, you'll overdrive it. The wheel should feel <strong>responsive and communicative</strong>, not heavy."
+    },
+    {
+      "h2": "CRP2 Load-Cell Brake Calibration"
+    },
+    {
+      "p": "My CRP2 pedals are set up for trail braking, which is essential at Mid-Ohio. I use a <a href=\"load-cell-brake-calibration-consistent-braking.html\">progressive brake curve</a> that gives me fine modulation below ~50% pedal travel and heavier braking force at full press. This lets me dose brake pressure into corners without overcommitting."
+    },
+    {
+      "olist": [
+        "Calibrate pedals with zero load and full press recorded cleanly",
+        "Set brake pressure curve to ~50% at 50% pedal travel, ~75% at 75% travel, ~100% at full press",
+        "Test in practice; if you're locking wheels easily, soften the curve or increase brake bias",
+        "Fine-tune pressure curve until you can trail brake Turn 1 and Turn 5 without locking"
+      ]
+    },
+    {
+      "p": "Mid-Ohio uses only slight brake bias adjustments. I start at 55% front, then adjust ±1–2% based on whether I'm locking fronts or rears in the heavy braking zone. The track's constant low-speed technical corners mean you're rarely at maximum brake force, so bias tuning is less critical than at a high-speed circuit like Spa."
+    },
+    {
+      "h2": "Setup Baseline Adjustments"
+    },
+    {
+      "p": "I begin with iRacing's baseline setup and make small, targeted changes. Mid-Ohio doesn't demand aggressive anti-roll bar or suspension changes; it rewards a relatively neutral, predictable platform. Overstiff setups cause mid-corner slides on the technical sections; too soft, and you'll understeer in Turns 2–3."
+    },
+    {
+      "list": [
+        "<strong>Front anti-roll bar:</strong> Start ~1–2% stiffer than baseline; Mid-Ohio is front-heavy in terms of steering feel and mid-corner turn-in",
+        "<strong>Rear anti-roll bar:</strong> Keep near baseline or slightly softer; this helps maintain rear stability through the Keyhole and Carousel",
+        "<strong>Front camber:</strong> Slightly negative (e.g., –2.0°); helps mid-corner grip without causing excessive understeer on the straights",
+        "<strong>Brake bias:</strong> 55–56% front; adjust after practice based on locking tendency",
+        "<strong>Differential:</strong> Keep standard; Mid-Ohio's low-speed corners don't demand aggressive diff tuning"
+      ]
+    },
+    {
+      "p": "If you find yourself struggling with mid-corner understeer in Turns 5 or 6, don't jump to anti-roll bar changes. First, check your line and throttle application. Nine times out of ten, understeer at Mid-Ohio is a driver input issue, not a setup deficit."
+    },
+    {
+      "tip": "Mid-Ohio is unforgiving to setup changes. Make one adjustment per session, test 2–3 laps, then evaluate. A 2% ARB increase might sound tiny but often moves the sweet spot, and overshooting is easy. This is not a track where you dial in a 'perfect' setup and run all night—it's an ongoing conversation between driver input and car balance.",
+      "tipLabel": "Setup Iteration Discipline"
+    },
+    {
+      "h2": "Racecraft and Traffic Management"
+    },
+    {
+      "p": "Mid-Ohio's narrow layout and short straights make passing risky. The real battle is qualifying and nailing the first lap. If you're chasing a car on track, your best move is usually Turn 1 or the chicane run—anywhere else, you're fighting for scraps. On defense, use your setup advantage or superior mid-corner speed to hold position through Turns 2–3 and the Keyhole. Don't overdrive the brake into Turn 1 if you're leading; a safe, smooth entry preserves your advantage."
+    },
+    {
+      "p": "In longer races, <a href=\"tire-management-strategy-iracing.html\">tire management</a> and fuel discipline matter more than speed. Mid-Ohio is relentless; hot tires and fuel load will hurt your pace significantly over a stint. Plan your strategy around pit window timing, not track position alone."
+    },
+    {
+      "h2": "Practice Routine and Performance Benchmarks"
+    },
+    {
+      "p": "When I arrive at Mid-Ohio in a new car or series, I spend the first 10–15 minutes just driving the line without worrying about lap time. Mid-Ohio's precision is mental as much as physical. Once I'm comfortable, I'll commit to brake zones and push mid-corner speed. Then I'll spend another 10 laps tuning the setup and another 5–10 nailing consistency."
+    },
+    {
+      "list": [
+        "Laps 1–5: Learn the line, commit to braking points, no setup changes",
+        "Laps 6–15: Light setup adjustments (ARB, brake bias) based on feel",
+        "Laps 16–25: Full fuel load; practice race pace and tire management",
+        "Final 10 laps: Qualifying simulation; single lap pace test with fresh tires"
+      ]
+    },
+    {
+      "p": "Lap-time progression at Mid-Ohio is often slow. A tenth per 5 laps is normal, and plateau phases (where your times hover for 10+ laps) are common as you refine inputs. Don't get frustrated; the track demands repetition."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the biggest setup mistake at Mid-Ohio?",
+      "a": "Running too much anti-roll bar stiffness. Mid-Ohio's slow-speed corners need compliance and feel, not raw stiffness. Drivers often think an 'up' car setup (stiffer bars, lower springs) will help precision, but it actually makes the car nervous and unpredictable. Start soft, add anti-roll bar in small increments, and stop when the car feels planted."
+    },
+    {
+      "q": "Should I use left-foot braking at Mid-Ohio?",
+      "a": "Yes, strongly recommended, especially with load-cell pedals like the CRP2. Left-foot braking cuts your transition time between brake and throttle by nearly 100 milliseconds per corner. Mid-Ohio has so many small corners in sequence that this time saving computes to several tenths per lap. It does take practice—start with Turn 1 and Turn 5, then expand to other corners once you're confident."
+    },
+    {
+      "q": "What's the ideal brake bias at Mid-Ohio?",
+      "a": "Start at 55% front and adjust from there based on locking. If you're locking front wheels in heavy braking (Turn 1), reduce bias to 54%. If rears lock, increase to 56%. Mid-Ohio's braking zones are short and don't demand aggressive bias adjustments like high-speed tracks do. Most cars will be competitive anywhere in the 54–56% range."
+    },
+    {
+      "q": "How do I stop losing time in Turn 5?",
+      "a": "Turn 5 is the most common lap-time leak at Mid-Ohio. The issue is usually arriving at the corner too hot or overshooting the apex. Practice a later turn-in point (not earlier), hold steady throttle mid-corner, and accept that you'll need to back out slightly if the car is loose. Mid-Ohio rewards patience here; a +0.1-second mid-corner lift often saves 0.3 seconds at the exit because you're not fighting oversteer. Record a few laps with telemetry and compare your steering angle and throttle input to faster drivers."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2"
+  ]
+}

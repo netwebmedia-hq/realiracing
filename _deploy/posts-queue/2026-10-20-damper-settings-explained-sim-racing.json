@@ -1,0 +1,174 @@
+{
+  "slug": "damper-settings-explained-sim-racing",
+  "tag": "Setup Guides · Suspension",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Damper Settings Explained: What Actually Changes Your Feel",
+  "description": "Dampers control how fast your suspension moves. Learn what bump and rebound do, why they matter to your lap times, and how to tune them on your rig.",
+  "sections": [
+    {
+      "p": "When I first started tuning setups in iRacing, dampers mystified me. The menus show bump and rebound, sometimes split into low-speed and high-speed, and I had no intuition for what turning them up or down would actually do to my car. I'd make a change, go a lap, feel nothing, and give up. The problem wasn't the dampers—it was that I was thinking about them wrong. Dampers don't add stiffness like springs do; they slow down how fast your suspension can compress and extend. That tiny difference in concept makes all the difference in how you should approach tuning them."
+    },
+    {
+      "p": "On my MOZA R9 setup, I can feel damper changes through the wheel if the change is big enough, but it's subtle. The real effect shows up in lap time consistency, stability on corner entry, and how predictable the car feels under load. Once I understood what dampers actually do—and stopped overthinking the engineering—tuning them became something I could approach logically instead of by guesswork."
+    },
+    {
+      "h2": "What Dampers Actually Do (In Plain Terms)"
+    },
+    {
+      "p": "A damper is a shock absorber. When your suspension compresses—like hitting a bump or turning into a corner—the damper resists that compression. When your suspension extends back out, the damper resists that too. The resistance slows the motion down."
+    },
+    {
+      "p": "Think of it like pushing a door that has a hydraulic closer on it. Push fast, and the door fights back hard. Push slow, and it gives way more easily. Dampers work the same way: the faster the suspension tries to move, the more resistance it creates. That's the key insight—dampers are speed-sensitive, not position-sensitive."
+    },
+    {
+      "list": [
+        "<strong>Bump damping</strong> — resists compression (suspension moving upward when compressed)",
+        "<strong>Rebound damping</strong> — resists extension (suspension moving downward when extending back)",
+        "<strong>Low-speed damping</strong> — applies to slow, steady suspension movement (like a gradual weight transfer into a corner)",
+        "<strong>High-speed damping</strong> — applies to fast, sudden movement (like hitting a kerb or a sharp bump)"
+      ]
+    },
+    {
+      "tip": "Dampers don't change how far your suspension moves—springs do that. Dampers change how fast it moves. Stiffer dampers slow suspension movement; softer dampers allow it to move faster.",
+      "tipLabel": "The Core Concept"
+    },
+    {
+      "h2": "Why Dampers Matter to Your Lap Times"
+    },
+    {
+      "p": "Dampers affect three things that show up in lap time: chassis stability under transient load changes, tire consistency (especially over kerbs), and how confident the car feels entering a corner."
+    },
+    {
+      "p": "If your bump damping is too soft, your suspension compresses too quickly when you brake or turn in hard. The car dips, the front tires load up fast, and the balance can shift unexpectedly. This often feels like understeer that comes and goes, or a car that's hard to be smooth with. If it's too stiff, the suspension doesn't absorb bumps or kerbs well, and your tires bounce off the surface instead of staying planted."
+    },
+    {
+      "p": "Rebound damping affects how fast the suspension rebounds after compression. Too soft, and the car oscillates—it compresses, springs back up, compresses again—and the tires lose consistent contact. Too stiff, and the car feels planted but can become unresponsive, especially on the exit of corners where you need the inside wheels to unload quickly."
+    },
+    {
+      "p": "The sweet spot depends on the track, the car, and your driving style. A smooth driver can often run softer dampers because they're not exciting the suspension with sharp inputs. An aggressive driver needs stiffer dampers to prevent excessive movement and keep the car settled."
+    },
+    {
+      "h2": "Practical Tuning: How to Make Changes and Feel Them"
+    },
+    {
+      "p": "On my MOZA R9, large damper changes (like swinging from 5 to 15 on bump) are obvious through the wheel as a change in how settled or unsettled the car feels over kerbs. Small changes (5 to 7) are harder to isolate without telemetry comparison. Here's how I approach it:"
+    },
+    {
+      "olist": [
+        "Change one damper axis at a time — usually start with low-speed bump if the car feels unsettled mid-corner, or high-speed bump if it's bouncey over kerbs.",
+        "Change in increments of 2–3 points if you're making a directional guess, or 1 point if you're fine-tuning after identifying the problem.",
+        "Run the same lap 2–3 times to let the tires settle, then compare feel and lap time against your baseline.",
+        "Pay attention to specific corners: Does the car dive under braking? Bounce on exits? Feel nervous on turn-in? Match the symptom to the damper axis.",
+        "Use telemetry if available — watch suspension travel graphs to confirm whether the car is oscillating or bottoming out."
+      ]
+    },
+    {
+      "tip": "Start with a known baseline setup (from a setup shop or a fast sim racer in your split) rather than guessing from zero. Then make small, deliberate changes. This trains your instinct faster than random tuning.",
+      "tipLabel": "Baseline First"
+    },
+    {
+      "h2": "Low-Speed vs. High-Speed: When Each One Matters"
+    },
+    {
+      "p": "Not every car in iRacing offers split damping (low-speed and high-speed separate). Some only give you a single bump and rebound slider. But when it's available, the distinction is crucial."
+    },
+    {
+      "p": "<strong>Low-speed damping</strong> controls steady-state compression and extension—the gradual weight transfer as you build speed into a corner or unload as you accelerate out. It's the damping that affects how the car feels at normal driving speeds. If your car understeers into a corner, low-speed bump might be your culprit."
+    },
+    {
+      "p": "<strong>High-speed damping</strong> activates only during sharp, sudden suspension movement—hitting a kerb, running over bumpy asphalt, or a sudden direction change. If your car bounces over a bumpy section, high-speed bump is what controls that. If it wallows after a hard braking event, high-speed rebound might need adjustment."
+    },
+    {
+      "list": [
+        "Use low-speed to tune the car's general balance and response through a corner",
+        "Use high-speed to stop bouncing, oscillation, and harshness over specific track features",
+        "Start with low-speed tuned correctly, then use high-speed as a fine-tuning tool",
+        "If you only have one damper slider, treat it as low-speed tuning and accept that you'll have some compromise on high-speed events"
+      ]
+    },
+    {
+      "h2": "Common Symptoms and What They Usually Mean"
+    },
+    {
+      "p": "I keep a mental checklist of what to suspect when a setup feels off. It saves me from blindly scrolling through every parameter."
+    },
+    {
+      "list": [
+        "<strong>Car understeers into corners, especially sharp ones</strong> — Try increasing low-speed bump. The car is diving too much and the front tires are working too hard.",
+        "<strong>Car oversteers on exit or feels twitchy</strong> — Try increasing low-speed rebound. The rear is rebounding too fast and upsetting the balance.",
+        "<strong>Car bounces after hitting kerbs or bumps</strong> — Increase high-speed bump. The suspension is compressing and extending in oscillation.",
+        "<strong>Car feels nervous and unsettled but you're not hitting bumps</strong> — Could be low-speed dampers, but also check anti-roll bars and ride height first.",
+        "<strong>Rear end slides out unexpectedly mid-corner</strong> — Might be low-speed rebound too soft, but also check brake balance and diff settings.",
+        "<strong>Car feels overly stiff or wooden</strong> — Dampers might be too high everywhere, but more likely the springs or anti-roll bars are the real culprit."
+      ]
+    },
+    {
+      "p": "The trick is not to assume dampers are the problem first. Often, if a setup feels wrong, <a href=\"building-setup-from-iracing-baseline.html\">the baseline setup itself is off</a>, or you're chasing a symptom that's actually caused by springs, ride height, or brake bias. Change one thing, isolate the effect, then move on."
+    },
+    {
+      "h2": "A Real Example: Tuning Bump on a Road Course"
+    },
+    {
+      "p": "Let me walk through how I tuned dampers on the Lamborghini Huracán GT3 Evo at a road course. I started with a baseline setup from a fast driver in the series, low-speed bump at 8, high-speed bump at 6. The car felt stable mid-corner but had a nervous, unsettled feeling on turn-in at Apex 1 (a quick right-hand corner). The front would feel slightly grabby, then release, then grab again—not oscillating wildly, just enough to make me less confident."
+    },
+    {
+      "p": "I increased low-speed bump from 8 to 10. The car settled immediately. The turn-in was smoother, the front tires worked more consistently, and I gained ~0.15 seconds per lap just from that stability. I ran a few more laps and tried 11, but it started to feel a bit overdamped—like the suspension wasn't moving enough and the car was losing grip over small surface changes. I backed it to 10 and left it."
+    },
+    {
+      "p": "That's the process: symptom → hypothesis → change → feel → iterate. No magic, no equations—just deliberate observation and small, directed changes."
+    },
+    {
+      "h2": "Dampers on Fixed Cockpits vs. Motion Rigs"
+    },
+    {
+      "p": "On my fixed aluminum cockpit with the MOZA R9, damper changes translate through force feedback at the wheel. I feel the vibration and resistance through the rim, especially on high-speed bumps and kerbs. That feedback is genuine—it's coming from the car's physics, transmitted through the telemetry, and rendered by the wheelbase."
+    },
+    {
+      "p": "On a motion rig, you'd also feel damper effects through the rig's motion: a stiffer damper would mean less rig movement, softer dampers would allow more. But the principle is identical—you're tuning how fast the suspension can move, and the hardware is just showing you that in a different way."
+    },
+    {
+      "p": "Either way, trust the lap times and consistency more than the feel. A setup that feels smooth isn't always fastest, and the fastest setup isn't always the one that feels most dramatic."
+    },
+    {
+      "h2": "Final Tuning Checklist"
+    },
+    {
+      "list": [
+        "Start from a known baseline, not zero",
+        "Identify the specific symptom: unstable turn-in, bouncy exits, unsettled over bumps, or something else",
+        "Match the symptom to the damper axis (low-speed vs. high-speed, bump vs. rebound)",
+        "Make one change of 2–3 points",
+        "Run 3 clean laps to evaluate",
+        "Compare lap time and feel against the baseline",
+        "Adjust incrementally until the symptom improves without overcompensating",
+        "Use telemetry if available to confirm suspension behavior",
+        "Remember: dampers rarely solve a setup problem alone; they fine-tune one that's already close"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the difference between bump and rebound damping?",
+      "a": "Bump damping resists compression (suspension moving upward when pushed down). Rebound damping resists extension (suspension moving back down after compression). Higher bump keeps the car from diving under load; higher rebound keeps it from rebounding too quickly after compression."
+    },
+    {
+      "q": "How do low-speed and high-speed damping differ in practice?",
+      "a": "Low-speed damping controls steady-state suspension movement during normal cornering and weight transfer. High-speed damping activates only during sudden, sharp suspension movement like hitting a kerb or a sharp bump. Low-speed affects overall balance; high-speed prevents bouncing and oscillation over specific track features."
+    },
+    {
+      "q": "Why does my car feel better after I increase dampers, then worse if I increase them more?",
+      "a": "There's an optimal zone. Too soft, and the suspension oscillates and feels unsettled. Too stiff, and you lose grip over small surface changes and the car feels unresponsive. The sweet spot depends on the track, car, and your driving style. Small increments and consistent testing help you find it without overshooting."
+    },
+    {
+      "q": "Can damper settings alone fix a car that feels fundamentally wrong?",
+      "a": "Rarely. Dampers are a fine-tuning tool. If the setup is way off—fundamentally over or understeer-biased, too stiff or too soft overall—the problem is usually springs, anti-roll bars, or brake balance. Use dampers to dial in the last 5–10% after the bigger parameters are correct."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2"
+  ],
+  "published": "2026-10-12",
+  "dateLabel": "October 12, 2026"
+}

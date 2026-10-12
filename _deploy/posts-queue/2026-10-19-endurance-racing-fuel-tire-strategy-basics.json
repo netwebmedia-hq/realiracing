@@ -1,0 +1,148 @@
+{
+  "slug": "endurance-racing-fuel-tire-strategy-basics",
+  "tag": "iRacing Tips · Strategy",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Endurance Racing Fuel and Tire Strategy Basics for iRacing",
+  "description": "Learn how to balance fuel consumption, tire degradation, and pit stops to finish strong in endurance races on iRacing.",
+  "sections": [
+    {
+      "p": "Endurance racing on iRacing is a different animal than sprint racing. In a one-off qualifying lap, you're chasing every tenth and running on the edge. But in a 30-minute, two-hour, or six-hour race, the math changes completely. Fuel strategy and tire management become as important as raw pace—sometimes more so. I've lost races because I misjudged fuel consumption, and I've won them because I stayed patient with tires and let my competitors burn out."
+    },
+    {
+      "p": "The core tension in endurance racing is this: faster driving burns more fuel and wears tires quicker. Slower, smoother driving saves both but costs time. Your job isn't to find the fastest pace—it's to find the pace you can sustain for your entire stint, accounting for pit strategy. On my MOZA R9 setup, I spend most of my endurance practice laps tuning throttle smoothness and brake consistency rather than chasing apex perfection."
+    },
+    {
+      "h2": "Understanding Fuel Consumption in iRacing"
+    },
+    {
+      "p": "Fuel consumption in iRacing is tied to throttle application, engine load, and fuel mixture settings. Most cars let you adjust fuel mix (lean, standard, rich) in your setup or on-the-fly during the race. Running lean saves fuel but reduces power; running rich costs fuel but gives more stability and speed, particularly out of slow corners."
+    },
+    {
+      "p": "The first thing I do in any endurance series is run a fuel-consumption test. I'll run 10 laps at my target race pace with fuel mix set to standard, log my fuel used, and extrapolate. If the car uses ~0.8 kg of fuel per lap and the tank holds ~90 kg, I can run roughly 112 laps on a full tank. That number tells me everything: pit window, strategy options, and how much margin I have for errors or yellow flags."
+    },
+    {
+      "p": "Most drivers make one critical mistake here: they test fuel consumption at qualifying pace, not race pace. Qualifying might use 1.2 kg per lap, but race pace at 90% intensity might be only 0.85 kg per lap. Test at the speed you'll actually race, or you'll pit too early and lose time."
+    },
+    {
+      "list": [
+        "Run a 10-lap fuel test at your actual race pace before the event",
+        "Note fuel remaining after each lap to spot inconsistencies",
+        "Factor in yellows and safety cars—they change consumption patterns",
+        "Test fuel mix settings; lean saves fuel but risks handling issues",
+        "Leave a small margin (5–10% of tank) for unexpected traffic or mistakes"
+      ]
+    },
+    {
+      "tip": "When testing fuel consumption, run in clean air. Traffic changes how hard you need to work and skews your numbers. Run the same track conditions (time of day, weather) you'll race in; track temp affects fuel burn noticeably.",
+      "tipLabel": "Testing in Context"
+    },
+    {
+      "h2": "Tire Degradation and Stint Planning"
+    },
+    {
+      "p": "Tires in iRacing degrade realistically over the course of a stint. They start fresh and fast, peak after a few laps, then slowly lose grip. The degradation curve varies by car, track, and weather. In a GT3 car on a dry track, you might have a solid 20–25 laps before tires noticeably fall off. In something like a Formula car or on a high-wear track like Sebring, that window shrinks to 12–15 laps."
+    },
+    {
+      "p": "The trick is knowing when to pit. Pit too early and you waste a stop; pit too late and you lose time on worn tires and risk a safety car catching you out. My approach: aim to pit when my tire delta is roughly 0.5–0.8 seconds per lap slower than fresh tires. That's the point where a new set will gain you more time than you lose pit-stop time."
+    },
+    {
+      "p": "You can also run tires longer if you adjust your driving. Smoother inputs, earlier apex work, and lighter throttle application all reduce wear. On my R9 with the CRP2 pedals, I focus on progressive brake release and smooth throttle feed—less aggressive trail-braking and less over-steering through corners. It saves tires and fuel simultaneously."
+    },
+    {
+      "list": [
+        "Map tire life at race pace during practice; most cars have 15–25 lap windows",
+        "Plan pit stops to align with fuel and tire cycles when possible",
+        "Monitor tire temps and pressures; over-temp accelerates degradation",
+        "Understand track-specific wear: kerbs, curbing, and surface texture matter",
+        "Save slightly older tires for caution laps; save freshest for green-flag racing"
+      ]
+    },
+    {
+      "h2": "Building a Pit Strategy Around Driver Swaps"
+    },
+    {
+      "p": "In team endurance racing, pit strategy is about coordinating fuel, tires, and driver changes. The ideal scenario is a pit stop that handles all three: fuel up, change tires, swap drivers. But the real world (even in sim) doesn't work that cleanly. You might need to pit for fuel before tires are dead, or you might want to save a fresh tire set for a teammate's stint."
+    },
+    {
+      "p": "I usually work backward from the finish. If a race is 120 laps and I'm running with two drivers doing 60-lap stints, I know I can probably make two stops: one around lap 55–60 (driver one exits), one around lap 110–115 (driver two exits). Between those stops, I need to ensure fuel and tires both last. Sometimes that means running lean on fuel, or shorter tire cycles with more stops."
+    },
+    {
+      "olist": [
+        "Calculate total laps and divide by number of drivers and realistic stint length (usually 45–90 laps depending on series)",
+        "Map fuel and tire consumption for each stint independently—drivers have different efficiency",
+        "Plan major stops around driver changes; minor fuel stops between if needed",
+        "Build in buffer for yellows: assume one or two caution periods will force unscheduled stops",
+        "Communicate pit strategy clearly: your crew (or your teammate) needs to know the plan before the race starts"
+      ]
+    },
+    {
+      "tip": "Shorter stints aren't always better. A 60-lap stint with two full-service pit stops might lose more time in the pits than a 90-lap stint with one stop, even if you're running older tires at the end. Map the total time including pit duration.",
+      "tipLabel": "Pit Time Math"
+    },
+    {
+      "h2": "Real-World Adjustments During the Race"
+    },
+    {
+      "p": "No matter how much you plan, endurance races throw curveballs. A yellow flag changes everything. A teammate spins and costs you a lap. You get caught in traffic and burn extra fuel. The key is staying calm and adjusting on the fly."
+    },
+    {
+      "p": "If fuel becomes tight, I gradually lean out the fuel mix and adjust my pace slightly. I'm not talking about drastically slowing down—that defeats the purpose—but lifting 1–2% earlier on straights or coasting into braking zones slightly earlier. Over a 20-lap stint, that can save 2–3 kg of fuel with minimal lap-time loss."
+    },
+    {
+      "p": "If tires degrade faster than expected (usually because I was too aggressive early or the track got hotter), I'll adjust my driving to be smoother and plan an earlier pit stop. Better to pit one lap early than lose a tenth per lap for five laps trying to stretch it."
+    },
+    {
+      "p": "Safety cars are your friend in endurance racing, even though they feel frustrating. A caution gives your tires a break, cools your car, and can align your pit strategy perfectly. Use them to pit for fuel and fresh tires when you might not have otherwise."
+    },
+    {
+      "list": [
+        "Build a pace buffer into your strategy; don't run at 100% of your capability early",
+        "Adjust fuel mixture on the fly if consumption is higher or lower than expected",
+        "Use yellow flags to make unplanned pit stops—it's usually faster than pitting under green",
+        "If you fall behind, don't panic and over-drive; smooth, consistent pace is still faster over distance",
+        "Communicate with teammates; one driver's adjustment affects the whole strategy"
+      ]
+    },
+    {
+      "h2": "The Mentality Shift: Pace vs. Consistency"
+    },
+    {
+      "p": "The hardest part of endurance racing isn't the strategy—it's the discipline to race smarter, not harder. Sprint racing trains you to hunt for lap time at all costs. Endurance racing asks you to give up 0.3 seconds now to save a pit stop later, or to lose 0.1 seconds a lap to save tire life and fuel."
+    },
+    {
+      "p": "When I'm in a long stint, I aim for lap-time consistency, not maximum pace. If my car is capable of 1:43 and I run 1:44 for 45 laps, I'm doing better than running 1:43, 1:45, 1:42, 1:46. The variance means I'm pushing and backing off, which damages tires and burns fuel erratically. Smooth inputs across 45 identical laps beats ten hot laps and thirty mediocre ones."
+    },
+    {
+      "p": "This is where the load cell on the CRP2 pedals and the tactile feedback from the MOZA R9 really help. The realistic FFB and pedal feel let me modulate brake pressure precisely and feel the throttle response. Over a long stint, that consistency wins races."
+    },
+    {
+      "tip": "Endurance racing exposes every weakness in your setup. If your seating position is uncomfortable or your pedal spacing feels off, a 30-minute stint becomes painful. Dial in your rig comfort before entering endurance series—that alone can shave 0.2–0.3 seconds per lap over distance.",
+      "tipLabel": "Setup Comfort Matters"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I know if I should pit for tires before they're completely worn?",
+      "a": "Pit when your lap times start falling off noticeably compared to your best laps on those tires. A good rule of thumb is when you're losing 0.5–0.8 seconds per lap compared to fresh rubber, or when tire temps are consistently high and pressure is climbing. Waiting until tires are critically worn costs you more time than a pit stop does."
+    },
+    {
+      "q": "What's the difference between fuel consumption at qualifying pace versus race pace?",
+      "a": "Qualifying pace is often 5–15% faster but much more aggressive and wasteful. At qualifying pace you're running rich fuel mix, braking late, accelerating hard, and maximizing engine load. At race pace you're smoother and more efficient, using significantly less fuel. Always test fuel consumption at the speed you'll actually race, not at qualifying pace, or your pit calculations will be wrong."
+    },
+    {
+      "q": "Should I run shorter or longer stints in a team endurance race?",
+      "a": "It depends on total pit time, driver efficiency, and track. Generally, aim to minimize the total number of stops. If a 60-lap stint requires two full-service stops and a 90-lap stint requires one, the 90-lap stint might be faster overall even with older tires at the end. Map out the pit math: total race laps divided by number of drivers, accounting for pit duration per stop."
+    },
+    {
+      "q": "How much should I adjust my driving if I'm running out of fuel?",
+      "a": "Make small, progressive changes: lean out fuel mix by one notch, lift off straights slightly earlier, and coast into braking zones 1–2 car lengths longer. These changes combined might save 1–2 kg of fuel over a 20-lap stint with minimal lap-time loss (under 0.1 seconds per lap). If you're desperate, pit earlier rather than drastically changing your pace, which can cause mistakes."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2"
+  ],
+  "published": "2026-10-12",
+  "dateLabel": "October 12, 2026"
+}

@@ -1,0 +1,168 @@
+{
+  "slug": "bristol-motor-speedway-iracing-guide",
+  "tag": "Track Guides · Oval Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Bristol Motor Speedway iRacing Guide: Setup, Line, Strategy",
+  "description": "Master Bristol's tight half-mile banking with proven setup tuning, throttle control, and fuel strategy tips for consistent iRacing oval racing.",
+  "sections": [
+    {
+      "p": "Bristol Motor Speedway is one of iRacing's most unforgiving half-mile ovals—tight, heavily banked, and physically demanding on both your rig and your nerves. I've run dozens of races here on my MOZA R9 setup, and what separates a clean race from a wall is not raw speed but consistency: smooth inputs, patient positioning, and respect for tire degradation over a 200-lap run. This guide covers the setup, racing line, and fuel strategy that have let me string together solid finishes at a track that punishes hesitation and aggression equally."
+    },
+    {
+      "h2": "Bristol Setup Fundamentals"
+    },
+    {
+      "p": "Bristol demands a setup that balances rear grip for exit acceleration with front-end stability to carry speed through the tight center of the corners. The banking (~16 degrees in the turns) helps, but it also means any imbalance gets amplified quickly. I start with an anti-roll bar bias slightly toward the rear—stiffer rear than front—to reduce tire slip on exit without killing mid-corner turn-in."
+    },
+    {
+      "list": [
+        "Front anti-roll bar: ~50-55 stiffness (depend on car; lighter setup helps low-speed turn-in)",
+        "Rear anti-roll bar: ~60-70 stiffness (more rear load for exit grip)",
+        "Brake bias: 53–56% front (Bristol is short, so heavy braking is short-duration; don't lock the rears)",
+        "Brake pressure: ~95-100% (use load-cell modulation for consistency; see my <a href=\"moza-crp2-brake-calibration-pressure-curves.html\">CRP2 brake calibration guide</a> for tuning feel)",
+        "Tire pressures: Start ~29 psi front / 30 psi rear; Bristol heats tires quickly, so plan to drop ~0.5 psi over a 200-lap stint",
+        "Downforce: Maximum front wing, minimal or zero rear wing (short track = low-speed, high-load corners; aero helps turn-in more than exit speed)"
+      ]
+    },
+    {
+      "tip": "Bristol gets hotter as the race goes on. I set my baseline pressures for mid-race (around lap 100) so I'm not chasing temps in the opening laps or overheating late. If you're struggling with push (understeer), dial in a slight front-wing reduction rather than playing with springs.",
+      "tipLabel": "Pressure Strategy"
+    },
+    {
+      "h2": "The Racing Line and Throttle Control"
+    },
+    {
+      "p": "Bristol's groove is narrow—maybe a car width in the preferred line through the center of the turns. Entry discipline matters more than mid-corner speed. Most drivers brake too late or trail brake unevenly, which makes them loose on the exit and forces them to save it with massive throttle input. That kills tire life and increases the chance of a spin or a hit."
+    },
+    {
+      "p": "My line through Bristol's turns is conservative on entry. I brake smoothly to a rolling stop, apex deep (around the mid-to-high point of the turn), and then smoothly unwind the wheel as I roll on throttle. The key: I never stab the throttle. It's a gradual feed, especially in laps 1–50 when the tires are cold and the track is slick. By lap 75, when grip is best, I can be more aggressive on the exit, but I'm still thinking 'smooth' over 'fast.'"
+    },
+    {
+      "olist": [
+        "Trail brake deep into the turn; let off brake pressure as you add steering input (this keeps weight on the front tires and prevents mid-corner push).",
+        "Apex mid-to-high in the corner (Bristol's banking helps you carry speed, so don't apex too late or you'll run out of exit real estate).",
+        "Roll on throttle in a gradual, continuous motion—think of it as a slider from 0% to 100%, not an on/off switch.",
+        "On the straights (short as they are), focus on clean throttle position and minimal steering adjustment. Any wiggle loses you lap time and tire life."
+      ]
+    },
+    {
+      "tip": "Practice left-foot braking if you haven't already. Bristol's short straights mean you're barely off throttle before you're braking again. Left-foot braking gives you finer throttle modulation on corner exit and cleaner entry without lifting completely. It's a skill worth drilling in practice.",
+      "tipLabel": "Left-Foot Braking Pays Off"
+    },
+    {
+      "h2": "Fuel and Tire Strategy"
+    },
+    {
+      "p": "Bristol is a fuel-mileage track. Most caution periods cost you money in terms of fuel strategy, so pit stops are planned carefully. I run the fuel map in iRacing to estimate consumption at my typical lap pace, then add ~5% buffer for safety."
+    },
+    {
+      "p": "For a 200-lap race at Bristol (common in iRacing), I typically pit around lap 80 and lap 160, taking 4-tire changes both times. The timing depends on fuel consumption, but the principle is: pit early enough that you're not in fuel-mileage mode for the final 50 laps, because that forces you to lift on straights and kill your exit speed on corner exits. Aggressive pit timing (lap 70, lap 145) also lets you run faster because you know you have fuel."
+    },
+    {
+      "list": [
+        "Fuel consumption: Log your lap time and fuel per lap in practice; most oval cars burn ~1.2–1.5 gallons/lap at race pace at Bristol.",
+        "Pit window: Aim to pit when you have ~2 laps of fuel left (that's a safety margin; empty tanks are embarrassing).",
+        "Tire cycles: Take 4 tires both stops; Wedge adjustments mid-race can help if you're loose or tight, but aggressive setup changes are risky in a race you can't reload after.",
+        "Track position: Bristol is tight, so track position matters. Pit when your fuel window allows, not when it's convenient; a few extra laps at full pace beats nursing fuel in the final 20 laps."
+      ]
+    },
+    {
+      "h2": "Tire Management and Tire Wear"
+    },
+    {
+      "p": "Tire degradation at Bristol is steady but not catastrophic if you're smooth. The real killer is corning loads—the tight radius combined with banking creates lateral tire slip that compounds. I monitor my tire wear in the telemetry overlay (I use Crew Chief, which gives me live wear data) and adjust my brake pressure or front anti-roll bar if I'm seeing uneven wear across the axle."
+    },
+    {
+      "p": "Uneven left-right wear (e.g., left tires much grainier than right) usually means either uneven brake pressure (a calibration issue with your load-cell pedals; check your <a href=\"moza-crp2-brake-calibration-pressure-curves.html\">CRP2 curves</a> if you use them) or a setup imbalance. Even wear means you're in the sweet spot: smooth inputs, balanced car, good tire life."
+    },
+    {
+      "list": [
+        "Cold lap one: Don't push hard. Let tires come in gradually over 5–10 laps. Bristol is short; you'll build speed naturally as grip improves.",
+        "Steady-state laps 20–80: This is your best lap-time window. Tires have grip, fuel is full, and you're not pit-stop planning yet. Log your pace here.",
+        "Post-pit laps 85–95: New tires are fast but overheated from the pit cycle. Don't overdrive; settle in after 5–10 laps.",
+        "Final laps 185–200: If you've been smooth, tires should be grainier but still usable. Adjust brake bias forward ~1–2% if you're locking up; adjust forward anti-roll bar stiffness if you're loose."
+      ]
+    },
+    {
+      "tip": "Bristol is unforgiving, so a grainier tire is often faster than a fresh one if you're smooth. Many drivers pit too early chasing new rubber and lose track position. Trust your line, trust your inputs, and stay smooth until your fuel window actually forces you to pit.",
+      "tipLabel": "Smooth Beats Fresh"
+    },
+    {
+      "h2": "Defending and Passing at Bristol"
+    },
+    {
+      "p": "Bristol's narrow groove means passing is either desperate or impossible. The preferred racing line is so tight that a following car has almost nowhere to go. This creates a unique dynamic: controlling the middle of the turn is king. A car in front that holds the low apron and rolls off the corner smoothly is very hard to pass, but a car that overdrives the entry and runs wide gives you an opening."
+    },
+    {
+      "p": "When defending, hold the low-to-mid line and trust your exit speed. If a faster car is behind you, aggressive defending (moving to block) usually backfires at Bristol because both of you crash. Instead, drive the best line you can, be smooth, and let them find room if they can find it. Patience wins races here."
+    },
+    {
+      "p": "When passing, look for a driver who's even slightly loose or who brakes a lap too early. Attack the outside in the turn and use your exit speed to complete the pass on the short straight. Patience is crucial—a half-turn pass attempt at Bristol ends in a wall. Wait for a mistake or a moment when the car ahead is managing fuel and lifted."
+    },
+    {
+      "h2": "Common Mistakes and How to Avoid Them"
+    },
+    {
+      "list": [
+        "<strong>Over-braking.</strong> Many drivers brake hard into every corner, which unsettles the car and forces a big throttle stab on exit. Brake earlier, trail brake smoothly, and modulate your exit. Your lap time and tire life improve.",
+        "<strong>Chasing setup changes.</strong> Bristol is a forgiving track if your baseline setup is reasonable. Wedge adjustments can help, but don't obsess. A small brake-bias tweak and patience beat constant setup fiddling.",
+        "<strong>Running out of fuel.</strong> Log your consumption. It's embarrassing to limp across the finish line on fumes or, worse, run out with 3 laps to go. Pit conservatively; track position isn't worth DNF.",
+        "<strong>Forgetting tire temps.</strong> Bristol heats tires fast. If you're overheating front tires (seeing fast pace lap 1 then immediate drop), your brake balance is too far forward or your entry speed is too high for the first stint.",
+        "<strong>Loose mid-corner.</strong> This is usually a result of trail-braking too long or adding too much steering lock. Apex earlier, brake earlier, and trust the banking to help you carry speed."
+      ]
+    },
+    {
+      "h2": "Practice Plan for Bristol"
+    },
+    {
+      "p": "Before you race, spend 20–30 minutes in practice learning the rhythm. Bristol is short, so lap feedback is immediate. Use that to your advantage."
+    },
+    {
+      "olist": [
+        "Lap 1–5: Install your baseline setup and focus on smooth, slow inputs. Feel the banking and the turn-in response.",
+        "Lap 6–15: Build pace gradually. Increase throttle intensity and brake depth as tires warm.",
+        "Lap 16–25: Hit your best lap time. Log telemetry (brake pressure, steering angle, throttle trace) so you can review after.",
+        "Lap 26–40: Simulate a pit stop. Exit the pits, run 10 laps at race pace, then assess how the car drives on new tires and hot brakes.",
+        "Lap 41+: Experiment with small setup tweaks (brake bias ±1%, anti-roll bar ±2–3 stiffness) and note the effect. One change at a time."
+      ]
+    },
+    {
+      "tip": "Bristol rewards consistency over bravery. A driver who can run 23 laps the same every lap beats a driver who runs 21s with 26-second outliers. Focus on replicating your best lap, not on single-lap heroics.",
+      "tipLabel": "Consistency Wins Bristol"
+    },
+    {
+      "h2": "Final Thoughts"
+    },
+    {
+      "p": "Bristol is a track where smooth inputs and patient pit strategy separate clean finishes from caution-flag chaos. The MOZA R9's direct-drive feedback has been invaluable for feeling when the rear is about to step out or when the front is pushing mid-corner; that instant feedback lets me back off fractionally before I create a problem. Pair that with load-cell precision on brake modulation—my CRP2 pedals give me the consistency I need to repeat the same entry speed lap after lap—and Bristol becomes a grind you can actually manage."
+    },
+    {
+      "p": "Run the line I've outlined, respect the fuel tank, and trust your tires. If you nail those three things, you'll run clean at Bristol and finish ahead of drivers who are faster on single laps but inconsistent over a 200-lap race."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the ideal brake bias at Bristol?",
+      "a": "I run 53–56% front bias. Bristol is short, so braking zones are brief. Too much brake bias toward the rear locks the rear tires easily on a short-radius turn. Go conservative, then adjust forward (+1%) if you're locking the front, or backward (–1%) if the rear is locking. Log your telemetry to see which wheels are locking, and let that guide your adjustment."
+    },
+    {
+      "q": "How many fuel stops for a 200-lap Bristol race?",
+      "a": "Two stops, typically around lap 80 and lap 160. Fuel consumption depends on your pace and fuel map, but most oval cars burn 1.2–1.5 gallons per lap at race speed. Log your consumption in practice, multiply by lap count, and add a 5% safety margin. Pit when you have 2 laps of fuel left in the tank."
+    },
+    {
+      "q": "Should I use left-foot braking at Bristol?",
+      "a": "Yes, if you can practice it without ruining your consistency. Left-foot braking gives you smoother throttle modulation on exit and cleaner mid-corner adjustments without lifting completely. Bristol's short straights mean you're braking and accelerating constantly, so left-foot technique reduces abrupt inputs. Spend 15 minutes in practice to build muscle memory before you race."
+    },
+    {
+      "q": "Why does my car feel loose mid-corner at Bristol?",
+      "a": "Loose mid-corner usually means you're trail-braking too long into the turn or adding too much steering lock before you're ready. Brake earlier, apex higher up the banking, and let the slope carry you through. If it persists, increase rear anti-roll bar stiffness by 2–3 points, or dial in 1–2% more brake bias forward to improve turn-in grip."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2"
+  ],
+  "published": "2026-10-12",
+  "dateLabel": "October 12, 2026"
+}
