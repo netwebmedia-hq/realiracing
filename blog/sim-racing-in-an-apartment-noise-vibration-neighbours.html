@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sim Racing in an Apartment: Noise, Vibration and Neighbours</title>
+  <meta name="description" content="Where a sim rig's noise really comes from, what travels through floors, and the fixes that kept my direct drive rig neighbour-friendly." />
+  <link rel="canonical" href="https://realiracing.com/blog/sim-racing-in-an-apartment-noise-vibration-neighbours.html" />
+  <meta property="og:title" content="Sim Racing in an Apartment: Noise, Vibration and Neighbours" />
+  <meta property="og:description" content="Where a sim rig's noise really comes from, what travels through floors, and the fixes that kept my direct drive rig neighbour-friendly." />
+  <meta property="og:url" content="https://realiracing.com/blog/sim-racing-in-an-apartment-noise-vibration-neighbours.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/wheel-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: concentric arcs turning about a centre" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/wheel-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261005" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Sim Racing in an Apartment: Noise, Vibration and Neighbours",
+    "description": "Where a sim rig's noise really comes from, what travels through floors, and the fixes that kept my direct drive rig neighbour-friendly.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/sim-racing-in-an-apartment-noise-vibration-neighbours.html",
+    "image": "https://realiracing.com/assets/photos/wheel-cover.jpg",
+    "datePublished": "2026-10-13",
+    "dateModified": "2026-10-13"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Sim Racing in an Apartment: Noise, Vibration and Neighbours","item":"https://realiracing.com/blog/sim-racing-in-an-apartment-noise-vibration-neighbours.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/sim-racing-in-an-apartment-noise-vibration-neighbours.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/sim-racing-in-an-apartment-noise-vibration-neighbours.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Sim Racing Cockpit / Wheel Stand","description":"a rigid mount matters more than the brand — flex kills FFB detail","url":"https://realiracing.com/blog/sim-racing-in-an-apartment-noise-vibration-neighbours.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is a direct drive wheel too loud for an apartment?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The motor itself is usually quiet. Most of the noise neighbours notice comes from vibration travelling through the floor from pedals and FFB knocks. Decoupling the rig from the floor fixes most of it." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best way to stop sim rig vibration reaching the floor?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Layer dense gym floor tiles under the whole rig and put anti-vibration pads under each cockpit foot. A plywood platform on rubber or foam also works well if you can use one." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do load cell pedals make more noise than potentiometer pedals?",
+      "acceptedAnswer": { "@type": "Answer", "text": "They tend to, because you press harder and the force goes into the cockpit and floor. Firmer elastomers at the end of travel and a decoupled base reduce the thump." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use bass shakers in an apartment?",
+      "acceptedAnswer": { "@type": "Answer", "text": "You can, but they are the hardest source to contain. Mount them to the seat, lower the low frequencies and limit them to daytime sessions." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Rig Guide · Home Setup</p>
+    <h1>Sim Racing in an Apartment: Noise, Vibration and Neighbours</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 13, 2026</span>
+      <span class="dot">·</span>
+      <span>8 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/wheel-cover.jpg" width="1000" height="563" alt="Cover art: concentric arcs turning about a centre" srcset="/assets/photos/wheel-cover-sm.jpg 560w, /assets/photos/wheel-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      <p class="article-lead">The first complaint I ever got about sim racing wasn't about the sound I could hear. It was a knock on the door after a late Wednesday stint at Spa, and a polite question about what the rhythmic thumping was. I was wearing headphones. I had no idea. That's the core problem with racing in an apartment: the noise that bothers other people is mostly not the noise you notice, and it travels through the structure, not the air.</p>
+
+      <p>This guide is what I learned fixing it on my own rig: a <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> direct drive base, <a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">CRP2</a> load cell pedals and a fixed aluminium-profile cockpit. None of it needs expensive gear, but it does need you to understand where the noise actually comes from.</p>
+
+      <h2>Airborne noise vs structure-borne noise</h2>
+
+      <p>There are two kinds of noise and they need different fixes. Airborne noise is what you hear in the room: fan whine, the click of paddle shifters, your own voice on team radio. It's mostly blocked by walls and closed doors. Structure-borne noise is vibration that gets into the floor and walls and is re-radiated as sound somewhere else, often in the flat below you. A heavy brake press, a base clunking through a kerb, a bass shaker bolted to the seat: these all go straight into the building.</p>
+
+      <p>Neighbours almost always complain about the second kind. A rig on a hard floor is basically a drum with you as the drummer.</p>
+
+      <h2>Where the noise on a sim rig comes from</h2>
+
+      <p>Before you buy anything, sit in the rig with headphones off and have someone stand in the next room, or better, below you if you can arrange it, while you do a few laps. On my setup the ranking was clear:</p>
+
+      <ol>
+        <li><strong>Pedals.</strong> Load cell brakes need real force, and every hard stop pushes the whole cockpit into the floor. The thud at the end of a long straight was the noise downstairs heard most.</li>
+        <li><strong>Wheelbase FFB transients.</strong> Kerb strikes and sharp road texture make a direct drive base knock. Through a rigid cockpit that becomes a low tap in the floor.</li>
+        <li><strong>Tactile transducers.</strong> Bass shakers are designed to shake the rig, so they shake the building too. If you have them, they're probably your loudest source.</li>
+        <li><strong>The base itself.</strong> A direct drive motor is quiet compared to a gear or belt wheel, but at high damping or friction settings some bases hum or buzz faintly.</li>
+        <li><strong>You.</strong> Shifting, button presses and talking. Easy to forget, easy to fix.</li>
+      </ol>
+
+      <h2>Fix one: decouple the rig from the floor</h2>
+
+      <p>This made the biggest difference for me by far. The goal is to stop vibration getting from the cockpit into the floor slab. Hard rubber feet alone don't do much. What worked was a layered base: interlocking gym floor tiles (the dense ~20 mm kind) under the whole rig, with anti-vibration pads under each cockpit foot on top of them. The tiles spread the load and absorb the brake thump; the pads take out the higher-frequency taps from the wheelbase.</p>
+
+      <p>Some people build a small platform: a sheet of plywood sitting on a layer of rubber or foam, with the rig bolted to the board. It works well because the mass of the board resists being moved. If you're renting and can't modify anything, the mats-plus-pads approach is fully reversible.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Quick test</span>
+        <p>Put a hand flat on the floor a metre from the rig while someone else brakes hard. If you can feel it, so can the flat below. Keep adding decoupling until you can't.</p>
+      </div>
+
+      <h2>Fix two: tame the pedals</h2>
+
+      <p>You don't need to brake softer, but you can stop the pedal deck from slamming. Check that the pedal plate is fully tightened to the cockpit; a loose plate rattles on every press. Elastomers that firm up the end of the brake travel also help, because the pedal decelerates into resistance instead of hitting a hard stop. On the CRP2 I run a firmer elastomer stack, and the end-of-travel thump is noticeably lower than with the softest setting.</p>
+
+      <p>If your pedals sit on the floor rather than on a cockpit, they're even more coupled to the building. Moving to a cockpit-mounted pedal plate on top of a decoupled base is one of the few upgrades that improves both driving and neighbour relations.</p>
+
+      <h2>Fix three: rethink your force feedback, slightly</h2>
+
+      <p>Most wheelbase knock comes from sharp, high-frequency effects: kerbs, road texture and collision spikes. You don't have to make the wheel feel numb to cut it down. A touch more damping and a little less road-effect intensity rounds off the spikes without losing the information you drive with. I covered the trade-offs in <a href="direct-drive-damping-friction-settings.html">direct drive damping and friction settings</a>; for apartment use I simply run a separate late-night profile with those effects lowered.</p>
+
+      <p>A rigid cockpit transfers more vibration than a flexy one, which is the opposite of what you want for feel. Keep the cockpit stiff (flex ruins FFB, as explained in <a href="rig-flex-and-wheelbase-mounting-ffb-feel.html">how rig flex and mounting change FFB feel</a>) and handle isolation at the floor instead.</p>
+
+      <h2>Fix four: shakers and late nights</h2>
+
+      <p>If you use tactile transducers, they need the most care. Mount them to the seat, never to the base frame where they couple straight into the floor, and turn the low frequencies down hard after a certain hour. Honestly, the simplest rule is to run them only during the day. Bass shakers are the one thing no amount of matting fully contains in an apartment.</p>
+
+      <h2>Fix five: the airborne bits</h2>
+
+      <p>Once the structure-borne noise is under control, the rest is easy. Close-back headphones keep game audio in. A quieter case fan curve on the PC helps in a small room. If you race with team radio, a cardioid mic close to your mouth lets you talk quietly. And a rug and some soft furnishings in the room cut the hard reflections that make everything sound louder.</p>
+
+      <h2>Talk to your neighbours before they talk to you</h2>
+
+      <p>This sounds soft, but it's the most effective step on the list. Tell the people below and next door what the setup is and when you usually race, and ask them to let you know if they hear anything. People are far more tolerant of a noise they understand than of a mystery thump at night. When my downstairs neighbour knew what it was, the conversation went from a complaint to them telling me which nights it was noticeable, which is exactly the feedback I needed to fix it.</p>
+
+      <h2>What it all costs you on track</h2>
+
+      <p>Surprisingly little. With the rig decoupled, a firmer brake stack and a slightly smoother night profile, my driving feels essentially the same. The base still tells me exactly what the tyres are doing, the brake is still consistent, and I can race a late split without worrying about the knock on the door. The only thing I genuinely gave up was running shakers after dark.</p>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&amp;tag=realiracing-20" data-aff="cockpit" target="_blank" rel="sponsored noopener">Sim Racing Cockpit / Wheel Stand</a></th><td>a rigid mount matters more than the brand — flex kills FFB detail</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>Is a direct drive wheel too loud for an apartment?</h3>
+        <p>The motor itself is usually quiet. Most of the noise neighbours notice comes from vibration travelling through the floor from pedals and FFB knocks. Decoupling the rig from the floor fixes most of it.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is the best way to stop sim rig vibration reaching the floor?</h3>
+        <p>Layer dense gym floor tiles under the whole rig and put anti-vibration pads under each cockpit foot. A plywood platform on rubber or foam also works well if you can use one.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do load cell pedals make more noise than potentiometer pedals?</h3>
+        <p>They tend to, because you press harder and the force goes into the cockpit and floor. Firmer elastomers at the end of travel and a decoupled base reduce the thump.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I use bass shakers in an apartment?</h3>
+        <p>You can, but they are the hardest source to contain. Mount them to the seat, lower the low frequencies and limit them to daytime sessions.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="anti-roll-bars-balance-shift-explained.html"><span>Setup Guides</span>Anti-Roll Bars and Balance: How ARB Stiffness Shifts Weight</a>
+      <a class="related-card" href="pc-bottlenecks-for-iracing-frame-times.html"><span>Hardware</span>PC Bottlenecks for iRacing: CPU, GPU, and Frame Time Consistency</a>
+      <a class="related-card" href="fuel-saving-technique-iracing.html"><span>Technique</span>Fuel Saving Technique on iRacing: Stretching a Stint Without Losing the Race</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","moza-crp2","cockpit"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
