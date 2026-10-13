@@ -1,0 +1,51 @@
+{
+  "slug": "sim-racing-in-an-apartment-noise-vibration-neighbours",
+  "tag": "Rig Guide · Home Setup",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "Sim Racing in an Apartment: Noise, Vibration and Neighbours",
+  "description": "Where a sim rig's noise really comes from, what travels through floors, and the fixes that kept my direct drive rig neighbour-friendly.",
+  "published": "2026-10-13",
+  "dateLabel": "October 13, 2026",
+  "gearKeys": ["moza-r9", "moza-crp2", "cockpit"],
+  "sections": [
+    {"p": "The first complaint I ever got about sim racing wasn't about the sound I could hear. It was a knock on the door after a late Wednesday stint at Spa, and a polite question about what the rhythmic thumping was. I was wearing headphones. I had no idea. That's the core problem with racing in an apartment: the noise that bothers other people is mostly not the noise you notice, and it travels through the structure, not the air."},
+    {"p": "This guide is what I learned fixing it on my own rig: a MOZA R9 direct drive base, CRP2 load cell pedals and a fixed aluminium-profile cockpit. None of it needs expensive gear, but it does need you to understand where the noise actually comes from."},
+    {"h2": "Airborne noise vs structure-borne noise"},
+    {"p": "There are two kinds of noise and they need different fixes. Airborne noise is what you hear in the room: fan whine, the click of paddle shifters, your own voice on team radio. It's mostly blocked by walls and closed doors. Structure-borne noise is vibration that gets into the floor and walls and is re-radiated as sound somewhere else, often in the flat below you. A heavy brake press, a base clunking through a kerb, a bass shaker bolted to the seat: these all go straight into the building."},
+    {"p": "Neighbours almost always complain about the second kind. A rig on a hard floor is basically a drum with you as the drummer."},
+    {"h2": "Where the noise on a sim rig comes from"},
+    {"p": "Before you buy anything, sit in the rig with headphones off and have someone stand in the next room, or better, below you if you can arrange it, while you do a few laps. On my setup the ranking was clear:"},
+    {"olist": [
+      "<strong>Pedals.</strong> Load cell brakes need real force, and every hard stop pushes the whole cockpit into the floor. The thud at the end of a long straight was the noise downstairs heard most.",
+      "<strong>Wheelbase FFB transients.</strong> Kerb strikes and sharp road texture make a direct drive base knock. Through a rigid cockpit that becomes a low tap in the floor.",
+      "<strong>Tactile transducers.</strong> Bass shakers are designed to shake the rig, so they shake the building too. If you have them, they're probably your loudest source.",
+      "<strong>The base itself.</strong> A direct drive motor is quiet compared to a gear or belt wheel, but at high damping or friction settings some bases hum or buzz faintly.",
+      "<strong>You.</strong> Shifting, button presses and talking. Easy to forget, easy to fix."
+    ]},
+    {"h2": "Fix one: decouple the rig from the floor"},
+    {"p": "This made the biggest difference for me by far. The goal is to stop vibration getting from the cockpit into the floor slab. Hard rubber feet alone don't do much. What worked was a layered base: interlocking gym floor tiles (the dense ~20 mm kind) under the whole rig, with anti-vibration pads under each cockpit foot on top of them. The tiles spread the load and absorb the brake thump; the pads take out the higher-frequency taps from the wheelbase."},
+    {"p": "Some people build a small platform: a sheet of plywood sitting on a layer of rubber or foam, with the rig bolted to the board. It works well because the mass of the board resists being moved. If you're renting and can't modify anything, the mats-plus-pads approach is fully reversible."},
+    {"tip": "Put a hand flat on the floor a metre from the rig while someone else brakes hard. If you can feel it, so can the flat below. Keep adding decoupling until you can't.", "tipLabel": "Quick test"},
+    {"h2": "Fix two: tame the pedals"},
+    {"p": "You don't need to brake softer, but you can stop the pedal deck from slamming. Check that the pedal plate is fully tightened to the cockpit; a loose plate rattles on every press. Elastomers that firm up the end of the brake travel also help, because the pedal decelerates into resistance instead of hitting a hard stop. On the CRP2 I run a firmer elastomer stack, and the end-of-travel thump is noticeably lower than with the softest setting."},
+    {"p": "If your pedals sit on the floor rather than on a cockpit, they're even more coupled to the building. Moving to a cockpit-mounted pedal plate on top of a decoupled base is one of the few upgrades that improves both driving and neighbour relations."},
+    {"h2": "Fix three: rethink your force feedback, slightly"},
+    {"p": "Most wheelbase knock comes from sharp, high-frequency effects: kerbs, road texture and collision spikes. You don't have to make the wheel feel numb to cut it down. A touch more damping and a little less road-effect intensity rounds off the spikes without losing the information you drive with. I covered the trade-offs in <a href=\"direct-drive-damping-friction-settings.html\">direct drive damping and friction settings</a>; for apartment use I simply run a separate late-night profile with those effects lowered."},
+    {"p": "A rigid cockpit transfers more vibration than a flexy one, which is the opposite of what you want for feel. Keep the cockpit stiff (flex ruins FFB, as explained in <a href=\"rig-flex-and-wheelbase-mounting-ffb-feel.html\">how rig flex and mounting change FFB feel</a>) and handle isolation at the floor instead."},
+    {"h2": "Fix four: shakers and late nights"},
+    {"p": "If you use tactile transducers, they need the most care. Mount them to the seat, never to the base frame where they couple straight into the floor, and turn the low frequencies down hard after a certain hour. Honestly, the simplest rule is to run them only during the day. Bass shakers are the one thing no amount of matting fully contains in an apartment."},
+    {"h2": "Fix five: the airborne bits"},
+    {"p": "Once the structure-borne noise is under control, the rest is easy. Close-back headphones keep game audio in. A quieter case fan curve on the PC helps in a small room. If you race with team radio, a cardioid mic close to your mouth lets you talk quietly. And a rug and some soft furnishings in the room cut the hard reflections that make everything sound louder."},
+    {"h2": "Talk to your neighbours before they talk to you"},
+    {"p": "This sounds soft, but it's the most effective step on the list. Tell the people below and next door what the setup is and when you usually race, and ask them to let you know if they hear anything. People are far more tolerant of a noise they understand than of a mystery thump at night. When my downstairs neighbour knew what it was, the conversation went from a complaint to them telling me which nights it was noticeable, which is exactly the feedback I needed to fix it."},
+    {"h2": "What it all costs you on track"},
+    {"p": "Surprisingly little. With the rig decoupled, a firmer brake stack and a slightly smoother night profile, my driving feels essentially the same. The base still tells me exactly what the tyres are doing, the brake is still consistent, and I can race a late split without worrying about the knock on the door. The only thing I genuinely gave up was running shakers after dark."}
+  ],
+  "faqs": [
+    {"q": "Is a direct drive wheel too loud for an apartment?", "a": "The motor itself is usually quiet. Most of the noise neighbours notice comes from vibration travelling through the floor from pedals and FFB knocks. Decoupling the rig from the floor fixes most of it."},
+    {"q": "What is the best way to stop sim rig vibration reaching the floor?", "a": "Layer dense gym floor tiles under the whole rig and put anti-vibration pads under each cockpit foot. A plywood platform on rubber or foam also works well if you can use one."},
+    {"q": "Do load cell pedals make more noise than potentiometer pedals?", "a": "They tend to, because you press harder and the force goes into the cockpit and floor. Firmer elastomers at the end of travel and a decoupled base reduce the thump."},
+    {"q": "Can I use bass shakers in an apartment?", "a": "You can, but they are the hardest source to contain. Mount them to the seat, lower the low frequencies and limit them to daytime sessions."}
+  ]
+}
