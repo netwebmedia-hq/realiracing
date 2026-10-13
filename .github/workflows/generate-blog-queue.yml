@@ -109,3 +109,13 @@ jobs:
           done
           echo "::error::Failed to push after 5 attempts"
           exit 1
+
+      # Topic-pool runway ALERT. Runs after the commit, so this run's posts are
+      # already banked when it fails. In deploy.yml the same check only warns,
+      # because a deploy ships finished posts and blocking it fixes nothing.
+      # Here a low pool means the next Monday run will come up short. A red run
+      # (and the failure email) is the alert. The fix is new topics in
+      # TOPIC_POOL in _deploy/generate-post-queue.js.
+      - name: Topic pool runway alert
+        if: always()
+        run: node _ci/validate-blog-queue.mjs --strict-topics
