@@ -25,6 +25,11 @@ jobs:
       # covered ground, so the two faults compounded: guaranteed collisions,
       # each shipped as a near-identical second page competing with the first
       # for the queries that earn the commission.
+      #
+      # A low topic pool only WARNS here. This job ships posts that are already
+      # written, and blocking it on the pool stranded two finished posts on
+      # 2026-10-12. The red-run alert for a low pool is in
+      # generate-blog-queue.yml, which runs this script with --strict-topics.
       - name: Validate blog queue
         run: node _ci/validate-blog-queue.mjs
 
