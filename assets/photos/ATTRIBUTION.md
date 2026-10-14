@@ -24,7 +24,7 @@ node _deploy/fetch-blog-photos.js --property <name> --write-attribution
 | File | Author | Licence | Source |
 |---|---|---|---|
 | `/assets/photos/display-cover.jpg` | [RealiRacing](https://realiracing.com/) | [RealiRacing own work](https://realiracing.com/) | [RealiRacing](https://realiracing.com/) |
-| `/assets/photos/display-monitors.jpg` | [Dauvis](https://commons.wikimedia.org/w/index.php?title=User:Dauvis&amp;action=edit&amp;redlink=1) | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Abstract_monitor_with_IDE.png) |
+| `/assets/photos/display-monitors.jpg` | [Dauvis](https://commons.wikimedia.org/w/index.php?title=User:Dauvis&action=edit&redlink=1) | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Abstract_monitor_with_IDE.png) |
 | `/assets/photos/display-vr.jpg` | [Maurizio Pesce from Milan, Italia](https://www.flickr.com/people/30364433@N05) | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:3Dhead_Virtual_Reality_Headset_(16676048400).jpg) |
 | `/assets/photos/pedals-cover.jpg` | [RealiRacing](https://realiracing.com/) | [RealiRacing own work](https://realiracing.com/) | [RealiRacing](https://realiracing.com/) |
 | `/assets/photos/rig-cover.jpg` | [RealiRacing](https://realiracing.com/) | [RealiRacing own work](https://realiracing.com/) | [RealiRacing](https://realiracing.com/) |
