@@ -1,0 +1,131 @@
+{
+  "slug": "sim-rig-monthly-check-bolts-pedals-quick-release",
+  "tag": "Rig Guide · Maintenance",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "The 15-Minute Monthly Check for a Fixed Sim Rig",
+  "description": "Loose bolts mimic bad force feedback and pedal drift. My monthly rig check for the frame, wheelbase, quick release, pedals and seat.",
+  "published": "2026-10-14",
+  "dateLabel": "October 14, 2026",
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2",
+    "cockpit"
+  ],
+  "sections": [
+    {
+      "p": "Last month my brake felt different and I could not say why. Same CRP2, same calibration, same car, and my trail-braking was suddenly less consistent. I spent a couple of evenings blaming the pedal curve before I put a hex key on the pedal plate and found the front bolts had backed off a little. Nothing was broken. The whole deck had gained a bit of movement every time I stamped on the pedal, and that movement was eating the signal I was trying to read."
+    },
+    {
+      "p": "That is the thing about a fixed rig. It feels solid on day one, then the vibration from months of braking and force feedback quietly loosens things, one fastener at a time. This is the monthly check I now run on my MOZA R9, CRP2 and fixed aluminium-profile cockpit. It takes me around 15 minutes with a hex key set, and it has saved me from chasing phantom setup problems more than once."
+    },
+    {
+      "h2": "Why a loose rig reads as a bad setup"
+    },
+    {
+      "p": "When something has play, the symptoms look like driving or settings problems. A wheelbase that shifts under load blurs force feedback detail, which I covered in <a href=\"rig-flex-and-wheelbase-mounting-ffb-feel.html\">my piece on rig flex and wheelbase mounting</a>. A pedal plate that creeps changes your pedal angle and foot position a few millimetres at a time, so your muscle memory drifts and you feel like you have lost your braking point. A seat that rocks adds a delay between the car and your body."
+    },
+    {
+      "p": "None of this shows up as a warning light. It shows up as a feeling that today is a bit off. A fixed check before you blame the settings is cheap, and it also gives you a clean baseline: if the rig is tight and the car still feels odd, you can move on to calibration and setup with confidence."
+    },
+    {
+      "h2": "What you need before you start"
+    },
+    {
+      "p": "Keep it simple. A full set of hex keys that matches your profile and brackets, a small torque driver or at least a decent ratchet if your manufacturer gives a torque figure, a soft cloth, and a phone to take a quick photo of your pedal and seat positions before you touch anything. That photo matters. If you loosen something to inspect it, you want to be able to put it back exactly where you had it."
+    },
+    {
+      "tip": "Photograph your pedal positions, seat slider and wheel height before the check. Your best laps came from that geometry, and a rushed re-tighten is how you lose it.",
+      "tipLabel": "Before you start"
+    },
+    {
+      "h2": "Step one: the frame and the big joints"
+    },
+    {
+      "p": "Start with the aluminium profile itself. Work from the floor up. Check the foot brackets or any floor contact points, then the joints where the profile members meet, then the uprights that hold the seat and the wheelbase deck. On my frame the joints use T-nuts sliding in the channel, and those are the fasteners that tend to work loose first because they carry vibration from both the wheelbase and the pedals."
+    },
+    {
+      "p": "Do not just hit everything as hard as you can. Snug each bolt until it stops, then add a small amount more. Profile systems and manufacturers publish different recommended torque values, so check your own manual and treat any number you read online, including mine, as a rough guide only. Over-tightening can strip a T-nut or deform a bracket, and that is worse than a slightly loose bolt. If you built your frame from scratch, my <a href=\"aluminum-cockpit-assembly-guide.html\">aluminium cockpit assembly guide</a> covers how it goes together in the first place."
+    },
+    {
+      "p": "While you are down there, grab each major member and try to wiggle it by hand. You are not looking for dramatic movement. You are looking for any click, any tiny shift between two parts that should be one rigid piece. A click you can feel with your hand is a click your wheel will transmit."
+    },
+    {
+      "h2": "Step two: the wheelbase mounting"
+    },
+    {
+      "p": "The wheelbase is the highest-load fastener group on the rig, because every force feedback spike pushes against it. I check the mounting bolts, the bracket or deck they sit on, and the screws holding the bracket to the frame. With the base powered off, I pull firmly on the wheel rim in several directions. The base should not move relative to the frame at all."
+    },
+    {
+      "p": "Next, the quick release. A wheel that has any rotational play at the hub feels like a vague on-centre area, and it can mimic a deadzone problem. Remove the rim, inspect the contact faces for debris, refit it, and make sure it seats fully and locks. If your system uses a locking collar or hub bolts, check those too. The <a href=\"quick-release-systems-explained.html\">quick release systems guide</a> goes into how the different designs lock, which helps you know what \"fully seated\" should feel like on yours."
+    },
+    {
+      "p": "Finally, the cables going into the base. I do the broader cable and connector inspection from <a href=\"direct-drive-wheelbase-maintenance-firmware.html\">my wheelbase maintenance post</a> on a slower schedule, but at the monthly check I simply make sure nothing is tight, pinched or tugging at the connector when I turn the wheel lock to lock."
+    },
+    {
+      "h2": "Step three: the pedals, where most of my surprises come from"
+    },
+    {
+      "p": "Pedals take the heaviest repeated load on the rig, so they get the most attention. Start with the plate. Check every bolt that holds the pedal base to the deck or the plate to the frame. Then put your foot on the brake with moderate pressure, as if you were holding the car at a junction, and look at the plate edges for any shift or lift. This is exactly where my problem showed up."
+    },
+    {
+      "p": "Then check the moving parts. Press each pedal through its full travel by hand and feel for roughness, sticking or side-to-side wobble in the pivot. With a load-cell brake, the force path matters as much as the travel. Make sure the elastomer or spring stack is seated properly, that nothing has shifted or compressed unevenly, and that the pedal arm is not rubbing on anything at full travel. If you changed a stack recently, give it a few sessions before you judge it, since materials can settle."
+    },
+    {
+      "p": "After this, confirm your calibration still makes sense. Open your pedal software and watch the brake input as you apply a steady pressure. The reading should rise smoothly and come back to zero when you release. If it will not return to zero, or if the zero point has moved, re-run the calibration steps from my <a href=\"moza-crp2-brake-calibration-pressure-curves.html\">CRP2 brake calibration guide</a>. Do this only after the mechanical checks, because calibrating a loose pedal just bakes the looseness into your curve."
+    },
+    {
+      "h2": "Step four: the seat and your contact points"
+    },
+    {
+      "p": "Seats loosen too. Check the seat rails or slider, the bracket bolts under the seat, and any side supports. Sit in it and rock your weight left and right, then forward and back. Any creak is a clue. A seat that shifts under hard braking changes how much of your braking force goes through your foot and how much through your body, and you will feel that as inconsistency."
+    },
+    {
+      "p": "If you use a shifter, handbrake or button box mounted on the rig, apply the same wiggle test. Those brackets are small, take occasional sharp loads, and tend to get ignored until a shift feels strange in the middle of a race."
+    },
+    {
+      "h2": "A quick log keeps this honest"
+    },
+    {
+      "p": "I keep a short note on my phone with the date and anything I found. After a few months a pattern shows up. Mine is the pedal plate and the wheelbase side bracket, every time. Knowing that means I can add a thread-locking compound where my manufacturer's guidance allows it, or a lock washer, instead of tightening the same bolt again and again. Check that any thread locker you use is suitable for aluminium and plastics before you apply it."
+    },
+    {
+      "list": [
+        "Frame joints and T-nuts: snug, no click when you wiggle each member",
+        "Wheelbase mount: no movement when pulling the rim in all directions",
+        "Quick release: seated and locked, no rotational play",
+        "Pedal plate: no shift or lift under moderate foot pressure",
+        "Pedal pivots and stacks: smooth travel, nothing rubbing",
+        "Seat and sliders: no creak when you shift your weight",
+        "Cables: slack at full wheel lock, no strain on connectors"
+      ]
+    },
+    {
+      "h2": "How often to do it"
+    },
+    {
+      "p": "Monthly works for me because I race several evenings a week. If you use your rig less, every couple of months is probably fine. Do an extra check after you move the rig, change pedals or a wheelbase, or notice a new noise. And if your pedal feel or force feedback suddenly seems different without a software change, do this check first. It is the cheapest diagnostic you have."
+    },
+    {
+      "p": "A tight rig will not make you faster on its own. What it does is remove a variable. When the hardware is solid, every change you make to settings, calibration or technique shows up as a clean result, which is exactly what you want when you are trying to improve."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How often should I check the bolts on a sim racing cockpit?",
+      "a": "Roughly once a month is a sensible habit for a rig you race on several times a week, and every couple of months for lighter use. Also check after moving the rig, swapping hardware or noticing a new creak or a change in pedal feel."
+    },
+    {
+      "q": "How tight should aluminium profile and T-nut bolts be?",
+      "a": "Follow the torque guidance from your profile or cockpit manufacturer, since values differ between systems. As a general approach, snug each bolt until it stops and add a small amount more, because over-tightening can strip a T-nut or deform a bracket."
+    },
+    {
+      "q": "Can a loose pedal plate change how my brake feels?",
+      "a": "Yes. A plate that shifts under load changes pedal angle and foot position slightly and absorbs part of the force signal, so braking can feel less consistent even though calibration has not changed. Tighten and recheck before you recalibrate."
+    },
+    {
+      "q": "Should I use thread locker on sim rig bolts?",
+      "a": "Only if your manufacturer allows it, and only a product suited to aluminium and any plastic parts nearby. If one fastener keeps backing off, a lock washer or the correct locking compound is more effective than tightening it harder each month."
+    }
+  ]
+}
