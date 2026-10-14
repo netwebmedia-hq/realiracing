@@ -10,6 +10,8 @@
     b.href = b.getAttribute('data-pack-url');
     b.textContent = 'Buy the pack';
   }
+  // Per-page price via data-price on #pack-buy (NWM PitStop is $29); setup packs default to $19.
+  var price = (b && b.getAttribute('data-price')) || '19';
   var n = document.getElementById('pack-price-note');
-  if (n) n.textContent = '$19 · Instant email delivery. 7-day money-back guarantee.';
+  if (n) n.textContent = '$' + price + (price === '19' ? '' : ' one-time') + ' · Instant email delivery. 7-day money-back guarantee.';
 })();
