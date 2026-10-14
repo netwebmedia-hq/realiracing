@@ -44,7 +44,7 @@
     {
       "@type": "Question",
       "name": "Should I compare my lap to a much faster driver's?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Not at first. A much quicker lap usually involves a different setup and a commitment level you cannot yet repeat, so the differences you find may not be things you can act on. Start by comparing your best lap against your own median lap — that isolates your inconsistency with the car held constant." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Not at first. A much quicker lap usually involves a different setup and a commitment level you cannot yet repeat, so the differences you find may not be things you can act on. Start by comparing your best lap against your own median lap, which isolates your inconsistency with the car held constant." }
     },
     {
       "@type": "Question",
@@ -63,7 +63,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"iRacing Telemetry Basics: Reading Your Own Laps","item":"https://realiracing.com/blog/iracing-telemetry-basics-reading-your-laps.html"}]}
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/iracing-telemetry-basics-reading-your-laps.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/iracing-telemetry-basics-reading-your-laps.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"AMD Ryzen 7 5700","description":"8 cores — plenty for iRacing plus OBS on one PC","url":"https://realiracing.com/blog/iracing-telemetry-basics-reading-your-laps.html#rir-gear"}}]}
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/iracing-telemetry-basics-reading-your-laps.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive, the base bolted to my rig right now","url":"https://realiracing.com/blog/iracing-telemetry-basics-reading-your-laps.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"AMD Ryzen 7 5700","description":"8 cores are plenty for iRacing plus OBS on one PC.","url":"https://realiracing.com/blog/iracing-telemetry-basics-reading-your-laps.html#rir-gear"}}]}
   </script>
 </head>
 <body>
@@ -119,15 +119,15 @@
 
       <h2>Getting the data out</h2>
 
-      <p>iRacing writes telemetry files when you enable them — the option is in the app's own settings, and the files land in your iRacing telemetry folder. You then need something to read them. There are free and paid analysis tools in the community; which one you pick matters far less than actually opening it, and any of them will draw the traces below.</p>
+      <p>iRacing writes telemetry files when you enable them; the option is in the app's own settings, and the files land in your iRacing telemetry folder. You then need something to read them. There are free and paid analysis tools in the community; which one you pick matters far less than actually opening it, and any of them will draw the traces below.</p>
 
       <p>One practical note: telemetry logging writes continuously to disk during a session. On a machine that is already CPU-limited it is one more thing competing for resources, so if you are chasing frame-time problems, sort those out first rather than layering logging on top.</p>
 
       <h2>Trace one: speed, and where the gap opens</h2>
 
-      <p>The speed trace is the one to start with, and the useful version is not speed on its own but the delta — the running time difference between your lap and a reference, plotted around the circuit.</p>
+      <p>The speed trace is the one to start with, and the useful version is not speed on its own but the delta, the running time difference between your lap and a reference, plotted around the circuit.</p>
 
-      <p>Read the delta for slope, not height. A line drifting upward means you are losing time right there. A line that is high but flat means you already lost that time earlier and are now matching pace. This distinction is the single most common misreading, and it sends people to fix corners that are not the problem — the damage was done before they arrived.</p>
+      <p>Read the delta for slope, not height. A line drifting upward means you are losing time right there. A line that is high but flat means you already lost that time earlier and are now matching pace. This distinction is the single most common misreading, and it sends people to fix corners that are not the problem; the damage was done before they arrived.</p>
 
       <div class="tip-box">
         <span class="box-label">Find the steepest climb</span>
@@ -140,17 +140,17 @@
 
       <p>Look for the moment you reach full throttle out of a corner and compare it against the reference. Being a tenth late to full throttle out of a corner leading onto a long straight costs you all the way down that straight. This is the least glamorous finding in telemetry and by far the most common.</p>
 
-      <p>Also look for hesitation — throttle that goes up, dips, and goes up again. That dip is almost always a confidence problem rather than a car problem: you got on power, felt something, and lifted. It rarely shows up in how the lap feels, and it shows up immediately in the trace.</p>
+      <p>Also look for hesitation: a throttle that goes up, dips, and goes up again. That dip is almost always a confidence problem rather than a car problem: you got on power, felt something, and lifted. It rarely shows up in how the lap feels, and it shows up immediately in the trace.</p>
 
       <h2>Trace three: brake, and the shape that matters</h2>
 
       <p>For brake, the shape matters more than the peak. A good braking trace rises quickly to its maximum, then trails back down smoothly as you approach the apex. A trace that ramps up slowly is leaving stopping power unused at the point where the car can take the most. A trace that drops off a cliff means you came off the brake abruptly and gave up the rotation that trail braking gives you.</p>
 
-      <p>If your peak pressure varies a lot lap to lap in the same corner, that is a calibration and hardware conversation rather than a technique one — a load cell measures pressure rather than travel, and it only helps if it is calibrated to a pressure range you can actually repeat. My ~<a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2</a> pedals made the trace noticeably more repeatable than anything travel-based I used before, but only after the calibration was right.</p>
+      <p>If your peak pressure varies a lot lap to lap in the same corner, that is a calibration and hardware conversation rather than a technique: a load cell measures pressure rather than travel, and it only helps if it is calibrated to a pressure range you can actually repeat. My ~<a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2</a> pedals made the trace noticeably more repeatable than anything travel-based I used before, but only after the calibration was right.</p>
 
       <h2>Trace four: steering, and what smooth actually means</h2>
 
-      <p>Steering angle exposes something you cannot feel: corrections. A clean corner shows a smooth build to maximum angle and a smooth unwind. Small rapid oscillations mean you are fighting the car — either the setup, or entering too fast and catching it.</p>
+      <p>Steering angle exposes something you cannot feel: corrections. A clean corner shows a smooth build to maximum angle and a smooth unwind. Small rapid oscillations mean you are fighting the car, either the setup or entering too fast and catching it.</p>
 
       <p>A useful check is to see whether the steering angle keeps increasing after the apex. If it does, you turned in too early, the car ran out of road, and you are adding lock to save it. That specific pattern is visible in the trace long before it is obvious from the driver's seat.</p>
 
@@ -164,7 +164,7 @@
         <li>The gap is so large it appears everywhere, which tells you nothing about priority.</li>
       </ul>
 
-      <p>Compare against your own best lap first. That removes the car from the equation entirely and shows you your own inconsistency, which is the cheapest time available to anyone. Then compare against someone a step ahead of you rather than several — a gap you can plausibly close in one area is actionable, a gap of several seconds is just discouraging.</p>
+      <p>Compare against your own best lap first. That removes the car from the equation entirely and shows you your own inconsistency, which is the cheapest time available to anyone. Then compare against someone a step ahead of you rather than several; a gap you can plausibly close in one area is actionable, while a gap of several seconds is just discouraging.</p>
 
       <h2>What telemetry will not tell you</h2>
 
@@ -185,12 +185,12 @@
         <li>Record a practice session of six to ten reasonable laps.</li>
         <li>Overlay your best lap against your median lap. Find the steepest climb in the delta.</li>
         <li>Look at throttle and brake in just that section. Do not look at the rest of the lap.</li>
-        <li>Form one sentence about what to change — earlier throttle out of turn seven, smoother release into turn two.</li>
+        <li>Change earlier throttle out of turn seven for a smoother release into turn two.</li>
         <li>Go drive it, with that one sentence as the only thing you are thinking about.</li>
         <li>Re-record and check whether that section improved. Then, and only then, move on.</li>
       </ol>
 
-      <p>The discipline is in step three. Telemetry makes it tempting to fix everything visible at once, and you cannot — changing three things means you never learn which one worked. One trace, one section, one change.</p>
+      <p>The discipline is in step three. Telemetry makes it tempting to fix everything visible at once; you cannot change three things because doing so means you never learn which one worked. One trace, one section, one change.</p>
 
       <p>And if what the traces keep showing is inconsistent braking pressure rather than a line problem, that is a different fix: <a href="load-cell-brake-calibration-consistent-braking.html">brake calibration</a> first, then <a href="trail-braking-load-cell-technique.html">trail-braking technique</a>.</p>
 
@@ -201,17 +201,17 @@
             <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
             <tbody>
             <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge">Raced on</span></td></tr>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=AMD+Ryzen+7+5700+processor&amp;rh=p_89%3AAMD&amp;tag=realiracing-20" data-aff="cpu-ryzen-7-5700" target="_blank" rel="sponsored noopener">AMD Ryzen 7 5700</a></th><td>8 cores — plenty for iRacing plus OBS on one PC</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive, the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=AMD+Ryzen+7+5700+processor&amp;rh=p_89%3AAMD&amp;tag=realiracing-20" data-aff="cpu-ryzen-7-5700" target="_blank" rel="sponsored noopener">AMD Ryzen 7 5700</a></th><td>8 cores are plenty for iRacing plus OBS on one PC.</td><td><span class="rig-badge">Raced on</span></td></tr>
             </tbody>
           </table>
         </div>
-        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links; I may earn a commission at no cost to you.</p>
       </div></div>
 
       <div class="cta-box">
         <h3>Watch it, don't just read about it</h3>
-        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <p>I stream and upload iRacing races on my MOZA R9 rig: real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
         <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
       </div>
       <div class="cta-box rir-pack-cta">
@@ -228,7 +228,7 @@
       </div>
       <div class="faq-item">
         <h3>Should I compare my lap to a much faster driver's?</h3>
-        <p>Not at first. A much quicker lap usually involves a different setup and a commitment level you cannot yet repeat, so the differences you find may not be things you can act on. Start by comparing your best lap against your own median lap — that isolates your inconsistency with the car held constant.</p>
+        <p>Not at first. A much quicker lap usually involves a different setup and a commitment level you cannot yet repeat, so the differences you find may not be things you can act on. Start by comparing your best lap against your own median lap, which isolates your inconsistency with the car held constant.</p>
       </div>
       <div class="faq-item">
         <h3>What is the most common thing telemetry reveals?</h3>

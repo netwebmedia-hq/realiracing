@@ -12,6 +12,7 @@
 const fs   = require('fs');
 const path = require('path');
 const { callClaude, claudeConfigured } = require('./lib/claude-call.js');
+const { withHumanizeRules } = require('./lib/humanize-rules.js');
 const { parseBatchReply } = require('./lib/salvage.js');
 
 process.chdir(path.join(__dirname, '..'));
@@ -532,7 +533,7 @@ Rules:
     model: MODEL,
     maxTokens: MAX_TOKENS,
     timeoutMs: REQUEST_TIMEOUT_MS,
-    system: systemPrompt,
+    system: withHumanizeRules(systemPrompt, 'en'),
     user: userPrompt,
   });
   const text = data.content[0].text.trim();

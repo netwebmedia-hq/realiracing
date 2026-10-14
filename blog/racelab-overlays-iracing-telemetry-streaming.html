@@ -35,7 +35,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"RaceLab Overlays for iRacing: Real-Time Telemetry on Stream","item":"https://realiracing.com/blog/racelab-overlays-iracing-telemetry-streaming.html"}]}
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/racelab-overlays-iracing-telemetry-streaming.html#rir-gear"}}]}
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive, the base bolted to my rig right now","url":"https://realiracing.com/blog/racelab-overlays-iracing-telemetry-streaming.html#rir-gear"}}]}
   </script>
   <script type="application/ld+json">
   {
@@ -60,7 +60,7 @@
     {
       "@type": "Question",
       "name": "Does RaceLab work in all iRacing cars and series, or are there limitations?",
-      "acceptedAnswer": { "@type": "Answer", "text": "RaceLab works in all iRacing content—cars, ovals, road courses, dirt, everything. The telemetry feed is universal. However, some cars report fewer sensors (older vehicle models may not have tire-temp telemetry, for example). Modern GT and prototype cars report full data; Mazda MX-5 or entry-level content might have fewer metrics. In practice, you won't run into missing data unless you're racing very old car models." }
+      "acceptedAnswer": { "@type": "Answer", "text": "RaceLab works in all iRacing content: cars, ovals, road courses, dirt, everything. The telemetry feed is universal. However, some cars report fewer sensors (older vehicle models may not have tire-temp telemetry, for example). Modern GT and prototype cars report full data; Mazda MX-5 or entry-level content might have fewer metrics. In practice, you won't run into missing data unless you're racing very old car models." }
     }
     ]
   }
@@ -113,13 +113,13 @@
     <div class="article-body">
       <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
 
-      <p class="article-lead">If you've watched sim racing streams, you've seen those slick overlays showing brake pressure, throttle input, and tire temperature in real time. Most of them come from <strong>RaceLab</strong>—a free tool that hooks directly into iRacing's telemetry output and feeds customizable graphics to OBS. I use RaceLab on my own streams, and it transforms a plain cockpit view into a broadcast-quality display that educates viewers and adds production value without needing expensive hardware or pay software.</p>
+      <p class="article-lead">If you've watched sim racing streams, you've seen those slick overlays showing brake pressure, throttle input, and tire temperature in real time. Most of them come from <strong>RaceLab</strong>, a free tool that hooks directly into iRacing's telemetry output and feeds customizable graphics to OBS. I use RaceLab on my own streams, and it transforms a plain cockpit view into a broadcast-quality display that educates viewers and adds production value without needing expensive hardware or pay software.</p>
 
       <p>The catch: RaceLab's power is in its flexibility, which also means there's setup work ahead. You'll need to understand what data matters for your audience, how to position overlays so they don't obscure your racing line, and how to avoid the trap of showing so much telemetry that viewers can't focus on the actual driving.</p>
 
       <h2>What RaceLab Does and Why It Works</h2>
 
-      <p>RaceLab reads iRacing's live telemetry stream—brake input, throttle, steering angle, G-force, tire temps, fuel, tire wear—and renders it as configurable on-screen graphics that sync perfectly with your race footage. Because it's tapping the same data iRacing uses internally, the latency is negligible; what you see on stream matches what you're feeling on the wheel and pedals in real time.</p>
+      <p>RaceLab reads iRacing's live telemetry stream, including brake input, throttle, steering angle, G-force, tire temps, fuel, and tire wear, to render configurable on-screen graphics that sync with your race footage. Because it's tapping the same data iRacing uses internally, the latency is negligible; what you see on stream matches what you're feeling on the wheel and pedals in real time.</p>
 
       <p>Unlike manual setups that require separate hardware or clunky software overlays, RaceLab integrates directly into OBS as a plugin or stands as a browser source. I run it as a browser source in OBS, which keeps my streaming PC's CPU load flat and gives me dead-simple control over positioning and refresh rates.</p>
 
@@ -127,7 +127,7 @@
         <li>Brake pressure and throttle input (left and right pedals, independently trackable)</li>
         <li>Steering angle and steering rate (useful for learning smooth inputs)</li>
         <li>Lateral and longitudinal G-force (shows cornering and braking intensity)</li>
-        <li>Tire temperatures and tire wear (per corner—front-left, front-right, rear-left, rear-right)</li>
+        <li>Tire temperatures and tire wear (per corner: front-left, front-right, rear-left, rear-right)</li>
         <li>Fuel remaining and consumption rate</li>
         <li>Delta time to your own baseline or to competitors in replay</li>
         <li>Pit stop timer and pit delta</li>
@@ -147,7 +147,7 @@
         <li>Download RaceLab from the official website (racedepartment.com or official repository). Install it as a standalone application.</li>
         <li>Launch RaceLab and log in with your iRacing account. RaceLab needs permission to read your telemetry, which you grant one time.</li>
         <li>Open a practice session in iRacing. RaceLab will auto-detect the connection once you're in-sim.</li>
-        <li>In RaceLab's UI, customize which overlays you want—telemetry gauges, delta timer, tire wear, etc. Drag them to positions you prefer.</li>
+        <li>In RaceLab's UI, customize which overlays you want: telemetry gauges, delta timer, tire wear, etc. Drag them to positions you prefer.</li>
         <li>Copy the RaceLab URL from settings (usually something like localhost:8080/overlay).</li>
         <li>In OBS, add a new Browser Source and paste the RaceLab URL. Set width and height to match your stream resolution (1920×1080 for 1080p, or your native output).</li>
         <li>In OBS, set the browser source's refresh rate to 60 Hz if your iRacing stream is 60 FPS. Adjust down to 30 Hz if you're streaming lower frame rates to reduce CPU load.</li>
@@ -177,14 +177,14 @@
 
       <h2>Positioning and Visual Hierarchy</h2>
 
-      <p>Where you place RaceLab's gauges in your OBS canvas matters as much as what you show. The cockpit view—especially on <a href="best-sim-racing-wheels-iracing.html">my MOZA R9 wheel</a>—naturally draws the eye to the center and upper half of the screen. You want telemetry in the corners and edges, where it informs without blocking the road.</p>
+      <p>Where you place RaceLab's gauges in your OBS canvas matters as much as what you show. The cockpit view, especially on <a href="best-sim-racing-wheels-iracing.html">my MOZA R9 wheel</a>, naturally draws the eye to the center and upper half of the screen. You want telemetry in the corners and edges, where it informs without blocking the road.</p>
 
       <ul>
         <li><strong>Bottom-left corner:</strong> Throttle and brake pedals. Viewers follow hand inputs naturally; pedal gauges here feel intuitive.</li>
         <li><strong>Bottom-right corner:</strong> Tire temps and wear. Data that changes slowly, so it doesn't need center-screen real estate.</li>
         <li><strong>Top-left:</strong> Speed and gear (or RPM for high-revving cars). Small, high-contrast, quick-read.</li>
         <li><strong>Top-right:</strong> Delta timer or fuel remaining. Information that can change suddenly and needs to catch the eye quickly.</li>
-        <li><strong>Center-bottom (minimal overlap):</strong> Only if you're showing a critical single metric—lap delta, for example, on a tight race.</li>
+        <li><strong>Center-bottom (minimal overlap):</strong> Only use this for showing one critical single metric, such as lap delta, on a tight race.</li>
       </ul>
 
       <p>RaceLab's opacity and color settings matter too. If your cockpit is dark (night racing at Le Mans), use bright, high-contrast overlays. If it's daylight, slightly lower opacity so overlays blend without vanishing. I typically run 85–90% opacity and use light backgrounds on dark overlays to ensure they read regardless of track lighting.</p>
@@ -203,18 +203,18 @@
 
       <div class="tip-box rir-pitstop-callout">
         <span class="box-label">From the RealiRacing shop</span>
-        <p><strong>Before you go live, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=racelab-overlays-iracing-telemetry-streaming">See NWM PitStop &rarr;</a></p>
+        <p><strong>Before you go live, free up your rig.</strong> NWM PitStop is the clean-up and stream-priority script set we run before every session; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=racelab-overlays-iracing-telemetry-streaming">See NWM PitStop &rarr;</a></p>
       </div>
 
       <h2>RaceLab in Replay and Analysis</h2>
 
       <p>Beyond live streaming, RaceLab can record telemetry data and replay it with overlays for post-race analysis. If you want to study a qualifying lap or a wheel-to-wheel moment, you can load a replay, enable RaceLab, and scrub through with full telemetry visible. That's invaluable for league debriefs or personal coaching.</p>
 
-      <p>Some streamers record their RaceLab sessions, then edit them into YouTube videos with highlights synced to telemetry. You can pause, zoom in on specific gauges, and narrate what you were doing. It's a production skill in itself, but the raw material—clean, synchronized telemetry—comes straight from RaceLab.</p>
+      <p>Some streamers record their RaceLab sessions, then edit them into YouTube videos with highlights synced to telemetry. You can pause, zoom in on specific gauges, and narrate what you were doing. It is a production skill in itself; the raw material, clean and synchronized telemetry, comes straight from RaceLab.</p>
 
       <h2>The Real Value Proposition</h2>
 
-      <p>RaceLab is free, it integrates seamlessly with OBS, and it gives your stream production value that would cost hundreds of dollars to replicate with custom graphics or hardware. For a sim racer who wants to broadcast or archive their driving with professional-grade telemetry overlay, it's the obvious choice.</p>
+      <p>RaceLab is free, integrates with OBS, and gives your stream production value that would cost hundreds of dollars to replicate with custom graphics or hardware. For a sim racer who wants to broadcast or archive their driving with professional-grade telemetry overlay, it's the obvious choice.</p>
 
       <p>The investment is your time learning which data to show, how to position it, and when to update your layout based on feedback. Once that's dialed, you've got a repeatable, broadcast-ready setup. On my own streams, I spend maybe 10 minutes per session tweaking RaceLab's display; the payoff is viewers who understand what I'm doing and feel like they're in the car with me.</p>
 
@@ -224,16 +224,16 @@
           <table class="gear-table">
             <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
             <tbody>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive, the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
             </tbody>
           </table>
         </div>
-        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links; I may earn a commission at no cost to you.</p>
       </div></div>
 
       <div class="cta-box">
         <h3>Watch it, don't just read about it</h3>
-        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <p>I stream and upload iRacing races on my MOZA R9 rig: real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
         <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
       </div>
       <div class="cta-box rir-pack-cta">
@@ -258,7 +258,7 @@
       </div>
       <div class="faq-item">
         <h3>Does RaceLab work in all iRacing cars and series, or are there limitations?</h3>
-        <p>RaceLab works in all iRacing content—cars, ovals, road courses, dirt, everything. The telemetry feed is universal. However, some cars report fewer sensors (older vehicle models may not have tire-temp telemetry, for example). Modern GT and prototype cars report full data; Mazda MX-5 or entry-level content might have fewer metrics. In practice, you won't run into missing data unless you're racing very old car models.</p>
+        <p>RaceLab works in all iRacing content: cars, ovals, road courses, dirt, everything. The telemetry feed is universal. However, some cars report fewer sensors (older vehicle models may not have tire-temp telemetry, for example). Modern GT and prototype cars report full data; Mazda MX-5 or entry-level content might have fewer metrics. In practice, you won't run into missing data unless you're racing very old car models.</p>
       </div>
     </div>
   </main>
@@ -266,9 +266,7 @@
   <div class="related">
     <h2>Keep reading</h2>
     <div class="related-grid">
-      <a class="related-card" href="iracing-stream-overlay-hud-tools.html"><span>Streaming</span>iRacing Stream Overlays and HUD Tools: Build a Pro-Looking Broadcast</a>
-      <a class="related-card" href="how-to-stream-iracing-obs.html"><span>Streaming</span>How to Stream iRacing with OBS Without Lag — Single-PC Settings That Work</a>
-      <a class="related-card" href="direct-drive-wheelbase-maintenance-firmware.html"><span>Hardware</span>Direct Drive Wheelbase Maintenance and Firmware Updates Guide</a>
+      <a class="related-card" href="iracing-stream-overlay-hud-tools.html"><span>Streaming</span>iRacing Stream Overlays and HUD Tools: Build a Pro-Looking Broadcast</a> <a class="related-card" href="how-to-stream-iracing-obs.html"><span>Streaming</span>How to Stream iRacing with OBS Without Lag: Single-PC Settings That Work</a> <a class="related-card" href="direct-drive-wheelbase-maintenance-firmware.html"><span>Hardware</span>Direct Drive Wheelbase Maintenance and Firmware Updates Guide</a>
     </div>
   </div>
 

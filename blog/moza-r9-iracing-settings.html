@@ -63,7 +63,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"MOZA R9 iRacing Settings — The Complete FFB Guide (2026)","item":"https://realiracing.com/blog/moza-r9-iracing-settings.html"}]}
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/moza-r9-iracing-settings.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CS V2 Steering Wheel","description":"the round rim my whole FFB profile is tuned around","url":"https://realiracing.com/blog/moza-r9-iracing-settings.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/moza-r9-iracing-settings.html#rir-gear"}}]}
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive, the base bolted to my rig right now","url":"https://realiracing.com/blog/moza-r9-iracing-settings.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CS V2 Steering Wheel","description":"the round rim my whole FFB profile is tuned around","url":"https://realiracing.com/blog/moza-r9-iracing-settings.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/moza-r9-iracing-settings.html#rir-gear"}}]}
   </script>
 </head>
 <body>
@@ -113,9 +113,9 @@
     <div class="article-body">
       <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
 
-      <p class="article-lead">These aren't settings copied from a forum thread. This is the exact force-feedback profile I run on my own <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> in iRacing — tuned over hundreds of laps in the BMW M4 GT4 and saved in Pit House as a preset. Every value below is on my rig right now.</p>
+      <p class="article-lead">These aren't settings copied from a forum thread. This is the exact force-feedback profile I run on my own <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> in iRacing, tuned over hundreds of laps in the BMW M4 GT4 and saved in Pit House as a preset. Every value below is on my rig right now.</p>
 
-      <p>The R9 is a 9 N·m direct drive wheelbase, and out of the box it ships with defaults that feel notchy and heavy in iRacing. Two things fix that: getting the Pit House sliders right, and understanding that <strong>iRacing ignores half of them</strong> — so you stop chasing feel in menus that do nothing.</p>
+      <p>The R9 is a 9 N·m direct drive wheelbase, and out of the box it ships with defaults that feel notchy and heavy in iRacing. Two things fix that: getting the Pit House sliders right, and understanding that <strong>iRacing ignores half of them</strong>, so you stop chasing feel in menus that do nothing.</p>
 
       <h2>Quick answer: the full settings table</h2>
 
@@ -124,17 +124,17 @@
       <div class="table-scroll">
       <table>
         <tr><th>Pit House Setting</th><th>Value</th><th>Why</th></tr>
-        <tr><td>Game FFB Intensity</td><td><strong>100%</strong></td><td>Full signal — scale strength in-sim instead</td></tr>
+        <tr><td>Game FFB Intensity</td><td><strong>100%</strong></td><td>Full signal: scale strength in-sim instead.</td></tr>
         <tr><td>Max Output Torque</td><td><strong>100%</strong> (9.0 N·m)</td><td>Keep headroom; iRacing's Auto handles level</td></tr>
         <tr><td>Steering Angle</td><td><strong>900°</strong> + sync on</td><td>Let iRacing set per-car rotation automatically</td></tr>
         <tr><td>Natural Damping</td><td><strong>20%</strong></td><td>Kills post-slide oscillation without dulling detail</td></tr>
         <tr><td>Natural Friction</td><td><strong>35%</strong></td><td>Adds the "weight" iRacing's raw signal lacks</td></tr>
-        <tr><td>Natural Inertia</td><td><strong>200%</strong> (default)</td><td>Leave it — changing this masks slip detail</td></tr>
+        <tr><td>Natural Inertia</td><td><strong>200%</strong> (default)</td><td>Leave it; changing this masks slip detail.</td></tr>
         <tr><td>Wheel Spring Strength</td><td><strong>0%</strong></td><td>Never fight a centering spring in a sim</td></tr>
         <tr><td>Speed-dependent Damping</td><td><strong>30%</strong> from 80 km/h</td><td>Calms high-speed straights, keeps low-speed feel</td></tr>
-        <tr><td>Max Wheel Speed</td><td><strong>50%</strong></td><td>Safety — caps snap speed in a crash</td></tr>
+        <tr><td>Max Wheel Speed</td><td><strong>50%</strong></td><td>Safety caps snap speed in a crash.</td></tr>
         <tr><td>Hands-Off Protection</td><td><strong>On</strong></td><td>Non-negotiable on a direct drive base</td></tr>
-        <tr><td>FFB Reversal</td><td><strong>Off</strong></td><td>Only for sims with inverted FFB — not iRacing</td></tr>
+        <tr><td>FFB Reversal</td><td><strong>Off</strong></td><td>Only for sims with inverted force feedback, not iRacing.</td></tr>
       </table>
       </div>
 
@@ -159,25 +159,25 @@
 
       <h2>Why iRacing ignores the Game Force Effects sliders</h2>
 
-      <p>Scroll down the right-hand column in Pit House (the window opens short — the block is below the fold) and you'll find <strong>Game Force Effects</strong>: Game Spring, Game Damping, Game Inertia, Game Friction. Mine sit at 100 / 50 / 50 / 50.</p>
+      <p>Scroll down the right-hand column in Pit House (the window opens short; the block is below the fold) and you'll find <strong>Game Force Effects</strong>: Game Spring, Game Damping, Game Inertia, Game Friction. Mine sit at 100 / 50 / 50 / 50.</p>
 
-      <p>Here's the thing: <strong>iRacing sends one signal — direct torque.</strong> It doesn't ask your wheelbase to render spring, damper, friction or inertia effects the way Assetto Corsa, ACC or Le Mans Ultimate do. So those four sliders effectively do nothing in iRacing. They only matter when I switch to LMU.</p>
+      <p>Here's the thing: <strong>iRacing sends one signal, direct torque.</strong> It doesn't ask your wheelbase to render spring, damper, friction or inertia effects the way Assetto Corsa, ACC or Le Mans Ultimate do. So those four sliders effectively do nothing in iRacing. They only matter when I switch to LMU.</p>
 
       <p>This is why the <em>Natural</em> (Basic) effects matter so much for iRacing: they're applied by the base itself, on top of whatever the sim sends. Natural Friction 35% is what gives the R9 that connected, weighty feel iRacing's raw signal doesn't provide on its own. Natural Damping 20% stops the wheel oscillating when you catch a slide.</p>
 
-      <h2>Steering Wheel Inertia — match it to your rim</h2>
+      <h2>Steering Wheel Inertia: match it to your rim</h2>
 
-      <p>Also below the fold in the middle column: <strong>Steering Wheel Inertia</strong>. Mine is set to <strong>2800</strong>, selected via the rim-preset buttons (I run a CS-style round rim). This setting compensates for the physical mass of the wheel you've bolted on — a heavy round leather rim needs a different value than a light formula rim.</p>
+      <p>Also below the fold in the middle column: <strong>Steering Wheel Inertia</strong>. Mine is set to <strong>2800</strong>, selected via the rim-preset buttons (I run a CS-style round rim). This setting compensates for the physical mass of the wheel you've bolted on: a heavy round leather rim needs a different value than a light formula rim.</p>
 
-      <p>Use the preset button that matches your MOZA rim and leave it alone. If you change rims, change the preset — it makes a bigger difference to initial turn-in feel than most of the sliders people obsess over.</p>
+      <p>Use the preset button that matches your MOZA rim and leave it alone. If you change rims, change the preset; it makes a bigger difference to initial turn-in feel than most of the sliders people obsess over.</p>
 
       <h2>How it should feel when it's right</h2>
 
       <ul>
-        <li><strong>Self-aligning torque builds smoothly</strong> with cornering load — no notchiness through the center.</li>
+        <li><strong>Self-aligning torque builds smoothly</strong>, with cornering load and no notchiness through the center.</li>
         <li><strong>You feel the rear go light before you see it.</strong> In the M4 GT4, kerb strikes and rear slip come through as texture, not violence.</li>
-        <li><strong>No clipping on max-load corners.</strong> If the FFB meter (F meter in the black box) hits red on every apex, your Strength number is too aggressive — re-run Auto.</li>
-        <li><strong>The wheel doesn't fight you on straights</strong> — that's the speed-dependent damping doing its job above 80 km/h.</li>
+        <li><strong>No clipping on max-load corners.</strong> If the FFB meter (F meter in the black box) hits red on every apex, your Strength number is too aggressive; re-run Auto.</li>
+        <li><strong>The wheel doesn't fight you on straights</strong>, that's the speed-dependent damping doing its job above 80 km/h.</li>
       </ul>
 
       <div class="tip-box">
@@ -191,32 +191,32 @@
           <table class="gear-table">
             <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
             <tbody>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive, the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
             <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CS+V2+steering+wheel&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-cs-v2" target="_blank" rel="sponsored noopener">MOZA CS V2 Steering Wheel</a></th><td>the round rim my whole FFB profile is tuned around</td><td><span class="rig-badge">Raced on</span></td></tr>
             <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge">Raced on</span></td></tr>
             </tbody>
           </table>
         </div>
-        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links; I may earn a commission at no cost to you.</p>
       </div></div>
 
       <h2>Common mistakes with the R9 in iRacing</h2>
 
       <h3>1. Adding Min Force on a direct drive base</h3>
-      <p>Min Force exists to overcome the dead zone of cheap gear-driven wheels. The R9 has essentially no dead zone — adding Min Force just makes the center feel artificial and jumpy. Leave it at 0%.</p>
+      <p>Min Force exists to overcome the dead zone of cheap gear-driven wheels. The R9 has essentially no dead zone; adding Min Force just makes the center feel artificial and jumpy. Leave it at 0%.</p>
 
       <h3>2. Chasing strength instead of detail</h3>
       <p>Running Strength so high the base clips on every corner means you're throwing away the information you paid for. A direct drive base at 60–70% of its ceiling with zero clipping beats one at 100% that saturates constantly. Let Auto set it.</p>
 
       <h3>3. Tuning in the garage</h3>
-      <p>FFB is car- and track-dependent in iRacing. The Auto value for the M4 GT4 at the Nürburgring will differ from an oval car at Talladega. Re-run Auto when you change cars — it takes ten seconds.</p>
+      <p>FFB is car- and track-dependent in iRacing. The Auto value for the M4 GT4 at the Nürburgring will differ from an oval car at Talladega. Re-run Auto when you change cars; it takes ten seconds.</p>
 
       <h3>4. Doubling damping in two places</h3>
-      <p>If you run Natural Damping in Pit House <em>and</em> iRacing's in-sim Damping slider, they stack, and the wheel turns to mud. Pick one layer — I keep damping on the base (20%) and iRacing at 0%.</p>
+      <p>If you run Natural Damping in Pit House <em>and</em> iRacing's in-sim Damping slider, they stack, and the wheel turns to mud. Pick one layer: I keep damping on the base (20%) and iRacing at 0%.</p>
 
       <div class="cta-box">
         <h3>Watch this setup on track</h3>
-        <p>I stream and upload iRacing races with this exact FFB profile — M4 GT4 at the Nordschleife, Spa and more.</p>
+        <p>I stream and upload iRacing races with this exact FFB profile: M4 GT4 at the Nordschleife, Spa and more.</p>
         <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
       </div>
       <div class="cta-box rir-pack-cta">
@@ -233,7 +233,7 @@
       </div>
       <div class="faq-item">
         <h3>Do the Game Force Effects sliders affect iRacing?</h3>
-        <p>No — iRacing sends a single direct torque signal. Those sliders (Game Spring/Damping/Inertia/Friction) only matter in sims like AC, ACC and Le Mans Ultimate.</p>
+        <p>iRacing sends a single direct torque signal. Those sliders (Game Spring/Damping/Inertia/Friction) only matter in sims like AC, ACC and Le Mans Ultimate.</p>
       </div>
       <div class="faq-item">
         <h3>Should I use Linear mode with the R9?</h3>
@@ -241,7 +241,7 @@
       </div>
       <div class="faq-item">
         <h3>Is 9 N·m enough for iRacing?</h3>
-        <p>More than enough — most drivers race at 6–8 N·m for consistency over long stints. Detail and headroom beat peak torque.</p>
+        <p>Most drivers race at 6–8 N·m for consistency over long stints, which is more than enough. Detail and headroom beat peak torque.</p>
       </div>
     </div>
   </main>
@@ -249,10 +249,7 @@
   <div class="related">
     <h2>Keep reading</h2>
     <div class="related-grid">
-      <a class="related-card" href="/packs/"><span>Setup Packs</span>MOZA, iRacing &amp; ACC Setup Packs</a>
-<a class="related-card" href="best-sim-racing-wheels-iracing.html"><span>Buyer's Guide</span>Best Sim Racing Wheels for iRacing in 2026</a>
-      <a class="related-card" href="bmw-m4-gt4-iracing-guide.html"><span>Car Guide</span>BMW M4 GT4 in iRacing — Driving &amp; Setup Guide</a>
-      <a class="related-card" href="how-to-stream-iracing-obs.html"><span>Streaming</span>How to Stream iRacing with OBS Without Lag</a>
+      <a class="related-card" href="/packs/"><span>Setup Packs</span>MOZA, iRacing &amp; ACC Setup Packs</a> <a class="related-card" href="best-sim-racing-wheels-iracing.html"><span>Buyer's Guide</span>Best Sim Racing Wheels for iRacing in 2026</a> <a class="related-card" href="bmw-m4-gt4-iracing-guide.html"><span>Car Guide</span>BMW M4 GT4 in iRacing: Driving &amp; Setup Guide</a> <a class="related-card" href="how-to-stream-iracing-obs.html"><span>Streaming</span>How to Stream iRacing with OBS Without Lag</a>
     </div>
   </div>
 

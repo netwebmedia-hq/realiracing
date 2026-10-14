@@ -63,7 +63,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Anti-Roll Bars and Balance: How ARB Stiffness Shifts Weight","item":"https://realiracing.com/blog/anti-roll-bars-balance-shift-explained.html"}]}
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/anti-roll-bars-balance-shift-explained.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/anti-roll-bars-balance-shift-explained.html#rir-gear"}}]}
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive, the base bolted to my rig right now","url":"https://realiracing.com/blog/anti-roll-bars-balance-shift-explained.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/anti-roll-bars-balance-shift-explained.html#rir-gear"}}]}
   </script>
 </head>
 <body>
@@ -113,15 +113,15 @@
     <div class="article-body">
       <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
 
-      <p class="article-lead">The anti-roll bar (ARB)—also called the sway bar or stabilizer bar—is one of the most direct tools for tuning mid-corner balance in iRacing. I race on a <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> with load-cell pedals, and when I'm learning a new car or setup, I spend a lot of time adjusting ARB stiffness because the feedback is immediate and clear. A stiffer ARB on one end of the car resists body roll there, which makes that end feel sharper but also transfers load to the opposite end, making it looser. It's one of those setup changes where cause and effect are almost impossible to miss if you're paying attention to how the car responds through a fast corner.</p>
+      <p class="article-lead">The anti-roll bar (ARB), also called the sway bar or stabilizer bar, is one of the most direct tools for tuning mid-corner balance in iRacing. I race on a <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> with load-cell pedals, and when I'm learning a new car or setup, I spend a lot of time adjusting ARB stiffness because the feedback is immediate and clear. A stiffer ARB on one end of the car resists body roll there, which makes that end feel sharper but also transfers load to the opposite end, making it looser. It's one of those setup changes where cause and effect are almost impossible to miss if you're paying attention to how the car responds through a fast corner.</p>
 
-      <p>The challenge isn't understanding what an ARB does in isolation—it's understanding how it trades off between the front and rear of the car, and how it interacts with the rest of your suspension. Too stiff everywhere and you're fighting the car. Too soft and you lose turn-in precision. I'll walk through the mechanics, show you how to diagnose which end needs adjustment, and give you a practical tuning method I use on my own rig.</p>
+      <p>The challenge is understanding how an ARB trades off between the front and rear of the car and how it interacts with the rest of your suspension. Too stiff everywhere and you're fighting the car. Too soft and you lose turn-in precision. I'll walk through the mechanics, show you how to diagnose which end needs adjustment, and give you a practical tuning method I use on my own rig.</p>
 
       <h2>What an Anti-Roll Bar Actually Does</h2>
 
-      <p>An anti-roll bar is a torsional spring that connects the left and right suspension. When the car leans into a corner, the outside suspension compresses and the inside extends. A stiffer ARB resists that asymmetry—it tries to keep both sides of the suspension at the same height. That sounds like a good thing, but here's where it gets interesting: resisting roll on one end of the car means the load that would have transferred naturally now has to go somewhere else.</p>
+      <p>An anti-roll bar is a torsional spring that connects the left and right suspension. When the car leans into a corner, the outside suspension compresses and the inside extends. A stiffer ARB resists that asymmetry, trying to keep both sides of the suspension at the same height. That sounds like a good thing, but here's where it gets interesting: resisting roll on one end of the car means the load that would have transferred naturally now has to go somewhere else.</p>
 
-      <p>In practical terms: a stiffer front ARB reduces understeer by keeping the front end more level and keeping weight over the front tires through the corner. But it also reduces the car's ability to generate grip through body roll on the front axle. At the same time, it makes the rear relatively looser because the front is doing less of the suspension work. A stiffer rear ARB does the opposite—it keeps the rear more level, which tightens the rear and makes the front feel more loose, inviting understeer.</p>
+      <p>In practical terms: a stiffer front ARB reduces understeer by keeping the front end more level and keeping weight over the front tires through the corner. But it also reduces the car's ability to generate grip through body roll on the front axle. At the same time, it makes the rear relatively looser because the front is doing less of the suspension work. A stiffer rear ARB keeps the rear more level, which tightens the rear and makes the front feel more loose, inviting understeer.</p>
 
       <p>The key insight: ARB stiffness is not about absolute grip. It's about how you distribute grip and load transfer between the front and rear axles. On my MOZA R9 with ~9 N·m of torque, I can feel these shifts in feedback very clearly through high-speed corners because the wheel gives me real-time information about how the tires are loading.</p>
 
@@ -143,7 +143,7 @@
 
       <div class="tip-box">
         <span class="box-label">Balance Shift Principle</span>
-        <p>The relative difference between front and rear ARB stiffness matters more than the absolute values. If you raise both by the same amount, the balance doesn't change much—you've just changed overall roll resistance. To shift balance forward, stiffen the front or soften the rear. To shift balance aft, do the opposite.</p>
+        <p>The relative difference between front and rear ARB stiffness matters more than the absolute values. If you raise both by the same amount, the balance changes little because you have just changed overall roll resistance. To shift balance forward, stiffen the front or soften the rear. To shift balance aft, do the opposite.</p>
       </div>
 
       <h2>How to Diagnose Which End Needs ARB Adjustment</h2>
@@ -161,7 +161,7 @@
 
       <h2>ARB Adjustment and Other Suspension Factors</h2>
 
-      <p>ARB changes interact with springs, dampers (shocks), and tire pressures. This is where setup tuning gets complicated, but it's also why I don't chase exact numbers—I chase feel on my MOZA R9 and then validate with lap times.</p>
+      <p>ARB changes interact with springs, dampers (shocks), and tire pressures. This is where setup tuning gets complicated; I don't chase exact numbers because I chase feel on my MOZA R9 and then validate with lap times.</p>
 
       <ul>
         <li><strong>Springs:</strong> A stiffer spring on the front makes the car stiffer, which is sometimes confused with ARB stiffness. Springs change the car's overall stiffness; ARBs change how roll is distributed. You can have soft springs with a stiff ARB, or vice versa.</li>
@@ -170,7 +170,7 @@
         <li><strong>Anti-dive and anti-squat geometry:</strong> Some cars have these built into the suspension. They affect how the nose dives under braking or the tail squats under acceleration. ARB changes won't override them, but they'll interact with them.</li>
       </ul>
 
-      <p>On my rig, when I'm tuning ARBs, I always start from a baseline setup (either from a setup shop or a trusted league setup) and adjust one axis at a time—front first, then rear. I do three laps on a medium-speed corner, feel the balance, adjust one step, and repeat. This way I can isolate the ARB change from everything else.</p>
+      <p>On my rig, when I'm tuning ARBs, I always start from a baseline setup (either from a setup shop or a trusted league setup) and adjust one axis at a time: front first, then rear. I do three laps on a medium-speed corner, feel the balance, adjust one step, and repeat. This way I can isolate the ARB change from everything else.</p>
 
       <h2>Practical ARB Tuning Workflow</h2>
 
@@ -182,14 +182,14 @@
         <li>If understeer: try stiffening the front ARB by 1–2 steps. Do three laps. If it gets better, continue stiffening by smaller increments until it feels balanced or you hit oversteer. If it gets worse, go back and try softening the rear ARB instead.</li>
         <li>If oversteer: try stiffening the rear ARB by 1–2 steps. Same three-lap validation. If it improves, keep tuning that direction. If worse, try softening the front.</li>
         <li>Once mid-corner balance feels neutral, do a full stint (8–10 laps). Check exit grip (that's usually a damping/spring thing, not ARB) and overall consistency.</li>
-        <li>Fine-tune with small changes (~0.5 clicks or half steps if your sim supports it). ARBs have a narrow sweet spot in most cars—too much either way and the car fights you.</li>
+        <li>Fine-tune with small changes (~0.5 clicks or half steps if your sim supports it). ARBs have a narrow sweet spot in most cars; too much either way and the car fights you.</li>
       </ol>
 
       <p>This is a real tuning session from my own work on the rig. I don't chase lap-time tenths with ARB alone; I chase balance and consistency. Once the mid-corner balance is neutral, the car is usually significantly faster because you're not fighting understeer or a nervous rear end.</p>
 
       <div class="tip-box">
         <span class="box-label">ARB Predictability</span>
-        <p>ARB stiffness is one of the few setup tools that has an almost linear effect. Stiffer = less roll and load transfer to the outer tire. Softer = more roll and more outer-tire loading. This linearity makes ARBs predictable—if your change didn't work as expected, the diagnosis usually points to something else (springs, dampers, or tire issues) needing attention instead.</p>
+        <p>ARB stiffness is one of the few setup tools that has an almost linear effect. Stiffer = less roll and load transfer to the outer tire. Softer = more roll and more outer-tire loading. This linearity makes ARBs predictable; if your change did not work as expected, the diagnosis usually points to something else (springs, dampers, or tire issues) needing attention instead.</p>
       </div>
 
       <h2>Common ARB Mistakes and How to Avoid Them</h2>
@@ -197,7 +197,7 @@
       <ul>
         <li><strong>Cranking both ARBs to maximum:</strong> This creates an artificially stiff car that resists natural load transfer. You lose grip because the tires can't work the suspension correctly. Start moderate (~50% of range) and adjust from there.</li>
         <li><strong>Confusing ARB stiffness with overall balance:</strong> If a car is loose on exit and you stiffen the rear ARB, you might make it feel planted but actually slower because you're reducing the rear tire's load-transfer grip. Check lap times, not just feel.</li>
-        <li><strong>Ignoring the front-rear ratio:</strong> If you only adjust one end, you're not really tuning balance—you're just making the car different. Always think in pairs: stiffer front + softer rear, or vice versa.</li>
+        <li><strong>Ignoring the front-rear ratio:</strong> If you only adjust one end, you are not really tuning balance; you are just making the car different. Always think in pairs: stiffer front + softer rear, or vice versa.</li>
         <li><strong>Setting ARBs the same as the setup shop baseline without testing:</strong> Setup shops give you a starting point, not a finish line. Your driving style, the specific track, and your own rig's characteristics matter. Spend 15 minutes validating or tweaking the baseline before the race.</li>
       </ul>
 
@@ -213,17 +213,17 @@
           <table class="gear-table">
             <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
             <tbody>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive, the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
             <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge">Raced on</span></td></tr>
             </tbody>
           </table>
         </div>
-        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links; I may earn a commission at no cost to you.</p>
       </div></div>
 
       <div class="cta-box">
         <h3>Watch it, don't just read about it</h3>
-        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <p>I stream and upload iRacing races on my MOZA R9 rig: real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
         <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
       </div>
       <div class="cta-box rir-pack-cta">
@@ -256,9 +256,7 @@
   <div class="related">
     <h2>Keep reading</h2>
     <div class="related-grid">
-      <a class="related-card" href="choosing-gear-ratios-unfamiliar-track.html"><span>Setup Guides</span>Choosing Gear Ratios for a Track You Don't Know Yet</a>
-      <a class="related-card" href="sequential-h-pattern-paddles-shifter-choice.html"><span>Setup Guides</span>Sequential vs H-Pattern vs Paddles: Which Shifter for iRacing</a>
-      <a class="related-card" href="moza-r9-iracing-settings.html"><span>Setup Guides</span>MOZA R9 iRacing Settings — The Complete FFB Guide (2026)</a>
+      <a class="related-card" href="choosing-gear-ratios-unfamiliar-track.html"><span>Setup Guides</span>Choosing Gear Ratios for a Track You Don't Know Yet</a> <a class="related-card" href="sequential-h-pattern-paddles-shifter-choice.html"><span>Setup Guides</span>Sequential vs H-Pattern vs Paddles: Which Shifter for iRacing</a> <a class="related-card" href="moza-r9-iracing-settings.html"><span>Setup Guides</span>MOZA R9 iRacing Settings: The Complete FFB Guide (2026)</a>
     </div>
   </div>
 

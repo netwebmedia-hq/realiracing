@@ -63,7 +63,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Streaming iRacing from VR: The GPU Guide","item":"https://realiracing.com/blog/vr-streaming-iracing-setup.html"}]}
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"NVIDIA GeForce RTX 5060 Ti (8 GB)","description":"renders iRacing and NVENC-encodes the stream on the same chip","url":"https://realiracing.com/blog/vr-streaming-iracing-setup.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/vr-streaming-iracing-setup.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup — high refresh matters more than size","url":"https://realiracing.com/blog/vr-streaming-iracing-setup.html#rir-gear"}}]}
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"NVIDIA GeForce RTX 5060 Ti (8 GB)","description":"renders iRacing and NVENC-encodes the stream on the same chip","url":"https://realiracing.com/blog/vr-streaming-iracing-setup.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive, the base bolted to my rig right now","url":"https://realiracing.com/blog/vr-streaming-iracing-setup.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup: high refresh matters more than size","url":"https://realiracing.com/blog/vr-streaming-iracing-setup.html#rir-gear"}}]}
   </script>
 </head>
 <body>
@@ -113,19 +113,19 @@
     <div class="article-body">
       <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
 
-      <p class="article-lead">Streaming from a VR headset looks simple to an observer: they see your race, you see the world inside the headset, and somewhere in between a capture card or software encoder is supposed to bridge the gap. In practice, it's the most technically complex streaming setup in sim racing—and most guides skip the part that actually matters: your GPU is rendering two frames at once (one for your eyes in the headset, one for the stream), and the CPU encoder is working double-shift to keep up. Get this wrong and you end up with stuttering in the headset, dropped frames on stream, or a setup that throttles your iRacing performance entirely.</p>
+      <p class="article-lead">Streaming from a VR headset looks simple to an observer: they see your race, you see the world inside the headset, and somewhere in between a capture card or software encoder is supposed to bridge the gap. In practice, it's the most technically complex streaming setup in sim racing; most guides skip the part that actually matters: your GPU renders two frames at once (one for your eyes in the headset, one for the stream), and the CPU encoder works double-shift to keep up. Get this wrong and you end up with stuttering in the headset, dropped frames on stream, or a setup that throttles your iRacing performance entirely.</p>
 
       <h2>Why VR streaming is harder than monitor streaming</h2>
 
-      <p>When you stream from a monitor, iRacing renders one frame, your GPU encodes it, and the capture software sends it out. VR adds a step: iRacing renders a separate frame for each eye (stereo), the GPU distorts and rotates those frames to match the headset's optics, and then—if you want people on stream to see what you see—the GPU has to ALSO send a single flattened "spectator" view to the capture software. That's three rendering passes instead of one, all happening on the same GPU per frame.</p>
+      <p>When you stream from a monitor, iRacing renders one frame, your GPU encodes it, and the capture software sends it out. VR adds a step: iRacing renders a separate frame for each eye (stereo), the GPU distorts and rotates those frames to match the headset's optics, and then, if you want people on stream to see what you see, the GPU has to also send a single flattened spectator view to the capture software. That's three rendering passes instead of one, all happening on the same GPU per frame.</p>
 
       <p>The encoder stacks on top: you need to compress video fast enough that stream delay stays under ~3 seconds, which means your GPU is encoding in real-time while doing all that rendering. A mid-range GPU like a 5060 Ti can handle it, but only if you dial the encoder settings correctly and accept that some performance optimization goes toward streaming instead of toward higher frame rates in the headset.</p>
 
       <h2>iRacing spectator mode: the foundation</h2>
 
-      <p>The key to viewable VR streaming is iRacing's spectator view—a built-in mode that renders a separate single-screen chase camera or cockpit view while you race in the headset. Without it, you have no stream source at all; with it, OBS can capture that window and send it out while your headset stays untethered.</p>
+      <p>The key to viewable VR streaming is iRacing's spectator view, a built-in mode that renders a separate single-screen chase camera or cockpit view while you race in the headset. Without it, you have no stream source at all; with it, OBS can capture that window and send it out while your headset stays untethered.</p>
 
-      <p>To enable spectator view in iRacing, go to Options → Graphics → VR, and toggle "Mirror mode" on. This renders a 1080p or 1440p copy of your race to your monitor (or a capture window) while the headset shows the full VR experience. That mirrored output is what OBS sees and streams. The frame rate is independent—your headset might be running 144 Hz (if your GPU is pushing it), while the mirror runs at 60 or 90 Hz depending on your encoder's target bitrate and your upload speed.</p>
+      <p>To enable spectator view in iRacing, go to Options → Graphics → VR, and toggle "Mirror mode" on. This renders a 1080p or 1440p copy of your race to your monitor (or a capture window) while the headset shows the full VR experience. That mirrored output is what OBS sees and streams. The frame rate is independent; your headset might be running 144 Hz if your GPU is pushing it, while the mirror runs at 60 or 90 Hz depending on your encoder's target bitrate and your upload speed.</p>
 
       <h2>GPU requirements: the math</h2>
 
@@ -135,12 +135,12 @@
 
       <div class="tip-box rir-pitstop-callout">
         <span class="box-label">From the RealiRacing shop</span>
-        <p><strong>Before you go live, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=vr-streaming-iracing-setup">See NWM PitStop &rarr;</a></p>
+        <p><strong>Before you go live, free up your rig.</strong> NWM PitStop is the clean-up and stream-priority script set we run before every session; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=vr-streaming-iracing-setup">See NWM PitStop &rarr;</a></p>
       </div>
 
       <h2>NVENC encoding settings for iRacing</h2>
 
-      <p>NVENC is NVIDIA's hardware encoder, and it runs on a dedicated circuit in the GPU separate from the cores doing rendering. This is why it's viable to use NVENC while maxing out the GPU's compute cores—they work in parallel. Set OBS to use NVENC H.264 (not HEVC; H.264 decodes better on most platforms) with these baseline settings for a 1080p60 stream:</p>
+      <p>NVENC is NVIDIA's hardware encoder, and it runs on a dedicated circuit in the GPU separate from the cores doing rendering. This is why it's viable to use NVENC while maxing out the GPU's compute cores, as they work in parallel. Set OBS to use NVENC H.264 (not HEVC; H.264 decodes better on most platforms) with these baseline settings for a 1080p60 stream:</p>
 
       <ul>
         <li>Bitrate: 6000 kbps (or higher if your ISP upload allows; 8000–10000 is more comfortable for 1080p60)</li>
@@ -150,25 +150,25 @@
         <li>Rate Control: CBR (constant bitrate keeps latency predictable; VBR will spike if track camera cuts happen)</li>
       </ul>
 
-      <p>At 1440p90, bump bitrate to 12000–15000 kbps if your upload allows (most residential connections hit a ceiling around 20 Mbps upload). If you're upload-limited, stick to 1080p60—the lower resolution looks better at a lower bitrate than under-encoding 1440p.</p>
+      <p>At 1440p90, bump bitrate to 12000–15000 kbps if your upload allows (most residential connections hit a ceiling around 20 Mbps upload). If you're upload-limited, stick to 1080p60; the lower resolution looks better at a lower bitrate than under-encoding 1440p.</p>
 
       <h2>Monitor-based vs dedicated capture card streaming</h2>
 
-      <p>A dedicated capture card (like an Elgato 4K60 Pro) routes the mirror output separately from your main GPU, which sounds ideal but isn't—it adds latency and requires the mirror to run at fixed resolution/frame rate. Software encoding (NVENC) through OBS is simpler and actually lower latency because the GPU passes the mirror buffer directly to the encoder without a round-trip through a capture device. I use OBS with NVENC, and stream delay is consistently ~2.5 seconds on a stable network.</p>
+      <p>A dedicated capture card (like an Elgato 4K60 Pro) routes the mirror output separately from your main GPU; this adds latency and requires the mirror to run at a fixed resolution and frame rate. Software encoding (NVENC) through OBS is simpler and actually lower latency because the GPU passes the mirror buffer directly to the encoder without a round-trip through a capture device. I use OBS with NVENC, and stream delay is consistently ~2.5 seconds on a stable network.</p>
 
       <h2>A practical workflow: my own setup</h2>
 
-      <p>My stream machine is a single PC: <a href="https://www.amazon.com/s?k=AMD+Ryzen+7+5700+processor&amp;rh=p_89%3AAMD&amp;tag=realiracing-20" data-aff="cpu-ryzen-7-5700" target="_blank" rel="sponsored noopener">Ryzen 7 5700</a> CPU, RTX 5060 Ti GPU, iRacing on an SSD. iRacing runs full VR on the headset (144 Hz if the track allows it), mirror at 1440p60 in a window on a side monitor (not my primary display—that's just browser and chat). OBS captures that mirror window, NVENC encodes it at 10000 kbps, and it ships to Twitch. The headset frame rate stays above 90 Hz because the mirror is running at 60 fps, not trying to match the headset. This separation—headset and stream at different frame rates—is the key to stable streaming without performance sacrifice.</p>
+      <p>My stream machine is a single PC: <a href="https://www.amazon.com/s?k=AMD+Ryzen+7+5700+processor&amp;rh=p_89%3AAMD&amp;tag=realiracing-20" data-aff="cpu-ryzen-7-5700" target="_blank" rel="sponsored noopener">Ryzen 7 5700</a> CPU, RTX 5060 Ti GPU, iRacing on an SSD. iRacing runs full VR on the headset (144 Hz if the track allows it), mirror at 1440p60 in a window on a side monitor, and my primary display shows just browser and chat. OBS captures that mirror window, NVENC encodes it at 10000 kbps, and it ships to Twitch. The headset frame rate stays above 90 Hz because the mirror is running at 60 fps, not trying to match the headset. This separation, headsets and streams at different frame rates, is the key to stable streaming without performance sacrifice.</p>
 
-      <p>If you're on a tighter budget GPU, drop the mirror to 1080p60 and keep the bitrate at 6000. It still looks good, and you free up enough GPU bandwidth to keep the headset at a comfortable frame rate. See my full setup tour in my <a href="iracing-vr-vs-triple-monitors.html">VR vs triple monitors guide</a>—that post covers the entire depth-perception and immersion calculus, and this streaming aspect is just one piece of the decision.</p>
+      <p>If you're on a tighter budget GPU, drop the mirror to 1080p60 and keep the bitrate at 6000. It still looks good, and you free up enough GPU bandwidth to keep the headset at a comfortable frame rate. See my full setup tour in my <a href="iracing-vr-vs-triple-monitors.html">VR vs triple monitors guide</a>; that post covers the entire depth-perception and immersion calculus, and this streaming aspect is just one piece of the decision.</p>
 
       <h2>Common VR streaming mistakes to avoid</h2>
 
-      <p>Mistake 1: Running the mirror at the same frame rate as the headset. If your headset is 144 Hz, the mirror should be 60 or 90 Hz. Forcing the mirror to 144 Hz uses double the GPU overhead and gives no benefit to viewers. Mistake 2: Streaming directly from VR without a spectator mirror. Some VR sims let OBS capture the raw VR stream, but iRacing does not—you need mirror mode on. Mistake 3: Over-encoding the bitrate. Even with a stable connection, more bitrate does not equal better quality if your encoder settings are loose. Dial in your preset and rate control first, then raise bitrate only if you can actually see quality improvement.</p>
+      <p>Mistake 1: Running the mirror at the same frame rate as the headset. If your headset is 144 Hz, the mirror should be 60 or 90 Hz. Forcing the mirror to 144 Hz uses double the GPU overhead and gives no benefit to viewers. Mistake 2: Streaming directly from VR without a spectator mirror. Some VR sims let OBS capture the raw VR stream, but iRacing requires mirror mode to be on. Mistake 3: Over-encoding the bitrate. Even with a stable connection, more bitrate does not equal better quality if your encoder settings are loose. Dial in your preset and rate control first, then raise bitrate only if you can actually see quality improvement.</p>
 
       <div class="tip-box">
         <span class="box-label">Tune one variable at a time</span>
-        <p>Start with 1080p60 at 6000 kbps and leave it there for an entire stream session. Make one change at a time—either resolution or bitrate—and watch the stability and quality for 10+ minutes before deciding to change again. VR streaming is the easiest setup to tweak into instability.</p>
+        <p>Start with 1080p60 at 6000 kbps and leave it there for an entire stream session. Make one change at a time, either resolution or bitrate, and watch the stability and quality for 10+ minutes before deciding to change again. VR streaming is the easiest setup to tweak into instability.</p>
       </div>
 
       <div id="rir-gear"><div class="gear-box">
@@ -178,17 +178,17 @@
             <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
             <tbody>
             <tr><th scope="row"><a href="https://www.amazon.com/s?k=RTX+5060+Ti+8GB+graphics+card&amp;tag=realiracing-20" data-aff="gpu-rtx-5060-ti" target="_blank" rel="sponsored noopener">NVIDIA GeForce RTX 5060 Ti (8 GB)</a></th><td>renders iRacing and NVENC-encodes the stream on the same chip</td><td><span class="rig-badge">Raced on</span></td></tr>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup — high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive, the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup: high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
             </tbody>
           </table>
         </div>
-        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links; I may earn a commission at no cost to you.</p>
       </div></div>
 
       <div class="cta-box">
         <h3>Watch it, don't just read about it</h3>
-        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <p>I stream and upload iRacing races on my MOZA R9 rig: real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
         <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
       </div>
       <div class="cta-box rir-pack-cta">
