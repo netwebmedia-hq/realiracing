@@ -37,12 +37,12 @@
       {
         "@type": "Question",
         "name": "Why does my iRacing stream lag even with good internet?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Good internet only rules out one of three causes. Open your OBS log and look for 'skipped frames due to encoding lag' (your encoder preset is too heavy for the GPU) and 'lagged frames due to rendering lag' (the GPU is starved because iRacing is eating it). A fast connection won't fix either — you have to lighten the encoder and free up GPU headroom." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Good internet only rules out one of three causes. Open your OBS log and look for 'skipped frames due to encoding lag' (your encoder preset is too heavy for the GPU) and 'lagged frames due to rendering lag' (the GPU is starved because iRacing is eating it). A fast connection won't fix this; you have to lighten the encoder and free up GPU headroom." }
       },
       {
         "@type": "Question",
         "name": "What bitrate should I use to stream iRacing to YouTube?",
-        "acceptedAnswer": { "@type": "Answer", "text": "I run CBR at 9000 kbps with a 2-second keyframe interval, outputting 1920x1080 at 60 fps downscaled from my native 1440p. CBR keeps the bitrate constant instead of collapsing under network jitter — dynamic/variable bitrate is what let mine fall from 4500 down to 2500 kbps on a bad connection." }
+        "acceptedAnswer": { "@type": "Answer", "text": "I run CBR at 9000 kbps with a 2-second keyframe interval, outputting 1920x1080 at 60 fps downscaled from my native 1440p. CBR keeps the bitrate constant instead of collapsing under network jitter; dynamic or variable bitrate is what let mine fall from 4500 down to 2500 kbps on a bad connection." }
       },
       {
         "@type": "Question",
@@ -63,7 +63,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"How to Stream iRacing with OBS Without Lag — Single-PC Settings That Work","item":"https://realiracing.com/blog/how-to-stream-iracing-obs.html"}]}
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ItemList","name":"The hardware behind this stream","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"NVIDIA GeForce RTX 5060 Ti (8 GB)","description":"renders iRacing and NVENC-encodes the stream on the same chip","url":"https://realiracing.com/blog/how-to-stream-iracing-obs.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"AMD Ryzen 7 5700","description":"8 cores — plenty for iRacing plus OBS on one PC","url":"https://realiracing.com/blog/how-to-stream-iracing-obs.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup — high refresh matters more than size","url":"https://realiracing.com/blog/how-to-stream-iracing-obs.html#rir-gear"}},{"@type":"ListItem","position":4,"item":{"@type":"Product","name":"WHOOP 5.0 Band","description":"a WHOOP drives the live heart-rate overlay on my streams — mine is a 4.0, but 5.0 is what you can buy now","url":"https://realiracing.com/blog/how-to-stream-iracing-obs.html#rir-gear"}}]}
+  {"@context":"https://schema.org","@type":"ItemList","name":"The hardware behind this stream","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"NVIDIA GeForce RTX 5060 Ti (8 GB)","description":"renders iRacing and NVENC-encodes the stream on the same chip","url":"https://realiracing.com/blog/how-to-stream-iracing-obs.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"AMD Ryzen 7 5700","description":"8 cores are plenty for iRacing plus OBS on one PC.","url":"https://realiracing.com/blog/how-to-stream-iracing-obs.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup: high refresh matters more than size","url":"https://realiracing.com/blog/how-to-stream-iracing-obs.html#rir-gear"}},{"@type":"ListItem","position":4,"item":{"@type":"Product","name":"WHOOP 5.0 Band","description":"a WHOOP drives the live heart-rate overlay on my streams; mine is a 4.0, but 5.0 is what you can buy now","url":"https://realiracing.com/blog/how-to-stream-iracing-obs.html#rir-gear"}}]}
   </script>
 </head>
 <body>
@@ -114,13 +114,13 @@
 
       <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
 
-      <p class="article-lead">Streaming iRacing from a single PC is a resource war. The sim wants 100% of the GPU to render 60 cars at 120 Hz, the encoder needs its own slice of that same chip to push video out, and one wrong setting in OBS breaks both at once. I found that out the hard way on my own stream, and this is the exact debugging process — and the exact fix — that got it clean.</p>
+      <p class="article-lead">Streaming iRacing from a single PC is a resource war. The sim wants 100% of the GPU to render 60 cars at 120 Hz, the encoder needs its own slice of that same chip to push video out, and one wrong setting in OBS breaks both at once. I found that out the hard way on my own stream, and this is the exact debugging process, and the exact fix, that got it clean.</p>
 
       <p>My rig is one PC: <a href="https://www.amazon.com/s?k=RTX+5060+Ti+8GB+graphics+card&amp;tag=realiracing-20" data-aff="gpu-rtx-5060-ti" target="_blank" rel="sponsored noopener">RTX 5060 Ti</a> 8 GB, <a href="https://www.amazon.com/s?k=AMD+Ryzen+7+5700+processor&amp;rh=p_89%3AAMD&amp;tag=realiracing-20" data-aff="cpu-ryzen-7-5700" target="_blank" rel="sponsored noopener">Ryzen 7 5700</a>, 32 GB RAM, gigabit wired ethernet, 1440p 120 Hz G-SYNC Compatible monitor. No capture card, no second encoding machine. Everything you're about to read applies directly if you're in the same boat.</p>
 
       <h2>The symptom: a stream that lagged and clipped</h2>
 
-      <p>Viewers were seeing stutters and dropped segments — the classic "your stream just froze for a second" comments in chat. The picture would hitch, catch back up, then do it again a few minutes later. No single moment was catastrophic, but it was constant enough to be distracting, and I couldn't tell from the preview window alone whether it was my GPU, my encoder settings, or my connection.</p>
+      <p>Viewers were seeing stutters and dropped segments, the classic "your stream just froze for a second" comments in chat. The picture would hitch, catch back up, then do it again a few minutes later. No single moment was catastrophic, but it was constant enough to be distracting, and I couldn't tell from the preview window alone whether it was my GPU, my encoder settings, or my connection.</p>
 
       <p>So I stopped guessing and went to the source of truth: the OBS log file.</p>
 
@@ -131,13 +131,13 @@
       <div class="table-scroll">
       <table>
         <tr><th>Log line contains</th><th>What it means</th><th>What it points to</th></tr>
-        <tr><td>"skipped frames due to encoding lag"</td><td>The encoder can't keep up — frames are ready but not getting encoded in time</td><td>Encoder overload: preset too heavy, codec too demanding, or bitrate/quality settings asking for more than the chip can deliver in real time</td></tr>
-        <tr><td>"lagged frames due to rendering lag"</td><td>OBS's render/compositor can't produce frames fast enough — it's starved for GPU time</td><td>GPU contention: something else (usually the game) is consuming the GPU that OBS's renderer needs</td></tr>
+        <tr><td>"skipped frames due to encoding lag"</td><td>The encoder can't keep up; frames are ready but not getting encoded in time.</td><td>Encoder overload: preset too heavy, codec too demanding, or bitrate/quality settings asking for more than the chip can deliver in real time</td></tr>
+        <tr><td>"lagged frames due to rendering lag"</td><td>OBS's render/compositor can't produce frames fast enough because it is starved for GPU time.</td><td>GPU contention: something else (usually the game) is consuming the GPU that OBS's renderer needs</td></tr>
         <tr><td>"bitrate decreased to:" (dynamic bitrate)</td><td>OBS is actively throttling your output because the network can't sustain the target bitrate</td><td>Network: jitter or insufficient sustained upload is collapsing your stream quality in real time</td></tr>
       </table>
       </div>
 
-      <p>In my log, all three were present in the same session: <strong>17.1% of frames skipped due to encoding lag</strong>, <strong>6.7% lagged due to rendering lag</strong>, and dynamic bitrate collapsing from <strong>4500 down to 2500 kbps</strong>. That's not one problem — that's three separate causes stacked on top of each other, and each needed its own fix.</p>
+      <p>In my log, all three were present in the same session: <strong>17.1% of frames skipped due to encoding lag</strong>, <strong>6.7% lagged due to rendering lag</strong>, and dynamic bitrate collapsing from <strong>4500 down to 2500 kbps</strong>. That is not one problem; that is three separate causes stacked on top of each other, and each needed its own fix.</p>
 
       <div class="tip-box">
         <span class="box-label">Read the percentages, not just the presence</span>
@@ -152,53 +152,53 @@
       <table>
         <tr><th>OBS Setting</th><th>Value</th><th>Why</th></tr>
         <tr><td>Encoder</td><td><strong>NVENC H.264</strong></td><td>Lighter on a shared, single GPU than AV1 or HEVC at a comparable preset</td></tr>
-        <tr><td>Rate Control</td><td><strong>CBR</strong></td><td>Constant bitrate — stops the "decreased to" collapse dynamic bitrate caused</td></tr>
+        <tr><td>Rate Control</td><td><strong>CBR</strong></td><td>Constant bitrate stops the decreased-to collapse of dynamic bitrate caused by...</td></tr>
         <tr><td>Bitrate</td><td><strong>9000 kbps</strong></td><td>High enough for clean 1080p60, sustainable on gigabit wired</td></tr>
         <tr><td>Keyframe Interval</td><td><strong>2 s</strong></td><td>Standard for YouTube/Twitch ingest compatibility</td></tr>
-        <tr><td>Preset</td><td><strong>P5 (Slow / Good Quality)</strong></td><td>The sweet spot — P6/P7 add quality but cost more encode time per frame than a shared chip can spare</td></tr>
+        <tr><td>Preset</td><td><strong>P5 (Slow / Good Quality)</strong></td><td>The sweet spot: P6/P7 add quality but cost more encode time per frame than a shared chip can spare.</td></tr>
         <tr><td>Tuning</td><td><strong>High Quality</strong></td><td>Better quality-per-bit than the low-latency tunings without the preset weight of ultra-high presets</td></tr>
-        <tr><td>Multipass</td><td><strong>Off</strong></td><td>Two-pass encoding roughly doubles encode work per frame — the single biggest overload culprit</td></tr>
+        <tr><td>Multipass</td><td><strong>Off</strong></td><td>Two-pass encoding roughly doubles encode work per frame, which is the single biggest overload culprit.</td></tr>
         <tr><td>Look-ahead</td><td><strong>Off</strong></td><td>Buffers future frames to improve compression, at the cost of latency and encode headroom</td></tr>
-        <tr><td>Output Resolution</td><td><strong>1920x1080 @ 60 fps</strong></td><td>Downscaled from native 1440p — less pixels for the encoder to push</td></tr>
+        <tr><td>Output Resolution</td><td><strong>1920x1080 @ 60 fps</strong></td><td>Downscaled from native 1440p, there are fewer pixels for the encoder to process.</td></tr>
       </table>
       </div>
 
-      <p>Turning off Multipass and Look-ahead alone accounted for most of the encoding-lag fix. Both features exist to improve compression efficiency, and both do it by making the encoder do more work per frame — exactly the wrong trade when the encoder is already sharing a chip with a sim running at 100% load.</p>
+      <p>Turning off Multipass and Look-ahead alone accounted for most of the encoding-lag fix. Both features exist to improve compression efficiency, and both do it by making the encoder do more work per frame, which is the wrong trade when the encoder is already sharing a chip with a sim running at 100% load.</p>
 
       <h2>Why not AV1?</h2>
 
-      <p>AV1 and HEVC are objectively better codecs than H.264 — better quality per bit, at a given preset. But that comparison assumes equal preset weight, and on a single shared GPU, preset weight is the variable that actually matters.</p>
+      <p>AV1 and HEVC are objectively better codecs than H.264; they offer better quality per bit at a given preset. But that comparison assumes equal preset weight, and on a single shared GPU, preset weight is the variable that actually matters.</p>
 
-      <p>My original setup was AV1 at Preset P6 (Slower) with two-pass Multipass and Look-ahead both on — the "best quality" configuration by every slider in the menu. On paper that should look great. In practice, it was asking the same NVENC chip that's also feeding iRacing's own rendering to do the heaviest possible encode job, and it couldn't keep up. That's exactly where the 17.1% skipped-frame number came from.</p>
+      <p>My original setup was AV1 at Preset P6 (Slower) with two-pass Multipass and Look-ahead both on, the "best quality" configuration by every slider in the menu. On paper that should look great. In practice, it was asking the same NVENC chip that's also feeding iRacing's own rendering to do the heaviest possible encode job, and it couldn't keep up. That's exactly where the 17.1% skipped-frame number came from.</p>
 
       <p>H.264 at Preset P5 with Multipass and Look-ahead off is a lighter job for the encoder, full stop. It gave up some theoretical compression efficiency and got back a stream with effectively zero skipped frames. That's the trade that matters on one PC.</p>
 
-      <p>If you're running a dual-PC setup — one machine dedicated to the sim, a second dedicated to capture and encode — or you have a GPU purely for encoding duty, this calculus changes. AV1 or HEVC at a heavier preset becomes viable because nothing else is competing for that chip. But if you're streaming and racing off the same single GPU, match your preset to what the chip actually has spare, not to what looks best in a settings menu.</p>
+      <p>If you're running a dual-PC setup, with one machine dedicated to the sim and a second dedicated to capture and encode, or if you have a GPU purely for encoding duty, this calculus changes. AV1 or HEVC at a heavier preset becomes viable because nothing else is competing for that chip. But if you're streaming and racing off the same single GPU, match your preset to what the chip actually has spare, not to what looks best in a settings menu.</p>
 
-      <h2>Cap your FPS — the fix nobody does</h2>
+      <h2>Cap your FPS, the fix nobody does.</h2>
 
-      <p>This was the fix for the second problem: the 6.7% "lagged frames due to rendering lag." That number isn't about the encoder at all — it's OBS's own compositor not getting enough GPU time to assemble frames, because iRacing was rendering as many frames as the GPU could physically produce, uncapped, all the time.</p>
+      <p>This was the fix for the second problem: the 6.7% "lagged frames due to rendering lag." That number is not about the encoder at all; it's OBS's own compositor not getting enough GPU time to assemble frames, because iRacing was rendering as many frames as the GPU could physically produce, uncapped, all the time.</p>
 
-      <p>An uncapped frame rate doesn't make your own gameplay meaningfully smoother once you're well above your monitor's refresh rate — it just means the GPU never stops handing frames to the game, which starves everything else running on that GPU, including OBS's renderer.</p>
+      <p>An uncapped frame rate doesn't make your own gameplay meaningfully smoother once you're well above your monitor's refresh rate; it just means the GPU never stops handing frames to the game, which starves everything else running on that GPU, including OBS's renderer.</p>
 
-      <p>The fix: cap iRacing's frame rate through the NVIDIA App's per-program settings, not in-game. My monitor is 120 Hz G-SYNC Compatible, and I capped it at <strong>117 fps</strong> — refresh rate minus 3. That headroom keeps every frame inside the variable refresh rate window (so you're not bouncing in and out of VRR sync at the top edge) while handing back a meaningful slice of GPU time to everything else on the system. That freed-up headroom is what fixed the rendering-lag number.</p>
+      <p>The fix: cap iRacing's frame rate through the NVIDIA App's per-program settings, not in-game. My monitor is 120 Hz G-SYNC Compatible, and I capped it at <strong>117 fps</strong>, which is the refresh rate minus 3. That headroom keeps every frame inside the variable refresh rate window (so you're not bouncing in and out of VRR sync at the top edge) while handing back a meaningful slice of GPU time to everything else on the system. That freed-up headroom is what fixed the rendering-lag number.</p>
 
       <div class="tip-box">
         <span class="box-label">Match your own cap to your panel</span>
-        <p>The "minus 3" isn't a magic constant — it's a small buffer under whatever your monitor's max refresh is, so the frame rate never touches the ceiling where G-SYNC/VRR can get flaky. If you're on a 144 Hz panel, that's 141. If you're on 165 Hz, that's 162.</p>
+        <p>The "minus 3" is a small buffer under whatever your monitor's max refresh is, so the frame rate never touches the ceiling where G-SYNC/VRR can get flaky. If you're on a 144 Hz panel, that's 141. If you're on 165 Hz, that's 162.</p>
       </div>
 
       <h2>Display Capture vs Game Capture</h2>
 
-      <p>This one's a genuine trade-off, not a clean answer. Game Capture is lighter on system resources than Display Capture — it hooks the specific game window and generally costs OBS less to composite. If you're chasing every last bit of headroom, Game Capture is the cheaper option.</p>
+      <p>This one's a genuine trade-off, not a clean answer. Game Capture uses fewer system resources than Display Capture because it hooks the specific game window, which generally costs OBS less to composite. If you're chasing every last bit of headroom, Game Capture is the cheaper option.</p>
 
-      <p>I kept Display Capture anyway, deliberately. I run a telemetry overlay app (RaceLab-style) that renders as its own separate window layered on top of iRacing — lap times, delta, inputs. Game Capture hooks the game process specifically and will drop any other window sitting on top of it, including that overlay. Display Capture grabs the whole screen, so the overlay stays on stream.</p>
+      <p>I kept Display Capture anyway, deliberately. I run a telemetry overlay app, like RaceLab, that renders as its own separate window layered on top of iRacing to show lap times, delta, and inputs. Game Capture hooks the game process specifically and will drop any other window sitting on top of it, including that overlay. Display Capture grabs the whole screen, so the overlay stays on stream.</p>
 
-      <p>If you don't run a separate overlay window, switch to Game Capture — it's the lighter option and there's no reason to pay the extra cost. If your layout depends on windows outside the game itself, Display Capture is what puts them on stream, and it's worth the small extra resource cost once the encoder and FPS cap fixes above are already in place.</p>
+      <p>If you don't run a separate overlay window, switch to Game Capture; it is the lighter option and there is no reason to pay the extra cost. If your layout depends on windows outside the game itself, Display Capture is what puts them on stream, and it's worth the small extra resource cost once the encoder and FPS cap fixes above are already in place.</p>
 
       <div class="tip-box">
         <span class="box-label">Never stream through a VPN</span>
-        <p>The third cause in my log — the bitrate collapsing from 4500 to 2500 kbps — traced back to routing the stream through a VPN. VPNs add a hop, and that hop adds jitter that a real-time video stream can't absorb the way a web page load can. Stream directly, on wired ethernet, with the VPN off. Verify with OBS's <strong>Stats dock</strong> (View → Docks → Stats) — skipped frames should sit at roughly 0% for the entire session once everything above is dialed in.</p>
+        <p>The third cause in my log, the bitrate collapsing from 4500 to 2500 kbps, traced back to routing the stream through a VPN. VPNs add a hop, and that hop adds jitter that a real-time video stream can't absorb the way a web page load can. Stream directly, on wired ethernet, with the VPN off. Verify with OBS's <strong>Stats dock</strong> (View → Docks → Stats): skipped frames should sit at roughly 0% for the entire session once everything above is dialed in.</p>
       </div>
 
       <div id="rir-gear"><div class="gear-box">
@@ -208,18 +208,18 @@
             <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
             <tbody>
             <tr><th scope="row"><a href="https://www.amazon.com/s?k=RTX+5060+Ti+8GB+graphics+card&amp;tag=realiracing-20" data-aff="gpu-rtx-5060-ti" target="_blank" rel="sponsored noopener">NVIDIA GeForce RTX 5060 Ti (8 GB)</a></th><td>renders iRacing and NVENC-encodes the stream on the same chip</td><td><span class="rig-badge">Raced on</span></td></tr>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=AMD+Ryzen+7+5700+processor&amp;rh=p_89%3AAMD&amp;tag=realiracing-20" data-aff="cpu-ryzen-7-5700" target="_blank" rel="sponsored noopener">AMD Ryzen 7 5700</a></th><td>8 cores — plenty for iRacing plus OBS on one PC</td><td><span class="rig-badge">Raced on</span></td></tr>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup — high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=WHOOP+5.0+band&amp;tag=realiracing-20" data-aff="whoop" target="_blank" rel="sponsored noopener">WHOOP 5.0 Band</a></th><td>a WHOOP drives the live heart-rate overlay on my streams — mine is a 4.0, but 5.0 is what you can buy now</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=AMD+Ryzen+7+5700+processor&amp;rh=p_89%3AAMD&amp;tag=realiracing-20" data-aff="cpu-ryzen-7-5700" target="_blank" rel="sponsored noopener">AMD Ryzen 7 5700</a></th><td>8 cores are plenty for iRacing plus OBS on one PC.</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup: high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=WHOOP+5.0+band&amp;tag=realiracing-20" data-aff="whoop" target="_blank" rel="sponsored noopener">WHOOP 5.0 Band</a></th><td>a WHOOP drives the live heart-rate overlay on my streams; mine is a 4.0, but 5.0 is what you can buy now</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
             </tbody>
           </table>
         </div>
-        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links; I may earn a commission at no cost to you.</p>
       </div></div>
 
       <div class="cta-box">
         <h3>Watch the fixed stream in action</h3>
-        <p>This exact OBS config is what's running behind every live iRacing stream I put out now — clean encode, no dropped segments.</p>
+        <p>This exact OBS config is what's running behind every live iRacing stream I put out now: clean encode, no dropped segments.</p>
         <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
       </div>
       <div class="cta-box rir-pack-cta">
@@ -232,19 +232,19 @@
 
       <div class="faq-item">
         <h3>Why does my iRacing stream lag even with good internet?</h3>
-        <p>Good internet only rules out one of three causes. Open your OBS log and look for "skipped frames due to encoding lag" (your encoder preset is too heavy for the GPU) and "lagged frames due to rendering lag" (the GPU is starved because iRacing is eating it). A fast connection won't fix either — you have to lighten the encoder and free up GPU headroom.</p>
+        <p>Good internet only rules out one of three causes. Open your OBS log and look for "skipped frames due to encoding lag" (your encoder preset is too heavy for the GPU) and "lagged frames due to rendering lag" (the GPU is starved because iRacing is eating it). A fast connection won't fix this; you have to lighten the encoder and free up GPU headroom.</p>
       </div>
       <div class="faq-item">
         <h3>What bitrate should I use to stream iRacing to YouTube?</h3>
-        <p>I run CBR at 9000 kbps with a 2-second keyframe interval, outputting 1920x1080 at 60 fps downscaled from my native 1440p. CBR keeps the bitrate constant instead of collapsing under network jitter — dynamic/variable bitrate is what let mine fall from 4500 down to 2500 kbps on a bad connection.</p>
+        <p>I run CBR at 9000 kbps with a 2-second keyframe interval, outputting 1920x1080 at 60 fps downscaled from my native 1440p. CBR keeps the bitrate constant instead of collapsing under network jitter; dynamic or variable bitrate is what let mine fall from 4500 down to 2500 kbps on a bad connection.</p>
       </div>
       <div class="faq-item">
         <h3>Should I use NVENC AV1 or H.264 for streaming?</h3>
-        <p>On a single PC where the same GPU is also rendering iRacing, use H.264. Preset weight matters more than codec efficiency when the chip is shared — AV1 at a heavy preset with multipass and look-ahead overloaded my encoder, while H.264 at Preset P5 with both off left enough headroom to stop the skipped frames entirely. Dual-PC or dedicated-encoder setups change this math.</p>
+        <p>On a single PC where the same GPU is also rendering iRacing, use H.264. Preset weight matters more than codec efficiency when the chip is shared: AV1 at a heavy preset with multipass and look-ahead overloaded my encoder, while H.264 at Preset P5 with both off left enough headroom to stop the skipped frames entirely. Dual-PC or dedicated-encoder setups change this math.</p>
       </div>
       <div class="faq-item">
         <h3>Do I need a capture card or second PC to stream iRacing?</h3>
-        <p>No. Everything in this guide runs on one PC with a single RTX 5060 Ti. A second PC removes the resource fight entirely, which is the easier version of this problem — but it's not required if you get the encoder preset, bitrate mode, capture method, and FPS cap right.</p>
+        <p>No. Everything in this guide runs on one PC with a single RTX 5060 Ti. A second PC removes the resource fight entirely, which is the easier version of this problem; however, it is not required if you get the encoder preset, bitrate mode, capture method, and FPS cap right.</p>
       </div>
     </div>
   </main>
@@ -252,9 +252,7 @@
   <div class="related">
     <h2>Keep reading</h2>
     <div class="related-grid">
-      <a class="related-card" href="moza-r9-iracing-settings.html"><span>Setup Guides</span>MOZA R9 iRacing Settings — The Complete FFB Guide</a>
-      <a class="related-card" href="iracing-vr-vs-triple-monitors.html"><span>Hardware</span>iRacing in VR vs Triple Monitors — Which Should You Buy?</a>
-      <a class="related-card" href="iracing-safety-rating-guide.html"><span>iRacing Tips</span>iRacing Safety Rating Explained — How to Reach an A License Fast</a>
+      <a class="related-card" href="moza-r9-iracing-settings.html"><span>Setup Guides</span>MOZA R9 iRacing Settings: The Complete FFB Guide</a> <a class="related-card" href="iracing-vr-vs-triple-monitors.html"><span>Hardware</span>iRacing in VR vs Triple Monitors: Which Should You Buy?</a> <a class="related-card" href="iracing-safety-rating-guide.html"><span>iRacing Tips</span>iRacing Safety Rating Explained: How to Reach an A License Fast</a>
     </div>
   </div>
 

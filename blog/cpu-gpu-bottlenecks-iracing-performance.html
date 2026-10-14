@@ -63,7 +63,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"CPU vs GPU Bottlenecks in iRacing: Which One Matters","item":"https://realiracing.com/blog/cpu-gpu-bottlenecks-iracing-performance.html"}]}
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"AMD Ryzen 7 5700","description":"8 cores — plenty for iRacing plus OBS on one PC","url":"https://realiracing.com/blog/cpu-gpu-bottlenecks-iracing-performance.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"NVIDIA GeForce RTX 5060 Ti (8 GB)","description":"renders iRacing and NVENC-encodes the stream on the same chip","url":"https://realiracing.com/blog/cpu-gpu-bottlenecks-iracing-performance.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/cpu-gpu-bottlenecks-iracing-performance.html#rir-gear"}}]}
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"AMD Ryzen 7 5700","description":"8 cores are plenty for iRacing plus OBS on one PC.","url":"https://realiracing.com/blog/cpu-gpu-bottlenecks-iracing-performance.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"NVIDIA GeForce RTX 5060 Ti (8 GB)","description":"renders iRacing and NVENC-encodes the stream on the same chip","url":"https://realiracing.com/blog/cpu-gpu-bottlenecks-iracing-performance.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive, the base bolted to my rig right now","url":"https://realiracing.com/blog/cpu-gpu-bottlenecks-iracing-performance.html#rir-gear"}}]}
   </script>
 </head>
 <body>
@@ -115,13 +115,13 @@
 
       <p class="article-lead">I spent three months chasing frame drops in iRacing before I realized I was optimizing the wrong component. My rig runs an AMD <a href="https://www.amazon.com/s?k=AMD+Ryzen+7+5700+processor&amp;rh=p_89%3AAMD&amp;tag=realiracing-20" data-aff="cpu-ryzen-7-5700" target="_blank" rel="sponsored noopener">Ryzen 7 5700</a> paired with an <a href="https://www.amazon.com/s?k=RTX+5060+Ti+8GB+graphics+card&amp;tag=realiracing-20" data-aff="gpu-rtx-5060-ti" target="_blank" rel="sponsored noopener">RTX 5060 Ti</a>, and I kept cranking graphics settings, assuming my GPU needed headroom. My frame times stayed erratic. Only when I profiled my actual workload did I see the truth: my CPU was maxing out at 95% utilization while my GPU sat at 62%. I was bottlenecked at the processor, not the graphics card.</p>
 
-      <p>A bottleneck isn't a failure—it's just the reality of any system where one component can't keep up with the other. In iRacing, understanding which one is holding you back changes everything about how you optimize. You'll make smarter decisions about upgrades, settings tweaks, and whether spending money makes sense at all.</p>
+      <p>A bottleneck is not a failure; it is simply the reality of any system where one component can't keep up with the other. In iRacing, understanding which one is holding you back changes everything about how you optimize. You'll make smarter decisions about upgrades, settings tweaks, and whether spending money makes sense at all.</p>
 
       <h2>What Bottlenecking Actually Means</h2>
 
-      <p>A bottleneck happens when one component finishes its work before the other can feed it more data. If your CPU processes a frame faster than your GPU can render it, the CPU has to wait idle—that's a CPU bottleneck. If the GPU finishes rendering before the CPU has the next frame ready, the GPU idles—that's a GPU bottleneck.</p>
+      <p>A bottleneck happens when one component finishes its work before the other can feed it more data. If your CPU processes a frame faster than your GPU can render it, the CPU has to wait idle; that is a CPU bottleneck. If the GPU finishes rendering before the CPU has the next frame ready, the GPU idles; that is a GPU bottleneck.</p>
 
-      <p>Neither scenario is ideal, but they have very different implications for frame rate and responsiveness. A CPU bottleneck typically causes frame-time inconsistency and can spike your frame times unpredictably, especially during high-density traffic or complex weather rendering. A GPU bottleneck is more predictable—you'll hit a ceiling frame rate, but your frame times stay stable.</p>
+      <p>Neither scenario is ideal, but they have very different implications for frame rate and responsiveness. A CPU bottleneck typically causes frame-time inconsistency and can spike your frame times unpredictably, especially during high-density traffic or complex weather rendering. A GPU bottleneck is more predictable; you will hit a ceiling frame rate, but your frame times stay stable.</p>
 
       <div class="tip-box">
         <span class="box-label">Single-Thread Reality</span>
@@ -134,7 +134,7 @@
 
       <ol>
         <li>Download MSI Afterburner or HWiNFO. These are free and show real-time GPU and CPU utilization, memory usage, and temperatures.</li>
-        <li>Run a practice session at a busy track—Monza or Spa works well. Run enough laps to warm everything up (5–10 minutes).</li>
+        <li>Run a practice session at a busy track; Monza or Spa works well. Run enough laps to warm everything up (5–10 minutes).</li>
         <li>Log your metrics or record a screenshot overlay showing CPU load, GPU load, and frame time (in milliseconds, not just FPS).</li>
         <li>Identify which component is consistently hitting 90%+ utilization. That's your bottleneck.</li>
         <li>Compare your actual frame time to what your GPU alone should produce. If your GPU is maxed but your frame time is worse than the math predicts, CPU is still holding you back.</li>
@@ -161,12 +161,12 @@
         <li>You hit a hard ceiling frame rate (locked at 90 FPS, for instance) that doesn't budge</li>
         <li>Lowering resolution, shadow quality, or track geometry detail improves frame rate visibly</li>
         <li>GPU utilization consistently 90%+ while CPU stays below 85%</li>
-        <li>No stuttering between frames—just lower overall FPS</li>
+        <li>No stuttering between frames, just lower overall FPS.</li>
       </ul>
 
       <h2>Why iRacing CPU Bottlenecks Hurt Your Pace</h2>
 
-      <p>Frame-time inconsistency from a CPU bottleneck doesn't just feel jittery—it messes with your muscle memory. When frame timing varies between 8 ms and 18 ms from lap to lap, your visual reference point shifts. The car appears to move at slightly different speeds in your peripheral vision, and your braking and turn-in markers don't align consistently with the track.</p>
+      <p>Frame-time inconsistency from a CPU bottleneck feels jittery and messes with your muscle memory. When frame timing varies between 8 ms and 18 ms from lap to lap, your visual reference point shifts. The car appears to move at slightly different speeds in your peripheral vision, and your braking and turn-in markers don't align consistently with the track.</p>
 
       <p>I noticed this directly: my off-throttle point into Turn 1 at Monza felt inconsistent, even though my inputs were identical. Once I identified the CPU bottleneck and dialed back complex settings (AI count, visual damage on other cars, ambient occlusion quality), my frame time stabilized to 11–12 ms consistently. My lap times dropped by 0.3 seconds because my visual reference was finally stable.</p>
 
@@ -210,13 +210,13 @@
 
       <p>A rough rule of thumb: your CPU single-core performance and your GPU VRAM/bandwidth should be balanced so neither one idles more than 10–15% of the time. If your CPU scores ~2,500 single-thread on Cinebench R23 and your GPU is an RTX 5060 Ti (~$300 at launch), you're fairly well matched for 1440p racing.</p>
 
-      <p>Pair a top-tier GPU like an RTX 5090 with a budget CPU like a Ryzen 5 5600, though, and you'll be GPU-bottlenecked hard. Pair a high-end CPU like a Ryzen 9 with a GTX 1060, and you'll hit CPU ceiling immediately. Neither scenario is tragic for iRacing—you'll still race competitively—but you're leaving money on the table if you don't recognize it.</p>
+      <p>Pair a top-tier GPU like an RTX 5090 with a budget CPU like a Ryzen 5 5600, though, and you'll be GPU-bottlenecked hard. Pair a high-end CPU like a Ryzen 9 with a GTX 1060, and you'll hit CPU ceiling immediately. Neither scenario is tragic for iRacing; you'll still race competitively, but you're leaving money on the table if you don't recognize it.</p>
 
       <h2>When to Upgrade vs When to Optimize</h2>
 
       <p>Optimizing first costs nothing. Upgrading costs real money. If your bottleneck is at 75–80% utilization and your frame times are stable above 60 FPS, you're racing fine. Don't upgrade. If your bottleneck component is pegged at 95%+ and you're seeing frame-time spikes into the high 20s or 30s milliseconds, then your bottleneck is severe enough to matter.</p>
 
-      <p>My Ryzen 7 5700 is now three years old. It's still adequate for iRacing with smart settings. But if I were racing daily at 8k AI count or streaming while racing, I'd upgrade the CPU. For my current usage—sim racing only, no streaming—dialing back complexity keeps everything smooth.</p>
+      <p>My Ryzen 7 5700 is now three years old. It's still adequate for iRacing with smart settings. But if I were racing daily at 8k AI count or streaming while racing, I'd upgrade the CPU. For my current usage, sim racing only with no streaming, dialing back complexity keeps everything smooth.</p>
 
       <div id="rir-gear"><div class="gear-box">
         <span class="box-label">The gear in this guide</span>
@@ -224,18 +224,18 @@
           <table class="gear-table">
             <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
             <tbody>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=AMD+Ryzen+7+5700+processor&amp;rh=p_89%3AAMD&amp;tag=realiracing-20" data-aff="cpu-ryzen-7-5700" target="_blank" rel="sponsored noopener">AMD Ryzen 7 5700</a></th><td>8 cores — plenty for iRacing plus OBS on one PC</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=AMD+Ryzen+7+5700+processor&amp;rh=p_89%3AAMD&amp;tag=realiracing-20" data-aff="cpu-ryzen-7-5700" target="_blank" rel="sponsored noopener">AMD Ryzen 7 5700</a></th><td>8 cores are plenty for iRacing plus OBS on one PC.</td><td><span class="rig-badge">Raced on</span></td></tr>
             <tr><th scope="row"><a href="https://www.amazon.com/s?k=RTX+5060+Ti+8GB+graphics+card&amp;tag=realiracing-20" data-aff="gpu-rtx-5060-ti" target="_blank" rel="sponsored noopener">NVIDIA GeForce RTX 5060 Ti (8 GB)</a></th><td>renders iRacing and NVENC-encodes the stream on the same chip</td><td><span class="rig-badge">Raced on</span></td></tr>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive, the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
             </tbody>
           </table>
         </div>
-        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links; I may earn a commission at no cost to you.</p>
       </div></div>
 
       <div class="cta-box">
         <h3>Watch it, don't just read about it</h3>
-        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <p>I stream and upload iRacing races on my MOZA R9 rig: real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
         <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
       </div>
       <div class="cta-box rir-pack-cta">

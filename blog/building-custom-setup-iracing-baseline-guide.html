@@ -35,7 +35,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Building Your Own Setup from iRacing Baseline: A Practical Guide","item":"https://realiracing.com/blog/building-custom-setup-iracing-baseline-guide.html"}]}
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/building-custom-setup-iracing-baseline-guide.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/building-custom-setup-iracing-baseline-guide.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Sim Racing Cockpit / Wheel Stand","description":"a rigid mount matters more than the brand — flex kills FFB detail","url":"https://realiracing.com/blog/building-custom-setup-iracing-baseline-guide.html#rir-gear"}}]}
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive, the base bolted to my rig right now","url":"https://realiracing.com/blog/building-custom-setup-iracing-baseline-guide.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/building-custom-setup-iracing-baseline-guide.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Sim Racing Cockpit / Wheel Stand","description":"a rigid mount matters more than the brand; flex kills FFB detail.","url":"https://realiracing.com/blog/building-custom-setup-iracing-baseline-guide.html#rir-gear"}}]}
   </script>
   <script type="application/ld+json">
   {
@@ -113,9 +113,9 @@
     <div class="article-body">
       <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
 
-      <p class="article-lead">The iRacing baseline is a trap disguised as a gift. It's fast enough that you think you're done, but it's also generic enough that it leaves performance on the table—especially when the track temperature changes, your preferred brake pressure doesn't match the default, or your rig's geometry is different from whatever alien's setup they tuned it on. I spent six months running baseline on the Ferrari 488 GT3 before I realized I was leaving whole tenths on the table just by tweaking three things. Now I treat baseline as a starting point, not a destination.</p>
+      <p class="article-lead">The iRacing baseline is a trap disguised as a gift. It's fast enough that you think you're done, but it's also generic enough that it leaves performance on the table, especially when the track temperature changes, your preferred brake pressure doesn't match the default, or your rig's geometry is different from whatever alien's setup they tuned it on. I spent six months running baseline on the Ferrari 488 GT3 before I realized I was leaving whole tenths on the table just by tweaking three things. Now I treat baseline as a starting point, not a destination.</p>
 
-      <p>The key is knowing what to change first, in what order, and when to stop. Chaotic setup adjustments kill confidence and waste time. A systematic approach—testing one or two variables at a time, on the same fuel load and tire age, over multiple laps—is how you actually improve without spinning into the weeds.</p>
+      <p>The key is knowing what to change first, in what order, and when to stop. Chaotic setup adjustments kill confidence and waste time. A systematic approach, testing one or two variables at a time on the same fuel load and tire age over multiple laps, is how you actually improve without spinning into the weeds.</p>
 
       <h2>Why Baseline Isn't Enough</h2>
 
@@ -124,7 +124,7 @@
       <p>The problem: baseline doesn't know your brake pressure preference, your throttle sensitivity, whether you trail-brake or lift-and-coast, or what fuel load you'll actually run. And it definitely doesn't account for <a href="seating-position-and-wheel-height-sim-rig.html">your specific seating position and pedal angles</a>, which change how braking force translates into stopping power on your setup.</p>
 
       <ul>
-        <li>Baseline assumes average driver inputs—you're probably not average in at least one axis</li>
+        <li>Baseline assumes average driver inputs; you're probably not average in at least one axis.</li>
         <li>Track temperature swings mean tire behavior changes; baseline is tuned to one state</li>
         <li>Anti-roll bar rates, ride height, and damping are tuned for a middle-of-the-road driver weight and rig stiffness</li>
         <li>Brake balance and pedal pressure curves aren't calibrated to your muscle memory or load cell</li>
@@ -137,12 +137,12 @@
 
       <p>Before you touch suspension, sort your pedal inputs. This is non-negotiable. I use the <a href="moza-crp2-brake-calibration-pressure-curves.html">MOZA CRP2 load cell calibration</a> to dial in a pressure curve that matches my actual braking style, then I run baseline for 10 laps to see if brake balance feels forward or rearward. On my ~9 N·m <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a>, I also log peak wheel torque to see if I'm exceeding the wheelbase's comfortable output during hard braking.</p>
 
-      <p>Adjust brake bias in small increments—0.5% at a time—until the car feels neutral through hard corners. Throttle mapping is less critical if you're smooth, but if you're aggressive on exit, test a couple of throttle sensitivity settings to see which gives you the best traction without spinning the rear.</p>
+      <p>Adjust brake bias in small increments, 0.5% at a time, until the car feels neutral through hard corners. Throttle mapping is less critical if you're smooth, but if you're aggressive on exit, test a couple of throttle sensitivity settings to see which gives you the best traction without spinning the rear.</p>
 
       <ul>
         <li>Run baseline brake balance for 5–10 laps, note where locking happens (front? rear?)</li>
         <li>Adjust brake bias 0.5% toward the locked-up end; run 5 more laps</li>
-        <li>Repeat until you can lock-up with your feet, not the tires—that's your balance point</li>
+        <li>Repeat until you can lock up with your feet, not the tires; that is your balance point.</li>
         <li>Mark this as your reference; now suspension tuning begins</li>
       </ul>
 
@@ -156,14 +156,14 @@
         <li>Stiffer front ARB: faster turn-in, but can cause understeer in high-speed corners if overdone</li>
         <li>Softer front ARB: more grip mid-corner, but slower turn-in response</li>
         <li>Test in the same corner (usually Turn 1 or a fast sweeper where you can repeat the line)</li>
-        <li>Rear ARB should follow the same logic—stiffer for oversteer-prone cars, softer for understeer</li>
+        <li>Rear ARB should follow the same logic: stiffer for oversteer-prone cars, softer for understeer.</li>
       </ul>
 
       <h3>Phase 3: Damping and Ride Height (The Refinements)</h3>
 
-      <p>Once ARBs feel right, damping (bump and rebound) and ride height come next. These are finer adjustments. Ride height affects both aero and mechanical grip; going lower usually improves aero but can bottom out over kerbs. Damping affects how the car responds to weight transfer—stiffer bump damping (compression) resists the chassis diving under braking; rebound damping controls how fast it recovers.</p>
+      <p>Once ARBs feel right, damping (bump and rebound) and ride height come next. These are finer adjustments. Ride height affects both aero and mechanical grip; going lower usually improves aero but can bottom out over kerbs. Damping affects how the car responds to weight transfer: stiffer bump damping (compression) resists the chassis diving under braking, while rebound damping controls how fast it recovers.</p>
 
-      <p>I adjust ride height by 2–3 clicks lower than baseline and check for bottoming in my telemetry. Then I increase bump damping by 1–2 clicks to reduce dive under heavy braking. Rebound follows similarly. These are small, deliberate tweaks—not wild swings.</p>
+      <p>I adjust ride height by 2–3 clicks lower than baseline and check for bottoming in my telemetry. Then I increase bump damping by 1–2 clicks to reduce dive under heavy braking. Rebound follows similarly. These are small, deliberate tweaks, not wild swings.</p>
 
       <div class="tip-box">
         <span class="box-label">Test Stint Length</span>
@@ -199,18 +199,18 @@
         <li><strong>Throttle LUT adjustment:</strong> If your throttle input feels nonlinear, flatten the curve slightly for smoother application.</li>
       </ul>
 
-      <p>None of these are universal. They work for me because I know my rig, my inputs, and my preferences. Your baseline might need the opposite—soft ARBs if your frame is flexy, forward brake bias if you're aggressive on the pedal, higher ride height if the track is rough.</p>
+      <p>None of these are universal. They work for me because I know my rig, my inputs, and my preferences. Your baseline might need the opposite: soft ARBs if your frame is flexy, a forward brake bias if you're aggressive on the pedal, or a higher ride height if the track is rough.</p>
 
       <h2>When to Stop Tweaking</h2>
 
-      <p>The biggest mistake is chasing 0.02s improvements for three hours. At some point, you're not improving the setup—you're just shuffling variables and losing consistency. I stop tweaking when two conditions are met:</p>
+      <p>The biggest mistake is chasing 0.02s improvements for three hours. At some point, you are not improving the setup; you are just shuffling variables and losing consistency. I stop tweaking when two conditions are met:</p>
 
       <ul>
         <li>My last five changes have each added less than 0.05s</li>
-        <li>My best lap is repeatable—I can run it again within 0.05s—and I understand why</li>
+        <li>My best lap is repeatable; I can run it again within 0.05s, and I understand why.</li>
       </ul>
 
-      <p>After that, track time beats setup time. Strap in for a 30-lap race simulation and drive the car. You'll learn more about it—and about your own limits—than you will from five more setup iterations.</p>
+      <p>After that, track time beats setup time. Strap in for a 30-lap race simulation and drive the car. You'll learn more about it and about your own limits than you will from five more setup iterations.</p>
 
       <div class="tip-box">
         <span class="box-label">Driver Confidence &gt; Setup Perfection</span>
@@ -219,7 +219,7 @@
 
       <h2>Real Example: My Ferrari 488 GT3 Setup at Monza</h2>
 
-      <p>Baseline pace was 1:44.2. I ran it for 10 laps—solid, but felt loose in Turn 1 (high-speed left hander). I increased front ARB from baseline (24) to 26 (two notches stiffer). Turn 1 felt planted, but now Turn 8 (chicane exit) was oversteery. I dialed front ARB back to 25, increased rear to 23 (baseline was 22), and ran 10 more laps. Best lap: 1:43.9. Brake bias: I added 0.5% forward, which helped mid-corner stability under trail braking. Final best lap: 1:43.6. Ride height dropped one click to improve aero on the straights. Final best lap: 1:43.4. All told, 0.8s gained over six small, deliberate tweaks. Then I stopped and raced the car.</p>
+      <p>Baseline pace was 1:44.2. I ran it for 10 laps; it was solid, though I felt loose in Turn 1, a high-speed left hander. I increased front ARB from baseline (24) to 26 (two notches stiffer). Turn 1 felt planted, but now Turn 8 (chicane exit) was oversteery. I dialed front ARB back to 25, increased rear to 23 (baseline was 22), and ran 10 more laps. Best lap: 1:43.9. Brake bias: I added 0.5% forward, which helped mid-corner stability under trail braking. Final best lap: 1:43.6. Ride height dropped one click to improve aero on the straights. Final best lap: 1:43.4. All told, 0.8s gained over six small, deliberate tweaks. Then I stopped and raced the car.</p>
 
       <div id="rir-gear"><div class="gear-box">
         <span class="box-label">The gear in this guide</span>
@@ -227,18 +227,18 @@
           <table class="gear-table">
             <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
             <tbody>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive, the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
             <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge">Raced on</span></td></tr>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&amp;tag=realiracing-20" data-aff="cockpit" target="_blank" rel="sponsored noopener">Sim Racing Cockpit / Wheel Stand</a></th><td>a rigid mount matters more than the brand — flex kills FFB detail</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&amp;tag=realiracing-20" data-aff="cockpit" target="_blank" rel="sponsored noopener">Sim Racing Cockpit / Wheel Stand</a></th><td>a rigid mount matters more than the brand; flex kills FFB detail.</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
             </tbody>
           </table>
         </div>
-        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links; I may earn a commission at no cost to you.</p>
       </div></div>
 
       <div class="cta-box">
         <h3>Watch it, don't just read about it</h3>
-        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <p>I stream and upload iRacing races on my MOZA R9 rig: real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
         <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
       </div>
       <div class="cta-box rir-pack-cta">
@@ -271,9 +271,7 @@
   <div class="related">
     <h2>Keep reading</h2>
     <div class="related-grid">
-      <a class="related-card" href="rig-flex-and-wheelbase-mounting-ffb-feel.html"><span>Setup Guides</span>Your Force Feedback Feels Mushy and It Probably Isn't the Wheelbase</a>
-      <a class="related-card" href="iracing-force-feedback-explained.html"><span>Setup Guides</span>iRacing Force Feedback Explained — What Every Slider Actually Does</a>
-      <a class="related-card" href="load-cell-brake-calibration-consistent-braking.html"><span>Setup Guides</span>Load Cell Brake Calibration — How I Set Up My Pedals for Consistent Braking in iRacing</a>
+      <a class="related-card" href="rig-flex-and-wheelbase-mounting-ffb-feel.html"><span>Setup Guides</span>Your Force Feedback Feels Mushy and It Probably Isn't the Wheelbase</a> <a class="related-card" href="iracing-force-feedback-explained.html"><span>Setup Guides</span>iRacing Force Feedback Explained: What Every Slider Actually Does</a> <a class="related-card" href="load-cell-brake-calibration-consistent-braking.html"><span>Setup Guides</span>Load Cell Brake Calibration: How I Set Up My Pedals for Consistent Braking in iRacing</a>
     </div>
   </div>
 

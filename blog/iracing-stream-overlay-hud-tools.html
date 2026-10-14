@@ -63,7 +63,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"iRacing Stream Overlays and HUD Tools: Build a Pro-Looking Broadcast","item":"https://realiracing.com/blog/iracing-stream-overlay-hud-tools.html"}]}
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/iracing-stream-overlay-hud-tools.html#rir-gear"}}]}
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive, the base bolted to my rig right now","url":"https://realiracing.com/blog/iracing-stream-overlay-hud-tools.html#rir-gear"}}]}
   </script>
 </head>
 <body>
@@ -113,7 +113,7 @@
     <div class="article-body">
       <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
 
-      <p class="article-lead">When I stream iRacing races on Twitch, the hardest part isn't managing my <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> through a tight corner—it's deciding what data to show viewers without turning the screen into a cockpit dashboard. A good overlay separates casual streaming from something worth watching. You need live telemetry, position info, and graphics that reinforce the narrative of the race, all without breaking immersion or eating frame rate.</p>
+      <p class="article-lead">When I stream iRacing races on Twitch, the hardest part is not managing my <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> through a tight corner but deciding what data to show viewers without turning the screen into a cockpit dashboard. A good overlay separates casual streaming from something worth watching. You need live telemetry, position info, and graphics that reinforce the narrative of the race, all without breaking immersion or eating frame rate.</p>
 
       <p>I've tested overlay approaches across dozens of broadcasts, from bare-bones setups to ones so packed with widgets they distracted from the racing itself. The best streams use layered overlays: a persistent lower-third with driver name and iRating, telemetry panels that toggle on demand, and graphics that only appear during key moments like pit stops or spins. This guide covers the tools I actually use and recommend, with honest trade-offs for each.</p>
 
@@ -121,13 +121,13 @@
 
       <h3>Garage 61 Telemetry Companion</h3>
 
-      <p>Garage 61's telemetry companion is the free workhorse for most iRacing streamers. It reads the iRacing telemetry feed in real time and outputs overlays as browser sources in OBS—your graphics card stays focused on rendering the sim itself. I run it on a second monitor while streaming, and it pulls brake pressure, throttle position, gear, speed, and fuel consumption live.</p>
+      <p>Garage 61's telemetry companion is the free workhorse for most iRacing streamers. It reads the iRacing telemetry feed in real time and outputs overlays as browser sources in OBS, so your graphics card stays focused on rendering the sim itself. I run it on a second monitor while streaming, and it pulls brake pressure, throttle position, gear, speed, and fuel consumption live.</p>
 
       <p>The overlay customization is robust. You can position elements anywhere on screen, choose fonts and colors, and filter which data displays. I keep brake pressure and throttle in opposite corners during road racing, then swap to fuel and tire temps during endurance sessions. The HUD is lightweight; it adds maybe 1–2% CPU load on my streaming PC. Downside: it requires you to export and host your own browser source files, so setup takes 20 minutes your first time.</p>
 
       <h3>CrewChief (Free Spotter Voice)</h3>
 
-      <p>CrewChief isn't purely an overlay tool, but it generates text output that you can capture in OBS as a source. It's a free spotter that calls gaps to cars ahead and behind, tells you when you're off-line, and warns of car damage. Many streamers layer a CrewChief text widget over the race footage so viewers see the same information the driver hears. The spotter voice itself isn't visible on stream—you're capturing its diagnostic text output.</p>
+      <p>CrewChief isn't purely an overlay tool, but it generates text output that you can capture in OBS as a source. It's a free spotter that calls gaps to cars ahead and behind, tells you when you're off-line, and warns of car damage. Many streamers layer a CrewChief text widget over the race footage so viewers see the same information the driver hears. The spotter voice itself is not visible on stream; you are capturing its diagnostic text output.</p>
 
       <p>The real value for streaming is audience engagement. Viewers enjoy following the spotter's callouts; it builds tension and makes sense of what's happening on track. I use it on longer races where position changes matter most.</p>
 
@@ -141,7 +141,7 @@
 
       <p>SimHub is a paid app (~$50 USD one-time purchase, though prices fluctuate) that connects to iRacing telemetry and creates highly customizable overlays, dashboard displays for secondary monitors, and even animated motion rig controls. It's overkill for basic streaming, but if you're building a serious broadcast operation or running a motion rig, SimHub pays for itself through visual polish and reliability.</p>
 
-      <p>I use SimHub's dashboard feature on a tablet mounted to my cockpit—it shows real-time telemetry in a clean, professional format that viewers can see during pit-stop cuts. You can design your own HUD from scratch or use the templated dashboards. Performance is excellent; SimHub is optimized for streaming and pulls minimal system resources. The learning curve is steeper than free tools, but the customization depth is unmatched.</p>
+      <p>I use SimHub's dashboard feature on a tablet mounted to my cockpit; it shows real-time telemetry in a clean, professional format that viewers can see during pit-stop cuts. You can design your own HUD from scratch or use the templated dashboards. Performance is excellent; SimHub is optimized for streaming and pulls minimal system resources. The learning curve is steeper than free tools, but the customization depth is unmatched.</p>
 
       <h3>OBS Text and Image Overlays (Manual Build)</h3>
 
@@ -157,7 +157,7 @@
         <li>Lower-third (static): Driver name, iRating, car/series info. Built in OBS as a text layer, updated manually or via a script between races.</li>
         <li>Telemetry panel (live): Garage 61 or SimHub pulls brake, throttle, gear, speed. Positioned in a corner, toggled on/off during key moments (quali, pit stops, battles).</li>
         <li>Leaderboard (live or updated): iRacing Companion app screen-captured or a static image swapped during pit windows.</li>
-        <li>Graphics (triggered): Spin, incident, or overtake animations triggered manually or via a command. OBS scenes work well for this—bind hotkeys to swap graphics mid-race.</li>
+        <li>Graphics (triggered): Spin, incident, or overtake animations triggered manually or via a command. OBS scenes work well for this: bind hotkeys to swap graphics mid-race.</li>
       </ul>
 
       <div class="tip-box">
@@ -167,7 +167,7 @@
 
       <h2>In-Game HUD vs. Broadcast Overlay</h2>
 
-      <p>iRacing's built-in HUD (the dash, delta timer, and gauges visible in-game) is separate from your broadcast overlay. When you stream, viewers see both: your car's dash plus any OBS-based graphics layered on top. Streaming doesn't need you to turn off the in-game HUD. In fact, most professional streamers leave it on because it shows lap deltas, tire temps, and fuel—all useful context for viewers.</p>
+      <p>iRacing's built-in HUD (the dash, delta timer, and gauges visible in-game) is separate from your broadcast overlay. When you stream, viewers see both: your car's dash plus any OBS-based graphics layered on top. Streaming doesn't need you to turn off the in-game HUD. In fact, most professional streamers leave it on because it shows lap deltas, tire temps, and fuel, all useful context for viewers.</p>
 
       <p>Customize the in-game HUD in iRacing's display settings. Position gauges where they don't obstruct your view or the broadcast focal point (the track). I keep my delta timer and fuel counter on the right side of screen during endurance races, and I hide non-essential gauges to keep the frame clean.</p>
 
@@ -186,11 +186,11 @@
 
       <p>Here's my pre-broadcast checklist: Launch Garage 61 or SimHub on the streaming PC 10 minutes before race time. Start OBS and load your overlay scene. Verify that telemetry is updating by watching the live preview. If you're using custom graphics, bind hotkeys for scene switches (I use F1 for spins, F2 for overtakes, F3 for pit-stop graphics). Load iRacing and run a 2-lap practice race to confirm telemetry is flowing into the overlay.</p>
 
-      <p>During the broadcast, toggle telemetry on during critical moments—pit stops, battles for position, or when fuel is running low. Keep the overlay minimal during clean racing; viewers want to watch your driving, not data. Between races, update your lower-third text and swap graphics as needed.</p>
+      <p>During the broadcast, toggle telemetry on during critical moments, such as pit stops, battles for position, or when fuel is running low. Keep the overlay minimal during clean racing; viewers want to watch your driving, not data. Between races, update your lower-third text and swap graphics as needed.</p>
 
       <h2>Choosing Your Tool Stack</h2>
 
-      <p>Start free with <a href="garage61-telemetry-comparison-tools.html">Garage 61 or the iRacing Companion app</a>. These have zero upfront cost and teach you overlay workflow. If you stream regularly (3+ times per week) or run a league, invest in SimHub. The customization and reliability justify the cost. For casual streamers, free tools are plenty—don't overthink it.</p>
+      <p>Start free with <a href="garage61-telemetry-comparison-tools.html">Garage 61 or the iRacing Companion app</a>. These have zero upfront cost and teach you overlay workflow. If you stream regularly (3+ times per week) or run a league, invest in SimHub. The customization and reliability justify the cost. For casual streamers, free tools are plenty; don't overthink it.</p>
 
       <p>If you're just starting your streaming journey, check out <a href="how-to-stream-iracing-obs.html">my OBS setup guide</a> for the foundational broadcasting workflow. Overlays are the polish; solid encoding and bitrate matter first.</p>
 
@@ -200,16 +200,16 @@
           <table class="gear-table">
             <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
             <tbody>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive, the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
             </tbody>
           </table>
         </div>
-        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links; I may earn a commission at no cost to you.</p>
       </div></div>
 
       <div class="cta-box">
         <h3>Watch it, don't just read about it</h3>
-        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <p>I stream and upload iRacing races on my MOZA R9 rig: real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
         <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
       </div>
       <div class="cta-box rir-pack-cta">
@@ -242,9 +242,7 @@
   <div class="related">
     <h2>Keep reading</h2>
     <div class="related-grid">
-      <a class="related-card" href="how-to-stream-iracing-obs.html"><span>Streaming</span>How to Stream iRacing with OBS Without Lag — Single-PC Settings That Work</a>
-      <a class="related-card" href="fuel-saving-technique-iracing.html"><span>Technique</span>Fuel Saving Technique on iRacing: Stretching a Stint Without Losing the Race</a>
-      <a class="related-card" href="iracing-force-feedback-explained.html"><span>Setup Guides</span>iRacing Force Feedback Explained — What Every Slider Actually Does</a>
+      <a class="related-card" href="how-to-stream-iracing-obs.html"><span>Streaming</span>How to Stream iRacing with OBS Without Lag: Single-PC Settings That Work</a> <a class="related-card" href="fuel-saving-technique-iracing.html"><span>Technique</span>Fuel Saving Technique on iRacing: Stretching a Stint Without Losing the Race</a> <a class="related-card" href="iracing-force-feedback-explained.html"><span>Setup Guides</span>iRacing Force Feedback Explained: What Every Slider Actually Does</a>
     </div>
   </div>
 

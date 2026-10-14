@@ -39,7 +39,7 @@
     {
       "@type": "Question",
       "name": "What's the optimal brake bias for the Vantage GT4 on most road courses?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Start at ~56-58% front, 42-44% rear. The Vantage's stable rear axle allows this bias without rear-lock risk. Adjust ±1% based on track characteristics — high-speed circuits may go slightly rearward (55%), while technical tracks can go forward (58%). The key is consistency: lock in your bias for the race and focus on smooth pedal modulation rather than tweaking." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Start at ~56-58% front, 42-44% rear. The Vantage's stable rear axle allows this bias without rear-lock risk. Adjust ±1% based on track characteristics: high-speed circuits may go slightly rearward (55%), while technical tracks can go forward (58%). The key is consistency: lock in your bias for the race and focus on smooth pedal modulation rather than tweaking." }
     },
     {
       "@type": "Question",
@@ -63,7 +63,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Aston Martin Vantage GT4 iRacing: Setup, Braking, and Race Craft","item":"https://realiracing.com/blog/aston-martin-vantage-gt4-comprehensive-guide.html"}]}
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/aston-martin-vantage-gt4-comprehensive-guide.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/aston-martin-vantage-gt4-comprehensive-guide.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Sim Racing Cockpit / Wheel Stand","description":"a rigid mount matters more than the brand — flex kills FFB detail","url":"https://realiracing.com/blog/aston-martin-vantage-gt4-comprehensive-guide.html#rir-gear"}}]}
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive, the base bolted to my rig right now","url":"https://realiracing.com/blog/aston-martin-vantage-gt4-comprehensive-guide.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/aston-martin-vantage-gt4-comprehensive-guide.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Sim Racing Cockpit / Wheel Stand","description":"a rigid mount matters more than the brand; flex kills FFB detail.","url":"https://realiracing.com/blog/aston-martin-vantage-gt4-comprehensive-guide.html#rir-gear"}}]}
   </script>
 </head>
 <body>
@@ -113,29 +113,29 @@
     <div class="article-body">
       <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
 
-      <p class="article-lead">The Aston Martin Vantage GT4 sits right in the middle of the GT4 grid — not the fastest, not the slowest, but demanding of precision. I've spent enough laps in this car on my <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> to know that smooth inputs and consistent trail braking are what separate a safe mid-field runner from someone climbing the grid. It's a car that rewards patience and punishes impatience, which makes it an excellent teacher for drivers serious about GT4 racing.</p>
+      <p class="article-lead">The Aston Martin Vantage GT4 sits right in the middle of the GT4 grid; it is not the fastest or the slowest, but it demands precision. I've spent enough laps in this car on my <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> to know that smooth inputs and consistent trail braking are what separate a safe mid-field runner from someone climbing the grid. It's a car that rewards patience and punishes impatience, which makes it an excellent teacher for drivers serious about GT4 racing.</p>
 
       <p>This guide covers the real-world setup tweaks I've found useful, how to exploit its particular brake characteristics with my <a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">CRP2</a> load-cell pedals, and the race craft lines that turn the Vantage into a competitive weapon despite its modest power figures.</p>
 
       <h2>Understanding the Vantage GT4's Strengths and Weaknesses</h2>
 
-      <p>The Vantage GT4 is a balanced car that doesn't excel in any single area but remains forgiving across diverse track types. Its straight-line speed is competitive but not dominant — you won't out-drag a Porsche 718 or BMW M4 GT4, but you can match most grid peers in acceleration. Where it shines is mid-corner stability and tire consistency. The suspension geometry rewards drivers who carry momentum through technical sections rather than those hunting apex speed.</p>
+      <p>The Vantage GT4 is a balanced car that doesn't excel in any single area but remains forgiving across diverse track types. Its straight-line speed is competitive but not dominant; you won't out-drag a Porsche 718 or BMW M4 GT4, but you can match most grid peers in acceleration. Where it shines is mid-corner stability and tire consistency. The suspension geometry rewards drivers who carry momentum through technical sections rather than those hunting apex speed.</p>
 
-      <p>The car's weakness is outright corner exit traction. Compared to the Porsche 718 Cayman, which feelsplanted exiting slow corners, the Vantage requires a softer touch on throttle application. This is where your setup and trail-braking technique become critical — you're trading outright corner exit power for mid-corner speed and longitudinal stability.</p>
+      <p>The car's weakness is outright corner exit traction. Compared to the Porsche 718 Cayman, which feelsplanted exiting slow corners, the Vantage requires a softer touch on throttle application. This is where your setup and trail-braking technique become critical, as you trade outright corner exit power for mid-corner speed and longitudinal stability.</p>
 
       <ul>
         <li>Mid-corner grip is excellent; use this in technical sections like Eau Rouge or Turn 1 at Suzuka</li>
         <li>Brake stability is strong; the car remains composed even under heavy threshold braking</li>
-        <li>Tire degradation is moderate and fairly linear — no sudden cliffs late-race</li>
+        <li>Tire degradation is moderate and fairly linear, without sudden drops late in the race.</li>
         <li>Throttle response is sensitive; small inputs compound quickly at corner exit</li>
         <li>Downforce efficiency is reasonable but not class-leading</li>
       </ul>
 
       <h2>Base Setup Strategy for GT4 Racing</h2>
 
-      <p>I always start with the official iRacing baseline and adjust from there rather than wholesale rebuilding. The Vantage's stock setup is honest and reasonably quick — you're not fighting against a broken foundation. My first move is always brake bias. On most road courses, I run ~56–58% front brake bias, which feels natural on my load-cell pedals. The Vantage wants slightly more front bias than I'd run in a Porsche, because the rear axle is softer and more prone to lock-up under heavy braking.</p>
+      <p>I always start with the official iRacing baseline and adjust from there rather than wholesale rebuilding. The Vantage's stock setup is honest and reasonably quick, so you are not fighting against a broken foundation. My first move is always brake bias. On most road courses, I run ~56–58% front brake bias, which feels natural on my load-cell pedals. The Vantage wants slightly more front bias than I'd run in a Porsche, because the rear axle is softer and more prone to lock-up under heavy braking.</p>
 
-      <p>Anti-roll bar stiffness is where personality creeps in. I typically soften the front ARB by 2–3 clicks from stock on technical tracks (Suzuka, Red Bull Ring, Brands Hatch) to improve turn-in feel and reduce snap oversteer. On high-speed circuits (Road America, Spa), I leave it closer to stock or stiffen slightly for stability. The rear ARB is less sensitive — I rarely touch it more than one click either direction.</p>
+      <p>Anti-roll bar stiffness is where personality creeps in. I typically soften the front ARB by 2–3 clicks from stock on technical tracks (Suzuka, Red Bull Ring, Brands Hatch) to improve turn-in feel and reduce snap oversteer. On high-speed circuits (Road America, Spa), I leave it closer to stock or stiffen slightly for stability. The rear ARB is less sensitive; I rarely touch it more than one click either direction.</p>
 
       <p>Suspension geometry (camber, caster, toe) is track-dependent, but a sensible starting point is: front camber -3.5° to -4.0°, rear camber -2.5° to -3.0°, front toe-in 0.15°–0.25°, and rear toe-out 0.10°. These figures hold across most road courses and will get you within 0.5 seconds of pace on your first session.</p>
 
@@ -146,9 +146,9 @@
 
       <h2>Brake Calibration and Pressure Curves</h2>
 
-      <p>Braking is where my CRP2 load-cell pedals shine with the Vantage. Load-cell brakes demand you build a muscle memory for pressure modulation, which the Vantage rewards more than other GT4 cars. The car's stable brake bias means you can be aggressive on initial application without fear of the rear locking — you're learning to trail-brake with confidence rather than caution.</p>
+      <p>Braking is where my CRP2 load-cell pedals shine with the Vantage. Load-cell brakes demand you build a muscle memory for pressure modulation, which the Vantage rewards more than other GT4 cars. The car's stable brake bias means you can be aggressive on initial application without fear of the rear locking, so you're learning to trail-brake with confidence rather than caution.</p>
 
-      <p>My typical brake pressure curve is linear with a slight softness in the first 10% travel to smooth any jerk on trail-braking entries. The pedal reaches full pressure at ~85–90% travel, leaving the last 10–15% as a safety margin. This prevents accidental over-application while still giving me the full ~300 bar stopping power when needed. I calibrate this curve in practice sessions and leave it locked for the race weekend — consistency matters more than perfection here.</p>
+      <p>My typical brake pressure curve is linear with a slight softness in the first 10% travel to smooth any jerk on trail-braking entries. The pedal reaches full pressure at ~85–90% travel, leaving the last 10–15% as a safety margin. This prevents accidental over-application while still giving me the full ~300 bar stopping power when needed. I calibrate this curve in practice sessions and leave it locked for the race weekend; consistency matters more than perfection here.</p>
 
       <p>Trail braking with the Vantage requires patience. The car responds well to smooth pressure blending mid-corner, especially on longer deceleration zones (Turn 1 at Monza, the chicane at Paul Ricard, Eau Rouge at Spa). I typically hold brake pressure for 0.5–1 second longer than I would in the Porsche, then decay gradually over the next 2–3 car-lengths. This keeps the Vantage's front end loaded and stable, preventing the rear from tightening mid-apex.</p>
 
@@ -163,7 +163,7 @@
 
       <p>The Vantage's mid-field position in the GT4 grid means you'll spend time both overtaking and being overtaken. Its strength is consistency; most drivers will drive in a straight line around you rather than attempt a dive. Exploit this by controlling the braking zone. The car's brake stability means you can brake later than faster cars, allowing you to out-decelerate them and claim the racing line.</p>
 
-      <p>When overtaking a car with more power (Porsche 718, BMW M4), avoid trying to match them on corner exit. Instead, brake deeper into the hairpin or technical complex, claim the inside line, and accept that they'll slipstream you back down the straight. Then brake again, late, and take the next corner. This leapfrog approach works because the Vantage's brake stability is a genuine advantage — you'll feel more confident on the threshold than a driver wrestling an M4 GT4.</p>
+      <p>When overtaking a car with more power (Porsche 718, BMW M4), avoid trying to match them on corner exit. Instead, brake deeper into the hairpin or technical complex, claim the inside line, and accept that they'll slipstream you back down the straight. Then brake again, late, and take the next corner. This leapfrog approach works because the Vantage's brake stability is a genuine advantage, giving you more confidence on the threshold than a driver wrestling an M4 GT4.</p>
 
       <p>Defending is straightforward: hold the normal racing line and assume your opponent will brake late. Don't move defensively; just drive smoothly and make your car a large target. The Vantage isn't slippery in a draft, and your mid-range speed will discourage all but the most aggressive drivers from committing to a desperate pass. If someone does commit, let them go; you'll likely reclaim the position on the next technical section where your mid-corner grip shines.</p>
 
@@ -171,7 +171,7 @@
 
       <h3>Spa and High-Speed Circuits</h3>
 
-      <p>At Spa, the Vantage struggles slightly with outright straight-line speed. Compensate by being smoother on throttle application exiting Blanchimont, Turn 1, and other long corners. I run slightly stiffer front anti-roll bar (~1 click stiffer than baseline) and reduce wing angle slightly to gain 1–2 km/h on the straights. Brake balance stays around 56% front. The car's brake stability means Eau Rouge is a genuine passing opportunity — brake deep into the chicane and claim the inside line.</p>
+      <p>At Spa, the Vantage struggles slightly with outright straight-line speed. Compensate by being smoother on throttle application exiting Blanchimont, Turn 1, and other long corners. I run slightly stiffer front anti-roll bar (~1 click stiffer than baseline) and reduce wing angle slightly to gain 1–2 km/h on the straights. Brake balance stays around 56% front. The car's brake stability means Eau Rouge is a genuine passing opportunity; brake deep into the chicane and claim the inside line.</p>
 
       <h3>Monza and Short-Gear Circuits</h3>
 
@@ -179,7 +179,7 @@
 
       <h3>Suzuka and Technical Circuits</h3>
 
-      <p>This is where the Vantage thrives. The car's mid-corner grip is excellent, and its sensitivity to throttle input rewards smooth, patient driving. I run softer front anti-roll bar settings here (~2 clicks softer than high-speed baseline) and focus entirely on smooth line execution through the technical sections (130R, Spoon Curve, the first sector). Brake bias can creep forward slightly (57–58%) because you're braking harder into slower corners. Your advantage here is precision, not speed — drive a mistake-free race and you'll run in the top five of any clean GT4 grid.</p>
+      <p>This is where the Vantage thrives. The car's mid-corner grip is excellent, and its sensitivity to throttle input rewards smooth, patient driving. I run softer front anti-roll bar settings here (~2 clicks softer than high-speed baseline) and focus entirely on smooth line execution through the technical sections (130R, Spoon Curve, the first sector). Brake bias can creep forward slightly (57–58%) because you're braking harder into slower corners. Your advantage here is precision, not speed; drive a mistake-free race and you'll run in the top five of any clean GT4 grid.</p>
 
       <div class="tip-box">
         <span class="box-label">Driver Technique</span>
@@ -188,7 +188,7 @@
 
       <h2>Tire Management Over a Race Stint</h2>
 
-      <p>GT4 tire degradation is mild compared to faster racing series, but the Vantage's tire behavior does change over a 30–60 minute stint. Fresh tires are twitchy; the car wants small inputs and smooth throttle application. After 10–15 laps, the tires heat up and you'll gain 0.3–0.5 seconds of pace as grip improves. By lap 25–30, you've found your optimum window. From there, degradation is gradual and fairly linear — no sudden cliffs.</p>
+      <p>GT4 tire degradation is mild compared to faster racing series, but the Vantage's tire behavior does change over a 30–60 minute stint. Fresh tires are twitchy; the car wants small inputs and smooth throttle application. After 10–15 laps, the tires heat up and you'll gain 0.3–0.5 seconds of pace as grip improves. By lap 25–30, you've found your optimum window. From there, degradation is gradual and fairly linear, without sudden cliffs.</p>
 
       <p>My strategy is to be conservative on lap 1 (one flying lap only if it's a rolling start), build into the tires over the next 5–10 laps, then settle into a sustainable pace that you can repeat for the final 20 minutes of the stint. The Vantage rewards consistency over heroics, and tire life management rewards drivers who don't scrub speed with excessive steering lock or aggressive braking.</p>
 
@@ -201,7 +201,7 @@
 
       <h2>Practical Insights from Real Driving</h2>
 
-      <p>After many hours in the Vantage, I've learned that this car separates drivers by smoothness, not speed. Faster drivers in Porsches or BMWs will beat you on raw pace — that's physics. But in a 60-minute race with traffic, pit stops, and restarts, the Vantage driver who makes no mistakes and never tightens under pressure will finish ahead of someone thrashing a faster car. This is genuinely useful feedback: the Vantage is a teaching car. If you can run a clean, consistent race in a Vantage, you're ready for hotter cars like the Porsche 911 GT3 or faster series entirely.</p>
+      <p>After many hours in the Vantage, I've learned that this car separates drivers by smoothness, not speed. Faster drivers in Porsches or BMWs will beat you on raw pace, because that is physics. But in a 60-minute race with traffic, pit stops, and restarts, the Vantage driver who makes no mistakes and never tightens under pressure will finish ahead of someone thrashing a faster car. This is genuinely useful feedback: the Vantage is a teaching car. If you can run a clean, consistent race in a Vantage, you're ready for hotter cars like the Porsche 911 GT3 or faster series entirely.</p>
 
       <p>I also find the Vantage rewarding on practice starts and restarts. Its stable throttle response means you can plant the power cleanly on a rolling start without dramatic wheelspin, which wins races. Use this advantage whenever the safety car is out or when starting from pit lane after a pitstop. One clean restart where you gain two places will do more for your race than one perfect flying lap.</p>
 
@@ -211,18 +211,18 @@
           <table class="gear-table">
             <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
             <tbody>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive, the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
             <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge">Raced on</span></td></tr>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&amp;tag=realiracing-20" data-aff="cockpit" target="_blank" rel="sponsored noopener">Sim Racing Cockpit / Wheel Stand</a></th><td>a rigid mount matters more than the brand — flex kills FFB detail</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&amp;tag=realiracing-20" data-aff="cockpit" target="_blank" rel="sponsored noopener">Sim Racing Cockpit / Wheel Stand</a></th><td>a rigid mount matters more than the brand; flex kills FFB detail.</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
             </tbody>
           </table>
         </div>
-        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links; I may earn a commission at no cost to you.</p>
       </div></div>
 
       <div class="cta-box">
         <h3>Watch it, don't just read about it</h3>
-        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <p>I stream and upload iRacing races on my MOZA R9 rig: real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
         <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
       </div>
       <div class="cta-box rir-pack-cta">
@@ -235,7 +235,7 @@
 
       <div class="faq-item">
         <h3>What's the optimal brake bias for the Vantage GT4 on most road courses?</h3>
-        <p>Start at ~56-58% front, 42-44% rear. The Vantage's stable rear axle allows this bias without rear-lock risk. Adjust ±1% based on track characteristics — high-speed circuits may go slightly rearward (55%), while technical tracks can go forward (58%). The key is consistency: lock in your bias for the race and focus on smooth pedal modulation rather than tweaking.</p>
+        <p>Start at ~56-58% front, 42-44% rear. The Vantage's stable rear axle allows this bias without rear-lock risk. Adjust ±1% based on track characteristics: high-speed circuits may go slightly rearward (55%), while technical tracks can go forward (58%). The key is consistency: lock in your bias for the race and focus on smooth pedal modulation rather than tweaking.</p>
       </div>
       <div class="faq-item">
         <h3>How should I adjust the Vantage for high-speed versus technical circuits?</h3>

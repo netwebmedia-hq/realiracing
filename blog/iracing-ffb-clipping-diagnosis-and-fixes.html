@@ -39,17 +39,17 @@
     {
       "@type": "Question",
       "name": "How do I know if I'm clipping versus just running strong FFB?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Open iRacing telemetry and watch the FFB force graph during a lap. Real FFB peaks naturally and varies throughout the lap. Clipping creates a hard flat line at the top—the force hits a ceiling and stays there. If the graph looks like a saw tooth with flat tops instead of peaks, you're clipping. Real strong FFB still shows variation and dynamics at the peak." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Open iRacing telemetry and watch the FFB force graph during a lap. Real FFB peaks naturally and varies throughout the lap. Clipping creates a hard flat line at the top, where the force hits a ceiling and stays there. If the graph looks like a saw tooth with flat tops instead of peaks, you're clipping. Real strong FFB still shows variation and dynamics at the peak." }
     },
     {
       "@type": "Question",
       "name": "Will lowering Master FFB make the wheel feel weak or less responsive?",
-      "acceptedAnswer": { "@type": "Answer", "text": "No. Master FFB scales all forces down proportionally, so the full dynamic range—light forces to heavy forces—still reaches your hands. What changes is the magnitude, not the detail. You'll actually feel more responsive because the wheelbase stays out of saturation and can reproduce subtle variations instead of cutting them off at a ceiling." }
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Master FFB scales all forces down proportionally, so the full dynamic range from light forces to heavy forces still reaches your hands. What changes is the magnitude, not the detail. You'll actually feel more responsive because the wheelbase stays out of saturation and can reproduce subtle variations instead of cutting them off at a ceiling." }
     },
     {
       "@type": "Question",
       "name": "Can clipping damage my wheelbase over time?",
-      "acceptedAnswer": { "@type": "Answer", "text": "No. Clipping is a software signal-processing issue, not a mechanical stress. Your wheelbase is working at its rated torque output, not beyond it. However, persistent clipping does mean you're not using your feedback effectively—you're wasting your wheelbase's capability by cutting off information it could deliver." }
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Clipping is a software signal-processing issue, not a mechanical stress. Your wheelbase is working at its rated torque output, not beyond it. However, persistent clipping means you are not using your feedback effectively; you are wasting your wheelbase's capability by cutting off information it could deliver." }
     },
     {
       "@type": "Question",
@@ -63,7 +63,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"iRacing FFB Clipping: How to Diagnose and Fix It Now","item":"https://realiracing.com/blog/iracing-ffb-clipping-diagnosis-and-fixes.html"}]}
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/iracing-ffb-clipping-diagnosis-and-fixes.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup — high refresh matters more than size","url":"https://realiracing.com/blog/iracing-ffb-clipping-diagnosis-and-fixes.html#rir-gear"}}]}
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive, the base bolted to my rig right now","url":"https://realiracing.com/blog/iracing-ffb-clipping-diagnosis-and-fixes.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup: high refresh matters more than size","url":"https://realiracing.com/blog/iracing-ffb-clipping-diagnosis-and-fixes.html#rir-gear"}}]}
   </script>
 </head>
 <body>
@@ -113,15 +113,15 @@
     <div class="article-body">
       <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
 
-      <p class="article-lead">FFB clipping is one of the most common setup mistakes I see in sim racing, and it's also one of the easiest to miss. When your wheelbase runs out of torque capacity and flattens the signal instead of reproducing the full range of forces, you lose detail, responsiveness, and ultimately lap time. On my <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a>—which produces ~9 N·m of torque—I learned clipping the hard way: a setup that felt numb and unresponsive wasn't the car being boring; it was the wheelbase hitting a ceiling and cutting off information that should have made it to my hands.</p>
+      <p class="article-lead">FFB clipping is one of the most common setup mistakes I see in sim racing, and it's also one of the easiest to miss. When your wheelbase runs out of torque capacity and flattens the signal instead of reproducing the full range of forces, you lose detail, responsiveness, and ultimately lap time. On my <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a>, which produces ~9 N·m of torque, I learned clipping the hard way: a setup that felt numb and unresponsive wasn't boring; it was the wheelbase hitting a ceiling and cutting off information that should have made it to my hands.</p>
 
       <p>Clipping isn't a hardware failure. It's a signal-processing problem that happens when your iRacing FFB settings demand more force than your wheelbase can deliver. The good news: once you learn to spot it and understand the root causes, it's fixable without spending more money. I'll walk you through diagnosis, the settings that cause it, and the adjustments that work.</p>
 
       <h2>What Is FFB Clipping and Why It Matters</h2>
 
-      <p>FFB clipping occurs when the iRacing telemetry sends force commands that exceed your wheelbase's maximum torque output. Instead of the wheel reproducing the full dynamic range of forces—a smooth spectrum from light feel to heavy—the wheelbase tops out and delivers a flat, capped maximum. That missing detail is information about track surface, tire grip, and aerodynamic load that your brain relies on to modulate input.</p>
+      <p>FFB clipping occurs when the iRacing telemetry sends force commands that exceed your wheelbase's maximum torque output. Instead of the wheel reproducing the full dynamic range of forces, a smooth spectrum from light feel to heavy, the wheelbase tops out and delivers a flat, capped maximum. That missing detail is information about track surface, tire grip, and aerodynamic load that your brain relies on to modulate input.</p>
 
-      <p>On the MOZA R9, the maximum continuous output is ~9 N·m. If iRacing's force calculations peak at 12 N·m, the wheelbase clips at 9 N·m. The peak gets cut off. Subtle variations in force near the top end disappear. What you feel instead is a dead, unresponsive zone at steering lock—no nuance, no feedback about what the car is actually doing at the limit.</p>
+      <p>On the MOZA R9, the maximum continuous output is ~9 N·m. If iRacing's force calculations peak at 12 N·m, the wheelbase clips at 9 N·m. The peak gets cut off. Subtle variations in force near the top end disappear. What you feel instead is a dead, unresponsive zone at steering lock, with no nuance and no feedback about what the car is actually doing at the limit.</p>
 
       <div class="tip-box">
         <span class="box-label">Hardware Is Fine</span>
@@ -130,10 +130,10 @@
 
       <h2>How to Diagnose Clipping in Real Time</h2>
 
-      <p>The easiest way to spot clipping is to watch the telemetry while you drive. Open the telemetry panel in iRacing and locate the FFB graph. If the force line hits a hard ceiling and flattens at peak—instead of trailing off naturally or varying smoothly—you're clipping.</p>
+      <p>The easiest way to spot clipping is to watch the telemetry while you drive. Open the telemetry panel in iRacing and locate the FFB graph. If the force line hits a hard ceiling and flattens at peak, instead of trailing off naturally or varying smoothly, you are clipping.</p>
 
       <ul>
-        <li><strong>Visual signal:</strong> In iRacing telemetry, open the Force Feedback channel. If the peak looks like it's been cut with a knife—a flat line at max instead of a peak—that's clipping.</li>
+        <li><strong>Visual signal:</strong> In iRacing telemetry, open the Force Feedback channel. If the peak looks like it's been cut with a knife, a flat line at max instead of a peak, that's clipping.</li>
         <li><strong>Tactile signal:</strong> The wheel feels numb at the limit. Full steering lock produces heavy force, but it doesn't feel dynamic or responsive. It's just a wall of resistance.</li>
         <li><strong>Lap-to-lap inconsistency:</strong> Your steering inputs feel less precise because the wheelbase is in saturation. Small corrections feel like the same max-force effort every time.</li>
         <li><strong>Loss of on-throttle feedback:</strong> Throttle-down weight transfer (downforce building as you accelerate) should create progressive, increasing force. Clipping flattens that progression into a plateau.</li>
@@ -159,7 +159,7 @@
 
       <p>Start by reducing Master FFB by 5% at a time. Run a few laps and check the telemetry graph. Does the peak still hit the ceiling? If yes, go down another 5%. Keep going until the force line peaks and rolls off naturally without flattening. On my MOZA R9, I typically find the sweet spot between 85–90% for most cars.</p>
 
-      <p>This is not a loss of feedback. Lower Master FFB still allows the full spectrum of forces to reach your hands—it's just scaled down proportionally. The dynamic range remains intact.</p>
+      <p>This is not a loss of feedback. Lower Master FFB still allows the full spectrum of forces to reach your hands; it is just scaled down proportionally. The dynamic range remains intact.</p>
 
       <h3>Step 2: Reduce Spring Effect by 10–15%</h3>
 
@@ -181,7 +181,7 @@
 
       <div class="tip-box">
         <span class="box-label">Car Class Matters</span>
-        <p>High-downforce and high-speed cars demand lower FFB settings to stay out of clipping. That's not a limitation of the MOZA R9—it's physics. At 300 kph with active aero, the forces are genuinely higher than a car can physically produce at lower speeds.</p>
+        <p>High-downforce and high-speed cars demand lower FFB settings to stay out of clipping. That is not a limitation of the MOZA R9; it is physics. At 300 kph with active aero, the forces are genuinely higher than a car can physically produce at lower speeds.</p>
       </div>
 
       <h2>Advanced: Telemetry-First Setup</h2>
@@ -215,7 +215,7 @@
 
       <h2>Take Action Now</h2>
 
-      <p>If your FFB feels numb or unresponsive, clipping is the first thing to check. Open telemetry, run a lap, and look at the force graph. If you see a flat top, lower Master FFB by 5% and test again. Most clipping issues resolve in two or three adjustment cycles. The result is a wheel that feels responsive, detailed, and alive—without spending a dime or buying new hardware.</p>
+      <p>If your FFB feels numb or unresponsive, clipping is the first thing to check. Open telemetry, run a lap, and look at the force graph. If you see a flat top, lower Master FFB by 5% and test again. Most clipping issues resolve in two or three adjustment cycles. The result is a wheel that feels responsive, detailed, and alive without spending a dime or buying new hardware.</p>
 
       <p>For a deeper look at FFB settings overall, check out my <a href="moza-r9-iracing-settings.html">MOZA R9 iRacing settings guide</a>. And if you're still dialing in your whole rig, my guide to <a href="baseline-setup-vs-setup-shops-when-to-stop-fiddling.html">baseline setup versus setup shops</a> covers the bigger picture of when to stop tweaking and just race.</p>
 
@@ -225,17 +225,17 @@
           <table class="gear-table">
             <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
             <tbody>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup — high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive, the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup: high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
             </tbody>
           </table>
         </div>
-        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links; I may earn a commission at no cost to you.</p>
       </div></div>
 
       <div class="cta-box">
         <h3>Watch it, don't just read about it</h3>
-        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <p>I stream and upload iRacing races on my MOZA R9 rig: real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
         <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
       </div>
       <div class="cta-box rir-pack-cta">
@@ -248,15 +248,15 @@
 
       <div class="faq-item">
         <h3>How do I know if I'm clipping versus just running strong FFB?</h3>
-        <p>Open iRacing telemetry and watch the FFB force graph during a lap. Real FFB peaks naturally and varies throughout the lap. Clipping creates a hard flat line at the top—the force hits a ceiling and stays there. If the graph looks like a saw tooth with flat tops instead of peaks, you're clipping. Real strong FFB still shows variation and dynamics at the peak.</p>
+        <p>Open iRacing telemetry and watch the FFB force graph during a lap. Real FFB peaks naturally and varies throughout the lap. Clipping creates a hard flat line at the top, where the force hits a ceiling and stays there. If the graph looks like a saw tooth with flat tops instead of peaks, you're clipping. Real strong FFB still shows variation and dynamics at the peak.</p>
       </div>
       <div class="faq-item">
         <h3>Will lowering Master FFB make the wheel feel weak or less responsive?</h3>
-        <p>No. Master FFB scales all forces down proportionally, so the full dynamic range—light forces to heavy forces—still reaches your hands. What changes is the magnitude, not the detail. You'll actually feel more responsive because the wheelbase stays out of saturation and can reproduce subtle variations instead of cutting them off at a ceiling.</p>
+        <p>No. Master FFB scales all forces down proportionally, so the full dynamic range from light forces to heavy forces still reaches your hands. What changes is the magnitude, not the detail. You'll actually feel more responsive because the wheelbase stays out of saturation and can reproduce subtle variations instead of cutting them off at a ceiling.</p>
       </div>
       <div class="faq-item">
         <h3>Can clipping damage my wheelbase over time?</h3>
-        <p>No. Clipping is a software signal-processing issue, not a mechanical stress. Your wheelbase is working at its rated torque output, not beyond it. However, persistent clipping does mean you're not using your feedback effectively—you're wasting your wheelbase's capability by cutting off information it could deliver.</p>
+        <p>No. Clipping is a software signal-processing issue, not a mechanical stress. Your wheelbase is working at its rated torque output, not beyond it. However, persistent clipping means you are not using your feedback effectively; you are wasting your wheelbase's capability by cutting off information it could deliver.</p>
       </div>
       <div class="faq-item">
         <h3>Why does my setup clip on one track but not another?</h3>
@@ -268,9 +268,7 @@
   <div class="related">
     <h2>Keep reading</h2>
     <div class="related-grid">
-      <a class="related-card" href="sequential-h-pattern-paddles-shifter-choice.html"><span>Setup Guides</span>Sequential vs H-Pattern vs Paddles: Which Shifter for iRacing</a>
-      <a class="related-card" href="clutch-pedal-setup-manual-cars-iracing.html"><span>Setup Guides</span>Clutch Pedal Setup for Manual iRacing Cars: Dead Zone, Linearity, and Feel</a>
-      <a class="related-card" href="moza-r9-iracing-settings.html"><span>Setup Guides</span>MOZA R9 iRacing Settings — The Complete FFB Guide (2026)</a>
+      <a class="related-card" href="sequential-h-pattern-paddles-shifter-choice.html"><span>Setup Guides</span>Sequential vs H-Pattern vs Paddles: Which Shifter for iRacing</a> <a class="related-card" href="clutch-pedal-setup-manual-cars-iracing.html"><span>Setup Guides</span>Clutch Pedal Setup for Manual iRacing Cars: Dead Zone, Linearity, and Feel</a> <a class="related-card" href="moza-r9-iracing-settings.html"><span>Setup Guides</span>MOZA R9 iRacing Settings: The Complete FFB Guide (2026)</a>
     </div>
   </div>
 

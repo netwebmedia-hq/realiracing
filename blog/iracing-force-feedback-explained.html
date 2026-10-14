@@ -37,7 +37,7 @@
     {
       "@type": "Question",
       "name": "How does force feedback actually work in iRacing?",
-      "acceptedAnswer": { "@type": "Answer", "text": "iRacing sends a single raw torque signal directly from its physics engine to your wheelbase, with no canned or scripted effects layered on top. Your base's job is to reproduce that signal as faithfully as possible, which is why direct drive bases — with no mechanical filtering — feel notably different from belt-driven wheels." }
+      "acceptedAnswer": { "@type": "Answer", "text": "iRacing sends a single raw torque signal directly from its physics engine to your wheelbase, with no canned or scripted effects layered on top. Your base's job is to reproduce that signal as faithfully as possible, which is why direct drive bases, with no mechanical filtering, feel notably different from belt-driven wheels." }
     },
     {
       "@type": "Question",
@@ -47,12 +47,12 @@
     {
       "@type": "Question",
       "name": "Why does higher force feedback strength sometimes feel worse?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Because past a certain point you're clipping — the signal is exceeding your base's ceiling and flattening out on spikes, which destroys detail rather than adding it. Running with headroom preserves subtle forces like kerb texture and weight transfer better than maxing out strength does." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Because past a certain point you're clipping, the signal exceeds your base's ceiling and flattens out on spikes, which destroys detail rather than adding it. Running with headroom preserves subtle forces like kerb texture and weight transfer better than maxing out strength does." }
     },
     {
       "@type": "Question",
       "name": "How can I tell if my force feedback is clipping?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Find your hardest braking zone on a familiar track and watch for the wheel going quiet or dead right at peak brake pressure. That's a clear clipping signal — back off your base's hardware strength a notch and retest." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Find your hardest braking zone on a familiar track and watch for the wheel going quiet or dead right at peak brake pressure. That is a clear clipping signal; back off your base's hardware strength a notch and retest." }
     }
     ]
   }
@@ -63,7 +63,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"iRacing Force Feedback Explained — What Every Slider Actually Does","item":"https://realiracing.com/blog/iracing-force-feedback-explained.html"}]}
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/iracing-force-feedback-explained.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA R12 Direct Drive Wheelbase","description":"high-end direct drive, maximum headroom","url":"https://realiracing.com/blog/iracing-force-feedback-explained.html#rir-gear"}}]}
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive, the base bolted to my rig right now","url":"https://realiracing.com/blog/iracing-force-feedback-explained.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA R12 Direct Drive Wheelbase","description":"high-end direct drive, maximum headroom","url":"https://realiracing.com/blog/iracing-force-feedback-explained.html#rir-gear"}}]}
   </script>
 </head>
 <body>
@@ -117,21 +117,21 @@
 
       <h2>The signal iRacing actually sends</h2>
 
-      <p>iRacing sends one raw torque signal straight from its physics engine to your wheelbase — there's no canned effect layered on top, no scripted rumble for a kerb. Every force you feel is a direct, real-time representation of what the simulated tires and suspension are doing. That's why direct drive bases feel so different from belt-driven ones: they can reproduce that raw signal far more faithfully, with none of the mechanical filtering a belt or gear introduces.</p>
+      <p>iRacing sends one raw torque signal straight from its physics engine to your wheelbase; there is no canned effect layered on top and no scripted rumble for a kerb. Every force you feel is a direct, real-time representation of what the simulated tires and suspension are doing. That's why direct drive bases feel so different from belt-driven ones: they can reproduce that raw signal far more faithfully, with none of the mechanical filtering a belt or gear introduces.</p>
 
       <h2>Where the sliders actually live</h2>
 
-      <p>Your base's own software (Pit House, in my case) controls the hardware-level settings — overall strength, and a handful of shaping filters. iRacing's in-sim FFB menu controls a separate, smaller set of parameters, mainly overall strength scaling and a damping value. The confusion most people run into is tuning both independently without understanding that one scales the other — you can end up with clipping from the hardware side while the in-sim slider looks conservative, or vice versa.</p>
+      <p>Your base's own software (Pit House, in my case) controls the hardware-level settings, including overall strength and a handful of shaping filters; iRacing's in-sim FFB menu controls a separate, smaller set of parameters, mainly overall strength scaling and a damping value. The confusion most people run into is tuning both independently without understanding that one scales the other; you can end up with clipping from the hardware side while the in-sim slider looks conservative, or vice versa.</p>
 
       <ul>
         <li>Set your base's hardware strength first, with headroom to spare, before touching iRacing's in-sim slider</li>
         <li>Use iRacing's in-sim strength as the fine-tune layer on top of that hardware baseline, not as your primary strength control</li>
-        <li>Watch for clipping specifically under heavy braking and big kerb strikes — that's where a demand spike is most likely to exceed your ceiling</li>
+        <li>Watch for clipping specifically under heavy braking and big kerb strikes, which is where a demand spike is most likely to exceed your ceiling.</li>
       </ul>
 
       <h2>Why more strength isn't more detail</h2>
 
-      <p>This is the part that trips up new direct drive owners the most. Cranking strength doesn't add detail — it just makes existing detail feel more intense, and past a certain point it starts clipping the signal on spikes, which actually destroys detail rather than adding it. Most experienced sim racers, myself included, run well below their base's ceiling for exactly this reason: headroom preserves the subtle stuff — kerb texture, weight transfer — that clipping erases.</p>
+      <p>This is the part that trips up new direct drive owners the most. Cranking strength does not add detail; it just makes existing detail feel more intense, and past a certain point it starts clipping the signal on spikes, which actually destroys detail rather than adding it. Most experienced sim racers, myself included, run well below their base's ceiling for exactly this reason: headroom preserves the subtle stuff, like kerb texture and weight transfer, that clipping erases.</p>
 
       <div class="tip-box">
         <span class="box-label">The honest tuning goal</span>
@@ -140,7 +140,7 @@
 
       <h2>A simple way to check your own setup</h2>
 
-      <p>Find your hardest braking zone on a track you know well, and pay attention specifically to whether the wheel goes quiet or dead right at peak brake pressure. If it does, you're clipping — back off hardware strength a notch and retest. That single check tells you more about your actual FFB setup than any generic slider chart ever will.</p>
+      <p>Find your hardest braking zone on a track you know well, and pay attention specifically to whether the wheel goes quiet or dead right at peak brake pressure. If it does, you're clipping; back off hardware strength a notch and retest. That single check tells you more about your actual FFB setup than any generic slider chart ever will.</p>
 
       <div id="rir-gear"><div class="gear-box">
         <span class="box-label">The gear in this guide</span>
@@ -148,17 +148,17 @@
           <table class="gear-table">
             <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
             <tbody>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive, the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
             <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R12+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r12" target="_blank" rel="sponsored noopener">MOZA R12 Direct Drive Wheelbase</a></th><td>high-end direct drive, maximum headroom</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
             </tbody>
           </table>
         </div>
-        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links; I may earn a commission at no cost to you.</p>
       </div></div>
 
       <div class="cta-box">
         <h3>Watch it, don't just read about it</h3>
-        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <p>I stream and upload iRacing races on my MOZA R9 rig: real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
         <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
       </div>
       <div class="cta-box rir-pack-cta">
@@ -171,7 +171,7 @@
 
       <div class="faq-item">
         <h3>How does force feedback actually work in iRacing?</h3>
-        <p>iRacing sends a single raw torque signal directly from its physics engine to your wheelbase, with no canned or scripted effects layered on top. Your base's job is to reproduce that signal as faithfully as possible, which is why direct drive bases — with no mechanical filtering — feel notably different from belt-driven wheels.</p>
+        <p>iRacing sends a single raw torque signal directly from its physics engine to your wheelbase, with no canned or scripted effects layered on top. Your base's job is to reproduce that signal as faithfully as possible, which is why direct drive bases, with no mechanical filtering, feel notably different from belt-driven wheels.</p>
       </div>
       <div class="faq-item">
         <h3>Should I set FFB strength in my base's software or in iRacing?</h3>
@@ -179,11 +179,11 @@
       </div>
       <div class="faq-item">
         <h3>Why does higher force feedback strength sometimes feel worse?</h3>
-        <p>Because past a certain point you're clipping — the signal is exceeding your base's ceiling and flattening out on spikes, which destroys detail rather than adding it. Running with headroom preserves subtle forces like kerb texture and weight transfer better than maxing out strength does.</p>
+        <p>Because past a certain point you're clipping, the signal exceeds your base's ceiling and flattens out on spikes, which destroys detail rather than adding it. Running with headroom preserves subtle forces like kerb texture and weight transfer better than maxing out strength does.</p>
       </div>
       <div class="faq-item">
         <h3>How can I tell if my force feedback is clipping?</h3>
-        <p>Find your hardest braking zone on a familiar track and watch for the wheel going quiet or dead right at peak brake pressure. That's a clear clipping signal — back off your base's hardware strength a notch and retest.</p>
+        <p>Find your hardest braking zone on a familiar track and watch for the wheel going quiet or dead right at peak brake pressure. That is a clear clipping signal; back off your base's hardware strength a notch and retest.</p>
       </div>
     </div>
   </main>
@@ -191,9 +191,7 @@
   <div class="related">
     <h2>Keep reading</h2>
     <div class="related-grid">
-      <a class="related-card" href="moza-r9-iracing-settings.html"><span>Setup Guides</span>MOZA R9 iRacing Settings — The Complete FFB Guide (2026)</a>
-      <a class="related-card" href="iracing-vr-vs-triple-monitors.html"><span>Hardware</span>iRacing in VR vs Triple Monitors — Which Should You Buy in 2026?</a>
-      <a class="related-card" href="best-sim-racing-pedals-iracing-2026.html"><span>Buyer's Guide</span>Best Sim Racing Pedals for iRacing 2026 — The Load Cell Guide</a>
+      <a class="related-card" href="moza-r9-iracing-settings.html"><span>Setup Guides</span>MOZA R9 iRacing Settings: The Complete FFB Guide (2026)</a> <a class="related-card" href="iracing-vr-vs-triple-monitors.html"><span>Hardware</span>iRacing in VR vs Triple Monitors: Which Should You Buy in 2026?</a> <a class="related-card" href="best-sim-racing-pedals-iracing-2026.html"><span>Buyer's Guide</span>Best Sim Racing Pedals for iRacing 2026: The Load Cell Guide</a>
     </div>
   </div>
 
