@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NWM PitStop: Clean and Stream-Proof Your Sim Racing PC | RealIRacing</title>
+<meta name="description" content="Windows toolkit for sim racers who stream: clean regenerable junk, trim startup to a fresh boot with nothing that flashes a console on stream, and keep iRacing and OBS first in the CPU queue. One-command undo." />
+<link rel="canonical" href="https://realiracing.com/packs/nwm-pitstop.html" />
+<meta property="og:title" content="NWM PitStop: Clean and Stream-Proof Your Sim Racing PC" />
+<meta property="og:description" content="Windows toolkit for sim racers who stream: clean regenerable junk, trim startup to a fresh boot with nothing that flashes a console on stream, and keep iRacing and OBS first in the CPU queue. One-command undo." />
+<meta property="og:url" content="https://realiracing.com/packs/nwm-pitstop.html" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://realiracing.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://realiracing.com/og-image.png" />
+<link rel="stylesheet" href="/blog/blog.css?v=20260824" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does it need admin rights?","acceptedAnswer":{"@type":"Answer","text":"No. A few machine-wide startup entries need admin to change; PitStop lists them and you turn them off in Task Manager."}},{"@type":"Question","name":"Can I undo it?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every startup change is logged and pitstop-startup.ps1 -Undo puts it all back. Priorities reset with -Restore."}},{"@type":"Question","name":"Will it raise my frame rate?","acceptedAnswer":{"@type":"Answer","text":"No promises. It removes background load and stream interruptions; your FPS depends on your hardware and sim settings."}}]}
+</script>
+<script src="/js/ga4.js" defer></script>
+</head>
+<body>
+<nav>
+<a class="nav-logo" href="/">
+<svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/></svg>
+<span>Real</span>IRacing
+</a>
+<ul class="nav-links">
+<li><a href="/#media">Media</a></li>
+<li><a href="/#content">Content</a></li>
+<li><a href="/blog/">Blog</a></li>
+<li><a class="active" href="/packs/">Setup Packs</a></li>
+<li><a href="/gear.html">My Rig</a></li>
+<li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+</ul>
+</nav>
+<div class="article-wrap">
+<p class="section-label">Setup Packs &middot; PC tools</p>
+<h1>NWM PitStop: clean and stream-proof your sim racing PC</h1>
+<div class="article-meta"><span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span><span class="dot">&middot;</span><span>Instant email delivery &middot; free preview available</span></div>
+<div class="article-body">
+<p class="article-lead">The routine I run on my own iRacing and OBS rig before every stream. It started after a background task flashed a console window in the middle of a live race. Three readable PowerShell scripts, plus an optional Claude Code skill that runs them for you.</p>
+
+<div class="cta-box">
+<h3>Read the free preview first</h3>
+<p>The opening section is free, no signup. It lists exactly what the scripts do and everything they never touch.</p>
+<a class="btn-primary" href="https://netwebmedia.com/api/catalogue/playbook?doc=nwm-pitstop" rel="noopener">Read the preview</a> <a href="#get-it">Skip to buying &rarr;</a>
+</div>
+
+<h2>What is inside</h2>
+<ul>
+<li><strong>Clean:</strong> removes old temp files, crash dumps and caches (including those of closed browsers). It scans first and deletes only on request.</li>
+<li><strong>Fresh boot:</strong> no startup apps and no logon tasks except backups. Kept tasks run hidden, so nothing can flash a console window on stream.</li>
+<li><strong>Stream priority:</strong> sim on High, OBS on Above Normal, browsers and background tools below them. A hidden watcher re-pins them every race.</li>
+<li><strong>One-command undo</strong> for every startup change, plus logs of everything deleted.</li>
+<li>An optional Claude Code skill: say "pitstop" and it previews, then runs the routine.</li>
+</ul>
+
+<h2>Who it is for</h2>
+<ul>
+<li>You stream iRacing, ACC, Le Mans Ultimate, rFactor 2, AMS2 or F1 with OBS or Streamlabs</li>
+<li>Your PC boots with a tray full of apps you never asked for</li>
+<li>You want something you can read line by line, not another subscription cleaner</li>
+</ul>
+
+<h2>Who it is not for</h2>
+<ul>
+<li>Mac or Linux users. PitStop is Windows 10/11 only.</li>
+<li>Anyone after an FPS miracle. It removes background load and interruptions; it does not overclock anything.</li>
+</ul>
+
+<div class="tip-box">
+<span class="box-label">What it never touches</span>
+<p>Cookies, logins, history, documents, game installs, the Recycle Bin or Windows Security. It installs no service and has no subscription. Not affiliated with iRacing, OBS, Microsoft or CCleaner.</p>
+</div>
+
+<h2 id="get-it">Get it</h2>
+<p>Delivery is instant by email once payment clears: a personal link to the guide with one-click downloads of every script. The link never expires.</p>
+<p><a class="btn-primary" id="pack-buy" data-price="29" data-pack-url="https://netwebmedia.com/checkout.html?product=nwm-pitstop" href="https://netwebmedia.com/checkout.html?product=nwm-pitstop">Buy the pack</a></p>
+<p id="pack-price-note">$29 one-time &middot; Instant email delivery. 7-day money-back guarantee.</p>
+
+<h2>FAQ</h2>
+<div class="faq-item"><h3>Does it need admin rights?</h3><p>No. A few machine-wide startup entries need admin to change; PitStop lists them and you turn them off in Task Manager.</p></div>
+<div class="faq-item"><h3>Can I undo it?</h3><p>Yes. Every startup change is logged and <code>pitstop-startup.ps1 -Undo</code> puts it all back. Priorities reset with <code>-Restore</code>.</p></div>
+<div class="faq-item"><h3>Will it raise my frame rate?</h3><p>No promises. It removes background load and stream interruptions; your FPS depends on your hardware and sim settings.</p></div>
+
+<div class="related">
+<h2>Pair it with a setup pack</h2>
+<div class="related-grid">
+<a class="related-card" href="/packs/moza-r9-iracing-ffb-pack.html"><span>Setup Pack 01</span>MOZA R9 + iRacing Force Feedback Pack</a>
+<a class="related-card" href="/packs/iracing-baseline-setup-pack.html"><span>Setup Pack 03</span>iRacing Baseline Setup and Pedal Calibration Pack</a>
+<a class="related-card" href="/packs/"><span>All packs</span>RealIRacing Setup Packs</a>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<p>&copy; 2026 RealIRacing &middot; iRacing User: <strong>Carlos Martinez9</strong></p>
+<p style="margin-top:6px;font-size:0.78rem;"><a href="/">Home</a> &middot; <a href="/blog/">Blog</a> &middot; <a href="/packs/">Setup Packs</a> &middot; <a href="/gear.html">My Rig</a> &middot; <a href="/privacy.html">Privacy</a></p>
+<p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  </footer>
+<script src="/packs/packs.js"></script>
+</body>
+</html>

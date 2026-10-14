@@ -805,6 +805,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://realiracing.com/packs/nwm-pitstop.html</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://realiracing.com/blog/fuji-speedway-iracing-guide.html</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
