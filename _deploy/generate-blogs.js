@@ -271,6 +271,19 @@ function scanExistingPosts() {
 }
 
 // ─── Render one post ─────────────────────────────────────────────────────────
+// Cross-sell for our own NWM PitStop pack on performance/streaming topics.
+// No price in the copy (client-facing rule); labelled as our own product.
+const PITSTOP_TOPIC_RE = /\b(stream(?:ing)?|obs|fps|stutter(?:ing)?|cpu|gpu|bottleneck(?:s|ing)?|performance|frame ?rate|lag|overlay)\b/i;
+function pitstopCalloutHtml(post) {
+  const hay = [post.slug, post.title, post.description, post.tag].join(' ').replace(/-/g, ' ');
+  if (!PITSTOP_TOPIC_RE.test(hay)) return '';
+  return `<div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before you go live, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=${esc(post.slug)}">See NWM PitStop &rarr;</a></p>
+      </div>
+`;
+}
+
 function renderPostHtml(post, related, allowedGearKeys) {
   const slug = post.slug;
   const url = `${SITE_URL}/blog/${slug}.html`;
@@ -416,6 +429,7 @@ ${photos.figureHtml(photo)}
 
 ${bodyHtml}
 
+      ${pitstopCalloutHtml(post)}
       ${gearBoxHtml}
 
       <div class="cta-box">
