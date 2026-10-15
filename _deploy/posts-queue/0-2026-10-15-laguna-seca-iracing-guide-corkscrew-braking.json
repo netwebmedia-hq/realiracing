@@ -1,0 +1,128 @@
+{
+  "slug": "laguna-seca-iracing-guide-corkscrew-braking",
+  "tag": "Track Guides · Road Courses",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "Laguna Seca iRacing Guide: The Corkscrew and Where to Brake",
+  "description": "A first-person guide to WeatherTech Raceway Laguna Seca on iRacing: how to learn the blind crests, brake into the Corkscrew and tune force feedback.",
+  "published": "2026-10-15",
+  "dateLabel": "October 15, 2026",
+  "gearKeys": ["moza-r9", "moza-crp2", "moza-cs-v2"],
+  "sections": [
+    {
+      "p": "Laguna Seca is the track where I stopped trusting my eyes. Half the corners hide their exit behind a crest, and the most famous one drops away so abruptly that the monitor shows nothing but sky for a moment. You cannot drive this place by looking for the corner. You drive it by knowing where the corner is, and that knowledge only comes from repetition and a few good reference points."
+    },
+    {
+      "p": "This guide covers how I learn Laguna on the rig, where I brake, how the elevation changes affect the car and what I tweak in force feedback so the track talks to me. Numbers are approximate and from my own seat, so treat them as a starting point."
+    },
+    {
+      "h2": "What makes this track different"
+    },
+    {
+      "p": "The circuit is short, at ~2.2 miles with ~11 turns, but the elevation change is large for a track of its size. The lap climbs through the first half, hits a blind hairpin at the top and then falls through the Corkscrew toward the final sequence. That means your braking, traction and grip all change with the slope, and a reference point that works on a flat road course can fail here."
+    },
+    {
+      "p": "If you are still building your track-learning routine, my guide on <a href=\"how-to-learn-a-new-track-iracing.html\">how to learn a new track in iRacing</a> covers the method I use here: slow laps first, one corner at a time, then link sections."
+    },
+    {
+      "h2": "Learning it without overdriving"
+    },
+    {
+      "h3": "Start with reference points, not lines"
+    },
+    {
+      "p": "On a track with blind crests, the racing line matters less on lap one than knowing where the road goes. I pick fixed objects: a sign, a wall seam, a patch of kerb. For each blind corner I choose two points, one for where I begin braking and one for where I turn in. I write them down in a text file and revise them after every session."
+    },
+    {
+      "h3": "Use the cockpit view that shows the road"
+    },
+    {
+      "p": "The in-sim seat height and field of view change how much road you can see over a crest. A small adjustment that lets you see a bit more road ahead is worth testing during practice, and my guide to <a href=\"seating-position-and-wheel-height-sim-rig.html\">seating position and wheel height</a> covers the physical side of the same question."
+    },
+    {
+      "tip": "Run five slow laps at ~80% pace just to watch where the road goes after each crest. Speed comes later; the map comes first.",
+      "tipLabel": "Learning tip"
+    },
+    {
+      "h2": "Braking and the pedal feel"
+    },
+    {
+      "p": "Laguna punishes late braking in two places: the hairpin at the top of the climb and the corner before the Corkscrew. Both come after a fast approach and ask the front tyres to do a lot at once. With load-cell pedals like the MOZA CRP2, I brake by pressure, so I spend my practice laps finding the pressure where the car slows hard without locking the fronts. If you have not calibrated your brake curve, <a href=\"load-cell-brake-calibration-consistent-braking.html\">my load-cell calibration guide</a> walks through the process I use."
+    },
+    {
+      "p": "My rule here is to brake in a straight line, release smoothly as I turn in and finish releasing before the apex. Trail braking too deep at Laguna unloads the rear on the downhill sections, and a car that was fine at the crest can suddenly feel loose as it rolls over the other side."
+    },
+    {
+      "p": "Brake balance matters more than people expect. A rearward bias helps the car rotate, but at a track with this much downhill braking it can bite you. If you want to refresh how it works, read <a href=\"iracing-brake-bias-explained.html\">brake bias explained</a> before you start changing numbers."
+    },
+    {
+      "h2": "The Corkscrew"
+    },
+    {
+      "p": "The Corkscrew is a left-right chicane that drops ~18 m (~59 ft) in a very short distance. The entry is blind, the exit is blind and the car goes light as the road falls away. It is the part of the track everyone remembers, and it is also where many races are lost."
+    },
+    {
+      "p": "My approach is to treat it as a single, slow, deliberate move. I brake before the crest, not on it, release the pedal as I begin turning, aim the car at a reference point on the left side and then sweep across to the right as the track opens up. Trying to carry too much speed makes the car run wide on the exit, where the kerbs and the runoff leave very little margin."
+    },
+    {
+      "p": "Because the car is light as it drops, I keep my steering inputs gentle. A sudden correction on the way down can send it into a slide you cannot recover on a downhill. If you do get out of shape, <a href=\"saving-a-slide-before-the-spin.html\">my guide to saving a slide</a> covers what I do with my hands and feet."
+    },
+    {
+      "h2": "Force feedback at Laguna"
+    },
+    {
+      "p": "Laguna is a good test for your force-feedback settings. The wheel loads up through compressions, goes light over crests and shakes at the kerbs. On my MOZA R9, I start with moderate FFB strength and make sure the signal is not clipping on the fastest compression, because a clipped signal hides the information you need at the next crest. If you are not sure what clipping is, <a href=\"iracing-force-feedback-explained.html\">iRacing force feedback explained</a> breaks it down."
+    },
+    {
+      "p": "I also reduce any extra smoothing or damping I would normally run. At a track where the car goes light unexpectedly, I want the wheel to tell me the second grip starts to go, even if it feels a little busier."
+    },
+    {
+      "h2": "Setup basics"
+    },
+    {
+      "p": "For a first session, I would run the baseline setup and change as little as possible. The track has enough going on without adding setup variables. Once you are consistent, look at the areas where the car needs help. A stable rear for the downhill braking zones and enough front grip for the slow hairpin are the two things I usually chase."
+    },
+    {
+      "p": "Tyre pressures and temperatures will vary with the car and the weather, so check them after a few laps and adjust gradually. Small changes are easier to evaluate than big ones."
+    },
+    {
+      "h2": "Racing here"
+    },
+    {
+      "p": "Overtaking at Laguna is hard because the track is narrow and the blind corners punish aggression. The cleanest passes come from a good exit onto the front straight, where a good run lets you set up a move into the first corner. Be patient in the Corkscrew, because contact there can end two races at once."
+    },
+    {
+      "p": "In traffic, I leave a larger gap than I would elsewhere before a blind crest. If the car ahead lifts or slides over the top, I want room to react before I see what happened."
+    },
+    {
+      "h2": "A practice plan for one evening"
+    },
+    {
+      "olist": [
+        "Run five slow laps and write down reference points for each blind corner.",
+        "Spend ten laps on the Corkscrew section only, building a consistent brake point.",
+        "Link the hairpin and the Corkscrew into one sequence and focus on the exit speed.",
+        "Run a qualifying simulation, then review the telemetry or the replay for any clipped FFB or locked tyres.",
+        "End with a short race run against the AI or in an open practice room to rehearse traffic."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Laguna Seca good for beginners on iRacing?",
+      "a": "It can be, with a slow, patient approach. The blind crests make it harder to learn than a flat circuit, but the track is short, so you get many repetitions per session. Start in a slower car and focus on reference points."
+    },
+    {
+      "q": "Where should I brake for the Corkscrew?",
+      "a": "Brake before the crest and finish most of your braking in a straight line, then release as you begin to turn. Exact markers depend on the car, so pick a fixed object on the approach and adjust by a few metres each lap."
+    },
+    {
+      "q": "Why does my car feel unstable going downhill at Laguna?",
+      "a": "The elevation change unloads the rear tyres under braking and steering. Brake earlier, release the pedal smoothly, avoid deep trail braking and keep steering inputs gentle on the descent."
+    },
+    {
+      "q": "What force feedback settings work best at Laguna Seca?",
+      "a": "Use a moderate strength that does not clip on the heaviest compression, and reduce extra smoothing so the wheel tells you when grip is going light over crests. Test with a few laps and adjust in small steps."
+    }
+  ]
+}
