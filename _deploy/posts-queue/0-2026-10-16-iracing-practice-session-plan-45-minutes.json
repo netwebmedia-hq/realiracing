@@ -1,0 +1,127 @@
+{
+  "slug": "iracing-practice-session-plan-45-minutes",
+  "tag": "Technique · Practice",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "A 45-Minute iRacing Practice Plan That Actually Sticks",
+  "description": "A structured 45-minute iRacing practice session: warm-up, one corner and one variable, a consistent run, a pace run, lap review and a firm stop.",
+  "published": "2026-10-16",
+  "dateLabel": "October 16, 2026",
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2",
+    "cockpit"
+  ],
+  "sections": [
+    {
+      "p": "Most of my bad practice sessions had the same shape: I sat down with an hour free, drove laps until I was bored, changed three things at once, and stood up with no idea whether I had improved. A fixed plan fixed that. This is the 45-minute structure I use on my MOZA R9 and CRP2 pedals in the fixed aluminium cockpit, and it works for any car and any wheel."
+    },
+    {
+      "p": "The time limit does most of the work. Forty-five minutes is short enough that you stay sharp through the end and long enough to run a warm-up, one focused block, one pace run and a review. You will also stop before the stage where tired drivers start repeating the same mistake."
+    },
+    {
+      "h2": "Before you click drive: two minutes of setup"
+    },
+    {
+      "p": "Decide the goal first. One car, one track, one sentence: \"carry more speed through Turn 3\" or \"hit the same braking marker five laps in a row.\" If you cannot write the goal in one sentence, it is two goals, and you should pick the one that costs you more time."
+    },
+    {
+      "p": "Check the basics so they do not interrupt you later. Wheel rotation matches the car, force feedback is at a level you can hold for the whole session (I keep mine at a setting where the wheel never clips on the straights; the <a href=\"iracing-force-feedback-explained.html\">force feedback guide</a> covers what clipping means), and the pedals feel the same as last time. If you changed something on the rig this week, say so in your notes so you can separate a hardware change from a driving change."
+    },
+    {
+      "olist": [
+        "Minutes 0 to 10: warm-up laps",
+        "Minutes 10 to 25: one-variable block",
+        "Minutes 25 to 37: pace run",
+        "Minutes 37 to 43: review",
+        "Minutes 43 to 45: stop and write one note"
+      ]
+    },
+    {
+      "h2": "Minutes 0 to 10: warm-up laps"
+    },
+    {
+      "p": "Your hands and eyes are not ready at minute zero. The first laps should be slower than you think is necessary, with the goal of rebuilding rhythm: smooth steering, consistent brake release, throttle application that matches the car's grip. I aim for roughly 85 to 90 percent of what I believe is my limit, and I treat lap time as irrelevant."
+    },
+    {
+      "h2": "Minutes 10 to 25: pick one corner and one variable"
+    },
+    {
+      "p": "This block is the reason the session exists. Choose one corner, or one short sequence of corners, and choose one thing to change. A variable is something you can name and repeat: the braking point, the turn-in point, the amount of trail braking, the throttle pickup, the gear. Changing two at once makes the result impossible to read."
+    },
+    {
+      "p": "A good variable is small. Moving a brake marker by one car length is a variable. \"Driving the corner better\" is a wish. I write the variable on a sticky note on the cockpit frame so I can see it every lap."
+    },
+    {
+      "p": "Run the corner repeatedly. Laps in this block are allowed to be messy outside the target corner, since the rest of the lap is only a way to get back to it. Do not chase the whole lap time here. Watch whether your minimum speed in the corner changes and whether the car feels more settled on exit."
+    },
+    {
+      "tip": "If a change makes the corner worse, go back to the old marker for two laps before trying a different value. You want to be sure the old way still works, otherwise you will not know whether the new way is the problem.",
+      "tipLabel": "Go back before going forward"
+    },
+    {
+      "p": "After about eight to ten attempts you should have a clear lean: the change helped, hurt or did nothing. If it did nothing, that is still a result. Note it and move on, because a variable that does not change anything is not what is slowing you down."
+    },
+    {
+      "h2": "Minutes 25 to 37: short consistent run versus pace run"
+    },
+    {
+      "p": "Now widen the view. This block is a run of laps, and you have two ways to approach it. A short consistent run asks for a handful of laps inside a narrow time window, driven at a pace you can repeat. A pace run asks for your best clean lap, with the tyres warm and the fuel load sensible. Both are useful, and they answer different questions."
+    },
+    {
+      "list": [
+        "Consistent run: five or six laps, all within a spread you set before starting (I use a few tenths as the target and adjust to the car). It tells you how reliable your technique is.",
+        "Pace run: three or four push laps after a lap to bring the tyres in. It tells you what the car and you can do on a good lap.",
+        "Doing both in the same block is fine when the time allows. If you have to choose, pick the one that matches your next race: a long race rewards consistency, a short one rewards a clean fast lap."
+      ]
+    },
+    {
+      "p": "I usually run the consistent laps first, because the push laps then happen on tyres that already have heat in them and a track that has rubbered in. During both, keep the variable from the previous block. The point is to see whether it survives when you stop thinking about it."
+    },
+    {
+      "p": "Fuel and tyre habits matter here. Start the block with a fuel load you chose on purpose rather than whatever the setup left you with. A near-empty tank makes the car lighter and flatters your lap times, and a full tank does the opposite. Tyres give their best over a limited window of laps, so note which lap numbers felt best instead of assuming the last one was. If you run in a car where you can read tyre temperatures and pressures, glance at them after the run and write down what you see."
+    },
+    {
+      "h2": "Minutes 37 to 43: review your laps"
+    },
+    {
+      "p": "Stop driving and look at the data. Pull up your laps and compare the best one to the median one. Where does the best lap gain time? Is it braking, mid-corner speed or exit? If you have a reference lap from a faster driver or from your own earlier session, overlay it and look at the corner you worked on first."
+    },
+    {
+      "p": "<a href=\"iracing-telemetry-basics-reading-your-laps.html\">The telemetry basics guide</a> goes through how to read the brake, throttle and speed traces, and that is enough for this block. Look for three things: whether your braking starts at a similar point lap after lap, whether the throttle trace is a clean ramp or a series of stabs, and whether your minimum speed in the target corner is steadier than it was in the warm-up."
+    },
+    {
+      "h2": "Minutes 43 to 45: stop while you are still sharp"
+    },
+    {
+      "p": "Leave the session when the plan says to leave, even if the last lap felt good. The temptation is strong, because a good lap makes you want another, but the plan exists to protect the quality of what you practise. A tired driver repeats errors, and repeated errors become habits."
+    },
+    {
+      "p": "Spend the final two minutes writing one note. Include the car, the track, the variable you tested, what you saw, and the single thing to try next time. Keep it to a few lines, and keep the notes in the same file so you can scan back through them. After a few weeks, the notes show you which changes held up and which only looked good once."
+    },
+    {
+      "h2": "Adjusting the plan to your day"
+    },
+    {
+      "p": "The structure matters more than the exact minutes. A warm-up that rebuilds rhythm, one variable, one run that tests it, a short review and a firm stop will give you better information than an open-ended hour. Over a month that information is what turns practice time into lap time."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is 45 minutes enough to improve my lap times in iRacing?",
+      "a": "It is enough to test one change properly, which is how most improvement happens. A 45-minute session with one goal usually gives you clearer results than a longer, unfocused one, and the short length helps you stay sharp until the end."
+    },
+    {
+      "q": "Should I use an unlimited practice session or a real session?",
+      "a": "For this plan, an open practice session works well because you control the clock and can restart without penalty. Use a hosted or test session if you want a quiet track, and save race sessions for when you want to practise traffic and starts."
+    },
+    {
+      "q": "How many laps should the warm-up take?",
+      "a": "There is no fixed number. I use about ten minutes, which is a handful of laps on most circuits, and I stop the warm-up when my laps become smooth and repeatable at a pace that feels relaxed. On a long track that may be only a few laps."
+    },
+    {
+      "q": "What if I do not have telemetry for the review block?",
+      "a": "You can still review with the in-sim lap times, a replay and your own notes. Watch the replay from the cockpit view for your braking points and exit, and compare the sector times of your best lap against a typical one. Telemetry makes it faster, but it is not required to get a useful result."
+    }
+  ]
+}
