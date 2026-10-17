@@ -6,7 +6,7 @@
 - Author: Carlos Martinez (iRacing user "Carlos Martinez9"). Home: https://realiracing.com/
 - Rig: MOZA R9 direct drive wheelbase, MOZA CS V2 wheel, MOZA CRP2 load cell pedals, RTX 5060 Ti, 1440p 120 Hz monitor. Full breakdown: https://realiracing.com/gear.html
 - Affiliate disclosure: gear links go to Amazon and carry an affiliate tag; the author may earn a commission at no cost to the reader. The site does not use sponsored loaner hardware.
-- 166 blog guides published so far; new posts appear several times a week.
+- 168 blog guides published so far; new posts appear several times a week.
 
 ## Main sections
 - [Home](https://realiracing.com/): channel overview, content types, gear picks, FAQ
@@ -33,6 +33,8 @@
 - [Used Sim Racing Wheelbase: What to Check Before Buying](https://realiracing.com/blog/used-sim-racing-wheelbase-inspection-guide.html): Inspect motor health, firmware compatibility, and wear patterns before buying a used direct-drive wheelbase. Avoid dead units and costly repairs.
 - [Why a Fast Setup Can Actually Make You Slower in iRacing](https://realiracing.com/blog/fast-setup-makes-you-slower-iracing.html): A setup optimized for raw pace can punish mistakes and hurt consistency. Learn why baseline trumps edge-case performance.
 - [Understanding Strength of Field in iRacing: What SOF Really Means](https://realiracing.com/blog/strength-of-field-iracing-explained.html): Strength of Field (SOF) determines your iRacing incident and safety rating gains. Learn how it's calculated and why racing weak fields costs you more mistakes.
+- [Motion Rigs for iRacing: What They Add and What They Actually Cost](https://realiracing.com/blog/motion-rigs-cost-benefit-sim-racing.html): Motion platforms add immersion and driver feedback to iRacing, but cost ranges from budget ~$1500 to ~$15,000+. Here's what you actually feel and whether it's worth it.
+- [Wheel Rim Shapes Compared: GT, Open-Wheel, and Rally Rims](https://realiracing.com/blog/wheel-rim-guide-gt-open-wheel-rally-shapes.html): GT, open-wheel, and rally wheel rims have different grip points and feedback profiles. Learn which rim shape matches your iRacing categories.
 - [Meta Quest 3 VR vs Triple Monitors for iRacing: Which to Buy First](https://realiracing.com/blog/meta-quest-3-vr-vs-triple-monitors-iracing-buying-guide.html): Weighing the real cost, immersion, and practical downsides of Meta Quest 3 VR versus a triple-monitor setup for iRacing, here is what I would recommend based on your budget.
 - [MOZA SR-P vs Fanatec CSL Pedals LC: Budget Load-Cell Pedals Compared](https://realiracing.com/blog/moza-sr-p-vs-fanatec-csl-pedals-lc-budget-load-cell.html): Both bring load-cell braking under ~$200. Here's how the MOZA SR-P and Fanatec CSL Pedals LC actually compare for consistent, repeatable braking in iRacing.
 - [Fanatec ClubSport DD vs MOZA R12: Which High-End Direct Drive to Buy](https://realiracing.com/blog/fanatec-clubsport-dd-vs-moza-r12-buying-guide.html): Comparing two of the strongest mid-to-high torque direct-drive wheelbases on price, ecosystem, and real FFB feel for iRacing.
