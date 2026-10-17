@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sim Rig Cable Management: A Practical Guide | RealIRacing</title>
+  <meta name="description" content="How I route power, USB and pedal cables on a direct drive rig so nothing snags, disconnects mid-race or adds noise to force feedback." />
+  <link rel="canonical" href="https://realiracing.com/blog/sim-rig-cable-management-guide.html" />
+  <meta property="og:title" content="Sim Rig Cable Management: A Practical Guide" />
+  <meta property="og:description" content="How I route power, USB and pedal cables on a direct drive rig so nothing snags, disconnects mid-race or adds noise to force feedback." />
+  <meta property="og:url" content="https://realiracing.com/blog/sim-rig-cable-management-guide.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/pedals-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: a rising series of bars" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/pedals-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261005" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Sim Rig Cable Management: A Practical Guide",
+    "description": "How I route power, USB and pedal cables on a direct drive rig so nothing snags, disconnects mid-race or adds noise to force feedback.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/sim-rig-cable-management-guide.html",
+    "image": "https://realiracing.com/assets/photos/pedals-cover.jpg",
+    "datePublished": "2026-10-17",
+    "dateModified": "2026-10-17"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Sim Rig Cable Management: A Practical Guide","item":"https://realiracing.com/blog/sim-rig-cable-management-guide.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/sim-rig-cable-management-guide.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/sim-rig-cable-management-guide.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Sim Racing Cockpit / Wheel Stand","description":"a rigid mount matters more than the brand — flex kills FFB detail","url":"https://realiracing.com/blog/sim-rig-cable-management-guide.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the most common cable failure on a sim rig?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The pedal cable. It runs closest to your feet and often hangs loose under the pedal deck, so it gets kicked until the plug works free. Route it out of the side or back of the pedals and clip it to the frame close to the deck." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use zip ties or hook and loop straps on my rig?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Reusable hook and loop straps for anything you might change, and clips in the profile slots on aluminium rigs. Zip ties work but have to be cut every time you swap hardware." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a powered USB hub for my sim racing rig?",
+      "acceptedAnswer": { "@type": "Answer", "text": "If three or more devices need to reach the PC, a powered hub on the rig keeps runs short and leaves one cable to the computer. Keep the wheelbase on its own direct port if possible." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can messy cables affect force feedback?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The signal itself is digital, so tidiness does not change it. A tight bundle on the wheel deck or a cable touching the base can add rattles and noise, so keep cables clear of the wheelbase and rim." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Setup Guide · Hardware</p>
+    <h1>Sim Rig Cable Management: A Practical Guide</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 17, 2026</span>
+      <span class="dot">·</span>
+      <span>7 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/pedals-cover.jpg" width="1000" height="563" alt="Cover art: a rising series of bars" srcset="/assets/photos/pedals-cover-sm.jpg 560w, /assets/photos/pedals-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      <p class="article-lead">Two laps from the end of a league race my pedals went dead. The car coasted into turn one at full speed, and the replay showed my right heel brushing the pedal cable a lap earlier, just enough to work the plug loose. Nothing was broken. The cable had simply been hanging in a loop under the pedal deck, and I had been kicking it for weeks without noticing. That evening I pulled every cable off my rig and routed it again from scratch.</p>
+
+      <p>Cable management sounds like a tidiness project. On a sim rig it is a reliability project. A direct drive wheelbase, a set of load cell pedals, a shifter or button box, a USB hub and a monitor stand all add cables, and every one of them is a way to lose a race. This guide is how my rig is wired now, with the <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> wheelbase, <a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">CRP2</a> pedals and a fixed aluminium profile cockpit.</p>
+
+      <h2>Start with a cable inventory</h2>
+
+      <p>Before buying a single zip tie, unplug everything and lay the cables on the floor next to the rig. Group them by job. On my setup the list looks like this:</p>
+
+      <ul>
+        <li><strong>Wheelbase power</strong>: the external power brick for the R9 and its mains lead.</li>
+        <li><strong>Wheelbase data</strong>: the USB cable from the base to the PC.</li>
+        <li><strong>Pedals</strong>: the CRP2 cable, which is the one that lives closest to your feet.</li>
+        <li><strong>Peripherals</strong>: shifter, handbrake or button box, each with its own lead.</li>
+        <li><strong>Display and audio</strong>: monitor power and video, headset or speakers.</li>
+        <li><strong>Extras</strong>: bass shakers, fans, lighting, a phone charger you swore you would not add.</li>
+      </ul>
+
+      <p>Seeing them side by side tells you two things fast. First, which cables carry mains power and should stay away from data lines where possible. Second, how many cables actually need to reach the PC, which decides whether a powered USB hub mounted on the rig makes sense.</p>
+
+      <h2>Keep power and data on separate paths</h2>
+
+      <p>I run mains power down one upright of the cockpit and USB down the other. Modern USB devices cope well with nearby power cables, so this is less about interference and more about troubleshooting. When something disconnects, I know which side to look at, and I am never untangling a power brick to get at a USB plug.</p>
+
+      <p>The R9 power brick sits on the floor behind the rig on a small rubber mat, away from my feet and away from anywhere it could get kicked or stepped on. Bricks get warm, so do not bury one inside a bundle of cables or tape it to the underside of a seat.</p>
+
+      <h2>Route the pedal cable like it will be kicked</h2>
+
+      <p>Because it will be. The pedal cable is the single most likely failure point on most rigs, and it is where my race ended. The fix is simple: the cable should leave the pedals from the side or back, never from underneath where your heels land, and it should be fixed to the frame within a short distance of the pedal deck.</p>
+
+      <p>I clip it into the slot of the aluminium profile with a couple of cable clips, then run it along the base rail to the upright that holds the wheel deck. Leave a small service loop near the pedals so you can slide them forward or back on the rail without unplugging anything. If you adjust pedal spacing often, as I covered in <a href="pedal-spacing-angle-setup-consistent-braking.html">pedal spacing and angle</a>, that loop saves a lot of crawling under the rig.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Strain relief</span>
+        <p>Put a loose cable tie or clip a few centimetres from every plug that matters, so a tug pulls on the frame and not on the connector. This one habit would have saved my race.</p>
+      </div>
+
+      <h2>Profile slots are the best cable channel you already own</h2>
+
+      <p>An aluminium profile cockpit has a T-slot on every face. Those slots are made for cable management. Clip-in slot covers or simple push-in cable retainers hold a cable flush inside the profile, which keeps it off the floor and away from the seat rails. My <a href="aluminum-cockpit-assembly-guide.html">cockpit assembly guide</a> covers the frame itself; the cabling is worth planning at the same time, before every slot is filled with bolts and brackets.</p>
+
+      <p>On tube frame or wheel stand rigs you do not get slots, so reusable hook and loop straps around the tubes do the same job. I prefer reusable straps to zip ties everywhere on the rig. Hardware changes, and cutting ten zip ties to swap a shifter gets old quickly.</p>
+
+      <h2>Leave slack where the rig moves</h2>
+
+      <p>A fixed cockpit still has moving parts. The seat slides, the wheel deck tilts, the monitor arm swings out of the way when you get in. Any cable crossing one of those joints needs enough slack to cover the full range of movement. Move every adjustable part to both ends of its travel with the cables connected and watch for anything that pulls tight.</p>
+
+      <p>The wheel quick release is a special case. On my R9 the rim connects through the base without a coiled cable, which removes one problem completely. If your rim uses a separate cable, check it with the wheel turned fully lock to lock in both directions.</p>
+
+      <h2>A USB hub on the rig, done properly</h2>
+
+      <p>If three or more devices need to reach the PC, a powered USB hub fixed to the rig shortens every run and leaves a single cable going to the computer. Two cautions from experience. Use a powered hub, because some devices draw more than an unpowered hub can supply reliably. And keep the wheelbase on its own direct port to the PC if you can, since it is the device you least want sharing bandwidth or dropping out.</p>
+
+      <p>If you ever see devices disappear and reappear in Windows mid-session, check the USB power saving settings in Device Manager before blaming the hardware. Unstable connections show up in iRacing as controls that suddenly stop responding, which is worth ruling out early, much like the frame time issues in my <a href="pc-bottlenecks-for-iracing-frame-times.html">PC bottlenecks guide</a>.</p>
+
+      <h2>Do cables affect force feedback?</h2>
+
+      <p>Not directly. The signal is digital, so a neat cable does not make the wheel feel better. What can affect feel is a heavy bundle of cables tied tight to the wheel deck or monitor stand, rattling or adding small vibrations as the base works. A loose cable slapping against the frame is also something you hear in a quiet room. If you are chasing a vague or noisy feel, start with <a href="rig-flex-and-wheelbase-mounting-ffb-feel.html">rig flex and wheelbase mounting</a>, then check that nothing is touching the base or rim.</p>
+
+      <h2>Make it part of the monthly check</h2>
+
+      <p>Cables loosen over time as the rig vibrates. I check plugs and clips during the same pass where I torque bolts and inspect the pedals, which is in my <a href="sim-rig-monthly-check-bolts-pedals-quick-release.html">monthly rig check</a>. It takes a couple of minutes: push each connector home, look for worn insulation where cables cross metal edges, and confirm the pedal cable is still clipped where it should be.</p>
+
+      <p>The goal is a rig where you never think about cables at all. You get in, the wheel and pedals are there, and the only thing that can end your race is your own driving.</p>
+
+      
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&amp;tag=realiracing-20" data-aff="cockpit" target="_blank" rel="sponsored noopener">Sim Racing Cockpit / Wheel Stand</a></th><td>a rigid mount matters more than the brand — flex kills FFB detail</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>What is the most common cable failure on a sim rig?</h3>
+        <p>The pedal cable. It runs closest to your feet and often hangs loose under the pedal deck, so it gets kicked until the plug works free. Route it out of the side or back of the pedals and clip it to the frame close to the deck.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I use zip ties or hook and loop straps on my rig?</h3>
+        <p>Reusable hook and loop straps for anything you might change, and clips in the profile slots on aluminium rigs. Zip ties work but have to be cut every time you swap hardware.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do I need a powered USB hub for my sim racing rig?</h3>
+        <p>If three or more devices need to reach the PC, a powered hub on the rig keeps runs short and leaves one cable to the computer. Keep the wheelbase on its own direct port if possible.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can messy cables affect force feedback?</h3>
+        <p>The signal itself is digital, so tidiness does not change it. A tight bundle on the wheel deck or a cable touching the base can add rattles and noise, so keep cables clear of the wheelbase and rim.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="moza-r9-iracing-settings.html"><span>Setup Guides</span>MOZA R9 iRacing Settings — The Complete FFB Guide (2026)</a>
+      <a class="related-card" href="aston-martin-vantage-gt4-iracing-guide.html"><span>Car Guide</span>Aston Martin Vantage GT4 iRacing Setup and Driving Guide</a>
+      <a class="related-card" href="moza-r9-vs-fanatec-csl-dd.html"><span>Buyer's Guide</span>Moza R9 vs Fanatec CSL DD: Which Direct Drive Base in 2026?</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","moza-crp2","cockpit"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
