@@ -1,0 +1,120 @@
+{
+  "slug": "sim-rig-cable-management-guide",
+  "tag": "Setup Guide · Hardware",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "Sim Rig Cable Management: A Practical Guide",
+  "description": "How I route power, USB and pedal cables on a direct drive rig so nothing snags, disconnects mid-race or adds noise to force feedback.",
+  "published": "2026-10-17",
+  "dateLabel": "October 17, 2026",
+  "gearKeys": ["moza-r9", "moza-crp2", "cockpit"],
+  "sections": [
+    {
+      "p": "Two laps from the end of a league race my pedals went dead. The car coasted into turn one at full speed, and the replay showed my right heel brushing the pedal cable a lap earlier, just enough to work the plug loose. Nothing was broken. The cable had simply been hanging in a loop under the pedal deck, and I had been kicking it for weeks without noticing. That evening I pulled every cable off my rig and routed it again from scratch."
+    },
+    {
+      "p": "Cable management sounds like a tidiness project. On a sim rig it is a reliability project. A direct drive wheelbase, a set of load cell pedals, a shifter or button box, a USB hub and a monitor stand all add cables, and every one of them is a way to lose a race. This guide is how my rig is wired now, with the MOZA R9 wheelbase, CRP2 pedals and a fixed aluminium profile cockpit."
+    },
+    {
+      "h2": "Start with a cable inventory"
+    },
+    {
+      "p": "Before buying a single zip tie, unplug everything and lay the cables on the floor next to the rig. Group them by job. On my setup the list looks like this:"
+    },
+    {
+      "list": [
+        "<strong>Wheelbase power</strong>: the external power brick for the R9 and its mains lead.",
+        "<strong>Wheelbase data</strong>: the USB cable from the base to the PC.",
+        "<strong>Pedals</strong>: the CRP2 cable, which is the one that lives closest to your feet.",
+        "<strong>Peripherals</strong>: shifter, handbrake or button box, each with its own lead.",
+        "<strong>Display and audio</strong>: monitor power and video, headset or speakers.",
+        "<strong>Extras</strong>: bass shakers, fans, lighting, a phone charger you swore you would not add."
+      ]
+    },
+    {
+      "p": "Seeing them side by side tells you two things fast. First, which cables carry mains power and should stay away from data lines where possible. Second, how many cables actually need to reach the PC, which decides whether a powered USB hub mounted on the rig makes sense."
+    },
+    {
+      "h2": "Keep power and data on separate paths"
+    },
+    {
+      "p": "I run mains power down one upright of the cockpit and USB down the other. Modern USB devices cope well with nearby power cables, so this is less about interference and more about troubleshooting. When something disconnects, I know which side to look at, and I am never untangling a power brick to get at a USB plug."
+    },
+    {
+      "p": "The R9 power brick sits on the floor behind the rig on a small rubber mat, away from my feet and away from anywhere it could get kicked or stepped on. Bricks get warm, so do not bury one inside a bundle of cables or tape it to the underside of a seat."
+    },
+    {
+      "h2": "Route the pedal cable like it will be kicked"
+    },
+    {
+      "p": "Because it will be. The pedal cable is the single most likely failure point on most rigs, and it is where my race ended. The fix is simple: the cable should leave the pedals from the side or back, never from underneath where your heels land, and it should be fixed to the frame within a short distance of the pedal deck."
+    },
+    {
+      "p": "I clip it into the slot of the aluminium profile with a couple of cable clips, then run it along the base rail to the upright that holds the wheel deck. Leave a small service loop near the pedals so you can slide them forward or back on the rail without unplugging anything. If you adjust pedal spacing often, as I covered in <a href=\"pedal-spacing-angle-setup-consistent-braking.html\">pedal spacing and angle</a>, that loop saves a lot of crawling under the rig."
+    },
+    {
+      "tipLabel": "Strain relief",
+      "tip": "Put a loose cable tie or clip a few centimetres from every plug that matters, so a tug pulls on the frame and not on the connector. This one habit would have saved my race."
+    },
+    {
+      "h2": "Profile slots are the best cable channel you already own"
+    },
+    {
+      "p": "An aluminium profile cockpit has a T-slot on every face. Those slots are made for cable management. Clip-in slot covers or simple push-in cable retainers hold a cable flush inside the profile, which keeps it off the floor and away from the seat rails. My <a href=\"aluminum-cockpit-assembly-guide.html\">cockpit assembly guide</a> covers the frame itself; the cabling is worth planning at the same time, before every slot is filled with bolts and brackets."
+    },
+    {
+      "p": "On tube frame or wheel stand rigs you do not get slots, so reusable hook and loop straps around the tubes do the same job. I prefer reusable straps to zip ties everywhere on the rig. Hardware changes, and cutting ten zip ties to swap a shifter gets old quickly."
+    },
+    {
+      "h2": "Leave slack where the rig moves"
+    },
+    {
+      "p": "A fixed cockpit still has moving parts. The seat slides, the wheel deck tilts, the monitor arm swings out of the way when you get in. Any cable crossing one of those joints needs enough slack to cover the full range of movement. Move every adjustable part to both ends of its travel with the cables connected and watch for anything that pulls tight."
+    },
+    {
+      "p": "The wheel quick release is a special case. On my R9 the rim connects through the base without a coiled cable, which removes one problem completely. If your rim uses a separate cable, check it with the wheel turned fully lock to lock in both directions."
+    },
+    {
+      "h2": "A USB hub on the rig, done properly"
+    },
+    {
+      "p": "If three or more devices need to reach the PC, a powered USB hub fixed to the rig shortens every run and leaves a single cable going to the computer. Two cautions from experience. Use a powered hub, because some devices draw more than an unpowered hub can supply reliably. And keep the wheelbase on its own direct port to the PC if you can, since it is the device you least want sharing bandwidth or dropping out."
+    },
+    {
+      "p": "If you ever see devices disappear and reappear in Windows mid-session, check the USB power saving settings in Device Manager before blaming the hardware. Unstable connections show up in iRacing as controls that suddenly stop responding, which is worth ruling out early, much like the frame time issues in my <a href=\"pc-bottlenecks-for-iracing-frame-times.html\">PC bottlenecks guide</a>."
+    },
+    {
+      "h2": "Do cables affect force feedback?"
+    },
+    {
+      "p": "Not directly. The signal is digital, so a neat cable does not make the wheel feel better. What can affect feel is a heavy bundle of cables tied tight to the wheel deck or monitor stand, rattling or adding small vibrations as the base works. A loose cable slapping against the frame is also something you hear in a quiet room. If you are chasing a vague or noisy feel, start with <a href=\"rig-flex-and-wheelbase-mounting-ffb-feel.html\">rig flex and wheelbase mounting</a>, then check that nothing is touching the base or rim."
+    },
+    {
+      "h2": "Make it part of the monthly check"
+    },
+    {
+      "p": "Cables loosen over time as the rig vibrates. I check plugs and clips during the same pass where I torque bolts and inspect the pedals, which is in my <a href=\"sim-rig-monthly-check-bolts-pedals-quick-release.html\">monthly rig check</a>. It takes a couple of minutes: push each connector home, look for worn insulation where cables cross metal edges, and confirm the pedal cable is still clipped where it should be."
+    },
+    {
+      "p": "The goal is a rig where you never think about cables at all. You get in, the wheel and pedals are there, and the only thing that can end your race is your own driving."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the most common cable failure on a sim rig?",
+      "a": "The pedal cable. It runs closest to your feet and often hangs loose under the pedal deck, so it gets kicked until the plug works free. Route it out of the side or back of the pedals and clip it to the frame close to the deck."
+    },
+    {
+      "q": "Should I use zip ties or hook and loop straps on my rig?",
+      "a": "Reusable hook and loop straps for anything you might change, and clips in the profile slots on aluminium rigs. Zip ties work but have to be cut every time you swap hardware."
+    },
+    {
+      "q": "Do I need a powered USB hub for my sim racing rig?",
+      "a": "If three or more devices need to reach the PC, a powered hub on the rig keeps runs short and leaves one cable to the computer. Keep the wheelbase on its own direct port if possible."
+    },
+    {
+      "q": "Can messy cables affect force feedback?",
+      "a": "The signal itself is digital, so tidiness does not change it. A tight bundle on the wheel deck or a cable touching the base can add rattles and noise, so keep cables clear of the wheelbase and rim."
+    }
+  ]
+}
