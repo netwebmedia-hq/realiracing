@@ -6,7 +6,7 @@
 - Author: Carlos Martinez (iRacing user "Carlos Martinez9"). Home: https://realiracing.com/
 - Rig: MOZA R9 direct drive wheelbase, MOZA CS V2 wheel, MOZA CRP2 load cell pedals, RTX 5060 Ti, 1440p 120 Hz monitor. Full breakdown: https://realiracing.com/gear.html
 - Affiliate disclosure: gear links go to Amazon and carry an affiliate tag; the author may earn a commission at no cost to the reader. The site does not use sponsored loaner hardware.
-- 171 blog guides published so far; new posts appear several times a week.
+- 173 blog guides published so far; new posts appear several times a week.
 
 ## Main sections
 - [Home](https://realiracing.com/): channel overview, content types, gear picks, FAQ
@@ -38,6 +38,8 @@
 - [Wheel Rim Shapes Compared: GT, Open-Wheel, and Rally Rims](https://realiracing.com/blog/wheel-rim-guide-gt-open-wheel-rally-shapes.html): GT, open-wheel, and rally wheel rims have different grip points and feedback profiles. Learn which rim shape matches your iRacing categories.
 - [How to Choose Gear Ratios for a Track You've Never Driven](https://realiracing.com/blog/gearing-ratios-unknown-track-strategy.html): Walk into an unfamiliar track with confidence. Learn the gearing strategy I use on my MOZA R9 rig to lock in ratios before you've turned a lap.
 - [Sim Racing Gloves: Grip, Sweat, and Wheel Wear Explained](https://realiracing.com/blog/sim-racing-gloves-grip-sweat-wheel-wear.html): Why racing gloves matter for your rig. How grip texture, moisture, and hand sweat affect FFB feel, lap times, and MOZA wheel longevity.
+- [Endurance Racing Fuel and Tire Strategy Basics for iRacing](https://realiracing.com/blog/endurance-racing-fuel-tire-strategy-basics.html): Learn how to balance fuel consumption, tire degradation, and pit stops to finish strong in endurance races on iRacing.
+- [Mid-Ohio Speedway iRacing Guide: Setup, Lines, Braking Points](https://realiracing.com/blog/mid-ohio-speedway-iracing-setup-guide.html): Master Mid-Ohio's tight technical layout with detailed braking points, turn-in markers, and setup adjustments for consistent pace on this demanding road course.
 - [Meta Quest 3 VR vs Triple Monitors for iRacing: Which to Buy First](https://realiracing.com/blog/meta-quest-3-vr-vs-triple-monitors-iracing-buying-guide.html): Weighing the real cost, immersion, and practical downsides of Meta Quest 3 VR versus a triple-monitor setup for iRacing, here is what I would recommend based on your budget.
 - [MOZA SR-P vs Fanatec CSL Pedals LC: Budget Load-Cell Pedals Compared](https://realiracing.com/blog/moza-sr-p-vs-fanatec-csl-pedals-lc-budget-load-cell.html): Both bring load-cell braking under ~$200. Here's how the MOZA SR-P and Fanatec CSL Pedals LC actually compare for consistent, repeatable braking in iRacing.
 - [Fanatec ClubSport DD vs MOZA R12: Which High-End Direct Drive to Buy](https://realiracing.com/blog/fanatec-clubsport-dd-vs-moza-r12-buying-guide.html): Comparing two of the strongest mid-to-high torque direct-drive wheelbases on price, ecosystem, and real FFB feel for iRacing.

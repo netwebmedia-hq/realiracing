@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mid-Ohio Speedway iRacing Guide: Setup, Lines, Braking Points</title>
+  <meta name="description" content="Master Mid-Ohio's tight technical layout with detailed braking points, turn-in markers, and setup adjustments for consistent pace on this demanding road course." />
+  <link rel="canonical" href="https://realiracing.com/blog/mid-ohio-speedway-iracing-setup-guide.html" />
+  <meta property="og:title" content="Mid-Ohio Speedway iRacing Guide: Setup, Lines, Braking Points" />
+  <meta property="og:description" content="Master Mid-Ohio's tight technical layout with detailed braking points, turn-in markers, and setup adjustments for consistent pace on this demanding road course." />
+  <meta property="og:url" content="https://realiracing.com/blog/mid-ohio-speedway-iracing-setup-guide.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/track-grid.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="562" />
+  <meta property="og:image:alt" content="Cars lined up on the starting grid" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/track-grid.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261005" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Mid-Ohio Speedway iRacing Guide: Setup, Lines, Braking Points",
+    "description": "Master Mid-Ohio's tight technical layout with detailed braking points, turn-in markers, and setup adjustments for consistent pace on this demanding road course.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/mid-ohio-speedway-iracing-setup-guide.html",
+    "image": "https://realiracing.com/assets/photos/track-grid.jpg",
+    "datePublished": "2026-10-12",
+    "dateModified": "2026-10-12"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Mid-Ohio Speedway iRacing Guide: Setup, Lines, Braking Points","item":"https://realiracing.com/blog/mid-ohio-speedway-iracing-setup-guide.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/mid-ohio-speedway-iracing-setup-guide.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/mid-ohio-speedway-iracing-setup-guide.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the biggest setup mistake at Mid-Ohio?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Running too much anti-roll bar stiffness. Mid-Ohio's slow-speed corners need compliance and feel, not raw stiffness. Drivers often think an 'up' car setup (stiffer bars, lower springs) will help precision, but it actually makes the car nervous and unpredictable. Start soft, add anti-roll bar in small increments, and stop when the car feels planted." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use left-foot braking at Mid-Ohio?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, strongly recommended, especially with load-cell pedals like the CRP2. Left-foot braking cuts your transition time between brake and throttle by nearly 100 milliseconds per corner. Mid-Ohio has so many small corners in sequence that this time saving computes to several tenths per lap. It does take practice—start with Turn 1 and Turn 5, then expand to other corners once you're confident." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the ideal brake bias at Mid-Ohio?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Start at 55% front and adjust from there based on locking. If you're locking front wheels in heavy braking (Turn 1), reduce bias to 54%. If rears lock, increase to 56%. Mid-Ohio's braking zones are short and don't demand aggressive bias adjustments like high-speed tracks do. Most cars will be competitive anywhere in the 54–56% range." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I stop losing time in Turn 5?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Turn 5 is the most common lap-time leak at Mid-Ohio. The issue is usually arriving at the corner too hot or overshooting the apex. Practice a later turn-in point (not earlier), hold steady throttle mid-corner, and accept that you'll need to back out slightly if the car is loose. Mid-Ohio rewards patience here; a +0.1-second mid-corner lift often saves 0.3 seconds at the exit because you're not fighting oversteer. Record a few laps with telemetry and compare your steering angle and throttle input to faster drivers." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Track Guides · Setup</p>
+    <h1>Mid-Ohio Speedway iRacing Guide: Setup, Lines, Braking Points</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 12, 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/track-grid.jpg" width="1000" height="562" alt="Cars lined up on the starting grid" srcset="/assets/photos/track-grid-sm.jpg 560w, /assets/photos/track-grid.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Photo: <a href="https://commons.wikimedia.org/wiki/User:Just_a_Man" target="_blank" rel="noopener nofollow">Just a Man</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener nofollow">CC BY 4.0</a> · Source: <a href="https://commons.wikimedia.org/wiki/File:ProCar_4000_2024_Gran_Premio_Coronaci%C3%B3n_-_07.jpg" target="_blank" rel="noopener nofollow">Wikimedia Commons</a></figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      <p class="article-lead">Mid-Ohio Speedway is one of iRacing's best-kept technical challenges. It's not a high-speed destination like Road America or a character-driven road course like Road Atlanta—it's pure, grinding precision. The track punishes late apexes and inconsistency in a way that feels immediate and honest. I've spent enough laps there to know that a tenth of a second lost in Turn 5 or a sloppy mid-corner adjustment at Turn 10 will compound by lap's end. This guide covers my approach to the track: how I've tuned the <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> and <a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">CRP2</a> setup, where the critical braking points live, and how to thread the needle through Mid-Ohio's tightest sections.</p>
+
+      <p>Mid-Ohio rewards smooth inputs and rewards them hard. The track is 2.258 miles of constant small corrections, weight transfers, and throttle precision. There's no place to coast or zone out. If you're used to high-speed road courses, expect a mental shift—Mid-Ohio demands active steering and brake modulation every single lap.</p>
+
+      <h2>Track Layout and Key Characteristics</h2>
+
+      <p>Mid-Ohio's layout is a series of tight-to-medium corners linked by short straights. The two real passing zones are the run into Turn 1 and the approach to the chicane at Turns 9–10. Everything else is about managing space and hitting your marks. The track is relatively narrow compared to other iRacing road courses, and curb usage is critical—you want to exploit the inside kerb on technical corners without losing grip or bottoming out.</p>
+
+      <ul>
+        <li>Turn 1 (hairpin): Heavy braking zone; late apex and easy throttle exit to set up Turn 2</li>
+        <li>Turns 2–3 (Carousel): High-speed esses; maintain momentum and clip the kerbs early; easy to lose it here if you're greedy</li>
+        <li>Turn 5: Technical right-hand corner; very easy to miss the apex; mid-corner lift often necessary</li>
+        <li>Turns 6–7 (Keyhole): Slow-speed, high-steering-angle sequence; requires patience and smooth steering</li>
+        <li>Turn 9–10 (Chicane): Braking zone before the chicane; clip both kerbs on entry; throttle hard onto the straight</li>
+        <li>Turn 11–12 (Final Complex): Quick left-right into the main straight; get this right and you carry momentum to the braking zone</li>
+      </ul>
+
+      <h2>Braking Points and Turn-In Markers</h2>
+
+      <p>Mid-Ohio's braking is all about precision. The straights are short enough that trail braking is your primary tool; very few corners reward a hard-and-straight brake to turn-in. I use the start of the painted curbing or small details in the trackside environment as turn-in markers, since Mid-Ohio lacks major grandstands or obvious visual cues.</p>
+
+      <ul>
+        <li><strong>Turn 1:</strong> Brake at the end of the long straight, just before the 100-meter board. Trail brake deep, aiming for a late apex. Let the car settle before mid-corner, then light throttle to set up Turn 2.</li>
+        <li><strong>Turn 5:</strong> Brake as you crest the hill; the track drops and visibility is limited. Turn in early (earlier than you think), clip the apex, and be prepared to lift mid-corner if the car is loose. This is where lap times are lost.</li>
+        <li><strong>Turn 6 (Keyhole entry):</strong> Light tap on the brakes; this is a low-speed corner where steering input and line precision matter more than brake force. Smooth in, smooth out.</li>
+        <li><strong>Turn 9 (Chicane entry):</strong> Steady brake pressure; trail brake slightly into the apex. Be smooth—excessive brake pressure or late-apex attempts cost you the chicane entirely.</li>
+        <li><strong>Turn 11:</strong> Minimal braking; this should be a quick weight transfer. Clip the inside kerb and stand on the throttle onto the straight.</li>
+      </ul>
+
+      <div class="tip-box">
+        <span class="box-label">Left-Foot Braking Edge</span>
+        <p>Mid-Ohio rewards left-foot braking, especially with load-cell pedals. I trail brake into Turns 1, 5, and 9 with my left foot already prepping throttle input. It cuts a tenth of a second out of corner exit and reduces mid-corner instability.</p>
+      </div>
+
+      <h2>MOZA R9 Force Feedback Tuning</h2>
+
+      <p>On my rig, I run the R9 at ~9 N·m peak torque, but I dial down the overall strength significantly for Mid-Ohio. The track's constant steering input and tight radius corners mean that heavy FFB fatigues your arms without adding precision. I tune for clarity and response, not brute force.</p>
+
+      <ul>
+        <li>Peak torque: ~7–8 N·m (using iRacing's 80–85% slider)</li>
+        <li>Minimum force: ~10–15% (prevents dead center and keeps road texture present)</li>
+        <li>Damping: ~15–20% (reduces arm fatigue from constant steering corrections; high damping feels numb here)</li>
+        <li>FFB from steering: 1.0 (full lock-to-lock response; Mid-Ohio's line precision demands it)</li>
+        <li>Friction: ~5–8% (just enough to settle the wheel between inputs)</li>
+      </ul>
+
+      <p>What I'm looking for on the R9 is the ability to feel throttle response and mid-corner weight shift instantly. Mid-Ohio's corners are tight enough that you're constantly micro-correcting steering; if the FFB lag or feels numb, you'll overdrive it. The wheel should feel <strong>responsive and communicative</strong>, not heavy.</p>
+
+      <h2>CRP2 Load-Cell Brake Calibration</h2>
+
+      <p>My CRP2 pedals are set up for trail braking, which is essential at Mid-Ohio. I use a <a href="load-cell-brake-calibration-consistent-braking.html">progressive brake curve</a> that gives me fine modulation below ~50% pedal travel and heavier braking force at full press. This lets me dose brake pressure into corners without overcommitting.</p>
+
+      <ol>
+        <li>Calibrate pedals with zero load and full press recorded cleanly</li>
+        <li>Set brake pressure curve to ~50% at 50% pedal travel, ~75% at 75% travel, ~100% at full press</li>
+        <li>Test in practice; if you're locking wheels easily, soften the curve or increase brake bias</li>
+        <li>Fine-tune pressure curve until you can trail brake Turn 1 and Turn 5 without locking</li>
+      </ol>
+
+      <p>Mid-Ohio uses only slight brake bias adjustments. I start at 55% front, then adjust ±1–2% based on whether I'm locking fronts or rears in the heavy braking zone. The track's constant low-speed technical corners mean you're rarely at maximum brake force, so bias tuning is less critical than at a high-speed circuit like Spa.</p>
+
+      <h2>Setup Baseline Adjustments</h2>
+
+      <p>I begin with iRacing's baseline setup and make small, targeted changes. Mid-Ohio doesn't demand aggressive anti-roll bar or suspension changes; it rewards a relatively neutral, predictable platform. Overstiff setups cause mid-corner slides on the technical sections; too soft, and you'll understeer in Turns 2–3.</p>
+
+      <ul>
+        <li><strong>Front anti-roll bar:</strong> Start ~1–2% stiffer than baseline; Mid-Ohio is front-heavy in terms of steering feel and mid-corner turn-in</li>
+        <li><strong>Rear anti-roll bar:</strong> Keep near baseline or slightly softer; this helps maintain rear stability through the Keyhole and Carousel</li>
+        <li><strong>Front camber:</strong> Slightly negative (e.g., –2.0°); helps mid-corner grip without causing excessive understeer on the straights</li>
+        <li><strong>Brake bias:</strong> 55–56% front; adjust after practice based on locking tendency</li>
+        <li><strong>Differential:</strong> Keep standard; Mid-Ohio's low-speed corners don't demand aggressive diff tuning</li>
+      </ul>
+
+      <p>If you find yourself struggling with mid-corner understeer in Turns 5 or 6, don't jump to anti-roll bar changes. First, check your line and throttle application. Nine times out of ten, understeer at Mid-Ohio is a driver input issue, not a setup deficit.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Setup Iteration Discipline</span>
+        <p>Mid-Ohio is unforgiving to setup changes. Make one adjustment per session, test 2–3 laps, then evaluate. A 2% ARB increase might sound tiny but often moves the sweet spot, and overshooting is easy. This is not a track where you dial in a 'perfect' setup and run all night—it's an ongoing conversation between driver input and car balance.</p>
+      </div>
+
+      <h2>Racecraft and Traffic Management</h2>
+
+      <p>Mid-Ohio's narrow layout and short straights make passing risky. The real battle is qualifying and nailing the first lap. If you're chasing a car on track, your best move is usually Turn 1 or the chicane run—anywhere else, you're fighting for scraps. On defense, use your setup advantage or superior mid-corner speed to hold position through Turns 2–3 and the Keyhole. Don't overdrive the brake into Turn 1 if you're leading; a safe, smooth entry preserves your advantage.</p>
+
+      <p>In longer races, <a href="tire-management-strategy-iracing.html">tire management</a> and fuel discipline matter more than speed. Mid-Ohio is relentless; hot tires and fuel load will hurt your pace significantly over a stint. Plan your strategy around pit window timing, not track position alone.</p>
+
+      <h2>Practice Routine and Performance Benchmarks</h2>
+
+      <p>When I arrive at Mid-Ohio in a new car or series, I spend the first 10–15 minutes just driving the line without worrying about lap time. Mid-Ohio's precision is mental as much as physical. Once I'm comfortable, I'll commit to brake zones and push mid-corner speed. Then I'll spend another 10 laps tuning the setup and another 5–10 nailing consistency.</p>
+
+      <ul>
+        <li>Laps 1–5: Learn the line, commit to braking points, no setup changes</li>
+        <li>Laps 6–15: Light setup adjustments (ARB, brake bias) based on feel</li>
+        <li>Laps 16–25: Full fuel load; practice race pace and tire management</li>
+        <li>Final 10 laps: Qualifying simulation; single lap pace test with fresh tires</li>
+      </ul>
+
+      <p>Lap-time progression at Mid-Ohio is often slow. A tenth per 5 laps is normal, and plateau phases (where your times hover for 10+ laps) are common as you refine inputs. Don't get frustrated; the track demands repetition.</p>
+
+      
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge">Raced on</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>What's the biggest setup mistake at Mid-Ohio?</h3>
+        <p>Running too much anti-roll bar stiffness. Mid-Ohio's slow-speed corners need compliance and feel, not raw stiffness. Drivers often think an 'up' car setup (stiffer bars, lower springs) will help precision, but it actually makes the car nervous and unpredictable. Start soft, add anti-roll bar in small increments, and stop when the car feels planted.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I use left-foot braking at Mid-Ohio?</h3>
+        <p>Yes, strongly recommended, especially with load-cell pedals like the CRP2. Left-foot braking cuts your transition time between brake and throttle by nearly 100 milliseconds per corner. Mid-Ohio has so many small corners in sequence that this time saving computes to several tenths per lap. It does take practice—start with Turn 1 and Turn 5, then expand to other corners once you're confident.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What's the ideal brake bias at Mid-Ohio?</h3>
+        <p>Start at 55% front and adjust from there based on locking. If you're locking front wheels in heavy braking (Turn 1), reduce bias to 54%. If rears lock, increase to 56%. Mid-Ohio's braking zones are short and don't demand aggressive bias adjustments like high-speed tracks do. Most cars will be competitive anywhere in the 54–56% range.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I stop losing time in Turn 5?</h3>
+        <p>Turn 5 is the most common lap-time leak at Mid-Ohio. The issue is usually arriving at the corner too hot or overshooting the apex. Practice a later turn-in point (not earlier), hold steady throttle mid-corner, and accept that you'll need to back out slightly if the car is loose. Mid-Ohio rewards patience here; a +0.1-second mid-corner lift often saves 0.3 seconds at the exit because you're not fighting oversteer. Record a few laps with telemetry and compare your steering angle and throttle input to faster drivers.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="bristol-motor-speedway-iracing-guide.html"><span>Track Guides</span>Bristol Motor Speedway iRacing Guide: Setup, Line, Strategy</a>
+      <a class="related-card" href="fuji-speedway-iracing-guide.html"><span>Track Guides</span>Fuji Speedway iRacing Guide: Lines, Setup, Wet Weather</a>
+      <a class="related-card" href="sonoma-raceway-iracing-guide.html"><span>Track Guides</span>Sonoma Raceway iRacing Guide: Turn-In, Apexes, Brake Points</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","moza-crp2"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
