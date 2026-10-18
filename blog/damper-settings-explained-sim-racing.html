@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Damper Settings Explained: What Actually Changes Your Feel</title>
+  <meta name="description" content="Dampers control how fast your suspension moves. Learn what bump and rebound do, why they matter to your lap times, and how to tune them on your rig." />
+  <link rel="canonical" href="https://realiracing.com/blog/damper-settings-explained-sim-racing.html" />
+  <meta property="og:title" content="Damper Settings Explained: What Actually Changes Your Feel" />
+  <meta property="og:description" content="Dampers control how fast your suspension moves. Learn what bump and rebound do, why they matter to your lap times, and how to tune them on your rig." />
+  <meta property="og:url" content="https://realiracing.com/blog/damper-settings-explained-sim-racing.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/rig-seat.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="750" />
+  <meta property="og:image:alt" content="A racing bucket seat and harness" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/rig-seat.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261005" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Damper Settings Explained: What Actually Changes Your Feel",
+    "description": "Dampers control how fast your suspension moves. Learn what bump and rebound do, why they matter to your lap times, and how to tune them on your rig.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/damper-settings-explained-sim-racing.html",
+    "image": "https://realiracing.com/assets/photos/rig-seat.jpg",
+    "datePublished": "2026-10-12",
+    "dateModified": "2026-10-12"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Damper Settings Explained: What Actually Changes Your Feel","item":"https://realiracing.com/blog/damper-settings-explained-sim-racing.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/damper-settings-explained-sim-racing.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/damper-settings-explained-sim-racing.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the difference between bump and rebound damping?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Bump damping resists compression (suspension moving upward when pushed down). Rebound damping resists extension (suspension moving back down after compression). Higher bump keeps the car from diving under load; higher rebound keeps it from rebounding too quickly after compression." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do low-speed and high-speed damping differ in practice?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Low-speed damping controls steady-state suspension movement during normal cornering and weight transfer. High-speed damping activates only during sudden, sharp suspension movement like hitting a kerb or a sharp bump. Low-speed affects overall balance; high-speed prevents bouncing and oscillation over specific track features." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my car feel better after I increase dampers, then worse if I increase them more?",
+      "acceptedAnswer": { "@type": "Answer", "text": "There's an optimal zone. Too soft, and the suspension oscillates and feels unsettled. Too stiff, and you lose grip over small surface changes and the car feels unresponsive. The sweet spot depends on the track, car, and your driving style. Small increments and consistent testing help you find it without overshooting." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can damper settings alone fix a car that feels fundamentally wrong?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Rarely. Dampers are a fine-tuning tool. If the setup is way off—fundamentally over or understeer-biased, too stiff or too soft overall—the problem is usually springs, anti-roll bars, or brake balance. Use dampers to dial in the last 5–10% after the bigger parameters are correct." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Setup Guides · Suspension</p>
+    <h1>Damper Settings Explained: What Actually Changes Your Feel</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 12, 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/rig-seat.jpg" width="1000" height="750" alt="A racing bucket seat and harness" srcset="/assets/photos/rig-seat-sm.jpg 560w, /assets/photos/rig-seat.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Photo: <a href="https://www.flickr.com/photos/25632349@N04" target="_blank" rel="noopener nofollow">The Car Spy</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener nofollow">CC BY 2.0</a> · Source: <a href="https://commons.wikimedia.org/wiki/File:Bucket_seat_with_Schroth_six-point_harness_in_a_2010_Porsche_997_GT3_RS_3.8.jpg" target="_blank" rel="noopener nofollow">Wikimedia Commons</a></figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      <p class="article-lead">When I first started tuning setups in iRacing, dampers mystified me. The menus show bump and rebound, sometimes split into low-speed and high-speed, and I had no intuition for what turning them up or down would actually do to my car. I'd make a change, go a lap, feel nothing, and give up. The problem wasn't the dampers—it was that I was thinking about them wrong. Dampers don't add stiffness like springs do; they slow down how fast your suspension can compress and extend. That tiny difference in concept makes all the difference in how you should approach tuning them.</p>
+
+      <p>On my <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> setup, I can feel damper changes through the wheel if the change is big enough, but it's subtle. The real effect shows up in lap time consistency, stability on corner entry, and how predictable the car feels under load. Once I understood what dampers actually do—and stopped overthinking the engineering—tuning them became something I could approach logically instead of by guesswork.</p>
+
+      <h2>What Dampers Actually Do (In Plain Terms)</h2>
+
+      <p>A damper is a shock absorber. When your suspension compresses—like hitting a bump or turning into a corner—the damper resists that compression. When your suspension extends back out, the damper resists that too. The resistance slows the motion down.</p>
+
+      <p>Think of it like pushing a door that has a hydraulic closer on it. Push fast, and the door fights back hard. Push slow, and it gives way more easily. Dampers work the same way: the faster the suspension tries to move, the more resistance it creates. That's the key insight—dampers are speed-sensitive, not position-sensitive.</p>
+
+      <ul>
+        <li><strong>Bump damping</strong> — resists compression (suspension moving upward when compressed)</li>
+        <li><strong>Rebound damping</strong> — resists extension (suspension moving downward when extending back)</li>
+        <li><strong>Low-speed damping</strong> — applies to slow, steady suspension movement (like a gradual weight transfer into a corner)</li>
+        <li><strong>High-speed damping</strong> — applies to fast, sudden movement (like hitting a kerb or a sharp bump)</li>
+      </ul>
+
+      <div class="tip-box">
+        <span class="box-label">The Core Concept</span>
+        <p>Dampers don't change how far your suspension moves—springs do that. Dampers change how fast it moves. Stiffer dampers slow suspension movement; softer dampers allow it to move faster.</p>
+      </div>
+
+      <h2>Why Dampers Matter to Your Lap Times</h2>
+
+      <p>Dampers affect three things that show up in lap time: chassis stability under transient load changes, tire consistency (especially over kerbs), and how confident the car feels entering a corner.</p>
+
+      <p>If your bump damping is too soft, your suspension compresses too quickly when you brake or turn in hard. The car dips, the front tires load up fast, and the balance can shift unexpectedly. This often feels like understeer that comes and goes, or a car that's hard to be smooth with. If it's too stiff, the suspension doesn't absorb bumps or kerbs well, and your tires bounce off the surface instead of staying planted.</p>
+
+      <p>Rebound damping affects how fast the suspension rebounds after compression. Too soft, and the car oscillates—it compresses, springs back up, compresses again—and the tires lose consistent contact. Too stiff, and the car feels planted but can become unresponsive, especially on the exit of corners where you need the inside wheels to unload quickly.</p>
+
+      <p>The sweet spot depends on the track, the car, and your driving style. A smooth driver can often run softer dampers because they're not exciting the suspension with sharp inputs. An aggressive driver needs stiffer dampers to prevent excessive movement and keep the car settled.</p>
+
+      <h2>Practical Tuning: How to Make Changes and Feel Them</h2>
+
+      <p>On my MOZA R9, large damper changes (like swinging from 5 to 15 on bump) are obvious through the wheel as a change in how settled or unsettled the car feels over kerbs. Small changes (5 to 7) are harder to isolate without telemetry comparison. Here's how I approach it:</p>
+
+      <ol>
+        <li>Change one damper axis at a time — usually start with low-speed bump if the car feels unsettled mid-corner, or high-speed bump if it's bouncey over kerbs.</li>
+        <li>Change in increments of 2–3 points if you're making a directional guess, or 1 point if you're fine-tuning after identifying the problem.</li>
+        <li>Run the same lap 2–3 times to let the tires settle, then compare feel and lap time against your baseline.</li>
+        <li>Pay attention to specific corners: Does the car dive under braking? Bounce on exits? Feel nervous on turn-in? Match the symptom to the damper axis.</li>
+        <li>Use telemetry if available — watch suspension travel graphs to confirm whether the car is oscillating or bottoming out.</li>
+      </ol>
+
+      <div class="tip-box">
+        <span class="box-label">Baseline First</span>
+        <p>Start with a known baseline setup (from a setup shop or a fast sim racer in your split) rather than guessing from zero. Then make small, deliberate changes. This trains your instinct faster than random tuning.</p>
+      </div>
+
+      <h2>Low-Speed vs. High-Speed: When Each One Matters</h2>
+
+      <p>Not every car in iRacing offers split damping (low-speed and high-speed separate). Some only give you a single bump and rebound slider. But when it's available, the distinction is crucial.</p>
+
+      <p><strong>Low-speed damping</strong> controls steady-state compression and extension—the gradual weight transfer as you build speed into a corner or unload as you accelerate out. It's the damping that affects how the car feels at normal driving speeds. If your car understeers into a corner, low-speed bump might be your culprit.</p>
+
+      <p><strong>High-speed damping</strong> activates only during sharp, sudden suspension movement—hitting a kerb, running over bumpy asphalt, or a sudden direction change. If your car bounces over a bumpy section, high-speed bump is what controls that. If it wallows after a hard braking event, high-speed rebound might need adjustment.</p>
+
+      <ul>
+        <li>Use low-speed to tune the car's general balance and response through a corner</li>
+        <li>Use high-speed to stop bouncing, oscillation, and harshness over specific track features</li>
+        <li>Start with low-speed tuned correctly, then use high-speed as a fine-tuning tool</li>
+        <li>If you only have one damper slider, treat it as low-speed tuning and accept that you'll have some compromise on high-speed events</li>
+      </ul>
+
+      <h2>Common Symptoms and What They Usually Mean</h2>
+
+      <p>I keep a mental checklist of what to suspect when a setup feels off. It saves me from blindly scrolling through every parameter.</p>
+
+      <ul>
+        <li><strong>Car understeers into corners, especially sharp ones</strong> — Try increasing low-speed bump. The car is diving too much and the front tires are working too hard.</li>
+        <li><strong>Car oversteers on exit or feels twitchy</strong> — Try increasing low-speed rebound. The rear is rebounding too fast and upsetting the balance.</li>
+        <li><strong>Car bounces after hitting kerbs or bumps</strong> — Increase high-speed bump. The suspension is compressing and extending in oscillation.</li>
+        <li><strong>Car feels nervous and unsettled but you're not hitting bumps</strong> — Could be low-speed dampers, but also check anti-roll bars and ride height first.</li>
+        <li><strong>Rear end slides out unexpectedly mid-corner</strong> — Might be low-speed rebound too soft, but also check brake balance and diff settings.</li>
+        <li><strong>Car feels overly stiff or wooden</strong> — Dampers might be too high everywhere, but more likely the springs or anti-roll bars are the real culprit.</li>
+      </ul>
+
+      <p>The trick is not to assume dampers are the problem first. Often, if a setup feels wrong, <a href="building-setup-from-iracing-baseline.html">the baseline setup itself is off</a>, or you're chasing a symptom that's actually caused by springs, ride height, or brake bias. Change one thing, isolate the effect, then move on.</p>
+
+      <h2>A Real Example: Tuning Bump on a Road Course</h2>
+
+      <p>Let me walk through how I tuned dampers on the Lamborghini Huracán GT3 Evo at a road course. I started with a baseline setup from a fast driver in the series, low-speed bump at 8, high-speed bump at 6. The car felt stable mid-corner but had a nervous, unsettled feeling on turn-in at Apex 1 (a quick right-hand corner). The front would feel slightly grabby, then release, then grab again—not oscillating wildly, just enough to make me less confident.</p>
+
+      <p>I increased low-speed bump from 8 to 10. The car settled immediately. The turn-in was smoother, the front tires worked more consistently, and I gained ~0.15 seconds per lap just from that stability. I ran a few more laps and tried 11, but it started to feel a bit overdamped—like the suspension wasn't moving enough and the car was losing grip over small surface changes. I backed it to 10 and left it.</p>
+
+      <p>That's the process: symptom → hypothesis → change → feel → iterate. No magic, no equations—just deliberate observation and small, directed changes.</p>
+
+      <h2>Dampers on Fixed Cockpits vs. Motion Rigs</h2>
+
+      <p>On my fixed aluminum cockpit with the MOZA R9, damper changes translate through force feedback at the wheel. I feel the vibration and resistance through the rim, especially on high-speed bumps and kerbs. That feedback is genuine—it's coming from the car's physics, transmitted through the telemetry, and rendered by the wheelbase.</p>
+
+      <p>On a motion rig, you'd also feel damper effects through the rig's motion: a stiffer damper would mean less rig movement, softer dampers would allow more. But the principle is identical—you're tuning how fast the suspension can move, and the hardware is just showing you that in a different way.</p>
+
+      <p>Either way, trust the lap times and consistency more than the feel. A setup that feels smooth isn't always fastest, and the fastest setup isn't always the one that feels most dramatic.</p>
+
+      <h2>Final Tuning Checklist</h2>
+
+      <ul>
+        <li>Start from a known baseline, not zero</li>
+        <li>Identify the specific symptom: unstable turn-in, bouncy exits, unsettled over bumps, or something else</li>
+        <li>Match the symptom to the damper axis (low-speed vs. high-speed, bump vs. rebound)</li>
+        <li>Make one change of 2–3 points</li>
+        <li>Run 3 clean laps to evaluate</li>
+        <li>Compare lap time and feel against the baseline</li>
+        <li>Adjust incrementally until the symptom improves without overcompensating</li>
+        <li>Use telemetry if available to confirm suspension behavior</li>
+        <li>Remember: dampers rarely solve a setup problem alone; they fine-tune one that's already close</li>
+      </ul>
+
+      
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge">Raced on</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>What's the difference between bump and rebound damping?</h3>
+        <p>Bump damping resists compression (suspension moving upward when pushed down). Rebound damping resists extension (suspension moving back down after compression). Higher bump keeps the car from diving under load; higher rebound keeps it from rebounding too quickly after compression.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do low-speed and high-speed damping differ in practice?</h3>
+        <p>Low-speed damping controls steady-state suspension movement during normal cornering and weight transfer. High-speed damping activates only during sudden, sharp suspension movement like hitting a kerb or a sharp bump. Low-speed affects overall balance; high-speed prevents bouncing and oscillation over specific track features.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Why does my car feel better after I increase dampers, then worse if I increase them more?</h3>
+        <p>There's an optimal zone. Too soft, and the suspension oscillates and feels unsettled. Too stiff, and you lose grip over small surface changes and the car feels unresponsive. The sweet spot depends on the track, car, and your driving style. Small increments and consistent testing help you find it without overshooting.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can damper settings alone fix a car that feels fundamentally wrong?</h3>
+        <p>Rarely. Dampers are a fine-tuning tool. If the setup is way off—fundamentally over or understeer-biased, too stiff or too soft overall—the problem is usually springs, anti-roll bars, or brake balance. Use dampers to dial in the last 5–10% after the bigger parameters are correct.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="sim-racing-wheel-settings-for-oval.html"><span>Setup Guides</span>Sim Racing Wheel Settings for Oval Racing — What Changes from Road Course</a>
+      <a class="related-card" href="gearing-ratios-unknown-track-strategy.html"><span>Setup Guides</span>How to Choose Gear Ratios for a Track You've Never Driven</a>
+      <a class="related-card" href="building-custom-setup-iracing-baseline-guide.html"><span>Setup Guides</span>Building Your Own Setup from iRacing Baseline: A Practical Guide</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","moza-crp2"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
