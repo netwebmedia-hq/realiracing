@@ -1,0 +1,56 @@
+{
+  "slug": "steering-rotation-and-ratio-iracing",
+  "tag": "Setup Guides · Wheel",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "Wheel Rotation and Steering Ratio in iRacing, Explained",
+  "description": "Why your wheel's degrees of rotation should match the car, how soft lock and steering ratio work in iRacing, and how I set it up on a MOZA R9.",
+  "published": "2026-10-18",
+  "dateLabel": "October 18, 2026",
+  "gearKeys": ["moza-r9", "moza-r12", "fanatec-csl-dd"],
+  "sections": [
+    { "p": "The first time I drove a Skip Barber on my rig, the car felt twitchy and I could not work out why. I had copied someone's force feedback numbers, the pedals were calibrated, and still every small correction sent the nose further than I wanted. The problem was not force feedback at all. My wheelbase was set to one rotation, the car expected another, and every degree I turned my hands was being translated into the wrong amount of front-wheel angle." },
+    { "p": "Rotation and steering ratio are the least glamorous settings on a sim rig, and they shape how every car feels more than most of the numbers people argue about online. This guide covers what each one means, how iRacing handles them, and what I run on my <strong>MOZA R9</strong> with the CRP2 pedals in a fixed aluminium cockpit." },
+    { "h2": "Degrees of rotation: what the number means" },
+    { "p": "Degrees of rotation is how far the wheel turns from full left lock to full right lock. A road car is usually somewhere around ~900° lock to lock. A GT3 car is much quicker, often around ~400-500°. Formula cars are quicker still, and a dirt sprint car or an oval stock car has its own figure again. Each real car has a steering lock built into its rack, and iRacing models that for every car in the service." },
+    { "p": "Your wheelbase also has a rotation setting. If the wheelbase allows ~1080° and the car only has ~480°, something has to reconcile the two. If nothing does, either the car turns far too slowly for your hands, or it turns at the right rate but your wheel keeps spinning past the point where the virtual front wheels have stopped." },
+    { "h2": "Soft lock and why you want it" },
+    { "p": "Soft lock is the wheelbase physically resisting rotation once you reach the car's real steering lock. With soft lock working, turning the wheel to the stop feels like hitting the end of a real rack, and the 1:1 relationship between your hands and the virtual wheel holds all the way across." },
+    { "p": "On a direct drive base this is one of the clearest upgrades over older gear. A belt or gear wheel can usually do it too, but with less torque behind the stop. If you are curious how the torque tiers compare, I go through them in <a href=\"wheel-torque-tiers-explained.html\">wheel torque tiers explained</a>." },
+    { "h2": "How iRacing handles rotation" },
+    { "p": "iRacing knows the real steering lock of each car. With a supported wheelbase, the sim can tell the base to match that lock automatically when you load a car, so a GT3 and an IndyCar each get their own rotation without you touching anything. The exact switch lives in your wheelbase software, and the name varies by brand, so check the game-controlled rotation option in Pit House, Fanatec's driver or whatever your base uses." },
+    { "p": "When it works, you set the wheelbase to a wide maximum, calibrate once in iRacing, and the sim narrows the range per car. When it is not working, every car shares one rotation, and that is when cars start to feel wrong in ways that are easy to blame on force feedback." },
+    { "h3": "Calibrating so iRacing reads the wheel correctly" },
+    { "olist": [
+      "In your wheelbase software, set the maximum rotation to a wide value and enable the option that lets the game control rotation.",
+      "In iRacing, run the controller calibration and turn the wheel through the full range the wizard asks for. Centre it carefully when prompted.",
+      "Load a car with a quick steering rack, such as a GT3, and turn to full lock in the garage view. The virtual wheel and your wheel should stop together.",
+      "Load a car with a slow rack, such as a road car or a stock car, and repeat. If both match, rotation is handled."
+    ] },
+    { "tip": "If the on-screen wheel keeps turning after your wheel hits soft lock, or stops before it, redo the calibration before you touch anything else. Most of the strange steering complaints I see trace back to a calibration done with the wrong range.", "tipLabel": "Check this first" },
+    { "h2": "Steering ratio is a different thing" },
+    { "p": "Rotation is about your wheel matching the car's wheel. Steering ratio is about how much the car's front tyres turn for each degree of the car's steering wheel. It lives in the car, not on your rig. A quicker ratio means less hand movement for the same front-wheel angle." },
+    { "p": "Some cars in iRacing let you change the ratio in the garage, often oval cars, where drivers tune how lazy or responsive the car feels on entry. On most road cars it is fixed. If a car offers the adjustment, treat it as part of the setup: a quicker ratio can help in tight hairpins and make the car nervous at speed, and a slower one does the reverse." },
+    { "h2": "Why you should not shrink rotation to feel faster" },
+    { "p": "It is tempting to cut rotation on a slow road car so it feels sharper. That breaks the 1:1 relationship. Your hands turn ~90° and the car turns as if you had turned much more. It can feel quick for a lap, and then every correction overshoots, because your brain is calibrated to real hand movements. Catching a slide becomes harder, which I wrote about in <a href=\"saving-a-slide-before-the-spin.html\">saving a slide before the spin</a>." },
+    { "p": "If a car feels too slow to steer, that is usually how the real car is. The better fix is technique, or a setup change through steering ratio where the car allows it." },
+    { "h2": "Rotation and force feedback together" },
+    { "p": "Rotation changes how force feedback feels even when the force numbers stay the same. With a quick rack, small hand movements produce large changes in front-tyre load, so the wheel can feel heavier and busier. With a slow rack, the same forces are spread over more wheel travel. If you just fixed your rotation and the wheel suddenly feels different, give it a few sessions before you start changing strength. My baseline numbers are in <a href=\"moza-r9-iracing-settings.html\">MOZA R9 iRacing settings</a>, and the theory behind them is in <a href=\"iracing-force-feedback-explained.html\">iRacing force feedback explained</a>." },
+    { "h2": "Ovals and dirt" },
+    { "p": "Oval cars run small steering inputs for long periods, and some drivers like a slower effective response there for smoother hands. Dirt cars are the opposite: big, fast corrections, where a soft lock that matches the car is what lets you catch the rear without fighting the wheel. I keep the same calibration approach for both and let iRacing set the lock, then tune feel with force feedback and, where available, the garage ratio. More on oval-specific settings in <a href=\"sim-racing-wheel-settings-for-oval.html\">sim racing wheel settings for ovals</a>." },
+    { "h2": "What I run" },
+    { "list": [
+      "Wheelbase: MOZA R9 at ~9 N·m, maximum rotation set wide in Pit House, game-controlled rotation on.",
+      "iRacing: calibrated once through the full range, with no per-car manual rotation overrides.",
+      "Checks: every new car gets a full-lock test in the garage before the first lap.",
+      "Steering ratio: left at default unless the car allows it and I have a specific reason, usually a tight track."
+    ] },
+    { "p": "Once rotation was right, the Skip Barber stopped feeling twitchy and started feeling like a light, quick car, which is what it is. Small corrections went where I expected, and I stopped blaming the force feedback for problems it never caused." }
+  ],
+  "faqs": [
+    { "q": "What wheel rotation should I use in iRacing?", "a": "Set your wheelbase to a wide maximum, enable the option that lets the game control rotation, and calibrate once in iRacing. The sim then matches each car's real steering lock, so you do not need a single number for every car." },
+    { "q": "What is soft lock on a sim racing wheel?", "a": "Soft lock is the wheelbase resisting further rotation once you reach the car's real steering lock, so the wheel stops where the virtual steering wheel stops." },
+    { "q": "Is steering ratio the same as degrees of rotation?", "a": "No. Rotation is how far your physical wheel turns. Steering ratio is how much the car's front tyres turn per degree of the car's steering wheel, and only some cars let you adjust it in the garage." },
+    { "q": "Why does my car feel twitchy in iRacing?", "a": "A common cause is rotation that does not match the car, often after a calibration with the wrong range. Check that your wheel and the on-screen wheel stop together at full lock before changing force feedback." }
+  ]
+}
