@@ -1,0 +1,156 @@
+{
+  "slug": "setup-changes-night-temperature-swings-endurance",
+  "tag": "Setup Guides · Endurance Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Setup Changes for Night and Temperature Swings in Endurance Racing",
+  "description": "How to adjust your setup for temperature shifts during multi-hour endurance races without losing pace between day and night.",
+  "sections": [
+    {
+      "p": "Endurance racing in iRacing mirrors the real problem: the track temperature at 8 p.m. is not the track temperature at 11 p.m. or 2 a.m. Your setup was dialed in at 28 degrees track temp during the afternoon stint. Your teammate takes over at midnight when it's 12 degrees. The grip is gone. The car feels loose off-corner. Tire pressures drop. What felt stable under braking now understeer heavy. Most drivers dial more front wing or cut brake balance by 2 percent and hope. That's not thinking like an endurance racer. Temperature swings demand systematic adjustments, and I've learned to make them on the MOZA R9 rig by documenting what changes first and by how much."
+    },
+    {
+      "p": "Multi-hour endurance events with day-to-night transitions expose every weakness in a lazy setup. The car has to work on cold tires at 3 a.m. and then adapt again when dawn approaches. I'll walk through the order of adjustments I make on my MOZA R9 when temperature swings occur, why they matter, and what not to chase."
+    },
+    {
+      "h2": "Why temperature swings hurt your pace"
+    },
+    {
+      "p": "Cold track means cold tires. Cold tires have less grip envelope. A tire that's at 80 degrees Celsius generates far more lateral grip than one at 60 degrees, and that drop happens fast once the sun sets. Your setup was balanced for a specific operating window. When that window closes, balance breaks."
+    },
+    {
+      "p": "Air temperature and track temperature are linked but not identical. Track temp lags behind air temp by 5 to 10 degrees on cool-down because asphalt has thermal mass. That lag is why the slowest periods are often 1 to 2 hours after sunset, not immediately after. By 4 a.m., both have settled. Then dawn brings another spike that drivers often don't prepare for."
+    },
+    {
+      "p": "The second issue is tire pressure. As track temperature drops, air inside your tires contracts. A set of tires that started at 27 psi cold at 2 p.m. can fall to 24 psi by midnight without any air loss. That's a real change. Lower pressure means softer sidewall, more flex, less responsive turn-in. Higher pressure means a harder edge but also more understeer if you cut it too much. The setup has to absorb that."
+    },
+    {
+      "h2": "Tire pressure adjustments come first"
+    },
+    {
+      "p": "Before I touch suspension, I address pressures. Pressure is the fastest-acting variable. On my MOZA CRP2 pedals, braking feel changes immediately with pressure shift. Throttle application does too."
+    },
+    {
+      "p": "I target hot-lap tire pressure, not cold pressure. Cold pressure is measured in the garage after overnight cool-down. Hot-lap pressure is what the tire reaches after 10 minutes of racing. That's your real operating point. In endurance racing, I want my tires running at the same hot pressure across the temperature swing. That means raising cold-pressure targets as track temp drops."
+    },
+    {
+      "list": [
+        "Measure or estimate your hot tire pressure at the hottest point in the event (peak sun, mid-afternoon). That's your baseline.",
+        "As track temperature drops, raise your starting pressure target proportionally. A 15-degree drop typically means a 1 to 2 psi increase in cold pressure.",
+        "After a tire change or pit stop during a cool stint, add 0.5 to 1 psi above your normal setting to compensate for the cold track.",
+        "Monitor tire temperatures on track. If you're seeing a 5+ degree drop in tire temps compared to the afternoon, pressures are too low.",
+        "Pressure creep over a long stint can raise hot pressure by 2 to 3 psi. Plan for that when you pit."
+      ]
+    },
+    {
+      "tip": "I don't guess pressure drops. I pit early during the temperature transition window (sunset to 3 a.m.) so I can adjust on fresh rubber and feel the change in real time on the MOZA R9. That one extra stop during night is worth learning what the car needs.",
+      "tipLabel": "Pit Strategy"
+    },
+    {
+      "h2": "Brake and throttle balance shifts"
+    },
+    {
+      "p": "Cold tires lose grip unevenly. Lateral grip drops first and hardest. Longitudinal grip (braking and acceleration) holds better. This creates an imbalance in how your setup feels."
+    },
+    {
+      "p": "On a hot afternoon lap, brake balance is set so the car doesn't lock the rears. At night, rear grip improves relative to front, so the same brake balance will now lock the rear more easily. I move brake balance forward by 0.5 to 1.0 percent. This feels counterintuitive (more front brake seems aggressive when cold) but matches the grip reality. Cold nights need slightly more front brake balance than hot days."
+    },
+    {
+      "p": "Throttle application is the opposite problem. Traction is down. I'll add 1 to 2 percent more differential lock on corner exit to keep the rear planted during acceleration when grip is marginal. Oversteer resistance becomes more important when the car wants to slide."
+    },
+    {
+      "p": "The mistake most drivers make is adding brake balance backward. They think cold means less braking grip everywhere, so they add rear brake. That's wrong. Rear grip holds. Front drops. Push brake balance forward."
+    },
+    {
+      "h2": "Damper and anti-roll bar adjustments"
+    },
+    {
+      "p": "Cold tires are stiffer. The tire sidewall absorbs less energy. Suspension has to compensate by being slightly softer in bump to avoid bottoming and losing mid-corner grip. I reduce bump damping on both ends by one or two clicks as the track cools."
+    },
+    {
+      "p": "Rebound damping is trickier. Soft rebound can make the car feel unstable on cold tires because the chassis doesn't settle between inputs. I keep rebound unchanged or add one click of stiffness if the car feels loose off-corner at night."
+    },
+    {
+      "p": "Anti-roll bars deserve attention during sustained cold periods. A cold track with low grip means less overall mechanical grip available for lateral load transfer. I'll soften the front anti-roll bar by 1 to 2 steps to increase available front grip. Rear stays the same or tightens slightly to maintain rear stability. This keeps the front turning in during slow-speed corners when grip is low."
+    },
+    {
+      "list": [
+        "Reduce front and rear bump damping by one click as track temp drops below 18 degrees.",
+        "Keep rebound damping steady unless the car feels unsettled; then add one click of rear rebound stiffness.",
+        "Soften front anti-roll bar by one step to improve front turn-in on cold tires.",
+        "Do not change ride height. That's a setup reset, not a temperature adjustment.",
+        "Avoid over-correcting. Make one change, do a 10-minute stint, feel the result, then adjust again."
+      ]
+    },
+    {
+      "h2": "Wing angle and downforce tuning"
+    },
+    {
+      "p": "Cold air is denser than hot air. That means slightly more downforce from the same wing angle. In theory, you could run less wing at night and maintain downforce. In practice, I don't chase this because the effect is small and the drag penalty isn't worth it."
+    },
+    {
+      "p": "Where wing matters at night is in slow-speed balance. Cold tires turn in worse. Adding 1 to 2 degrees of front wing helps front grip on entry even though drag increases slightly. At a road course with slow technical corners, this is worth 0.2 to 0.3 seconds per lap in the cold hours. At a high-speed track like Le Mans, leave wing alone."
+    },
+    {
+      "p": "Rear wing tightens the rear end on cold tires. I often add 0.5 to 1.0 degree of rear wing during night stints to increase rear stability under braking when grip is marginal. This combats the oversteer tendency that develops when the rear is cold and under-gripped."
+    },
+    {
+      "h2": "The dawn transition"
+    },
+    {
+      "p": "Many drivers think the hardest moment is sunset. It's not. Dawn is harder because the change is fast and unexpected. Track temperature climbs 10 degrees in 30 minutes once the sun breaks. Tires get hot quick. Pressures spike. A setup that was perfect at 4 a.m. becomes stiff and oversteery by 6 a.m."
+    },
+    {
+      "p": "Plan a pit stop 30 to 45 minutes before dawn. Adjust tires back down toward your baseline pressures. Stiffen damping back up. Return anti-roll bars closer to original. The driver coming on at dawn will feel the difference but won't be chasing setup in the final hours. That's race strategy. The team that prepares for dawn wins."
+    },
+    {
+      "tip": "Use your team radio or chat to warn incoming drivers about the temperature window they're entering. I tell my teammate exactly what cold-stint setup feels like so they're not shocked when they climb in. That removes panic adjustments and keeps the car balanced.",
+      "tipLabel": "Team Communication"
+    },
+    {
+      "h2": "Setup baseline and documentation"
+    },
+    {
+      "p": "I keep a simple spreadsheet: baseline setup at peak track temp, then one column each for cold-night adjustments and dawn adjustments. By the third or fourth endurance race, I have enough data to predict the night setup within two clicks. I'm no longer guessing. The MOZA R9's consistency means the same adjustments work lap to lap."
+    },
+    {
+      "p": "The key insight is that temperature adjustments are proportional and predictable. A 20-degree drop always needs roughly the same brake balance shift, damper softening, and pressure raise. Learning that pattern for one car on one track saves setup time across every endurance event."
+    },
+    {
+      "p": "Don't treat night and day as separate setups. Treat them as one setup with predictable modifications. That keeps you focused on driving and tire strategy instead of fiddling with settings between stints."
+    },
+    {
+      "h2": "What not to change"
+    },
+    {
+      "p": "Many drivers over-correct during temperature swings. Here's what to leave alone: ride height, spring rates, differential coast lock, camber angle, and toe-in. These are setup foundations. A temperature swing doesn't demand them to change. Adjust pressure, dampers, bars, and brake balance only. Everything else is noise."
+    },
+    {
+      "p": "Avoid making more than four changes per pit stop. Each change takes one full stint to evaluate. If you change six things, you'll never know which one worked. Make a small adjustment, run 20 to 30 minutes, then decide if you need the next change. Speed comes from iteration, not guessing."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much should I raise tire pressure as track temperature drops?",
+      "a": "Aim to maintain the same hot tire pressure across all temperature ranges. As track temp drops, raise cold pressure target by roughly 1 to 1.5 psi per 15 degrees Celsius of air temperature drop. Measure or estimate your hot tire pressure during the hottest part of the race first, then work backward."
+    },
+    {
+      "q": "Should I add more front brake balance when it's cold?",
+      "a": "Yes. Cold tires lose lateral grip faster than they lose braking grip. Rear grip holds better in cold, so you need proportionally more front brake balance at night compared to day. Move brake balance forward by 0.5 to 1.0 percent as track temperature drops below 18 degrees Celsius."
+    },
+    {
+      "q": "What's the biggest mistake drivers make during temperature transitions?",
+      "a": "Panic-adjusting suspension (springs, ride height, camber) when only pressure and dampers need touching. Over-correcting brake balance backward. Not preparing for dawn by resetting the setup before the sun rises. Make small, documented changes and give each one a full stint to evaluate."
+    },
+    {
+      "q": "When should my team pit to adjust for the night-to-dawn transition?",
+      "a": "Plan a pit stop 30 to 45 minutes before sunrise to reset pressures and dampers before the track warms. That driver won't be chasing setup during the final hours. A strategic pit during the temperature swing (sunset to 3 a.m.) also lets you evaluate setup changes on fresh rubber instead of worn tires that mask the real feel."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}

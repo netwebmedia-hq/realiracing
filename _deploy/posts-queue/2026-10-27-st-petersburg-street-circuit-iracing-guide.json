@@ -1,0 +1,158 @@
+{
+  "slug": "st-petersburg-street-circuit-iracing-guide",
+  "tag": "Track Guides · Setup",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "St. Petersburg Street Circuit iRacing Guide: Smooth Lines and Late Braking",
+  "description": "Master St. Petersburg's unique street circuit layout. Learn braking points, apex placement, and how to nail the tight corners on my MOZA R9.",
+  "sections": [
+    {
+      "p": "St. Petersburg is a slow-speed street circuit that feels nothing like a traditional track. The turns are tight, the run-off zones are unforgiving, and your margin for error shrinks with every corner. I've spent enough time here to know that smooth is fast, and one small mistake—a meter too much steering input, a tenth of a second too early on the brakes—will send you into a wall or onto the curbing with a damaged car."
+    },
+    {
+      "p": "What makes St. Petersburg interesting is that it doesn't reward aggression the way an oval does and it doesn't have the high-speed flow of a road course like Monza or Silverstone. Instead, it's about precision: finding the exact threshold of grip, hitting your apexes within inches, and carrying momentum out of slow corners so you have something left for the next straight. On my MOZA R9, I can feel every nuance of the curbing and pavement texture, and that feedback becomes essential here because you're working at the edge of adhesion on every single turn."
+    },
+    {
+      "h2": "Track layout and visual landmarks"
+    },
+    {
+      "p": "The circuit is a roughly 1.8-mile loop that winds through downtown St. Petersburg, Florida. Start line sits on the main straight between Turn 1 and the chicane sequence that follows. The track flows counterclockwise, which means a lot of right-hand corners and relatively few full-throttle straights."
+    },
+    {
+      "p": "Key landmarks: the opening left-hander at Turn 1, the immediate right-handed chicane (Turns 2 and 3), then a string of tight right turns around the park area (Turns 4, 5, and 6). The back half includes a slower sequence near the waterfront, then you sprint down a short straight before the final chicane leads you back onto the main drag."
+    },
+    {
+      "list": [
+        "Turn 1: Long left-hand corner off the main straight, sets your line for the approaching chicane",
+        "Turns 2-3 chicane: Fast direction changes; late apex on the second part carries momentum into Turn 4",
+        "Turns 4-5-6: Tight right-handers where smooth steering input prevents running wide or clipping the inside wall",
+        "Back straight and waterfront section: Series of lower-speed corners; throttle application is patient here",
+        "Final chicane: Mirrors the opening section; consistent apexes matter for race-day confidence"
+      ]
+    },
+    {
+      "h2": "Braking zones and trail-braking technique"
+    },
+    {
+      "p": "St. Petersburg punishes hard braking into most corners because the track is narrow and run-off is limited. My approach with the MOZA R9 is to use my CRP2 load-cell pedals to feel exactly how much deceleration I can trail into the corner. This is where a load-cell setup really shines: you get precise throttle blending and brake modulation that you cannot achieve with a progressive spring pedal."
+    },
+    {
+      "p": "The main straight ends with a heavy braking zone before Turn 1. I begin braking around 100 meters before the corner, then gradually release brake pressure as I turn in. The goal is to have zero brake pressure by mid-corner so the car can rotate cleanly. If I'm still on the brakes past the apex, the car pushes wide and I'm either hitting the wall or running over the curb."
+    },
+    {
+      "p": "Into the Turns 2-3 chicane, I use light trail-braking because the braking zone is shorter and the turn-in point is tighter. I want to arrive at the first apex with enough speed to carry momentum through the transition and into the second part of the chicane. Braking too early here loses time; braking too late means the car doesn't rotate and you miss the second apex."
+    },
+    {
+      "tip": "The waterfront section (Turns 7-8 area) is where most drivers lose chunks of lap time. It's tempting to brake harder and later to carry speed, but the turns are so tight that any lock-up will send you wide. I treat this section as a place to recoup time by being smoother than everyone else, not faster.",
+      "tipLabel": "Waterfront patience"
+    },
+    {
+      "h2": "Throttle application and momentum management"
+    },
+    {
+      "p": "Throttle management at St. Petersburg is about reading your steering angle and applying power in phases. Full throttle only happens on the short straights. Everywhere else, you're building speed carefully as you unwind the wheel."
+    },
+    {
+      "p": "After the Turn 1 apex, I gradually roll on throttle as the road widens. By the time I'm at mid-corner of Turn 4, I'm at full throttle. This progressive approach prevents the rear from sliding out on corner exit. The MOZA R9's strong direct drive feedback lets me feel any hint of oversteer, so I can ease off power fractionally if the car starts to drift."
+    },
+    {
+      "p": "The back straight is genuine full throttle, but it's short. You accelerate hard, then you're already thinking about the braking point for the next sequence. This is where track position matters in a race: if you can exit the previous corner even one car-width better, you'll have an advantage on the straight and a better braking point."
+    },
+    {
+      "h2": "Curbing strategy and damage risk"
+    },
+    {
+      "p": "St. Petersburg has aggressive curbing on most turns. Some drivers use the curb as an extension of the track to tighten their line or carry extra exit speed. That strategy works until it doesn't: one kerb strike at the wrong angle and your suspension is damaged, your tire is flat-spotted, or you're in the wall."
+    },
+    {
+      "p": "I prefer to use curbing as a reference point rather than a racing surface. A light kiss of the inside curb at the apex tells me I'm in the right spot; a second kiss on the exit edge confirms my line is consistent. Heavy use of the curb, especially repeated contact over a full race, will pick up damage that costs you pace in the final laps."
+    },
+    {
+      "list": [
+        "Light curb contact (under ~40% of your tire) is fine and helps you feel your line",
+        "Medium contact (40-70%) starts to cause minor suspension stress and tire wear",
+        "Heavy contact (70%+) will accumulate damage quickly and show up as handling changes by lap 15-20",
+        "Avoid the curb entirely in low-downforce cars like single-seaters; they're more sensitive to platform changes"
+      ]
+    },
+    {
+      "h2": "Setup baseline for street circuit racing"
+    },
+    {
+      "p": "Street circuits need low downforce and aggressive anti-roll bar stiffness. Front and rear wings should be at minimum angles to reduce drag. Brake bias needs careful tuning because the short straights don't give you time to cool the brakes, so rear brake lock-up is a real risk if you're not careful."
+    },
+    {
+      "p": "Suspension should be relatively soft in heave to soak up the bumpy pavement, but stiff in roll to keep the car flat through corners. Ride height goes as low as possible without bottoming out on the curbing. Differential lock (if available in your car) should be moderate on entry and exit since you're not using massive amounts of throttle."
+    },
+    {
+      "p": "Tire pressures are critical at street circuits because the track surface varies and kerbing can heat tires unevenly. I run front tires around 27-28 PSI and rear tires 28-29 PSI cold, then let them rise into the 30-32 range after a few laps. If pressures climb higher than that, the tires overheat and pace drops. Check your tire temps with the onscreen data every few laps in practice."
+    },
+    {
+      "h2": "Race strategy and traffic management"
+    },
+    {
+      "p": "St. Petersburg is a short circuit, which means race laps cycle quickly. A 30-minute race might be 20-22 laps; a longer endurance race could be 60+ laps. This compresses the time window for overtaking and makes position changes visible fast."
+    },
+    {
+      "p": "Overtaking happens on the main straight into Turn 1 or occasionally on the back straight if you have a significant pace advantage. The tight sections offer almost no passing room, so you need a real pace edge or a defensive mistake to make a move. In a race, this means consistency matters more than pure speed: small errors add up and compound over 20+ laps."
+    },
+    {
+      "p": "When defending, use the racing line and don't overdrive into the corners. A driver in a lower-downforce car or with fresher tires might out-brake you into a corner, but if you've held your line and they've overshot, you're in a better position for the exit. On a tight street circuit, the driver ahead should be smoother, not just faster."
+    },
+    {
+      "tip": "In multi-class racing (if your series includes it), avoid the apex completely if a faster car is approaching on a straight. Give them the inside line early so they don't have to brake as hard and you don't get collected. This sounds counterintuitive, but on street circuits, distance is your safety margin.",
+      "tipLabel": "Lapped traffic safety"
+    },
+    {
+      "h2": "Common mistakes and how to avoid them"
+    },
+    {
+      "p": "The biggest mistake I see at St. Petersburg is trying to carry too much speed into the tight corners. Drivers are comfortable going fast on faster tracks, then they arrive here and forget that 80% of the lap is below 100 mph. They brake late, miss the apex, run over the curb, damage the car, and spend the rest of the race limping around."
+    },
+    {
+      "p": "The second mistake is inconsistent steering input. On a street circuit, micro-adjustments matter. If you're sawing at the wheel trying to keep the car on line, you're either carrying too much speed into the corner or your braking point is off. Go back and fix the approach, not the mid-corner correction."
+    },
+    {
+      "p": "A third issue is under-rotating the car on exit. Drivers sometimes let off the throttle too early because they're nervous about the next turn. Build your confidence by getting the car pointed straight in good time, then apply throttle. The more time you spend accelerating, the faster you'll be."
+    },
+    {
+      "olist": [
+        "Practice the Turns 2-3 chicane 50 times in a test session. Get the rhythm of the two-part turn locked in so you're not thinking about it during a race.",
+        "Record a clean lap and review onboard footage. Compare your steering angle, throttle position, and brake application to a hotlap video from a faster driver in the same car.",
+        "Use the telemetry tools (Garage61 or similar) to overlay your lap against a reference. Look at where you're losing tenths: usually it's mid-corner speed or exit acceleration.",
+        "Run a 10-lap race against AI set just faster than you. This teaches you to be consistent under pressure without the stress of online traffic."
+      ]
+    },
+    {
+      "h2": "Final notes"
+    },
+    {
+      "p": "St. Petersburg rewards smooth drivers who respect the track. It's not a place where you'll win with one perfect lap; it's where you win with 20 consistent laps. The MOZA R9 gives me enough precision and feedback to feel when I'm a tenth of a second off the ideal line, and that's the margin that matters here. Focus on repeatability, respect the curbing, and don't overdrive the corners. That's how you'll improve at this street circuit."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What gear ratios should I use at St. Petersburg?",
+      "a": "St. Petersburg is a low-speed circuit, so you want short gear ratios to keep the engine in the power band during acceleration out of the corners. Final drive should be aggressive (shorter), and individual gears should reflect that tight corners don't give you long straights to build revs. Check your car's default setup as a baseline, then reduce the final drive ratio by 5-10% and test. If you're short-shifting into the corners, you've gone too far."
+    },
+    {
+      "q": "How do I avoid locking up on the brakes into Turn 1?",
+      "a": "Lock-up usually happens because you're braking too hard too late. Practice braking 5-10 meters earlier than you think you need to, then gradually reduce brake pressure as you turn in. Use your load-cell pedals to feel the pressure threshold where lock-up begins, then stay just short of that point. Also check your brake bias: if the rear tires are locking before the front, reduce rear brake bias slightly."
+    },
+    {
+      "q": "What tire compound should I run in the race?",
+      "a": "Most iRacing street circuit races use the softer compound to maximize grip in the slow corners. However, if your race is longer than 30 minutes, check how tire wear scales in your series. Sometimes a harder compound lasts longer with only a small loss in peak grip, making it faster over the full race distance. Test both compounds in practice and compare lap time consistency over 15-20 laps."
+    },
+    {
+      "q": "Is St. Petersburg harder or easier than other street circuits?",
+      "a": "St. Petersburg is considered moderately difficult compared to other street circuits in iRacing. It's tighter and lower-speed than Long Beach, which makes it less punishing on exits but more demanding on entry precision. It's slightly more forgiving than Narrow Road Atlanta due to wider corners in some sections. If you can be smooth and consistent here, you'll have good fundamentals for other street circuits."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}

@@ -1,0 +1,132 @@
+{
+  "slug": "dallara-p217-lmp2-iracing-guide",
+  "tag": "Car Guide · Endurance Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Dallara P217 LMP2 iRacing guide: setup, braking, fuel",
+  "description": "Master the P217 LMP2 prototype on iRacing. Brake markers, fuel strategy, and setup tweaks for sustained pace in endurance racing.",
+  "sections": [
+    {
+      "p": "The Dallara P217 LMP2 is a different animal from the GT cars most of us cut our teeth on. It's lighter, faster, and demands precision in a way that feels immediate. When I first ran it on iRacing, I found myself overdriving the entry into most corners because the chassis communicates so directly through the MOZA R9 that it's easy to mistake confidence for grip. The P217 rewards smooth inputs and punishes desperation. If you're moving to prototype racing or jumping into endurance events, this guide will save you from costly mistakes."
+    },
+    {
+      "p": "The P217 sits in the middle of the LMP2 field on iRacing. It is not the absolute fastest in qualifying trim, but it is consistent and, more importantly, durable over long stints. That consistency matters in a 6-hour race at Le Mans or a 4-hour grind at Spa."
+    },
+    {
+      "h2": "Brake markers and threshold braking"
+    },
+    {
+      "p": "Brake markers are everything in the P217 because the car's braking performance is so strong. I brake later than I ever did in GT cars, and I have to actively manage when I release the pedal to avoid locking the fronts. On my MOZA CRP2 load-cell pedals, I've learned that the sweet spot is around 85% brake pressure for most downshifts and corner entries. The margin between threshold and lock is narrow."
+    },
+    {
+      "p": "Set your brake markers 10 to 15 meters earlier than your initial thought, then work backward. Trail-brake into slow corners (Turn 1 at Le Mans, the tight stuff at Silverstone) and use the car's front end to rotate. The P217 has good brake bias adjustability, and I run around 53% front on road courses to keep the rears stable under trail braking without inducing understeer. If the car wants to slide under heavy braking, it's usually a sign that your brake bias is too rearward."
+    },
+    {
+      "tip": "Lock the fronts once and you'll feel it immediately through the wheel. The P217 gives you clear feedback, so use that to find the true limit rather than guessing. I set up brake assists in practice to find the exact threshold, then leave them in qualifying and racing.",
+      "tipLabel": "Brake feel feedback"
+    },
+    {
+      "h2": "Fuel strategy and consumption"
+    },
+    {
+      "p": "Fuel is the third driver in any endurance race, and the P217 drinks more than you'd expect for its size. Over a full stint, I see roughly 2.8 to 3.1 L/lap on a 8 to 9-minute circuit like Le Mans with moderate fuel save, depending on how aggressive I'm driving. That's enough to get 4 to 5 laps before a mandatory pit stop in most endurance events. Qualifying trim burns visibly more."
+    },
+    {
+      "p": "In a 6-hour race, I typically run a fuel save of 80% on my practice pace and accept a 1 to 1.5 second-per-lap time penalty to ensure I arrive at the pits with a buffer. Running on fumes teaches bad habits because you start braking earlier and coasting mid-corner, which destroys tire temperature. Instead, pick a realistic fuel load, set a conservative fuel-save multiplier in the setup, and drive consistently within that envelope. When fuel gets tight in the final 20 minutes, your muscle memory is already there."
+    },
+    {
+      "list": [
+        "Use practice stints to measure your own fuel consumption at 100% pace. Don't rely on baseline setups.",
+        "Plan pit stops around fuel windows, not just tire life. A well-timed fuel stop can avoid the traffic at the same moment a tire stop would.",
+        "If you're sharing the car with teammates, establish a target fuel consumption number and stick to it. Consistency across drivers prevents mid-race surprises.",
+        "Save 3 to 5 laps worth of fuel in reserve if the race goes green late. Running on empty in the final hour is a recipe for spin."
+      ]
+    },
+    {
+      "h2": "Tire management and compound choice"
+    },
+    {
+      "p": "The P217 uses a single tire compound for most iRacing endurance events, but tire temperature management is where many drivers leak time. The car is heavy enough that cold tires take 3 to 4 laps to reach operating window, and overheating them is easier than it seems in long stints. On my rig, I focus on smooth lines and consistent throttle application rather than brute force."
+    },
+    {
+      "p": "Tire pressures matter more than they do in GT cars because prototypes are lower slung and the suspension geometry changes more dramatically with aero load. I start with iRacing's baseline pressures and adjust by 0.2 bar if the tires feel either mushy or edgy. The P217 will tell you quickly if pressures are wrong, and the feedback through the MOZA R9 is immediate."
+    },
+    {
+      "p": "In the stint window (laps 15 to 35 of a long run), the tires hit a plateau where pace is steady. That's your money zone. Protect it by avoiding big slides and unnecessary weight transfer. A single spin costs you not just that lap, but three more while the tires cool and warm back up."
+    },
+    {
+      "h2": "Setup adjustments for pace and stability"
+    },
+    {
+      "p": "I start every session with iRacing's baseline setup and drive it for 20 minutes to understand the car's balance. The P217 is forgiving if you stay smooth, but it becomes nervous if setup is even slightly off. Overshooting with anti-roll bar changes or suspension stiffness is a common trap. Make one change, do three laps, feel the difference. Then decide if you need a second change."
+    },
+    {
+      "list": [
+        "Brake balance: 52 to 54% front, adjusting forward if you feel locking on entry, backward if the rear slides under hard braking.",
+        "Anti-roll bars: Start soft (2 to 3 clicks softer than baseline) and add stiffness only if the chassis feels sluggish in transitions.",
+        "Downforce: Higher wing angles improve stability but cost speed on straights. I run ~6 to 8 degrees of rear wing for road courses, adjusting for track length.",
+        "Ride height: Lower than you'd run in GT cars because the P217 wants to be planted. Stay within the green zone on the telemetry.",
+        "Differential: Open it slightly (20 to 30% on-power) to help rotation under acceleration out of slow corners."
+      ]
+    },
+    {
+      "tip": "If the car feels loose mid-corner after a setup change, don't immediately add anti-roll bar stiffness. Check your brake balance first. A bias that is too rearward will destabilize the rear during trail braking, making the car feel twitchy for the rest of the turn.",
+      "tipLabel": "Stability diagnosis"
+    },
+    {
+      "h2": "Qualifying vs. race pace"
+    },
+    {
+      "p": "Qualifying trim on the P217 is about 1.5 to 2.0 seconds per lap quicker than endurance pace. Most drivers go too light on fuel (2 laps) and turn the downforce up or the wings way down, which works for one lap but makes the car edgy in traffic. I qualify with 3 to 4 laps of fuel and keep the wing angles close to race setup. That gives me a realistic qualification time and means I'm not relearning the car for the race."
+    },
+    {
+      "p": "If you're in a team race with driver swaps, your qualifying lap matters for grid position, but the setup you leave for your teammate matters more. A one-tenth swing between drivers because of setup surprise creates chaos in your strategy. Communicate what the car needs and keep front-end balance predictable."
+    },
+    {
+      "h2": "Common mistakes and how to fix them"
+    },
+    {
+      "list": [
+        "Over-braking into technical sections: The P217 stops so fast that it's easy to arrive at a chicane with zero speed. Brake later but more gently, then use the setup to rotate the car, not the pedal.",
+        "Ignoring fuel windows: Running out of fuel 5 laps before your pit stop is fixable once. Twice, and you're wasting a race. Measure, plan, and execute.",
+        "Chasing pace too early in the stint: Cold tires feel dead. Spend the first lap at 95% pace to build heat, then push. You'll find more total lap-time.",
+        "Setting up the car for one condition: Le Mans stays cool and green. Spa changes conditions lap to lap. Learn the default setup deeply rather than tuning for one qualifying lap.",
+        "Not using the spotter: The P217 is quick enough that you can't look for traffic in your mirrors. Rely on your spotter or <a href=\"crew-chief-free-spotter-iracing.html\">Crew Chief for iRacing calls</a>."
+      ]
+    },
+    {
+      "h2": "Learning the P217 efficiently"
+    },
+    {
+      "p": "Spend your first practice sessions doing baseline laps with no setup changes. Thirty minutes on the baseline is worth more than two hours of random tweaks. You'll develop feel for how the car communicates and understand what you're actually changing when you adjust something. The P217 is communicative, and your job is to listen."
+    },
+    {
+      "p": "Move to the P217 after you've run at least 20 hours in GT cars on iRacing. The fundamentals of smooth inputs and tire management transfer directly, but the speed and feedback of a prototype will overwhelm you if you haven't built those habits yet. This is a car that rewards precision, and precision comes from thousands of repetitions at lower speed first."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What fuel save percentage should I use for a 6-hour race in the P217?",
+      "a": "Start with 80% fuel save and measure your actual lap times and consumption in practice. Most drivers run 75 to 85% fuel save depending on track length and stint length. The P217 consumes roughly 2.8 to 3.1 liters per lap at normal pace, so calculate your pit window based on track fuel consumption. If you're saving more than 90%, you're losing pace and will overheat tires from coasting."
+    },
+    {
+      "q": "How do I find my brake threshold without locking the fronts repeatedly?",
+      "a": "Set your brake pressure to 80% in practice and apply it on a long straight. You'll feel or hear the lock immediately through the wheel. Back off 2 to 3% and try again. Once you've found where lock begins, lock it once intentionally to feel the exact limit through your load-cell pedals. Then reset to 1 to 2% before that threshold. Your brake threshold will be repeatable at the same pressure across the session because you've trained your foot to find it."
+    },
+    {
+      "q": "Why does the P217 feel loose mid-corner after I adjusted my setup?",
+      "a": "Check your brake balance first. If it is too rearward, the rear will slide during trail braking and feel unstable for the entire turn. Shift 1 to 2% brake bias forward and test. If that does not fix it, then look at anti-roll bar stiffness or tire pressures. Most loose-feeling mid-corner instability traces back to braking setup, not suspension stiffness."
+    },
+    {
+      "q": "Should I qualify with a different setup than I race with in the P217?",
+      "a": "Keep wing angles and brake bias the same. Qualify with 3 to 4 laps of fuel instead of light fuel to keep the car balanced and familiar for the race. Qualifying pace will be 1.5 to 2.0 seconds slower than absolute max, but you'll have continuity of feel between qualifying and race, which matters more in team events where you are handing the car to a teammate."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}

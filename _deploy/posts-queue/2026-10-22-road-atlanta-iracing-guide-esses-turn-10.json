@@ -1,0 +1,141 @@
+{
+  "slug": "road-atlanta-iracing-guide-esses-turn-10",
+  "tag": "Track Guides · iRacing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Road Atlanta iRacing Guide: The Esses and Braking for Turn 10",
+  "description": "Master Road Atlanta's technical Esses section and late-apex braking into Turn 10. Real setup and line guidance from seat time on the MOZA R9.",
+  "sections": [
+    {
+      "p": "Road Atlanta rewards precision over aggression. The Esses—turns 5 through 9—sit in the middle of the track and demand rhythm and smooth inputs. Turn 10 is where most drivers leak time or pick up track limits. I've spent enough laps on my MOZA R9 rig to know where the car wants to go and where it will betray you. This guide focuses on the line, braking, and the small setup adjustments that make the difference between a messy run through the Esses and a composed, confident entry into Turn 10."
+    },
+    {
+      "p": "Road Atlanta is a fast, flowing circuit with little margin for error. The Esses are deceptively challenging because they reward consistency and punish hesitation. Turn 10 follows immediately after, and that's where a poor exit from the Esses ruins your braking point and corner speed. Understanding the geometry and how your car flows through this section separates competitive drivers from the rest."
+    },
+    {
+      "h2": "The Esses: Line and Rhythm"
+    },
+    {
+      "p": "Turns 5, 6, 7, 8, and 9 form a connected section that requires one clean mental flow. I think of it as a single entity, not five separate corners. The key is mid-corner acceleration and letting the car roll through with minimal steering input."
+    },
+    {
+      "p": "Turn 5 (the left-hander after the straightaway) is about trail-braking into a late apex. Brake as you approach the turn, but continue braking all the way to the apex, then start accelerating out. Most drivers brake too early and waste corner speed. On my rig, I brake hard on entry, then modulate brake pressure to carry speed deeper. The road curves left, but you're thinking about apex placement for Turn 6 already."
+    },
+    {
+      "p": "Turn 6 (right-hander) flows immediately after Turn 5. The temptation is to tip in early and attack it. Resist that. Let the car settle, get light on the brake, and apex late. Once you're committed to the apex, roll the steering back out and prepare for Turn 7. This is where the car teaches you rhythm. If you're jerky, the car will fight you. If you're smooth, it floats through."
+    },
+    {
+      "p": "Turns 7, 8, and 9 are a left-right-left complex. This is where most drivers lose the run. The common mistake is over-correcting and running wide. Think smoothly: touch the apex of 7, roll off, let the car transition, keep steering inputs minimal, and flow through 8 and 9 with minimal steering angle change. The car wants to go to these apexes naturally if you let it."
+    },
+    {
+      "h3": "Esses setup priority"
+    },
+    {
+      "list": [
+        "Anti-roll bars (front and rear): A moderately stiff bar helps the car stay composed through direction changes. I run a touch stiffer than baseline to reduce mid-corner bottoming and keep weight transfer predictable.",
+        "Dampers (bump and rebound): Stiffer bump helps the car not dive into each corner. Balanced rebound keeps it from oscillating. Start at baseline and add ~10% front bump if the car feels too loose mid-corner.",
+        "Tire pressure: ~27-28 psi (cold) front, ~28-29 psi rear on most GT cars. The Esses are high-speed direction changes, so you need enough pressure to prevent overheating but not so much the car feels numb.",
+        "Brake bias: Keep it 53-55% front. You're not doing extreme trail-braking into every corner, just modulating into the Esses. A rear-biased setup will lock the rear when you brake late into Turn 5."
+      ]
+    },
+    {
+      "tip": "Smooth hands win the Esses. On my MOZA R9, I can feel mid-corner understeer or oversteer through the FFB. If the wheel gets heavy and twitchy, you're inputting too much steering. Let off the wheel pressure, breathe, and apex later. The car will tell you when you're right.",
+      "tipLabel": "Smoothness over speed"
+    },
+    {
+      "h2": "Turn 10: The Braking Challenge"
+    },
+    {
+      "p": "Turn 10 comes up fast after the Esses. It's a hairpin right-hander that catches many drivers off guard because the exit from Turn 9 doesn't naturally set you up for a proper braking zone. You'll turn right out of 9, then need to shift direction and brake hard left for 10. This sounds simple but the car is still settling from the Esses when you need to commit to 10."
+    },
+    {
+      "p": "The braking point into Turn 10 sits roughly 50 meters before the apex marker on the track. In most GT cars, that's around 160-180 kph on the downshift to third or fourth depending on series and car. The challenge is that you're still exiting Turn 9 when you need to start braking. Poor exit speed from 9 means you won't have room to brake, and you'll carry too much speed into 10 and run off track."
+    },
+    {
+      "p": "Here's the real line: run a late apex on Turn 9 to build exit speed. Let the car settle for a half-second after the Turn 9 apex, then brake hard for Turn 10. You should be at full brake pressure by the time you approach the 50-meter mark. The braking zone is short, maybe 100-120 meters of heavy braking. Downshift into third, trail-brake to the apex of 10, and let the car turn in late. The apex of Turn 10 is further to the right than most drivers think. Aim for the inside of the curbing and turn in late, around 50-60 kph."
+    },
+    {
+      "h3": "Braking technique on load-cell pedals"
+    },
+    {
+      "p": "I use MOZA CRP2 load-cell pedals, and they've taught me how much pressure I'm actually applying. Into Turn 10, full brake pressure is roughly 90-95 kg of force on my pedals. I build pressure quickly on the brake, then modulate it as I approach the apex. The modulation is key: if you stay on full brake all the way to the apex, the car will understeer and run wide. Start releasing brake pressure around 20 meters before the apex, and the car will tighten its line."
+    },
+    {
+      "list": [
+        "Build brake pressure in 0.3 seconds: You're not slamming the brakes. Progressive pressure is smoother and more predictable.",
+        "Peak pressure holds for 1-1.5 seconds: This is your heaviest braking zone, roughly 150 kph to 80 kph.",
+        "Release and modulate: Start unwinding brake pressure 20-30 meters before the apex. Ease off smoothly so the car doesn't suddenly grip up and oversteer.",
+        "Apex speed: Turn 10 demands around 50-60 kph on entry. Faster than that and the car runs wide. Slower and you've left time on the table on entry but can still make it up on exit."
+      ]
+    },
+    {
+      "h2": "Avoiding the Off-Track Trap"
+    },
+    {
+      "p": "Road Atlanta's track limits at Turn 10 are tight. The curbing extends just past the apex, and the runoff beyond is barely 3-4 car-widths before grass. On my rig, I place a reference line at the entry to the corner and the apex. If I'm outside that line at the apex, I'm too fast and will run off. Most drivers brake too late or don't modulate enough, and Turn 10 becomes an expensive off-track excursion."
+    },
+    {
+      "p": "The out-of-bounds zone starts around 2 meters past the right curbing. That means if your apex is even 1-1.5 meters too far right, you'll get a track-limit warning. Multiple violations and you'll face a penalty. To stay clean: brake earlier than you think, trail-brake to a late apex (not an early one), and trust the modulation. The car will feel planted and compliant if you're smooth."
+    },
+    {
+      "tip": "Use a visual reference: Pick a marshal stand, sign, or pylon on the entry. Brake at that marker every lap. Consistency beats last-lap heroics. Once that braking point is muscle memory, you can fine-tune from there.",
+      "tipLabel": "Consistent braking reference"
+    },
+    {
+      "h2": "Exit Speed and the Run to Turn 11"
+    },
+    {
+      "p": "The exit of Turn 10 flows into a short straight and then Turn 11 (another right-hander). Turn 10 exit speed matters because you need momentum to carry into 11. A poor Turn 10 exit—slow speed, wide exit line—means you lose 2-3 kph onto the straight, and that compounds into an even slower entry into 11."
+    },
+    {
+      "p": "Focus on accelerating hard out of Turn 10 once you pass the apex. You should be at full throttle by 100-120 meters past the apex. On my MOZA R9, the FFB lightens once I'm past the apex and starting to unwind the steering. That's your cue to apply throttle aggressively. If you're still modulating brakes or steering, you're not accelerating yet. Separation is key: brake and turn, then accelerate hard when the car is pointed downtrack."
+    },
+    {
+      "h2": "Car Setup for Turn 10 Specifically"
+    },
+    {
+      "p": "Turn 10 is a hard braking corner followed by a hard turn-in. That demands trail-brake capability and good front-end grip. Unlike the Esses, Turn 10 doesn't benefit from super-stiff anti-roll bars. Instead, tune for turn-in response and front-end bite."
+    },
+    {
+      "list": [
+        "Brake balance: 54-56% front (depending on car and tire compound). You need strong front braking here without locking the rear.",
+        "Front anti-roll bar: Moderate stiffness (~60-70% of baseline) for responsive turn-in without being twitchy. The car should feel eager to turn when you trail-brake.",
+        "Differential lock (on power): 70-80%. Turn 10 exit is a hard-acceleration zone. A locked diff will help you apply power without the inside wheel spinning.",
+        "Ride height: Stock or slightly lower (2-5 mm). Lower ride height improves cornering stiffness and reduces body roll under hard braking and turning."
+      ]
+    },
+    {
+      "h2": "Putting It Together: A Lap"
+    },
+    {
+      "p": "You exit Turn 9 with good speed, around 140 kph. You let the car settle for half a second. At the 50-meter marker before Turn 10, you begin progressive braking. By 40 meters out, you're at peak brake pressure (90-95 kg of force on load-cell pedals). You downshift and carry that braking deep into the corner. At 20 meters before the apex, you start releasing brake pressure and increasing steering input. The apex comes at 55 kph, and you're trailed off the brakes. Once past the apex, you unwind the steering and feed in full throttle. By 100 meters past the apex, you're at full power and rolling onto the straight toward Turn 11."
+    },
+    {
+      "p": "That's the run. Practice it in open practice first. Get your braking point dialed and repeatable. Once it's muscle memory, you can experiment with trail-brake depth and apex speed. The Esses and Turn 10 are where Road Atlanta separates amateurs from racers. Nail this section, and the rest of the lap feels easier. Master it, and you're competitive."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What gear should I be in entering Turn 10?",
+      "a": "Most GT cars use third or fourth gear. Start in fourth if your car carries 180+ kph on entry, or third if under 160 kph. Downshift once as you begin braking, and hold that gear until you pass the apex. Heel-toe the downshift if your car is set up for it and you're comfortable. If not, a simple one-downshift works fine."
+    },
+    {
+      "q": "How late can I brake into Turn 10 before I run off track?",
+      "a": "The practical limit is around 40-50 meters before the apex. Braking any later and you won't have enough stopping distance or turn-in capability to make the corner. Most drivers find their limit is 45-50 meters. Start conservative and work backward. If you're consistently hitting the apex at 55-60 kph without running off, you've found your sweet spot."
+    },
+    {
+      "q": "Should I apex Turn 10 early or late?",
+      "a": "Late apex. The corner is a 90-degree right-hander, and a late apex gives you a smoother line and earlier throttle application on exit. Early apex tempts you to turn in too soon, which tightens the line and reduces exit speed. Aim for the inside curbing and turn in at the last moment, around 50-60 kph."
+    },
+    {
+      "q": "Do the Esses setup and Turn 10 setup conflict?",
+      "a": "Slightly, but you can find a balance. The Esses want smooth, mid-corner compliance and balanced dampers. Turn 10 wants responsive turn-in and strong front braking. Use moderate anti-roll bar settings (not too stiff, not too soft), keep dampers balanced, and prioritize brake balance at 54-56% front for both sections. A neutral baseline with light adjustments works better than radical changes."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}

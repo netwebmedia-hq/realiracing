@@ -1,0 +1,181 @@
+{
+  "slug": "iracing-practice-week-structured-improvement",
+  "tag": "iRacing Tips · Training",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "How to structure a week of iRacing practice for genuine improvement",
+  "description": "A day-by-day practice plan that builds skill systematically, not random grinding. Real improvement comes from deliberate focus.",
+  "sections": [
+    {
+      "p": "Most sim racers practice the same way: jump into a car, run laps, get frustrated, then log off. No wonder progress feels flat. I've been racing on my MOZA R9 for thousands of hours, and the biggest difference between drivers who improve and those who plateau is how they structure their week. Random practice burns time. Deliberate practice builds muscle memory, racecraft, and consistency."
+    },
+    {
+      "p": "A structured week separates learning into distinct focus areas. You don't learn braking technique, tire management, and race craft all at once. Each gets a dedicated session with a clear goal. This post maps a five-day plan I've used on my own rig to move from middle-of-the-field to front-running in multiple series."
+    },
+    {
+      "h2": "Why weekly structure matters"
+    },
+    {
+      "p": "Your brain learns motor skills through repetition with focused feedback. Jumping between cars, tracks, and techniques creates interference. You practice A on Monday, B on Tuesday, and C on Wednesday, then your muscle memory fights itself because each context is different."
+    },
+    {
+      "p": "A structured week does three things. First, it reduces cognitive load. You know what you're practicing today, so you can obsess over one problem instead of solving five at once. Second, it lets skills layer. Your Thursday race craft session builds on Monday's braking work because your body already knows how to trail brake. Third, it creates accountability. You can measure a week, spot what worked, and adjust next week."
+    },
+    {
+      "tip": "Improvement is not linear. A week of focused practice often feels slower than random grinding because you're learning, not just running fast. Expect your lap times to dip on learning days. That's the point.",
+      "tipLabel": "Progress does not look like speed"
+    },
+    {
+      "h2": "Monday: Technical foundation day"
+    },
+    {
+      "p": "Start your week with the mechanical basics. Pick one corner or one braking zone on the track and dissect it. If you're preparing for a race, choose a high-consequence corner. If you're building general skill, pick something that appears in multiple series on the calendar."
+    },
+    {
+      "p": "Load your car in hot lap mode, not race conditions. Set fuel to minimum, tires to fresh, and run 15 to 20 laps focusing only on the apex, entry speed, and exit grip. Don't chase laptimes yet. Film a replay and watch your inputs. Check your steering angle, throttle application, and how your body position changes mid-corner."
+    },
+    {
+      "list": [
+        "Turn in point: Are you hitting it the same lap to lap, or does it drift around by half a car width?",
+        "Braking point: Dial in the latest you can brake and still make the corner. Use the in-car reference points, not brake indicator zones.",
+        "Apex: Match your speed to the radius. If you're slow, you're turning in too early or too late.",
+        "Exit: Build throttle smoothly as the steering unwinds, not after."
+      ]
+    },
+    {
+      "p": "Do not jump to full race distance today. The goal is groove depth, not race pace. Forty minutes of focused single-corner work beats three hours of half-aware lapping."
+    },
+    {
+      "h2": "Tuesday: Tire management exploration"
+    },
+    {
+      "p": "Tuesday is about understanding how tires talk to you. Run the same track or a different one if you're racing multiple series, but run full distance. Start with a long-run pace that's 85 to 90 percent of your best lap time. Just cruise, listen to the tires, and observe how grip changes."
+    },
+    {
+      "p": "Run three separate long stints of 20 laps each with five-minute breaks. Watch your laptime trace on the telemetry. Most drivers see their fastest laps clustered around laps 8 to 15, then drop off. That dropoff is tire degradation. On the second and third stint, notice how much pace you've lost and when. This is your tire delta."
+    },
+    {
+      "p": "For endurance racing, note how fuel load affects your pace. Some drivers don't understand that 100 liters of fuel adds half a tenth to your laptime and changes brake balance. Do two more stints with heavy fuel to feel the difference."
+    },
+    {
+      "list": [
+        "Document your tire drop-off in a spreadsheet (lap time by lap number) so you can compare across weeks",
+        "Test different tire compound strategies if your series offers them",
+        "Practice fuel-saving techniques on the final stint of each long run",
+        "Watch a telemetry overlay of laps 5, 12, and 18 to see how pedal input changes as grip drops"
+      ]
+    },
+    {
+      "p": "Don't be fast on Tuesday. Be consistent and informed."
+    },
+    {
+      "h2": "Wednesday: Qualifying day"
+    },
+    {
+      "p": "Qualifying has its own skills. Pace matters in a race, but in time trials, every single lap is a push lap. If you race on Saturday, Wednesday is when you practice Saturday's specific challenge."
+    },
+    {
+      "p": "Set your session to qualify mode (10-15 minutes of track, limited fuel). Do five timed attempts with full resets in between. Your first lap will be garbage. Your second and third will be learning. Your fourth might be your best. Your fifth will tell you if you can repeat it under pressure."
+    },
+    {
+      "p": "After each attempt, watch the replay. Look for one small mistake: a tenth of steering correction, a braking point that's too early, a throttle application that's too aggressive. Adjust one variable. Don't overhaul your entire line. Track your best times and your ability to repeat within a tenth."
+    },
+    {
+      "p": "If you struggle with qualifying consistency, this is your diagnostic. Some drivers' laptimes swing from 1:23.5 to 1:24.1 because their entry speed is all over the place. Others nail the entry but run wide at exit. Find your variance and target it next Monday."
+    },
+    {
+      "tip": "Qualifying is about peak performance, not consistency. Race craft is consistency under pressure. These are different skills and need different practice.",
+      "tipLabel": "Qualifying and racing use different mental gears"
+    },
+    {
+      "h2": "Thursday: racecraft and traffic"
+    },
+    {
+      "p": "Pace means nothing if you can't overtake, defend, or avoid getting punted. Thursday is racecraft day. Set up a practice race at your home track, grid up in the middle of the field, and race full distance against AI.</p>"
+    },
+    {
+      "p": "Your goal is not to win. It's to execute specific racecraft tasks. Session one: practice overtaking. Get a car up to third or fourth, then pass twice cleanly. Which corners are passable? From which line can you exit faster? Session two: practice defending. Get to the front or near it, then defend from AI. Where do you leave room? Where do you hold firm?</p>"
+    },
+    {
+      "p": "Session three is chaos. Run a full 30-minute race with incident penalty counting, weather if applicable, and fuel/tire rules matching your actual race. This trains you to execute pace while managing traffic, risk, and fatigue."
+    },
+    {
+      "list": [
+        "Record each race and watch your overtakes back. Did you brake too early, apex too wide, or exit too slow? Count how many passes you completed cleanly versus ones that generated contact.",
+        "Time your overtakes. Most drivers take 2-3 corners to pass. If you're taking 5, you're not committed.",
+        "Practice blue-flag positioning. Know where cars overtake you and learn to hit your lines even when being chased.",
+        "End the day with one clean race, no mistakes, no incidents. This reinforces good habits."
+      ]
+    },
+    {
+      "p": "Thursday is usually my favorite session all week because you finally drive like a racer instead of a driver."
+    },
+    {
+      "h2": "Friday and beyond: simulation and mental prep"
+    },
+    {
+      "p": "Friday is optional but valuable. If you race on Saturday or Sunday, use Friday as a simulation day. Run a full race distance in race conditions (weather, fuel, tires, grid position matching the actual event). Don't push hard. Run race pace. The goal is to dial in your mental approach and identify any setup tweaks needed."
+    },
+    {
+      "p": "If you're not racing that weekend, Friday is a light day. Run a half-hour stint at pace, check that your rig feels normal (MOZA R9 damping, brake force, wheel angle all set), and save tire. Recovery is part of training."
+    },
+    {
+      "p": "Saturday and Sunday are race days. Treat them as races. One or two events max. If you're running league or time trials, show up focused and use the experience to refine next week's plan."
+    },
+    {
+      "h2": "Tracking progress across weeks"
+    },
+    {
+      "p": "Progress without measurement is hope, not improvement. After your first week, start a simple log. Write down one metric per day: your best lap in Monday's technical session, your tire drop-off in Tuesday's long runs, your qualifying consistency on Wednesday, your clean overtakes on Thursday."
+    },
+    {
+      "p": "Week two, run the same sessions and compare. Your Monday technical corner should feel smoother. Your Thursday racecraft should show fewer incidents and more completed passes. Your Wednesday qualifying variance should shrink. These small improvements compound."
+    },
+    {
+      "p": "Every four weeks, do a full test session. Run a 30-minute race distance with a fresh setup and no distractions. If your laptime is consistently a tenth faster than four weeks ago, the structure is working. If it's flat, change one variable. Maybe Monday's technical focus needs more time, or Thursday's racecraft needs different opponents.</p>"
+    },
+    {
+      "tip": "A structured week works for beginner, intermediate, and advanced drivers. The content changes, not the format. Rookies drill apexes on Monday. Aliens drill racecraft under pressure. The system scales.",
+      "tipLabel": "Structure works at any level"
+    },
+    {
+      "h2": "Common mistakes in practice structure"
+    },
+    {
+      "p": "Most drivers fail at structure because they abandon it under pressure. Sunday rolls around, you're 0.3 seconds off the pace, so Monday you skip technical work and just run laps. That's the moment structure matters most. Pace plateaus because something mechanical broke down weeks ago. Go back to Monday and find it.</p>"
+    },
+    {
+      "p": "Another mistake is mixing sessions. Running both braking practice and racecraft in one day scrambles your learning. Your brain can't commit to both. Pick one focus per day and fully commit. If your race is Saturday and you feel unprepared Wednesday, that's information for next week, not an excuse to cram.</p>"
+    },
+    {
+      "p": "Finally, avoid the trap of matching your actual race schedule inside practice. If you race Wednesday evenings, don't practice Wednesday evenings every week. Your week should be different from your race schedule so you can focus without fatigue or stress. Practice fresh, race tired.</p>"
+    },
+    {
+      "p": "A structured week is not a prison. It's a map. Some weeks you'll need more time on Thursday because you're racing a series you haven't done in months. Some weeks Monday will reveal a setup problem, so you spend extra time there. The framework stays, the content flexes. After four to five weeks of consistent structure, improvement stops feeling like hope and starts feeling like evidence. That's when you know it's working."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What if I don't have five days a week to practice?",
+      "a": "Run a three-day cycle instead. Monday is technical plus tire work combined (focus on one corner, then run a 15-lap stint). Wednesday is qualifying. Thursday is racecraft. Skip Tuesday and Friday. This works especially well if you're racing on weekends. Three focused days beat five unfocused ones."
+    },
+    {
+      "q": "Should I change cars or tracks mid-week?",
+      "a": "No. Pick one car and one track for the full week. This removes variables and lets you stack learning. Once you can run that car on that track with consistency, move to the next. Switching cars mid-week fragments your skill development because the inputs are completely different."
+    },
+    {
+      "q": "How long does it take to see real improvement with this structure?",
+      "a": "Three weeks is when you'll feel it. Four weeks is when others notice. By week eight, it's obvious. Don't expect a tenth drop in week one. Expect smoother apexes, fewer incidents, and more consistent laptimes. Speed follows consistency."
+    },
+    {
+      "q": "Should I use setup shops or keep adjusting my own setup during the week?",
+      "a": "Keep the same setup all week. Setup shops are great for a baseline, but changing setup mid-week mixes two variables: the setup and your driving. You can't tell if you're faster because you're better or because the setup changed. Once you've locked in a good baseline, practice driving. Setup can wait until next week."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}

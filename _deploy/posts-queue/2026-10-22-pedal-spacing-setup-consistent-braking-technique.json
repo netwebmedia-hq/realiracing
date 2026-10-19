@@ -1,0 +1,149 @@
+{
+  "slug": "pedal-spacing-setup-consistent-braking-technique",
+  "tag": "Setup Guides · Pedals",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Pedal Spacing and Angle Setup for Consistent Braking",
+  "description": "Dial in your pedal geometry to build muscle memory and brake smoothly. How spacing, angle, and ergonomics cut variance from lap to lap.",
+  "sections": [
+    {
+      "p": "Braking consistency is where lap times are won and lost in iRacing. I can feel the difference between a 0.1-second spread in my brake application and a 0.3-second spread across a session. That variance comes from setup, from line choice, and from how my feet meet the pedals. On my MOZA R9 rig with load-cell pedals, I found that pedal spacing and angle matter as much as any brake bias number."
+    },
+    {
+      "p": "Most sim racers focus on brake pressure curves and pedal calibration. Those things matter. But before you spend an evening tuning sensitivity, spend an afternoon getting the geometry right. When your pedals are positioned to match your natural leg geometry, your brain stops fighting the hardware and starts trusting it. That trust is where consistency lives."
+    },
+    {
+      "h2": "Why pedal spacing and angle matter"
+    },
+    {
+      "p": "Think of pedal spacing as the distance between your brake and throttle pedals. Think of angle as the tilt of each pedal face relative to the floor. Together, they dictate how much your leg has to move to transition from throttle to brake and back again. A small adjustment in either dimension changes how naturally your foot finds each pedal during a 150 mph braking event."
+    },
+    {
+      "p": "On my rig, I use MOZA CRP2 load-cell pedals mounted to a fixed aluminum cockpit. The pedals are adjustable on their mounting plate, and the plate itself can be angled. When spacing was too narrow, my foot would catch the brake pedal while still on throttle, creating an accidental stab. Too wide apart, and I could not modulate brake pressure smoothly because my leg had to stretch. The angle issue was more subtle. If the pedals tilted too far back, the load cell faced a perpendicular foot angle that made progressive pressure harder to sense."
+    },
+    {
+      "tip": "Pedal spacing and angle changes cost nothing. Your first session after an adjustment will feel strange. Give yourself 10 laps to adapt before deciding if the change helped.",
+      "tipLabel": "Give it time"
+    },
+    {
+      "h2": "Finding the right brake-to-throttle spacing"
+    },
+    {
+      "p": "Start by measuring. I place my heel on the throttle pedal and note where the ball of my foot lands. That is where my brake should sit. In my case, that measurement is about 65 to 75 mm from throttle center to brake center. Your measurement will be different depending on shoe size and leg length."
+    },
+    {
+      "p": "The practical range for most adults is 60 to 90 mm. Anything tighter and heel-toe becomes tough. Anything wider and smooth transitions require your leg to work harder during trail braking. I landed on 70 mm because my throttle modulation happens through ankle motion, not big leg movement. If you use more leg rotation, you may prefer wider spacing."
+    },
+    {
+      "p": "Test this one dimension at a time. Adjust spacing, run a practice session, then do a time trial. Note your lap variance and your subjective feel for the pedal transition. After 20 minutes, make a small change and repeat. Once spacing feels natural, move to angle."
+    },
+    {
+      "h2": "Pedal angle and progressive pressure feel"
+    },
+    {
+      "p": "Angle is where most racers miss an opportunity. The brake pedal face should be perpendicular to the line your foot naturally travels during braking. On my rig, that means a slight forward tilt, roughly 5 to 10 degrees from parallel to the floor. The MOZA CRP2 load cells respond linearly to pressure, but only when the force vector aligns with the pedal's sensor axis."
+    },
+    {
+      "p": "If your brake pedal tilts too far back, you end up pressing down and forward, and the load cell only sees the vertical component of that force. You lose feel for small pressure changes. If it tilts too far forward, your ankle has to hyper-extend to reach full pressure, and that tension kills smooth modulation."
+    },
+    {
+      "p": "I found my sweet spot by sitting in my rig with feet planted and simulating a braking motion at half pressure. The pedal face should feel like an extension of your shin. Adjust the cockpit platform angle or the pedal mount until that line feels straight. Then run a session. If brake modulation feels numb, try another degree or two of tilt."
+    },
+    {
+      "h2": "Heel position and the throttle-brake transition"
+    },
+    {
+      "p": "Many sim racers ignore heel placement, but I notice it every time I adjust the pedal tray. On road courses, my heel sits on the throttle pedal at all times. When I brake, I lift my heel slightly and roll my foot onto the brake. The brake pedal angle needs to support that motion without forcing my heel off the throttle or requiring a large foot rotation."
+    },
+    {
+      "p": "If your heel has to slide too far or the angle is too steep, you will not return to throttle as smoothly. The pedal spacing and angle should create a natural pendulum motion from throttle to brake and back. Practice a few smooth transitions in a parking lot with your rig. Your foot should move like you are clicking a toggle switch, not lifting your leg."
+    },
+    {
+      "tip": "Film yourself braking on a track camera. Watch your ankle and knee. You should see smooth, small motions, not large leg swings or heel bouncing.",
+      "tipLabel": "Use video to check form"
+    },
+    {
+      "h2": "Throttle angle and modulation consistency"
+    },
+    {
+      "p": "The throttle pedal matters just as much. I angle mine to match the brake, so both face the same plane. The throttle angle affects how easily you can maintain a steady 50% application through a long corner. If the pedal face is too steep, minute pressure changes become harder. If it is too flat, your foot can slip at high speed."
+    },
+    {
+      "p": "On my rig, both pedals sit at roughly 8 degrees forward tilt. That angle feels natural to my ankle and lets me hold consistent pressure without fatigue. Some racers prefer a flatter setup, especially those who use heel-toe braking and need room for foot movement. Find the angle that lets you hold a mid-range throttle position for 30 seconds without your foot sliding or your ankle tiring."
+    },
+    {
+      "h2": "Testing and dialing in your geometry"
+    },
+    {
+      "p": "Here is a structured approach to finding your setup. Start at a familiar track where you already have a baseline setup and know the car is balanced. Do not change anything else. Run a 10-lap practice session and note your average lap time and your standard deviation. That deviation is your baseline variance."
+    },
+    {
+      "olist": [
+        "Adjust brake-to-throttle spacing by 5 mm. Run another 10 laps. Compare lap variance. If it improved, keep the change and try 5 mm more. If it got worse, undo it and go the other direction.",
+        "Once spacing feels locked, adjust brake pedal angle by 2 degrees. Run 10 laps. Hold the best angle.",
+        "Adjust throttle angle by 2 degrees. Run 10 laps. Compare variance again.",
+        "Leave everything unchanged for a full hour and run a race. Track how many times you catch yourself modulating mid-corner or overshooting braking zones. Fewer corrections means better geometry."
+      ]
+    },
+    {
+      "p": "After dialing in your geometry, your brake variance should shrink. I went from a 0.3-second spread across 20 laps to a 0.15-second spread just by adjusting spacing and angle. The lap times themselves did not change much, but the consistency gave me confidence to push harder on the next lap without fear of overshooting. That confidence builds pace faster than any single setup change."
+    },
+    {
+      "h2": "Common mistakes and how to avoid them"
+    },
+    {
+      "list": [
+        "Spacing too close. Your foot catches between pedals during trail braking or you accidentally tap brake while trailing throttle. Test by doing a slow 180-degree drift and watch if your foot naturally moves from one pedal to the other.",
+        "Pedal angle too steep. Progressive pressure feels binary. Increase spring rate thinking it will help, then blame the load cell. The issue is usually geometry, not hardware.",
+        "Different angles on brake and throttle. Your ankle has to re-orient when you transition, killing smoothness. Keep both at roughly the same tilt.",
+        "Forgetting to account for shoe type. Racing shoes have a thin sole. Street shoes have more cushioning. If you always wear one type, set up the pedals for that shoe. If you mix them, you will get inconsistent pedal feel."
+      ]
+    },
+    {
+      "p": "I also made the mistake of adjusting spacing and angle at the same time. That created a confounding variable. I could not tell which change actually helped. Now I change one thing, run 10 laps, then decide. It adds a couple of hours to the initial setup, but I own the geometry instead of guessing."
+    },
+    {
+      "h2": "Pedal geometry and fatigue during endurance racing"
+    },
+    {
+      "p": "In short races, pedal comfort is secondary to consistency. In a 4-hour endurance race, comfort becomes a performance factor. Bad geometry makes your ankle work harder. After 90 minutes, that fatigue affects your modulation. Your braking starts to vary. You miss apexes because your leg is tired, not because you lost pace."
+    },
+    {
+      "p": "When I first set up my MOZA CRP2 pedals, I prioritized feel over ergonomics. After a long season, I went back and adjusted the angle to reduce ankle strain. My lap times did not change. My variance did not drop. But I arrived at driver swaps fresher and could push harder in stints three and four. For endurance racing, think of geometry as injury prevention."
+    },
+    {
+      "h2": "When to revisit your pedal geometry"
+    },
+    {
+      "p": "Your pedal setup should be stable year to year. I do not change spacing or angle between seasons unless something breaks or I change cockpits. That stability lets muscle memory build. But if you find yourself fighting the pedals, overshooting braking zones consistently, or feeling fatigue in your ankle after two hours, revisit geometry before changing brake curves or load-cell sensitivity."
+    },
+    {
+      "p": "One adjustment often fixes several problems at once. When I widened my brake-to-throttle spacing by 5 mm two years ago, I thought I was solving a modulation issue. Turned out I was also reducing foot cramp and cutting my brake overshoots in half. Start with geometry. Everything else flows from there."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the ideal brake-to-throttle spacing?",
+      "a": "Most racers find 60 to 90 mm works well. Start at roughly 70 mm, or use the natural distance your foot travels from throttle to brake in a smooth motion. Adjust in 5 mm increments and test before settling. Your shoe size, leg length, and driving style all influence the ideal spacing."
+    },
+    {
+      "q": "How much should I tilt the brake pedal?",
+      "a": "A slight forward tilt of 5 to 10 degrees typically works best. The brake pedal face should feel perpendicular to your natural braking foot motion. If the angle is too steep, progressive pressure feel suffers. If too flat, your foot can slip. Test by simulating a half-pressure brake input and adjusting until the motion feels smooth and natural."
+    },
+    {
+      "q": "Should throttle and brake pedals have the same angle?",
+      "a": "Yes. Matching angles on both pedals lets your ankle work in a single plane, which improves consistency. If one is tilted differently, your ankle has to re-orient when transitioning between pedals. This kills smooth modulation. Keep both at roughly the same tilt angle."
+    },
+    {
+      "q": "How long does it take to adapt to a new pedal geometry?",
+      "a": "Most racers need 10 to 15 laps to feel comfortable with a new spacing or angle. Your brain is building new muscle memory. Give yourself a full practice session before evaluating whether the change helped. If something feels very wrong after 20 laps, undo it and try a smaller adjustment instead."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2",
+    "cockpit"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}

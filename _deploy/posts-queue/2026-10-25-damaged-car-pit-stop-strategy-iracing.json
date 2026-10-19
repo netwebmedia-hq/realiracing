@@ -1,0 +1,127 @@
+{
+  "slug": "damaged-car-pit-stop-strategy-iracing",
+  "tag": "iRacing Tips · Race Craft",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "Damaged Car Strategy: When to Pit and When to Push Through",
+  "description": "Learn when limping a damaged car to the pits costs you more time than carrying on. Real trade-offs for endurance racing.",
+  "sections": [
+    {
+      "p": "I've made the mistake of pitting for repairs that didn't need to happen yet, and I've made it worse by staying out too long after a door flick into the kerb. Damage in iRacing is not a binary state. Your car gets slower incrementally, and the decision to pit is not about whether damage exists but whether the time spent in the pit box erases the time you lose to aerodynamic drag, downforce loss, or handling imbalance over the remaining stint."
+    },
+    {
+      "p": "The real calculation is simple on paper but demands honest telemetry reading in practice: measure the pace delta between your current damaged state and your baseline, multiply that by the laps until your next planned stop, then subtract pit time plus the time gained by a fresh car. If the pit window saves you time overall, pit. If it costs you, push the damage until the next scheduled stop or until the car becomes genuinely undriveable. The spotter call or a damage report tells you damage exists. Telemetry tells you whether it matters."
+    },
+    {
+      "h2": "How iRacing damage actually slows you"
+    },
+    {
+      "p": "iRacing damage does not simulate a car limping around the track making noise. Aerodynamic damage reduces downforce and increases drag. A crumpled front wing or a bent rear element changes your car's balance and braking performance. Front-end contact may alter suspension geometry enough that your braking point shifts by half a car length. Side-door contact or a tap into the wall does not always show visible cosmetic damage in the telemetry view, but it can roll the car slightly or compress a suspension arm into an odd ride height."
+    },
+    {
+      "p": "The pace loss from this damage is measurable but not uniform across the track. On a tight, downforce-dependent circuit like Monaco, a bent rear wing costs you 0.3 to 0.5 seconds per lap. On a low-downforce oval or a long, open road course, the same damage might cost 0.1 to 0.2 seconds. A suspension geometry change that affects your line through fast corners can stack up to a full second over a lap if the car now understeers or oversteers mid-corner."
+    },
+    {
+      "h2": "The pit stop math"
+    },
+    {
+      "p": "A pit stop in iRacing takes time. The crew chief spotter tells you the estimate when you pit, and iRacing's pit system adds a fixed duration for entering, exiting, tire service, and fuel service depending on the series and track. In most GT3 racing, a four-tire change and fuel top-up runs roughly 50 to 70 seconds of real time. In endurance racing with driver swaps, repairs happen alongside the driver change, adding 30 to 60 seconds depending on what you're fixing."
+    },
+    {
+      "p": "Now layer in the acceleration loss exiting the pits. You exit at low speed and build momentum back to racing pace. Most tracks cost you an additional 15 to 25 seconds of lost time between the exit and the moment you're back up to normal racing speed. Some tracks with a long pit exit, like Spa or Le Mans, add another 10 seconds. That pit window is not just the service time. It's service time plus acceleration loss plus the time you spend catching up to your race position."
+    },
+    {
+      "h3": "Example: Light front-end damage at Silverstone Grand Prix"
+    },
+    {
+      "p": "You clip the inside kerb at Maggotts in a Porsche 992 Cup. Your front splitter is crumpled, and you lose approximately 0.25 seconds per lap. Your current fuel load allows for eight more laps before you pit for fuel anyway. Eight laps times 0.25 seconds lost is two seconds total. A pit stop at Silverstone runs about 60 seconds service plus another 20 seconds of acceleration loss exiting the pits. You pit now, and you lose 80 seconds for a repair that costs you two seconds over eight laps. You stay out, you lose two seconds. The math is clear: you finish your fuel stint, pit at your planned window, and have the damage repaired then. The damage is not urgent."
+    },
+    {
+      "h2": "When damage is actually urgent"
+    },
+    {
+      "p": "Damage becomes urgent when it threatens either your pace deficit or your car's drivability. A bent suspension arm that causes your car to understeer hard into Turn 1 every lap is driveable but possibly costing you 0.8 to 1.2 seconds per lap. If your next planned pit is still 15 laps away, that damage just cost you 12 to 18 seconds compared to a fresh car. The pit stop costs you 80 seconds, so pitting early is still wrong. But if your next pit is only two or three laps away, the math shifts. Three laps times 1.0 second lost is three seconds. Your pit stop takes 80 seconds. Pitting early still does not pay."
+    },
+    {
+      "p": "Damage becomes genuinely urgent when the car becomes undriveable or unsafe. A rear wing that is so badly bent that it oscillates or generates zero downforce at high speed can cause sudden oversteer or a spin. Suspension damage that forces the car into a full lock of camber or ride height on one corner can lock a tire or cause the car to bottom out badly. A loose body panel or splitter that hangs and catches the track is a real hazard. That damage demands an immediate pit stop because continuing risks a major crash that ends your race."
+    },
+    {
+      "h3": "The undriveable threshold"
+    },
+    {
+      "p": "Listen to your car and trust your inputs. If you're holding opposite lock going into a corner where you normally hold dead center, your suspension is compromised. If you're touching the kerb at a line where you normally apex a half meter away, your geometry has shifted enough to demand attention. If the car pulls hard to one side under braking, a bent tie rod or rim is the cause. These are pit stops. The pace loss is severe enough, and the consistency loss is high enough, that staying out only makes you slower and more likely to crash."
+    },
+    {
+      "h2": "Reading your telemetry for damage assessment"
+    },
+    {
+      "p": "Before you pit, pull up your telemetry. Compare your last three lap times and your inputs to a baseline lap from earlier in the session or from a practice run. Did your brake pressure increase by 5 percent and your turn-in point move later by half a meter? Suspension damage. Did your throttle trace stay identical but your exit speed from a high-speed corner drop by 2 to 3 mph? Aerodynamic damage. Did your steering angle increase by a few degrees mid-corner but your entry speed stayed the same? Geometry shift."
+    },
+    {
+      "p": "Garage61 telemetry comparison tools or similar overlay systems let you layer your current lap against a clean lap from the same car or from a baseline setup. That visual layer makes damage obvious. If your throttle trace is identical but your speed is lower, the damage is aerodynamic. If your throttle or brake inputs changed, the damage is mechanical. This intel lets you decide pitting vs. pushing with real data instead of a hunch."
+    },
+    {
+      "tip": "The hidden pit cost: every stop moves you down the leader board if the field is close. A 90-second pit window sounds small in a 30-minute stint, but it costs you 8 to 12 positions if you're racing in a 40-car field. Pitting for damage that costs you only 0.2 seconds per lap over your remaining fuel means you stay out. The position loss from pitting is worse than the pace loss from damage.",
+      "tipLabel": "Position loss vs. pace loss"
+    },
+    {
+      "h2": "Endurance racing: damage over a multi-hour race"
+    },
+    {
+      "p": "In endurance racing, damage compounds. A small front splitter dent that costs 0.15 seconds per lap adds up to 3 minutes lost over a 20-lap stint. Multiple stints of damage loss can cost you 10 to 15 minutes over a four or six-hour race, and that is enough to move you from podium to fourth place. The decision to pit for repairs in endurance racing is not just about this stint but about the cumulative pace loss over the full race."
+    },
+    {
+      "p": "Work with your team or your co-driver. If you have one lap left in your stint, report the damage and let the next driver decide whether to pit during their opening lap. If you have five laps left, decide now. Damage that costs 0.3 seconds per lap across five stints of three drivers each means the entire team feels it. A 90-second pit stop to repair that damage once might save the team 30 to 40 seconds across those remaining stints, and that math supports an early pit. In short sprint races, you almost never pit for damage. In long endurance races, you often do."
+    },
+    {
+      "h2": "The confidence cost you cannot quantify"
+    },
+    {
+      "p": "There is a cost to driving a damaged car that telemetry does not capture: lost confidence. A car that understeers on entry makes you reluctant to brake late, so you brake earlier and lose time that way. A car that feels loose on exit makes you lift off throttle earlier instead of pushing the limit. You drive one or two tenths slower simply because the car feels wrong, and fear of a bigger crash pushes you further away from the edge. That is a real pace loss beyond the aerodynamic or mechanical delta."
+    },
+    {
+      "p": "If your damage is severe enough to mess with your head, pit. The mental tax of driving a compromised car is real, and if it shifts your baseline pace down by 0.3 to 0.5 seconds, you might as well fix it. Read your lap times over three or four laps. If they're scattered and your turn-in points are inconsistent, confidence is gone. Pit and reset."
+    },
+    {
+      "h2": "The decision framework"
+    },
+    {
+      "list": [
+        "Measure the pace delta: Compare your last three laps to a clean baseline. Calculate the time loss per lap.",
+        "Multiply by remaining laps: How many laps until your next planned pit or the end of the race. Multiply pace loss by lap count.",
+        "Add pit overhead: Service time plus acceleration loss. On most tracks, 80 to 100 seconds total.",
+        "Compare the totals: If damage cost over remaining laps is less than pit overhead, stay out. If pit overhead is less, pit.",
+        "Check drivability: If the car feels undriveable or unsafe, ignore the math and pit immediately.",
+        "Factor endurance context: In short races, damage rarely justifies a pit. In long races, cumulative damage loss often does.",
+        "Trust your inputs: If you're driving defensively or off your line because the car feels wrong, pit for confidence."
+      ]
+    },
+    {
+      "p": "The hardest part of this framework is honesty. You want to pit because the car feels bad, but the data says two more laps saves time. Stick with the data. You want to stay out because the pit would cost time, but the car is now undriveable. Pit. Let the numbers and your own feedback, not frustration or stubbornness, make the call. Over a full season of endurance races, that decision discipline adds up to real results."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I pit immediately after any contact, or is some damage acceptable?",
+      "a": "Not all contact causes urgent damage. A light tap that bends the splitter a few millimeters might cost 0.1 to 0.2 seconds per lap, which is worth pushing through if your next pit is soon. A hard hit that shifts suspension geometry or bends the rim is urgent. Check your lap times and feel over the next lap or two. If your pace stays normal and the car feels normal, stay out. If pace drops noticeably or the car pulls or understeers hard, pit."
+    },
+    {
+      "q": "How do I know if my damage is aerodynamic or mechanical without telemetry?",
+      "a": "Aerodynamic damage shows up as lower speed in the straights and high-speed corners, but your steering angle and brake pressure stay the same. Mechanical damage shows up as a change in how the car responds: more understeer, oversteer, or a pull to one side under braking. If the car feels normal but just slower, aerodynamic. If the car feels different, mechanical. Mechanical damage usually demands a pit stop sooner."
+    },
+    {
+      "q": "In a multi-class endurance race, does damage pit strategy change?",
+      "a": "Yes. If you are in a faster GT3 or LMP class, losing 0.5 seconds per lap to damage compounds faster because you lap slower cars more frequently and damage affects overtaking windows. If you are in a slower GT4 or prototype class, pace loss matters more relatively. Also, pitting for repairs during a full-course yellow or under safety car conditions is free in terms of pace loss, so wait for a caution if possible. If the race is clean and running green, pit only if the math clearly supports it."
+    },
+    {
+      "q": "My teammate says I should pit for damage to 'reset the mental game.' Is that valid?",
+      "a": "Partly. A pit stop and fresh car do reset your confidence, but a 90-second pit window costs real time. If your damage is costing 0.3 seconds per lap but a pit and reset would let you drive 0.5 seconds faster for the remainder of the race, the trade makes sense. If your damage costs 0.15 seconds and a pit would cost 90 seconds, no amount of confidence gain justifies that loss. Use pit time to reset only if your pace loss is severe enough that the math works out anyway."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}

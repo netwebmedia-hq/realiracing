@@ -1,0 +1,142 @@
+{
+  "slug": "super-formula-sf23-iracing-guide",
+  "tag": "Car Guide · Open Wheel",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Super Formula SF23 iRacing Guide: Setup, Braking, Throttle",
+  "description": "Master the SF23's weight transfer and mid-corner balance. Learn braking, throttle application, and setup tuning for consistent pace.",
+  "sections": [
+    {
+      "p": "The Super Formula SF23 in iRacing is a raw, unforgiving open-wheeler that demands respect. Unlike the Dallara iR-18 IndyCar with its aero-assisted stability, the SF23 punishes sloppy inputs and rewards smooth, committed driving. I came to it from road racing and felt the difference immediately: the rear will swap sideways if you over-throttle mid-corner, and braking is a precision exercise because there's no power steering assist. You can't drive it like a GT car. Respect the car first, and pace will follow."
+    },
+    {
+      "h2": "Understanding the SF23's weight transfer and limit"
+    },
+    {
+      "p": "The SF23 has mid-engine layout and a tight wheelbase, which means weight transfers quickly and dramatically. On my MOZA R9, I can feel the front axle unload almost instantly when I lift throttle, and the rear squats hard under acceleration. That's not noise in the FFB; that's the real car's behavior being translated to my wheel."
+    },
+    {
+      "p": "The car lives at the edge of its tire grip window. You're not hunting for a \"sweet spot\" in setup where everything feels balanced across a range. Instead, you're tuning for a narrow operational zone: the car should feel alive and responsive at full commitment, and slightly nervous at anything below. If the SF23 feels planted and easy, your setup is too conservative and you're leaving lap time on the table."
+    },
+    {
+      "list": [
+        "Front anti-roll bar (ARB) stiffness ~8-10 (road courses). Softer than you'd think because the car transfers weight so aggressively that a stiff bar can reduce front grip.",
+        "Rear ARB stiffness ~12-14. The rear is where balance lives; too soft and the rear will move around, too stiff and mid-corner understeer develops.",
+        "Brake bias ~58-62% front. The light front end means you need a higher percentage up front than in most cars to prevent rear locking.",
+        "Differential on-throttle lock ~60-70%. The SF23 needs some mechanical help managing rear slip during corner exit or it will be unpredictable."
+      ]
+    },
+    {
+      "tip": "Check your throttle application on corner exit by watching onboard video and comparing to a setup guide replay. The SF23 will show you immediately if you're grabbing throttle too hard; the rear will slide or the front will push. Smooth is fast.",
+      "tipLabel": "Throttle modulation is the baseline"
+    },
+    {
+      "h2": "Braking technique and trail-braking depth"
+    },
+    {
+      "p": "The SF23 has solid brake performance (~1.7G+ deceleration), but the car's light front end means front tire lockup is a real threat if you're not smooth. You can't brake as late or as deep as you'd do in a heavier GT car, and you can't brake in a straight line and turn; the front tires will simply run out of grip."
+    },
+    {
+      "p": "Trail-braking is not optional on the SF23. It's the only way to manage entry speed and still load the front tires for turn-in. On my rig, I'll brake hard in a straight line, then begin reducing brake pressure as I start turning, finishing with maybe 5-10% brake pressure while the car is mid-corner. The pedal travel matters here too; the MOZA CRP2 load-cell pedals give me enough resolution to feel that light trailing pressure and modulate it smoothly."
+    },
+    {
+      "olist": [
+        "Brake hard in a straight line until about one car-length before turn-in.",
+        "Begin reducing brake pressure smoothly as you steer in. Don't lift all at once.",
+        "Finish with 5-10% brake pressure through mid-corner, releasing completely as you apply throttle.",
+        "If the front feels light or the car understeers, you released brake pressure too early. Keep more on longer.",
+        "If the front locks or the car pushes, you're braking too deep or turning too aggressively for your entry speed."
+      ]
+    },
+    {
+      "h2": "Corner speed and throttle progression"
+    },
+    {
+      "p": "The SF23 is sensitive to throttle application because power is delivered to the rear axle through a relatively short wheelbase. A 10% difference in throttle input can swing from understeer to oversteer. Precision matters."
+    },
+    {
+      "p": "On entry and through the middle of a corner, you're either on the brakes or off them; there's no middle ground where the car will tolerate sloppy throttle pedal movement. Once you've reached the apex and the car is transitioning to exit, then you can apply throttle progressively. Think of it as a ramp: zero throttle at the apex, then smoothly increase to full by the time the steering is wound back to straight."
+    },
+    {
+      "p": "If you feel the rear step out mid-corner, you applied throttle too early or too aggressively. Lift, let the car settle, and reapply gentler. The SF23 will reward you with better exit speed because you're working with the tires, not fighting them."
+    },
+    {
+      "h2": "Setup tuning for your driving style"
+    },
+    {
+      "p": "Start with a baseline setup from iRacing and run 10-15 laps at the same track to build familiarity. Your first adjustment should be brake bias. If you're locking the fronts, reduce front brake bias by 1-2%. If the rear is locking, increase it. Get braking sorted before you touch the ARBs."
+    },
+    {
+      "p": "Next, tune the differential. If the car oversteers heavily on exit when you're applying throttle smoothly, increase on-throttle lock. If the rear feels planted but you're losing time mid-corner, reduce it slightly and see if the car becomes more responsive to steering input."
+    },
+    {
+      "p": "Suspension stiffness is last. If the car feels nervous and twitchy at full commitment, your setup is already aggressive enough. Don't add stiffness. Instead, focus on your own inputs: throttle modulation and trail-braking depth. The car will reward smoother driving."
+    },
+    {
+      "tip": "Run the same setup at three different tracks before concluding it's wrong. The SF23 feels different on tight, bumpy circuits versus flowing high-speed layouts. A setup that feels overdamped at Suzuka might feel perfect at Fuji.",
+      "tipLabel": "Track characteristics change setup feel"
+    },
+    {
+      "h2": "Common mistakes and how to spot them"
+    },
+    {
+      "list": [
+        "Over-aggressive turn-in inputs: You'll feel the front load suddenly and the car will either push wide or the rear will step out immediately after. Slow your steering input speed by 10-20% and turn-in will feel instant and planted.",
+        "Brake depth and aggression: If you're locking the fronts consistently at the same corner, you're braking too deep for the entry speed. Brake earlier, not harder. The SF23 rewards modulation over aggression.",
+        "Throttle application timing: Applying full throttle before the steering is unwound will cause oversteer or push depending on cornering load. Wait an extra 0.1-0.2 seconds into the exit before going full throttle.",
+        "Setup confusion: If lap times aren't improving after three setup changes, the issue is likely driver input, not setup. Record your onboard, watch a quick-lap replay, and compare your inputs. You'll see the difference immediately."
+      ]
+    },
+    {
+      "h2": "Qualifying and race pace considerations"
+    },
+    {
+      "p": "The SF23's performance over a single lap versus a race stint is fairly consistent because fuel weight doesn't swing handling as dramatically as it does in heavier prototypes. Your qualifying setup will work for a race, but tire wear becomes the limiting factor in long races."
+    },
+    {
+      "p": "In the first half of a stint, the car feels responsive and eager. By lap 12-15, front tire degradation will reduce turn-in grip and the car will feel more understeery on entry. Adjust your driving first: brake slightly earlier and carry less entry speed so the fronts aren't working as hard. If that's not enough, a small ARB adjustment on your next pit stop (softer front ARB by 1-2 clicks) can restore responsiveness without major handling changes."
+    },
+    {
+      "p": "Fuel strategy in Super Formula races is straightforward: calculate your burn rate during qualifying, add a small buffer for race pace, and commit. The SF23 is too quick for you to nurse fuel mid-race. Drive it hard, manage tires with smooth inputs, and pit accordingly."
+    },
+    {
+      "h2": "Data and telemetry focus points"
+    },
+    {
+      "p": "If you're using telemetry tools like Garage61, focus on three areas. First, brake application: compare your braking trace to a faster driver's and you'll see exactly where you're releasing brake pressure too early or too late. Second, steering angle: if you're overshooting steering input, the graph will show a spike. Smooth your hand inputs by 5-10 degrees. Third, throttle application: look at the shape of your throttle trace on corner exit. Slow drivers apply throttle in steps; fast drivers apply it as one smooth ramp from 0 to 100."
+    },
+    {
+      "p": "Don't obsess over apex speed. The SF23's lap time is built on entry speed control (braking and trail-braking) and exit acceleration (smooth throttle progression). If your apex speed is 2 km/h slower than the quick car but your exit speed is 3 km/h faster, you've gained lap time overall."
+    },
+    {
+      "h2": "The mental side: confidence and commitment"
+    },
+    {
+      "p": "The SF23 will punish hesitation. If you're unsure about brake depth or line commitment, the car will either miss the apex or lock up, and you'll lose confidence further. That's a spiral. The antidote is to pick a brake marker and commit. Drive the same line five times in a row, same inputs, same speed. The car's behavior becomes predictable, and then you can push."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much trail-braking does the SF23 need compared to a GT car?",
+      "a": "The SF23 requires significantly more trail-braking because its light front end loses grip quickly if you release the brakes and turn at the same time. GT cars have more brake bias room and heavier platforms that absorb input errors. On the SF23, I trail-brake into nearly every corner, even high-speed ones like a 130 mph third-gear turn. The brakes come off gradually over 1-2 seconds of steering angle, not in one lift. This is not optional; it's the entry technique."
+    },
+    {
+      "q": "What brake bias should I start with if I don't have a setup sheet?",
+      "a": "Start at 60% front. Run 3-4 laps. If you're locking the fronts consistently, reduce it by 1-2%. If the rear locks, increase by 1-2%. The SF23's light front means front-locking is the most common issue. Once you've found the point where neither end locks reliably, you're in the ballpark. Then fine-tune by 0.5% until braking feels completely solid and trust-worthy."
+    },
+    {
+      "q": "Should I adjust suspension for different track types like tight versus fast circuits?",
+      "a": "Yes, but keep the changes small and focused. At tight circuits like Suzuka, soften the front ARB by 1-2 clicks to improve mid-corner feel and mid-corner turn-in response. At high-speed tracks like Fuji, stiffen it slightly to keep the front settled through fast direction changes. The rear ARB stays relatively constant across tracks. Make one change, run five laps, and compare to your baseline before changing anything else."
+    },
+    {
+      "q": "How can I tell if I'm applying throttle too aggressively versus if the setup is causing oversteer?",
+      "a": "Watch your onboard video and look at when the rear steps out relative to your throttle input. If it happens 0.2-0.3 seconds after you apply full throttle, it's driver input: you're applying throttle before the steering is wound back enough. If the rear is loose immediately after you press throttle even with smooth input, it's the setup: increase differential on-throttle lock. Compare your throttle trace in telemetry to a quick lap replay; the shape of the curve should be a smooth ramp, not a step or spike."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}

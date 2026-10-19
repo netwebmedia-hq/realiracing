@@ -1,0 +1,127 @@
+{
+  "slug": "mid-ohio-motorsports-park-iracing-guide",
+  "tag": "Track Guides · Setup",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Mid-Ohio iRacing Guide: Setup, Apexes, and Brake Points",
+  "description": "Learn the corner sequence, key brake points, and setup adjustments that work on Mid-Ohio. Real data from my MOZA R9 rig.",
+  "sections": [
+    {
+      "p": "Mid-Ohio Motorsports Park sits in the farming country of Lexington, Ohio, and it has the kind of flowing, elevation-change rhythm that either clicks with you or drives you mad. Seven turns over 2.258 miles, no straights longer than a heartbeat, and a layout that punishes setup guesses. I've spent enough time here across different series to know where the traps are, and I'll walk you through the track geometry, the feedback I get through my MOZA R9, and the setup moves that actually tighten lap times without breaking the car's balance."
+    },
+    {
+      "h2": "Track layout and elevation changes"
+    },
+    {
+      "p": "Mid-Ohio climbs on the approach to turn one, crests at the apex, then drops away on exit. That elevation gain matters for weight transfer and braking stability. You'll brake downhill into turn one, a medium-speed left-hander that sets the tone. The track elevation means your braking feels sharper here than it looks, and I've spun more practice laps here from over-braking than anywhere else on the circuit."
+    },
+    {
+      "p": "Turns two and three flow quickly. Turn two is a short right, and turn three is the long left that brings you through the infield. The connection between them matters. If you carry too much speed through two, you'll run wide at three. If you apex two too early, you'll compromise the entry to three. The goal is a smooth arc through both, treating them as one sequence rather than two separate corners."
+    },
+    {
+      "p": "The uphill climb back to turn four is where you build acceleration and engine braking. Turn four is a short left-hander, and it's easy to think you need more speed. You don't. Mid-Ohio rewards steady-state driving over aggressive moves. Turn five is the slow-speed right that many drivers treat as a pause point, but it's actually a momentum corner if you set it up correctly. Exits matter here because turn six is a long downhill right that bleeds speed quickly if you don't carry exit grip."
+    },
+    {
+      "p": "Turn six to turn seven is the signature sequence. You're downhill into a long, medium-speed right, then immediately back uphill into the slower left-hander that closes the lap. The elevation change into turn six makes braking feel late, and the rate of descent varies with how tight you turn in. Get it wrong and your car dives. Get it right and you carry Gs and rhythm into turn seven."
+    },
+    {
+      "h2": "Brake points and trail-braking strategy"
+    },
+    {
+      "list": [
+        "Turn one (medium-left, downhill entry): Brake at the 100m board, then trail-brake to the apex. The hill helps you slow, so don't lock the rears. My MOZA R9 feedback gets light and tippy here if I'm hard on the pedal too long.",
+        "Turns two and three (right-left complex): Light trail-brake into two, then modulate to a rolling entry at three. These corners reward rhythm over hard inputs.",
+        "Turn four (slow-left): Brake at the 200m board, light brake pressure through the corner. This is a setup-sensitive corner. If your car is nervous, you'll feel it here.",
+        "Turn five (slow-right): Engine braking only, or feather the pedal. Avoid hard braking.",
+        "Turn six (medium-right, downhill): Brake at the 150m board and trail-brake deep into the corner. The downhill grade is steep, so your braking window feels longer than it is.",
+        "Turn seven (slow-left, uphill): Brake at the 200m board, then coast to the apex. The hill slows you naturally."
+      ]
+    },
+    {
+      "tip": "The 100m and 200m boards are reference points, not absolutes. Adjust your brake points based on your car's balance. A loose rear will require earlier, lighter braking. A push-heavy setup will ask you to brake later. Load-cell pedals like my MOZA CRP2 let me modulate pressure precisely, which matters hugely here.",
+      "tipLabel": "Brake Point Variation"
+    },
+    {
+      "h2": "Setup considerations for Mid-Ohio"
+    },
+    {
+      "p": "Mid-Ohio is a corner-speed track. Top speed matters far less than how well your car turns and maintains stability through the complex. Anti-roll bar stiffness and brake balance are the two setup knobs I turn most often here."
+    },
+    {
+      "p": "Front anti-roll bar: Start baseline and stiffen gradually. A soft front lets you turn-in smoothly but will oversteer on exit. A stiff front feels responsive and lets you place the car where you want it. The trade-off is mid-corner stability. I typically run a medium-stiff setting and trust the suspension geometry."
+    },
+    {
+      "p": "Rear anti-roll bar: Keep it softer than your front, or the car will snap mid-corner. Mid-Ohio has enough corner flow that you want rear grip, not sharp transitions. If the rear is nervous in turns four, five, or six, reduce rear ARB stiffness before you add front."
+    },
+    {
+      "p": "Brake balance: Mid-Ohio's elevation changes mean brake balance shifts as you move around the track. A setting that works at turn one (downhill, hard braking) might lock your rears at turn five (uphill, light braking). I run a balance biased toward the rear, around 52-54 percent front, and rely on modulation through the pedal rather than setup to manage lock-up."
+    },
+    {
+      "p": "Differential: A limited-slip or locked diff helps in the slow-speed corners (four, five, seven). Open diff will wheelspin too easily. I run a medium lock percentage and adjust based on which car I'm driving."
+    },
+    {
+      "h2": "Common mistakes and how to avoid them"
+    },
+    {
+      "list": [
+        "Pushing too hard into turn one: The downhill brake zone feels long, and drivers trail-brake too deep. Brake earlier, use the straight to set your line, then roll to the apex. Time gain comes from cleaner exits into two.",
+        "Over-speeding through turns two and three: These are tight, connected corners. One car width of overshoot in two ruins your entry to three. Practice smooth steering inputs and trust your entry speed.",
+        "Holding the throttle too long on the hill: The climb to turn four tempts aggressive acceleration. Back off slightly and let the elevation do the work. Your time comes from turn four to the finish line, not from here.",
+        "Diving into turn six: The downhill entry feels fast. Too much steering angle and you'll high-side or run wide. Turn-in smoothly, trail-brake, then add throttle on exit.",
+        "Rushing turn seven: This is the last corner before the long straight. A clean exit adds a tenth to your straight-line speed. Patience here pays off."
+      ]
+    },
+    {
+      "h2": "Telemetry and feedback"
+    },
+    {
+      "p": "Use onboard camera or telemetry comparison tools to validate your brake points. Mid-Ohio reveals setup problems quickly. If your car is loose through the esses (turns two and three), you'll feel it immediately. If your brake balance is off, lock-up will show on any downhill corner."
+    },
+    {
+      "p": "The MOZA R9 wheelbase gives me strong mid-corner feedback through the load-cell pedals. I can feel the weight shift as I move through the infield complex, and that clarity helps me adjust my lines lap to lap. If I'm over-driving, the wheel will tell me before the data will. Trust the feel."
+    },
+    {
+      "h2": "Weather and tire strategy"
+    },
+    {
+      "p": "Mid-Ohio is sensitive to temperature swings. A cool morning setup might feel nervous in the afternoon heat. If you're running an endurance race, plan for a setup change between the first and second stints. Tire wear is steady across the lap. No one corner stresses tires dramatically, so tire strategy is more about patience and managing degradation than aggressive tire management."
+    },
+    {
+      "p": "In wet conditions, the track is narrow and technical. Visibility from certain cars (high roof-lines especially) is poor on the approaches to turns six and seven. Brake earlier than you think and smooth steering inputs matter more than usual. The elevation changes drain water reasonably well, so deep puddles aren't a constant threat like they are at other tracks."
+    },
+    {
+      "h2": "How Mid-Ohio fits into your season"
+    },
+    {
+      "p": "If you're working on consistency and setup nuance, Mid-Ohio is a gift. The lap time is sensitive to setup detail. Spend time here and you'll develop skills that transfer everywhere. The corner flow teaches you rhythm. The elevation changes teach you brake modulation. The tight infield teaches you steering precision. This is where I go when I need to reset my driving fundamentals, especially before endurance races where mistakes cost real time."
+    },
+    {
+      "p": "For practice planning, I recommend a 45-minute dedicated session here. Spend the first 15 minutes learning the line. Spend the next 15 exploring brake points and trail-braking zones. Use the last 15 for one full setup adjustment and validation. That structure builds understanding faster than lapping without a purpose."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the recommended brake balance for Mid-Ohio?",
+      "a": "Start around 52 to 54 percent front, biased toward the rear. The track has constant elevation changes that affect how much braking pressure you need at each corner. Downhill corners need lighter modulation, uphill corners are forgiving. Use this range as a baseline and adjust 1 to 2 percent based on what you feel through the pedal during practice."
+    },
+    {
+      "q": "How do I stop oversteering through turns two and three?",
+      "a": "This complex is tight and connected. Reduce rear anti-roll bar stiffness first. If the rear still feels snappy, check your brake balance. Too much rear bias can cause lock-up into turn two, which unsettles the car. Finally, smooth your steering inputs. Many drivers turn in too aggressively and upset the weight balance. Hold entry speed, turn steadily, and let the car flow."
+    },
+    {
+      "q": "Is Mid-Ohio harder on tires than other road courses?",
+      "a": "No. The lap is corner-speed focused, not high-speed. Tire wear is gradual and even across the lap. You won't face sudden cliff degradation like at tracks with long corners or heavy braking zones. Tire temperature is your main concern. Cold tires oversteer here, hot tires are stable. Build them gradually during practice."
+    },
+    {
+      "q": "What anti-roll bar setup should I start with?",
+      "a": "Use the baseline setup provided for your car in iRacing as your starting point. If you find the car overshoots mid-corner, stiffen the front anti-roll bar first in 1-2 steps and test. If you find the rear sliding loose in slow-speed corners like four or five, soften the rear anti-roll bar. Avoid stiff rear settings on this track. The elevation changes and corner flow reward compliance over stiffness."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}

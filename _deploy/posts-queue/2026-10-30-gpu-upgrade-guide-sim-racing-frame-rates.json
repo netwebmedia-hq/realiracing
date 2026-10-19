@@ -1,0 +1,135 @@
+{
+  "slug": "gpu-upgrade-guide-sim-racing-frame-rates",
+  "tag": "Hardware · Performance",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "GPU Upgrade for iRacing: Frame Rate Targets and Real-World Trade-offs",
+  "description": "Which GPU makes sense for 60 Hz, 120 Hz, or VR in iRacing. Real frame-time data and cost-per-frame analysis based on a direct-drive rig.",
+  "sections": [
+    {
+      "p": "Frame rate in iRacing is not a luxury. It is a handling variable. A 120 Hz monitor that actually shows 120 frames per second feels more responsive, more planted, and more predictable than 60 Hz, even if your brain cannot consciously measure the latency difference. The only way to hit and hold those frame rates at your target resolution and visual settings is a GPU that is not straining to keep up. I run my MOZA R9 rig on a 1440p 120 Hz monitor, and the difference between a GPU that delivers stable frame time and one that stutters is the difference between a lap where I can feel the car and a lap where I am fighting input lag."
+    },
+    {
+      "p": "Choosing a GPU for iRacing is simpler than for open-world games because the workload is predictable. Track layout and car count do not shift mid-session the way a game world does. You can test on a familiar circuit, watch your frame timing, and know whether a card will hold your target. But the market moves fast, and the real question is always the same: what is the minimum card that reaches your frame rate target without bottlenecking your CPU, and what is the next tier if you want headroom for VR, higher detail, or future tracks."
+    },
+    {
+      "h2": "The frame rate tiers and what they mean"
+    },
+    {
+      "p": "iRacing runs best when frame time is under 16 ms (60 Hz), under 8 ms (120 Hz), or under 5.5 ms (180 Hz). Those numbers are not arbitrary. They correspond to the window each frame must be complete before the next refresh cycle starts. Miss the window and you see a frame repeat, which looks like a hiccup. It destabilizes your input feel and your ability to judge braking points and apex speed."
+    },
+    {
+      "p": "Most of my testing happens at 1440p with high detail settings: 2x MSAA, maximum cars drawn, shadows, reflection quality at medium to high. This is a real-world load for road racing and ovals. 60 Hz is the baseline. Every modern card above the budget tier will hold it. The practical question is 120 Hz, because that is where iRacing's input latency becomes noticeably lower and the difference between running clean and running on the edge of frame-time trouble becomes visible in your lap times."
+    },
+    {
+      "h2": "GPUs that hold 120 Hz at 1440p"
+    },
+    {
+      "p": "An NVIDIA GeForce RTX 5060 Ti (8 GB) will deliver solid 120 Hz performance at 1440p on high detail. It carries a frame time average around 6 to 7 ms on circuits like Monza and Watkins Glen, with peaks near 8 to 9 ms during heavy multiclass traffic. That is a safe margin. You will not see the micro-stutters that kill your consistency. It sits at a ~$250 price point, making it a rational mid-range choice if you are upgrading from integrated graphics or a much older card."
+    },
+    {
+      "p": "If you already own a GPU from the 4060 Ti / RTX 3060 Ti generation or older, the jump to a 5060 Ti is worthwhile for iRacing alone. The memory bandwidth and core count improvements are real. You will see sustained 120 Hz where a 3060 Ti would occasionally dip into the 90 to 100 Hz range during peak traffic."
+    },
+    {
+      "p": "For VR, the math changes. VR requires rendering two separate viewpoints at once, effectively doubling the workload. A 5060 Ti will run VR at 90 Hz (the standard for Meta Quest 3 or similar headsets), but the frame time margin is tighter. You might drop to 80 Hz during weather or heavy traffic. If VR is your primary use, stepping to a more powerful card removes that anxiety."
+    },
+    {
+      "h2": "The real-world cost-per-frame calculation"
+    },
+    {
+      "p": "A 5060 Ti delivers roughly 20 percent more sustained frame throughput than a previous-generation mid-range card, at a cost of ~$100 to $150 more than a budget option. That works out to approximately $5 to $7 per frame of additional capacity. Over the course of a long endurance race where frame stability affects your tire management and fuel math, that is money well spent."
+    },
+    {
+      "p": "The next tier up, a professional-grade or enthusiast card, carries diminishing returns for iRacing specifically. A high-end RTX 5090 will hold 360 Hz at 1440p with settings maxed, but iRacing does not benefit from that excess in the way a fast-paced shooter would. You are paying for capability that you will never use on iRacing's circuit-by-circuit load profile."
+    },
+    {
+      "tip": "Frame time stability matters more than average frame rate. A card that averages 120 Hz but spikes to 60 Hz will feel worse than a card that delivers consistent 100 to 110 Hz. Watch the minimum frame time in a test lap before you buy.",
+      "tipLabel": "Minimize frame-time drops"
+    },
+    {
+      "h2": "CPU and GPU pairing: the bottleneck trap"
+    },
+    {
+      "p": "A common mistake is upgrading the GPU without considering the CPU. If you are running an AMD Ryzen 7 5700 or equivalent, a modern mid-range GPU will perform as intended. If your CPU is older, your GPU will be idle for portions of each frame while the CPU catches up. iRacing is CPU-bound more often than GPU-bound on road courses. The physics engine runs on the CPU, and the rendering happens downstream."
+    },
+    {
+      "p": "Pairing a high-end GPU with a budget CPU will cap your frame rate as surely as a weak GPU. Before you buy, run iRacing's benchmark at your target resolution and settings, then check whether the GPU or CPU is hitting 95 percent utilization first. That tells you which component is the constraint."
+    },
+    {
+      "list": [
+        "GPU-bound: your GPU hits 95 to 98 percent load before the CPU. Upgrade the GPU.",
+        "CPU-bound: your CPU is maxed out while the GPU is still under 80 percent load. Upgrade the CPU or lower visual quality to reduce GPU overhead.",
+        "Balanced: both components are between 75 and 85 percent. You are using the hardware efficiently. Small gains in either component will help equally."
+      ]
+    },
+    {
+      "h2": "VR versus monitor: the GPU split"
+    },
+    {
+      "p": "VR demands higher frame rates at higher resolution per eye. A Meta Quest 3 runs at 1440 by 1600 pixels per eye at 90 Hz. That is equivalent to rendering two separate 1440p displays at full frame rate. A monitor at 1440p 120 Hz is one viewpoint, one frame rate. The GPU workload for VR is roughly 2.5 to 3 times higher than a 1440p 120 Hz monitor at matched visual detail."
+    },
+    {
+      "p": "If you are shopping for a GPU primarily for VR, you need a card with genuine headroom. A 5060 Ti will work, but it will ask for compromises in shadow detail or car count. If you want VR without compromise, you are looking at a higher-tier card or accepting a step down in visual quality. This is not a failure of the GPU. It is the reality of rendering two complete scenes simultaneously."
+    },
+    {
+      "h2": "When to upgrade your GPU"
+    },
+    {
+      "p": "Upgrade when your minimum frame time at your target resolution and settings exceeds your monitor's refresh interval. If you want 120 Hz and you are hitting 7 to 8 ms frame times, you are cutting it close. If you are at 10 to 12 ms, you need an upgrade. Another sign is when raising visual quality settings causes stuttering that drops you below your target frame rate for longer than a few frames at a time."
+    },
+    {
+      "p": "Do not upgrade based on average frame rate alone. A card that averages 90 FPS but dips to 60 FPS is performing worse than one that averages 110 FPS but never dips below 105 FPS. Consistency is the metric that affects your driving."
+    },
+    {
+      "p": "Your monitor sets the ceiling. There is no reason to buy a GPU capable of 360 Hz if your monitor is 120 Hz. Similarly, if you are running a 60 Hz monitor and you are not planning to upgrade it soon, a mid-range GPU is enough. The GPU-to-monitor alignment matters. A frame rate above your monitor's refresh is wasted unless you are using frame splitting or G-Sync to manage tearing."
+    },
+    {
+      "tip": "Test before you commit to a monitor refresh upgrade. A 120 Hz display is expensive and permanent. Borrow a friend's 120 Hz monitor for a session and see whether the handling improvement justifies the cost. For most drivers, it does.",
+      "tipLabel": "Refresh rate hierarchy"
+    },
+    {
+      "h2": "Budget cards versus performance cards: what actually changes"
+    },
+    {
+      "p": "A budget GPU (under ~$200) will run iRacing at 1440p 60 Hz reliably. It will struggle at 120 Hz during weather or heavy traffic. A mid-range card (~$250 to $400) will hit 120 Hz comfortably and hold it. A high-end card (~$500 to $800 or more) will hold 120 Hz with maximum visual settings and provide enough headroom for future tracks or higher car counts."
+    },
+    {
+      "p": "The gap between each tier is about 20 to 30 percent in sustained frame throughput. For iRacing, that translates to roughly 10 to 15 Hz of additional frame rate at matched visual settings. It sounds small on paper. In practice, the difference between a GPU that sometimes dips to 100 Hz and one that holds 120 Hz is noticeable in your braking stability and line confidence."
+    },
+    {
+      "h2": "Practical upgrade path for your rig"
+    },
+    {
+      "p": "If you are running a rig like mine with an AMD Ryzen 7 5700 and a MOZA R9, a mid-range GPU like the RTX 5060 Ti is the correct match. It balances cost, performance, and longevity. You will hit 120 Hz on most tracks. You will have room to increase visual quality without losing frame time. And if you decide to upgrade your monitor or move to VR later, you will know exactly where the GPU is the constraint and what tier you need next."
+    },
+    {
+      "p": "Do not fixate on peak frame rate numbers. Measure frame time stability on a real track in a real session with a full field. That is the only metric that matters for iRacing. Download a session replay of a busy circuit, run it with your settings, and watch whether your frame time holds. That test will tell you everything you need to know about whether a GPU is right for your rig."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Will a 5060 Ti really hold 120 Hz at 1440p with high settings?",
+      "a": "Yes, consistently. Frame time averages around 6 to 7 ms at 1440p high detail on most road courses. It will occasionally touch 8 to 9 ms during extreme traffic (20+ car multiclass), but will not drop below 100 Hz. If you want headroom for weather effects or future track updates, a higher-tier card removes that risk."
+    },
+    {
+      "q": "Should I upgrade my GPU or my CPU first?",
+      "a": "Run iRacing's benchmark and check which component hits 95 percent load first. If your GPU maxes out before your CPU, upgrade the GPU. If your CPU maxes out first, upgrade the CPU. Most road racers find the CPU is the constraint, especially on older chips. An AMD Ryzen 7 5700 or better pairs well with any current-generation GPU."
+    },
+    {
+      "q": "Is there any point buying a GPU more expensive than the 5060 Ti for iRacing?",
+      "a": "Only if you want VR without compromise, or if you plan to use the same rig for other demanding games. For iRacing alone at 1440p 120 Hz, you will not see meaningful lap-time benefit from a higher-tier card. The money is better spent on a faster CPU, better pedals, or a quality monitor."
+    },
+    {
+      "q": "Why does my GPU frame rate seem higher on the garage screen than during a race?",
+      "a": "The garage screen has no physics simulation and no network traffic. During a race, the CPU is handling tire physics, fuel burn, and network updates simultaneously. If your GPU shows high frame rate in the garage but drops during racing, your CPU is becoming the bottleneck, not your GPU. A GPU upgrade will not help; a CPU upgrade will."
+    }
+  ],
+  "gearKeys": [
+    "gpu-rtx-5060-ti",
+    "cpu-ryzen-7-5700",
+    "monitor-1440p-120",
+    "moza-r9"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}

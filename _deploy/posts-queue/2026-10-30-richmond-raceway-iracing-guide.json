@@ -1,0 +1,146 @@
+{
+  "slug": "richmond-raceway-iracing-guide",
+  "tag": "Track Guides · Ovals",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Richmond Raceway iRacing guide: lines, braking, and setup",
+  "description": "Master Richmond's tight oval with my guide to racing lines, brake zones, and MOZA R9 setup for consistent lap times.",
+  "sections": [
+    {
+      "p": "Richmond Raceway is the toughest 0.75-mile oval in iRacing. It sits in the middle ground between pure flat-track ovals like Las Vegas and high-banked circuits like Bristol. The banking changes constantly, the racing groove migrates, and one lock-up in the wrong place costs you a tenth and half the field. I've spent dozens of races here on my rig, and the learning curve is steep because Richmond punishes hesitation differently than other short ovals."
+    },
+    {
+      "p": "This track teaches you how to manage weight transfer on marginal grip. Your MOZA R9 will feel feedback you don't get at flatter tracks, and that feedback is real. The variable banking combined with tight turn-in angles means your steering input, brake timing, and throttle application all matter more here than they do at a track with simpler geometry. I'll walk through the racing line, the brake zones that trip up most drivers, and the setup philosophy I use on my rig to keep the car planted."
+    },
+    {
+      "h2": "Richmond's track layout and why it's different"
+    },
+    {
+      "p": "Richmond has four turns that look similar at first glance but drive completely differently. Turns 1 and 3 sit on the higher-banked end of the oval at roughly 14 degrees. Turns 2 and 4 are on the low end at around 8 degrees. That six-degree shift might sound small, but it completely changes your approach speed, brake pressure, and how much steering angle you need."
+    },
+    {
+      "p": "The track is only 0.75 miles long, so you're running through turns roughly every 12 to 14 seconds depending on your pace. That means mistakes compound fast. A slightly missed apex in turn 1 costs you entry speed into turn 2, which costs you exit speed down the back straightaway, which eats into your momentum before turn 3. I don't know another track where the racing line is tighter or less forgiving."
+    },
+    {
+      "list": [
+        "Turn 1 (14 degrees): High bank, medium radius, demands commitment on entry",
+        "Turn 2 (8 degrees): Low bank, tighter radius, brake zone bleeds into downhill entry",
+        "Turn 3 (14 degrees): Highest bank, tightest radius, exit sets up the straightaway",
+        "Turn 4 (8 degrees): Low bank, flow turn, sensitive to exit line"
+      ]
+    },
+    {
+      "h2": "Brake zones: where most drivers lose time"
+    },
+    {
+      "p": "Richmond is a 1.5-mile run per lap in a modern NASCAR Cup car (~440 horsepower in iRacing). You only see about 600 meters of straightaway total, split between the front stretch and the back straight. That means your brake zones are short and your margin for error is nonexistent."
+    },
+    {
+      "p": "The turn 3 brake zone is the most critical. You come down the front straightaway at full throttle, and turn 3 sits right at the end of that straight. On my rig, I'm braking on the 3 marker, hitting roughly 70 to 75 percent pedal pressure (I use MOZA CRP2 load-cell pedals, so I can feel exactly where that threshold lives). Most drivers brake too early or too softly here, and they lose half a tenth in the turn because they have to add steering angle mid-corner to hit the apex. Early braking kills your momentum; light braking forces you to turn tighter."
+    },
+    {
+      "p": "Turn 1 is the opposite problem. You exit turn 4 onto the front straightaway and pick up speed quickly over about 300 meters. Drivers who brake early enough to make turn 1 easily at 60 percent pedal are already two mph too slow. The turn is high-banked and wide, so the car will turn if you're decisive. I brake around the 1 marker and go hard on the pedal, then modulate slightly as I trail off into the apex."
+    },
+    {
+      "p": "Turns 2 and 4 don't have traditional brake zones. You're scrubbing speed through the corner itself, not bleeding off speed before you turn in. That's why your exit line and throttle modulation matter more than your entry speed at those turns."
+    },
+    {
+      "tip": "Richmond exposes pedal inconsistency fast. If your brake response is mushy or unpredictable, you'll be rolling into turns at varying speeds lap after lap. Load-cell pedals let you hit the same brake pressure repeatedly, and that consistency is what makes Richmond easier."
+    },
+    {
+      "h2": "Racing line and entry/exit strategy"
+    },
+    {
+      "p": "Richmond's high-banked turns (1 and 3) let you run a wider line than most drivers expect. The grip is there if you're willing to commit. I run turn 1 from the near wall, brake into the middle, then exit from the far wall. That sounds like a wide line, but the high banking means the car is working in a narrow band of grip. If I go too low (toward the middle of the turn), I kill my exit speed. If I run too high (away from the wall), I'm off the line and inefficient."
+    },
+    {
+      "p": "Turn 3 is the same logic, but tighter. It's the most technical turn on the oval because the combination of high bank and tight radius means you have to be smooth. I enter from the near wall, keep the steering angle steady, and exit near the wall on the back straight side. The car's weight doesn't transfer; it just loads up the inside tires."
+    },
+    {
+      "p": "Turn 2 is where most drivers lose time without knowing it. This is a low-banked, tighter turn than turns 1 and 3, and the entry is downhill slightly from the front stretch. I don't brake hard before turn 2. Instead, I trail brake through the middle of the turn and pick up throttle as I roll out the other side. The line is high entry, low apex, high exit. That high-low-high path through a low-banked turn feels strange at first, but it loads the outside tires correctly."
+    },
+    {
+      "p": "Turn 4 flows into turn 1. Your exit from turn 4 determines your entry to turn 1. I run 4 similar to 2: high entry, tight apex, then ride the high line as I feed the car toward turn 1. Most drivers cut the corner too much in turn 4, which costs them line into turn 1."
+    },
+    {
+      "olist": [
+        "Turn 1: Near wall brake, middle apex, far wall exit. Lean on the bank.",
+        "Turn 2: High entry, trail brake to the low apex, roll out hard on the exit.",
+        "Turn 3: Mirror turn 1. Smooth steering angle, commit to the high bank.",
+        "Turn 4: High entry, tight apex, flow out toward turn 1."
+      ]
+    },
+    {
+      "h2": "Setup approach on the MOZA R9"
+    },
+    {
+      "p": "Richmond requires a setup that balances mechanical grip with predictability. Ovals demand more stability than road courses, but Richmond is tight enough that you need the car to feel responsive when you feed in steering input."
+    },
+    {
+      "p": "I start with a baseline that favors rear-end grip. Too much understeer at Richmond means you're constantly adding steering angle mid-corner, and that washes out your exit speed. Too much oversteer means you're fighting the wheel through every turn, which is exhausting and inconsistent. I tune toward mild understeer (the car wants to push the high-side tires slightly) and then let the banking do the work."
+    },
+    {
+      "p": "Anti-roll bar stiffness matters here. I run a stiffer front bar than most setups because Richmond's quick transitions between high-bank and low-bank turns demand that the car roll quickly. If the front bar is too soft, the car sits in the turn too long and you feel like you're wrestling it. A stiffer front bar (toward the 7 or 8 range on most setups) lets the car settle into the apex and dial in."
+    },
+    {
+      "p": "Brake bias is personal, but I run mine around 54 to 55 percent toward the front. Richmond's short straights and quick braking zones mean you're not locking the rears easily, so front-biased brake balance gives you confidence and stopping power without rear-end chop."
+    },
+    {
+      "p": "Tire pressures matter. Cold pressures around 29 PSI front and 30 PSI rear give me the compliance I need in the low-banked turns while keeping the car stable in the high-banked corners. As the tires heat up over a stint, pressures climb to 31 to 32, and the car gets sharper. I check my telemetry (using Garage61 or iRacing's built-in tools) to watch tire temps and make sure I'm not overheating the outside tires in the high-bank turns."
+    },
+    {
+      "tip": "Richmond rewards drivers who use feedback from the wheel. On my MOZA R9, I dial dampening to about 45 to 50 percent so I can feel the track loading through the steering. Lower dampening lets me sense when the front tires are giving up grip in the low-banked turns. That feedback is worth more than chasing setup numbers."
+    },
+    {
+      "h2": "Race strategy and tire management"
+    },
+    {
+      "p": "A typical Richmond race is 150 laps or less, so tire degradation is real but not massive. I plan for a two-stop race (fuel-only stops) in longer runs, or a single splash-and-go for shorter races. Tire fall-off is gentle for the first 50 laps, then you feel the grip declining lap after lap from 50 to 100."
+    },
+    {
+      "p": "The racing groove migrates as the tires heat the track. Early in the race, the high groove (toward the outside wall) is faster. By lap 75, the groove moves down and the inside line is quicker. That shift means you can't run the same line all race. You have to read the grip and adjust. I watch the fastest guys in the pits and see which groove they're using, then time my pit stop to jump out ahead of traffic in a fresh groove."
+    },
+    {
+      "p": "Fuel mileage is tight at Richmond. I get roughly 4.8 to 5.0 miles per gallon depending on how aggressive I'm driving. On a 150-lap race, that's about two fills. I plan my first pit stop around lap 65 to 70, then a final stop around lap 130 to 135. That keeps me from running out and also keeps me out of the traffic fights near the end when everyone is pitting at once."
+    },
+    {
+      "p": "Track position matters more at Richmond than most ovals. The car draft is minimal, so you can't slingshot past a faster car easily. If you're stuck behind someone, you're losing time every lap. I'm aggressive early (laps 20 to 40) and try to establish position, then settle into race pace and manage tires. Late-race (laps 130 onward), I have a little tire cushion and I can push harder if I need to pass for points."
+    },
+    {
+      "h2": "Common mistakes and how to fix them"
+    },
+    {
+      "p": "Drivers either come in too hot to Richmond and spin, or they come in too timid and get lapped. The middle ground is learning to trust the banking and commit to the line. The most common mistake I see is over-braking into turn 3. Drivers stab the brakes, upset the car, lose grip on the front end, and the car either washes up the track or snaps loose on exit. Once that happens, your race is over or your lap time climbs a tenth."
+    },
+    {
+      "p": "The second mistake is understeering in turns 2 and 4. Drivers don't realize these are low-banked corners and treat them like the high-banked turns. They brake early, turn in with full steering angle, and push to the outside. That kills momentum. Turns 2 and 4 are about rolling speed and throttle timing, not brake timing."
+    },
+    {
+      "p": "The third mistake is a loose setup. If the car is too loose on exit (oversteer), you'll be catching slides constantly. On my MOZA R9, I feel this immediately: the wheel jerks in my hands as the rear steps out. Drivers who feel that often assume they need to be smoother or slower. Usually, they need a stiffer rear bar or more brake bias. Fix the setup, and suddenly the car feels planted and the lap times drop."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I find the right brake pressure for Richmond?",
+      "a": "Load-cell pedals help because you can measure brake pressure consistently. Start at 70 percent pressure into turn 3 and adjust from there. If the car washes up the track (understeer), add pressure. If the car snaps loose on entry, reduce pressure. The goal is finding the point where the front tires are loaded hard but not locked. On my MOZA CRP2 pedals, I mark that point and hit it the same way every lap."
+    },
+    {
+      "q": "Why does my car feel loose in turn 2?",
+      "a": "Turn 2 is a low-banked corner where oversteer is common. You're probably either braking too hard, turning in too early, or running a setup that's too loose. Try braking less aggressively before turn 2, enter a touch later, and focus on rolling speed through the apex. If the car is still loose, increase rear anti-roll bar stiffness and reduce rear brake bias by 1 percent."
+    },
+    {
+      "q": "What's the fuel mileage I should expect?",
+      "a": "In a NASCAR Cup car at race pace, expect 4.8 to 5.0 miles per gallon. In a fuel-and-go pit stop around lap 65 to 70, you'll add roughly 30 gallons and have enough to run 60 to 65 more laps before the final stop. In qualifying trim (flat out), fuel mileage drops to 4.5 MPG or lower."
+    },
+    {
+      "q": "How do I know when to adjust my racing line?",
+      "a": "Watch your exit speed from each turn on your telemetry. If your exit speed is climbing lap after lap through laps 1 to 20, the groove is getting better where you're running. If your exit speed plateaus or drops, the groove is moving. Typically, the inside of the track gets faster after 50 laps as the surface temp rises. You'll feel this through the wheel feedback too. On my MOZA R9, turn 3 feels grippier as I move down slightly."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}
