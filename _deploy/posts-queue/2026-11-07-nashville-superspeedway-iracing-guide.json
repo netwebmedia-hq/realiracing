@@ -1,0 +1,151 @@
+{
+  "slug": "nashville-superspeedway-iracing-guide",
+  "tag": "Track Guides · Oval Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Nashville Superspeedway iRacing Guide: Line, Setup, Traffic",
+  "description": "Master Nashville's unique D-shaped oval layout. Learn the racing line, setup strategy, and how to manage high-speed traffic.",
+  "sections": [
+    {
+      "p": "Nashville Superspeedway is one of iRacing's fastest ovals, and that speed is what makes it deceptive. The track's wide, banked D-shaped configuration invites aggression, but the narrow pit road, heavy braking zones, and tight traffic dynamics punish mistakes hard. I've spent enough time here in both practice sessions and full race stints to know where most drivers lose time: they brake too late into turns 1 and 3, they don't use the full width of the track on exit, and they misjudge how much room they have for passing in the high-speed middle section."
+    },
+    {
+      "p": "This guide covers the racing line through all four turns, the setup choices that matter most on your MOZA R9, and the traffic strategy that actually works when you're running in the pack. Nashville rewards consistency and smooth steering input more than raw aggression, even though it looks like a brake-and-go track at first glance."
+    },
+    {
+      "h2": "Track Layout and Banking"
+    },
+    {
+      "p": "Nashville is a 1.33-mile D-shaped superspeedway with distinct character. Turns 1 and 2 make up the tighter oval end, with Turns 3 and 4 forming the wider section. The banking varies: Turns 1 and 2 sit at roughly 14 degrees, while Turns 3 and 4 are banked at roughly 12 degrees. That difference is subtle but real. The straights are long enough that you'll hit ~190 mph in a stock car, meaning traffic and draft management are serious concerns."
+    },
+    {
+      "p": "The pit road is notoriously narrow, which matters when you're exiting the pits after a fuel stop or tire change. You'll want to be smooth on the throttle leaving pit box, because a tight exit onto the apron can cost you momentum and put you on the apron longer than you need to be. The track also has tight runoff in a few spots, so running wide at the exit of Turns 1 and 3 carries real consequences if you overdrive the corner."
+    },
+    {
+      "h2": "The Racing Line: Turn by Turn"
+    },
+    {
+      "h3": "Turns 1 and 2 (the oval end)"
+    },
+    {
+      "p": "Most drivers brake too hard and too early into Turn 1. I used to do this myself. The corner looks like it requires commitment, and it does, but the banking helps you carry more speed than you think. Approach at full throttle, then brake hard starting around the 300-board marker. The key is staying off the throttle until you've committed the car to the middle of the turn. Turn-in happens roughly three-quarters up the track. Your apex is roughly at the middle of the turn (around halfway through the corner on the surface), and the exit is full throttle pointing toward the next turn."
+    },
+    {
+      "p": "Turn 2 is essentially a continuation of Turn 1. You'll already be at throttle exiting Turn 1, so Turn 2 is a commitment to holding that line through the banking. Don't lift, don't brake. The widest part of the track is on the exit of Turn 2, so you'll run all the way up to the wall if you're racing someone. That's where most of the passing happens through the middle section."
+    },
+    {
+      "h3": "Turns 3 and 4 (the widest section)"
+    },
+    {
+      "p": "This is where Nashville feels deceptive. After the tighter oval end, Turns 3 and 4 open up and the banking is slightly less aggressive. You'll hit the brakes hard into Turn 3, but not as early as you might think. The straightaway between Turns 2 and 3 is long, so you're rolling in fast. Brake around the 400-board, let the car settle into the turn, and commit to the middle again. The wide run-off here means you can be aggressive with your exit, but understand that going too high will put you on the apron, which kills your momentum."
+    },
+    {
+      "p": "Turn 4 is similar to Turn 2. You're already at throttle, and you're holding a line through the banking back to the straightaway. The challenge here is managing traffic. If there's a car ahead of you, you can run the high line to set up a pass on the next straightaway, or you can stay low and ride the draft. Either way, smooth inputs matter more than aggression."
+    },
+    {
+      "tip": "The most common mistake is over-braking into Turns 1 and 3 and then fighting the car through the mid-corner because you're too slow. Instead, trail-brake into these corners and let off gradually. The banking will help you around.",
+      "tipLabel": "Trail Braking Saves Time"
+    },
+    {
+      "h2": "Setup Strategy for Nashville"
+    },
+    {
+      "p": "On my MOZA R9 rig, I run most oval setups with baseline adjustments rather than extreme changes. Nashville is the same. The default setups in iRacing for the Next Gen stock car are already quite good, so I focus on small tweaks based on what I'm feeling in practice."
+    },
+    {
+      "h3": "Anti-roll bars and balance"
+    },
+    {
+      "p": "Front anti-roll bar stiffness affects how the car turns into the corners. If you're feeling like the car is pushing (understeering) into Turn 1, soften the front bar slightly. If the car is too loose on entry, stiffen it. Rear bar stiffness affects exit grip. Nashville's long straightaways mean you want stable exit traction, so I typically run a stiffer rear bar. The exact number matters less than the relative balance: you want the car to be neutral through mid-corner and responsive on exit."
+    },
+    {
+      "h3": "Brake bias"
+    },
+    {
+      "p": "Nashville's braking zones are medium-length because the banking helps slow you down. I run brake bias slightly rear-weighted compared to a flat track, roughly 52-54% front. This prevents the rear from locking up in the heavy banking of Turns 1 and 3. Test this in practice. Too much rear bias and your front tires will lock; too little and you'll feel the rear sliding on entry."
+    },
+    {
+      "h3": "Fuel and tire strategy"
+    },
+    {
+      "p": "Fuel mileage on Nashville depends on your line and throttle discipline. In a 500-lap race, I typically plan a fuel stop around lap 120-130, depending on the car setup and my pace. Tire wear is moderate unless you're pushing hard on entry or running multiple passes in quick succession. Plan for two or three full-stint tires per fuel stop, not four. The downforce at speed means you'll have good grip for a long time, but tires do fall off toward the end of a long run."
+    },
+    {
+      "h2": "Traffic Management and Passing"
+    },
+    {
+      "p": "Nashville's high speeds mean traffic is always close. You'll rarely have a moment where there's empty track in a full-field race. The wide straights make passing possible, but the banking and speed make it risky if you're not precise."
+    },
+    {
+      "list": [
+        "Run the low line through Turns 1 and 2 to ride the draft on the straightaway. This gives you a tow down to Turn 3, where you can attempt a pass.",
+        "Set up a pass on the straightaway before the passing zone, not during the turn. Hit your marks cleanly so the car ahead doesn't have a reason to block you.",
+        "Use the wide part of the track exiting Turn 2 and Turn 4. If you're alongside someone, stay high on the exit and use the banking to your advantage.",
+        "Defend by staying low and holding your line. Don't weave or brake-check. Aggressive defense causes incidents and usually results in you losing more positions than you save.",
+        "In traffic, smooth steering is faster than a sharp turn-in. The banking does much of the work for you if you let it."
+      ]
+    },
+    {
+      "p": "I've learned that patience through traffic pays off at Nashville. You might not get a pass in Turn 1, but that doesn't mean the opportunity won't come at Turn 3 a few laps later. The best passes happen when the car ahead is struggling with tire wear or fuel running low, not from forcing a move before the car is ready."
+    },
+    {
+      "h2": "Common Mistakes and How to Avoid Them"
+    },
+    {
+      "p": "Braking too early and too hard into the turns kills your entry speed and forces you to manage a slow mid-corner. Instead, brake later and lighter, then trail-brake as you turn in. The banking will help you rotate the car if you're smooth."
+    },
+    {
+      "p": "Running the high line on entry to Turns 1 and 3 puts you too close to the wall and forces you to run an inside-out line, which is slower than running the wide line and flowing through. Run low on entry and work your way up on exit."
+    },
+    {
+      "p": "Lifting off the throttle too early exiting the turns because you're worried about running out of room. The banking is your friend. Use the full width of the track and commit to holding throttle longer than feels natural. You have more grip than you think."
+    },
+    {
+      "tip": "Record a hot lap and compare your telemetry to faster drivers in your league or split. Most of the time-loss comes from mid-corner speed, not corner entry or exit. Focus on smooth steering and patience.",
+      "tipLabel": "Telemetry Tells the Story"
+    },
+    {
+      "h2": "Practice Session Plan"
+    },
+    {
+      "p": "Spend your first 10 laps getting comfortable with the speed and banking. Don't push hard. Just hit your marks and understand where the grip is."
+    },
+    {
+      "p": "Next 10 laps, focus on one corner at a time. Practice late braking into Turn 1, then focus entirely on smooth exit throttle application. Then move to Turn 3. Then to the straightaway line for traffic management."
+    },
+    {
+      "p": "Run 5 laps in race trim. Fuel to what you'll run in the race, tires at the compound you'll use, and traffic around you if possible. Focus on consistency and hitting marks lap after lap."
+    },
+    {
+      "p": "If you have time, run 20-lap stints with pit stops to practice pit road exit and tire management under real race conditions. This is where most drivers lose races, not in the qualifying runs."
+    },
+    {
+      "p": "Nashville rewards precision and patience more than any track on the iRacing schedule. The speed makes it feel like a brake-and-go track, but success comes from smooth inputs, good mid-corner grip, and disciplined traffic management. Spend your practice time building confidence in the banking and trusting the car to do what the setup promises. Once you're comfortable, consistency becomes almost automatic, and that's where your lap times will improve the most. For more oval setup tuning, check out my guide on <a href=\"moza-r9-iracing-settings.html\">MOZA R9 iRacing settings</a>, where I cover damper adjustments for high-speed tracks."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the best line through Turns 1 and 2?",
+      "a": "Brake hard around the 300-board into Turn 1, targeting the middle of the turn for your apex. Trail-brake to let the car settle, then commit to full throttle by mid-corner. Turn 2 is a continuation of the same line. Run as high as you're comfortable on exit and use the banking to carry speed down the straightaway."
+    },
+    {
+      "q": "How much brake bias should I run?",
+      "a": "Start with roughly 52-54% front bias. Nashville's banking helps slow the car, so you don't need as much front bias as you would on a flat track. If the rear locks in Turns 1 and 3, shift bias slightly forward. If the front locks, shift it back. Test this in practice with your specific setup."
+    },
+    {
+      "q": "What's the best way to pass at Nashville?",
+      "a": "Set up your pass on the straightaway before the turn, not during the turn. Use the draft on the low line to gain a tow, then make your move before entering Turn 3. In traffic, stay patient and wait for a moment when the car ahead is struggling or running slightly off-line. Forcing passes into the turns usually ends badly."
+    },
+    {
+      "q": "How often should I pit for fuel and tires?",
+      "a": "In a 500-lap race, plan fuel stops roughly every 120-130 laps depending on your pace and setup. Tire wear is moderate, so you can run 2-3 stints per tire set before falloff becomes noticeable. Monitor your fuel mileage in practice and adjust your pit window accordingly."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}

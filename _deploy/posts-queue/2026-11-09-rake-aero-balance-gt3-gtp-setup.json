@@ -1,0 +1,123 @@
+{
+  "slug": "rake-aero-balance-gt3-gtp-setup",
+  "tag": "Setup Guides · Aerodynamics",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Rake and aero balance in GT3 and GTP: setup trade-offs explained",
+  "description": "Rake changes aero balance dramatically in GT3 and GTP. Learn how front and rear ride height tweaks shift downforce and hurt or help lap time.",
+  "sections": [
+    {
+      "p": "Rake is the difference between front and rear ride height, measured in millimeters. On my rig, I spent weeks chasing understeer in the Ferrari 488 GT3 Evo before realizing my rake was fighting me. Increasing rake (raising the front or lowering the rear) loads the rear wing, shifts the aero balance rearward, and changes how the car rotates mid-corner. It sounds simple, but the weight transfer and downforce coupling make it one of the most misunderstood setup variables in GT3 and GTP racing."
+    },
+    {
+      "p": "The reason rake matters so much is that it affects aerodynamic balance independently of mechanical balance. You can have a neutral mechanical platform, but rake will alter how much downforce the front and rear generate, which changes turn-in, mid-corner grip, and exit stability. In tight, low-speed corners, rake compounds oversteer. On high-speed sweepers, it can fix understeer. Miss that trade-off and you'll spend the night adjusting anti-roll bars and dampers when the real problem lives in ride height."
+    },
+    {
+      "h2": "How rake shifts aero balance"
+    },
+    {
+      "p": "Raising the front of the car (positive rake) increases the rear wing angle relative to airflow, generating more rear downforce. The front wing generates slightly less because the nose is higher and encounters less turbulent, slower air. The net result is a rearward aero balance shift, which loads the rear tires and unloads the front."
+    },
+    {
+      "p": "In medium to high-speed corners, this sounds good: more rear grip and rotation. But on corner entry and slower, tighter turns, the front becomes lighter and less responsive. Oversteer increases. On track, you sense this as reduced steering feedback, less bite on turn-in, and mid-corner sliding that forces you to wait longer on the throttle. The Ferrari 488 GT3 Evo is sensitive to this. At Monza, slight positive rake works well for the fast sweepers; at a place like Le Mans with harder braking into medium-speed corners, it hurts entry feel."
+    },
+    {
+      "p": "Lowering the front (negative rake) does the opposite: it weights the nose, loads the front tires, and shifts aero balance forward. Turn-in sharpens. The car grips the apex harder. But the rear becomes aero-starved and can wash out on exit, especially under throttle application when aerodynamic load matters most."
+    },
+    {
+      "h2": "Rake and tire temperature"
+    },
+    {
+      "p": "Rake has a second, mechanical consequence. Lowering the rear (positive rake) compresses the rear suspension slightly, raising the mechanical ride height. This can trigger pickup of rear wing DRS or adjustable elements on GTP cars, changing downforce fluidly. But it also stiffens the rear end, reduces vertical compliance, and heats the rear tires faster. Positive rake chases rear tire temperature upward because the rear is doing more work."
+    },
+    {
+      "p": "Negative rake (lowering the front) adds mechanical load to the front suspension, heating the front tires harder and earlier in the stint. In long stints, I've found that excessive negative rake on the Cadillac V-Series.R GTP burns out the fronts by lap 20, forcing early tire changes. Positive rake spreads the heat more evenly because the aero load is distributed rearward, but if you overdo it, rear tire degradation accelerates later."
+    },
+    {
+      "tip": "Check tire telemetry after practice. If front tires are 10-15 degrees hotter than the rear on the same stint duration, your rake is too negative. If rear tires spike above front in the first five laps, rake is too positive. The ideal state balances tire temperature within 5 degrees across both axles by mid-stint.",
+      "tipLabel": "Tire temperature check"
+    },
+    {
+      "h2": "Rake trade-offs across track types"
+    },
+    {
+      "p": "Low-grip, low-speed tracks like Martinsville Speedway (in oval format) or tight street circuits demand negative rake. The front needs to bite on entry; understeer on exit is easier to manage than oversteer under braking. I run negative rake on the Ferrari at Monaco: the car is already twitchy in tight corners, and a loaded front wing steadies it."
+    },
+    {
+      "p": "High-speed tracks, especially those with fast sweepers and long straights, favor positive rake. The rear wing generates tremendous downforce at speed, so unloading the front aerodynamically (raising it) only costs you grip where you need it least. At Spa, positive rake on the Corvette C8R GTE works beautifully through the Esses. At Le Mans, a moderate positive rake helps exit drive on the Mulsanne."
+    },
+    {
+      "p": "Mixed-layout tracks are where rake decisions get messy. Imola has slow chicanes, medium-speed sweepers, and the high-speed Parabolica. A neutral rake (front and rear at identical heights, or within 2-3 mm) often compromises less than a strong rake bias either way. You lose some optimization on each section, but you gain consistency and predictability across the lap."
+    },
+    {
+      "h2": "Rake and braking balance"
+    },
+    {
+      "p": "Brake balance interacts with rake in ways that trip up many drivers. Positive rake lightens the front aerodynamically, which reduces available grip during heavy braking. To compensate, braking balance must shift forward (toward the front), adding brake pressure to the nose. Too much forward bias locks the front; too little and the car understeers hard under braking."
+    },
+    {
+      "p": "Negative rake loads the front wing, giving you grip to work with during braking. This allows you to run a brake balance percentage that feels more neutral or even rear-biased. In practice, I've found that swapping from neutral to positive rake at a fast track requires a 3-5 percent forward shift in brake balance to maintain locked-wheel consistency. Miss that adjustment and braking will feel disconnected, with the front either locking or washing out mid-pedal application."
+    },
+    {
+      "h2": "GTP-specific rake considerations"
+    },
+    {
+      "p": "GTP cars complicate rake because of active aerodynamics. The Porsche 963, Cadillac V-Series.R, and others have adjustable front and rear wings that deploy or retract based on speed and setup tuning. Rake interacts with these systems. On the Porsche, high-speed rear wing deployment combines with positive rake to create massive rear-biased aero balance. This works great on Daytona or the high-speed sections of Le Mans, but can make the car unmanageable in traffic or when running mixed-traffic stints at slower average speeds."
+    },
+    {
+      "p": "The Cadillac GTP handles rake more forgivingly because its aero package is less aggressive overall. But even there, negative rake at Laguna Seca helps rotate through the Corkscrew, while positive rake on the same car at COTA feeds the rear wing and stabilizes the rear on exit. Be prepared to shift rake by 5-10 mm between sessions when moving tracks or even fuel loads."
+    },
+    {
+      "list": [
+        "Positive rake (front up, rear down): More rear downforce, better rotation on sweepers, hotter rear tires, needs forward brake bias.",
+        "Negative rake (front down, rear up): More front downforce, sharper turn-in, hotter front tires, allows rearward brake bias.",
+        "Neutral rake (front and rear heights match, or within 1-2 mm): Balanced aero, consistent mid-corner behavior, safer compromise on mixed tracks.",
+        "Check tire temps and brake behavior after each adjustment. Rake changes both simultaneously."
+      ]
+    },
+    {
+      "h2": "Finding your rake baseline"
+    },
+    {
+      "p": "Start with the iRacing default setup for your car and track, which typically balances aero reasonably. Run five laps, build heat in the tires and brakes, and evaluate three things: turn-in feel on entry, mid-corner stability, and exit drive. If turn-in feels numb and the car understeers entry, lower the front 2-3 mm (more negative rake). If the rear feels loose, especially mid-corner when you're trying to position the car, raise the front 2-3 mm (more positive rake)."
+    },
+    {
+      "p": "After each 2-3 mm change, do another run. Rake changes create lag: the first lap after a setup change always feels wrong because tire temps are cold. By lap three or four, the tires warm and you get a real sense of how the new rake affects balance. This is why many drivers misjudge rake quickly and keep chasing it upward or downward. Patience pays off."
+    },
+    {
+      "p": "Once you're happy with balance, leave rake alone for the session. Adjust anti-roll bars, dampers, and brake balance to fine-tune. If the car still feels fundamentally unbalanced after those tweaks, then revisit rake. On my rig, I've learned to ask: does this feel like an aero problem or a suspension stiffness problem? Aero problems show up as balance shifts with speed (worse at high speed or low speed). Suspension problems show up as stiffness issues (harsh ride, difficulty building heat). The distinction saves hours of chasing ghosts."
+    },
+    {
+      "tip": "Record your qualifying laps with telemetry (Garage 61 or iRacing's built-in telemetry export work well). Compare front and rear downforce lines and aero load over a full lap. If rear aero load is consistently 15-20 percent higher than front, you have positive rake dominance. Check that against your tire temperature difference and brake balance. Telemetry doesn't lie about rake effects; your feelings do.",
+      "tipLabel": "Telemetry check"
+    },
+    {
+      "p": "One more reality check: rake is a macro adjustment, not a precision tuning tool. The difference between running 4 mm positive rake and 6 mm positive rake is usually smaller than the difference between good and poor brake tuning. Focus on getting rake in the ballpark for your track and car, then spend time on the details. At Monza, I run the Ferrari with about 8 mm positive rake because the high-speed sections demand rear stability. At Monaco, I run 3 mm negative. In between, I tweak brake balance, bump stops, and anti-roll bars. Rake is the foundation; everything else builds on it."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does positive rake always make the car rotate better?",
+      "a": "Positive rake unloads the front aerodynamically and loads the rear, which helps rotation on high-speed corners. On slow, tight corners, it can increase oversteer so much that the car becomes hard to drive. The track layout and speeds matter more than the rake number itself."
+    },
+    {
+      "q": "How much rake change is too much in a single adjustment?",
+      "a": "Change rake by 2-3 mm at a time, then do a full five-lap run to evaluate. Larger jumps (5+ mm) can mask the effect because you're adapting to a new balance state. Small steps let you dial in precisely without overthinking."
+    },
+    {
+      "q": "Can high rake cause brake balance problems?",
+      "a": "Yes. Positive rake lightens the front aerodynamically, reducing grip during braking. You'll need to shift brake balance forward (more front brake bias) to compensate. If you don't, the front will wash out under hard braking."
+    },
+    {
+      "q": "Should I use the same rake on street circuits and road courses?",
+      "a": "Not necessarily. Street circuits with tight, low-speed corners often need negative rake for turn-in feel. Road courses with sweepers and high-speed sections can run more positive rake. Start neutral and adjust based on how the car feels on entry and exit at your track."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2",
+    "cockpit"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}

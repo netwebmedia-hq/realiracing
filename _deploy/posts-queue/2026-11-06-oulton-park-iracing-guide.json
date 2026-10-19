@@ -1,0 +1,118 @@
+{
+  "slug": "oulton-park-iracing-guide",
+  "tag": "Track Guides · Setup",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Oulton Park iRacing Guide: High-Speed Corners and Trail Braking",
+  "description": "Master Oulton Park's fast-flowing layout, aggressive camber, and technical braking zones. Setup and driving technique for consistency.",
+  "sections": [
+    {
+      "p": "Oulton Park is one of iRacing's most technically demanding road courses. The British circuit flows fast with minimal room for error. Every corner rewards smooth inputs and punishes hesitation. On my MOZA R9, the directness of the feedback around Oulton makes the track feel deceptively simple until you push for pace. The camber works with you on entry and against you on exit. The braking zones are long and the apexes are precise. It's a track where a tenth comes from confidence built over twenty laps, not from a setup change."
+    },
+    {
+      "h2": "Track Layout and Key Corners"
+    },
+    {
+      "p": "Oulton Park is a 2.4-mile anti-clockwise loop based in Cheshire, England. The track features high-speed corners, banked sections, and a long back straight. Turn 1 (Island Bend) is a fast left-hander that immediately sets the tone. You arrive there at high speed and must brake late while pointing downhill. Turn 2 (Old Hall Corner) is a right-hander taken at full throttle if you've nailed Turn 1. The Cascades (Turns 3-4) are a rapid left-right pair with increasing elevation. Then comes the Bentley Straight, followed by Druids Corner, a hard stop-and-turn-in point that sorts aggressive drivers from smooth ones."
+    },
+    {
+      "p": "The second half of the lap is tighter. Knickerbrook (Turn 9) is a high-speed left-hander that benefits from rotation and trail braking. The Esses that follow require rhythmic inputs and consistency. Hairpin (Turn 13) is the slowest corner on track. Exiting the Hairpin onto the main straight, you have a long acceleration zone where setup and confidence matter equally. Oulton rewards drivers who stay smooth and trust the camber. The banking helps you carry speed but punishes overambition in the mid-corner."
+    },
+    {
+      "h2": "Brake Zone Strategy and Trail Braking"
+    },
+    {
+      "p": "Oulton demands confident late-braking into several corners. Turn 1 is the clearest example. On my CRP2 load-cell pedals, I release brake pressure while rotating the wheel, beginning mid-corner. The key is separating brake release from turn-in input. Many drivers brake too long and turn in too sharply. Instead, brake in a straight line, then gradually ease off while the MOZA R9's directness lets you feel the chassis loading. By mid-corner, you're trail-braking lightly, and the car rotates naturally."
+    },
+    {
+      "p": "Druids Corner is where most drivers lose time. It's a 90-degree right turn after a long straight. You need late braking, but the turn is sharp enough that you must be patient on initial steering input. Over-commit and you'll understeer. Build confidence lap by lap. On lap three, brake where you feel safe and make an early apex. On lap eight, you'll be 5 meters deeper. Knickerbrook functions similarly. It's a left-hander where trail braking into rotation creates a tighter arc and faster corner speed than stabbing the wheel and hoping for grip."
+    },
+    {
+      "tip": "On cold tires, brake slightly earlier and plan your trail-brake point shallower. As the session builds heat, you can extend braking deeper and increase the rate of brake release during rotation. This gradual confidence-building prevents big losses if the car snaps.",
+      "tipLabel": "Cold Tire Caution"
+    },
+    {
+      "h2": "Baseline Setup Approach"
+    },
+    {
+      "p": "Oulton is fast and flowing, so you'll run a relatively neutral baseline. Anti-roll bars on both ends should be stiff enough to control the chassis through the Cascades and Knickerbrook, but not so stiff that you lose grip in the slower Hairpin and Esses. Start with whatever your favorite car's baseline suggests, then make one change per session. If the car feels loose mid-corner on the banking (Island, Old Hall), add a click of rear anti-roll bar. If it feels heavy on turn-in through Druids or the Esses, reduce front anti-roll bar."
+    },
+    {
+      "p": "Differential settings matter on the exit of the Hairpin and the main straight acceleration zones. A slightly higher coast setting helps rotation on corner exit without sacrificing drive. Brake balance should be neutral to slightly rear-biased. Oulton doesn't have extreme braking events, so once you find a comfortable balance, leave it alone and focus on consistency. On my own rig, I've found that setup changes here produce smaller gains than they do at technical tracks like Imola or Zandvoort. Smooth inputs and building confidence lap by lap yield better results than chasing every tenth with setup tweaks."
+    },
+    {
+      "list": [
+        "Anti-roll bars: Start neutral. Add rear stiffness if car feels loose mid-corner on the banking.",
+        "Differential: Slightly higher coast helps rotation. Test on Hairpin exit and Cascades.",
+        "Brake balance: Neutral to slightly rear-biased. Leave once comfortable and focus on driving.",
+        "Ride height: Keep even. Oulton banking doesn't create extreme weight transfer.",
+        "Wings: Baseline is safe. Downforce matters less than consistency here."
+      ]
+    },
+    {
+      "h2": "Oulton Park Driving Technique Priorities"
+    },
+    {
+      "p": "The foundation at Oulton is smooth steering input. The track punishes abrupt corrections. On the MOZA R9, the strong directional feedback makes it obvious when you've made a steering input the car didn't need. Use all your visibility (triple monitors or VR) to plan your line early. Look into the corner before you turn in. This gives you confidence to brake late and trust the car's rotation."
+    },
+    {
+      "p": "The Cascades demand consistent throttle modulation. Turn 3 is a left-hander, and Turn 4 is a right. Don't apex Turn 3 and immediately go full throttle. You need mid-corner power application. Ease the throttle in progressively through Turn 3, carry that momentum into Turn 4, and build to full power only once the car is pointed at the exit. Rush it and you'll run wide or lose the line into the final third of the lap. The Cascades are often where drivers give up 2-3 tenths due to impatience."
+    },
+    {
+      "p": "On the main straight after Druids, you have room to build speed. Don't trail-brake too deep or you'll cross the line into Druids with insufficient corner speed. Brake positively but not dangerously early. Once you're committed to the corner, trust the input and focus on rotation and mid-corner speed. The run down the Bentley Straight rewards smooth mid-corner work. If you've rotated well and accelerated hard out of Druids, you'll have higher speed onto the straight."
+    },
+    {
+      "tip": "Record a hotlap video and watch it on mute. Notice how often your steering wheel is moving. If you see constant small corrections, you're overdriving relative to your confidence. Smooth it out.",
+      "tipLabel": "Video Feedback"
+    },
+    {
+      "h2": "Common Mistakes and How to Avoid Them"
+    },
+    {
+      "p": "The most common mistake is over-braking into Turn 1. Drivers see the downhill and red-line it, then panic when the car pushes. Instead, brake firmly in a straight line, then release brake pressure while turning in. The banking and camber want to help you. Let them. A second common error is turning in too early at Druids. The corner sneaks up because you're at high speed. Mark a braking point 50 meters before the corner and hit it every lap. Only then consider moving it deeper."
+    },
+    {
+      "p": "The Hairpin can result in wheelspin if you're too aggressive on throttle. The corner is tight and low-speed, and the exit points uphill slightly. Be patient. Get the car settled, turn in smoothly, and let the tires roll before adding throttle. Many drivers lose tenths here due to throttle jerks and lock-ups. Finally, don't underestimate the Esses. They're not fast, but they're precise. Lose focus there and you'll exit misaligned and lose three corners worth of time trying to recover."
+    },
+    {
+      "h2": "Practice Session Plan for Oulton Park"
+    },
+    {
+      "olist": [
+        "Lap 1-3: Slow entry into every corner. Find the apex and roll through gently. Build confidence with smooth inputs. Ignore lap time.",
+        "Lap 4-7: Match your braking points from videos or recent races. Focus on one corner per session: Turn 1, then Druids, then Knickerbrook. Dial in trail-brake depth.",
+        "Lap 8-12: Push braking slightly deeper and work on corner exit acceleration. Oulton rewards early throttle out of slow corners. Practice the transition from Hairpin to the straight.",
+        "Lap 13+: Piece together smooth laps by linking three consistent corners. Once you have Island, Old Hall, and Cascades running clean, add Druids and the Bentley Straight. Build the lap in sections.",
+        "Final laps: Race-pace simulation. Set a target laptime (based on your car and field strength), then execute three laps with that goal. Don't overdrive. Consistency is the real pace at Oulton."
+      ]
+    },
+    {
+      "p": "Oulton Park teaches you that smooth, confident driving beats aggressive setup hunting. The track demands respect and consistency. After a session here, you'll naturally improve your inputs at other fast-flowing circuits. If you're learning manual sequential shifting, Oulton is ideal because the corners flow together and reward rhythmic downshifting. See my guide on <a href=\"sequential-h-pattern-paddles-shifter-choice.html\">choosing between sequential and H-pattern shifters</a> if you're still deciding on your input method. On my MOZA R9 with the MOZA CS V2 wheel, the feedback is so direct that you feel the moment the car loses or gains rotation, which makes Oulton's technical demands instantly readable. Master this track and your racecraft improves across the board."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the best line through the Cascades?",
+      "a": "Apex Turn 3 (Cascades left) at your normal depth, but hold throttle at about 50% and ease off just before the apex. Roll through the apex smoothly, then build throttle into Turn 4 (right). The key is never being fully on the throttle in Turn 3. Once the car points at Turn 4, you can go full throttle, but rushing it causes a push or run-wide exit. Practice this transition until you can feel the moment you gain enough rotation to add throttle safely."
+    },
+    {
+      "q": "Should I trail-brake into Knickerbrook?",
+      "a": "Yes, but gently. Knickerbrook is a high-speed left-hander and it's one of the places Oulton punishes overconfidence. Brake on the straight, release brake pressure while turning in, and be fully off the brakes by mid-corner. This allows the car to rotate naturally without fighting you. Don't carry so much speed that you need to brake mid-corner. If you're doing that, your entry brake point is too late."
+    },
+    {
+      "q": "How do I improve at Druids Corner?",
+      "a": "Druids is a hard 90-degree right-hander that sorts aggressive drivers from smooth ones. Brake positively and straight in a line well before the apex, then release brake pressure gradually while turning in. Your steering input should build slowly, not snap in. On cold tires, brake and turn-in earlier. As tires build heat, you can push the brake point deeper. The car should be nearly fully rotated before you add throttle. Rushing this corner costs seconds because the exit points downhill and you need smooth acceleration to set up Old Hall."
+    },
+    {
+      "q": "What brake balance should I run at Oulton Park?",
+      "a": "Start with your car's default or slightly rear-biased (a few clicks more rear than front). Oulton doesn't have extreme braking events, so once you find a balance where you can brake consistently without locking the rears, leave it alone. Most improvement comes from driving consistency, not brake balance changes. If you're locking the rears in one corner, it's usually a brake-point issue, not a balance issue. Move your brake point 10 meters earlier instead of adjusting the balance."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2",
+    "moza-cs-v2"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}

@@ -1,0 +1,143 @@
+{
+  "slug": "eldora-speedway-iracing-dirt-guide",
+  "tag": "Track Guide · Oval Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Eldora Speedway iRacing Dirt Guide: Lines, Setup, and Race Strategy",
+  "description": "Master Eldora's half-mile dirt oval with line choice, setup tuning, and throttle control. Learn how to carry speed through the banking and manage tire wear.",
+  "sections": [
+    {
+      "p": "Eldora Speedway is one of iRacing's most rewarding dirt ovals, a half-mile clay track with genuine character. The banking is real enough to reward aggression, but the dirt surface punishes guesswork. I spend a lot of time here in the sprint car series, and every lap teaches me something about throttle modulation and reading the track. The difference between a safe run and a competitive one comes down to commitment through the turns and understanding how the track changes under you."
+    },
+    {
+      "p": "Unlike concrete ovals where the line is painted and immovable, Eldora shifts beneath you. The racing surface moves, groove work changes, and tire wear compounds across a distance. My MOZA R9 wheelbase makes these feedback layers visible if you're paying attention to force feedback, especially the small deflections that signal the track is going away from you."
+    },
+    {
+      "h2": "Reading the Eldora banking and groove structure"
+    },
+    {
+      "p": "Eldora's half-mile shape means the banking is steeper than you might expect from a \"short\" track. The turns sit at roughly 14 degrees, which is enough to let you run higher and carry real speed if the car is set up right. The groove isn't always where newcomers think it is. Early in a session, the low groove is your reference line, but as rubber is laid down, you'll find grip moving higher up the banking."
+    },
+    {
+      "p": "The straightaways are short, so momentum loss in the turns costs more than it would at a mile-plus oval. I run the middle-to-upper groove on entry, let the banking work for me, and the goal is to exit off turn 2 and into the backstretch with full throttle. The short distance between turns means you're managing turn 4 entry before you've finished accelerating off turn 2."
+    },
+    {
+      "list": [
+        "Low groove: wet, slick, used early in a race or session. Good for consistent lap times but hard to pass.",
+        "Middle groove: where most passing happens. Rubber accumulates here, and you can run three-wide if you're committed.",
+        "High groove: fastest once rubber is down, especially late in a run when cars have laid a line. Risky on entry if the track is green.",
+        "Dirt transition zone: the orange clay outside the racing surface. Hard and fast when wet, slippery when dry. Avoid unless you're sliding."
+      ]
+    },
+    {
+      "tip": "Early in a race, the low groove is safer but slower. By lap 15-20, the middle and high grooves come in as the track rubbers up. Don't stick with your opening setup; adapt your line as the track evolves.",
+      "tipLabel": "Track Evolution"
+    },
+    {
+      "h2": "Setup tuning for Eldora dirt racing"
+    },
+    {
+      "p": "My approach to Eldora setup starts with stability over raw speed. Dirt is forgiving if you're predictable and punishing if you're erratic. I'll typically run a slightly softer setup than on concrete ovals because the surface gives you feedback without needing spring stiffness to relay information."
+    },
+    {
+      "h3": "Wedge and roll stiffness"
+    },
+    {
+      "p": "On my sprint car setup, I keep the front and rear roll stiffness in a narrow band, ~60-70 front, 50-60 rear as a starting point. Wedge adjustment (cross-weight) has more influence on dirt than it does on pavement. A wedge-heavy setup (right-side weight bias) helps the car rotate through the turn but can make it loose off the exit. I dial wedge down by 100-200 pounds from my road-course baseline. The key is balance: the car should turn in without pushing, rotate under throttle, and not snap loose mid-corner."
+    },
+    {
+      "h3": "Tire pressure and air springs"
+    },
+    {
+      "p": "Tire pressures matter more on dirt because the track is responsive to them. Cold pressures ~28-30 psi front, 26-28 psi rear give me a wide working window. As the tires warm, they'll climb maybe half a pound per side. Air springs (or coilovers if your car uses them) control how the suspension reacts to the undulating surface. I run them medium to medium-soft because Eldora's surface has minor ruts and washboard areas that stiffer springs won't forgive."
+    },
+    {
+      "h3": "Brake bias and pedal tuning"
+    },
+    {
+      "p": "Eldora's short straights mean braking zones are tight. I keep brake bias neutral to slightly rear-biased (52-54 percent rear) because the dirt surface has variable grip. On my MOZA CRP2 load-cell pedals, I run the brake pressure curve fairly linear so I can modulate without locking the wheels. A locked wheel on dirt doesn't slide cleanly; it digs and kills your momentum. I practice short-pedal, progressive braking more here than anywhere else."
+    },
+    {
+      "h2": "Line choice and throttle control through the turns"
+    },
+    {
+      "p": "Eldora rewards smooth, deliberate driving. The banking supports your line if you commit, but overdriving entry and expecting the car to sort itself out will end badly. My line philosophy is entry-focused: get the front loaded and pointed correctly, and the banking does the rest of the work."
+    },
+    {
+      "olist": [
+        "Turn 1 and 3 (north turns): brake on the straightaway and down-shift so you're at full throttle by mid-turn. The banking is working for you; don't fight it by braking in the turn. Apex is low, exit is high.",
+        "Turn 2 and 4 (south turns): these are slightly tighter. Brake harder, downshift, and rotate the car early. The exit is critical: open the wheel and get to full throttle before you run out of track. This sets up your run into the opposite straight.",
+        "Mid-turn throttle modulation: once the car is pointed, I'm feeding throttle smoothly. On iRacing's dirt simulator, there's no on-off switch. Lift, and the car gets loose. Over-aggressive, and you spin. The throttle should be continuous, with small adjustments based on how the car feels."
+      ]
+    },
+    {
+      "p": "The banking means you can run higher than you think. Many drivers run too low through Eldora and lose time running a line the track doesn't prefer at that moment in the session. I start low, then deliberately move higher as the track conditions improve. By mid-race, I'm running the middle-to-high groove, making up seconds on drivers still plugging the low line."
+    },
+    {
+      "tip": "Dirt oval racing rewards committing to a line and sticking with it. Constantly changing your groove kills the car's balance. Pick a line, run it for 5-10 laps, then adjust once if needed. Indecision causes loose exits and lost time.",
+      "tipLabel": "Line Commitment"
+    },
+    {
+      "h2": "Tire wear and race strategy"
+    },
+    {
+      "p": "Eldora sessions range from short sprints to 30-40 lap main events. Tire wear is real; a set of tires will degrade over 20-30 laps. Early laps, when tires are cold and pressures are building, lap times will be slow. Mid-race, around laps 10-20, the tires are optimal. Late in a race, around lap 25 onward, performance drops off and you'll feel the car get a bit loose everywhere."
+    },
+    {
+      "p": "Strategy is simple: save your best tires for the feature race. In heat races, I'll run a predictable line and preserve everything. In the feature, I push hard early while tires are still good. If a yellow flag comes out, that's a free reset on tire temperature and grip. Many passes at Eldora happen right after a restart because drivers catch each other on cold tires. I'll position myself to attack that window: aggressive line, full throttle, and make the move before tires come back in."
+    },
+    {
+      "list": [
+        "Early laps (1-5): tires cold, pressures building. Lap times are slow. Use this window to find your line and learn the groove.",
+        "Mid-race (10-20): tires at operating temperature, pressures stable. Fastest laps happen here. Push hard if you're near the front.",
+        "Late race (25+): tire degradation begins. Grip decreases mid-corner and off-exit. Adjust your line slightly lower if the car is loose up top.",
+        "Yellow flag restarts: tires cool rapidly. First lap after a restart will feel like a new tire set. Aggressive, decisive driving on restart laps wins races."
+      ]
+    },
+    {
+      "h2": "Common mistakes and how to fix them"
+    },
+    {
+      "p": "The most expensive mistake I see at Eldora is over-braking into the turns. Drivers arrive too hot, lock the wheels, and lose the front end. The second mistake is running the same line all race and not adapting to track evolution. Third is throttle input that's either on or off instead of smooth modulation."
+    },
+    {
+      "p": "If you're spinning out mid-corner, your entry speed is too high or your brake bias is biased too far toward the front. If you're loose every exit, your throttle input is aggressive and the track is telling you something; ease off slightly and see if the car responds. If you're running out of grip on the high line, the track may have gone slick up there; move down two feet and see if you find grip again. Dirt responds to small inputs; trust that philosophy."
+    },
+    {
+      "p": "One more thing: my MOZA R9 force feedback at Eldora is detailed and worth listening to. The wheelbase will signal when the track surface is going away from you, when tires are losing grip, and when you're at the edge of a spin. I run damping at ~8-10 and friction at ~2-3 on my R9, which keeps the feedback clear without being so aggressive it masks the small signals dirt racing depends on. If you're using a different wheelbase, dial in enough feedback to feel the surface but not so much that it becomes white noise."
+    },
+    {
+      "h2": "Practice session structure for Eldora"
+    },
+    {
+      "p": "I use practice sessions as groove experiments. First 10 minutes, I focus on turn 1-2 entry and find a baseline line. Next 10 minutes, I move to turn 3-4 and work on exit consistency. Then I run 5 laps and time them, adjust one or two setup items if needed, and run 5 more. By the end of a 30-minute practice, I know the line, my setup is dialed, and my lap times are close to what I'll run in the race. Don't waste practice changing five things at once. Change one, run three laps, evaluate, then decide if it helped."
+    },
+    {
+      "p": "When heat races start, I run clean and predictable. Save tire wear and focus on clean exits and early track position. By the time the feature rolls around, you've done your homework, you know the groove, and you can focus on racing instead of discovering the line for the first time in the main event. That's how you stay competitive at Eldora across a full night of racing."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the optimal tire pressure for Eldora dirt racing?",
+      "a": "Start with cold pressures around 28-30 psi front and 26-28 psi rear. Tires will warm and pressures will climb slightly over a run. The range gives you a wide working window and adapts to how the track changes through a session. Adjust down 1-2 psi if you're spinning, up 1-2 psi if the car feels loose and you need more support."
+    },
+    {
+      "q": "Should I run the low or high groove at Eldora?",
+      "a": "Start in the low groove early in a session or race when the track is green or wet. As rubber is laid down over 15-20 laps, grip moves to the middle and high grooves. By mid-race, the fastest line is usually middle-to-high. Adapt your line as the session progresses instead of sticking with one groove all night. Most passing happens in the middle groove once it comes in."
+    },
+    {
+      "q": "Why do I keep spinning at Eldora?",
+      "a": "Most spins come from over-braking into the turn or aggressive mid-corner throttle inputs. Ease off the brake before you reach the apex and use smooth, gradual throttle feed mid-turn. If you're spinning on exit, your throttle is too aggressive relative to the current tire grip. Dirt requires committed but smooth input; on-off throttle control causes loose exits and crashes."
+    },
+    {
+      "q": "How do I know when the track has evolved and I need to adjust my line?",
+      "a": "Watch your lap times. If lap times drop significantly between lap 5 and lap 15, the track is rubbing in and grip is increasing. Your on-track feeling will also shift: the car will feel less loose up high and more planted mid-corner. When you notice both, move your line up and see if lap times improve. You can also watch competitors; if several cars move higher, the groove has moved. Follow them."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}

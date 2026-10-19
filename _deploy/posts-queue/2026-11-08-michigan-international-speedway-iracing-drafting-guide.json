@@ -1,0 +1,149 @@
+{
+  "slug": "michigan-international-speedway-iracing-drafting-guide",
+  "tag": "Car Guide · Oval Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Michigan International Speedway iRacing: Two-Mile Drafting Technique and Setup",
+  "description": "Master MIS drafting on iRacing with proven line choices, throttle discipline, and setup tweaks. Learn when to push and when to sit tight.",
+  "sections": [
+    {
+      "p": "Michigan International Speedway is one of iRacing's fastest ovals, and the two-mile length means drafting isn't optional. I've learned this the hard way on my MOZA R9 rig: arrive at Turn 3 alone, and you'll watch three cars sail past on the backstretch. The draft here is real. It's not a gimmick. You either understand it or you'll spend a lot of laps puzzled about why you're getting passed on straightaways despite clean entries."
+    },
+    {
+      "p": "MIS drafting differs from short-track racing. The high speeds mean the draft window is wider, but it's also more forgiving. You have more room to catch up to the car ahead. This isn't Daytona or Talladega, where the draft is suffocating and every tenth of a second of separation feels like a three-car-length gap. At MIS, you can afford to be patient, and patience usually wins."
+    },
+    {
+      "h2": "How the MIS draft works at speed"
+    },
+    {
+      "p": "At ~200 mph, the car in front is pushing air hard. That displaced air creates a low-pressure zone behind it, and your car gets pulled into that zone. The closer you are, the stronger the effect. At MIS, you'll pick up 3 to 5 mph just by sitting a car length behind someone on the straightaway. That sounds small. It's not. That speed advantage compounds over a full race. You'll lap traffic faster. You'll catch the leader. You'll make a pass stick."
+    },
+    {
+      "p": "The draft also works sideways. When you're running side-by-side, the lead car feels the car beside him. Both cars are disrupting airflow. The car in second often has a better line through the corner because the lead car isn't running the absolute best groove. That's your opportunity. You don't have to out-brake the leader into Turn 3. You can out-handle them through the turn because you're running a tighter, cleaner line."
+    },
+    {
+      "h2": "The racing line through each turn"
+    },
+    {
+      "h3": "Turns 1 and 2 (the chicane)"
+    },
+    {
+      "p": "This is where drafting ends and car control begins. You can't out-draft through a chicane. The turns are too tight. You have to out-brake and out-handle. Coming off the backstretch, you're sitting in someone's draft at 200+ mph. You'll want to brake earlier than feels natural because the draft will carry you down the track. Trail brake into Turn 1. Be smooth. The car wants to push. Load cell pedals like my MOZA CRP2 let you feel exactly how much pressure you're applying, so I can modulate brake and throttle with real precision through here. You will lose the pass if you overdrive this."
+    },
+    {
+      "p": "The line through the chicane is tight and technical. Most sim racers run too much speed and then have to brake again between Turns 1 and 2. That kills your exit. Sacrifice a little entry speed and carry better speed through Turns 1 and 2, and you'll have more throttle available on the straightaway leading into Turn 3. That's where you'll get the draft back."
+    },
+    {
+      "h3": "Turns 3 and 4 (the fast pair)"
+    },
+    {
+      "p": "These turns are wide and fast. This is where the draft becomes critical again. If you nailed the exit of Turn 2, you should be able to roll full throttle through Turns 3 and 4. The car ahead will be pulling away on the backstretch, so this is your braking point. Get a good run down the backstretch so you can set up the next pass attempt into the chicane. The draft will take you most of the way there. Stay patient."
+    },
+    {
+      "list": [
+        "Hit the apex of Turn 3 with intention, not panic. This turn defines your backstretch speed.",
+        "Avoid lifting through Turn 4. The banking is enough to carry speed if your line is correct.",
+        "Exit Turn 4 with full throttle. This is the straightaway where the draft matters most."
+      ]
+    },
+    {
+      "h2": "Throttle discipline and the draft"
+    },
+    {
+      "p": "I see a lot of sim racers make the same mistake: they get impatient. They sit in the draft for two laps, then try to out-accelerate the car ahead on the backstretch. That won't work. You have the same power, the same gearing, the same everything. The car ahead has been running the same pace you're running. You can't suddenly accelerate faster because you decided to go for it."
+    },
+    {
+      "p": "The pass at MIS comes from one of two places: better car control through the corners, or a setup change that lets you carry more speed on exit. That's it. If you want to pass, you pass with your driving. The draft will help you get close. Your braking and handling will get you around them. Throttle discipline is about knowing when to stay full throttle and when to back out slightly to set up the next corner better. At MIS, that usually means staying calm on the backstretch and attacking into the chicane."
+    },
+    {
+      "tip": "Fuel mileage at MIS matters. You're running high speed for two miles. Gear selection and top-end setup will determine whether you can run flat-out or need to save fuel. Check the setup before the race.",
+      "tipLabel": "Fuel strategy"
+    },
+    {
+      "h2": "Setup for MIS drafting"
+    },
+    {
+      "p": "The baseline setup for MIS is a good starting point, but you can make targeted tweaks if you understand what they do. My MOZA R9 with locked-in force feedback helps me feel every setup change, so I can test and iterate quickly."
+    },
+    {
+      "p": "Downforce is the main knob. Higher downforce lets you carry more speed through the corners, especially Turns 1, 2, 3, and 4. Lower downforce reduces drag on the straightaway, so you'll have higher top speed and better draft recovery. At MIS, the two-mile length favors lower downforce because straightaway speed matters so much. If you're getting drafted on the backstretch every lap, drop your wing a notch and test. You might lose a tiny bit of corner speed but gain more on the straightaway."
+    },
+    {
+      "p": "Gear selection is the second big variable. Taller gears (lower numerical ratio) mean higher top speed and better draft recovery. Shorter gears (higher numerical ratio) mean better acceleration and faster corner exit. At MIS, I lean toward taller gearing because the straightaways are long and the draft is the primary way to gain on competitors. Run practice, time yourself, and compare your pace to the field. If you're slow on the straights, go taller."
+    },
+    {
+      "list": [
+        "Start with baseline downforce and test changes in 1-percent increments.",
+        "Measure lap time over 5-10 laps to see the effect of gear changes.",
+        "Front bar and rear bar balance affects turn-in feel. Too tight and you'll understeer on entry; too loose and you'll oversteer on exit.",
+        "Brake bias can shift forward slightly at MIS to help with late-race fuel saving."
+      ]
+    },
+    {
+      "h2": "The pass: when and how to make it stick"
+    },
+    {
+      "p": "You've caught the leader. You're sitting in the draft a car length back on the backstretch. What now? This is where a lot of sim racers mess up. They see an opportunity and go for it immediately. You'll just crash them into Turn 1, and the stewards will leave you both a note."
+    },
+    {
+      "p": "The smart pass at MIS happens in sequence. First, you catch the car ahead in the draft on the backstretch. Second, you break the draft by sliding to the side as you approach Turn 1. Your goal is to be side-by-side at the braking zone so you can out-brake them into the chicane. Third, you execute a cleaner line through Turns 1 and 2 and get a better exit into Turn 3. Fourth, you use that superior exit speed to gap them on the backstretch again. That's the pass. It takes two to four laps. It's patient. It works."
+    },
+    {
+      "p": "If you try to make a move inside Turn 3 when you're still sitting in the draft, both cars will be pulling too hard and too fast to brake in time. Someone goes off track. You get a penalty. The car ahead stays ahead. Plan the pass. Bait the corner. Execute on your terms."
+    },
+    {
+      "h2": "Reading traffic and multi-car drafting"
+    },
+    {
+      "p": "When there are multiple cars on track, drafting becomes dynamic. A group of three or four cars will move together, building speed down the straightaway. Being on the inside of that group (third in line) is worse than being on the outside (second in line). The outside car is getting a cleaner draft line and will have an easier time making a pass. The inside car is getting drafts from both the car ahead and the car beside them, which creates turbulence. It's a bad place to be."
+    },
+    {
+      "p": "When you're in a multi-car train, your job is to position yourself so you can make a pass at Turn 1. If you're inside and can't get to the outside, you're not going anywhere. Stay patient. Wait for a braking mistake. Make your move only when you have a real opportunity."
+    },
+    {
+      "tip": "In a three-car draft, the lead car is working the hardest to punch through the air. They'll often be tired and more prone to mistakes late in the race. The second car is in the sweet spot aerodynamically. The third car has turbulence but can draft both cars ahead. Position accordingly.",
+      "tipLabel": "Multi-car positioning"
+    },
+    {
+      "h2": "Practice routine for MIS mastery"
+    },
+    {
+      "p": "I spend time in practice trying specific scenarios. First, I run solo laps to understand the baseline pace and to develop smooth inputs through the chicane. That's foundational. Then I run practice races against AI set to competitive difficulty. I practice drafting scenarios: sitting in someone's draft, making a pass, defending a position, and recovering from mistakes. Finally, I run a full race-distance stint to understand fuel mileage and tire wear so there are no surprises during the actual race."
+    },
+    {
+      "olist": [
+        "Solo session: nail the chicane line with smooth inputs and full throttle elsewhere.",
+        "Practice against AI: learn to catch up using the draft and execute clean passes.",
+        "Race distance: run full fuel and tires to validate your setup and fuel strategy.",
+        "Traffic simulation: run a qualifying-only session to practice racing in real traffic scenarios."
+      ]
+    },
+    {
+      "p": "Michigan is one of the most rewarding ovals to race on iRacing once you understand the draft. The line is fast. The passes are clean. The racing is intense. Spend the time to learn it, and you'll have a pace advantage that translates to real race results."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What gear ratio should I run at Michigan?",
+      "a": "Start with the baseline and test taller gears (lower numerical ratio) first since MIS is a high-speed two-mile oval. Taller gears give you better top speed and draft recovery, which matters more than acceleration on this track. Run practice laps and time yourself over 5-10 laps to compare. If you're getting drafted consistently on the backstretch, go one notch taller."
+    },
+    {
+      "q": "How close do I need to be to feel the draft at Michigan?",
+      "a": "At MIS speeds around 200 mph, you'll feel aerodynamic benefit from about 2 to 3 car lengths back. The closer you get, the stronger it is. Directly behind the car ahead (within a car length), you'll pick up 3 to 5 mph. On the side of another car, the draft works sideways too, which affects your cornering speed through Turns 1 and 2."
+    },
+    {
+      "q": "When should I make a pass at Michigan?",
+      "a": "The ideal pass happens into the chicane (Turns 1 and 2). Catch the car ahead in the draft on the backstretch, then break to the outside as you approach Turn 1 so you can out-brake them into the turn. Execute a cleaner line through Turns 1 and 2 and use the better exit to gap them on the backstretch. Avoid trying to pass on the straightaway or through the fast corners (Turns 3 and 4) where both cars have too much speed."
+    },
+    {
+      "q": "How does downforce affect Michigan racing?",
+      "a": "Higher downforce lets you carry more speed through the corners but increases drag, reducing top speed on the straightaway. Lower downforce reduces drag and improves draft recovery but makes the corners looser. At MIS, the straightaways are long and drafting matters a lot, so most competitive setups run slightly lower downforce than the baseline. Test 1-percent changes in practice to find the sweet spot for your driving style."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}

@@ -1,0 +1,115 @@
+{
+  "slug": "laguna-seca-corkscrew-turn-1-guide",
+  "tag": "Track Guides · iRacing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Laguna Seca Corkscrew and Turn 1: Braking, Apex, Exit",
+  "description": "Master Laguna Seca's two hardest corners: nail the Corkscrew's downhill approach and Turn 1's late apex for consistent lap-time gains.",
+  "sections": [
+    {
+      "p": "Laguna Seca is a track that rewards precision over aggression, and nowhere is that more obvious than the Corkscrew and Turn 1. These two corners account for a huge share of lap-time spread in the iRacing field. I spent weeks working through both on my MOZA R9 rig, and the difference between a safe run and a confident one showed up immediately in my telemetry. The Corkscrew gets all the attention because of the visual drama, but Turn 1 is often where faster drivers extract an extra tenth without looking like they are pushing any harder."
+    },
+    {
+      "h2": "The Corkscrew: approach, turn-in, and the drop"
+    },
+    {
+      "p": "The Corkscrew is a left-hander that drops elevation as you run through it. On approach from Turn 11, you are still on the throttle carrying speed downhill. Most drivers brake too early or trail-brake all the way through, which kills your exit speed. The real move is to brake hard and complete the braking before turn-in, so you can be on throttle again well before you reach the apex."
+    },
+    {
+      "p": "Brake in a straight line down the hill. Aim to be completely off the pedal by the time you turn the wheel left. The car will naturally rotate as you add steering angle, and the downhill pitch will help the front end bite. My MOZA R9 feedback tells me exactly when the front load is building: the FFB weight peaks right around the point where I need to start rolling in throttle. If I am still braking into the turn, that weight never fully develops, and I lose grip on the exit."
+    },
+    {
+      "list": [
+        "Brake line: Begin braking around the 100-meter board, aiming to be completely off the pedal by the 50-meter mark.",
+        "Turn-in: Smooth and deliberate. Avoid sudden steering inputs that upset the car on the downhill slope.",
+        "Throttle application: Begin rolling on as soon as the steering angle peaks. Aim to be at full throttle before the apex.",
+        "Apex point: Wider than it looks. Clip the inside curb but do not lock the car against the wall; you need room to extend on exit.",
+        "Exit: The car will naturally wash wide as it clears the apex. Let it run to the edge of the road surface. This is where you build speed for the run to Turn 1."
+      ]
+    },
+    {
+      "tip": "The FFB cliff at the Corkscrew is real. When braking is done and the car is committed to the turn, the load transfers forward, and my MOZA R9 goes heavy in the wheel. That heaviness is your cue to get on throttle. Ignore it and you are over-slowing the exit.",
+      "tipLabel": "FFB tells the story"
+    },
+    {
+      "h2": "Turn 1: late apex for a long straight"
+    },
+    {
+      "p": "Turn 1 is a right-hander that leads onto the long uphill straight toward Turn 2. Most drivers think of it as a simple power-out corner, but the real lap-time gain comes from taking a much later apex than feels natural. A late apex here buys you higher speed into the straight and better acceleration over the first ~150 meters. I used to apex around the 1/3 point of the corner width and could not figure out why I was losing time to drivers who looked slower on corner exit. Then I tried moving the apex to the 2/3 point, and the straight speed immediately jumped."
+    },
+    {
+      "p": "The approach from the Corkscrew is relatively low-speed after the previous corner. You have a decent run onto the brakes. Brake in a nearly straight line, aiming to be fully off the pedal around the 100-meter mark. Turn-in is progressive. You do not need to yank the wheel hard because you are carrying moderate speed. Steer smoothly, build throttle as the apex approaches, and then drive the car wide on exit. The road surface runs quite wide here, so extend aggressively."
+    },
+    {
+      "list": [
+        "Brake zone: Firm and short. You are not dragging heavy speed, just shedding pace from the Corkscrew exit.",
+        "Turn-in point: Close to the 100-meter board, right after the braking zone ends.",
+        "Steering angle: Moderate and progressive. Avoid over-pointing; a late apex does not require heavy lock.",
+        "Throttle roll-on: Begin slowly as you approach the late apex. Ramp to full throttle as the steering angle eases.",
+        "Apex location: Aim for approximately two-thirds of the way through the corner. This feels late and produces strong exit speed.",
+        "Exit extension: Drive the car all the way to the road edge. The asphalt is wide and forgiving here; do not leave space on the track."
+      ]
+    },
+    {
+      "h2": "Load-cell braking and the CRP2 edge"
+    },
+    {
+      "p": "Both of these corners demand smooth brake modulation, and that is where my MOZA CRP2 load-cell pedals have become essential. At Laguna Seca, the margin between a locked brake and maximum retardation is paper-thin. The Corkscrew braking zone is short and happens on a slope, so your weight is already shifting. If you jam the pedal, you will lock the fronts. The CRP2's progressive actuation curve lets me nail the exact pressure needed without hunting for it lap after lap."
+    },
+    {
+      "p": "Turn 1 braking is less dramatic but still benefits from smooth release. I also use left-foot braking into the Corkscrew on some lap types, and the CRP2 separation between left and right pedal makes that transition clean. The load-cell feedback helps me feel the exact point where braking pressure should drop off so turn-in happens with the car settled, not still pitched forward on the front tires."
+    },
+    {
+      "h2": "Putting it together: the rhythm"
+    },
+    {
+      "p": "Lap after lap, the rhythm is the same. Corkscrew exit speed determines Turn 1 entry speed. A strong Corkscrew exit with early throttle application lets you carry more speed to the Turn 1 brake zone. That extra entry speed, combined with a late apex, compounds into the straight. I time this on my own footage to spot where time is leaking. Usually it is not one corner but a sequence: weak Corkscrew exit, then a rushed Turn 1, then mediocre straight speed. Fix the exit of the Corkscrew and the rest falls into place."
+    },
+    {
+      "p": "Telemetry will show you this immediately. Overlaying two laps, one where you were comfortable and one where you pushed, will reveal the speed differential at the Corkscrew apex and the turn-in point for Turn 1. More often than not, the faster lap has higher speed at both points, not heroic acceleration later on. That is the real pattern at Laguna Seca: build speed early, be smooth, let the line work for you."
+    },
+    {
+      "tip": "Record a hot lap from your best session and watch the throttle trace through the Corkscrew and Turn 1 together. You will see whether you are getting on the gas early enough at the Corkscrew. If throttle is still ramping at the apex, you have given away exit speed. Get fully on the throttle before the apex and you will carry that speed all the way to Turn 1.",
+      "tipLabel": "Watch your throttle trace"
+    },
+    {
+      "h2": "Common mistakes"
+    },
+    {
+      "list": [
+        "Braking too deep into the Corkscrew. You lose the ability to roll throttle early, which kills exit speed and makes the car feel loose on the way out.",
+        "Turning in while still braking hard. The car will push, and you end up clipping the inside curb with too much speed, forcing a tighter apex.",
+        "Apexing Turn 1 too early. This is the most common mistake. Early apex feels smooth but produces mediocre exit speed and weak acceleration.",
+        "Lifting off early on the Corkscrew exit. The downhill pitch makes you feel unsafe continuing, but the road surface is solid. Trust the grip and extend the throttle zone.",
+        "Not using the full road width on Turn 1 exit. A narrow exit leaves lap-time on the table and sets you up poorly for the straight."
+      ]
+    },
+    {
+      "p": "Laguna Seca rewards consistency and clean inputs. The Corkscrew and Turn 1 are repeatable once you lock in the line. Spend time in practice mode, video your best runs, and compare them to your fast laps in race trim. You will find the margin is usually in these two corners, and the reward for getting them right extends all the way down the main straight."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much earlier should I apex Turn 1 compared to a typical right-hander?",
+      "a": "Significantly later, not earlier. Aim for the two-thirds point of the corner width rather than the midpoint. This feels unnatural at first, but the straight-line speed gain is substantial. Telemetry will confirm you are carrying 3 to 5 mph more onto the uphill section."
+    },
+    {
+      "q": "Should I use trail-braking through the Corkscrew or complete all braking before turn-in?",
+      "a": "Complete braking before turn-in. The downhill slope and the turn itself will load the front tires once you commit the steering. Braking into the turn prevents that weight transfer and causes understeer or a loose exit. Get fully off the pedal by 50 meters before the apex."
+    },
+    {
+      "q": "My Corkscrew exit feels unstable. Am I on the throttle too early?",
+      "a": "Possibly, but more likely you are not braking early enough or completely enough. If the car still has brake pressure when you turn in, the weight is still forward and the rear feels light on the slope. Make sure all braking is done at least 20 to 30 meters before apex, then roll on throttle smoothly as steering angle peaks."
+    },
+    {
+      "q": "Does car balance setup affect these two corners more than others at Laguna Seca?",
+      "a": "Yes. The Corkscrew is sensitive to anti-roll bar stiffness and brake bias. Too much rear anti-roll will make the car rotate too quickly on entry, and too much front brake bias will cause lock-ups on the slope. Turn 1 benefits from a balanced setup that does not oversteer on exit. Start with the baseline and make small changes if the car feels unpredictable in either corner."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}

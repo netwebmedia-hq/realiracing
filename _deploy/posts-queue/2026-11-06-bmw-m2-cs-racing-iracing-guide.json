@@ -1,0 +1,111 @@
+{
+  "slug": "bmw-m2-cs-racing-iracing-guide",
+  "tag": "Car Guide · GT Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "BMW M2 CS Racing on iRacing: Setup, Driving, and Race Craft",
+  "description": "Tune the M2 CS for consistency and aggression. Master throttle control, braking zones, and defensive lines in GT4 racing.",
+  "sections": [
+    {
+      "p": "The BMW M2 CS Racing has become a staple in iRacing's GT4 series, and for good reason. It's sharp, responsive, and forgiving enough that you can push hard without punishing every input. I've spent enough laps in it on my MOZA R9 to know where its limits live, and they're generous compared to some other GT4 cars. The M2 rewards aggressive driving but also demands precision in mid-corner speed and brake modulation. If you want to race it competitively, you need to understand how to extract those margins without sliding into the tire wall."
+    },
+    {
+      "h2": "Brake, Throttle, and Steering Linearity"
+    },
+    {
+      "p": "The M2 CS brakes hard and straight. On my MOZA CRP2 load-cell pedals, I run a brake bias around 56 to 58 percent front, tuned for the track and tire wear. Early in a stint when tires are cool, you can threshold brake into most corners. As tires age and lose front grip, you'll need to trail brake deeper and carry more speed through the mid-corner to keep the pace. The steering weight feels natural at stock settings, but I dial in about 10 to 15 percent more lock (up to 30 degrees total) to gain confidence in slow-speed corners where the car can feel wide."
+    },
+    {
+      "p": "Throttle progression is the biggest gain I've found. The M2 doesn't punish a clumsy right foot, but it rewards smooth application. On corner exit, roll in throttle as your front tires regain grip. Rush it and you'll push out wide or light up the rear. Build it progressively and the car rotates through the apex, then accelerates cleanly. That difference between a sloppy and surgical exit is 0.3 to 0.5 seconds over a lap."
+    },
+    {
+      "h2": "Setup for Consistency Over Outright Pace"
+    },
+    {
+      "p": "I run a slightly softer setup than the default GT4 baseline. Front anti-roll bar sits around 7 to 8, rear around 6 to 7. This gives the car a compliant feel on bumpy circuits like Bathurst or Laguna Seca, where you can't afford to lose grip mid-corner over a crest. The M2 is stable by design, so I'm not chasing a twitchy knife-edge; I'm chasing a car that feels consistent lap after lap, especially in endurance racing where tire management matters more than qualifying one-lappers."
+    },
+    {
+      "list": [
+        "Front springs: ~10 to 11 kN/mm, rear 8 to 9 kN/mm. Stiffer springs help with turn-in but sacrifice bump compliance on street circuits.",
+        "Ride height: Keep front and rear level or run rear 5mm lower to reduce understeer on faster tracks.",
+        "Differential: Lock the acceleration diff at ~40 to 50 percent to control wheelspin under power; coast diff at ~10 to 20 percent.",
+        "Aero: Run one step of wing if available. The M2 doesn't need excessive downforce, and drag costs you top speed on fast straights."
+      ]
+    },
+    {
+      "tip": "The M2 rewards patience more than aggression. A consistent 1:59.2 driven 10 times in a row beats a 1:59.1 with a 2:01.5 mixed in. In a two-hour endurance race, repeatability wins.",
+      "tipLabel": "Pace Philosophy"
+    },
+    {
+      "h2": "Entry, Apex, Exit: Three Zones That Matter"
+    },
+    {
+      "p": "The M2 is quickest when you commit to entry speed and nail the apex. Most drivers arrive at corners too fast and then have to brake hard mid-corner, destroying momentum. Instead, brake a little earlier but stay on throttle fractionally longer on exit. This trades a few tenths of entry speed for a cleaner mid-corner that lets you accelerate sooner."
+    },
+    {
+      "p": "Apex speed is where the M2 shines. Its mid-range grip is forgiving, so you can carry higher speeds through the middle of a corner than lighter GT4 cars. At Brands Hatch or Zandvoort, this means tighter entry than your instinct says, trusting the chassis to rotate, then a clean exit. If you're sliding mid-corner, your entry was too hot. Lift slightly, tighten your line, and carry the car through."
+    },
+    {
+      "h2": "Tire Strategy and Fuel Mapping in Long Races"
+    },
+    {
+      "p": "The M2 runs standard Michelin LTX GT2 tires in iRacing's GT4 series. They're durable and consistent, but they do degrade, especially the rear. In a 30-minute sprint, you can push flat out for 20 minutes and manage tire wear for the final 10. In endurance racing, tire management becomes tactical. Lift off the throttle 200 meters earlier on the straight. Brake in a line that lets you apex cleaner and reduce mid-corner scrubbing. Over a two-hour race, these small inputs cut tire degradation by 5 to 10 percent and let your second or third driver inherit fresh grip."
+    },
+    {
+      "p": "Fuel mapping is equally important. Run rich fuel mix (Map 4 or higher) for qualifying and the first few laps to build a gap or hold position. Switch to lean (Map 2 or 3) once you've settled into a rhythm. The fuel economy benefit is real, and you'll complete a 30-minute race stint on one stop instead of two. On high-fuel tracks like Daytona or Talladega, this swing cost or gain a full position."
+    },
+    {
+      "h2": "Defending and Passing Around Slower Traffic"
+    },
+    {
+      "p": "The M2 is quick enough to make passes, but not so dominant that you'll gap a similarly skilled driver. This means your defense has to be clean and positioned. On a straight, never block defensively; instead, pick your preferred line early and hold it. If an opponent has a run on you, move early, make contact impossible, and let them try the outside. Most of the time, they'll back out because the risk-reward isn't there."
+    },
+    {
+      "p": "Passing slower traffic requires smoothness. The M2 is stable enough that you can carry higher mid-corner speed than many GT4 drivers expect, so your passes often work on the inside line of faster corners. Don't dive-bomb; instead, establish your presence, wait for a corner where you have a clear grip advantage, and move past when it's obvious. I've found the best passes happen where the slower driver is managing tires and I'm still pushing. I'm not faster; I'm fresher."
+    },
+    {
+      "h2": "Common Setup Mistakes"
+    },
+    {
+      "list": [
+        "Over-stiffening the ARBs. The M2 gets twitchy and loses mid-corner grip when springs and anti-roll bars are set too stiff. Dial them back 20 percent and feel the car settle.",
+        "Brake bias too aggressive toward the front. This locks the front wheels on trail-braking and kills your turning-in speed. Move bias back 2 to 3 percent and feel the car load the front better.",
+        "Running too much wing in qualifying. One wing step, maximum. The M2 doesn't need downforce to be quick, and the drag costs you on straights where passes happen.",
+        "Ignoring tire pressure. Cold tires run low in the pits. Let them heat up, then check pressure after three warm-up laps. If you're running 28 psi cold and climbing to 33 psi hot, back off your aggressive driving on lap one."
+      ]
+    },
+    {
+      "h2": "Why the M2 CS Works for Sim Racers"
+    },
+    {
+      "p": "The BMW M2 CS Racing sits in a sweet spot. It's fast enough to race with any competitive GT4 field, forgiving enough that you can learn racecraft without the car punishing you for small errors, and responsive enough that input quality matters. My MOZA R9 direct drive feedback through fast direction changes is clear and communicative, and that precision is what lets you find those apex-speed margins that separate 1:59 laps from 1:59.5 laps."
+    },
+    {
+      "p": "If you're racing GT4 for the first time or moving from single-seaters to closed cockpit cars, the M2 is your best teacher. It teaches you throttle control, brake modulation, and the value of smooth mid-corner speed without demanding perfection on every single lap. Once you can run consistent, fast M2 laps, moving to more sensitive cars like the Aston Martin Vantage GT4 or the Alpine A110 feels natural because you've already learned the fundamentals. Start here, build your pace methodically, and the rest of GT4 racing opens up."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the ideal brake bias for the M2 CS on most circuits?",
+      "a": "I run 56 to 58 percent front bias on most tracks. Adjust 1 to 2 percent up or down based on tire wear and circuit characteristics. Street circuits with heavy braking can go slightly more forward (60 percent); fast circuits with light braking can go slightly rearward (54 percent). Test in practice and find the bias where you can threshold brake consistently without locking the fronts or sliding the rears."
+    },
+    {
+      "q": "Should I use soft or stiff suspension for a street circuit like Brands Hatch?",
+      "a": "Go softer. Brands Hatch has bumpy braking zones and tight corners, so soft springs and low anti-roll bars (7 front, 5 to 6 rear) help the tires stay planted. Stiffer setups lose grip over the kerbs and small bumps. Softer setups feel less responsive initially but are faster over a lap because the tires don't unload."
+    },
+    {
+      "q": "How much does fuel mapping affect the M2's pace per lap?",
+      "a": "Rich mapping adds 0.2 to 0.4 seconds per lap in throttle response and top speed, but burns fuel 10 to 15 percent faster. Lean mapping reduces pace by about 0.1 to 0.2 seconds but extends fuel range significantly. The trade-off is worth it after the first 10 to 15 laps when grip and tires are settled, not early in a race when position matters most."
+    },
+    {
+      "q": "What's the difference between defending on a straight versus a corner?",
+      "a": "On a straight, pick your line early and hold it. Don't weave or block late. On a corner, commit to your line and don't move mid-entry. Defensive line changes that happen after a car is committed to a dive bomb are what cause contact. Let them attempt the pass and back out, or take the inside line naturally and make space impossible. Clean defense costs you a corner but keeps you out of incidents."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}

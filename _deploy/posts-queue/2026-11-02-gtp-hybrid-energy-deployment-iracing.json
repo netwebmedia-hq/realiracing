@@ -1,0 +1,123 @@
+{
+  "slug": "gtp-hybrid-energy-deployment-iracing",
+  "tag": "Car Guide · GTP Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "GTP hybrid energy deployment: when to use it in iRacing",
+  "description": "Master hybrid power deployment in iRacing GTP cars. Learn when to harvest, when to deploy, and how it changes your race strategy.",
+  "sections": [
+    {
+      "p": "The first time I ran the Porsche 963 GTP in a multi-class race, I burned through my hybrid battery by lap three chasing a gap that never closed. I had no idea when to actually use the thing. Hybrid energy management in GTP cars sits right at the intersection of strategy and real-time racecraft. It's not just about having more power. It's about deploying it in the moments where that extra pulse actually wins time, rather than flattening your battery and limping through the second half of a race."
+    },
+    {
+      "p": "In iRacing's GTP series, the Porsche 963 and Cadillac V-Series.R both carry hybrid systems that harvest energy under braking and feed it back under acceleration. The system feels different from the old hybrid LMP1 cars because the harvest happens passively, but the deployment is entirely manual. You store energy by braking hard. You spend it by holding a button. Everything else flows from that."
+    },
+    {
+      "h2": "How hybrid energy actually harvests in GTP"
+    },
+    {
+      "p": "Every time you hit the brakes on a GTP car, the electric motor captures some of that kinetic energy and charges the battery. The harder you brake, the more energy you harvest, up to a cap. You cannot fill the battery beyond 100 percent, and you cannot overfill it by braking harder than you need to. The system caps itself."
+    },
+    {
+      "p": "This means you harvest energy most effectively during heavy trail braking into slow corners. You also harvest during full-throttle downshifts where engine braking contributes to the decel. Gentle braking on a straightaway harvests less. Coasting harvests nothing. The implication is immediate: if you want a full battery for a crucial lap, you need to brake harder than the minimum line speed in the laps leading up to it."
+    },
+    {
+      "tip": "Harvest energy during laps where you're not racing anyone. If you're running P3 in a multi-class stint and no one is within three seconds, lean on your brakes in the technical sections and build your battery buffer. You'll spend it when traffic arrives.",
+      "tipLabel": "Harvest strategy"
+    },
+    {
+      "h2": "Where hybrid deployment actually wins time"
+    },
+    {
+      "p": "Hybrid deployment is not free horsepower that makes you faster everywhere. It works best in specific zones: on-track overtakes, gap closures before DRS zones, and the run out of the tighter corners where your traction is most limited. On a track like <a href=\"imola-iracing-guide-kerbs-chicanes-strategy.html\">Imola</a>, the long acceleration out of the Rivazza or into Tosa is exactly where hybrid deployment compounds a better exit and creates a real passing opportunity."
+    },
+    {
+      "p": "The gain is usually small in absolute terms. On my MOZA R9 rig running the Porsche 963 at somewhere like Road America, deploying full hybrid into the heavy uphill acceleration section might gain 0.15 seconds on a single lap. That sounds marginal. Over 30 laps, that's four or five seconds total. In a close race, that is the entire margin."
+    },
+    {
+      "p": "Hybrid does not help you apex faster or brake deeper. It helps you exit faster and carry more mid-corner speed through long acceleration zones. If a corner rewards smooth mid-corner throttle application, that is when to deploy. Tight hairpins where you scrub speed and then immediately accelerate again are hybrid activation zones. Flowing fast sweepers where you're already at full throttle are not."
+    },
+    {
+      "list": [
+        "Uphill accelerations after medium-speed corners (Porsche is strongest here)",
+        "The run into DRS detection zones on ovals and road courses",
+        "The 2-3 seconds after an off-strategy pit stop when you're rebuilding pace",
+        "Closing a gap to a car ahead over 2-3 successive corners",
+        "The end of lap 1 after a restart when the field is compressed"
+      ]
+    },
+    {
+      "h2": "Hybrid deployment rhythm across a stint"
+    },
+    {
+      "p": "A common mistake is treating the hybrid battery like a nitrous button in arcade racing. You use it for seven or eight laps and then you're dry. A smarter approach spreads deployment across the entire stint, focusing on laps where you gain the most relative time."
+    },
+    {
+      "p": "Early in a stint, your pace is fast and your tires are fresh, so every lap looks competitive. Don't blow your battery closing gaps to cars you'll naturally get closer to as track position settles and traffic forms. Instead, harvest during the first five to eight laps when you can afford to brake harder than necessary. Hold your battery in reserve."
+    },
+    {
+      "p": "The middle phase is your working stint. Defend with small hybrid pulses if you're running in tight traffic. A quick burst leaving a DRS zone or closing a position gap is a 5 to 10 percent battery spend, not a full deployment. You're stretching your energy across multiple opportunities."
+    },
+    {
+      "p": "The final laps before a pit stop or driver change are when you deploy aggressively if you need track position. If you're 1.2 seconds down to the car ahead with four laps left in your stint, two or three full hybrid deployments across those laps might close the gap and let you challenge for the pass. That is the correct use case."
+    },
+    {
+      "tip": "Track your battery percentage on your telemetry overlay so you know exactly how much harvest you've done. Garage61 or similar tools let you log that. Over two or three races, you'll develop a feel for the rhythm. Aim to start your stints with 30-40 percent battery, harvest to 80-90 percent in the first third, then spend 15-20 percent per deployment in the final third.",
+      "tipLabel": "Tracking battery state"
+    },
+    {
+      "h2": "Multi-class implications and traffic strategy"
+    },
+    {
+      "p": "In multiclass racing, your hybrid becomes a tool for managing traffic and building overtakes on GT and LMP2 traffic. A GTP car already outpaces most other classes in pure speed, but in mixed traffic you often follow backmarkers through technical sections where you can't pass. A single hybrid deployment mid-corner can be enough to pop you past a GT car and keep your momentum."
+    },
+    {
+      "p": "This is where conservation matters most. If you're blending laps with periods of backmarker traffic, you harvest during the clear laps and deploy only when you need to clear a car. Wasting hybrid on a straightaway overtake when the car would likely yield anyway is expensive. Saving it for a technical pass where the backmarker is defending their line is efficient."
+    },
+    {
+      "h2": "Fuel strategy and hybrid interaction"
+    },
+    {
+      "p": "Hybrid deployment increases fuel consumption very slightly. The motor pulls energy from the battery, not the fuel tank, so the effect is minimal. You should not adjust fuel consumption estimates based on hybrid use unless you're running close to the limit on a long endurance event. In a one-hour or three-hour race, plan fuel assuming normal throttle deployment. The hybrid's impact on range is effectively zero."
+    },
+    {
+      "p": "What matters instead is race strategy. If a race is split into two stints and pit strategy is tight, you need to decide whether to harvest aggressively in stint one (requiring harder braking, possibly affecting tire temperature) or save aggression for stint two when track position matters more. Most of the time, stint two is the right answer. Prioritize track position over battery level."
+    },
+    {
+      "h2": "Setup and hybrid feel"
+    },
+    {
+      "p": "Your brake pressure settings, brake bias, and even your differential tuning influence how satisfying and effective hybrid deployment feels. A car set up for heavy trail braking will harvest more energy and let you deploy it more predictably because you're used to the decel rhythm. A car dialed for late braking will harvest less and may feel squirrely when hybrid cuts in mid-corner if you accidentally deploy while steering."
+    },
+    {
+      "p": "I run my Porsche 963 with a bias toward trail braking because that matches how I drive on my MOZA R9 rig with the CRP2 load-cell pedals. The smooth progressive brake feel makes it easy to modulate how much energy I'm harvesting. If you run a late-brake setup, you'll deploy hybrid on straights and exits, not mid-corner, and that changes how you plan your overtakes."
+    },
+    {
+      "p": "There is no single best hybrid strategy. The car, the track, your brake style, and the race situation all shape how you approach it. The key is treating hybrid deployment as a deliberate tactical tool, not a panic button. Harvest when you can afford to brake hard. Spend when you're trying to make something happen. Understand the difference and you'll feel the gain."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much faster does hybrid deployment make a GTP car on a single corner?",
+      "a": "A typical single-corner hybrid deployment gains roughly 0.1 to 0.25 seconds depending on the corner type and how much of the battery you use. Uphill accelerations and long sweepers show the most gain. Tight hairpins show the least. The value over a full lap compounds when you deploy across 2 to 4 corners in sequence."
+    },
+    {
+      "q": "Can I harvest energy while I'm coasting or in neutral?",
+      "a": "No. The hybrid system only harvests during active braking or engine braking. Coasting produces no energy. You must be decelerating through the powertrain to charge the battery. This is why heavy trail braking into slow corners is the most efficient harvest zone."
+    },
+    {
+      "q": "What happens if I run out of battery mid-race?",
+      "a": "You simply have no hybrid power available until you harvest more energy. The car still performs normally on engine power alone. You will not lose speed or have a penalty. You just lose the advantage for as long as the battery is empty. This is why pacing your deployment across a stint matters."
+    },
+    {
+      "q": "Does hybrid deployment affect tire temperatures or wear?",
+      "a": "Indirectly, yes. Using hybrid to accelerate harder mid-corner loads the tires more, which increases temperature slightly. Over a long stint this can accelerate wear at the rear. If tires are already hot and degrading, aggressive hybrid use will worsen that. On fresh tires or cooler track conditions, the effect is negligible. Monitor tire temp telemetry if you're running long stints."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}

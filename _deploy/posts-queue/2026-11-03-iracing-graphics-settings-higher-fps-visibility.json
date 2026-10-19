@@ -1,0 +1,138 @@
+{
+  "slug": "iracing-graphics-settings-higher-fps-visibility",
+  "tag": "Setup Guides · Performance",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "iRacing graphics settings that boost FPS without killing visibility",
+  "description": "Cut frame drops without sacrificing the visual cues you need to race clean. Real settings I use on my rig.",
+  "sections": [
+    {
+      "p": "Frame rate matters more in sim racing than almost any other discipline. A 10 FPS loss during a braking zone costs you precision on the pedals, makes turn-in feel sluggish, and destroys consistency. I race on a ~1440p 120 Hz display paired with my MOZA R9 rig, and I've learned the hard way that chasing eye candy ruins the whole package. The goal is not maximum graphics. The goal is the highest frame rate that lets you see what you need to see."
+    },
+    {
+      "p": "Most drivers turn everything to ultra and wonder why they lose 20 FPS mid-race. The fix is not a new GPU. The fix is knowing which settings matter for safety and pace, and which ones you can dial back without losing the visual feedback you depend on."
+    },
+    {
+      "h2": "The frame rate floor that matters"
+    },
+    {
+      "p": "Your target depends on your monitor refresh rate. If you run 120 Hz, aim for 120 FPS minimum during single-seaters or high-downforce cars where every input is critical. In a GT car on a less demanding track, 90-100 FPS is acceptable if your rig is rock solid. Below 90 FPS, you will feel input lag even if the steering wheel has low latency. The frame time between inputs gets loose. Your muscle memory starts fighting the display."
+    },
+    {
+      "p": "The real problem is variance. Holding 110 FPS steady is better than averaging 115 FPS with drops to 85. Lock your frame rate in the graphics settings so it does not bounce around. A steady 100 FPS feels smoother than an unstable 120."
+    },
+    {
+      "h2": "Settings to cut first without losing race pace"
+    },
+    {
+      "list": [
+        "<strong>Shadows (ultra to medium or low):</strong> Ultra shadows cost 15-25 FPS depending on your GPU, and they provide zero information for racecraft. You do not need to see the shadow of a tree to brake 50 meters earlier. Medium shadows still show you marshal posts and pit entry markers. Low shadows get you another 5-10 FPS with almost no loss.",
+        "<strong>Ambient occlusion (off or low):</strong> This darkens crevices and corners to add depth. It looks nice in replays. In live racing it costs 8-12 FPS and changes nothing about how you see the racing line or competitors.",
+        "<strong>Anti-aliasing (FXAA or 2x MSAA instead of 4x):</strong> FXAA is cheap and smooths jagged edges well enough. 4x MSAA can cost 20+ FPS on older GPUs. You lose sharpness on distant objects, but you do not lose race-critical visibility.",
+        "<strong>Motion blur (off):</strong> Free 5-8 FPS. Adds no safety information and makes relative braking distances harder to judge.",
+        "<strong>Bloom and lens effects (low or off):</strong> Another 3-5 FPS. These make sunlight look nice in photographs. They add glare that hurts visibility in wheel-to-wheel racing."
+      ]
+    },
+    {
+      "tip": "Turn off all post-processing first. Bloom, motion blur, chromatic aberration, lens distortion. These are pure eye candy. You regain 15-20 FPS with zero impact on your ability to see the apex or spot a competitor's brake lights.",
+      "tipLabel": "First cuts always work"
+    },
+    {
+      "h2": "Settings that matter for actual racing visibility"
+    },
+    {
+      "p": "Some settings affect how well you see other cars, track limits, and racing lines. Do not touch these aggressively."
+    },
+    {
+      "list": [
+        "<strong>Texture quality (high or ultra):</strong> Keep this high. Low textures make distant cars blend into the track. You lose the ability to spot competitors early. High textures cost only 3-5 FPS and keep cars visually distinct.",
+        "<strong>Object detail (high or ultra):</strong> This controls how far away trees, signs, and barriers render. Ultra rendering helps you recognize braking points and corner geometry. Medium can work if you know the track, but ultra costs only 4-6 FPS.",
+        "<strong>Draw distance (very high or ultra):</strong> You need to see brake lights on the car ahead at least 200 meters out. Very high is the practical minimum. Ultra rendering costs a couple more FPS and gives you even better depth cues on longer straights.",
+        "<strong>Car detail (ultra):</strong> Ultra car detail keeps suspension movement visible, which is an underrated cue for judging another driver's commitment into a corner. Leave this on ultra."
+      ]
+    },
+    {
+      "h2": "Resolution and the refresh rate trade-off"
+    },
+    {
+      "p": "If you run triple monitors or a 4K setup, you are already eating significant frame rate cost. The practical path is to drop to 1440p or use a 1440p center monitor with lower res surrounds. A single 1440p 120 Hz display is my daily driver because it gives me sharp enough visuals and reliably fast frame rates on any car."
+    },
+    {
+      "p": "If you are locked into a higher resolution, scale down by 10-15 percent inside iRacing's graphics menu. You lose a little sharpness, but not in a way that hurts racing. The frame rate gains compound quickly, especially on a card like the NVIDIA GeForce RTX 5060 Ti which is entry-level for iRacing sim racing."
+    },
+    {
+      "h2": "The settings I actually use on my rig"
+    },
+    {
+      "p": "On my personal rig with an RTX 5060 Ti and a 1440p 120 Hz monitor, I run this configuration and hold 115-120 FPS in most series."
+    },
+    {
+      "olist": [
+        "Shadows: Medium (marshal posts and pit entry still visible, cost minimal)",
+        "Ambient occlusion: Off (no racing value, 10+ FPS gain)",
+        "Anti-aliasing: FXAA (smooth enough, fast)",
+        "Motion blur: Off (costs 5 FPS, zero benefit)",
+        "Bloom: Off (adds glare in wheel-to-wheel)",
+        "Texture quality: High (keeps distant cars visible)",
+        "Object detail: High (trees and barriers render far enough)",
+        "Draw distance: Very high (brake light visibility to 250+ meters)",
+        "Car detail: Ultra (suspension movement visible)",
+        "Vsync: Off (frame rate cap set in driver control panel instead)",
+        "Frame rate cap: 120 FPS locked (matching my monitor)"
+      ]
+    },
+    {
+      "p": "This setup gives me rock-solid frame pacing, excellent visibility of competitors, and enough visual sharpness to read brake marker boards at 300 kph. It is the antidote to the trap of maxing every slider and then wondering why your hands feel mushy on the wheel."
+    },
+    {
+      "h2": "How to test your own settings"
+    },
+    {
+      "p": "Do not judge a graphics setup by loading into the garage. Load into a practice session with 30 AI cars on a track you know well. Brake into a corner where you normally see other cars clearly. If you cannot pick out brake light color or spot a car three positions ahead, something is off. Drop object detail or draw distance until visibility snaps back."
+    },
+    {
+      "p": "Then do a single-lap time trial and compare lap time to your baseline. If you gain 2-3 FPS and lap time is stable or improves, you found a working cut. If frame rate does not change but you feel slower, revert it. Your hands know the truth even if the frame counter does not."
+    },
+    {
+      "tip": "Record a 30-second onboard at your current settings, then again after each major change. Watch them back-to-back. Your eyes will tell you faster than your brain whether visibility actually degraded or if you are just used to the old look.",
+      "tipLabel": "The video test never lies"
+    },
+    {
+      "h2": "Common mistakes that cost FPS for nothing"
+    },
+    {
+      "p": "Drivers often enable settings thinking they help performance when they actually hurt it. Ultra shadows and ultra ambient occlusion are the biggest culprits. They cost 30+ FPS combined and provide zero racing advantage. Bloom and chromatic aberration are the next tier of pointless expense. Reflections on ultra cost a lot on some GPUs and matter almost never during a race. Turn these off without guilt."
+    },
+    {
+      "p": "The inverse mistake is cutting texture or car detail thinking it will help. Those cuts hurt visibility and rarely save enough FPS to matter. When you need frames, cut the post-processing layer first. Every time."
+    },
+    {
+      "p": "One more trap: chasing maximum refresh rate at the cost of raw frame time stability. A 144 Hz monitor with frame time that bounces between 6 and 8 milliseconds feels worse than 120 Hz locked solid at 8.3 milliseconds. Cap your frame rate to what your rig can hold steady. If that is 100 FPS, lock to 100. Do not let it float."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the minimum FPS I should target for consistent racing?",
+      "a": "Aim for your monitor's refresh rate as a minimum during high-precision moments. If you run 120 Hz, target 120 FPS. In less demanding cars or tracks, 90-100 FPS is acceptable. The key is consistency. Locked 100 FPS is better than unstable 120 FPS. Frame time variance hurts precision more than a slightly lower average."
+    },
+    {
+      "q": "Should I enable DLSS or FSR if my GPU supports it?",
+      "a": "Yes, if you have an RTX card that supports DLSS. Quality mode or balanced mode maintains visibility while giving you 20-40 percent more frame rate. FSR works on AMD cards but introduces more visual artifacts. Test both modes in a practice session. Quality mode typically preserves enough sharpness to see brake lights and competitors clearly while gaining significant FPS."
+    },
+    {
+      "q": "Does lowering resolution actually help, or should I invest in a better GPU?",
+      "a": "Lowering resolution 10-15 percent inside iRacing is the fastest free FPS gain. You do lose sharpness, but the trade-off is reasonable for 15-20 more frames. A better GPU is the long-term answer if you want both high frame rate and native resolution. For now, scale down before you upgrade hardware."
+    },
+    {
+      "q": "What happens to visibility if I turn shadows completely off?",
+      "a": "Complete shadow off removes some environmental depth cues, but it does not hurt race-critical visibility. You can still see other cars, brake lights, and the racing line. Medium shadows are a good middle ground because they preserve marshal posts and pit entry markers while saving 10-15 FPS compared to ultra. In live racing, shadows matter far less than steady frame rate."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "gpu-rtx-5060-ti",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}

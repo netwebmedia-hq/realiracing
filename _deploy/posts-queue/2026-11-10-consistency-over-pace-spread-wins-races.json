@@ -1,0 +1,136 @@
+{
+  "slug": "consistency-over-pace-spread-wins-races",
+  "tag": "iRacing Tips · Race Craft",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Consistency Over Pace: Why Lap-Time Spread Wins Races",
+  "description": "A tight lap-time spread beats raw pace in most iRacing races. Learn why consistency matters more than single-lap speed.",
+  "sections": [
+    {
+      "p": "The fastest lap in a race almost never belongs to the driver who finished first. I learned this the hard way, spending weeks chasing single-lap improvements on my MOZA R9 before my incident count climbed and my finishes got worse. Once I stopped hunting for that tenth of a second and started hunting for identical lap times lap after lap, my results reversed. Consistency wins races because racecraft, tire management, and traffic navigation all depend on repeatable pace, not on whether you can nail one perfect lap when the track is ideal."
+    },
+    {
+      "p": "This is especially true in fixed-setup series and longer races. You cannot adjust the car mid-race, so your job is to drive it the same way lap after lap, preserve your tires, and execute cleanly when it matters. A driver who runs 1:34.2, 1:34.1, 1:34.3, 1:34.2 will beat someone who does 1:33.8, 1:35.1, 1:34.6, 1:34.9 over a full race distance. The first driver is predictable and can plan. The second driver is faster on one lap but vulnerable to mistakes and tire deg."
+    },
+    {
+      "h2": "Why raw pace is a trap"
+    },
+    {
+      "p": "Chasing one-lap speed often means driving on the absolute edge of grip all the time. You're pushing the brake later than you can sustain, carrying more speed into corners than the tires will handle for 30 consecutive laps, and hunting for micro-adjustments in steering angle that only work when fuel load, tire heat, and track conditions align perfectly. That works for qualifying. It does not work for racing."
+    },
+    {
+      "p": "When you focus on lap-time spread instead, you are solving a different problem: how do I drive this car the same way every lap regardless of fuel, tire wear, and traffic? Your baseline becomes one you can repeat. Your tire management becomes instinctive because you're always driving at the same intensity. Your racecraft improves because you know exactly where you are in the braking zone, exactly how late you can turn, and exactly what the car will do when you ask it to turn left and brake at the same time."
+    },
+    {
+      "p": "I test this constantly on my rig. In a 30-minute race, I'll practice keeping my spread under 0.2 seconds for 25 laps. The fastest lap is almost never the one where I feel fastest in the moment. It's usually lap 8 or 9, when my lines are clean but I haven't started hunting for time yet. The races I win are the ones where I match that pace for the entire stint, not the ones where I post a 1:33.4 on lap 6 and then run 1:35.0s for the next 15 minutes trying to hold the line that produced it."
+    },
+    {
+      "h2": "The real race craft advantage"
+    },
+    {
+      "p": "Consistency compounds when others around you are inconsistent. Most drivers online are trying to drive at their limit every lap. That means they are making mistakes, running wide, hitting kerbs harder than they should, and occasionally spinning because they overcommitted. Meanwhile, you are predictable. You can plan your passes two corners ahead because you know where you'll be and what speed you'll have. You can defend without panicking because you trust your braking point and don't need to experiment with the throttle to know if you can make the corner."
+    },
+    {
+      "p": "Traffic management is where consistency wins the most. When you're trailing a slower car, a repeatable pace lets you follow the line you want instead of reacting to theirs. You can plan which corner gives you the best passing opportunity and execute it cleanly instead of diving in whenever a gap opens. And when you're being chased, you drive the line you know works, not the line you hope will shake them off. Over 45 minutes, hope fails. Repeatability works."
+    },
+    {
+      "list": [
+        "Plan your passes three corners ahead because you know where your speed will be",
+        "Identify your sustainable fuel save without constantly adjusting throttle pressure",
+        "Trust your tire management because your inputs are identical lap to lap",
+        "Defend without experimentation, using only the line you know works",
+        "Recover from small mistakes without losing the next five laps to frustration"
+      ]
+    },
+    {
+      "h2": "How to build a repeatable pace"
+    },
+    {
+      "p": "Start in practice by finding the fastest lap you can hold for 10 laps straight without backing off or pushing harder. Not your single fastest lap. Your 10-lap average. That becomes your baseline."
+    },
+    {
+      "olist": [
+        "In practice, run 10 consecutive laps and note the average, minimum, and maximum times",
+        "If your spread is more than 0.3 seconds, something in your line or inputs is changing lap to lap",
+        "Identify the lap that felt smoothest, not fastest. Watch the telemetry on that one",
+        "Repeat that lap's line, braking point, and throttle shape exactly, even if it feels slow",
+        "Once you can hold that pace for 10 laps, extend to 15, then 20",
+        "In race trim (fuel, tire compound, track evolution), test the same repeatable pace under fatigue"
+      ]
+    },
+    {
+      "p": "The goal is not to find your limit. It's to find the line 95% of your limit that you can drive while tired, distracted by traffic, managing tires, and making split-second calls. That's your race pace."
+    },
+    {
+      "tip": "Record your telemetry on your three best practice laps. Overlay them. The one with the tightest line through turn-in is usually the fastest and most repeatable, not the one with the most throttle early on exit.",
+      "tipLabel": "Telemetry reveals consistency"
+    },
+    {
+      "h2": "Pace vs. spread in real race scenarios"
+    },
+    {
+      "p": "I tested this in a 60-minute Porsche GT3 Cup race last week. Pole sitter ran 1:52.3 and led for the first 20 minutes, but his second set of tires saw him slip to 1:53.1, then 1:53.7 by lap 35. I qualified third with a 1:52.8 but raced a 1:52.9 average. By lap 30, I was ahead. By lap 50, my consistency had built a 4-second buffer."
+    },
+    {
+      "p": "That's not because I'm a better driver. The pole sitter was faster on day one. It's because I optimized for a different variable. In qualifying, you want raw pace. In racing, you want repeatability. Too many drivers treat races like one very long qualifying lap, and it costs them."
+    },
+    {
+      "h2": "The endurance multiplier"
+    },
+    {
+      "p": "In a 2-hour race, the advantage of consistency becomes massive. A 0.2-second spread over 1:53.0 pace means you're running between 1:52.8 and 1:53.2. That's 30 laps at that pace. Your tires degrade predictably. Your fuel burn is calculable. You can trust your pit strategy. Meanwhile, a driver with a 0.6-second spread is inconsistent. His pit window calculation becomes guesswork. His teammate in the co-driver stint inherits a car he can't trust."
+    },
+    {
+      "p": "This is why the top endurance teams obsess over driver smoothness. A smooth driver is a consistent driver. A consistent driver makes the engineer's job possible. That engineer can then build strategy around known variables instead of hoping for the best."
+    },
+    {
+      "h2": "When raw pace still matters"
+    },
+    {
+      "p": "Qualifying. If you qualify faster, you avoid traffic and pit-stop congestion. That's worth pursuing single-lap speed for 15 minutes. But during the race itself, stop hunting for that improvement. You found the answer in qualifying. Now execute it for 30 laps."
+    },
+    {
+      "p": "The second scenario is early in a race when you have fresh tires and clean air. In the first three laps, when track evolution helps everyone, a slightly faster lap is not a mistake. But by lap 8, your tire window has shifted, and the line that worked on lap 3 might be slower. This is where most drivers get lost: they try to repeat the early-race pace on worn tires and wonder why they're sliding."
+    },
+    {
+      "tip": "Qualifying and race pace use different tire windows. Don't carry your qualifying line into the race. Reset your baseline to match current tire temperature and wear.",
+      "tipLabel": "Tire windows shift"
+    },
+    {
+      "h2": "Building the habit on my rig"
+    },
+    {
+      "p": "I practice this on my MOZA R9 setup by running 30-lap sessions where I set a target spread of 0.15 seconds. The wheelbase gives me excellent feedback on throttle application consistency, which is the fastest way to build repeatability. The CRP2 pedals' load-cell braking lets me nail the same brake pressure lap to lap without guessing. That immediate feedback tightens your spread faster than almost anything else."
+    },
+    {
+      "p": "After a month of this, your muscle memory shifts. You stop thinking about how fast you're going and start thinking about how identical you're being. That's when consistency becomes automatic, and your race results improve because you're no longer fighting yourself."
+    },
+    {
+      "p": "The fastest drivers online are not always the ones with the fastest single laps. They're the ones you see in victory lane lap after lap in different series, different cars, different tracks. That's not coincidence. That's consistency winning."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How tight should my lap-time spread be to be competitive?",
+      "a": "In a multi-race season, aim for 0.2 to 0.3 seconds. In a single race, 0.15 to 0.2 seconds is excellent. More than 0.4 seconds means your line or inputs are changing lap to lap and tire strategy becomes guesswork. The tighter the spread, the more predictable your race and the easier pit strategy becomes."
+    },
+    {
+      "q": "Does consistency matter more in longer races or shorter ones?",
+      "a": "Both, but the advantage multiplies with race length. In a 30-minute race, consistency saves you maybe one position. In a 2-hour race, consistency can earn you three to five positions because strategy, tire management, and fuel burn become calculable instead of gambles. Short races reward qualifying pace. Long races reward repeatable pace."
+    },
+    {
+      "q": "Can I be consistent on a bad setup?",
+      "a": "Yes. A bad setup is repeatable consistency-wise if you drive it the same way every lap. You might not win, but you will be predictable and won't cause your own failures. After you've proven consistency, then experiment with setup changes because you'll have a baseline to measure against."
+    },
+    {
+      "q": "How do I practice consistency without running full race-length sessions?",
+      "a": "Run 15-lap sessions in race trim and track your lap-time spread. Focus on matching your best lap's line exactly on the next five laps. Once that feels automatic, extend to 20 laps. Telemetry overlay of three consecutive laps will show you which inputs are drifting (usually brake pressure, throttle roll-on, or turn-in point)."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}

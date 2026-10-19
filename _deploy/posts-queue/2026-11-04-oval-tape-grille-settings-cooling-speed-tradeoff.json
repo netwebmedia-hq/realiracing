@@ -1,0 +1,120 @@
+{
+  "slug": "oval-tape-grille-settings-cooling-speed-tradeoff",
+  "tag": "Setup Guides · Aero",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "Oval tape and grille settings: cooling versus top-end speed",
+  "description": "Balance radiator cooling and engine heat against drag on ovals. Learn when to tape up, when to open grille vents, and how your setup choice affects fuel strategy.",
+  "sections": [
+    {
+      "p": "On ovals, tape and grille settings sit at the intersection of aerodynamic efficiency and thermal management. I run my MOZA R9 setup through a lot of oval races, and I've learned that closing off air passages makes you faster on the straights but hotter in traffic. Opening them up cools the engine and radiator but costs you top speed. The choice depends on track length, ambient temperature, fuel load, and how much time you spend slipstreaming. There's no single answer, which is what makes this tuning knob genuinely complex."
+    },
+    {
+      "p": "The mistake most drivers make is treating tape and grille as binary choices. Either you tape everything shut for qualifying pace, or you open everything for a long fuel stint in the heat. Real oval setup is more granular than that. You can tape the grille but leave side vents open. You can tape the front bumper while running the grille halfway. Understanding the trade-off mechanics helps you make the choice that matches your race strategy."
+    },
+    {
+      "h2": "Why tape and grille matter on ovals"
+    },
+    {
+      "p": "On road courses, you brakes often enough and you rotate through different corners that cooling happens naturally. Ovals don't work that way. You spend most of your lap at full or near-full throttle. Fuel load compounds the problem: a heavy fuel load means more heat generated per lap, and on a 2-lap stint, engine temps can climb significantly. Radiator and engine coolant temps climb fastest when you're drafting or running in a pack where air circulation is reduced."
+    },
+    {
+      "p": "Tape creates a seal that blocks incoming air. Sealing the grille, front bumper vents, and side passages reduces aerodynamic drag by a meaningful margin on straights where speeds are highest. That can add a couple of tenths over a lap on speedways like Indianapolis or Las Vegas. The cost is that your coolant and oil temps rise because less ambient air is flowing through the radiator. In hot conditions or during a long green-flag run in a fuel-conservation race, that heat accumulation can force you to lift or back off throttle to manage temps."
+    },
+    {
+      "h2": "Cooling first: when to leave grille and vents open"
+    },
+    {
+      "p": "Start with the cooling-first approach if you're in a long-race scenario, running heavy fuel, or racing in high ambient temps. A 4-hour endurance race at a short oval in August means heat management is a race strategy, not a qualifying tweak. Running the grille open and side vents unrestricted keeps coolant temps in the 85 to 95 degree C range instead of pushing 110 to 120 C by lap 30. That stability lets you maintain consistent power output without thermal limp-mode or engine damage risk."
+    },
+    {
+      "p": "Open cooling also gives you margin in traffic. When you're stuck in a pack or being lapped, air stops flowing cleanly through the radiator. Drivers who've already taped up may see temps spike to dangerous levels in those moments. With open vents, you're running cooler baseline temps, so brief traffic encounters don't blow your thermal budget."
+    },
+    {
+      "list": [
+        "Endurance races (2 hours or longer) with fuel stints longer than 15-20 laps",
+        "High ambient temps or daytime racing in summer months",
+        "Heavy fuel loads or conservation-focused strategy where you can't lift throttle to cool",
+        "Short oval tracks (less than 1 mile) where absolute top speed is secondary to consistency",
+        "Multiclass or traffic-heavy splits where you'll spend time in someone's draft"
+      ]
+    },
+    {
+      "h2": "Speed first: full tape strategy for pace"
+    },
+    {
+      "p": "Full or near-full tape is the qualifying and sprint-race choice. If you're running a single fuel stop, limited laps, or a heat race where pace matters more than longevity, taping the grille, front bumper, and side vents shaves drag across the entire oval circuit. The effect is most noticeable on high-speed tracks like Indianapolis or intermediate speedways where you spend 80% of the lap at constant throttle. You might see a 0.05 to 0.15 second gain per lap depending on track layout and current fuel load."
+    },
+    {
+      "p": "The thermal cost is real, though. Coolant temps climb 10 to 20 degrees C compared to open vents. On a 5-lap sprint or a 10-lap heat race, that's often manageable because race distance is short. On a 20-lap stint with heavy fuel, you may see temps approach 115 to 125 C by the end, which limits your safety margin and can trigger thermal cutbacks in some sim racing engines."
+    },
+    {
+      "tip": "Tape is reversible. In a practice or test session, run a few laps fully taped, note your temps and lap time, then run the same fuel load and conditions with grille open. The delta tells you the real cost and benefit for your current track and fuel strategy. Don't assume a tape setting from another driver or series without testing.",
+      "tipLabel": "Always test your tape choice"
+    },
+    {
+      "h2": "Partial tape: the middle ground"
+    },
+    {
+      "p": "Most of my oval setups end up somewhere in the middle. I'll tape the grille and front bumper fully, but leave side vents and rear ducting open. This hybrid approach gets you ~70% of the speed benefit of full tape while keeping coolant temps down by ~5 to 10 degrees compared to everything sealed. It's the setup that works for 15 to 25 lap stints where you need both pace and thermal stability."
+    },
+    {
+      "p": "You can also get creative with asymmetry. Some cars allow you to tape the right-side grille vents fully and leave the left open. On ovals, this is less relevant than it would be on a road course with high-speed corners on one side, but it's an option if you're chasing a specific temp target. The granular control is part of what makes iRacing's aero model realistic."
+    },
+    {
+      "h2": "Track and fuel considerations"
+    },
+    {
+      "p": "Track length and speed profile shape your tape choice more than you might expect. A short oval like Bristol or Martinsville runs cooler than Las Vegas or Indianapolis because you're at lower absolute throttle and turn speeds. The aero benefits of tape are real but smaller. A 0.05-second gain matters less when your race is 50 laps and you're battling traffic and setup sensitivity. Cooling stability matters more."
+    },
+    {
+      "p": "Fuel load is the other key variable. Light fuel (1 or 2 laps) means you generate less total heat. Full tape is a simpler choice because you're not managing thermal creep over 15 laps. Heavy fuel (8 to 12 laps) means total heat energy is higher, and the cooling-first approach starts to make more sense. Mid-range fuel (4 to 6 laps) is where the hybrid tape choice shines: you get speed benefit without betting everything on thermal margin."
+    },
+    {
+      "h2": "How tape affects fuel strategy"
+    },
+    {
+      "p": "Your tape choice influences fuel consumption strategy indirectly. A fully taped car generates more heat, which sometimes forces you to lift throttle or coast more aggressively to manage temps. That lifting burns less fuel per lap, which sounds positive, but it's not strategic fuel saving—it's thermal limp mode. An open-grille setup lets you maintain full throttle longer, which burns more fuel but keeps pace consistent. From a race strategy perspective, consistent fuel burn and predictable lap times matter more than extracting random fuel savings that cost you tenths."
+    },
+    {
+      "p": "In endurance racing, tap the grille open and plan your fuel stops around consistent burn rates. In sprint racing, tape for pace and accept that you'll run hotter. Don't let thermal cutbacks drive your fuel strategy because that's when mistakes creep in."
+    },
+    {
+      "h2": "Testing and validation"
+    },
+    {
+      "p": "My process when I'm prepping an oval setup is straightforward. I run a few laps at the target fuel weight with no tape or grille restrictions. I note lap time, coolant and oil temps, and stability. Then I run the same scenario with full tape. The delta tells me the speed cost of cooling. Then I run my preferred partial tape setup and find where I sit on the curve."
+    },
+    {
+      "p": "I do this in a practice session or a test race, never just in qualifying. Qualifying lap tells you one thing under one specific condition. A 10-lap run at race fuel tells you how sustainable your setup is. That's where the real decision lives. A setup that runs 0.1 seconds faster but forces you to manage thermal cutbacks over 20 laps isn't a good setup. One that's 0.02 seconds slower but stable over the entire race distance is often the faster choice when you factor in consistency and risk."
+    },
+    {
+      "tip": "Tape settings are track-specific and fuel-load specific. A setup that works for a 10-lap sprint at Martinsville won't translate to a 30-lap fuel conservation race at Las Vegas. Test each scenario with realistic fuel and race duration, not just qualifying pace.",
+      "tipLabel": "Context matters more than the tape itself"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I tape everything for qualifying on ovals?",
+      "a": "Full tape gives you the best single-lap pace, especially on high-speed ovals. The speed gain ranges from 0.05 to 0.15 seconds depending on track size and current fuel load. That's enough to matter in qualifying. Just be aware that you'll run 10 to 20 degrees hotter, so validate that your coolant and oil temps stay in safe range before committing to a full-tape qualifying run."
+    },
+    {
+      "q": "What's the difference between taping the grille and taping the front bumper?",
+      "a": "The grille is where the most air flows through to cool the radiator, so grille tape affects cooling most directly. Front bumper tape blocks air from reaching the engine bay and underside. Both contribute to drag reduction, but grille tape has the larger thermal impact. Side vents and rear ducting vary by car model. Test in practice to see which vents affect your specific car's temps most."
+    },
+    {
+      "q": "How much slower does an open grille make you compared to full tape?",
+      "a": "On a high-speed track like Indianapolis, full tape is 0.10 to 0.15 seconds per lap faster than open grille. On a short track like Bristol, the delta shrinks to 0.03 to 0.07 seconds because absolute speeds are lower. Fuel load also matters: light fuel shows a bigger speed difference because heat is less of an issue at low fuel, so tape benefits are more obvious. Test your specific track and fuel load to get an accurate number."
+    },
+    {
+      "q": "Can I change tape settings mid-race or mid-stint in iRacing?",
+      "a": "No. Tape and grille settings are locked in at the start of the race. You set them during setup and they stay that way for the entire event. This is why planning your tape choice around your fuel strategy and race distance matters. You have to commit before the race begins."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2"
+  ],
+  "published": "2026-10-19",
+  "dateLabel": "October 19, 2026"
+}
