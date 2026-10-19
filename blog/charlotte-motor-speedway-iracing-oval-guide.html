@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charlotte Motor Speedway iRacing Guide: Line, Setup, Fuel Strategy</title>
+  <meta name="description" content="Master Charlotte's 1.5-mile D-shaped oval. Learn the racing line, fuel window, and setup adjustments for consistent top-10 finishes on the MOZA R9." />
+  <link rel="canonical" href="https://realiracing.com/blog/charlotte-motor-speedway-iracing-oval-guide.html" />
+  <meta property="og:title" content="Charlotte Motor Speedway iRacing Guide: Line, Setup, Fuel Strategy" />
+  <meta property="og:description" content="Master Charlotte's 1.5-mile D-shaped oval. Learn the racing line, fuel window, and setup adjustments for consistent top-10 finishes on the MOZA R9." />
+  <meta property="og:url" content="https://realiracing.com/blog/charlotte-motor-speedway-iracing-oval-guide.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/track-pitlane.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="562" />
+  <meta property="og:image:alt" content="Crew working in the pit lane" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/track-pitlane.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261005" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Charlotte Motor Speedway iRacing Guide: Line, Setup, Fuel Strategy",
+    "description": "Master Charlotte's 1.5-mile D-shaped oval. Learn the racing line, fuel window, and setup adjustments for consistent top-10 finishes on the MOZA R9.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/charlotte-motor-speedway-iracing-oval-guide.html",
+    "image": "https://realiracing.com/assets/photos/track-pitlane.jpg",
+    "datePublished": "2026-10-12",
+    "dateModified": "2026-10-12"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Charlotte Motor Speedway iRacing Guide: Line, Setup, Fuel Strategy","item":"https://realiracing.com/blog/charlotte-motor-speedway-iracing-oval-guide.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/charlotte-motor-speedway-iracing-oval-guide.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/charlotte-motor-speedway-iracing-oval-guide.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the optimal fuel window at Charlotte?",
+      "acceptedAnswer": { "@type": "Answer", "text": "I typically run 48–52 laps on a full tank, which translates to roughly 3 pit stops in a 2-hour race. Fuel consumption is approximately 0.9–1.0 gallons per lap depending on driving style and traffic position. Pit around lap 50 on your first stop to avoid arriving in a traffic jam." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I run a tight or loose setup at Charlotte?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Start balanced and lean toward loose. Charlotte's banking is gentle enough that loose cars often feel faster and more responsive through the turns than tight cars. If you're pushing, add rear anti-roll-bar stiffness before you soften the suspension. Don't over-wing the car; drag costs more than it gains." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best way to pass on Charlotte?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most passing happens after Turn 4 exit into Turn 1 or into Turns 3–4 when you've built momentum on the backstretch. Don't dive to the inside too early; let your line flow naturally, and use the banking to carry speed. Respect the tow—if you're being pushed, brake 50–100 feet earlier than normal." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I avoid spinning in Turn 1?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Brake where you can see the brake marker, not where you hope it is. Respect the fuel load and tow—both add speed you're not used to. Aim for 115 mph at the apex and trail brake smoothly; don't turn in aggressively or the rear will step out. Smooth steering input and consistent speed through the apex are key." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Track Guides · Oval Racing</p>
+    <h1>Charlotte Motor Speedway iRacing Guide: Line, Setup, Fuel Strategy</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 12, 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/track-pitlane.jpg" width="1000" height="562" alt="Crew working in the pit lane" srcset="/assets/photos/track-pitlane-sm.jpg 560w, /assets/photos/track-pitlane.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Photo: <a href="https://commons.wikimedia.org/wiki/User:Just_a_Man" target="_blank" rel="noopener nofollow">Just a Man</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener nofollow">CC BY 4.0</a> · Source: <a href="https://commons.wikimedia.org/wiki/File:TC_Gran_Premio_Coronaci%C3%B3n_2025._Domingo._Post_Carrera_-_37.jpg" target="_blank" rel="noopener nofollow">Wikimedia Commons</a></figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      <p class="article-lead">Charlotte Motor Speedway is one of iRacing's most competitive 1.5-mile D-shaped ovals, and it demands respect. The banking isn't steep enough to let you coast through; you have to *drive* it. I've logged hundreds of laps here on my <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a>, and every tenth matters—fuel window precision, brake point consistency, and line discipline determine whether you're fighting for position or spinning in Turn 1. This guide covers the specific line, fuel management, and setup tweaks that translate to real race results.</p>
+
+      <p>Charlotte rewards smooth inputs and patience. The track is wide enough to run multiple racing lines, but the fastest groove is narrow and forgiving only if you're confident. Mistakes compound quickly: miss your brake point by a foot and you're in the wall; run too much entry speed and the rear will step out before you even turn in. I'll walk you through what I've learned racing here consistently.</p>
+
+      <h2>The Racing Line and Turn Geometry</h2>
+
+      <p>Charlotte's shape is deceptive. Turns 1 and 2 are fast, medium-banked corners that flow into the shorter turn, while Turns 3 and 4 mirror them on the opposite end. The backstretch and front straightaway are relatively short, meaning your exit speed out of the turns directly affects your entry speed into the next one.</p>
+
+      <p>My typical entry into Turn 1 is ~80% throttle on the exit of Turn 4, then brake around the 1-lap board (the 1-mile marker). The brake zone is generous—roughly 400 feet—so there's room to modulate. I aim for the yellow line on the inside curbing and trail brake to about the apex, which sits roughly mid-way through the corner. The banking helps you carry speed, but overestimate grip and you'll find the wall.</p>
+
+      <ul>
+        <li>Turn 1 entry: Brake around the 1-lap board; target ~115 mph at apex</li>
+        <li>Apex location: Inside yellow curb, mid-corner; prioritize smooth steering input over speed</li>
+        <li>Exit: Begin throttle application at apex; aim for ~165 mph by corner exit</li>
+        <li>Turns 3–4: Mirror geometry; slightly less banking makes entry more critical</li>
+        <li>Backstretch: Full throttle; watch for lapped traffic and use the full track width if needed</li>
+      </ul>
+
+      <div class="tip-box">
+        <span class="box-label">Steering Discipline</span>
+        <p>On the MOZA R9, I notice that Charlotte rewards a consistent steering angle through the apex. If you're making micro-corrections at the turn-in, you'll lose grip and bleed speed. Practice holding a smooth 25–30° steering input through Turns 1 and 2; let the banking do the work.</p>
+      </div>
+
+      <h2>Fuel and Pit Strategy</h2>
+
+      <p>Fuel management is the difference between finishing and pitting twice. Charlotte laps are short—roughly 52–54 seconds depending on fuel load and draft position—so the fuel window is tight. I typically run a 50-lap stint on full fuel, then pit around lap 48–50 depending on my tire wear and position.</p>
+
+      <p>For a 2-hour race, that's roughly 3 pit stops. The key is to avoid getting caught in the fuel strategy crossover: if you pit too early, you'll be on cold tires while faster cars are still accelerating; too late, and you'll be stuck behind slow traffic on a full tank. I usually target pit windows at laps 50, 100, and 150, adjusting by ±3 laps based on tire condition and race position.</p>
+
+      <ul>
+        <li>Fuel per lap: ~0.9–1.0 gallons depending on aggression and traffic</li>
+        <li>Full-tank range: ~50 laps before running critically low</li>
+        <li>Optimal pit window: 48–52 laps; avoid the pack if possible</li>
+        <li>Tire strategy: 4-tire pit stop recommended; only fuel-and-go if you're chasing a win with 10 laps left</li>
+        <li>Pit lane: Stay right on entry, cross to the left pit box area; watch for pace-car violations</li>
+      </ul>
+
+      <h2>Setup Adjustments for Charlotte</h2>
+
+      <p>I start with the baseline setup from the series and adjust from there. Charlotte is a steady-state oval—you're rarely off throttle for more than 2–3 seconds—so aero balance and drag matter more than mechanical grip. If you're loose in the middle of the turn, it's usually a front-wing or brake balance issue, not a suspension problem.</p>
+
+      <p>On my MOZA R9 rig, I run looser front aero than stock (typically -2 to -3 from baseline) to improve turn-in response. The car is more responsive through Turns 1–2 with less downforce, and I'm not losing much on the straights because the backmarches are short. If the car is pushing on exit, I'll increase rear anti-roll bar stiffness by 1–2 clicks before I add brake bias.</p>
+
+      <ol>
+        <li>Lower front wing by 1–2 clicks from baseline; improves turn-in, reduces pushy mid-corner feel</li>
+        <li>Increase rear anti-roll bar stiffness by 1–2 clicks if you're pushing; resist the urge to soften suspension</li>
+        <li>Brake bias: Start at 58–60% rear; move forward 1–2% if you're locking rears under heavy braking</li>
+        <li>Tire pressures: Target 24–24.5 psi cold; Charlotte's banking is gentle enough that thermal buildup is slow</li>
+        <li>Fuel load: If running a race, adjust your pit-stop fuel quantity; don't over-fuel on early stops</li>
+      </ol>
+
+      <div class="tip-box">
+        <span class="box-label">Aero Balance Priority</span>
+        <p>Charlotte can feel like it wants more downforce than other 1.5-mile ovals, but resist adding wing too early. The track has low grip relative to its banking, and extra downforce often makes the car worse in traffic. Start lean on aero, then add bite to the rear if you feel loose.</p>
+      </div>
+
+      <h2>Race Craft: Passing and Defending</h2>
+
+      <p>Charlotte's width allows multiple passing lines, but the racing line is still the fastest. Most passes happen off Turn 1's exit or into Turns 3–4 when you've built a run on the backstretch. If you're chasing someone, don't dive to the inside too early; let your line flow and use the banking to carry momentum through the turn.</p>
+
+      <p>If you're being hunted, stay smooth and predictable. Defensive driving at Charlotte means holding your line, not blocking. Move to the high side if someone's running low, but don't chop their nose. A tight race here comes down to consistency—who makes fewer mistakes over 50 laps, not who's fastest on one lap. I've won races by simply avoiding drama and hitting my marks lap after lap.</p>
+
+      <ul>
+        <li>Low-side passes: Build momentum on the backstretch; execute after Turn 4 exit into Turn 1</li>
+        <li>High-side passes: Used less often; requires a run and trust in the banking to hold you up</li>
+        <li>Defending: Hold your line; move to the high side only if someone's committed low; never chop</li>
+        <li>Traffic management: Respect lapped cars; don't take unnecessary risks against back-markers</li>
+        <li>Restarts: Aggressiveness depends on your championship position; don't throw away a top-10 for a 5th-place restart</li>
+      </ul>
+
+      <h2>Common Mistakes and How to Avoid Them</h2>
+
+      <p>I've spun Charlotte plenty of times, and most of them came down to three mistakes: braking too late, overestimating grip in traffic, and overthinking setup adjustments. If you're consistently going faster in practice than in the race, you're probably driving over your limit.</p>
+
+      <p>The most common error I see is braking too hard into Turn 1 after running with a tow. You've got 10 extra mph from the draft, so your normal brake point doesn't work. Respect the fuel load, respect the tow, and always brake where you can see the brake marker—not where you hope it is.</p>
+
+      <ul>
+        <li>Braking late under tow: Brake 50–100 feet earlier than your normal point if you're being pushed</li>
+        <li>Turning in too early: The apex is mid-corner, not at the turn-in; don't apex too soon or you'll lose the exit</li>
+        <li>Adding wing or brake bias without testing: One setup change per session; don't chase feel with multiple edits</li>
+        <li>Over-fueling pit stops: Run a lap or two to understand consumption; err on the lighter side if unsure</li>
+        <li>Panic adjustments: If the car feels loose once, don't assume it needs rear anti-roll-bar stiffness; it might just be tire temps</li>
+      </ul>
+
+      <h2>Practice and Progression</h2>
+
+      <p>Charlotte rewards repetition. I recommend spending at least 15–20 laps in a practice session just nailing your Turn 1 and Turn 3–4 entries before you worry about fuel strategies or setup tweaks. The fundamentals—smooth braking, consistent apex speed, and clean exits—are where the time lives.</p>
+
+      <p>Once you're confident in your line, <a href="best-sim-racing-pedals-iracing-2026.html">load-cell pedals like my MOZA CRP2 make brake modulation far more intuitive</a>. You can feel exactly how much pressure you're applying, which is critical for trail-braking into Turns 1 and 3. Without that feedback, you're guessing at brake depth, and guessing leads to inconsistency and crashes.</p>
+
+      <p>Finally, run time trials or practice races before your official race. Charlotte is not forgiving of first-lap ambition. Get two solid races under your belt, and you'll have the experience to manage fuel, read traffic, and defend position when it matters.</p>
+
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=charlotte-motor-speedway-iracing-oval-guide">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge">Raced on</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>What is the optimal fuel window at Charlotte?</h3>
+        <p>I typically run 48–52 laps on a full tank, which translates to roughly 3 pit stops in a 2-hour race. Fuel consumption is approximately 0.9–1.0 gallons per lap depending on driving style and traffic position. Pit around lap 50 on your first stop to avoid arriving in a traffic jam.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I run a tight or loose setup at Charlotte?</h3>
+        <p>Start balanced and lean toward loose. Charlotte's banking is gentle enough that loose cars often feel faster and more responsive through the turns than tight cars. If you're pushing, add rear anti-roll-bar stiffness before you soften the suspension. Don't over-wing the car; drag costs more than it gains.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What's the best way to pass on Charlotte?</h3>
+        <p>Most passing happens after Turn 4 exit into Turn 1 or into Turns 3–4 when you've built momentum on the backstretch. Don't dive to the inside too early; let your line flow naturally, and use the banking to carry speed. Respect the tow—if you're being pushed, brake 50–100 feet earlier than normal.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I avoid spinning in Turn 1?</h3>
+        <p>Brake where you can see the brake marker, not where you hope it is. Respect the fuel load and tow—both add speed you're not used to. Aim for 115 mph at the apex and trail brake smoothly; don't turn in aggressively or the rear will step out. Smooth steering input and consistent speed through the apex are key.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="mid-ohio-speedway-iracing-setup-guide.html"><span>Track Guides</span>Mid-Ohio Speedway iRacing Guide: Setup, Lines, Braking Points</a>
+      <a class="related-card" href="fuji-speedway-iracing-guide.html"><span>Track Guides</span>Fuji Speedway iRacing Guide: Lines, Setup, Wet Weather</a>
+      <a class="related-card" href="sonoma-raceway-iracing-guide.html"><span>Track Guides</span>Sonoma Raceway iRacing Guide: Turn-In, Apexes, Brake Points</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","moza-crp2"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
