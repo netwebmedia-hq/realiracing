@@ -89,6 +89,23 @@ a:focus-visible,button:focus-visible{outline:2px solid #e8ff00;outline-offset:2p
 .d{display:block;color:#9a9a9a;font-size:13px;margin-top:5px;
  font-variant-numeric:tabular-nums}
 .all{display:block;text-align:center;color:#9a9a9a;font-size:14px;margin-top:14px}
+.join{margin-top:16px;background:#1a1d23;border:1px solid #2a2d35;border-radius:14px;padding:14px}
+.jt{display:block;font-weight:700;font-size:16px;margin-bottom:10px}
+.jr{display:flex;gap:8px}
+.jr input{flex:1;min-width:0;font:inherit;font-size:16px;color:#f0f0f0;background:#0a0a0a;
+ border:1px solid #2a2d35;border-radius:10px;padding:11px 12px;min-height:46px}
+.jr input::placeholder{color:#9a9a9a;opacity:1}
+.jr button{flex:0 0 auto;font:inherit;font-weight:700;font-size:15px;color:#0a0a0a;background:#e8ff00;
+ border:0;border-radius:10px;padding:0 16px;min-height:46px;cursor:pointer}
+.jr button[disabled]{opacity:.6;cursor:default}
+input:focus-visible{outline:2px solid #e8ff00;outline-offset:2px}
+.jm{font-size:14px;font-weight:600;margin-top:10px}
+.jm:empty{display:none}
+.fine{color:#9a9a9a;font-size:12.5px;margin-top:8px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.join.done .jr,.join.done .fine{display:none}
+.join.done .jm{margin-top:0}
+.nojs .join{display:none}
 footer{text-align:center;color:#9a9a9a;font-size:14px;margin-top:32px}
 footer a{color:#9a9a9a}
 .note{font-size:13px;margin-top:10px}

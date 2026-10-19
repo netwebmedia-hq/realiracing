@@ -162,6 +162,41 @@
       if (open) { track('bio_qr_open', {}); }
     });
   }
+
+  /* Email capture: the same {form_id, data} POST every portfolio form makes
+     (api-php forms/submit), so the lead lands in our CRM with its source.
+     A signup is also a first-party 'signup' beacon and a GA4 sign_up. */
+  var join = document.querySelector('form.join');
+  if (join) {
+    join.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var input = join.querySelector('input[type="email"]'), btn = join.querySelector('button'),
+          msg = join.querySelector('.jm'), hp = join.querySelector('.hp'),
+          email = (input.value || '').trim();
+      if (!email || !input.checkValidity()) {
+        msg.textContent = join.getAttribute('data-bad'); input.focus(); return;
+      }
+      btn.disabled = true;
+      msg.textContent = '';
+      fetch(join.getAttribute('data-api'), {
+        method: 'POST', credentials: 'omit', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ form_id: join.getAttribute('data-form'), data: {
+          email: email, hp_website: hp ? hp.value : '', source: 'hub-' + ds.prop,
+          lang: document.documentElement.lang || '', utm_source: src || ds.src || '',
+          utm_medium: 'bio', utm_campaign: 'go', landing_page: location.href.slice(0, 1000),
+          referrer: (document.referrer || '').slice(0, 1000) } })
+      }).then(function (r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        join.className = 'join done';
+        msg.textContent = join.getAttribute('data-ok');
+        track('sign_up', { method: 'hub_email' });
+        beacon('signup', { sec: 'join' });
+      }).catch(function () {
+        msg.textContent = join.getAttribute('data-err');
+      }).then(function () { btn.disabled = false; });
+    });
+  }
+
   /* Delegated: every tracked link, on every hub — tabbed or not. */
   document.addEventListener('click', function (e) {
     var el = e.target;
