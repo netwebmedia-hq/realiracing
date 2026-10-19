@@ -271,15 +271,19 @@ function scanExistingPosts() {
 }
 
 // ─── Render one post ─────────────────────────────────────────────────────────
-// Cross-sell for our own NWM PitStop pack on performance/streaming topics.
-// No price in the copy (client-facing rule); labelled as our own product.
-const PITSTOP_TOPIC_RE = /\b(stream(?:ing)?|obs|fps|stutter(?:ing)?|cpu|gpu|bottleneck(?:s|ing)?|performance|frame ?rate|lag|overlay)\b/i;
+// Cross-sell for our own NWM PitStop pack. Every post carries it (2026-10-19: it ran on
+// 6 of 177 posts, the gate was too narrow); performance/streaming topics get the
+// go-live hook, everything else the pre-session one. No price in the copy
+// (client-facing rule); labelled as our own product.
+const PITSTOP_TOPIC_RE = /(stream(?:ing)?|obs|fps|stutter(?:ing)?|cpu|gpu|bottleneck(?:s|ing)?|performance|frame ?rate|lag|overlay)/i;
 function pitstopCalloutHtml(post) {
   const hay = [post.slug, post.title, post.description, post.tag].join(' ').replace(/-/g, ' ');
-  if (!PITSTOP_TOPIC_RE.test(hay)) return '';
+  const hook = PITSTOP_TOPIC_RE.test(hay)
+    ? 'Before you go live, free up your rig.'
+    : 'Before your next session, free up your rig.';
   return `<div class="tip-box rir-pitstop-callout">
         <span class="box-label">From the RealiRacing shop</span>
-        <p><strong>Before you go live, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=${esc(post.slug)}">See NWM PitStop &rarr;</a></p>
+        <p><strong>${hook}</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=${esc(post.slug)}">See NWM PitStop &rarr;</a></p>
       </div>
 `;
 }
