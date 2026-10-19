@@ -8,9 +8,9 @@
   /* GA4 bootstrap — same house pattern as js/ga4.js on the sites that have
      one (host-gated, measurement only). Only runs where the page carries a
      data-ga4 id, i.e. sites with no analytics file of their own. */
-  if (ds.ga4 && ds.domain &&
-      new RegExp('(^|\\.)' + ds.domain.replace(/\./g, '\\.') + '$', 'i')
-        .test(location.hostname) && !window.gtag) {
+  var onHost = !!ds.domain &&
+      new RegExp('(^|\\.)' + ds.domain.replace(/\./g, '\\.') + '$', 'i').test(location.hostname);
+  if (ds.ga4 && onHost && !window.gtag) {
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { window.dataLayer.push(arguments); };
     window.gtag('js', new Date());
@@ -82,12 +82,22 @@
   /* First-party telemetry — the in-house Linktree analytics. One POST per
      view / click / share to api-php (data-api), JSON as text/plain so there is
      no CORS preflight; sendBeacon survives the page unloading on a tap. */
+  /* uniq: first view of this hub in this browser session (sessionStorage, no
+     cookie) — lets the dashboard count sessions, not reloads and tab flips. */
+  var uniq = 1;
+  try {
+    var sk = 'hub_seen_' + ds.prop;
+    if (sessionStorage.getItem(sk)) uniq = 0; else sessionStorage.setItem(sk, '1');
+  } catch (e) { /* private mode: count it */ }
+
   function beacon(kind, extra) {
-    if (!ds.api || !ds.prop) return;
+    // Host-gated like GA4: local previews and staging copies never count.
+    if (!ds.api || !ds.prop || !onHost) return;
     var payload = JSON.stringify({
       property: ds.prop, kind: kind, label: extra.label || null,
       url: extra.url || null, path: location.pathname, ref: document.referrer || null,
-      src: src || ds.src || null
+      src: src || ds.src || null, sec: extra.sec || null,
+      pos: extra.pos == null ? null : extra.pos, uniq: kind === 'view' ? uniq : 0
     });
     try {
       if (navigator.sendBeacon &&
@@ -100,6 +110,24 @@
   beacon('view', {});
 
   document.body.className = 'js';
+
+  /* Scheduled rows (data-from / data-until, inclusive ISO dates, local day):
+     the page is only rebuilt on a blog publish, so enforce both edges here. */
+  var now = new Date(), day = now.getFullYear() + '-' + ('0' + (now.getMonth() + 1)).slice(-2) +
+            '-' + ('0' + now.getDate()).slice(-2);
+  [].forEach.call(document.querySelectorAll('[data-from],[data-until]'), function (li) {
+    var f = li.getAttribute('data-from'), u = li.getAttribute('data-until');
+    li.hidden = !!((f && day < f) || (u && day > u));
+  });
+
+  /* Sticky CTA: shown once the page's own CTA has scrolled out of view. */
+  var sticky = document.querySelector('.sticky'), cta = document.querySelector('.cta');
+  if (sticky && cta && 'IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) {
+      var gone = !es[0].isIntersecting && es[0].boundingClientRect.top < 0;
+      sticky.className = gone ? 'sticky on' : 'sticky';
+    }).observe(cta);
+  }
 
   var shareBtn = document.querySelector('[data-share]');
   if (shareBtn) {
@@ -134,6 +162,21 @@
       if (open) { track('bio_qr_open', {}); }
     });
   }
+  /* Delegated: every tracked link, on every hub — tabbed or not. */
+  document.addEventListener('click', function (e) {
+    var el = e.target;
+    while (el && el !== document && !(el.tagName === 'A' && el.hasAttribute('data-t'))) {
+      el = el.parentNode;
+    }
+    if (el && el !== document) {
+      var sec = el.getAttribute('data-s'), pos = parseInt(el.getAttribute('data-p'), 10);
+      track('bio_click', { link_label: el.getAttribute('data-t'), link_url: el.href,
+                           link_section: sec || '', link_position: isNaN(pos) ? -1 : pos });
+      beacon('click', { label: el.getAttribute('data-t'), url: el.href, sec: sec,
+                        pos: isNaN(pos) ? null : pos });
+    }
+  });
+
   var tabs = [].slice.call(document.querySelectorAll('[role="tab"]'));
   if (!tabs.length) return;
   var secondId = tabs[1] ? tabs[1].getAttribute('aria-controls') : null;
@@ -169,14 +212,4 @@
   window.addEventListener('hashchange', sync);
   sync();
 
-  document.addEventListener('click', function (e) {
-    var el = e.target;
-    while (el && el !== document && !(el.tagName === 'A' && el.hasAttribute('data-t'))) {
-      el = el.parentNode;
-    }
-    if (el && el !== document) {
-      track('bio_click', { link_label: el.getAttribute('data-t'), link_url: el.href });
-      beacon('click', { label: el.getAttribute('data-t'), url: el.href });
-    }
-  });
 })();
