@@ -7,7 +7,7 @@
   "description": "Understand NLT, Vesa, ISO, and Bosch standards for sim racing wheel mounts. Choose the right quick-release before you buy.",
   "sections": [
     {
-      "p": "I bought my MOZA R9 last year expecting to swap wheels on a whim. What I found instead was a fragmented ecosystem where my steering wheel, wheelbase, and mounting points didn't speak the same language. Quick-release standards sound boring until you realize you've wasted money on incompatible gear or you're stuck with one wheel because your cockpit uses a different standard than your wheelbase."
+      "p": "If you're buying a MOZA R9 or any other direct drive wheelbase expecting to swap wheels on a whim, you may find a fragmented ecosystem where your steering wheel, wheelbase, and mounting points don't speak the same language. Quick-release standards sound boring until you realize you've wasted money on incompatible gear or you're stuck with one wheel because your cockpit uses a different standard than your wheelbase."
     },
     {
       "p": "Quick-release systems dictate how your steering wheel physically connects to your wheelbase, and how your wheelbase connects to your cockpit. Without standardization, each manufacturer plays by their own rules. Understanding which standard you have, and which one you're buying into, saves money and prevents the frustration of owning hardware that won't fit together."
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "p": "On my rig, I run the MOZA R9 with its ISO quick-release. That choice locks me into MOZA's ecosystem for wheels unless I invest in an aftermarket adapter. Some companies sell cross-standard converters, but they add mechanical slop and aren't ideal for the precision feedback I care about."
+      "p": "The MOZA R9 uses an ISO quick-release. That choice locks you into MOZA's ecosystem for wheels unless you invest in an aftermarket adapter. Some companies sell cross-standard converters, but they add mechanical slop and aren't ideal if you care about precise feedback."
     },
     {
       "h2": "Why the standard matters for your purchase"
@@ -39,7 +39,7 @@
       "p": "Cost compounds over time. A good wheel costs ~$200 to $400. If your wheelbase uses NLT but you later want a wheel designed for ISO, you either pay more for an adapter that may not feel as solid, or you accept that wheel isn't an option. Adapters also introduce lateral play in the connection, which weakens the feedback precision and centering repeatability."
     },
     {
-      "p": "You also need to think about cockpit mounting. If your cockpit accepts only Vesa bolts but your wheelbase uses ISO, the wheelbase won't bolt directly to your rig. You'll need a second adapter or a different mounting plate. With a fixed aluminum cockpit like mine, changing standards means fabricating new mounting points or buying a new cockpit profile."
+      "p": "You also need to think about cockpit mounting. If your cockpit accepts only Vesa bolts but your wheelbase uses ISO, the wheelbase won't bolt directly to your rig. You'll need a second adapter or a different mounting plate. With a fixed aluminum cockpit, changing standards means fabricating new mounting points or buying a new cockpit profile."
     },
     {
       "h2": "ISO vs NLT: the practical divide"
@@ -48,13 +48,13 @@
       "p": "If you're shopping for a new wheelbase today, you're likely choosing between ISO (MOZA) and NLT (Fanatec). Vesa is fading as a choice for new gear. Understanding the trade-offs helps you avoid regret."
     },
     {
-      "p": "ISO, which I use on my R9, centers the wheel against a ball detent. This mechanical stop helps you find center consistently without relying on software. The wheel sits in the same position every session. ISO also tolerates slightly loose bolts better because the detent does the positioning work. The flanges are smaller, so wheels weigh a bit less."
+      "p": "ISO, which the MOZA R9 uses, centers the wheel against a ball detent. This mechanical stop helps you find center consistently without relying on software. The wheel sits in the same position every session. ISO also tolerates slightly loose bolts better because the detent does the positioning work. The flanges are smaller, so wheels weigh a bit less."
     },
     {
       "p": "NLT uses a finer, twist-lock mechanism and relies more on bolt tension to hold the wheel centered. It's lighter and more compact. Fanatec's wheel library is also larger than MOZA's right now, so if variety matters to you, NLT gives you more options. NLT wheelbase assemblies also tend to be slightly cheaper upfront because the release mechanism is simpler to manufacture."
     },
     {
-      "p": "The mechanical difference is small. Both work. ISO feels slightly more mechanically robust to me, and I prefer the ball-detent feedback, but that's subjective. What matters is consistency within your ecosystem. Pick one, accept that choice for at least 2-3 years, and commit to that manufacturer's wheel lineup."
+      "p": "The mechanical difference is small. Both work. ISO may feel slightly more mechanically robust, and some drivers prefer the ball-detent feel, but that's subjective. What matters is consistency within your ecosystem. Pick one, accept that choice for at least 2-3 years, and commit to that manufacturer's wheel lineup."
     },
     {
       "tip": "Check the quick-release standard before you buy a cockpit or wheelbase. Many fixed cockpits only support one or two standards. If your cockpit is already purchased, that choice is made for you; buy a wheelbase that matches it.",
@@ -67,7 +67,7 @@
       "p": "Third-party adapters exist to convert between standards. You can find ISO-to-NLT converters and Vesa-to-ISO adapters online. They work in a technical sense, but they introduce a small amount of lateral play in the connection. When your wheel and wheelbase aren't directly bolted together, the adapter sits between them and eats up some of the mechanical rigidity. Your FFB feels slightly less direct."
     },
     {
-      "p": "I've tested adapters on friends' rigs and the difference isn't huge. You lose maybe 2-3 millimeters of precision in centering and a subtle softness in the force feedback at low speeds. For serious endurance racing or competitive league driving, I wouldn't use an adapter on my main setup. For casual league racing or practice sessions, an adapter works fine."
+      "p": "The difference isn't huge, but expect to lose maybe 2-3 millimeters of precision in centering and a subtle softness in the force feedback at low speeds. For serious endurance racing or competitive league driving, avoid using an adapter on your main setup. For casual league racing or practice sessions, an adapter works fine."
     },
     {
       "p": "The real cost isn't the adapter itself, which is ~$20 to $40. It's the opportunity cost. Instead of buying another wheel, you're spending money on a converter that degrades the connection. Use adapters as a temporary bridge, not a permanent solution."

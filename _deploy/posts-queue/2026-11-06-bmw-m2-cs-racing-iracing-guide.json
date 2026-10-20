@@ -7,22 +7,22 @@
   "description": "Tune the M2 CS for consistency and aggression. Master throttle control, braking zones, and defensive lines in GT4 racing.",
   "sections": [
     {
-      "p": "The BMW M2 CS Racing has become a staple in iRacing's GT4 series, and for good reason. It's sharp, responsive, and forgiving enough that you can push hard without punishing every input. I've spent enough laps in it on my MOZA R9 to know where its limits live, and they're generous compared to some other GT4 cars. The M2 rewards aggressive driving but also demands precision in mid-corner speed and brake modulation. If you want to race it competitively, you need to understand how to extract those margins without sliding into the tire wall."
+      "p": "The BMW M2 CS Racing has become a staple in iRacing's GT4 series, and for good reason. It's sharp, responsive, and forgiving enough that you can push hard without punishing every input. The M2 rewards aggressive driving but also demands precision in mid-corner speed and brake modulation. If you want to race it competitively, you need to understand how to extract those margins without sliding into the tire wall."
     },
     {
       "h2": "Brake, Throttle, and Steering Linearity"
     },
     {
-      "p": "The M2 CS brakes hard and straight. On my MOZA CRP2 load-cell pedals, I run a brake bias around 56 to 58 percent front, tuned for the track and tire wear. Early in a stint when tires are cool, you can threshold brake into most corners. As tires age and lose front grip, you'll need to trail brake deeper and carry more speed through the mid-corner to keep the pace. The steering weight feels natural at stock settings, but I dial in about 10 to 15 percent more lock (up to 30 degrees total) to gain confidence in slow-speed corners where the car can feel wide."
+      "p": "The M2 CS brakes hard and straight. A brake bias around 56 to 58 percent front is a common starting point, tuned for the track and tire wear. Early in a stint when tires are cool, you can threshold brake into most corners. As tires age and lose front grip, you'll need to trail brake deeper and carry more speed through the mid-corner to keep the pace. The steering weight feels natural at stock settings, but consider dialing in about 10 to 15 percent more lock (up to 30 degrees total) to gain confidence in slow-speed corners where the car can feel wide."
     },
     {
-      "p": "Throttle progression is the biggest gain I've found. The M2 doesn't punish a clumsy right foot, but it rewards smooth application. On corner exit, roll in throttle as your front tires regain grip. Rush it and you'll push out wide or light up the rear. Build it progressively and the car rotates through the apex, then accelerates cleanly. That difference between a sloppy and surgical exit is 0.3 to 0.5 seconds over a lap."
+      "p": "Throttle progression is the biggest gain available. The M2 doesn't punish a clumsy right foot, but it rewards smooth application. On corner exit, roll in throttle as your front tires regain grip. Rush it and you'll push out wide or light up the rear. Build it progressively and the car rotates through the apex, then accelerates cleanly. That difference between a sloppy and surgical exit is 0.3 to 0.5 seconds over a lap."
     },
     {
       "h2": "Setup for Consistency Over Outright Pace"
     },
     {
-      "p": "I run a slightly softer setup than the default GT4 baseline. Front anti-roll bar sits around 7 to 8, rear around 6 to 7. This gives the car a compliant feel on bumpy circuits like Bathurst or Laguna Seca, where you can't afford to lose grip mid-corner over a crest. The M2 is stable by design, so I'm not chasing a twitchy knife-edge; I'm chasing a car that feels consistent lap after lap, especially in endurance racing where tire management matters more than qualifying one-lappers."
+      "p": "Try a slightly softer setup than the default GT4 baseline. Set the front anti-roll bar around 7 to 8, rear around 6 to 7. This gives the car a compliant feel on bumpy circuits like Bathurst or Laguna Seca, where you can't afford to lose grip mid-corner over a crest. The M2 is stable by design, so don't chase a twitchy knife-edge; chase a car that feels consistent lap after lap, especially in endurance racing where tire management matters more than qualifying one-lappers."
     },
     {
       "list": [
@@ -61,7 +61,7 @@
       "p": "The M2 is quick enough to make passes, but not so dominant that you'll gap a similarly skilled driver. This means your defense has to be clean and positioned. On a straight, never block defensively; instead, pick your preferred line early and hold it. If an opponent has a run on you, move early, make contact impossible, and let them try the outside. Most of the time, they'll back out because the risk-reward isn't there."
     },
     {
-      "p": "Passing slower traffic requires smoothness. The M2 is stable enough that you can carry higher mid-corner speed than many GT4 drivers expect, so your passes often work on the inside line of faster corners. Don't dive-bomb; instead, establish your presence, wait for a corner where you have a clear grip advantage, and move past when it's obvious. I've found the best passes happen where the slower driver is managing tires and I'm still pushing. I'm not faster; I'm fresher."
+      "p": "Passing slower traffic requires smoothness. The M2 is stable enough that you can carry higher mid-corner speed than many GT4 drivers expect, so your passes often work on the inside line of faster corners. Don't dive-bomb; instead, establish your presence, wait for a corner where you have a clear grip advantage, and move past when it's obvious. The best passes often happen where the slower driver is managing tires and you're still pushing. You're not faster; you're fresher."
     },
     {
       "h2": "Common Setup Mistakes"
@@ -78,7 +78,7 @@
       "h2": "Why the M2 CS Works for Sim Racers"
     },
     {
-      "p": "The BMW M2 CS Racing sits in a sweet spot. It's fast enough to race with any competitive GT4 field, forgiving enough that you can learn racecraft without the car punishing you for small errors, and responsive enough that input quality matters. My MOZA R9 direct drive feedback through fast direction changes is clear and communicative, and that precision is what lets you find those apex-speed margins that separate 1:59 laps from 1:59.5 laps."
+      "p": "The BMW M2 CS Racing sits in a sweet spot. It's fast enough to race with any competitive GT4 field, forgiving enough that you can learn racecraft without the car punishing you for small errors, and responsive enough that input quality matters. Clear, communicative direct drive feedback through fast direction changes helps, and that precision is what lets you find those apex-speed margins that separate 1:59 laps from 1:59.5 laps."
     },
     {
       "p": "If you're racing GT4 for the first time or moving from single-seaters to closed cockpit cars, the M2 is your best teacher. It teaches you throttle control, brake modulation, and the value of smooth mid-corner speed without demanding perfection on every single lap. Once you can run consistent, fast M2 laps, moving to more sensitive cars like the Aston Martin Vantage GT4 or the Alpine A110 feels natural because you've already learned the fundamentals. Start here, build your pace methodically, and the rest of GT4 racing opens up."
@@ -87,7 +87,7 @@
   "faqs": [
     {
       "q": "What is the ideal brake bias for the M2 CS on most circuits?",
-      "a": "I run 56 to 58 percent front bias on most tracks. Adjust 1 to 2 percent up or down based on tire wear and circuit characteristics. Street circuits with heavy braking can go slightly more forward (60 percent); fast circuits with light braking can go slightly rearward (54 percent). Test in practice and find the bias where you can threshold brake consistently without locking the fronts or sliding the rears."
+      "a": "(FAQ) A common starting point is 56 to 58 percent front bias on most tracks. Adjust 1 to 2 percent up or down based on tire wear and circuit characteristics. Street circuits with heavy braking can go slightly more forward (60 percent); fast circuits with light braking can go slightly rearward (54 percent). Test in practice and find the bias where you can threshold brake consistently without locking the fronts or sliding the rears."
     },
     {
       "q": "Should I use soft or stiff suspension for a street circuit like Brands Hatch?",

@@ -7,7 +7,7 @@
   "description": "Master MIS drafting on iRacing with proven line choices, throttle discipline, and setup tweaks. Learn when to push and when to sit tight.",
   "sections": [
     {
-      "p": "Michigan International Speedway is one of iRacing's fastest ovals, and the two-mile length means drafting isn't optional. I've learned this the hard way on my MOZA R9 rig: arrive at Turn 3 alone, and you'll watch three cars sail past on the backstretch. The draft here is real. It's not a gimmick. You either understand it or you'll spend a lot of laps puzzled about why you're getting passed on straightaways despite clean entries."
+      "p": "Michigan International Speedway is one of iRacing's fastest ovals, and the two-mile length means drafting isn't optional. Arrive at Turn 3 alone, and you'll watch three cars sail past on the backstretch. The draft here is real. It's not a gimmick. You either understand it or you'll spend a lot of laps puzzled about why you're getting passed on straightaways despite clean entries."
     },
     {
       "p": "MIS drafting differs from short-track racing. The high speeds mean the draft window is wider, but it's also more forgiving. You have more room to catch up to the car ahead. This isn't Daytona or Talladega, where the draft is suffocating and every tenth of a second of separation feels like a three-car-length gap. At MIS, you can afford to be patient, and patience usually wins."
@@ -28,7 +28,7 @@
       "h3": "Turns 1 and 2 (the chicane)"
     },
     {
-      "p": "This is where drafting ends and car control begins. You can't out-draft through a chicane. The turns are too tight. You have to out-brake and out-handle. Coming off the backstretch, you're sitting in someone's draft at 200+ mph. You'll want to brake earlier than feels natural because the draft will carry you down the track. Trail brake into Turn 1. Be smooth. The car wants to push. Load cell pedals like my MOZA CRP2 let you feel exactly how much pressure you're applying, so I can modulate brake and throttle with real precision through here. You will lose the pass if you overdrive this."
+      "p": "This is where drafting ends and car control begins. You can't out-draft through a chicane. The turns are too tight. You have to out-brake and out-handle. Coming off the backstretch, you're sitting in someone's draft at 200+ mph. You'll want to brake earlier than feels natural because the draft will carry you down the track. Trail brake into Turn 1. Be smooth. The car wants to push. Load cell pedals let you feel exactly how much pressure you're applying, which helps you modulate brake and throttle with real precision through here. You will lose the pass if you overdrive this."
     },
     {
       "p": "The line through the chicane is tight and technical. Most sim racers run too much speed and then have to brake again between Turns 1 and 2. That kills your exit. Sacrifice a little entry speed and carry better speed through Turns 1 and 2, and you'll have more throttle available on the straightaway leading into Turn 3. That's where you'll get the draft back."
@@ -50,7 +50,7 @@
       "h2": "Throttle discipline and the draft"
     },
     {
-      "p": "I see a lot of sim racers make the same mistake: they get impatient. They sit in the draft for two laps, then try to out-accelerate the car ahead on the backstretch. That won't work. You have the same power, the same gearing, the same everything. The car ahead has been running the same pace you're running. You can't suddenly accelerate faster because you decided to go for it."
+      "p": "A lot of sim racers make the same mistake: they get impatient. They sit in the draft for two laps, then try to out-accelerate the car ahead on the backstretch. That won't work. You have the same power, the same gearing, the same everything. The car ahead has been running the same pace you're running. You can't suddenly accelerate faster because you decided to go for it."
     },
     {
       "p": "The pass at MIS comes from one of two places: better car control through the corners, or a setup change that lets you carry more speed on exit. That's it. If you want to pass, you pass with your driving. The draft will help you get close. Your braking and handling will get you around them. Throttle discipline is about knowing when to stay full throttle and when to back out slightly to set up the next corner better. At MIS, that usually means staying calm on the backstretch and attacking into the chicane."
@@ -63,13 +63,13 @@
       "h2": "Setup for MIS drafting"
     },
     {
-      "p": "The baseline setup for MIS is a good starting point, but you can make targeted tweaks if you understand what they do. My MOZA R9 with locked-in force feedback helps me feel every setup change, so I can test and iterate quickly."
+      "p": "The baseline setup for MIS is a good starting point, but you can make targeted tweaks if you understand what they do. Good, consistent force feedback helps you feel every setup change, so you can test and iterate quickly."
     },
     {
       "p": "Downforce is the main knob. Higher downforce lets you carry more speed through the corners, especially Turns 1, 2, 3, and 4. Lower downforce reduces drag on the straightaway, so you'll have higher top speed and better draft recovery. At MIS, the two-mile length favors lower downforce because straightaway speed matters so much. If you're getting drafted on the backstretch every lap, drop your wing a notch and test. You might lose a tiny bit of corner speed but gain more on the straightaway."
     },
     {
-      "p": "Gear selection is the second big variable. Taller gears (lower numerical ratio) mean higher top speed and better draft recovery. Shorter gears (higher numerical ratio) mean better acceleration and faster corner exit. At MIS, I lean toward taller gearing because the straightaways are long and the draft is the primary way to gain on competitors. Run practice, time yourself, and compare your pace to the field. If you're slow on the straights, go taller."
+      "p": "Gear selection is the second big variable. Taller gears (lower numerical ratio) mean higher top speed and better draft recovery. Shorter gears (higher numerical ratio) mean better acceleration and faster corner exit. At MIS, a common choice is taller gearing because the straightaways are long and the draft is the primary way to gain on competitors. Run practice, time yourself, and compare your pace to the field. If you're slow on the straights, go taller."
     },
     {
       "list": [
@@ -108,7 +108,7 @@
       "h2": "Practice routine for MIS mastery"
     },
     {
-      "p": "I spend time in practice trying specific scenarios. First, I run solo laps to understand the baseline pace and to develop smooth inputs through the chicane. That's foundational. Then I run practice races against AI set to competitive difficulty. I practice drafting scenarios: sitting in someone's draft, making a pass, defending a position, and recovering from mistakes. Finally, I run a full race-distance stint to understand fuel mileage and tire wear so there are no surprises during the actual race."
+      "p": "Spend time in practice working through specific scenarios. First, run solo laps to understand the baseline pace and to develop smooth inputs through the chicane. That's foundational. Then run practice races against AI set to competitive difficulty. Practice drafting scenarios: sitting in someone's draft, making a pass, defending a position, and recovering from mistakes. Finally, run a full race-distance stint to understand fuel mileage and tire wear so there are no surprises during the actual race."
     },
     {
       "olist": [

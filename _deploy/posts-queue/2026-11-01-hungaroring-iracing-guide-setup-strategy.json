@@ -4,22 +4,22 @@
   "author": "Carlos Martinez",
   "readTime": "9 min read",
   "title": "Hungaroring iRacing guide: Setup, braking zones, and wet weather",
-  "description": "Learn Hungaroring's tight corners, heavy braking zones, and rain strategy. Real setup insights from a MOZA R9 driver who races it regularly.",
+  "description": "Learn Hungaroring's tight corners, heavy braking zones, and rain strategy, with setup starting points for Formula cars and GT3s.",
   "sections": [
     {
-      "p": "Hungaroring is one of iRacing's most unforgiving circuits. The track sits in a valley outside Budapest, Hungary, with a layout designed to punish every mistake. I run it on my MOZA R9 rig and every session teaches me something about precision over raw speed. The corners come fast, the braking zones demand absolute confidence, and setup mistakes compound into frustration. But nail the fundamentals and Hungaroring rewards smooth, disciplined driving like few other tracks do."
+      "p": "Hungaroring is one of iRacing's most unforgiving circuits. The track sits in a valley outside Budapest, Hungary, with a layout designed to punish every mistake. Every session here teaches precision over raw speed. The corners come fast, the braking zones demand absolute confidence, and setup mistakes compound into frustration. But nail the fundamentals and Hungaroring rewards smooth, disciplined driving like few other tracks do."
     },
     {
-      "p": "This guide covers what I've learned racing the Formula cars and GT3s through Hungaroring's 14 corners. I'll walk through the critical braking zones, the setup priorities that matter most, and how to approach wet weather when it inevitably arrives."
+      "p": "This guide draws on common setup practice, not personal lap testing. It covers the Formula cars and GT3s through Hungaroring's 14 corners. I'll walk through the critical braking zones, the setup priorities that matter most, and how to approach wet weather when it inevitably arrives."
     },
     {
       "h2": "Track layout and the braking reality"
     },
     {
-      "p": "Hungaroring's layout flows through a series of medium-speed corners with very few straights. Turn 1 is your first hard braking zone, then the track tightens progressively through Turns 2, 3, and 4. If you miss your marks early, the entire lap unravels. The main straight into Turn 1 is the only place where you build real speed, so that braking zone is absolute. I lock the wheels here at least once a practice session while dialing in feel."
+      "p": "Hungaroring's layout flows through a series of medium-speed corners with very few straights. Turn 1 is your first hard braking zone, then the track tightens progressively through Turns 2, 3, and 4. If you miss your marks early, the entire lap unravels. The main straight into Turn 1 is the only place where you build real speed, so that braking zone is absolute. It is common to lock the wheels here at least once a practice session while dialing in feel."
     },
     {
-      "p": "Turns 6 and 7 comprise a double-apex right-hander that demands a single, consistent entry speed. Too much brake and you'll run wide on exit. Too little and you'll push through both apexes. The middle sector culminates at Turn 9, another hard braking zone where I often feel the MOZA R9's weight shift through my wheel. Turn 11 is the tightest corner on track, a hairpin where you lose all forward momentum and need absolute traction on exit. Get that wrong and you'll be slow for another lap before the engine braking helps you back to speed."
+      "p": "Turns 6 and 7 comprise a double-apex right-hander that demands a single, consistent entry speed. Too much brake and you'll run wide on exit. Too little and you'll push through both apexes. The middle sector culminates at Turn 9, another hard braking zone where you can feel the car's weight shift through the wheel. Turn 11 is the tightest corner on track, a hairpin where you lose all forward momentum and need absolute traction on exit. Get that wrong and you'll be slow for another lap before the engine braking helps you back to speed."
     },
     {
       "list": [
@@ -34,16 +34,16 @@
       "h2": "Setup priorities: Brake bias, aero, and compliance"
     },
     {
-      "p": "Hungaroring exposes setup weaknesses immediately. Because the track is so tight and medium-speed, you'll spend more time in transition than full throttle or full braking. This means anti-roll bar balance and suspension compliance matter more than on flowing circuits. I start every session with the baseline setup and make small adjustments to brake bias first."
+      "p": "Hungaroring exposes setup weaknesses immediately. Because the track is so tight and medium-speed, you'll spend more time in transition than full throttle or full braking. This means anti-roll bar balance and suspension compliance matter more than on flowing circuits. Start every session with the baseline setup and make small adjustments to brake bias first."
     },
     {
-      "p": "Brake bias is critical here. With the heavy braking at Turn 1 and Turn 9, I lock the front wheels constantly if I haven't tuned it carefully. I typically run slightly higher front bias than I would at Monza or Silverstone because the turns are tighter and speed is lower. This means the rear becomes a smaller percentage of overall braking force. A good starting point is around 58-60% front for most GT3 cars, then adjust based on what you feel through the MOZA R9. If you're locking the front every braking event, dial rear bias up a click. If the rear is sliding under braking, move front bias up."
+      "p": "Brake bias is critical here. With the heavy braking at Turn 1 and Turn 9, you'll lock the front wheels constantly if you haven't tuned it carefully. A slightly higher front bias than you would run at Monza or Silverstone is a common choice because the turns are tighter and speed is lower. This means the rear becomes a smaller percentage of overall braking force. A good starting point is around 58-60% front for most GT3 cars, then adjust based on what you feel through your wheel. If you're locking the front every braking event, dial rear bias up a click. If the rear is sliding under braking, move front bias up."
     },
     {
-      "p": "Wing angles matter for consistent corner speed, not just top speed. Run moderate aero levels because the track doesn't reward overdrive on straights. Lower wing is faster here than people expect. Once I reduced rear wing by one notch on my Formula car setup, my mid-corner speed improved and I quit pushing wide at Turns 6 and 7. The car felt lighter and responded to steering input faster."
+      "p": "Wing angles matter for consistent corner speed, not just top speed. Run moderate aero levels because the track doesn't reward overdrive on straights. Lower wing is faster here than people expect. Try reducing rear wing by one notch on a Formula car setup: it can improve mid-corner speed and help you stop pushing wide at Turns 6 and 7. The car should feel lighter and respond to steering input faster."
     },
     {
-      "p": "Anti-roll bar compliance is where I spend the most setup time. Too stiff a car and you'll push through every corner, especially the medium-speed transitions at Turns 2-4. Too soft and the car wallows and loses grip on entry. I'll make front anti-roll bar adjustments in half-step increments and drive three laps between changes. Your instinct is to go softer when pushing, but at Hungaroring, pushing often means you need more front brake force, not less stiffness."
+      "p": "Anti-roll bar compliance is where most of your setup time is best spent. Too stiff a car and you'll push through every corner, especially the medium-speed transitions at Turns 2-4. Too soft and the car wallows and loses grip on entry. Make front anti-roll bar adjustments in half-step increments and drive three laps between changes. Your instinct is to go softer when pushing, but at Hungaroring, pushing often means you need more front brake force, not less stiffness."
     },
     {
       "tip": "Brake temperature is your best telemetry window into brake balance. If front temperatures run 20+ degrees hotter than rear, you're using the front too much and probably running front bias too high. If they're equal, you've nailed the balance. Use telemetry overlay to compare lap-to-lap.",
@@ -53,22 +53,22 @@
       "h2": "Cornering technique: Smooth steering and patience"
     },
     {
-      "p": "Every corner at Hungaroring demands smooth inputs. The track gives you zero margin for aggressive steering wheel movement. When I first raced here on my MOZA R9, I was fighting my own inputs constantly until I forced myself to turn the wheel slowly. The car responded immediately. Slower steering input means faster corner speed because the tires don't scrub lateral grip."
+      "p": "Every corner at Hungaroring demands smooth inputs. The track gives you zero margin for aggressive steering wheel movement. If you find yourself fighting your own inputs constantly, force yourself to turn the wheel slowly and the car should respond immediately. Slower steering input means faster corner speed because the tires don't scrub lateral grip."
     },
     {
       "p": "The hairpin at Turn 11 teaches this lesson most brutally. You brake in a straight line until about 20 meters before the corner, then turn the wheel at a constant, deliberate rate. If you rush the steering, the front will wash and you'll overshoot the apex. By the time you're pointing at the exit curbing, you should already be off the brakes and feeding throttle smoothly. The entire corner is one flowing motion, not separate brake-steer-throttle phases."
     },
     {
-      "p": "Trail braking is essential here. Most of the corners require you to carry some brake into the turn and release it as you add steering angle. I practice this in the practice session until my muscle memory owns the exact brake release point. For Turns 6 and 7, I brake to about 60% throttle position, hold that brake level while entering Turn 6, then release brake as I apex and feed in throttle smoothly. The release has to be coordinated with steering angle or the car will either push or spin."
+      "p": "Trail braking is essential here. Most of the corners require you to carry some brake into the turn and release it as you add steering angle. Practice this in the practice session until muscle memory owns the exact brake release point. For Turns 6 and 7, brake to about 60% throttle position, hold that brake level while entering Turn 6, then release brake as you apex and feed in throttle smoothly. The release has to be coordinated with steering angle or the car will either push or spin."
     },
     {
       "h2": "Wet weather: Rain amplifies every mistake"
     },
     {
-      "p": "Hungaroring in the rain is where lap times scatter wildly. The track drains poorly in spots, especially the exit of Turns 9 and 10 where water collects in a shallow depression. When those zones are damp, you lose traction suddenly and it's unsettling through the MOZA R9 wheel."
+      "p": "Hungaroring in the rain is where lap times scatter wildly. The track drains poorly in spots, especially the exit of Turns 9 and 10 where water collects in a shallow depression. When those zones are damp, you lose traction suddenly and it can feel unsettling through the wheel."
     },
     {
-      "p": "In wet conditions, brake bias needs to move rearward by about 2-4% compared to your dry setup because tire grip is lower and the car decelerates more gradually overall. You're also more likely to lock the front when wet, so the margin is tighter. I'll run 56-58% front bias when fully wet. Aero matters less in rain, so I reduce both wings by one or two notches to free up the car and reduce drag. A stiff car will aquaplane, so soften the anti-roll bars by one to two steps from your dry settings."
+      "p": "In wet conditions, brake bias needs to move rearward by about 2-4% compared to your dry setup because tire grip is lower and the car decelerates more gradually overall. You're also more likely to lock the front when wet, so the margin is tighter. Try 56-58% front bias when fully wet. Aero matters less in rain, so reduce both wings by one or two notches to free up the car and reduce drag. A stiff car will aquaplane, so soften the anti-roll bars by one to two steps from your dry settings."
     },
     {
       "p": "The biggest mistake is braking too early into the wet corners thinking the car is sliding. Hungaroring corners are medium-speed, so aquaplaning feels like you're going to slide but the car actually has grip once you commit. Brake at your normal mark, make sure you're on the throttle smoothly on exit, and trust the tires. The puddles at Turns 9 and 10 exit are real wet-weather hazards though. Look ahead and avoid braking exactly as you hit standing water."
@@ -102,13 +102,13 @@
       "h2": "Common mistakes and how to avoid them"
     },
     {
-      "p": "The most common mistake I see is overbraking into Turn 1. The entry is intimidating because you're coming from high speed and the corner tightens visibly. Most drivers brake earlier and harder than necessary, then fight a skid through the corner. Practice braking deeper into Turn 1 during practice sessions until you trust the stopping distance. Aim to apex the corner at about 50% throttle, not full lock."
+      "p": "A common mistake is overbraking into Turn 1. The entry is intimidating because you're coming from high speed and the corner tightens visibly. Most drivers brake earlier and harder than necessary, then fight a skid through the corner. Practice braking deeper into Turn 1 during practice sessions until you trust the stopping distance. Aim to apex the corner at about 50% throttle, not full lock."
     },
     {
       "p": "The second mistake is running the anti-roll bars too stiff because the car feels loose in corners. When the car pushes, the instinct is to stiffen the roll bars, but at Hungaroring that often makes it worse. Pushiness through the tight corners usually means you're carrying too much speed in or not trail-braking smoothly enough. Try softer bars first before adding stiffness. The car will feel squirmy for one lap, then the reduced scrub will actually improve corner speed."
     },
     {
-      "p": "A third mistake is not adjusting throttle smoothness for the tight corners. Hungaroring demands precise throttle application. Partial throttle changes need to happen over 100-200 milliseconds, not snapped on or off. I use variable throttle input now, easing off full throttle and easing back on rather than binary on-off driving. This is where a load-cell pedal like my MOZA CRP2 pedals shines because I can modulate input precisely. If you're running a spring-loaded pedal, this will be harder but still essential practice."
+      "p": "A third mistake is not adjusting throttle smoothness for the tight corners. Hungaroring demands precise throttle application. Partial throttle changes need to happen over 100-200 milliseconds, not snapped on or off. Use variable throttle input, easing off full throttle and easing back on rather than binary on-off driving. This is where a load-cell pedal shines because you can modulate input precisely. If you're running a spring-loaded pedal, this will be harder but still essential practice."
     }
   ],
   "faqs": [

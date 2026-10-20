@@ -4,10 +4,10 @@
   "author": "Carlos Martinez",
   "readTime": "9 min read",
   "title": "GPU Upgrade for iRacing: Frame Rate Targets and Real-World Trade-offs",
-  "description": "Which GPU makes sense for 60 Hz, 120 Hz, or VR in iRacing. Real frame-time data and cost-per-frame analysis based on a direct-drive rig.",
+  "description": "Which GPU makes sense for 60 Hz, 120 Hz, or VR in iRacing. Frame-time targets and cost-per-frame analysis from published specs and common setup practice.",
   "sections": [
     {
-      "p": "Frame rate in iRacing is not a luxury. It is a handling variable. A 120 Hz monitor that actually shows 120 frames per second feels more responsive, more planted, and more predictable than 60 Hz, even if your brain cannot consciously measure the latency difference. The only way to hit and hold those frame rates at your target resolution and visual settings is a GPU that is not straining to keep up. I run my MOZA R9 rig on a 1440p 120 Hz monitor, and the difference between a GPU that delivers stable frame time and one that stutters is the difference between a lap where I can feel the car and a lap where I am fighting input lag."
+      "p": "Frame rate in iRacing is not a luxury. It is a handling variable. A 120 Hz monitor that actually shows 120 frames per second feels more responsive, more planted, and more predictable than 60 Hz, even if your brain cannot consciously measure the latency difference. The only way to hit and hold those frame rates at your target resolution and visual settings is a GPU that is not straining to keep up. I race on a MOZA R9 with a 1440p 120 Hz monitor, and the difference between a GPU that delivers stable frame time and one that stutters is the difference between a lap where you can feel the car and a lap where you are fighting input lag. This guide draws on published specs and common setup practice, not a hands-on test of every product."
     },
     {
       "p": "Choosing a GPU for iRacing is simpler than for open-world games because the workload is predictable. Track layout and car count do not shift mid-session the way a game world does. You can test on a familiar circuit, watch your frame timing, and know whether a card will hold your target. But the market moves fast, and the real question is always the same: what is the minimum card that reaches your frame rate target without bottlenecking your CPU, and what is the next tier if you want headroom for VR, higher detail, or future tracks."
@@ -19,7 +19,7 @@
       "p": "iRacing runs best when frame time is under 16 ms (60 Hz), under 8 ms (120 Hz), or under 5.5 ms (180 Hz). Those numbers are not arbitrary. They correspond to the window each frame must be complete before the next refresh cycle starts. Miss the window and you see a frame repeat, which looks like a hiccup. It destabilizes your input feel and your ability to judge braking points and apex speed."
     },
     {
-      "p": "Most of my testing happens at 1440p with high detail settings: 2x MSAA, maximum cars drawn, shadows, reflection quality at medium to high. This is a real-world load for road racing and ovals. 60 Hz is the baseline. Every modern card above the budget tier will hold it. The practical question is 120 Hz, because that is where iRacing's input latency becomes noticeably lower and the difference between running clean and running on the edge of frame-time trouble becomes visible in your lap times."
+      "p": "A useful test load is 1440p with high detail settings: 2x MSAA, maximum cars drawn, shadows, reflection quality at medium to high. This is a real-world load for road racing and ovals. 60 Hz is the baseline. Every modern card above the budget tier will hold it. The practical question is 120 Hz, because that is where iRacing's input latency becomes noticeably lower and the difference between running clean and running on the edge of frame-time trouble becomes visible in your lap times."
     },
     {
       "h2": "GPUs that hold 120 Hz at 1440p"

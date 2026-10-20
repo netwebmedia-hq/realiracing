@@ -7,7 +7,7 @@
   "description": "Master Belle Isle's unforgiving street circuit. Learn wall lines, bump absorption, and damage avoidance on iRacing's toughest permanent fixture.",
   "sections": [
     {
-      "p": "Belle Isle is not a racetrack. It is a street circuit that happens to host racing, and every crack, curb, and wall exists to punish you for being one meter out of line. I have logged hundreds of laps there on my MOZA R9 setup, and the feedback through that wheelbase tells a story every time: one late apex through the chicane, and you are eating concrete. One early turn-in at the Hairpin, and the suspension is damaged. This guide is built on that lived experience, not theory."
+      "p": "Belle Isle is not a racetrack. It is a street circuit that happens to host racing, and every crack, curb, and wall exists to punish you for being one meter out of line. The force feedback through a direct drive wheelbase like the MOZA R9 tells a story every time: one late apex through the chicane, and you are eating concrete. One early turn-in at the Hairpin, and the suspension is damaged. This guide draws on common street circuit practice and setup basics, not on personal lap logs or a hands-on test of every product."
     },
     {
       "p": "What makes Belle Isle unique in iRacing is that the damage model is relentless and visible. Clip a wall at 80 mph and you lose front-end grip immediately. Drag a curb through the technical section and your tire temperature climbs. The feedback is instant, and there is no margin for error once you have committed to a lap. That is what makes learning the proper lines, bump absorption, and damage-avoidance technique so critical."
@@ -35,7 +35,7 @@
       "p": "Belle Isle's bumps are not random. They are concentrated in specific zones: the chicane has a rough left-hander, the technical section has mid-corner weight transfer bumps, and the back straight has a ripple. The bumps are not race-track settling. They are street surface imperfections that remain stable from session to session, which means you can plan for them."
     },
     {
-      "p": "On my MOZA R9, the force feedback through bumps is immediate and heavy. When you hit a bump mid-corner, the wheelbase will pull hard to one side. This is not the car losing control. This is the suspension compressing and extending, and you need to hold the steering wheel steady and let the car absorb the impact. The worst thing you can do is steer into the bump. Your instinct will be to correct, but correction means counter-steering into the wall."
+      "p": "On a direct drive wheelbase like the MOZA R9, the force feedback through bumps is immediate and heavy. When you hit a bump mid-corner, the wheelbase will pull hard to one side. This is not the car losing control. This is the suspension compressing and extending, and you need to hold the steering wheel steady and let the car absorb the impact. The worst thing you can do is steer into the bump. Your instinct will be to correct, but correction means counter-steering into the wall."
     },
     {
       "p": "Setup-wise, softer suspension allows the car to absorb bumps without unsettling the chassis mid-corner. A setup that is too stiff will make the bumps feel like steering inputs, and you will over-correct. Start with a baseline that softens the springs by one or two points from the default, then adjust anti-roll bars to maintain balance in steady-state corners. The goal is compliance on the straights and bumps, precision in the technical sections."

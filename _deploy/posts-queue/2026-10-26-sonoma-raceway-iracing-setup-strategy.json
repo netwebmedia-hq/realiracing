@@ -7,7 +7,7 @@
   "description": "Master Sonoma's technical layout with braking zones, turn-in cues, and setup adjustments for road course consistency.",
   "sections": [
     {
-      "p": "Sonoma Raceway demands precision over aggression. The 2.5-mile road course in California rewards drivers who nail the fundamentals: smooth steering inputs, measured braking, and a setup that lets the car speak to you through the wheel. I've spent enough laps here on my MOZA R9 to know that a tenth of a second often lives in the entry to Turn 1, not the exit."
+      "p": "Sonoma Raceway demands precision over aggression. The 2.5-mile road course in California rewards drivers who nail the fundamentals: smooth steering inputs, measured braking, and a setup that lets the car speak to you through the wheel. A tenth of a second often lives in the entry to Turn 1, not the exit."
     },
     {
       "p": "Unlike Monza or Silverstone, where smooth flowing lines carry you through entire sections, Sonoma forces you to reset your inputs constantly. You brake hard, turn in early, manage the mid-corner load, and exit with precision. The surface is also bumpy in places, which means your setup needs to be stiff enough to avoid wallowing but compliant enough that the rear doesn't spin up on exit. That balance is where lap time hides."
@@ -16,19 +16,19 @@
       "h2": "The braking zones and turn-in geometry"
     },
     {
-      "p": "Turn 1 (the left-hander after the start/finish) is the signature heavy-braking corner. You'll be deep into the right pedal before the turn-in point at the 100-meter board. The key is to trail brake smoothly into the apex. Too much initial brake pressure and you'll lock the fronts; too light and you'll run wide and lose ten meters to the inside line. On my setup, I use ~12% brake balance (front-biased) and lock-sensitive LLM (load-limiting modulation) helps me stay consistent."
+      "p": "Turn 1 (the left-hander after the start/finish) is the signature heavy-braking corner. You'll be deep into the right pedal before the turn-in point at the 100-meter board. The key is to trail brake smoothly into the apex. Too much initial brake pressure and you'll lock the fronts; too light and you'll run wide and lose ten meters to the inside line. A common starting point is ~12% brake balance (front-biased), and lock-sensitive LLM (load-limiting modulation) can help you stay consistent."
     },
     {
-      "p": "Turn 2 (the quick right) is essentially a flick followed by Turn 3. Don't overdrive Turn 2. The entry speed for Turn 3, a long left-hander, is set by how clean you are through Turn 2. I aim for a controlled exit that allows progressive throttle application into the apex of Turn 3. Many drivers try to turn in too early at Turn 2 and end up compromising the Turn 3 entry."
+      "p": "Turn 2 (the quick right) is essentially a flick followed by Turn 3. Don't overdrive Turn 2. The entry speed for Turn 3, a long left-hander, is set by how clean you are through Turn 2. Aim for a controlled exit that allows progressive throttle application into the apex of Turn 3. Many drivers try to turn in too early at Turn 2 and end up compromising the Turn 3 entry."
     },
     {
-      "p": "The Carousel (Turn 7) is the fast corner that separates smooth drivers from the rest. It's a long, gradually tightening right-hander. The trick is to use the full width of the track on entry and apex progressively deeper as the Gs allow. This corner teaches you feel. On my CRP2 pedals, I apply progressive throttle and watch for understeer on the exit. If the front washes, you're braking too late or turning in too much."
+      "p": "The Carousel (Turn 7) is the fast corner that separates smooth drivers from the rest. It's a long, gradually tightening right-hander. The trick is to use the full width of the track on entry and apex progressively deeper as the Gs allow. This corner teaches you feel. Apply progressive throttle and watch for understeer on the exit. If the front washes, you're braking too late or turning in too much."
     },
     {
       "h2": "Setup strategy for consistency"
     },
     {
-      "p": "Sonoma punishes lazy setup work. I start with a baseline that has moderate front anti-roll bar (~6-7 front ARB) and a stiffer rear (~8-9 rear ARB) to help rotate the car through the technical sections. The bumpy nature of the track, especially around Turns 1-3, means I run slightly more suspension stiffness than at a smoother circuit. If the car feels disconnected or the bumps upset your braking points, add a touch of damping."
+      "p": "Sonoma punishes lazy setup work. Start with a baseline that has moderate front anti-roll bar (~6-7 front ARB) and a stiffer rear (~8-9 rear ARB) to help rotate the car through the technical sections. The bumpy nature of the track, especially around Turns 1-3, means you should run slightly more suspension stiffness than at a smoother circuit. If the car feels disconnected or the bumps upset your braking points, add a touch of damping."
     },
     {
       "list": [
@@ -40,7 +40,7 @@
       ]
     },
     {
-      "tip": "The first thing I adjust if the car feels unpredictable is brake balance. Sonoma's quick direction changes mean any inconsistency in brake bias will show immediately as a spinning rear or washing front.",
+      "tip": "The first thing to adjust if the car feels unpredictable is brake balance. Sonoma's quick direction changes mean any inconsistency in brake bias will show immediately as a spinning rear or washing front.",
       "tipLabel": "Brake bias first"
     },
     {
@@ -62,10 +62,10 @@
       "h2": "Practice structure for improvement"
     },
     {
-      "p": "When I'm learning Sonoma, I break the track into three segments: the heavy-braking section (Turns 1-3), the flowing section (Turns 4-7), and the technical closing section (Turns 8-11). Spend a 15-minute block on each segment in isolation. Practice the turn-in points, the braking zones, and the apex geometry until your hands and feet know the rhythm."
+      "p": "When learning Sonoma, break the track into three segments: the heavy-braking section (Turns 1-3), the flowing section (Turns 4-7), and the technical closing section (Turns 8-11). Spend a 15-minute block on each segment in isolation. Practice the turn-in points, the braking zones, and the apex geometry until your hands and feet know the rhythm."
     },
     {
-      "p": "After that, run a full lap and focus on one corner at a time. Don't try to improve everything at once. On my first day at Sonoma, I might nail the Carousel but be messy in Turns 1-2. I'll spend the next session tightening Turns 1-2, and by the third session, the whole lap begins to feel cohesive."
+      "p": "After that, run a full lap and focus on one corner at a time. Don't try to improve everything at once. On your first day at Sonoma, you might nail the Carousel but be messy in Turns 1-2. Spend the next session tightening Turns 1-2, and by the third session, the whole lap should begin to feel cohesive."
     },
     {
       "p": "Use telemetry to see where your braking points are versus the fast drivers in your split. Sonoma is a track where you can see immediate feedback. If a driver ahead of you carries more speed through Turn 3, zoom in on that corner and ask yourself why. Usually it's a cleaner Turn 2 exit, which means earlier throttle application."
@@ -92,19 +92,19 @@
   "faqs": [
     {
       "q": "What is the fastest part of the Sonoma track to gain time?",
-      "a": "The Carousel (Turn 7) and the entry to Turn 1 are where I see the biggest lap-time variations. The Carousel because it's the highest-speed corner and demands smooth progressive inputs, and Turn 1 because a clean trail-braking line there sets you up for Turns 2 and 3. Master those two corners and you're usually in the ballpark."
+      "a": "(FAQ) The Carousel (Turn 7) and the entry to Turn 1 are where the biggest lap-time variations tend to show up. The Carousel because it's the highest-speed corner and demands smooth progressive inputs, and Turn 1 because a clean trail-braking line there sets you up for Turns 2 and 3. Master those two corners and you're usually in the ballpark."
     },
     {
       "q": "Should I use full lock or reduced steering rotation at Sonoma?",
-      "a": "I use ~540 degrees of steering rotation (full lock). Sonoma's quick direction changes and tight corners benefit from having that range available. At 900 degrees, the wheel feels too slow for the quick flicks needed at Turn 2 and the chicane. 540 gives me the responsiveness I need without feeling twitchy."
+      "a": "(FAQ) Consider ~540 degrees of steering rotation (full lock). Sonoma's quick direction changes and tight corners benefit from having that range available. At 900 degrees, the wheel can feel too slow for the quick flicks needed at Turn 2 and the chicane. 540 gives you responsiveness without feeling twitchy."
     },
     {
       "q": "How much brake balance do I need at Sonoma?",
-      "a": "I run 11-13% front bias. It's front-biased to support trail braking into Turn 1 and the other heavy-braking corners, but not so forward that the rear becomes unstable on corner exits. If you're locking the fronts, add 1-2% to the rear. If the rear is spinning up on exit, move balance slightly forward."
+      "a": "(FAQ) A good range to try is 11-13% front bias. It's front-biased to support trail braking into Turn 1 and the other heavy-braking corners, but not so forward that the rear becomes unstable on corner exits. If you're locking the fronts, add 1-2% to the rear. If the rear is spinning up on exit, move balance slightly forward."
     },
     {
       "q": "Is Sonoma better for manual or automatic transmission?",
-      "a": "I prefer manual because the downshifts at Turn 10 and the chicane demand precise engine braking control. Manual lets you blip the throttle on downshift and manage the brake release independently. Automatic is fine if your car's setup is locked to auto, but manual gives you more feel and feedback at this track."
+      "a": "(FAQ) Manual is the better choice because the downshifts at Turn 10 and the chicane demand precise engine braking control. Manual lets you blip the throttle on downshift and manage the brake release independently. Automatic is fine if your car's setup is locked to auto, but manual gives you more feel and feedback at this track."
     }
   ],
   "gearKeys": [

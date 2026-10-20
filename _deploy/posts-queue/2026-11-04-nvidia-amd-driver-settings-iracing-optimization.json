@@ -7,7 +7,7 @@
   "description": "Optimize your GPU driver settings for iRacing on NVIDIA or AMD. Reduce stuttering, improve frame times, and maximize clarity without sacrificing performance.",
   "sections": [
     {
-      "p": "Driver settings live in a strange middle ground on the sim racing rig. You can run iRacing on almost any GPU with almost any driver version and still load into a race, but the difference between a carelessly configured setup and one tuned for your hardware is visible every lap. I run an RTX 5060 Ti on my rig, and the first time I disabled unnecessary driver features and dialed in power management, my frame-time consistency improved enough that I could feel the wheel responding more precisely to track surface change. Driver optimization matters more on mid-range cards than flagships, and it matters more in heavy-traffic multiclass than time trials."
+      "p": "Driver settings live in a strange middle ground on the sim racing rig. You can run iRacing on almost any GPU with almost any driver version and still load into a race, but the difference between a carelessly configured setup and one tuned for your hardware is visible every lap. I run an RTX 5060 Ti on my rig. Disabling unnecessary driver features and dialing in power management can improve frame-time consistency enough that you feel the wheel responding more precisely to track surface change. Driver optimization matters more on mid-range cards than flagships, and it matters more in heavy-traffic multiclass than time trials."
     },
     {
       "h2": "Why Driver Settings Matter for iRacing"

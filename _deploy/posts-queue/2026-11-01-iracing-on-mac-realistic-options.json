@@ -7,10 +7,10 @@
   "description": "iRacing doesn't run natively on macOS. Here's what actually works, what doesn't, and what the performance cost really is.",
   "sections": [
     {
-      "p": "The first thing I tell someone asking if they can run iRacing on their Mac is this: iRacing is Windows-only software. No native macOS build exists, and Sim Innovations (the company behind iRacing) has never committed to building one. That's the starting point for any honest conversation about Mac and sim racing."
+      "p": "The first thing to know if you're asking whether you can run iRacing on a Mac is this: iRacing is Windows-only software. No native macOS build exists, and Sim Innovations (the company behind iRacing) has never committed to building one. That's the starting point for any honest conversation about Mac and sim racing. This guide draws on published specs and common setup practice, not a hands-on test of every product."
     },
     {
-      "p": "I say this because I see a lot of people online suggesting workarounds that sound plausible but deliver mediocre results or quiet disappointment. If you own a Mac and want to race on iRacing, you have real options, but they all involve trade-offs. I'll walk through them from most practical to least practical, based on what I've seen work and fail in the sim racing community."
+      "p": "Many people online suggest workarounds that sound plausible but deliver mediocre results or quiet disappointment. If you own a Mac and want to race on iRacing, you have real options, but they all involve trade-offs. I'll walk through them from most practical to least practical."
     },
     {
       "h2": "Bootcamp (Intel Macs only, but mostly deprecated)"
@@ -31,10 +31,10 @@
       "p": "Parallels Desktop is a hypervisor that runs Windows ARM natively on Apple Silicon Macs. It's elegant on paper: you keep your Mac environment, spin up a Windows virtual machine, and launch iRacing inside that VM. Many professional tools work well this way."
     },
     {
-      "p": "But iRacing on Parallels is a disappointment in practice. Here's why: iRacing requires direct access to your GPU's VRAM and uses low-level graphics APIs (DirectX 11). Parallels abstracts both of these. Your GPU performance is throttled. Multiplayer servers sometimes reject the connection because they detect non-native Windows. Force feedback from my MOZA R9 wheelbase either doesn't work or works intermittently depending on the Parallels version and Windows ARM build you're running."
+      "p": "But iRacing on Parallels is a disappointment in practice. Here's why: iRacing requires direct access to your GPU's VRAM and uses low-level graphics APIs (DirectX 11). Parallels abstracts both of these. Your GPU performance is throttled. Multiplayer servers sometimes reject the connection because they detect non-native Windows. Force feedback from a wheelbase either doesn't work or works intermittently depending on the Parallels version and Windows ARM build you're running."
     },
     {
-      "p": "I've heard from racers who got Parallels working, but every single one reported noticeably lower frame rates (40-60% performance loss is typical), consistent FFB issues, and frequent disconnections from servers. It's not a solution for serious racing. It's a temporary curiosity."
+      "p": "Expect noticeably lower frame rates (40-60% performance loss is typical), consistent FFB issues, and frequent disconnections from servers. It's not a solution for serious racing. It's a temporary curiosity."
     },
     {
       "tip": "Parallels Desktop also costs ~$100/year for updates and licensing. When the experience is already compromised, paying for that overhead makes it harder to justify.",
@@ -56,10 +56,10 @@
       "p": "If you're serious about iRacing and you own a Mac, the honest answer is to use a separate Windows PC or gaming laptop for racing. This is not elegant. It means keeping two computers around. But it's the only approach that delivers the experience iRacing is designed for."
     },
     {
-      "p": "This can range from an older gaming laptop you find second-hand for ~$500-800 to a purpose-built racing PC. If you're willing to go used, you can get a machine capable of running iRacing smoothly at 1440p 120 Hz or VR without much spending. I built a dedicated racing box a few years back using older components, and it cost far less than upgrading my Mac and dealing with a year of virtualization headaches."
+      "p": "This can range from an older gaming laptop you find second-hand for ~$500-800 to a purpose-built racing PC. If you're willing to go used, you can get a machine capable of running iRacing smoothly at 1440p 120 Hz or VR without much spending. A dedicated racing box built from older components can cost far less than upgrading your Mac and dealing with a year of virtualization headaches."
     },
     {
-      "p": "The practical setup: Mac for everything else, gaming PC parked next to your sim rig, wired to your monitor and steering wheel. It's two machines, yes, but each one does one job well. My MOZA R9 wheelbase, MOZA CRP2 pedals, and fixed cockpit all plug into the Windows racing PC. Full compatibility, full FFB, no compromises."
+      "p": "The practical setup: Mac for everything else, gaming PC parked next to your sim rig, wired to your monitor and steering wheel. It's two machines, yes, but each one does one job well. Your wheelbase (a MOZA R9, for example), pedals and cockpit all plug into the Windows racing PC. Full compatibility, full FFB, no compromises."
     },
     {
       "list": [
@@ -82,7 +82,7 @@
       "h2": "What I'd actually do"
     },
     {
-      "p": "If I were an iRacing-focused Mac owner right now, I'd buy a used gaming laptop or small form-factor Windows desktop for ~$500-700, plug my MOZA R9, CRP2 pedals, and cockpit into it, and call it done. Total cost: less than a year's worth of fighting Parallels. Total frustration: zero."
+      "p": "If I were an iRacing-focused Mac owner right now, I'd buy a used gaming laptop or small form-factor Windows desktop for ~$500-700, plug your wheelbase, pedals and cockpit into it, and call it done. Total cost: less than a year's worth of fighting Parallels. Total frustration: close to zero."
     },
     {
       "p": "This assumes you're serious about racing. If you're just curious about iRacing and want to test drive it without much investment, renting time at a local sim racing venue might be worth exploring. Many offer hourly session access on real rigs. You avoid the Mac problem entirely and get a feel for whether competitive sim racing is worth the commitment."
@@ -106,7 +106,7 @@
     },
     {
       "q": "Can I use cloud gaming or remote desktop to play iRacing on my Mac?",
-      "a": "Cloud-based iRacing is not available through any major cloud platform. Remote desktop or game streaming adds latency that makes real-time input (steering and braking) feel delayed and unresponsive. It's uncompetitive for actual racing, especially with a load-cell wheelbase where FFB and responsiveness matter."
+      "a": "(FAQ) Cloud-based iRacing is not available through any major cloud platform. Remote desktop or game streaming adds latency that makes real-time input (steering and braking) feel delayed and unresponsive. It's uncompetitive for actual racing, especially with a direct drive wheelbase where FFB and responsiveness matter."
     }
   ],
   "gearKeys": [

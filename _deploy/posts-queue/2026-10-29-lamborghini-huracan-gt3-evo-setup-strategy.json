@@ -4,22 +4,22 @@
   "author": "Carlos Martinez",
   "readTime": "9 min read",
   "title": "Lamborghini Huracán GT3 Evo iRacing: Setup, Lines, Consistency",
-  "description": "Master the Huracán GT3 Evo's mid-engine balance and aggressive downforce. Real setup choices and braking technique for consistent pace.",
+  "description": "Master the Huracán GT3 Evo's mid-engine balance and aggressive downforce. Setup starting points and braking technique for consistent pace.",
   "sections": [
     {
-      "p": "The Lamborghini Huracán GT3 Evo is one of those cars that rewards aggression but punishes carelessness. I've spent enough time in it across road courses to understand what makes it fast: the mid-engine layout gives you rotation, the downforce is forgiving at the limit, and the brake feel is direct enough that you can trust a load cell pedal setup. The car is stable when you're confident and gets squirrelly when you're tentative. That inconsistency between committed and half-committed driving is the first thing to understand."
+      "p": "The Lamborghini Huracán GT3 Evo is one of those cars that rewards aggression but punishes carelessness. This guide draws on published specs and common setup practice, not a hands-on test of every product. What makes the car fast is clear: the mid-engine layout gives you rotation, the downforce is forgiving at the limit, and the brake feel is direct enough that a load cell pedal setup makes it easy to trust. The car is stable when you're confident and gets squirrelly when you're tentative. That inconsistency between committed and half-committed driving is the first thing to understand."
     },
     {
-      "p": "Unlike front-engine GTs that reward smooth inputs, the Huracán wants you to be decisive. That doesn't mean reckless. It means committing to a line, carrying speed through mid-corner, and trusting the rear to follow. I've found my pace comes from knowing exactly where I'll brake, turning in cleanly, and holding throttle earlier than I expect."
+      "p": "Unlike front-engine GTs that reward smooth inputs, the Huracán wants you to be decisive. That doesn't mean reckless. It means committing to a line, carrying speed through mid-corner, and trusting the rear to follow. Pace comes from knowing exactly where you'll brake, turning in cleanly, and holding throttle earlier than you expect."
     },
     {
       "h2": "Brake Bias and Threshold Braking"
     },
     {
-      "p": "Brake bias is the first dial I move after loading a baseline setup. The Huracán's mid-engine weight distribution pushes the balance toward the rear, which means more front grip than a traditional GT at brake entry. I typically start around 56 to 58 percent front bias and work from there depending on track. Cold tires demand more front bias, hot tires less."
+      "p": "Brake bias is a good first dial to move after loading a baseline setup. The Huracán's mid-engine weight distribution pushes the balance toward the rear, which means more front grip than a traditional GT at brake entry. A common starting point is around 56 to 58 percent front bias, then work from there depending on track. Cold tires demand more front bias, hot tires less."
     },
     {
-      "p": "With my MOZA CRP2 load-cell pedals, I can feel exactly where the threshold is. The car wants you to brake hard and commit: short, aggressive stops rather than extended modulation. On my ~9 N·m R9 wheelbase, the feedback through the wheel tells me when the rear is on edge during heavy braking. Threshold braking in the Huracán is progressive but not delicate. You're pressing hard, feeling the weight transfer, then releasing just enough to keep the front engaged into the corner."
+      "p": "The car wants you to brake hard and commit: short, aggressive stops rather than extended modulation. Through a direct drive wheelbase, the feedback through the wheel can tell you when the rear is on edge during heavy braking. Threshold braking in the Huracán is progressive but not delicate. You're pressing hard, feeling the weight transfer, then releasing just enough to keep the front engaged into the corner."
     },
     {
       "list": [
@@ -36,13 +36,13 @@
       "p": "The Huracán's strength is mid-corner rotation. Compared to other GT3 cars, it will turn-in more progressively and hold that rotation through to exit. The anti-roll bar setup controls this behavior directly. Stiff front ARB gives you turn-in but can make the car feel twitchy on throttle; soft front ARB lets the nose dive and delays rotation."
     },
     {
-      "p": "I typically run a front ARB value between 8 and 12 on most road courses, paired with a rear ARB 2 to 3 clicks softer. This lets the rear stay planted under acceleration while the front stays responsive enough to turn-in without delay. The Huracán's mid-engine layout means rear slip is your friend during corner exit, so don't over-stiffen the rear trying to kill oversteer. You want to manage it, not eliminate it."
+      "p": "A typical front ARB value is between 8 and 12 on most road courses, paired with a rear ARB 2 to 3 clicks softer. This lets the rear stay planted under acceleration while the front stays responsive enough to turn-in without delay. The Huracán's mid-engine layout means rear slip is your friend during corner exit, so don't over-stiffen the rear trying to kill oversteer. You want to manage it, not eliminate it."
     },
     {
       "h3": "Finding your ARB window"
     },
     {
-      "p": "I spend at least two practice sessions dialing in ARB before a race. Start with the baseline, run 8 to 10 laps, then make one-click changes. Stiff feels like the car responds faster, but it also makes the tires work harder to stay in the sweet spot. Soft feels forgiving but slow. The right setting is where you can carry more speed through a full-throttle corner without the car fighting you at either end."
+      "p": "Spend at least two practice sessions dialing in ARB before a race. Start with the baseline, run 8 to 10 laps, then make one-click changes. Stiff feels like the car responds faster, but it also makes the tires work harder to stay in the sweet spot. Soft feels forgiving but slow. The right setting is where you can carry more speed through a full-throttle corner without the car fighting you at either end."
     },
     {
       "tip": "The Huracán rewards aggression at the limit, not smoothness. Drivers coming from front-engine GTs often brake too early, turn too gently, and miss the rotation the car gives. Commit harder than feels natural, then dial it back if you start losing traction.",
@@ -52,10 +52,10 @@
       "h2": "Tire Management and Temperature Windows"
     },
     {
-      "p": "The Huracán's tire performance window is narrow and falls at higher temperatures than most GT3 cars. Cold tires feel like you're driving on ice, hot tires blister quickly. My strategy is to build heat over 3 to 5 laps, find the peak at lap 6 to 8, then manage from there. In a race, that means aggressive early running to build temperature, then calculating how many laps I have in the sweet zone before management becomes unavoidable."
+      "p": "The Huracán's tire performance window is narrow and falls at higher temperatures than most GT3 cars. Cold tires feel like you're driving on ice, hot tires blister quickly. A good strategy is to build heat over 3 to 5 laps, find the peak at lap 6 to 8, then manage from there. In a race, that means aggressive early running to build temperature, then calculating how many laps you have in the sweet zone before management becomes unavoidable."
     },
     {
-      "p": "I also run front camber between 3.5 and 4.2 degrees negative, depending on track. More negative camber builds heat faster and keeps the front hooked, but it shortens the total life window. For a 30-minute race, I aim for lap 10 to 25 in the optimal zone. For an endurance race, I run slightly less negative camber and adjust driving style to maintain heat through a longer stint."
+      "p": "A common range for front camber is between 3.5 and 4.2 degrees negative, depending on track. More negative camber builds heat faster and keeps the front hooked, but it shortens the total life window. For a 30-minute race, aim for lap 10 to 25 in the optimal zone. For an endurance race, run slightly less negative camber and adjust driving style to maintain heat through a longer stint."
     },
     {
       "olist": [
@@ -69,22 +69,22 @@
       "h2": "Front Wing Angle and High-Speed Balance"
     },
     {
-      "p": "Wing angle is the second-order tuning tool I reach for after ARB. More front wing gives you turn-in grip at the cost of drag and rear-end stability. The Huracán runs lower wing angles than most GTs because the mid-engine layout already provides balance. I typically start around 8 to 10 degrees on most tracks and move to 6 to 8 for high-speed circuits like Monza or Spa."
+      "p": "Wing angle is a second-order tuning tool to reach for after ARB. More front wing gives you turn-in grip at the cost of drag and rear-end stability. The Huracán runs lower wing angles than most GTs because the mid-engine layout already provides balance. A typical starting point is around 8 to 10 degrees on most tracks, moving to 6 to 8 for high-speed circuits like Monza or Spa."
     },
     {
-      "p": "The real trade-off appears on corner exit. Too much wing and the rear feels planted but slow in acceleration. Too little and the rear wants to step out early, forcing you to manage oversteer or lose corner-exit speed. I dial in wing angle after finding my ARB and brake bias, using the change to fine-tune the balance between turn-in response and exit grip."
+      "p": "The real trade-off appears on corner exit. Too much wing and the rear feels planted but slow in acceleration. Too little and the rear wants to step out early, forcing you to manage oversteer or lose corner-exit speed. Dial in wing angle after finding your ARB and brake bias, using the change to fine-tune the balance between turn-in response and exit grip."
     },
     {
       "h2": "Throttle Application and Oversteer Management"
     },
     {
-      "p": "The Huracán will oversteer if you ask it to, especially on track surfaces with low grip. I use this as a tool, not a problem. Controlled oversteer on exit lets me rotate the car and carry more speed through the next corner. Uncontrolled oversteer ends in a spin or a 4-second drift."
+      "p": "The Huracán will oversteer if you ask it to, especially on track surfaces with low grip. Treat this as a tool, not a problem. Controlled oversteer on exit lets you rotate the car and carry more speed through the next corner. Uncontrolled oversteer ends in a spin or a 4-second drift."
     },
     {
-      "p": "My approach is graduated throttle application: at the apex, I'm at maybe 40 to 60 percent throttle, then I increase in 20 percent increments every meter traveled, reaching full throttle by the time I've traveled roughly one car-length past the apex. This prevents sudden weight transfer from surprising the rear and gives the tires time to respond. On my R9, I can feel the torque build through the wheel. That feedback is crucial for getting the throttle timing right consistently."
+      "p": "Try graduated throttle application: at the apex, be at maybe 40 to 60 percent throttle, then increase in 20 percent increments every meter traveled, reaching full throttle by the time you've traveled roughly one car-length past the apex. This prevents sudden weight transfer from surprising the rear and gives the tires time to respond. Feedback through a direct drive wheelbase can help you feel the torque build, which is crucial for getting the throttle timing right consistently."
     },
     {
-      "p": "If the rear is sliding too much, I back off throttle slightly and hold that level longer, letting the car rotate naturally before accelerating again. This approach keeps me in control but doesn't waste the rotation the car provides."
+      "p": "If the rear is sliding too much, back off throttle slightly and hold that level longer, letting the car rotate naturally before accelerating again. This approach keeps you in control but doesn't waste the rotation the car provides."
     },
     {
       "h2": "Track-Specific Adjustments"
@@ -93,7 +93,7 @@
       "p": "The Huracán's setup changes based on track characteristics. High-speed, high-grip circuits like Brands Hatch or Road America need stiffer springs and more wing to maintain balance at speed. Lower-grip tracks like Sebring need softer springs, less wing, and more brake bias forward to compensate for front-end wash."
     },
     {
-      "p": "I keep a setup document for each major track, noting brake bias, ARB values, wing angle, and spring rates. This is not because I memorize the numbers, but because it gives me a starting point for the next visit. Conditions change, tire compounds change, and iRacing updates happen. The baseline reminds me which direction to adjust when something feels off."
+      "p": "Keep a setup document for each major track, noting brake bias, ARB values, wing angle, and spring rates. This is not about memorizing the numbers, but about giving yourself a starting point for the next visit. Conditions change, tire compounds change, and iRacing updates happen. The baseline reminds you which direction to adjust when something feels off."
     },
     {
       "tip": "Tire temperature and brake balance are the two levers that shift car behavior fastest. Master those first, then treat wing angle and ARB as fine-tuning tools. You'll find your pace faster and stay consistent longer.",
@@ -103,10 +103,10 @@
       "h2": "Practice Plan: 60 Minutes to Consistency"
     },
     {
-      "p": "When I step into the Huracán fresh, I follow a structured process. First 15 minutes, baseline setup, focus on finding the reference line and committing to throttle. Next 15 minutes, dial brake bias and ARB after initial wear. Final 30 minutes, increase intensity, practice race starts and restarts, settle in on the setup. By the end, I have a clear sense of what the car needs and where my pace ceiling is for that day."
+      "p": "When you step into the Huracán fresh, follow a structured process. First 15 minutes, baseline setup, focus on finding the reference line and committing to throttle. Next 15 minutes, dial brake bias and ARB after initial wear. Final 30 minutes, increase intensity, practice race starts and restarts, settle in on the setup. By the end, you should have a clear sense of what the car needs and where your pace ceiling is for that day."
     },
     {
-      "p": "I also log a lap or two and review telemetry, specifically throttle traces and brake points. The Huracán tells you immediately if you're being indecisive: brake points wander, throttle application looks tentative, lap times scatter. Commit harder to your line, and the telemetry cleans up. That visual feedback helps me translate feel into actual speed."
+      "p": "Also log a lap or two and review telemetry, specifically throttle traces and brake points. The Huracán tells you immediately if you're being indecisive: brake points wander, throttle application looks tentative, lap times scatter. Commit harder to your line, and the telemetry cleans up. That visual feedback helps you translate feel into actual speed."
     },
     {
       "p": "The Lamborghini Huracán GT3 Evo rewards drivers who understand its mid-engine balance, trust the downforce, and commit to aggression. It's not a car that forgives half-measures, and it won't let you drive smoothly to a competitive time. Drive decisively, brake hard, hold rotation through corners, and manage the oversteer you create on purpose. That's where the pace is."

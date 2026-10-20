@@ -7,7 +7,7 @@
   "description": "Learn when limping a damaged car to the pits costs you more time than carrying on. Real trade-offs for endurance racing.",
   "sections": [
     {
-      "p": "I've made the mistake of pitting for repairs that didn't need to happen yet, and I've made it worse by staying out too long after a door flick into the kerb. Damage in iRacing is not a binary state. Your car gets slower incrementally, and the decision to pit is not about whether damage exists but whether the time spent in the pit box erases the time you lose to aerodynamic drag, downforce loss, or handling imbalance over the remaining stint."
+      "p": "Two mistakes are common: pitting for repairs that don't need to happen yet, and staying out too long after a door flick into the kerb. Damage in iRacing is not a binary state. Your car gets slower incrementally, and the decision to pit is not about whether damage exists but whether the time spent in the pit box erases the time you lose to aerodynamic drag, downforce loss, or handling imbalance over the remaining stint."
     },
     {
       "p": "The real calculation is simple on paper but demands honest telemetry reading in practice: measure the pace delta between your current damaged state and your baseline, multiply that by the laps until your next planned stop, then subtract pit time plus the time gained by a fresh car. If the pit window saves you time overall, pit. If it costs you, push the damage until the next scheduled stop or until the car becomes genuinely undriveable. The spotter call or a damage report tells you damage exists. Telemetry tells you whether it matters."

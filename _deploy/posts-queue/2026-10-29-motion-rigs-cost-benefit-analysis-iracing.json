@@ -7,10 +7,10 @@
   "description": "Motion platforms promise immersion but come with real trade-offs. Here's what you gain, what you lose, and whether a motion rig makes sense for your sim racing budget.",
   "sections": [
     {
-      "p": "After two years on a fixed aluminum cockpit with my MOZA R9 and load-cell pedals, I understand the appeal of motion rigs. You see them in clips: the platform tilting through corners, dipping on braking, rolling under throttle. It looks like the missing ingredient to bridge sim racing and real racing. But motion platforms are not a simple \"more immersion equals faster\" equation. They introduce real costs, real maintenance, and real trade-offs that many sim racers discover too late."
+      "p": "It is easy to understand the appeal of motion rigs. You see them in clips: the platform tilting through corners, dipping on braking, rolling under throttle. It looks like the missing ingredient to bridge sim racing and real racing. But motion platforms are not a simple \"more immersion equals faster\" equation. They introduce real costs, real maintenance, and real trade-offs that many sim racers discover too late. This guide draws on published specs and common setup practice, not a hands-on test of every product."
     },
     {
-      "p": "I have not owned a motion rig myself. What I can tell you is what the physics actually deliver versus the marketing narrative, based on direct reports from racers who run them and careful observation of what top iRacing competitors actually use. The reality is messier and more interesting than \"buy motion and become faster.\""
+      "p": "Here is what the physics actually deliver versus the marketing narrative. The reality is messier and more interesting than \"buy motion and become faster.\""
     },
     {
       "h2": "What motion rigs actually do"
@@ -35,7 +35,7 @@
       "p": "Entry-level motion rigs start around ~$3,000 to ~$4,000 USD. That's a complete setup: a three-axis platform, a rig frame integrated into it, and software to sync the motion to telemetry. Mid-range rigs from established brands like Next Level Racing and Simxperience run ~$5,000 to ~$8,000. High-end custom platforms exceed ~$15,000 easily."
     },
     {
-      "p": "That price does not include a wheelbase, pedals, or monitors. On my own rig, I'm invested roughly ~$2,500 in the MOZA R9 wheelbase and MOZA CRP2 pedals alone. A complete motion setup with quality FFB and pedals can easily push ~$8,000 to ~$12,000. For comparison, a fast fixed rig with identical force feedback hardware costs ~$4,000 to ~$6,000."
+      "p": "That price does not include a wheelbase, pedals, or monitors. A direct drive wheelbase and pedals can easily run roughly ~$2,500 on their own. A complete motion setup with quality FFB and pedals can easily push ~$8,000 to ~$12,000. For comparison, a fast fixed rig with identical force feedback hardware costs ~$4,000 to ~$6,000."
     },
     {
       "list": [
@@ -69,7 +69,7 @@
       "h2": "What you lose or compromise"
     },
     {
-      "p": "A motion platform is a trade-off machine. It consumes space that could house a larger desk, additional monitors, or a more rigid cockpit frame. Most platforms are built for flexibility (so they can move), which means they absorb some of the direct steering feedback that a locked-down rig delivers. My MOZA R9 on a stiff aluminum frame conveys wheel-to-brain force feedback with minimal mechanical lag. A moving platform introduces mechanical compliance that can slightly blunt that clarity, though premium rigs minimize this."
+      "p": "A motion platform is a trade-off machine. It consumes space that could house a larger desk, additional monitors, or a more rigid cockpit frame. Most platforms are built for flexibility (so they can move), which means they absorb some of the direct steering feedback that a locked-down rig delivers. A direct drive wheelbase like the MOZA R9 on a stiff aluminum frame conveys wheel-to-brain force feedback with minimal mechanical lag. A moving platform introduces mechanical compliance that can slightly blunt that clarity, though premium rigs minimize this."
     },
     {
       "p": "Complexity is another cost. Motion platforms require calibration, software tuning, and occasional troubleshooting. The motion profiles (the algorithms that translate sim data into platform motion) must be tuned per car and sometimes per track. A suboptimal profile feels wrong and breaks immersion rather than enhancing it. That tuning responsibility falls on you."

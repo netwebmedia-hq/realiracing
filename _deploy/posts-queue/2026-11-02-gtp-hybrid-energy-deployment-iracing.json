@@ -7,7 +7,7 @@
   "description": "Master hybrid power deployment in iRacing GTP cars. Learn when to harvest, when to deploy, and how it changes your race strategy.",
   "sections": [
     {
-      "p": "The first time I ran the Porsche 963 GTP in a multi-class race, I burned through my hybrid battery by lap three chasing a gap that never closed. I had no idea when to actually use the thing. Hybrid energy management in GTP cars sits right at the intersection of strategy and real-time racecraft. It's not just about having more power. It's about deploying it in the moments where that extra pulse actually wins time, rather than flattening your battery and limping through the second half of a race."
+      "p": "It is easy to burn through your hybrid battery by lap three chasing a gap that never closes in a multi-class race. Hybrid energy management in GTP cars sits right at the intersection of strategy and real-time racecraft. It's not just about having more power. It's about deploying it in the moments where that extra pulse actually wins time, rather than flattening your battery and limping through the second half of a race."
     },
     {
       "p": "In iRacing's GTP series, the Porsche 963 and Cadillac V-Series.R both carry hybrid systems that harvest energy under braking and feed it back under acceleration. The system feels different from the old hybrid LMP1 cars because the harvest happens passively, but the deployment is entirely manual. You store energy by braking hard. You spend it by holding a button. Everything else flows from that."
@@ -32,7 +32,7 @@
       "p": "Hybrid deployment is not free horsepower that makes you faster everywhere. It works best in specific zones: on-track overtakes, gap closures before DRS zones, and the run out of the tighter corners where your traction is most limited. On a track like <a href=\"imola-iracing-guide-kerbs-chicanes-strategy.html\">Imola</a>, the long acceleration out of the Rivazza or into Tosa is exactly where hybrid deployment compounds a better exit and creates a real passing opportunity."
     },
     {
-      "p": "The gain is usually small in absolute terms. On my MOZA R9 rig running the Porsche 963 at somewhere like Road America, deploying full hybrid into the heavy uphill acceleration section might gain 0.15 seconds on a single lap. That sounds marginal. Over 30 laps, that's four or five seconds total. In a close race, that is the entire margin."
+      "p": "The gain is usually small in absolute terms. In the Porsche 963 at somewhere like Road America, deploying full hybrid into the heavy uphill acceleration section might gain 0.15 seconds on a single lap. That sounds marginal. Over 30 laps, that's four or five seconds total. In a close race, that is the entire margin."
     },
     {
       "p": "Hybrid does not help you apex faster or brake deeper. It helps you exit faster and carry more mid-corner speed through long acceleration zones. If a corner rewards smooth mid-corner throttle application, that is when to deploy. Tight hairpins where you scrub speed and then immediately accelerate again are hybrid activation zones. Flowing fast sweepers where you're already at full throttle are not."
@@ -90,7 +90,7 @@
       "p": "Your brake pressure settings, brake bias, and even your differential tuning influence how satisfying and effective hybrid deployment feels. A car set up for heavy trail braking will harvest more energy and let you deploy it more predictably because you're used to the decel rhythm. A car dialed for late braking will harvest less and may feel squirrely when hybrid cuts in mid-corner if you accidentally deploy while steering."
     },
     {
-      "p": "I run my Porsche 963 with a bias toward trail braking because that matches how I drive on my MOZA R9 rig with the CRP2 load-cell pedals. The smooth progressive brake feel makes it easy to modulate how much energy I'm harvesting. If you run a late-brake setup, you'll deploy hybrid on straights and exits, not mid-corner, and that changes how you plan your overtakes."
+      "p": "A bias toward trail braking suits drivers who like a smooth, progressive brake feel, because it makes it easy to modulate how much energy you're harvesting. If you run a late-brake setup, you'll deploy hybrid on straights and exits, not mid-corner, and that changes how you plan your overtakes."
     },
     {
       "p": "There is no single best hybrid strategy. The car, the track, your brake style, and the race situation all shape how you approach it. The key is treating hybrid deployment as a deliberate tactical tool, not a panic button. Harvest when you can afford to brake hard. Spend when you're trying to make something happen. Understand the difference and you'll feel the gain."
