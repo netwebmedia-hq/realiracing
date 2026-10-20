@@ -22,6 +22,7 @@ const fs = require('fs');
 const path = require('path');
 
 const photos = require('./lib/photos.js');
+const { JOIN_BOX_HTML, JOIN_SCRIPT_TAG, BLOG_CSS_HREF } = require('./lib/join-box.js');
 process.chdir(path.join(__dirname, '..'));
 
 const QUEUE_DIR = path.join('_deploy', 'posts-queue');
@@ -356,7 +357,7 @@ function renderPostHtml(post, related, allowedGearKeys) {
   <meta property="og:image:alt" content="${esc(photo.alt_en)}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="${photoUrl}" />
-  <link rel="stylesheet" href="blog.css?v=20261005" />
+  <link rel="stylesheet" href="${BLOG_CSS_HREF}" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -446,6 +447,7 @@ ${bodyHtml}
         <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
         <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
       </div>
+      ${JOIN_BOX_HTML}
 
       <h2>FAQ</h2>
 
@@ -472,6 +474,7 @@ ${relatedHtml}
 
   <script src="/js/ga4.js" defer></script>
   <script src="/js/affiliates.js" defer></script>
+  ${JOIN_SCRIPT_TAG}
   <script>
     window.addEventListener('DOMContentLoaded', function () {
       if (typeof renderGearBox === 'function') {
