@@ -113,7 +113,7 @@
     <div class="article-body">
       <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
 
-      <p class="article-lead">Rain in iRacing is more than a visual effect; it fundamentally changes how your car feels. The wet-weather system affects tire grip, standing water, dynamic track conditions, and even how your brake load-cell pedal needs to be managed. I first noticed this when I jumped into a Tuesday night GT3 race at Spa without practicing rain; I locked up into Eau Rouge and spent the next three laps chasing understeer. Once I understood the physics and made basic setup changes, rain went from terrifying to a confidence builder. This guide walks through what actually happens to your car when it rains on the iRacing track.</p>
+      <p class="article-lead">Rain in iRacing is more than a visual effect; it fundamentally changes how your car feels. The wet-weather system affects tire grip, standing water, dynamic track conditions, and even how your brake pedal needs to be managed. Once you understand the physics and make basic setup changes, rain can go from terrifying to a confidence builder. This guide walks through what actually happens to your car when it rains on the iRacing track.</p>
 
       <p>The rain system scales across all series, from Mazda MX-5 Cup to Le Mans 300, so these principles apply whether you're in a street car or a GTP prototype. Understanding the wet-weather model means fewer lock-ups, better tire management, and real race craft in conditions that separate competitive drivers from the field.</p>
 
@@ -121,7 +121,7 @@
 
       <p>The core of iRacing's rain system is tire-to-track friction. Wet tires have a lower friction coefficient than slicks, roughly 40-60% of dry grip depending on track surface and water depth. The game doesn't simulate different tire compounds (soft/medium/hard wet tires like F1 does); instead, all cars use a single wet tire model that scales with water accumulation and track temperature.</p>
 
-      <p>Water sits on the track in dynamic patches. Heavy rain means standing water in low spots; Eau Rouge at Spa holds water that Pouhon doesn't. Light rain or drying conditions create variable grip: full racing line is slick, but off-line you might find better grip on a drier patch. This is why wet-weather qualifying can reward finding the cleanest line or even running slightly off-line to find better adhesion. On my R9 wheelbase, this shows up immediately: the force feedback becomes mushy and less responsive, and small inputs matter more.</p>
+      <p>Water sits on the track in dynamic patches. Heavy rain means standing water in low spots; Eau Rouge at Spa holds water that Pouhon doesn't. Light rain or drying conditions create variable grip: full racing line is slick, but off-line you might find better grip on a drier patch. This is why wet-weather qualifying can reward finding the cleanest line or even running slightly off-line to find better adhesion. Through the wheel, this shows up immediately: the force feedback becomes mushy and less responsive, and small inputs matter more.</p>
 
       <div class="tip-box">
         <span class="box-label">Wet Line Hunting</span>
@@ -143,11 +143,11 @@
 
       <h2>Braking and Threshold in Wet Conditions</h2>
 
-      <p>This is where my <a href="moza-crp2-brake-calibration-pressure-curves.html">MOZA CRP2 load-cell pedals</a> make the biggest difference. Wet braking is less forgiving because you have less total stopping power, and the difference between threshold braking and lock-up is sharper. On a slippery surface, modulation is everything.</p>
+      <p>This is where load-cell pedals like the <a href="moza-crp2-brake-calibration-pressure-curves.html">MOZA CRP2</a> can make the biggest difference. Wet braking is less forgiving because you have less total stopping power, and the difference between threshold braking and lock-up is sharper. On a slippery surface, modulation is everything.</p>
 
-      <p>In dry conditions, you can trail-brake aggressively into a corner and the tire will forgive small overshoot. In rain, that same input locks the wheels. I dial brake pressure curves softer in wet setups, reducing the maximum brake force and spreading brake application over a longer pedal travel. This gives me finer control and makes lock-ups less punishing. Brake balance also matters more: too much front bias locks the fronts under heavy rain, while too much rear causes a spin. Most drivers shift brake balance 2–4% toward the rear in rain.</p>
+      <p>In dry conditions, you can trail-brake aggressively into a corner and the tire will forgive small overshoot. In rain, that same input locks the wheels. Dial brake pressure curves softer in wet setups, reducing the maximum brake force and spreading brake application over a longer pedal travel. This gives finer control and makes lock-ups less punishing. Brake balance also matters more: too much front bias locks the fronts under heavy rain, while too much rear causes a spin. Most drivers shift brake balance 2-4% toward the rear in rain.</p>
 
-      <p>One common mistake: using the same pedal calibration. I recalibrate my <a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">CRP2</a> in a practice rain session to map the new brake-pressure curve and make sure my muscle memory stays consistent. If you don't, you'll either over-brake (locking up) or under-brake (running wide) because your pressure mapping is off.</p>
+      <p>One common mistake: using the same pedal calibration. If you use <a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">CRP2</a> pedals, recalibrate in a practice rain session to map the new brake-pressure curve and keep your muscle memory consistent. If you don't, you'll either over-brake (locking up) or under-brake (running wide) because your pressure mapping is off.</p>
 
       <div class="tip-box">
         <span class="box-label">Pedal Calibration</span>
@@ -166,13 +166,13 @@
         <li>Anti-roll bars: slightly softer can help with compliance on bumpy wet surfaces</li>
       </ol>
 
-      <p>Wheel torque settings matter less in rain than dry. My R9 is set to ~9 N·m across all series, but in rain the lower grip naturally softens the force feedback and makes the wheel less violent. I don't change my FFB settings for rain; the physics engine handles the reduction.</p>
+      <p>Wheel torque settings matter less in rain than dry. In rain the lower grip naturally softens the force feedback and makes the wheel less violent, so there is usually no need to change your FFB settings for rain; the physics engine handles the reduction.</p>
 
       <p>The biggest mistake: over-braking brake pressure. New drivers often increase brake pressure in rain thinking they need more stopping power, but with lower tire friction, less pressure with better modulation beats more pressure with lock-ups. Test in practice; find the sweet spot where you can brake hard without locking.</p>
 
       <h2>Wet-Weather Driving Technique</h2>
 
-      <p>Rain racing separates smooth inputs from aggressive ones. Steering wheel movements need to be deliberate and smaller. On my R9, I can feel the difference immediately: in dry conditions, I can flick the wheel quickly and trust the tire to respond; in rain, sudden inputs cause understeer or oversteer because the tire can't generate grip fast enough.</p>
+      <p>Rain racing separates smooth inputs from aggressive ones. Steering wheel movements need to be deliberate and smaller. Through the wheel you can feel the difference immediately: in dry conditions, you can flick the wheel quickly and trust the tire to respond; in rain, sudden inputs cause understeer or oversteer because the tire can't generate grip fast enough.</p>
 
       <p>Trail braking goes even deeper in rain. You want to extend your braking zone slightly longer (lower deceleration = less lock-up risk), then modulate on entry and through the corner. This sounds slow, but it is actually competitive: you can carry speed mid-corner because you are not fighting lock-up, and you exit cleaner.</p>
 
@@ -188,7 +188,7 @@
 
       <h2>Rain Persistence and Track Evolution</h2>
 
-      <p>iRacing's rain system persists over time. A session that starts with heavy rain doesn't dry instantly; there's a gradual evolution as conditions improve. On my rig, I've learned to recognize the window: about 20–30 minutes into a rain race, the track starts to dry. That's when you need to be sharp: some drivers will be faster on full wets, others on intermediate or even slick tires, and line choices become unpredictable as grip patches appear and disappear.</p>
+      <p>iRacing's rain system persists over time. A session that starts with heavy rain doesn't dry instantly; there's a gradual evolution as conditions improve. Watch for the window: about 20-30 minutes into a rain race, the track may start to dry. That's when you need to be sharp: some drivers will be faster on full wets, others on intermediate or even slick tires, and line choices become unpredictable as grip patches appear and disappear.</p>
 
       <p>If you're in a wet race, prepare for this transition. Have a basic understanding of tire strategy: if you start on full wets, when does switching to intermediates make sense? Most series don't allow mixed tire compounds, but understanding tire wear and track drying helps you judge pace and make strategic calls (especially in endurance racing where you might pit for a tire change).</p>
 
@@ -201,9 +201,9 @@
 
       <p>The best way to nail wet-weather driving is to do it intentionally. Load up a practice session with rain enabled, pick a track you know, and spend 20 minutes getting comfortable with the feel. You'll lock up. You'll spin. That's the point. Your brain learns the feedback from the wheel, the pedals, and the visuals, and you build intuition for how much input the wet track will tolerate.</p>
 
-      <p>Once you're comfortable, join a league or hosted race with rain. The competitive pressure teaches you faster than practice alone. I went from avoiding rain races to actively seeking them out because the skill gap rewards you so heavily: drivers who don't practice wet conditions will lose time, and you can make up a lot of ground just by staying smooth and consistent.</p>
+      <p>Once you're comfortable, join a league or hosted race with rain. The competitive pressure teaches you faster than practice alone. Rain races are worth seeking out because the skill gap rewards you so heavily: drivers who don't practice wet conditions will lose time, and you can make up a lot of ground just by staying smooth and consistent.</p>
 
-      <p>If you're using a <a href="best-sim-racing-pedals-iracing-2026.html">load-cell brake system</a>, the wet practice is doubly important. Your muscle memory for brake pressure is more critical in rain, and recalibrating between dry and wet helps you stay consistent. On my CRP2 pedals, I've learned that recalibration takes two minutes and saves me from frustrating lock-ups.</p>
+      <p>If you're using a <a href="best-sim-racing-pedals-iracing-2026.html">load-cell brake system</a>, the wet practice is doubly important. Your muscle memory for brake pressure is more critical in rain, and recalibrating between dry and wet helps you stay consistent.</p>
 
       <div id="rir-gear"><div class="gear-box">
         <span class="box-label">The gear in this guide</span>

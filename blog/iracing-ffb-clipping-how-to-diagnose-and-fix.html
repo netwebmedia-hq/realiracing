@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>iRacing FFB Clipping — How to Diagnose It and Fix It Without Losing Detail</title>
-  <meta name="description" content="What FFB clipping is, how to see it in iRacing's force meter, and how I fix it on my MOZA R9 so the wheel stays heavy where it matters and detailed everywhere." />
+  <meta name="description" content="What FFB clipping is, how to see it in iRacing's force meter, and how to fix it on a MOZA R9 so the wheel stays heavy where it matters and detailed everywhere." />
   <link rel="canonical" href="https://realiracing.com/blog/iracing-ffb-clipping-how-to-diagnose-and-fix.html" />
   <meta property="og:title" content="iRacing FFB Clipping — How to Diagnose It and Fix It Without Losing Detail" />
-  <meta property="og:description" content="What FFB clipping is, how to see it in iRacing's force meter, and how I fix it on my MOZA R9 so the wheel stays heavy where it matters and detailed everywhere." />
+  <meta property="og:description" content="What FFB clipping is, how to see it in iRacing's force meter, and how to fix it on a MOZA R9 so the wheel stays heavy where it matters and detailed everywhere." />
   <meta property="og:url" content="https://realiracing.com/blog/iracing-ffb-clipping-how-to-diagnose-and-fix.html" />
 <meta property="og:image" content="https://realiracing.com/assets/photos/wheel-steering.jpg">
 <meta property="og:image:width" content="1000">
@@ -20,7 +20,7 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "iRacing FFB Clipping — How to Diagnose It and Fix It Without Losing Detail",
-    "description": "What FFB clipping is, how to see it in iRacing's force meter, and how I fix it on my MOZA R9 so the wheel stays heavy where it matters and detailed everywhere.",
+    "description": "What FFB clipping is, how to see it in iRacing's force meter, and how to fix it on a MOZA R9 so the wheel stays heavy where it matters and detailed everywhere.",
     "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
     "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
     "mainEntityOfPage": "https://realiracing.com/blog/iracing-ffb-clipping-how-to-diagnose-and-fix.html",
@@ -47,7 +47,7 @@
     {
       "@type": "Question",
       "name": "Does the auto button in iRacing fix clipping on its own?",
-      "acceptedAnswer": { "@type": "Answer", "text": "It gets you most of the way. Drive a few real laps first so it has honest data, then press it and it sets max force so your peaks land near full output. I usually nudge it up slightly from there, because I would rather give up a fraction of peak weight than lose the information riding on top of it. Repeat it for each new car." }
+      "acceptedAnswer": { "@type": "Answer", "text": "It gets you most of the way. Drive a few real laps first so it has honest data, then press it and it sets max force so your peaks land near full output. Nudge it up slightly from there, because it's better to give up a fraction of peak weight than to lose the information riding on top of it. Repeat it for each new car." }
     },
     {
       "@type": "Question",
@@ -111,9 +111,9 @@
     <div class="article-body">
       <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
 
-      <p class="article-lead">For about a month after I bolted the <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> to my rig I thought direct drive was slightly overrated. The wheel was heavy, heavier than anything I'd owned, but mid-corner it went strangely quiet. Kerbs I could feel on the way in disappeared once the car was loaded up, and the moment the rear started to slide, which is exactly when I needed information, the wheel just stayed heavy and told me nothing. That wasn't the base. That was clipping, and I'd set it up that way myself by chasing weight instead of detail.</p>
+      <p class="article-lead">A new direct drive base like the <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> can feel slightly overrated at first. The wheel is heavy, but mid-corner it goes strangely quiet. Kerbs you could feel on the way in disappear once the car is loaded up, and the moment the rear starts to slide, which is exactly when you need information, the wheel just stays heavy and tells you nothing. That isn't the base. That's clipping, and it usually comes from chasing weight instead of detail.</p>
 
-      <p>Clipping is the most common force feedback problem in iRacing and one of the least understood, partly because it feels like a feature. A wheel that's always heavy feels serious. This guide is how I learned to see it, the order I fix it in, and the trade-off you're actually making when you turn the strength up.</p>
+      <p>Clipping is the most common force feedback problem in iRacing and one of the least understood, partly because it feels like a feature. A wheel that's always heavy feels serious. This guide covers how to see it, the order to fix it in, and the trade-off you're actually making when you turn the strength up.</p>
 
       <h2>What clipping actually is</h2>
 
@@ -136,19 +136,19 @@
         <li><strong>The FFB meter is red through corners</strong>, not just on impacts.</li>
       </ul>
 
-      <h2>The fix, in the order I'd actually do it</h2>
+      <h2>The fix, in the order to do it</h2>
 
       <h3>1. Get the wheelbase side out of the way</h3>
 
-      <p>Before touching iRacing, decide where the base's own output lives. On my R9 I run the base near its full output in Pit House and do the actual scaling inside iRacing. The reason is simple: if the base is limited to a fraction of its torque and iRacing is also scaling, you have two dials fighting each other and no idea which one is clipping. Pick one place for the strength decision. I pick the sim, because it's per car.</p>
+      <p>Before touching iRacing, decide where the base's own output lives. On a MOZA R9, a common approach is to run the base near its full output in Pit House and do the actual scaling inside iRacing. The reason is simple: if the base is limited to a fraction of its torque and iRacing is also scaling, you have two dials fighting each other and no idea which one is clipping. Pick one place for the strength decision. I would pick the sim, because it's per car.</p>
 
-      <p>While you're in the base software, be suspicious of any effect that adds force on top of the sim's signal: extra kerb effects, exaggerated road texture, that kind of thing. Every one of those eats headroom the steering signal needed. I run them off or low. The sim already knows about the kerb; I don't need a second kerb layered on it.</p>
+      <p>While you're in the base software, be suspicious of any effect that adds force on top of the sim's signal: extra kerb effects, exaggerated road texture, that kind of thing. Every one of those eats headroom the steering signal needed. Turn them off or keep them low. The sim already knows about the kerb; you don't need a second kerb layered on it.</p>
 
       <h3>2. Raise the max force in iRacing, don't lower the strength</h3>
 
       <p>This is the part that trips people up because iRacing's terminology is backwards from what you'd expect. The core setting is the maximum force the sim maps to 100 percent of your wheel. A <strong>lower</strong> value means the wheel hits full output sooner: heavier, and more clipping. A <strong>higher</strong> value means it takes more calculated torque to hit full output, resulting in a lighter feel and less clipping. So if the meter is red, you raise that number, and the wheel gets lighter. That's the trade.</p>
 
-      <p>iRacing has an auto button next to that setting. Drive a few clean laps first, real laps with the kerbs you actually use, then press it. It sets the max force so that the peaks of what you just did land right around full output. That's your baseline. From there I usually nudge it up slightly, because I'd rather sacrifice a fraction of peak weight than lose the detail sitting on top of it.</p>
+      <p>iRacing has an auto button next to that setting. Drive a few clean laps first, real laps with the kerbs you actually use, then press it. It sets the max force so that the peaks of what you just did land right around full output. That's your baseline. From there, nudge it up slightly, because it's better to sacrifice a fraction of peak weight than to lose the detail sitting on top of it.</p>
 
       <h3>3. Do it per car, because cars are not the same</h3>
 
@@ -156,7 +156,7 @@
 
       <h3>4. Only then look at damping and smoothing</h3>
 
-      <p>Damping and smoothing are not clipping fixes. They change how the wheel feels around the centre and how sharp the signal is. If you use them to calm down a wheel that's actually clipping, you end up with something that's both numb and mushy. Sort the headroom first. Then, if the wheel is too lively on the straights or too spiky over bumps, add a little damping, and I do mean a little. On the R9 I run modest damping in the sim and let the base handle the rest.</p>
+      <p>Damping and smoothing are not clipping fixes. They change how the wheel feels around the centre and how sharp the signal is. If you use them to calm down a wheel that's actually clipping, you end up with something that's both numb and mushy. Sort the headroom first. Then, if the wheel is too lively on the straights or too spiky over bumps, add a little damping, and I do mean a little. On the R9, modest damping in the sim with the base handling the rest is a sensible starting point.</p>
 
       <div class="tip-box">
         <span class="box-label">The tell</span>
@@ -165,7 +165,7 @@
 
       <h2>The trade-off you're actually making</h2>
 
-      <p>Fixing clipping means the wheel gets lighter at the peaks. Some people hate that, and I understand; I bought a direct drive base to feel something. But the choice isn't heavy versus light. It's flat versus dynamic. A wheel that runs at moderate strength with real headroom tells you more per lap than one pinned at maximum, and after a week your hands stop missing the fake weight and start reading the actual information. My lap times didn't jump. My consistency did, especially in long stints where numb FFB turns into lazy corrections.</p>
+      <p>Fixing clipping means the wheel gets lighter at the peaks. Some people hate that, and it's understandable: a direct drive base is something you buy to feel something. But the choice isn't heavy versus light. It's flat versus dynamic. A wheel that runs at moderate strength with real headroom tells you more per lap than one pinned at maximum, and after a while your hands stop missing the fake weight and start reading the actual information. The gain is more likely to show up in consistency than in raw lap time, especially in long stints where numb FFB turns into lazy corrections.</p>
 
       <p>If after all that you still want more, that's what a stronger base is for: the <a href="moza-r9-vs-r12-which-to-buy.html">R12</a> or a higher-torque Fanatec base gives you more headroom, so you can run heavier peaks and still keep the detail. That's a legitimate upgrade path. Turning a smaller base up until it clips isn't; it just makes it feel like a bigger base that's broken.</p>
 
@@ -180,7 +180,7 @@
         <li>Only now touch damping, and only if the wheel is genuinely too lively, not to hide clipping.</li>
       </ol>
 
-      <p>If you want the full breakdown of what every slider in that menu does, I wrote it up separately in <a href="iracing-force-feedback-explained.html">iRacing Force Feedback Explained</a>, and my exact R9 profile is in <a href="moza-r9-iracing-settings.html">the MOZA R9 settings guide</a>. This post is the piece I wish I'd read first: none of those settings matter until the signal has room to breathe.</p>
+      <p>If you want the full breakdown of what every slider in that menu does, I wrote it up separately in <a href="iracing-force-feedback-explained.html">iRacing Force Feedback Explained</a>, and a MOZA R9 profile is in <a href="moza-r9-iracing-settings.html">the MOZA R9 settings guide</a>. This post is the place to start: none of those settings matter until the signal has room to breathe.</p>
 
       <div id="rir-gear"><div class="gear-box">
         <span class="box-label">The gear in this guide</span>
@@ -226,7 +226,7 @@
       </div>
       <div class="faq-item">
         <h3>Does the auto button in iRacing fix clipping on its own?</h3>
-        <p>It gets you most of the way. Drive a few real laps first so it has honest data, then press it and it sets max force so your peaks land near full output. I usually nudge it up slightly from there, because I would rather give up a fraction of peak weight than lose the information riding on top of it. Repeat it for each new car.</p>
+        <p>It gets you most of the way. Drive a few real laps first so it has honest data, then press it and it sets max force so your peaks land near full output. Nudge it up slightly from there, because it's better to give up a fraction of peak weight than to lose the information riding on top of it. Repeat it for each new car.</p>
       </div>
       <div class="faq-item">
         <h3>Is clipping still a problem with a direct drive wheelbase?</h3>
