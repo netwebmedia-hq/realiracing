@@ -1,0 +1,117 @@
+{
+  "slug": "black-friday-pedals-cockpit-deals-checklist-2026",
+  "tag": "Black Friday · Checklist",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "Black Friday 2026 Pedals and Cockpit Deals: A Checklist for Judging Them",
+  "description": "How to judge pedal and cockpit deals on Black Friday, November 27, 2026: load cell vs potentiometer, buy order, compatibility, shipping weight, flex and returns.",
+  "published": "2026-10-20",
+  "dateLabel": "October 20, 2026",
+  "gearKeys": [
+    "moza-sr-p",
+    "thrustmaster-t-lcm",
+    "fanatec-csl-pedals-lc",
+    "cockpit"
+  ],
+  "sections": [
+    {
+      "p": "Black Friday is Friday November 27, 2026, and Cyber Monday is Monday November 30, 2026. Pedals and cockpits are the two categories where fast buying costs sim racers the most. Both have compatibility rules, the cockpit arrives as a heavy freight item, and a weak choice in either one makes every other part of the rig feel worse. No deals are verified here, so this page is a checklist for judging whatever shows up, in the order I would check it. It works alongside <a href=\"/black-friday/\">the Black Friday and Cyber Monday guide hub</a>."
+    },
+    {
+      "h2": "Decide the buy order before you open a deal page"
+    },
+    {
+      "p": "Most buyers look at wheelbases first because torque numbers are easy to compare. Brake feel and a rigid seating position usually change your lap-to-lap consistency more than extra force at the wheel. You brake by pressure memory, and a frame that moves under your leg or pedal plate erases that memory. My own rig runs a MOZA R9 (~9 N·m) with a MOZA CS V2 wheel and MOZA pedals, so when I compare upgrades I ask whether the next purchase belongs in the pedals, the seat and frame, or the base. A stronger base also loads the frame harder, which makes a weak frame more obvious. If a bigger base is still on your list, <a href=\"moza-r9-vs-r12-which-to-buy.html\">MOZA R9 vs R12</a> covers the step from ~9 N·m to ~12 N·m."
+    },
+    {
+      "h2": "Pedals: what to verify before you buy"
+    },
+    {
+      "p": "A potentiometer brake measures how far the pedal travels. A load cell measures how hard you push, so you brake by force and the pedal moves very little, much closer to how a real car feels. With a travel-based brake you learn a distance, and small changes in seat position or spring condition shift that distance. That is why a load cell is the first thing to look for in a brake. <a href=\"best-budget-load-cell-pedals.html\">Our budget load cell pedal roundup</a> lists the sets worth comparing. Throttle and clutch rarely need the same sensor, so a set with a load cell brake and a simpler throttle is normal."
+    },
+    {
+      "p": "Listings blur the details. Some products are complete pedal sets with a load cell brake. Others, such as the Thrustmaster T-LCM or the load cell version of the Fanatec CSL Pedals, are sold as a brake upgrade or a variant of a base set. The MOZA SR-P also comes in more than one version. Read the exact variant name on the page you are about to buy from."
+    },
+    {
+      "list": [
+        "Connection: does the set plug into your wheelbase or into the PC over USB, and does your base have a port for it?",
+        "Ecosystem: pedals made for one brand's base can need an adapter or a separate interface for another brand, and the software may differ.",
+        "Mounting holes: check the pedal plate pattern against the plate or rails on your cockpit.",
+        "In the box: cables, springs or elastomers, mounting hardware, and whether the load cell is included or a separate kit.",
+        "Software: confirm that calibration runs on your PC and that iRacing reads the pedals as separate axes.",
+        "Brake adjustability: look for a way to change stiffness, since the default feel often needs tuning."
+      ]
+    },
+    {
+      "tip": "Screenshot the product page, specs and box contents before the sale starts. Then compare the exact variant name on the day against that screenshot, and check the price history on the retailer you trust. A discount only counts if the earlier price was one that people actually paid.",
+      "tipLabel": "Check the variant first"
+    },
+    {
+      "h2": "Cockpit: shipping weight, frame and assembly"
+    },
+    {
+      "p": "A cockpit is the item most likely to disappoint after the order button, because it is heavy and arrives in boxes. Look at the shipping weight and the number of packages. Heavy freight can mean a delivery appointment, a signature, a curbside drop and several days between boxes. Check whether the item ships from a local warehouse or from overseas, and expect busy periods after Cyber Monday to stretch delivery. Plan assembly as well. An aluminum profile rig can take an evening or more, and you need space, a few tools and a second pair of hands for the final lift. The broader picture is in <a href=\"best-sim-racing-cockpit-2026.html\">our cockpit guide</a>."
+    },
+    {
+      "p": "A sale price tells you nothing about stiffness, so check the frame itself."
+    },
+    {
+      "list": [
+        "Frame material and wall thickness: thin tubing and small profiles flex under braking and under a stronger base.",
+        "Bracing: look for support under the pedal plate and wheel deck, since cantilevered decks bend first.",
+        "Wheelbase mounting: side mount, front mount or deck mount, and whether the hole pattern matches your base. <a href=\"rig-flex-and-wheelbase-mounting-ffb-feel.html\">Rig flex and wheelbase mounting</a> explains why this changes how force feedback feels.",
+        "Seat mounting: slider pattern, bracket spacing and whether the seat is included.",
+        "Expansion: monitor stand, shifter or handbrake plates that fit later without drilling.",
+        "Assembly: printed or video instructions, a complete hardware bag, and replacement parts available through the seller.",
+        "Return policy: the window, who pays for return freight, whether original packaging is required and whether the item needs a pickup."
+      ]
+    },
+    {
+      "h2": "Traps and the five-minute decision"
+    },
+    {
+      "p": "Return windows on heavy items are the quiet trap. A holiday window may end before you have time to assemble the frame, bolt on the base and drive a few sessions. Find the end date, then count backward to when the boxes could realistically arrive. Many buyers also forget that returning a heavy frame means repacking it and arranging pickup."
+    },
+    {
+      "list": [
+        "Cheap frames that flex: a low price on a light frame can cost you the stiffness that makes a load cell brake useful.",
+        "Adapters: a pedal set that needs an adapter, a bracket or a different cable can quietly add cost and one more thing to fail.",
+        "Mismatched patterns: a seat, wheel deck or pedal plate that does not match your parts means drilling or buying more brackets.",
+        "Vague bundles: if a bundle appears, list each item and ask whether you would buy each one separately.",
+        "Third-party sellers: check who ships, who handles returns and whether the product is the exact variant you want.",
+        "Missing delivery detail: no weight, no package count and no delivery estimate on a heavy item is a reason to wait."
+      ]
+    },
+    {
+      "olist": [
+        "Name the weakest part of your rig: brake feel, seat position or frame stiffness.",
+        "Rank pedals and cockpit above a bigger wheelbase unless the base is clearly your limit.",
+        "Confirm the brake is a load cell, and open the exact variant page.",
+        "Check connection, ecosystem and mounting-hole compatibility with your base and frame.",
+        "Read shipping weight, package count and delivery estimate, then the return window and return freight terms.",
+        "Look at price history on the retailer you trust, and skip the deal if any answer is missing."
+      ]
+    },
+    {
+      "p": "Prices and stock change quickly, so use this list when the deal appears rather than ahead of time. Keep the sale and the product separate: a stiff frame with a good brake is the part that stays on your desk long after the discount."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I buy pedals or a stronger wheelbase first?",
+      "a": "For most drivers the pedals and a stiff seating position come first. Brake consistency and a rigid frame improve repeatable lap times more than extra force at the wheel, and a stronger base puts more load on a frame that may already flex. If your current base is clearly the limit, upgrade it after you have checked the pedals and frame."
+    },
+    {
+      "q": "Is a load cell brake worth it for iRacing?",
+      "a": "Yes for most players who want repeatable braking. A load cell measures pressure instead of travel, so you build muscle memory around force. A potentiometer brake depends on distance, which shifts with seat position and spring wear. Check that the listing really includes the load cell, because some products sell it as a separate kit."
+    },
+    {
+      "q": "What should I check about a cockpit before buying on Black Friday?",
+      "a": "Check the frame material and bracing, whether the wheelbase and pedal plate patterns match your gear, the shipping weight and package count, the delivery estimate, and the return policy. Also read the assembly instructions and confirm the seat and hardware are included. A sale price does not tell you any of that."
+    },
+    {
+      "q": "How do I know whether a Black Friday deal is real?",
+      "a": "Check the price history on the retailer you trust and compare the exact variant name to the one you screenshotted before the sale. A real deal is lower than the typical recent price for the same product. If the listing is vague about what is in the box or the seller, wait."
+    }
+  ]
+}

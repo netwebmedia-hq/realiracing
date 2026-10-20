@@ -1,0 +1,92 @@
+{
+  "slug": "cyber-monday-iracing-pc-monitor-vr-deals-checklist-2026",
+  "tag": "Cyber Monday · PC and Display",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "Cyber Monday 2026 iRacing PC, Monitor and VR Deals Checklist: What to Verify First",
+  "description": "A same-day checklist for judging GPU, CPU, monitor and Meta Quest 3 deals for iRacing on Cyber Monday, November 30, 2026, with traps and return-window checks.",
+  "published": "2026-10-20",
+  "dateLabel": "October 20, 2026",
+  "gearKeys": [
+    "gpu-rtx-5060-ti",
+    "monitor-1440p-120",
+    "meta-quest-3",
+    "cpu-ryzen-7-5700"
+  ],
+  "sections": [
+    {
+      "p": "Cyber Monday falls on Monday, November 30, 2026, three days after Black Friday on Friday, November 27. No deals have been verified for either day, so this checklist covers the order to decide in, what to check on a listing, and how to recognise a real deal for an iRacing PC, monitor or VR headset. Decide what you are limited by first, pick the display type second, and only then look at prices."
+    },
+    {
+      "h2": "What limits iRacing frame rate: GPU or CPU"
+    },
+    {
+      "p": "The graphics card sets the ceiling when you raise resolution, turn up visual settings or run VR, because every extra pixel and every second eye view is more work for it. The processor becomes the limit in big fields, where many cars and their physics are in view at once, and the first lap of a crowded race is where it shows. To find out which one you have, watch both during a race: a graphics card pegged at its ceiling points to the GPU, while a graphics card with spare headroom and a processor core working hard points to the CPU. The <a href=\"cpu-gpu-bottlenecks-iracing-performance.html\">CPU and GPU bottleneck guide</a> walks through that test in more detail."
+    },
+    {
+      "p": "For context, I race iRacing on an RTX 5060 Ti, a Ryzen 7 5700, 32 GB RAM and one 1440p 120 Hz monitor, and I record and stream from the same PC with OBS. Capture adds encoder and processor work on top of the sim, so if you stream or upload races from one machine, count that load when you compare parts. A deal on a faster graphics card does little for a CPU-limited rig, and a faster CPU does little for a GPU-limited VR setup."
+    },
+    {
+      "h2": "The monitor: why one 1440p display at ~120 Hz is a common target"
+    },
+    {
+      "p": "A single 1440p display at ~120 Hz is a popular sim racing target because a midrange graphics card can feed it at high settings in iRacing, the image is sharper than a basic panel, and there is one screen to mount, one cable to run and one profile to set up. Refresh rate only helps when the GPU can supply the frames, so a faster panel on a weak card gains little. Variable refresh rate (VRR, sold as FreeSync or G-Sync Compatible) lets the panel follow the frame rate when it dips, which smooths out the busy moments at a race start. Check the VRR range in an independent review, confirm the panel and your GPU both support it, and use a cable and port that carry the full refresh rate at that resolution."
+    },
+    {
+      "tip": "Search the exact model number, not the product name. Retailers sometimes list near-identical models with different panels or ports, and a cheaper variant with a similar name is a common way for a listing to look better than it is. Compare the number on the listing with the number in the review you trust.",
+      "tipLabel": "Check the model number"
+    },
+    {
+      "h2": "VR, triples or ultrawide"
+    },
+    {
+      "p": "A Meta Quest 3 gives depth and a real sense of where cars are beside you, but iRacing still runs on your PC, so the headset connects by cable or wireless streaming and the graphics card carries a heavy load. Check what is in the box, since a link cable, a better strap or a prescription lens insert may be separate purchases, and read the headset return terms. Triple monitors give the widest field of view with a flat image but need three matched displays, desk space, mounts and a strong GPU. An ultrawide gives a wider view than one standard panel with a single cable and no bezels, at lower cost and effort than triples. The <a href=\"meta-quest-3-vr-vs-triple-monitors-iracing-buying-guide.html\">Quest 3 versus triples buying guide</a> and the <a href=\"triple-monitor-vs-ultrawide-sim-racing.html\">triple versus ultrawide comparison</a> cover those trade-offs in full."
+    },
+    {
+      "h2": "Return windows, dead pixels and common traps"
+    },
+    {
+      "p": "Displays are the products most worth testing the day they arrive. Before you buy, find the return window, whether the seller or the manufacturer handles a replacement, and the dead-pixel policy in writing, because many policies only accept a return above a certain pixel count or only for certain panel grades. When it arrives, run solid white, black and colour screens in a dark room, look for stuck pixels and uneven backlight, and keep the box and packing until you are sure. Holiday return windows can differ from the normal ones, so read the one shown at checkout. The traps below are the usual ways a good-looking deal turns out poorly."
+    },
+    {
+      "list": [
+        "Spec-sheet refresh rates: a headline refresh rate may need an overclock mode, a particular port, or lower colour settings, and \"up to\" figures are best-case. Check what the panel runs at over the cable you will actually use.",
+        "Renamed or older GPUs: a card with a familiar name can use an older chip or a cut-down variant. Match the full model name and the memory configuration against a review, and be wary of unclear laptop or OEM versions.",
+        "Prebuilt PCs with a strong GPU and a weak platform: look at the CPU, whether the RAM is two matched sticks, and the storage type.",
+        "Third-party marketplace sellers: confirm who sells and ships the item, since warranty and return terms can differ from the main retailer.",
+        "Inflated \"was\" prices: compare against the price history, not the crossed-out number on the page.",
+        "Open-box and refurbished stock: check the warranty and whether returns are accepted before you save anything."
+      ]
+    },
+    {
+      "olist": [
+        "Pick the display type: one 1440p ~120 Hz monitor, an ultrawide, triples or a Quest 3.",
+        "Decide whether your GPU or your CPU is the limit, and shop for that part only.",
+        "Confirm the exact model number, ports, VRR support and what is in the box.",
+        "Read the return window, the dead-pixel policy and who handles the warranty.",
+        "Compare the price with its history on the retailer you trust, then buy or walk away."
+      ]
+    },
+    {
+      "p": "For the wider plan, see <a href=\"sim-racing-black-friday-2026-what-to-wait-for.html\">what to wait for this Black Friday</a> and <a href=\"/black-friday/\">the Black Friday and Cyber Monday guide hub</a>."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I upgrade my GPU or my CPU first for iRacing?",
+      "a": "Watch utilization during a busy race. A graphics card at its ceiling means a GPU upgrade helps most, especially with VR, high resolution or high settings. A graphics card with headroom and a processor struggling in a large field points to the CPU. Upgrade the part that is actually limiting you."
+    },
+    {
+      "q": "Is a single 1440p monitor at around 120 Hz enough for iRacing?",
+      "a": "It is a common and practical target. A midrange GPU can feed it at good settings, and it needs one cable, one mount and one profile. A higher refresh rate only helps if your GPU can deliver the frames, so match the monitor to your hardware."
+    },
+    {
+      "q": "Is a Meta Quest 3 better than triple monitors for iRacing?",
+      "a": "It depends on what you value. VR gives depth and a strong sense of position, and it asks a lot of the GPU and comfort for long sessions. Triples give a wide, flat view without a headset but need space, mounts and three displays. Check the buying guides and your own tolerance for wearing a headset."
+    },
+    {
+      "q": "How do I check a dead-pixel policy before buying a monitor?",
+      "a": "Read the manufacturer and retailer policy in writing, and look for the pixel count or grade needed for a replacement. Note who handles the claim and the return window. When the monitor arrives, test it with solid colour screens right away and keep the packaging until you are sure."
+    }
+  ]
+}

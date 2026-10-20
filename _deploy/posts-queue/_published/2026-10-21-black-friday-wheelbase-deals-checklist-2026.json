@@ -1,0 +1,100 @@
+{
+  "slug": "black-friday-wheelbase-deals-checklist-2026",
+  "tag": "Black Friday · Wheelbases",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "How to Judge a Wheelbase Deal on Black Friday 2026",
+  "description": "A checklist for judging direct drive wheelbase deals on Black Friday (Nov 27) and Cyber Monday 2026: torque tier, box contents, ecosystem, mounting and returns.",
+  "published": "2026-10-20",
+  "dateLabel": "October 20, 2026",
+  "gearKeys": [
+    "moza-r5",
+    "fanatec-csl-dd",
+    "moza-r9",
+    "moza-r12"
+  ],
+  "sections": [
+    {
+      "p": "A wheelbase deal on Black Friday (Friday, November 27, 2026) or Cyber Monday (Monday, November 30, 2026) is only a deal if the base fits your rig and works with the rim and pedals you plan to use. No prices or discounts have been verified for this article, so what follows is the order in which to make decisions on the day. The wider timeline is in <a href=\"/black-friday/\">the Black Friday and Cyber Monday guide hub</a>. Start with torque, because every other choice depends on it, and <a href=\"wheel-torque-tiers-explained.html\">wheel torque tiers explained</a> covers the reasoning in more depth."
+    },
+    {
+      "h2": "Decide the torque tier before you open any listing"
+    },
+    {
+      "list": [
+        "Older gear and belt wheels such as the Logitech G923 (~2.1 N·m) and Thrustmaster T300 (~3.9 N·m) are what most first direct drive buyers are replacing. A direct drive base should feel clearly more detailed than these, not just stronger.",
+        "Entry direct drive: the Fanatec CSL DD (~5 N·m stock) and the MOZA R5 sit here. This tier suits a lightweight rig, a first direct drive purchase and anyone whose desk or cockpit is not very stiff.",
+        "Mid range: the MOZA R9 (~9 N·m) and the Fanatec ClubSport DD (~8 N·m). I race iRacing on an R9. Stronger bases mostly add effort at the wheel, not more information.",
+        "Upper range: the MOZA R12 (~12 N·m). It needs a rigid rig, and a sale price does not help if the mount flexes and the extra force is wasted. <a href=\"moza-r9-vs-r12-which-to-buy.html\">MOZA R9 vs R12</a> walks through that jump."
+      ]
+    },
+    {
+      "h2": "What to verify in the box and in the ecosystem"
+    },
+    {
+      "list": [
+        "Is a steering wheel rim included, or is it base only? Many listings look cheaper because the rim is missing.",
+        "Is the power supply included, and does the plug match your country? Check the listing for the regional version.",
+        "Is a quick release included, and is it the one your chosen rim needs?",
+        "Are the table clamp, mounting hardware and USB cable in the box?",
+        "Is there a pedal port on the base, or do pedals connect to the PC separately?"
+      ]
+    },
+    {
+      "p": "Ecosystem lock-in is the cost most buyers see last. Rims and pedals from the same brand often plug straight into the base, while another brand's parts may need an adapter or not work at all. My own setup is a MOZA R9 with a MOZA CS V2 wheel and MOZA pedals, so everything connects the intended way. Before you buy, write down the rim and pedals you want in a year, then confirm the base supports them. A cheap base that locks you into expensive rims is a poor deal."
+    },
+    {
+      "tip": "Open the manufacturer's page for the exact base and rim, find the compatibility list, and compare it with the retailer listing. If the model name differs even slightly, treat it as a different product.",
+      "tipLabel": "Check the model name"
+    },
+    {
+      "h2": "Mounting, returns and price history"
+    },
+    {
+      "p": "A direct drive base pushes hard against whatever holds it. A wobbly desk, a thin plate or a flexing rig will blur the force feedback you paid for, so confirm that your cockpit has a mounting pattern that suits the base: deck, side or front. <a href=\"rig-flex-and-wheelbase-mounting-ffb-feel.html\">Rig flex and wheelbase mounting</a> explains how this changes the feel. Also check the shipping weight. Bases are heavy, and a heavy box is awkward and costly to send back."
+    },
+    {
+      "p": "Read the return window on the retailer's page before you pay, and see whether it starts at purchase or at delivery. Look at who covers return shipping on a heavy item, and whether the warranty runs through the retailer or the manufacturer. For price history, use a tracker on the exact listing and compare today's price with the lowest it has reached, not with the crossed-out price. Then check the same model at one or two other retailers you trust. <a href=\"sim-racing-black-friday-2026-what-to-wait-for.html\">What to wait for on Black Friday 2026</a> helps you decide which items are worth holding out for."
+    },
+    {
+      "h2": "Common traps and the quick decision"
+    },
+    {
+      "list": [
+        "Bundles padded with filler: a phone holder, a cheap shifter or a rim you do not want makes the bundle look generous while the base itself costs the same.",
+        "Last generation stock: an older revision can be fine, but confirm it still works with current rims, firmware and software before treating the markdown as a bargain.",
+        "Comparing a base-only price with a bundle price, or a different regional version with the one you need.",
+        "Third party sellers: check who ships the item and who handles warranty claims.",
+        "Buying a higher tier than the rig can hold, so the extra torque goes into flex.",
+        "Waiting for a better price on the one item that sells out first."
+      ]
+    },
+    {
+      "olist": [
+        "Pick the torque tier your rig and budget can support, and name the base.",
+        "List what must be in the box: rim, power supply, quick release and mounting hardware.",
+        "Confirm that the rims and pedals you want work with that base.",
+        "Confirm that the base fits your cockpit or desk mount.",
+        "Check price history, the return window and the warranty. Buy only if every earlier step passed."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I choose a wheelbase or a bundle on Black Friday?",
+      "a": "Choose the base you want first, then see whether a bundle contains a rim and pedals you would actually buy anyway. If any part of the bundle is filler, compare its price with the base on its own and with each part bought separately."
+    },
+    {
+      "q": "Is last generation wheelbase stock worth buying?",
+      "a": "It can be, provided it still works with the current rims, pedals and software you want and the warranty is intact. Confirm the model name and compatibility on the manufacturer's page before treating the markdown as a bargain."
+    },
+    {
+      "q": "How do I know if a Black Friday price is real?",
+      "a": "Use a price tracker on the exact listing and compare with the lowest price it has shown, not with the crossed-out price. Check the same model at another retailer you trust before you buy."
+    },
+    {
+      "q": "Does a stronger wheelbase always feel better?",
+      "a": "No. A stronger base needs a stiffer rig, and extra torque on a flexing mount is wasted. For most iRacing drivers a mid-range base such as the MOZA R9 (~9 N·m) has plenty of headroom, and a very rigid rig is what makes the step up to a MOZA R12 (~12 N·m) worthwhile."
+    }
+  ]
+}
