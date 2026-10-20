@@ -113,13 +113,13 @@
     <div class="article-body">
       <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
 
-      <p class="article-lead">I've spent enough hours staring at lap data that I can spot a brake-pressure inconsistency in a raw CSV file. But the tool you use to find those inconsistencies matters far more than most drivers realize. Some telemetry platforms excel at real-time dashboards during a race weekend; others shine when you're dissecting a single lap against a baseline two weeks later. Understanding what each tool is built for and what it won't do saves you time and money.</p>
+      <p class="article-lead">This guide draws on published specs and common setup practice, not a hands-on test of every tool. The tool you use to find brake-pressure and throttle inconsistencies matters far more than most drivers realize. Some telemetry platforms excel at real-time dashboards during a race weekend; others shine when you're dissecting a single lap against a baseline two weeks later. Understanding what each tool is built for and what it won't do saves you time and money.</p>
 
       <h2>What Garage61 Does Well</h2>
 
-      <p>Garage61 is purpose-built for iRacing setup development. It pulls telemetry directly from iRacing replays, and its interface focuses on the metrics that matter most for tuning: brake pressure curves, throttle application, pedal timing, suspension loads, and tire temperature. I appreciate that it doesn't try to be everything; it's lean, it's fast, and the data export is clean.</p>
+      <p>Garage61 is purpose-built for iRacing setup development. It pulls telemetry directly from iRacing replays, and its interface focuses on the metrics that matter most for tuning: brake pressure curves, throttle application, pedal timing, suspension loads, and tire temperature. It doesn't try to be everything; it's lean, it's fast, and the data export is clean.</p>
 
-      <p>The heat-map overlay feature is genuinely useful. You can visualize where on the track you're braking harder or carrying more speed, and compare that visually against your own baseline or a friend's lap. That spatial awareness often reveals patterns that a table of numbers won't. On my <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> rig, I can load a session, spot a corner where my brake consistency is drifting, and then go back out and focus.</p>
+      <p>The heat-map overlay feature is genuinely useful. You can visualize where on the track you're braking harder or carrying more speed, and compare that visually against your own baseline or a friend's lap. That spatial awareness often reveals patterns that a table of numbers won't. On a direct drive rig like the <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a>, you can load a session, spot a corner where your brake consistency is drifting, and then go back out and focus.</p>
 
       <ul>
         <li>Direct iRacing replay import (no manual data export needed)</li>
@@ -136,11 +136,11 @@
 
       <h2>Telemetry Comparison Alternatives and Trade-offs</h2>
 
-      <p>iSpeed is the most common alternative I see discussed in sim racing forums. It imports iRacing telemetry and builds a full replay viewer; you can watch your lap onscreen, synced to data overlays, which is powerful for spotting where a corner went wrong. The dashboard is more polished and has a steeper learning curve, but once you're comfortable, multi-session comparisons are faster.</p>
+      <p>iSpeed is a commonly discussed alternative in sim racing forums. It imports iRacing telemetry and builds a full replay viewer; you can watch your lap onscreen, synced to data overlays, which is powerful for spotting where a corner went wrong. The dashboard is more polished and has a steeper learning curve, but once you're comfortable, multi-session comparisons are faster.</p>
 
       <p>Motec i2 is another option, though it's overkill for most iRacers and has a larger price tag. It's the tool professional racing teams use, and it's built for real-world data from CAN buses and data loggers. You can import iRacing telemetry into it, but you're paying for features you'll never touch. That said, if you're already familiar with Motec from real racing or other sims, the workflow is smooth.</p>
 
-      <p>On the lighter end, some drivers just export iRacing CSVs and analyze them in Excel or Google Sheets. It's tedious, but it's free and teaches you to think about what the numbers mean. I did this early on; no regrets, because it forced me to understand correlation rather than just chase a red line on a graph.</p>
+      <p>On the lighter end, some drivers just export iRacing CSVs and analyze them in Excel or Google Sheets. It's tedious, but it's free and teaches you to think about what the numbers mean. It forces you to understand correlation rather than just chase a red line on a graph.</p>
 
       <ul>
         <li><strong>iSpeed:</strong> Replay sync, multi-session stacking, real-time dashboard, steeper UI learning curve, cloud storage optional</li>
@@ -149,13 +149,13 @@
         <li><strong>Garage61:</strong> Fast, iRacing-native, offline-capable, narrower feature scope</li>
       </ul>
 
-      <h2>My Workflow: How I Use Garage61 in Practice</h2>
+      <h2>Workflow: How to Use Garage61 in Practice</h2>
 
-      <p>Here's how I approach a practice session on a new track. I'll run 10-15 laps, export the best one, and load it into Garage61 to check my brake consistency and throttle smoothness. I'm looking for whether my inputs are repeatable, not whether I'm a tenth faster than last week. Consistency first; speed follows.</p>
+      <p>Here's a practical way to approach a practice session on a new track. Run 10-15 laps, export the best one, and load it into Garage61 to check your brake consistency and throttle smoothness. Look for whether your inputs are repeatable, not whether you're a tenth faster than last week. Consistency first; speed follows.</p>
 
-      <p>Then I'll load a reference lap from a faster driver or a setup shop baseline, overlay it in Garage61, and scan for the obvious gaps. Usually I find one or two corners where my pedal work is sloppy: brake release timing or early throttle. That focus beats trying to tune suspension by feel when the real problem is driver input.</p>
+      <p>Then load a reference lap from a faster driver or a setup shop baseline, overlay it in Garage61, and scan for the obvious gaps. Often you'll find one or two corners where your pedal work is sloppy: brake release timing or early throttle. That focus beats trying to tune suspension by feel when the real problem is driver input.</p>
 
-      <p>I don't use Garage61's setup-diff feature as much as I should, but when I'm A/B testing something on my <a href="best-sim-racing-pedals-iracing-2026.html">MOZA CRP2 load-cell pedals</a>, like a pressure curve change, the ability to compare lap telemetry side-by-side is invaluable. It removes guesswork.</p>
+      <p>Garage61's setup-diff feature is easy to overlook, but when you're A/B testing something on your <a href="best-sim-racing-pedals-iracing-2026.html">pedals</a>, like a pressure curve change, the ability to compare lap telemetry side-by-side is invaluable. It removes guesswork.</p>
 
       <h2>Which Tool Should You Pick?</h2>
 
@@ -174,7 +174,7 @@
 
       <p>The best telemetry tool is the one you'll actually open after every session. If Garage61's interface feels natural to you, you'll use it consistently and build real understanding. If iSpeed's replay sync solves a problem you actually have, the subscription pays for itself in faster learning.</p>
 
-      <p>On my rig, I run Garage61 between sessions while I'm reviewing notes or tweaking my <a href="moza-r9-iracing-settings.html">MOZA R9 force-feedback settings</a>. It's quick enough that I don't get distracted. I load a replay, check brake consistency, maybe compare against a baseline, and I'm back in iRacing within five minutes. That workflow suits me.</p>
+      <p>A simple routine is to run Garage61 between sessions while you're reviewing notes or tweaking your <a href="moza-r9-iracing-settings.html">MOZA R9 force-feedback settings</a>. It's quick enough that you won't get distracted. Load a replay, check brake consistency, maybe compare against a baseline, and you can be back in iRacing within five minutes.</p>
 
       <p>Consider also whether you'll share data with others. If you're in a league where the fast guys share reference laps, Garage61's file format is easier to work with than proprietary cloud storage. If your coaching team uses iSpeed, you'll want to match them so the workflow works well.</p>
 

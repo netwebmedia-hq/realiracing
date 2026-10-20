@@ -50,7 +50,7 @@
     {
       "@type": "Question",
       "name": "Can I just download a setup from a setup shop instead of tweaking baseline?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes, but you'll learn less and adapt slower to track temperature changes. A setup shop tune is optimized for their test driver on their rig. Tweaking baseline teaches you how your specific car and rig behave, which lets you make smarter adjustments when conditions shift mid-event. I use shops as a reference, not gospel." }
+      "acceptedAnswer": { "@type": "Answer", "text": "(FAQ) Yes, but you'll learn less and adapt slower to track temperature changes. A setup shop tune is optimized for their test driver on their rig. Tweaking baseline teaches you how your specific car and rig behave, which lets you make smarter adjustments when conditions shift mid-event. Treat shops as a reference, not gospel." }
     },
     {
       "@type": "Question",
@@ -113,7 +113,7 @@
     <div class="article-body">
       <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
 
-      <p class="article-lead">The iRacing baseline is a trap disguised as a gift. It's fast enough that you think you're done, but it's also generic enough that it leaves performance on the table, especially when the track temperature changes, your preferred brake pressure doesn't match the default, or your rig's geometry is different from whatever alien's setup they tuned it on. I spent six months running baseline on the Ferrari 488 GT3 before I realized I was leaving whole tenths on the table just by tweaking three things. Now I treat baseline as a starting point, not a destination.</p>
+      <p class="article-lead">The iRacing baseline is a trap disguised as a gift. It's fast enough that you think you're done, but it's also generic enough that it leaves performance on the table, especially when the track temperature changes, your preferred brake pressure doesn't match the default, or your rig's geometry is different from whatever alien's setup they tuned it on. Treat baseline as a starting point, not a destination: a few targeted tweaks can recover whole tenths.</p>
 
       <p>The key is knowing what to change first, in what order, and when to stop. Chaotic setup adjustments kill confidence and waste time. A systematic approach, testing one or two variables at a time on the same fuel load and tire age over multiple laps, is how you actually improve without spinning into the weeds.</p>
 
@@ -135,7 +135,7 @@
 
       <h3>Phase 1: Brake and Throttle Mapping (Your Foundation)</h3>
 
-      <p>Before you touch suspension, sort your pedal inputs. This is non-negotiable. I use the <a href="moza-crp2-brake-calibration-pressure-curves.html">MOZA CRP2 load cell calibration</a> to dial in a pressure curve that matches my actual braking style, then I run baseline for 10 laps to see if brake balance feels forward or rearward. On my ~9 N·m <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a>, I also log peak wheel torque to see if I'm exceeding the wheelbase's comfortable output during hard braking.</p>
+      <p>Before you touch suspension, sort your pedal inputs. This is non-negotiable. Use the <a href="moza-crp2-brake-calibration-pressure-curves.html">MOZA CRP2 load cell calibration</a> to dial in a pressure curve that matches your actual braking style, then run baseline for 10 laps to see if brake balance feels forward or rearward. On a ~9 N·m <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a>, also log peak wheel torque to see if you're exceeding the wheelbase's comfortable output during hard braking.</p>
 
       <p>Adjust brake bias in small increments, 0.5% at a time, until the car feels neutral through hard corners. Throttle mapping is less critical if you're smooth, but if you're aggressive on exit, test a couple of throttle sensitivity settings to see which gives you the best traction without spinning the rear.</p>
 
@@ -150,7 +150,7 @@
 
       <p>This is where baseline often fails individual drivers. Baseline anti-roll bars are usually set for a comfortable middle ground. If you're light or heavy, or if your cockpit has a lot of <a href="rig-flex-and-wheelbase-mounting-ffb-feel.html">frame flex</a>, the car will either wallow or feel nervous mid-corner.</p>
 
-      <p>Start with front anti-roll bar stiffness. Go one notch stiffer, run 10 laps at a consistent pace (same fuel, same tire age), and log your best lap. Then one notch softer, 10 more laps. Most drivers find a sweet spot where the car is responsive without feeling twitchy. I personally run 2–3 notches stiffer than baseline on GT3 cars because my frame is stiff and I prefer direct input.</p>
+      <p>Start with front anti-roll bar stiffness. Go one notch stiffer, run 10 laps at a consistent pace (same fuel, same tire age), and log your best lap. Then one notch softer, 10 more laps. Most drivers find a sweet spot where the car is responsive without feeling twitchy. If your frame is stiff and you prefer direct input, a common starting point is 2-3 notches stiffer than baseline on GT3 cars.</p>
 
       <ul>
         <li>Stiffer front ARB: faster turn-in, but can cause understeer in high-speed corners if overdone</li>
@@ -163,7 +163,7 @@
 
       <p>Once ARBs feel right, damping (bump and rebound) and ride height come next. These are finer adjustments. Ride height affects both aero and mechanical grip; going lower usually improves aero but can bottom out over kerbs. Damping affects how the car responds to weight transfer: stiffer bump damping (compression) resists the chassis diving under braking, while rebound damping controls how fast it recovers.</p>
 
-      <p>I adjust ride height by 2–3 clicks lower than baseline and check for bottoming in my telemetry. Then I increase bump damping by 1–2 clicks to reduce dive under heavy braking. Rebound follows similarly. These are small, deliberate tweaks, not wild swings.</p>
+      <p>Try ride height 2-3 clicks lower than baseline and check for bottoming in your telemetry. Then increase bump damping by 1-2 clicks to reduce dive under heavy braking. Rebound follows similarly. These are small, deliberate tweaks, not wild swings.</p>
 
       <div class="tip-box">
         <span class="box-label">Test Stint Length</span>
@@ -172,10 +172,10 @@
 
       <h2>How to Test Systematically</h2>
 
-      <p>Chaos kills setup progress. Here's my actual workflow on the MOZA R9 and <a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">CRP2</a>:</p>
+      <p>Chaos kills setup progress. Here's a systematic workflow, whether you use a MOZA R9 and <a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">CRP2</a> or other gear:</p>
 
       <ol>
-        <li>Set fuel to the same amount every test session (I use 25% fuel, roughly 90 kg total weight)</li>
+        <li>Set fuel to the same amount every test session (for example 25% fuel, roughly 90 kg total weight)</li>
         <li>Run baseline for 10 laps to establish a baseline pace and tire temps</li>
         <li>Change ONE variable (e.g., front ARB +1 notch)</li>
         <li>Run 10 laps at the same fuel level; note best lap and average pace</li>
@@ -185,29 +185,29 @@
         <li>At session end, run 15 laps on your new setup at full fuel load to verify it's stable over distance</li>
       </ol>
 
-      <p>Telemetry is your truth. I record brake pressure, throttle input, wheel speed, and suspension travel for every test. If your best lap is 0.1s faster but your brake pressure is erratic, you've found a setup that suits one lap, not a setup that suits you. Look for consistency first, speed second.</p>
+      <p>Telemetry is your truth. Record brake pressure, throttle input, wheel speed, and suspension travel for every test. If your best lap is 0.1s faster but your brake pressure is erratic, you've found a setup that suits one lap, not a setup that suits you. Look for consistency first, speed second.</p>
 
       <h2>Common Baseline Tweaks That Work</h2>
 
-      <p>After dozens of cars and tracks, I've found a few tweaks that almost always improve baseline for my driving style and rig:</p>
+      <p>These are a few common tweaks that often improve baseline, depending on your driving style and rig:</p>
 
       <ul>
-        <li><strong>Front ARB +2 notches:</strong> I prefer turn-in response and my rigid cockpit can handle it. Your mileage varies based on rig stiffness.</li>
-        <li><strong>Brake bias +0.5–1%:</strong> Most baseline setups are rear-biased to be safe. I shift forward because I'm smooth on trail braking.</li>
+        <li><strong>Front ARB +2 notches:</strong> Suits drivers who prefer turn-in response and have a rigid cockpit that can handle it. Your mileage varies based on rig stiffness.</li>
+        <li><strong>Brake bias +0.5-1%:</strong> Most baseline setups are rear-biased to be safe. Shift forward if you're smooth on trail braking.</li>
         <li><strong>Ride height –2 clicks:</strong> Lowers CG, improves aero, rarely hurts unless the track is bumpy.</li>
         <li><strong>Bump damping +1 click:</strong> Reduces dive, makes the car feel more composed mid-corner.</li>
         <li><strong>Throttle LUT adjustment:</strong> If your throttle input feels nonlinear, flatten the curve slightly for smoother application.</li>
       </ul>
 
-      <p>None of these are universal. They work for me because I know my rig, my inputs, and my preferences. Your baseline might need the opposite: soft ARBs if your frame is flexy, a forward brake bias if you're aggressive on the pedal, or a higher ride height if the track is rough.</p>
+      <p>None of these are universal. They depend on knowing your rig, your inputs, and your preferences. Your baseline might need the opposite: soft ARBs if your frame is flexy, a forward brake bias if you're aggressive on the pedal, or a higher ride height if the track is rough.</p>
 
       <h2>When to Stop Tweaking</h2>
 
-      <p>The biggest mistake is chasing 0.02s improvements for three hours. At some point, you are not improving the setup; you are just shuffling variables and losing consistency. I stop tweaking when two conditions are met:</p>
+      <p>The biggest mistake is chasing 0.02s improvements for three hours. At some point, you are not improving the setup; you are just shuffling variables and losing consistency. Stop tweaking when two conditions are met:</p>
 
       <ul>
-        <li>My last five changes have each added less than 0.05s</li>
-        <li>My best lap is repeatable; I can run it again within 0.05s, and I understand why.</li>
+        <li>Your last five changes have each added less than 0.05s</li>
+        <li>Your best lap is repeatable; you can run it again within 0.05s, and you understand why.</li>
       </ul>
 
       <p>After that, track time beats setup time. Strap in for a 30-lap race simulation and drive the car. You'll learn more about it and about your own limits than you will from five more setup iterations.</p>
@@ -217,9 +217,9 @@
         <p>A setup you trust and understand beats a theoretical optimum by 0.1s every time. Settle on something you feel confident in.</p>
       </div>
 
-      <h2>Real Example: My Ferrari 488 GT3 Setup at Monza</h2>
+      <h2>Example Workflow: Ferrari 488 GT3 at Monza</h2>
 
-      <p>Baseline pace was 1:44.2. I ran it for 10 laps; it was solid, though I felt loose in Turn 1, a high-speed left hander. I increased front ARB from baseline (24) to 26 (two notches stiffer). Turn 1 felt planted, but now Turn 8 (chicane exit) was oversteery. I dialed front ARB back to 25, increased rear to 23 (baseline was 22), and ran 10 more laps. Best lap: 1:43.9. Brake bias: I added 0.5% forward, which helped mid-corner stability under trail braking. Final best lap: 1:43.6. Ride height dropped one click to improve aero on the straights. Final best lap: 1:43.4. All told, 0.8s gained over six small, deliberate tweaks. Then I stopped and raced the car.</p>
+      <p>This is an illustrative walk-through, not a logged session. Say baseline pace is 1:44.2. Run it for 10 laps; if it's solid but feels loose in Turn 1, a high-speed left hander, increase front ARB from baseline (24) to 26 (two notches stiffer). Turn 1 may feel planted, but Turn 8 (chicane exit) can now turn oversteery. Dial front ARB back to 25, increase rear to 23 (baseline is 22), and run 10 more laps. Best lap: 1:43.9. Next, add 0.5% brake bias forward, which can help mid-corner stability under trail braking. Best lap: 1:43.6. Then drop ride height one click to improve aero on the straights. Best lap: 1:43.4. All told, that is 0.8s gained over six small, deliberate tweaks. Then stop and race the car.</p>
 
       <div id="rir-gear"><div class="gear-box">
         <span class="box-label">The gear in this guide</span>
@@ -260,7 +260,7 @@
       </div>
       <div class="faq-item">
         <h3>Can I just download a setup from a setup shop instead of tweaking baseline?</h3>
-        <p>Yes, but you'll learn less and adapt slower to track temperature changes. A setup shop tune is optimized for their test driver on their rig. Tweaking baseline teaches you how your specific car and rig behave, which lets you make smarter adjustments when conditions shift mid-event. I use shops as a reference, not gospel.</p>
+        <p>(FAQ) Yes, but you'll learn less and adapt slower to track temperature changes. A setup shop tune is optimized for their test driver on their rig. Tweaking baseline teaches you how your specific car and rig behave, which lets you make smarter adjustments when conditions shift mid-event. Treat shops as a reference, not gospel.</p>
       </div>
       <div class="faq-item">
         <h3>Should I tune suspension before or after brake balance?</h3>

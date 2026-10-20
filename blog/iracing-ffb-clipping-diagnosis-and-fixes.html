@@ -113,7 +113,7 @@
     <div class="article-body">
       <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
 
-      <p class="article-lead">FFB clipping is one of the most common setup mistakes I see in sim racing, and it's also one of the easiest to miss. When your wheelbase runs out of torque capacity and flattens the signal instead of reproducing the full range of forces, you lose detail, responsiveness, and ultimately lap time. On my <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a>, which produces ~9 N·m of torque, I learned clipping the hard way: a setup that felt numb and unresponsive wasn't boring; it was the wheelbase hitting a ceiling and cutting off information that should have made it to my hands.</p>
+      <p class="article-lead"> FFB clipping is one of the most common setup mistakes in sim racing, and it's also one of the easiest to miss. When your wheelbase runs out of torque capacity and flattens the signal instead of reproducing the full range of forces, you lose detail, responsiveness, and ultimately lap time. On a wheelbase like the <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a>, which produces ~9 N·m of torque, a setup that feels numb and unresponsive isn't necessarily boring; it may be the wheelbase hitting a ceiling and cutting off information that should have made it to your hands.</p>
 
       <p>Clipping isn't a hardware failure. It's a signal-processing problem that happens when your iRacing FFB settings demand more force than your wheelbase can deliver. The good news: once you learn to spot it and understand the root causes, it's fixable without spending more money. I'll walk you through diagnosis, the settings that cause it, and the adjustments that work.</p>
 
@@ -143,7 +143,7 @@
 
       <h3>Overly Aggressive Master FFB Strength</h3>
 
-      <p>This is the primary culprit. Master FFB is a global multiplier on all forces. I typically run my MOZA R9 between 85–95% strength depending on the car and track. Below ~80%, feedback feels hollow. Above 100%, clipping becomes unavoidable in high-downforce cars at speed. If you're set to 110% or higher, you're almost certainly clipping.</p>
+      <p>This is the primary culprit. Master FFB is a global multiplier on all forces. A common range is 85-95% strength, depending on the car and track. Below ~80%, feedback feels hollow. Above 100%, clipping becomes unavoidable in high-downforce cars at speed. If you're set to 110% or higher, you're almost certainly clipping.</p>
 
       <h3>Spring Effect Turned Up Too High</h3>
 
@@ -157,13 +157,13 @@
 
       <h3>Step 1: Lower Master FFB Strength Incrementally</h3>
 
-      <p>Start by reducing Master FFB by 5% at a time. Run a few laps and check the telemetry graph. Does the peak still hit the ceiling? If yes, go down another 5%. Keep going until the force line peaks and rolls off naturally without flattening. On my MOZA R9, I typically find the sweet spot between 85–90% for most cars.</p>
+      <p> Start by reducing Master FFB by 5% at a time. Run a few laps and check the telemetry graph. Does the peak still hit the ceiling? If yes, go down another 5%. Keep going until the force line peaks and rolls off naturally without flattening. On a MOZA R9, a sweet spot between 85-90% is a good target for most cars.</p>
 
       <p>This is not a loss of feedback. Lower Master FFB still allows the full spectrum of forces to reach your hands; it is just scaled down proportionally. The dynamic range remains intact.</p>
 
       <h3>Step 2: Reduce Spring Effect by 10–15%</h3>
 
-      <p>If Master FFB reduction alone doesn't eliminate clipping, trim spring effect. I run spring effect between 80–95% depending on the car. High-downforce cars (like the P1 GTX) often need spring effect below 85% to keep peaks manageable. Lower spring effect makes the wheel feel slightly less mechanical, but it prevents saturation and preserves the ability to feel slip.</p>
+      <p> If Master FFB reduction alone doesn't eliminate clipping, trim spring effect. A common range is 80-95% depending on the car. High-downforce cars (like the P1 GTX) often need spring effect below 85% to keep peaks manageable. Lower spring effect makes the wheel feel slightly less mechanical, but it prevents saturation and preserves the ability to feel slip.</p>
 
       <h3>Step 3: Check Bump Stiffness on Your Specific Track</h3>
 
@@ -188,7 +188,7 @@
 
       <p>Once you're comfortable diagnosing, use telemetry proactively. Before a race, run a baseline setup at a known-good FFB configuration, then open telemetry and check the peak force value. If it's within ~85% of your wheelbase's max torque, you're safe. If it's above 90%, trim settings before the race starts. This prevents the surprise of clipping during competition.</p>
 
-      <p>I log the peak force value for every car-track combo I race. Over time, you'll develop intuition: Monza in the Ferrari? Peak forces around 7.5 N·m, safe at Master 90%. Bathurst in the Porsche? Peak forces near 9.5 N·m, drop Master to 85%. That pattern recognition saves setup time and eliminates clipping surprises.</p>
+      <p> Log the peak force value for every car-track combo you race. Over time, you'll develop intuition. For example, if Monza in the Ferrari peaks around 7.5 N·m, Master 90% is safe. If Bathurst in the Porsche peaks near 9.5 N·m, drop Master to 85%. That pattern recognition saves setup time and eliminates clipping surprises.</p>
 
       <h2>Common Mistakes That Extend Clipping</h2>
 
@@ -199,9 +199,9 @@
         <li><strong>Forgetting that bumps add peak torque:</strong> A baseline setup might look clean on a smooth track. Take it to Nurburgring GP or Bathurst, and clipping suddenly appears at the bumpy sections. Test your setups on varied tracks.</li>
       </ul>
 
-      <h2>My MOZA R9 Settings to Avoid Clipping</h2>
+      <h2> MOZA R9 Settings to Avoid Clipping</h2>
 
-      <p>Here's my baseline that I adjust from, which stays out of clipping for most cars and tracks:</p>
+      <p> Here's a baseline to adjust from, which should stay out of clipping for most cars and tracks:</p>
 
       <ul>
         <li>Master FFB: 88%</li>
@@ -211,7 +211,7 @@
         <li>Wheel Damping: 5–10% (friction damping for stability)</li>
       </ul>
 
-      <p>From there, I raise Master FFB by 2–3% if I'm racing a light car (Mazda, Skip Barber) or a smooth track (Daytona, Monza). I lower Master to 84–86% for high-downforce cars (P1 GTX) or bumpy circuits (Bathurst, Nurburgring). I monitor telemetry after each adjustment and trust the graph, not the feel alone.</p>
+      <p> From there, raise Master FFB by 2-3% if you're racing a light car (Mazda, Skip Barber) or a smooth track (Daytona, Monza). Lower Master to 84-86% for high-downforce cars (P1 GTX) or bumpy circuits (Bathurst, Nurburgring). Monitor telemetry after each adjustment and trust the graph, not the feel alone.</p>
 
       <h2>Take Action Now</h2>
 

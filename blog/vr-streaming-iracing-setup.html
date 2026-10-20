@@ -129,13 +129,13 @@
 
       <h2>GPU requirements: the math</h2>
 
-      <p>I run an <a href="https://www.amazon.com/s?k=RTX+5060+Ti+8GB+graphics+card&amp;tag=realiracing-20" data-aff="gpu-rtx-5060-ti" target="_blank" rel="sponsored noopener">RTX 5060 Ti</a>, and it handles VR streaming in iRacing at ~1440p90 on the mirror with NVENC H.264 encoding. Here's the load breakdown: ~7–8 TFLOPS on the VR rendering (headset stereo + distortion), ~2–3 TFLOPS on the spectator mirror, and ~1 TFLOP on NVENC encoding. Total: roughly 10–12 TFLOPS sustained. A 5060 Ti peaks at ~20 TFLOPS, so you have headroom, but not infinite headroom. If you also have a second monitor or chat overlay on your stream machine, that overhead comes out of iRacing performance.</p>
+      <p>An <a href="https://www.amazon.com/s?k=RTX+5060+Ti+8GB+graphics+card&amp;tag=realiracing-20" data-aff="gpu-rtx-5060-ti" target="_blank" rel="sponsored noopener">RTX 5060 Ti</a> should handle VR streaming in iRacing at ~1440p90 on the mirror with NVENC H.264 encoding. Here's a rough load breakdown: ~7-8 TFLOPS on the VR rendering (headset stereo + distortion), ~2-3 TFLOPS on the spectator mirror, and ~1 TFLOP on NVENC encoding. Total: roughly 10-12 TFLOPS sustained. A 5060 Ti peaks at ~20 TFLOPS, so you have headroom, but not infinite headroom. If you also have a second monitor or chat overlay on your stream machine, that overhead comes out of iRacing performance.</p>
 
       <p>A 5060 Ti is the minimum I'd recommend for comfortable VR streaming (144 Hz headset + 60 fps stream). A 6070 Ti or higher keeps the headset at 144 Hz while pushing the mirror to 90+ fps, which looks noticeably smoother on stream. Below a 5060 Ti, you'll either drop headset frame rate or mirror frame rate, and one of those will feel jerky to your audience or in your VR view.</p>
 
       <div class="tip-box rir-pitstop-callout">
         <span class="box-label">From the RealiRacing shop</span>
-        <p><strong>Before you go live, free up your rig.</strong> NWM PitStop is the clean-up and stream-priority script set we run before every session; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=vr-streaming-iracing-setup">See NWM PitStop &rarr;</a></p>
+        <p><strong>Before you go live, free up your rig.</strong> NWM PitStop is a clean-up and stream-priority script set to run before a session; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=vr-streaming-iracing-setup">See NWM PitStop &rarr;</a></p>
       </div>
 
       <h2>NVENC encoding settings for iRacing</h2>
@@ -154,13 +154,13 @@
 
       <h2>Monitor-based vs dedicated capture card streaming</h2>
 
-      <p>A dedicated capture card (like an Elgato 4K60 Pro) routes the mirror output separately from your main GPU; this adds latency and requires the mirror to run at a fixed resolution and frame rate. Software encoding (NVENC) through OBS is simpler and actually lower latency because the GPU passes the mirror buffer directly to the encoder without a round-trip through a capture device. I use OBS with NVENC, and stream delay is consistently ~2.5 seconds on a stable network.</p>
+      <p>A dedicated capture card (like an Elgato 4K60 Pro) routes the mirror output separately from your main GPU; this adds latency and requires the mirror to run at a fixed resolution and frame rate. Software encoding (NVENC) through OBS is simpler and actually lower latency because the GPU passes the mirror buffer directly to the encoder without a round-trip through a capture device. OBS with NVENC is a good starting point, and a stream delay of ~2.5 seconds on a stable network is a reasonable target.</p>
 
-      <h2>A practical workflow: my own setup</h2>
+      <h2>A practical workflow: an example setup</h2>
 
-      <p>My stream machine is a single PC: <a href="https://www.amazon.com/s?k=AMD+Ryzen+7+5700+processor&amp;rh=p_89%3AAMD&amp;tag=realiracing-20" data-aff="cpu-ryzen-7-5700" target="_blank" rel="sponsored noopener">Ryzen 7 5700</a> CPU, RTX 5060 Ti GPU, iRacing on an SSD. iRacing runs full VR on the headset (144 Hz if the track allows it), mirror at 1440p60 in a window on a side monitor, and my primary display shows just browser and chat. OBS captures that mirror window, NVENC encodes it at 10000 kbps, and it ships to Twitch. The headset frame rate stays above 90 Hz because the mirror is running at 60 fps, not trying to match the headset. This separation, headsets and streams at different frame rates, is the key to stable streaming without performance sacrifice.</p>
+      <p>A workable single-PC setup looks like this: a <a href="https://www.amazon.com/s?k=AMD+Ryzen+7+5700+processor&amp;rh=p_89%3AAMD&amp;tag=realiracing-20" data-aff="cpu-ryzen-7-5700" target="_blank" rel="sponsored noopener">Ryzen 7 5700</a> CPU, an RTX 5060 Ti GPU, and iRacing on an SSD. Run full VR on the headset (144 Hz if the track allows it), put the mirror at 1440p60 in a window on a side monitor, and keep your primary display for just browser and chat. Have OBS capture that mirror window, encode it with NVENC at 10000 kbps, and send it to your streaming platform. The headset frame rate should stay above 90 Hz because the mirror is running at 60 fps, not trying to match the headset. This separation, headsets and streams at different frame rates, is the key to stable streaming without performance sacrifice.</p>
 
-      <p>If you're on a tighter budget GPU, drop the mirror to 1080p60 and keep the bitrate at 6000. It still looks good, and you free up enough GPU bandwidth to keep the headset at a comfortable frame rate. See my full setup tour in my <a href="iracing-vr-vs-triple-monitors.html">VR vs triple monitors guide</a>; that post covers the entire depth-perception and immersion calculus, and this streaming aspect is just one piece of the decision.</p>
+      <p>If you're on a tighter budget GPU, drop the mirror to 1080p60 and keep the bitrate at 6000. It still looks good, and you free up enough GPU bandwidth to keep the headset at a comfortable frame rate. For the wider decision, see the <a href="iracing-vr-vs-triple-monitors.html">VR vs triple monitors guide</a>; that post covers the entire depth-perception and immersion calculus, and this streaming aspect is just one piece of the decision.</p>
 
       <h2>Common VR streaming mistakes to avoid</h2>
 

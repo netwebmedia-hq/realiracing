@@ -113,7 +113,7 @@
     <div class="article-body">
       <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
 
-      <p class="article-lead">If you've watched sim racing streams, you've seen those slick overlays showing brake pressure, throttle input, and tire temperature in real time. Most of them come from <strong>RaceLab</strong>, a free tool that hooks directly into iRacing's telemetry output and feeds customizable graphics to OBS. I use RaceLab on my own streams, and it transforms a plain cockpit view into a broadcast-quality display that educates viewers and adds production value without needing expensive hardware or pay software.</p>
+      <p class="article-lead">If you've watched sim racing streams, you've seen those slick overlays showing brake pressure, throttle input, and tire temperature in real time. Most of them come from <strong>RaceLab</strong>, a free tool that hooks directly into iRacing's telemetry output and feeds customizable graphics to OBS. It can transform a plain cockpit view into a broadcast-quality display that educates viewers and adds production value without needing expensive hardware or pay software.</p>
 
       <p>The catch: RaceLab's power is in its flexibility, which also means there's setup work ahead. You'll need to understand what data matters for your audience, how to position overlays so they don't obscure your racing line, and how to avoid the trap of showing so much telemetry that viewers can't focus on the actual driving.</p>
 
@@ -121,7 +121,7 @@
 
       <p>RaceLab reads iRacing's live telemetry stream, including brake input, throttle, steering angle, G-force, tire temps, fuel, and tire wear, to render configurable on-screen graphics that sync with your race footage. Because it's tapping the same data iRacing uses internally, the latency is negligible; what you see on stream matches what you're feeling on the wheel and pedals in real time.</p>
 
-      <p>Unlike manual setups that require separate hardware or clunky software overlays, RaceLab integrates directly into OBS as a plugin or stands as a browser source. I run it as a browser source in OBS, which keeps my streaming PC's CPU load flat and gives me dead-simple control over positioning and refresh rates.</p>
+      <p>Unlike manual setups that require separate hardware or clunky software overlays, RaceLab integrates directly into OBS as a plugin or stands as a browser source. Run it as a browser source in OBS, which keeps CPU load flat and gives you dead-simple control over positioning and refresh rates.</p>
 
       <ul>
         <li>Brake pressure and throttle input (left and right pedals, independently trackable)</li>
@@ -155,7 +155,7 @@
         <li>Test in a short practice session. Verify the overlay updates in real time and doesn't flicker or drop frames.</li>
       </ol>
 
-      <p>The browser source approach is stable because OBS renders it independently of your game. Even if your frame rate dips in a chaotic 30-car race on my <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> setup, the overlay keeps refreshing at 60 Hz.</p>
+      <p>The browser source approach is stable because OBS renders it independently of your game. Even if your frame rate dips in a chaotic 30-car race, the overlay should keep refreshing at 60 Hz, whether you drive with a <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> or any other wheelbase.</p>
 
       <h2>Choosing What to Display Without Overwhelming Viewers</h2>
 
@@ -177,7 +177,7 @@
 
       <h2>Positioning and Visual Hierarchy</h2>
 
-      <p>Where you place RaceLab's gauges in your OBS canvas matters as much as what you show. The cockpit view, especially on <a href="best-sim-racing-wheels-iracing.html">my MOZA R9 wheel</a>, naturally draws the eye to the center and upper half of the screen. You want telemetry in the corners and edges, where it informs without blocking the road.</p>
+      <p>Where you place RaceLab's gauges in your OBS canvas matters as much as what you show. The cockpit view, especially with <a href="best-sim-racing-wheels-iracing.html">the MOZA R9 wheel</a>, naturally draws the eye to the center and upper half of the screen. You want telemetry in the corners and edges, where it informs without blocking the road.</p>
 
       <ul>
         <li><strong>Bottom-left corner:</strong> Throttle and brake pedals. Viewers follow hand inputs naturally; pedal gauges here feel intuitive.</li>
@@ -187,7 +187,7 @@
         <li><strong>Center-bottom (minimal overlap):</strong> Only use this for showing one critical single metric, such as lap delta, on a tight race.</li>
       </ul>
 
-      <p>RaceLab's opacity and color settings matter too. If your cockpit is dark (night racing at Le Mans), use bright, high-contrast overlays. If it's daylight, slightly lower opacity so overlays blend without vanishing. I typically run 85–90% opacity and use light backgrounds on dark overlays to ensure they read regardless of track lighting.</p>
+      <p>RaceLab's opacity and color settings matter too. If your cockpit is dark (night racing at Le Mans), use bright, high-contrast overlays. If it's daylight, slightly lower opacity so overlays blend without vanishing. A common starting point is 85-90% opacity with light backgrounds on dark overlays, so they read regardless of track lighting.</p>
 
       <h2>Troubleshooting Common Issues</h2>
 
@@ -203,7 +203,7 @@
 
       <div class="tip-box rir-pitstop-callout">
         <span class="box-label">From the RealiRacing shop</span>
-        <p><strong>Before you go live, free up your rig.</strong> NWM PitStop is the clean-up and stream-priority script set we run before every session; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=racelab-overlays-iracing-telemetry-streaming">See NWM PitStop &rarr;</a></p>
+        <p><strong>Before you go live, free up your rig.</strong> NWM PitStop is a clean-up and stream-priority script set; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=racelab-overlays-iracing-telemetry-streaming">See NWM PitStop &rarr;</a></p>
       </div>
 
       <h2>RaceLab in Replay and Analysis</h2>
@@ -216,7 +216,7 @@
 
       <p>RaceLab is free, integrates with OBS, and gives your stream production value that would cost hundreds of dollars to replicate with custom graphics or hardware. For a sim racer who wants to broadcast or archive their driving with professional-grade telemetry overlay, it's the obvious choice.</p>
 
-      <p>The investment is your time learning which data to show, how to position it, and when to update your layout based on feedback. Once that's dialed, you've got a repeatable, broadcast-ready setup. On my own streams, I spend maybe 10 minutes per session tweaking RaceLab's display; the payoff is viewers who understand what I'm doing and feel like they're in the car with me.</p>
+      <p>The investment is your time learning which data to show, how to position it, and when to update your layout based on feedback. Once that's dialed, you've got a repeatable, broadcast-ready setup. Plan on maybe 10 minutes per session tweaking RaceLab's display; the payoff is viewers who understand what you're doing and feel like they're in the car with you.</p>
 
       <div id="rir-gear"><div class="gear-box">
         <span class="box-label">The gear in this guide</span>
