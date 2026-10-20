@@ -7,13 +7,13 @@
   "description": "Head-to-head comparison of the T818 and R9 direct drive wheelbases. Real specs, torque, build quality, and which one suits your rig and budget.",
   "sections": [
     {
-      "p": "The jump from belt-driven to direct drive changes how a sim feels. I race on a MOZA R9, which sits in the ~9 N·m range and costs roughly $1000 USD. The Thrustmaster T818 occupies similar territory: mid-tier direct drive at ~8 N·m and a similar price point. Both claim to deliver genuine FFB granularity and real-world steering feel. The question is whether one delivers better value, build longevity, or simply suits your rig and driving style better. I've tested the T818 extensively alongside my R9 setup, and the differences are specific enough to matter."
+      "p": "The jump from belt-driven to direct drive changes how a sim feels. I race on a MOZA R9, which sits in the ~9 N·m range and costs roughly $1000 USD. The Thrustmaster T818 occupies similar territory: mid-tier direct drive at ~8 N·m and a similar price point. Both claim to deliver genuine FFB granularity and real-world steering feel. The question is whether one delivers better value, build longevity, or simply suits your rig and driving style better. This guide draws on published specs and common setup practice, not a hands-on test of every product. The differences are specific enough to matter."
     },
     {
       "h2": "Torque and power delivery"
     },
     {
-      "p": "The MOZA R9 produces ~9 N·m while the T818 pushes ~8 N·m. On paper that is a small gap. In practice during heavy cornering or rally driving, the R9's extra headroom feels noticeable. Grip-loss bumps at Laguna Seca or Darlington racetrack hit harder through the MOZA. The T818 never feels weak, but it will clip sooner if you run high FFB gain in a heavy car like the Mercedes AMG GT3 or Porsche 963."
+      "p": "The MOZA R9 produces ~9 N·m while the T818 pushes ~8 N·m. On paper that is a small gap. In heavy cornering or rally driving, the R9's extra headroom should be noticeable. Grip-loss bumps at Laguna Seca or Darlington may hit harder through the MOZA. The T818 should not feel weak, but it will clip sooner if you run high FFB gain in a heavy car like the Mercedes AMG GT3 or Porsche 963."
     },
     {
       "p": "Thrustmaster built the T818 to scale torque smoothly across its range. Smaller steering inputs feel precise. The R9's torque curve also scales well, though it edges the T818 slightly in mid-range bite. For oval racing where small corrections matter, both are capable. For road racing on high-grip circuits with consistent heavy loading, the R9's extra torque reserves mean you can push gain a notch higher without clipping."
@@ -22,7 +22,7 @@
       "h2": "Build quality and longevity"
     },
     {
-      "p": "My MOZA R9 wheelbase uses sealed bearings and a robust gear design. It has been spinning through daily practice and league races for months without friction degradation. Thrustmaster's T818 employs a Japanese-sourced direct drive motor and similarly solid construction. Real-world reliability data for both is still building. Early T818 units shipped with firmware quirks that Thrustmaster patched. My R9 has required one firmware update but no hardware surprises."
+      "p": "The MOZA R9 wheelbase uses sealed bearings and a robust gear design. Thrustmaster's T818 employs a Japanese-sourced direct drive motor and similarly solid construction. Real-world reliability data for both is still building. Early T818 units shipped with firmware quirks that Thrustmaster patched."
     },
     {
       "p": "Cooling matters for sustained endurance racing. The R9's heatsink sits on the motor housing and dissipates heat during long stints. The T818 also includes cooling provisions, though reports suggest it runs slightly warmer under sustained heavy load. For four-hour endurance races with high FFB gain, the R9's thermal headroom gives peace of mind. Both should handle most amateur league schedules without thermal throttling."
@@ -31,7 +31,7 @@
       "h2": "Software, firmware and ecosystem"
     },
     {
-      "p": "MOZA's suite includes their standalone wheelbase software, which lets you tweak FFB damping, friction, and inertia without touching your rig's control panel. I can flip settings between cars or drivers in seconds. Thrustmaster's ecosystem is mature and broader. Their proprietary driver software integrates with a large library of games outside iRacing. If you play other sims, Thrustmaster's ecosystem may feel more cohesive."
+      "p": "MOZA's suite includes their standalone wheelbase software, which lets you tweak FFB damping, friction, and inertia without touching your rig's control panel. You can flip settings between cars or drivers in seconds. Thrustmaster's ecosystem is mature and broader. Their proprietary driver software integrates with a large library of games outside iRacing. If you play other sims, Thrustmaster's ecosystem may feel more cohesive."
     },
     {
       "p": "iRacing support is native on both. The T818 works out of the box; same with the R9. Firmware updates roll out periodically. Thrustmaster has a longer track record of supporting older wheels, whereas MOZA is newer but has been responsive to user feedback. If longevity in the iRacing ecosystem is your concern, both are safe picks, though Thrustmaster's installed user base is larger."
@@ -62,10 +62,10 @@
       "h2": "Real-world feel in iRacing"
     },
     {
-      "p": "On my R9, I feel track texture clearly. Kerb impacts are sharp. Grip loss registers as rapid weight transfer feedback. The T818 delivers this same feedback, though some users report slightly softer peak torque at the extremes. In practice, both wheelbases resolve iRacing's FFB output accurately enough that driver skill and setup tuning matter far more than the wheelbase choice. The delta is real but small."
+      "p": "Expect the R9 to convey track texture clearly. Kerb impacts come through sharp, and grip loss registers as rapid weight transfer feedback. The T818 delivers this same feedback, though some users report slightly softer peak torque at the extremes. In practice, both wheelbases resolve iRacing's FFB output accurately enough that driver skill and setup tuning matter far more than the wheelbase choice. The delta is real but small."
     },
     {
-      "p": "Where the R9 distinguishes itself is in sustained high-load scenarios. Road America's fast corners or the Nordschleife's Mulsanne-style straights demand constant steering effort. My R9 stays responsive and cool. The T818 remains capable but works harder. For oval racing where steering input is smaller and more discrete, both wheelbases are functionally identical in feel."
+      "p": "Where the R9 distinguishes itself is in sustained high-load scenarios. Road America's fast corners or the Nordschleife's Mulsanne-style straights demand constant steering effort. The R9 should stay responsive and cool. The T818 remains capable but works harder. For oval racing where steering input is smaller and more discrete, both wheelbases are functionally identical in feel."
     },
     {
       "h2": "Recommendation"

@@ -7,7 +7,7 @@
   "description": "Configure your clutch pedal correctly for smooth launches and clean shifts. Learn dead zone, bite point, and linearity settings on load-cell pedals.",
   "sections": [
     {
-      "p": "A badly configured clutch pedal costs you races. You either stall on the launch, spin the wheels waiting for engagement, or ride the clutch so hard the car feels numb. I used to think clutch was binary—fully in or fully out. On my MOZA CRP2 load-cell pedals, I discovered there are three separate tuning points that sit between those extremes, and getting them right transforms how a manual car responds."
+      "p": "A badly configured clutch pedal costs you races. You either stall on the launch, spin the wheels waiting for engagement, or ride the clutch so hard the car feels numb. Clutch is not binary, fully in or fully out. There are three separate tuning points that sit between those extremes, and getting them right transforms how a manual car responds. This guide draws on published specs and common setup practice, not a hands-on test of every product."
     },
     {
       "p": "Unlike a load-cell brake that only cares about pressure curve, the clutch pedal in iRacing has to map your physical motion to engine engagement and wheel slip. That mapping breaks down into dead zone, bite point, and linearity. Each one controls a different part of the launch and shift window. If you skip this setup, you are either driving with your eyes closed or grinding through practice sessions for no payoff."
@@ -35,7 +35,7 @@
       "p": "Dead zone is the range of pedal motion where the clutch stays fully engaged and the engine stays connected to the wheels. If your dead zone is 0 percent, even a millimeter of clutch movement starts disengaging the engine. If your dead zone is 20 percent, you have to push the pedal 20 percent of its range before anything happens."
     },
     {
-      "p": "I run a dead zone of roughly 8 to 10 percent on my CRP2 pedals. That gives me a comfortable rest position where my foot can sit without accidentally modulating slip. It also matches the slight play in a real clutch cable. Anything higher than 15 percent wastes too much pedal real estate. Anything lower than 5 percent feels twitchy during braking zones where my foot might shift."
+      "p": "A dead zone of roughly 8 to 10 percent is a good starting point. That gives you a comfortable rest position where your foot can sit without accidentally modulating slip. It also matches the slight play in a real clutch cable. Anything higher than 15 percent wastes too much pedal real estate. Anything lower than 5 percent feels twitchy during braking zones where your foot might shift."
     },
     {
       "h3": "Bite point"
@@ -44,7 +44,7 @@
       "p": "Bite point is where the clutch friction plate starts to catch. Below the bite point, the engine is fully disengaged—no power flows to the wheels. Above the bite point, power starts to transfer, and the wheels begin to accelerate. This is the critical tuning window for launches and restarts."
     },
     {
-      "p": "In reality, a car's bite point lives somewhere in the first 20 to 30 percent of pedal travel from full engagement. iRacing models this, so a proper bite point setting compresses that window into a usable zone on your pedal. I set mine to engage somewhere between 60 to 75 percent of my pedal travel. That leaves 10 percent dead zone at the top, then a linear ramp down to bite, then another zone below bite where full slip is possible. This layout gives me precision at launch and modulation room if I need to hold a controlled slip."
+      "p": "In reality, a car's bite point lives somewhere in the first 20 to 30 percent of pedal travel from full engagement. iRacing models this, so a proper bite point setting compresses that window into a usable zone on your pedal. Try setting it to engage somewhere between 60 to 75 percent of your pedal travel. That leaves 10 percent dead zone at the top, then a linear ramp down to bite, then another zone below bite where full slip is possible. This layout gives you precision at launch and modulation room if you need to hold a controlled slip."
     },
     {
       "h3": "Linearity"
@@ -53,7 +53,7 @@
       "p": "Linearity controls the curve between bite point and fully disengaged. A linear curve means clutch slip increases in proportion to pedal movement. A nonlinear curve bends that relationship—aggressive at the top, gentle at the bottom, or vice versa."
     },
     {
-      "p": "I keep linearity at 1.0 (fully linear) for most road cars. A linear response matches how my foot naturally modulates the pedal, and it makes shift timing consistent across the rev range. If you have a very load-cell pedal that feels heavy at the bottom of its range, a slightly curved linearity around 1.2 to 1.3 can smooth the feel during upshifts when you are moving fast."
+      "p": "Keep linearity at 1.0 (fully linear) for most road cars. A linear response matches how a foot naturally modulates the pedal, and it makes shift timing consistent across the rev range. If you have a very load-cell pedal that feels heavy at the bottom of its range, a slightly curved linearity around 1.2 to 1.3 can smooth the feel during upshifts when you are moving fast."
     },
     {
       "h2": "Launch technique with a dialed clutch"
@@ -86,7 +86,7 @@
       "p": "Next, find bite point. Disengage the clutch fully, then bring it up slowly while watching engine RPM and wheel speed in telemetry. The exact moment wheel speed starts to rise is bite. That is your target. You want bite to happen at roughly 70 to 80 percent of pedal travel, leaving yourself room to modulate below it."
     },
     {
-      "p": "Linearity is last. Once bite is set, do a few launches and notice if the clutch feels harsh (too much slip pressure at the top) or mushy (not enough control at the bottom). A nudge to linearity 1.1 to 1.3 can smooth this out, but I rarely need more than that on a load-cell pedal that already has progressive resistance.</p>"
+      "p": "Linearity is last. Once bite is set, do a few launches and notice if the clutch feels harsh (too much slip pressure at the top) or mushy (not enough control at the bottom). A nudge to linearity 1.1 to 1.3 can smooth this out, but you rarely need more than that on a load-cell pedal that already has progressive resistance."
     },
     {
       "tip": "Save three or four clutch profiles in iRacing settings and name them by car. A Skip Barber clutch curve is very different from a Mazda MX-5 or a heavier GT car, and what works for cold tires does not work for hot ones.",
@@ -99,7 +99,7 @@
       "p": "Shifting in iRacing is simpler than real life because you do not have to worry about double-clutching or rev-matching for downshifts. The game handles engine braking and gear synchronization. But your clutch still has to move, and it has to move fast."
     },
     {
-      "p": "For an upshift, you blip the throttle slightly, then dip the clutch down and back up. The entire motion should take less than 0.3 seconds. Your foot should hit bottom and come back up without hesitation. This is where a lighter dead zone actually helps—you have less wasted motion. On my CRP2 pedals with ~8 percent dead zone, I can shift cleanly from 5th to 6th on a straight without losing much speed.</p>"
+      "p": "For an upshift, you blip the throttle slightly, then dip the clutch down and back up. The entire motion should take less than 0.3 seconds. Your foot should hit bottom and come back up without hesitation. This is where a lighter dead zone actually helps, you have less wasted motion."
     },
     {
       "p": "For a downshift, hit the brakes, blip the throttle to match revs, dip the clutch, and slip into the lower gear. Again, the clutch dip should be quick and deliberate. If your bite point is too high or your dead zone is too low, your foot will dance on the pedal and the shift will feel sloppy. A properly tuned clutch lets you shift by feel, not by thinking.</p>"
@@ -120,7 +120,7 @@
       "p": "After you dial in your clutch once, most of your muscle memory transfers across cars. A Skip Barber and a Mazda MX-5 will feel nearly identical if they have the same dead zone and bite point. Heavier cars like the Dallara IR18 might need a slightly lower bite point to keep the engine load smooth, but the principle is the same. Spend an hour getting it right, and you will not have to fiddle again."
     },
     {
-      "p": "The MOZA CRP2 pedals I race on have enough resolution and travel to dial in any curve precisely. The load-cell technology means every fraction of movement translates to engine engagement, so you get real tactile feedback when you hit bite. If you are using a budget clutch pedal, the tuning window is narrower, but the same principles apply. Start conservative, test in a safe session, and adjust one parameter at a time. You will find your sweet spot."
+      "p": "Load-cell technology means every fraction of movement translates to engine engagement, so you get real tactile feedback when you hit bite. If you are using a budget clutch pedal, the tuning window is narrower, but the same principles apply. Start conservative, test in a safe session, and adjust one parameter at a time. You will find your sweet spot."
     }
   ],
   "faqs": [

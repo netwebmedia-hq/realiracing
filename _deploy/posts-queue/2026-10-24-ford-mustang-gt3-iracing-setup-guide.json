@@ -7,13 +7,13 @@
   "description": "Master the Mustang GT3's aggressive braking and mid-corner rotation. Real setup advice, pedal technique, and how to race it clean in GT3 grids.",
   "sections": [
     {
-      "p": "The Ford Mustang GT3 is one of iRacing's most forgiving GT3 cars to learn on, but it rewards aggression in places where other cars punish it. I've spent enough laps in it on my MOZA R9 to understand where its confidence comes from and where you'll hit a ceiling. The Mustang's strength is mid-corner composure and front-end grip under braking. Its weakness is initial turn-in response and inconsistent rear stability when the track temperature shifts. That combination makes it fast at high-grip venues but tricky in endurance racing where fuel load and tire degradation compound small balance mistakes."
+      "p": "The Ford Mustang GT3 is one of iRacing's most forgiving GT3 cars to learn on, but it rewards aggression in places where other cars punish it. This guide draws on published specs and common setup practice, not a hands-on test of every product. It covers where the car's confidence comes from and where you'll hit a ceiling. The Mustang's strength is mid-corner composure and front-end grip under braking. Its weakness is initial turn-in response and inconsistent rear stability when the track temperature shifts. That combination makes it fast at high-grip venues but tricky in endurance racing where fuel load and tire degradation compound small balance mistakes."
     },
     {
       "h2": "Brake and Throttle Mapping on Load Cell Pedals"
     },
     {
-      "p": "The Mustang stops harder and earlier than most GT3 cars. I run the brake point 50 meters deeper than I would in a Lamborghini or Corvette, and the car rewards confidence. On my MOZA CRP2 load-cell pedals, I map 100% brake pressure to about 85% pedal travel. Anything beyond that is wasted motion and makes threshold braking harder to feel."
+      "p": "The Mustang stops harder and earlier than most GT3 cars. A brake point about 50 meters deeper than you would use in a Lamborghini or Corvette is a good starting point, and the car rewards confidence. On load-cell pedals, a common approach is to map 100% brake pressure to about 85% pedal travel. Anything beyond that is wasted motion and makes threshold braking harder to feel."
     },
     {
       "p": "Throttle application is where the Mustang separates itself. It's smooth on corner exit and will hold line even with 50% throttle in low-speed corners like the Hairpin at Silverstone. Don't wait for mid-corner to get on power. Squeeze to half-throttle as soon as the wheel is straight, then build. Waiting costs time and teaches bad habits."
@@ -34,10 +34,10 @@
       "h2": "Suspension Setup: Front-End Bite and Rear Stability"
     },
     {
-      "p": "The baseline Mustang setup from iRacing leaves the car feeling loose on front-end turn-in, especially in high-speed direction changes. I start by softening front springs by 2-3 clicks from baseline and adding 0.3 degrees of front anti-roll bar stiffness. That combination gives you front-end bite without making the car feel like it's on rails. The Mustang rewards subtlety here. Big changes compound each other and suddenly you're struggling in corners you were confident in 20 minutes ago."
+      "p": "The baseline Mustang setup from iRacing leaves the car feeling loose on front-end turn-in, especially in high-speed direction changes. Start by softening front springs by 2-3 clicks from baseline and adding 0.3 degrees of front anti-roll bar stiffness. That combination gives you front-end bite without making the car feel like it's on rails. The Mustang rewards subtlety here. Big changes compound each other and suddenly you're struggling in corners you were confident in 20 minutes ago."
     },
     {
-      "p": "Rear stability is your next target. The Mustang's rear wants to step out under acceleration when you're fatigued or the fuel load is high. I run rear springs 1-2 clicks stiffer than front and rear anti-roll bar 1 click stiffer than the front setting. This keeps the rear planted without introducing snap oversteer under trail-braking or on corner exit. Start conservative and add rear stiffness in 0.5-click increments."
+      "p": "Rear stability is your next target. The Mustang's rear wants to step out under acceleration when you're fatigued or the fuel load is high. Try rear springs 1-2 clicks stiffer than front and rear anti-roll bar 1 click stiffer than the front setting. This keeps the rear planted without introducing snap oversteer under trail-braking or on corner exit. Start conservative and add rear stiffness in 0.5-click increments."
     },
     {
       "list": [
@@ -52,7 +52,7 @@
       "h2": "Tire Strategy and Degradation Pattern"
     },
     {
-      "p": "The Mustang is brutal on front left tires. In a 2-hour endurance race, you'll lose ~3% lap time per hour on fronts and ~1.5% on rears if you're pushing consistently. That matters. Plan your stints around front tire life, not fuel. I typically do 60-minute stints and swap front tires while topping off fuel. Rear tires from stint one can often make stint two if the driver isn't carrying excessive speed over curbs or running wide into heavy braking zones."
+      "p": "The Mustang is brutal on front left tires. In a 2-hour endurance race, you'll lose ~3% lap time per hour on fronts and ~1.5% on rears if you're pushing consistently. That matters. Plan your stints around front tire life, not fuel. A sensible plan is 60-minute stints, swapping front tires while topping off fuel. Rear tires from stint one can often make stint two if the driver isn't carrying excessive speed over curbs or running wide into heavy braking zones."
     },
     {
       "p": "Cold tire handling is where many drivers lose races. The Mustang needs 3-4 lap warmup on fresh rubber before it reaches peak grip. On lap 1 out of the pits, brake 100-150 meters earlier than you think you need to and accept 0.5-second lap loss. By lap 5, you'll be faster than you were at the pit window. Pushing hard on lap 1 causes mistakes and tire overheating that compounds through the entire first hour."
@@ -74,7 +74,7 @@
       "h2": "Common Setup Mistakes"
     },
     {
-      "p": "The two mistakes I see most often with the Mustang are over-correcting for understeer by running front springs too soft, and chasing front anti-roll bar stiffness to fix mid-corner instability. The car doesn't need to be twitchy to be fast. It needs to be planted. If you're fighting mid-corner oscillation, your real problem is likely brake bias too far front or rear wing angle set too aggressive. Adjust those before you soften springs."
+      "p": "The two most common mistakes with the Mustang are over-correcting for understeer by running front springs too soft, and chasing front anti-roll bar stiffness to fix mid-corner instability. The car doesn't need to be twitchy to be fast. It needs to be planted. If you're fighting mid-corner oscillation, your real problem is likely brake bias too far front or rear wing angle set too aggressive. Adjust those before you soften springs."
     },
     {
       "p": "The second mistake is not adjusting brake force by track temperature. The Mustang's brakes are reactive. At a 65-degree track like Sebring in the morning, you'll need ~1-2% less brake force than you do on a 35-degree night session at Watkins Glen. Check your telemetry. If your brake pressure spikes above 95% during heavy stops, reduce brake force by 2% and re-baseline. You should hit ~98% max pressure under full emergency braking, not 105%."
@@ -83,10 +83,10 @@
       "h2": "Comparing Your Mustang to Your Pace on Other GT3s"
     },
     {
-      "p": "If you're transitioning from another GT3 car, expect your first 30 laps in the Mustang to feel sluggish through first and second gear. That's not the car. It's your pedal positioning and brake marker memory. Spend 10 minutes on a test server lap getting your muscle memory reset. By lap 20, you'll be competitive. By lap 50, you'll likely be 0.3-0.5 seconds faster per lap than you were in your previous car, especially if you're running my brake and suspension recommendations. The Mustang rewards commitment and punishes hesitation. That's what makes it rewarding to master."
+      "p": "If you're transitioning from another GT3 car, expect your first 30 laps in the Mustang to feel sluggish through first and second gear. That's not the car. It's your pedal positioning and brake marker memory. Spend 10 minutes on a test server lap getting your muscle memory reset. By lap 20, you'll be competitive. By lap 50, you'll likely be 0.3-0.5 seconds faster per lap than you were in your previous car, especially if you're following the brake and suspension recommendations here. The Mustang rewards commitment and punishes hesitation. That's what makes it rewarding to master."
     },
     {
-      "p": "For deeper FFB tuning on the R9 wheelbase, I've documented my exact setup in a separate guide on <a href=\"moza-r9-iracing-settings.html\">MOZA R9 settings for different car classes</a>. The Mustang benefits from slightly softer damping than open-wheel cars because you want to feel mid-corner transitions clearly without the steering getting noisy over bumpy curbing."
+      "p": "For deeper FFB tuning on the R9 wheelbase, see the separate guide on <a href=\"moza-r9-iracing-settings.html\">MOZA R9 settings for different car classes</a>. The Mustang benefits from slightly softer damping than open-wheel cars because you want to feel mid-corner transitions clearly without the steering getting noisy over bumpy curbing."
     }
   ],
   "faqs": [

@@ -7,7 +7,7 @@
   "description": "Balance radiator cooling and engine heat against drag on ovals. Learn when to tape up, when to open grille vents, and how your setup choice affects fuel strategy.",
   "sections": [
     {
-      "p": "On ovals, tape and grille settings sit at the intersection of aerodynamic efficiency and thermal management. I run my MOZA R9 setup through a lot of oval races, and I've learned that closing off air passages makes you faster on the straights but hotter in traffic. Opening them up cools the engine and radiator but costs you top speed. The choice depends on track length, ambient temperature, fuel load, and how much time you spend slipstreaming. There's no single answer, which is what makes this tuning knob genuinely complex."
+      "p": "On ovals, tape and grille settings sit at the intersection of aerodynamic efficiency and thermal management. Closing off air passages makes you faster on the straights but hotter in traffic. Opening them up cools the engine and radiator but costs you top speed. The choice depends on track length, ambient temperature, fuel load, and how much time you spend slipstreaming. There's no single answer, which is what makes this tuning knob genuinely complex."
     },
     {
       "p": "The mistake most drivers make is treating tape and grille as binary choices. Either you tape everything shut for qualifying pace, or you open everything for a long fuel stint in the heat. Real oval setup is more granular than that. You can tape the grille but leave side vents open. You can tape the front bumper while running the grille halfway. Understanding the trade-off mechanics helps you make the choice that matches your race strategy."
@@ -56,7 +56,7 @@
       "h2": "Partial tape: the middle ground"
     },
     {
-      "p": "Most of my oval setups end up somewhere in the middle. I'll tape the grille and front bumper fully, but leave side vents and rear ducting open. This hybrid approach gets you ~70% of the speed benefit of full tape while keeping coolant temps down by ~5 to 10 degrees compared to everything sealed. It's the setup that works for 15 to 25 lap stints where you need both pace and thermal stability."
+      "p": "Most oval setups end up somewhere in the middle. A common approach is to tape the grille and front bumper fully, but leave side vents and rear ducting open. This hybrid approach gets you ~70% of the speed benefit of full tape while keeping coolant temps down by ~5 to 10 degrees compared to everything sealed. It's a good fit for 15 to 25 lap stints where you need both pace and thermal stability."
     },
     {
       "p": "You can also get creative with asymmetry. Some cars allow you to tape the right-side grille vents fully and leave the left open. On ovals, this is less relevant than it would be on a road course with high-speed corners on one side, but it's an option if you're chasing a specific temp target. The granular control is part of what makes iRacing's aero model realistic."
@@ -83,10 +83,10 @@
       "h2": "Testing and validation"
     },
     {
-      "p": "My process when I'm prepping an oval setup is straightforward. I run a few laps at the target fuel weight with no tape or grille restrictions. I note lap time, coolant and oil temps, and stability. Then I run the same scenario with full tape. The delta tells me the speed cost of cooling. Then I run my preferred partial tape setup and find where I sit on the curve."
+      "p": "A straightforward process for prepping an oval setup: run a few laps at the target fuel weight with no tape or grille restrictions. Note lap time, coolant and oil temps, and stability. Then run the same scenario with full tape. The delta shows the speed cost of cooling. Then run your preferred partial tape setup and find where you sit on the curve."
     },
     {
-      "p": "I do this in a practice session or a test race, never just in qualifying. Qualifying lap tells you one thing under one specific condition. A 10-lap run at race fuel tells you how sustainable your setup is. That's where the real decision lives. A setup that runs 0.1 seconds faster but forces you to manage thermal cutbacks over 20 laps isn't a good setup. One that's 0.02 seconds slower but stable over the entire race distance is often the faster choice when you factor in consistency and risk."
+      "p": "Do this in a practice session or a test race, never just in qualifying. Qualifying lap tells you one thing under one specific condition. A 10-lap run at race fuel tells you how sustainable your setup is. That's where the real decision lives. A setup that runs 0.1 seconds faster but forces you to manage thermal cutbacks over 20 laps isn't a good setup. One that's 0.02 seconds slower but stable over the entire race distance is often the faster choice when you factor in consistency and risk."
     },
     {
       "tip": "Tape settings are track-specific and fuel-load specific. A setup that works for a 10-lap sprint at Martinsville won't translate to a 30-lap fuel conservation race at Las Vegas. Test each scenario with realistic fuel and race duration, not just qualifying pace.",

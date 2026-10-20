@@ -4,13 +4,13 @@
   "author": "Carlos Martinez",
   "readTime": "9 min read",
   "title": "USB Power Hubs and Peripheral Dropout: Why Your Wheel Disconnects",
-  "description": "Understand USB power delivery limits, hub architecture, and why your wheel or pedals drop connection mid-race. Real solutions from experience.",
+  "description": "Understand USB power delivery limits, hub architecture, and why your wheel or pedals drop connection mid-race, with practical fixes for hubs, cables and routing.",
   "sections": [
     {
-      "p": "I sat on pole by 0.06 seconds at Silverstone. Lap 3 of the race, my MOZA R9 went dead. No warning. No gradual loss of force feedback. Just instant disconnection, a reset pop-up, and a 24-car demolition derby behind me. When the wheel came back online 10 seconds later, I was in the gravel. The culprit: USB power starvation from an unpowered hub I'd plugged my button box into, sitting on the same power rail as the wheelbase connection."
+      "p": "A wheelbase that goes dead mid-race is a nightmare: no warning, no gradual loss of force feedback, just an instant disconnection and a reset pop-up while the field piles past. A common culprit is USB power starvation from an unpowered hub with a button box plugged into it, sitting on the same power rail as the wheelbase connection."
     },
     {
-      "p": "That race taught me that USB dropout isn't random. It's physics. A direct-drive wheelbase like the R9 draws ~5 to 7 amps of current under heavy load. A peripheral like a button box draws 0.5 amps. An unpowered hub can starve the bus. A powered hub with an undersized power supply bottlenecks everything on it. A poorly shielded cable picks up electrical noise. Most troubleshooting guides skip the real why, so you end up guessing. Here's what actually happens and how to fix it."
+      "p": "USB dropout isn't random. It's physics. A direct-drive wheelbase like the R9 draws ~5 to 7 amps of current under heavy load. A peripheral like a button box draws 0.5 amps. An unpowered hub can starve the bus. A powered hub with an undersized power supply bottlenecks everything on it. A poorly shielded cable picks up electrical noise. Most troubleshooting guides skip the real why, so you end up guessing. Here's what actually happens and how to fix it."
     },
     {
       "h2": "How USB power and bandwidth share one cable"
@@ -43,10 +43,10 @@
       "h2": "The real power budget of your rig"
     },
     {
-      "p": "My R9 wheelbase draws ~5 to 7 amps under heavy transient load (sudden FFB spike during a curb hit). The MOZA CRP2 load-cell pedals draw ~0.3 amps. A button box with 32 buttons and 2 encoders draws 0.5 to 1 amp depending on backlighting. A sequential shifter pulls 0.2 amps. A handbrake adds another 0.5 amps. That's 6.5 to 10 amps total during peak load on a single rig."
+      "p": "A direct-drive wheelbase like the R9 draws ~5 to 7 amps under heavy transient load (sudden FFB spike during a curb hit). A set of load-cell pedals can draw ~0.3 amps. A button box with 32 buttons and 2 encoders draws 0.5 to 1 amp depending on backlighting. A sequential shifter pulls 0.2 amps. A handbrake adds another 0.5 amps. That's 6.5 to 10 amps total during peak load on a single rig with all of these devices."
     },
     {
-      "p": "Your PC motherboard typically provides 500 mA per USB 2.0 port and 900 mA per USB 3.0 port. Most boards have 4 to 6 USB 3.0 ports sharing a single controller chip. If you plug the R9 into one port, the CRP2 into another, and a hub into a third, you're using three of your board's power budgets. The hub itself gets 900 mA, which it must divide among everything plugged into it. If a button box, shifter, and handbrake live on that hub, they're fighting for 900 mA total. It works until a 2000 Hz FFB update spike sucks current and the controller yanks power."
+      "p": "Your PC motherboard typically provides 500 mA per USB 2.0 port and 900 mA per USB 3.0 port. Most boards have 4 to 6 USB 3.0 ports sharing a single controller chip. If you plug the wheelbase into one port, the pedals into another, and a hub into a third, you're using three of your board's power budgets. The hub itself gets 900 mA, which it must divide among everything plugged into it. If a button box, shifter, and handbrake live on that hub, they're fighting for 900 mA total. It works until a 2000 Hz FFB update spike sucks current and the controller yanks power."
     },
     {
       "h2": "Cable quality and shielding amplify the problem"
@@ -55,7 +55,7 @@
       "p": "Poor shielding or long cable runs introduce capacitive and inductive coupling. Electrical noise from your PSU (especially under heavy load), your monitor refresh, your graphics card, and even your WiFi router can couple into USB data lines. A USB controller interprets this noise as signal corruption. Multiple bit errors in a row trigger a port reset. The port powers off and back on. Your device disconnects and reconnects."
     },
     {
-      "p": "I tested this on my rig. I ran the R9 cable alongside an unshielded power strip (bad practice). Dropout frequency jumped from once every 10 hours to once every 2 hours. When I moved the USB cable to run alone and separated it from the power cable by 12 inches, drops stopped entirely. Shielded USB cables and good cable routing aren't luxuries for race rigs; they're essentials."
+      "p": "Avoid running the wheelbase USB cable alongside an unshielded power strip, which is bad practice and can make dropouts far more frequent. Run the USB cable alone and separate it from power cables by 12 inches. Shielded USB cables and good cable routing aren't luxuries for race rigs; they're essentials."
     },
     {
       "list": [
@@ -72,7 +72,7 @@
       "p": "A powered hub's AC supply must deliver enough current for all connected devices plus a safety margin. If your wheelbase and pedals draw 7.5 amps (self-powered, so they bypass hub power), but your button box, shifter, and handbrake draw 2 amps total, your hub's PSU needs to supply at least 3 amps at 5 volts. That's 15 watts. Most hub PSUs are rated in amps, not watts, so check both figures. A hub labeled '2A, 5V' is actually 10 watts, which works for a button box alone. A hub labeled '3A, 5V' is 15 watts, enough for a typical peripheral setup."
     },
     {
-      "p": "Look for hubs with per-port current limiting or switchable charging. Some hubs let you disable individual ports if a device is misbehaving. Avoid passive hub designs (metal boxes with no power management). A $40 powered hub from a reputable maker (Anker, Belkin, or Startech) beats a $15 no-name hub every time. I've logged my rig's USB bus voltage with an oscilloscope; proper hub PSUs maintain 4.95 to 5.05 volts under load. Cheap PSUs sag to 4.7 volts, which triggers dropout thresholds in sensitive devices."
+      "p": "Look for hubs with per-port current limiting or switchable charging. Some hubs let you disable individual ports if a device is misbehaving. Avoid passive hub designs (metal boxes with no power management). A $40 powered hub from a reputable maker (Anker, Belkin, or Startech) beats a $15 no-name hub every time. If you have a multimeter or oscilloscope, check the hub's bus voltage under load: a proper hub PSU should hold 4.95 to 5.05 volts. A cheap PSU that sags to 4.7 volts can trigger dropout thresholds in sensitive devices."
     },
     {
       "h2": "Optimal cable architecture for your rig"

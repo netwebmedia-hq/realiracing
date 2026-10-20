@@ -7,7 +7,7 @@
   "description": "How to configure your handbrake hardware and iRacing settings for rally and drift racing. Sensitivity, axis mapping, and muscle memory.",
   "sections": [
     {
-      "p": "A handbrake is not optional in rally or drift on iRacing. It transforms how you approach corner entry, weight transfer, and vehicle control in both disciplines. On my MOZA R9 rig, I run a simple cable-pull handbrake mounted to the left side of my cockpit. It sits in the dead space between the seat and the frame, within easy reach when my hand is off the shifter. This post covers how to set it up correctly so it actually works when you need it."
+      "p": "A handbrake is not optional in rally or drift on iRacing. It transforms how you approach corner entry, weight transfer, and vehicle control in both disciplines. A simple cable-pull handbrake mounted to the left side of your cockpit, in the dead space between the seat and the frame, keeps it within easy reach when your hand is off the shifter. This post covers how to set it up correctly so it actually works when you need it. It draws on published specs and common setup practice, not a hands-on test of every product."
     },
     {
       "p": "The handbrake serves different purposes depending on what you're driving. In rally, it's a precision tool for mid-corner weight adjustment and for holding the car on steep terrain during setup adjustments. In drift, it's the primary way to initiate drift angle and to flick the car into submission during chaining. Both require accurate axis calibration and sensitivity tuning in iRacing. A handbrake that is too sensitive becomes useless. One that is too stiff wastes the potential of the car."
@@ -19,10 +19,10 @@
       "p": "Most handbrakes for sim racing are cable-pull or hydraulic simulators. Cable-pull designs (usually under ~$150) use a spring-loaded handle connected to a potentiometer. They're light, compact, and reliable enough for iRacing. Hydraulic rigs cost more and feel smoother under repeated use, but the performance ceiling in iRacing is the same. Your handbrake only needs to send a 0-100 axis value to iRacing. It doesn't need to feel like a road car."
     },
     {
-      "p": "Mounting location matters more than the handbrake itself. On my rig, I mounted mine vertically on the left frame member, about 10 inches down from shoulder height. This puts the handle within 4-5 inches of my hand when it's resting on the wheel or at the shifter. In rally, you'll use it briefly and deliberately. In drift, you'll need it accessible without breaking your grip on the wheel. Horizontal mounting works if your space is tight, but vertical feels more natural under load."
+      "p": "Mounting location matters more than the handbrake itself. Try mounting it vertically on the left frame member, about 10 inches down from shoulder height. This puts the handle within 4-5 inches of your hand when it's resting on the wheel or at the shifter. In rally, you'll use it briefly and deliberately. In drift, you'll need it accessible without breaking your grip on the wheel. Horizontal mounting works if your space is tight, but vertical feels more natural under load."
     },
     {
-      "p": "Secure the handbrake with steel brackets and lock washers. Movement or flex in the mount degrades the feel and introduces noise into the axis signal. I use aluminum frame tubing bolted to my cockpit base. Vibration or rattling means the handbrake is doing work but the frame is stealing some of that force. Tighten it once and forget it."
+      "p": "Secure the handbrake with steel brackets and lock washers. Movement or flex in the mount degrades the feel and introduces noise into the axis signal. Bolt it to aluminum frame tubing on your cockpit base. Vibration or rattling means the handbrake is doing work but the frame is stealing some of that force. Tighten it once and forget it."
     },
     {
       "h2": "iRacing control mapping and axis setup"
@@ -68,7 +68,7 @@
       "p": "Most drift drivers use a full handbrake pull to initiate a drift on corner entry. You brake hard into the corner, turn the wheel to your apex (or beyond), and at the exact moment the front tires are about to grip, you pull the handbrake hard to break the rear loose. The handbrake lock, combined with wheel angle, rotates the car into a drift. Timing is everything. Too early and the car just understeers. Too late and the car is already sliding and the handbrake adds nothing."
     },
     {
-      "p": "After initiation, the handbrake becomes a throttle modifier. Light handbrake pulls (10-20 percent) during the drift phase help you adjust angle and maintain momentum through transitions. Heavy handbrake input mid-drift will tighten the angle too much or kill speed. The goal is to modulate it in small pulses, not hold it. This is where muscle memory is critical. On my rig, I trained by doing 50 practice initiations at the same turn, feeling where the handbrake release should happen for the car to catch and drift cleanly."
+      "p": "After initiation, the handbrake becomes a throttle modifier. Light handbrake pulls (10-20 percent) during the drift phase help you adjust angle and maintain momentum through transitions. Heavy handbrake input mid-drift will tighten the angle too much or kill speed. The goal is to modulate it in small pulses, not hold it. This is where muscle memory is critical. Train by doing 50 practice initiations at the same turn, feeling where the handbrake release should happen for the car to catch and drift cleanly."
     },
     {
       "list": [

@@ -7,19 +7,19 @@
   "description": "Screen distance, refresh rate, and focus breaks matter more than you think during long sim racing sessions. Here's how to protect your eyes.",
   "sections": [
     {
-      "p": "I spent four hours in a league endurance race last month, and by lap 120 my eyes felt like they were filled with sand. By the final pit stop, I couldn't read my telemetry overlay clearly, and focusing on the apex took actual effort. That's when I realized that sim racing vision strain is not some minor inconvenience to tough out. It's a real fatigue source that affects your pace, your consistency, and your ability to finish strong."
+      "p": "In a four-hour league endurance race, your eyes can feel like they're filled with sand by lap 120. By the final pit stop, reading a telemetry overlay clearly can be hard, and focusing on the apex takes actual effort. Sim racing vision strain is not some minor inconvenience to tough out. It's a real fatigue source that affects your pace, your consistency, and your ability to finish strong."
     },
     {
-      "p": "The difference between a comfortable session and one where you're blinking constantly at your monitor comes down to three things: how far you sit from the screen, how often you actually take a break, and what your display refresh rate is doing. I race with triple 27-inch 1440p 120 Hz panels mounted on a rig arm roughly 60-70 centimeters from my eyes. That distance matters. The work it takes your eyes to focus at that range compounds over hours. Change it, and the whole experience shifts."
+      "p": "The difference between a comfortable session and one where you're blinking constantly at your monitor comes down to three things: how far you sit from the screen, how often you actually take a break, and what your display refresh rate is doing. A good target is a 1440p 120 Hz panel roughly 60-70 centimeters from your eyes. That distance matters. The work it takes your eyes to focus at that range compounds over hours. Change it, and the whole experience shifts."
     },
     {
       "h2": "Distance is the foundation"
     },
     {
-      "p": "Most monitors are designed to be viewed from a comfortable desk distance, which sits around 60-75 centimeters from your eyes. That's what I try to keep with my triple-monitor setup. Closer than that, and your eye muscles strain to maintain focus, especially during a multi-hour session. Farther than 80 centimeters, and you lose detail in the track surface and braking markers, which forces you to lean forward and tense your neck."
+      "p": "Most monitors are designed to be viewed from a comfortable desk distance, which sits around 60-75 centimeters from your eyes. That's a good range to aim for, whatever your monitor setup. Closer than that, and your eye muscles strain to maintain focus, especially during a multi-hour session. Farther than 80 centimeters, and you lose detail in the track surface and braking markers, which forces you to lean forward and tense your neck."
     },
     {
-      "p": "On my aluminum cockpit, I mounted the center monitor on an adjustable arm that lets me dial in the exact distance I need. Most sim racers with a fixed cockpit end up at around 60-70 centimeters naturally. If you're closer than that, your eyes are working overtime to converge and focus. If you're much farther, you'll find yourself squinting or compensating by tilting your head, which introduces neck and shoulder fatigue on top of the eye strain."
+      "p": "Mounting the center monitor on an adjustable arm lets you dial in the exact distance you need. Most sim racers with a fixed cockpit end up at around 60-70 centimeters naturally. If you're closer than that, your eyes are working overtime to converge and focus. If you're much farther, you'll find yourself squinting or compensating by tilting your head, which introduces neck and shoulder fatigue on top of the eye strain."
     },
     {
       "tip": "If you can't comfortably read the turn-in marker on your primary track without leaning forward, your monitors are too far away. If you feel your eyes pulling inward or your lids feel heavy after 20 minutes, you're too close.",
@@ -29,7 +29,7 @@
       "h2": "The role of refresh rate and motion clarity"
     },
     {
-      "p": "A higher refresh rate doesn't just make the image smoother. It also reduces the flicker and temporal aliasing that causes eye fatigue during motion-heavy content like racing. My 120 Hz panels versus a standard 60 Hz monitor make a measurable difference. At 60 Hz, the screen updates 16 milliseconds apart. That lag between refreshes adds a kind of ghosting and flicker that your eyes have to work harder to track, especially when you're braking hard or turning into a quick series of corners."
+      "p": "A higher refresh rate doesn't just make the image smoother. It also reduces the flicker and temporal aliasing that causes eye fatigue during motion-heavy content like racing. A 120 Hz panel versus a standard 60 Hz monitor can make a noticeable difference. At 60 Hz, the screen updates 16 milliseconds apart. That lag between refreshes adds a kind of ghosting and flicker that your eyes have to work harder to track, especially when you're braking hard or turning into a quick series of corners."
     },
     {
       "p": "I'm not saying you need 120+ Hz to race competitively. But if you spend three or four hours in a single session, the refresh rate matters. A 144 Hz display or even a solid 100 Hz panel reduces that perceptual jitter. Your eyes don't have to constantly re-stabilize their focus on a moving target. It sounds like a small thing, but after hour two, small things compound."
@@ -44,7 +44,7 @@
       "p": "Your eye's lens constantly adjusts to focus at different distances, a process called accommodation. In sim racing, you're locked onto a screen at a fixed distance for hours. That repetitive accommodation state, combined with reduced blinking and the intense visual concentration required for racing, creates a condition called digital eye strain or computer vision syndrome."
     },
     {
-      "p": "The 20-20-20 rule is real and worth following: every 20 minutes, look at something 20 feet away for 20 seconds. During a pit stop, open your garage door or glance out a window. That brief change in focal distance gives your ciliary muscles a chance to relax. I set a phone timer during endurance races. Every pit window I get, I spend 30 seconds looking at something far away. It sounds small, but it's the difference between finishing a four-hour race focused and finishing it with a headache."
+      "p": "The 20-20-20 rule is real and worth following: every 20 minutes, look at something 20 feet away for 20 seconds. During a pit stop, open your garage door or glance out a window. That brief change in focal distance gives your ciliary muscles a chance to relax. Set a phone timer during endurance races, and every pit window you get, spend 30 seconds looking at something far away. It sounds small, but it can be the difference between finishing a four-hour race focused and finishing it with a headache."
     },
     {
       "tip": "The farther away your pit stop glance is, the better. Fifteen feet is good, but looking out a window at distant trees or a horizon is much better for actual muscle relaxation.",
@@ -54,13 +54,13 @@
       "h2": "Lighting, contrast, and glare control"
     },
     {
-      "p": "A dark racing room with just your monitor glowing creates contrast-related eye fatigue. Your pupils constantly expand and contract to adjust. I keep my rig area lit by a single warm LED strip behind my triple-monitor stand, set to a low intensity. It's enough to raise the ambient light level so my pupils don't have to work as hard when I glance away from the screen."
+      "p": "A dark racing room with just your monitor glowing creates contrast-related eye fatigue. Your pupils constantly expand and contract to adjust. Try lighting your rig area with a single warm LED strip behind your monitor stand, set to a low intensity. It's enough to raise the ambient light level so your pupils don't have to work as hard when you glance away from the screen."
     },
     {
-      "p": "Glare from room lights reflecting off your monitor glass is a real culprit too. Anti-glare screen protectors or matte monitor finishes reduce reflections, but the single best solution is controlling your lighting setup. I angled my room light so it hits the wall behind the monitors, not the screen itself. The small change in perceived contrast drop was worth it."
+      "p": "Glare from room lights reflecting off your monitor glass is a real culprit too. Anti-glare screen protectors or matte monitor finishes reduce reflections, but the single best solution is controlling your lighting setup. Angle your room light so it hits the wall behind the monitors, not the screen itself. That avoids the perceived contrast drop that glare causes."
     },
     {
-      "p": "Monitor brightness also matters. Running your display at 100 percent brightness in a dark room forces your eyes to work harder and can trigger photophobia, a sensitivity to light that makes colors look washed out and increases fatigue. I run my monitors at about 70-75 percent brightness with the room lit by that back strip at a low level. Colors are vibrant, and my eyes don't feel like they're being blasted."
+      "p": "Monitor brightness also matters. Running your display at 100 percent brightness in a dark room forces your eyes to work harder and can trigger photophobia, a sensitivity to light that makes colors look washed out and increases fatigue. A good starting point is about 70-75 percent brightness with the room lit by a low-level back strip. Colors stay vibrant, and your eyes don't feel like they're being blasted."
     },
     {
       "h2": "Blink rate and surface hydration"

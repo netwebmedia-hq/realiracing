@@ -7,7 +7,7 @@
   "description": "Understand the real performance and immersion trade-offs between sequential, H-pattern, and paddle shifters for sim racing on iRacing.",
   "sections": [
     {
-      "p": "The shifter decision landed on my desk harder than I expected. When I built my MOZA R9 rig, I didn't think past \"I need something to change gears.\" Then I watched my lap times wobble between using paddles on the wheel and rowing through an H-pattern box, and I realized the shifter wasn't just a peripheral. It changed how I thought about braking, heel-toe entries, and racecraft itself."
+      "p": "The shifter decision matters more than it first appears. This guide draws on published specs and common setup practice, not a hands-on test of every product. It's easy to stop at \"I need something to change gears,\" but the shifter isn't just a peripheral. Whether you use paddles on the wheel or row through an H-pattern box can change how you think about braking, heel-toe entries, and racecraft itself."
     },
     {
       "p": "This is a gear-selection problem dressed as a hardware problem. There's no universal answer. A Formula 1 driver in a modern hybrid power unit needs paddles. A vintage Formula car pilot needs an H-pattern box. A dirt oval racer benefits from a sequential stick. Each one solves a different problem, and the wrong choice for your primary car series will slow you down or grind against your muscle memory."
@@ -22,7 +22,7 @@
       "p": "Paddles mounted behind a steering wheel rim are the fastest, most ergonomic solution for single-seater racing and road cars with flappy-box transmissions. You never move your hands off the wheel. Upshifts and downshifts happen while you're braking, accelerating, or at full lock on entry."
     },
     {
-      "p": "On my rig, paddle shifters mounted to the MOZA CS V2 wheel feel instant. There's no hand travel, no gear-gate hunting. You tap up, you tap down, and the car responds. In Formula cars and GTP/GTE racing, this is the only choice that makes sense. Your fingers stay in rhythm with your brake and throttle inputs."
+      "p": "Paddle shifters mounted on the wheel rim feel instant. There's no hand travel, no gear-gate hunting. You tap up, you tap down, and the car responds. In Formula cars and GTP/GTE racing, this is the only choice that makes sense. Your fingers stay in rhythm with your brake and throttle inputs."
     },
     {
       "list": [
@@ -40,7 +40,7 @@
       "p": "An H-pattern box forces you into a sequential gate. You move the stick left-right-forward-backward to select gears in a letter-H shape, mimicking manual road cars and vintage racing machines. This demands deliberate hand movements and introduces a real cognitive load. On a bumpy track in a car without power steering, that's immersion and difficulty all at once."
     },
     {
-      "p": "I use an H-pattern shifter for vintage Formula cars, GT3 road cars with manual transmissions, and classic sports cars in iRacing. The ritual of heel-toeing down a gear and feeling the gate click into third before the apex is where my Lotus 79 laps come alive. But the moment I switch to a Formula 3 with a sequential stick, I'm back to a much tighter feedback loop."
+      "p": "An H-pattern shifter suits vintage Formula cars, GT3 road cars with manual transmissions, and classic sports cars in iRacing. The ritual of heel-toeing down a gear and feeling the gate click into third before the apex is where Lotus 79 laps come alive. But the moment you switch to a Formula 3 with a sequential stick, you're back to a much tighter feedback loop."
     },
     {
       "list": [
@@ -58,7 +58,7 @@
       "p": "A sequential stick moves only forward and backward. You never hunt for a gear in a gate. Push forward to upshift, pull back to downshift, repeat. This is the fastest mechanical shifter and the standard for racing cars without paddles. Formula 3, Formula 2, dirt cars, and some GT3 machines use sequential shifters in real life."
     },
     {
-      "p": "The sequential feels like a bridge between H-pattern deliberation and paddle-shifter speed. You do move your hand, but only an inch. On my rig with a budget sequential lever, the throw is short enough that I can stay focused on steering and throttle input. Downshifts in a dirt sprint car feel snappy and predictable."
+      "p": "The sequential feels like a bridge between H-pattern deliberation and paddle-shifter speed. You do move your hand, but only an inch. With a budget sequential lever, the throw should be short enough that you can stay focused on steering and throttle input. Downshifts in a dirt sprint car tend to feel snappy and predictable."
     },
     {
       "list": [
@@ -79,7 +79,7 @@
       "p": "In a Lotus 79 with a heavy, unassisted steering wheel and a slick, clunky four-speed dog-leg box, an H-pattern shifter is slower per shift but faster overall because it matches the car's behavior and your concentration stays locked in. There's no fumbling. You know where third is. You slot it crisply."
     },
     {
-      "p": "I tested this myself. Switching from my H-pattern box to an imaginary paddle setup on my MOZA CS V2 wheel for a GT3 car netted me roughly 0.2 to 0.3 seconds per lap. The paddles forced me to think less about gear selection and more about throttle control and line. That's measurable. But in a classic car with a proper H-pattern gate, the reverse is true. Trying to use paddles feels wrong, and I lose consistency chasing a technique that doesn't match the machine."
+      "p": "In a GT3 car, paddles can free you to think less about gear selection and more about throttle control and line, which is where lap time is often found. But in a classic car with a proper H-pattern gate, the reverse tends to be true. Trying to use paddles feels wrong, and you lose consistency chasing a technique that doesn't match the machine."
     },
     {
       "tip": "Your fastest shifter is the one that matches the car's transmission type and your primary racing series. Chasing paddles in a vintage car or an H-pattern in a Formula car will cost you pace and confidence faster than a slightly slower but correct shifter ever will.",
@@ -92,10 +92,10 @@
       "p": "If your goal is lap time, match the shifter to the car. If your goal is immersion and preparation for real racing, the trade-off shifts."
     },
     {
-      "p": "An H-pattern shifter with a load-cell pedal setup like my MOZA CRP2 creates a full-body experience. Your left foot operates the clutch, your right foot blips the throttle on downshifts, your hand finds third gear in the gate, and your eyes track the apex. This is closer to a real race car than paddles could ever be. It's also slower per shift. The immersion cost you pace, and that trade is conscious."
+      "p": "An H-pattern shifter paired with a good pedal setup creates a full-body experience. Your left foot operates the clutch, your right foot blips the throttle on downshifts, your hand finds third gear in the gate, and your eyes track the apex. This is closer to a real race car than paddles could ever be. It's also slower per shift. The immersion costs pace, and that trade should be a conscious one."
     },
     {
-      "p": "Paddles reward smoothness and precision. Every shift becomes a micro-decision layered onto steering and braking. Real Formula 1 drivers practice paddle muscle memory the same way I practice trigger-finger sensitivity on my MOZA CS V2. The correlation is direct."
+      "p": "Paddles reward smoothness and precision. Every shift becomes a micro-decision layered onto steering and braking. Real Formula 1 drivers practice paddle muscle memory, and you can build the same trigger-finger sensitivity on your own wheel rim. The correlation is direct."
     },
     {
       "list": [
@@ -111,7 +111,7 @@
       "p": "A paddle shifter is already on your wheel. If you own a MOZA CS V2 or any modern rim with integrated paddles, you have paddled-shift capability built in. No additional purchase. No additional mounting hassle. Bolt the wheel to your R9 base and you're racing."
     },
     {
-      "p": "An H-pattern or sequential shifter requires a dedicated mounting solution. You need a cockpit with side-panel space or a floor mount. You need to route the USB or connection cable. You need to ensure the shifter doesn't interfere with your pedal box. I mounted my H-pattern on the right side of my aluminum cockpit frame, which means my pedals live dead center and the shifter lives behind my right arm. It works, but it required planning."
+      "p": "An H-pattern or sequential shifter requires a dedicated mounting solution. You need a cockpit with side-panel space or a floor mount. You need to route the USB or connection cable. You need to ensure the shifter doesn't interfere with your pedal box. A common layout puts the H-pattern on the right side of the cockpit frame, which leaves the pedals dead center and the shifter behind your right arm. It works, but it requires planning."
     },
     {
       "p": "A budget sequential shifter costs roughly 50 to 150 dollars. A quality H-pattern box runs 150 to 350. Paddles are free if they're already on your rim. If budget is the deciding factor, paddles win. If you need authenticity for a specific series, budget becomes secondary."
@@ -123,7 +123,7 @@
       "p": "If you race multiple series, paddles are your default. Keep them on your wheel. For one-off immersion sessions with vintage cars or street cars, invest in an H-pattern box and bolt it down when you want it. Sequential shifters sit in the middle. If you race a lot of dirt or open-wheel cars, a sequential is worth the mount."
     },
     {
-      "p": "Cable management matters. A wired shifter adds another cable snaking through your rig. Wireless shifters exist but introduce latency concerns. On my setup, I routed my H-pattern cable along the same path as my pedal USB, secured with velcro, and tucked it behind the frame. Clean lines, no snagging on my legs during long sessions."
+      "p": "Cable management matters. A wired shifter adds another cable snaking through your rig. Wireless shifters exist but introduce latency concerns. Route the H-pattern cable along the same path as your pedal USB, secure it with velcro, and tuck it behind the frame. That keeps lines clean and avoids snagging on your legs during long sessions."
     },
     {
       "p": "Test the reach. If you're using an H-pattern or sequential shifter beside your pedals or mounted high on a side panel, make sure you can reach it without losing brake or throttle control. A bad reach will force you to move your pedal foot or lock your arms in an unnatural position. That costs pace and stamina over a long race.</p>"
@@ -150,7 +150,7 @@
       "p": "Paddles are fastest and always available. Sequential shifters are a good middle ground for open-wheel racing and dirt cars, require a mount, and cost money. H-pattern shifters deliver the highest immersion for classics and manual road cars, demand the most deliberate hand movement, and are the slowest per shift."
     },
     {
-      "p": "I keep paddles on my wheel for 90 percent of my iRacing time. When I want to spend an evening with the Lotus 79 on a tight circuit, my H-pattern box comes out of the cabinet, gets bolted to the cockpit, and I lose a few tenths per lap but gain the whole experience. That's the real win. Your shifter choice isn't a one-time hardware purchase. It's a conscious decision about which cars and experiences you prioritize, and the flexibility to switch when the mood and the car align."
+      "p": "A sensible split is to keep paddles on your wheel for most of your iRacing time. When you want to spend an evening with the Lotus 79 on a tight circuit, bring the H-pattern box out, bolt it to the cockpit, and accept losing a few tenths per lap for the whole experience. That's the real win. Your shifter choice isn't a one-time hardware purchase. It's a conscious decision about which cars and experiences you prioritize, and the flexibility to switch when the mood and the car align."
     }
   ],
   "faqs": [

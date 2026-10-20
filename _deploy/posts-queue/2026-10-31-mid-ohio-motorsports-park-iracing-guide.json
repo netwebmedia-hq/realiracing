@@ -4,16 +4,16 @@
   "author": "Carlos Martinez",
   "readTime": "9 min read",
   "title": "Mid-Ohio iRacing Guide: Setup, Apexes, and Brake Points",
-  "description": "Learn the corner sequence, key brake points, and setup adjustments that work on Mid-Ohio. Real data from my MOZA R9 rig.",
+  "description": "Learn the corner sequence, key brake points, and setup adjustments that work on Mid-Ohio in iRacing, from turn one to the final corner.",
   "sections": [
     {
-      "p": "Mid-Ohio Motorsports Park sits in the farming country of Lexington, Ohio, and it has the kind of flowing, elevation-change rhythm that either clicks with you or drives you mad. Seven turns over 2.258 miles, no straights longer than a heartbeat, and a layout that punishes setup guesses. I've spent enough time here across different series to know where the traps are, and I'll walk you through the track geometry, the feedback I get through my MOZA R9, and the setup moves that actually tighten lap times without breaking the car's balance."
+      "p": "Mid-Ohio Motorsports Park sits in the farming country of Lexington, Ohio, and it has the kind of flowing, elevation-change rhythm that either clicks with you or drives you mad. Seven turns over 2.258 miles, no straights longer than a heartbeat, and a layout that punishes setup guesses. I'll walk you through the track geometry, the feedback a direct drive wheelbase gives you here, and the setup moves that tighten lap times without breaking the car's balance."
     },
     {
       "h2": "Track layout and elevation changes"
     },
     {
-      "p": "Mid-Ohio climbs on the approach to turn one, crests at the apex, then drops away on exit. That elevation gain matters for weight transfer and braking stability. You'll brake downhill into turn one, a medium-speed left-hander that sets the tone. The track elevation means your braking feels sharper here than it looks, and I've spun more practice laps here from over-braking than anywhere else on the circuit."
+      "p": "Mid-Ohio climbs on the approach to turn one, crests at the apex, then drops away on exit. That elevation gain matters for weight transfer and braking stability. You'll brake downhill into turn one, a medium-speed left-hander that sets the tone. The track elevation means your braking feels sharper here than it looks, so watch for over-braking in practice laps."
     },
     {
       "p": "Turns two and three flow quickly. Turn two is a short right, and turn three is the long left that brings you through the infield. The connection between them matters. If you carry too much speed through two, you'll run wide at three. If you apex two too early, you'll compromise the entry to three. The goal is a smooth arc through both, treating them as one sequence rather than two separate corners."
@@ -29,7 +29,7 @@
     },
     {
       "list": [
-        "Turn one (medium-left, downhill entry): Brake at the 100m board, then trail-brake to the apex. The hill helps you slow, so don't lock the rears. My MOZA R9 feedback gets light and tippy here if I'm hard on the pedal too long.",
+        "Turn one (medium-left, downhill entry): Brake at the 100m board, then trail-brake to the apex. The hill helps you slow, so don't lock the rears. The wheel can feel light and tippy here if you stay hard on the pedal too long.",
         "Turns two and three (right-left complex): Light trail-brake into two, then modulate to a rolling entry at three. These corners reward rhythm over hard inputs.",
         "Turn four (slow-left): Brake at the 200m board, light brake pressure through the corner. This is a setup-sensitive corner. If your car is nervous, you'll feel it here.",
         "Turn five (slow-right): Engine braking only, or feather the pedal. Avoid hard braking.",
@@ -38,26 +38,26 @@
       ]
     },
     {
-      "tip": "The 100m and 200m boards are reference points, not absolutes. Adjust your brake points based on your car's balance. A loose rear will require earlier, lighter braking. A push-heavy setup will ask you to brake later. Load-cell pedals like my MOZA CRP2 let me modulate pressure precisely, which matters hugely here.",
+      "tip": "The 100m and 200m boards are reference points, not absolutes. Adjust your brake points based on your car's balance. A loose rear will require earlier, lighter braking. A push-heavy setup will ask you to brake later. Load-cell pedals let you modulate pressure precisely, which matters hugely here.",
       "tipLabel": "Brake Point Variation"
     },
     {
       "h2": "Setup considerations for Mid-Ohio"
     },
     {
-      "p": "Mid-Ohio is a corner-speed track. Top speed matters far less than how well your car turns and maintains stability through the complex. Anti-roll bar stiffness and brake balance are the two setup knobs I turn most often here."
+      "p": "Mid-Ohio is a corner-speed track. Top speed matters far less than how well your car turns and maintains stability through the complex. Anti-roll bar stiffness and brake balance are the two setup knobs to turn first here."
     },
     {
-      "p": "Front anti-roll bar: Start baseline and stiffen gradually. A soft front lets you turn-in smoothly but will oversteer on exit. A stiff front feels responsive and lets you place the car where you want it. The trade-off is mid-corner stability. I typically run a medium-stiff setting and trust the suspension geometry."
+      "p": "Front anti-roll bar: Start baseline and stiffen gradually. A soft front lets you turn-in smoothly but will oversteer on exit. A stiff front feels responsive and lets you place the car where you want it. The trade-off is mid-corner stability. A medium-stiff setting is a common starting point; trust the suspension geometry."
     },
     {
       "p": "Rear anti-roll bar: Keep it softer than your front, or the car will snap mid-corner. Mid-Ohio has enough corner flow that you want rear grip, not sharp transitions. If the rear is nervous in turns four, five, or six, reduce rear ARB stiffness before you add front."
     },
     {
-      "p": "Brake balance: Mid-Ohio's elevation changes mean brake balance shifts as you move around the track. A setting that works at turn one (downhill, hard braking) might lock your rears at turn five (uphill, light braking). I run a balance biased toward the rear, around 52-54 percent front, and rely on modulation through the pedal rather than setup to manage lock-up."
+      "p": "Brake balance: Mid-Ohio's elevation changes mean brake balance shifts as you move around the track. A setting that works at turn one (downhill, hard braking) might lock your rears at turn five (uphill, light braking). Start with a balance biased toward the rear, around 52-54 percent front, and rely on modulation through the pedal rather than setup to manage lock-up."
     },
     {
-      "p": "Differential: A limited-slip or locked diff helps in the slow-speed corners (four, five, seven). Open diff will wheelspin too easily. I run a medium lock percentage and adjust based on which car I'm driving."
+      "p": "Differential: A limited-slip or locked diff helps in the slow-speed corners (four, five, seven). Open diff will wheelspin too easily. Start with a medium lock percentage and adjust based on the car you're driving."
     },
     {
       "h2": "Common mistakes and how to avoid them"
@@ -78,7 +78,7 @@
       "p": "Use onboard camera or telemetry comparison tools to validate your brake points. Mid-Ohio reveals setup problems quickly. If your car is loose through the esses (turns two and three), you'll feel it immediately. If your brake balance is off, lock-up will show on any downhill corner."
     },
     {
-      "p": "The MOZA R9 wheelbase gives me strong mid-corner feedback through the load-cell pedals. I can feel the weight shift as I move through the infield complex, and that clarity helps me adjust my lines lap to lap. If I'm over-driving, the wheel will tell me before the data will. Trust the feel."
+      "p": "A direct drive wheelbase gives you strong mid-corner feedback. You can feel the weight shift as you move through the infield complex, and that clarity helps you adjust your lines lap to lap. If you're over-driving, the wheel will tell you before the data will. Trust the feel."
     },
     {
       "h2": "Weather and tire strategy"
@@ -93,7 +93,7 @@
       "h2": "How Mid-Ohio fits into your season"
     },
     {
-      "p": "If you're working on consistency and setup nuance, Mid-Ohio is a gift. The lap time is sensitive to setup detail. Spend time here and you'll develop skills that transfer everywhere. The corner flow teaches you rhythm. The elevation changes teach you brake modulation. The tight infield teaches you steering precision. This is where I go when I need to reset my driving fundamentals, especially before endurance races where mistakes cost real time."
+      "p": "If you're working on consistency and setup nuance, Mid-Ohio is a gift. The lap time is sensitive to setup detail. Spend time here and you'll develop skills that transfer everywhere. The corner flow teaches you rhythm. The elevation changes teach you brake modulation. The tight infield teaches you steering precision. This is a good place to go when you need to reset your driving fundamentals, especially before endurance races where mistakes cost real time."
     },
     {
       "p": "For practice planning, I recommend a 45-minute dedicated session here. Spend the first 15 minutes learning the line. Spend the next 15 exploring brake points and trail-braking zones. Use the last 15 for one full setup adjustment and validation. That structure builds understanding faster than lapping without a purpose."

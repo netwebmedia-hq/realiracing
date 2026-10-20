@@ -7,7 +7,7 @@
   "description": "Master the P217 LMP2 prototype on iRacing. Brake markers, fuel strategy, and setup tweaks for sustained pace in endurance racing.",
   "sections": [
     {
-      "p": "The Dallara P217 LMP2 is a different animal from the GT cars most of us cut our teeth on. It's lighter, faster, and demands precision in a way that feels immediate. When I first ran it on iRacing, I found myself overdriving the entry into most corners because the chassis communicates so directly through the MOZA R9 that it's easy to mistake confidence for grip. The P217 rewards smooth inputs and punishes desperation. If you're moving to prototype racing or jumping into endurance events, this guide will save you from costly mistakes."
+      "p": "The Dallara P217 LMP2 is a different animal from the GT cars most of us cut our teeth on. It's lighter, faster, and demands precision in a way that feels immediate. It's easy to overdrive the entry into most corners because the chassis communicates so directly through a direct drive wheel that it's easy to mistake confidence for grip. The P217 rewards smooth inputs and punishes desperation. If you're moving to prototype racing or jumping into endurance events, this guide will save you from costly mistakes."
     },
     {
       "p": "The P217 sits in the middle of the LMP2 field on iRacing. It is not the absolute fastest in qualifying trim, but it is consistent and, more importantly, durable over long stints. That consistency matters in a 6-hour race at Le Mans or a 4-hour grind at Spa."
@@ -16,23 +16,23 @@
       "h2": "Brake markers and threshold braking"
     },
     {
-      "p": "Brake markers are everything in the P217 because the car's braking performance is so strong. I brake later than I ever did in GT cars, and I have to actively manage when I release the pedal to avoid locking the fronts. On my MOZA CRP2 load-cell pedals, I've learned that the sweet spot is around 85% brake pressure for most downshifts and corner entries. The margin between threshold and lock is narrow."
+      "p": "Brake markers are everything in the P217 because the car's braking performance is so strong. Expect to brake later than you ever did in GT cars, and actively manage when you release the pedal to avoid locking the fronts. A common sweet spot is around 85% brake pressure for most downshifts and corner entries. The margin between threshold and lock is narrow."
     },
     {
-      "p": "Set your brake markers 10 to 15 meters earlier than your initial thought, then work backward. Trail-brake into slow corners (Turn 1 at Le Mans, the tight stuff at Silverstone) and use the car's front end to rotate. The P217 has good brake bias adjustability, and I run around 53% front on road courses to keep the rears stable under trail braking without inducing understeer. If the car wants to slide under heavy braking, it's usually a sign that your brake bias is too rearward."
+      "p": "Set your brake markers 10 to 15 meters earlier than your initial thought, then work backward. Trail-brake into slow corners (Turn 1 at Le Mans, the tight stuff at Silverstone) and use the car's front end to rotate. The P217 has good brake bias adjustability, and a common starting point is around 53% front on road courses to keep the rears stable under trail braking without inducing understeer. If the car wants to slide under heavy braking, it's usually a sign that your brake bias is too rearward."
     },
     {
-      "tip": "Lock the fronts once and you'll feel it immediately through the wheel. The P217 gives you clear feedback, so use that to find the true limit rather than guessing. I set up brake assists in practice to find the exact threshold, then leave them in qualifying and racing.",
+      "tip": "Lock the fronts once and you'll feel it immediately through the wheel. The P217 gives you clear feedback, so use that to find the true limit rather than guessing. Set up brake assists in practice to find the exact threshold, then leave them in qualifying and racing.",
       "tipLabel": "Brake feel feedback"
     },
     {
       "h2": "Fuel strategy and consumption"
     },
     {
-      "p": "Fuel is the third driver in any endurance race, and the P217 drinks more than you'd expect for its size. Over a full stint, I see roughly 2.8 to 3.1 L/lap on a 8 to 9-minute circuit like Le Mans with moderate fuel save, depending on how aggressive I'm driving. That's enough to get 4 to 5 laps before a mandatory pit stop in most endurance events. Qualifying trim burns visibly more."
+      "p": "Fuel is the third driver in any endurance race, and the P217 drinks more than you'd expect for its size. Over a full stint, expect roughly 2.8 to 3.1 L/lap on a 8 to 9-minute circuit like Le Mans with moderate fuel save, depending on how aggressively you drive. That's enough to get 4 to 5 laps before a mandatory pit stop in most endurance events. Qualifying trim burns visibly more."
     },
     {
-      "p": "In a 6-hour race, I typically run a fuel save of 80% on my practice pace and accept a 1 to 1.5 second-per-lap time penalty to ensure I arrive at the pits with a buffer. Running on fumes teaches bad habits because you start braking earlier and coasting mid-corner, which destroys tire temperature. Instead, pick a realistic fuel load, set a conservative fuel-save multiplier in the setup, and drive consistently within that envelope. When fuel gets tight in the final 20 minutes, your muscle memory is already there."
+      "p": "In a 6-hour race, a common approach is a fuel save of 80% on your practice pace, accepting a 1 to 1.5 second-per-lap time penalty to ensure you arrive at the pits with a buffer. Running on fumes teaches bad habits because you start braking earlier and coasting mid-corner, which destroys tire temperature. Instead, pick a realistic fuel load, set a conservative fuel-save multiplier in the setup, and drive consistently within that envelope. When fuel gets tight in the final 20 minutes, your muscle memory is already there."
     },
     {
       "list": [
@@ -46,10 +46,10 @@
       "h2": "Tire management and compound choice"
     },
     {
-      "p": "The P217 uses a single tire compound for most iRacing endurance events, but tire temperature management is where many drivers leak time. The car is heavy enough that cold tires take 3 to 4 laps to reach operating window, and overheating them is easier than it seems in long stints. On my rig, I focus on smooth lines and consistent throttle application rather than brute force."
+      "p": "The P217 uses a single tire compound for most iRacing endurance events, but tire temperature management is where many drivers leak time. The car is heavy enough that cold tires take 3 to 4 laps to reach operating window, and overheating them is easier than it seems in long stints. Focus on smooth lines and consistent throttle application rather than brute force."
     },
     {
-      "p": "Tire pressures matter more than they do in GT cars because prototypes are lower slung and the suspension geometry changes more dramatically with aero load. I start with iRacing's baseline pressures and adjust by 0.2 bar if the tires feel either mushy or edgy. The P217 will tell you quickly if pressures are wrong, and the feedback through the MOZA R9 is immediate."
+      "p": "Tire pressures matter more than they do in GT cars because prototypes are lower slung and the suspension geometry changes more dramatically with aero load. Start with iRacing's baseline pressures and adjust by 0.2 bar if the tires feel either mushy or edgy. The P217 will tell you quickly if pressures are wrong, and the feedback through a direct drive wheel is immediate."
     },
     {
       "p": "In the stint window (laps 15 to 35 of a long run), the tires hit a plateau where pace is steady. That's your money zone. Protect it by avoiding big slides and unnecessary weight transfer. A single spin costs you not just that lap, but three more while the tires cool and warm back up."
@@ -58,13 +58,13 @@
       "h2": "Setup adjustments for pace and stability"
     },
     {
-      "p": "I start every session with iRacing's baseline setup and drive it for 20 minutes to understand the car's balance. The P217 is forgiving if you stay smooth, but it becomes nervous if setup is even slightly off. Overshooting with anti-roll bar changes or suspension stiffness is a common trap. Make one change, do three laps, feel the difference. Then decide if you need a second change."
+      "p": "Start every session with iRacing's baseline setup and drive it for 20 minutes to understand the car's balance. The P217 is forgiving if you stay smooth, but it becomes nervous if setup is even slightly off. Overshooting with anti-roll bar changes or suspension stiffness is a common trap. Make one change, do three laps, feel the difference. Then decide if you need a second change."
     },
     {
       "list": [
         "Brake balance: 52 to 54% front, adjusting forward if you feel locking on entry, backward if the rear slides under hard braking.",
         "Anti-roll bars: Start soft (2 to 3 clicks softer than baseline) and add stiffness only if the chassis feels sluggish in transitions.",
-        "Downforce: Higher wing angles improve stability but cost speed on straights. I run ~6 to 8 degrees of rear wing for road courses, adjusting for track length.",
+        "Downforce: Higher wing angles improve stability but cost speed on straights. A common starting point is ~6 to 8 degrees of rear wing for road courses, adjusting for track length.",
         "Ride height: Lower than you'd run in GT cars because the P217 wants to be planted. Stay within the green zone on the telemetry.",
         "Differential: Open it slightly (20 to 30% on-power) to help rotation under acceleration out of slow corners."
       ]
@@ -77,7 +77,7 @@
       "h2": "Qualifying vs. race pace"
     },
     {
-      "p": "Qualifying trim on the P217 is about 1.5 to 2.0 seconds per lap quicker than endurance pace. Most drivers go too light on fuel (2 laps) and turn the downforce up or the wings way down, which works for one lap but makes the car edgy in traffic. I qualify with 3 to 4 laps of fuel and keep the wing angles close to race setup. That gives me a realistic qualification time and means I'm not relearning the car for the race."
+      "p": "Qualifying trim on the P217 is about 1.5 to 2.0 seconds per lap quicker than endurance pace. Most drivers go too light on fuel (2 laps) and turn the downforce up or the wings way down, which works for one lap but makes the car edgy in traffic. Qualify with 3 to 4 laps of fuel and keep the wing angles close to race setup. That gives you a realistic qualification time and means you're not relearning the car for the race."
     },
     {
       "p": "If you're in a team race with driver swaps, your qualifying lap matters for grid position, but the setup you leave for your teammate matters more. A one-tenth swing between drivers because of setup surprise creates chaos in your strategy. Communicate what the car needs and keep front-end balance predictable."
@@ -111,7 +111,7 @@
     },
     {
       "q": "How do I find my brake threshold without locking the fronts repeatedly?",
-      "a": "Set your brake pressure to 80% in practice and apply it on a long straight. You'll feel or hear the lock immediately through the wheel. Back off 2 to 3% and try again. Once you've found where lock begins, lock it once intentionally to feel the exact limit through your load-cell pedals. Then reset to 1 to 2% before that threshold. Your brake threshold will be repeatable at the same pressure across the session because you've trained your foot to find it."
+      "a": "(FAQ) Set your brake pressure to 80% in practice and apply it on a long straight. You'll feel or hear the lock immediately through the wheel. Back off 2 to 3% and try again. Once you've found where lock begins, lock it once intentionally to feel the exact limit through your pedals. Then reset to 1 to 2% before that threshold. Your brake threshold will be repeatable at the same pressure across the session because you've trained your foot to find it."
     },
     {
       "q": "Why does the P217 feel loose mid-corner after I adjusted my setup?",

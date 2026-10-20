@@ -7,13 +7,13 @@
   "description": "Master the SF23's weight transfer and mid-corner balance. Learn braking, throttle application, and setup tuning for consistent pace.",
   "sections": [
     {
-      "p": "The Super Formula SF23 in iRacing is a raw, unforgiving open-wheeler that demands respect. Unlike the Dallara iR-18 IndyCar with its aero-assisted stability, the SF23 punishes sloppy inputs and rewards smooth, committed driving. I came to it from road racing and felt the difference immediately: the rear will swap sideways if you over-throttle mid-corner, and braking is a precision exercise because there's no power steering assist. You can't drive it like a GT car. Respect the car first, and pace will follow."
+      "p": "The Super Formula SF23 in iRacing is a raw, unforgiving open-wheeler that demands respect. Unlike the Dallara iR-18 IndyCar with its aero-assisted stability, the SF23 punishes sloppy inputs and rewards smooth, committed driving. If you come to it from road racing, you will feel the difference immediately: the rear will swap sideways if you over-throttle mid-corner, and braking is a precision exercise because there's no power steering assist. You can't drive it like a GT car. Respect the car first, and pace will follow."
     },
     {
       "h2": "Understanding the SF23's weight transfer and limit"
     },
     {
-      "p": "The SF23 has mid-engine layout and a tight wheelbase, which means weight transfers quickly and dramatically. On my MOZA R9, I can feel the front axle unload almost instantly when I lift throttle, and the rear squats hard under acceleration. That's not noise in the FFB; that's the real car's behavior being translated to my wheel."
+      "p": "The SF23 has mid-engine layout and a tight wheelbase, which means weight transfers quickly and dramatically. Through a direct drive wheelbase, you can feel the front axle unload almost instantly when you lift throttle, and the rear squats hard under acceleration. That's not noise in the FFB; that's the car's behavior being translated to the wheel."
     },
     {
       "p": "The car lives at the edge of its tire grip window. You're not hunting for a \"sweet spot\" in setup where everything feels balanced across a range. Instead, you're tuning for a narrow operational zone: the car should feel alive and responsive at full commitment, and slightly nervous at anything below. If the SF23 feels planted and easy, your setup is too conservative and you're leaving lap time on the table."
@@ -37,7 +37,7 @@
       "p": "The SF23 has solid brake performance (~1.7G+ deceleration), but the car's light front end means front tire lockup is a real threat if you're not smooth. You can't brake as late or as deep as you'd do in a heavier GT car, and you can't brake in a straight line and turn; the front tires will simply run out of grip."
     },
     {
-      "p": "Trail-braking is not optional on the SF23. It's the only way to manage entry speed and still load the front tires for turn-in. On my rig, I'll brake hard in a straight line, then begin reducing brake pressure as I start turning, finishing with maybe 5-10% brake pressure while the car is mid-corner. The pedal travel matters here too; the MOZA CRP2 load-cell pedals give me enough resolution to feel that light trailing pressure and modulate it smoothly."
+      "p": "Trail-braking is not optional on the SF23. It's the only way to manage entry speed and still load the front tires for turn-in. A good pattern is to brake hard in a straight line, then begin reducing brake pressure as you start turning, finishing with maybe 5-10% brake pressure while the car is mid-corner. The pedal travel matters here too; pedals with enough resolution let you feel that light trailing pressure and modulate it smoothly."
     },
     {
       "olist": [
@@ -118,7 +118,7 @@
   "faqs": [
     {
       "q": "How much trail-braking does the SF23 need compared to a GT car?",
-      "a": "The SF23 requires significantly more trail-braking because its light front end loses grip quickly if you release the brakes and turn at the same time. GT cars have more brake bias room and heavier platforms that absorb input errors. On the SF23, I trail-brake into nearly every corner, even high-speed ones like a 130 mph third-gear turn. The brakes come off gradually over 1-2 seconds of steering angle, not in one lift. This is not optional; it's the entry technique."
+      "a": "(FAQ) The SF23 requires significantly more trail-braking because its light front end loses grip quickly if you release the brakes and turn at the same time. GT cars have more brake bias room and heavier platforms that absorb input errors. On the SF23, trail-brake into nearly every corner, even high-speed ones like a 130 mph third-gear turn. The brakes come off gradually over 1-2 seconds of steering angle, not in one lift. This is not optional; it's the entry technique."
     },
     {
       "q": "What brake bias should I start with if I don't have a setup sheet?",

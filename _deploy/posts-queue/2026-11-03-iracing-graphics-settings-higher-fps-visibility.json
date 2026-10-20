@@ -4,10 +4,10 @@
   "author": "Carlos Martinez",
   "readTime": "9 min read",
   "title": "iRacing graphics settings that boost FPS without killing visibility",
-  "description": "Cut frame drops without sacrificing the visual cues you need to race clean. Real settings I use on my rig.",
+  "description": "Cut frame drops without sacrificing the visual cues you need to race clean. Recommended iRacing graphics settings and a starting configuration.",
   "sections": [
     {
-      "p": "Frame rate matters more in sim racing than almost any other discipline. A 10 FPS loss during a braking zone costs you precision on the pedals, makes turn-in feel sluggish, and destroys consistency. I race on a ~1440p 120 Hz display paired with my MOZA R9 rig, and I've learned the hard way that chasing eye candy ruins the whole package. The goal is not maximum graphics. The goal is the highest frame rate that lets you see what you need to see."
+      "p": "Frame rate matters more in sim racing than almost any other discipline. A 10 FPS loss during a braking zone costs you precision on the pedals, makes turn-in feel sluggish, and destroys consistency. I race on a ~1440p 120 Hz display with a MOZA R9 wheelbase, and in my view chasing eye candy ruins the whole package. The goal is not maximum graphics. The goal is the highest frame rate that lets you see what you need to see."
     },
     {
       "p": "Most drivers turn everything to ultra and wonder why they lose 20 FPS mid-race. The fix is not a new GPU. The fix is knowing which settings matter for safety and pace, and which ones you can dial back without losing the visual feedback you depend on."
@@ -55,16 +55,16 @@
       "h2": "Resolution and the refresh rate trade-off"
     },
     {
-      "p": "If you run triple monitors or a 4K setup, you are already eating significant frame rate cost. The practical path is to drop to 1440p or use a 1440p center monitor with lower res surrounds. A single 1440p 120 Hz display is my daily driver because it gives me sharp enough visuals and reliably fast frame rates on any car."
+      "p": "If you run triple monitors or a 4K setup, you are already eating significant frame rate cost. The practical path is to drop to 1440p or use a 1440p center monitor with lower res surrounds. A single 1440p 120 Hz display is what I race on, and it is a good balance of sharp enough visuals and reliably fast frame rates."
     },
     {
       "p": "If you are locked into a higher resolution, scale down by 10-15 percent inside iRacing's graphics menu. You lose a little sharpness, but not in a way that hurts racing. The frame rate gains compound quickly, especially on a card like the NVIDIA GeForce RTX 5060 Ti which is entry-level for iRacing sim racing."
     },
     {
-      "h2": "The settings I actually use on my rig"
+      "h2": "A starting configuration"
     },
     {
-      "p": "On my personal rig with an RTX 5060 Ti and a 1440p 120 Hz monitor, I run this configuration and hold 115-120 FPS in most series."
+      "p": "On a PC with an RTX 5060 Ti and a 1440p 120 Hz monitor, this is a sensible configuration to start from, aiming for 115-120 FPS in most series."
     },
     {
       "olist": [
@@ -78,11 +78,11 @@
         "Draw distance: Very high (brake light visibility to 250+ meters)",
         "Car detail: Ultra (suspension movement visible)",
         "Vsync: Off (frame rate cap set in driver control panel instead)",
-        "Frame rate cap: 120 FPS locked (matching my monitor)"
+        "Frame rate cap: 120 FPS locked (match your monitor's refresh rate)"
       ]
     },
     {
-      "p": "This setup gives me rock-solid frame pacing, excellent visibility of competitors, and enough visual sharpness to read brake marker boards at 300 kph. It is the antidote to the trap of maxing every slider and then wondering why your hands feel mushy on the wheel."
+      "p": "This setup aims for rock-solid frame pacing, excellent visibility of competitors, and enough visual sharpness to read brake marker boards at 300 kph. It is the antidote to the trap of maxing every slider and then wondering why your hands feel mushy on the wheel."
     },
     {
       "h2": "How to test your own settings"

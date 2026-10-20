@@ -7,16 +7,16 @@
   "description": "Compare monitor stands and rig-mounted arms for sim racing. Learn the trade-offs in cost, adjustability, and immersion for your MOZA R9 setup.",
   "sections": [
     {
-      "p": "I've run both a single monitor on a desk stand and a full triple-monitor rig arm setup. The choice between them isn't about which is objectively better. It's about what your space, budget, and racing goals can actually support. A basic monitor stand costs ~$50-150 and sits on your desk. A rig-mounted triple arm system runs ~$200-500, mounts directly to your cockpit, and takes up significantly more physical space. Each approach has real limits, and understanding those limits saves you from spending money on gear you'll end up not using."
+      "p": "This guide draws on published specs and common setup practice, not a hands-on test of every product. The choice between a desk monitor stand and a rig-mounted triple arm isn't about which is objectively better. It's about what your space, budget, and racing goals can actually support. A basic monitor stand costs ~$50-150 and sits on your desk. A rig-mounted triple arm system runs ~$200-500, mounts directly to your cockpit, and takes up significantly more physical space. Each approach has real limits, and understanding those limits saves you from spending money on gear you'll end up not using."
     },
     {
       "h2": "The standalone monitor stand"
     },
     {
-      "p": "A monitor stand or monitor arm that mounts to your desk is the cheapest entry into sim racing. I started with a single 1440p monitor on a VESA-mount desk arm, and it works. You adjust height, tilt, and rotation easily. If your desk can handle the weight (most can, for one monitor), setup takes minutes."
+      "p": "A monitor stand or monitor arm that mounts to your desk is the cheapest entry into sim racing. A single 1440p monitor on a VESA-mount desk arm is a common starting point. You adjust height, tilt, and rotation easily. If your desk can handle the weight (most can, for one monitor), setup takes minutes."
     },
     {
-      "p": "The real limitation hits when you want multiple displays. Most desk arms are designed for one, maybe two monitors max. Once you add a second or third monitor, you're fighting desk space. Your keyboard, mouse, and anything else you keep on the desk now competes with monitor real estate. I watched a friend try stacking three monitors on desk arms, and the whole rig flexed under the weight. That's not immersive. That's distracting."
+      "p": "The real limitation hits when you want multiple displays. Most desk arms are designed for one, maybe two monitors max. Once you add a second or third monitor, you're fighting desk space. Your keyboard, mouse, and anything else you keep on the desk now competes with monitor real estate. Stacking three monitors on desk arms can make the whole setup flex under the weight. That's not immersive. That's distracting."
     },
     {
       "list": [
@@ -35,7 +35,7 @@
       "h2": "The rig-mounted triple arm system"
     },
     {
-      "p": "When you mount monitor arms directly to your sim racing cockpit, everything changes. Your MOZA R9 wheelbase, the pedal tray, and the monitor arms all become one rigid structure. Three displays sit in a smooth arc in front of you, and they don't move when you turn the wheel or brake hard. I run a triple setup on my fixed aluminum cockpit, and the rigidity is the whole point."
+      "p": "When you mount monitor arms directly to your sim racing cockpit, everything changes. Your MOZA R9 wheelbase, the pedal tray, and the monitor arms all become one rigid structure. Three displays sit in a smooth arc in front of you, and they don't move when you turn the wheel or brake hard. With a fixed cockpit, rigidity is the whole point."
     },
     {
       "p": "A rig-mounted triple arm system costs more upfront (~$250-500 depending on quality and whether you already own the monitors), but it solves problems desk setups cannot. The monitors are tied to your wheel and pedal reference frame. When you move your body forward to brake or adjust for a corner, your field of view moves with you. That cohesion builds immersion that a separate desk monitor simply cannot match. The side monitors expand your peripheral vision, and that peripheral awareness changes how you perceive track position and traffic."
@@ -47,7 +47,7 @@
       "list": [
         "Triple-monitor setup: ~$250-500 for arm hardware; displays should already be owned or factored separately",
         "Space demand: occupies a dedicated footprint; your rig becomes a statement piece in the room",
-        "Rigidity: zero flex under wheel and pedal inputs; immersion gain is real and measurable in lap consistency",
+        "Rigidity: zero flex under wheel and pedal inputs; the immersion gain can show up in lap consistency",
         "Adjustment: less frequent tweaking; the position is typically set and locked",
         "Removal: disassembly is possible but time-consuming; the setup is designed to stay in place"
       ]
@@ -81,10 +81,10 @@
       "h2": "The hybrid approach"
     },
     {
-      "p": "Some of the fastest iRacing drivers I know run a single large monitor on a rig arm (a 1440p ultrawide or a 4K 32-incher) with no side monitors at all. This approach costs less than a full triple setup, takes up less space than a triple rig, and still keeps the monitor locked to your wheel reference. One monitor mounted to the cockpit eliminates the disconnect between your body and the screen."
+      "p": "A common alternative is a single large monitor on a rig arm (a 1440p ultrawide or a 4K 32-incher) with no side monitors at all. This approach costs less than a full triple setup, takes up less space than a triple rig, and still keeps the monitor locked to your wheel reference. One monitor mounted to the cockpit eliminates the disconnect between your body and the screen."
     },
     {
-      "p": "You sacrifice peripheral vision that a triple setup provides, but you gain simplicity. Cable routing is easier. Setup time is shorter. The cost sits between a desk setup and a full triple rig. I considered this approach before committing to the triple because it seemed like a reasonable middle ground. For many drivers, it is."
+      "p": "You sacrifice peripheral vision that a triple setup provides, but you gain simplicity. Cable routing is easier. Setup time is shorter. The cost sits between a desk setup and a full triple rig. It's worth considering before committing to the triple because it is a reasonable middle ground. For many drivers, it is."
     },
     {
       "h2": "What the immersion gain actually means"
@@ -93,7 +93,7 @@
       "p": "Triple displays on a rig arm matter most in high-speed corners and under heavy braking. In slower corners, the difference is subtle. But when you're deep into a braking zone at Monza and your peripheral vision shows you both edges of the track while your central vision stays locked on the apex, your spatial confidence rises. That confidence translates into smoother inputs and fewer micro-corrections."
     },
     {
-      "p": "This is not a lap-time trick. You won't suddenly drop three seconds. But you will be more consistent. Your lap-time spread tightens. That consistency is what wins league races and time trial championships. On my rig, the triple setup has reduced my steering correction rate and lowered my average incident rate across seasons. That's measurable, though it took weeks of driving to build that mental map."
+      "p": "This is not a lap-time trick. You won't suddenly drop three seconds. But you will be more consistent. Your lap-time spread tightens. That consistency is what wins league races and time trial championships. Expect it to take weeks of driving to build that mental map."
     },
     {
       "p": "A desk monitor simply cannot deliver the same spatial lockup with your steering and pedal inputs. The monitor is separate. No matter how good the monitor is, your body moves relative to the screen during aggressive inputs, and your brain catches that mismatch. It's not terrible, but it's there."
@@ -115,7 +115,7 @@
       "p": "Choose a hybrid (single large monitor on rig) if you want the reference-frame benefit of a mounted display without the space and cost of a full triple. It's a real middle ground that many drivers find optimal."
     },
     {
-      "p": "The best display setup is the one you'll actually use consistently. On my MOZA R9 rig with the triple-monitor arm, I race 6-8 hours weekly, and the immersion is part of why I keep coming back. If you're starting out, a single desk monitor might be all you need, and that's okay. You can always upgrade later when you understand your commitment level to sim racing."
+      "p": "The best display setup is the one you'll actually use consistently. If you're starting out, a single desk monitor might be all you need, and that's okay. You can always upgrade later when you understand your commitment level to sim racing."
     }
   ],
   "faqs": [

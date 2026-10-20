@@ -10,7 +10,7 @@
       "p": "Console racing games and iRacing sit on opposite sides of a spectrum. They're both fun, but the moment you fire up iRacing on PC after years of Gran Turismo or Forza, you'll notice your instincts are wrong. Your braking points are too late. The car rotation doesn't match what you expect. Your throttle inputs feel mushy compared to the weight you felt before. This is not because iRacing is harder. It's because the physics and input response are fundamentally different."
     },
     {
-      "p": "I switched to a dedicated rig with my MOZA R9 after years on a controller, and the shift taught me that moving platforms isn't just about buying a wheel. It's about relearning how to read the car, how to trust the feedback, and how to adjust your approach to feedback settings and technique. Here's what to expect, what actually matters, and how to make the transition without losing months to confusion."
+      "p": "Moving from a controller to a dedicated wheel setup, such as a direct drive base like the MOZA R9, isn't just about buying a wheel. It's about relearning how to read the car, how to trust the feedback, and how to adjust your approach to feedback settings and technique. Here's what to expect, what actually matters, and how to make the transition without losing months to confusion."
     },
     {
       "h2": "Physics and car behavior feel completely different"
@@ -19,7 +19,7 @@
       "p": "Console racing games compress reality. They aim for fun and accessibility, so they soften the consequences of mistakes. A lock-up in Forza slows the car down but doesn't punish you as heavily. Understeer in Gran Turismo is forgiving. You can push the limit and the car still obeys."
     },
     {
-      "p": "iRacing models actual tire slip angles and load transfer. The car reaches a grip threshold and it stops obeying. It oversteers, understeers, or locks the brakes. That transition is sudden and demands precision. On my MOZA R9, I feel that threshold clearly through the wheel, but I had to learn to respect it first. On console, I'd been treating the limit as soft. In iRacing, it's a wall."
+      "p": "iRacing models actual tire slip angles and load transfer. The car reaches a grip threshold and it stops obeying. It oversteers, understeers, or locks the brakes. That transition is sudden and demands precision. Through a direct drive wheel like the MOZA R9, you can feel that threshold clearly, but you have to learn to respect it first. On console, many drivers treat the limit as soft. In iRacing, it's a wall."
     },
     {
       "p": "Braking distances are longer. Turn-in is sharper. Throttle application out of corners has to be smoother. These aren't bugs. They're features. iRacing is simulating real tire behavior, and real tires don't compress consequences."
@@ -50,7 +50,7 @@
       "p": "On controller, you could hold a button and modulate power by feel. On a load cell pedal, you're managing absolute pressure. This means your muscle memory for brake modulation, downshift blipping, and throttle smoothness has to reset. Your first few sessions will feel clumsy. You'll lock brakes on circuits where you never did before. You'll spin the wheels on acceleration."
     },
     {
-      "p": "The fix is repetition and acceptance that lock-ups and wheel spin now give real feedback that console racing suppressed. I spent hours in practice sessions doing nothing but braking into Turn 1 on familiar tracks, learning how much pressure the MOZA CRP2 load cell needed to stop the car without locking. That practice paid off within a week."
+      "p": "The fix is repetition and acceptance that lock-ups and wheel spin now give real feedback that console racing suppressed. Spend hours in practice sessions doing nothing but braking into Turn 1 on familiar tracks, learning how much pressure a load cell pedal like the MOZA CRP2 needs to stop the car without locking. That practice can start paying off within a week."
     },
     {
       "list": [
