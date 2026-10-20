@@ -48,7 +48,7 @@ function header(total) {
 
 ## About
 - Author: Carlos Martinez (iRacing user "Carlos Martinez9"). Home: ${SITE}/
-- Rig: MOZA R9 direct drive wheelbase, MOZA CS V2 wheel, MOZA CRP2 load cell pedals, RTX 5060 Ti, 1440p 120 Hz monitor. Full breakdown: ${SITE}/gear.html
+- Rig: MOZA R9 direct drive wheelbase, MOZA CS V2 wheel, MOZA SR-P pedals, RTX 5060 Ti, 1440p 120 Hz monitor. Full breakdown: ${SITE}/gear.html
 - Affiliate disclosure: gear links go to Amazon and carry an affiliate tag; the author may earn a commission at no cost to the reader. The site does not use sponsored loaner hardware.
 - ${total} blog guides published so far; new posts appear several times a week.
 

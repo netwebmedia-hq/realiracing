@@ -50,10 +50,10 @@
         amazonUrl: 'https://www.amazon.com/s?k=MOZA+CS+V2+steering+wheel&rh=p_89%3AMOZA',
         note: 'the round rim my whole FFB profile is tuned around'
       },
-      'moza-crp2': {
-        name: 'MOZA CRP2 Load Cell Pedals',
-        amazonUrl: 'https://www.amazon.com/s?k=MOZA+CRP2+pedals&rh=p_89%3AMOZA',
-        note: 'load-cell brake, managed in the same Pit House software'
+      'moza-sr-p': {
+        name: 'MOZA SR-P Load Cell Pedals',
+        amazonUrl: 'https://www.amazon.com/s?k=MOZA+SR-P+pedals&rh=p_89%3AMOZA',
+        note: 'the pedals on my rig, managed in the same Pit House software as the R9'
       },
       /* Category, not a product — many AIB partners build the same GPU,
          so a search is the honest link. Same for the monitor and cockpit. */
@@ -143,10 +143,10 @@
         amazonUrl: 'https://www.amazon.com/s?k=Thrustmaster+load+cell+pedals&rh=p_89%3AThrustmaster',
         note: 'budget load-cell brake over USB — the T-LCM itself is out of stock new on Amazon right now, so this opens Thrustmaster’s current Raceline pedals'
       },
-      'moza-sr-p': {
-        name: 'MOZA SR-P Load Cell Pedals',
-        amazonUrl: 'https://www.amazon.com/s?k=MOZA+SR-P+pedals&rh=p_89%3AMOZA',
-        note: 'budget load cell on the same Pit House ecosystem as my R9'
+      'moza-crp2': {
+        name: 'MOZA CRP2 Load Cell Pedals',
+        amazonUrl: 'https://www.amazon.com/s?k=MOZA+CRP2+pedals&rh=p_89%3AMOZA',
+        note: 'load-cell brake, managed in the same Pit House software'
       },
       /* The pedals-plus-kit combo this recommends does not map to one
          listing; Fanatec now sells the CSL Elite Pedals V2 with the load

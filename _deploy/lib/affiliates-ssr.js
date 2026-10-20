@@ -69,7 +69,7 @@ function affUrlFor(cfg, key) {
  * the disclosure paragraph on each post already says. No ratings, no scores and
  * no prices are shown anywhere in the box. */
 const RIG_KEYS = new Set([
-  'moza-r9', 'moza-cs-v2', 'moza-crp2', 'gpu-rtx-5060-ti', 'cpu-ryzen-7-5700', 'monitor-1440p-120',
+  'moza-r9', 'moza-cs-v2', 'moza-sr-p', 'gpu-rtx-5060-ti', 'cpu-ryzen-7-5700', 'monitor-1440p-120',
 ]);
 
 /* Produces the gear box renderGearBox() would build in the DOM, as a comparison
