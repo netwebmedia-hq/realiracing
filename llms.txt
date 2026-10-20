@@ -6,7 +6,7 @@
 - Author: Carlos Martinez (iRacing user "Carlos Martinez9"). Home: https://realiracing.com/
 - Rig: MOZA R9 direct drive wheelbase, MOZA CS V2 wheel, MOZA CRP2 load cell pedals, RTX 5060 Ti, 1440p 120 Hz monitor. Full breakdown: https://realiracing.com/gear.html
 - Affiliate disclosure: gear links go to Amazon and carry an affiliate tag; the author may earn a commission at no cost to the reader. The site does not use sponsored loaner hardware.
-- 178 blog guides published so far; new posts appear several times a week.
+- 181 blog guides published so far; new posts appear several times a week.
 
 ## Main sections
 - [Home](https://realiracing.com/): channel overview, content types, gear picks, FAQ
@@ -18,6 +18,9 @@
 
 ## Latest blog posts (newest first)
 
+- [Black Friday 2026 Pedals and Cockpit Deals: A Checklist for Judging Them](https://realiracing.com/blog/black-friday-pedals-cockpit-deals-checklist-2026.html): How to judge pedal and cockpit deals on Black Friday, November 27, 2026: load cell vs potentiometer, buy order, compatibility, shipping weight, flex and returns.
+- [How to Judge a Wheelbase Deal on Black Friday 2026](https://realiracing.com/blog/black-friday-wheelbase-deals-checklist-2026.html): A checklist for judging direct drive wheelbase deals on Black Friday (Nov 27) and Cyber Monday 2026: torque tier, box contents, ecosystem, mounting and returns.
+- [Cyber Monday 2026 iRacing PC, Monitor and VR Deals Checklist: What to Verify First](https://realiracing.com/blog/cyber-monday-iracing-pc-monitor-vr-deals-checklist-2026.html): A same-day checklist for judging GPU, CPU, monitor and Meta Quest 3 deals for iRacing on Cyber Monday, November 30, 2026, with traps and return-window checks.
 - [Sim Racing Black Friday 2026: What to Wait For | RealIRacing](https://realiracing.com/blog/sim-racing-black-friday-2026-what-to-wait-for.html): How to plan a sim racing purchase around Black Friday on November 27: what is worth waiting for, what is not, and how to check a deal is real.
 - [Wheel Rotation and Steering Ratio in iRacing, Explained](https://realiracing.com/blog/steering-rotation-and-ratio-iracing.html): Why your wheel's degrees of rotation should match the car, how soft lock and steering ratio work in iRacing, and how to set it up on a MOZA R9.
 - [Sim Rig Cable Management: A Practical Guide | RealIRacing](https://realiracing.com/blog/sim-rig-cable-management-guide.html): How to route power, USB and pedal cables on a direct drive rig so nothing snags, disconnects mid-race or adds noise to force feedback.
@@ -35,9 +38,6 @@
 - [Used Sim Racing Wheelbase: What to Check Before Buying](https://realiracing.com/blog/used-sim-racing-wheelbase-inspection-guide.html): Inspect motor health, firmware compatibility, and wear patterns before buying a used direct-drive wheelbase. Avoid dead units and costly repairs.
 - [Why a Fast Setup Can Actually Make You Slower in iRacing](https://realiracing.com/blog/fast-setup-makes-you-slower-iracing.html): A setup optimized for raw pace can punish mistakes and hurt consistency. Learn why baseline trumps edge-case performance.
 - [Understanding Strength of Field in iRacing: What SOF Really Means](https://realiracing.com/blog/strength-of-field-iracing-explained.html): Strength of Field (SOF) determines your iRacing incident and safety rating gains. Learn how it's calculated and why racing weak fields costs you more mistakes.
-- [Motion Rigs for iRacing: What They Add and What They Actually Cost](https://realiracing.com/blog/motion-rigs-cost-benefit-sim-racing.html): Motion platforms add immersion and driver feedback to iRacing, but cost ranges from budget ~$1500 to ~$15,000+. Here's what you actually feel and whether it's worth it.
-- [Wheel Rim Shapes Compared: GT, Open-Wheel, and Rally Rims](https://realiracing.com/blog/wheel-rim-guide-gt-open-wheel-rally-shapes.html): GT, open-wheel, and rally wheel rims have different grip points and feedback profiles. Learn which rim shape matches your iRacing categories.
-- [How to Choose Gear Ratios for a Track You've Never Driven](https://realiracing.com/blog/gearing-ratios-unknown-track-strategy.html): Walk into an unfamiliar track with confidence. Learn a gearing strategy to lock in ratios before you've turned a lap, using baseline setups and telemetry.
 
 ## More
 - Every post, one line each: https://realiracing.com/llms-full.txt
