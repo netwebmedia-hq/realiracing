@@ -1,0 +1,51 @@
+{
+  "slug": "rejoining-the-track-safely-after-a-spin-iracing",
+  "tag": "Racecraft · Technique",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "How to Rejoin the Track Safely After a Spin in iRacing",
+  "description": "What to do in the seconds after a spin in iRacing: stop the car, read the relative, pick a gap and rejoin parallel to the racing line without causing a wreck.",
+  "published": "2026-10-20",
+  "dateLabel": "October 20, 2026",
+  "gearKeys": ["moza-r9", "moza-crp2", "monitor-1440p-120"],
+  "sections": [
+    { "p": "The spin is rarely what ruins the race. I have spun at the exit of a fast corner, sat in the grass for a few seconds, and still finished mid-pack. What ruins races, mine and other people's, is the next five seconds: the panicked throttle stab back onto the circuit, straight across the racing line, into the path of a car arriving at full speed. That is how one driver's mistake becomes a five-car pileup and a pile of incident points for everyone." },
+    { "p": "This is the routine I use now on my MOZA R9 rig every time the car gets away from me. It is boring on purpose. The goal is to turn a lost race position into a lost race position, nothing worse." },
+    { "h2": "Step one: stop the car" },
+    { "p": "Once the spin is past saving, commit to it. The old real-world rule applies in the sim too: in a spin, both feet in. Clutch and brake down so the car stops as quickly and predictably as possible. A car that is still rolling or creeping is impossible for other drivers to avoid, because they cannot tell where it is going. A stopped car is a fixed obstacle they can steer around." },
+    { "p": "If you are trying to catch the slide, that is a different situation; I covered it in <a href=\"saving-a-slide-before-the-spin.html\">saving a slide before the spin</a>. The moment you realise it is gone, stop fighting and stop the car." },
+    { "tip": "On a load cell brake like the CRP2, a full, firm press is easy to find under stress. If your brake pedal is set very soft, practise a few deliberate spins in a test session so the panic stop is muscle memory.", "tipLabel": "Rig note" },
+    { "h2": "Step two: look before you move" },
+    { "p": "With the car stopped, your first job is information, not movement. Open the relative black box (F3 by default) and read who is coming and how far back. The relative shows the gap in seconds to the cars around you on track, which is exactly what you need. A car one or two seconds back is arriving now. A car eight seconds back gives you room." },
+    { "p": "Check your mirrors or look-left and look-right bindings too, and listen to the spotter if you use one. The relative tells you who is close in time; your eyes tell you which line they are on. If you are stopped near a corner exit, remember that the cars behind you are also likely to be dealing with the same tricky part of the track." },
+    { "h2": "Step three: pick a real gap" },
+    { "p": "Wait for a gap that is genuinely clear, not one that is clear if everything goes perfectly. A pack of cars that just came through will often have one or two stragglers a few seconds behind. Let them pass. Losing three more seconds costs you almost nothing compared with being collected by someone doing full speed." },
+    { "p": "In multiclass races, be extra careful. A faster class car can close a gap that looks comfortable much quicker than you expect, and its driver may be looking at the car in front of them, not at you in the grass." },
+    { "h2": "Step four: rejoin parallel to the track" },
+    { "p": "This is the step most people get wrong. Do not point the car across the circuit and floor it. Turn the car so it is roughly parallel to the direction of travel, ideally on the edge of the track away from the racing line, and accelerate gently along that edge until you are up to a reasonable speed." },
+    { "olist": [
+      "Point the car in the race direction, even if it takes a short reverse or a slow three-point turn.",
+      "Use the run-off or the track edge away from the racing line to build speed.",
+      "Merge onto the line only once you are close to race pace and nobody is alongside.",
+      "Hold your line predictably; no sudden swerves back across."
+    ] },
+    { "p": "Cold or dirty tyres after a trip through the grass will have less grip for the first corner or two. Brake a little earlier than usual until they come back. The car will feel slippery and that is normal." },
+    { "h2": "When you are stopped in a bad place" },
+    { "p": "Sometimes the car stops on the racing line, often just after a blind crest or at the apex of a corner. In that case you cannot wait calmly for a perfect gap, because you are the hazard. Move the car off the line as soon as you safely can, slowly and in the direction that keeps you visible to approaching drivers, then go through the routine above." },
+    { "p": "If the car is badly damaged or stuck facing the wrong way in a dangerous spot, the tow option is a valid choice. It costs time, but it removes you from the track and keeps the race clean. In a practice or test session there is no reason not to reset." },
+    { "h2": "How incidents add up" },
+    { "p": "iRacing tracks incident points per driver, and the system does not care whose fault a crash was. By the current rules, an off-track is about 1x, a loss of control about 2x and heavy contact up to around 4x, with the exact values depending on the situation. A spin that you handle cleanly typically costs you the loss of control and maybe an off-track. A spin followed by a rushed rejoin into traffic can add contact points for you and for the drivers you hit. I explain the categories in more detail in <a href=\"iracing-incident-points-how-they-work.html\">how iRacing incident points work</a>." },
+    { "p": "There is also the track limits angle. Rejoining in a way that cuts part of the circuit can earn an off-track or a slowdown. See <a href=\"track-limits-and-off-track-penalties-iracing.html\">track limits and off-track penalties in iRacing</a> if you are not sure how those are judged." },
+    { "h2": "Practise it on purpose" },
+    { "p": "The rejoin is a skill like braking or trail braking, and it is easy to practise. In a test drive session, drive a few laps, intentionally spin at a corner exit, stop the car, open the relative and rejoin along the edge. Do it a dozen times at different corners. When it happens in a race, you will have a routine instead of a reflex." },
+    { "p": "A decent field of view also helps. On my single 1440p monitor I keep the field of view calculated for my seating position, and I bind look left and look right to buttons on the wheel. Being able to glance sideways without letting go of the wheel makes the check in step two much faster." },
+    { "h2": "Why it matters beyond one race" },
+    { "p": "Clean rejoins protect your safety rating, but they also make you someone people want to race with. In a league or a regular series, drivers remember who caused the wreck at turn one last week. A driver who spins and rejoins carefully gets a little more trust in wheel-to-wheel battles, and that trust is worth more than the two or three seconds you lost waiting for a gap." }
+  ],
+  "faqs": [
+    { "q": "What should I do immediately after spinning in iRacing?", "a": "Commit to the spin by pressing clutch and brake together so the car stops quickly and predictably. A stopped car is easier for other drivers to avoid than one that is still rolling." },
+    { "q": "How do I know when it is safe to rejoin in iRacing?", "a": "Open the relative black box, which shows the time gap to nearby cars, and check your mirrors or look left and right. Wait for a gap of several seconds, letting any straggling cars pass first." },
+    { "q": "How should I rejoin the racing line after a spin?", "a": "Point the car in the race direction, build speed along the edge of the track away from the racing line, and merge only when you are close to race pace and nobody is alongside." },
+    { "q": "Does spinning out give incident points in iRacing?", "a": "A loss of control typically adds about 2x and an off-track about 1x. Contact during a careless rejoin can add more, for you and for the drivers involved." }
+  ]
+}
