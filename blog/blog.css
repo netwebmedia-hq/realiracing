@@ -437,3 +437,18 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .nav-links li:nth-last-child(2) { padding-right: 18px; }
   .nav-links a { display: inline-block; padding: 4px 2px; }
 }
+
+/* Blog email capture (js/join.js) 2026-10-20 */
+.rir-join-box .jr { display: flex; gap: 8px; max-width: 440px; margin: 0 auto; }
+.rir-join-box input[type="email"] {
+  flex: 1 1 auto; min-width: 0; padding: 12px 16px; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--black); color: var(--text); font: inherit; font-size: 0.95rem;
+}
+.rir-join-box input[type="email"]:focus-visible { outline: 2px solid var(--accent2); outline-offset: 2px; }
+.rir-join-box button { border: 0; cursor: pointer; font-family: inherit; }
+.rir-join-box button:disabled { opacity: .6; cursor: wait; }
+.rir-join-box .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.rir-join-box .jm { min-height: 1.4em; margin: 10px 0 0; color: var(--text); }
+.rir-join-box .fine { font-size: 0.8rem; margin: 6px 0 0; }
+.rir-join.done .jr { display: none; }
+@media (max-width: 480px) { .rir-join-box .jr { flex-direction: column; } }
