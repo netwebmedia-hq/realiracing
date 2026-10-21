@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://realiracing.com/blog/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -1161,6 +1161,12 @@
   <url>
     <loc>https://realiracing.com/blog/road-atlanta-iracing-guide-esses-turn-10.html</loc>
     <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://realiracing.com/blog/how-to-pick-your-iracing-series-each-season.html</loc>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
