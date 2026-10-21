@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moving from console racing to iRacing on PC: what changes</title>
+  <meta name="description" content="Console racing plays differently than iRacing. Learn the actual gaps in physics, input lag, car feel, and how to retrain your muscle memory." />
+  <link rel="canonical" href="https://realiracing.com/blog/console-racing-to-iracing-pc-transition-guide.html" />
+  <meta property="og:title" content="Moving from console racing to iRacing on PC: what changes" />
+  <meta property="og:description" content="Console racing plays differently than iRacing. Learn the actual gaps in physics, input lag, car feel, and how to retrain your muscle memory." />
+  <meta property="og:url" content="https://realiracing.com/blog/console-racing-to-iracing-pc-transition-guide.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/sim-rig-event.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="667" />
+  <meta property="og:image:alt" content="A sim racing rig set up at an event" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/sim-rig-event.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261020" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Moving from console racing to iRacing on PC: what changes",
+    "description": "Console racing plays differently than iRacing. Learn the actual gaps in physics, input lag, car feel, and how to retrain your muscle memory.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/console-racing-to-iracing-pc-transition-guide.html",
+    "image": "https://realiracing.com/assets/photos/sim-rig-event.jpg",
+    "datePublished": "2026-10-19",
+    "dateModified": "2026-10-19"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Moving from console racing to iRacing on PC: what changes","item":"https://realiracing.com/blog/console-racing-to-iracing-pc-transition-guide.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/console-racing-to-iracing-pc-transition-guide.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/console-racing-to-iracing-pc-transition-guide.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup — high refresh matters more than size","url":"https://realiracing.com/blog/console-racing-to-iracing-pc-transition-guide.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does it take to be competitive in iRacing coming from console racing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Three to four weeks of regular practice. Your first week is awkward as you retrain muscle memory for braking and throttle feel. Week two through four, lap times improve quickly as your brain accepts the feedback and physics. Competitive depends on your series and skill level, but most console racers can find their pace by week three if they practice consistently." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a high-end rig to transition from console, or will a budget setup work?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Budget setups work fine for learning the physics and inputs. A basic direct drive wheel like the MOZA R5 paired with load cell pedals will teach you everything you need. You don't need the MOZA R9 or high-end gear to adapt. Comfort and consistency matter more than torque specs when you're starting out. Upgrade later if you want precision feedback for competitive racing." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I use console settings like assists and damage models in iRacing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "They'll mask the physics and slow your learning. Assists like traction control and ABS dull feedback and let you get away with sloppy inputs. Damage models don't affect most rookie series, but when you get to higher licenses, cosmetic damage becomes structural. Run damage on so you learn consequences early. Turn off assists once you've had a few sessions to get used to raw inputs, then reintroduce them if you want to know how they feel." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I practice the same track repeatedly or try new tracks to learn faster?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Same track for the first two weeks. New tracks too early add variable that slows your adaptation to the physics changes. Spend three to four sessions on one track, move to a second track, then a third. By week three, start rotating through unfamiliar tracks. Repetition teaches muscle memory. Variety teaches decision-making under pressure." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">iRacing Tips · Getting Started</p>
+    <h1>Moving from console racing to iRacing on PC: what changes</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 19, 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/sim-rig-event.jpg" width="1000" height="667" alt="A sim racing rig set up at an event" srcset="/assets/photos/sim-rig-event-sm.jpg 560w, /assets/photos/sim-rig-event.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Photo: <a href="https://www.flickr.com/people/101790889@N08" target="_blank" rel="noopener nofollow">Krémer Krisztián from Siklós, Hungary</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener nofollow">Public Domain Mark 1.0</a> · Source: <a href="https://commons.wikimedia.org/wiki/File:Guerrieri_sim_racing_(34535361512).jpg" target="_blank" rel="noopener nofollow">Wikimedia Commons</a></figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">Console racing games and iRacing sit on opposite sides of a spectrum. They're both fun, but the moment you fire up iRacing on PC after years of Gran Turismo or Forza, you'll notice your instincts are wrong. Your braking points are too late. The car rotation doesn't match what you expect. Your throttle inputs feel mushy compared to the weight you felt before. This is not because iRacing is harder. It's because the physics and input response are fundamentally different.</p>
+
+      <p>Moving from a controller to a dedicated wheel setup, such as a direct drive base like the <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a>, isn't just about buying a wheel. It's about relearning how to read the car, how to trust the feedback, and how to adjust your approach to feedback settings and technique. Here's what to expect, what actually matters, and how to make the transition without losing months to confusion.</p>
+
+      <h2>Physics and car behavior feel completely different</h2>
+
+      <p>Console racing games compress reality. They aim for fun and accessibility, so they soften the consequences of mistakes. A lock-up in Forza slows the car down but doesn't punish you as heavily. Understeer in Gran Turismo is forgiving. You can push the limit and the car still obeys.</p>
+
+      <p>iRacing models actual tire slip angles and load transfer. The car reaches a grip threshold and it stops obeying. It oversteers, understeers, or locks the brakes. That transition is sudden and demands precision. Through a direct drive wheel like the MOZA R9, you can feel that threshold clearly, but you have to learn to respect it first. On console, many drivers treat the limit as soft. In iRacing, it's a wall.</p>
+
+      <p>Braking distances are longer. Turn-in is sharper. Throttle application out of corners has to be smoother. These aren't bugs. They're features. iRacing is simulating real tire behavior, and real tires don't compress consequences.</p>
+
+      <div class="tip-box">
+        <span class="box-label">First week pace</span>
+        <p>Spend your first week lowering your pace targets by 2 to 4 tenths per lap. You're not slower. You're adapting. Lap time returns once muscle memory catches up.</p>
+      </div>
+
+      <h2>Input lag and wheel response are night-and-day different</h2>
+
+      <p>Console racing happens through a TV, often with some degree of input lag between your controller and the screen. Your brain has learned to compensate. You make small adjustments and wait a fraction longer than you think you should to see the result.</p>
+
+      <p>A direct drive wheelbase on PC connected to a monitor eliminates that lag almost entirely. The MOZA R9 sends steering input to the sim in milliseconds. Force feedback comes back immediately. Your brain has to recalibrate because the cause and effect are now instantaneous. This is why your first laps feel jittery. You're used to lag and the car is responding too fast to what you're doing.</p>
+
+      <p>The force feedback strength also shocks new arrivals. Console wheels often have weak or inconsistent feedback. The MOZA R9 can produce ~9 N·m of torque, and if you leave default FFB settings on, it will feel violent compared to what you're used to. My advice is to start with FFB sensitivity around 75-80% and tune from there once you've adapted to the responsiveness.</p>
+
+      <h2>Throttle and brake feel requires retraining</h2>
+
+      <p>Console controllers use button input or analog triggers with soft edges. Your foot or finger moves through a wide zone where the car gradually adds power or brake force. iRacing responds to every millimeter of pedal travel. A load cell pedal like the <a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2</a> measures actual pressure, so the response is linear and immediate.</p>
+
+      <p>On controller, you could hold a button and modulate power by feel. On a load cell pedal, you're managing absolute pressure. This means your muscle memory for brake modulation, downshift blipping, and throttle smoothness has to reset. Your first few sessions will feel clumsy. You'll lock brakes on circuits where you never did before. You'll spin the wheels on acceleration.</p>
+
+      <p>The fix is repetition and acceptance that lock-ups and wheel spin now give real feedback that console racing suppressed. Spend hours in practice sessions doing nothing but braking into Turn 1 on familiar tracks, learning how much pressure a load cell pedal like the MOZA CRP2 needs to stop the car without locking. That practice can start paying off within a week.</p>
+
+      <ul>
+        <li>Brake pressure is not progressive on consoles. iRacing reads exact pedal depth, so small changes matter.</li>
+        <li>Throttle modulation out of slow corners is sharper than console racing allowed. Practice smoothness.</li>
+        <li>Blipping the downshift (or heel-toe if you want) has to be accurate. Console racing doesn't punish sloppy blips.</li>
+        <li>ABS strength and brake bias work in iRacing. Console games often auto-manage these for you.</li>
+      </ul>
+
+      <h2>Setup tuning has actual consequences</h2>
+
+      <p>Console racing games often come with pre-tuned setups that smooth out driver error. You can race poorly and still finish because the setup is doing half the work for you.</p>
+
+      <p>iRacing setups are sensitive. A 0.5 deg change in front anti-roll bar stiffness ripples through how the car handles understeer and oversteer. Brake bias 1% off and your confidence evaporates. This is not punishment. It's precision. Real racing cars work this way.</p>
+
+      <p>Start with the iRacing baseline setup for whatever car and track you're racing. Do not download setup shops or optimized setups yet. Run 10 laps, take notes on what feels wrong (too much understeer, rear sliding too much, brake locking), then make one small change and test again. This process teaches you how the car actually works instead of just copying someone's setup and wondering why it feels off in your hands.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Start with baseline</span>
+        <p>The baseline setup is rarely perfect, but it's honest. It shows you the car's true behavior. Optimized setups mask driver skill.</p>
+      </div>
+
+      <h2>Monitor or VR choice changes the learning curve</h2>
+
+      <p>Console racing on a TV is familiar. iRacing on a single monitor also feels normal if you've played racing games before. But triple monitors or VR introduce peripheral vision that changes how you brake and turn-in.</p>
+
+      <p>VR, in particular, rewires spatial awareness. You get depth cues you don't get on a flat screen. Your braking points feel different because you can judge distance better. This is an advantage over time, but it adds another layer of retraining on top of the physics and input changes already hitting you.</p>
+
+      <p>My suggestion is to start on whatever display you have now. Don't buy triple monitors or a VR headset thinking it will help you learn faster. It won't. It will add confusion. Once you're comfortable with the physics and your muscle memory catches up, then experiment with display upgrades if you want. A single monitor with iRacing is enough to be competitive in most series.</p>
+
+      <h2>Your first week should be low-pressure practice</h2>
+
+      <p>The temptation is to jump into a race as soon as you load iRacing. Resist it. Spend your first week in practice mode or the test drive servers running the same car and track repeatedly. Pick a GT3 car like the Ferrari 488 or an open-wheel series like the Dallara IR18 and just drive. No qualifying pressure, no race pressure, just repetition.</p>
+
+      <p>Run 15-20 laps per session. Don't chase pace. Focus on smooth inputs, finding the grip threshold, and getting comfortable with how much brake pressure and throttle modulation the car needs. Lap times will follow naturally once your hands stop second-guessing themselves.</p>
+
+      <p>After a week of consistent practice, you'll find your pace is closer to your console speed than you think. The gap narrows fast once the physics stop feeling alien. A week or two more and you'll be competitive in races.</p>
+
+      <ol>
+        <li>Pick one car and track. Run 15-20 practice laps per session.</li>
+        <li>Note what feels wrong: too much understeer, brake locking, throttle spinning wheels.</li>
+        <li>Make one setup change and test it for 5 laps. Did it improve or get worse?</li>
+        <li>After three sessions on the same track, move to a different circuit but same car.</li>
+        <li>After two weeks, you're ready for competitive racing.</li>
+      </ol>
+
+      <h2>Your console skills transfer more than you think</h2>
+
+      <p>This all sounds discouraging, but here's the reality: racecraft, discipline, and consistency matter across all platforms. If you were fast on console, you have good instincts for turn-in, brake modulation, and race craft. You just need to retrain your hands and eyes to iRacing's physics and feedback.</p>
+
+      <p>Your understanding of trail braking, late apexes, and smooth inputs is already there. The car just responds faster and more critically now, so those skills have to be sharper. That's not a loss. It's an upgrade.</p>
+
+      <p>The real win is that once you adapt to iRacing, going back to console racing feels like driving a video game. iRacing has spoiled you for the responsiveness and honesty. That's worth the adjustment period.</p>
+
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before you go live, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=console-racing-to-iracing-pc-transition-guide">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup — high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Get the next guide by email</h3>
+        <p>Setups, FFB settings and new packs, straight from the rig. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing" data-ok="You're on the list. Thanks!" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Subscribe</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>How long does it take to be competitive in iRacing coming from console racing?</h3>
+        <p>Three to four weeks of regular practice. Your first week is awkward as you retrain muscle memory for braking and throttle feel. Week two through four, lap times improve quickly as your brain accepts the feedback and physics. Competitive depends on your series and skill level, but most console racers can find their pace by week three if they practice consistently.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do I need a high-end rig to transition from console, or will a budget setup work?</h3>
+        <p>Budget setups work fine for learning the physics and inputs. A basic direct drive wheel like the MOZA R5 paired with load cell pedals will teach you everything you need. You don't need the MOZA R9 or high-end gear to adapt. Comfort and consistency matter more than torque specs when you're starting out. Upgrade later if you want precision feedback for competitive racing.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What happens if I use console settings like assists and damage models in iRacing?</h3>
+        <p>They'll mask the physics and slow your learning. Assists like traction control and ABS dull feedback and let you get away with sloppy inputs. Damage models don't affect most rookie series, but when you get to higher licenses, cosmetic damage becomes structural. Run damage on so you learn consequences early. Turn off assists once you've had a few sessions to get used to raw inputs, then reintroduce them if you want to know how they feel.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I practice the same track repeatedly or try new tracks to learn faster?</h3>
+        <p>Same track for the first two weeks. New tracks too early add variable that slows your adaptation to the physics changes. Spend three to four sessions on one track, move to a second track, then a third. By week three, start rotating through unfamiliar tracks. Repetition teaches muscle memory. Variety teaches decision-making under pressure.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="wet-weather-driving-technique-iracing-guide.html"><span>iRacing Tips</span>Wet Weather Driving in iRacing: Technique, Setup, and Survival</a>
+      <a class="related-card" href="garage61-telemetry-comparison-tools.html"><span>iRacing Tips</span>Garage61 vs Telemetry Comparison Tools: Which Fits Your iRacing Workflow</a>
+      <a class="related-card" href="time-trials-time-attack-racing-yourself.html"><span>iRacing Tips</span>Time Trials and Time Attack: Racing Against Yourself in iRacing</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","moza-crp2","monitor-1440p-120"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
