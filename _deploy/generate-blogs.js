@@ -276,7 +276,7 @@ function scanExistingPosts() {
 // 6 of 177 posts, the gate was too narrow); performance/streaming topics get the
 // go-live hook, everything else the pre-session one. No price in the copy
 // (client-facing rule); labelled as our own product.
-const PITSTOP_TOPIC_RE = /(stream(?:ing)?|obs|fps|stutter(?:ing)?|cpu|gpu|bottleneck(?:s|ing)?|performance|frame ?rate|lag|overlay)/i;
+const PITSTOP_TOPIC_RE = /\b(stream(?:ing)?|obs|fps|stutter(?:ing)?|cpu|gpu|bottleneck(?:s|ing)?|performance|frame ?rate|lag|overlay)\b/i;
 function pitstopCalloutHtml(post) {
   const hay = [post.slug, post.title, post.description, post.tag].join(' ').replace(/-/g, ' ');
   const hook = PITSTOP_TOPIC_RE.test(hay)
@@ -285,6 +285,20 @@ function pitstopCalloutHtml(post) {
   return `<div class="tip-box rir-pitstop-callout">
         <span class="box-label">From the RealiRacing shop</span>
         <p><strong>${hook}</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=${esc(post.slug)}">See NWM PitStop &rarr;</a></p>
+      </div>
+`;
+}
+
+// R9 owners land on these posts from search ("moza r9 iracing settings" is the site's top
+// query, 2026-10-21) but the matching FFB pack was linked once, 63% down one page. Put it
+// under the disclosure on every R9 post. No price in the copy (client-facing rule).
+const R9_TOPIC_RE = /\br9\b/i;
+function r9PackCalloutHtml(post) {
+  const hay = [post.slug, post.title].join(' ').replace(/-/g, ' ');
+  if (!R9_TOPIC_RE.test(hay)) return '';
+  return `<div class="tip-box rir-r9-pack-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Running a MOZA R9 in iRacing?</strong> Skip the trial and error: our R9 + iRacing force feedback pack has the Pit House and in-sim values we race on, ready to load. <a href="/packs/moza-r9-iracing-ffb-pack.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=r9_pack&amp;utm_content=${esc(post.slug)}">See the R9 FFB pack &rarr;</a></p>
       </div>
 `;
 }
@@ -431,6 +445,8 @@ ${photos.figureHtml(photo)}
 
     <div class="article-body">
       <p class="disclosure">${PAGE_DISCLOSURE}</p>
+
+      ${r9PackCalloutHtml(post)}
 
 ${bodyHtml}
 
