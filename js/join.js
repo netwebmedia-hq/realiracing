@@ -22,9 +22,9 @@
     fetch(form.getAttribute('data-api'), {
       method: 'POST', credentials: 'omit', headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ form_id: form.getAttribute('data-form'), data: {
-        email: email, hp_website: hp ? hp.value : '', source: 'blog-realiracing',
+        email: email, hp_website: hp ? hp.value : '', source: form.getAttribute('data-source') || 'blog-realiracing',
         lang: document.documentElement.lang || '', utm_source: qs.get('utm_source') || 'realiracing',
-        utm_medium: qs.get('utm_medium') || 'blog', utm_campaign: qs.get('utm_campaign') || 'blog-join',
+        utm_medium: qs.get('utm_medium') || 'blog', utm_campaign: qs.get('utm_campaign') || form.getAttribute('data-campaign') || 'blog-join',
         landing_page: location.href.slice(0, 1000), referrer: (document.referrer || '').slice(0, 1000) } })
     }).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
