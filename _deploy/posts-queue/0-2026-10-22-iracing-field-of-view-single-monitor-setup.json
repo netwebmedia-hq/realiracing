@@ -1,0 +1,119 @@
+{
+  "slug": "iracing-field-of-view-single-monitor-setup",
+  "tag": "Guide · Setup",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "How to Set Field of View in iRacing on a Single Monitor",
+  "description": "Why the correct iRacing field of view looks too zoomed in at first, how to calculate it from screen size and distance, and how I adjusted my single 1440p monitor setup.",
+  "published": "2026-10-22",
+  "dateLabel": "October 22, 2026",
+  "gearKeys": [
+    "monitor-1440p-120",
+    "cockpit",
+    "moza-r9"
+  ],
+  "sections": [
+    {
+      "p": "The first time I set a mathematically correct field of view in iRacing, I hated it. The windscreen filled the whole screen, I could not see my mirrors without the virtual ones, and every corner felt like it arrived too fast. I lasted two laps before I turned it back up. It took me another month of inconsistent braking points to understand that the wide view I was comfortable with was the thing lying to me. This guide is how I settled the question on my single monitor rig, and why I now think FOV is the first setting a new sim racer should fix, before any wheel or pedal tuning."
+    },
+    {
+      "h2": "What field of view actually controls"
+    },
+    {
+      "p": "Field of view is the angle of the game world the camera shows on your screen. A wide FOV squeezes more of the track into the same pixels, so everything looks smaller and farther away. A narrow FOV shows less, at a larger scale. Neither is more real on its own. The correct value is the one where the angle the game renders matches the angle your monitor physically occupies in your vision, measured from where your eyes sit."
+    },
+    {
+      "p": "When those two angles match, a braking board that is 100 metres away looks the size a 100 metre distant object looks in real life, and your brain's distance and speed judgement, trained by decades of walking and driving, starts working inside the sim. When they do not match, your brain is constantly correcting for a view that is zoomed out or zoomed in, and that correction shows up as braking too early, turning in too late and never quite trusting the car on the limit."
+    },
+    {
+      "h2": "Why the correct value feels wrong at first"
+    },
+    {
+      "p": "On a single monitor the correct FOV is almost always narrower than what the game defaults to and far narrower than what most streamers run for a dramatic picture. The physical reason is simple. A 27 inch monitor at roughly arm's length covers only a modest slice of your vision, somewhere around ~40 to ~50 degrees horizontally depending on how close you sit. A real car's windscreen covers much more than that. So the game can only show you a cropped version of what a driver would see, and anything wider than the correct crop is a distortion."
+    },
+    {
+      "p": "The feeling of speed is the first thing people miss. A wide FOV makes the scenery stream past the edges of the screen, which reads as fast. The correct FOV calms that down. The sense of speed you lose is fake, though, and what you gain is a stable reference for distance. After about a week of racing with the correct setting I noticed that my braking points had stopped drifting from lap to lap, which had never happened with the wide view."
+    },
+    {
+      "h2": "How to measure and calculate it"
+    },
+    {
+      "p": "You need two numbers: the width of your screen's visible area and the distance from your eyes to the screen when you are seated in your driving position. Measure both in the same units with a tape measure. Do not use the marketing size of the monitor, because that is the diagonal and includes nothing about the aspect ratio."
+    },
+    {
+      "olist": [
+        "Sit in your rig as you race. Measure from the bridge of your nose to the centre of the screen. On my fixed cockpit that is roughly ~70 cm.",
+        "Measure the visible width of the panel. My 27 inch 1440p monitor is about ~60 cm wide.",
+        "Open iRacing, go to Options, then Graphics, and find the FOV section. There is a Calculate button that asks for monitor size and distance and does the trigonometry for you.",
+        "Alternatively, use any online FOV calculator for a single screen and enter the same two numbers. The result should match iRacing's own tool within a degree or so.",
+        "Apply the value, join a test session and drive a track you know well. Resist the urge to change it for at least three or four sessions."
+      ]
+    },
+    {
+      "p": "The maths behind the button is a simple arctangent of half the screen width over the eye distance, doubled. You do not need to do it by hand, but it is worth knowing that the input that moves the result most is the distance. Pull the monitor ~10 cm closer and the correct FOV widens noticeably. That is the lever to use if the first result feels unworkable."
+    },
+    {
+      "tipLabel": "From my rig",
+      "tip": "I measured eye distance three times on different days and got three slightly different numbers, because I was sitting differently each time. Fixing my seat position first, as described in the seating guide, made the FOV number stable."
+    },
+    {
+      "h2": "The trade-off: correct FOV versus seeing your mirrors"
+    },
+    {
+      "p": "Here is the honest problem with a correct FOV on one screen. You lose the side mirrors and most of the peripheral view. Cars alongside you vanish from the picture. Some people treat that as proof the setting is wrong. I treat it as the reason iRacing ships with virtual mirrors, a relative box and a spotter. Turn on the virtual mirror, keep the relative black box visible and learn to read your spotter calls rather than glancing sideways. That is also what the triple screen and VR crowd do; they simply get more peripheral image for free."
+    },
+    {
+      "p": "If you race a lot of close multiclass traffic and the loss of peripheral vision costs you more than the gain in distance judgement, there is a middle path. Move the monitor closer so the correct FOV widens, or accept a value a few degrees above the calculated one as a deliberate compromise you understand. What I would avoid is going back to a very wide view because it looks exciting, since you give up exactly the consistency you came for."
+    },
+    {
+      "h2": "Monitor size and distance: what actually helps"
+    },
+    {
+      "p": "The question I get most from people on a single screen is whether a bigger monitor fixes the problem. A bigger panel at the same distance gives a wider correct FOV, which is good, but it also pushes your eyes to travel further to see the dash and mirrors. In my experience a monitor in the 27 to 32 inch range mounted close, at roughly arm's length or a little less, is the sweet spot for a single screen rig. An ultrawide helps the peripheral view at the cost of a smaller vertical angle, which I compared in more detail in the <a href=\"triple-monitor-vs-ultrawide-sim-racing.html\">triple monitor versus ultrawide article</a>."
+    },
+    {
+      "p": "Whatever size you choose, mount it to the rig or a stand that puts the centre of the screen roughly at eye level and lets you bring it close. A monitor stuck at the back of a desk, ~1 metre away, forces a very narrow correct FOV that most people will not tolerate. Bringing it to ~65 to ~75 cm is the single biggest improvement for a one screen setup, and it costs nothing if your stand allows it. Sitting closer also matters for eye comfort, which I covered in the <a href=\"prevent-eye-strain-sim-racing-distance.html\">eye strain guide</a>."
+    },
+    {
+      "h2": "Settings that interact with FOV"
+    },
+    {
+      "list": [
+        "Seat position. iRacing lets you move the in-car camera forward, back, up and down. Set FOV first, then adjust the seat so the dash and wheel look natural. Changing the seat does not change FOV, only what is in frame.",
+        "Virtual mirror and relative box. Both become necessary at a correct FOV on one screen. Position them where a glance, not a head turn, finds them.",
+        "Head movement and shake. I keep the in-game head motion low, because at a correct FOV the view already feels alive and extra bobbing only costs precision.",
+        "Steering wheel in the cockpit view. Many drivers hide it once the real wheel sits in front of the screen, since two wheels at slightly different angles confuse the eye. Hide it or show it, but do not let it drive your FOV choice."
+      ]
+    },
+    {
+      "h2": "How to give it a fair trial"
+    },
+    {
+      "p": "Set the calculated value and drive one familiar track for a full practice session. Expect to feel slow and cramped for the first ten laps. Pay attention to two things: whether your braking points become repeatable and whether you start catching the car earlier when it steps out. Those are the improvements FOV delivers, and they usually appear before the picture starts to feel normal. I combined the trial with a structured practice plan so I had lap time data to compare alongside the feeling."
+    },
+    {
+      "p": "After three or four sessions, if the view is still unworkable, bring the monitor closer and recalculate rather than reaching for the slider. The slider feels like the fix because it is right there, but the distance is the variable that actually changes what is correct. In my case the final answer was a monitor mount that let me sit ~8 cm closer than the desk had allowed, and an FOV a few degrees wider than my first calculation, which I have not touched since."
+    },
+    {
+      "p": "Once FOV is settled, everything else you tune, from force feedback strength on the wheelbase to brake pressure on the pedals, is being judged by eyes that see the right distances. That is why I put it first. The <a href=\"seating-position-and-wheel-height-sim-rig.html\">seating position guide</a> is the natural next step, because the two settings depend on each other and together they decide how the whole rig feels."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the correct field of view for iRacing on a single monitor?",
+      "a": "It depends on your screen width and how far your eyes are from it. For a 27 inch monitor at roughly arm's length the correct horizontal value is usually in the ~40 to ~55 degree range. Use the Calculate button in iRacing's graphics options with your own measurements rather than copying someone else's number."
+    },
+    {
+      "q": "Why does the correct FOV feel too zoomed in?",
+      "a": "Because a single monitor covers only a small slice of your vision, the correct view shows less of the car and track than you are used to. The wide view most people start with is a distortion that exaggerates speed and shrinks distances. Give the correct value several sessions before judging it."
+    },
+    {
+      "q": "How do I see my mirrors with a correct FOV on one screen?",
+      "a": "Turn on iRacing's virtual mirror, keep the relative black box on screen and rely on the spotter for cars alongside. Those tools exist because a single screen cannot show real side mirrors at a correct field of view."
+    },
+    {
+      "q": "Does a bigger monitor fix field of view problems?",
+      "a": "A bigger panel at the same distance gives a wider correct FOV, but moving your existing monitor closer has a similar effect for free. Most single screen racers do best with a 27 to 32 inch monitor mounted close to the wheel at eye level."
+    }
+  ]
+}
