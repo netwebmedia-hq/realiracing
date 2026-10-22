@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Set Field of View in iRacing on a Single Monitor</title>
+  <meta name="description" content="Why the correct iRacing field of view looks too zoomed in at first, how to calculate it from screen size and distance, and how I adjusted my single 1440p monitor setup." />
+  <link rel="canonical" href="https://realiracing.com/blog/iracing-field-of-view-single-monitor-setup.html" />
+  <meta property="og:title" content="How to Set Field of View in iRacing on a Single Monitor" />
+  <meta property="og:description" content="Why the correct iRacing field of view looks too zoomed in at first, how to calculate it from screen size and distance, and how I adjusted my single 1440p monitor setup." />
+  <meta property="og:url" content="https://realiracing.com/blog/iracing-field-of-view-single-monitor-setup.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/display-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: a perspective grid receding to a horizon" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/display-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261020" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Set Field of View in iRacing on a Single Monitor",
+    "description": "Why the correct iRacing field of view looks too zoomed in at first, how to calculate it from screen size and distance, and how I adjusted my single 1440p monitor setup.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/iracing-field-of-view-single-monitor-setup.html",
+    "image": "https://realiracing.com/assets/photos/display-cover.jpg",
+    "datePublished": "2026-10-22",
+    "dateModified": "2026-10-22"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"How to Set Field of View in iRacing on a Single Monitor","item":"https://realiracing.com/blog/iracing-field-of-view-single-monitor-setup.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup — high refresh matters more than size","url":"https://realiracing.com/blog/iracing-field-of-view-single-monitor-setup.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Sim Racing Cockpit / Wheel Stand","description":"a rigid mount matters more than the brand — flex kills FFB detail","url":"https://realiracing.com/blog/iracing-field-of-view-single-monitor-setup.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/iracing-field-of-view-single-monitor-setup.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the correct field of view for iRacing on a single monitor?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It depends on your screen width and how far your eyes are from it. For a 27 inch monitor at roughly arm's length the correct horizontal value is usually in the ~40 to ~55 degree range. Use the Calculate button in iRacing's graphics options with your own measurements rather than copying someone else's number." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does the correct FOV feel too zoomed in?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Because a single monitor covers only a small slice of your vision, the correct view shows less of the car and track than you are used to. The wide view most people start with is a distortion that exaggerates speed and shrinks distances. Give the correct value several sessions before judging it." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I see my mirrors with a correct FOV on one screen?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Turn on iRacing's virtual mirror, keep the relative black box on screen and rely on the spotter for cars alongside. Those tools exist because a single screen cannot show real side mirrors at a correct field of view." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does a bigger monitor fix field of view problems?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A bigger panel at the same distance gives a wider correct FOV, but moving your existing monitor closer has a similar effect for free. Most single screen racers do best with a 27 to 32 inch monitor mounted close to the wheel at eye level." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Guide · Setup</p>
+    <h1>How to Set Field of View in iRacing on a Single Monitor</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 22, 2026</span>
+      <span class="dot">·</span>
+      <span>8 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/display-cover.jpg" width="1000" height="563" alt="Cover art: a perspective grid receding to a horizon" srcset="/assets/photos/display-cover-sm.jpg 560w, /assets/photos/display-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">The first time I set a mathematically correct field of view in iRacing, I hated it. The windscreen filled the whole screen, I could not see my mirrors without the virtual ones, and every corner felt like it arrived too fast. I lasted two laps before I turned it back up. It took me another month of inconsistent braking points to understand that the wide view I was comfortable with was the thing lying to me. This guide is how I settled the question on my single monitor rig, and why I now think FOV is the first setting a new sim racer should fix, before any wheel or pedal tuning.</p>
+
+      <h2>What field of view actually controls</h2>
+
+      <p>Field of view is the angle of the game world the camera shows on your screen. A wide FOV squeezes more of the track into the same pixels, so everything looks smaller and farther away. A narrow FOV shows less, at a larger scale. Neither is more real on its own. The correct value is the one where the angle the game renders matches the angle your monitor physically occupies in your vision, measured from where your eyes sit.</p>
+
+      <p>When those two angles match, a braking board that is 100 metres away looks the size a 100 metre distant object looks in real life, and your brain's distance and speed judgement, trained by decades of walking and driving, starts working inside the sim. When they do not match, your brain is constantly correcting for a view that is zoomed out or zoomed in, and that correction shows up as braking too early, turning in too late and never quite trusting the car on the limit.</p>
+
+      <h2>Why the correct value feels wrong at first</h2>
+
+      <p>On a single monitor the correct FOV is almost always narrower than what the game defaults to and far narrower than what most streamers run for a dramatic picture. The physical reason is simple. A 27 inch monitor at roughly arm's length covers only a modest slice of your vision, somewhere around ~40 to ~50 degrees horizontally depending on how close you sit. A real car's windscreen covers much more than that. So the game can only show you a cropped version of what a driver would see, and anything wider than the correct crop is a distortion.</p>
+
+      <p>The feeling of speed is the first thing people miss. A wide FOV makes the scenery stream past the edges of the screen, which reads as fast. The correct FOV calms that down. The sense of speed you lose is fake, though, and what you gain is a stable reference for distance. After about a week of racing with the correct setting I noticed that my braking points had stopped drifting from lap to lap, which had never happened with the wide view.</p>
+
+      <h2>How to measure and calculate it</h2>
+
+      <p>You need two numbers: the width of your screen's visible area and the distance from your eyes to the screen when you are seated in your driving position. Measure both in the same units with a tape measure. Do not use the marketing size of the monitor, because that is the diagonal and includes nothing about the aspect ratio.</p>
+
+      <ol>
+        <li>Sit in your rig as you race. Measure from the bridge of your nose to the centre of the screen. On my fixed cockpit that is roughly ~70 cm.</li>
+        <li>Measure the visible width of the panel. My 27 inch 1440p monitor is about ~60 cm wide.</li>
+        <li>Open iRacing, go to Options, then Graphics, and find the FOV section. There is a Calculate button that asks for monitor size and distance and does the trigonometry for you.</li>
+        <li>Alternatively, use any online FOV calculator for a single screen and enter the same two numbers. The result should match iRacing's own tool within a degree or so.</li>
+        <li>Apply the value, join a test session and drive a track you know well. Resist the urge to change it for at least three or four sessions.</li>
+      </ol>
+
+      <p>The maths behind the button is a simple arctangent of half the screen width over the eye distance, doubled. You do not need to do it by hand, but it is worth knowing that the input that moves the result most is the distance. Pull the monitor ~10 cm closer and the correct FOV widens noticeably. That is the lever to use if the first result feels unworkable.</p>
+
+      <div class="tip-box">
+        <span class="box-label">From my rig</span>
+        <p>I measured eye distance three times on different days and got three slightly different numbers, because I was sitting differently each time. Fixing my seat position first, as described in the seating guide, made the FOV number stable.</p>
+      </div>
+
+      <h2>The trade-off: correct FOV versus seeing your mirrors</h2>
+
+      <p>Here is the honest problem with a correct FOV on one screen. You lose the side mirrors and most of the peripheral view. Cars alongside you vanish from the picture. Some people treat that as proof the setting is wrong. I treat it as the reason iRacing ships with virtual mirrors, a relative box and a spotter. Turn on the virtual mirror, keep the relative black box visible and learn to read your spotter calls rather than glancing sideways. That is also what the triple screen and VR crowd do; they simply get more peripheral image for free.</p>
+
+      <p>If you race a lot of close multiclass traffic and the loss of peripheral vision costs you more than the gain in distance judgement, there is a middle path. Move the monitor closer so the correct FOV widens, or accept a value a few degrees above the calculated one as a deliberate compromise you understand. What I would avoid is going back to a very wide view because it looks exciting, since you give up exactly the consistency you came for.</p>
+
+      <h2>Monitor size and distance: what actually helps</h2>
+
+      <p>The question I get most from people on a single screen is whether a bigger monitor fixes the problem. A bigger panel at the same distance gives a wider correct FOV, which is good, but it also pushes your eyes to travel further to see the dash and mirrors. In my experience a monitor in the 27 to 32 inch range mounted close, at roughly arm's length or a little less, is the sweet spot for a single screen rig. An ultrawide helps the peripheral view at the cost of a smaller vertical angle, which I compared in more detail in the <a href="triple-monitor-vs-ultrawide-sim-racing.html">triple monitor versus ultrawide article</a>.</p>
+
+      <p>Whatever size you choose, mount it to the rig or a stand that puts the centre of the screen roughly at eye level and lets you bring it close. A monitor stuck at the back of a desk, ~1 metre away, forces a very narrow correct FOV that most people will not tolerate. Bringing it to ~65 to ~75 cm is the single biggest improvement for a one screen setup, and it costs nothing if your stand allows it. Sitting closer also matters for eye comfort, which I covered in the <a href="prevent-eye-strain-sim-racing-distance.html">eye strain guide</a>.</p>
+
+      <h2>Settings that interact with FOV</h2>
+
+      <ul>
+        <li>Seat position. iRacing lets you move the in-car camera forward, back, up and down. Set FOV first, then adjust the seat so the dash and wheel look natural. Changing the seat does not change FOV, only what is in frame.</li>
+        <li>Virtual mirror and relative box. Both become necessary at a correct FOV on one screen. Position them where a glance, not a head turn, finds them.</li>
+        <li>Head movement and shake. I keep the in-game head motion low, because at a correct FOV the view already feels alive and extra bobbing only costs precision.</li>
+        <li>Steering wheel in the cockpit view. Many drivers hide it once the real wheel sits in front of the screen, since two wheels at slightly different angles confuse the eye. Hide it or show it, but do not let it drive your FOV choice.</li>
+      </ul>
+
+      <h2>How to give it a fair trial</h2>
+
+      <p>Set the calculated value and drive one familiar track for a full practice session. Expect to feel slow and cramped for the first ten laps. Pay attention to two things: whether your braking points become repeatable and whether you start catching the car earlier when it steps out. Those are the improvements FOV delivers, and they usually appear before the picture starts to feel normal. I combined the trial with a structured practice plan so I had lap time data to compare alongside the feeling.</p>
+
+      <p>After three or four sessions, if the view is still unworkable, bring the monitor closer and recalculate rather than reaching for the slider. The slider feels like the fix because it is right there, but the distance is the variable that actually changes what is correct. In my case the final answer was a monitor mount that let me sit ~8 cm closer than the desk had allowed, and an FOV a few degrees wider than my first calculation, which I have not touched since.</p>
+
+      <p>Once FOV is settled, everything else you tune, from force feedback strength on the wheelbase to brake pressure on the pedals, is being judged by eyes that see the right distances. That is why I put it first. The <a href="seating-position-and-wheel-height-sim-rig.html">seating position guide</a> is the natural next step, because the two settings depend on each other and together they decide how the whole rig feels.</p>
+
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=iracing-field-of-view-single-monitor-setup">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup — high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&amp;tag=realiracing-20" data-aff="cockpit" target="_blank" rel="sponsored noopener">Sim Racing Cockpit / Wheel Stand</a></th><td>a rigid mount matters more than the brand — flex kills FFB detail</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Get the next guide by email</h3>
+        <p>Setups, FFB settings and new packs, straight from the rig. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing" data-ok="You're on the list. Thanks!" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Subscribe</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>What is the correct field of view for iRacing on a single monitor?</h3>
+        <p>It depends on your screen width and how far your eyes are from it. For a 27 inch monitor at roughly arm's length the correct horizontal value is usually in the ~40 to ~55 degree range. Use the Calculate button in iRacing's graphics options with your own measurements rather than copying someone else's number.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Why does the correct FOV feel too zoomed in?</h3>
+        <p>Because a single monitor covers only a small slice of your vision, the correct view shows less of the car and track than you are used to. The wide view most people start with is a distortion that exaggerates speed and shrinks distances. Give the correct value several sessions before judging it.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I see my mirrors with a correct FOV on one screen?</h3>
+        <p>Turn on iRacing's virtual mirror, keep the relative black box on screen and rely on the spotter for cars alongside. Those tools exist because a single screen cannot show real side mirrors at a correct field of view.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does a bigger monitor fix field of view problems?</h3>
+        <p>A bigger panel at the same distance gives a wider correct FOV, but moving your existing monitor closer has a similar effect for free. Most single screen racers do best with a 27 to 32 inch monitor mounted close to the wheel at eye level.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="iracing-league-racing-getting-started.html"><span>Guide</span>iRacing League Racing: How to Find One and Not Wash Out</a>
+      <a class="related-card" href="how-to-pick-your-iracing-series-each-season.html"><span>Guide</span>How to Pick Your iRacing Series Each Season</a>
+      <a class="related-card" href="best-sim-racing-pedals-iracing-2026.html"><span>Buyer's Guide</span>Best Sim Racing Pedals for iRacing 2026 — The Load Cell Guide</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["monitor-1440p-120","cockpit","moza-r9"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
