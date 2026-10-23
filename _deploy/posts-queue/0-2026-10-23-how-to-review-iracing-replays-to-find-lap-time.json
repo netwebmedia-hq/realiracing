@@ -1,0 +1,59 @@
+{
+  "slug": "how-to-review-iracing-replays-to-find-lap-time",
+  "tag": "Guide · Technique",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "How to Review iRacing Replays to Find Lap Time",
+  "description": "A practical way to study your own iRacing replays: which cameras to use, what to compare against a faster driver, and how to turn one review into a practice plan.",
+  "published": "2026-10-23",
+  "dateLabel": "October 23, 2026",
+  "gearKeys": ["moza-r9", "moza-crp2", "monitor-1440p-120"],
+  "sections": [
+    { "p": "For my first year in iRacing, I closed the sim the moment a race ended. If it went well I felt good, if it went badly I blamed the guy who punted me in turn one, and either way I learned nothing. The habit that finally moved my lap times was boring: sitting down after a session, opening the replay, and watching my own car with the same attention I would give a pro's onboard video." },
+    { "p": "Replays and telemetry answer different questions. Telemetry tells you exactly where the throttle trace dropped and how hard you hit the brake. A replay shows you <strong>why</strong>: the line you took, where the car got loose, what the car in front was doing, and how your hands moved on the wheel. If you already read traces, my <a href=\"iracing-telemetry-basics-reading-your-laps.html\">telemetry basics guide</a> covers that side. This post is about the eyes-only part, which costs nothing and works for any car." },
+    { "h2": "Make sure replays are actually being saved" },
+    { "p": "iRacing keeps a replay in memory during a session, but if you want to come back to it later you need the file. Check that automatic replay saving is turned on in the sim's options. Saved replays land as .rpy files in your <strong>Documents\\iRacing\\replay</strong> folder, and you can open them from the Replays section of the iRacing UI." },
+    { "p": "Replay files can get big over a season, especially from long races with full grids. I clear out the folder every few weeks and keep only the races and practice sessions I still want to study. Rename the ones you keep with the track and a note, because the default names are hard to scan later." },
+    { "tip": "Review the same day if you can. You still remember what the car felt like, and that memory is half of what makes a replay useful.", "tipLabel": "Timing" },
+    { "h2": "Pick the right cameras for the job" },
+    { "p": "Each camera is good at one thing. Swapping between them on purpose is what turns watching into analysis." },
+    { "list": [
+      "<strong>Cockpit</strong> shows your hands, your reference points and how early you start turning. It is the closest to what you saw while driving, so it is where you check whether you were looking far enough ahead.",
+      "<strong>Chase</strong> or a high rear camera shows the car's attitude: oversteer on entry, understeer mid-corner, and how much the rear steps out on exit.",
+      "<strong>TV and blimp cameras</strong> show the line relative to the track. They are the easiest way to see a missed apex or a late turn-in, because you see the whole corner at once.",
+      "<strong>Gearbox or suspension views</strong> are niche, but they help when you suspect you are riding kerbs too hard."
+    ] },
+    { "p": "Slow motion matters more than any camera. Most mistakes happen in a second or less, and at full speed they blur together. I play the problem corner at normal speed once, then at a quarter speed with the chase camera, then once more from cockpit." },
+    { "h2": "Watch one corner at a time" },
+    { "p": "The mistake I made early on was watching whole laps. You end up enjoying the replay instead of studying it. Pick the two or three corners where you know you are slow, from the lap time gaps or simply from feel, and loop only those." },
+    { "p": "For each corner, I ask the same four questions:" },
+    { "olist": [
+      "Where did I start braking, and was it the same point every lap?",
+      "Where did I start turning, and did the car rotate when I asked it to?",
+      "Where was the apex compared with where it should be?",
+      "When did I get back to full throttle, and did I have to lift again?"
+    ] },
+    { "p": "Write the answers down. A note like \"T5: turning in a car length early, apex too soon, lifting on exit\" is worth more than an hour of vague watching, because it gives you something specific to fix next session." },
+    { "h2": "Compare against a faster driver in the same session" },
+    { "p": "This is the most useful thing a replay can do. The file from an official session contains the other cars on track, so you can switch to the fastest driver in your split and watch the same corner from the same camera. You are no longer guessing what a good lap looks like." },
+    { "p": "Line them up corner by corner. Watch their braking point against a fixed marker like a board, a kerb or a shadow, then watch yours. Watch where their car is on the exit kerb. Watch how early they get the wheel straight. The differences are often small and obvious once you see them side by side." },
+    { "p": "From the cockpit camera you can also see how a faster driver uses the wheel. Smooth drivers often turn in with one steady motion and unwind early, while I used to saw at the wheel mid-corner. On my MOZA R9, that sawing showed up as a busy, notchy feel in the force feedback, and watching it in the replay is what made me connect the feeling with the cause." },
+    { "tip": "Pedal inputs are not shown in a replay, only steering. When you need to see brake pressure or throttle traces side by side, export the telemetry and compare it in a tool like Garage 61.", "tipLabel": "Limitation" },
+    { "p": "If you want the numbers behind what you saw, my <a href=\"garage61-telemetry-comparison-tools.html\">Garage 61 comparison guide</a> shows how to overlay your lap against a faster one." },
+    { "h2": "Study incidents without the ego" },
+    { "p": "Replays are also where you find out whether that contact was really the other driver's fault. Watch incidents from at least two cameras, including one from above. More often than I like to admit, I was the one who turned in on a car that had already earned the inside, or braked a few metres early in a pack and got hit from behind." },
+    { "p": "The useful question is not who was to blame. It is what you could have done to avoid the contact anyway. Leaving a car's width, braking in a straight line in traffic, and not diving into a gap that is closing all reduce incidents, and fewer incidents protect your safety rating more than any amount of pace." },
+    { "h2": "Turn the review into a practice plan" },
+    { "p": "A review only pays off when the next session uses it. I take the two notes that seem to cost the most time and make them the whole goal of my next practice. Everything else waits. If my note says I am lifting on the exit of a corner, the next session is about one thing: getting back to throttle earlier and staying there, even if the rest of the lap suffers." },
+    { "p": "I use the structure from my <a href=\"iracing-practice-session-plan-45-minutes.html\">45-minute practice plan</a>: a few warm-up laps, a focused block on the one or two corners from the review, then a short race-pace run to see whether the change holds up when I stop thinking about it. After the session, I save that replay too and check whether the corner actually changed." },
+    { "h2": "Hardware that makes reviewing easier" },
+    { "p": "You do not need special equipment to watch replays, but two things on my rig help. A load cell brake like the one on my MOZA CRP2 pedals gives me a more repeatable braking point, so when I see in the replay that I braked a few metres late, I can actually fix it by pressing to a feel rather than guessing at travel. And a sharp monitor at ~1440p makes it far easier to pick out braking boards and kerb edges when I am scrubbing through footage frame by frame." },
+    { "p": "The real cost of replay review is time, about as long as the session itself. In my experience it is the best return on time I have found in sim racing, because it makes every lap I drive afterwards more deliberate." }
+  ],
+  "faqs": [
+    { "q": "Where are iRacing replay files saved?", "a": "When automatic replay saving is enabled, iRacing saves replays as .rpy files in the Documents\\iRacing\\replay folder. You can open them from the Replays section of the iRacing UI." },
+    { "q": "Can I watch other drivers in my iRacing replay?", "a": "Yes. A session replay includes the other cars on track, so you can switch to any driver, including the fastest in your split, and watch the same corner from the same camera you used for your own car." },
+    { "q": "Do iRacing replays show pedal inputs?", "a": "No. Replays show the car and the steering wheel moving, but not brake or throttle traces. For pedal inputs you need telemetry files and a tool that can display or compare them." },
+    { "q": "How often should I review my iRacing replays?", "a": "Reviewing after every important race and after focused practice sessions works well. Pick two or three corners per review, write down what to change, and make that the goal of your next session." }
+  ]
+}
