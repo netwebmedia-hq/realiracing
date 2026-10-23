@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://realiracing.com/blog/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -1197,6 +1197,12 @@
   <url>
     <loc>https://realiracing.com/blog/setup-changes-night-temperature-swings-endurance.html</loc>
     <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://realiracing.com/blog/how-to-review-iracing-replays-to-find-lap-time.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
