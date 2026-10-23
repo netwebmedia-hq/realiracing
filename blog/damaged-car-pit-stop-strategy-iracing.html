@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Damaged Car Strategy: When to Pit and When to Push Through</title>
+  <meta name="description" content="Learn when limping a damaged car to the pits costs you more time than carrying on. Real trade-offs for endurance racing." />
+  <link rel="canonical" href="https://realiracing.com/blog/damaged-car-pit-stop-strategy-iracing.html" />
+  <meta property="og:title" content="Damaged Car Strategy: When to Pit and When to Push Through" />
+  <meta property="og:description" content="Learn when limping a damaged car to the pits costs you more time than carrying on. Real trade-offs for endurance racing." />
+  <meta property="og:url" content="https://realiracing.com/blog/damaged-car-pit-stop-strategy-iracing.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/sim-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: overlapping waveforms" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/sim-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261020" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Damaged Car Strategy: When to Pit and When to Push Through",
+    "description": "Learn when limping a damaged car to the pits costs you more time than carrying on. Real trade-offs for endurance racing.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/damaged-car-pit-stop-strategy-iracing.html",
+    "image": "https://realiracing.com/assets/photos/sim-cover.jpg",
+    "datePublished": "2026-10-19",
+    "dateModified": "2026-10-19"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Damaged Car Strategy: When to Pit and When to Push Through","item":"https://realiracing.com/blog/damaged-car-pit-stop-strategy-iracing.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/damaged-car-pit-stop-strategy-iracing.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/damaged-car-pit-stop-strategy-iracing.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Should I pit immediately after any contact, or is some damage acceptable?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not all contact causes urgent damage. A light tap that bends the splitter a few millimeters might cost 0.1 to 0.2 seconds per lap, which is worth pushing through if your next pit is soon. A hard hit that shifts suspension geometry or bends the rim is urgent. Check your lap times and feel over the next lap or two. If your pace stays normal and the car feels normal, stay out. If pace drops noticeably or the car pulls or understeers hard, pit." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if my damage is aerodynamic or mechanical without telemetry?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Aerodynamic damage shows up as lower speed in the straights and high-speed corners, but your steering angle and brake pressure stay the same. Mechanical damage shows up as a change in how the car responds: more understeer, oversteer, or a pull to one side under braking. If the car feels normal but just slower, aerodynamic. If the car feels different, mechanical. Mechanical damage usually demands a pit stop sooner." }
+    },
+    {
+      "@type": "Question",
+      "name": "In a multi-class endurance race, does damage pit strategy change?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. If you are in a faster GT3 or LMP class, losing 0.5 seconds per lap to damage compounds faster because you lap slower cars more frequently and damage affects overtaking windows. If you are in a slower GT4 or prototype class, pace loss matters more relatively. Also, pitting for repairs during a full-course yellow or under safety car conditions is free in terms of pace loss, so wait for a caution if possible. If the race is clean and running green, pit only if the math clearly supports it." }
+    },
+    {
+      "@type": "Question",
+      "name": "My teammate says I should pit for damage to 'reset the mental game.' Is that valid?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Partly. A pit stop and fresh car do reset your confidence, but a 90-second pit window costs real time. If your damage is costing 0.3 seconds per lap but a pit and reset would let you drive 0.5 seconds faster for the remainder of the race, the trade makes sense. If your damage costs 0.15 seconds and a pit would cost 90 seconds, no amount of confidence gain justifies that loss. Use pit time to reset only if your pace loss is severe enough that the math works out anyway." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">iRacing Tips · Race Craft</p>
+    <h1>Damaged Car Strategy: When to Pit and When to Push Through</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 19, 2026</span>
+      <span class="dot">·</span>
+      <span>8 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/sim-cover.jpg" width="1000" height="563" alt="Cover art: overlapping waveforms" srcset="/assets/photos/sim-cover-sm.jpg 560w, /assets/photos/sim-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">Two mistakes are common: pitting for repairs that don't need to happen yet, and staying out too long after a door flick into the kerb. Damage in iRacing is not a binary state. Your car gets slower incrementally, and the decision to pit is not about whether damage exists but whether the time spent in the pit box erases the time you lose to aerodynamic drag, downforce loss, or handling imbalance over the remaining stint.</p>
+
+      <p>The real calculation is simple on paper but demands honest telemetry reading in practice: measure the pace delta between your current damaged state and your baseline, multiply that by the laps until your next planned stop, then subtract pit time plus the time gained by a fresh car. If the pit window saves you time overall, pit. If it costs you, push the damage until the next scheduled stop or until the car becomes genuinely undriveable. The spotter call or a damage report tells you damage exists. Telemetry tells you whether it matters.</p>
+
+      <h2>How iRacing damage actually slows you</h2>
+
+      <p>iRacing damage does not simulate a car limping around the track making noise. Aerodynamic damage reduces downforce and increases drag. A crumpled front wing or a bent rear element changes your car's balance and braking performance. Front-end contact may alter suspension geometry enough that your braking point shifts by half a car length. Side-door contact or a tap into the wall does not always show visible cosmetic damage in the telemetry view, but it can roll the car slightly or compress a suspension arm into an odd ride height.</p>
+
+      <p>The pace loss from this damage is measurable but not uniform across the track. On a tight, downforce-dependent circuit like Monaco, a bent rear wing costs you 0.3 to 0.5 seconds per lap. On a low-downforce oval or a long, open road course, the same damage might cost 0.1 to 0.2 seconds. A suspension geometry change that affects your line through fast corners can stack up to a full second over a lap if the car now understeers or oversteers mid-corner.</p>
+
+      <h2>The pit stop math</h2>
+
+      <p>A pit stop in iRacing takes time. The crew chief spotter tells you the estimate when you pit, and iRacing's pit system adds a fixed duration for entering, exiting, tire service, and fuel service depending on the series and track. In most GT3 racing, a four-tire change and fuel top-up runs roughly 50 to 70 seconds of real time. In endurance racing with driver swaps, repairs happen alongside the driver change, adding 30 to 60 seconds depending on what you're fixing.</p>
+
+      <p>Now layer in the acceleration loss exiting the pits. You exit at low speed and build momentum back to racing pace. Most tracks cost you an additional 15 to 25 seconds of lost time between the exit and the moment you're back up to normal racing speed. Some tracks with a long pit exit, like Spa or Le Mans, add another 10 seconds. That pit window is not just the service time. It's service time plus acceleration loss plus the time you spend catching up to your race position.</p>
+
+      <h3>Example: Light front-end damage at Silverstone Grand Prix</h3>
+
+      <p>You clip the inside kerb at Maggotts in a Porsche 992 Cup. Your front splitter is crumpled, and you lose approximately 0.25 seconds per lap. Your current fuel load allows for eight more laps before you pit for fuel anyway. Eight laps times 0.25 seconds lost is two seconds total. A pit stop at Silverstone runs about 60 seconds service plus another 20 seconds of acceleration loss exiting the pits. You pit now, and you lose 80 seconds for a repair that costs you two seconds over eight laps. You stay out, you lose two seconds. The math is clear: you finish your fuel stint, pit at your planned window, and have the damage repaired then. The damage is not urgent.</p>
+
+      <h2>When damage is actually urgent</h2>
+
+      <p>Damage becomes urgent when it threatens either your pace deficit or your car's drivability. A bent suspension arm that causes your car to understeer hard into Turn 1 every lap is driveable but possibly costing you 0.8 to 1.2 seconds per lap. If your next planned pit is still 15 laps away, that damage just cost you 12 to 18 seconds compared to a fresh car. The pit stop costs you 80 seconds, so pitting early is still wrong. But if your next pit is only two or three laps away, the math shifts. Three laps times 1.0 second lost is three seconds. Your pit stop takes 80 seconds. Pitting early still does not pay.</p>
+
+      <p>Damage becomes genuinely urgent when the car becomes undriveable or unsafe. A rear wing that is so badly bent that it oscillates or generates zero downforce at high speed can cause sudden oversteer or a spin. Suspension damage that forces the car into a full lock of camber or ride height on one corner can lock a tire or cause the car to bottom out badly. A loose body panel or splitter that hangs and catches the track is a real hazard. That damage demands an immediate pit stop because continuing risks a major crash that ends your race.</p>
+
+      <h3>The undriveable threshold</h3>
+
+      <p>Listen to your car and trust your inputs. If you're holding opposite lock going into a corner where you normally hold dead center, your suspension is compromised. If you're touching the kerb at a line where you normally apex a half meter away, your geometry has shifted enough to demand attention. If the car pulls hard to one side under braking, a bent tie rod or rim is the cause. These are pit stops. The pace loss is severe enough, and the consistency loss is high enough, that staying out only makes you slower and more likely to crash.</p>
+
+      <h2>Reading your telemetry for damage assessment</h2>
+
+      <p>Before you pit, pull up your telemetry. Compare your last three lap times and your inputs to a baseline lap from earlier in the session or from a practice run. Did your brake pressure increase by 5 percent and your turn-in point move later by half a meter? Suspension damage. Did your throttle trace stay identical but your exit speed from a high-speed corner drop by 2 to 3 mph? Aerodynamic damage. Did your steering angle increase by a few degrees mid-corner but your entry speed stayed the same? Geometry shift.</p>
+
+      <p>Garage61 telemetry comparison tools or similar overlay systems let you layer your current lap against a clean lap from the same car or from a baseline setup. That visual layer makes damage obvious. If your throttle trace is identical but your speed is lower, the damage is aerodynamic. If your throttle or brake inputs changed, the damage is mechanical. This intel lets you decide pitting vs. pushing with real data instead of a hunch.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Position loss vs. pace loss</span>
+        <p>The hidden pit cost: every stop moves you down the leader board if the field is close. A 90-second pit window sounds small in a 30-minute stint, but it costs you 8 to 12 positions if you're racing in a 40-car field. Pitting for damage that costs you only 0.2 seconds per lap over your remaining fuel means you stay out. The position loss from pitting is worse than the pace loss from damage.</p>
+      </div>
+
+      <h2>Endurance racing: damage over a multi-hour race</h2>
+
+      <p>In endurance racing, damage compounds. A small front splitter dent that costs 0.15 seconds per lap adds up to 3 minutes lost over a 20-lap stint. Multiple stints of damage loss can cost you 10 to 15 minutes over a four or six-hour race, and that is enough to move you from podium to fourth place. The decision to pit for repairs in endurance racing is not just about this stint but about the cumulative pace loss over the full race.</p>
+
+      <p>Work with your team or your co-driver. If you have one lap left in your stint, report the damage and let the next driver decide whether to pit during their opening lap. If you have five laps left, decide now. Damage that costs 0.3 seconds per lap across five stints of three drivers each means the entire team feels it. A 90-second pit stop to repair that damage once might save the team 30 to 40 seconds across those remaining stints, and that math supports an early pit. In short sprint races, you almost never pit for damage. In long endurance races, you often do.</p>
+
+      <h2>The confidence cost you cannot quantify</h2>
+
+      <p>There is a cost to driving a damaged car that telemetry does not capture: lost confidence. A car that understeers on entry makes you reluctant to brake late, so you brake earlier and lose time that way. A car that feels loose on exit makes you lift off throttle earlier instead of pushing the limit. You drive one or two tenths slower simply because the car feels wrong, and fear of a bigger crash pushes you further away from the edge. That is a real pace loss beyond the aerodynamic or mechanical delta.</p>
+
+      <p>If your damage is severe enough to mess with your head, pit. The mental tax of driving a compromised car is real, and if it shifts your baseline pace down by 0.3 to 0.5 seconds, you might as well fix it. Read your lap times over three or four laps. If they're scattered and your turn-in points are inconsistent, confidence is gone. Pit and reset.</p>
+
+      <h2>The decision framework</h2>
+
+      <ul>
+        <li>Measure the pace delta: Compare your last three laps to a clean baseline. Calculate the time loss per lap.</li>
+        <li>Multiply by remaining laps: How many laps until your next planned pit or the end of the race. Multiply pace loss by lap count.</li>
+        <li>Add pit overhead: Service time plus acceleration loss. On most tracks, 80 to 100 seconds total.</li>
+        <li>Compare the totals: If damage cost over remaining laps is less than pit overhead, stay out. If pit overhead is less, pit.</li>
+        <li>Check drivability: If the car feels undriveable or unsafe, ignore the math and pit immediately.</li>
+        <li>Factor endurance context: In short races, damage rarely justifies a pit. In long races, cumulative damage loss often does.</li>
+        <li>Trust your inputs: If you're driving defensively or off your line because the car feels wrong, pit for confidence.</li>
+      </ul>
+
+      <p>The hardest part of this framework is honesty. You want to pit because the car feels bad, but the data says two more laps saves time. Stick with the data. You want to stay out because the pit would cost time, but the car is now undriveable. Pit. Let the numbers and your own feedback, not frustration or stubbornness, make the call. Over a full season of endurance races, that decision discipline adds up to real results.</p>
+
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=damaged-car-pit-stop-strategy-iracing">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Get the next guide by email</h3>
+        <p>Setups, FFB settings and new packs, straight from the rig. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing" data-ok="You're on the list. Thanks!" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Subscribe</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>Should I pit immediately after any contact, or is some damage acceptable?</h3>
+        <p>Not all contact causes urgent damage. A light tap that bends the splitter a few millimeters might cost 0.1 to 0.2 seconds per lap, which is worth pushing through if your next pit is soon. A hard hit that shifts suspension geometry or bends the rim is urgent. Check your lap times and feel over the next lap or two. If your pace stays normal and the car feels normal, stay out. If pace drops noticeably or the car pulls or understeers hard, pit.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I know if my damage is aerodynamic or mechanical without telemetry?</h3>
+        <p>Aerodynamic damage shows up as lower speed in the straights and high-speed corners, but your steering angle and brake pressure stay the same. Mechanical damage shows up as a change in how the car responds: more understeer, oversteer, or a pull to one side under braking. If the car feels normal but just slower, aerodynamic. If the car feels different, mechanical. Mechanical damage usually demands a pit stop sooner.</p>
+      </div>
+      <div class="faq-item">
+        <h3>In a multi-class endurance race, does damage pit strategy change?</h3>
+        <p>Yes. If you are in a faster GT3 or LMP class, losing 0.5 seconds per lap to damage compounds faster because you lap slower cars more frequently and damage affects overtaking windows. If you are in a slower GT4 or prototype class, pace loss matters more relatively. Also, pitting for repairs during a full-course yellow or under safety car conditions is free in terms of pace loss, so wait for a caution if possible. If the race is clean and running green, pit only if the math clearly supports it.</p>
+      </div>
+      <div class="faq-item">
+        <h3>My teammate says I should pit for damage to 'reset the mental game.' Is that valid?</h3>
+        <p>Partly. A pit stop and fresh car do reset your confidence, but a 90-second pit window costs real time. If your damage is costing 0.3 seconds per lap but a pit and reset would let you drive 0.5 seconds faster for the remainder of the race, the trade makes sense. If your damage costs 0.15 seconds and a pit would cost 90 seconds, no amount of confidence gain justifies that loss. Use pit time to reset only if your pace loss is severe enough that the math works out anyway.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="garage61-telemetry-comparison-tools.html"><span>iRacing Tips</span>Garage61 vs Telemetry Comparison Tools: Which Fits Your iRacing Workflow</a>
+      <a class="related-card" href="endurance-racing-fuel-tire-strategy.html"><span>iRacing Tips</span>Endurance Racing Fuel and Tire Strategy Basics</a>
+      <a class="related-card" href="endurance-fuel-tire-strategy-basics.html"><span>iRacing Tips</span>Endurance Racing Fuel and Tire Strategy: Essential Basics</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","moza-crp2"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
