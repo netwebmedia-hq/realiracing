@@ -1,0 +1,154 @@
+{
+  "slug": "understeer-oversteer-fixes-iracing-symptom-to-setup-change",
+  "tag": "Setup · Handling",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "Understeer and Oversteer in iRacing: Symptom to Fix",
+  "description": "Find where in the corner your car slides, then change one setup value. Entry, mid-corner and exit fixes from my MOZA R9 rig.",
+  "sections": [
+    {
+      "p": "Turn 3 at the end of a long straight, third lap of a practice session. I brake, turn in, and the front tires wash wide. I lift, the nose bites, and then the rear steps out because I lifted. Two different problems in two seconds, and I used to answer both by changing three setup values at once. This guide is the method I use now: name the symptom first, then touch one thing."
+    },
+    {
+      "p": "Everything here comes from my own seat: a MOZA R9 base on a fixed aluminium cockpit with CRP2 pedals, mostly in GT3 and GT4 cars. Numbers below are rough (~) and car-dependent. Treat them as directions of change, then check your own car's garage ranges."
+    },
+    {
+      "h2": "Name the symptom before you touch the garage"
+    },
+    {
+      "p": "Understeer means the front tires give up before the rears: you add steering and the car keeps going straight. Oversteer means the rears give up first: the tail rotates more than you asked. Both can show up in the same corner, so the useful question is where in the corner it happens."
+    },
+    {
+      "list": [
+        "Entry: you release the brake and turn in. Problems here point to brake bias, front tire load and damper or bar settings that govern weight transfer.",
+        "Mid-corner: you hold steady steering and steady throttle. This is the cleanest read on mechanical balance (springs, bars, ride height).",
+        "Exit: you add throttle. Problems here are about rear traction, differential and how quickly you ask for power."
+      ]
+    },
+    {
+      "p": "Pick one corner type, run five clean laps, and write down which phase fails. If the answer changes every lap, the car is not the problem yet. My notes on this are in <a href=\"saving-a-slide-before-the-spin.html\">saving a slide before the spin</a>, because a driver who panics at the first slip makes every setup look bad."
+    },
+    {
+      "h2": "Rule zero: drive the baseline first"
+    },
+    {
+      "p": "Most iRacing cars ship with a baseline setup that is stable on purpose. I rarely change anything until I have done ~10 to 15 laps on it, and I link my method for that in <a href=\"building-setup-from-iracing-baseline.html\">building a setup from the iRacing baseline</a>. A fast setup is also not automatically an easy one, as I wrote in <a href=\"fast-setup-makes-you-slower-iracing.html\">fast setup makes you slower</a>. If the car feels strange on baseline, the first suspect is my inputs and my wheel settings, not the springs."
+    },
+    {
+      "tip": "A wheel that clips its force output hides the very signal you need. If the front end feels dead before it slides, check your force feedback first (~80 to 90 percent of peak torque on my R9 is where I stop seeing clipping, though your car and strength setting will differ).",
+      "tipLabel": "Check your FFB first"
+    },
+    {
+      "h2": "Understeer: symptom to change"
+    },
+    {
+      "h3": "Understeer on entry"
+    },
+    {
+      "p": "You turn in and the nose will not follow. First, look at my braking: if I am still on the brake past the turn-in point, I am overloading the fronts, and no setup fixes that. If the technique is clean, I move brake bias a click or two toward the rear (see <a href=\"iracing-brake-bias-explained.html\">brake bias explained</a>), which lets the fronts do less braking work and more turning work. On cars with front-biased balance, a stiffer rear bar or softer front bar also helps the nose rotate in the first part of the corner."
+    },
+    {
+      "h3": "Understeer mid-corner"
+    },
+    {
+      "p": "This is the classic push. The standard fixes, in the order I try them:"
+    },
+    {
+      "list": [
+        "Soften the front anti-roll bar by ~1 to 2 steps, or stiffen the rear bar by the same amount. This shifts grip to the front axle without changing the springs.",
+        "Check tire pressures. Overinflated fronts shrink the contact patch. In my experience a change of ~1 to 2 psi is already readable on a hot lap, and I explain how I read tire data in <a href=\"iracing-tyre-temps-and-pressures-basic-setup.html\">tyre temps and pressures</a>.",
+        "Add front wing or front aero in cars that have it, if the push gets worse at higher speed.",
+        "Lower the front ride height slightly, only if the car has room before it bottoms out."
+      ]
+    },
+    {
+      "p": "The bar effect is the one I come back to most. I covered how a bar changes balance in <a href=\"anti-roll-bars-balance-shift-explained.html\">anti-roll bars and balance shift</a>, and the short version is that stiffer at one end means that end loses grip first in a steady-state corner."
+    },
+    {
+      "h3": "Understeer on exit"
+    },
+    {
+      "p": "You are on the throttle and the car drifts wide. The cause is often too much throttle too early, which is a technique issue. Setup-wise, a more open differential setting (lower power-lock) lets the inside wheel spin freely and helps the car turn, at the price of some traction. Softer rear springs or a softer rear bar can add rear grip, which also reduces the push on exit."
+    },
+    {
+      "h2": "Oversteer: symptom to change"
+    },
+    {
+      "h3": "Oversteer on entry"
+    },
+    {
+      "p": "The rear gets light when you come off the brakes. Brake bias too far rearward is the first candidate, so I move it a click or two forward. Then I look at how abruptly I release the pedal. With my CRP2 pedals I keep a smooth release over ~0.5 to 1 second on trail-braking entries, which keeps weight on the front axle a little longer. If the car still rotates too freely, a softer rear bar or stiffer front bar calms entry."
+    },
+    {
+      "h3": "Oversteer mid-corner"
+    },
+    {
+      "p": "A steady-state loose car points to mechanical balance. I stiffen the front bar or soften the rear bar, one step at a time. Rear tire pressure matters too: pressures that are too low let the sidewall roll, and too high reduce the contact patch. I look for even temperatures across each tire before I judge the bar."
+    },
+    {
+      "h3": "Oversteer on exit"
+    },
+    {
+      "p": "This is the most common one in rear-driven GT cars. Throttle application is where I fix it first: squeeze, do not stab. If the car still snaps, a more locked differential on power can make it worse, so I try opening the power setting by a step or two. A stiffer rear spring or rear bar loses traction, so I go softer, and I check that rear wing or rear aero is not set too low for the speed of the corner."
+    },
+    {
+      "h2": "Change one thing, then confirm with the same corner"
+    },
+    {
+      "p": "The rule that saved me the most time: one change per run, then five laps in the same conditions. I log it in a plain text file: corner, symptom, change, result. After a few weeks I could see patterns in my own driving that no setup would have fixed, such as lifting abruptly mid-corner. Telemetry makes this faster, and I describe how to read it in <a href=\"iracing-telemetry-basics-reading-your-laps.html\">telemetry basics</a>."
+    },
+    {
+      "p": "If three changes in a row make no difference, stop. That is usually the point where I go back to the baseline, which is the argument in <a href=\"when-to-stop-setup-tuning-baseline-racing.html\">when to stop setup tuning</a>."
+    },
+    {
+      "h2": "Where hardware enters the picture"
+    },
+    {
+      "p": "A fixed cockpit does not change the car's balance, but it changes how reliably I can feel it. On my aluminium frame there is very little flex, so when the front tires start to wash, the force through the R9 changes in a way I can read in the first moment of the slide. Pedals matter just as much on entry: a load cell brake such as the CRP2 lets me repeat the same brake pressure lap after lap, and that repeatability makes it possible to judge whether a bias change did anything. Without it, I was never sure if I or the setup caused the difference."
+    },
+    {
+      "p": "None of that replaces seat time. A better wheelbase lets me notice understeer sooner and describe it more precisely, which is what the method above depends on."
+    },
+    {
+      "h2": "A quick reference"
+    },
+    {
+      "list": [
+        "Pushes on entry: rear brake bias slightly, softer front bar, smoother brake release.",
+        "Pushes mid-corner: softer front bar or stiffer rear bar, check front pressures.",
+        "Pushes on exit: less throttle early, more open power differential, softer rear bar.",
+        "Loose on entry: forward brake bias, softer rear bar, smoother trail-braking release.",
+        "Loose mid-corner: stiffer front bar or softer rear bar, check rear pressures.",
+        "Loose on exit: gentler throttle, open the differential a step, more rear aero if available."
+      ]
+    },
+    {
+      "p": "Those are starting points. Every car in iRacing responds a little differently, and some series lock most of these adjustments. When a setting is locked, the driving fix is the only fix, and that is worth knowing before you spend an evening in the garage menu."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I fix understeer or oversteer with the same setting?",
+      "a": "Often the same control works in opposite directions. A stiffer front anti-roll bar tends to add understeer, and a softer one reduces it. Make one small change at a time, in the direction that matches your symptom, and confirm it over several laps."
+    },
+    {
+      "q": "Does brake bias really change how the car turns in?",
+      "a": "Yes. Moving bias rearward reduces the work the fronts do under braking, which can help the nose turn in. Too far rearward and the car gets loose on entry. A change of one or two clicks is enough to feel the effect."
+    },
+    {
+      "q": "Why does my car understeer only on cold tires?",
+      "a": "Cold tires have less grip, and the front axle usually reveals it first. Give the tires a lap or two to come up to temperature before you judge the balance, and check pressures once they are warm rather than in the pit box."
+    },
+    {
+      "q": "Do I need load cell pedals to tune a car's balance?",
+      "a": "No, but repeatable braking helps you compare changes fairly. If your brake pressure varies from lap to lap, you cannot tell whether a bias or bar change did anything. Pedals with a load cell make that comparison much easier."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2",
+    "cockpit"
+  ],
+  "published": "2026-10-24",
+  "dateLabel": "October 24, 2026"
+}
