@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Understeer and Oversteer in iRacing: Symptom to Fix</title>
+  <meta name="description" content="Find where in the corner your car slides, then change one setup value. Entry, mid-corner and exit fixes from my MOZA R9 rig." />
+  <link rel="canonical" href="https://realiracing.com/blog/understeer-oversteer-fixes-iracing-symptom-to-setup-change.html" />
+  <meta property="og:title" content="Understeer and Oversteer in iRacing: Symptom to Fix" />
+  <meta property="og:description" content="Find where in the corner your car slides, then change one setup value. Entry, mid-corner and exit fixes from my MOZA R9 rig." />
+  <meta property="og:url" content="https://realiracing.com/blog/understeer-oversteer-fixes-iracing-symptom-to-setup-change.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/rig-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: overlapping isometric blocks" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/rig-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261020" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Understeer and Oversteer in iRacing: Symptom to Fix",
+    "description": "Find where in the corner your car slides, then change one setup value. Entry, mid-corner and exit fixes from my MOZA R9 rig.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/understeer-oversteer-fixes-iracing-symptom-to-setup-change.html",
+    "image": "https://realiracing.com/assets/photos/rig-cover.jpg",
+    "datePublished": "2026-10-24",
+    "dateModified": "2026-10-24"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Understeer and Oversteer in iRacing: Symptom to Fix","item":"https://realiracing.com/blog/understeer-oversteer-fixes-iracing-symptom-to-setup-change.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/understeer-oversteer-fixes-iracing-symptom-to-setup-change.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/understeer-oversteer-fixes-iracing-symptom-to-setup-change.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Sim Racing Cockpit / Wheel Stand","description":"a rigid mount matters more than the brand — flex kills FFB detail","url":"https://realiracing.com/blog/understeer-oversteer-fixes-iracing-symptom-to-setup-change.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Should I fix understeer or oversteer with the same setting?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Often the same control works in opposite directions. A stiffer front anti-roll bar tends to add understeer, and a softer one reduces it. Make one small change at a time, in the direction that matches your symptom, and confirm it over several laps." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does brake bias really change how the car turns in?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Moving bias rearward reduces the work the fronts do under braking, which can help the nose turn in. Too far rearward and the car gets loose on entry. A change of one or two clicks is enough to feel the effect." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my car understeer only on cold tires?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Cold tires have less grip, and the front axle usually reveals it first. Give the tires a lap or two to come up to temperature before you judge the balance, and check pressures once they are warm rather than in the pit box." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need load cell pedals to tune a car's balance?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, but repeatable braking helps you compare changes fairly. If your brake pressure varies from lap to lap, you cannot tell whether a bias or bar change did anything. Pedals with a load cell make that comparison much easier." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Setup · Handling</p>
+    <h1>Understeer and Oversteer in iRacing: Symptom to Fix</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 24, 2026</span>
+      <span class="dot">·</span>
+      <span>8 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/rig-cover.jpg" width="1000" height="563" alt="Cover art: overlapping isometric blocks" srcset="/assets/photos/rig-cover-sm.jpg 560w, /assets/photos/rig-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">Turn 3 at the end of a long straight, third lap of a practice session. I brake, turn in, and the front tires wash wide. I lift, the nose bites, and then the rear steps out because I lifted. Two different problems in two seconds, and I used to answer both by changing three setup values at once. This guide is the method I use now: name the symptom first, then touch one thing.</p>
+
+      <p>Everything here comes from my own seat: a <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> base on a fixed aluminium cockpit with <a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">CRP2</a> pedals, mostly in GT3 and GT4 cars. Numbers below are rough (~) and car-dependent. Treat them as directions of change, then check your own car's garage ranges.</p>
+
+      <h2>Name the symptom before you touch the garage</h2>
+
+      <p>Understeer means the front tires give up before the rears: you add steering and the car keeps going straight. Oversteer means the rears give up first: the tail rotates more than you asked. Both can show up in the same corner, so the useful question is where in the corner it happens.</p>
+
+      <ul>
+        <li>Entry: you release the brake and turn in. Problems here point to brake bias, front tire load and damper or bar settings that govern weight transfer.</li>
+        <li>Mid-corner: you hold steady steering and steady throttle. This is the cleanest read on mechanical balance (springs, bars, ride height).</li>
+        <li>Exit: you add throttle. Problems here are about rear traction, differential and how quickly you ask for power.</li>
+      </ul>
+
+      <p>Pick one corner type, run five clean laps, and write down which phase fails. If the answer changes every lap, the car is not the problem yet. My notes on this are in <a href="saving-a-slide-before-the-spin.html">saving a slide before the spin</a>, because a driver who panics at the first slip makes every setup look bad.</p>
+
+      <h2>Rule zero: drive the baseline first</h2>
+
+      <p>Most iRacing cars ship with a baseline setup that is stable on purpose. I rarely change anything until I have done ~10 to 15 laps on it, and I link my method for that in <a href="building-setup-from-iracing-baseline.html">building a setup from the iRacing baseline</a>. A fast setup is also not automatically an easy one, as I wrote in <a href="fast-setup-makes-you-slower-iracing.html">fast setup makes you slower</a>. If the car feels strange on baseline, the first suspect is my inputs and my wheel settings, not the springs.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Check your FFB first</span>
+        <p>A wheel that clips its force output hides the very signal you need. If the front end feels dead before it slides, check your force feedback first (~80 to 90 percent of peak torque on my R9 is where I stop seeing clipping, though your car and strength setting will differ).</p>
+      </div>
+
+      <h2>Understeer: symptom to change</h2>
+
+      <h3>Understeer on entry</h3>
+
+      <p>You turn in and the nose will not follow. First, look at my braking: if I am still on the brake past the turn-in point, I am overloading the fronts, and no setup fixes that. If the technique is clean, I move brake bias a click or two toward the rear (see <a href="iracing-brake-bias-explained.html">brake bias explained</a>), which lets the fronts do less braking work and more turning work. On cars with front-biased balance, a stiffer rear bar or softer front bar also helps the nose rotate in the first part of the corner.</p>
+
+      <h3>Understeer mid-corner</h3>
+
+      <p>This is the classic push. The standard fixes, in the order I try them:</p>
+
+      <ul>
+        <li>Soften the front anti-roll bar by ~1 to 2 steps, or stiffen the rear bar by the same amount. This shifts grip to the front axle without changing the springs.</li>
+        <li>Check tire pressures. Overinflated fronts shrink the contact patch. In my experience a change of ~1 to 2 psi is already readable on a hot lap, and I explain how I read tire data in <a href="iracing-tyre-temps-and-pressures-basic-setup.html">tyre temps and pressures</a>.</li>
+        <li>Add front wing or front aero in cars that have it, if the push gets worse at higher speed.</li>
+        <li>Lower the front ride height slightly, only if the car has room before it bottoms out.</li>
+      </ul>
+
+      <p>The bar effect is the one I come back to most. I covered how a bar changes balance in <a href="anti-roll-bars-balance-shift-explained.html">anti-roll bars and balance shift</a>, and the short version is that stiffer at one end means that end loses grip first in a steady-state corner.</p>
+
+      <h3>Understeer on exit</h3>
+
+      <p>You are on the throttle and the car drifts wide. The cause is often too much throttle too early, which is a technique issue. Setup-wise, a more open differential setting (lower power-lock) lets the inside wheel spin freely and helps the car turn, at the price of some traction. Softer rear springs or a softer rear bar can add rear grip, which also reduces the push on exit.</p>
+
+      <h2>Oversteer: symptom to change</h2>
+
+      <h3>Oversteer on entry</h3>
+
+      <p>The rear gets light when you come off the brakes. Brake bias too far rearward is the first candidate, so I move it a click or two forward. Then I look at how abruptly I release the pedal. With my CRP2 pedals I keep a smooth release over ~0.5 to 1 second on trail-braking entries, which keeps weight on the front axle a little longer. If the car still rotates too freely, a softer rear bar or stiffer front bar calms entry.</p>
+
+      <h3>Oversteer mid-corner</h3>
+
+      <p>A steady-state loose car points to mechanical balance. I stiffen the front bar or soften the rear bar, one step at a time. Rear tire pressure matters too: pressures that are too low let the sidewall roll, and too high reduce the contact patch. I look for even temperatures across each tire before I judge the bar.</p>
+
+      <h3>Oversteer on exit</h3>
+
+      <p>This is the most common one in rear-driven GT cars. Throttle application is where I fix it first: squeeze, do not stab. If the car still snaps, a more locked differential on power can make it worse, so I try opening the power setting by a step or two. A stiffer rear spring or rear bar loses traction, so I go softer, and I check that rear wing or rear aero is not set too low for the speed of the corner.</p>
+
+      <h2>Change one thing, then confirm with the same corner</h2>
+
+      <p>The rule that saved me the most time: one change per run, then five laps in the same conditions. I log it in a plain text file: corner, symptom, change, result. After a few weeks I could see patterns in my own driving that no setup would have fixed, such as lifting abruptly mid-corner. Telemetry makes this faster, and I describe how to read it in <a href="iracing-telemetry-basics-reading-your-laps.html">telemetry basics</a>.</p>
+
+      <p>If three changes in a row make no difference, stop. That is usually the point where I go back to the baseline, which is the argument in <a href="when-to-stop-setup-tuning-baseline-racing.html">when to stop setup tuning</a>.</p>
+
+      <h2>Where hardware enters the picture</h2>
+
+      <p>A fixed cockpit does not change the car's balance, but it changes how reliably I can feel it. On my aluminium frame there is very little flex, so when the front tires start to wash, the force through the R9 changes in a way I can read in the first moment of the slide. Pedals matter just as much on entry: a load cell brake such as the CRP2 lets me repeat the same brake pressure lap after lap, and that repeatability makes it possible to judge whether a bias change did anything. Without it, I was never sure if I or the setup caused the difference.</p>
+
+      <p>None of that replaces seat time. A better wheelbase lets me notice understeer sooner and describe it more precisely, which is what the method above depends on.</p>
+
+      <h2>A quick reference</h2>
+
+      <ul>
+        <li>Pushes on entry: rear brake bias slightly, softer front bar, smoother brake release.</li>
+        <li>Pushes mid-corner: softer front bar or stiffer rear bar, check front pressures.</li>
+        <li>Pushes on exit: less throttle early, more open power differential, softer rear bar.</li>
+        <li>Loose on entry: forward brake bias, softer rear bar, smoother trail-braking release.</li>
+        <li>Loose mid-corner: stiffer front bar or softer rear bar, check rear pressures.</li>
+        <li>Loose on exit: gentler throttle, open the differential a step, more rear aero if available.</li>
+      </ul>
+
+      <p>Those are starting points. Every car in iRacing responds a little differently, and some series lock most of these adjustments. When a setting is locked, the driving fix is the only fix, and that is worth knowing before you spend an evening in the garage menu.</p>
+
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=understeer-oversteer-fixes-iracing-symptom-to-setup-change">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&amp;tag=realiracing-20" data-aff="cockpit" target="_blank" rel="sponsored noopener">Sim Racing Cockpit / Wheel Stand</a></th><td>a rigid mount matters more than the brand — flex kills FFB detail</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Get the next guide by email</h3>
+        <p>Setups, FFB settings and new packs, straight from the rig. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing" data-ok="You're on the list. Thanks!" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Subscribe</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>Should I fix understeer or oversteer with the same setting?</h3>
+        <p>Often the same control works in opposite directions. A stiffer front anti-roll bar tends to add understeer, and a softer one reduces it. Make one small change at a time, in the direction that matches your symptom, and confirm it over several laps.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does brake bias really change how the car turns in?</h3>
+        <p>Yes. Moving bias rearward reduces the work the fronts do under braking, which can help the nose turn in. Too far rearward and the car gets loose on entry. A change of one or two clicks is enough to feel the effect.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Why does my car understeer only on cold tires?</h3>
+        <p>Cold tires have less grip, and the front axle usually reveals it first. Give the tires a lap or two to come up to temperature before you judge the balance, and check pressures once they are warm rather than in the pit box.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do I need load cell pedals to tune a car's balance?</h3>
+        <p>No, but repeatable braking helps you compare changes fairly. If your brake pressure varies from lap to lap, you cannot tell whether a bias or bar change did anything. Pedals with a load cell make that comparison much easier.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="tire-management-strategy-iracing.html"><span>Technique</span>Tire Management Strategy on iRacing: Making a Set Last Without Giving Up the Race</a>
+      <a class="related-card" href="rejoining-the-track-safely-after-a-spin-iracing.html"><span>Racecraft</span>How to Rejoin the Track Safely After a Spin in iRacing</a>
+      <a class="related-card" href="quick-release-systems-explained.html"><span>Hardware</span>Quick Release Systems for Sim Racing Wheels: What They Actually Do</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","moza-crp2","cockpit"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
