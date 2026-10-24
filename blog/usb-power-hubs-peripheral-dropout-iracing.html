@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>USB Power Hubs and Peripheral Dropout: Why Your Wheel Disconnects</title>
+  <meta name="description" content="Understand USB power delivery limits, hub architecture, and why your wheel or pedals drop connection mid-race, with practical fixes for hubs, cables and routing." />
+  <link rel="canonical" href="https://realiracing.com/blog/usb-power-hubs-peripheral-dropout-iracing.html" />
+  <meta property="og:title" content="USB Power Hubs and Peripheral Dropout: Why Your Wheel Disconnects" />
+  <meta property="og:description" content="Understand USB power delivery limits, hub architecture, and why your wheel or pedals drop connection mid-race, with practical fixes for hubs, cables and routing." />
+  <meta property="og:url" content="https://realiracing.com/blog/usb-power-hubs-peripheral-dropout-iracing.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/pedals-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: a rising series of bars" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/pedals-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261020" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "USB Power Hubs and Peripheral Dropout: Why Your Wheel Disconnects",
+    "description": "Understand USB power delivery limits, hub architecture, and why your wheel or pedals drop connection mid-race, with practical fixes for hubs, cables and routing.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/usb-power-hubs-peripheral-dropout-iracing.html",
+    "image": "https://realiracing.com/assets/photos/pedals-cover.jpg",
+    "datePublished": "2026-10-19",
+    "dateModified": "2026-10-19"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"USB Power Hubs and Peripheral Dropout: Why Your Wheel Disconnects","item":"https://realiracing.com/blog/usb-power-hubs-peripheral-dropout-iracing.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/usb-power-hubs-peripheral-dropout-iracing.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/usb-power-hubs-peripheral-dropout-iracing.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "My wheelbase disconnects every 2 to 3 hours of racing, but not during short sessions. What's happening?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Prolonged racing generates heat inside your PC and in hub electronics. Thermal drift in PSU output voltage combined with increased current draw from longer sessions will reveal marginal power supplies. A hub PSU rated barely high enough at room temperature will sag when warm. Test with a higher-capacity powered hub (3+ amps rated) or plug your wheelbase directly into the motherboard to isolate hub involvement." }
+    },
+    {
+      "@type": "Question",
+      "name": "I have a Fanatec CSL DD, not a MOZA wheel. Does this apply to me?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Any direct-drive wheelbase draws 5 to 8 amps under load. Fanatec, SimXperience, Accuforce, and MOZA wheelbases all exhibit the same dropout pattern when powered through undersized hubs. The principle is universal: hub power budgets are small, and transient motor spikes exceed them quickly. Plug your wheelbase directly into the PC." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a USB extension cable to reach my motherboard without a hub?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Active (powered) extension cables work fine. Passive (unpowered) extension cables degrade signal and can introduce dropout, especially if longer than 10 feet. Passive cables are cheaper but they're a false economy. Buy a good powered hub or a powered extension cable if you need distance. Never daisy-chain unpowered hubs or extensions." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between a 'powered hub' and a hub with 'pass-through charging'?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A powered hub has its own AC supply and powers its ports. Pass-through charging means the hub also charges a phone or tablet plugged into a dedicated port while forwarding power to other ports, but the AC supply is still shared. For sim racing, a simple powered hub without pass-through charging is cleaner. Fewer devices competing for power means more stable rail voltage." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Hardware · Troubleshooting</p>
+    <h1>USB Power Hubs and Peripheral Dropout: Why Your Wheel Disconnects</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 19, 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/pedals-cover.jpg" width="1000" height="563" alt="Cover art: a rising series of bars" srcset="/assets/photos/pedals-cover-sm.jpg 560w, /assets/photos/pedals-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">A wheelbase that goes dead mid-race is a nightmare: no warning, no gradual loss of force feedback, just an instant disconnection and a reset pop-up while the field piles past. A common culprit is USB power starvation from an unpowered hub with a button box plugged into it, sitting on the same power rail as the wheelbase connection.</p>
+
+      <p>USB dropout isn't random. It's physics. A direct-drive wheelbase like the R9 draws ~5 to 7 amps of current under heavy load. A peripheral like a button box draws 0.5 amps. An unpowered hub can starve the bus. A powered hub with an undersized power supply bottlenecks everything on it. A poorly shielded cable picks up electrical noise. Most troubleshooting guides skip the real why, so you end up guessing. Here's what actually happens and how to fix it.</p>
+
+      <h2>How USB power and bandwidth share one cable</h2>
+
+      <p>USB 2.0 and 3.0 cables carry both data and power in the same four to nine wires. Data flows one direction. Power flows the opposite way. A USB 3.0 bus-powered device can draw up to 900 milliamps (0.9 amps). A USB 3.0 self-powered device (one plugged into AC power) can draw 5 amps. Your R9 wheelbase is self-powered: it has its own PSU. But the data line back to your PC still shares the same physical cable as power for upstream devices.</p>
+
+      <p>When you chain devices via an unpowered hub, they all compete for power budget from the single port on your motherboard. If that port can only supply 500 milliamps and you plug in a wheel (6 amps self-powered), a button box (0.5 amps), and a shifter (0.3 amps), the math already exceeds what the hub can negotiate. The bus doesn't have enough reserve to handle a power spike from your wheelbase firmware polling or a sudden motor load. Something drops.</p>
+
+      <h2>Why unpowered hubs cause mid-race disconnects</h2>
+
+      <p>An unpowered hub (also called a bus-powered hub) has no AC adapter. It draws all its power from the USB port it plugs into. When multiple devices plug into an unpowered hub, the motherboard's USB controller has to allocate power to each one. If total draw exceeds the port's budget, the controller cuts power to the lowest-priority device. That's usually your peripheral, not your wheel, but the wheel can still reset if its data line gets starved.</p>
+
+      <ul>
+        <li>Unpowered hubs can only distribute 500 mA per port on USB 2.0, 900 mA per port on USB 3.0, even if the hub itself receives 500 mA or 900 mA from the PC.</li>
+        <li>When a device exceeds its allocated power, the hub's internal circuitry either throttles it (causing lag or dropout) or disconnects it entirely to protect the bus.</li>
+        <li>On iRacing, where FFB updates happen at 1,000 Hz, even a 500 millisecond power glitch registers as a full disconnect and forces a rejoin.</li>
+        <li>Powered hubs with undersized power supplies fail the same way: a 1-amp PSU on a hub with four devices will starve the load during peak demand.</li>
+      </ul>
+
+      <div class="tip-box">
+        <span class="box-label">Hub Type Matters</span>
+        <p>Check your hub's label. If it says 'bus-powered' or shows only a USB input (no AC barrel jack), it draws power from your PC. Toss it. A powered hub must have its own AC power supply rated for at least 2 amps total output to safely run your rig.</p>
+      </div>
+
+      <h2>The real power budget of your rig</h2>
+
+      <p>A direct-drive wheelbase like the R9 draws ~5 to 7 amps under heavy transient load (sudden FFB spike during a curb hit). A set of load-cell pedals can draw ~0.3 amps. A button box with 32 buttons and 2 encoders draws 0.5 to 1 amp depending on backlighting. A sequential shifter pulls 0.2 amps. A handbrake adds another 0.5 amps. That's 6.5 to 10 amps total during peak load on a single rig with all of these devices.</p>
+
+      <p>Your PC motherboard typically provides 500 mA per USB 2.0 port and 900 mA per USB 3.0 port. Most boards have 4 to 6 USB 3.0 ports sharing a single controller chip. If you plug the wheelbase into one port, the pedals into another, and a hub into a third, you're using three of your board's power budgets. The hub itself gets 900 mA, which it must divide among everything plugged into it. If a button box, shifter, and handbrake live on that hub, they're fighting for 900 mA total. It works until a 2000 Hz FFB update spike sucks current and the controller yanks power.</p>
+
+      <h2>Cable quality and shielding amplify the problem</h2>
+
+      <p>Poor shielding or long cable runs introduce capacitive and inductive coupling. Electrical noise from your PSU (especially under heavy load), your monitor refresh, your graphics card, and even your WiFi router can couple into USB data lines. A USB controller interprets this noise as signal corruption. Multiple bit errors in a row trigger a port reset. The port powers off and back on. Your device disconnects and reconnects.</p>
+
+      <p>Avoid running the wheelbase USB cable alongside an unshielded power strip, which is bad practice and can make dropouts far more frequent. Run the USB cable alone and separate it from power cables by 12 inches. Shielded USB cables and good cable routing aren't luxuries for race rigs; they're essentials.</p>
+
+      <ul>
+        <li>Use shielded USB cables, especially for your wheelbase and pedals. Cheap unshielded cables are built for mice and keyboards, not for high-current devices.</li>
+        <li>Never run USB cables parallel to power cables or alongside HDMI and DisplayPort lines for more than a few inches.</li>
+        <li>Keep USB cables away from power supplies, especially during peak load (a 750W PSU under 50% load radiates significant EMI).</li>
+        <li>Use right-angle USB connectors or cable organizers to avoid kinks, which can degrade shielding effectiveness.</li>
+      </ul>
+
+      <h2>Powered hub specifications and how to choose</h2>
+
+      <p>A powered hub's AC supply must deliver enough current for all connected devices plus a safety margin. If your wheelbase and pedals draw 7.5 amps (self-powered, so they bypass hub power), but your button box, shifter, and handbrake draw 2 amps total, your hub's PSU needs to supply at least 3 amps at 5 volts. That's 15 watts. Most hub PSUs are rated in amps, not watts, so check both figures. A hub labeled '2A, 5V' is actually 10 watts, which works for a button box alone. A hub labeled '3A, 5V' is 15 watts, enough for a typical peripheral setup.</p>
+
+      <p>Look for hubs with per-port current limiting or switchable charging. Some hubs let you disable individual ports if a device is misbehaving. Avoid passive hub designs (metal boxes with no power management). A $40 powered hub from a reputable maker (Anker, Belkin, or Startech) beats a $15 no-name hub every time. If you have a multimeter or oscilloscope, check the hub's bus voltage under load: a proper hub PSU should hold 4.95 to 5.05 volts. A cheap PSU that sags to 4.7 volts can trigger dropout thresholds in sensitive devices.</p>
+
+      <h2>Optimal cable architecture for your rig</h2>
+
+      <p>Plug your wheelbase directly into a USB 3.0 port on your motherboard (not a hub). Plug your pedals directly into another USB 3.0 port. Both devices are self-powered, so they don't compete for hub power. A powered hub can then serve your button box, shifter, handbrake, and other accessories. This gives you 900 mA of hub power for peripherals and isolates your critical racing hardware from hub contention.</p>
+
+      <p>If your motherboard has only two USB 3.0 ports and you need more, buy a second powered hub for your wheel and pedals to share. Don't plug both into the same hub. Most boards have 2 to 4 physical USB 3.0 ports, each with independent power lanes inside the chipset. Use them. Reserve hub power for low-draw devices.</p>
+
+      <ol>
+        <li>Wheelbase to USB 3.0 port 1 (motherboard)</li>
+        <li>Pedals to USB 3.0 port 2 (motherboard)</li>
+        <li>Powered hub (rated 2+ amps) to USB 3.0 port 3 (motherboard)</li>
+        <li>Button box, shifter, handbrake, and lower-priority devices to the powered hub</li>
+      </ol>
+
+      <div class="tip-box">
+        <span class="box-label">Port Hierarchy</span>
+        <p>Check your motherboard's USB block diagram in the manual. Most boards have at least one or two USB 3.0 ports that bypass the southbridge and connect directly to the CPU. Use those for your wheelbase and pedals. Lower-speed ports can handle hubs fine.</p>
+      </div>
+
+      <h2>Firmware and driver updates mask the real issue</h2>
+
+      <p>If you've experienced dropout, your instinct might be to update your wheel's firmware or install fresh drivers. Sometimes that helps, but often it just masks a power supply problem. Firmware updates can include improved power negotiation algorithms. Drivers can add retry logic. But if your hub PSU is undersized or your cable is poor, the problem will return under higher load or after a few hours of racing.</p>
+
+      <p>Before you waste time on driver loops, test your physical setup. Swap to a known-good powered hub. Swap to a new shielded cable. Plug directly into the motherboard. If dropout stops, your firmware was never the problem. If dropout persists after all hardware changes, then file a support ticket with MOZA or your wheelbase maker and include your USB configuration details.</p>
+
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=usb-power-hubs-peripheral-dropout-iracing">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Get the next guide by email</h3>
+        <p>Setups, FFB settings and new packs, straight from the rig. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing" data-ok="You're on the list. Thanks!" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Subscribe</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>My wheelbase disconnects every 2 to 3 hours of racing, but not during short sessions. What's happening?</h3>
+        <p>Prolonged racing generates heat inside your PC and in hub electronics. Thermal drift in PSU output voltage combined with increased current draw from longer sessions will reveal marginal power supplies. A hub PSU rated barely high enough at room temperature will sag when warm. Test with a higher-capacity powered hub (3+ amps rated) or plug your wheelbase directly into the motherboard to isolate hub involvement.</p>
+      </div>
+      <div class="faq-item">
+        <h3>I have a Fanatec CSL DD, not a MOZA wheel. Does this apply to me?</h3>
+        <p>Yes. Any direct-drive wheelbase draws 5 to 8 amps under load. Fanatec, SimXperience, Accuforce, and MOZA wheelbases all exhibit the same dropout pattern when powered through undersized hubs. The principle is universal: hub power budgets are small, and transient motor spikes exceed them quickly. Plug your wheelbase directly into the PC.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I use a USB extension cable to reach my motherboard without a hub?</h3>
+        <p>Active (powered) extension cables work fine. Passive (unpowered) extension cables degrade signal and can introduce dropout, especially if longer than 10 feet. Passive cables are cheaper but they're a false economy. Buy a good powered hub or a powered extension cable if you need distance. Never daisy-chain unpowered hubs or extensions.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What's the difference between a 'powered hub' and a hub with 'pass-through charging'?</h3>
+        <p>A powered hub has its own AC supply and powers its ports. Pass-through charging means the hub also charges a phone or tablet plugged into a dedicated port while forwarding power to other ports, but the AC supply is still shared. For sim racing, a simple powered hub without pass-through charging is cleaner. Fewer devices competing for power means more stable rail voltage.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="iracing-vr-vs-triple-monitors.html"><span>Hardware</span>iRacing in VR vs Triple Monitors — Which Should You Buy in 2026?</a>
+      <a class="related-card" href="sequential-vs-h-pattern-shifters-iracing.html"><span>Hardware</span>Sequential vs. H-Pattern Shifters on iRacing: Which One to Add First</a>
+      <a class="related-card" href="cpu-gpu-bottlenecks-iracing-performance.html"><span>Hardware</span>CPU vs GPU Bottlenecks in iRacing: Which One Matters</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","moza-crp2"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
