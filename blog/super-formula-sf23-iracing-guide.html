@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Super Formula SF23 iRacing Guide: Setup, Braking, Throttle</title>
+  <meta name="description" content="Master the SF23's weight transfer and mid-corner balance. Learn braking, throttle application, and setup tuning for consistent pace." />
+  <link rel="canonical" href="https://realiracing.com/blog/super-formula-sf23-iracing-guide.html" />
+  <meta property="og:title" content="Super Formula SF23 iRacing Guide: Setup, Braking, Throttle" />
+  <meta property="og:description" content="Master the SF23's weight transfer and mid-corner balance. Learn braking, throttle application, and setup tuning for consistent pace." />
+  <meta property="og:url" content="https://realiracing.com/blog/super-formula-sf23-iracing-guide.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/pedals-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: a rising series of bars" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/pedals-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261020" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Super Formula SF23 iRacing Guide: Setup, Braking, Throttle",
+    "description": "Master the SF23's weight transfer and mid-corner balance. Learn braking, throttle application, and setup tuning for consistent pace.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/super-formula-sf23-iracing-guide.html",
+    "image": "https://realiracing.com/assets/photos/pedals-cover.jpg",
+    "datePublished": "2026-10-19",
+    "dateModified": "2026-10-19"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Super Formula SF23 iRacing Guide: Setup, Braking, Throttle","item":"https://realiracing.com/blog/super-formula-sf23-iracing-guide.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/super-formula-sf23-iracing-guide.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/super-formula-sf23-iracing-guide.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much trail-braking does the SF23 need compared to a GT car?",
+      "acceptedAnswer": { "@type": "Answer", "text": "(FAQ) The SF23 requires significantly more trail-braking because its light front end loses grip quickly if you release the brakes and turn at the same time. GT cars have more brake bias room and heavier platforms that absorb input errors. On the SF23, trail-brake into nearly every corner, even high-speed ones like a 130 mph third-gear turn. The brakes come off gradually over 1-2 seconds of steering angle, not in one lift. This is not optional; it's the entry technique." }
+    },
+    {
+      "@type": "Question",
+      "name": "What brake bias should I start with if I don't have a setup sheet?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Start at 60% front. Run 3-4 laps. If you're locking the fronts consistently, reduce it by 1-2%. If the rear locks, increase by 1-2%. The SF23's light front means front-locking is the most common issue. Once you've found the point where neither end locks reliably, you're in the ballpark. Then fine-tune by 0.5% until braking feels completely solid and trust-worthy." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I adjust suspension for different track types like tight versus fast circuits?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, but keep the changes small and focused. At tight circuits like Suzuka, soften the front ARB by 1-2 clicks to improve mid-corner feel and mid-corner turn-in response. At high-speed tracks like Fuji, stiffen it slightly to keep the front settled through fast direction changes. The rear ARB stays relatively constant across tracks. Make one change, run five laps, and compare to your baseline before changing anything else." }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I tell if I'm applying throttle too aggressively versus if the setup is causing oversteer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Watch your onboard video and look at when the rear steps out relative to your throttle input. If it happens 0.2-0.3 seconds after you apply full throttle, it's driver input: you're applying throttle before the steering is wound back enough. If the rear is loose immediately after you press throttle even with smooth input, it's the setup: increase differential on-throttle lock. Compare your throttle trace in telemetry to a quick lap replay; the shape of the curve should be a smooth ramp, not a step or spike." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Car Guide · Open Wheel</p>
+    <h1>Super Formula SF23 iRacing Guide: Setup, Braking, Throttle</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 19, 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/pedals-cover.jpg" width="1000" height="563" alt="Cover art: a rising series of bars" srcset="/assets/photos/pedals-cover-sm.jpg 560w, /assets/photos/pedals-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">The Super Formula SF23 in iRacing is a raw, unforgiving open-wheeler that demands respect. Unlike the Dallara iR-18 IndyCar with its aero-assisted stability, the SF23 punishes sloppy inputs and rewards smooth, committed driving. If you come to it from road racing, you will feel the difference immediately: the rear will swap sideways if you over-throttle mid-corner, and braking is a precision exercise because there's no power steering assist. You can't drive it like a GT car. Respect the car first, and pace will follow.</p>
+
+      <h2>Understanding the SF23's weight transfer and limit</h2>
+
+      <p>The SF23 has mid-engine layout and a tight wheelbase, which means weight transfers quickly and dramatically. Through a direct drive wheelbase, you can feel the front axle unload almost instantly when you lift throttle, and the rear squats hard under acceleration. That's not noise in the FFB; that's the car's behavior being translated to the wheel.</p>
+
+      <p>The car lives at the edge of its tire grip window. You're not hunting for a "sweet spot" in setup where everything feels balanced across a range. Instead, you're tuning for a narrow operational zone: the car should feel alive and responsive at full commitment, and slightly nervous at anything below. If the SF23 feels planted and easy, your setup is too conservative and you're leaving lap time on the table.</p>
+
+      <ul>
+        <li>Front anti-roll bar (ARB) stiffness ~8-10 (road courses). Softer than you'd think because the car transfers weight so aggressively that a stiff bar can reduce front grip.</li>
+        <li>Rear ARB stiffness ~12-14. The rear is where balance lives; too soft and the rear will move around, too stiff and mid-corner understeer develops.</li>
+        <li>Brake bias ~58-62% front. The light front end means you need a higher percentage up front than in most cars to prevent rear locking.</li>
+        <li>Differential on-throttle lock ~60-70%. The SF23 needs some mechanical help managing rear slip during corner exit or it will be unpredictable.</li>
+      </ul>
+
+      <div class="tip-box">
+        <span class="box-label">Throttle modulation is the baseline</span>
+        <p>Check your throttle application on corner exit by watching onboard video and comparing to a setup guide replay. The SF23 will show you immediately if you're grabbing throttle too hard; the rear will slide or the front will push. Smooth is fast.</p>
+      </div>
+
+      <h2>Braking technique and trail-braking depth</h2>
+
+      <p>The SF23 has solid brake performance (~1.7G+ deceleration), but the car's light front end means front tire lockup is a real threat if you're not smooth. You can't brake as late or as deep as you'd do in a heavier GT car, and you can't brake in a straight line and turn; the front tires will simply run out of grip.</p>
+
+      <p>Trail-braking is not optional on the SF23. It's the only way to manage entry speed and still load the front tires for turn-in. A good pattern is to brake hard in a straight line, then begin reducing brake pressure as you start turning, finishing with maybe 5-10% brake pressure while the car is mid-corner. The pedal travel matters here too; pedals with enough resolution let you feel that light trailing pressure and modulate it smoothly.</p>
+
+      <ol>
+        <li>Brake hard in a straight line until about one car-length before turn-in.</li>
+        <li>Begin reducing brake pressure smoothly as you steer in. Don't lift all at once.</li>
+        <li>Finish with 5-10% brake pressure through mid-corner, releasing completely as you apply throttle.</li>
+        <li>If the front feels light or the car understeers, you released brake pressure too early. Keep more on longer.</li>
+        <li>If the front locks or the car pushes, you're braking too deep or turning too aggressively for your entry speed.</li>
+      </ol>
+
+      <h2>Corner speed and throttle progression</h2>
+
+      <p>The SF23 is sensitive to throttle application because power is delivered to the rear axle through a relatively short wheelbase. A 10% difference in throttle input can swing from understeer to oversteer. Precision matters.</p>
+
+      <p>On entry and through the middle of a corner, you're either on the brakes or off them; there's no middle ground where the car will tolerate sloppy throttle pedal movement. Once you've reached the apex and the car is transitioning to exit, then you can apply throttle progressively. Think of it as a ramp: zero throttle at the apex, then smoothly increase to full by the time the steering is wound back to straight.</p>
+
+      <p>If you feel the rear step out mid-corner, you applied throttle too early or too aggressively. Lift, let the car settle, and reapply gentler. The SF23 will reward you with better exit speed because you're working with the tires, not fighting them.</p>
+
+      <h2>Setup tuning for your driving style</h2>
+
+      <p>Start with a baseline setup from iRacing and run 10-15 laps at the same track to build familiarity. Your first adjustment should be brake bias. If you're locking the fronts, reduce front brake bias by 1-2%. If the rear is locking, increase it. Get braking sorted before you touch the ARBs.</p>
+
+      <p>Next, tune the differential. If the car oversteers heavily on exit when you're applying throttle smoothly, increase on-throttle lock. If the rear feels planted but you're losing time mid-corner, reduce it slightly and see if the car becomes more responsive to steering input.</p>
+
+      <p>Suspension stiffness is last. If the car feels nervous and twitchy at full commitment, your setup is already aggressive enough. Don't add stiffness. Instead, focus on your own inputs: throttle modulation and trail-braking depth. The car will reward smoother driving.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Track characteristics change setup feel</span>
+        <p>Run the same setup at three different tracks before concluding it's wrong. The SF23 feels different on tight, bumpy circuits versus flowing high-speed layouts. A setup that feels overdamped at Suzuka might feel perfect at Fuji.</p>
+      </div>
+
+      <h2>Common mistakes and how to spot them</h2>
+
+      <ul>
+        <li>Over-aggressive turn-in inputs: You'll feel the front load suddenly and the car will either push wide or the rear will step out immediately after. Slow your steering input speed by 10-20% and turn-in will feel instant and planted.</li>
+        <li>Brake depth and aggression: If you're locking the fronts consistently at the same corner, you're braking too deep for the entry speed. Brake earlier, not harder. The SF23 rewards modulation over aggression.</li>
+        <li>Throttle application timing: Applying full throttle before the steering is unwound will cause oversteer or push depending on cornering load. Wait an extra 0.1-0.2 seconds into the exit before going full throttle.</li>
+        <li>Setup confusion: If lap times aren't improving after three setup changes, the issue is likely driver input, not setup. Record your onboard, watch a quick-lap replay, and compare your inputs. You'll see the difference immediately.</li>
+      </ul>
+
+      <h2>Qualifying and race pace considerations</h2>
+
+      <p>The SF23's performance over a single lap versus a race stint is fairly consistent because fuel weight doesn't swing handling as dramatically as it does in heavier prototypes. Your qualifying setup will work for a race, but tire wear becomes the limiting factor in long races.</p>
+
+      <p>In the first half of a stint, the car feels responsive and eager. By lap 12-15, front tire degradation will reduce turn-in grip and the car will feel more understeery on entry. Adjust your driving first: brake slightly earlier and carry less entry speed so the fronts aren't working as hard. If that's not enough, a small ARB adjustment on your next pit stop (softer front ARB by 1-2 clicks) can restore responsiveness without major handling changes.</p>
+
+      <p>Fuel strategy in Super Formula races is straightforward: calculate your burn rate during qualifying, add a small buffer for race pace, and commit. The SF23 is too quick for you to nurse fuel mid-race. Drive it hard, manage tires with smooth inputs, and pit accordingly.</p>
+
+      <h2>Data and telemetry focus points</h2>
+
+      <p>If you're using telemetry tools like Garage61, focus on three areas. First, brake application: compare your braking trace to a faster driver's and you'll see exactly where you're releasing brake pressure too early or too late. Second, steering angle: if you're overshooting steering input, the graph will show a spike. Smooth your hand inputs by 5-10 degrees. Third, throttle application: look at the shape of your throttle trace on corner exit. Slow drivers apply throttle in steps; fast drivers apply it as one smooth ramp from 0 to 100.</p>
+
+      <p>Don't obsess over apex speed. The SF23's lap time is built on entry speed control (braking and trail-braking) and exit acceleration (smooth throttle progression). If your apex speed is 2 km/h slower than the quick car but your exit speed is 3 km/h faster, you've gained lap time overall.</p>
+
+      <h2>The mental side: confidence and commitment</h2>
+
+      <p>The SF23 will punish hesitation. If you're unsure about brake depth or line commitment, the car will either miss the apex or lock up, and you'll lose confidence further. That's a spiral. The antidote is to pick a brake marker and commit. Drive the same line five times in a row, same inputs, same speed. The car's behavior becomes predictable, and then you can push.</p>
+
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=super-formula-sf23-iracing-guide">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Get the next guide by email</h3>
+        <p>Setups, FFB settings and new packs, straight from the rig. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing" data-ok="You're on the list. Thanks!" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Subscribe</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>How much trail-braking does the SF23 need compared to a GT car?</h3>
+        <p>(FAQ) The SF23 requires significantly more trail-braking because its light front end loses grip quickly if you release the brakes and turn at the same time. GT cars have more brake bias room and heavier platforms that absorb input errors. On the SF23, trail-brake into nearly every corner, even high-speed ones like a 130 mph third-gear turn. The brakes come off gradually over 1-2 seconds of steering angle, not in one lift. This is not optional; it's the entry technique.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What brake bias should I start with if I don't have a setup sheet?</h3>
+        <p>Start at 60% front. Run 3-4 laps. If you're locking the fronts consistently, reduce it by 1-2%. If the rear locks, increase by 1-2%. The SF23's light front means front-locking is the most common issue. Once you've found the point where neither end locks reliably, you're in the ballpark. Then fine-tune by 0.5% until braking feels completely solid and trust-worthy.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I adjust suspension for different track types like tight versus fast circuits?</h3>
+        <p>Yes, but keep the changes small and focused. At tight circuits like Suzuka, soften the front ARB by 1-2 clicks to improve mid-corner feel and mid-corner turn-in response. At high-speed tracks like Fuji, stiffen it slightly to keep the front settled through fast direction changes. The rear ARB stays relatively constant across tracks. Make one change, run five laps, and compare to your baseline before changing anything else.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How can I tell if I'm applying throttle too aggressively versus if the setup is causing oversteer?</h3>
+        <p>Watch your onboard video and look at when the rear steps out relative to your throttle input. If it happens 0.2-0.3 seconds after you apply full throttle, it's driver input: you're applying throttle before the steering is wound back enough. If the rear is loose immediately after you press throttle even with smooth input, it's the setup: increase differential on-throttle lock. Compare your throttle trace in telemetry to a quick lap replay; the shape of the curve should be a smooth ramp, not a step or spike.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="audi-r8-lms-gt3-iracing-guide.html"><span>Car Guide</span>The Audi R8 LMS GT3 on iRacing: Stable Under Braking, Rewarding on Exit</a>
+      <a class="related-card" href="dirt-sprint-car-iracing-beginner-guide.html"><span>Car Guide</span>Dirt Sprint Car iRacing Beginner Guide: Setup, Braking, and Lines</a>
+      <a class="related-card" href="gt3-vs-gt4-which-to-race-first.html"><span>Car Guide</span>GT3 vs GT4 in iRacing — Which Class Should You Race First?</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","moza-crp2"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
