@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The iRacing Delta Bar: How to Use It to Find Time</title>
+  <meta name="description" content="How I read the live delta in iRacing to test one corner at a time, which reference lap to pick, and when to stop looking at it." />
+  <link rel="canonical" href="https://realiracing.com/blog/iracing-delta-bar-how-to-use-it-to-find-lap-time.html" />
+  <meta property="og:title" content="The iRacing Delta Bar: How to Use It to Find Time" />
+  <meta property="og:description" content="How I read the live delta in iRacing to test one corner at a time, which reference lap to pick, and when to stop looking at it." />
+  <meta property="og:url" content="https://realiracing.com/blog/iracing-delta-bar-how-to-use-it-to-find-lap-time.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/track-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: a circuit traced as a route with marked points" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/track-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261020" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "The iRacing Delta Bar: How to Use It to Find Time",
+    "description": "How I read the live delta in iRacing to test one corner at a time, which reference lap to pick, and when to stop looking at it.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/iracing-delta-bar-how-to-use-it-to-find-lap-time.html",
+    "image": "https://realiracing.com/assets/photos/track-cover.jpg",
+    "datePublished": "2026-10-25",
+    "dateModified": "2026-10-25"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"The iRacing Delta Bar: How to Use It to Find Time","item":"https://realiracing.com/blog/iracing-delta-bar-how-to-use-it-to-find-lap-time.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/iracing-delta-bar-how-to-use-it-to-find-lap-time.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/iracing-delta-bar-how-to-use-it-to-find-lap-time.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup — high refresh matters more than size","url":"https://realiracing.com/blog/iracing-delta-bar-how-to-use-it-to-find-lap-time.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does green and red mean on the iRacing delta bar?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Green means you are ahead of the reference lap at that point of the track, red means you are behind it. The number shows the gap in seconds and updates continuously through the lap." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which reference lap should I use for the delta in iRacing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Your own best lap of the session is the most useful default for learning. The optimal lap, built from your best sectors, is better once your laps are already consistent." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the delta bar enough to find lap time?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It shows where you gain or lose time, usually within a corner or two. To understand why, compare throttle and brake traces in telemetry or watch a replay of the lap." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use the delta bar during races?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most drivers find it more useful in practice. In a race, traffic, tire wear and fuel load change the lap so much that the delta can push you to take risks that do not pay off." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Technique · Driving</p>
+    <h1>The iRacing Delta Bar: How to Use It to Find Time</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 25, 2026</span>
+      <span class="dot">·</span>
+      <span>7 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/track-cover.jpg" width="1000" height="563" alt="Cover art: a circuit traced as a route with marked points" srcset="/assets/photos/track-cover-sm.jpg 560w, /assets/photos/track-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">Lap nine of a practice stint at Spa. I brake a few meters later for the Bus Stop, the delta at the bottom of my screen flashes green, and by the exit it has turned red again. Later braking won me a tenth on entry and cost me two on exit. Without the delta I would have gone home believing the later brake point was faster. That little bar is the cheapest coach in iRacing, as long as you read it the right way.</p>
+
+      <p>Everything here comes from my own rig: a <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> base, <a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">CRP2</a> load cell pedals and a fixed aluminium cockpit, with one 1440p monitor. I mostly drive GT3 and GT4 cars. None of this needs extra software. It is all about how to use a number the sim already gives you.</p>
+
+      <h2>What the delta actually measures</h2>
+
+      <p>The delta compares where you are on the current lap with where you were at the same point of a reference lap. Green means you are ahead of the reference, red means you are behind, and the number is the gap in seconds. It updates continuously, so you see the gap grow or shrink through every corner rather than only at the timing line.</p>
+
+      <p>That continuous update is the whole point. A lap time tells you the lap was slower. The delta tells you where the time went, usually within a corner or two.</p>
+
+      <h2>Pick the right reference lap</h2>
+
+      <p>iRacing can compare against different references, and the one you choose changes what the bar is telling you. You set it in the sim's on-screen display options, and the exact menu names have moved around between builds, so look for the delta settings rather than a fixed path.</p>
+
+      <ul>
+        <li>Your best lap of the session: the most useful default. You are racing yourself, and every gain is real.</li>
+        <li>Optimal lap: built from your best sectors. Good for spotting which sector still has time in it, harsh as a live target because nobody strings every best sector together.</li>
+        <li>Session best: useful in a shared practice to see how far off the pace you are, less useful for learning a corner.</li>
+      </ul>
+
+      <div class="tip-box">
+        <span class="box-label">My default</span>
+        <p>Start with your own best lap as the reference. Switch to the optimal lap only after your laps are within a few tenths of each other, otherwise the bar is red all the time and stops telling you anything.</p>
+      </div>
+
+      <h2>Change one thing per lap</h2>
+
+      <p>The delta only teaches you something if you know what you changed. If I brake later, turn in earlier and pick up the throttle sooner in the same corner, the bar tells me the combination was faster or slower, but not which part did it.</p>
+
+      <p>So I pick one corner and one variable per lap. Brake marker one car length later. Next lap, same brake point, but a smoother release. Next lap, throttle a touch earlier on exit. Each change gets at least two laps, because a single lap can be noise: traffic, a slightly different line or a tire that has not warmed up.</p>
+
+      <h2>Read the trend, not the flash</h2>
+
+      <p>The most common mistake I made early on was staring at the number mid-corner. The delta moves a lot through a braking zone, because small differences in where you lift show up immediately. What matters is the number a few hundred meters after the corner, once you are back on full throttle.</p>
+
+      <ol>
+        <li>Note the delta on the straight before the corner.</li>
+        <li>Drive the corner without looking at it.</li>
+        <li>Read it again on the next straight, after the exit.</li>
+        <li>Compare the change with the same stretch on your reference lap.</li>
+      </ol>
+
+      <p>If the number gained on entry and lost more by the exit, you overdid the entry. That is the Bus Stop story from the start of this post, and it is the pattern I see most often: braking later feels faster and often is not.</p>
+
+      <h2>A 30-minute practice block built around the delta</h2>
+
+      <p>This is the structure I use when a track is new to me or when I come back to one after a few weeks. It keeps the delta honest and stops me from chasing random tenths.</p>
+
+      <ol>
+        <li>Five laps to warm the tires and settle in, delta hidden. These laps set a reference without me forcing anything.</li>
+        <li>Show the delta against my best lap so far. Drive five laps normally and note which two corners turn the bar red most often.</li>
+        <li>Pick the worst of those two corners. Spend the next ten laps on it, one change at a time, two laps per change.</li>
+        <li>Keep whatever change holds the gain across both laps. Drop anything that only worked once.</li>
+        <li>Finish with five laps where I drive the whole track with the new habit and see if the best lap moves.</li>
+      </ol>
+
+      <p>Some days the best lap does not move at all, and that is still useful. It usually means the time is not where I thought it was, and the next step is telemetry rather than more laps. Other days a single corner hands back three or four tenths, which is far more than I would find by driving fifty laps on feel.</p>
+
+      <p>The block also stops a habit that wasted a lot of my early practice: driving lap after lap at the same pace, hoping the time would fall on its own. With a target corner and a number to check, every lap has a purpose.</p>
+
+      <h2>Where the delta lies to you</h2>
+
+      <p>The delta is a timing comparison, nothing more. It does not know about tire wear, fuel load or track temperature. A lap with half a tank against a reference set on fumes will look slow everywhere, even if you drove better.</p>
+
+      <p>It also cannot tell you why you lost time. For that I go to telemetry and compare throttle and brake traces, which I cover in <a href="iracing-telemetry-basics-reading-your-laps.html">reading your laps with iRacing telemetry</a>. And for watching what the car did, a replay review is still the best tool, as in <a href="how-to-review-iracing-replays-to-find-lap-time.html">reviewing replays to find lap time</a>.</p>
+
+      <h2>Hardware helps, a little</h2>
+
+      <p>Consistency is what makes the delta useful, and consistency comes mostly from the pedals. On my CRP2 the brake is a load cell, so I am matching pressure rather than travel, and repeating a brake point within a car length is easier than it was on potentiometer pedals. If you are on a basic set, the method still works, you just need more laps per change to see past the noise.</p>
+
+      <p>Monitor placement matters too. I keep the delta near the bottom center of the screen so I can glance at it on a straight without moving my eyes far from the road. On a single 1440p screen at roughly ~60 cm, a small bar is readable without being distracting.</p>
+
+      <h2>When to turn it off</h2>
+
+      <p>In a race I hide the delta, or at least stop reading it. Racing is about traffic, tires and position, and a red number after a defensive line only makes me push where I should not. Practice is where the delta earns its place. Use it to build a lap you trust, then race with your eyes on the cars around you.</p>
+
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=iracing-delta-bar-how-to-use-it-to-find-lap-time">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup — high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Get the next guide by email</h3>
+        <p>Setups, FFB settings and new packs, straight from the rig. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing" data-ok="You're on the list. Thanks!" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Subscribe</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>What does green and red mean on the iRacing delta bar?</h3>
+        <p>Green means you are ahead of the reference lap at that point of the track, red means you are behind it. The number shows the gap in seconds and updates continuously through the lap.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Which reference lap should I use for the delta in iRacing?</h3>
+        <p>Your own best lap of the session is the most useful default for learning. The optimal lap, built from your best sectors, is better once your laps are already consistent.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is the delta bar enough to find lap time?</h3>
+        <p>It shows where you gain or lose time, usually within a corner or two. To understand why, compare throttle and brake traces in telemetry or watch a replay of the lap.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I use the delta bar during races?</h3>
+        <p>Most drivers find it more useful in practice. In a race, traffic, tire wear and fuel load change the lap so much that the delta can push you to take risks that do not pay off.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="endurance-racing-driver-swaps-iracing.html"><span>Technique</span>Endurance Racing and Driver Swaps on iRacing: A Practical Guide</a>
+      <a class="related-card" href="left-foot-braking-vs-trail-braking-iracing.html"><span>Technique</span>Left-Foot Braking vs. Trail Braking on iRacing: Which One Actually Helps You</a>
+      <a class="related-card" href="iracing-race-start-technique.html"><span>Technique</span>iRacing Race Start Technique: Standing Starts, Rolling Starts, and Not Losing Ten Spots on Lap One</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","moza-crp2","monitor-1440p-120"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>

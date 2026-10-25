@@ -6,7 +6,7 @@
 - Author: Carlos Martinez (iRacing user "Carlos Martinez9"). Home: https://realiracing.com/
 - Rig: MOZA R9 direct drive wheelbase, MOZA CS V2 wheel, MOZA SR-P pedals, RTX 5060 Ti, 1440p 120 Hz monitor. Full breakdown: https://realiracing.com/gear.html
 - Affiliate disclosure: gear links go to Amazon and carry an affiliate tag; the author may earn a commission at no cost to the reader. The site does not use sponsored loaner hardware.
-- 198 blog guides published so far; new posts appear several times a week.
+- 199 blog guides published so far; new posts appear several times a week.
 
 ## Main sections
 - [Home](https://realiracing.com/): channel overview, content types, gear picks, FAQ
@@ -18,6 +18,7 @@
 
 ## All blog posts (newest first)
 
+- [The iRacing Delta Bar: How to Use It to Find Time](https://realiracing.com/blog/iracing-delta-bar-how-to-use-it-to-find-lap-time.html): How I read the live delta in iRacing to test one corner at a time, which reference lap to pick, and when to stop looking at it.
 - [Understeer and Oversteer in iRacing: Symptom to Fix](https://realiracing.com/blog/understeer-oversteer-fixes-iracing-symptom-to-setup-change.html): Find where in the corner your car slides, then change one setup value. Entry, mid-corner and exit fixes from my MOZA R9 rig.
 - [How to Review iRacing Replays to Find Lap Time | RealIRacing](https://realiracing.com/blog/how-to-review-iracing-replays-to-find-lap-time.html): A practical way to study your own iRacing replays: which cameras to use, what to compare against a faster driver, and how to turn one review into a practice plan.
 - [How to Set Field of View in iRacing on a Single Monitor](https://realiracing.com/blog/iracing-field-of-view-single-monitor-setup.html): Why the correct iRacing field of view looks too zoomed in at first, how to calculate it from screen size and distance, and how I adjusted my single 1440p monitor setup.
