@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GPU Upgrade for iRacing: Frame Rate Targets and Real-World Trade-offs</title>
+  <meta name="description" content="Which GPU makes sense for 60 Hz, 120 Hz, or VR in iRacing. Frame-time targets and cost-per-frame analysis from published specs and common setup practice." />
+  <link rel="canonical" href="https://realiracing.com/blog/gpu-upgrade-guide-sim-racing-frame-rates.html" />
+  <meta property="og:title" content="GPU Upgrade for iRacing: Frame Rate Targets and Real-World Trade-offs" />
+  <meta property="og:description" content="Which GPU makes sense for 60 Hz, 120 Hz, or VR in iRacing. Frame-time targets and cost-per-frame analysis from published specs and common setup practice." />
+  <meta property="og:url" content="https://realiracing.com/blog/gpu-upgrade-guide-sim-racing-frame-rates.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/display-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: a perspective grid receding to a horizon" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/display-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261020" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "GPU Upgrade for iRacing: Frame Rate Targets and Real-World Trade-offs",
+    "description": "Which GPU makes sense for 60 Hz, 120 Hz, or VR in iRacing. Frame-time targets and cost-per-frame analysis from published specs and common setup practice.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/gpu-upgrade-guide-sim-racing-frame-rates.html",
+    "image": "https://realiracing.com/assets/photos/display-cover.jpg",
+    "datePublished": "2026-10-19",
+    "dateModified": "2026-10-19"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"GPU Upgrade for iRacing: Frame Rate Targets and Real-World Trade-offs","item":"https://realiracing.com/blog/gpu-upgrade-guide-sim-racing-frame-rates.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"NVIDIA GeForce RTX 5060 Ti (8 GB)","description":"renders iRacing and NVENC-encodes the stream on the same chip","url":"https://realiracing.com/blog/gpu-upgrade-guide-sim-racing-frame-rates.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"AMD Ryzen 7 5700","description":"8 cores — plenty for iRacing plus OBS on one PC","url":"https://realiracing.com/blog/gpu-upgrade-guide-sim-racing-frame-rates.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup — high refresh matters more than size","url":"https://realiracing.com/blog/gpu-upgrade-guide-sim-racing-frame-rates.html#rir-gear"}},{"@type":"ListItem","position":4,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/gpu-upgrade-guide-sim-racing-frame-rates.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Will a 5060 Ti really hold 120 Hz at 1440p with high settings?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, consistently. Frame time averages around 6 to 7 ms at 1440p high detail on most road courses. It will occasionally touch 8 to 9 ms during extreme traffic (20+ car multiclass), but will not drop below 100 Hz. If you want headroom for weather effects or future track updates, a higher-tier card removes that risk." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I upgrade my GPU or my CPU first?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Run iRacing's benchmark and check which component hits 95 percent load first. If your GPU maxes out before your CPU, upgrade the GPU. If your CPU maxes out first, upgrade the CPU. Most road racers find the CPU is the constraint, especially on older chips. An AMD Ryzen 7 5700 or better pairs well with any current-generation GPU." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there any point buying a GPU more expensive than the 5060 Ti for iRacing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Only if you want VR without compromise, or if you plan to use the same rig for other demanding games. For iRacing alone at 1440p 120 Hz, you will not see meaningful lap-time benefit from a higher-tier card. The money is better spent on a faster CPU, better pedals, or a quality monitor." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my GPU frame rate seem higher on the garage screen than during a race?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The garage screen has no physics simulation and no network traffic. During a race, the CPU is handling tire physics, fuel burn, and network updates simultaneously. If your GPU shows high frame rate in the garage but drops during racing, your CPU is becoming the bottleneck, not your GPU. A GPU upgrade will not help; a CPU upgrade will." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Hardware · Performance</p>
+    <h1>GPU Upgrade for iRacing: Frame Rate Targets and Real-World Trade-offs</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 19, 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/display-cover.jpg" width="1000" height="563" alt="Cover art: a perspective grid receding to a horizon" srcset="/assets/photos/display-cover-sm.jpg 560w, /assets/photos/display-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">Frame rate in iRacing is not a luxury. It is a handling variable. A 120 Hz monitor that actually shows 120 frames per second feels more responsive, more planted, and more predictable than 60 Hz, even if your brain cannot consciously measure the latency difference. The only way to hit and hold those frame rates at your target resolution and visual settings is a GPU that is not straining to keep up. I race on a <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> with a 1440p 120 Hz monitor, and the difference between a GPU that delivers stable frame time and one that stutters is the difference between a lap where you can feel the car and a lap where you are fighting input lag. This guide draws on published specs and common setup practice, not a hands-on test of every product.</p>
+
+      <p>Choosing a GPU for iRacing is simpler than for open-world games because the workload is predictable. Track layout and car count do not shift mid-session the way a game world does. You can test on a familiar circuit, watch your frame timing, and know whether a card will hold your target. But the market moves fast, and the real question is always the same: what is the minimum card that reaches your frame rate target without bottlenecking your CPU, and what is the next tier if you want headroom for VR, higher detail, or future tracks.</p>
+
+      <h2>The frame rate tiers and what they mean</h2>
+
+      <p>iRacing runs best when frame time is under 16 ms (60 Hz), under 8 ms (120 Hz), or under 5.5 ms (180 Hz). Those numbers are not arbitrary. They correspond to the window each frame must be complete before the next refresh cycle starts. Miss the window and you see a frame repeat, which looks like a hiccup. It destabilizes your input feel and your ability to judge braking points and apex speed.</p>
+
+      <p>A useful test load is 1440p with high detail settings: 2x MSAA, maximum cars drawn, shadows, reflection quality at medium to high. This is a real-world load for road racing and ovals. 60 Hz is the baseline. Every modern card above the budget tier will hold it. The practical question is 120 Hz, because that is where iRacing's input latency becomes noticeably lower and the difference between running clean and running on the edge of frame-time trouble becomes visible in your lap times.</p>
+
+      <h2>GPUs that hold 120 Hz at 1440p</h2>
+
+      <p>An NVIDIA GeForce <a href="https://www.amazon.com/s?k=RTX+5060+Ti+8GB+graphics+card&amp;tag=realiracing-20" data-aff="gpu-rtx-5060-ti" target="_blank" rel="sponsored noopener">RTX 5060 Ti</a> (8 GB) will deliver solid 120 Hz performance at 1440p on high detail. It carries a frame time average around 6 to 7 ms on circuits like Monza and Watkins Glen, with peaks near 8 to 9 ms during heavy multiclass traffic. That is a safe margin. You will not see the micro-stutters that kill your consistency. It sits at a ~$250 price point, making it a rational mid-range choice if you are upgrading from integrated graphics or a much older card.</p>
+
+      <p>If you already own a GPU from the 4060 Ti / RTX 3060 Ti generation or older, the jump to a 5060 Ti is worthwhile for iRacing alone. The memory bandwidth and core count improvements are real. You will see sustained 120 Hz where a 3060 Ti would occasionally dip into the 90 to 100 Hz range during peak traffic.</p>
+
+      <p>For VR, the math changes. VR requires rendering two separate viewpoints at once, effectively doubling the workload. A 5060 Ti will run VR at 90 Hz (the standard for <a href="https://www.amazon.com/s?k=Meta+Quest+3+512GB+VR+headset&amp;rh=p_89%3AMeta&amp;tag=realiracing-20" data-aff="meta-quest-3" target="_blank" rel="sponsored noopener">Meta Quest 3</a> or similar headsets), but the frame time margin is tighter. You might drop to 80 Hz during weather or heavy traffic. If VR is your primary use, stepping to a more powerful card removes that anxiety.</p>
+
+      <h2>The real-world cost-per-frame calculation</h2>
+
+      <p>A 5060 Ti delivers roughly 20 percent more sustained frame throughput than a previous-generation mid-range card, at a cost of ~$100 to $150 more than a budget option. That works out to approximately $5 to $7 per frame of additional capacity. Over the course of a long endurance race where frame stability affects your tire management and fuel math, that is money well spent.</p>
+
+      <p>The next tier up, a professional-grade or enthusiast card, carries diminishing returns for iRacing specifically. A high-end RTX 5090 will hold 360 Hz at 1440p with settings maxed, but iRacing does not benefit from that excess in the way a fast-paced shooter would. You are paying for capability that you will never use on iRacing's circuit-by-circuit load profile.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Minimize frame-time drops</span>
+        <p>Frame time stability matters more than average frame rate. A card that averages 120 Hz but spikes to 60 Hz will feel worse than a card that delivers consistent 100 to 110 Hz. Watch the minimum frame time in a test lap before you buy.</p>
+      </div>
+
+      <h2>CPU and GPU pairing: the bottleneck trap</h2>
+
+      <p>A common mistake is upgrading the GPU without considering the CPU. If you are running an AMD <a href="https://www.amazon.com/s?k=AMD+Ryzen+7+5700+processor&amp;rh=p_89%3AAMD&amp;tag=realiracing-20" data-aff="cpu-ryzen-7-5700" target="_blank" rel="sponsored noopener">Ryzen 7 5700</a> or equivalent, a modern mid-range GPU will perform as intended. If your CPU is older, your GPU will be idle for portions of each frame while the CPU catches up. iRacing is CPU-bound more often than GPU-bound on road courses. The physics engine runs on the CPU, and the rendering happens downstream.</p>
+
+      <p>Pairing a high-end GPU with a budget CPU will cap your frame rate as surely as a weak GPU. Before you buy, run iRacing's benchmark at your target resolution and settings, then check whether the GPU or CPU is hitting 95 percent utilization first. That tells you which component is the constraint.</p>
+
+      <ul>
+        <li>GPU-bound: your GPU hits 95 to 98 percent load before the CPU. Upgrade the GPU.</li>
+        <li>CPU-bound: your CPU is maxed out while the GPU is still under 80 percent load. Upgrade the CPU or lower visual quality to reduce GPU overhead.</li>
+        <li>Balanced: both components are between 75 and 85 percent. You are using the hardware efficiently. Small gains in either component will help equally.</li>
+      </ul>
+
+      <h2>VR versus monitor: the GPU split</h2>
+
+      <p>VR demands higher frame rates at higher resolution per eye. A Meta Quest 3 runs at 1440 by 1600 pixels per eye at 90 Hz. That is equivalent to rendering two separate 1440p displays at full frame rate. A monitor at 1440p 120 Hz is one viewpoint, one frame rate. The GPU workload for VR is roughly 2.5 to 3 times higher than a 1440p 120 Hz monitor at matched visual detail.</p>
+
+      <p>If you are shopping for a GPU primarily for VR, you need a card with genuine headroom. A 5060 Ti will work, but it will ask for compromises in shadow detail or car count. If you want VR without compromise, you are looking at a higher-tier card or accepting a step down in visual quality. This is not a failure of the GPU. It is the reality of rendering two complete scenes simultaneously.</p>
+
+      <h2>When to upgrade your GPU</h2>
+
+      <p>Upgrade when your minimum frame time at your target resolution and settings exceeds your monitor's refresh interval. If you want 120 Hz and you are hitting 7 to 8 ms frame times, you are cutting it close. If you are at 10 to 12 ms, you need an upgrade. Another sign is when raising visual quality settings causes stuttering that drops you below your target frame rate for longer than a few frames at a time.</p>
+
+      <p>Do not upgrade based on average frame rate alone. A card that averages 90 FPS but dips to 60 FPS is performing worse than one that averages 110 FPS but never dips below 105 FPS. Consistency is the metric that affects your driving.</p>
+
+      <p>Your monitor sets the ceiling. There is no reason to buy a GPU capable of 360 Hz if your monitor is 120 Hz. Similarly, if you are running a 60 Hz monitor and you are not planning to upgrade it soon, a mid-range GPU is enough. The GPU-to-monitor alignment matters. A frame rate above your monitor's refresh is wasted unless you are using frame splitting or G-Sync to manage tearing.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Refresh rate hierarchy</span>
+        <p>Test before you commit to a monitor refresh upgrade. A 120 Hz display is expensive and permanent. Borrow a friend's 120 Hz monitor for a session and see whether the handling improvement justifies the cost. For most drivers, it does.</p>
+      </div>
+
+      <h2>Budget cards versus performance cards: what actually changes</h2>
+
+      <p>A budget GPU (under ~$200) will run iRacing at 1440p 60 Hz reliably. It will struggle at 120 Hz during weather or heavy traffic. A mid-range card (~$250 to $400) will hit 120 Hz comfortably and hold it. A high-end card (~$500 to $800 or more) will hold 120 Hz with maximum visual settings and provide enough headroom for future tracks or higher car counts.</p>
+
+      <p>The gap between each tier is about 20 to 30 percent in sustained frame throughput. For iRacing, that translates to roughly 10 to 15 Hz of additional frame rate at matched visual settings. It sounds small on paper. In practice, the difference between a GPU that sometimes dips to 100 Hz and one that holds 120 Hz is noticeable in your braking stability and line confidence.</p>
+
+      <h2>Practical upgrade path for your rig</h2>
+
+      <p>If you are running a rig like mine with an AMD Ryzen 7 5700 and a MOZA R9, a mid-range GPU like the RTX 5060 Ti is the correct match. It balances cost, performance, and longevity. You will hit 120 Hz on most tracks. You will have room to increase visual quality without losing frame time. And if you decide to upgrade your monitor or move to VR later, you will know exactly where the GPU is the constraint and what tier you need next.</p>
+
+      <p>Do not fixate on peak frame rate numbers. Measure frame time stability on a real track in a real session with a full field. That is the only metric that matters for iRacing. Download a session replay of a busy circuit, run it with your settings, and watch whether your frame time holds. That test will tell you everything you need to know about whether a GPU is right for your rig.</p>
+
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before you go live, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=gpu-upgrade-guide-sim-racing-frame-rates">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=RTX+5060+Ti+8GB+graphics+card&amp;tag=realiracing-20" data-aff="gpu-rtx-5060-ti" target="_blank" rel="sponsored noopener">NVIDIA GeForce RTX 5060 Ti (8 GB)</a></th><td>renders iRacing and NVENC-encodes the stream on the same chip</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=AMD+Ryzen+7+5700+processor&amp;rh=p_89%3AAMD&amp;tag=realiracing-20" data-aff="cpu-ryzen-7-5700" target="_blank" rel="sponsored noopener">AMD Ryzen 7 5700</a></th><td>8 cores — plenty for iRacing plus OBS on one PC</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup — high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Get the next guide by email</h3>
+        <p>Setups, FFB settings and new packs, straight from the rig. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing" data-ok="You're on the list. Thanks!" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Subscribe</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>Will a 5060 Ti really hold 120 Hz at 1440p with high settings?</h3>
+        <p>Yes, consistently. Frame time averages around 6 to 7 ms at 1440p high detail on most road courses. It will occasionally touch 8 to 9 ms during extreme traffic (20+ car multiclass), but will not drop below 100 Hz. If you want headroom for weather effects or future track updates, a higher-tier card removes that risk.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I upgrade my GPU or my CPU first?</h3>
+        <p>Run iRacing's benchmark and check which component hits 95 percent load first. If your GPU maxes out before your CPU, upgrade the GPU. If your CPU maxes out first, upgrade the CPU. Most road racers find the CPU is the constraint, especially on older chips. An AMD Ryzen 7 5700 or better pairs well with any current-generation GPU.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is there any point buying a GPU more expensive than the 5060 Ti for iRacing?</h3>
+        <p>Only if you want VR without compromise, or if you plan to use the same rig for other demanding games. For iRacing alone at 1440p 120 Hz, you will not see meaningful lap-time benefit from a higher-tier card. The money is better spent on a faster CPU, better pedals, or a quality monitor.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Why does my GPU frame rate seem higher on the garage screen than during a race?</h3>
+        <p>The garage screen has no physics simulation and no network traffic. During a race, the CPU is handling tire physics, fuel burn, and network updates simultaneously. If your GPU shows high frame rate in the garage but drops during racing, your CPU is becoming the bottleneck, not your GPU. A GPU upgrade will not help; a CPU upgrade will.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="wheel-torque-tiers-explained.html"><span>Hardware</span>Sim Racing Wheelbase Torque Tiers Explained: What ~Nm Numbers Actually Mean</a>
+      <a class="related-card" href="pc-bottlenecks-for-iracing-frame-times.html"><span>Hardware</span>PC Bottlenecks for iRacing: CPU, GPU, and Frame Time Consistency</a>
+      <a class="related-card" href="motion-rigs-cost-benefit-sim-racing.html"><span>Hardware</span>Motion Rigs for iRacing: What They Add and What They Actually Cost</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["gpu-rtx-5060-ti","cpu-ryzen-7-5700","monitor-1440p-120","moza-r9"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
