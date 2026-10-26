@@ -1,0 +1,141 @@
+{
+  "slug": "sim-rig-upgrade-order-what-to-buy-first",
+  "tag": "Buyer's Guide · Hardware",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "Sim Rig Upgrade Order: What to Buy First",
+  "description": "The order I would upgrade a sim rig for iRacing, from my MOZA R9, CRP2 and fixed aluminium cockpit: what pays off first and what can wait.",
+  "published": "2026-10-26",
+  "dateLabel": "October 26, 2026",
+  "gearKeys": [
+    "moza-crp2",
+    "moza-r9",
+    "cockpit"
+  ],
+  "sections": [
+    {
+      "p": "A question I see all the time from new iRacing drivers: I have a little money to spend on the rig, what comes next? The usual answer is a bigger wheelbase, because torque numbers are the loudest thing on a product page. Sitting in my own cockpit, with a MOZA R9 on the front, CRP2 load cell pedals underneath and a fixed aluminium frame around me, I would answer in a different order."
+    },
+    {
+      "p": "There are no prices here, because prices move and you should check them on the day you buy. What follows ranks the parts by what they change: how you drive, how the rig feels, or mostly how it looks. Every spec I mention is approximate and comes from my own reading of the manufacturer's pages, so check the current numbers before you order."
+    },
+    {
+      "h2": "The ranking in one glance"
+    },
+    {
+      "olist": [
+        "A stiff, adjustable frame (the cockpit).",
+        "Load cell pedals.",
+        "A direct drive wheelbase.",
+        "Screen or headset, set up with the right field of view.",
+        "Wheel rim and quick release.",
+        "Seat, shifters, button box, bass shakers and anything with a motor."
+      ]
+    },
+    {
+      "p": "The frame sits ahead of the wheelbase, and the reasoning below is what matters, because your situation may reorder two of these."
+    },
+    {
+      "h2": "1. The frame, because everything else sits on it"
+    },
+    {
+      "p": "A wheelbase pushes against whatever it is bolted to. If the desk clamp or a thin frame flexes under that force, part of the torque you paid for goes into bending metal and the rest reaches your hands late and blurred. I wrote about this in detail in <a href=\"rig-flex-and-wheelbase-mounting-ffb-feel.html\">how rig flex changes force feedback feel</a>. The short version is that a stiff mount makes a modest wheelbase feel clearer than a strong one on a wobbly stand."
+    },
+    {
+      "p": "The same goes for the pedals. Hard braking pushes the pedal plate away from you with a lot of force, and a plate that moves means your foot is never sure how much pressure it applied. In my cockpit the pedals do not shift under hard braking, and that is a large part of why I trust my brake feel."
+    },
+    {
+      "p": "A frame is also the one purchase that survives every later upgrade. Wheelbases, pedals and rims come and go, but the same profile keeps taking new parts. My assembly notes are in the <a href=\"aluminum-cockpit-assembly-guide.html\">aluminium cockpit assembly guide</a>, and the cost side of the whole project is in <a href=\"how-much-does-a-sim-rig-cost.html\">how much a sim rig costs</a>."
+    },
+    {
+      "tip": "If you cannot afford a cockpit yet, at least fix the wheelbase and pedals to something that does not move. A heavy table with solid clamps is better than a light stand that rocks.",
+      "tipLabel": "Stopgap"
+    },
+    {
+      "h2": "2. Load cell pedals, because braking is where lap time hides"
+    },
+    {
+      "p": "Most budget pedals measure how far the pedal travels. A load cell measures how hard you press. Your leg remembers force much better than it remembers distance, so a load cell lets you brake to the same pressure lap after lap. That consistency matters more than raw speed, and it feeds directly into things like trail braking, where you release pressure smoothly into the corner."
+    },
+    {
+      "p": "On my rig the CRP2 is the part I would defend hardest. Setting it up takes some patience, mostly in the brake curve and the maximum pressure, and I wrote the steps in my <a href=\"moza-crp2-brake-calibration-pressure-curves.html\">CRP2 brake calibration notes</a>. If a full set of high-end pedals is out of reach, the <a href=\"best-budget-load-cell-pedals.html\">budget load cell pedals</a> comparison covers cheaper options."
+    },
+    {
+      "p": "Why pedals before the wheelbase? Because the wheel mostly tells you what the car is doing, and your braking decides how the car arrives at the corner. A driver with a modest wheel and a good brake foot usually has more room to improve than one with the opposite combination."
+    },
+    {
+      "h2": "3. The wheelbase, and how much torque you actually need"
+    },
+    {
+      "p": "Direct drive is the big jump in clarity, and I do not want to undersell it. A direct drive base connects the motor to the wheel without belts or gears in between, so small changes in grip reach your hands more cleanly. If you are still on a gear or belt driven wheel, the upgrade is real."
+    },
+    {
+      "p": "The question is how much torque. My R9 is rated around ~9 N·m, and for GT3, GT4 and most road cars I have never wished for more. Higher tiers add headroom for peaks, though you will mostly use that headroom only if your frame and your arms are ready for it. I compared the tiers in <a href=\"moza-r5-vs-r9-comparison.html\">the R5 versus R9 comparison</a>, and the tier decision is in the <a href=\"wheel-torque-tiers-explained.html\">wheel torque tiers guide</a>."
+    },
+    {
+      "p": "There is also a safety point. A strong wheelbase can hurt your wrists if a car snaps sideways while your hands are on the rim, so I keep the in-game strength below the point where the signal clips. If you want to understand what clipping is and why it costs you information, see <a href=\"iracing-ffb-clipping-how-to-diagnose-and-fix.html\">how I diagnose and fix FFB clipping</a>."
+    },
+    {
+      "h2": "4. Your screen and field of view"
+    },
+    {
+      "p": "A single 1440p monitor with the field of view set correctly gives you a lot of information for the cost, and a sloppy field of view can make every corner feel faster or slower than it is. The steps are in <a href=\"iracing-field-of-view-single-monitor-setup.html\">the single monitor field of view guide</a>."
+    },
+    {
+      "p": "Triple screens and VR can improve the sense of speed and your peripheral vision. They also load your PC much harder and add their own set of comfort problems. I would not move to either until the first three items on the list are settled."
+    },
+    {
+      "h2": "5. The rim and the quick release"
+    },
+    {
+      "p": "A rim changes the feel in your hands and sometimes your ergonomics: diameter, grip shape, button layout. It rarely changes lap time directly, so it sits lower than the parts above. The one exception is a rim that is too large for your seating position or that makes your shoulders tense. In that case, a different diameter can help."
+    },
+    {
+      "p": "If you ever plan to swap rims for GT, open wheel and rally, a decent quick release is worth the thought. I covered the standards and the trade-offs in <a href=\"quick-release-systems-explained.html\">the quick release systems guide</a>."
+    },
+    {
+      "h2": "6. Everything else"
+    },
+    {
+      "p": "Seat shape, shifters, button boxes, bass shakers, and motion platforms all have a place, and each can be fun. For most drivers they change comfort or immersion rather than speed, so I leave them for last. The seat is the exception when your back or hips start to complain on long stints, in which case it jumps the queue. My notes on <a href=\"seating-position-and-wheel-height-sim-rig.html\">seating position and wheel height</a> help you check whether the problem is the seat itself or just the way it is set."
+    },
+    {
+      "h2": "When I would break the order"
+    },
+    {
+      "list": [
+        "You already own a stiff frame: skip item one and go straight to pedals.",
+        "You race mostly ovals with little braking: the wheelbase can move above the pedals, since steering feel matters more there.",
+        "Your PC drops frames: fix that before any peripheral. Stuttering frames undermine every part on this list.",
+        "You drive a manual car with a clutch: add a third pedal to the plan earlier than I would."
+      ]
+    },
+    {
+      "h2": "A simple way to decide"
+    },
+    {
+      "p": "Before buying anything, write down the one thing that frustrates you most right now. Inconsistent braking points to pedals or a moving pedal plate. A numb, late wheel points to flex or an older wheelbase. Headaches and eye strain point to screen setup. Back pain points to the seat and position. The upgrade that solves your own complaint beats the one a reviewer ranks first."
+    },
+    {
+      "p": "I would also buy slowly. Spend a few weeks with each change, drive the same car and track, and note whether your lap-to-lap spread tightens. If it does not, the part was not your limit, and you saved money by waiting."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I buy a direct drive wheelbase before load cell pedals?",
+      "a": "For most drivers I would buy the pedals first, because consistent braking affects lap time more than a clearer wheel does. The exception is someone on a gear or belt driven wheel who struggles to feel grip at all, or an oval racer who brakes very little."
+    },
+    {
+      "q": "Is a cockpit really worth buying before a new wheelbase?",
+      "a": "In my experience a stiff frame makes any wheelbase and any pedals feel clearer, because less force is lost to flex. If your current mount is already solid, you can skip this step. If your wheel or pedals visibly move under load, fix that first."
+    },
+    {
+      "q": "How much torque do I need for iRacing?",
+      "a": "It depends on the cars you drive and how strong the signal feels to you. A base around ~9 N·m is enough for most GT and road cars in my use, but higher tiers exist for extra headroom. Check the current manufacturer specifications before deciding."
+    },
+    {
+      "q": "Do bass shakers or motion rigs belong early in the order?",
+      "a": "I put them last. They add immersion and some extra cues, but most drivers get a bigger improvement in consistency from a stiffer frame, better pedals and a correct screen setup. Consider them once the basics are settled."
+    }
+  ]
+}
