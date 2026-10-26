@@ -1,0 +1,134 @@
+{
+  "slug": "stream-deck-macro-pads-sim-racing",
+  "tag": "Hardware · Setup",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Stream Deck and macro pads for sim racing: setup and workflow",
+  "description": "Map pit stops, setup changes, and camera views to dedicated buttons. Learn which macro pads work best and how to configure them for iRacing.",
+  "sections": [
+    {
+      "p": "A macro pad or Stream Deck sits between your wheel, pedals, and keyboard. Instead of hunting for keys mid-race or during practice, you press a single button to trigger pit instructions, change camera angles, adjust settings, or log telemetry. For endurance racers and active streamers, this hardware investment cuts distraction and keeps both hands on the wheel where they belong."
+    },
+    {
+      "p": "Most sim racers fall into one of two categories: those who race clean and consistent in one-hour events, and those who run longer stints, swap drivers, or broadcast. The second group feels the friction instantly. Typing text to your spotter over voice chat, tabbing out to adjust seat position between sessions, or fumbling for F-keys to change camera—these moments drain focus. A macro pad removes that tax."
+    },
+    {
+      "h2": "Stream Deck vs. dedicated macro pads"
+    },
+    {
+      "p": "Elgato Stream Deck is the known name, and for good reason. The original 15-button model (~$90 to $100) offers an LCD screen on each button so you can see labels and icons. That visual feedback matters in a dark cockpit. Software support is solid, and integration with OBS (the streaming tool most sim racers use) is built in. If you stream to YouTube or Twitch, a Stream Deck becomes a second control surface without much learning curve."
+    },
+    {
+      "p": "Dedicated macro pads like the X-Keys, Elgato Stream Deck+, or mechanical keyboard macro layers are lighter weight and cheaper. An X-Keys USB pad (~$60 to $120 depending on button count) offers programmable keys without an LCD and less desktop footprint. Some sim racers prefer mechanical macro boards for the tactile feedback and compact form factor. The trade-off is no on-device screen, so you rely on muscle memory or a printed legend."
+    },
+    {
+      "list": [
+        "Stream Deck (15 or 32 buttons): LCD screens, OBS integration, ~90 to 250 dollars, larger physical footprint.",
+        "Stream Deck+ (8 buttons plus touch strip): Smaller, encoder dial for volume or settings adjustment, ~250+ dollars.",
+        "X-Keys macro pad (various button layouts): Programmable, no screen, compact, ~60 to 120 dollars.",
+        "Mechanical macro keyboard (Elgato Stream Deck Pedal or DIY layer): Very cheap but requires a full keyboard or a custom build."
+      ]
+    },
+    {
+      "h2": "Essential macros for endurance racing"
+    },
+    {
+      "p": "Endurance racing in iRacing demands coordination. You need to signal pit stops, request or confirm driver swaps, toggle mirrors and spotters, and manage fuel consumption feedback. Mapping these to a single button press means you stay focused on the racing line instead of breaking concentration to type."
+    },
+    {
+      "list": [
+        "Pit stop command: Send a standardized message to your crew (e.g. 'box this lap, fuel and tires') in one press.",
+        "Driver swap confirmation: Auto-reply when a teammate signals they are ready to take over the car.",
+        "Spotter on/off: Toggle spotter audio without tabbing to settings if concentration lapses.",
+        "Fuel saving mode alert: Remind yourself or your engineer when fuel margins tighten (broadcast to crew if using team comms).",
+        "Telemetry dump: Trigger a data export if you use telemetry tools like Garage61 to log and compare setups mid-race."
+      ]
+    },
+    {
+      "tip": "Start with one macro: pit stop requests. In a 4-hour race, this button press alone saves you 30 seconds of distraction per stop and ensures consistent pit lane communication. Add one macro per week as muscle memory solidifies.",
+      "tipLabel": "Start small"
+    },
+    {
+      "h2": "Streaming integration: camera and scene switching"
+    },
+    {
+      "p": "If you stream iRacing to YouTube or Twitch using OBS on the same PC, a Stream Deck cuts out the entire software layer. Instead of alt-tabbing or using hotkeys to switch camera angles or flip to a setup/standings scene, you press a single button illuminated and labeled on the device itself. The latency is instant, and your viewer sees the transition cleanly."
+    },
+    {
+      "list": [
+        "Onboard camera (helmet or cockpit view): Press and the OBS scene cuts to the in-game camera feed.",
+        "Chase camera (external third-person): Switch to the car from behind for overtakes or incident review.",
+        "Multi-view scene: Show spotter audio levels, iRating, incident points, and track map in a quad layout.",
+        "Setup screen: Alt-tab to the garage to show tuning changes between sessions without cutting broadcast.",
+        "Pause and resume encoding: Pause streaming for a brief break without dropping the broadcast entirely."
+      ]
+    },
+    {
+      "p": "OBS profiles and custom plug-ins extend this further. Some streamers map a Stream Deck button to trigger a full OBS profile change (lighting theme, microphone level, scene collection for a specific series). This keeps your broadcast consistent without manual fiddling during a race or between events."
+    },
+    {
+      "h2": "Setup and configuration basics"
+    },
+    {
+      "p": "Configuration depends on the hardware. Stream Deck uses Elgato's official app (free, available on Windows and macOS) to map buttons. X-Keys and similar pads use their own proprietary software, typically requiring you to assign a macro to a USB key code or a series of key presses."
+    },
+    {
+      "olist": [
+        "Download and install the manufacturer's software (Elgato app, X-Keys manager, etc.).",
+        "Open iRacing and identify the in-game key bindings you want to automate (check Settings > Controller Options or the Help menu for a full list).",
+        "In the macro pad software, assign each button to the matching key press or text output. For example, if iRacing's 'request pit stop' is bound to the 'P' key, map your Stream Deck button to send 'P' when pressed.",
+        "For text macros (like team radio messages), type the full message into the macro field. When pressed, the button outputs the text as if you typed it character by character.",
+        "Test each macro in a practice session before a race. Confirm that camera angles switch, pit stop text posts to the chat or team radio, and OBS scenes update if streaming."
+      ]
+    },
+    {
+      "p": "Most macro pads allow profiles or layers, so you can have different button maps for different series or race formats. A 24-hour endurance setup might prioritize fuel messages and driver swaps, while a 30-minute sprint configuration might focus on camera angles and OBS scene toggles. Switching profiles takes seconds and keeps the hardware flexible."
+    },
+    {
+      "h2": "Positioning and cable management"
+    },
+    {
+      "p": "Physical placement matters. A Stream Deck or macro pad should sit within arm's reach of your wheel, ideally to the side (left or right depending on your steering hand preference). Most sim racers mount it on an adjacent shelf, tray table, or use a light arm clamp to keep it stable and visible."
+    },
+    {
+      "p": "Cable management becomes important if your rig already has wheel, pedals, and a shifter drawing USB ports. A powered USB hub with at least 4 ports (~$20 to $40) isolates your macro pad and other peripherals from the main PC. This prevents device dropout if too many high-draw devices share the same hub. Place the hub on a power strip separate from your monitor or other equipment to avoid ground loops and electrical interference."
+    },
+    {
+      "tip": "If you use a macro pad and a load cell pedal set like the MOZA SR-P, mount the pad on the left side of your setup (opposite your preferred steering hand). This keeps your throwing arm clear for heel-toe braking or aggressive steering inputs.",
+      "tipLabel": "Avoid interference"
+    },
+    {
+      "h2": "Realistic expectations and learning curve"
+    },
+    {
+      "p": "A macro pad is not a shortcut to faster lap times. It removes friction from communication and camera work, but racing speed comes from line consistency, braking precision, and tire management. Expect the first two or three races to feel awkward as you build muscle memory for button locations. After that, the pad becomes transparent and saves you real mental energy."
+    },
+    {
+      "p": "Cost and complexity scale together. A basic X-Keys pad (~$60) gets the job done with minimal setup. A full Stream Deck system with OBS profiles, custom icons, and multiple scenes takes several hours to configure correctly. Neither is mandatory for competitive iRacing, but both offer measurable quality-of-life improvements for endurance racers and streamers."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need a macro pad for competitive iRacing?",
+      "a": "No. Single-race events and sprint seasons do not require a macro pad. Drivers in endurance races, team events, or who stream benefit most because they need to send frequent text messages, switch camera angles, or toggle settings without leaving the race line. If you race solo and do not broadcast, the hardware is optional."
+    },
+    {
+      "q": "Can I use a regular keyboard with a macro layer instead?",
+      "a": "Yes, if your keyboard supports programmable layers (many mechanical keyboards do). However, a dedicated macro pad is quieter, more compact, and keeps your main keyboard uncluttered. A dedicated pad also costs less than a high-end programmable keyboard. For most sim racers, a cheap macro pad or Stream Deck is the faster path to the same result."
+    },
+    {
+      "q": "What is the difference between Stream Deck and Stream Deck+?",
+      "a": "The Stream Deck+ has 8 buttons instead of 15, a touch strip (encoder dial) on the left side for volume or value adjustment, and a higher price (~$250+ vs ~$90 to $100). The + is better for streamers who need to adjust audio levels on the fly or for users with limited desk space. For most sim racers focused on pit stop commands and camera switching, the standard 15-button Stream Deck offers more buttons for the cost."
+    },
+    {
+      "q": "Will a macro pad work if I use VR instead of a monitor?",
+      "a": "Yes. Macro pads communicate via USB and send keyboard inputs regardless of your display method. You feel the tactile press of the button and rely on muscle memory, which actually works better in VR because you cannot see the pad anyway. Streaming is trickier in VR because screen capture is more complex, but the macro pad itself functions identically."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "cockpit"
+  ],
+  "published": "2026-10-26",
+  "dateLabel": "October 26, 2026"
+}

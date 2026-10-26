@@ -1,0 +1,158 @@
+{
+  "slug": "circuit-gilles-villeneuve-iracing-guide",
+  "tag": "Track Guide · iRacing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Circuit Gilles Villeneuve iRacing Guide: Walls, Chicanes, and the Hairpin",
+  "description": "Master the tight street circuit: brake zones, hairpin entry, chicane lines, and wall contact recovery for consistent lap times.",
+  "sections": [
+    {
+      "p": "Circuit Gilles Villeneuve in Montreal is a street circuit that punishes imprecision and rewards smooth inputs. The 4.4 km layout features low-grip asphalt compared to permanent road courses, a succession of medium-speed corners, and walls that sit close enough to catch a car that drifts even slightly offline. The hairpin dominates the track mentally because it forces a hard brake event, but the chicanes demand just as much respect. Consistency over one lap and across a stint will separate you from the field here."
+    },
+    {
+      "p": "This guide covers the key sections: the approach and entry to the hairpin, the chicane complexes, brake zones, and how to recover when wall contact does happen. The goal is to show where the grip is, where the walls are unforgiving, and how to build a repeatable line that doesn't bleed seconds on every lap."
+    },
+    {
+      "h2": "The Turn 1 Hairpin: Brake Zone and Entry"
+    },
+    {
+      "p": "The hairpin sits at the end of the straightaway and is the hardest braking zone on the circuit. Most traffic incidents happen here because the corner is tight, the wall on the exit is tight, and drivers often lock the brakes or miss their entry point. Start braking around the 200m board on the approach. The turn itself is a 180-degree hairpin that requires a late apex and a controlled, progressive exit."
+    },
+    {
+      "p": "Entry is the critical phase. Brake in a straight line until around 50 to 70 km/h depending on setup and fuel. Turn in early at the apex. Many drivers brake too late, carry too much speed, and either hit the inner wall at the apex or push wide and contact the outer wall on exit. The wall on the exit is particularly close. A common mistake is to turn in too early and hug the apex tightly, which leaves no margin on the exit wall."
+    },
+    {
+      "list": [
+        "Brake on the straight with minimal steering input to preserve traction.",
+        "Target an apex speed around 50-70 km/h depending on downforce and brake pressure.",
+        "Clip the apex late; an early apex will tighten the exit and force you toward the outer wall.",
+        "Roll throttle gradually as you unwind the steering to avoid wheelspin on the low-grip surface.",
+        "Exit should take you to the right side of the track; you'll have room to build speed into turn 2."
+      ]
+    },
+    {
+      "tip": "If you feel the car pushing (understeer) at the exit, reduce brake pressure and later brake earlier. If you're hitting the outer wall, your apex is too tight and your exit speed is too high. Lower your target apex speed by 5 km/h and adjust your line 30 cm to the right.",
+      "tipLabel": "Hairpin Balance"
+    },
+    {
+      "h2": "The Chicanes: The First Complex (Turns 2-3) and Second Complex (Turns 5-6)"
+    },
+    {
+      "p": "After the hairpin, the track opens into two chicane complexes before the faster corners. These chicanes are designed to look deceptively easy but trip up drivers who carry too much speed or misplace their apexes. Both the first chicane and second chicane follow a similar pattern: a sharp left kink, a small straight, then a sharp right kink. The grip level is low, and the walls are close."
+    },
+    {
+      "p": "The first chicane (turns 2 and 3) comes immediately after the hairpin exit. Accelerate out of the hairpin to around 110-130 km/h, then begin a shallow brake pressure down to 80-90 km/h for the left turn-in. The left apex should be clipped late, and the transition to the right turn should be smooth. Many drivers rush the transition and lock the brakes or overspin the wheels, losing half a second in two corners."
+    },
+    {
+      "p": "The second chicane (turns 5 and 6) is positioned before the faster technical section. Carry slightly more entry speed here, around 100-120 km/h, because the exit leads to a more open corner. The same line discipline applies: late apexes, smooth transitions, and progressive throttle application."
+    },
+    {
+      "list": [
+        "Brake smoothly before the first chicane; a sudden lock-up will cost you the whole sequence.",
+        "Clip the first left apex late, leaving room to add speed through the transition.",
+        "Keep off-throttle time minimal between the left and right kinks to avoid sudden weight transfer.",
+        "Use the full track width on corner exit; these corners are tight and have room to run wide.",
+        "Accelerate cleanly out of the second chicane toward the faster corners ahead."
+      ]
+    },
+    {
+      "h2": "The Wall Sections: Turn 4 and Turns 7-10"
+    },
+    {
+      "p": "Turn 4 is a medium-speed left-hander that sits between the two chicanes. The wall hugs the inside of the corner, and drivers often clip it when they apex too tightly or when the car is still understeering from the previous chicane. Approach this corner at around 100-110 km/h, clip a late apex 2-3 meters from the wall, and let the car flow to the exit."
+    },
+    {
+      "p": "Turns 7-10 form a series of right-handers that lead back toward the technical section near the main grandstands. These corners are faster than the chicanes but still tight enough to catch an edge. The walls on the inside of turns 8 and 9 are close and unforgiving. A common mistake is to apex turn 8 too early, which sets up a poor entry for turn 9 and forces you to brake or lift mid-corner."
+    },
+    {
+      "p": "The best approach through this section is to think of turns 7, 8, and 9 as a series of decreasing-radius corners. Each one requires a slightly tighter line than the last. If you miss your entry to turn 7, you will carry too much speed into turn 8 and either hit the inside wall or miss the apex of turn 9. Take your time through this section. A smooth, clean pass is worth more than a reckless attempt to shave a tenth here."
+    },
+    {
+      "tip": "Practice this section in a practice session without fuel penalties. Nail the line through turns 7-9, and you'll consistently gain a tenth or two on drivers who rush it. Wall contact in turn 8 or 9 costs 2-3 tenths on lap time and incurs incident points. Not worth it.",
+      "tipLabel": "Wall Section Discipline"
+    },
+    {
+      "h2": "Brake Zones and Downforce Trade-offs"
+    },
+    {
+      "p": "Gilles Villeneuve has three hard-braking zones: the hairpin, the entry to the chicanes, and turn 5. Because it's a street circuit with low grip, brake balance is critical. A brake balance set too far forward will lock the front tires and wash out the line. A brake balance set too far rear will cause the rear tires to lock under hard braking, spinning the car or pushing it into a wall."
+    },
+    {
+      "p": "A common baseline is 55 to 60 percent front brake bias. Adjust down by 1 percent if your front tires are locking on the hairpin brake. Adjust up by 1 percent if the rear is sliding. Downforce also affects braking. Lower downforce reduces braking distance but increases the tendency to lock tires because the tires have less mechanical grip under braking. High downforce shortens braking zones at the cost of top speed on the straightaway. Most setups run medium downforce to balance these trade-offs."
+    },
+    {
+      "h2": "Recovery After Wall Contact"
+    },
+    {
+      "p": "When you do make contact with a wall, the first priority is to assess damage and control the car's rotation. In the hairpin, wall contact usually happens on the exit. Ease off the throttle, keep steering input smooth, and coast the car back toward the middle of the track. Continuing to apply full throttle while the car is still rubbing the wall will increase the damage and potential for a spin."
+    },
+    {
+      "p": "Check your damage indicator after the incident. Minor wall kisses often cause light damage that doesn't require a pit stop but may reduce top speed by 1-2 km/h for the rest of the stint. Serious wall contact can damage the suspension, radiator, or engine, and a pit stop may be necessary. If damage is light, continue racing and recoup time in areas where you have more margin."
+    },
+    {
+      "p": "To prevent wall contact in the first place, focus on reproducibility. A line that works 8 times out of 10 is not reliable enough for a 30-minute race. Adjust your target speeds and apexes until you're hitting the same line 10 times in a row in practice. Consistency beats a few fast laps with occasional wall contact."
+    },
+    {
+      "h2": "Practice Plan for Gilles Villeneuve"
+    },
+    {
+      "p": "Start with an empty track and focus on the hairpin. Run 5 laps at 80 percent throttle and nail the braking point, apex, and exit. Once the hairpin is comfortable, move on to the chicanes and wall sections. Do another 5-lap block on these areas before attempting a full lap."
+    },
+    {
+      "p": "Once you have a baseline line, run 10 laps at race pace with no traffic. Record your best lap and note where you lose time compared to your mental reference or a posted setup. Is it the hairpin? The chicanes? Turns 7-9? Identify one weak area and spend 5 laps focused on that corner alone."
+    },
+    {
+      "p": "In your final practice session, simulate traffic by spawning an AI car ahead of you and practicing overtaking. The hairpin is the best passing opportunity, but you need to execute the entry and exit without mistakes. A failed overtake at the hairpin can end your race in a multi-class field or cost several seconds in a single-class race."
+    },
+    {
+      "olist": [
+        "5 laps: focus on the hairpin at 80 percent effort.",
+        "5 laps: practice the chicanes and wall sections.",
+        "10 laps: full-lap practice at race pace, no traffic.",
+        "5 laps: identify and focus on your weakest corner.",
+        "5 laps: practice overtaking or defending against traffic."
+      ]
+    },
+    {
+      "h2": "Setup Notes for the Street Circuit"
+    },
+    {
+      "p": "Street circuits require lower ride heights and stiffer anti-roll bars compared to permanent road courses because the surface is bumpy and offers less grip. A common baseline is to lower ride height by 10-15 mm from the road course default and increase front and rear anti-roll bar stiffness by 2-3 clicks."
+    },
+    {
+      "p": "Brake bias, as mentioned, sits around 55-60 percent front. Brake lock tendency is high, so if you're locking tires on entry to the chicanes, reduce brake pressure slightly or adjust your braking points earlier. Differential settings should favor entry lock (tight setup) to help the car turn into the chicanes and hairpin without washing out."
+    },
+    {
+      "p": "Don't obsess over setup tuning at Gilles Villeneuve. The track rewards smooth inputs and clean lines far more than a perfectly optimized setup. Start with a published baseline, make one or two small changes to fix a specific handling issue (like tire lock-up or understeer), and then get back to practicing your line. Small improvements in consistency will yield bigger lap-time gains than chasing a perfect setup."
+    },
+    {
+      "tip": "For more detail on how to build and adjust a setup, see our guide to building custom setup from your iRacing baseline. The principles of identifying a problem and making targeted changes apply to every track, including Gilles Villeneuve.",
+      "tipLabel": "Setup Deep Dive"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I avoid hitting the wall on the hairpin exit?",
+      "a": "The outer wall on the hairpin exit catches drivers who turn in too early or carry too much speed through the apex. Brake later (closer to the apex), target a lower apex speed (50-70 km/h), and clip the apex later in the turn. This widens your exit line and moves you away from the wall. Practice this in isolation: spend 5 laps doing nothing but hairpin entries and exits at 80 percent effort until you're consistent."
+    },
+    {
+      "q": "What is the best line through the chicane complexes?",
+      "a": "Treat each chicane as a sequence of late apexes. For the first chicane (turns 2-3), brake to 80-90 km/h, clip the left apex late, transition smoothly, and clip the right apex late. Keep off-throttle time minimal. For the second chicane (turns 5-6), use similar discipline but carry 100-120 km/h because the exit is more open. The key principle: late apexes and smooth transitions prevent locking the brakes or overspin the wheels."
+    },
+    {
+      "q": "What is the safest brake balance for this track?",
+      "a": "Start at 55-60 percent front bias. If your front tires lock on the hairpin or into the chicanes, reduce brake bias by 1 percent. If the rear slides or the car spins mid-braking, increase brake bias by 1 percent. Gilles Villeneuve is a low-grip street circuit, so brake lock-up is common. Consistency is more important than bleeding every tenth from braking distance. A stable, repeatable brake point will serve you better than an aggressive setup that requires perfect execution."
+    },
+    {
+      "q": "How much time does wall contact cost?",
+      "a": "Light contact (a kiss on the wall) costs 2-3 tenths per lap if damage is minimal. Moderate contact can cause 5-10 tenths of lag plus potential fluid or suspension damage requiring a pit stop. Serious contact can end your race. In a 30-minute race, 5-10 tenths per lap adds up to 2-3 seconds over a full race distance. Avoid wall contact by practicing your line until it's repeatable 10 times in a row. A smooth, safe pass is always worth more than a reckless one."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-10-26",
+  "dateLabel": "October 26, 2026"
+}

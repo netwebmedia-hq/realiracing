@@ -1,0 +1,110 @@
+{
+  "slug": "comparing-your-lap-to-fast-lap-what-to-look-first",
+  "tag": "iRacing Tips · Telemetry",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "Comparing Your Lap to a Fast Lap: What to Look at First",
+  "description": "Learn which telemetry channels reveal the biggest time loss fastest, and the replay analysis workflow that cuts through noise to find real pace gains.",
+  "sections": [
+    {
+      "p": "Watching a fast lap from the guy leading your split, or from a league mate with 500 iRating points on you, feels like it should explain everything. But opening your telemetry files and seeing fifteen graphs at once paralyzes most drivers. Most of the data you'll plot is noise. Finding the three things that matter takes a disciplined method, not scrolling through every channel hoping something jumps out."
+    },
+    {
+      "p": "The goal is simple: identify which corner, or which phase of a corner, costs you the most time in absolute terms. Once you see that, you can compare what the fast driver does differently there. This post walks through the replay and telemetry workflow in order, starting with the visual evidence before you ever open a data file."
+    },
+    {
+      "h2": "Start with a clean, single-lap replay comparison"
+    },
+    {
+      "p": "Load your lap and the reference lap side by side in iRacing's replay. Put the camera on the driver's view or chase cam so you can see steering input, weight transfer, and line. Mute audio and watch at normal speed first. Most drivers spot one or two obvious differences here: a later apex, a rougher turn-in, earlier braking. These visual cues matter because they tell you whether you're losing time to line, to smooth steering, or to braking point."
+    },
+    {
+      "p": "Do this for every corner, or every major corner if the track has ten turns. Mark down in a notebook or on a phone note which turns look different. You'll have maybe two to four corners where the reference driver's line or technique stands out. Those are your focus areas. Skip the corners where you're already doing the same thing."
+    },
+    {
+      "tip": "Watch the replay at 0.5x speed on your problem corners. You'll see steering angle and pedal inputs far more clearly than at real speed. The small corrections matter.",
+      "tipLabel": "Replay Speed Trick"
+    },
+    {
+      "h2": "Check throttle trace and brake zones first"
+    },
+    {
+      "p": "Open telemetry and load both laps. Plot throttle position and brake pressure against distance around the track. Do not look at every lap. Compare one fast lap to one of your laps on the same track, same fuel load, same tire age if the data shows it. Most tools, including the <a href=\"garage61-telemetry-comparison-tools.html\">Garage 61 comparator</a>, let you zoom to a specific corner."
+    },
+    {
+      "p": "What you're looking for is where the reference driver starts braking compared to you. Measure the distance. If they brake 10 meters later, that's a concrete gain: more speed into the corner. If they get back to full throttle five meters earlier on exit, that's another gain. Throttle and brake are the two clearest inputs. Everything else (steering, load, downforce) is the result of these two pedals."
+    },
+    {
+      "list": [
+        "Plot throttle, brake, and speed on the same graph for both laps",
+        "Zoom to a single corner and look for brake point separation first",
+        "Then look for throttle application on exit: where do they reach 100%",
+        "Note the gap in both distance and the time between your brake point and theirs",
+        "Repeat for every corner where the replay showed a visual difference"
+      ]
+    },
+    {
+      "p": "If the reference driver is braking later, the next question is: why? More confidence in the car, a tighter line that needs less hard braking, or a different downforce setting. You'll answer that in a moment. First, pin down the numbers."
+    },
+    {
+      "h2": "Then check speed through the slowest point"
+    },
+    {
+      "p": "In nearly every corner, there's a moment where the car is slowest. On a heavy braking zone it's just after the brake peak. On a technical corner it's mid-turn at the apex. Plot speed against distance and find that moment for both laps. Look at the absolute number. If they carry 5 mph more through the apex, that's a direct measure of your line or technique loss."
+    },
+    {
+      "p": "A speed gain through the apex usually comes from one of three sources: they're taking a faster line (wider entry, later apex), they're carrying more entry speed because they braked less aggressively or later, or the car is set up for more front grip. The replay already told you which of these is likely. Now the data confirms the size of the gain."
+    },
+    {
+      "tip": "Speed is the simplest truth in telemetry. If you're 3 mph slower at the apex, you'll be 3 mph slower on the straight after. Chase the speed number, not the steering angle.",
+      "tipLabel": "The Single Metric That Matters Most"
+    },
+    {
+      "h2": "Ignore lap time until the end"
+    },
+    {
+      "p": "Do not start by comparing overall lap times. Many drivers load the telemetry, see they're 0.8 seconds slower, and try to figure out which one of fifteen channels caused that 0.8. That is backward. Work from the replay and the throttle and brake traces to identify the three corners where they're faster. Measure the speed and distance losses there. Add them up, and you'll account for most of your time loss."
+    },
+    {
+      "p": "Once you've pinned down those three corners, you can check whether steering angle, lateral G, or yaw rate reveals a different technique. But start with what you can see and the pedals. Those explain most pace gaps."
+    },
+    {
+      "h2": "The workflow summary"
+    },
+    {
+      "olist": [
+        "Load replay side by side at 0.5x speed. Note which turns look different.",
+        "Plot throttle and brake for both laps. Find the brake point and exit throttle differences at each problem corner.",
+        "Check speed at the slowest point in those corners. How many mph difference?",
+        "Only then open other channels (steering, lateral G, downforce) if you want to understand the technique behind the speed gain.",
+        "Write down your findings: 'Turn 3: braking 8 m later, 4 mph faster at apex, exit throttle 12 m earlier.' That is actionable."
+      ]
+    },
+    {
+      "p": "Telemetry is most useful when you know what question you're asking. You're not analyzing the entire lap. You're answering: why is that guy three-tenths faster than me at Turn 7? The reply, in order, is the replay, the brake and throttle traces, the speed comparison, and only then the steering technique. Following that order will save you an hour of staring at graphs and point you at the real work: adjusting your line or your brake point to match what works."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I compare my best lap to their best lap, or both our average laps?",
+      "a": "Compare one of your solid laps (not your worst, not necessarily your absolute best) to one of their clean laps. A single outlier lap can show a technique that was lucky, not repeatable. A typical good lap shows the pace you can expect after practice. If you have lap-by-lap telemetry from a practice or race, pick a lap from the middle of a run when tires are in the sweet spot for both drivers."
+    },
+    {
+      "q": "What if they're faster everywhere, not just one or two corners?",
+      "a": "If they're faster everywhere, the car setup is likely the cause, not your technique. Check if they're running a different front wing or downforce level, or if your tire temps are very different. If the setup is the same, look for a small advantage that compounds: one-tenth earlier throttle application at every exit, or a slightly tighter line through fast corners. Those small margins add up to a gap across the track. Zoom into the three fastest-speed corners and focus there first."
+    },
+    {
+      "q": "How do I know if a telemetry difference is real or just because of track temperature?",
+      "a": "Check the session details: same fuel, same track temp, same time of day if possible. If track temp is different, expect brake feel and grip to change. If you're comparing a cool-session lap to a hot-session lap, your tyres and braking pressure will not be equal. Compare laps from the same session, or at minimum the same part of the day. Telemetry is only a fair comparison when conditions are equal."
+    },
+    {
+      "q": "Should I use a telemetry tool or can I do this in-game?",
+      "a": "The iRacing replay viewer has basic telemetry, but an external tool like Garage 61 or Motec lets you zoom, measure distances precisely, and plot multiple channels at once. For a beginner, the in-game replay and a phone note of your observations is enough. As you improve, a telemetry tool cuts analysis time in half and reveals exact brake point and throttle application distances. It's not required, but it's worth learning once you're running consistent laps."
+    }
+  ],
+  "gearKeys": [
+    "monitor-1440p-120"
+  ],
+  "published": "2026-10-26",
+  "dateLabel": "October 26, 2026"
+}

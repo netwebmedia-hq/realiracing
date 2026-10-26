@@ -1,0 +1,171 @@
+{
+  "slug": "eldora-speedway-iracing-dirt-oval-guide",
+  "tag": "Track Guides · Dirt Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Eldora Speedway iRacing Dirt Oval Guide: Banking and Grip",
+  "description": "Master Eldora's unique half-mile banking, groove transitions, and setup choices for consistent dirt oval pace.",
+  "sections": [
+    {
+      "p": "Eldora Speedway is one of iRacing's most technically demanding dirt ovals. The half-mile high-banked clay surface combines tight radius turns with variable grip, line choices that change lap to lap, and setup sensitivity that punishes guessing. Most drivers arrive expecting a simple flat-and-fast circuit and instead find a track that rewards precision, throttle control, and a clear understanding of how banking interacts with grip conditions."
+    },
+    {
+      "p": "This guide covers the key variables: how to read the banking and its effect on grip, where the fast line actually is as the track rubbers in, and which setup fundamentals matter most at Eldora."
+    },
+    {
+      "h2": "Understanding Eldora's banking and its impact on grip"
+    },
+    {
+      "p": "Eldora's turns are banked at approximately 14 degrees, which is modest by oval standards. That banking supports speed through the turns, but it also creates a specific problem: the banking tries to push the car up the track, while the grip tries to hold it down. The balance between these forces changes constantly as track temperature rises, the surface rubbers in, and as you and other drivers lay down more grip."
+    },
+    {
+      "p": "Early in a practice or race session, Eldora tends to be slippery and loose in the low groove. The banking becomes your ally; it helps keep the car settled. As the session progresses and more rubber accumulates, grip improves and the track tends to grip up. At that point, banking can actually work against you: it wants to push the car higher, and if the top of the track has developed grip, the top becomes faster than the low groove."
+    },
+    {
+      "list": [
+        "Low groove early in a session: banking supports a loose, free-handling car; back throttle off slightly and let the car rotate.",
+        "Middle groove as rubber develops: the ideal line often rises as grip improves; this is where most wins happen.",
+        "Top groove later in session: if track temperature peaks and the top has grip, some drivers find speed there, but it is unstable and risky.",
+        "Grip transitions: watch your telemetry. If your speed through turns is dropping even though you feel smooth, grip has likely changed and your line or throttle is no longer optimal."
+      ]
+    },
+    {
+      "tip": "Banking is not free grip. It is a trade-off. The banking reduces the radius your car must follow, which helps in slow turns, but it also reduces the vertical load on the tires because part of their load is used to overcome the bank angle. Read the track carefully in warmup.",
+      "tipLabel": "Banking Trade-offs"
+    },
+    {
+      "h2": "Line choices and groove evolution"
+    },
+    {
+      "p": "Eldora's groove structure is not fixed. Most half-mile dirt ovals have a low groove and a high groove; Eldora is no exception. The difference is that the low groove at Eldora is extremely close to the wall in places, and leaving enough margin for error while staying low requires precision."
+    },
+    {
+      "p": "Early in a session, attack the low groove. The line is tight, and you will miss occasionally. That is part of learning the groove. As the session progresses and rubber develops, the low groove will offer less cornering speed but excellent stability. The high groove—typically 15 to 25 feet off the low apron—develops grip more slowly but becomes faster as the session goes on. By the midpoint of a race, many drivers are running a middle groove, between pure low and pure high."
+    },
+    {
+      "p": "Passing usually happens on exits. The driver on the inside (low groove) has a tighter radius through the turn; the driver on the outside has room to carry more speed if they set up properly. On the exit, the outside driver can use the width of the track to accelerate earlier and carry momentum down the straightaway. This is where most passes are made at Eldora."
+    },
+    {
+      "list": [
+        "Early session: commit to the low groove on entry; brake late and deep, trusting the banking to support the turn.",
+        "Mid-session: ease toward the middle groove if lap times plateau; the grip gain often justifies the slightly longer radius.",
+        "Late session: the high groove may develop speed, but do not chase it recklessly; consistency on your established groove beats chasing drift.",
+        "Passing: set up for an outside pass on exit, where grip and room to accelerate give you a realistic overtaking opportunity.",
+        "Defending: if someone is attempting an outside pass, do not panic-brake; hold your line, accelerate smoothly off the corner, and use your momentum."
+      ]
+    },
+    {
+      "h2": "Setup for half-mile dirt handling"
+    },
+    {
+      "p": "Dirt oval setup at Eldora starts with a baseline and then splits between handling preference. Most iRacing dirt drivers run relatively stable, understeering setups because a loose, slidey car at Eldora is unpredictable and prone to wall contact."
+    },
+    {
+      "p": "Anti-roll bar stiffness is the single largest control on how the car feels through a turn at Eldora. A stiffer bar (higher number) increases stability and reduces roll, which keeps the car flatter and more planted. A softer bar (lower number) allows more roll, which can feel more responsive but also less predictable when the track is slippery. Most fast drivers at Eldora run a stiff rear bar and a moderate front bar, creating a setup that is planted in the turns and slightly loose on entry."
+    },
+    {
+      "p": "Gear ratio also matters more at Eldora than at some other ovals because the straightaways are relatively short. Too tall a gear (higher number) and the car will not have enough power on exit to pass; too short a gear (lower number) and you will hit top speed mid-straightaway with nowhere to gain. A common starting point is to allow the car to accelerate smoothly off turn 2 and reach top speed just before the braking zone for turn 3."
+    },
+    {
+      "list": [
+        "Anti-roll bar: rear stiffness is the primary control for loose/tight balance; start with rear stiffer than front and adjust from there.",
+        "Brake balance: bias the brakes slightly toward the front (0 to 5 percent rear); Eldora's small turns do not allow deep braking, so over-biasing to the rear is wasteful.",
+        "Downforce: run maximum downforce if available; the extra grip through turns is valuable on a high-banked half-mile.",
+        "Tire pressure: keep pressures in the range recommended by the series; do not chase traction by running pressures too low, which hurts turn-in response."
+      ]
+    },
+    {
+      "tip": "Do not change setup mid-race to chase grip. Grip evolution at Eldora is normal and expected. If you are losing pace in the middle of a race, it is almost always because the track has changed, not because your setup is wrong. Adjust your line and throttle timing instead.",
+      "tipLabel": "Setup vs. Adaptation"
+    },
+    {
+      "h2": "Throttle control and momentum preservation"
+    },
+    {
+      "p": "Eldora is won on exit, not entry. The driver who carries the most momentum off the corners will have the best straightaway speed. This means throttle application off the turns is critical."
+    },
+    {
+      "p": "Approach turn-in with commitment. Brake deep into the corner, even deeper than you think comfortable, because the short radius of the turn means you can scrub off speed quickly. Then, at the apex (which is typically around halfway through the turn), begin rolling on throttle. By the exit, you should be at full throttle, regardless of how early that seems. The banking and the turn geometry allow you to apply throttle much earlier than at a flat track."
+    },
+    {
+      "p": "The trap: early throttle application feels abrupt and risky because it seems to initiate oversteer. If this is happening, you are likely turning in too aggressively. Instead, lighten your steering input slightly, trust the banking to support the car, and feed throttle earlier. The car will accelerate smoothly off the turn rather than sliding."
+    },
+    {
+      "list": [
+        "Brake on a straight line before turn entry; do not blend brake and turn input.",
+        "At turn-in, use steering angle appropriate to the radius (not maximum steering), which allows the car to turn without over-rotating.",
+        "Apex: begin throttle application at or just before the apex; do not wait until the exit.",
+        "Exit: be at full throttle by the time the car is straight; this gives you the straightaway run.",
+        "Off-throttle: when lifting for the next braking zone, do it smoothly and on a straight; sudden lift mid-turn will upset the car."
+      ]
+    },
+    {
+      "h2": "Common mistakes and how to avoid them"
+    },
+    {
+      "p": "Most new drivers at Eldora commit one of three errors: running the high groove too early because it looks faster, using too much steering input (which destabilizes the car on the slippery surface), or lifting throttle mid-turn out of caution. All three are addressable with a clear plan."
+    },
+    {
+      "p": "Chasing the high groove happens because drivers see other cars up high and assume that is the fast line. In reality, those drivers are often struggling and looking for grip elsewhere. The low groove, even on a slippery track, is usually the most consistent. Commit to it for a full 5-lap run and build momentum. Only move to the high groove if your lap times are clearly plateauing and the low groove feels unstable rather than slow."
+    },
+    {
+      "p": "Over-steering at Eldora is a chain reaction. You turn in too aggressively, the car does not respond as expected, you correct by steering more, and suddenly you are in a tank-slapper or against the wall. Instead, use smooth, deliberate steering inputs. Imagine driving with a cup of water on the dashboard; your steering should never cause water to spill. This feels too gentle at first, but it is how fast Eldora drivers actually steer."
+    },
+    {
+      "p": "Lifting mid-turn: if you reach mid-turn and suddenly feel unsettled, the instinct is to lift throttle. This is usually the worst thing you can do because lift mid-turn reduces the load on the front tires and causes the car to understeer or slide. Instead, maintain throttle even if it feels scary, and rely on steering input to manage the corner. If the car is still unstable, the problem is your setup or your line, not the throttle level in that moment."
+    },
+    {
+      "h2": "Practice session strategy"
+    },
+    {
+      "p": "A typical Eldora practice has one goal: find a groove that works consistently, then build muscle memory. Do not spend time chasing 0.05-second gains in the first half hour. Instead, focus on repeatability."
+    },
+    {
+      "olist": [
+        "Lap 1-5: establish your line using the low groove, even if it feels slow. Feel the banking, understand how the car responds to steering input, and settle into a rhythm.",
+        "Lap 6-15: increase pace by rolling on throttle earlier off the exits and trusting the banking more. Do not change your line; change your confidence.",
+        "Lap 16-30: if lap times are improving consistently, you are on the right path. If they have plateaued, adjust setup (anti-roll bar stiffness first) or try the middle groove.",
+        "Final 10 laps: simulate race start and exit sequencing. Practice the lines you would use in the first lap after a restart."
+      ]
+    },
+    {
+      "tip": "Record a clean lap in practice. After the session, review your telemetry or replay and identify the moment where you gained or lost the most time. This single comparison often reveals more about your pace than 30 laps of guessing.",
+      "tipLabel": "Replay Analysis"
+    },
+    {
+      "h2": "Race-specific considerations"
+    },
+    {
+      "p": "Eldora races are often decided by restarts and the first 2 laps after each caution. The track changes grip more dramatically during a race than in practice, especially if the race has multiple cautions and multiple standing starts. Plan for at least two different setups in your notes: one for the start of a race or the start after a long green flag, and one for races with frequent cautions where you will be running on a fresher, grippier surface."
+    },
+    {
+      "p": "Fuel conservation at Eldora is straightforward: the small track and short race means most drivers will not run out of fuel. Focus instead on tire management. A common strategy is to run at 85 to 90 percent for the first half of the race, then push the final laps. This preserves tire life and allows you to pass when it matters."
+    },
+    {
+      "p": "Restarts require a clear plan. On a restart, the car directly in front of you has no slipstream. Use the slipstream from the car two positions ahead if possible, and time your acceleration to match that car's exit speed. This sounds complex but is simply a matter of watching the spotter or replays from other drivers and seeing which restart lines work."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much does the banking at Eldora actually help grip through the turns?",
+      "a": "Eldora's 14-degree banking helps by reducing the effective turn radius and allowing the car to carry more speed for a given lateral acceleration. However, the banking also reduces the vertical load on the tires slightly, so it is a net gain in speed but not a dramatic one. The banking is most helpful early in a session when grip is marginal; as grip improves, the value of the banking decreases."
+    },
+    {
+      "q": "What anti-roll bar settings should I use as a starting point at Eldora?",
+      "a": "Start with a stiff rear bar and a moderate front bar, roughly 30 to 50 percent stiffer in the rear than the front. This setup keeps the car planted through the turns and slightly loose on entry, which makes it more responsive without becoming unpredictable. Adjust from there based on whether you feel understeer (tighten the rear) or oversteer (soften the rear)."
+    },
+    {
+      "q": "Should I run the high groove or the low groove at Eldora?",
+      "a": "Run the low groove unless it feels unstable or you are being passed repeatedly. The low groove is the most consistent line and typically the fastest once you build confidence. The high groove develops grip more slowly and is usually faster only in the final laps of a long green flag run. Commit to one groove for at least five laps before moving to the other."
+    },
+    {
+      "q": "Why does my car feel unstable when I apply throttle off the corners?",
+      "a": "This usually means you are using too much steering angle at turn-in. Early throttle application at Eldora requires a lighter steering input so the car has room to accelerate without over-rotating. Try reducing your steering angle by 10 to 15 percent and applying throttle earlier. The car should accelerate smoothly rather than snap or slide."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9"
+  ],
+  "published": "2026-10-26",
+  "dateLabel": "October 26, 2026"
+}

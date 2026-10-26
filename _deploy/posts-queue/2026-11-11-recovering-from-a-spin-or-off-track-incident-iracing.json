@@ -1,0 +1,121 @@
+{
+  "slug": "recovering-from-a-spin-or-off-track-incident-iracing",
+  "tag": "iRacing Tips · Race Craft",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "Recover cleanly after a spin or off-track incident in iRacing",
+  "description": "Learn the safe technique to rejoin the racing line after a spin, avoid penalties, and minimize time loss in iRacing.",
+  "sections": [
+    {
+      "p": "A spin or off-track excursion in a race feels like time stops. Your car slides sideways into the grass, your iRating flashes in your mind, and you have seconds to decide whether to stay out or pit. The actual recovery is mechanical, but the decision to rejoin safely separates drivers who stay clean from those who rack up incident points and wreck the leader."
+    },
+    {
+      "p": "The goal after an off is threefold: get moving again, rejoin the racing line without blocking traffic, and avoid a penalty for cutting track limits or unsporting conduct. How you execute each step determines whether you lose two places or lose the whole race to a penalty."
+    },
+    {
+      "h2": "Assess the car before moving"
+    },
+    {
+      "p": "The first instinct is to accelerate out of the dirt or gravel. Resist it. Spend one or two seconds checking whether the car is damaged. Listen for changes in engine sound, feel for changed steering response, and glance at the damage indicator. A broken suspension arm, torn wing, or flat tire turns recovery into a liability. You may still pit, but you need to know what you are managing."
+    },
+    {
+      "p": "If the car is intact or damage is minor, slowly roll back onto the track surface. Avoid wheelspin in the dirt or gravel because traction loss in a recovery zone often leads to a second spin and a closer call with oncoming traffic."
+    },
+    {
+      "tip": "In dirt or oval racing, gravel gives more traction than asphalt when you are stationary. Rolling slowly onto the track surface is safer than sharp acceleration from a dead stop on tarmac.",
+      "tipLabel": "Grip on recovery"
+    },
+    {
+      "h2": "Rejoin the racing line, not a shortcut"
+    },
+    {
+      "p": "The most common mistake is turning directly toward the apex after an off. That trajectory is usually a shortcut, and iRacing's track-limits system will penalize it. Even if the penalty does not stick immediately, the incident report will flag it and could lead to a protest."
+    },
+    {
+      "p": "Instead, rejoin the track at the point closest to where you left it. If you spun in Turn 3 and ended up in the runoff on the inside, roll back onto the track at the inside curbing, not at the apex. This method respects the racing line and avoids the perception of gaining an advantage."
+    },
+    {
+      "p": "Wait for a gap in traffic before you roll back. A driver coming at full speed into a recovery zone will not have time to react to a car rejoining at half speed. Position yourself, check your mirrors and spotter call, then move when the track is clear."
+    },
+    {
+      "h2": "Build speed gradually"
+    },
+    {
+      "p": "Once you are back on the racing surface, accelerate smoothly. Hard throttle input on recovery tires or on tarmac covered in grass clippings causes wheelspin, which can trigger another spin or spin the car into traffic. A smooth, progressive throttle application gives the tires time to find grip and the car time to stabilize."
+    },
+    {
+      "p": "In a car with a manual shifter or sequential shifter, downshift to a lower gear to maintain engine braking and traction control if you need it. Automatic or paddle shifters usually keep you in the right gear during recovery, but manual control gives you finer authority over how the car comes back to speed."
+    },
+    {
+      "list": [
+        "Check mirrors and the spotter call for approaching traffic before rolling back.",
+        "Rejoin at the nearest point on the racing surface, not at the apex.",
+        "Accelerate smoothly to avoid wheelspin and a second incident.",
+        "Stay alert for drivers expecting to see you at normal speed on the racing line."
+      ]
+    },
+    {
+      "h2": "Avoid the penalty trap"
+    },
+    {
+      "p": "iRacing's off-track detection is position-based. If any part of your car is outside the track boundary (usually defined by the edge of the asphalt or a painted line), the system flags it. A brief excursion into a runoff area does not usually trigger a penalty, but cutting a corner to rejoin or using a shortcut inside the circuit will. The system also tracks intentional contact to avoid the incident and treats it as unsporting conduct."
+    },
+    {
+      "p": "The key is intention. If you are rolling back onto the track at the natural exit point of the corner, no penalty applies. If you turn across a closed portion of the circuit to save distance or rejoin ahead of where you left, the system will catch it. Your incident report may show no violations immediately after the race, but stewards review protests and can add them later."
+    },
+    {
+      "tip": "If you are unsure whether rejoin will trigger a penalty, stay on the asphalt and take the long way around. A few seconds of lost time is better than a 4x incident or a protest upheld.",
+      "tipLabel": "When in doubt"
+    },
+    {
+      "h2": "Pit or push on"
+    },
+    {
+      "p": "After you have stabilized the car and confirmed no critical damage, decide whether to pit or continue. This decision depends on three factors: fuel load, tire condition, and race position."
+    },
+    {
+      "p": "If you have a planned pit stop in the next few laps, stay out and pit on schedule. If you were supposed to pit in the next lap and an off cost you that window, pitting immediately may still be worth it to repair damage and top up fuel before the next cycle. If damage is visible and worsening (steering pulling, drag increasing, downforce loss evident in corner speed), pit at the next opportunity. If the car is intact and you are racing for position, staying out is often the faster choice. You lose one or two spots to the incident, but you save fuel and keep the tire cycle intact."
+    },
+    {
+      "olist": [
+        "Assess damage. Is it visible or affecting handling?",
+        "Check fuel. Do you have enough for your current cycle?",
+        "Evaluate position. Are you fighting for a podium or building a gap?",
+        "Decide. Pit if damage is severe or you want to reset the race. Stay out if the car is okay and position allows it."
+      ]
+    },
+    {
+      "h2": "Mental reset"
+    },
+    {
+      "p": "An off or spin can shake your confidence. You start braking earlier, turning more cautiously, and losing the aggression that got you into contention. For the next three to five laps, focus on hitting your baseline lap time again. Smooth inputs, consistent lines, smooth braking. Do not try to immediately pass the car that just passed you during your recovery. Settle into a rhythm, confirm the car is stable, and resume racecraft from a stable baseline."
+    },
+    {
+      "p": "The race is rarely decided by one incident. Most are decided by what you do in the five laps after the incident occurs. Stay clean, stay smooth, and the field will hand you back opportunities. A driver who recovers quickly and keeps the car intact will beat one who panics and collects another car."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does rejoining the track after a spin always trigger a penalty?",
+      "a": "No. Rejoining at the natural exit point of the corner or at the nearest asphalt point does not trigger a penalty. Cutting across a closed portion of the track, driving backward, or using a shortcut to save distance will be flagged. The rule is simple: rejoin at the point closest to where you left, on the racing surface."
+    },
+    {
+      "q": "Should I pit immediately after a spin if there is no visible damage?",
+      "a": "Only if you were already due for a pit stop in the next one or two laps. If you can maintain fuel and tire strategy by staying out, do so. Pitting after an off costs two to four places in addition to the loss from the incident itself. Stay out if the car is drivable and your fuel and tire window allows it."
+    },
+    {
+      "q": "What should I do if my car is facing backward after a spin?",
+      "a": "Do not drive backward. Instead, slowly rotate the car forward in the open area of the runoff. Keep steering smooth to avoid a second spin. Once you are facing forward and pointing toward the track, rejoin at the nearest asphalt point. Driving backward at any point on the circuit will trigger an unsporting-conduct penalty."
+    },
+    {
+      "q": "How do I know if damage from an off will hurt my race?",
+      "a": "Listen for engine noise changes and feel for steering pull or brake drag. A flat tire will be obvious. A bent suspension arm usually pulls the steering. A torn front wing will reduce downforce and cause understeer. If the car feels significantly slower or less responsive and you have pit stops remaining, pit to repair. If you are near the end of the race or the damage is minor, push on and adjust your driving to compensate."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-10-26",
+  "dateLabel": "October 26, 2026"
+}

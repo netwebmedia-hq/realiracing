@@ -1,0 +1,131 @@
+{
+  "slug": "pit-stop-strategy-undercut-overcut-track-position",
+  "tag": "iRacing Tips · Strategy",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Pit Stop Strategy: Undercut, Overcut, and Track Position",
+  "description": "Master undercut and overcut tactics in endurance racing. Learn when to pit early, when to stay out, and how track position decides wins.",
+  "sections": [
+    {
+      "p": "Pit stop strategy separates drivers who finish on the podium from those who fade to mid-pack. The undercut and overcut are not equally good in every race; they are responses to fuel window, tire life, and how much pace a driver can gain in the pits relative to the track. Understanding when to commit to each tactic, and when to hold track position instead, is what turns a competitive driver into a strategic one."
+    },
+    {
+      "p": "Every endurance race in iRacing creates a natural pit cycle. Cars pit at intervals dictated by fuel consumption, tire degradation, and damage. Within that cycle, two strategies compete: stop earlier than the leader (undercut) or stay out longer (overcut). The choice has nothing to do with aggression and everything to do with math. Tire grip, track temperature, and the gap to the driver ahead determine which move gains time."
+    },
+    {
+      "h2": "What the undercut actually does"
+    },
+    {
+      "p": "The undercut is a pit stop taken earlier than a competitor in order to run on fresher tires on a less-traffic-heavy track. The theory is simple: pit before the leader, exit in clear track, and build a gap on faster rubber before the leader pits and exits in traffic behind you. On street circuits and road courses with tight pack racing, this gap can be substantial."
+    },
+    {
+      "p": "The undercut works best when tire degradation is steep, meaning new tires are significantly faster than aged ones. On tracks like Daytona or Indianapolis, where tire wear is minimal, the undercut gains almost nothing. On tracks like Laguna Seca or Imola, where compound grip falls sharply, fresh rubber can be 2 to 5 tenths per lap faster than lapped tires. That advantage compounds lap by lap. Over a 15-lap stint before the leader pits, a 0.3-second-per-lap gain adds up to 4 or 5 seconds. The undercut driver exits the pits ahead."
+    },
+    {
+      "p": "Execution matters. Pit too early and you run old tires for too long before gaining the advantage. The ideal undercut pit happens when your tires still have 3 to 5 laps of pace but the leader's tires are visibly worn. You want the gap between new and old to be maximum, not to waste fresh rubber on a six-lap freshen before the leader even boxes."
+    },
+    {
+      "h2": "The overcut and why staying out works"
+    },
+    {
+      "p": "The overcut is the opposite move: stay on track longer than the lead car, letting them pit and exit behind you in traffic, then pit yourself into a clear track ahead. This works when pit loss is large relative to track gain. If a pit stop costs 45 seconds (10-second refuel or repair plus tire change time) and the undercut driver gains only 8 seconds on track, the overcut driver exits the pits still leading."
+    },
+    {
+      "p": "The overcut shines on tracks where the pit lane is long and slow, or where fuel windows are short and tire degradation is mild. On Daytona or Indianapolis, pit lane is ~30 seconds by itself. On Monza, pit entry and exit are quick. Traffic also matters. If the leader pits into a field of backmarkers, they may lose 5 to 10 seconds just finding clear track to run on. The overcut driver pits into nearly empty track and exits clean ahead."
+    },
+    {
+      "p": "Staying out longer than everyone is also a protection tactic. In multiclass or team racing, holding position on track avoids the chaos of pit cycles where a faster class or co-driver cycles through and jumps you. One more lap out means one more lap of clear track, and sometimes that one lap is the difference between exiting ahead of traffic and getting tangled with it."
+    },
+    {
+      "h2": "Track position versus pit advantage"
+    },
+    {
+      "p": "The real decision is this: does the pit delta (the time lost in the pits plus gained on track) favor staying out or pitting? Track position is worth something only if you can turn it into gap. If pitting puts you 20 seconds down but you can only make up 8 seconds over 20 laps, you've lost. If pitting puts you 30 seconds down but the driver ahead runs into fuel strategy trouble, track position becomes worthless."
+    },
+    {
+      "list": [
+        "Measure pit loss accurately: time in pit lane plus time lost to a slow zone or caution, minus any advantage from clearing backmarkers",
+        "Estimate track gain: how many laps until you lap traffic, and how much grip advantage do fresh tires give you per lap versus used ones",
+        "Factor in fuel risk: if the leader pits early, can they make it to the finish without stopping again, or will they pit twice and give you track position back",
+        "Consider damage: a minor repair during your pit stop (a brake duct, a wing adjustment) can gain back the pit loss if it restores pace"
+      ]
+    },
+    {
+      "p": "On a street circuit where the track is tight and traffic is constant, pit position deteriorates fast. Exiting the pits into three backmarkers costs 3 to 5 seconds immediately. On a high-speed oval or low-traffic road course, exiting into clear track is nearly free. The same pit stop decision produces different results at different venues."
+    },
+    {
+      "h2": "Fuel and tire windows create the pit cycle"
+    },
+    {
+      "p": "Pit strategy is not decided in a vacuum. The fuel tank and tire life set a window inside which everyone must pit. If a car can run 45 minutes on fuel, the pit window is approximately minutes 30 to 40 (before fuel level becomes critical). Every competitive driver has to pit inside that window. Where inside it you pit is the strategic choice."
+    },
+    {
+      "p": "Early in the fuel window, tires still have good grip. Late in the window, tires are worn but you have not lost pace catastrophically. A driver pitting at minute 32 gets worn tires but exits with a fuel-strategy advantage if they choose to run the next stint longer. A driver pitting at minute 38 gets fresher tires but loses that fuel advantage and may have to pit again sooner."
+    },
+    {
+      "p": "Tire life compounds this. If tires last 35 minutes on a road course, you can run a fresh set for a full stint after your pit stop. If tires last only 20 minutes, you pit more often, and each pit creates an opportunity for undercut or overcut. High-tire-wear tracks compress the pit window. Everyone is close to running out at the same time, so the gap between early and late pit stops is smaller. Low-wear tracks spread the window. Early pits lose less to the undercut."
+    },
+    {
+      "tip": "Check tire telemetry during practice. Lap time drop over 10 fresh laps tells you how long good pace lasts. If tires drop 0.8 seconds between lap 1 and lap 15, the undercut is powerful. If they drop 0.2 seconds, it is weak and overcut becomes viable.",
+      "tipLabel": "Read the tire curve"
+    },
+    {
+      "h2": "Team strategy and multiclass complication"
+    },
+    {
+      "p": "In team endurance racing, undercut and overcut decisions must account for driver swap timing. If you pit your co-driver in at the same time as the car ahead, the undercut can fail because the co-driver may be slower or may need to warm up tires. If you stagger the swap, you lose the fresh-tire advantage entirely. Coordinate pit stops with co-driver pace, not just track position."
+    },
+    {
+      "p": "In multiclass, a GTE car might pit into traffic created by LMP2 backmarkers, while an LMP2 car exits into clear track. The strategic calculus is completely different even though both cars pit at the same moment. Undercut decisions must account for which class will exit into clean track and which into a traffic jam."
+    },
+    {
+      "h2": "When to abandon strategy and hold position"
+    },
+    {
+      "p": "The best undercut or overcut is not always the best move. If a safety car comes out five minutes after you pit, the undercut advantage evaporates. If rain appears, tire strategy changes and pit decisions made for dry racing become wrong. If a co-driver is faster than expected, the track-position advantage of an overcut disappears and you should have pitted earlier."
+    },
+    {
+      "p": "Sometimes the simplest move is the correct one: pit when the car ahead pits. Match their pit window and focus on executing your stop cleanly and getting back to racing. In amateur endurance races, the margin between drivers is small enough that consistency beats fancy tactics. A well-executed matched pit stop beats a gutsy undercut or overcut that fails by 10 seconds."
+    },
+    {
+      "p": "Track position in the closing laps of an endurance race is worth more than any pit strategy in the middle of it. If you are within five minutes of the finish, stay out. Pit stops at the end of a long race gain almost nothing because there is no time to recover the pit loss. The driver on track ahead stays ahead."
+    },
+    {
+      "h2": "Building a pit strategy before the race"
+    },
+    {
+      "p": "Start with fuel consumption and tire life measured in practice. How many laps can the car run on a full tank. How long do tires stay competitive. Build a pit plan that fits those constraints. If the race is four hours and the car can run 45 minutes per stint, you are looking at five pit stops. Mark those windows in your notes."
+    },
+    {
+      "p": "Then identify where undercut or overcut might gain you. On which stints are tires wearing the most. On which stints is pit lane slowest or backmarker traffic heaviest. Write down a preferred pit time for each stop, and a backup time if strategy changes. Communicate that plan to your co-driver before the race starts. Mid-race strategy changes happen, but a shared baseline keeps everyone aligned."
+    },
+    {
+      "p": "Replay your pit stops after each session. How long did pit crew work actually take. Where did you lose time in pit entry, and did you gain or lose time passing through pit-lane traffic. Small improvements in pit execution can swing undercut or overcut decisions. A 5-second faster pit stop converts a marginal undercut into a winning move."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much faster do fresh tires need to be for the undercut to work?",
+      "a": "Fresh tires need to gain at least 0.3 to 0.5 seconds per lap over worn tires for the undercut to overcome pit loss (typically 40 to 50 seconds). At 0.4 seconds per lap, you need 100 to 125 laps of pace advantage to break even on a typical pit stop. Most road-course stints are 15 to 25 laps, so fresh tires only matter if the lap-time gain is steep. Check tire telemetry in practice to measure the actual pace cliff."
+    },
+    {
+      "q": "What is the ideal pit time within the fuel window?",
+      "a": "The ideal pit time is where undercut gain and overcut advantage balance. Early in the fuel window (first 10 minutes), you get fresher tires but may waste fuel and force another stop later. Late in the window (last 10 minutes), you extract maximum fuel but risk running out or pitting on worn tires. For most road courses, pitting at 50 to 60 percent of your fuel window (e.g., at minute 25 of a 45-minute window) balances both. Adjust earlier if tire wear is severe, later if wear is mild."
+    },
+    {
+      "q": "Can you undercut if the car ahead is not your direct competitor?",
+      "a": "Yes, but the math changes. If you undercut a backmarker, you gain pit position but not track position because they are running at a different pace anyway. The undercut works strategically against direct competitors running the same pace. Against backmarkers, focus on clear track and executing your stop cleanly. The real undercut battle happens between the top three or four cars."
+    },
+    {
+      "q": "How does a safety car affect undercut and overcut strategy?",
+      "a": "A safety car period compresses all pit strategies. Cars that have not pitted yet will pit under yellow, and fresh tires are worth a massive advantage for the restart. If you have already pitted before a caution, your undercut advantage may be wiped out because the field bunches. If you are planning an overcut and a caution comes out before you pit, switch to undercut immediately and pit with the pack. Always be ready to pivot strategy when the caution lights come on."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-10-26",
+  "dateLabel": "October 26, 2026"
+}

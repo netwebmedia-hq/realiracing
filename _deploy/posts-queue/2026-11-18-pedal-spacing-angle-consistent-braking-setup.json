@@ -1,0 +1,136 @@
+{
+  "slug": "pedal-spacing-angle-consistent-braking-setup",
+  "tag": "Setup Guides · Pedals",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Pedal Spacing and Angle Setup for Consistent Braking",
+  "description": "Correct pedal spacing and angle prevent missed brake applications and foot fatigue. Learn the geometry that makes muscle memory work.",
+  "sections": [
+    {
+      "p": "Inconsistent braking comes from a cockpit geometry problem, not a technique problem. When your brake pedal sits too far away, too close, or at the wrong angle relative to the throttle, your foot does extra work finding the right position under load. This disrupts the muscle memory that separates 1-second lap time swings from 0.1-second ones. Pedal spacing and angle are the mechanical foundation that lets your right foot trust its position every lap."
+    },
+    {
+      "p": "Sim racing differs from real racing because there is no inertia feedback, no seat belt load, no g-force telling your body where it is. The rig must tell your foot where it is. That message comes from distance and angle, not feel. Get this right and brake application becomes automatic. Get it wrong and you will either overshoot the pedal or miss it entirely during trail braking, costing throttle control and trail-off brake precision."
+    },
+    {
+      "h2": "Why spacing and angle matter more than you think"
+    },
+    {
+      "p": "Under hard braking, your attention is on the apex and the car ahead. Your foot is not conscious. It operates on spatial memory. If the brake pedal is 2 centimeters further away than yesterday, your foot will land at 80% pedal travel on the first lap and 95% on lap three, when muscle memory catches up. That variance kills consistency."
+    },
+    {
+      "p": "Angle is equally critical. Most driver feet are shaped for a brake pedal that sits at roughly 45 to 50 degrees from horizontal, measured from the pivot point. If your pedal angle is steeper, closer to 60 degrees or more, the foot must flex more at the ankle to achieve full travel, creating fatigue and reducing repeatability in a 30-minute race. If it is shallower, under 40 degrees, the heel tends to lift off the floor, breaking your platform and introducing lever-arm inconsistency."
+    },
+    {
+      "tip": "Measure spacing from the center of the brake pedal to the center of the throttle pedal. For most load cell pedal designs, 8 to 12 centimeters (roughly 3 to 5 inches) creates a natural foot position that allows a quick roll from throttle to brake without overextending the ankle.",
+      "tipLabel": "Starting spacing reference"
+    },
+    {
+      "h2": "Setting up spacing on your current pedal plate"
+    },
+    {
+      "p": "Begin by sitting in your normal driving position with your back firmly against the seat and your hips as far back as they go. Keep your seat height locked. Now place your right foot on the throttle with your heel on the floor or footrest. Your foot should rest naturally on the pedal, not stretched, not bunched."
+    },
+    {
+      "p": "From this neutral throttle position, roll your foot forward onto the brake pedal. The motion should feel fluid, requiring only a small ankle rotation. If your foot has to travel forward 4 or more inches to reach the brake, the spacing is too wide. If your foot clips the brake while barely lifting off the throttle, the spacing is too narrow. Aim for a roll, not a reach or a squeeze."
+    },
+    {
+      "olist": [
+        "Place a straightedge or tape measure vertically from the center of the throttle pedal down to your footrest.",
+        "Place another straightedge vertically from the center of the brake pedal down to your footrest.",
+        "Measure the horizontal distance between the two lines at floor level.",
+        "Start with 8 to 10 centimeters. Adjust the brake pedal mounting bracket or footrest position in 1-centimeter increments.",
+        "After each change, sit in full driving position and perform 5 to 10 throttle-to-brake transitions without looking at your foot.",
+        "Record which spacing feels most automatic. That is your baseline."
+      ]
+    },
+    {
+      "h2": "Angle adjustment for heel stability and travel range"
+    },
+    {
+      "p": "The brake pedal angle influences both comfort and precision. Start by identifying the current angle. Place your foot on the brake pedal at 50% travel. Your ankle should be roughly at 90 degrees. Measure the angle from the pedal face (where your foot sits) to a horizontal reference, like a spirit level placed on your footrest."
+    },
+    {
+      "p": "If that angle is steeper than 55 degrees, your ankle will flex harder and fatigue faster during longer races. If it is shallower than 40 degrees, your heel will want to lift off the floor, forcing you to press down with extra tension to keep your platform stable. Adjust the pedal mounting bracket or the entire pedal plate tilt until the angle at 50% pedal travel sits between 45 and 50 degrees."
+    },
+    {
+      "p": "After adjusting angle, test again with the spacing measurement. Angle and spacing interact. A steeper angle sometimes makes spacing feel narrower because the foot travels less distance to full travel. A shallower angle may require wider spacing to give the foot enough room to move. Make angle changes in 2 to 3-degree increments, then re-measure spacing to confirm it still feels right."
+    },
+    {
+      "list": [
+        "Angle at 50% pedal travel: 45 to 50 degrees from horizontal (peak comfort and control)",
+        "Angle steeper than 55 degrees: ankle fatigue rises; consider flattening the pedal plate or reducing footrest height",
+        "Angle shallower than 40 degrees: heel lift becomes hard to prevent; tilt the pedal plate up or raise the footrest",
+        "Test on three different brake-heavy corners before deciding the angle is correct"
+      ]
+    },
+    {
+      "h2": "The heel-to-ball-of-foot transition and brake feel"
+    },
+    {
+      "p": "Proper spacing and angle allow the foot to use the ball of the foot, not the toe or the center of the sole. This matters because load cell pedals are sensitive. Small differences in pressure point create large differences in perceived brake travel."
+    },
+    {
+      "p": "When transitioning from throttle to brake, your heel should stay on the floor or footrest as your ball rolls onto the brake pedal. This pivot point gives you repeatability. If your heel lifts, your entire foot position shifts, and pressure application becomes inconsistent. If your spacing is too wide, you will be forced to slide your foot across the floor instead of roll, which also disrupts the pivot. If your angle is too steep, the roll becomes a press-down motion, changing the muscle groups you use and the feedback you feel."
+    },
+    {
+      "tip": "During a practice session, record a 10-lap run with identical brake applications at one corner. Review the replay and check your foot position on the brake at full travel in laps 1, 5, and 10. If the foot position drifts visibly between laps, spacing or angle is off, or both.",
+      "tipLabel": "Visual consistency check"
+    },
+    {
+      "h2": "Load cell pedals and spacing-angle interaction"
+    },
+    {
+      "p": "Load cell pedals like the MOZA SR-P respond to pressure, not movement. This means that spacing and angle directly affect how much force your foot applies at a given pedal position. A wider spacing allows your foot to sit further back on the pedal, distributing your weight across the sole. A narrower spacing puts more weight on the ball of the foot, which can feel more direct but tire faster."
+    },
+    {
+      "p": "Similarly, a shallower angle (flatter pedal) allows more leg weight to transfer downward onto the pedal face, increasing pressure sensitivity. A steeper angle requires more active ankle and calf engagement, which reduces the leverage of passive weight. Neither is objectively better, but once you choose, your brake calibration settings must match. If you change angle or spacing mid-season, you will need to recalibrate your brake pressure curve."
+    },
+    {
+      "h2": "Multi-track validation and seasonal setup"
+    },
+    {
+      "p": "Spacing and angle feel different at different tracks because tracks demand different brake pressure profiles. At high-speed circuits like Monza or Daytona, you may need only 20 to 30% pedal travel for full braking. At technical circuits like Imola or Brands Hatch, you need 70 to 90% travel for modulated braking. If your spacing or angle makes 50 to 70% travel awkward, it will show up as inconsistent lap times across a full season."
+    },
+    {
+      "p": "Before locking in your setup, validate it at three different track types. Test a short circuit with rapid brake zones, a medium-speed road course with deep braking, and one high-speed oval or fast circuit. If your foot position feels stable and your brake applications repeat within 0.05 seconds of each other on every track, the spacing and angle are dialed in."
+    },
+    {
+      "olist": [
+        "Run 10 laps at a short circuit (Brands Hatch GP, Road Atlanta Esses, or equivalent). Target consistent braking depth into turn 1.",
+        "Run 10 laps at a medium-speed road course (Imola, Laguna Seca, or equivalent). Focus on trail braking into technical corners.",
+        "Run 10 laps at a high-speed circuit (Monza, Daytona, or equivalent). Confirm your foot does not slip or overextend during shallow braking.",
+        "Review lap times and brake application telemetry. Variation should be under 0.1 seconds lap to lap."
+      ]
+    },
+    {
+      "p": "Once spacing and angle feel automatic, your brain stops thinking about foot position and begins thinking about racing. That is when your lap times stabilize and your consistency wins races. The pedal geometry is your contract with precision."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I know if my brake pedal spacing is too narrow?",
+      "a": "Your foot clips the brake pedal while still on the throttle, forcing you to lift your foot off the throttle before the brake can engage. You also feel cramped rolling from throttle to brake, requiring conscious thought instead of automatic movement. Most drivers with spacing under 6 centimeters report this problem."
+    },
+    {
+      "q": "What brake pedal angle is best for load cell pedals?",
+      "a": "Aim for 45 to 50 degrees from horizontal at 50% pedal travel. This angle keeps your heel planted on the floor, distributes pressure naturally across your foot, and minimizes ankle fatigue during 30+ minute races. Angles steeper than 55 degrees increase ankle strain; shallower angles cause heel lift."
+    },
+    {
+      "q": "Should I adjust spacing and angle at the same time, or one at a time?",
+      "a": "Adjust angle first because it affects the entire pedal package. Once angle feels stable and your heel stays planted, then adjust spacing. Changing both simultaneously makes it impossible to isolate which change fixed or broke your setup."
+    },
+    {
+      "q": "How often should I recalibrate my brake curve after adjusting spacing or angle?",
+      "a": "Always recalibrate immediately after any spacing or angle change. Load cell pedals measure pressure, not position, so a change in foot leverage or contact point will shift your pressure curve. Failing to recalibrate will make brake application feel unpredictable and cost lap time."
+    }
+  ],
+  "gearKeys": [
+    "moza-sr-p",
+    "fanatec-csl-pedals-lc",
+    "cockpit",
+    "thrustmaster-t-lcm"
+  ],
+  "published": "2026-10-26",
+  "dateLabel": "October 26, 2026"
+}

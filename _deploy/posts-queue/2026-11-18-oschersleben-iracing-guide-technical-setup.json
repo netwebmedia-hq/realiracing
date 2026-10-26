@@ -1,0 +1,138 @@
+{
+  "slug": "oschersleben-iracing-guide-technical-setup",
+  "tag": "Track Guides · Setup",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Oschersleben iRacing Guide: Technical Lines and Setup Strategy",
+  "description": "Master Oschersleben's flowing high-speed corners and tight chicanes. Learn the racing line, braking points, and setup priorities for this German circuit.",
+  "sections": [
+    {
+      "p": "Oschersleben is a fast, flowing German circuit with a unique character. The track features a long, sweeping high-speed section in the first half, tight chicanes and braking zones in the middle, and a technical back section that rewards precision. Success here depends on carrying speed through the flowing corners while managing the heavy braking demands at several key points. Understanding where you can carry momentum and where you need to shed speed separates consistent drivers from fast ones."
+    },
+    {
+      "p": "The track layout rewards a setup that balances mechanical grip through the fast sections with stability under hard braking. Most drivers run anti-roll bar settings that prioritize turn-in response without sacrificing mid-corner stability, since the fast corners like Turn 1 and the Kurve demand confidence at high entry speeds."
+    },
+    {
+      "h2": "Track layout and major corners"
+    },
+    {
+      "p": "Oschersleben opens with a fast uphill right-hander (Turn 1) that flows into a left. This first complex sets the tone for the lap: you need to carry entry speed and trust the setup. Most crashes in practice happen here because drivers overdrive the entry or run too much front wing, causing understeer mid-corner. The key is hitting the apex cleanly and tracking out wide without running over the painted curb on exit."
+    },
+    {
+      "p": "The Sackgessenbach section (Turns 3 and 4) is another high-speed pair where corner speed compounds into the following corners. Turn 3 is a fast left where you should see the apex almost immediately, and Turn 4 is a flowing right that leads onto the main straight. Losing time here means losing time for the next two laps because the exit speeds and line efficiency dictate how you carry that momentum."
+    },
+    {
+      "p": "The first chicane (Turns 5 and 6) is where most drivers make setup mistakes. It is a tight left-right that demands quick steering input and good brake stability. If your car is oversteery or has excessive brake dive, you will struggle to thread this section cleanly. A common tuning error is running brake bias too far forward; dial it back and use threshold braking to feel the edges of traction."
+    },
+    {
+      "p": "The back section (Turns 8 through 11) is technical but less obvious than the fast front. Turn 8 is a downhill left that can be taken with good speed if you trust your exit. The subsequent corners reward smooth steering inputs and consistent throttle application. Many drivers lose seconds here by being too aggressive on corner entry and then losing exit speed."
+    },
+    {
+      "h2": "Braking zones and threshold technique"
+    },
+    {
+      "p": "Oschersleben has three major braking zones: into Turn 1, into the chicane, and into Turn 8. Each one demands different modulation because the track surface and downhill or uphill character change the grip available."
+    },
+    {
+      "list": [
+        "Turn 1 braking: Start braking at the 150 meter board and trail brake to about 75 meters before the apex. The slight uphill helps grip, so you can carry deep into the braking zone. Many drivers brake too early here and waste exit speed.",
+        "Chicane braking: This is the hardest braking of the lap. Begin at the 100 meter board and aim to be completely off the brakes by 50 meters before Turn 5. Any brake dive past that point will cause understeer mid-corner.",
+        "Turn 8 braking: Downhill braking demands caution. Start earlier than Turn 1, around the 200 meter board, and modulate smoothly. The grip is less forgiving downhill, so threshold braking is essential. Locking a wheel here costs more time than an early release."
+      ]
+    },
+    {
+      "tip": "Use the delta bar or telemetry overlay to spot braking inconsistency. Record five clean laps in practice and compare your braking points. If your Turn 1 brake marker varies by more than 5 meters lap to lap, your approach is either too aggressive or your brake pressure application is erratic. Consistency beats aggressive braking every time.",
+      "tipLabel": "Braking consistency matters more than depth"
+    },
+    {
+      "h2": "Setup priorities for the front half"
+    },
+    {
+      "p": "The fast corners in the first half of the track benefit from a setup tuned for high-speed stability. Front wing angle should be set for the balance you need, not maximum downforce. Many drivers run one or two points higher than their baseline here and find the car more pointable through Turns 1 through 4."
+    },
+    {
+      "p": "Anti-roll bars are critical. A setup that is too soft will cause roll and make the car difficult to turn in at high speed. A setup that is too stiff will reduce mid-corner grip. Start with your baseline front anti-roll bar setting and, if the car feels loose on entry to Turn 1, increase stiffness by 1 to 2 clicks. If it feels locked in but you lose mid-corner speed, reduce by 1 click. Test in a five-lap run and note the change."
+    },
+    {
+      "p": "Brake bias is also important on the fast section. With heavy braking into Turn 1, too much bias toward the rear will cause the rear to lock and snap the car. Too much bias forward will cause understeer on the way in. Most competitive setups run brake bias between 58% and 62% front, depending on car and tire choice. Start at 60% and adjust only after you have baseline confidence."
+    },
+    {
+      "h2": "The chicane and tight corners setup"
+    },
+    {
+      "p": "The chicane and tighter middle section require a different balance. Here, you need turn-in response and the ability to maintain speed through direction changes without the car getting loose. This often means adding front anti-roll bar stiffness relative to the rear, increasing front downforce slightly, and ensuring your throttle application is smooth."
+    },
+    {
+      "p": "Differential settings also matter. A limited-slip differential with higher on-throttle locking will help exit Turn 6 more cleanly and carry speed onto the straight. If you find yourself understeering on corner exit or losing rear traction when accelerating out of the chicane, consider increasing on-throttle lock by 5% and test."
+    },
+    {
+      "list": [
+        "Increase front wing by one notch to improve turn-in response through the chicane.",
+        "Run slightly stiffer front anti-roll bars than you would on a pure high-speed track like Silverstone.",
+        "Test brake balance forward of your fast-corner default to help the car rotate during hard braking.",
+        "Use a differential setting that prioritizes mid-corner grip over acceleration traction; you will gain time mid-lap."
+      ]
+    },
+    {
+      "h2": "Common mistakes and how to avoid them"
+    },
+    {
+      "p": "Overdrive the fast corners. Turn 1 is a confidence corner; if you go in too hot, you will push wide or snap the rear on exit. The gap between a good lap and a mistake is smaller here than it looks. Brake earlier than feels necessary and trust the car to do the work."
+    },
+    {
+      "p": "Running too much front wing for pace. Extra downforce sounds fast, but at Oschersleben the payoff is small and the cost is high. The car will feel planted but bloated. It will understeer through the chicane and bleed speed mid-corner. Use telemetry to compare: two-point wing reduction often yields a faster lap than a two-point increase."
+    },
+    {
+      "p": "Mismanaging the back section. Turns 8 through 11 are easy to overlook in practice because they are lower speed. But the line quality and throttle consistency here set up your entry to Turn 1 on the next lap. Many drivers lose three to five tenths in this section through sloppy line selection or throttle on-off inputs. Smooth throttle application here yields surprising lap time gains."
+    },
+    {
+      "tip": "Record your qualifying lap and compare your line to a top-split replay. Look for differences in the back section first. Most drivers find 0.2 to 0.4 seconds just by improving line flow through Turns 8, 9, and 10.",
+      "tipLabel": "Back section line efficiency compounds"
+    },
+    {
+      "h2": "Race strategy and traffic"
+    },
+    {
+      "p": "Oschersleben's lap time is sensitive to fuel load and tire condition, so consider your fuel consumption early. Most GT cars will run a 15 to 20-minute stint before pit strategy becomes relevant. The long straights (main straight and the section into Turn 5) offer overtaking chances, so traffic management here is key."
+    },
+    {
+      "p": "During races, stay smooth through the technical sections even when you are chasing. The gap between a clean lap and a mistake is wider when you are under pressure. Focus on Turn 1 entry and the chicane; these are where most drivers lose composure. A calm, technical drive beats an aggressive one here."
+    },
+    {
+      "p": "If you are defending on the main straight, use the width of the track but leave a car's width for a legitimate overtake attempt. The fast left after the straight (Turn 2) is a common contact point. Position yourself on the inside line early if you are expecting a challenge, and protect the apex without driving defensively."
+    },
+    {
+      "h2": "Practice session structure"
+    },
+    {
+      "p": "Spend the first 20 minutes of practice getting baseline confidence at Turn 1. Run at 85% effort and focus on smooth braking and entry. Once that feels natural, turn your attention to the chicane and repeat the process. Only after both sections feel stable should you push for lap time."
+    },
+    {
+      "p": "In the final 20 minutes, run five clean laps at 95%+ effort and compare them. Look for lap time variation. If your lap times spread is more than 0.15 seconds, your throttle consistency or braking consistency needs work. If your spread is under 0.1 seconds, you are ready for qualifying. Do not try new setup changes in the final 10 minutes; you will only introduce variables that hurt confidence in the race."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the biggest difference between Oschersleben and other fast European tracks?",
+      "a": "Oschersleben's back section (Turns 8 to 11) is more technical than most high-speed tracks. It demands smoother steering inputs and better throttle control than Spa or Silverstone. The first half is fast and sweeping, but the second half is tighter and less forgiving. Many drivers are quick through the front but lose time in the back because they are not accustomed to that style of corner."
+    },
+    {
+      "q": "Should I run more front wing here than at Silverstone?",
+      "a": "No. Oschersleben rewards a setup that is pointed and responsive through the technical sections. Most drivers run one to two points less front wing than they would at Silverstone, even though there is a lot of high-speed track. The chicane and back section demand turn-in response more than absolute downforce. Test your baseline wing in a five-lap run, then reduce it by one notch and compare lap times."
+    },
+    {
+      "q": "What is the most common crash point?",
+      "a": "Turn 1. Most crashes happen on the first lap of practice or qualifying because drivers either overdrive the entry or carry too much speed mid-corner and push wide. The second most common is the chicane under braking, usually because the car is understeery mid-corner and the driver locks a wheel trying to correct. Both are confidence corners; back off early and build up to pace gradually."
+    },
+    {
+      "q": "How much time can I gain by improving the back section line?",
+      "a": "Between 0.2 and 0.4 seconds per lap, depending on your current skill there. Most casual drivers treat the back section as a cool-down lap and do not focus on line quality. The corners are lower speed, but they feed into Turn 1, so a poor exit from Turn 11 will hurt your entry to Turn 1 on the next lap. Smooth, early throttle application through Turns 8 to 11 compounds into better overall lap pace."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-10-26",
+  "dateLabel": "October 26, 2026"
+}

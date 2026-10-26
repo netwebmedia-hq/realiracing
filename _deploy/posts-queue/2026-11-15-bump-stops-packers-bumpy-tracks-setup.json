@@ -1,0 +1,125 @@
+{
+  "slug": "bump-stops-packers-bumpy-tracks-setup",
+  "tag": "Setup Guides · Suspension",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "Bump Stops and Packers on Bumpy Tracks: What They Actually Do",
+  "description": "Learn how bump stops and packers prevent bottoming out and control suspension compliance on rough circuits. Essential tuning for oval and road course bumps.",
+  "sections": [
+    {
+      "p": "A bump stop is a spring-loaded (or rubber) secondary spring that activates only when the suspension compresses beyond its normal travel. A packer is a spacer that raises the bump stop threshold, changing when this secondary spring engages. On bumpy tracks, these aren't luxury settings: they're the difference between a driveable car and one that feels locked up or bottomsout, destroying both feel and pace."
+    },
+    {
+      "p": "The mistake most drivers make is treating bump stops as a single number to copy from setups online. In reality, they interact directly with track topography. A bump stop engaged too early makes the car feel stiff and unresponsive over mid-corner ripples. Too late, and the car wallows and bottoms out, losing compliance and introducing erratic braking behavior when the suspension hits its hard stop mid-corner or under heavy braking."
+    },
+    {
+      "h2": "Why bump stops matter on rough surfaces"
+    },
+    {
+      "p": "A rough track compresses the suspension frequently and unevenly. Without proper bump stops, the suspension would bottom out against the chassis, creating a hard impact that feels like a flat spot and destabilizes the car's balance mid-corner. Bump stops prevent that by engaging smoothly as the suspension runs out of travel, absorbing additional compression with controlled resistance."
+    },
+    {
+      "p": "The secondary spring effect also preserves driveability. A well-tuned bump stop keeps the suspension working through the first 80% of its travel naturally, then resists hard compression only when necessary. This allows the car to absorb smaller track imperfections while staying sharp when it matters. Without it, you either run so much compression resistance that every ripple feels like a curb, or you accept the occasional impact that unsettles the car."
+    },
+    {
+      "list": [
+        "Prevents bottoming out under heavy braking or cornering on rutted sections",
+        "Controls suspension compliance without adding overall spring stiffness",
+        "Reduces unsprung impact shocks that break grip during entry or mid-corner",
+        "Allows lower spring rates for comfort without sacrificing crash protection"
+      ]
+    },
+    {
+      "h2": "Understanding bump stop stiffness and packer spacers"
+    },
+    {
+      "p": "Bump stop stiffness is measured in kN/mm (kilonewtons per millimeter of compression). A softer bump stop engages gradually and feels less harsh but activates over a wider range. A stiffer bump stop engages quickly with minimal additional compression but can feel abrupt if it kicks in mid-corner."
+    },
+    {
+      "p": "A packer is simply a spacer inserted between the suspension arm and the bump stop to push the stop further away from the suspension's resting position. Adding a packer increases the distance the suspension must travel before the bump stop engages, delaying its activation. Removing a packer (or using a thinner one) moves the engagement point closer, meaning the secondary spring activates sooner."
+    },
+    {
+      "p": "The common approach in iRacing setups is to start with a baseline packer value (often 10 to 20 mm, depending on the car and track), then adjust based on how the car behaves over bumps. A track like Bristol or Eldora, heavily rutted, typically requires either softer bump stops or thinner packers to engage the secondary spring earlier and more often."
+    },
+    {
+      "h2": "Tuning bump stops for different track conditions"
+    },
+    {
+      "h3": "Smooth road courses"
+    },
+    {
+      "p": "On smooth circuits like Laguna Seca or Imola, bump stops rarely engage. Thicker packers and softer bump stop rates work well because the suspension rarely compresses hard enough to need secondary spring support. The focus is on compliance through the normal range."
+    },
+    {
+      "h3": "Bumpy ovals and dirt tracks"
+    },
+    {
+      "p": "Heavy ruts and surface inconsistency mean the suspension is constantly working near its travel limits. Thinner packers and stiffer bump stops become necessary to manage frequent, hard compressions. A track like Bristol, with its worn surface and high banking, may benefit from very thin packers (5 to 10 mm) or even zero packer to engage the bump stop almost continuously under braking or hard acceleration."
+    },
+    {
+      "h3": "Mixed topography"
+    },
+    {
+      "p": "Tracks with some rough sections and some smooth sections require a compromise. Start with a mid-range packer value, then adjust by 2-3 mm increments based on feedback. If the car feels twitchy or disconnected over rough patches, increase packer thickness (soften engagement). If it wallows and feels soft over those sections, reduce packer thickness (stiffen engagement sooner)."
+    },
+    {
+      "h2": "Common setup mistakes with bump stops"
+    },
+    {
+      "list": [
+        "Copying a bump stop setting from a smooth-track setup to a rough track without adjusting the packer: engagement threshold is wrong for the new surface",
+        "Running zero packer under the assumption that maximum bump stop engagement is always better: can make the car feel locked up and unresponsive on non-severe bumps",
+        "Ignoring bump stops entirely and compensating with higher spring rates: adds overall stiffness, making the car unpredictable and fatiguing",
+        "Adjusting bump stops without checking front-to-rear balance: asymmetric engagement can cause mid-corner push or loose behavior"
+      ]
+    },
+    {
+      "tip": "On a bumpy track test session, make two setups: one with your baseline packer and one with 5 mm less packer. Compare corner-by-corner feel over the roughest sections. If the thinner-packer setup feels sharper but controllable, you've found a range. This approach takes the guesswork out of tuning.",
+      "tipLabel": "Quick tuning method"
+    },
+    {
+      "h2": "How to read your telemetry"
+    },
+    {
+      "p": "In iRacing telemetry, suspension travel (as a percentage) shows whether the car is hitting bump stops. If you're seeing travel consistently above 95% on certain corners or braking zones, the bump stop is engaging hard and frequently. That's the signal that your packer might be too thick or your bump stop stiffness too soft. Conversely, if travel never exceeds 85% but the car feels unstable over bumps, your bump stop might be engaging too gradually or your spring rate is too soft overall."
+    },
+    {
+      "p": "Track the delta between front and rear suspension travel over the same bumpy section. Imbalanced engagement (one end bottoming out more than the other) creates mid-corner handling issues. Balancing both ends to engage at similar compression thresholds improves predictability."
+    },
+    {
+      "h2": "Integrating bump stops with other suspension tuning"
+    },
+    {
+      "p": "Bump stops do not replace spring rates or damping. They work alongside them. A common sequence: first, set spring rates appropriate to the track and car weight. Then, dial in damping (bump and rebound) to manage how the suspension moves through its normal range. Finally, tune bump stops and packers to control extreme compression events. Doing it in this order prevents trying to use bump stops as a shortcut for other suspension issues."
+    },
+    {
+      "p": "On endurance races where fuel and tire wear change car balance and ride height over time, revisiting bump stop packer settings during pit stops is rarely necessary. The bulk of the setup work happens before the race. However, on shorter events where you have practice and qualifying, spending 10-15 minutes testing packer increments can return consistent lap-time gains on bumpy surfaces, especially on ovals where surface consistency changes dramatically from day to day."
+    },
+    {
+      "p": "See <a href=\"building-setup-from-iracing-baseline.html\">building setup from iRacing baseline</a> for the full workflow on how bump stops fit into your overall tuning philosophy. For ovals specifically, bump stops interact heavily with wedge and dynamic weight transfer, so start with those dialed before fine-tuning bump engagement."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the difference between bump stop stiffness and packer thickness?",
+      "a": "Bump stop stiffness (kN/mm) controls how resistant the secondary spring is once it engages. A stiffer bump stop resists compression harder. A packer is a spacer that delays when the bump stop engages in the first place. Soft bump stop with thick packer: engagement is delayed and then soft. Stiff bump stop with thin packer: engagement is early and firm. You tune stiffness for feel, and packer for frequency of engagement."
+    },
+    {
+      "q": "Can bump stops cause a car to feel tight or locked up?",
+      "a": "Yes. If your packers are too thin or your bump stop stiffness too high, the secondary spring engages too early and too aggressively during normal cornering compression. This makes the car feel uresponsive and stiff even when the surface is not that rough. Increasing packer thickness slightly or using a softer bump stop rate will restore compliance through the normal suspension range."
+    },
+    {
+      "q": "How do I know if I'm bottoming out?",
+      "a": "In telemetry, suspension travel above 98-99% for sustained periods indicates bottoming out. In the car, you'll feel abrupt impacts or a sudden harshness over bumps, especially in braking zones or hard corners. The car will also feel unstable for a moment after the impact. If this is happening, reduce packer thickness to engage the bump stop sooner, or increase bump stop stiffness to control the compression more firmly."
+    },
+    {
+      "q": "Do all cars in iRacing use the same bump stop range?",
+      "a": "No. Different cars have different suspension travel ranges and geometry. A single-seater like the Dallara IR18 has much tighter suspension than a GT car like the Porsche 963. Check the car's default setup to understand the baseline range, then adjust from there. A value of 10 mm packer on an IndyCar might be equivalent to 20 mm on a touring car in terms of practical effect."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9"
+  ],
+  "published": "2026-10-26",
+  "dateLabel": "October 26, 2026"
+}

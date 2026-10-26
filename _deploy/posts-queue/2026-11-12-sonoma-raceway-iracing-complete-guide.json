@@ -1,0 +1,174 @@
+{
+  "slug": "sonoma-raceway-iracing-complete-guide",
+  "tag": "Track Guides · Road Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Sonoma Raceway iRacing Guide: Turn-In Points, Braking Zones, Setup",
+  "description": "Master Sonoma's high-speed esses and technical corners. Learn braking points, apex placement, and setup tuning for consistent lap times.",
+  "sections": [
+    {
+      "p": "Sonoma Raceway sits in California's wine country and plays as a technical road course that rewards precision over raw speed. The 2.52-mile layout mixes high-speed sweepers with slow-speed corners, and a single mistake in the esses or at Turn 7 will cost a tenth or more. Unlike a typical short track, Sonoma demands smooth inputs, trail braking into most corners, and discipline on throttle exit. The track has been an iRacing staple for years and shows up regularly in fixed-setup series where everyone runs the same car and setup, making driver skill and line choice the deciding factors."
+    },
+    {
+      "p": "Success at Sonoma depends on three pillars: understanding which corners reward early brake release and which ones need trail braking all the way to apex, finding the right entry speed so you can commit to throttle at mid-corner, and tuning your setup so the car feels balanced through both the technical section and the high-speed portions. This guide walks through the critical zones, gives you concrete reference points for braking and turning, and covers the setup changes that make the biggest difference."
+    },
+    {
+      "h2": "The Esses: Turns 1 to 4"
+    },
+    {
+      "p": "The opening sequence from the start line is Sonoma's most intimidating section and where most drivers lose time early in the week. You'll approach Turn 1 (a right-hander) at high speed after the start line. Brake hard in a straight line, downshift one or two gears, and turn in roughly 2 car-lengths before the apex. The key is trail braking: keep light pressure on the brake as you turn so you don't overload the front tires on entry. Release the brake smoothly as you hit the apex and begin loading the throttle on exit. Too much brake and you'll understeer wide. Too little and you'll overshoot the apex."
+    },
+    {
+      "p": "Turn 2 (the left-hander that mirrors Turn 1) comes almost immediately. Most drivers brake too late here because they're still sorting out the entry from Turn 1. Instead, plan your speed at the exit of Turn 1 so you have room to brake separately for Turn 2. Turn in early and light, carry slight trail braking, and be patient with throttle. A common error is going full throttle right after the apex, which causes the car to run wide and kills your entry speed into Turn 3."
+    },
+    {
+      "p": "Turn 3 is a slow right-hander (around 80-100 mph depending on car and track conditions). Brake in a straight line and downshift. Turn in late so you can use most of the track width on exit and begin heavy acceleration early. The wider your exit here, the earlier you'll start adding throttle and the better your speed down to Turn 4."
+    },
+    {
+      "p": "Turn 4 (left-hand) is fast and flowing. You should arrive with the car already hard on throttle. Keep your line smooth and wide through the apex, then stay full throttle as you transition to the straightaway. The esses are complete, but they'll cost you 0.3 to 0.5 seconds per lap if your trail braking and throttle application are sloppy."
+    },
+    {
+      "tip": "Practice the esses in isolation during practice week. Run 10 laps focusing only on smooth brake release and gradual throttle application. Time them afterward. Most drivers find a 0.2-second gain just by matching brake and steering inputs instead of rushing.",
+      "tipLabel": "Practice Tip"
+    },
+    {
+      "h2": "The Technical Section: Turns 5 to 8"
+    },
+    {
+      "p": "After exiting Turn 4, you'll accelerate down the short straights through Turns 5, 6, and 7, which are relatively quick corners that flow together. Turn 5 (right) should be taken with light brake application or no braking at all, depending on your exit speed from Turn 4. Carry throttle through the apex and transition immediately to Turn 6."
+    },
+    {
+      "p": "Turn 6 (left-hand) is one of the most rewarding corners for smooth inputs. Most drivers brake here and lose time. Instead, focus on controlling entry speed from Turn 5 so you need only trail braking or even coasting into Turn 6. Take a mid-track apex and start throttle application before you reach the geometric apex. This early throttle loading sets up a strong exit onto the short straight to Turn 7."
+    },
+    {
+      "p": "Turn 7 (right) is fast and technical. Brake moderately, downshift one gear, and turn in late. This is a trail-braking corner all the way to the apex. Your brake pedal should still have light pressure as you reach mid-corner. Release the brake as you start loading throttle. The car should be balanced and settled, not snappy or unsettled. Commit hard to throttle on exit because this straight leads into the slowest corner on track."
+    },
+    {
+      "p": "Turn 8 (left) is the hairpin. Brake hard and downshift 2-3 gears. This is the most important corner for track position because passing often happens here. Turn in early, use the full inside curbing, and apex at the tightest point. Hold the brake under light pressure until you clip the apex, then be progressive with throttle application to avoid wheelspin. Early throttle is worth passing a car here."
+    },
+    {
+      "list": [
+        "Turn 5-6-7: minimize braking by carrying speed through these flowing corners",
+        "Turn 7: trail brake all the way to mid-corner, then commit to throttle on exit",
+        "Turn 8: this hairpin is your overtaking opportunity; brake late and turn in early"
+      ]
+    },
+    {
+      "h2": "The High-Speed Section: Turns 9 to 11 and the Straight"
+    },
+    {
+      "p": "Exiting the hairpin, you have a long straight leading to the carousel (Turn 9), which is a high-speed left-hander. Roll on throttle as you exit Turn 8 and build speed down this straight. Most of your lap time gain or loss comes here: if your exit speed from the hairpin is good, the straight is a coasting zone where you just hold throttle and let the car accelerate. Downshift one gear and begin light braking about 1.5 car-lengths before Turn 9. Trail brake gently into the turn, keep your line smooth and wide, and carry throttle through the whole corner. This is not a turn where you lift. Stay flat or near-flat."
+    },
+    {
+      "p": "After the carousel, you'll carry high speed through the kink at Turn 10 (a fast right-hander that's almost flat). Keep full throttle and make minimal steering input. Most drivers make this corner harder than it needs to be. Turn 11 is a slower left-hander leading back onto the main straight. Brake moderately, downshift, and execute a clean mid-corner apex. Accelerate hard onto the main straight."
+    },
+    {
+      "tip": "The straight after Turn 8 is where qualifying time is made. If your Turn 8 exit is strong and you roll on throttle early, the carousel and kink become a high-speed charge zone. Every mph you carry through the carousel is mph you'll have on the main straight.",
+      "tipLabel": "Qualifying Setup"
+    },
+    {
+      "h2": "Braking Zones and References"
+    },
+    {
+      "p": "Sonoma rewards drivers who brake in straight lines and trail brake only into corners where the entry is technical. Below are reference distances (measured in car-lengths from the brake marker or turn-in point) that work for most GT cars and open-wheel cars running fixed setups. These change slightly based on fuel load, tire wear, and ambient temperature."
+    },
+    {
+      "list": [
+        "Turn 1: brake at the start line marker, release by mid-corner",
+        "Turn 3: brake 2-3 car-lengths before the corner, downshift and be ready for low-speed throttle",
+        "Turn 7: brake 1-2 car-lengths before turn-in, trail brake all the way to apex",
+        "Turn 8 (hairpin): brake hard 3-4 car-lengths before the corner, full commitment to deceleration",
+        "Turn 9 (carousel): light brake 1.5 car-lengths before turn-in, keep hands smooth"
+      ]
+    },
+    {
+      "p": "As tire wear increases or fuel load decreases, your braking becomes sharper and you can start braking later. In the final laps of a race with low fuel and fresh tires, move your braking points 0.5 to 1 car-length later, but keep your trail-braking inputs the same. Your turn-in point should rarely change, only your brake release."
+    },
+    {
+      "h2": "Setup Tuning for Sonoma"
+    },
+    {
+      "p": "Sonoma is a balanced track that doesn't demand extreme setup changes. Most of the time, the baseline setup from iRacing works, but small adjustments can unlock 0.1 to 0.2 seconds per lap depending on your driving style. Start with a baseline, run a few qualifying laps, and only adjust one parameter at a time."
+    },
+    {
+      "p": "Brake balance is the first tuning priority. If you're locking the front tires early in the braking zone at Turn 1 or Turn 8, reduce brake balance (shift toward the rear by 0.5 to 1 percent). If your rear tires lock instead, increase brake balance toward the front. The goal is to lock all four tires at roughly the same time at the hardest braking points. For a GT car, a starting point is around 52-54 percent front bias. For an open-wheel car, 53-55 percent."
+    },
+    {
+      "p": "Anti-roll bar (ARB) settings control how much the car leans in corners. A stiffer front ARB reduces understeer in the esses and technical corners but can make turn-in feel snappy. A stiffer rear ARB encourages oversteer and can help mid-corner rotation through the carousel but can make the car loose on entry. Most drivers benefit from a stiffer front ARB at Sonoma to reduce understeer in Turns 1 and 2. Increase front ARB by 1 to 2 clicks and see if the car feels more responsive into the esses without becoming twitchy."
+    },
+    {
+      "p": "Ride height and springs should be tuned only after brake balance and ARBs. A softer front spring reduces front-end harshness into quick direction changes (like Turns 5-6-7) but can cause understeer. A stiffer front spring improves turn-in but can make the car feel harsh. Start with the baseline and only adjust if you feel the car is diving too much under braking or floating over bumps on the carousel."
+    },
+    {
+      "olist": [
+        "Adjust brake balance first (52-54 percent front for GTs, lock all tires at once)",
+        "Increase front ARB by 1-2 clicks to reduce esses understeer",
+        "Fine-tune spring rates or ride height only if turn-in or mid-corner feel is unsettled",
+        "Test on a qualifying lap at low fuel, then validate on a full-fuel race lap"
+      ]
+    },
+    {
+      "h2": "Tire Temperature and Fuel Load Management"
+    },
+    {
+      "p": "Sonoma's layout puts consistent load through most of the lap, so tire temperature builds quickly. In practice, your first push lap usually feels terrible because the tires are cold. By lap 3-4, the front-left and rear-left tires are fully warmed. After lap 8-10, they start to overheat if you're pushing. For qualifying, plan a 2-lap warm-up (not pushing) followed by a single qualifying lap on lap 3. Your lap 3 will usually be the fastest because the tires are warm and you haven't yet started overheating."
+    },
+    {
+      "p": "In a race, monitor fuel level alongside tire temperature. As fuel drops, the car becomes lighter and brakes sharper. Your brake points will move later and your turn-in will feel more responsive. In the final stint with low fuel and fresh tires, don't be surprised if your pace jumps 0.2 to 0.3 seconds per lap. This is normal and expected. Manage brake inputs accordingly so you don't lock up."
+    },
+    {
+      "h2": "Racecraft: Passing and Defending at Sonoma"
+    },
+    {
+      "p": "Passing at Sonoma is possible but tactical. Turn 8 (the hairpin) is the main passing opportunity. If you're closing on a car ahead, brake late into Turn 8 and position your car on the inside line. Use the curbing aggressively but fairly. A clean entry into the hairpin often gives you the run down the straight that follows. Another pass opportunity is the carousel (Turn 9) on the right side. If you can carry higher speed through Turn 7 and get a better exit, you can gain a car-length or two before Turn 9, allowing a pass on the inside."
+    },
+    {
+      "p": "Defending is about holding the racing line and not giving an attacker room to brake late. In the esses, keep a tight defensive line on your preferred entry so the chasing car can't sneak to the inside. Into Turn 8, hold your normal late-braking point and don't move. If the car behind dives to the inside, let them go; the turn will either spit them out wide or you'll have a run down the straight. At the carousel, defend by staying on the normal wide line. An overtaking car will have to brake earlier and run to the inside, losing exit speed."
+    },
+    {
+      "p": "Consistency wins at Sonoma because the track is relatively short (2.52 miles) and you'll lap often. Deliver clean, repeatable corners lap after lap. A single mistake in the esses or a late braking adventure into Turn 8 will kill your race faster than a competitor will pass you cleanly. Drive smooth and let others make mistakes."
+    },
+    {
+      "h2": "Practice Plan for Race Week"
+    },
+    {
+      "p": "Sonoma rewards deliberate practice. A well-structured race-week plan focuses on mastery of the esses first, then full-lap consistency, then race-long fuel and tire strategy. You can read more about <a href=\"iracing-practice-week-structured-improvement.html\">how to structure your practice week</a> for any track, but here's the Sonoma-specific approach."
+    },
+    {
+      "olist": [
+        "Monday-Tuesday: Practice the esses (Turns 1-4) in isolation. Record a video or replay of your steering input and throttle trace. Compare with a faster driver if available.",
+        "Tuesday-Wednesday: Run full qualifying laps at low fuel (8-10 gallons). Validate your brake points and trail-braking entries are consistent. Aim for 5 laps where you can repeat within 0.05 seconds.",
+        "Wednesday-Thursday: Run 30-minute practice races at race fuel load to understand tire wear and fuel-burn rate. Practice your Turn 8 overtake and defenses.",
+        "Thursday-Friday: Run one or two qualifying sessions to lock in your best time, then run one race-simulation (full fuel, race pace) to validate your strategy."
+      ]
+    },
+    {
+      "tip": "Record your steering wheel trace and throttle/brake trace in every practice lap. Sonoma exposes sloppy inputs immediately. If you see a sharp steering angle change (instead of a smooth arc), that's a turn-in or exit error worth fixing.",
+      "tipLabel": "Telemetry Tip"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the best approach to the esses at Sonoma?",
+      "a": "Trail brake into Turn 1, release smoothly as you hit the apex, then manage a separate braking zone for Turn 2. The key is smooth hand input and gradual throttle application. Most drivers brake too aggressively and upset the car. Instead, focus on matching brake release to steering angle so the front tires stay loaded but don't lock. Practice these four corners in isolation until you can repeat them within 0.05 seconds."
+    },
+    {
+      "q": "How should I tune my car's brake balance at Sonoma?",
+      "a": "Start with 52-54 percent front bias for GT cars (53-55 for open-wheel) and adjust based on which tires lock first. If the fronts lock before the rears, reduce front brake bias (move toward 51 percent). If the rears lock, increase it (move toward 55 percent). The goal is for all four tires to lock at roughly the same time on your hardest braking point, usually Turn 1 or Turn 8. Test this by braking in a straight line in practice and observing where the car locks. Never change brake balance during a race unless locking becomes unmanageable."
+    },
+    {
+      "q": "Where is the best place to pass at Sonoma?",
+      "a": "Turn 8 (the hairpin) is the primary passing opportunity. Brake late, run to the inside apex, and use the curbing to set up a strong exit onto the following straight. Turn 9 (the carousel) is a secondary option if you carry higher speed through Turn 7 and get a better exit. The esses are too technical for reliable passing unless the car ahead makes a mistake. Most passes happen when the trailing driver executes a flawless braking and turn-in into the hairpin and the leading driver defends conservatively."
+    },
+    {
+      "q": "How does fuel load affect lap times at Sonoma?",
+      "a": "Heavier fuel loads (20+ gallons) add roughly 0.2 to 0.3 seconds per lap in qualifying because the added weight increases brake distance and reduces turn-in responsiveness. In a race, your pace will improve lap by lap as fuel burns, and in the final laps with minimal fuel and fresh tires, you'll run 0.3 to 0.5 seconds faster than early stints. Plan your qualifying session with low fuel (8-10 gallons) and validate race pace on a full-fuel run at race trim (similar fuel to where you'll be mid-stint)."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-10-26",
+  "dateLabel": "October 26, 2026"
+}

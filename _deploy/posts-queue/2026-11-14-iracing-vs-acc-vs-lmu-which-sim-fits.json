@@ -1,0 +1,133 @@
+{
+  "slug": "iracing-vs-acc-vs-lmu-which-sim-fits",
+  "tag": "Buying Guide · PC Sims",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "iRacing vs ACC vs Le Mans Ultimate: Which Sim Fits Your Goals",
+  "description": "Compare iRacing, Assetto Corsa Competizione, and Le Mans Ultimate by career path, content, and what each one demands from your rig and time.",
+  "sections": [
+    {
+      "p": "Three sims dominate serious road racing on PC: iRacing, Assetto Corsa Competizione (ACC), and Le Mans Ultimate (LMU). Each one offers different cars, tracks, progression systems, and online cultures. The choice is not about which one is objectively best. It is about which one matches your goals, your patience for setup work, and how much racing you want to do each week. This guide walks through each one's strengths and trade-offs so you can make a clear decision."
+    },
+    {
+      "h2": "iRacing: subscription racing with structured progression"
+    },
+    {
+      "p": "iRacing runs on a subscription model (roughly 110 USD per year) plus per-series entry fees. You buy access to cars and tracks as you climb through license classes. That sounds expensive, but it funds a 24/7 racing calendar with split lobbies by skill level, and all races count toward a safety rating and iRating (skill ranking). Every race is officiated: if someone hits you, protest tools and stewards exist. Damage can end your race, and you cannot reset mid-session."
+    },
+    {
+      "p": "The progression path is strict. Rookies start in slow cars on simple tracks. You earn safety rating by not crashing or speeding in pit lane. Once you hit B license, you unlock GT3 racing. A license unlocks Indycars and prototypes. That gatekeeping teaches racecraft before you drive fast cars. Most iRacing drivers spend 3 to 6 months in rookie and C/B classes before reaching serious competition."
+    },
+    {
+      "list": [
+        "Best for drivers who want structured progression, weekly racing commitment, and official penalty systems",
+        "Demands 15 to 30 hours per month to stay competitive in a series",
+        "Car roster spans Formula 1, Indycars, GT3s, prototypes, stock cars, and dirt racing",
+        "Track count is over 100, refreshed each season with new layouts"
+      ]
+    },
+    {
+      "tip": "iRacing is the only major sim with a full-time sports car prototype racing path. If endurance racing is your goal, iRacing's 24-hour races and Le Mans entry fees are the minimum standard.",
+      "tipLabel": "Endurance Racing"
+    },
+    {
+      "h2": "Assetto Corsa Competizione: physics focus and custom races"
+    },
+    {
+      "p": "ACC is a one-time purchase (~40 USD) with optional cosmetic DLC. There is no season pass, no license progression, no online rating system. You can jump into any car and any track immediately. The online racing is match-made lobbies where you enter with no ranking requirement. Races are shorter (usually 30 to 60 minutes) and casual. Damage is simulated, but you can reset if you crash before the race starts."
+    },
+    {
+      "p": "The car roster is small but intentional: GT3 and GT4 machines from real manufacturers, plus a road car for free roaming. Tracks are laser-scanned real circuits. The physics are deep. ACC does not hand you a racing line or telemetry. You work through setup tuning, tire degradation, and fuel consumption yourself. For drivers who enjoy building a setup from scratch, ACC rewards that time investment with instant feedback from better car balance."
+    },
+    {
+      "list": [
+        "Best for drivers who love GT racing, custom online lobbies, and physics-focused setup tuning",
+        "Costs less over a year than iRacing subscriptions",
+        "Online racing is informal, no ranking, no formal protests or stewarding",
+        "Graphics and weather simulation are detailed and run smoothly on mid-range PCs"
+      ]
+    },
+    {
+      "tip": "ACC has no ranking system, so you race alongside faster and slower drivers in the same lobby. Practice lobby etiquette and read room descriptions before joining.",
+      "tipLabel": "Lobby Culture"
+    },
+    {
+      "h2": "Le Mans Ultimate: free-to-play Le Mans 24 hour focus"
+    },
+    {
+      "p": "Le Mans Ultimate launched in 2024 as a free-to-play sim built around the Le Mans 24-hour race. It runs on Unreal Engine and includes sports car prototypes (LMDh, GTP, LMP2) and GT3 cars. You can race the full Le Mans circuit and a small list of other endurance venues. There is no license system. Races range from 1-hour sprints to full 24-hour enduros. Online racing is managed through Motorsport.com credentials, and races are ranked by division."
+    },
+    {
+      "p": "The business model is free-to-play with optional cosmetic purchases. Progression happens through in-game seasons and championship finishes, not license classes. Setup tuning is less granular than ACC. The sim feels arcade-leaning compared to iRacing or ACC, with more forgiving physics and shorter recovery time after mistakes. Graphics are modern, and the game runs on lower-end hardware than ACC."
+    },
+    {
+      "list": [
+        "Best for drivers who want free entry to endurance racing and Le Mans history",
+        "Zero cost barrier, paid cosmetics optional",
+        "Career progression tied to seasonal championships, not license advancement",
+        "Focuses on sports car prototypes and GT3 cars at endurance venues"
+      ]
+    },
+    {
+      "tip": "LMU is still building online racing infrastructure. Check the Motorsport.com hub for current championships and lobby availability in your region before expecting a full calendar.",
+      "tipLabel": "Early Growth"
+    },
+    {
+      "h2": "Head-to-head: content and costs"
+    },
+    {
+      "p": "iRacing charges per series and per car, so a full year of racing across three series can cost 300 to 500 USD total. ACC costs 40 USD once and includes all GT3 and GT4 content. LMU costs nothing. If budget is the constraint, LMU is free, ACC is cheap, and iRacing demands ongoing investment. If you want variety across multiple car classes in the same year, iRacing offers formula, IndyCar, stock car, and sports car racing without switching sims."
+    },
+    {
+      "p": "Physics realism ranks differently by discipline. iRacing excels at oval racing and has strong road car physics, but tire model updates are slower. ACC is the physics leader for GT racing and generates the most interesting setup discussions. LMU is lighter and more forgiving, prioritizing accessibility over depth. For a driver learning throttle control and brake feel, ACC teaches faster. For a driver building a long-term competitive ranking, iRacing provides the system and persistence."
+    },
+    {
+      "olist": [
+        "iRacing: ~110 USD base + 30 to 80 USD per series entry, 100+ cars and tracks, strict progression, 24/7 calendar with skill-based splits",
+        "ACC: ~40 USD, 20 cars and 20+ tracks, custom lobbies, physics-focused, no ranking system",
+        "LMU: Free-to-play, endurance focus, modern graphics, seasonal progression, growing infrastructure"
+      ]
+    },
+    {
+      "h2": "Which sim matches your goals"
+    },
+    {
+      "p": "Choose iRacing if you want weekly competitive races, a long-term rating system, and structure. The license system protects you from inexperienced drivers, splits ensure close racing, and every race feeds into your safety rating and iRating. Plan to spend 15 to 30 hours per month and accept the entry fees as part of competitive racing. If you want to compete at Le Mans or in a Daytona 24-hour, iRacing is the infrastructure you need."
+    },
+    {
+      "p": "Choose ACC if you love GT3 racing, want to tune cars deeply, and prefer flexibility over rigid progression. You race when you want, join lobbies without a license, and have full control over setup. Costs are lower, but you find your own pace and your own community. ACC rewards drivers who study telemetry and setup changes. For a 1440p single-monitor rig like most of us, ACC is also the lightest load on your GPU."
+    },
+    {
+      "p": "Choose LMU if endurance racing is your only interest, free-to-play is a priority, and you want to race Le Mans without commitment. The sim is still building its online population and championship calendar. In one to two years, it could be a serious competitor. Right now, it is best for casual endurance fans and drivers experimenting with prototype racing before moving to iRacing or ACC."
+    },
+    {
+      "p": "Many drivers run two sims: iRacing for ranked progression and LMU or ACC for casual practice or different car types. If you want one sim and unlimited racing, start with ACC. If you want one sim and a ranking system, start with iRacing. Both have active communities and online racing almost every hour. You can try ACC or LMU immediately. iRacing requires a trial period or credit card commitment. Pick the one that matches your next 3 to 6 months, and switch if your goals change."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is iRacing worth the subscription cost compared to ACC?",
+      "a": "iRacing costs roughly 200 to 400 USD per year (subscription plus series entries). ACC costs 40 USD once. iRacing is worth it if you race more than 10 hours per week and want a ranked safety and skill system. If you race 5 to 10 hours per week casually, ACC offers much more content per dollar and no recurring fees. If you race less than 5 hours per week, neither is a priority."
+    },
+    {
+      "q": "Can I switch between sims without rebuilding my muscle memory?",
+      "a": "No. Each sim has different brake feel, throttle response, and FFB behavior. ACC uses load cell pedals very differently than iRacing does. Steering ratio, rotation range, and damping feel different too. Plan to spend 3 to 5 hours acclimating when switching sims. Your line and racecraft transfer, but your throttle precision and braking point will be off at first. Many drivers run one main sim and use others for casual practice to avoid confusion."
+    },
+    {
+      "q": "Which sim is easiest to run on a lower-end PC?",
+      "a": "LMU is the easiest to run on mid-range hardware. It uses Unreal Engine and scales well to 1440p 60+ Hz on a GTX 1070 or RTX 3060. ACC is the next lightest. iRacing is the heaviest in some scenes but the lightest in others depending on track choice. For a Ryzen 5700 with RTX 5060 Ti and 1440p 120 Hz, all three run smoothly, but ACC and LMU stay at consistent frame rates across all tracks."
+    },
+    {
+      "q": "Do I need a load cell pedal for any of these sims?",
+      "a": "Load cell pedals (like MOZA SR-P or Fanatec CSL Pedals with load cell kit) give you finer brake control in all three sims. iRacing benefits most because brake precision affects iRating. ACC benefits second because tire degradation and fuel consumption reward smooth inputs. LMU is forgiving enough that a non-load cell pedal works fine. If you already own MOZA SR-P pedals, use them in all three. If you are buying pedals to start, buy load cell and use it across all sims you try."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p",
+    "gpu-rtx-5060-ti",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-10-26",
+  "dateLabel": "October 26, 2026"
+}

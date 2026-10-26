@@ -1,0 +1,159 @@
+{
+  "slug": "bristol-motor-speedway-iracing-banking-tire-wear-lanes",
+  "tag": "Track Guides · Oval Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Bristol Motor Speedway iRacing: Banking, Tire Wear, and Lane Strategy",
+  "description": "Master Bristol's tight banking and extreme tire wear. Learn lane choice, fuel strategy, and setup adjustments for consistent pace on iRacing's most demanding half-mile.",
+  "sections": [
+    {
+      "p": "Bristol Motor Speedway in iRacing is a half-mile oval with the highest banking of any NASCAR track: 16 degrees in the turns and 8 degrees on the straights. That banking changes everything about how you approach throttle, braking, and line choice compared to flatter ovals. The track surface is also abrasive, meaning tire wear accelerates quickly, especially on the right-side tires during turning. A single mistake in setup or pit strategy can cost half a second a lap by the end of a race."
+    },
+    {
+      "p": "Success at Bristol requires understanding three linked problems: how the banking forces you to manage entry and exit speeds differently than you'd expect, how to read tire degradation before it bites you in traffic, and how to pick the lane that works for your car's balance when the track evolves through a race. This guide breaks down each element so you can find consistent pace and avoid the common pit stop mistakes that cost positions."
+    },
+    {
+      "h2": "Banking and how it changes your line"
+    },
+    {
+      "p": "The 16-degree banking is steep enough that you can carry significantly higher speed through the corners without relying on lateral grip alone. The banking holds you in the seat and helps you rotate the car earlier than on a flat track. The catch is that this works only if you use the banking correctly."
+    },
+    {
+      "p": "On entry, you need to brake later than intuition suggests, but you also need to be smoother with the brake release. The banking wants to push you up the track, so trail braking too aggressively or releasing the brake abruptly will scrub speed and tighten your radius. Aim to be off the brake before you reach the apex and let the banking carry you through. On exit, the banking accelerates your acceleration out of the turn, so you can begin applying throttle earlier than on a high-banked superspeedway like Daytona."
+    },
+    {
+      "p": "The racing line at Bristol sits lower than you might expect because the banking is uniform across the turn. Running the low line uses the maximum banking and lets you carry the most speed. Higher on the track, you lose banking angle, which means you need more grip or less speed. However, the low line wears tires faster because it is the line every car runs and the track surface there becomes rougher through the race."
+    },
+    {
+      "tip": "Banking works with you on exit but against you on entry. Smooth brake release and early throttle application let the banking do the work for you, rather than fighting it with steering input.",
+      "tipLabel": "Banking technique"
+    },
+    {
+      "h2": "Tire wear: where it happens and how fast"
+    },
+    {
+      "p": "Bristol has the most brutal tire wear in the iRacing NASCAR roster. The right-side tires (right front and right rear) take the majority of the load in the turns because of the sustained left-hand cornering and the bank pushing the car into a heavy inside-wheel loading. By lap 100 of a 400-lap race, the right-side tires can lose one full tier of grip relative to the left side."
+    },
+    {
+      "p": "Tire wear is not evenly distributed. The right front peaks early, usually within the first 50 laps, then degrades steadily. The right rear also suffers high wear but often holds marginally better grip longer because it is tracking through a less critical part of the turn at entry. Left-side tires wear more slowly and often finish a race with significant life remaining, especially if you pit early or run high on the track where banking is lower."
+    },
+    {
+      "p": "The first pit stop is often driven by right-front tire wear rather than overall fuel consumption. Watch for a sudden loss of front end response or a push in the center of the turn that starts around lap 80-120, depending on your driving style and setup. If you run aggressive entry (lots of trail braking), your right front will wear faster. If you brake early and smoothly, you can extend the first stint by 10-15 laps."
+    },
+    {
+      "list": [
+        "Right-front tire: loses grip in turns 1 and 2 first, often by lap 80-100. This causes understeer on entry.",
+        "Right-rear tire: wears throughout the run, but more gradually. Loss of grip shows as either a loose exit or difficulty maintaining a line in traffic.",
+        "Left-front and left-rear: relatively light wear. These tires often have 30-50% life remaining at the end of a race.",
+        "Track temperature and fuel load: hotter track = faster tire wear. Full fuel tank also loads tires harder. Plan pit stops assuming the track will get hotter."
+      ]
+    },
+    {
+      "h2": "Lane choice and how the track evolves"
+    },
+    {
+      "p": "Bristol has three distinct lanes, each with its own grip and wear profile. Early in a race or a race session, all three lanes are viable, but as laps accumulate, only one or two lanes hold enough grip to be competitive."
+    },
+    {
+      "p": "The low line (the groove) is the fastest initially. It sits in the middle of the turn and uses the full banking. Every car tends to run here, which means the rubber lays down and, paradoxically, this helps low grip initially. However, this same high-traffic area experiences the most marbling (loose rubber and dust) and surface breakup. By lap 150-200, the low line may actually be slower than the high line because the surface has deteriorated. Traffic also concentrates here, making passing difficult."
+    },
+    {
+      "p": "The middle lane is a compromise. It is slower than the groove on a fresh track because you have less banking and need more steering input. By mid-race, it often becomes the best line because it has less rubber and less track breakup than the low groove. If you are trailing, the middle lane can be faster on old tires because your tires do not have to work as hard against marbles and rough surface."
+    },
+    {
+      "p": "The high line uses less banking, which means you need more grip or less speed. On fresh tires and a fresh track, it is significantly slower. Late in the race or when running worn tires, the high line offers cleaner surface and more grip. Racecraft at Bristol often comes down to recognizing when to stay in the groove (early race, qualifying) and when to move up (late race, worn tires, traffic avoidance)."
+    },
+    {
+      "tip": "The groove is fastest early but becomes the worst line late. A car that holds the middle lane in the final laps often finishes better than one that refuses to leave the low line.",
+      "tipLabel": "Lane adaptation"
+    },
+    {
+      "h2": "Pit strategy and fuel mileage"
+    },
+    {
+      "p": "Fuel consumption at Bristol is surprisingly modest because the track is short (half a mile) and speeds are relatively contained by the tight turns. Most cars can run 80-120 laps on a single tank depending on driving style and setup. However, pit strategy is determined more by tire wear than fuel."
+    },
+    {
+      "p": "A two-stop race (common in 400-lap events) usually looks like this: first stop around lap 120-160 when right-front tires have worn, second stop around lap 280-320. Fuel mileage is rarely the limiting factor. The key is to predict when the right-front tire will fail and pit before it does, not after. Pitting one lap too late can cost five positions because you lose grip suddenly and traffic closes in behind you."
+    },
+    {
+      "p": "In longer races or endurance events at Bristol, tire strategy becomes critical. Some drivers pit early (lap 100-120) for fresh tires and run the final stint with a tire advantage. Others stretch the first stint (lap 150-180) to run fewer total stops. Both approaches work, but early pitters need a clear track at the end to gain positions. Late pitters need to be fast on old tires to avoid getting lapped."
+    },
+    {
+      "olist": [
+        "Estimate fuel consumption during practice. Run a few laps at race pace and check fuel remaining in the app. This tells you how many laps per tank you get.",
+        "Monitor right-front tire wear carefully from lap 70 onward. When it drops one tier of grip (visible in the telemetry or felt in the car), start planning your pit window.",
+        "Schedule your first pit stop 5-10 laps before the tire fails, not after. Early pits are faster than reactive pits.",
+        "On the second pit stop, focus on tire life for the finish. Fresh tires at 250 laps to go gives you a comfortable buffer.",
+        "If you are in traffic and trailing, pit early (lap 100-120) for a clean track and faster pit cycle, even if it means running worn tires longer in the middle stint."
+      ]
+    },
+    {
+      "h2": "Setup adjustments for Bristol"
+    },
+    {
+      "p": "Bristol requires a stiff setup because the banking and short turns demand quick responses. Loose cars struggle to hold a line through the marbles and traffic. However, too much stiffness causes the car to ride over the track surface and lose consistency."
+    },
+    {
+      "p": "A common starting point: increase both front and rear spring rates 5-10% above the baseline for the car you are driving. Reduce both front and rear anti-roll bar stiffness slightly to improve turn-in feel without sacrificing overall balance. Lower the front ride height slightly to reduce aerodynamic yaw and improve left-turn stability. Bristol is almost a pure left turn, so front downforce matters more than rear."
+    },
+    {
+      "p": "Brake bias is often run 1-2% higher than on flatter ovals. The banking wants to keep you in the turn even under braking, so you need a more forward brake balance to encourage rotation and ensure the front tires can work hard on deceleration without locking."
+    },
+    {
+      "p": "Tire pressures are critical. Start with the baseline and increase front left and front right pressures by 0.5-1.0 psi from baseline to manage the stiff setup and high loading. The rear tires may stay closer to baseline or increase slightly. Monitor temperatures in practice and adjust to keep all four tires in the 160-180 degree range at full throttle."
+    },
+    {
+      "h2": "Common mistakes to avoid"
+    },
+    {
+      "list": [
+        "Over-braking into the turns. Bristol's banking tempts you to brake deeper than the track allows. Brake earlier and more smoothly, then add throttle early on exit.",
+        "Ignoring tire wear until it is catastrophic. A 0.1-0.2 second drop in lap time often signals tire failure is 10 laps away, not that your car is loose. Pit before that happens.",
+        "Staying in the low groove too long. When the track breaks up (usually around lap 150-200), move to the middle lane or high line. Stubborn drivers lose 0.3-0.5 seconds a lap trying to make the groove work.",
+        "Running the same setup for qualifying and racing. Bristol changes dramatically with fuel load and tire wear. Qualifying setups are often much stiffer and benefit from lower downforce. Race setups need more balance and maneuverability in traffic.",
+        "Pit stop timing based on feeling rather than data. Use telemetry or the tire app to see degradation objectively. Instinct leads to early or late pits that cost more than data-driven strategy."
+      ]
+    },
+    {
+      "h2": "Putting it together: a sample race plan"
+    },
+    {
+      "p": "A 400-lap race at Bristol breaks into three distinct phases. Laps 1-150 are the fresh-tire phase. The groove is fast, the car is balanced, and the key is smooth inputs and consistency. Avoid unnecessary contact and use this phase to establish position. Most drivers pit between laps 120-160."
+    },
+    {
+      "p": "Laps 150-280 are the tire-transition phase. The track evolves, the groove becomes marginal, and the middle lane opens up. This is where racecraft matters more than raw pace. You may need to move up one lane to stay as fast as the fresh-tired cars behind you, or stay in the groove and extend your cycle. The driver who adapts fastest here usually leads this phase."
+    },
+    {
+      "p": "Laps 280-400 are the final stretch. Both front runners and trailers have fresh or near-fresh tires. Positions are often decided by pit cycle strategy and caution luck. If you pitted early, you have a tire advantage but need to convert it before the race ends. If you pitted late, you have newer tires but less time to pass. Consistency and clean air become paramount. A single spin or off-track here can cost the race."
+    },
+    {
+      "p": "For a more structured approach to planning your races, see the guide on <a href=\"iracing-practice-session-plan-45-minutes.html\">building a practice plan</a>. Practice sessions are your data gathering tool for pit strategy; apply what you learn to your race approach."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does my right front tire wear so much faster at Bristol than other ovals?",
+      "a": "Bristol's turns are sustained left-handers with heavy banking. The right front carries the majority of the cornering load throughout both turns 1-2 and 3-4 every lap. The banking angles the car into the right tires, multiplying the load. Right-side tires can lose 2-3 tiers of grip by lap 200, while left-side tires may lose only 1 tier. This is why right-front tire wear drives pit strategy at Bristol more than fuel consumption."
+    },
+    {
+      "q": "When should I move from the low groove to the middle lane?",
+      "a": "The groove remains fastest through approximately lap 150-200, depending on track temperature and traffic. Watch for a sudden loss of front-end grip or a push in the center of turn 1 and 2. That is when marbles and surface breakup have begun to accumulate. Switch to the middle lane when you notice lap times are dropping by 0.1-0.2 seconds even though your tire pressures and setup have not changed. The middle lane will feel slower initially but will actually be faster on the degraded groove surface."
+    },
+    {
+      "q": "How do I know if I should pit for tires or extend my fuel mileage?",
+      "a": "Tire wear is the primary constraint at Bristol, not fuel. In most races, you can run 100+ laps on fuel alone, but tires fail around lap 120-180 on the first stint. Monitor your right-front tire pressure and temperature during the race. When the right front reaches 180+ degrees and pressure climbs, or when lap times drop 0.2 seconds suddenly, tire failure is near. Pit 5-10 laps before that drop becomes severe. Fuel mileage determines whether you can add laps to your second stint, not whether you should pit."
+    },
+    {
+      "q": "What brake bias should I run at Bristol?",
+      "a": "Bristol favors a forward brake bias of 1-2 percentage points higher than flatter ovals. A common starting point is 56-58% front bias (versus 54-56% on flatter ovals). The banking pushes the car into the turns even under braking, so extra front bias helps rotation. Start with baseline for your car, then increase front bias if you feel the car is pushing on corner entry or if the rear is locking before the front. Test in practice and adjust based on feel and lock-up behavior."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-10-26",
+  "dateLabel": "October 26, 2026"
+}

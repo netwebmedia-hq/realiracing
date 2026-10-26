@@ -1,0 +1,115 @@
+{
+  "slug": "gearing-ratios-unknown-track-setup",
+  "tag": "Setup Guides · Gearing",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "How to Choose Gearing Ratios for an Unfamiliar Track",
+  "description": "Pick gear ratios on a new track by balancing top speed, corner exit grip, and practice time. A methodical approach beats guessing.",
+  "sections": [
+    {
+      "p": "Walking into a track you have never driven online presents a gear ratio problem you cannot solve with telemetry from your usual baseline setup. You have no lap data to reference, no idea how long the straights actually feel at race pace, and no sense of whether you will need engine braking on corner entry or aggressive downshift performance on exit. Choosing a first gear ratio is partly guesswork, partly principle, and partly willingness to adapt. The strategy is to start conservative, drive enough laps to feel the car, then adjust once you understand the track's rhythm and demands."
+    },
+    {
+      "p": "Gear ratios control two competing forces: top speed and acceleration out of slow corners. Taller gears (higher numerical ratios, e.g. 3.5:1) give you more revs on the straight but softer power delivery. Shorter gears (lower ratios, e.g. 3.2:1) build revs faster and snap you out of tight turns but cap your top speed. On a track you do not know, you cannot predict which trade-off matters most until you have driven it."
+    },
+    {
+      "h2": "Start with a moderate ratio and adapt in practice"
+    },
+    {
+      "p": "The safest opening move is to pick a middle-ground ratio for the car class and series you are racing. Most series' setup sheets include a baseline or stock ratio. Start there. You are not searching for a perfect setup in practice; you are building familiarity. A moderate ratio will not penalize you enough in the first hour to waste a whole practice session hunting a 0.3 km/h gain on the straight."
+    },
+    {
+      "p": "Run a full 45-minute practice session with no setup changes. Focus on learning braking points, turn-in angles, and how the car responds mid-corner. After 20 to 30 laps, you will have a sense of whether you are hitting the rev limiter hard on the main straight or leaving revs on the table coming out of the slowest corner."
+    },
+    {
+      "list": [
+        "Hitting the rev limiter repeatedly on a long straight: your ratio is too tall. Shorter gears pull harder and may suit the track better.",
+        "Short straights where you never see peak revs: your ratio is too short. Taller gears give you a higher ceiling without hurting corner exit.",
+        "Mixed behavior (limiter on one straight, under-revved on another): the track has varied demands. Accept a compromise or wait for qualifying to confirm which straight matters for pace."
+      ]
+    },
+    {
+      "h2": "Balance top speed and corner exit power"
+    },
+    {
+      "p": "In most road-racing series, the car spends more time accelerating out of corners than maintaining top speed. A ratio that sacrifices 2 to 3 km/h on a long straight but gives you 200 to 300 rpm more at corner exit will typically gain time overall. Traction and momentum out of the last big turn before a qualifying or race-end straight often matter more than a tenth of a second of extra straight-line speed."
+    },
+    {
+      "p": "However, if the track has one dominant long straight that determines passing or qualifying position, do not ignore it entirely. Look at the series' race results or YouTube footage to see how other drivers approach the track. If most of the grid is tuning high top speed, gearing short may cost you 10 positions before turn 1."
+    },
+    {
+      "tip": "A practical middle ground: run the first practice with a stock or near-stock ratio. If you feel you need more straight-line speed, make one small adjustment (e.g. 0.2 to 0.3 ratio points taller). One lap per ratio change, then move on. Qualitative feel beats micro-optimizing during practice.",
+      "tipLabel": "Practice approach"
+    },
+    {
+      "h2": "Account for engine braking and downshift performance"
+    },
+    {
+      "p": "Gear ratio does not just affect throttle response. It also influences engine braking on corner entry and the sharpness of downshift transients. A car on short gears builds engine braking faster, which can help stability into tight corners but can also cause lock-ups if you are not smooth with the brake pedal. Taller gears feel more forgiving on entry because the engine is not fighting as hard to slow the car."
+    },
+    {
+      "p": "On a new track, this matters because you are still calibrating your braking pressure and turn-in timing. If you choose a very short ratio and then fight the car through two or three corners due to engine braking, you may blame the gearing when the real issue is your own brake modulation. Stick with a moderate ratio during practice so you can isolate your own inputs from the car's behavior."
+    },
+    {
+      "h2": "Prepare for practice by understanding the track layout"
+    },
+    {
+      "p": "Before you load the car, spend five minutes on iRacing's track map or a YouTube cockpit video. Identify the longest straight, the tightest corners, and any double-apex or high-speed sections. This is not about memorizing turn numbers; it is about spotting whether gearing will be a limiting factor. A track with a 1.5 km straight demands different thinking than a circuit with five corners separated by short bursts of throttle."
+    },
+    {
+      "p": "If the track has a very long straight (more than two kilometers) and relatively slow top speed compared to other series cars, you may want to start slightly taller than baseline. If the track is technical with frequent direction changes, start slightly shorter. These are soft hints, not rules. A single lap will tell you more than speculation."
+    },
+    {
+      "list": [
+        "Long, fast circuit (e.g. Le Mans, Road America): baseline ratio or slightly taller, prioritize top speed.",
+        "Technical, tight circuit (e.g. Brands Hatch, Lime Rock): baseline ratio or slightly shorter, prioritize corner exit.",
+        "Mixed layout (e.g. Spa, Sonoma): true middle ground, accept a mild compromise."
+      ]
+    },
+    {
+      "h2": "Make your final call before qualifying"
+    },
+    {
+      "p": "If you are racing, do not lock in a ratio until you have seen how it behaves at race pace. A car at 100% fuel and traffic-free lap feels different from one in close quarters or with tire wear. Reserve 10 to 15 minutes before qualifying to nail a single ratio change if the data from practice suggests one is needed. Changing gearing twice in one session wastes your limited qualifying time."
+    },
+    {
+      "p": "Trust your first instinct and feel over hunches. If the car pulls hard out of the last corner and runs out of revs before braking, shorten the ratio by 0.1 or 0.15. If you lose five positions on a main straight because traffic stalled you, lengthen it slightly. One change, one lap test, then commit."
+    },
+    {
+      "tip": "Write down your initial ratio choice before you drive. After practice, write down the conditions where you felt the gearing was wrong (e.g. limiter on the back straight, under-revved exiting turn 12). This log makes your next track visit faster because you will recognize the same patterns immediately.",
+      "tipLabel": "Documentation"
+    },
+    {
+      "h2": "Do not overthink it"
+    },
+    {
+      "p": "Gearing is a 5 to 10 km/h swing at top speed or a 50 to 100 rpm swing at corner exit. It is not a lap-time changer the size of suspension stiffness, brake balance, or tire pressures. On an unknown track, your lap time will improve far more from line polish and confidence than from a perfect ratio. Pick something reasonable, drive enough to feel it, make one small tweak if needed, and move on to things that matter more."
+    },
+    {
+      "p": "After your second or third race at a track, you will own the gearing decision because you have the lap data and muscle memory. Until then, a methodical but unhurried approach keeps frustration low and learning high. The goal is to arrive at qualifying with a car that feels balanced, not optimized, and confidence that your ratio choice is defensible if someone asks why you picked it."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I ask other drivers what ratio they run?",
+      "a": "Ask, but treat the answer as a starting hint only, not gospel. A ratio that works for a driver on a three-monitor setup with a different wheel stiffness or seat distance may not transfer 1:1 to your rig. Use peer ratios to validate your own choice (e.g. if five fast drivers are within 0.1 ratio points of your pick, you are in the right ballpark), but do not let one person's ratio override what your own practice data tells you."
+    },
+    {
+      "q": "How much does a 0.1 ratio change affect top speed?",
+      "a": "A 0.1 ratio change typically shifts top speed by 2 to 5 km/h depending on the car and engine type. Smaller, lower-revving engines show bigger speed swings per ratio point. Higher-revving engines and turbos respond less dramatically. The key is feel: if you are hitting the limiter hard, shorten by 0.1 to 0.2 and re-test. Micro-shifts of 0.05 are overkill during practice."
+    },
+    {
+      "q": "What if the track has multiple straights of different lengths?",
+      "a": "Pick the ratio that suits the longest or most important straight, then accept that you will under-rev on shorter ones. Trying to optimize for five different straights on one ratio is impossible. Most tracks have one straight that determines passing or pace. Focus there. If a shorter straight penalizes you, it is usually because you exited the previous corner poorly, not because of gearing."
+    },
+    {
+      "q": "Should I adjust gearing based on fuel load in a race?",
+      "a": "No. Fuel load affects grip and tire behavior, not engine revs. A ratio that works with a full tank works the same with half a tank. If you feel different corner exit power as fuel burns, that is tire temperature and grip changing, not a gearing problem. Use brake bias or anti-roll bar adjustments to tune for fuel burn, not the final drive."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9"
+  ],
+  "published": "2026-10-26",
+  "dateLabel": "October 26, 2026"
+}
