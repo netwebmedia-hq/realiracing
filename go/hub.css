@@ -134,6 +134,7 @@ footer a{color:#9a9a9a}
 .sticky svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;
  stroke-linecap:round;stroke-linejoin:round}
 .nojs .sticky{display:none}
+[data-v][hidden]{display:none}
 /* Motion only, never opacity: a backgrounded or throttled in-app browser can
    pause animations at frame 0, and an opacity:0 start then leaves the hub blank. */
 @keyframes up{from{transform:translateY(10px)}to{transform:none}}

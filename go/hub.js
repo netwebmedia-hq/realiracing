@@ -25,15 +25,36 @@
     document.head.appendChild(lib);
   }
 
+  /* CTA A/B test (registry "ab", data-ab = test id). One arm per browser
+     session, 50/50, kept in sessionStorage so reloads and tab flips stay on
+     the same CTA; ?ab=a|b forces one for QA. The page ships arm "a" visible
+     and "b" hidden; the other arm's elements are removed, so the sticky and
+     CTA lookups below find the kept one. */
+  var arm = null;
+  if (ds.ab) {
+    var ak = 'hub_ab_' + ds.ab;
+    try { arm = new URLSearchParams(location.search).get('ab'); } catch (e) { /* old browser */ }
+    if (arm !== 'a' && arm !== 'b') { try { arm = sessionStorage.getItem(ak); } catch (e) { /* private mode */ } }
+    if (arm !== 'a' && arm !== 'b') arm = Math.random() < 0.5 ? 'a' : 'b';
+    try { sessionStorage.setItem(ak, arm); } catch (e) { /* private mode: a new arm per load */ }
+    [].forEach.call(document.querySelectorAll('[data-v]'), function (el) {
+      if (el.getAttribute('data-v') === arm) el.hidden = false; else el.parentNode.removeChild(el);
+    });
+  }
+
   /* Source attribution. The hub URL is the same in every bio, so a tap from
-     the Facebook Page, a YouTube channel link or a QR scan used to leave with
-     utm_source=instagram (the build-time default, data-src). Precedence:
-       1. ?s=<code> on the hub URL — fb, yt, x, li, wa, tt, th, qr, em, sms
-          (put https://<domain>/go/?s=fb in the Facebook Page's website field)
+     the Facebook Page, a YouTube channel link or a QR scan must not leave with
+     a hardcoded Instagram source. Every link ships ONE utm set whose source is
+     the neutral build-time default (data-src = linkinbio: what a reader
+     without JS, or from an app that sends no referrer, gets). Precedence:
+       1. ?src=<code> (or the older ?s=) on the hub URL — fb, yt, x, li, wa, tt,
+          th, ig, qr, em, sms, or any plain word (put https://<domain>/go/?src=fb
+          in the Facebook Page's website field)
        2. utm_source on the hub URL (the QR carries utm_source=qr)
        3. the referrer host (Instagram's in-app browser sends l.instagram.com)
        4. the default — nothing is rewritten
-     Only same-property links (they carry utm_campaign=go) are touched; the
+     Only the links that carry the default source are touched (same-property
+     links, and registry links that brought their own utm set); the
      third-party profile links in the social row stay clean. */
   var SHORT = { ig: 'instagram', fb: 'facebook', yt: 'youtube', x: 'x', li: 'linkedin',
                 wa: 'whatsapp', tt: 'tiktok', th: 'threads', qr: 'qr', em: 'email', sms: 'sms' };
@@ -49,7 +70,7 @@
   function source() {
     var q, s = '', h = '';
     try { q = new URLSearchParams(location.search); } catch (e) { return null; }
-    s = (q.get('s') || '').toLowerCase();
+    s = (q.get('src') || q.get('s') || '').toLowerCase();
     if (s) return SHORT[s] || s.replace(/[^a-z0-9_-]/g, '').slice(0, 24) || null;
     s = (q.get('utm_source') || '').toLowerCase().replace(/[^a-z0-9_.-]/g, '').slice(0, 24);
     if (s) return s;
@@ -63,11 +84,12 @@
   if (src && src !== ds.src) {
     var medium = src === 'qr' ? 'offline' : (src === 'email' || src === 'sms') ? src
                : SOCIAL[src] ? 'bio' : 'referral';
-    [].forEach.call(document.querySelectorAll('a[href*="utm_campaign=go"]'), function (a) {
+    [].forEach.call(document.querySelectorAll('a[href*="utm_source=' + (ds.src || 'linkinbio') + '"]'), function (a) {
       try {
         var u = new URL(a.href);
         u.searchParams.set('utm_source', src);
-        u.searchParams.set('utm_medium', medium);
+        /* a link with its own campaign keeps its own medium too */
+        if (u.searchParams.get('utm_campaign') === 'go') u.searchParams.set('utm_medium', medium);
         a.href = u.toString();
       } catch (e) { /* leave the build-time UTM */ }
     });
@@ -97,7 +119,8 @@
       property: ds.prop, kind: kind, label: extra.label || null,
       url: extra.url || null, path: location.pathname, ref: document.referrer || null,
       src: src || ds.src || null, sec: extra.sec || null,
-      pos: extra.pos == null ? null : extra.pos, uniq: kind === 'view' ? uniq : 0
+      pos: extra.pos == null ? null : extra.pos, uniq: kind === 'view' ? uniq : 0,
+      variant: arm ? ds.ab + ':' + arm : null
     });
     try {
       if (navigator.sendBeacon &&
