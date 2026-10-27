@@ -291,14 +291,17 @@ function pitstopCalloutHtml(post) {
 
 // R9 owners land on these posts from search ("moza r9 iracing settings" is the site's top
 // query, 2026-10-21) but the matching FFB pack was linked once, 63% down one page. Put it
-// under the disclosure on every R9 post. No price in the copy (client-facing rule).
+// under the disclosure on every R9 post, plus a second one before the PitStop callout at the end. No price in the copy (client-facing rule).
 const R9_TOPIC_RE = /\br9\b/i;
-function r9PackCalloutHtml(post) {
+function r9PackCalloutHtml(post, end) {
   const hay = [post.slug, post.title].join(' ').replace(/-/g, ' ');
   if (!R9_TOPIC_RE.test(hay)) return '';
+  const copy = end
+    ? `<strong>Going with the R9?</strong> Start from a tested profile instead of tuning from scratch: our R9 + iRacing force feedback pack gives you the setup order, a symptom-to-fix table and a test log, so you reach a steady baseline in about 25 minutes.`
+    : `<strong>Running a MOZA R9 in iRacing?</strong> Skip the trial and error: our R9 + iRacing force feedback pack has the Pit House and in-sim values we race on, ready to load.`;
   return `<div class="tip-box rir-r9-pack-callout">
         <span class="box-label">From the RealiRacing shop</span>
-        <p><strong>Running a MOZA R9 in iRacing?</strong> Skip the trial and error: our R9 + iRacing force feedback pack has the Pit House and in-sim values we race on, ready to load. <a href="/packs/moza-r9-iracing-ffb-pack.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=r9_pack&amp;utm_content=${esc(post.slug)}">See the R9 FFB pack &rarr;</a></p>
+        <p>${copy} <a href="/packs/moza-r9-iracing-ffb-pack.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=r9_pack&amp;utm_content=${esc(post.slug)}${end ? '-end' : ''}">See the R9 FFB pack &rarr;</a></p>
       </div>
 `;
 }
@@ -450,6 +453,7 @@ ${photos.figureHtml(photo)}
 
 ${bodyHtml}
 
+      ${r9PackCalloutHtml(post, true)}
       ${pitstopCalloutHtml(post)}
       ${gearBoxHtml}
 
