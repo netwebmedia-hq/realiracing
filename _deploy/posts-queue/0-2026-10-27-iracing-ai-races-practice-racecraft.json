@@ -1,0 +1,153 @@
+{
+  "slug": "iracing-ai-races-practice-racecraft",
+  "tag": "Technique · Racecraft",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "iRacing AI Races: Practice Racecraft Offline",
+  "description": "How I use iRacing AI races to practise starts, traffic and defending before official races, plus where AI misleads and how to protect safety rating.",
+  "published": "2026-10-27",
+  "dateLabel": "October 27, 2026",
+  "gearKeys": [
+    "moza-crp2",
+    "moza-r9",
+    "cockpit"
+  ],
+  "sections": [
+    {
+      "p": "Official iRacing races are expensive in a way that has nothing to do with money. Every incident costs safety rating, a bad first corner can end the race before lap one is done, and you only get a handful of starts a week if you are being careful. iRacing's AI races give you extra practice at all of that, offline, with no rating on the line. I use them from my MOZA R9, CRP2 and fixed aluminium cockpit setup, and this is how I get value out of them and where I stop trusting them."
+    },
+    {
+      "p": "Everything below describes the menus in general terms, because iRacing changes its interface from season to season. The names of the options may differ slightly from what you see, so treat the ideas as the useful part."
+    },
+    {
+      "h2": "What AI races are good for"
+    },
+    {
+      "p": "An AI race puts you on track with computer-controlled cars that follow a racing line, brake at sensible points and race each other. AI races are offline sessions, so their results do not touch your safety rating or iRating, which is the whole attraction. You can start a race, make a mess of the first corner, and simply restart."
+    },
+    {
+      "p": "The things I find AI genuinely teaches well:"
+    },
+    {
+      "list": [
+        "Race starts. You can rehearse the start twenty times in an evening. Clutch or throttle timing, which gear to be in, and where to place the car for turn one all become habits. My <a href=\"iracing-race-start-technique.html\">race start technique</a> post covers the mechanics.",
+        "Traffic awareness. Mirrors, spotter calls and judging a gap at speed take reps, and AI cars give you a steady supply of them.",
+        "Defending and attacking. An AI car will sit in your mirrors for a lap, which is a good time to practise the single defensive move from my <a href=\"defending-a-position-iracing.html\">defending a position</a> guide without anyone punishing a mistake.",
+        "Stint consistency. A 20 or 30 minute AI race shows whether you can keep lap times tight while someone is pressuring you, which a solo practice session rarely tests."
+      ]
+    },
+    {
+      "h2": "What AI teaches badly"
+    },
+    {
+      "p": "AI cars behave like programs. They hold a line, they react to you in predictable ways, and they do not panic, tilt or take a gamble on lap one. Human drivers do all of those. If you only race AI, you can start to expect that a car beside you will give room, and an official lobby will correct that expectation quickly."
+    },
+    {
+      "p": "Here is what I watch for in myself after a long AI session:"
+    },
+    {
+      "list": [
+        "Expecting the other car to lift or give way. Real drivers sometimes will not.",
+        "Taking a gap that a human would close. AI often leaves more room than a person under pressure.",
+        "Underestimating the first lap. A field of 20 AI cars is calmer than 20 humans, so turn one in a real race is usually messier than anything you practised."
+      ]
+    },
+    {
+      "p": "For that reason I treat AI as a tool for technique and repetition, and I do not read it as a preview of how an official field will behave. If you want multiclass practice, my <a href=\"multiclass-racing-traffic-management-iracing.html\">multiclass traffic management</a> post covers the human side of that."
+    },
+    {
+      "h2": "Choosing the car and the track"
+    },
+    {
+      "p": "Pick the car you plan to race in official sessions. Starts, braking points and how much the car moves in traffic all depend on the car, so practice in a different one transfers poorly. If you are shopping for something new, pick one slow, stable car and stay in it for a few weeks."
+    },
+    {
+      "p": "For the track, use a circuit that is on your upcoming official schedule, and race it at least a few times before the real session. Knowing the braking zones means your attention can go to the cars around you, which is the entire point of racecraft practice."
+    },
+    {
+      "p": "A road course with a decent first corner is ideal for start practice. For defending and passing I prefer a track with one clear overtaking zone, so I can practise setting a pass up and finishing it in the same place each lap."
+    },
+    {
+      "h2": "Setting the AI skill and aggression"
+    },
+    {
+      "p": "iRacing lets you set how fast the AI cars are, and the AI setup screen carries other options that change how they race. The names and ranges may change, so read the on-screen tooltips. My approach is a ladder with no fixed setting:"
+    },
+    {
+      "olist": [
+        "Start with skill set a little below your own pace. You want to run in the pack and see how you cope with company, so you do not want to drive away from everyone.",
+        "Keep aggression low at first. High aggression produces contact that teaches little and gets frustrating.",
+        "When you can finish a race cleanly three times in a row, raise skill by one step.",
+        "Once you are comfortable, raise aggression for one session to practise staying out of trouble when the cars around you are less polite."
+      ]
+    },
+    {
+      "p": "I avoid matching the very top AI pace on a track I do not know. Chasing cars you cannot catch is a way to make mistakes, and it trains you to over-drive."
+    },
+    {
+      "h2": "A session plan that works for me"
+    },
+    {
+      "p": "Here is the 45 minute plan I use. It borrows from my <a href=\"iracing-practice-session-plan-45-minutes.html\">45 minute practice session plan</a> and swaps the second half for AI traffic."
+    },
+    {
+      "olist": [
+        "Minutes 0 to 10: solo laps in the car, to warm up and remember the braking points.",
+        "Minutes 10 to 20: AI race start practice. Restart the race four or five times and focus on the opening corner. Note where you lose places.",
+        "Minutes 20 to 40: one proper AI race, short, at a skill setting where you run mid-pack. Concentrate on clean passes and leaving room.",
+        "Minutes 40 to 45: review the incidents. Where did you touch something, and what did you see (or miss) beforehand?"
+      ]
+    },
+    {
+      "tip": "Write down one thing to work on before each session, such as 'brake earlier into turn one when beside someone'. A single focus gets used, while a list of five gets forgotten by lap three.",
+      "tipLabel": "Practice tip"
+    },
+    {
+      "h2": "Moving from AI to official rookie races"
+    },
+    {
+      "p": "The jump from AI to humans is where the safety rating is at stake, so I ease into it. My <a href=\"iracing-safety-rating-guide.html\">safety rating guide</a> explains how corners and incident points feed the rating, and <a href=\"iracing-incident-points-how-they-work.html\">how incident points work</a> covers what each type of contact costs."
+    },
+    {
+      "p": "My transition steps:"
+    },
+    {
+      "olist": [
+        "Do two or three AI races at the same track and car as your next official session.",
+        "Enter a rookie official race with the goal of finishing without contact. Position is a bonus.",
+        "Start from a safe position if you can, give a car-width at every corner for the first lap, and avoid committing to a gap that is not yet there.",
+        "After each official race, compare it with your AI practice. If you were more aggressive in the official race than in practice, dial it back."
+      ]
+    },
+    {
+      "p": "Rookie lobbies contain drivers who are still learning, so they can be unpredictable in ways AI is not. I treat the first few races as the place to learn how humans move, and I do not read much into the result."
+    },
+    {
+      "h2": "Hardware notes"
+    },
+    {
+      "p": "None of this needs special gear, but pedals affect how well starts and braking transfer from AI to real races. I use CRP2 load cell pedals, and consistent braking pressure matters most when you are running close to other cars. A fixed aluminium cockpit means I can repeat the same seating position every session, which helps muscle memory carry across. The wheel is a MOZA R9, which I understand delivers a peak torque of ~9 N·m, though you should check the manufacturer's current figures. You can do all of the AI practice above on any wheel and pedals you already own."
+    },
+    {
+      "p": "If you start with AI and decide the hobby is for you, the first upgrade I would consider is pedals, since braking consistency shows up in every race. My <a href=\"sim-rig-upgrade-order-what-to-buy-first.html\">sim rig upgrade order</a> post goes through the order I would buy things in."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do iRacing AI races affect my safety rating or iRating?",
+      "a": "As far as I know, offline AI races do not change either number, which is why they suit practice. Check the current iRacing rules if you want to be sure, since details can change between seasons."
+    },
+    {
+      "q": "What AI skill level should I use?",
+      "a": "Start a little below your own pace so you run in the pack instead of driving away from it. Raise the setting one step after you can finish three races in a row without contact."
+    },
+    {
+      "q": "What does AI racing teach badly?",
+      "a": "AI cars behave predictably, so they rarely close a gap, lift late or make a lap-one gamble the way humans do. Practice with them builds technique, but you should expect official fields to be messier."
+    },
+    {
+      "q": "How do I move from AI races to official races without hurting my safety rating?",
+      "a": "Practise the same car and track against AI first, then enter a rookie official race with finishing cleanly as the only goal. Leave a car-width at corners on the first lap and avoid committing to gaps that are not there yet."
+    }
+  ]
+}
