@@ -6,7 +6,7 @@
 - Author: Carlos Martinez (iRacing user "Carlos Martinez9"). Home: https://realiracing.com/
 - Rig: MOZA R9 direct drive wheelbase, MOZA CS V2 wheel, MOZA SR-P pedals, RTX 5060 Ti, 1440p 120 Hz monitor. Full breakdown: https://realiracing.com/gear.html
 - Affiliate disclosure: gear links go to Amazon and carry an affiliate tag; the author may earn a commission at no cost to the reader. The site does not use sponsored loaner hardware.
-- 210 blog guides published so far; new posts appear several times a week.
+- 212 blog guides published so far; new posts appear several times a week.
 
 ## Main sections
 - [Home](https://realiracing.com/): channel overview, content types, gear picks, FAQ
@@ -51,6 +51,8 @@
 - [Richmond Raceway iRacing guide: lines, braking, and setup](https://realiracing.com/blog/richmond-raceway-iracing-guide.html): Master Richmond's tight oval with my guide to racing lines, brake zones, and MOZA R9 setup for consistent lap times.
 - [Mid-Ohio iRacing Guide: Setup, Apexes, and Brake Points](https://realiracing.com/blog/mid-ohio-motorsports-park-iracing-guide.html): Learn the corner sequence, key brake points, and setup adjustments that work on Mid-Ohio in iRacing, from turn one to the final corner.
 - [Rudskogen Motorsenter iRacing Guide: Setup, Strategy, Braking Zones](https://realiracing.com/blog/rudskogen-iracing-guide-setup-strategy.html): Master Rudskogen's flat, fast layout with setup tuning tips, braking point references, and race strategy for oval and road course variants.
+- [Hungaroring iRacing guide: Setup, braking zones, and wet weather](https://realiracing.com/blog/hungaroring-iracing-guide-setup-strategy.html): Learn Hungaroring's tight corners, heavy braking zones, and rain strategy, with setup starting points for Formula cars and GT3s.
+- [iRacing on Mac: The realistic options and trade-offs](https://realiracing.com/blog/iracing-on-mac-realistic-options.html): iRacing doesn't run natively on macOS. Here's what actually works, what doesn't, and what the performance cost really is.
 - [Wheel Rotation and Steering Ratio in iRacing, Explained](https://realiracing.com/blog/steering-rotation-and-ratio-iracing.html): Why your wheel's degrees of rotation should match the car, how soft lock and steering ratio work in iRacing, and how to set it up on a MOZA R9.
 - [Sim Rig Cable Management: A Practical Guide | RealIRacing](https://realiracing.com/blog/sim-rig-cable-management-guide.html): How to route power, USB and pedal cables on a direct drive rig so nothing snags, disconnects mid-race or adds noise to force feedback.
 - [A 45-Minute iRacing Practice Plan That Actually Sticks](https://realiracing.com/blog/iracing-practice-session-plan-45-minutes.html): A structured 45-minute iRacing practice session: warm-up, one corner and one variable, a consistent run, a pace run, lap review and a firm stop.
