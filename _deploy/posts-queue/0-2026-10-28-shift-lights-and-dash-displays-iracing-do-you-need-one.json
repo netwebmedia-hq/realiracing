@@ -1,0 +1,69 @@
+{
+  "slug": "shift-lights-and-dash-displays-iracing-do-you-need-one",
+  "tag": "Buyer's Guide · Hardware",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "Shift Lights and Dash Displays for iRacing: Do You Need One?",
+  "description": "What a shift light bar or dash display actually adds in iRacing, what the sim already shows you for free, and the order I would buy in from a MOZA R9 and CRP2 rig.",
+  "published": "2026-10-28",
+  "dateLabel": "October 28, 2026",
+  "gearKeys": [
+    "moza-cs-v2",
+    "moza-r9",
+    "moza-crp2",
+    "cockpit"
+  ],
+  "sections": [
+    { "p": "Every photo of a serious sim rig has a little screen behind the wheel and a row of coloured lights across the top. Mine did not, for a long time, and I still set personal bests. Then my MOZA CS V2 rim arrived with its own row of RGB shift lights and I started paying attention to how I actually used them. This is a plain look at what shift lights and dash displays add in iRacing, what the sim already gives you, and whether the money is better spent elsewhere on a rig built around a MOZA R9, CRP2 pedals and a fixed aluminium cockpit." },
+    { "p": "I am going to hedge the numbers in this piece, because refresh rates, brightness and prices vary by product and by the week. Treat the figures as the shape of the thing, and check the current spec sheet before you buy." },
+    { "h2": "What the sim already shows you" },
+    { "p": "iRacing draws a shift indicator on screen in most cars, and the in-car dash on the virtual steering wheel or instrument cluster usually has a rev bar or a set of lights modelled on the real car. On top of that, the black box overlays give you fuel, tyre and lap data without any extra hardware. For a lot of drivers, that is genuinely enough. If you shift by sound and by the on-screen indicator, you are not losing lap time by not owning a light bar." },
+    { "p": "The problem is where your eyes are. On a single monitor at a proper field of view, the virtual dash is small and sits low. In a tight corner exit, glancing down at it is a glance away from the apex. A physical light bar at the top of your rim, or a small screen just behind it, sits inside your peripheral vision, so the information arrives without a glance. That is the whole case for the hardware: not more data, but data in the right place." },
+    { "h2": "Shift lights: the small upgrade that changes a habit" },
+    { "p": "A shift light does one job. It tells you, without words, that the next gear is due. When it is tuned to the car you are driving, you stop looking at the rev counter and stop listening for the limiter, and your eyes stay on the track. The gain is not in the shift itself. It is in the attention you get back." },
+    { "p": "On the CS V2 the lights are built into the rim, so there was nothing to buy or mount. They light up in sequence and go to a flashing state at the shift point, and the sim drives them directly through the MOZA software. That built-in approach is the cheapest way to get shift lights if you are already choosing a rim: pick one that has them, and the question answers itself." },
+    { "p": "If your rim has no lights, a separate bar that clamps or screws to the top of the wheelbase or to the monitor edge is the usual answer. The things that matter in practice:" },
+    { "list": [
+      "<strong>Position.</strong> Lights behind the rim, at the top of the wheelbase, stay where you need them when the wheel turns. Lights on the rim itself rotate with it, which is fine for GT cars with ~a quarter turn of lock at speed and annoying in a rally car.",
+      "<strong>Brightness control.</strong> Full brightness in a dark room is a distraction. A bar you cannot dim will end up unplugged.",
+      "<strong>Per-car tuning.</strong> The shift point in a GT3 car is not the shift point in a Mazda MX-5. The software needs to pick up the car's own rev limit from the sim, or let you set profiles, or you will be back to shifting by ear.",
+      "<strong>Refresh.</strong> Lights that update ~a few dozen times a second are fine. Lagging lights are worse than none, because you learn to distrust them."
+    ] },
+    { "p": "For most people, shift lights are the whole upgrade. The dash is the part you should think harder about." },
+    { "h2": "Dash displays: useful, but only if you decide what goes on it" },
+    { "p": "A dash display is a small screen, typically a few inches across, mounted behind the rim or on top of the wheelbase. It shows a page of telemetry that you design or download: gear, speed, fuel remaining, laps of fuel, tyre temperatures, delta to your best lap, position, gap ahead and behind, flags. The sim already has all of this in its black boxes. The dash puts it in one place and lets you see it without cycling overlays with a button." },
+    { "p": "What I have found over a few seasons of racing with and without one:" },
+    { "list": [
+      "In <strong>sprint races</strong>, I look at the dash for gear and delta only. The rest is noise. A shift light bar plus the in-sim delta bar would have done the job.",
+      "In <strong>endurance races</strong>, the dash earns its place. Fuel per lap, laps remaining on fuel, and tyre temperatures in one glance stop me from fumbling through black boxes while someone is diving down the inside.",
+      "In <strong>ovals</strong>, a dash page with the gap behind you and your lap times is close to essential if you run without a spotter app, because the spotter audio alone does not give you the trend.",
+      "If you <strong>stream</strong>, the dash on a physical screen is one less overlay cluttering the capture."
+    ] },
+    { "p": "The common failure is a dash page copied from someone else's setup with twelve values on it. Twelve values is a wall. The useful dash has three or four large values you can read in the time it takes to blink, with the rest hidden behind a page button. If you are going to buy a screen, plan to spend an evening designing a page for each type of racing you do." },
+    { "h2": "How they talk to iRacing" },
+    { "p": "iRacing publishes telemetry on your PC that third-party software can read, and that is what every light bar and dash runs on. Some wheels and rims, like the CS V2 through the MOZA software, take the data directly. Most stand-alone bars and screens use a telemetry app on the PC that reads the sim and pushes the values out over USB. The widely used option has a free tier and a paid licence that unlocks higher update rates, and the paid one is where most people end up once they have a dash, because the free refresh is noticeably slower." },
+    { "p": "Two things to check before buying any dash hardware: that it is supported by the telemetry software you plan to use, and that your PC has a free USB port on a powered hub. Dashes and light bars are small, but they add up on a USB bus that is already carrying a direct-drive base, pedals, a button box and a headset. I have written before about <a href=\"usb-power-hubs-peripheral-dropout-iracing.html\">USB power and peripheral dropouts</a>, and a dash is one more device that can trigger them." },
+    { "h2": "The cheap route: a phone or tablet" },
+    { "p": "You can run the same telemetry software to a phone or an old tablet over your home network and prop it behind the wheel. The display is bigger than a dedicated dash, it costs nothing if you already own the device, and it is a fair way to find out whether you will actually look at a dash before you buy one. The downsides are latency over Wi-Fi, a screen that is brighter than you want at night, and a mount that is never quite rigid enough. I ran a tablet dash for a season this way. It convinced me that I wanted the information and that I did not want the tablet." },
+    { "h2": "Where it belongs in the upgrade order" },
+    { "p": "If you have a wheel, load-cell pedals and a rigid mount, you have the three things that move lap time. I covered the order I would buy in in <a href=\"sim-rig-upgrade-order-what-to-buy-first.html\">what to buy first for a sim rig</a>, and nothing in this piece changes that: lights and dashes come after the rigid cockpit and after the pedals. From my own rig:" },
+    { "olist": [
+      "Shift lights built into the rim, if you are choosing a rim anyway. Zero mounting, zero extra USB, and the habit change is real.",
+      "A stand-alone light bar, if your rim has none and you race cars with a narrow power band.",
+      "A dash display, if you race endurance or ovals, or you stream and want overlays off the capture.",
+      "A tablet dash, as a trial before any of the above, if you are not sure you will look at it."
+    ] },
+    { "p": "What I would not do is buy a dash before a load-cell brake. The brake pedal is where consistency lives. The dash just tells you how consistent you were." },
+    { "tipLabel": "From the rig", "tip": "Set your shift lights to flash slightly before the real limiter, not at it. The small lead time absorbs your reaction and the gear goes in at the right revs instead of on the limiter. Tune it per car and the lights stop being decoration." },
+    { "h2": "Mounting notes for a fixed cockpit" },
+    { "p": "On an aluminium profile cockpit, the cleanest place for a dash is a small bracket on the wheel deck just behind the base, angled up towards your eyes so the rim does not hide it at the straight-ahead position. A light bar sits on top of the base housing or on a short arm from the same bracket. Keep both clear of the rim's quick release so you can still swap wheels without unscrewing anything. Route the USB cable along the profile with the base cable, not across the wheel deck where your hands go. If the screen reflects the room lights, tilt it a few degrees rather than turning the brightness up." },
+    { "h2": "The short answer" },
+    { "p": "Shift lights are a yes for most drivers, and a free yes if your rim has them. A dash display is a yes for endurance and oval racers and for streamers, and a maybe for everyone else. Neither replaces a rigid cockpit, good pedals or seat time, and both are easy to over-specify. Start by deciding what you want to see without looking down, then buy the smallest thing that shows you that." }
+  ],
+  "faqs": [
+    { "q": "Does iRacing support shift lights and dash displays natively?", "a": "iRacing publishes live telemetry on your PC, and shift lights and dashes read it through the wheel maker's software or a third-party telemetry app. Some rims, like the MOZA CS V2, have built-in shift lights driven directly by the MOZA software, while most stand-alone bars and screens rely on a telemetry app that supports iRacing." },
+    { "q": "Do shift lights make you faster in iRacing?", "a": "Not directly. They let you keep your eyes on the track instead of the rev counter, and they make shift timing consistent across cars once tuned per car. The gain is attention and consistency rather than raw lap time." },
+    { "q": "Can I use a phone or tablet as an iRacing dash?", "a": "Yes. Telemetry apps can send a dash page to a phone or tablet over your home network. It is a cheap way to try a dash before buying dedicated hardware, with the trade-offs of Wi-Fi latency and a less rigid mount." },
+    { "q": "What should I buy first, a dash display or load-cell pedals?", "a": "Load-cell pedals. A consistent brake pedal moves lap time, while a dash only reports it. Shift lights built into a rim are a sensible early add because they cost nothing extra, but a dedicated dash belongs after the pedals and a rigid cockpit." }
+  ]
+}
