@@ -78,7 +78,7 @@ jobs:
         if: steps.hubkey.outputs.present == '1'
         uses: actions/checkout@v4
         with:
-          repository: netwebmedia/netwebmedia
+          repository: netwebmedia-hq/netwebmedia
           ssh-key: ${{ secrets.NWM_MONOREPO_DEPLOY_KEY }}
           path: _nwm
           sparse-checkout: |
