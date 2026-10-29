@@ -1,0 +1,60 @@
+{
+  "slug": "iracing-safety-rating-license-climb-from-rookie",
+  "tag": "Beginner's Guide · Racecraft",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "iRacing Safety Rating: How to Climb Out of Rookie",
+  "description": "How iRacing's Safety Rating and license classes work, what costs you incident points and the habits that get a new driver out of Rookie without wrecking.",
+  "published": "2026-10-29",
+  "dateLabel": "October 29, 2026",
+  "gearKeys": ["moza-r9", "moza-crp2", "moza-cs-v2"],
+  "sections": [
+    {"p": "The first week I raced on iRacing I was more worried about lap time than anything else, and my Safety Rating paid for it. A couple of optimistic dives into turn one, a spin while chasing a gap, and I was looking at a license that was going the wrong way. The fix was not more pace. It was understanding what the system actually counts and driving to that."},
+    {"p": "This guide explains how Safety Rating and the license classes work, what costs you incident points, and the habits that got me out of Rookie. iRacing tunes the details from season to season, so treat the exact thresholds here as approximate and check the current Sporting Code before you plan around a number."},
+    {"h2": "Two ratings, two jobs"},
+    {"p": "iRacing tracks two separate numbers. <strong>iRating</strong> is your skill rating, and it moves with where you finish against the field. <strong>Safety Rating</strong>, or SR, measures how clean you drive, and it moves with how many incident points you collect relative to how many corners you complete. You can win a race and lose SR, or finish last and gain it."},
+    {"p": "License class is tied to SR, not iRating. That is good news for a new driver: you do not need to be fast to move up, you need to be clean."},
+    {"h2": "The license ladder"},
+    {"p": "Licenses run from Rookie through D, C, B and A, with a Pro level above that for top series. Each license has its own SR on a scale from 0.00 up to just under 5.00. Higher licenses unlock more series and more cars."},
+    {"p": "Roughly, you are promoted to the next class once your SR sits at or above ~3.0 when iRacing runs its promotion check, provided you have also met the minimum participation requirement for that period. Reaching ~4.0 SR can earn a fast-track promotion without waiting. Drop low enough and you can be demoted. Again, check the current rules; the shape of the system has stayed the same, but iRacing does adjust the timing."},
+    {"h2": "What counts as an incident"},
+    {"p": "Incident points are where SR is won or lost. The common ones, as I understand the current rules for road racing:"},
+    {"list": [
+      "<strong>1x</strong> for going off track, meaning all four wheels outside the racing surface.",
+      "<strong>2x</strong> for a loss of control, such as a spin.",
+      "<strong>0x</strong> for light contact with another car.",
+      "<strong>4x</strong> for heavy contact with another car in most road series.",
+      "Wall contact and some combined events are scored too, and ovals and dirt use their own variations."
+    ]},
+    {"p": "The important thing is that incidents are judged against corners completed. A long race with a single spin can still leave your SR higher than a short race with three offs."},
+    {"h2": "Where new drivers lose most of their SR"},
+    {"p": "In my experience, and judging by what I see in every Rookie split, most SR goes in three places."},
+    {"olist": [
+      "<strong>Lap one, turn one.</strong> Everyone is cold, bunched up and braking at different points. Brake earlier than you think you need to and accept losing a spot or two.",
+      "<strong>Running off track while pushing.</strong> Four wheels over the line on corner exit is a 1x every time. A small lift is cheaper than the off.",
+      "<strong>Chasing after a mistake.</strong> After a spin or a lost place, the urge to win it back immediately causes the next incident."
+    ]},
+    {"h2": "Habits that move the number up"},
+    {"list": [
+      "<strong>Practice the track first.</strong> Run test drive or an AI session until you can do ~10 clean laps in a row. My piece on <a href=\"iracing-ai-races-practice-racecraft.html\">using AI races to practise racecraft</a> covers how I set that up.",
+      "<strong>Qualify, even badly.</strong> Starting further forward among similar-pace drivers is usually calmer than starting at the back of a pack that is about to collide.",
+      "<strong>Leave a car's width.</strong> When side by side, give room on corner exit. Contact you could have avoided is never worth the place.",
+      "<strong>Drive at ~95%.</strong> Consistency beats one hero lap. The last few tenths are where offs live.",
+      "<strong>Check your mirrors and relative overlay.</strong> Know who is alongside before you turn in.",
+      "<strong>Pit or retire rather than limp around damaged.</strong> A badly damaged car is a hazard to you and to everyone near it."
+    ]},
+    {"tipLabel": "From my rig", "tip": "Calm inputs help more than raw speed here. A load-cell brake like the MOZA CRP2 lets me brake by pressure rather than pedal travel, which made my braking points far more repeatable on lap one. If your force feedback is clipping, you also lose information right when the car starts to slide; my <a href=\"moza-r9-iracing-settings.html\">MOZA R9 iRacing settings</a> post covers how I keep it out of clipping."},
+    {"h2": "Reviewing your incidents"},
+    {"p": "After a race, open the replay and jump to each incident. Ask whether it was something you could have avoided, not who was at fault. Most of the time there was an earlier decision, such as a late brake or a gap that was never really there, that set it up. My guide on <a href=\"how-to-review-iracing-replays-to-find-lap-time.html\">reviewing iRacing replays</a> walks through how I scrub through a session quickly."},
+    {"h2": "When SR goes down anyway"},
+    {"p": "It will. Someone will spin in front of you, or a hard-charger will tag your rear bumper. Incidents in iRacing are scored without blame, so you will sometimes take points you did not cause. Over enough races that evens out. The drivers who climb are the ones who keep their own share of incidents low, not the ones who never get hit."},
+    {"p": "If you are stuck, pick one series and one track for a week and run it until it feels boring. Boring is clean, and clean is how you get out of Rookie."},
+    {"p": "Once you are promoted, the same habits carry straight into D and C class. The fields get a little faster and a little more confident, but the races are still decided far more often by who avoids trouble on lap one than by who has the quickest single lap."}
+  ],
+  "faqs": [
+    {"q": "What is Safety Rating in iRacing?", "a": "Safety Rating, or SR, measures how cleanly you drive. It goes up when you complete corners with few incident points and down when you collect incidents. License class is based on SR, not on your finishing positions."},
+    {"q": "How do you get out of Rookie in iRacing?", "a": "Keep your Safety Rating at or above roughly 3.0 at the promotion check and meet the minimum participation requirement. A rating around 4.0 can earn an early fast-track promotion. Check the current iRacing Sporting Code for exact thresholds."},
+    {"q": "How many incident points is a spin in iRacing?", "a": "A loss of control such as a spin is usually 2x in road racing. Going off track with four wheels is 1x, light contact with another car is 0x and heavy contact is usually 4x."},
+    {"q": "Does iRating affect my license in iRacing?", "a": "No. iRating measures skill based on finishing positions, while your license class is tied to Safety Rating. You can raise one and lower the other in the same race."}
+  ]
+}
