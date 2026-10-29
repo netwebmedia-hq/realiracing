@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GTP hybrid energy deployment: when to use it in iRacing</title>
+  <meta name="description" content="Master hybrid power deployment in iRacing GTP cars. Learn when to harvest, when to deploy, and how it changes your race strategy." />
+  <link rel="canonical" href="https://realiracing.com/blog/gtp-hybrid-energy-deployment-iracing.html" />
+  <meta property="og:title" content="GTP hybrid energy deployment: when to use it in iRacing" />
+  <meta property="og:description" content="Master hybrid power deployment in iRacing GTP cars. Learn when to harvest, when to deploy, and how it changes your race strategy." />
+  <meta property="og:url" content="https://realiracing.com/blog/gtp-hybrid-energy-deployment-iracing.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/sim-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: overlapping waveforms" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/sim-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261020" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "GTP hybrid energy deployment: when to use it in iRacing",
+    "description": "Master hybrid power deployment in iRacing GTP cars. Learn when to harvest, when to deploy, and how it changes your race strategy.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/gtp-hybrid-energy-deployment-iracing.html",
+    "image": "https://realiracing.com/assets/photos/sim-cover.jpg",
+    "datePublished": "2026-10-19",
+    "dateModified": "2026-10-19"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"GTP hybrid energy deployment: when to use it in iRacing","item":"https://realiracing.com/blog/gtp-hybrid-energy-deployment-iracing.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/gtp-hybrid-energy-deployment-iracing.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/gtp-hybrid-energy-deployment-iracing.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much faster does hybrid deployment make a GTP car on a single corner?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A typical single-corner hybrid deployment gains roughly 0.1 to 0.25 seconds depending on the corner type and how much of the battery you use. Uphill accelerations and long sweepers show the most gain. Tight hairpins show the least. The value over a full lap compounds when you deploy across 2 to 4 corners in sequence." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I harvest energy while I'm coasting or in neutral?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. The hybrid system only harvests during active braking or engine braking. Coasting produces no energy. You must be decelerating through the powertrain to charge the battery. This is why heavy trail braking into slow corners is the most efficient harvest zone." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I run out of battery mid-race?",
+      "acceptedAnswer": { "@type": "Answer", "text": "You simply have no hybrid power available until you harvest more energy. The car still performs normally on engine power alone. You will not lose speed or have a penalty. You just lose the advantage for as long as the battery is empty. This is why pacing your deployment across a stint matters." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does hybrid deployment affect tire temperatures or wear?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Indirectly, yes. Using hybrid to accelerate harder mid-corner loads the tires more, which increases temperature slightly. Over a long stint this can accelerate wear at the rear. If tires are already hot and degrading, aggressive hybrid use will worsen that. On fresh tires or cooler track conditions, the effect is negligible. Monitor tire temp telemetry if you're running long stints." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Car Guide · GTP Racing</p>
+    <h1>GTP hybrid energy deployment: when to use it in iRacing</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 19, 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/sim-cover.jpg" width="1000" height="563" alt="Cover art: overlapping waveforms" srcset="/assets/photos/sim-cover-sm.jpg 560w, /assets/photos/sim-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">It is easy to burn through your hybrid battery by lap three chasing a gap that never closes in a multi-class race. Hybrid energy management in GTP cars sits right at the intersection of strategy and real-time racecraft. It's not just about having more power. It's about deploying it in the moments where that extra pulse actually wins time, rather than flattening your battery and limping through the second half of a race.</p>
+
+      <p>In iRacing's GTP series, the Porsche 963 and Cadillac V-Series.R both carry hybrid systems that harvest energy under braking and feed it back under acceleration. The system feels different from the old hybrid LMP1 cars because the harvest happens passively, but the deployment is entirely manual. You store energy by braking hard. You spend it by holding a button. Everything else flows from that.</p>
+
+      <h2>How hybrid energy actually harvests in GTP</h2>
+
+      <p>Every time you hit the brakes on a GTP car, the electric motor captures some of that kinetic energy and charges the battery. The harder you brake, the more energy you harvest, up to a cap. You cannot fill the battery beyond 100 percent, and you cannot overfill it by braking harder than you need to. The system caps itself.</p>
+
+      <p>This means you harvest energy most effectively during heavy trail braking into slow corners. You also harvest during full-throttle downshifts where engine braking contributes to the decel. Gentle braking on a straightaway harvests less. Coasting harvests nothing. The implication is immediate: if you want a full battery for a crucial lap, you need to brake harder than the minimum line speed in the laps leading up to it.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Harvest strategy</span>
+        <p>Harvest energy during laps where you're not racing anyone. If you're running P3 in a multi-class stint and no one is within three seconds, lean on your brakes in the technical sections and build your battery buffer. You'll spend it when traffic arrives.</p>
+      </div>
+
+      <h2>Where hybrid deployment actually wins time</h2>
+
+      <p>Hybrid deployment is not free horsepower that makes you faster everywhere. It works best in specific zones: on-track overtakes, gap closures before DRS zones, and the run out of the tighter corners where your traction is most limited. On a track like <a href="imola-iracing-guide-kerbs-chicanes-strategy.html">Imola</a>, the long acceleration out of the Rivazza or into Tosa is exactly where hybrid deployment compounds a better exit and creates a real passing opportunity.</p>
+
+      <p>The gain is usually small in absolute terms. In the Porsche 963 at somewhere like Road America, deploying full hybrid into the heavy uphill acceleration section might gain 0.15 seconds on a single lap. That sounds marginal. Over 30 laps, that's four or five seconds total. In a close race, that is the entire margin.</p>
+
+      <p>Hybrid does not help you apex faster or brake deeper. It helps you exit faster and carry more mid-corner speed through long acceleration zones. If a corner rewards smooth mid-corner throttle application, that is when to deploy. Tight hairpins where you scrub speed and then immediately accelerate again are hybrid activation zones. Flowing fast sweepers where you're already at full throttle are not.</p>
+
+      <ul>
+        <li>Uphill accelerations after medium-speed corners (Porsche is strongest here)</li>
+        <li>The run into DRS detection zones on ovals and road courses</li>
+        <li>The 2-3 seconds after an off-strategy pit stop when you're rebuilding pace</li>
+        <li>Closing a gap to a car ahead over 2-3 successive corners</li>
+        <li>The end of lap 1 after a restart when the field is compressed</li>
+      </ul>
+
+      <h2>Hybrid deployment rhythm across a stint</h2>
+
+      <p>A common mistake is treating the hybrid battery like a nitrous button in arcade racing. You use it for seven or eight laps and then you're dry. A smarter approach spreads deployment across the entire stint, focusing on laps where you gain the most relative time.</p>
+
+      <p>Early in a stint, your pace is fast and your tires are fresh, so every lap looks competitive. Don't blow your battery closing gaps to cars you'll naturally get closer to as track position settles and traffic forms. Instead, harvest during the first five to eight laps when you can afford to brake harder than necessary. Hold your battery in reserve.</p>
+
+      <p>The middle phase is your working stint. Defend with small hybrid pulses if you're running in tight traffic. A quick burst leaving a DRS zone or closing a position gap is a 5 to 10 percent battery spend, not a full deployment. You're stretching your energy across multiple opportunities.</p>
+
+      <p>The final laps before a pit stop or driver change are when you deploy aggressively if you need track position. If you're 1.2 seconds down to the car ahead with four laps left in your stint, two or three full hybrid deployments across those laps might close the gap and let you challenge for the pass. That is the correct use case.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Tracking battery state</span>
+        <p>Track your battery percentage on your telemetry overlay so you know exactly how much harvest you've done. Garage61 or similar tools let you log that. Over two or three races, you'll develop a feel for the rhythm. Aim to start your stints with 30-40 percent battery, harvest to 80-90 percent in the first third, then spend 15-20 percent per deployment in the final third.</p>
+      </div>
+
+      <h2>Multi-class implications and traffic strategy</h2>
+
+      <p>In multiclass racing, your hybrid becomes a tool for managing traffic and building overtakes on GT and LMP2 traffic. A GTP car already outpaces most other classes in pure speed, but in mixed traffic you often follow backmarkers through technical sections where you can't pass. A single hybrid deployment mid-corner can be enough to pop you past a GT car and keep your momentum.</p>
+
+      <p>This is where conservation matters most. If you're blending laps with periods of backmarker traffic, you harvest during the clear laps and deploy only when you need to clear a car. Wasting hybrid on a straightaway overtake when the car would likely yield anyway is expensive. Saving it for a technical pass where the backmarker is defending their line is efficient.</p>
+
+      <h2>Fuel strategy and hybrid interaction</h2>
+
+      <p>Hybrid deployment increases fuel consumption very slightly. The motor pulls energy from the battery, not the fuel tank, so the effect is minimal. You should not adjust fuel consumption estimates based on hybrid use unless you're running close to the limit on a long endurance event. In a one-hour or three-hour race, plan fuel assuming normal throttle deployment. The hybrid's impact on range is effectively zero.</p>
+
+      <p>What matters instead is race strategy. If a race is split into two stints and pit strategy is tight, you need to decide whether to harvest aggressively in stint one (requiring harder braking, possibly affecting tire temperature) or save aggression for stint two when track position matters more. Most of the time, stint two is the right answer. Prioritize track position over battery level.</p>
+
+      <h2>Setup and hybrid feel</h2>
+
+      <p>Your brake pressure settings, brake bias, and even your differential tuning influence how satisfying and effective hybrid deployment feels. A car set up for heavy trail braking will harvest more energy and let you deploy it more predictably because you're used to the decel rhythm. A car dialed for late braking will harvest less and may feel squirrely when hybrid cuts in mid-corner if you accidentally deploy while steering.</p>
+
+      <p>A bias toward trail braking suits drivers who like a smooth, progressive brake feel, because it makes it easy to modulate how much energy you're harvesting. If you run a late-brake setup, you'll deploy hybrid on straights and exits, not mid-corner, and that changes how you plan your overtakes.</p>
+
+      <p>There is no single best hybrid strategy. The car, the track, your brake style, and the race situation all shape how you approach it. The key is treating hybrid deployment as a deliberate tactical tool, not a panic button. Harvest when you can afford to brake hard. Spend when you're trying to make something happen. Understand the difference and you'll feel the gain.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=gtp-hybrid-energy-deployment-iracing">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Get the next guide by email</h3>
+        <p>Setups, FFB settings and new packs, straight from the rig. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing" data-ok="You're on the list. Thanks!" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Subscribe</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>How much faster does hybrid deployment make a GTP car on a single corner?</h3>
+        <p>A typical single-corner hybrid deployment gains roughly 0.1 to 0.25 seconds depending on the corner type and how much of the battery you use. Uphill accelerations and long sweepers show the most gain. Tight hairpins show the least. The value over a full lap compounds when you deploy across 2 to 4 corners in sequence.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I harvest energy while I'm coasting or in neutral?</h3>
+        <p>No. The hybrid system only harvests during active braking or engine braking. Coasting produces no energy. You must be decelerating through the powertrain to charge the battery. This is why heavy trail braking into slow corners is the most efficient harvest zone.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What happens if I run out of battery mid-race?</h3>
+        <p>You simply have no hybrid power available until you harvest more energy. The car still performs normally on engine power alone. You will not lose speed or have a penalty. You just lose the advantage for as long as the battery is empty. This is why pacing your deployment across a stint matters.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does hybrid deployment affect tire temperatures or wear?</h3>
+        <p>Indirectly, yes. Using hybrid to accelerate harder mid-corner loads the tires more, which increases temperature slightly. Over a long stint this can accelerate wear at the rear. If tires are already hot and degrading, aggressive hybrid use will worsen that. On fresh tires or cooler track conditions, the effect is negligible. Monitor tire temp telemetry if you're running long stints.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="dirt-sprint-car-iracing-beginners-guide.html"><span>Car Guide</span>Dirt Sprint Car iRacing Beginner Guide: Setup and Technique</a>
+      <a class="related-card" href="bmw-m4-gt4-iracing-guide.html"><span>Car Guide</span>BMW M4 GT4 in iRacing — Why It's the Best Car to Learn GT Racing</a>
+      <a class="related-card" href="toyota-gr86-iracing-guide.html"><span>Car Guide</span>The Toyota GR86 on iRacing: A Modern Take on the Momentum Car</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","moza-crp2"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
