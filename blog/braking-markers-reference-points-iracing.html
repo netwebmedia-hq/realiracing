@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Braking Markers and Reference Points in iRacing</title>
+  <meta name="description" content="How I pick fixed braking markers and corner reference points in iRacing, move them in small steps, and keep them honest as fuel and tyres change." />
+  <link rel="canonical" href="https://realiracing.com/blog/braking-markers-reference-points-iracing.html" />
+  <meta property="og:title" content="Braking Markers and Reference Points in iRacing" />
+  <meta property="og:description" content="How I pick fixed braking markers and corner reference points in iRacing, move them in small steps, and keep them honest as fuel and tyres change." />
+  <meta property="og:url" content="https://realiracing.com/blog/braking-markers-reference-points-iracing.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/track-corner.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="715" />
+  <meta property="og:image:alt" content="A race car through a corner" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/track-corner.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261020" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Braking Markers and Reference Points in iRacing",
+    "description": "How I pick fixed braking markers and corner reference points in iRacing, move them in small steps, and keep them honest as fuel and tyres change.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/braking-markers-reference-points-iracing.html",
+    "image": "https://realiracing.com/assets/photos/track-corner.jpg",
+    "datePublished": "2026-10-30",
+    "dateModified": "2026-10-30"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Braking Markers and Reference Points in iRacing","item":"https://realiracing.com/blog/braking-markers-reference-points-iracing.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/braking-markers-reference-points-iracing.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/braking-markers-reference-points-iracing.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Sim Racing Cockpit / Wheel Stand","description":"a rigid mount matters more than the brand — flex kills FFB detail","url":"https://realiracing.com/blog/braking-markers-reference-points-iracing.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a braking marker in iRacing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A braking marker is a fixed object at the side of the track, such as a distance board, a sign or a change in the asphalt, that you use as the point to start braking. Using the same object every lap makes your braking repeatable." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find my brake point on a new corner?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Start by braking much earlier than you need, at a clear marker, and run several laps there. Then move your brake point closer in small equal steps, five laps per step, and stop when you get a lockup or run wide. Go back one step to find a working point." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do braking markers change with the car or conditions?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Fuel load, tyre wear, a wet track, slipstreaming and a different car all change the braking distance. Keep notes per car and track, and build a separate set for the wet." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need load cell pedals to use braking markers?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, markers work with any pedals. A load cell measures pressure rather than travel, which makes it easier to repeat the same braking force, so it pairs well with a fixed marker, but the method itself does not require one." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Technique · Driving</p>
+    <h1>Braking Markers and Reference Points in iRacing</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 30, 2026</span>
+      <span class="dot">·</span>
+      <span>8 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/track-corner.jpg" width="1000" height="715" alt="A race car through a corner" srcset="/assets/photos/track-corner-sm.jpg 560w, /assets/photos/track-corner.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Photo: <a href="https://www.flickr.com/photos/36021014@N06" target="_blank" rel="noopener nofollow">Michael Elleray</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener nofollow">CC BY 2.0</a> · Source: <a href="https://www.flickr.com/photos/36021014@N06/8093250997" target="_blank" rel="noopener nofollow">Flickr</a></figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">Every iRacing track has a braking zone where you have maybe half a second to decide, and the decision is usually made by a rough feeling in your gut. I did that for a long time. Then I started giving each corner one fixed object to aim at, and my braking got repeatable within a couple of evenings. This guide covers how I choose braking markers and reference points, how I test them, and how the rig underneath you affects how well they work.</p>
+
+      <p>I drive with a <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a>, <a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">CRP2</a> load cell pedals and a fixed aluminium cockpit. None of this needs that gear, but a rig that does not move makes the method easier to trust, and I will point out where that matters. Every spec I mention is approximate, so check current numbers on the manufacturer pages.</p>
+
+      <h2>Why a marker beats a feeling</h2>
+
+      <p>Your sense of speed on a monitor is weaker than in a real car. There is no wind, no body movement and no sound pressure in your chest. A screen gives you size and position on the image, so that is what you should use. A fixed object that grows in your view at a known rate tells you more about distance than your instinct does.</p>
+
+      <p>A marker also removes the biggest source of inconsistency, which is changing your mind mid-straight. If you brake at a different spot every lap, you cannot tell whether a slow corner came from the brake point, the pedal pressure or the turn-in. One fixed point holds the first variable still so you can work on the other two.</p>
+
+      <h2>What makes a good marker</h2>
+
+      <ul>
+        <li>It is fixed. Track-side signs, bridges, light poles, a patch of different asphalt, a gap in a barrier.</li>
+        <li>It is visible from the car you are driving now, at the height of your eyes in that car. A sign that works from a GT3 seat may be hidden in a low open-wheel car.</li>
+        <li>It is visible in rain and at low sun, or you have a second marker for those conditions.</li>
+        <li>It is not a car, a shadow or a skid mark. Those move or fade between sessions.</li>
+        <li>It is the same on every lap, which also means you can describe it in a few words, such as the second sign on the left.</li>
+      </ul>
+
+      <h2>Step one: find the earliest honest brake point</h2>
+
+      <p>Start slow. On your first few laps of a new corner, brake far earlier than you need to and make the corner easy. Pick a marker well before the corner and press the brake there every lap. You are trying to build a reference you can move, and speed comes later.</p>
+
+      <p>This ties in with how I learn a layout in general. My notes on <a href="how-to-learn-a-new-track-iracing.html">learning a new track in iRacing</a> cover the order I work through corners, and the marker work fits into the second half of that process, once the line is no longer a mystery.</p>
+
+      <h2>Step two: move it in small, equal steps</h2>
+
+      <p>Once the safe brake point feels boring, shift to the next marker closer to the corner, or move your brake point a fixed amount past the old one, like one board or one car length. Run five laps at the new point before judging it. If you are carrying the car through the corner without a lockup or a run wide, the point is good and you can try the next one.</p>
+
+      <ol>
+        <li>Pick a marker that is clearly too early. Brake there for five laps.</li>
+        <li>Move to the next marker that is closer to the corner. Five more laps.</li>
+        <li>Stop moving the moment you hit a lockup, a missed apex or a fight with the rear of the car.</li>
+        <li>Go back one step. That is your working brake point for this car and these conditions.</li>
+        <li>Write it down in a note file with the car and the track name.</li>
+      </ol>
+
+      <p>Notice that the final step uses a conservative value. The brake point you can repeat for twenty laps in a race is worth more than the point you hit once in qualifying. My thinking on that trade-off is in <a href="consistency-over-pace-lap-time-spread-wins.html">why consistency beats raw pace</a>.</p>
+
+      <div class="tip-box">
+        <span class="box-label">One change at a time</span>
+        <p>Move your brake point a fixed, small amount at a time, and change nothing else in the same run. If you shift the marker and the pressure together you will not know which one helped.</p>
+      </div>
+
+      <h2>Step three: add a pressure target</h2>
+
+      <p>A marker tells you where to start braking. It does not tell you how hard. On a load cell pedal the number that matters is peak pressure at the start of the zone, and then how smoothly you release it. A force-based pedal makes this easier because your leg learns pressure better than it learns travel. I set my CRP2 curve and travel limits using the <a href="load-cell-brake-calibration-consistent-braking.html">load cell calibration guide</a>, and I keep that calibration fixed while I work on markers, so the pedal feels the same each evening.</p>
+
+      <p>In a GT car with ABS off, a fair starting target is a hard first press that stops just short of a lockup, then a steady release into the turn. The exact percentage depends on the car, the tyre temperature and the downforce, so I do not quote a number. I find mine by watching the on-screen pedal bar or a telemetry trace and noting where the first lockup flicker appears.</p>
+
+      <p>If trailing the brake into the corner is part of your technique, the marker still sets the start. The release is what changes. I wrote up that part in the <a href="trail-braking-load-cell-technique.html">trail braking guide</a>.</p>
+
+      <h2>Reference points for turn-in, apex and exit</h2>
+
+      <p>Braking is only the first of three points per corner. The other two use the same idea.</p>
+
+      <ul>
+        <li>Turn-in point: the object where you start to steer. On a fast corner this may be a kerb start, on a slow one it may be a painted line.</li>
+        <li>Apex point: a spot on the inside kerb or the track edge where you want the car to pass. Look at it, and keep your eyes off the exit until you are past it.</li>
+        <li>Exit point: where your tyres should end up when you apply full throttle. This is often the far kerb or a track-edge line.</li>
+      </ul>
+
+      <p>I treat these as a sequence and say them in my head: brake at the board, turn at the kerb start, look at the apex, then throttle at the exit line. It sounds silly, but it moves attention forward. Beginners tend to stare at the bonnet or the nearest bit of tarmac, which is why the car feels late all the time.</p>
+
+      <h2>What changes when the conditions change</h2>
+
+      <p>Your markers are tied to one car in one set of conditions. Several things shift the real braking point.</p>
+
+      <ul>
+        <li>Fuel load. A full tank is a heavy car, and it needs more distance than the same car near empty. In a long run your marker will creep later as the fuel burns off.</li>
+        <li>Tyre wear and temperature. Cold or worn tyres give less grip. You may need to move back one step.</li>
+        <li>Wet track. Treat dry markers as unusable. See my <a href="wet-weather-driving-iracing.html">wet weather driving notes</a> and build a separate, earlier set.</li>
+        <li>Slipstream. If you are following closely on a long straight, you arrive faster than usual, so the marker is too late.</li>
+        <li>Car change. A different car in the same class can brake very differently. Redo the steps.</li>
+      </ul>
+
+      <h2>How the rig helps or hurts</h2>
+
+      <p>A marker routine depends on your foot putting in the same force at the same moment. If the pedal plate flexes, or the cockpit rocks under hard braking, your leg changes what it does without you noticing. A fixed frame removes one excuse. My pedals sit on a rigid plate and do not creep, so when I miss a point I know the mistake was mine.</p>
+
+      <p>Seating matters as well. If your eye position changes between sessions, a marker that sat just under a certain part of the screen will look different. I keep my seat and screen position fixed, and my <a href="iracing-field-of-view-single-monitor-setup.html">field of view setup</a> is set once and left alone. If you move the screen or change the FOV, treat your old markers as untrusted and recheck the first few corners.</p>
+
+      <h2>A simple routine for one practice night</h2>
+
+      <ol>
+        <li>Choose two corners only. Trying every corner on one evening spreads your attention too thin.</li>
+        <li>For each corner, run the earliest-honest-brake-point routine for five laps, then one step closer for five more.</li>
+        <li>Save a replay of the best lap and compare your brake zone against it. The <a href="iracing-delta-bar-how-to-use-it-to-find-lap-time.html">delta bar guide</a> shows how I read the time gain or loss through each section.</li>
+        <li>Write the working marker and the car in a note.</li>
+        <li>Next session, start from your note and add the next corner.</li>
+      </ol>
+
+      <p>A marker belongs to a specific car and moment, and it should change when the car does. Aim for braking that feels boring and repeatable, so your attention is free for the rest of the corner.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=braking-markers-reference-points-iracing">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CRP2+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&amp;tag=realiracing-20" data-aff="cockpit" target="_blank" rel="sponsored noopener">Sim Racing Cockpit / Wheel Stand</a></th><td>a rigid mount matters more than the brand — flex kills FFB detail</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Get the next guide by email</h3>
+        <p>Setups, FFB settings and new packs, straight from the rig. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing" data-ok="You're on the list. Thanks!" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Subscribe</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>What is a braking marker in iRacing?</h3>
+        <p>A braking marker is a fixed object at the side of the track, such as a distance board, a sign or a change in the asphalt, that you use as the point to start braking. Using the same object every lap makes your braking repeatable.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I find my brake point on a new corner?</h3>
+        <p>Start by braking much earlier than you need, at a clear marker, and run several laps there. Then move your brake point closer in small equal steps, five laps per step, and stop when you get a lockup or run wide. Go back one step to find a working point.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do braking markers change with the car or conditions?</h3>
+        <p>Yes. Fuel load, tyre wear, a wet track, slipstreaming and a different car all change the braking distance. Keep notes per car and track, and build a separate set for the wet.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do I need load cell pedals to use braking markers?</h3>
+        <p>No, markers work with any pedals. A load cell measures pressure rather than travel, which makes it easier to repeat the same braking force, so it pairs well with a fixed marker, but the method itself does not require one.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="overtaking-technique-iracing.html"><span>Technique</span>Overtaking Technique on iRacing: Making a Pass Stick Without Contact</a>
+      <a class="related-card" href="iracing-restart-technique-ovals.html"><span>Technique</span>Oval Restart Technique on iRacing: Double-File Restarts Without the Chaos</a>
+      <a class="related-card" href="how-to-learn-a-new-track-iracing.html"><span>Technique</span>How to Learn a New iRacing Track Fast (Without 200 Laps)</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-crp2","moza-r9","cockpit"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>

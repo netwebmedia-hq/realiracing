@@ -9,7 +9,7 @@
      one (host-gated, measurement only). Only runs where the page carries a
      data-ga4 id, i.e. sites with no analytics file of their own. */
   var onHost = !!ds.domain &&
-      new RegExp('(^|\\.)' + ds.domain.replace(/\./g, '\\.') + '$', 'i').test(location.hostname);
+      new RegExp('(^|\\.)' + ds.domain.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$', 'i').test(location.hostname);
   if (ds.ga4 && onHost && !window.gtag) {
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { window.dataLayer.push(arguments); };
