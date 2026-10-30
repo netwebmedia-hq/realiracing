@@ -40,9 +40,14 @@
     products: {
 
       /* ── The actual rig (what Carlos races on) ────────────── */
+      /* 2026-10-30: rule 1, not rule 2. These two searches were ~620 links,
+         so they go to the listing itself. Verified in a browser delivering to
+         a US zip: B0FGCDTKSX "MOZA R9 V3 Direct Drive Wheel Base 9Nm", in
+         stock, Add to Cart (third-party seller, low stock). Re-check when MOZA
+         ships an R9 V4. Same check for moza-crp2 below. */
       'moza-r9': {
         name: 'MOZA R9 Direct Drive Wheelbase',
-        amazonUrl: 'https://www.amazon.com/s?k=MOZA+R9+wheel+base&rh=p_89%3AMOZA',
+        amazonUrl: 'https://www.amazon.com/dp/B0FGCDTKSX',
         note: '9 N·m direct drive — the base bolted to my rig right now'
       },
       'moza-cs-v2': {
@@ -143,9 +148,12 @@
         amazonUrl: 'https://www.amazon.com/s?k=Thrustmaster+load+cell+pedals&rh=p_89%3AThrustmaster',
         note: 'budget load-cell brake over USB — the T-LCM itself is out of stock new on Amazon right now, so this opens Thrustmaster’s current Raceline pedals'
       },
+      /* 2026-10-30: B0DSHYFW1V is the "CRP2 Pedals (throttle+brake)" child
+         of the CRP2 family (its sibling B0DSHVVVCF is the clutch alone).
+         In stock, ships from Amazon, Add to Cart to a US zip. */
       'moza-crp2': {
         name: 'MOZA CRP2 Load Cell Pedals',
-        amazonUrl: 'https://www.amazon.com/s?k=MOZA+CRP2+pedals&rh=p_89%3AMOZA',
+        amazonUrl: 'https://www.amazon.com/dp/B0DSHYFW1V',
         note: 'load-cell brake, managed in the same Pit House software'
       },
       /* The pedals-plus-kit combo this recommends does not map to one

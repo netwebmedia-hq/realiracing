@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FFB Tuning Checklist | RealIRacing</title>
+  <meta name="description" content="The order to tune force feedback in: rig, wheelbase software, iRacing, then a clipping check on track." />
+  <!-- Subscriber download for the blog's email box: kept out of search and the sitemap. -->
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://realiracing.com/ffb-checklist.html" />
+  <link rel="stylesheet" href="/blog/blog.css?v=20261020" />
+  <script src="/js/ga4.js" defer></script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Free checklist</p>
+    <h1>FFB Tuning Checklist</h1>
+    <div class="article-meta">
+      <span>For iRacing on a direct drive base</span>
+    </div>
+    <div class="article-body">
+      <p class="article-lead">Work top to bottom and change one thing at a time. Most bad force feedback comes from doing these steps out of order: chasing strength in two places at once, or adding effects before the base signal is clean.</p>
+
+      <h2>1. The rig</h2>
+      <ul>
+        <li>The base is bolted to a rigid mount. If the wheel deck flexes when you turn hard, fix that first: flex eats fine detail before any setting can.</li>
+        <li>Base firmware and its software (Pit House on MOZA) are up to date, and so is iRacing.</li>
+        <li>The wheel is calibrated in iRacing with the same rotation you set in the base software, so the on-screen wheel matches your hands.</li>
+      </ul>
+
+      <h2>2. The wheelbase software</h2>
+      <ul>
+        <li>Pick one place for the strength decision. A common approach: run the base near its full output and do the scaling in iRacing, because iRacing's setting is per car.</li>
+        <li>Turn off, or keep low, any effect that adds force on top of the sim: extra road texture, kerb effects and the like. Each one spends headroom the steering signal needs.</li>
+        <li>Start with damping, friction, inertia and smoothing low. Add them only to fix a specific problem, such as oscillation on the straights or a notchy centre.</li>
+      </ul>
+
+      <h2>3. iRacing</h2>
+      <ul>
+        <li>Know which way the main force setting works: it is the force iRacing maps to 100% of your wheel. A higher value gives a lighter wheel and less clipping. A lower value gives a heavier wheel and more clipping.</li>
+        <li>Drive two or three clean laps, then use the Auto button so iRacing sets strength from that car's real peak. Repeat it for every car you race.</li>
+        <li>On a direct drive base, leave minimum force at zero. It exists to push weak gear and belt wheels past their dead zone.</li>
+        <li>Keep iRacing's damping low; the same trade-off as in the base software applies.</li>
+      </ul>
+
+      <h2>4. The clipping check on track</h2>
+      <ul>
+        <li>Show the force feedback meter in the black box and watch it for a full lap, not a straight.</li>
+        <li>A little red on the biggest kerb strike of the lap is fine. Red through the middle of medium-speed corners means you are clipping: raise iRacing's force value and retest.</li>
+        <li>In your hardest braking zone, notice whether the wheel goes quiet or dead at peak brake pressure. If it does, you are clipping there too.</li>
+        <li>Test every change on the same car and track, for at least three laps, before you judge it.</li>
+        <li>When it feels right, save the profile and note the values per car.</li>
+      </ul>
+
+      <h2>Go deeper</h2>
+      <ul>
+        <li><a href="/blog/iracing-force-feedback-explained.html">iRacing force feedback explained</a></li>
+        <li><a href="/blog/iracing-ffb-clipping-how-to-diagnose-and-fix.html">How to diagnose and fix FFB clipping</a></li>
+        <li><a href="/blog/rig-flex-and-wheelbase-mounting-ffb-feel.html">Rig flex, wheelbase mounting and FFB feel</a></li>
+      </ul>
+
+      <div class="cta-box rir-pack-cta">
+        <h3>Want the exact values I race on?</h3>
+        <p>The Pit House and iRacing numbers from my own MOZA R9 rig, with a symptom-and-fix table, are written up as a setup pack. The opening section is free to read.</p>
+        <a class="btn-primary" href="/packs/moza-r9-iracing-ffb-pack.html?utm_source=realiracing&amp;utm_medium=ffb_checklist&amp;utm_campaign=r9_pack">See the R9 FFB pack &rarr;</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  </footer>
+
+</body>
+</html>
