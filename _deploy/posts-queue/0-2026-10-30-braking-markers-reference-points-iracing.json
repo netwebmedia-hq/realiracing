@@ -1,0 +1,160 @@
+{
+  "slug": "braking-markers-reference-points-iracing",
+  "tag": "Technique · Driving",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "Braking Markers and Reference Points in iRacing",
+  "description": "How I pick fixed braking markers and corner reference points in iRacing, move them in small steps, and keep them honest as fuel and tyres change.",
+  "published": "2026-10-30",
+  "dateLabel": "October 30, 2026",
+  "gearKeys": [
+    "moza-crp2",
+    "moza-r9",
+    "cockpit"
+  ],
+  "sections": [
+    {
+      "p": "Every iRacing track has a braking zone where you have maybe half a second to decide, and the decision is usually made by a rough feeling in your gut. I did that for a long time. Then I started giving each corner one fixed object to aim at, and my braking got repeatable within a couple of evenings. This guide covers how I choose braking markers and reference points, how I test them, and how the rig underneath you affects how well they work."
+    },
+    {
+      "p": "I drive with a MOZA R9, CRP2 load cell pedals and a fixed aluminium cockpit. None of this needs that gear, but a rig that does not move makes the method easier to trust, and I will point out where that matters. Every spec I mention is approximate, so check current numbers on the manufacturer pages."
+    },
+    {
+      "h2": "Why a marker beats a feeling"
+    },
+    {
+      "p": "Your sense of speed on a monitor is weaker than in a real car. There is no wind, no body movement and no sound pressure in your chest. A screen gives you size and position on the image, so that is what you should use. A fixed object that grows in your view at a known rate tells you more about distance than your instinct does."
+    },
+    {
+      "p": "A marker also removes the biggest source of inconsistency, which is changing your mind mid-straight. If you brake at a different spot every lap, you cannot tell whether a slow corner came from the brake point, the pedal pressure or the turn-in. One fixed point holds the first variable still so you can work on the other two."
+    },
+    {
+      "h2": "What makes a good marker"
+    },
+    {
+      "list": [
+        "It is fixed. Track-side signs, bridges, light poles, a patch of different asphalt, a gap in a barrier.",
+        "It is visible from the car you are driving now, at the height of your eyes in that car. A sign that works from a GT3 seat may be hidden in a low open-wheel car.",
+        "It is visible in rain and at low sun, or you have a second marker for those conditions.",
+        "It is not a car, a shadow or a skid mark. Those move or fade between sessions.",
+        "It is the same on every lap, which also means you can describe it in a few words, such as the second sign on the left."
+      ]
+    },
+    {
+      "h2": "Step one: find the earliest honest brake point"
+    },
+    {
+      "p": "Start slow. On your first few laps of a new corner, brake far earlier than you need to and make the corner easy. Pick a marker well before the corner and press the brake there every lap. You are trying to build a reference you can move, and speed comes later."
+    },
+    {
+      "p": "This ties in with how I learn a layout in general. My notes on <a href=\"how-to-learn-a-new-track-iracing.html\">learning a new track in iRacing</a> cover the order I work through corners, and the marker work fits into the second half of that process, once the line is no longer a mystery."
+    },
+    {
+      "h2": "Step two: move it in small, equal steps"
+    },
+    {
+      "p": "Once the safe brake point feels boring, shift to the next marker closer to the corner, or move your brake point a fixed amount past the old one, like one board or one car length. Run five laps at the new point before judging it. If you are carrying the car through the corner without a lockup or a run wide, the point is good and you can try the next one."
+    },
+    {
+      "olist": [
+        "Pick a marker that is clearly too early. Brake there for five laps.",
+        "Move to the next marker that is closer to the corner. Five more laps.",
+        "Stop moving the moment you hit a lockup, a missed apex or a fight with the rear of the car.",
+        "Go back one step. That is your working brake point for this car and these conditions.",
+        "Write it down in a note file with the car and the track name."
+      ]
+    },
+    {
+      "p": "Notice that the final step uses a conservative value. The brake point you can repeat for twenty laps in a race is worth more than the point you hit once in qualifying. My thinking on that trade-off is in <a href=\"consistency-over-pace-lap-time-spread-wins.html\">why consistency beats raw pace</a>."
+    },
+    {
+      "tip": "Move your brake point a fixed, small amount at a time, and change nothing else in the same run. If you shift the marker and the pressure together you will not know which one helped.",
+      "tipLabel": "One change at a time"
+    },
+    {
+      "h2": "Step three: add a pressure target"
+    },
+    {
+      "p": "A marker tells you where to start braking. It does not tell you how hard. On a load cell pedal the number that matters is peak pressure at the start of the zone, and then how smoothly you release it. A force-based pedal makes this easier because your leg learns pressure better than it learns travel. I set my CRP2 curve and travel limits using the <a href=\"load-cell-brake-calibration-consistent-braking.html\">load cell calibration guide</a>, and I keep that calibration fixed while I work on markers, so the pedal feels the same each evening."
+    },
+    {
+      "p": "In a GT car with ABS off, a fair starting target is a hard first press that stops just short of a lockup, then a steady release into the turn. The exact percentage depends on the car, the tyre temperature and the downforce, so I do not quote a number. I find mine by watching the on-screen pedal bar or a telemetry trace and noting where the first lockup flicker appears."
+    },
+    {
+      "p": "If trailing the brake into the corner is part of your technique, the marker still sets the start. The release is what changes. I wrote up that part in the <a href=\"trail-braking-load-cell-technique.html\">trail braking guide</a>."
+    },
+    {
+      "h2": "Reference points for turn-in, apex and exit"
+    },
+    {
+      "p": "Braking is only the first of three points per corner. The other two use the same idea."
+    },
+    {
+      "list": [
+        "Turn-in point: the object where you start to steer. On a fast corner this may be a kerb start, on a slow one it may be a painted line.",
+        "Apex point: a spot on the inside kerb or the track edge where you want the car to pass. Look at it, and keep your eyes off the exit until you are past it.",
+        "Exit point: where your tyres should end up when you apply full throttle. This is often the far kerb or a track-edge line."
+      ]
+    },
+    {
+      "p": "I treat these as a sequence and say them in my head: brake at the board, turn at the kerb start, look at the apex, then throttle at the exit line. It sounds silly, but it moves attention forward. Beginners tend to stare at the bonnet or the nearest bit of tarmac, which is why the car feels late all the time."
+    },
+    {
+      "h2": "What changes when the conditions change"
+    },
+    {
+      "p": "Your markers are tied to one car in one set of conditions. Several things shift the real braking point."
+    },
+    {
+      "list": [
+        "Fuel load. A full tank is a heavy car, and it needs more distance than the same car near empty. In a long run your marker will creep later as the fuel burns off.",
+        "Tyre wear and temperature. Cold or worn tyres give less grip. You may need to move back one step.",
+        "Wet track. Treat dry markers as unusable. See my <a href=\"wet-weather-driving-iracing.html\">wet weather driving notes</a> and build a separate, earlier set.",
+        "Slipstream. If you are following closely on a long straight, you arrive faster than usual, so the marker is too late.",
+        "Car change. A different car in the same class can brake very differently. Redo the steps."
+      ]
+    },
+    {
+      "h2": "How the rig helps or hurts"
+    },
+    {
+      "p": "A marker routine depends on your foot putting in the same force at the same moment. If the pedal plate flexes, or the cockpit rocks under hard braking, your leg changes what it does without you noticing. A fixed frame removes one excuse. My pedals sit on a rigid plate and do not creep, so when I miss a point I know the mistake was mine."
+    },
+    {
+      "p": "Seating matters as well. If your eye position changes between sessions, a marker that sat just under a certain part of the screen will look different. I keep my seat and screen position fixed, and my <a href=\"iracing-field-of-view-single-monitor-setup.html\">field of view setup</a> is set once and left alone. If you move the screen or change the FOV, treat your old markers as untrusted and recheck the first few corners."
+    },
+    {
+      "h2": "A simple routine for one practice night"
+    },
+    {
+      "olist": [
+        "Choose two corners only. Trying every corner on one evening spreads your attention too thin.",
+        "For each corner, run the earliest-honest-brake-point routine for five laps, then one step closer for five more.",
+        "Save a replay of the best lap and compare your brake zone against it. The <a href=\"iracing-delta-bar-how-to-use-it-to-find-lap-time.html\">delta bar guide</a> shows how I read the time gain or loss through each section.",
+        "Write the working marker and the car in a note.",
+        "Next session, start from your note and add the next corner."
+      ]
+    },
+    {
+      "p": "A marker belongs to a specific car and moment, and it should change when the car does. Aim for braking that feels boring and repeatable, so your attention is free for the rest of the corner."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a braking marker in iRacing?",
+      "a": "A braking marker is a fixed object at the side of the track, such as a distance board, a sign or a change in the asphalt, that you use as the point to start braking. Using the same object every lap makes your braking repeatable."
+    },
+    {
+      "q": "How do I find my brake point on a new corner?",
+      "a": "Start by braking much earlier than you need, at a clear marker, and run several laps there. Then move your brake point closer in small equal steps, five laps per step, and stop when you get a lockup or run wide. Go back one step to find a working point."
+    },
+    {
+      "q": "Do braking markers change with the car or conditions?",
+      "a": "Yes. Fuel load, tyre wear, a wet track, slipstreaming and a different car all change the braking distance. Keep notes per car and track, and build a separate set for the wet."
+    },
+    {
+      "q": "Do I need load cell pedals to use braking markers?",
+      "a": "No, markers work with any pedals. A load cell measures pressure rather than travel, which makes it easier to repeat the same braking force, so it pairs well with a fixed marker, but the method itself does not require one."
+    }
+  ]
+}
