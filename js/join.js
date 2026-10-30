@@ -30,6 +30,8 @@
       if (!r.ok) throw new Error('HTTP ' + r.status);
       form.className = 'rir-join done';
       msg.textContent = form.getAttribute('data-ok');
+      var dl = form.getAttribute('data-dl'); // lead magnet: link it in place, no email round-trip
+      if (dl) { var a = document.createElement('a'); a.href = dl; a.textContent = ' Open the FFB checklist →'; msg.appendChild(a); }
       if (window.gtag) window.gtag('event', 'sign_up', { method: 'blog_email', page_path: location.pathname });
     }).catch(function () {
       msg.textContent = form.getAttribute('data-err');
