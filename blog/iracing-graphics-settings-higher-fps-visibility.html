@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iRacing graphics settings that boost FPS without killing visibility</title>
+  <meta name="description" content="Cut frame drops without sacrificing the visual cues you need to race clean. Recommended iRacing graphics settings and a starting configuration." />
+  <link rel="canonical" href="https://realiracing.com/blog/iracing-graphics-settings-higher-fps-visibility.html" />
+  <meta property="og:title" content="iRacing graphics settings that boost FPS without killing visibility" />
+  <meta property="og:description" content="Cut frame drops without sacrificing the visual cues you need to race clean. Recommended iRacing graphics settings and a starting configuration." />
+  <meta property="og:url" content="https://realiracing.com/blog/iracing-graphics-settings-higher-fps-visibility.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/track-grid.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="562" />
+  <meta property="og:image:alt" content="Cars lined up on the starting grid" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/track-grid.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261020" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "iRacing graphics settings that boost FPS without killing visibility",
+    "description": "Cut frame drops without sacrificing the visual cues you need to race clean. Recommended iRacing graphics settings and a starting configuration.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/iracing-graphics-settings-higher-fps-visibility.html",
+    "image": "https://realiracing.com/assets/photos/track-grid.jpg",
+    "datePublished": "2026-10-19",
+    "dateModified": "2026-10-19"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"iRacing graphics settings that boost FPS without killing visibility","item":"https://realiracing.com/blog/iracing-graphics-settings-higher-fps-visibility.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/iracing-graphics-settings-higher-fps-visibility.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"NVIDIA GeForce RTX 5060 Ti (8 GB)","description":"renders iRacing and NVENC-encodes the stream on the same chip","url":"https://realiracing.com/blog/iracing-graphics-settings-higher-fps-visibility.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup — high refresh matters more than size","url":"https://realiracing.com/blog/iracing-graphics-settings-higher-fps-visibility.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the minimum FPS I should target for consistent racing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Aim for your monitor's refresh rate as a minimum during high-precision moments. If you run 120 Hz, target 120 FPS. In less demanding cars or tracks, 90-100 FPS is acceptable. The key is consistency. Locked 100 FPS is better than unstable 120 FPS. Frame time variance hurts precision more than a slightly lower average." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I enable DLSS or FSR if my GPU supports it?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, if you have an RTX card that supports DLSS. Quality mode or balanced mode maintains visibility while giving you 20-40 percent more frame rate. FSR works on AMD cards but introduces more visual artifacts. Test both modes in a practice session. Quality mode typically preserves enough sharpness to see brake lights and competitors clearly while gaining significant FPS." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does lowering resolution actually help, or should I invest in a better GPU?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Lowering resolution 10-15 percent inside iRacing is the fastest free FPS gain. You do lose sharpness, but the trade-off is reasonable for 15-20 more frames. A better GPU is the long-term answer if you want both high frame rate and native resolution. For now, scale down before you upgrade hardware." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to visibility if I turn shadows completely off?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Complete shadow off removes some environmental depth cues, but it does not hurt race-critical visibility. You can still see other cars, brake lights, and the racing line. Medium shadows are a good middle ground because they preserve marshal posts and pit entry markers while saving 10-15 FPS compared to ultra. In live racing, shadows matter far less than steady frame rate." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Setup Guides · Performance</p>
+    <h1>iRacing graphics settings that boost FPS without killing visibility</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 19, 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/track-grid.jpg" width="1000" height="562" alt="Cars lined up on the starting grid" srcset="/assets/photos/track-grid-sm.jpg 560w, /assets/photos/track-grid.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Photo: <a href="https://commons.wikimedia.org/wiki/User:Just_a_Man" target="_blank" rel="noopener nofollow">Just a Man</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener nofollow">CC BY 4.0</a> · Source: <a href="https://commons.wikimedia.org/wiki/File:ProCar_4000_2024_Gran_Premio_Coronaci%C3%B3n_-_07.jpg" target="_blank" rel="noopener nofollow">Wikimedia Commons</a></figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">Frame rate matters more in sim racing than almost any other discipline. A 10 FPS loss during a braking zone costs you precision on the pedals, makes turn-in feel sluggish, and destroys consistency. I race on a ~1440p 120 Hz display with a <a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> wheelbase, and in my view chasing eye candy ruins the whole package. The goal is not maximum graphics. The goal is the highest frame rate that lets you see what you need to see.</p>
+
+      <p>Most drivers turn everything to ultra and wonder why they lose 20 FPS mid-race. The fix is not a new GPU. The fix is knowing which settings matter for safety and pace, and which ones you can dial back without losing the visual feedback you depend on.</p>
+
+      <h2>The frame rate floor that matters</h2>
+
+      <p>Your target depends on your monitor refresh rate. If you run 120 Hz, aim for 120 FPS minimum during single-seaters or high-downforce cars where every input is critical. In a GT car on a less demanding track, 90-100 FPS is acceptable if your rig is rock solid. Below 90 FPS, you will feel input lag even if the steering wheel has low latency. The frame time between inputs gets loose. Your muscle memory starts fighting the display.</p>
+
+      <p>The real problem is variance. Holding 110 FPS steady is better than averaging 115 FPS with drops to 85. Lock your frame rate in the graphics settings so it does not bounce around. A steady 100 FPS feels smoother than an unstable 120.</p>
+
+      <h2>Settings to cut first without losing race pace</h2>
+
+      <ul>
+        <li><strong>Shadows (ultra to medium or low):</strong> Ultra shadows cost 15-25 FPS depending on your GPU, and they provide zero information for racecraft. You do not need to see the shadow of a tree to brake 50 meters earlier. Medium shadows still show you marshal posts and pit entry markers. Low shadows get you another 5-10 FPS with almost no loss.</li>
+        <li><strong>Ambient occlusion (off or low):</strong> This darkens crevices and corners to add depth. It looks nice in replays. In live racing it costs 8-12 FPS and changes nothing about how you see the racing line or competitors.</li>
+        <li><strong>Anti-aliasing (FXAA or 2x MSAA instead of 4x):</strong> FXAA is cheap and smooths jagged edges well enough. 4x MSAA can cost 20+ FPS on older GPUs. You lose sharpness on distant objects, but you do not lose race-critical visibility.</li>
+        <li><strong>Motion blur (off):</strong> Free 5-8 FPS. Adds no safety information and makes relative braking distances harder to judge.</li>
+        <li><strong>Bloom and lens effects (low or off):</strong> Another 3-5 FPS. These make sunlight look nice in photographs. They add glare that hurts visibility in wheel-to-wheel racing.</li>
+      </ul>
+
+      <div class="tip-box">
+        <span class="box-label">First cuts always work</span>
+        <p>Turn off all post-processing first. Bloom, motion blur, chromatic aberration, lens distortion. These are pure eye candy. You regain 15-20 FPS with zero impact on your ability to see the apex or spot a competitor's brake lights.</p>
+      </div>
+
+      <h2>Settings that matter for actual racing visibility</h2>
+
+      <p>Some settings affect how well you see other cars, track limits, and racing lines. Do not touch these aggressively.</p>
+
+      <ul>
+        <li><strong>Texture quality (high or ultra):</strong> Keep this high. Low textures make distant cars blend into the track. You lose the ability to spot competitors early. High textures cost only 3-5 FPS and keep cars visually distinct.</li>
+        <li><strong>Object detail (high or ultra):</strong> This controls how far away trees, signs, and barriers render. Ultra rendering helps you recognize braking points and corner geometry. Medium can work if you know the track, but ultra costs only 4-6 FPS.</li>
+        <li><strong>Draw distance (very high or ultra):</strong> You need to see brake lights on the car ahead at least 200 meters out. Very high is the practical minimum. Ultra rendering costs a couple more FPS and gives you even better depth cues on longer straights.</li>
+        <li><strong>Car detail (ultra):</strong> Ultra car detail keeps suspension movement visible, which is an underrated cue for judging another driver's commitment into a corner. Leave this on ultra.</li>
+      </ul>
+
+      <h2>Resolution and the refresh rate trade-off</h2>
+
+      <p>If you run triple monitors or a 4K setup, you are already eating significant frame rate cost. The practical path is to drop to 1440p or use a 1440p center monitor with lower res surrounds. A single 1440p 120 Hz display is what I race on, and it is a good balance of sharp enough visuals and reliably fast frame rates.</p>
+
+      <p>If you are locked into a higher resolution, scale down by 10-15 percent inside iRacing's graphics menu. You lose a little sharpness, but not in a way that hurts racing. The frame rate gains compound quickly, especially on a card like the NVIDIA GeForce <a href="https://www.amazon.com/s?k=RTX+5060+Ti+8GB+graphics+card&amp;tag=realiracing-20" data-aff="gpu-rtx-5060-ti" target="_blank" rel="sponsored noopener">RTX 5060 Ti</a> which is entry-level for iRacing sim racing.</p>
+
+      <h2>A starting configuration</h2>
+
+      <p>On a PC with an RTX 5060 Ti and a 1440p 120 Hz monitor, this is a sensible configuration to start from, aiming for 115-120 FPS in most series.</p>
+
+      <ol>
+        <li>Shadows: Medium (marshal posts and pit entry still visible, cost minimal)</li>
+        <li>Ambient occlusion: Off (no racing value, 10+ FPS gain)</li>
+        <li>Anti-aliasing: FXAA (smooth enough, fast)</li>
+        <li>Motion blur: Off (costs 5 FPS, zero benefit)</li>
+        <li>Bloom: Off (adds glare in wheel-to-wheel)</li>
+        <li>Texture quality: High (keeps distant cars visible)</li>
+        <li>Object detail: High (trees and barriers render far enough)</li>
+        <li>Draw distance: Very high (brake light visibility to 250+ meters)</li>
+        <li>Car detail: Ultra (suspension movement visible)</li>
+        <li>Vsync: Off (frame rate cap set in driver control panel instead)</li>
+        <li>Frame rate cap: 120 FPS locked (match your monitor's refresh rate)</li>
+      </ol>
+
+      <p>This setup aims for rock-solid frame pacing, excellent visibility of competitors, and enough visual sharpness to read brake marker boards at 300 kph. It is the antidote to the trap of maxing every slider and then wondering why your hands feel mushy on the wheel.</p>
+
+      <h2>How to test your own settings</h2>
+
+      <p>Do not judge a graphics setup by loading into the garage. Load into a practice session with 30 AI cars on a track you know well. Brake into a corner where you normally see other cars clearly. If you cannot pick out brake light color or spot a car three positions ahead, something is off. Drop object detail or draw distance until visibility snaps back.</p>
+
+      <p>Then do a single-lap time trial and compare lap time to your baseline. If you gain 2-3 FPS and lap time is stable or improves, you found a working cut. If frame rate does not change but you feel slower, revert it. Your hands know the truth even if the frame counter does not.</p>
+
+      <div class="tip-box">
+        <span class="box-label">The video test never lies</span>
+        <p>Record a 30-second onboard at your current settings, then again after each major change. Watch them back-to-back. Your eyes will tell you faster than your brain whether visibility actually degraded or if you are just used to the old look.</p>
+      </div>
+
+      <h2>Common mistakes that cost FPS for nothing</h2>
+
+      <p>Drivers often enable settings thinking they help performance when they actually hurt it. Ultra shadows and ultra ambient occlusion are the biggest culprits. They cost 30+ FPS combined and provide zero racing advantage. Bloom and chromatic aberration are the next tier of pointless expense. Reflections on ultra cost a lot on some GPUs and matter almost never during a race. Turn these off without guilt.</p>
+
+      <p>The inverse mistake is cutting texture or car detail thinking it will help. Those cuts hurt visibility and rarely save enough FPS to matter. When you need frames, cut the post-processing layer first. Every time.</p>
+
+      <p>One more trap: chasing maximum refresh rate at the cost of raw frame time stability. A 144 Hz monitor with frame time that bounces between 6 and 8 milliseconds feels worse than 120 Hz locked solid at 8.3 milliseconds. Cap your frame rate to what your rig can hold steady. If that is 100 FPS, lock to 100. Do not let it float.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before you go live, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=iracing-graphics-settings-higher-fps-visibility">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R9+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=RTX+5060+Ti+8GB+graphics+card&amp;tag=realiracing-20" data-aff="gpu-rtx-5060-ti" target="_blank" rel="sponsored noopener">NVIDIA GeForce RTX 5060 Ti (8 GB)</a></th><td>renders iRacing and NVENC-encodes the stream on the same chip</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup — high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Get the next guide by email</h3>
+        <p>Setups, FFB settings and new packs, straight from the rig. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing" data-ok="You're on the list. Thanks!" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Subscribe</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>What is the minimum FPS I should target for consistent racing?</h3>
+        <p>Aim for your monitor's refresh rate as a minimum during high-precision moments. If you run 120 Hz, target 120 FPS. In less demanding cars or tracks, 90-100 FPS is acceptable. The key is consistency. Locked 100 FPS is better than unstable 120 FPS. Frame time variance hurts precision more than a slightly lower average.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I enable DLSS or FSR if my GPU supports it?</h3>
+        <p>Yes, if you have an RTX card that supports DLSS. Quality mode or balanced mode maintains visibility while giving you 20-40 percent more frame rate. FSR works on AMD cards but introduces more visual artifacts. Test both modes in a practice session. Quality mode typically preserves enough sharpness to see brake lights and competitors clearly while gaining significant FPS.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does lowering resolution actually help, or should I invest in a better GPU?</h3>
+        <p>Lowering resolution 10-15 percent inside iRacing is the fastest free FPS gain. You do lose sharpness, but the trade-off is reasonable for 15-20 more frames. A better GPU is the long-term answer if you want both high frame rate and native resolution. For now, scale down before you upgrade hardware.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What happens to visibility if I turn shadows completely off?</h3>
+        <p>Complete shadow off removes some environmental depth cues, but it does not hurt race-critical visibility. You can still see other cars, brake lights, and the racing line. Medium shadows are a good middle ground because they preserve marshal posts and pit entry markers while saving 10-15 FPS compared to ultra. In live racing, shadows matter far less than steady frame rate.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="iracing-ffb-clipping-diagnosis-and-fixes.html"><span>Setup Guides</span>iRacing FFB Clipping: How to Diagnose and Fix It Now</a>
+      <a class="related-card" href="fast-setup-makes-you-slower-iracing.html"><span>Setup Guides</span>Why a Fast Setup Can Actually Make You Slower in iRacing</a>
+      <a class="related-card" href="posture-back-pain-fixed-cockpit-solutions.html"><span>Setup Guides</span>Posture and Back Pain in a Fixed Cockpit: Real Solutions</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","gpu-rtx-5060-ti","monitor-1440p-120"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
