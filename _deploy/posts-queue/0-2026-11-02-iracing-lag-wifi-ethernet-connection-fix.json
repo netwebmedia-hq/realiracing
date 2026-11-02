@@ -1,0 +1,56 @@
+{
+  "slug": "iracing-lag-wifi-ethernet-connection-fix",
+  "tag": "Setup Guides · Network",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "iRacing lag: fix Wi-Fi, warping and connection drops",
+  "description": "Cars warping, sudden teleports or a dropped session in iRacing? How I separate connection problems from PC stutter, and what to fix first on a home network.",
+  "published": "2026-11-02",
+  "dateLabel": "November 2, 2026",
+  "gearKeys": ["moza-r9", "moza-crp2", "gpu-rtx-5060-ti", "monitor-1440p-120"],
+  "sections": [
+    { "p": "You are side by side into a braking zone and the car next to you jumps half a length forward, then snaps back. You lift, the other driver lifts, and someone gets a 4x. Sim racers call this netcode, but a lot of what gets blamed on iRacing's servers starts in the home: a Wi-Fi link, a busy upload or a PC stutter that looks like a network fault. Here is how I work through it on my own MOZA R9 rig, cheapest and most likely fix first." },
+    { "h2": "Lag and stutter look alike, so separate them first" },
+    { "p": "The first question is whether your whole screen hitches or only other cars misbehave. They have different causes, and swapping a router will do nothing for a frame-rate problem." },
+    { "list": [
+      "<strong>Your entire view hitches or freezes for a moment:</strong> this usually points at the PC. Look at frame rate, background apps and USB devices first.",
+      "<strong>Your view is smooth but other cars jump around:</strong> this could be your connection or theirs. If only one or two drivers warp while everyone else is fine, the problem is often on their side.",
+      "<strong>Every car jumps at once, and you may get a warning about your connection:</strong> start with your own network.",
+      "<strong>Your own car behaves strangely after a contact that looked like nothing:</strong> a brief loss of data on either side can make contact look wrong, so review the replay before you assume a cause."
+    ] },
+    { "p": "iRacing has an on-screen performance readout that shows frame rate alongside connection information. Key bindings vary, so check the controls section in the sim options for how to toggle it on your install. Leave it on for a practice session. What you are watching for is the moment a problem happens: does the connection reading spike at the same second the cars jump? A number that sits steady and then jumps tells you more than any single value." },
+    { "h2": "Plug in an Ethernet cable before anything else" },
+    { "p": "If your sim PC is on Wi-Fi, this is the first change to make. Wi-Fi can look fast on a speed test and still deliver data in uneven bursts, especially when other devices share the airwaves or there is a wall or two in the way. Racing cares much more about steady delivery than about headline speed, since the sim only needs a small amount of data but needs it on time." },
+    { "p": "A long flat Ethernet cable run along a skirting board costs little and solves the problem for a lot of people. If you cannot run a cable, powerline adapters are worth trying, though results depend heavily on your home's wiring. As a last resort, keep the PC on the 5 GHz band with as clear a line to the router as you can manage, and test at the time of day you actually race." },
+    { "tip": "Test at race time. A connection that feels perfect at 10 am may behave very differently at 9 pm when the whole neighbourhood is streaming.", "tipLabel": "Rig note" },
+    { "h2": "Check the upload, because that is what usually chokes" },
+    { "p": "Home connections often have far less upload than download. A cloud photo backup, a game console pushing a clip, a video call or a stream running on the same line can fill the upload side, and once that happens every packet waits in line. You can have plenty of download speed left and still see cars warp." },
+    { "p": "Here is the test I would run. Pause cloud sync on every device, then do a practice session and see whether the problem disappears. If it does, turn things back on one at a time until it returns. Then you know what to schedule around race time." },
+    { "p": "If you stream your races, this matters twice as much, because your stream is itself a steady upload. Keep your stream bitrate well under what your line can sustain, and do a private test recording before going live. If your router has a QoS or traffic priority setting, try giving your sim PC priority. Its usefulness varies a lot by model, so judge it by testing." },
+    { "h2": "Do a simple bufferbloat check" },
+    { "p": "Bufferbloat is what happens when a router lets traffic pile up in a queue under load, and your delay rises as the line gets busy. Plain speed tests often hide it. Search for a bufferbloat test, run it from the sim PC, and compare the latency it reports when idle to the latency during the download and upload phases. If the delay climbs sharply under load, your line can be fine at rest and still fall apart as soon as someone in the house starts an upload." },
+    { "p": "Router settings such as Smart Queue Management, where available, are designed to help with this. On a basic ISP router you may not have that option, in which case the practical fix is to limit what else uses the connection while you race." },
+    { "h2": "Rule out the PC while you are there" },
+    { "p": "Network hunting can eat a whole evening when the real cause is on the rig. I go through this short list on my own machine before blaming the connection:" },
+    { "olist": [
+      "Update the network adapter driver from your motherboard maker, as well as your GPU driver.",
+      "Close overlay software you are not using, and see whether the problem changes.",
+      "Check that your USB devices are not dropping. A wheelbase or pedal disconnect can feel like a sim fault. I wrote up that side of it in <a href=\"usb-power-hubs-peripheral-dropout-iracing.html\">USB hubs and peripheral dropouts</a>.",
+      "Lower your graphics settings for one session and compare. If the hitching disappears, you had a frame-rate problem."
+    ] },
+    { "p": "A stable frame rate matters for force feedback feel too, so this work pays off even if your network turns out to be fine. My wheel settings are in <a href=\"moza-r9-iracing-settings.html\">the MOZA R9 settings guide</a>, and the ~9 N·m R9 is forgiving enough that a clean feed is more noticeable than any single number on the base." },
+    { "h2": "Physical distance to the server" },
+    { "p": "iRacing runs servers in different regions, and races are generally assigned according to the entrants. Your delay to that server depends on where you live and on how your provider routes traffic. If you race from South America like I do, you will often be further from the server than drivers in the US or Europe, and there is little you can do about that part." },
+    { "p": "Higher delay on its own does not have to mean a bad race as long as it stays steady. Variation hurts more. When your delay is high, leave a little more room when you race side by side, because the other car's position on your screen and on theirs can differ slightly. That habit also helps your safety rating, which I covered in <a href=\"iracing-safety-rating-license-climb-from-rookie.html\">the license climb guide</a>." },
+    { "h2": "When the problem is another driver" },
+    { "p": "You cannot fix someone else's Wi-Fi. If a specific car warps through a session, give it extra room, avoid racing it hard into braking zones, and treat its position on your screen as approximate. Your incident count still matters more than who was right. If you think something needs review, save the replay; my process for that sits in <a href=\"iracing-protest-sporting-code-process.html\">the protest and sporting code guide</a>." },
+    { "h2": "What I would do tonight" },
+    { "p": "Run Ethernet to the rig. Turn off cloud uploads on the other devices. Do a practice session with the performance readout on and note the moments anything jumps. That takes one evening, and it answers most of the question before you start thinking about buying a new router or changing provider. If the connection still looks uneven after that, run the same test with the laptop plugged straight into the router and take the results to your provider, since that rules out your own gear." }
+  ],
+  "faqs": [
+    { "q": "Does iRacing need a very fast internet connection?", "a": "Generally no. The sim sends a small amount of data, so a steady connection matters more than a large headline speed. Uneven delivery and a saturated upload cause more trouble than a modest plan." },
+    { "q": "Is Wi-Fi good enough for iRacing?", "a": "It can work, but it is more likely to deliver data unevenly, especially at busy times or through walls. Ethernet is the first fix I recommend, with powerline or 5 GHz Wi-Fi as fallbacks when a cable is not possible." },
+    { "q": "Why do only some cars warp in my iRacing race?", "a": "If only one or two cars jump while the rest of the field looks smooth, the issue is often on their connection. If every car jumps at once, check your own network and upload first." },
+    { "q": "Can streaming cause lag in iRacing?", "a": "Yes, it can. A stream is a steady upload that shares your line with the sim, and a high bitrate can fill it. Keep the bitrate well below what your connection can sustain and test before going live." }
+  ]
+}
