@@ -1,0 +1,135 @@
+{
+  "slug": "gateway-iracing-oval-guide-setup-strategy",
+  "tag": "Track Guides · Oval Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Gateway (WWTRaceway) iRacing Oval Guide: Setup, Line, Strategy",
+  "description": "Master Gateway's high-banked oval layout. Learn racing line, braking points, setup tuning, and fuel strategy for consistent wins.",
+  "sections": [
+    {
+      "p": "World Wide Technology Raceway, commonly called Gateway, is a 1.3-mile D-shaped oval with 20-degree banking that sits roughly halfway between the flat, demanding precision of short tracks and the high-speed flow of intermediate ovals. The layout rewards smooth steering input, consistent throttle management, and a setup that balances side-bite under load with stability off the throttle. Whether you are running the stock car classes or oval racing in a lower-tier series, Gateway's unique geometry makes setup and racecraft distinct from Bristol or Martinsville. This guide covers the line through each corner, how to find extra grip without pushing the car loose, fuel strategy for longer races, and common mistakes that cost tenths every lap."
+    },
+    {
+      "h2": "The racing line through Gateway's main corners"
+    },
+    {
+      "p": "Gateway's racing surface breaks into two main sections: the banked turns 1-2 and the tighter, less-banked turns 3-4. The distinction matters because your entry speed, apex placement, and throttle application differ significantly. Turn 1, the faster half of the track, begins the moment you cross the start/finish line. You want to brake hard and early, targeting the low apron at the brake point, then drift high into the corner. The banking helps you carry speed, but too much entry speed pushes you up the track; too little and you lose the aero benefit of the banking and run a wider arc."
+    },
+    {
+      "p": "The apex of turn 1 should be near the middle of the track at roughly the halfway point of the corner. At that apex, you are already on throttle, gradually rolling it open as you work toward the exit. By the time you reach the exit, the car should be pointed up toward the wall, and you should be at or near full throttle. A common mistake is turning in too late and exiting too low; this forces you to go slower into turn 2 because you are not set up to use the banking efficiently."
+    },
+    {
+      "p": "Turn 2 flows directly from turn 1. It is shallower and slightly more banked. Many drivers brake again between turns 1 and 2, but the best approach is to hold steady throttle or lift only, then reapply throttle immediately as you turn in. Braking twice in quick succession scrubs speed; holding throttle and using the banking's mechanical grip is faster. Your line should be high entry, apex mid-corner, and exit low into the straightaway, setting up for the turn-3 brake zone."
+    },
+    {
+      "p": "Turns 3 and 4 form the tighter half of the oval. The banking here is less aggressive, so mechanical grip and your car's balance matter more. Turn 3 is where speed differences between drivers show. You need a strong, confident brake application; trail braking into this corner will often cause the rear to slide. Brake in a straight line, slow to the target speed, then turn in. The apex is middle to low-middle of the track, and you should be on throttle by the exit. Turn 4 is fast and shallow; treat it almost like an extension of turn 3. Early throttle, hold the outside groove, and roll speed into the front straightaway."
+    },
+    {
+      "tip": "Most drivers lose time at Gateway by turning in too early at turns 1 and 3. The banking makes late apexes faster than they feel. Practice hitting the apex at 50-55% of the corner length, not 40%.",
+      "tipLabel": "Apex placement matters"
+    },
+    {
+      "h2": "Setup tuning: banking, side-bite, and stability"
+    },
+    {
+      "p": "Gateway's 20-degree banking is steep enough to provide aero and mechanical grip benefits, but not so steep that you can ignore balance. A baseline setup should prioritize side-bite (lateral stiffness) and a slight front downforce bias to keep the nose planted under braking. Start with a common low-downforce oval setup and tune from there."
+    },
+    {
+      "list": [
+        "Anti-roll bars (sway bars): Run stiff front, softer rear to help the front grip turn-in and reduce understeer on entry. A common starting point is front around 50-60 clicks, rear around 25-35 clicks, depending on the car class. The stiffer front helps bite into the banking; the softer rear prevents the car from being too nervous.",
+        "Springs: Oval setups typically run medium to stiff springs (~150-200 N/mm front, ~180-240 N/mm rear). The stiffer springs help the car respond to banking and reduce roll. Start stiff and soften only if the car feels harsh or unpredictable.",
+        "Dampers (shocks): High-speed damping (compression under cornering load) should be moderate to stiff to reduce body roll. Low-speed damping (slow suspension compliance) should allow some travel so the car does not feel like a pogo stick over minor bumps. A common split is 25-35 clicks compression, 20-30 clicks rebound.",
+        "Downforce: Run just enough front wing to keep the nose stable under braking, typically 2-3 clicks of front wing. Too much front downforce causes understeer mid-corner; too little makes braking unstable. Rear wing should be minimal, around 1 click.",
+        "Brake balance: Favour the front (55-60% front, 40-45% rear) to keep the car stable under braking and reduce trailing-throttle oversteer. The banking helps rear grip, so a front-biased brake balance is safe and faster."
+      ]
+    },
+    {
+      "p": "Tuning from a baseline should focus on two problems: understeer and oversteer. If the car understeers on entry (push) at turns 1 and 3, increase front anti-roll bar stiffness by 3-5 clicks, add a touch of front downforce, or soften the rear anti-roll bar. If the car oversteers off-throttle (loose) exiting turns 2 and 4, increase rear anti-roll bar stiffness or stiffen rear dampers slightly. Gateway is sensitive to small changes; adjust one setting at a time and do three to five laps before moving to the next."
+    },
+    {
+      "h2": "Fuel strategy and tire wear over long races"
+    },
+    {
+      "p": "Gateway races often run 30 to 60 laps depending on the series. Fuel mileage on most oval cars is around 3.5 to 4.5 miles per gallon, meaning a 60-lap race requires careful planning. The key is to start with enough fuel to run a reasonable first stint (usually 15-20 laps) without pitting, then plan pit stops to avoid traffic and high-fuel strategies that slow the car."
+    },
+    {
+      "p": "Tire wear is gradual on Gateway. The smoother line and slower corner speeds mean tires do not degrade as quickly as on road courses. Expect tires to peak around lap 12-15, then gradually lose grip for the next 15-20 laps. A two-stop race would involve a green-flag pit around lap 15-20, a second stop around lap 40-45, and a final run to the finish. A one-stop strategy works if fuel allows; run the first stint aggressively on fresh tires, then settle into fuel mileage mode for the final stint."
+    },
+    {
+      "list": [
+        "Early stops (lap 15-20): Fast, but you run the back half of the race on older tires and may lose track position to drivers who stop later.",
+        "Middle stops (lap 25-30): Balances fresh tires for the run to the finish with reasonable track position. Most competitive drivers use this window.",
+        "Late stops (lap 35-40): Minimizes laps on worn tires but requires very tight fuel mileage and may leave you short on fuel if cautions extend the race."
+      ]
+    },
+    {
+      "p": "Watch fuel consumption during qualifying and practice. Run your race pace for 3-5 laps, check fuel used, and calculate total fuel needed for your stint length. Round up by 0.5 gallons to account for safety margin. In a race, do not chase down a car ahead if it costs more fuel than you planned; patience and consistent lap times beat aggressive fuel consumption early."
+    },
+    {
+      "h2": "Racecraft and passing at Gateway"
+    },
+    {
+      "p": "Passing at Gateway happens primarily on the straights and into turn 1. The banked corners are wide enough that dive-bombing the inside rarely works; instead, set up a tow down the straightaway, use the slipstream to build a run, and pass into the braking zone at turn 1 or turn 3."
+    },
+    {
+      "p": "Respect the racing line when defending. A driver behind you will try to slingshot out of turn 4 or turn 2 to gain a run. Block the inside line into turn 1 or 3, but do not move suddenly; sudden direction changes cause contact and loose cars. Hold your line, brake predictably, and let them make a clean attempt or back out. Aggressive defending usually backfires at Gateway because there is room for two cars through the corners if both drivers are smooth."
+    },
+    {
+      "p": "Cautions bunch the field, so manage tire and fuel strategy around yellow-flag cycles. If a caution comes late in the race with few laps remaining, ensure your pit strategy accounts for it. Do not over-fuel on a late-race restart if you had planned a green-flag stop; you will be heavier and slower than competitors on fresher tires."
+    },
+    {
+      "tip": "The car that makes fewer mistakes wins at Gateway, not the car that is fastest in isolation. Smooth inputs, consistent speed, and clean exits matter more than one-lap heroics.",
+      "tipLabel": "Consistency beats pace"
+    },
+    {
+      "h2": "Common mistakes to avoid"
+    },
+    {
+      "list": [
+        "Braking too late or hard into turn 1: The banking and the need to carry speed into turn 2 mean you should brake early and soft, not late and aggressive. A locked rear at the brake point costs more time than an early apex.",
+        "Over-correcting the car mid-corner: The banking amplifies steering input. Small changes in wheel position cause big changes in grip. Smooth, deliberate steering will find more speed than tentative, reactive inputs.",
+        "Running too low on fuel and losing pace in the final laps: Plan your fuel to finish the race at your target pace, not to coast across the line with fumes. The last five laps are where passes happen; do not be a sitting duck.",
+        "Ignoring tire temperature: Cold tires at the start of a long stint have less grip. Warm them gently for the first lap, then push. Jumping on the throttle with cold tires causes oversteer and ruins your qualifying or race start.",
+        "Adjusting setup mid-race based on one lap: Tire fatigue and fuel load change lap-to-lap. Do not pit and change downforce or bars after one bad lap. Give the setup three to five laps to stabilize before deciding on a change."
+      ]
+    },
+    {
+      "h2": "Practice routine for Gateway"
+    },
+    {
+      "p": "Spend your first practice session learning the racing line and finding your personal brake markers. You are not chasing pace yet; mark your braking zone at each corner with a landmark (the wall stripe, the grandstand post, a specific tire mark). Once you have repeatable markers, speed will come naturally."
+    },
+    {
+      "p": "In your second practice, run qualifying simulations. Three laps on fresh tires, pushing hard on lap 2 (after a warm-up lap), then cool-down. Note your best lap, the setup you used, and any loose or tight spots. If the car is unstable, do one setup change and repeat the drill."
+    },
+    {
+      "p": "Final practice should be race pace simulation. Run 20-25 laps on a simulated race fuel load and tire age, hitting your target lap time consistently. This teaches you how the car degrades, how fuel weight feels, and whether your strategy is realistic. You will often find that you are one to two tenths slower on lap 20 than lap 5; plan your race pace around that degradation, not your best practice lap."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the best brake point at Gateway turn 1?",
+      "a": "Use the start/finish line stripe or the first turn's entrance marker as your visual reference. Brake when that marker is roughly 2-3 car lengths ahead, which translates to braking around the 2500-2300-foot marker depending on your car's braking power. The key is consistency; mark it visually and hit it every lap rather than chasing a specific footage number."
+    },
+    {
+      "q": "How much fuel do I need for a 60-lap race at Gateway?",
+      "a": "Most oval cars get 3.5 to 4.5 miles per gallon. At 1.3 miles per lap, that is roughly 17-20 laps per gallon. A 60-lap race is 78 miles, requiring 17-22 gallons depending on your pace and car. Add 1-2 gallons of safety margin. Test this in practice by running your race pace for 10-15 laps, checking fuel used, and calculating forward."
+    },
+    {
+      "q": "Should I adjust setup differently for qualifying versus racing?",
+      "a": "Yes. For qualifying, run slightly softer springs and anti-roll bars to reduce tire load and improve one-lap pace. For racing, increase stiffness to help the car handle over 20-30 consecutive laps and to reduce tire wear from overloading. The difference is usually 5-10 clicks on each bar and 10-15 N/mm on springs."
+    },
+    {
+      "q": "What causes the car to be loose exiting turn 4?",
+      "a": "Trailing-throttle oversteer caused by the rear tires losing grip as you transition from braking to throttle. Increase rear anti-roll bar stiffness by 3-5 clicks, stiffen rear dampers (compression), or increase rear brake balance slightly to shift weight forward. Also check that you are not braking too hard into turn 4; a lighter brake application leaves more grip available for the exit."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "monitor-1440p-120",
+    "gpu-rtx-5060-ti",
+    "cpu-ryzen-7-5700"
+  ],
+  "published": "2026-11-02",
+  "dateLabel": "November 2, 2026"
+}

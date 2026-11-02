@@ -1,0 +1,148 @@
+{
+  "slug": "iracing-qualifying-session-best-practices",
+  "tag": "iRacing Tips · Racing",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "iRacing qualifying best practices: strategy, fuel, and lap consistency",
+  "description": "Maximize your qualifying performance with proven strategies for track conditions, fuel load, and mental consistency across multiple attempts.",
+  "sections": [
+    {
+      "p": "Qualifying determines your starting position, and starting position often determines your result. A single tenth of a second separates the front row from mid-pack in most iRacing fields, yet many drivers approach qualifying as a casual warm-up lap before the race. The drivers who consistently qualify at the front treat qualifying as a separate, deliberately practiced discipline. They arrive with a plan for fuel load, tire temperature, and lap structure. They know when to push and when to reset."
+    },
+    {
+      "p": "The gap between a good qualifying lap and a mediocre one usually comes not from raw pace but from wasted effort: cold tires on the first run, running too much fuel, no clear strategy for multiple attempts, or chasing one fast lap so hard that you're not prepared for a retry. This guide covers the specific behaviors that move you forward in the grid."
+    },
+    {
+      "h2": "Prepare a fuel and tire plan before you qualify"
+    },
+    {
+      "p": "The weight in your tank and the temperature in your tires are not decisions you make during qualifying. They are decisions you make before the session starts. A common mistake is to load the fuel you think you'll need for the race, then qualify. That extra weight costs lap time and wastes your qualifying run."
+    },
+    {
+      "p": "Qualifying fuel should be minimal. Most drivers can complete a two or three-lap qualifying run on 1-2 liters of fuel, depending on the car and track. Check your car's fuel consumption in practice, then load just enough to get through your qualifying attempts plus a safety margin of 0.5 liters. The weight penalty of carrying extra fuel in qualifying will cost you more time than the pit stop you might avoid in the race."
+    },
+    {
+      "p": "Tire temperature must also be prepared. If your qualifying session starts immediately after a practice or warmup, your tires may arrive already at operating temperature. If there is a gap, you will need an in-lap or a slow lap to warm them. Some series and tracks allow a dedicated warm-up lap before qualifying begins. Use it. Cold tires are slow and unpredictable; a lap that brings them into the window is a lap spent correctly, not wasted."
+    },
+    {
+      "list": [
+        "Load 1-2 liters of fuel, enough only for your qualifying attempts plus 0.5 liter safety margin",
+        "Use practice telemetry to confirm fuel consumption per lap so your estimate is data-driven",
+        "If tires are cold at the start, complete a slow warm-up lap before your first hot lap",
+        "Check track temperature in practice; qualifying often runs at a different time of day and may affect tire and grip balance",
+        "Set your brake bias, fuel mix, and engine mapping before the session—do not adjust mid-qualifying on your hot lap"
+      ]
+    },
+    {
+      "tip": "Running light fuel not only makes the car faster and easier to handle, it also shifts the setup window. A car that understeers on full race fuel may be neutral or even oversteer on qualifying fuel. This is normal and expected; you are qualifying on a different car configuration than you will race.",
+      "tipLabel": "Qualifying setup is different"
+    },
+    {
+      "h2": "Structure your qualifying attempts for multiple runs"
+    },
+    {
+      "p": "Most iRacing qualifying sessions give you 15 to 30 minutes and multiple laps. The instinct is to push for a fast lap immediately. The faster approach is to plan at least two hot runs: one exploratory, one attack."
+    },
+    {
+      "p": "On your first hot run, use the lap to find the limits of grip, learn where the track is grippiest, and test how the car responds to your inputs. Push hard but not beyond control. This lap teaches you the window and usually results in a competitive time. Then pit, reset your tires (if the session allows), and commit your second run to a flat attack. You now know the line, the gear points, and the car's behavior. Your second run is faster because it builds on knowledge, not on luck."
+    },
+    {
+      "p": "If you make a mistake on lap one (a lock, a spin, or a poor shift), do not immediately pit and abandon it. Complete the lap. The data is valuable even if the time is deleted. Review your own telemetry. Then pit for your second hot run with clear knowledge of what cost you time."
+    },
+    {
+      "p": "Keep a third attempt in reserve. If your second run is a true catastrophe (off-track, damage, traffic), you have time for one more clean attempt. The drivers who do best in qualifying are never on their last lap. They always preserve a restart."
+    },
+    {
+      "olist": [
+        "Complete a warm-up lap if tires are cold, even if it looks slow",
+        "First hot run: push to the limit but prioritize consistency and learning the track window",
+        "Return to pits, review telemetry quickly (brake points, turn-in speed, exit grip)",
+        "Second hot run: attack flat-out knowing the correct line and car behavior",
+        "If time permits and you have fuel, attempt a third run only if you want to; never make your final lap a desperate gamble"
+      ]
+    },
+    {
+      "h2": "Master the qualifying mentality: focus on process, not time"
+    },
+    {
+      "p": "The fastest way to crash in qualifying is to stare at the leaderboard and panic. You see a lap time go up on the board from a rival, and suddenly you are pushing beyond your confidence window to match it. That is how lock-ups and off-track moments happen."
+    },
+    {
+      "p": "The correct approach is to ignore the leaderboard during your hot lap. Your only focus is the line, braking points, turn-in speed, and exit grip on this lap. Your goal is to execute your plan, not to beat a number you saw five minutes ago. The car that is set up and prepared for optimal qualifying already has a realistic potential lap time. Your job is to find it, not to invent one."
+    },
+    {
+      "p": "Between runs, review your data. Look at your brake traces, throttle traces, and line. Compare your first hot run to your second. Did you carry more speed into turn 3? Did you lose time on exit of the chicane? Identify one concrete thing to improve, adjust only that thing, and execute. Small, targeted improvements compound. Broad panic and thrashing do not."
+    },
+    {
+      "p": "Mental clarity also means knowing your car's limits on this setup, on this day. If you are on rain tires and the track is slippery, a lap time 2 seconds off your dry average is normal and acceptable. Do not spiral because your session pace is not matching your best-ever time. Qualify against the field and the conditions you have, not against a memory."
+    },
+    {
+      "tip": "Watch your delta bar (if you are using one) during qualifying, but only to see if you are on-pace relative to your own baseline. Delta to a leaderboard rival is a distraction that breaks your focus. Ignore it entirely until after your hot lap is complete.",
+      "tipLabel": "Delta bar: use sparingly"
+    },
+    {
+      "h2": "Manage traffic and restarts"
+    },
+    {
+      "p": "Qualifying in open sessions means other drivers on track during your hot lap. If you are on pace for a good time and you see a car ahead, your only options are to abort and pit for a restart, or to manage around the traffic. Avoid the instinct to pass aggressively; a qualifying session is not the time to racecraft.</p>"
+    },
+    {
+      "p": "The better move is to lift slightly and let the faster car pass, or to pit and restart on a clear track. A clear lap at 90% effort beats a congested lap at 110%. Most qualifying sessions have enough time that you can afford to reset and try again. Teams with high safety ratings will pit early if they see other drivers on their hot lap simply to ensure a clean run."
+    },
+    {
+      "p": "Also recognize when you are the car impeding another's hot lap. Qualifying runs are time-critical. If a faster driver is closing in behind you, move off the racing line and let them pass. This is common courtesy and good racing culture. You will receive the same favor when your qualifying runs come."
+    },
+    {
+      "list": [
+        "If traffic arrives during your hot lap and you cannot safely pass, abort and pit for a restart",
+        "Do not race traffic in qualifying; a clean lap matters more than overtaking a car you are not racing",
+        "If you are the slower car on a rival's hot lap, move off-line and let them pass",
+        "Time your pit entry to avoid blocking other drivers' exit from the pits",
+        "Keep your cool if your hot lap gets compromised; you have more time and more fuel for another attempt"
+      ]
+    },
+    {
+      "h2": "Learn from your qualifying performance"
+    },
+    {
+      "p": "After qualifying is done, your starting position is set. But the lap data remains. The drivers who improve their qualifying performance fastest are the ones who study their qualifying laps in replay and telemetry immediately after the session, while the memory is fresh."
+    },
+    {
+      "p": "Look at your best qualifying lap side by side with your fastest practice lap. Where did qualifying differ? Was the line different? Did you brake earlier or later? Were your throttle points different? If your qualifying is 0.2 seconds slower than your best practice, identify whether it is a setup problem (qualifying fuel and light weight change setup feel), a confidence problem (you played it safer), or an execution problem (you missed a brake point or exit)."
+    },
+    {
+      "p": "This feedback loop is how a driver who qualifies mid-pack can be racing for wins by the midpoint of the season. You are not looking for miracle improvements. You are looking for 0.02-second gains, session after session, each one traceable to a concrete change in your driving."
+    },
+    {
+      "p": "Also document the weather conditions, track temperature, and setup you used for your best qualifying lap. The next time you qualify at this track in a similar season, you will have a baseline to reference immediately instead of rediscovering the window from scratch."
+    },
+    {
+      "tip": "Many drivers skip the immediate post-qualifying review and wonder why their qualifying never improves. The top 10 percent in most iRacing series spend five minutes after qualifying comparing their best lap to their goal lap. You will see your mistakes and your opportunities in real time on telemetry far more clearly than in memory.",
+      "tipLabel": "Review it now"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much fuel should I load for qualifying?",
+      "a": "Load just enough fuel for your qualifying attempts plus a 0.5-liter safety margin. Most cars can complete a two-lap qualifying run on 1-2 liters. Use your practice telemetry to confirm consumption per lap. The weight penalty of carrying excess fuel costs more time than you save in the race pit cycle. Qualifying fuel is always minimal."
+    },
+    {
+      "q": "What should I do if my first hot lap gets compromised by traffic?",
+      "a": "Pit immediately and restart. Do not continue the lap hoping to salvage a time. A clean lap on your second or third attempt, even if it takes longer, is worth more than a congested lap at the wrong delta. Qualifying sessions have sufficient time for multiple runs. Use it."
+    },
+    {
+      "q": "Should I watch the leaderboard during my qualifying hot lap?",
+      "a": "No. Ignore the leaderboard during your hot lap entirely. Focus only on executing your line, braking points, and car control. Your job is to find the car's realistic potential on this setup and this day, not to chase a number. Review the leaderboard after your lap is complete and you have pitted."
+    },
+    {
+      "q": "How many hot laps should I attempt during qualifying?",
+      "a": "Plan for two dedicated hot runs: one exploratory to learn the track window, one attack to convert that knowledge into speed. Attempt a third run only if time and fuel permit and you want a clean restart opportunity. Never make your final lap a last-gasp panic attempt. Always preserve the option to reset and try again."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-02",
+  "dateLabel": "November 2, 2026"
+}

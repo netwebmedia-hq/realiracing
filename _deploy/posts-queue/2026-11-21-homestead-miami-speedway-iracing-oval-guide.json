@@ -1,0 +1,140 @@
+{
+  "slug": "homestead-miami-speedway-iracing-oval-guide",
+  "tag": "Track Guides · Oval Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Homestead Miami Speedway iRacing Guide: Line, Setup, Strategy",
+  "description": "Master Homestead's flat, fast 1.5-mile oval. Learn the racing line, setup priorities, fuel strategy, and how to overtake on a track where patience wins.",
+  "sections": [
+    {
+      "p": "Homestead Miami Speedway is a 1.5-mile D-shaped oval that rewards smooth, consistent drivers more than aggressive ones. The track is nearly flat with minimal banking, so setup, line precision, and fuel strategy dominate race outcomes. Unlike steeply banked superspeedways, Homestead demands respect for tire wear and a methodical approach to overtaking. Getting comfortable here means learning to manage understeer through the long corners and recognizing when drafting will actually cost you time."
+    },
+    {
+      "p": "The facility sits in South Florida's heat and humidity, which affects tire temperatures throughout a race. In iRacing, Homestead typically hosts NASCAR Oval series races in stock cars and trucks, making it a high-traffic oval where clean racing and strategic positioning matter more than raw pace."
+    },
+    {
+      "h2": "Track layout and the racing line"
+    },
+    {
+      "p": "Homestead is shaped like a 'D' with a long front stretch and back stretch separated by tight, nearly flat corners at each end. The front stretch runs roughly north-south, the back stretch runs parallel, and the two turns connect them. Turn 1 and 2 form the northwest corner, while Turn 3 and 4 form the southeast corner. Lap times are typically 29-31 seconds depending on car class and setup, so a small error carries big consequences."
+    },
+    {
+      "p": "The racing line favors a late apex in both corners. Enter Turn 1 high, brake smoothly to mid-corner, and apex around the middle-to-late part of the turn, then exit toward the wall. This technique loads the front tire without overloading it and lets you carry more speed through the exit onto the back stretch. Turn 3 follows the same pattern. The key is not to overdrive the entry. Most drivers instinctively brake too hard for the flat corner and then have to short-shift or feather the throttle mid-corner, which bleeds speed."
+    },
+    {
+      "list": [
+        "Turn 1-2 (northwest): Brake from ~900 feet out, target mid-to-late apex, full throttle exit toward the wall",
+        "Front stretch: Flat out, manage minor inputs to avoid drift",
+        "Turn 3-4 (southeast): Mirror of Turn 1, same brake zone distance, same late-apex philosophy",
+        "Back stretch: Flat out; stay low to shorten the distance and maximize exit speed into the corners"
+      ]
+    },
+    {
+      "tip": "The mistake most drivers make is turning in too early at both corners. Homestead rewards a shallow entry angle and a later apex. If you're hitting the apex at the geometric midpoint of the turn, you're probably braking and turning in too much.",
+      "tipLabel": "Common Line Error"
+    },
+    {
+      "h2": "Setup priorities for Homestead"
+    },
+    {
+      "p": "Homestead's lack of banking means setup is more sensitive than at banked 1.5-milers. Tire temperatures, downforce levels, and suspension stiffness all play larger roles in managing understeer and exit drive. A baseline stock setup will feel pushy mid-corner, especially in traffic."
+    },
+    {
+      "p": "Start with the baseline provided in your series and then adjust in this order. First, reduce front downforce by 1-2 clicks if you're pushing mid-corner in clear air. This frees up the front and helps the car rotate. Second, stiffen the rear anti-roll bar by 1 click to transfer some of the turning load to the rear and prevent the rear from sliding loose mid-corner. Third, lower the front ride height by 1 click if the car feels floaty. Homestead's bumpy asphalt benefits from slightly lower ride height to keep the suspension consistent through the corners."
+    },
+    {
+      "list": [
+        "Front downforce: Start 1-2 clicks below baseline; Homestead's flat corners don't need extra wing",
+        "Rear anti-roll bar: Increase stiffness 1 click to reduce understeer and improve rotation",
+        "Front ride height: Lower 1 click to improve suspension consistency over bumps",
+        "Brake bias: Set around 56-58% front. Homestead's long straights and gentle corners mean braking events are short and gentle; don't lock the rear",
+        "Tire pressure: Monitor throughout the race. Hot tire pressure near 32-33 PSI is normal; use pit stops to cool if needed"
+      ]
+    },
+    {
+      "p": "Do not over-adjust in a single session. Homestead's track surface is sensitive to ambient temperature changes, which simulate day-to-night temperature swings. Make one or two changes, run a few laps, and assess. A common trap is softening springs to improve mid-corner feel, which often just makes the car unstable on exit and slower in traffic."
+    },
+    {
+      "h2": "Fuel strategy and pit sequencing"
+    },
+    {
+      "p": "Homestead races are often 100-200 laps depending on series and season. Fuel consumption is steady but not extreme. A typical caution-free stint is 50-70 laps depending on driving style and fuel mixture setting. Running lean fuel mix (high savings) costs 2-3 lap times over a race but stretches fuel range by 15-20 percent. Running rich fuel mix (high performance) hurts mileage but maintains pace."
+    },
+    {
+      "p": "Plan pit stops based on your starting position and caution frequency. If you start in the top 5, pit early (lap 30-40) to clear traffic and build a lead. If you start outside the top 10, pit later (lap 50-60) to gain track position on pit exit. The undercut (pitting early to gain track position) works well here because Homestead doesn't have natural passing sections. A car that pits on lap 35 and emerges 15 cars clear gains more value than at a road course or high-speed oval."
+    },
+    {
+      "olist": [
+        "Estimate fuel range: Run a few laps at race pace (not qualifying), note fuel consumed per lap, multiply by your target stint length",
+        "Decide on fuel mixture: Lean if you're confident in setup and want to stretch mileage; rich if pace is tight and you can't afford 3 lap-times per stint",
+        "Plan stop timing: Early (lap 30-40) if leading or top 5; mid-race (lap 45-55) if mid-field; late (lap 55+) if starting back and want to undercut",
+        "Monitor cautions: Adjust pit timing if a caution bunches the field; pit only if you gain 5+ spots on pit exit, otherwise stay out and save fuel"
+      ]
+    },
+    {
+      "tip": "Homestead often sees several cautions in a 100-lap race. A common mistake is pitting too early in reaction to the first caution and then running out of fuel later. Build a 5-lap buffer and only pit if a caution actually helps you gain spots.",
+      "tipLabel": "Caution Strategy"
+    },
+    {
+      "h2": "Passing and defending at Homestead"
+    },
+    {
+      "p": "Homestead is not a high-passing track. The lack of banking, tight turns, and long straights mean there are only a few spots where an overtake is realistic. Most passes happen on the exit of Turn 4 into the back stretch, where a car with a better exit can use the draft to gain ground on the back stretch. Passes into Turn 1 are possible if you have a significant speed advantage, but they are risky because the corner is slow and small mistakes compound."
+    },
+    {
+      "p": "If you're hunting a car ahead, focus on qualifying better exit speed from Turn 4. This means nailing your line in Turn 3 (mid-corner understeer is the enemy here), carrying momentum through the corner, and hitting full throttle earlier than the leader. On the back stretch, use the draft if you're within a car length, but don't pull out to overtake unless you can commit. Homestead punishes half-committed passes; you'll either get stuck alongside the car and both will slow, or the leader will defend and you'll lose ground into Turn 1."
+    },
+    {
+      "p": "When defending, stay low (near the inside of the back stretch) and take the racing line through the corners. Don't overcorrect or block aggressively; Homestead's tight corners mean contact is costly for both drivers. If a car is significantly faster, let it go on lap 1 and reset your focus. Homestead races reward consistency and fuel strategy over late-race heroics."
+    },
+    {
+      "h2": "Traffic and multi-class management"
+    },
+    {
+      "p": "Some iRacing series feature mixed-class racing at Homestead, with Trucks running with stock cars or Xfinity cars. Slower traffic typically runs higher on the track through the corners, which can actually help faster cars by freeing up the racing line. Brake early if you spot a slower car mid-corner and don't dive to the inside; you'll both crash. On the straights, use the draft to pass slower traffic, but again, commit to the pass or stay out."
+    },
+    {
+      "p": "If you're the slower car, hold your line and don't panic when a faster car approaches. Homestead is wide enough in the corners that a faster car can find room to pass if you stay consistent. Move to the high side of Turn 3 if a car is hunting you from behind, which opens the low side for a pass attempt. Respect the faster car's pace; trying to block will only end in contact."
+    },
+    {
+      "h2": "Race day execution"
+    },
+    {
+      "p": "On race day, aim for a smooth first 10 laps. Don't chase the fast car immediately; use the opening laps to let tires warm, get a feel for brake zones in traffic, and identify which drivers are clean. Homestead's relatively long corners mean tire wear ramps up quickly if you're overdoing brake pressure or running hot lines. By lap 20, you should have a rhythm set."
+    },
+    {
+      "p": "Monitor tire temperatures and fuel consumption in the first stint. If tire temps are climbing past 100 degrees Celsius on the fronts, you're either braking too hard, carrying too much speed mid-corner, or your setup has too much front downforce. If fuel burn is running high, ease off the throttle slightly mid-corner or use fuel-mix lean if you calculated for it. These small adjustments compound over a race."
+    },
+    {
+      "p": "In the final 10 laps, if you're close to another car, focus on exit speed from Turn 4. That's your overtake opportunity. If you're leading, manage your fuel tank and avoid unnecessary risks. A top-5 finish is better than a DNF in a cleanup accident.</p>"
+    },
+    {
+      "tip": "Homestead is a momentum-management oval. Fast drivers are rarely 1 or 2 MPH faster than mid-pack; they're usually 0.2-0.3 seconds faster per lap because they exit corners better and avoid mistakes. Practice consistency over aggression.",
+      "tipLabel": "Winning Strategy"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the ideal racing line through Homestead's corners?",
+      "a": "Use a late apex at both Turn 1-2 and Turn 3-4. Enter high, brake smoothly, apex around the middle-to-late part of the turn, and accelerate toward the exit wall. A shallow entry angle and late apex carry more speed than a geometric midpoint apex. Most drivers brake and turn in too early."
+    },
+    {
+      "q": "How do I manage understeer at Homestead?",
+      "a": "Start by reducing front downforce 1-2 clicks below baseline, stiffen the rear anti-roll bar 1 click, and lower front ride height 1 click. If the car still feels pushy mid-corner, you may be braking too hard or carrying too much speed into the corner. Adjust line first, setup second."
+    },
+    {
+      "q": "What is a realistic fuel strategy for a 100-lap race?",
+      "a": "Plan 50-70 lap stints depending on fuel mixture and driving style. Run one or two full fuel stints, pitting early (lap 30-40) if leading to clear traffic, or mid-race (lap 45-55) if starting mid-field. Monitor cautions and adjust only if a pit stop gains you 5+ spots on pit exit."
+    },
+    {
+      "q": "Where is the best place to pass at Homestead?",
+      "a": "The back stretch after Turn 4 is the primary passing zone. A faster car can use better exit speed from Turn 4 and the draft down the back stretch to gain ground. Passes into Turn 1 are risky and often fail. Focus on qualifying for better exit speed, not dive-bombing."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-02",
+  "dateLabel": "November 2, 2026"
+}

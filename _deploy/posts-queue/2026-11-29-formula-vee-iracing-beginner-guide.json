@@ -1,0 +1,133 @@
+{
+  "slug": "formula-vee-iracing-beginner-guide",
+  "tag": "Car Guide · Open Wheel",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Formula Vee iRacing beginner guide: setup, braking, throttle control",
+  "description": "Learn to drive Formula Vee on iRacing: weight transfer basics, entry-mid-exit technique, and setup tuning for consistent lap times on road courses.",
+  "sections": [
+    {
+      "p": "Formula Vee feels like a go-kart with road-car aerodynamics. It has no downforce, a narrow power band, and almost zero mechanical grip. Every input matters. A small brake application too early, a slight steering angle error, or a moment of throttle mismanagement costs half a tenth. For drivers stepping from street cars or touring cars, Vee demands a cleaner driving style and rewards precision over aggression."
+    },
+    {
+      "p": "The car teaches weight transfer because it has no electronics to hide a messy input. You cannot trail-brake sloppy lines into a corner and expect the front end to stick. You cannot mash the throttle mid-corner and let a high grip limit sort it out. Vee forces you to learn the fundamental mechanics of a race car before you move to faster, more forgiving machinery."
+    },
+    {
+      "h2": "Weight transfer and brake release timing"
+    },
+    {
+      "p": "Most drivers brake too deep into the corner or hold brake pressure too long after turn-in. Vee punishes both. The car has light brake feel and no power steering assist, so trail-braking feels unintuitive at first. Instead, work toward a clean separation: brake on the straight, release fully at the turn-in point, then drive through the corner with throttle modulation alone."
+    },
+    {
+      "p": "Start by finding the braking point with the car at full brake pressure. Aim for a point where you can brake in a straight line to near-zero speed, then turn-in immediately after releasing the brakes. This teaches your muscle memory the proper sequence. Once that feels smooth, you can experiment with slightly earlier braking points and very mild trail-braking (only a few percent pedal input) to fine-tune entry speed on technical corners."
+    },
+    {
+      "p": "Weight transfer takes time: the front springs load, the tire grip increases, and the car rotates. In a Vee, this happens quickly but not instantly. Turn-in too early and the front will push. Wait too long and you lose mid-corner grip because you are still on heavy brakes. Aim to finish your brake release within the first third of your steering input."
+    },
+    {
+      "list": [
+        "Brake in a straight line to near-zero speed before the turn-in marker",
+        "Release brakes fully as the steering wheel starts to turn in",
+        "Let the car settle and grip before applying throttle",
+        "Begin throttle as mid-corner understeer stops increasing",
+        "Gradually feed throttle through exit to carry speed onto the next straight"
+      ]
+    },
+    {
+      "h2": "Throttle modulation and corner exit"
+    },
+    {
+      "p": "Vee has a narrow power band around 5,500 to 6,500 rpm. Below that, the engine makes almost no power. Above that, you are near the limiter. Most corners end not where you think but where you can apply full throttle without spinning the rear tires. Vee tires lose grip quickly, and the light car makes it very easy to induce oversteer with a clumsy throttle application."
+    },
+    {
+      "p": "During mid-corner, use very small throttle inputs to manage grip. Think of the throttle as a knob you turn continuously, not a pedal you press or release. At 30 percent throttle, you can still be turning. At 70 percent, the rear starts to slide. Find the threshold for each corner on each track, then practice hitting that threshold every lap at exactly the same spot. Consistency matters more than outright aggression."
+    },
+    {
+      "p": "Vee exit speed comes from how early you can apply full throttle without breaking traction. This depends entirely on exit radius and how much front end grip you have left. A tighter corner exit needs later throttle application. A wide corner exit lets you start feeding power earlier. Do not rush this process. Spinning the rear or inducing understeer on exit erases the lap time you thought you saved with aggressive turning-in."
+    },
+    {
+      "tip": "Limit your steering input rate. Vee has no power steering, and the steering ratio feels quick. Smooth, continuous steering changes cause less front-end scrub and preserve mid-corner grip. Jerky steering upsets the weight balance and makes the car want to push or slide.",
+      "tipLabel": "Steering smoothness"
+    },
+    {
+      "h2": "Baseline setup and tuning"
+    },
+    {
+      "p": "Vee setups have limited adjustment compared to high-downforce cars, but every change has a real effect. Start with the default setup for your track, then make one change at a time and record how the car feels over three consistent laps. Move back to baseline if the change makes the car feel worse, then try something smaller."
+    },
+    {
+      "p": "Brake bias affects turn-in directly. Too much rear bias locks the rear wheels and causes oversteer on corner entry. Too little rear bias makes the car understeer under braking. A common starting point is 65-70% front bias. Adjust in 1-2% steps and test on the same corner each time."
+    },
+    {
+      "p": "Anti-roll bar stiffness affects how the car rotates. Stiffer front anti-roll bar increases turn-in response but can induce understeer if overdone. Stiffer rear anti-roll bar helps the car rotate but can make the rear unstable under throttle. Most drivers run slightly stiffer front than rear, with a ratio around 1.2 to 1.5 front-to-rear. If the car understeer-heavy, try softening the front or stiffening the rear slightly. If it oversteer-heavy on entry, do the opposite."
+    },
+    {
+      "p": "Brake pressure has almost no setup effect in Vee (the system is not adjustable like high-end cars), so focus on your own modulation. Tire pressures should be checked before each session. Cold pressure is typically 26-28 psi front and 24-26 psi rear depending on the track. Temperatures are secondary; pressure is primary."
+    },
+    {
+      "list": [
+        "Brake bias: start at 67% front and adjust by 1-2% at a time based on turn-in feel",
+        "Anti-roll bar: front stiffness drives turn-in response, rear stiffness affects rotation under throttle",
+        "Camber: slight negative camber at front (around 2-3 degrees) helps turn-in grip",
+        "Downforce (if adjustable at your track): higher downforce helps mid-corner but hurts acceleration out of slow corners",
+        "Tire pressure: check cold pressure before each session and adjust for track temperature"
+      ]
+    },
+    {
+      "h2": "Learning tracks and avoiding common mistakes"
+    },
+    {
+      "p": "Vee makes every mistake visible. Drivers from high-grip cars often arrive at Vee expecting to brake later and turn-in harder. They lock brakes repeatedly, then wonder why the car does not rotate. Vee requires earlier, smoother braking and less steering angle for the same corner speed."
+    },
+    {
+      "p": "Practice on a track where you know the reference points. Laguna Seca, Road America, and Lime Rock are all good Vee home tracks in iRacing. Run solo sessions and focus on one corner at a time. Record your best lap and watch the replay. Look for brake release timing, steering input rate, and throttle application smoothness. Most improvements come from repeating one corner correctly 20 times, not from random setup changes."
+    },
+    {
+      "p": "Avoid the temptation to copy faster driver setups directly. Setup works only when it matches your driving style. A setup optimized for brake-into-mid-corner power application will feel sluggish if you prefer smooth, early exits. Begin with the published baseline, make small adjustments based on what the car tells you, and drive enough laps to confirm any change actually helped."
+    },
+    {
+      "p": "Use <a href=\"iracing-practice-session-plan-45-minutes.html\">structured practice sessions</a> rather than endless hot-lapping. Spend 10 laps warming up, 10 laps establishing your baseline pace, then 15 laps working on one weak area (turn-in smoothness, mid-corner power, exit grip). Record the final lap and compare it to your baseline. If you improved, keep the focus. If not, move to a different area."
+    },
+    {
+      "h2": "Common Vee mistakes and quick fixes"
+    },
+    {
+      "olist": [
+        "Braking too late or carrying brake pressure into the turn. Fix: brake 10 meters earlier than you think, then turn-in fully after release.",
+        "Steering input too quick or jerky. Fix: count to one-Mississippi as you turn the wheel, aiming for smooth input over 0.5 to 1 second.",
+        "Applying full throttle mid-corner. Fix: use small throttle increments and only apply full power once you are in the exit phase of the corner.",
+        "Adjusting setup every lap instead of testing changes over three consistent laps. Fix: make one change, drive three laps the same way, then judge if it helped.",
+        "Running lines that work in high-grip cars but not Vee. Fix: apex later and carry more speed through the middle of the corner, sacrificing entry speed for mid-corner stability."
+      ]
+    },
+    {
+      "tip": "Record every qualifying session and race. Watch the onboard replay and look for moments where you lost grip or speed. Most drivers see a mistake in the replay they never felt in the cockpit. This feedback loop is how Vee drivers improve fastest.",
+      "tipLabel": "Review and repeat"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the biggest difference between Formula Vee and street cars or touring cars?",
+      "a": "Vee has no downforce, no power steering, and a very narrow power band. Every steering input and throttle application must be smooth and precise. You cannot rely on electronics or high grip to fix a messy line. The car responds directly to your inputs, which makes mistakes obvious but teaches you faster."
+    },
+    {
+      "q": "How early should I brake compared to a faster car like a GT3?",
+      "a": "Much earlier. Vee lacks aerodynamic braking effect, so you need to start slowing sooner and finish braking before you turn in. A typical Vee braking point might be 200-250 meters before the apex of a slow corner, versus 150 meters in a GT3. As you learn the car, you will find your own reference points."
+    },
+    {
+      "q": "Why does the car feel so twitchy when I feed throttle mid-corner?",
+      "a": "The rear tires lose grip quickly when steering angle and throttle overlap. Vee has very little mechanical grip, so the only thing keeping the rear planted is the weight transfer you built during entry. Once you apply significant throttle while still turning, you exceed tire grip and the rear slides. Apply throttle only in the exit phase when steering angle is falling."
+    },
+    {
+      "q": "Should I adjust the brake bias for every track or stick with one setting?",
+      "a": "Adjust for each track, but make small changes. A track with long braking zones and late apexes might benefit from slightly more front bias (68-70%) because you need rotation under braking. A track with short braking zones and wide exits might prefer slightly less front bias (65-67%) to help the rear rotate earlier. Test your baseline setting first, then change by 1-2% only if you feel consistent problems."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-02",
+  "dateLabel": "November 2, 2026"
+}

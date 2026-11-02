@@ -1,0 +1,127 @@
+{
+  "slug": "baseline-setup-vs-setup-shops-when-to-stop",
+  "tag": "Setup Guides · Performance",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Baseline Setups vs. Setup Shops: When to Stop Fiddling",
+  "description": "Learn when a baseline setup is fast enough, and when spending time in a setup shop costs you lap time instead of saving it.",
+  "sections": [
+    {
+      "p": "Most sim racers spend more time in the setup shop than on track. They chase tenth-of-a-second gains by tweaking anti-roll bar stiffness, brake balance, and differential settings while their actual driving consistency remains unpolished. The uncomfortable truth: if you cannot lap the car consistently at 95% of its potential, a new setup will not fix that. A baseline setup from iRacing's built-in library or a community shop is the fastest way to competitive pace. The question is not whether to use one, but when to stop adjusting it."
+    },
+    {
+      "h2": "What a baseline setup actually is"
+    },
+    {
+      "p": "A baseline setup is a starting point tuned to be generally quick and forgiving across a range of driver inputs and track conditions. iRacing distributes baseline setups with every car, built by the dev team to suit the default setup philosophy and tire model. Community setups from shops like VRS (Virtual Racing School) or Apex servers tend to be even more aggressive, optimized for the fastest drivers in a public data-driven environment."
+    },
+    {
+      "p": "The advantage of a baseline is that it is already balanced. Weight distribution, springs, dampers, and aero are set to work together, not against each other. A driver can immediately focus on learning the track and smoothing their inputs instead of wondering if understeer is a setup problem or a driving problem."
+    },
+    {
+      "h2": "The baseline is good enough for most drivers, most of the time"
+    },
+    {
+      "p": "Take an iRating of 2,500 to 3,500. A driver at that level can typically run within 0.5 seconds of the session pole on any road course by simply learning the baseline setup's strengths and weaknesses over two practice sessions. The setup will not be perfect. It may have slight oversteer on corner entry or a touch of push on the exit. But it is fast enough to race cleanly and improve as a driver."
+    },
+    {
+      "p": "The real cost of setup fiddling is driver development time. Every 30 minutes in the setup shop is 30 minutes not spent on consistency, brake markers, throttle application, or racecraft. A baseline setup forces you to adapt to the car, which is exactly what drivers need to practice. In organized leagues or advanced series where time is tight before a race, this forced adaptation often translates to better results than a custom setup would."
+    },
+    {
+      "list": [
+        "Baseline setups have gone through public testing and are validated by hundreds of drivers",
+        "They rarely have obvious weaknesses like excessive tire wear, instability, or brake balance far outside the middle",
+        "You learn the car's character on track, not in a dialog box",
+        "Your own inconsistency will show up faster when the setup is not fighting you"
+      ]
+    },
+    {
+      "tip": "If you are within 0.3 seconds of the pace you expect in a baseline after one practice session, stop tuning and race. You are not slow because of bars and springs.",
+      "tipLabel": "The practice-session rule"
+    },
+    {
+      "h2": "When setup shop time becomes worth it"
+    },
+    {
+      "p": "Setup optimization pays off when the gap between your pace and a session leader is clearly not a driving error. This usually shows up after several hours on a track, not after one session. A specific symptom also matters: oversteer on exit that you cannot smooth out, mid-corner push that forces you to brake late, or tire deg so severe it ruins the second half of a race despite consistent inputs."
+    },
+    {
+      "p": "Track conditions also matter. A baseline setup built for 15 degrees Celsius will feel loose at 25 degrees. An endurance race with a sunrise to sunset temperature swing is a valid case for creating a second hot-weather setup. A high-fuel strategy in a sprint race is not."
+    },
+    {
+      "p": "The other case is serial improvement at a high level. Once you are running within 0.1 to 0.15 seconds of pole in a session, a custom setup tuned to your preferences and driving style can unlock another tenth. This is the domain of iRating 4,000 and above on road, where the field is compressed and setup optimization compounds with driving refinement. Below that, it is usually noise masquerading as improvement."
+    },
+    {
+      "h2": "How to tune a baseline without getting lost"
+    },
+    {
+      "p": "If you decide to make changes, work in isolation and use a consistent reference. Pick one aspect: brake balance, front ARB, or differential lockup. Make one change. Complete two laps at full pace. Note the difference in your lap time and how the car responds. Then revert and try the opposite direction. This discipline takes 20 minutes and is how professional sim racers work. Changing three or four things at once guarantees confusion."
+    },
+    {
+      "p": "Log the changes in a notebook. Screenshot the setup before you begin. Many drivers tweak for 90 minutes, do not like the result, and cannot remember what the original setup was because they did not save it. That is wasted time by definition."
+    },
+    {
+      "olist": [
+        "Load the baseline setup",
+        "Run a two-lap warm-up and record your best lap time",
+        "Identify one problem: does the car push, does it oversteer, is braking inconsistent",
+        "Change one setting in the direction that should address it by one step",
+        "Run two qualifying laps and compare to baseline",
+        "Decide: better, worse, or same. Revert or adjust one step further",
+        "Move to the next problem only after this one is resolved or you confirm the setup cannot fix it"
+      ]
+    },
+    {
+      "tip": "A handling problem that changes every lap is a driving issue, not a setup issue. Stop tuning and run hot laps instead.",
+      "tipLabel": "The consistency check"
+    },
+    {
+      "h2": "The setup shop time tax on race day"
+    },
+    {
+      "p": "Racing itself requires mental energy. Decision-making, focus, and racecraft are all finite resources during a two-hour endurance event or a 15-minute sprint. If you spend the entire practice week building a custom setup, your mind is divided between remembering the track, executing your strategy, and mentally comparing the setup to the baseline. This is the reason endurance teams often run the same setup across multiple drivers: simplicity and predictability pay more than optimization when conditions are stable."
+    },
+    {
+      "p": "In contrast, running a baseline from day one means you have already adapted. You know exactly when the tires will slide, how much brake pedal is too much, and where you can attack. That muscle memory is worth more than a setup tweak on race day."
+    },
+    {
+      "h2": "A practical stop-fiddling checklist"
+    },
+    {
+      "list": [
+        "You have run 3 or more practice sessions in the baseline setup without changing anything",
+        "Your lap time variance is under 0.2 seconds (your best lap minus your worst lap in a 10-lap run)",
+        "You are within 0.3 seconds of the session pole time, or within your target pace for that series",
+        "The one or two handling quirks you notice are something you can work around with throttle and brake timing",
+        "You can name specifically what is slow, not just a vague feeling the car is 'off'",
+        "You have not looked at a setup forum or comparison tool in the last two hours"
+      ]
+    },
+    {
+      "p": "If five of these six are true, stop tuning. Load the baseline, do a 10-lap race run at full pace, and move on to something that improves faster: racecraft, tire strategy, or <a href=\"iracing-practice-session-plan-45-minutes.html\">structured practice</a>. The 0.05-second gain from tweaking dampers is real, but the driver who consistently executes a smooth line and plans two moves ahead will beat you on race day. A baseline setup removes excuses and exposes where real improvement is needed."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much faster can a custom setup be than a baseline?",
+      "a": "At lower skill levels (iRating under 3,000), a custom setup rarely adds more than 0.1 to 0.2 seconds of lap time, and most of that comes from the driver adapting to a car with different balance. At higher levels (4,000+), a well-tuned setup tailored to a driver's style can add 0.1 to 0.3 seconds. The gain is real but small compared to the time cost of building and testing it."
+    },
+    {
+      "q": "Should I use a setup shop's competitive setup or build my own?",
+      "a": "Use the shop setup as your baseline, then run it for at least two practice sessions before making any changes. If you are within a tenth or two of the pace, stop there. If you find a specific handling issue after several hours, you can tune one parameter. Building a setup from scratch without understanding where each adjustment affects the car is the most common way to waste an evening."
+    },
+    {
+      "q": "What if the baseline setup feels terrible on the first lap?",
+      "a": "Terrible usually means unfamiliar, not bad. Drive the car for two full sessions before judging. Most drivers feel a baseline is loose or twitchy on the first lap, then realize it was just their brake and throttle application. If after two sessions it still has a major problem (constant oversteer, dead steering feel, or severe understeer), then check if the setup loaded correctly and compare it to a known good setup online. A genuinely broken setup is rare."
+    },
+    {
+      "q": "When should I create a second setup for hot weather or fuel load?",
+      "a": "For road racing, temperature swings of more than 8 to 10 degrees Celsius are worth a second setup, especially for endurance races. Fuel load changes (empty vs. full tank) affect handling enough to justify a separate setup if you are running longer stints. For sprint races or organized time trials where everyone uses the same fuel load and conditions are stable, one baseline setup is sufficient."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9"
+  ],
+  "published": "2026-11-02",
+  "dateLabel": "November 2, 2026"
+}

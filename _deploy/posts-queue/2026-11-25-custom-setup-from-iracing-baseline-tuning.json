@@ -1,0 +1,138 @@
+{
+  "slug": "custom-setup-from-iracing-baseline-tuning",
+  "tag": "Setup Guides · Setup Philosophy",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Building Your Own Setup From the iRacing Baseline: A Methodical Approach",
+  "description": "Learn how to tune iRacing setups from the stock baseline by changing one variable at a time and understanding what each adjustment does to your car.",
+  "sections": [
+    {
+      "p": "The iRacing baseline setup is the worst place to end, but the best place to start. Most drivers load it, hate how the car feels, and either hunt for a downloaded setup or dive into blind changes hoping something sticks. The real edge comes from understanding what every knob does and testing changes one variable at a time. This approach is slower than copy-pasting a setup, but it teaches you to read your car and adapt faster than any download ever will."
+    },
+    {
+      "p": "Building a setup from baseline does not mean starting from scratch. iRacing's default setups are engineered to be neutral and drivable for the broadest audience. Your job is to make that foundation respond to your driving style, your hardware, and the specific conditions you face today."
+    },
+    {
+      "h2": "Why the baseline matters more than you think"
+    },
+    {
+      "p": "A baseline is a reference, not a promise. It has no grip, no feel, and no opinionated handling traits. That sounds bad until you realize it also has no hidden surprises. When you change one thing and the car responds in a way you did not expect, you know exactly what caused it. Downloaded setups compress months of someone else's tuning into a file, but they also hide their logic. You adjust wing angle and suddenly your understeer becomes oversteer because three other settings are compensating for each other in ways you cannot see."
+    },
+    {
+      "p": "Starting from baseline means you build a mental model of cause and effect. That mental model is portable. It works at Imola, at Daytona, in the Formula 3, and in the Corvette C8 GT3. A setup is not a blueprint; it is a tuning story. You need to understand the story."
+    },
+    {
+      "h2": "The single-variable rule"
+    },
+    {
+      "p": "Change one thing. Test it. Write down the result. Change another. This is not just best practice; it is the only way to know what actually changed your lap time."
+    },
+    {
+      "p": "In a 20-minute practice session, make one major change (say, brake bias) or 2 to 3 minor tweaks (say, front wing, rear wing, ride height 5 mm). Run a steady five laps and focus on consistency, not pace. Your first lap is always a reference; lap three is where the car starts to tell the truth. On lap five, commit to a smooth reference corner and compare your feeling there to the last session. Did the car turn in easier? Did it feel more planted on exit? Did the front tire feel lighter over kerbs?"
+    },
+    {
+      "p": "Write it down. Not in your head. In a text file or spreadsheet. Record the change, the lap time, the weather, and your commentary. After five sessions, you will have a map. After ten, patterns emerge. Brake bias down 5 percent made turn-in cleaner but added mid-corner push. Front wing down one level made corner exit faster but killed entry stability. These are your clues."
+    },
+    {
+      "h2": "Start with the big three: grip, balance, and feel"
+    },
+    {
+      "h3": "Grip (tire pressure, wing angle, suspension stiffness)"
+    },
+    {
+      "p": "Tire pressure is the fastest way to add or lose overall grip. The iRacing baseline often runs pressures that are conservative. Most road cars run front and rear pressure within 1 to 2 PSI of each other. Try dropping front pressure 0.2 to 0.4 PSI from baseline and run a consistent lap. More heat in the front tire means earlier grip. Do the same at the rear. Most drivers find 0.3 to 0.5 PSI lower than baseline at both ends improves driveability without making the tires overheat in a 30-minute stint."
+    },
+    {
+      "p": "Wing angle comes next. The baseline wing setting on most GT cars is neutral and slow. Reduce rear wing 1 to 2 degrees below baseline and feel the car respond. You will lose some stability on corner exit, but you will gain speed on the straights and sharper turn-in. If the car starts to slide on exit, you are past the limit for your skill and the tire choice. Back it up 0.5 degrees. If the car still feels mushy in, reduce front wing 0.5 to 1 degree. Run three to five laps each configuration and compare the feel and the delta on your fastest lap."
+    },
+    {
+      "list": [
+        "Tire pressure: start with 0.3 PSI lower than baseline at both ends; test in 0.2 PSI increments",
+        "Wing angle: reduce rear wing 1 to 2 degrees first, then front wing 0.5 to 1 degree if needed",
+        "Suspension stiffness: leave it alone until you have tire and wing dialed; then shift stiffness to match your preference (stiffer front = more oversteer, stiffer rear = more understeer)"
+      ]
+    },
+    {
+      "h3": "Balance (brake bias, throttle application, turn-in response)"
+    },
+    {
+      "p": "Brake bias controls how much of your braking force goes to the front wheels. The baseline is safe but often too conservative for fast lap work. Start by running baseline brake bias for five laps and identifying the turn where you feel most unstable under braking. Is the rear sliding left and right (rear bias is too low)? Is the front locking or diving hard into the corner (front bias is too high)?"
+    },
+    {
+      "p": "If the rear is loose, increase brake bias 0.5 to 1 percent toward the front. If the front is locking, shift 0.5 to 1 percent toward the rear. Run three laps at the new setting and compare the same corner. You will find a balance point where the car feels planted and stable. That is your brake bias for this track and these tires."
+    },
+    {
+      "h3": "Feel (steering lock, steering ratio, FFB volume)"
+    },
+    {
+      "p": "The baseline steering feels generic. Steering ratio (how much you need to turn the wheel to move the car) is baked into the car, but many drivers run tighter steering lock on the wheel than the baseline supports. Check how many degrees your wheel supports. If you run a direct-drive wheel like the MOZA R9, you have unlimited range, but iRacing's default lock may be 630 degrees. Try running full lock available in the vehicle setup and feel how much weight the steering has. Some drivers prefer 720 degrees (two full turns lock to lock); others prefer 630 (1.75 turns). Test both in a five-lap session and see which feels more natural."
+    },
+    {
+      "p": "Force feedback volume on your wheel is not a setup parameter, but it is part of tuning the feel. If the wheel is so strong that you cannot hold the line, you are working harder than you need to. If it is so light that you lose input feel, you are flying blind. Start with 80 to 85 percent volume and adjust in 5 percent increments until the weight in your hands feels like information, not a barrier."
+    },
+    {
+      "h2": "The session structure that teaches"
+    },
+    {
+      "olist": [
+        "Run five laps at baseline. Do not try hard on lap one. Use lap two to warm the tires, lap three to find rhythm, lap four to push, and lap five as a reference.",
+        "Change one variable by a small amount. For wing angle, that is 0.5 to 1 degree. For brake bias, 0.5 to 1 percent. For tire pressure, 0.2 to 0.3 PSI.",
+        "Run five laps at the new setting. Record the fastest lap and your commentary on how the car felt.",
+        "If the change was positive, test the next increment in the same direction. If it was negative, reverse it or return to baseline.",
+        "After 15 to 20 laps, step back. Look at your lap times and your notes. Where is the consistency? Where did you lose it?"
+      ]
+    },
+    {
+      "p": "This structure works because it removes emotion. You are not chasing one perfect lap; you are hunting for consistent improvement over five-lap stints. Consistency wins races. The fastest lap in practice that you cannot repeat is worse than a 0.1 second slower lap you hit five times in a row."
+    },
+    {
+      "h2": "Common baseline gaps and what to fix first"
+    },
+    {
+      "p": "Most iRacing baselines have two problems: not enough front downforce for sharp turn-in, and too much brake bias toward the rear for modern trail-braking technique. Start there. Increase front wing 0.5 to 1 degree and shift brake bias 1 to 2 percent toward the front. Run ten laps. You will find the car sharper and easier to modulate under heavy braking. That solves 70 percent of baseline complaints immediately."
+    },
+    {
+      "p": "The second issue is tire pressure. Baseline pressures keep tires cool and in the middle of the operating window, which means they feel slow. Most competitive drivers run 0.3 to 0.6 PSI lower at the front and 0.2 to 0.4 PSI lower at the rear to get the tire in its optimal heat range faster. A 30-minute race will still stay within safe limits, and a 1-hour endurance will only climb into the high-temperature zone if you are driving the car hard for the entire second half. That is not a problem unless you are locked in a fuel-save stint."
+    },
+    {
+      "tip": "Never change suspension stiffness before you have dialed wing angle and brake bias. Stiffness hides the real feel of the car. Get the aero and braking right first, then use suspension to fine-tune balance. That order saves you 20 laps of confusion.",
+      "tipLabel": "Tuning order matters"
+    },
+    {
+      "h2": "When to stop and race"
+    },
+    {
+      "p": "You can tune forever. There is always another tenth to chase. The trap is tuning past the point of diminishing return. After 30 laps of baseline setup work, your lap time will plateau. You are no longer finding setup improvements; you are just refining yourself as a driver. That is when you stop and race. Take the setup into a time trial or a practice race and see how it holds up under pressure."
+    },
+    {
+      "p": "A setup that is 99 percent there but easy to drive will beat a setup that is 100 percent optimized but punishes any small mistake. The baseline-derived setup teaches you where the limits are because you built them yourself. That is worth more than one tenth of pace."
+    },
+    {
+      "p": "If you want to go deeper, read your telemetry. iRacing's built-in tools show you throttle input, brake pressure, and steering angle overlaid on your lap. Compare a good lap to a bad one and you will see where you are losing time. Sometimes the setup is fine; sometimes you are just driving inconsistently. Knowing the difference is the whole point of building from baseline."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many laps should I run before I change a setup variable?",
+      "a": "Run five laps minimum. Lap one is always a reference as your tires heat. Lap two continues warming. Lap three is where you start finding rhythm. Lap four is your push lap. Lap five is your comparison. This five-lap structure removes the noise of a single outlier lap and gives you a real sample of how the car behaves under that setting."
+    },
+    {
+      "q": "Should I ever change multiple setup variables at once?",
+      "a": "No, unless you are testing a known package someone else published. When you change two things at once, you cannot tell which one caused the result. You will spend twice as long figuring out what works. Single-variable testing is slower in the moment but faster overall because you learn the cause-and-effect relationship."
+    },
+    {
+      "q": "What if the baseline setup is terrible and I cannot make progress?",
+      "a": "Download a proven setup for that car and track, study what it changed from baseline, and then use that as your new baseline. You will still learn the logic by seeing the differences. Some baselines are older and not optimized for current tire models or physics changes. Swapping to a community-built setup and then tuning from there is legitimate. The goal is understanding, not suffering through a bad baseline."
+    },
+    {
+      "q": "How do I know when my setup is race-ready?",
+      "a": "When your lap times stop improving after 30 to 40 laps of changes, and you can repeat your fastest lap within 0.05 to 0.1 seconds multiple times, you are ready. Run a practice race or time trial at that setup. If you are comfortable and the times are consistent, you can race it. Do not wait for perfection. A setup you understand and can drive is faster than a perfect setup you do not trust."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-02",
+  "dateLabel": "November 2, 2026"
+}

@@ -1,0 +1,149 @@
+{
+  "slug": "multi-camera-sim-racing-stream-setup",
+  "tag": "Streaming · OBS",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Multi-camera setup for sim racing streams: angles, switching, and gear",
+  "description": "Learn how to add cockpit, monitor, and wide angles to your stream without needing multiple PCs. Practical camera placement and OBS switching techniques.",
+  "sections": [
+    {
+      "p": "Most sim racers stream from a single monitor on one PC, which means camera bandwidth competes with encoding bandwidth. Adding a second or third camera to your stream setup means choosing: buy a more expensive capture card, run cameras on a separate PC, or use USB webcams on your streaming PC and accept modest quality. The payoff is real though. A cockpit camera adds immersion and credibility. A rig-wide angle shows your physical setup. A monitor capture proves you're not using assists and keeps viewers locked on the action. Done well, multi-camera angles keep a stream engaging across a longer broadcast."
+    },
+    {
+      "h2": "Why multi-camera matters for sim racing"
+    },
+    {
+      "p": "Viewers are skeptical of sim racing streams by default. A single monitor view leaves questions: Are you using a controller? Assists? Is this actually the iRacing world you claim? A second angle, especially a monitor-input capture or close-up of your wheel and pedals in action, closes that gap. Cockpit cameras also reduce the boredom of long endurance races. When your lap times flatten or traffic builds, cutting to a rig shot keeps the stream visually alive."
+    },
+    {
+      "p": "The technical barrier is lower than it was five years ago. USB webcams now ship with decent low-light performance. OBS scene switching is reliable and free. The constraint is not technology but your streaming PC's CPU headroom and USB bandwidth. On a system like the one I stream from (RTX 5060 Ti and Ryzen 7 5700 with OBS on one PC), adding two USB cameras is feasible as long as your encoder settings leave room for their overhead."
+    },
+    {
+      "tip": "Start with one additional camera before committing to a three-angle setup. Most viewers respond more to consistent, clean audio and a stable 60 fps main feed than to adding a third angle. Add angles only if your PC and internet upload handle them without frame drops.",
+      "tipLabel": "Start simple"
+    },
+    {
+      "h2": "Camera types and placement for sim racing"
+    },
+    {
+      "h3": "Monitor or racing line input capture"
+    },
+    {
+      "p": "The gold standard for a second angle is a direct input capture of your monitor or a separate small display showing the in-game view. This proves the build, the track, your iRating and safety rating, and that you're not using AI opponents or offline practice. If your monitor has HDMI or DisplayPort out, you can route a second output to a capture card on a separate USB 3.0 bus. If not, use an HDMI splitter (one for your display, one for capture)."
+    },
+    {
+      "p": "A capture card approach adds cost (budget ~£80 to £150 for a reliable USB 3.0 card) but uses no PC CPU time after the capture driver loads. If you must avoid extra hardware, screen-region capture in OBS (crop your monitor view) works but will slow your encoder if your main stream already fills your CPU."
+    },
+    {
+      "h3": "Cockpit angle: wheel and pedals"
+    },
+    {
+      "p": "Mount a USB webcam or USB mirrorless camera above or to the side of your wheel to frame your steering input and hand position. This angle is most impactful during high-stress corners or overtakes, and it builds trust that you're actually driving. Position the camera roughly 60 cm from your wheel at an angle that keeps your hands visible without glare or backlighting washing out detail. A ~1080p 30 fps USB webcam is enough; most viewers watch at lower quality anyway."
+    },
+    {
+      "list": [
+        "Mount on a desk arm or camera tripod pointed at the wheel from the driver's right side (passenger perspective on the footage), roughly 45 degrees to the steering plane",
+        "Avoid direct overhead mounting; it hides hand and steering motion and creates glare",
+        "Position the focus distance at your hands, not the dashboard. The steering wheel itself becomes the reference point",
+        "Test the view in low light; many budget USB cameras lose detail in a dimly lit room, so consider a cheap LED panel or directional desk light"
+      ]
+    },
+    {
+      "h3": "Wide rig shot"
+    },
+    {
+      "p": "A third camera framing your full cockpit or rig setup is optional but adds production value for long streams. This angle proves you have real hardware, not a controller, and breaks up the visual monotony of hour-long endurance races. Mount it 1.5 to 2 metres away from your seat, slightly elevated, framing seat, wheel, and pedals in one shot."
+    },
+    {
+      "h2": "OBS scene switching and layout"
+    },
+    {
+      "p": "Your stream layout depends on bandwidth and CPU overhead. A common approach: main scene has your monitor capture in the foreground, cockpit camera in a bottom corner (10-15% of frame), and wide rig shot in another corner. During slow racing (lead changes, fuel stops), full-screen the cockpit or rig for 10-15 seconds, then return to the main view. This keeps the visual hierarchy clear (racing action first) while rewarding engaged viewers with extra angles."
+    },
+    {
+      "olist": [
+        "Set up each camera as a separate source in OBS: monitor capture via HDMI card, cockpit USB camera, rig wide-angle USB camera",
+        "Create two or three scenes: 'Racing Main' (monitor large, cameras in corners), 'Cockpit Focus' (cockpit camera full-screen), 'Rig Wide' (rig angle full-screen)",
+        "Use scene-switching hotkeys or a secondary monitor to flip between scenes without cutting awkwardly",
+        "Keep each camera input at a consistent resolution (1920x1080 or 1280x720) to avoid re-scaling drops in OBS; use the camera settings or OBS filter to resize before compositing",
+        "Set a delay of 2-3 seconds on non-main cameras if your upload bandwidth is tight; a slight audio delay is less noticeable than a video stutter"
+      ]
+    },
+    {
+      "tip": "Test your full multi-camera setup on a local private lobby before a public stream. Watch the replay and CPU usage in OBS. If your encoding bitrate spikes above 80% CPU usage, drop one camera or reduce a resolution.",
+      "tipLabel": "Test first"
+    },
+    {
+      "h2": "USB bandwidth and PC overhead"
+    },
+    {
+      "p": "Two USB 3.0 cameras on the same hub can saturate bandwidth if both are streaming 1080p 30fps. Use separate USB 3.0 buses if your PC has them (many do: front USB 3.0 hub, rear USB 3.0 header, and internal USB 2.0 for less bandwidth-hungry devices). Stagger camera resolutions: cockpit at 1080p 30fps, wide rig at 720p 30fps. This spreads the load and rarely impacts perceived quality on stream."
+    },
+    {
+      "p": "CPU overhead comes from OBS compositing (blending multiple sources into one output frame). A Ryzen 5700 can handle two USB cameras plus monitor capture and 1080p 60fps encoding if the cameras run at 720p or 1080p 30fps and your encoder bitrate sits at 6000-8000 kbps. Higher bitrates push encoding CPU above 60%, leaving little room for in-game CPU spikes. Lower your resolution or framerate if your CPU usage trends near 70% during a race."
+    },
+    {
+      "h2": "Gear: cameras and capture cards"
+    },
+    {
+      "p": "Budget USB webcams (Logitech C920 or C930e clones, ~£40-60) work for cockpit and rig angles. They struggle in low light and have poor autofocus, but many viewers watch compressed streams at 540p anyway, so the image quality loss is acceptable. Higher-end USB mirrorless cameras (Sony A6400, ~£600+) offer exceptional image quality, fast autofocus, and manual focus; they're overkill for a small cockpit corner but valuable if you're serious about stream presentation and have the budget."
+    },
+    {
+      "p": "For monitor capture, a dedicated HDMI USB 3.0 capture card (Elgato Cam Link, Magewell USB Capture, ~£100-150) is more reliable than screen-region capture in OBS. Capture cards use hardware to compress the video feed and offload the work from your CPU. If your streaming PC is tight on CPU budget, a capture card pays for itself in stability and available encoder headroom."
+    },
+    {
+      "list": [
+        "<strong>Budget option:</strong> two USB webcams (~£60 each) and screen-region OBS capture (no extra hardware); works if your PC has spare CPU",
+        "<strong>Balanced:</strong> USB webcam for cockpit, USB webcam for wide rig, HDMI capture card for monitor; ~£250 total, reliable, clean layout",
+        "<strong>Premium:</strong> USB mirrorless for cockpit (Sony A6400, ~£600), USB webcam for rig, capture card for monitor; best image quality, supports future upgrade to 1440p or 4K elements"
+      ]
+    },
+    {
+      "h2": "Audio and sync"
+    },
+    {
+      "p": "USB cameras do not carry audio to OBS by default. Use your existing headset or microphone input and route it through OBS as a separate audio source. If video encoding lags slightly (a 1-2 frame delay on a camera angle), audio and video stay in sync because OBS handles them separately. Noticeable lip-sync issues only occur if your upload bandwidth is truly maxed and OBS begins dropping frames; that's a sign to reduce camera resolution or bitrate, not to add audio delay compensation."
+    },
+    {
+      "h2": "Practical setup workflow"
+    },
+    {
+      "olist": [
+        "Install one USB camera first (cockpit angle). Test it in OBS at 720p 30fps for one week of streams. Verify CPU and USB stability",
+        "Add a second camera (wide rig) on a separate USB port or hub. Test at 720p 30fps for another week",
+        "If CPU and bandwidth are stable, raise the cockpit camera to 1080p 30fps. Monitor your OBS encoding CPU; if it climbs above 70%, drop the rig camera to 480p or reduce your main stream bitrate by 1000 kbps",
+        "Add monitor capture last, via capture card or OBS screen crop. Start with a smaller monitor area (1280x720) and scale up only if CPU headroom allows",
+        "Create your multi-camera scenes in OBS. Set keyboard shortcuts for quick scene switching during a race. Practice switching without fumbling",
+        "Run a 30-minute test stream on a private YouTube stream or Discord channel. Watch the replay for dropped frames, stutters, or desync. Adjust camera resolution or bitrate if needed"
+      ]
+    },
+    {
+      "p": "Multi-camera streaming on a single PC is achievable and credible. Start small, test thoroughly, and upgrade only when your CPU and upload bandwidth clearly support the next angle. Viewers prefer one stable, high-frame-rate feed with clean audio over three laggy or stuttering angles, so resist the temptation to add cameras faster than your rig can handle them."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Will adding two USB cameras to my streaming PC tank my frame rate in iRacing?",
+      "a": "Not if your PC has spare CPU headroom. USB camera capture itself uses minimal CPU; the overhead comes from OBS compositing them into your output. On a Ryzen 7 5700 with encoding bitrate at 6000-8000 kbps, two cameras at 720p 30fps typically add 5-10% CPU usage. Monitor your OBS encoding CPU during a race. If it's above 70%, reduce camera resolution or bitrate, or run cameras on a second PC."
+    },
+    {
+      "q": "Should I use a capture card for my monitor or just let OBS screen-crop it?",
+      "a": "A capture card (HDMI USB 3.0) is more reliable and offloads CPU work. OBS screen-region capture is free but uses CPU to encode that region, which matters if your PC is already at 60-70% encoding load. If your streaming PC is tight, a ~£100 capture card is worth it. If you have spare CPU, screen crop works fine."
+    },
+    {
+      "q": "What camera resolution should I use for a cockpit close-up?",
+      "a": "Start at 1280x720 30fps. Most viewers watch compressed streams at 540p or lower, so 720p is sharp enough and uses reasonable USB bandwidth. If you have spare USB and CPU, bump it to 1920x1080 30fps. Anything above 1080p is wasted on a small corner inset; save high resolution for a full-screen cockpit or rig shot."
+    },
+    {
+      "q": "Can I run three USB cameras on one streaming PC without dropping frames?",
+      "a": "Rarely without trade-offs. Three USB cameras at 720p 30fps each, plus encoding your main 1080p 60fps feed, can saturate USB bandwidth and CPU. Most single-PC setups max out at two USB cameras running cleanly. If you need three, use a second PC for two cameras and stream via NDI, or use a dedicated USB hub with its own power supply to reduce bus contention."
+    }
+  ],
+  "gearKeys": [
+    "gpu-rtx-5060-ti",
+    "cpu-ryzen-7-5700",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-02",
+  "dateLabel": "November 2, 2026"
+}

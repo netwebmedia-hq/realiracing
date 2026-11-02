@@ -1,0 +1,152 @@
+{
+  "slug": "dirt-late-model-iracing-complete-guide",
+  "tag": "Car Guide · Dirt Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Dirt Late Model iRacing Guide: Setup, Throttle Control, Track Feel",
+  "description": "Master dirt late model racing on iRacing. Learn setup fundamentals, throttle modulation, and how to feel the track through your wheel.",
+  "sections": [
+    {
+      "p": "Dirt late models demand a different mindset than road racing or oval asphalt. The car is loose by design, the track surface changes every lap, and success depends less on precision hitting marks and more on reading weight transfer and staying smooth on throttle. iRacing's dirt late model model captures that challenge well. If you come from circuit racing, expect a learning curve. If you're new to sim racing, start here."
+    },
+    {
+      "p": "This guide covers the core setup choices, how to drive the car efficiently, and what to listen for from your wheel's feedback. The fundamentals apply across most dirt ovals on the service: Eldora, Charlotte Motor Speedway's dirt surface, and community-run tracks."
+    },
+    {
+      "h2": "Setup: Start with baseline, then adjust for track grip"
+    },
+    {
+      "p": "Dirt late models in iRacing ship with a solid baseline setup. The car is already biased toward oversteer because that's how dirt racing works. Your first three sessions should be about learning the car, not changing everything."
+    },
+    {
+      "p": "Start a 10-lap practice stint at 70% fuel and note your lap times and how the car feels early, mid, and late in the stint. Most drivers improve noticeably as fuel load drops and rear grip increases. If you're 0.3 seconds slower at lap 1 than lap 10, that's normal and means the setup is working."
+    },
+    {
+      "list": [
+        "Front anti-roll bar: higher stiffness adds forward bite but can kill mid-corner speed on low-grip tracks. Start at baseline and raise it only if the car feels undriveable loose on entry.",
+        "Rear anti-roll bar: this is your primary loose/tight tool. Looser rear (lower value) helps you carry more speed mid-corner and exit. Tighter rear adds stability on power but will push the front if overdone.",
+        "Springs: stiffer springs help on high-grip tracks and bumpy surfaces. Lower spring rates give the car more compliance and feel softer, useful on slick nights. Don't chase perfect setups on Tuesday practice; the track will be different Saturday night.",
+        "Brake bias: bias forward 55 to 58 percent. Dirt cars stop shorter with a front-biased setup because the rear wants to lock easily on loose surface.",
+        "Differential: an open or limited-slip diff is typical. Locked diffs are rare on dirt; you'll oversteer on corner entry. Keep your diff setting conservative unless the car spins mid-corner under power."
+      ]
+    },
+    {
+      "tip": "Dirt grip is not static. The racing line gets polished slicker, the high side gets rougher and grippier, and track temperature swings change everything. A setup that felt perfect in practice can be too loose by feature time. Expect to need minor adjustments (anti-roll bar, brake bias) between sessions.",
+      "tipLabel": "Track Evolution"
+    },
+    {
+      "h2": "Throttle modulation: the core skill"
+    },
+    {
+      "p": "Road racing rewards smooth, progressive inputs. Dirt late model racing rewards <strong>anticipation and restraint</strong>. You apply throttle before the car is fully turned, not after, and you modulate it constantly through the corner to manage weight transfer and tire slip."
+    },
+    {
+      "p": "On entry, brake in a straight line and trail brake slightly as you begin to turn. The car wants to slide; you're using brake pressure to load the front and control that slide. As you unwind the wheel, begin blending in throttle before the steering wheel is straight. Sounds early? It is. Your goal is to never have full steering angle and full throttle at the same time."
+    },
+    {
+      "p": "Mid-corner is where dirt late models separate amateur from competent drivers. The car is sliding, the rear is loose, and your throttle pedal input is the only control you have left. Small increases in throttle increase rear slip and let you rotate the car further. But more slip means slower corner exit. The balance is finding the throttle level that lets you maintain arc speed without overdriving."
+    },
+    {
+      "p": "Exit is also not a binary on-off switch. Roll into full throttle gradually as you unwind steering, not all at once. Most spins and off-track excursions at entry or mid-corner happen because a driver stabbed throttle during mid-corner slide instead of managing it. Short, smooth stabs on throttle, one to two inches of pedal travel, teach you feel. Full throttle inputs teach you how to recover from spins."
+    },
+    {
+      "tip": "Record a replay of yourself against a faster driver. Watch their replay on-board camera and focus on their throttle pedal trace, not their steering. Notice how much throttle they carry mid-corner, how early they start rolling it in on exit, and how they handle the moment the rear gets loose. Copy that pattern before you copy their braking point.",
+      "tipLabel": "Learn by Video"
+    },
+    {
+      "h2": "Wheel feedback: what the FFB is telling you"
+    },
+    {
+      "p": "Direct drive wheels like the MOZA R9 give you detailed feedback about tire slip and weight transfer. A lot of that data is noise if you don't know what to listen for. Dirt late models produce distinctive FFB signals that tell you whether you're at the edge of grip or past it."
+    },
+    {
+      "p": "A slight oscillation or chatter in the wheel during mid-corner means the rear tires are sliding at the edge of traction. That's good. You have room to manage it with throttle. A sudden dead or hollow feeling in the wheel, especially after you've felt chatter, usually means the rear has lost grip entirely and a spin is coming if you don't ease off throttle immediately."
+    },
+    {
+      "p": "On corner exit, a sharp kick or jolt back toward center, especially under moderate or heavy throttle, is the rear stepping out. Again, this is normal and expected. Let your arms absorb it and ease throttle slightly. If the kick is violent and the wheel twists hard, ease off earlier next lap."
+    },
+    {
+      "p": "The front end during entry will feel heavy and loaded if braking and turning are balanced well. If the car refuses to turn and the wheel feels numb, the front is sliding and you're overdoing brake pressure while steering. Trailbake less or brake earlier in a straight line."
+    },
+    {
+      "list": [
+        "Chatter or oscillation: tires at the edge, still in control",
+        "Dead/hollow feeling: losing grip, ease throttle or brake",
+        "Sharp kick or jolt: rear sliding mid-corner, reduce throttle slightly",
+        "Numb, heavy front end: too much brake pressure while steering, brake straighter"
+      ]
+    },
+    {
+      "h2": "Track-specific patterns: Eldora and short tracks"
+    },
+    {
+      "p": "Eldora Speedway is the most common dirt late model track on iRacing. The high bank in turn 3 and the relatively smooth, established racing groove teach you how dirt racing works at a faster speed. The low bank in turns 1 and 2 shows you how the car behaves when grip is lower."
+    },
+    {
+      "p": "On the high-banked turn 3, you can carry more speed through mid-corner because the bank does some of the work for you. But don't overshoot on entry. Bank or not, a high-speed spin in turn 3 will collect traffic. On the low bank, the car is much looser, and mid-corner throttle management becomes critical."
+    },
+    {
+      "p": "Short tracks like I-44 Speedway and US 36 Raceway reward more aggressive steering inputs and tighter anti-roll bar settings because the turns are tighter and you need more rotation. Throttle modulation becomes even finer because the car reacts faster to input changes."
+    },
+    {
+      "olist": [
+        "Arrive at a track in practice night with the baseline setup unchanged. Drive 15 to 20 laps and note where the car is loose and where it's tight.",
+        "If you're spinning on entry, the car is probably too loose overall or you're braking too late and too hard into the turn. Tighten the rear anti-roll bar 1 to 2 steps, or brake 50 feet earlier.",
+        "If you're pushing mid-corner and running wide, reduce front anti-roll bar stiffness or tighten the rear. A setup that's tight overall will push; a loose setup will spin.",
+        "Once the car feels balanced for a 5-lap run, stop changing setup and drive. Consistency and learning throttle modulation matter more than a perfect setup."
+      ]
+    },
+    {
+      "h2": "Common mistakes and fixes"
+    },
+    {
+      "p": "The biggest amateur mistake is braking too late and too hard into a turn. Dirt tires don't like heavy brake loads combined with steering. You'll lock the front or lose rotation. Brake earlier, brake straighter, and trail brake gently as the turn-in begins."
+    },
+    {
+      "p": "The second mistake is stabbing throttle mid-corner and immediately lifting when the rear gets loose. This snap-on, snap-off pattern causes spins because you're unsettling the car repeatedly. Smooth throttle changes, even in small increments, keep the car stable."
+    },
+    {
+      "p": "Overheating the tires happens when you've set up the car too stiff or asked the tires to work too hard early in a stint. In race trim, watch your tire temperature on lap 3 and lap 8. If they're rising sharply and your lap times are falling, the setup is too aggressive for that track tonight. Loosen the anti-roll bars slightly or lift off throttle a bit earlier on exit to let the tires cool."
+    },
+    {
+      "p": "Finally, chasing setup changes lap to lap kills consistency. Make one adjustment, run five laps, and decide if it was better or worse. Gut feel is reliable only after you've built confidence in the car. Use data."
+    },
+    {
+      "h2": "Practicing effectively"
+    },
+    {
+      "p": "Dirt late model practice should be short, focused sprints, not endless single-file running. Run 10-lap stints with 2 to 3 minute breaks to reset your mental model. Each stint should test one thing: braking point, mid-corner throttle, or exit speed."
+    },
+    {
+      "p": "Record your best laps and watch them back. Note the specific corners where you lose time, and dedicate the next stint to fixing one. Throttle modulation can't be coached; you have to feel it. But analyzing your steering wheel input trace and comparing it to a faster driver's replay will accelerate that learning."
+    },
+    {
+      "p": "Join a dirt late model race even if you expect to finish mid-field. Racecraft on dirt differs from road racing. You'll learn how to manage looser cars around traffic, how to pick lines that don't destroy your tires, and how to read the track as grip changes lap to lap. A single feature teaches you more than five hours of solo practice."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is the dirt late model harder than oval asphalt or road racing?",
+      "a": "It's different, not harder. The car is inherently loose, which means throttle modulation becomes the primary control input rather than steering precision. Road racing rewards hits on apexes. Dirt rewards smooth weight management. If you're used to braking hard and turning, expect a learning curve. Most drivers improve noticeably in their first 20 laps as they retrain their throttle foot."
+    },
+    {
+      "q": "What wheel settings should I use for dirt late model?",
+      "a": "Start with a lower force feedback level than you'd use on road courses, around 70 to 80 percent. Dirt cars produce a lot of chatter and oscillation that can feel overwhelming at full FFB strength. Lower steering ratio helps too, around 10 to 12 for shorter tracks and up to 14 for Eldora. These are starting points; adjust based on how much detail you feel and whether you're spinning."
+    },
+    {
+      "q": "Should I practice with or without damage?",
+      "a": "Always practice with damage off. You need to focus on throttle control and line, not babying a car that handles differently on lap 8 than lap 1 because the suspension changed. Run a few races with damage on once you're confident in the car, so you learn how to adapt when something breaks."
+    },
+    {
+      "q": "How much does track temperature affect the car?",
+      "a": "Significantly. A cold track at 6 PM practice is much slicker than a warmed track at 9 PM. Your baseline setup will feel loose in cold conditions and tight as the track heats. You'll make small adjustments (anti-roll bar, brake bias) between sessions, but major setup overhauls between practice and race are red flags. If you need a completely different setup, something was wrong in practice."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "gpu-rtx-5060-ti",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-02",
+  "dateLabel": "November 2, 2026"
+}

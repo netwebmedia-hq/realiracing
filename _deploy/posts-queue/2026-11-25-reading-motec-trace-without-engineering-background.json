@@ -1,0 +1,153 @@
+{
+  "slug": "reading-motec-trace-without-engineering-background",
+  "tag": "iRacing Tips · Telemetry",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "How to read a MoTeC trace without an engineering degree",
+  "description": "Learn the core telemetry channels that reveal pace, mistakes and setup issues. Start spotting problems in your own data today.",
+  "sections": [
+    {
+      "p": "MoTeC i2 Pro opens a wall of data. Twenty channels scroll past, each line a different color, and most of them look like noise if you have never been taught to read them. The good news: you don't need an engineering degree to spot the difference between a clean lap and a messy one, or to see where your setup is fighting you. You need to focus on five channels that tell a story about pace, control, and efficiency. Start there and the rest becomes optional."
+    },
+    {
+      "p": "A trace is a time-series plot. One axis is time (usually from 0 to maybe 2 minutes for a lap), the other is magnitude (speed, angle, pressure, whatever the channel measures). When lines spike or dip, something happened. Your job is to ask: does this make sense, or is it telling me I made a mistake or my setup is wrong?"
+    },
+    {
+      "h2": "The five channels you must learn first"
+    },
+    {
+      "p": "Speed, throttle position, brake pressure, steering angle, and lateral acceleration tell almost everything about how fast and how cleanly you drove a lap. If you export a trace from iRacing telemetry or log one from a real-world sim, these five channels should be your first stop."
+    },
+    {
+      "list": [
+        "<strong>Speed:</strong> The top line on most traces. On a road course, you brake down to a minimum speed (the apex speed), then accelerate back out. A ragged speed trace means you're bleeding energy through mid-corner or braking too late. A smooth curve down and back up means efficient corner entry, apex, and exit.",
+        "<strong>Throttle position:</strong> Shows how hard you're pressing the pedal, usually 0 to 100%. Ideally it's binary: full throttle or off. Anything in between (like 40% or 60%) means you're feathering, which costs lap time. Look for smooth on/off transitions, not gradual ramps.",
+        "<strong>Brake pressure:</strong> How hard you're pressing the brake pedal. Again, binary is fast. A long, smooth ramp down to the apex means you're trail-braking (acceptable), but a lot of micro-adjustments (small spikes and dips) means you're fighting the car or unsure of your braking point.",
+        "<strong>Steering angle:</strong> How far you've turned the wheel. The peak steering angle at the apex should match the corner's radius. A wobble in steering (small up-and-down movements) is a sign of over-corrections or a setup that doesn't like the line you chose.",
+        "<strong>Lateral acceleration (G):</strong> How hard the car is being pushed sideways. Peak lateral G at the apex should be as high and as smooth as possible. A jagged or peaky trace means you're running out of grip or making jerky inputs."
+      ]
+    },
+    {
+      "h2": "Reading the speed trace like a map"
+    },
+    {
+      "p": "Start with speed because it tells you the most about your lap immediately. Overlay two of your fastest laps on top of each other (most telemetry tools let you compare). Find the places where one lap's speed line is consistently lower than the other."
+    },
+    {
+      "p": "If your speed is lower in a straight, you made an error (lock-up, off-track excursion, or poor exit from the prior corner) that cost momentum. If it's lower mid-corner, you ran out of grip or hit the apex too fast and had to slow down to recover. If it's lower on corner entry, you either braked too late (speed was too high) or backed out of the throttle too early on the prior straight."
+    },
+    {
+      "tip": "When comparing two laps, don't just look at the final delta in the display. Trace your finger along each line and watch where the gap opens and closes. That's where the real differences live.",
+      "tipLabel": "Comparing laps"
+    },
+    {
+      "h2": "Spotting mistakes in throttle and brake traces"
+    },
+    {
+      "p": "A clean throttle trace looks like a square wave: full on, then off at the braking point, then back on at corner exit. If your throttle chart looks like a saw tooth with lots of small bumps, you're feathering (modulating throttle at partial position) during acceleration. This is always slower than full throttle or full off."
+    },
+    {
+      "p": "Brake pressure should be a clean ramp. At trail-braking corners (like a high-speed sweeper), a linear decay from peak brake to zero at the apex is ideal. Multiple peaks or a stepped decay (high, drop, high again) means you're reapplying brake after an initial release. That costs lap time. It's also a sign that your braking point is inconsistent or your reference is wrong."
+    },
+    {
+      "p": "If your throttle and brake are active at the same time (overlap), you're trail-braking deliberately. That's fine for a few high-speed corners. But if you see brake and throttle overlapped at a 90-degree corner, you're making a mistake. Either your brake point is too late or your throttle comes on too early."
+    },
+    {
+      "h2": "Understanding steering and lateral G"
+    },
+    {
+      "p": "Steering angle and lateral acceleration should rise together and fall together. A smooth, single-peak curve is fast. If your steering trace has two bumps (double apex), you're turning in too much, straightening, then turning again. That's either a line error or the car is pushing and making you correct. Compare it to a lap where the steering is one smooth input."
+    },
+    {
+      "p": "Lateral G should peak at the apex and should match the speed trace. If lateral G peaks before the speed minimum, you're entering the corner too fast and the car is fighting. If it peaks after the apex, you're carrying too much speed and the car is starting to wash wide. The ideal lap has both peaking at the same time."
+    },
+    {
+      "p": "Oscillation in steering (small up-and-down wiggles) is almost always a bad sign. It means you're making tiny corrections instead of committing to one input. This often points to either a setup problem (the car is twitchy or loose) or your own lack of confidence in the car's balance.</p>"
+    },
+    {
+      "h2": "Using the trace to spot setup issues"
+    },
+    {
+      "p": "Setup problems show up clearly on a telemetry trace. If your car is loose (rear sliding), lateral G will plateau or drop before you reach maximum steering angle. If it's tight (understeering), you'll reach maximum steering angle before lateral G peaks. A well-balanced car rises smoothly into the apex and holds it."
+    },
+    {
+      "p": "Brake traces reveal lockups instantly. A spike in brake pressure with a dip in speed (not smooth) is a lock-up. If you see this consistently at one corner, either adjust your reference point earlier or soften your brake balance. If it's erratic, it's a driver input problem."
+    },
+    {
+      "p": "Throttle wheelspin looks like a speed drop during acceleration with full throttle applied. The car is sliding, not gripping. If this happens coming out of a slow corner, your exit line is wrong or you need more rear grip. If you're on a straight, it's usually just over-enthusiasm."
+    },
+    {
+      "list": [
+        "A loose car shows falling lateral G as steering angle increases.",
+        "A tight car reaches steering lock before lateral G peaks.",
+        "Brake lockups appear as pressure spikes with speed drops that don't match throttle changes.",
+        "Wheelspin during acceleration shows as speed dips with full throttle applied.",
+        "Inconsistent braking points cause multiple peaks in brake pressure or throttle."
+      ]
+    },
+    {
+      "h2": "The workflow: compare a good lap to a bad one"
+    },
+    {
+      "p": "Export or log two laps. One should be your personal best in a session, the other a lap where you feel you made mistakes or were slower than expected. Load them both into your telemetry tool and overlay them. Now step through each sector (a corner, a set of corners, or a straight) and ask these questions:"
+    },
+    {
+      "olist": [
+        "Where does the speed line diverge first? That's where the lap started to go wrong.",
+        "Is the throttle on/off cleaner in the faster lap? Look for feathering in the slower lap.",
+        "Does the faster lap brake later, or earlier? Note the braking point difference.",
+        "Is steering smoother or wobblier in the faster lap? A single curve vs. bumps.",
+        "Is lateral G higher and more consistent in the faster lap? That's confidence and grip."
+      ]
+    },
+    {
+      "p": "This comparison is faster and more reliable than watching a replay, because the data doesn't lie and you won't miss small inputs. A replay might not show the nuance of a 2% throttle input, but the trace will."
+    },
+    {
+      "h2": "Common beginner mistakes in reading traces"
+    },
+    {
+      "p": "People often zoom too far in or out on the time axis. If you zoom all the way in on a single corner, you'll see noise and small corrections that look bigger than they are. If you zoom out and look at the whole lap at once, you'll miss the detail. Start with a single sector (one corner plus the straights around it) and work from there."
+    },
+    {
+      "p": "Another mistake is ignoring the scale. A lateral G trace that looks jagged might actually be a 0.1 G variation, which is nothing. But if the scale is 0.01 G per grid square, it looks huge. Always check the axis labels. A 0.2 G variation at the apex is not the same as a 0.02 G variation."
+    },
+    {
+      "p": "Finally, avoid the trap of chasing a single channel. If your speed is 1 mph lower than your best lap, that's worth investigating. But if every other channel looks identical, the 1 mph is probably just normal variation. Look for patterns. A good lap usually has multiple channels that align better, not just one channel that is exceptional."
+    },
+    {
+      "tip": "Export your best lap from a practice session and keep it as a reference. When you jump into a new race or a new car, compare your first flying lap to that reference. You'll spot setup changes, driver errors, or track condition shifts immediately.",
+      "tipLabel": "Create a reference lap"
+    },
+    {
+      "h2": "Next steps: dig deeper if you want"
+    },
+    {
+      "p": "Once you're comfortable with these five channels, telemetry gets deeper. Brake temperature, front and rear lateral load transfer, engine RPM, suspension movement, tire slip ratio and tire slip angle all add nuance. But they're not necessary to drive faster. The fundamentals of reading a trace come from understanding speed, throttle, brake, steering, and lateral G. Everything else is refinement. Start there, and you'll catch most of your own mistakes before they cost you lap time in the race. For a deeper dive into how your setup affects the car's behavior on track, the principles in <a href=\"best-sim-racing-wheels-iracing.html\">a structured rig setup</a> feed directly into what you'll see in these traces."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What telemetry tool should I use to read MoTeC traces?",
+      "a": "iRacing exports telemetry that opens in MoTeC i2 Pro, which is free to download from the MoTeC website. You can also use Garage61, which is web-based and free, or RaceStudio which is what many real racers use. All three will show you the same five core channels. Start with whatever is easiest to access. The software doesn't matter as much as your ability to read the channels."
+    },
+    {
+      "q": "How do I compare two laps if the telemetry tool won't load them together?",
+      "a": "If your tool doesn't have an overlay feature, export both laps as CSV or another data format and load them into a spreadsheet (Excel, Google Sheets). Plot speed vs. time for both laps on the same chart. You won't get the color-coded detail, but you'll see the differences. Most tools made for sim racing (MoTeC, Garage61, RaceStudio) do support overlay, so this is a fallback only."
+    },
+    {
+      "q": "Why does my speed trace look jagged even in a straight?",
+      "a": "Straights should show smooth acceleration or coasting. Jagged lines usually come from two sources: your data log is recording at a low frequency (sampling rate too slow), or your game graphics are running at low frame rates (causing data points to be inconsistent). A data logging frequency of at least 60 Hz will smooth this out. If you're playing at 30 fps, upgrade your monitor or graphics settings first. A jagged straight trace almost never means you're doing something wrong."
+    },
+    {
+      "q": "What should I do if I see an obvious difference in one channel between two laps?",
+      "a": "Trace through the entire sector to understand the cause. A lower speed at corner exit usually traces back to a weaker entry (more braking, later apex, or less commitment). Don't fix one channel in isolation. Read the story: brake trace, then steering trace, then speed trace together. If brake pressure is lower in the worse lap but steering and lateral G look the same, your brake application was inconsistent. If speed is lower but nothing else changed, you might be carrying too much steering angle or the car balance shifted."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-02",
+  "dateLabel": "November 2, 2026"
+}

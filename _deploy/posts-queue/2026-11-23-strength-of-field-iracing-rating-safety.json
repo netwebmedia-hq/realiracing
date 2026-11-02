@@ -1,0 +1,118 @@
+{
+  "slug": "strength-of-field-iracing-rating-safety",
+  "tag": "iRacing Tips · Licenses",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "Strength of Field in iRacing: What the SOF Number Really Means",
+  "description": "Understand how SOF calculates field quality, why it matters for your iRating gains, and how to spot competitive races worth entering.",
+  "sections": [
+    {
+      "p": "Every iRacing race displays a Strength of Field number in the lobby. That SOF score tells you something real about the competition you're about to face, but many drivers either ignore it or misinterpret what it means. A high SOF doesn't guarantee a better race, and a low SOF doesn't mean the field is full of rookies. Learning to read SOF helps you pick races that match your current pace and protect your iRating from unnecessary swings."
+    },
+    {
+      "p": "SOF is a single number that represents the average iRating of everyone currently in the race lobby. The system totals the iRating of all drivers, divides by the number of participants, and displays the result. That's it. It's a quick snapshot of field quality, nothing more."
+    },
+    {
+      "h2": "How SOF is calculated and what it actually represents"
+    },
+    {
+      "p": "iRacing calculates SOF on the fly as drivers join and leave the lobby. A race with ten 2000 iRating drivers has an SOF of 2000. A race with five 2000 iRating drivers and five 1000 iRating drivers has an SOF of 1500. The number shifts every time someone joins or leaves, right up until the race session closes."
+    },
+    {
+      "p": "This means SOF tells you the average skill of the field, but it doesn't tell you the range. A 1600 SOF field could be fifteen drivers clustered between 1500 and 1700, or it could be three top-rated drivers carrying the average while the rest of the field sits at 1000. The distribution matters for how the race will actually play out."
+    },
+    {
+      "list": [
+        "SOF is an average, not a minimum or maximum",
+        "SOF updates as the lobby fills and changes until the race closes",
+        "One very high-rated driver can boost SOF significantly in a small field",
+        "SOF does not predict who will win or how clean the race will be"
+      ]
+    },
+    {
+      "tip": "Watch the lobby SOF as it fills. If it's rising steadily, experienced drivers are joining. If it drops after closing, you may have gotten lucky with a weaker final grid.",
+      "tipLabel": "Lobby timing"
+    },
+    {
+      "h2": "Why SOF matters for your iRating"
+    },
+    {
+      "p": "iRating gains and losses are scaled based on SOF. When you finish a race, iRacing calculates your performance relative to the field average. If the field SOF is higher than your own iRating, you gain extra iRating for a strong finish because you've outperformed higher-rated drivers. If the field SOF is lower than your iRating, your gains shrink and your losses grow larger."
+    },
+    {
+      "p": "This is how iRacing prevents high-rated drivers from farming iRating in low-skill lobbies and low-rated drivers from stagnating in easy fields. A 1800 driver who finishes second in a 1600 SOF race gains less iRating than a 1800 driver who finishes second in a 2000 SOF race, even if the lap times are identical."
+    },
+    {
+      "p": "The practical outcome: entering a higher SOF race is a bigger risk and a bigger reward. A win or podium against stronger competition pushes your iRating up more quickly. A crash or poor result costs more. A lower SOF race is safer for your rating, but the gains are smaller."
+    },
+    {
+      "h2": "Reading SOF to pick the right race for you"
+    },
+    {
+      "p": "A rough guide for most drivers is to target races where SOF is within a few hundred points of your current iRating. If you're at 1500 iRating, a 1400-1600 SOF race is probably competitive but fair. A 1200 SOF race will feel easy and reward you with slow iRating gains. A 1800 SOF race will be harder and punish mistakes heavily."
+    },
+    {
+      "p": "Early in a season when lobbies are small, SOF can swing wildly. A single 2500-rated driver joining a five-car lobby of 1200-rated drivers can push SOF to 1700. That same lobby without the ringer feels completely different. If you join a small lobby with an unusually high SOF, check the driver list. One or two top-rated drivers can distort the average."
+    },
+    {
+      "p": "As seasons progress and lobbies fill, SOF tends to stabilize. A 30-car race field is less likely to be pulled by a single outlier. Lobby closing time also affects field strength. Early lobbies often have fewer entries and wider skill spreads. Peak-time lobbies are larger and more consistent."
+    },
+    {
+      "olist": [
+        "Look for SOF within 200-300 points of your iRating for competitive, fair racing",
+        "In small lobbies under ten cars, check who is racing and whether a ringer is skewing SOF upward",
+        "Higher SOF multiplies both your gains on success and your losses on failure",
+        "Join at peak times for larger fields and more predictable SOF readings"
+      ]
+    },
+    {
+      "h2": "SOF and actual race quality aren't the same thing"
+    },
+    {
+      "p": "A high SOF doesn't guarantee a clean, competitive race. It means the average iRating is high, but you could still face aggressive drivers, mistakes, or poor sportsmanship at any skill level. Similarly, a low SOF race isn't automatically chaotic. You might find a clean, well-run race with newer drivers who are focused and respectful."
+    },
+    {
+      "p": "SOF is a tool for managing your iRating expectations and gains, not a predictor of race quality or entertainment value. It tells you the mathematical caliber of the field, nothing about driver behavior or the actual difficulty of the race track that night."
+    },
+    {
+      "tip": "SOF and safety rating are separate systems. A high-SOF race can still include drivers with poor safety ratings. Check the driver list before joining if you want to know how clean the field actually is.",
+      "tipLabel": "Rating vs. safety"
+    },
+    {
+      "h2": "Building a season plan with SOF in mind"
+    },
+    {
+      "p": "Strategic drivers use SOF as part of a season approach. Early in a new season, join races where SOF is close to or slightly below your target rating while you learn track layouts and cars. As you feel more confident, gradually move into higher SOF races to climb your iRating. This approach builds skill and rating together rather than chasing big iRating swings and risking crashes."
+    },
+    {
+      "p": "If you're trying to break into a higher license class that requires a specific iRating, targeting races 100-200 points above your current rating over time is more sustainable than jumping straight into 500-point-higher fields and losing rating on mistakes. Consistency over a season matters more than a single good result."
+    },
+    {
+      "p": "Understanding SOF also helps you interpret your own results honestly. If you finished fifth in a 1400 SOF race at 1500 iRating, your result is genuinely competitive. If you finished fifth in a 1200 SOF race, the same result means less in terms of real skill gain. Neither is bad. One is just a more useful data point for where you actually stand against your peers."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does a high SOF race always have cleaner, faster drivers?",
+      "a": "A high SOF means the average iRating is higher, but it doesn't guarantee clean racing or skill distribution. You could have one very highly rated driver pulling the average up while the rest of the field is uneven. Check the driver list and safety ratings if you want to assess actual competition quality."
+    },
+    {
+      "q": "How much does SOF affect my iRating gains or losses?",
+      "a": "iRacing scales your rating change based on the difference between the field's average SOF and your iRating. Racing in a SOF 200 points higher than your rating earns you more iRating per place gained, and costs more per place lost. The exact multiplier is not published, but the effect is significant enough to matter over a season."
+    },
+    {
+      "q": "Should I always chase the highest SOF races possible?",
+      "a": "No. Chasing only the highest SOF races is a fast way to lose iRating while you're learning. Pick races where SOF is close to your skill level, execute clean races, and let your rating climb naturally. Once you're consistently placing well in those races, move up to higher SOF fields."
+    },
+    {
+      "q": "Does SOF change after the race starts or only during the lobby phase?",
+      "a": "SOF is locked once the race session starts. Drivers who join during a practice session after the race has begun do not affect the official SOF used to calculate iRating changes for that race."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "cockpit"
+  ],
+  "published": "2026-11-02",
+  "dateLabel": "November 2, 2026"
+}
