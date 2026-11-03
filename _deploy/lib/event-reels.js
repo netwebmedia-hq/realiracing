@@ -27,8 +27,10 @@ function card({ id, title }) {
 }
 
 function reelsBlock(key, all = load()) {
-  const reels = all[key] || [];
-  if (!reels.length) throw new Error(`event-reels.json has no reels for "${key}"`);
+  const reels = all[key];
+  if (!reels) throw new Error(`event-reels.json has no key "${key}"`);
+  // A post can go up before its first Short: sync-event-reels.js fills the markers later.
+  if (!reels.length) return `      <!-- reels:${key}:start -->\n      <!-- reels:${key}:end -->`;
   return `      <!-- reels:${key}:start -->
       <h2>Watch the clips (${reels.length})</h2>
       <div class="reel-grid">
