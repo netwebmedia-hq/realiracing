@@ -47,3 +47,4 @@ node _deploy/fetch-blog-photos.js --property <name> --write-attribution
 | `/assets/photos/event-rally-chile-2019.jpg` | [Carlos Martinez](https://realiracing.com/) | [RealiRacing own work](https://realiracing.com/) | [RealiRacing](https://realiracing.com/) |
 | `/assets/photos/event-isde-2018.jpg` | [Carlos Martinez](https://realiracing.com/) | [RealiRacing own work](https://realiracing.com/) | [RealiRacing](https://realiracing.com/) |
 | `/assets/photos/event-monaco-cannes-2025.jpg` | [Carlos Martinez](https://realiracing.com/) | [RealiRacing own work](https://realiracing.com/) | [RealiRacing](https://realiracing.com/) |
+| `/assets/photos/event-redondo-beach-2018.jpg` | [Carlos Martinez](https://realiracing.com/) | [RealiRacing own work](https://realiracing.com/) | [RealiRacing](https://realiracing.com/) |
