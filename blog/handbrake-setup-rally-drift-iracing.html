@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Handbrake setup for rally and drift on iRacing | RealIRacing</title>
+  <meta name="description" content="How to configure your handbrake hardware and iRacing settings for rally and drift racing. Sensitivity, axis mapping, and muscle memory." />
+  <link rel="canonical" href="https://realiracing.com/blog/handbrake-setup-rally-drift-iracing.html" />
+  <meta property="og:title" content="Handbrake setup for rally and drift on iRacing" />
+  <meta property="og:description" content="How to configure your handbrake hardware and iRacing settings for rally and drift racing. Sensitivity, axis mapping, and muscle memory." />
+  <meta property="og:url" content="https://realiracing.com/blog/handbrake-setup-rally-drift-iracing.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/track-pitlane.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="562" />
+  <meta property="og:image:alt" content="Crew working in the pit lane" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/track-pitlane.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261103" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Handbrake setup for rally and drift on iRacing",
+    "description": "How to configure your handbrake hardware and iRacing settings for rally and drift racing. Sensitivity, axis mapping, and muscle memory.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/handbrake-setup-rally-drift-iracing.html",
+    "image": "https://realiracing.com/assets/photos/track-pitlane.jpg",
+    "datePublished": "2026-10-19",
+    "dateModified": "2026-10-19"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Handbrake setup for rally and drift on iRacing","item":"https://realiracing.com/blog/handbrake-setup-rally-drift-iracing.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/handbrake-setup-rally-drift-iracing.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Sim Racing Cockpit / Wheel Stand","description":"a rigid mount matters more than the brand — flex kills FFB detail","url":"https://realiracing.com/blog/handbrake-setup-rally-drift-iracing.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need an expensive hydraulic handbrake for iRacing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. A cable-pull handbrake under ~$150 works identically in iRacing because the sim only reads a 0-100 axis value. Hydraulic setups feel smoother in your hand during repeated use, but performance in-game is the same. Buy the cable-pull, save the money, and invest in pedals or a better wheelbase if you need to upgrade hardware." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my handbrake feel delayed or jerky when I pull it?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The axis is not calibrated correctly. Recalibrate in iRacing with the handbrake fully released at the start. If it still feels jerky, check for a high deadzone setting or an inverted axis. Also verify the handbrake USB cable is not bundled with other cables; electromagnetic interference can degrade the signal. Use a shielded cable if possible or route it away from power cables." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use the handbrake on asphalt rally stages or only on gravel?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Use it on both, but sparingly on asphalt. On high-grip tarmac, the car rotates easily with steering and braking alone. A small handbrake pulse (10-20 percent) on entry can help with rotation if you're struggling to get the nose pointed at the apex. On gravel or snow, use more (20-40 percent) because grip is lower and the handbrake has a bigger effect. Adjust based on the stage." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if I'm using the handbrake at the right time in drift?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Record yourself drifting and watch the clip in slow motion. You should see the handbrake pull right at turn-in, before the car rotates significantly. If you're pulling the handbrake after the car is already sliding, you're too late. If the car is not drifting at all when you pull, you're not turning the wheel enough at the same time. Both handbrake input and steering angle are required to initiate a drift." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Setup Guides · Control Systems</p>
+    <h1>Handbrake setup for rally and drift on iRacing</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 19, 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/track-pitlane.jpg" width="1000" height="562" alt="Crew working in the pit lane" srcset="/assets/photos/track-pitlane-sm.jpg 560w, /assets/photos/track-pitlane.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Photo: <a href="https://commons.wikimedia.org/wiki/User:Just_a_Man" target="_blank" rel="noopener nofollow">Just a Man</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener nofollow">CC BY 4.0</a> · Source: <a href="https://commons.wikimedia.org/wiki/File:TC_Gran_Premio_Coronaci%C3%B3n_2025._Domingo._Post_Carrera_-_37.jpg" target="_blank" rel="noopener nofollow">Wikimedia Commons</a></figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">A handbrake is not optional in rally or drift on iRacing. It transforms how you approach corner entry, weight transfer, and vehicle control in both disciplines. A simple cable-pull handbrake mounted to the left side of your cockpit, in the dead space between the seat and the frame, keeps it within easy reach when your hand is off the shifter. This post covers how to set it up correctly so it actually works when you need it. It draws on published specs and common setup practice, not a hands-on test of every product.</p>
+
+      <p>The handbrake serves different purposes depending on what you're driving. In rally, it's a precision tool for mid-corner weight adjustment and for holding the car on steep terrain during setup adjustments. In drift, it's the primary way to initiate drift angle and to flick the car into submission during chaining. Both require accurate axis calibration and sensitivity tuning in iRacing. A handbrake that is too sensitive becomes useless. One that is too stiff wastes the potential of the car.</p>
+
+      <h2>Hardware choice and mounting</h2>
+
+      <p>Most handbrakes for sim racing are cable-pull or hydraulic simulators. Cable-pull designs (usually under ~$150) use a spring-loaded handle connected to a potentiometer. They're light, compact, and reliable enough for iRacing. Hydraulic rigs cost more and feel smoother under repeated use, but the performance ceiling in iRacing is the same. Your handbrake only needs to send a 0-100 axis value to iRacing. It doesn't need to feel like a road car.</p>
+
+      <p>Mounting location matters more than the handbrake itself. Try mounting it vertically on the left frame member, about 10 inches down from shoulder height. This puts the handle within 4-5 inches of your hand when it's resting on the wheel or at the shifter. In rally, you'll use it briefly and deliberately. In drift, you'll need it accessible without breaking your grip on the wheel. Horizontal mounting works if your space is tight, but vertical feels more natural under load.</p>
+
+      <p>Secure the handbrake with steel brackets and lock washers. Movement or flex in the mount degrades the feel and introduces noise into the axis signal. Bolt it to aluminum frame tubing on your cockpit base. Vibration or rattling means the handbrake is doing work but the frame is stealing some of that force. Tighten it once and forget it.</p>
+
+      <h2>iRacing control mapping and axis setup</h2>
+
+      <p>Open the iRacing controller settings and map your handbrake to the analog handbrake axis. Do not map it to a button or binary input. Rally and drift require smooth, progressive control, and binary inputs (on/off) will lock the rear wheels instantly with no modulation. This is the single biggest mistake in handbrake setup. You want a 0-100 scale where 50 percent pull gives you 50 percent handbrake force.</p>
+
+      <p>Calibrate the axis with the handbrake in the fully released position (handle all the way back). Let iRacing detect the device and assign it to the handbrake axis. Then, slowly pull the handbrake to full engagement and confirm the axis reads 100 percent. Do a few practice pulls at 25, 50, and 75 percent to see how the input curves feel. If the response feels sudden or non-linear, you may need to adjust the sensitivity curve in iRacing settings.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Calibration Check</span>
+        <p>After calibration, test on a rally or drift car in a practice session without racing anyone. You'll feel immediately if the handbrake is too sensitive (car spinning wildly at 30 percent pull) or too dull (no effect until 80 percent). Adjust sensitivity slider or deadzone in iRacing to find the middle ground.</p>
+      </div>
+
+      <h2>Rally setups and technique</h2>
+
+      <p>In rally, the handbrake is a steering aid, not a brake. You use it to shorten the rotation phase of a corner, to hold the car while adjusting setup in a stage, or to recover from a moment of understeer mid-corner. Most rally drivers on iRacing use a light pull. 20 to 40 percent of full handbrake is enough to shift weight and rotate the car without destabilizing it further. Full handbrake on a loose surface will lock the rear and kill momentum.</p>
+
+      <p>Rally cars on iRacing, like the Ford Fiesta R5 or Hyundai i20 N Rally1, benefit from handbrake input early in the turn, just as you're releasing the brake and loading the outside front tire. A quick, smooth pull of the handbrake loads the rear suspension and helps the car rotate into the apex. Then release it completely before mid-corner so the rear has grip for power application. Holding handbrake through mid-corner or the exit will cause a slide that costs time.</p>
+
+      <p>On slippery surfaces (snow, ice, gravel), increase your handbrake usage slightly. The lower grip means the car is already on the edge of rotation, and a small handbrake input can make a bigger difference. On high-grip stages, use it sparingly. The car's brakes and steering are doing most of the rotation work already.</p>
+
+      <ul>
+        <li>20-40% pull in most conditions, especially high-grip tarmac stages</li>
+        <li>Apply at early turn-in to load the rear and rotate the car</li>
+        <li>Release before mid-corner so the rear has grip for acceleration</li>
+        <li>Increase usage on low-grip surfaces like ice or loose gravel</li>
+        <li>Use the handbrake in practice to hold the car steady during setup adjustments</li>
+      </ul>
+
+      <h2>Drift setup and initiation</h2>
+
+      <p>Drift is where the handbrake becomes the primary steering input. On drift cars like the Chevrolet Corvette C7 or BMW M3 E36 in iRacing, the handbrake is how you initiate the drift, maintain angle at low speeds, and chain multiple turns together. Unlike rally, you want the handbrake to be responsive and accessible at all times. Sensitivity and positioning matter here more than in rally.</p>
+
+      <p>Most drift drivers use a full handbrake pull to initiate a drift on corner entry. You brake hard into the corner, turn the wheel to your apex (or beyond), and at the exact moment the front tires are about to grip, you pull the handbrake hard to break the rear loose. The handbrake lock, combined with wheel angle, rotates the car into a drift. Timing is everything. Too early and the car just understeers. Too late and the car is already sliding and the handbrake adds nothing.</p>
+
+      <p>After initiation, the handbrake becomes a throttle modifier. Light handbrake pulls (10-20 percent) during the drift phase help you adjust angle and maintain momentum through transitions. Heavy handbrake input mid-drift will tighten the angle too much or kill speed. The goal is to modulate it in small pulses, not hold it. This is where muscle memory is critical. Train by doing 50 practice initiations at the same turn, feeling where the handbrake release should happen for the car to catch and drift cleanly.</p>
+
+      <ul>
+        <li>Use full handbrake pull for initiation at turn-in</li>
+        <li>Release it completely once the car is drifting and rotating</li>
+        <li>Pulse light handbrake input (10-20%) during the drift to adjust angle</li>
+        <li>Never hold the handbrake throughout a drift; it kills momentum and angle</li>
+      </ul>
+
+      <h2>Muscle memory and practice</h2>
+
+      <p>Your handbrake technique will feel unnatural the first 20 times. Your brain is used to reaching for a shifter or looking at a monitor, and now you need to reach sideways and pull with precision timing. Build muscle memory by practicing the same corner 100 times. Do this in a single track day or practice session, not spread across weeks. Repetition in one session builds neural pathways faster than sporadic practice.</p>
+
+      <p>For rally, drive the same stage 20 times. Each pass, focus on one corner where the handbrake helps. Feel when to pull, how hard, and when to release. By pass 15, your hand should know the timing without conscious thought. For drift, pick one easy turn and chain it 50 times. Your body will learn the handbrake pull distance and release speed. Then move to a harder turn and repeat.</p>
+
+      <p>Record clips of your practice runs. Watch your hand on the handbrake in slow motion. You'll see if you're pulling too hard, releasing too slowly, or using it inconsistently. Video feedback accelerates learning far faster than feeling alone.</p>
+
+      <h2>Troubleshooting common issues</h2>
+
+      <p>If the handbrake feels jerky or unreliable, the axis is not calibrated correctly. Go back to iRacing settings, remove the device, and recalibrate from scratch. Make sure the handbrake is fully released before you start calibration. Some handbrakes have a mechanical detent at full release, and iRacing needs to read that position as 0 percent.</p>
+
+      <p>If the handbrake does nothing until you pull it past halfway, you likely have a deadzone set too high or the axis is inverted. Check iRacing controller settings and verify the axis is reading 0-100 in the correct direction. Full release should be 0, full pull should be 100. If it's backwards, invert the axis in iRacing.</p>
+
+      <p>If your hand cramps or the handbrake is hard to reach while driving, remount it. The goal is to move your hand 4-6 inches to engage it without breaking your grip on the wheel. If you're stretching, twisting, or reaching across your body, the mount is wrong.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Pre-race Check</span>
+        <p>Test your handbrake at the start of every racing session. Pull it smoothly a few times to confirm it's responding. Dirt, corrosion, or a loose cable can degrade response over months of use. A quick 30-second check prevents surprises in a race.</p>
+      </div>
+
+      <h2>Handbrake versus foot brake in rallies</h2>
+
+      <p>Some new rally drivers ask whether they should use their foot brake or handbrake for corner entry. The foot brake is your primary stopping tool, and you should be braking hard before the turn. The handbrake is an auxiliary input to rotate the car after you've already committed to the turn with wheel angle. They work together, not instead of each other. Brake hard, turn the wheel, then pulse the handbrake if the car is not rotating fast enough.</p>
+
+      <p>On tight, low-speed hairpin turns in rally, the handbrake is often the only tool that works because there is no room to brake and turn simultaneously. You brake before the turn, then use the handbrake to hold the car's rotation steady while you're at low speed. This is why rally drivers on iRacing who skip handbrake setup miss time on technical stages. A well-tuned handbrake can save 0.5 to 2 seconds per stage on a 5-minute rally.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=handbrake-setup-rally-drift-iracing">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&amp;tag=realiracing-20" data-aff="cockpit" target="_blank" rel="sponsored noopener">Sim Racing Cockpit / Wheel Stand</a></th><td>a rigid mount matters more than the brand — flex kills FFB detail</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>Do I need an expensive hydraulic handbrake for iRacing?</h3>
+        <p>No. A cable-pull handbrake under ~$150 works identically in iRacing because the sim only reads a 0-100 axis value. Hydraulic setups feel smoother in your hand during repeated use, but performance in-game is the same. Buy the cable-pull, save the money, and invest in pedals or a better wheelbase if you need to upgrade hardware.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Why does my handbrake feel delayed or jerky when I pull it?</h3>
+        <p>The axis is not calibrated correctly. Recalibrate in iRacing with the handbrake fully released at the start. If it still feels jerky, check for a high deadzone setting or an inverted axis. Also verify the handbrake USB cable is not bundled with other cables; electromagnetic interference can degrade the signal. Use a shielded cable if possible or route it away from power cables.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I use the handbrake on asphalt rally stages or only on gravel?</h3>
+        <p>Use it on both, but sparingly on asphalt. On high-grip tarmac, the car rotates easily with steering and braking alone. A small handbrake pulse (10-20 percent) on entry can help with rotation if you're struggling to get the nose pointed at the apex. On gravel or snow, use more (20-40 percent) because grip is lower and the handbrake has a bigger effect. Adjust based on the stage.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I know if I'm using the handbrake at the right time in drift?</h3>
+        <p>Record yourself drifting and watch the clip in slow motion. You should see the handbrake pull right at turn-in, before the car rotates significantly. If you're pulling the handbrake after the car is already sliding, you're too late. If the car is not drifting at all when you pull, you're not turning the wheel enough at the same time. Both handbrake input and steering angle are required to initiate a drift.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="moza-r9-iracing-settings.html"><span>Setup Guides</span>MOZA R9 iRacing Settings — The Complete FFB Guide (2026)</a>
+      <a class="related-card" href="building-custom-setup-iracing-baseline-guide.html"><span>Setup Guides</span>Building Your Own Setup from iRacing Baseline: A Practical Guide</a>
+      <a class="related-card" href="iracing-tyre-temps-and-pressures-basic-setup.html"><span>Setup Guides</span>Reading iRacing Tyre Temps: The Only Car Setup Skill a Mid-Pack Driver Needs</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","cockpit"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
