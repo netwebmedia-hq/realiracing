@@ -23,6 +23,7 @@ const path = require('path');
 
 const photos = require('./lib/photos.js');
 const { JOIN_BOX_HTML, JOIN_SCRIPT_TAG, BLOG_CSS_HREF } = require('./lib/join-box.js');
+const { reelsBlock } = require('./lib/event-reels.js');
 process.chdir(path.join(__dirname, '..'));
 
 const QUEUE_DIR = path.join('_deploy', 'posts-queue');
@@ -204,6 +205,7 @@ function buildFallbackFaqs(post) {
 function renderSections(sections) {
   let leadUsed = false;
   return (sections || []).map(s => {
+    if (s.reels) return `      <!-- reels:slot:${esc(s.reels)} -->`; // filled after the affiliate pass, so reel titles are never turned into product links
     if (s.h2) return `      <h2>${esc(s.h2)}</h2>`;
     if (s.h3) return `      <h3>${esc(s.h3)}</h3>`;
     if (s.list) return `      <ul>\n` + s.list.map(li => `        <li>${li}</li>`).join('\n') + `\n      </ul>`;
@@ -339,7 +341,9 @@ function renderPostHtml(post, related, allowedGearKeys) {
   // each catalog product becomes a tagged link (max 5 per page), so the reader
   // can click at the moment they decide — not only from the gear box below.
   const taggedBody = enforceAmazonTags(renderSections(post.sections), affCfg).html;
-  const bodyHtml = linkProductMentions(taggedBody, affCfg, { max: 5 }).html;
+  const bodyHtml = linkProductMentions(taggedBody, affCfg, { max: 5 }).html
+    .replace(/ *<!-- reels:slot:([a-z0-9-]+) -->/g, (_, key) => reelsBlock(key));
+  const hasReels = (post.sections || []).some(s => s.reels);
 
   const faqJsonLd = faqs.map(f => `    {
       "@type": "Question",
@@ -493,7 +497,7 @@ ${relatedHtml}
   </footer>
 
   <script src="/js/ga4.js" defer></script>
-  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>${hasReels ? '\n  <script src="/js/lite-yt.js" defer></script>' : ''}
   ${JOIN_SCRIPT_TAG}
   <script>
     window.addEventListener('DOMContentLoaded', function () {

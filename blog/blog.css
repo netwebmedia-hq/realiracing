@@ -452,3 +452,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .rir-join-box .fine { font-size: 0.8rem; margin: 6px 0 0; }
 .rir-join.done .jr { display: none; }
 @media (max-width: 480px) { .rir-join-box .jr { flex-direction: column; } }
+
+/* Reel gallery on the real-world event posts: portrait .lite-yt cards */
+.reel-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin: 18px 0 26px; }
+.reel-grid .lite-yt { aspect-ratio: 9 / 16; margin: 0; }
+.reel-grid .lite-yt .lite-yt-label { font-size: 0.74rem; line-height: 1.25; }

@@ -16,6 +16,6 @@ const JOIN_BOX_HTML = `<div class="cta-box rir-join-box">
         </form>
       </div>`;
 const JOIN_SCRIPT_TAG = '<script src="/js/join.js" defer></script>';
-const BLOG_CSS_HREF = 'blog.css?v=20261020';
+const BLOG_CSS_HREF = 'blog.css?v=20261103';
 
 module.exports = { JOIN_BOX_HTML, JOIN_SCRIPT_TAG, BLOG_CSS_HREF };
