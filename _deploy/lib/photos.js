@@ -53,7 +53,10 @@ const TAG_RULES = [
 // Deterministic per slug: a re-render must not change the picture on a post
 // that is already published.
 function photoFor(post) {
-  const text = [post.title, post.description, post.tag, String(post.slug || '').replace(/-/g, ' ')]
+  // Event posts use a frame of the owner's own footage, named for the post.
+  const own = registry().find((p) => p.post_slug === post.slug);
+  if (own) return own;
+  const text =[post.title, post.description, post.tag, String(post.slug || '').replace(/-/g, ' ')]
     .filter(Boolean).join(' ');
   let tag = 'sim';
   for (const [re, value] of TAG_RULES) if (re.test(text)) { tag = value; break; }
