@@ -429,6 +429,7 @@ ${faqJsonLd}
       <li><a href="/#content">Content</a></li>
       <li><a class="active" href="/blog/">Blog</a></li>
       <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
       <li><a href="/gear.html">My Rig</a></li>
       <li><a href="/#platforms">Platforms</a></li>
       <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
