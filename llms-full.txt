@@ -6,7 +6,7 @@
 - Author: Carlos Martinez (iRacing user "Carlos Martinez9"). Home: https://realiracing.com/
 - Rig: MOZA R9 direct drive wheelbase, MOZA CS V2 wheel, MOZA SR-P pedals, RTX 5060 Ti, 1440p 120 Hz monitor. Full breakdown: https://realiracing.com/gear.html
 - Affiliate disclosure: gear links go to Amazon and carry an affiliate tag; the author may earn a commission at no cost to the reader. The site does not use sponsored loaner hardware.
-- 244 blog guides published so far; new posts appear several times a week.
+- 246 blog guides published so far; new posts appear several times a week.
 
 ## Main sections
 - [Home](https://realiracing.com/): channel overview, content types, gear picks, FAQ
@@ -85,6 +85,8 @@
 - [Handbrake setup for rally and drift on iRacing | RealIRacing](https://realiracing.com/blog/handbrake-setup-rally-drift-iracing.html): How to configure your handbrake hardware and iRacing settings for rally and drift racing. Sensitivity, axis mapping, and muscle memory.
 - [Nashville Superspeedway iRacing Guide: Line, Setup, Traffic](https://realiracing.com/blog/nashville-superspeedway-iracing-guide.html): Master Nashville's unique D-shaped oval layout. Learn the racing line, setup strategy, and how to manage high-speed traffic.
 - [Detroit Belle Isle iRacing Guide: Walls, Bumps, and Street Circuit Damage](https://realiracing.com/blog/detroit-belle-isle-iracing-guide-walls-bumps.html): Master Belle Isle's unforgiving street circuit. Learn wall lines, bump absorption, and damage avoidance on iRacing's toughest permanent fixture.
+- [Michigan International Speedway iRacing: Two-Mile Drafting Technique and Setup](https://realiracing.com/blog/michigan-international-speedway-iracing-drafting-guide.html): Master MIS drafting on iRacing with proven line choices, throttle discipline, and setup tweaks. Learn when to push and when to sit tight.
+- [Eye strain and screen distance: protecting your vision during endurance racing](https://realiracing.com/blog/eye-strain-screen-distance-long-sim-racing-sessions.html): Screen distance, refresh rate, and focus breaks matter more than you think during long sim racing sessions. Here's how to protect your eyes.
 - [Wheel Rotation and Steering Ratio in iRacing, Explained](https://realiracing.com/blog/steering-rotation-and-ratio-iracing.html): Why your wheel's degrees of rotation should match the car, how soft lock and steering ratio work in iRacing, and how to set it up on a MOZA R9.
 - [Sim Rig Cable Management: A Practical Guide | RealIRacing](https://realiracing.com/blog/sim-rig-cable-management-guide.html): How to route power, USB and pedal cables on a direct drive rig so nothing snags, disconnects mid-race or adds noise to force feedback.
 - [A 45-Minute iRacing Practice Plan That Actually Sticks](https://realiracing.com/blog/iracing-practice-session-plan-45-minutes.html): A structured 45-minute iRacing practice session: warm-up, one corner and one variable, a consistent run, a pace run, lap review and a firm stop.

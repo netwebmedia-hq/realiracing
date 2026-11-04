@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://realiracing.com/blog/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -1548,5 +1548,17 @@
     <loc>https://realiracing.com/forum/trackside.html</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://realiracing.com/blog/michigan-international-speedway-iracing-drafting-guide.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://realiracing.com/blog/eye-strain-screen-distance-long-sim-racing-sessions.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
