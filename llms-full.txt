@@ -6,7 +6,7 @@
 - Author: Carlos Martinez (iRacing user "Carlos Martinez9"). Home: https://realiracing.com/
 - Rig: MOZA R9 direct drive wheelbase, MOZA CS V2 wheel, MOZA SR-P pedals, RTX 5060 Ti, 1440p 120 Hz monitor. Full breakdown: https://realiracing.com/gear.html
 - Affiliate disclosure: gear links go to Amazon and carry an affiliate tag; the author may earn a commission at no cost to the reader. The site does not use sponsored loaner hardware.
-- 249 blog guides published so far; new posts appear several times a week.
+- 251 blog guides published so far; new posts appear several times a week.
 
 ## Main sections
 - [Home](https://realiracing.com/): channel overview, content types, gear picks, FAQ
@@ -41,6 +41,7 @@
 - [Shift Lights and Dash Displays for iRacing: Do You Need One?](https://realiracing.com/blog/shift-lights-and-dash-displays-iracing-do-you-need-one.html): What a shift light bar or dash display actually adds in iRacing, what the sim already shows you for free, and the order I would buy in from a MOZA R9 and CRP2 rig.
 - [iRacing AI Races: Practice Racecraft Offline | RealIRacing](https://realiracing.com/blog/iracing-ai-races-practice-racecraft.html): How I use iRacing AI races to practise starts, traffic and defending before official races, plus where AI misleads and how to protect safety rating.
 - [Sim Rig Upgrade Order: What to Buy First | RealIRacing](https://realiracing.com/blog/sim-rig-upgrade-order-what-to-buy-first.html): The order I would upgrade a sim rig for iRacing, from my MOZA R9, CRP2 and fixed aluminium cockpit: what pays off first and what can wait.
+- [Eldora Speedway iRacing Dirt Oval Guide: Banking and Grip](https://realiracing.com/blog/eldora-speedway-iracing-dirt-oval-guide.html): Master Eldora's unique half-mile banking, groove transitions, and setup choices for consistent dirt oval pace.
 - [The iRacing Delta Bar: How to Use It to Find Time](https://realiracing.com/blog/iracing-delta-bar-how-to-use-it-to-find-lap-time.html): How I read the live delta in iRacing to test one corner at a time, which reference lap to pick, and when to stop looking at it.
 - [Understeer and Oversteer in iRacing: Symptom to Fix](https://realiracing.com/blog/understeer-oversteer-fixes-iracing-symptom-to-setup-change.html): Find where in the corner your car slides, then change one setup value. Entry, mid-corner and exit fixes from my MOZA R9 rig.
 - [How to Review iRacing Replays to Find Lap Time | RealIRacing](https://realiracing.com/blog/how-to-review-iracing-replays-to-find-lap-time.html): A practical way to study your own iRacing replays: which cameras to use, what to compare against a faster driver, and how to turn one review into a practice plan.
@@ -90,6 +91,7 @@
 - [Eye strain and screen distance: protecting your vision during endurance racing](https://realiracing.com/blog/eye-strain-screen-distance-long-sim-racing-sessions.html): Screen distance, refresh rate, and focus breaks matter more than you think during long sim racing sessions. Here's how to protect your eyes.
 - [Rake and aero balance in GT3 and GTP: setup trade-offs explained](https://realiracing.com/blog/rake-aero-balance-gt3-gtp-setup.html): Rake changes aero balance dramatically in GT3 and GTP. Learn how front and rear ride height tweaks shift downforce and hurt or help lap time.
 - [Consistency Over Pace: Why Lap-Time Spread Wins Races](https://realiracing.com/blog/consistency-over-pace-spread-wins-races.html): A tight lap-time spread beats raw pace in most iRacing races. Learn why consistency matters more than single-lap speed.
+- [Sequential vs. H-Pattern vs. Paddles: Which Shifter Matters Most](https://realiracing.com/blog/sequential-h-pattern-paddle-shifter-choice.html): Understand the real performance and immersion trade-offs between sequential, H-pattern, and paddle shifters for sim racing on iRacing.
 - [Wheel Rotation and Steering Ratio in iRacing, Explained](https://realiracing.com/blog/steering-rotation-and-ratio-iracing.html): Why your wheel's degrees of rotation should match the car, how soft lock and steering ratio work in iRacing, and how to set it up on a MOZA R9.
 - [Sim Rig Cable Management: A Practical Guide | RealIRacing](https://realiracing.com/blog/sim-rig-cable-management-guide.html): How to route power, USB and pedal cables on a direct drive rig so nothing snags, disconnects mid-race or adds noise to force feedback.
 - [A 45-Minute iRacing Practice Plan That Actually Sticks](https://realiracing.com/blog/iracing-practice-session-plan-45-minutes.html): A structured 45-minute iRacing practice session: warm-up, one corner and one variable, a consistent run, a pace run, lap review and a firm stop.
