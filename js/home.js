@@ -10,6 +10,7 @@
   /* ── SLIDESHOW ── */
   var currentSlide = 0;
   var slideshowTimer = null;
+  var slideshowPaused = false;
   var SLIDE_DURATION = 5000;
 
   var slides = document.querySelectorAll('.slide');
@@ -37,6 +38,9 @@
     attachBackground(slides[currentSlide]);
     slides[currentSlide].classList.add('active');
     dots[currentSlide].classList.add('active');
+    dots.forEach(function (dot, i) {
+      dot.setAttribute('aria-current', i === currentSlide ? 'true' : 'false');
+    });
     resetTimer();
   }
   function nextSlide() { goToSlide(currentSlide + 1); }
@@ -44,7 +48,7 @@
 
   function resetTimer() {
     clearInterval(slideshowTimer);
-    slideshowTimer = setInterval(nextSlide, SLIDE_DURATION);
+    if (!slideshowPaused) slideshowTimer = setInterval(nextSlide, SLIDE_DURATION);
   }
 
   dots.forEach(function (dot, i) {
@@ -96,9 +100,11 @@
       var panel = document.querySelector('#panel-' + name);
       if (!panel) return;
       document.querySelectorAll('.media-tab').forEach(function (t) { t.classList.remove('active'); });
+      document.querySelectorAll('.media-tab').forEach(function (t) { t.setAttribute('aria-selected', 'false'); });
       document.querySelectorAll('.media-panel').forEach(function (p) { p.classList.remove('active'); });
       panel.classList.add('active');
       e.currentTarget.classList.add('active');
+      e.currentTarget.setAttribute('aria-selected', 'true');
     });
   });
 
@@ -106,7 +112,9 @@
   document.querySelectorAll('.poll-option').forEach(function (opt) {
     opt.addEventListener('click', function (e) {
       document.querySelectorAll('.poll-option').forEach(function (o) { o.classList.remove('selected'); });
+      document.querySelectorAll('.poll-option').forEach(function (o) { o.setAttribute('aria-pressed', 'false'); });
       e.currentTarget.classList.add('selected');
+      e.currentTarget.setAttribute('aria-pressed', 'true');
     });
   });
 
@@ -114,8 +122,28 @@
   document.querySelectorAll('a[href^="#"]').forEach(function (a) {
     a.addEventListener('click', function (e) {
       e.preventDefault();
-      var target = document.querySelector(a.getAttribute('href'));
+      var href = a.getAttribute('href');
+      if (!href || href === '#') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+      var target = document.querySelector(href);
       if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
+
+  var slideToggle = document.querySelector('.slide-toggle');
+  if (slideToggle) {
+    slideToggle.addEventListener('click', function () {
+      slideshowPaused = !slideshowPaused;
+      if (slideshowPaused) clearInterval(slideshowTimer); else resetTimer();
+      slideToggle.textContent = slideshowPaused ? 'Play' : 'Pause';
+      slideToggle.setAttribute('aria-label', slideshowPaused ? 'Resume slideshow' : 'Pause slideshow');
+      slideToggle.setAttribute('aria-pressed', String(slideshowPaused));
+    });
+  }
+  if (ss) {
+    ss.addEventListener('focusin', function () { clearInterval(slideshowTimer); });
+    ss.addEventListener('focusout', function () { if (!slideshowPaused) resetTimer(); });
+  }
 })();

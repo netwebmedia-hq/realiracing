@@ -95,7 +95,7 @@
       'logitech-g923': {
         name: 'Logitech G923 Racing Wheel',
         amazonUrl: 'https://www.amazon.com/dp/B07PGGDJSG',
-        note: 'belt-driven, the easiest on-ramp into iRacing'
+        note: 'gear-driven, the easiest on-ramp into iRacing'
       },
       'thrustmaster-t300': {
         name: 'Thrustmaster T300 RS GT',

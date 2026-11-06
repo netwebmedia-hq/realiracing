@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RealIRacing Merch Pilot | Coming Soon</title>
+  <meta name="description" content="RealIRacing merch pilot: caps, tees, hoodies, and stickers for the sim-racing community. Vote on the first drop and see the preview before launch." />
+  <meta property="og:title" content="RealIRacing Merch Pilot" />
+  <meta property="og:description" content="Small-run merch for sim racers: teasers, pilot designs, and a community vote for the first drop." />
+  <meta property="og:url" content="https://realiracing.com/merch.html" />
+  <meta property="og:type" content="website" />
+  <style>
+    :root {
+      --black: #0a0a0a;
+      --dark: #111317;
+      --card: #1a1d23;
+      --border: #2a2d35;
+      --accent: #e8ff00;
+      --accent2: #00c8ff;
+      --text: #f0f0f0;
+      --muted: #888;
+      --radius: 12px;
+      --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--black);
+      color: var(--text);
+      font-family: var(--font);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 40px;
+      background: rgba(10,10,10,0.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      width: 184px;
+      height: 31px;
+      flex: 0 0 184px;
+      text-decoration: none;
+      display: block;
+      background: url('/logo-horizontal.png') left center / contain no-repeat;
+      font-size: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color .2s;
+    }
+
+    .nav-links a:hover { color: var(--text); }
+
+    .nav-cta {
+      background: var(--accent);
+      color: var(--black) !important;
+      padding: 8px 20px;
+      border-radius: 999px;
+      font-weight: 700 !important;
+    }
+
+    .page-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 72px 24px 80px;
+    }
+
+    .hero {
+      border: 1px solid var(--border);
+      background: linear-gradient(135deg, rgba(232,255,0,.08), rgba(0,200,255,.06));
+      border-radius: 24px;
+      padding: 48px 24px 32px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(232,255,0,.10);
+      border: 1px solid rgba(232,255,0,.35);
+      color: var(--accent);
+      padding: 7px 16px;
+      border-radius: 999px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 6vw, 4.4rem);
+      line-height: 1.0;
+      letter-spacing: -2px;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 1.06rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .btn-primary, .btn-ghost {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      transition: transform .15s, opacity .15s;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--black);
+    }
+
+    .btn-ghost {
+      background: rgba(255,255,255,.03);
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .btn-primary:hover, .btn-ghost:hover { transform: translateY(-2px); opacity: .96; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+      margin: 40px 0 24px;
+    }
+
+    .product-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: border-color .2s, transform .2s;
+    }
+
+    .product-card:hover {
+      border-color: var(--accent2);
+      transform: translateY(-4px);
+    }
+
+    .product-visual {
+      height: 190px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(232,255,0,0.13), rgba(0,200,255,0.12));
+      border-bottom: 1px solid var(--border);
+      font-size: 3.4rem;
+    }
+
+    .product-copy {
+      padding: 20px 18px 22px;
+    }
+
+    .product-copy h3 {
+      font-size: 1.06rem;
+      margin-bottom: 8px;
+    }
+
+    .product-copy p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 14px;
+    }
+
+    .status {
+      display: inline-block;
+      background: rgba(0,200,255,0.12);
+      border: 1px solid rgba(0,200,255,0.4);
+      color: var(--accent2);
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.75px;
+      text-transform: uppercase;
+      padding: 6px 10px;
+    }
+
+    .info-panel {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px 24px;
+      margin-top: 32px;
+    }
+
+    .info-panel h2 {
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      margin-bottom: 12px;
+      letter-spacing: -1px;
+    }
+
+    .info-panel p {
+      color: var(--muted);
+      margin-bottom: 18px;
+      max-width: 720px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 18px;
+      list-style: none;
+    }
+
+    .steps li {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    .steps strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--accent);
+      font-size: 0.86rem;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .cta-box {
+      margin-top: 42px;
+      text-align: center;
+      padding: 26px 20px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: linear-gradient(135deg, rgba(232,255,0,.06), rgba(0,200,255,.04));
+    }
+
+    .cta-box h3 {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      margin-bottom: 8px;
+    }
+
+    .cta-box p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 36px 24px 60px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    footer a { color: var(--accent); text-decoration: none; }
+
+    @media (max-width: 640px) {
+      nav { padding: 14px 20px; }
+      .nav-links { display: none; }
+      .page-wrap { padding-top: 42px; }
+      .hero { padding: 36px 18px 28px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="/" aria-label="RealIRacing home">RealIRacing</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/merch.html">Merch</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank" rel="noreferrer">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-wrap">
+    <section class="hero">
+      <div class="eyebrow">Merch pilot</div>
+      <h1>Race gear for the people who live in the sim.</h1>
+      <p>Before the first drop ships, this page is the test bed for the brand direction: minimal motorsport pieces built for the rig, the garage, and race day. No fake checkout yet — just product concepts and a community vote.</p>
+
+      <div class="hero-actions">
+        <a class="btn-primary" href="https://www.instagram.com/realiracing" target="_blank" rel="noreferrer">DM @realiracing</a>
+        <a class="btn-ghost" href="/">Back to the site</a>
+      </div>
+    </section>
+
+    <section aria-label="Merch concept preview">
+      <div class="grid">
+        <article class="product-card">
+          <div class="product-visual">🏁</div>
+          <div class="product-copy">
+            <h3>Pit Wall Tee</h3>
+            <p>Clean, bold, everyday gear for track day, stream nights, and everyday sim sessions.</p>
+            <span class="status">Concept 01</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-visual">🧢</div>
+          <div class="product-copy">
+            <h3>Race Weekend Cap</h3>
+            <p>Minimal embroidered mark with a deliberate motorsport feel and streetwear balance.</p>
+            <span class="status">Concept 02</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-visual">🧵</div>
+          <div class="product-copy">
+            <h3>Track Hoodie</h3>
+            <p>Heavyweight, durable comfort built for cold sim nights and long race weekends.</p>
+            <span class="status">Concept 03</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-visual">🖼️</div>
+          <div class="product-copy">
+            <h3>Sticker Pack</h3>
+            <p>Rig, laptop, and sim-room decals for the community that wants the look without the noise.</p>
+            <span class="status">Concept 04</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="info-panel">
+      <h2>What we are testing</h2>
+      <p>These designs are intentionally limited and practical. The goal is not a giant drop on day one — it is to validate which items the audience actually wants before committing to inventory, printing, and fulfillment.</p>
+
+      <ul class="steps">
+        <li>
+          <strong>1. Vote</strong>
+          DM the Instagram account or comment on the relevant launch post to choose the first item.
+        </li>
+        <li>
+          <strong>2. Sample</strong>
+          Pick the best concept, print a first sample, and review fit, color, and brand feel.
+        </li>
+        <li>
+          <strong>3. Launch</strong>
+          Open the small drop only after the design and sizing work cleanly in real life.
+        </li>
+      </ul>
+    </section>
+
+    <section class="cta-box">
+      <h3>Choose the first drop</h3>
+      <p>Want the first product to be the cap, the tee, or the hoodie? Tell the community on Instagram and the first pilot order will follow the vote.</p>
+      <a class="btn-primary" href="https://www.instagram.com/realiracing" target="_blank" rel="noreferrer">Vote on Instagram</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top: 6px;">
+      <a href="/">Home</a> · <a href="/gear.html">My Rig</a> · <a href="/blog/">Blog</a>
+    </p>
+  </footer>
+</body>
+</html>
