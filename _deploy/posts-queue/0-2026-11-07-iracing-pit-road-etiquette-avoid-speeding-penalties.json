@@ -1,0 +1,174 @@
+{
+  "slug": "iracing-pit-road-etiquette-avoid-speeding-penalties",
+  "tag": "Race Craft · Pit Road",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "iRacing Pit Road Etiquette: How I Stopped Taking Speeding Penalties",
+  "description": "How I approach iRacing pit road with a MOZA R9 and CRP2: limiter timing, entry line, box position and exit, so speeding penalties stop costing races.",
+  "published": "2026-11-07",
+  "dateLabel": "November 7, 2026",
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2",
+    "cockpit"
+  ],
+  "sections": [
+    {
+      "p": "I was running a clean race, holding position, and making my one planned stop at the right moment. Then I came down pit road a touch too hot, saw the penalty flash up, and watched the whole race fall apart. A single speeding penalty on pit road can undo an hour of good driving. It is also one of the most avoidable mistakes in iRacing, because nothing about it is random. Every speeding penalty I have taken came from a habit I could have fixed, not from bad luck."
+    },
+    {
+      "p": "This is the routine I use now, from my MOZA R9 (~9 N.m) and CRP2 pedals bolted into a fixed aluminium cockpit. I am not going to quote a magic speed, because pit road limits change by track and series. What I can give you is a sequence that makes the limit a thing you control, not a thing you chase."
+    },
+    {
+      "h2": "Why pit road penalties happen"
+    },
+    {
+      "p": "Almost nobody speeds on pit road on purpose. It happens because the brain is busy. You are braking from racing speed, thinking about the entry line, looking for your box, worrying about the car behind you, and trying to remember whether you wanted fuel only or tires as well. Speed control is the first thing to slip when attention is overloaded."
+    },
+    {
+      "p": "So the fix is not more concentration. The fix is to take speed control out of the list of things you have to think about. That is what the pit speed limiter is for, and it is the biggest single change you can make."
+    },
+    {
+      "h2": "Set up the limiter before you ever need it"
+    },
+    {
+      "p": "Many cars in iRacing have a pit speed limiter that holds you at the pit road limit when you press it. Not every car has one, and some oval cars rely on you managing speed by hand, so check what your car actually offers before relying on it. If your car has the limiter, bind it to a button you can hit without looking."
+    },
+    {
+      "p": "On my rig I keep it on a wheel button I can reach with my thumb while both hands stay on the rim. The R9 gives enough feel that I do not need to look down at all. I would rather find the button by muscle memory than hunt for it at the worst moment. Do this binding in the iRacing controls menu, then test it in an offline session, not in a race."
+    },
+    {
+      "tip": "Bind the limiter to a button you press with the same finger every time. Practice it offline until you press it without thinking, because you will not have spare attention for it under pressure.",
+      "tipLabel": "Muscle memory first"
+    },
+    {
+      "p": "If you are still getting your base controls in order, my starter guide covers the wider setup: <a href=\"iracing-starter-setup-guide-2026\">iracing-starter-setup-guide-2026</a>. Come back here once the basics feel settled."
+    },
+    {
+      "h2": "The entry: where the penalty clock really starts"
+    },
+    {
+      "p": "The pit entry is where most of my early mistakes happened. The speed limit applies from a defined line at pit entry, not from the moment you feel like slowing down. The line is painted on the track, and where it sits relative to the corner before it varies a lot from circuit to circuit."
+    },
+    {
+      "p": "What I do now is learn the entry once per track, in practice, and note where I need to be on the brake. I do not guess it during a race."
+    },
+    {
+      "olist": [
+        "Find the pit entry line in practice and drive through it at the limit a few times.",
+        "Pick a braking reference before it, using the same logic as any corner. A marker, a sign, or a change in the barrier works.",
+        "Brake early enough that the car is already at limit speed when it crosses the line, not still slowing after it.",
+        "Press the limiter as you brake, not after, so it takes over smoothly.",
+        "Keep your eyes on the lane, not on the speed readout."
+      ]
+    },
+    {
+      "p": "If you want a method for picking markers, my braking reference post covers the idea in detail: pick something fixed, repeat it, and trust it. Pit entry is just one more braking zone with a heavier penalty for being wrong."
+    },
+    {
+      "h2": "Pedal feel matters more than you expect"
+    },
+    {
+      "p": "Slowing from racing speed to pit road speed is a braking job, and a load-cell brake makes it more repeatable. With the CRP2 I am working from pressure, not travel, so the same effort gives me roughly the same deceleration each lap. That helps me arrive at the entry line at the right speed lap after lap."
+    },
+    {
+      "p": "I would not overstate it. Good pedals do not remove the need to practice. They make practice stick, which is the part that counts when the pit entry arrives at the end of a long stint and I am tired."
+    },
+    {
+      "h2": "Lane speed: let the limiter do the work"
+    },
+    {
+      "p": "Once I am in the lane, my aim is to stop thinking about speed. The limiter holds it, so my job becomes steering, spacing and watching other cars. This is where etiquette comes in, because pit road is shared space."
+    },
+    {
+      "list": [
+        "Stay on your side of the lane. Cars ahead of you may be leaving their box, and you should leave them room.",
+        "Do not overtake in the lane unless the rules and the situation clearly allow it. A messy pass here usually costs both of you.",
+        "Expect cars to pull out in front of you. Treat every box as a potential exit.",
+        "If you miss your box, do not reverse or swerve. Take the penalty-free option, which is usually to drive around and come back through.",
+        "Keep a steady line. Sudden movements in a crowded lane cause contact."
+      ]
+    },
+    {
+      "p": "Leaving space sounds like politeness, but it is mostly self-protection. A car that comes out of a box into you ruins both races, and the person who left a gap is the one still racing afterwards."
+    },
+    {
+      "h2": "Finding and hitting your box"
+    },
+    {
+      "p": "Your box position matters more than it seems. Boxes nearer the entry give you less lane to settle your speed. Boxes further down give you more time but also more traffic to read. Neither is better by default. What helps is knowing where yours is before you arrive."
+    },
+    {
+      "p": "Before the race I check which box is mine and where it sits relative to the pit road length. During the approach I count down to it using fixed objects, such as a light pole or a sign. Then I ease off the throttle early and let the limiter hold me, so I am rolling into the box slowly and under control."
+    },
+    {
+      "p": "The stopping part is a different problem from the speeding part. Overshooting your box costs time and sometimes causes a penalty of its own. I would much rather stop a little short and nudge forward than arrive hot and slide through. With the limiter engaged and a gentle brake squeeze, the stop is predictable enough to practice."
+    },
+    {
+      "h2": "The exit: do not release the limiter too early"
+    },
+    {
+      "p": "The exit is where I see people undo a good stop. The speed limit continues until a defined line at pit exit, and it is easy to feel that the work is finished once the car is released. Accelerating before that line is the same penalty as speeding on the way in."
+    },
+    {
+      "p": "My rule is to keep the limiter on until I have physically crossed the exit line, not when I see it coming. Then I release it and get on the throttle. If traffic is coming at the merge, I would rather lose a little time than go early and hit someone."
+    },
+    {
+      "p": "Merging back on track is also an etiquette moment. Cars at racing speed have right of way over a car leaving pit road. Check mirrors, stay low on the lane, and join the racing line only when it is clear."
+    },
+    {
+      "h2": "A simple routine I run every stop"
+    },
+    {
+      "olist": [
+        "Before the race, confirm the pit speed limit for the session and note it.",
+        "Know my box position and a reference object for it.",
+        "Brake early to arrive at the entry line already at limit speed.",
+        "Press the limiter as I brake, and keep both hands on the wheel.",
+        "Steer, space and watch traffic in the lane.",
+        "Stop with a gentle brake, not a late stab.",
+        "When released, keep the limiter on until I cross the exit line.",
+        "Merge only when the track is clear."
+      ]
+    },
+    {
+      "p": "None of this is clever. It is just a repeatable sequence. The point is that when the stop comes at the end of a long run and I am tired, I do not have to invent anything. I run the routine."
+    },
+    {
+      "h2": "Fitting pit road into a bigger strategy"
+    },
+    {
+      "p": "Pit stops are rarely just pit stops. They are part of a fuel and tire plan. If you race longer events, a clean stop is worth far more than a fast one that carries a penalty. I go into this properly in my post on <a href=\"endurance-racing-fuel-tire-strategy\">endurance-racing-fuel-tire-strategy</a>, where timing the stop matters as much as how you execute it."
+    },
+    {
+      "p": "The same idea applies in short races. A tidy stop that keeps me out of trouble is usually better than a rushed one that gains a few tenths and risks a drive-through. I would rather lose a bit of time on pit road than hand it away serving a penalty."
+    },
+    {
+      "h2": "The setup behind the habit"
+    },
+    {
+      "p": "My rig is a fixed aluminium cockpit, and I do not think it is a coincidence that this routine became easier once the rig stopped moving. A rigid frame means the pedals and wheel stay where my muscle memory expects them, and the CRP2 brake feels the same each lap. That consistency is what lets me brake to the entry line without thinking."
+    },
+    {
+      "p": "You do not need the same hardware to copy the routine. You need a reliable limiter binding, a braking reference at the entry, and the discipline to hold the limiter until the exit line. The gear just makes repetition easier."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does every iRacing car have a pit speed limiter?",
+      "a": "No. Many cars offer one, but some, including certain oval cars, rely on you managing your speed manually. Check your specific car in a practice session before you depend on the limiter."
+    },
+    {
+      "q": "Where does the pit road speed limit start?",
+      "a": "It starts at a painted line at pit entry and ends at a line at pit exit. The positions of those lines differ from track to track, so learn them in practice rather than guessing during a race."
+    },
+    {
+      "q": "What should I do if I miss my pit box?",
+      "a": "Avoid reversing or swerving across the lane. The safer approach is usually to continue through and come back round, because sudden moves in a crowded lane cause contact and can lead to further penalties."
+    },
+    {
+      "q": "When should I release the limiter on exit?",
+      "a": "Keep it on until you have crossed the pit exit line, not just when it comes into view. Then release it, check your mirrors, and merge only when the track is clear, since cars on track at racing speed have priority."
+    }
+  ]
+}
