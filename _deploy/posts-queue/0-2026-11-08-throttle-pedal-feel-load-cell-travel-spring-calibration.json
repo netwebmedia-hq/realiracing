@@ -1,0 +1,56 @@
+{
+  "slug": "throttle-pedal-feel-load-cell-travel-spring-calibration",
+  "tag": "iRacing Tips · Technique",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "Throttle Pedal Feel: Travel, Spring and Calibration",
+  "description": "How I set up the throttle on my MOZA CRP2 pedals for smoother exits: travel, spring choice, plate angle and calibration, with the mistakes I made first.",
+  "published": "2026-11-08",
+  "dateLabel": "November 8, 2026",
+  "gearKeys": ["moza-crp2", "moza-r9", "cockpit"],
+  "sections": [
+    {"p": "Most of the pedal advice I read when I started was about the brake, and for good reason: the brake decides how deep you can go into a corner. But once my braking was reasonably consistent, the next gains in my laps came from the right foot. A throttle pedal that feels vague makes every exit a guess, and in the rain or on an oval, small guesses add up to spins."},
+    {"p": "This is how I set up the throttle on my MOZA CRP2 pedals, mounted on a fixed aluminium cockpit with an R9 wheelbase. Your pedals, springs and seat position will differ, so treat the numbers as starting points and expect to adjust."},
+    {"h2": "Why throttle feel matters more than it seems"},
+    {"p": "Throttle is the pedal where you make the most small corrections. On corner exit you are rolling it on, feeling the rear tyres for grip, and backing off a few percent when the car steps out. If the pedal has too little travel, a few millimetres of foot movement becomes a big change in power. If it has too much resistance, your foot tires and your inputs get jerky late in a stint."},
+    {"p": "My first version of the setup had a short travel and a very light spring. It felt responsive on the straight and was a disaster in a damp Mustang GT3, where every exit became a snap of oversteer. The pedal was not broken. I had simply left no room for fine control."},
+    {"h2": "Travel: give your foot room to be gentle"},
+    {"p": "The CRP2 throttle lets you change how far the pedal moves between idle and full. I would start from a longer travel than feels natural. A longer pedal spreads the same power range over more foot movement, so a small mistake costs less. I still reach full throttle comfortably, but the first part of the range is much easier to hold steady."},
+    {"p": "A practical way to check it: drive a slow corner in a car with lots of power and try to hold exactly half throttle for a few seconds. If your foot wanders, the travel is probably too short or the spring too light. I run something around the middle of the adjustment range and revisit it after a week of racing."},
+    {"h2": "Spring and resistance: heavy enough to feel, light enough to last"},
+    {"p": "The spring sets how much the pedal pushes back. With too little push, you lose the sense of where your foot is. With too much, your ankle fatigues during longer sessions. I settled on a moderate spring after trying a stiffer one, which felt more precise in short runs but left my ankle sore after a long endurance stint. For resistance, think about your longest typical race, not your best five-minute practice."},
+    {"tip": "Test the pedal at the end of a long session, not at the start. Your foot gets less precise with fatigue, and the setting that still feels controllable when you are tired is the one worth keeping.", "tipLabel": "Pro tip"},
+    {"h2": "Plate angle and seat position"},
+    {"p": "The angle of the pedal plate changes how much of your foot weight rests on the pedal. If the plate is too upright, your heel hangs and the ankle does more work. If it is too flat, the pedal can feel mushy. I keep the plate angle where my heel rests on the floor plate without effort and my ankle is relaxed at about the middle of the throttle range. Moving the seat a few centimetres forward or back changes this, so adjust angle and seat together, not one at a time."},
+    {"p": "A fixed cockpit helps here because nothing flexes when you push. If you notice the pedal base moving, fix that first. I wrote about the same effect on the wheel side in <a href=\"rig-flex-and-wheelbase-mounting-ffb-feel.html\">rig flex and wheelbase mounting</a>, and it applies to pedals just as much."},
+    {"h2": "Calibration: set the range you actually use"},
+    {"p": "Calibration tells the software where the pedal starts and where it ends. A small dead zone at the start of the range is useful because it ignores tiny foot movements that would otherwise give you a trace of throttle. Too big a dead zone, and you lose the first part of the range that matters in the rain."},
+    {"olist": [
+      "Open the MOZA software and reset the throttle to default so you start from a clean base.",
+      "Press the pedal fully a few times, then release it fully, and confirm the full range is recorded.",
+      "Set a very small dead zone at the start and none at the end.",
+      "Check the bar in the software while resting your foot on the pedal. It should read idle, with no flicker.",
+      "Run a few laps in a familiar car and watch the throttle trace in a telemetry tool if you have one."
+    ]},
+    {"p": "If you use telemetry, the trace is a quick way to see whether your throttle is smooth. I like comparing a clean lap with a slower one, the same way I compare braking in <a href=\"moza-crp2-brake-calibration-pressure-curves.html\">my brake calibration post</a>. A staircase pattern on the throttle line usually means your foot is working in steps, which a longer travel can soften."},
+    {"h2": "Response curves: use them carefully"},
+    {"p": "The software also lets you change the pedal curve, so the first half of the movement gives less power and the second half gives more. A gentle curve can help on slippery surfaces, but it also hides problems. I keep my curve close to linear and fix technique with practice. If you do use a curve, change one thing at a time so you know what helped."},
+    {"h2": "Setups for different conditions"},
+    {"p": "I keep one main setup and make small changes instead of switching everything. For ovals I leave the pedal alone, because a consistent foot is more valuable than a clever setting. For wet races I pay more attention to the first part of the throttle range and sometimes use a softer curve. For long endurance events I check that the spring is not tiring me out. Writing the settings in a small notebook has saved me from guessing after a software update reset them."},
+    {"h2": "Mistakes I made"},
+    {"ul": [
+      "Choosing the lightest spring because it felt fast in a five-minute test.",
+      "Setting a short travel to chase quick reactions, then spinning in the wet.",
+      "Changing travel, spring, angle and curve in one evening, with no way to know which change helped.",
+      "Ignoring a pedal base that moved slightly under load.",
+      "Never writing down the settings, then having to rebuild them after a firmware update."
+    ]},
+    {"p": "If you are choosing pedals, my <a href=\"best-sim-racing-pedals-iracing-2026.html\">pedal buying guide</a> covers what to look for in the brake and the throttle. For technique on the left foot, I also wrote about <a href=\"trail-braking-load-cell-technique.html\">trail braking with a load cell</a>, which pairs well with a smoother right foot."}
+  ],
+  "faqs": [
+    {"q": "how much throttle pedal travel should I use for iRacing", "a": "There is no single right number, but a longer travel than feels natural is a good starting point because it spreads the power range over more foot movement. Test by holding half throttle in a slow corner and lengthen the travel if your foot wanders."},
+    {"q": "should I use a stiff or soft spring on the throttle pedal", "a": "Choose a moderate spring that lets you feel the pedal without tiring your ankle. A stiff spring can feel precise in short runs but fatigue you in longer races, so test the setting at the end of a long session."},
+    {"q": "do I need a dead zone on a sim racing throttle", "a": "A very small dead zone at the start of the range can ignore tiny foot movements and keep the idle reading steady. A large one removes the first part of the range, which matters most on slippery surfaces, so keep it small."},
+    {"q": "does the pedal plate angle change throttle control", "a": "Yes. The angle changes how much foot weight rests on the pedal and how relaxed your ankle is. Adjust the plate angle together with the seat position until your heel rests comfortably and your ankle is relaxed near the middle of the throttle range."}
+  ]
+}
