@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Throttle Pedal Feel: Travel, Spring and Calibration</title>
+  <meta name="description" content="How I set up the throttle on my MOZA CRP2 pedals for smoother exits: travel, spring choice, plate angle and calibration, with the mistakes I made first." />
+  <link rel="canonical" href="https://realiracing.com/blog/throttle-pedal-feel-load-cell-travel-spring-calibration.html" />
+  <meta property="og:title" content="Throttle Pedal Feel: Travel, Spring and Calibration" />
+  <meta property="og:description" content="How I set up the throttle on my MOZA CRP2 pedals for smoother exits: travel, spring choice, plate angle and calibration, with the mistakes I made first." />
+  <meta property="og:url" content="https://realiracing.com/blog/throttle-pedal-feel-load-cell-travel-spring-calibration.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/pedals-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: a rising series of bars" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/pedals-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261103" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Throttle Pedal Feel: Travel, Spring and Calibration",
+    "description": "How I set up the throttle on my MOZA CRP2 pedals for smoother exits: travel, spring choice, plate angle and calibration, with the mistakes I made first.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/throttle-pedal-feel-load-cell-travel-spring-calibration.html",
+    "image": "https://realiracing.com/assets/photos/pedals-cover.jpg",
+    "datePublished": "2026-11-08",
+    "dateModified": "2026-11-08"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Throttle Pedal Feel: Travel, Spring and Calibration","item":"https://realiracing.com/blog/throttle-pedal-feel-load-cell-travel-spring-calibration.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/throttle-pedal-feel-load-cell-travel-spring-calibration.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/throttle-pedal-feel-load-cell-travel-spring-calibration.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Sim Racing Cockpit / Wheel Stand","description":"a rigid mount matters more than the brand — flex kills FFB detail","url":"https://realiracing.com/blog/throttle-pedal-feel-load-cell-travel-spring-calibration.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "how much throttle pedal travel should I use for iRacing",
+      "acceptedAnswer": { "@type": "Answer", "text": "There is no single right number, but a longer travel than feels natural is a good starting point because it spreads the power range over more foot movement. Test by holding half throttle in a slow corner and lengthen the travel if your foot wanders." }
+    },
+    {
+      "@type": "Question",
+      "name": "should I use a stiff or soft spring on the throttle pedal",
+      "acceptedAnswer": { "@type": "Answer", "text": "Choose a moderate spring that lets you feel the pedal without tiring your ankle. A stiff spring can feel precise in short runs but fatigue you in longer races, so test the setting at the end of a long session." }
+    },
+    {
+      "@type": "Question",
+      "name": "do I need a dead zone on a sim racing throttle",
+      "acceptedAnswer": { "@type": "Answer", "text": "A very small dead zone at the start of the range can ignore tiny foot movements and keep the idle reading steady. A large one removes the first part of the range, which matters most on slippery surfaces, so keep it small." }
+    },
+    {
+      "@type": "Question",
+      "name": "does the pedal plate angle change throttle control",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. The angle changes how much foot weight rests on the pedal and how relaxed your ankle is. Adjust the plate angle together with the seat position until your heel rests comfortably and your ankle is relaxed near the middle of the throttle range." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">iRacing Tips · Technique</p>
+    <h1>Throttle Pedal Feel: Travel, Spring and Calibration</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated November 8, 2026</span>
+      <span class="dot">·</span>
+      <span>8 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/pedals-cover.jpg" width="1000" height="563" alt="Cover art: a rising series of bars" srcset="/assets/photos/pedals-cover-sm.jpg 560w, /assets/photos/pedals-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">Most of the pedal advice I read when I started was about the brake, and for good reason: the brake decides how deep you can go into a corner. But once my braking was reasonably consistent, the next gains in my laps came from the right foot. A throttle pedal that feels vague makes every exit a guess, and in the rain or on an oval, small guesses add up to spins.</p>
+
+      <p>This is how I set up the throttle on my <a href="https://www.amazon.com/dp/B0DSHYFW1V?tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2</a> pedals, mounted on a fixed aluminium cockpit with an R9 wheelbase. Your pedals, springs and seat position will differ, so treat the numbers as starting points and expect to adjust.</p>
+
+      <h2>Why throttle feel matters more than it seems</h2>
+
+      <p>Throttle is the pedal where you make the most small corrections. On corner exit you are rolling it on, feeling the rear tyres for grip, and backing off a few percent when the car steps out. If the pedal has too little travel, a few millimetres of foot movement becomes a big change in power. If it has too much resistance, your foot tires and your inputs get jerky late in a stint.</p>
+
+      <p>My first version of the setup had a short travel and a very light spring. It felt responsive on the straight and was a disaster in a damp Mustang GT3, where every exit became a snap of oversteer. The pedal was not broken. I had simply left no room for fine control.</p>
+
+      <h2>Travel: give your foot room to be gentle</h2>
+
+      <p>The CRP2 throttle lets you change how far the pedal moves between idle and full. I would start from a longer travel than feels natural. A longer pedal spreads the same power range over more foot movement, so a small mistake costs less. I still reach full throttle comfortably, but the first part of the range is much easier to hold steady.</p>
+
+      <p>A practical way to check it: drive a slow corner in a car with lots of power and try to hold exactly half throttle for a few seconds. If your foot wanders, the travel is probably too short or the spring too light. I run something around the middle of the adjustment range and revisit it after a week of racing.</p>
+
+      <h2>Spring and resistance: heavy enough to feel, light enough to last</h2>
+
+      <p>The spring sets how much the pedal pushes back. With too little push, you lose the sense of where your foot is. With too much, your ankle fatigues during longer sessions. I settled on a moderate spring after trying a stiffer one, which felt more precise in short runs but left my ankle sore after a long endurance stint. For resistance, think about your longest typical race, not your best five-minute practice.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Pro tip</span>
+        <p>Test the pedal at the end of a long session, not at the start. Your foot gets less precise with fatigue, and the setting that still feels controllable when you are tired is the one worth keeping.</p>
+      </div>
+
+      <h2>Plate angle and seat position</h2>
+
+      <p>The angle of the pedal plate changes how much of your foot weight rests on the pedal. If the plate is too upright, your heel hangs and the ankle does more work. If it is too flat, the pedal can feel mushy. I keep the plate angle where my heel rests on the floor plate without effort and my ankle is relaxed at about the middle of the throttle range. Moving the seat a few centimetres forward or back changes this, so adjust angle and seat together, not one at a time.</p>
+
+      <p>A fixed cockpit helps here because nothing flexes when you push. If you notice the pedal base moving, fix that first. I wrote about the same effect on the wheel side in <a href="rig-flex-and-wheelbase-mounting-ffb-feel.html">rig flex and wheelbase mounting</a>, and it applies to pedals just as much.</p>
+
+      <h2>Calibration: set the range you actually use</h2>
+
+      <p>Calibration tells the software where the pedal starts and where it ends. A small dead zone at the start of the range is useful because it ignores tiny foot movements that would otherwise give you a trace of throttle. Too big a dead zone, and you lose the first part of the range that matters in the rain.</p>
+
+      <ol>
+        <li>Open the MOZA software and reset the throttle to default so you start from a clean base.</li>
+        <li>Press the pedal fully a few times, then release it fully, and confirm the full range is recorded.</li>
+        <li>Set a very small dead zone at the start and none at the end.</li>
+        <li>Check the bar in the software while resting your foot on the pedal. It should read idle, with no flicker.</li>
+        <li>Run a few laps in a familiar car and watch the throttle trace in a telemetry tool if you have one.</li>
+      </ol>
+
+      <p>If you use telemetry, the trace is a quick way to see whether your throttle is smooth. I like comparing a clean lap with a slower one, the same way I compare braking in <a href="moza-crp2-brake-calibration-pressure-curves.html">my brake calibration post</a>. A staircase pattern on the throttle line usually means your foot is working in steps, which a longer travel can soften.</p>
+
+      <h2>Response curves: use them carefully</h2>
+
+      <p>The software also lets you change the pedal curve, so the first half of the movement gives less power and the second half gives more. A gentle curve can help on slippery surfaces, but it also hides problems. I keep my curve close to linear and fix technique with practice. If you do use a curve, change one thing at a time so you know what helped.</p>
+
+      <h2>Setups for different conditions</h2>
+
+      <p>I keep one main setup and make small changes instead of switching everything. For ovals I leave the pedal alone, because a consistent foot is more valuable than a clever setting. For wet races I pay more attention to the first part of the throttle range and sometimes use a softer curve. For long endurance events I check that the spring is not tiring me out. Writing the settings in a small notebook has saved me from guessing after a software update reset them.</p>
+
+      <h2>Mistakes I made</h2>
+
+      <p>If you are choosing pedals, my <a href="best-sim-racing-pedals-iracing-2026.html">pedal buying guide</a> covers what to look for in the brake and the throttle. For technique on the left foot, I also wrote about <a href="trail-braking-load-cell-technique.html">trail braking with a load cell</a>, which pairs well with a smoother right foot.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=throttle-pedal-feel-load-cell-travel-spring-calibration">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0DSHYFW1V?tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&amp;tag=realiracing-20" data-aff="cockpit" target="_blank" rel="sponsored noopener">Sim Racing Cockpit / Wheel Stand</a></th><td>a rigid mount matters more than the brand — flex kills FFB detail</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>how much throttle pedal travel should I use for iRacing</h3>
+        <p>There is no single right number, but a longer travel than feels natural is a good starting point because it spreads the power range over more foot movement. Test by holding half throttle in a slow corner and lengthen the travel if your foot wanders.</p>
+      </div>
+      <div class="faq-item">
+        <h3>should I use a stiff or soft spring on the throttle pedal</h3>
+        <p>Choose a moderate spring that lets you feel the pedal without tiring your ankle. A stiff spring can feel precise in short runs but fatigue you in longer races, so test the setting at the end of a long session.</p>
+      </div>
+      <div class="faq-item">
+        <h3>do I need a dead zone on a sim racing throttle</h3>
+        <p>A very small dead zone at the start of the range can ignore tiny foot movements and keep the idle reading steady. A large one removes the first part of the range, which matters most on slippery surfaces, so keep it small.</p>
+      </div>
+      <div class="faq-item">
+        <h3>does the pedal plate angle change throttle control</h3>
+        <p>Yes. The angle changes how much foot weight rests on the pedal and how relaxed your ankle is. Adjust the plate angle together with the seat position until your heel rests comfortably and your ankle is relaxed near the middle of the throttle range.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="rallycross-and-dirt-iracing-guide.html"><span>iRacing Tips</span>RallyCross and Dirt on iRacing: Setup, Technique, and What Changes</a>
+      <a class="related-card" href="recovering-from-a-spin-or-off-track-incident-iracing.html"><span>iRacing Tips</span>Recover cleanly after a spin or off-track incident in iRacing</a>
+      <a class="related-card" href="endurance-fuel-tire-strategy-basics.html"><span>iRacing Tips</span>Endurance Racing Fuel and Tire Strategy: Essential Basics</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-crp2","moza-r9","cockpit"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
