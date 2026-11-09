@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bump Stops and Packers on Bumpy Tracks: What They Actually Do</title>
+  <meta name="description" content="Learn how bump stops and packers prevent bottoming out and control suspension compliance on rough circuits. Essential tuning for oval and road course bumps." />
+  <link rel="canonical" href="https://realiracing.com/blog/bump-stops-packers-bumpy-tracks-setup.html" />
+  <meta property="og:title" content="Bump Stops and Packers on Bumpy Tracks: What They Actually Do" />
+  <meta property="og:description" content="Learn how bump stops and packers prevent bottoming out and control suspension compliance on rough circuits. Essential tuning for oval and road course bumps." />
+  <meta property="og:url" content="https://realiracing.com/blog/bump-stops-packers-bumpy-tracks-setup.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/track-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: a circuit traced as a route with marked points" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/track-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261103" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Bump Stops and Packers on Bumpy Tracks: What They Actually Do",
+    "description": "Learn how bump stops and packers prevent bottoming out and control suspension compliance on rough circuits. Essential tuning for oval and road course bumps.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/bump-stops-packers-bumpy-tracks-setup.html",
+    "image": "https://realiracing.com/assets/photos/track-cover.jpg",
+    "datePublished": "2026-10-26",
+    "dateModified": "2026-10-26"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Bump Stops and Packers on Bumpy Tracks: What They Actually Do","item":"https://realiracing.com/blog/bump-stops-packers-bumpy-tracks-setup.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/bump-stops-packers-bumpy-tracks-setup.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the difference between bump stop stiffness and packer thickness?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Bump stop stiffness (kN/mm) controls how resistant the secondary spring is once it engages. A stiffer bump stop resists compression harder. A packer is a spacer that delays when the bump stop engages in the first place. Soft bump stop with thick packer: engagement is delayed and then soft. Stiff bump stop with thin packer: engagement is early and firm. You tune stiffness for feel, and packer for frequency of engagement." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can bump stops cause a car to feel tight or locked up?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. If your packers are too thin or your bump stop stiffness too high, the secondary spring engages too early and too aggressively during normal cornering compression. This makes the car feel uresponsive and stiff even when the surface is not that rough. Increasing packer thickness slightly or using a softer bump stop rate will restore compliance through the normal suspension range." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if I'm bottoming out?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In telemetry, suspension travel above 98-99% for sustained periods indicates bottoming out. In the car, you'll feel abrupt impacts or a sudden harshness over bumps, especially in braking zones or hard corners. The car will also feel unstable for a moment after the impact. If this is happening, reduce packer thickness to engage the bump stop sooner, or increase bump stop stiffness to control the compression more firmly." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do all cars in iRacing use the same bump stop range?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Different cars have different suspension travel ranges and geometry. A single-seater like the Dallara IR18 has much tighter suspension than a GT car like the Porsche 963. Check the car's default setup to understand the baseline range, then adjust from there. A value of 10 mm packer on an IndyCar might be equivalent to 20 mm on a touring car in terms of practical effect." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Setup Guides · Suspension</p>
+    <h1>Bump Stops and Packers on Bumpy Tracks: What They Actually Do</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 26, 2026</span>
+      <span class="dot">·</span>
+      <span>8 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/track-cover.jpg" width="1000" height="563" alt="Cover art: a circuit traced as a route with marked points" srcset="/assets/photos/track-cover-sm.jpg 560w, /assets/photos/track-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">A bump stop is a spring-loaded (or rubber) secondary spring that activates only when the suspension compresses beyond its normal travel. A packer is a spacer that raises the bump stop threshold, changing when this secondary spring engages. On bumpy tracks, these aren't luxury settings: they're the difference between a driveable car and one that feels locked up or bottomsout, destroying both feel and pace.</p>
+
+      <p>The mistake most drivers make is treating bump stops as a single number to copy from setups online. In reality, they interact directly with track topography. A bump stop engaged too early makes the car feel stiff and unresponsive over mid-corner ripples. Too late, and the car wallows and bottoms out, losing compliance and introducing erratic braking behavior when the suspension hits its hard stop mid-corner or under heavy braking.</p>
+
+      <h2>Why bump stops matter on rough surfaces</h2>
+
+      <p>A rough track compresses the suspension frequently and unevenly. Without proper bump stops, the suspension would bottom out against the chassis, creating a hard impact that feels like a flat spot and destabilizes the car's balance mid-corner. Bump stops prevent that by engaging smoothly as the suspension runs out of travel, absorbing additional compression with controlled resistance.</p>
+
+      <p>The secondary spring effect also preserves driveability. A well-tuned bump stop keeps the suspension working through the first 80% of its travel naturally, then resists hard compression only when necessary. This allows the car to absorb smaller track imperfections while staying sharp when it matters. Without it, you either run so much compression resistance that every ripple feels like a curb, or you accept the occasional impact that unsettles the car.</p>
+
+      <ul>
+        <li>Prevents bottoming out under heavy braking or cornering on rutted sections</li>
+        <li>Controls suspension compliance without adding overall spring stiffness</li>
+        <li>Reduces unsprung impact shocks that break grip during entry or mid-corner</li>
+        <li>Allows lower spring rates for comfort without sacrificing crash protection</li>
+      </ul>
+
+      <h2>Understanding bump stop stiffness and packer spacers</h2>
+
+      <p>Bump stop stiffness is measured in kN/mm (kilonewtons per millimeter of compression). A softer bump stop engages gradually and feels less harsh but activates over a wider range. A stiffer bump stop engages quickly with minimal additional compression but can feel abrupt if it kicks in mid-corner.</p>
+
+      <p>A packer is simply a spacer inserted between the suspension arm and the bump stop to push the stop further away from the suspension's resting position. Adding a packer increases the distance the suspension must travel before the bump stop engages, delaying its activation. Removing a packer (or using a thinner one) moves the engagement point closer, meaning the secondary spring activates sooner.</p>
+
+      <p>The common approach in iRacing setups is to start with a baseline packer value (often 10 to 20 mm, depending on the car and track), then adjust based on how the car behaves over bumps. A track like Bristol or Eldora, heavily rutted, typically requires either softer bump stops or thinner packers to engage the secondary spring earlier and more often.</p>
+
+      <h2>Tuning bump stops for different track conditions</h2>
+
+      <h3>Smooth road courses</h3>
+
+      <p>On smooth circuits like Laguna Seca or Imola, bump stops rarely engage. Thicker packers and softer bump stop rates work well because the suspension rarely compresses hard enough to need secondary spring support. The focus is on compliance through the normal range.</p>
+
+      <h3>Bumpy ovals and dirt tracks</h3>
+
+      <p>Heavy ruts and surface inconsistency mean the suspension is constantly working near its travel limits. Thinner packers and stiffer bump stops become necessary to manage frequent, hard compressions. A track like Bristol, with its worn surface and high banking, may benefit from very thin packers (5 to 10 mm) or even zero packer to engage the bump stop almost continuously under braking or hard acceleration.</p>
+
+      <h3>Mixed topography</h3>
+
+      <p>Tracks with some rough sections and some smooth sections require a compromise. Start with a mid-range packer value, then adjust by 2-3 mm increments based on feedback. If the car feels twitchy or disconnected over rough patches, increase packer thickness (soften engagement). If it wallows and feels soft over those sections, reduce packer thickness (stiffen engagement sooner).</p>
+
+      <h2>Common setup mistakes with bump stops</h2>
+
+      <ul>
+        <li>Copying a bump stop setting from a smooth-track setup to a rough track without adjusting the packer: engagement threshold is wrong for the new surface</li>
+        <li>Running zero packer under the assumption that maximum bump stop engagement is always better: can make the car feel locked up and unresponsive on non-severe bumps</li>
+        <li>Ignoring bump stops entirely and compensating with higher spring rates: adds overall stiffness, making the car unpredictable and fatiguing</li>
+        <li>Adjusting bump stops without checking front-to-rear balance: asymmetric engagement can cause mid-corner push or loose behavior</li>
+      </ul>
+
+      <div class="tip-box">
+        <span class="box-label">Quick tuning method</span>
+        <p>On a bumpy track test session, make two setups: one with your baseline packer and one with 5 mm less packer. Compare corner-by-corner feel over the roughest sections. If the thinner-packer setup feels sharper but controllable, you've found a range. This approach takes the guesswork out of tuning.</p>
+      </div>
+
+      <h2>How to read your telemetry</h2>
+
+      <p>In iRacing telemetry, suspension travel (as a percentage) shows whether the car is hitting bump stops. If you're seeing travel consistently above 95% on certain corners or braking zones, the bump stop is engaging hard and frequently. That's the signal that your packer might be too thick or your bump stop stiffness too soft. Conversely, if travel never exceeds 85% but the car feels unstable over bumps, your bump stop might be engaging too gradually or your spring rate is too soft overall.</p>
+
+      <p>Track the delta between front and rear suspension travel over the same bumpy section. Imbalanced engagement (one end bottoming out more than the other) creates mid-corner handling issues. Balancing both ends to engage at similar compression thresholds improves predictability.</p>
+
+      <h2>Integrating bump stops with other suspension tuning</h2>
+
+      <p>Bump stops do not replace spring rates or damping. They work alongside them. A common sequence: first, set spring rates appropriate to the track and car weight. Then, dial in damping (bump and rebound) to manage how the suspension moves through its normal range. Finally, tune bump stops and packers to control extreme compression events. Doing it in this order prevents trying to use bump stops as a shortcut for other suspension issues.</p>
+
+      <p>On endurance races where fuel and tire wear change car balance and ride height over time, revisiting bump stop packer settings during pit stops is rarely necessary. The bulk of the setup work happens before the race. However, on shorter events where you have practice and qualifying, spending 10-15 minutes testing packer increments can return consistent lap-time gains on bumpy surfaces, especially on ovals where surface consistency changes dramatically from day to day.</p>
+
+      <p>See <a href="building-setup-from-iracing-baseline.html">building setup from iRacing baseline</a> for the full workflow on how bump stops fit into your overall tuning philosophy. For ovals specifically, bump stops interact heavily with wedge and dynamic weight transfer, so start with those dialed before fine-tuning bump engagement.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=bump-stops-packers-bumpy-tracks-setup">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>What's the difference between bump stop stiffness and packer thickness?</h3>
+        <p>Bump stop stiffness (kN/mm) controls how resistant the secondary spring is once it engages. A stiffer bump stop resists compression harder. A packer is a spacer that delays when the bump stop engages in the first place. Soft bump stop with thick packer: engagement is delayed and then soft. Stiff bump stop with thin packer: engagement is early and firm. You tune stiffness for feel, and packer for frequency of engagement.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can bump stops cause a car to feel tight or locked up?</h3>
+        <p>Yes. If your packers are too thin or your bump stop stiffness too high, the secondary spring engages too early and too aggressively during normal cornering compression. This makes the car feel uresponsive and stiff even when the surface is not that rough. Increasing packer thickness slightly or using a softer bump stop rate will restore compliance through the normal suspension range.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I know if I'm bottoming out?</h3>
+        <p>In telemetry, suspension travel above 98-99% for sustained periods indicates bottoming out. In the car, you'll feel abrupt impacts or a sudden harshness over bumps, especially in braking zones or hard corners. The car will also feel unstable for a moment after the impact. If this is happening, reduce packer thickness to engage the bump stop sooner, or increase bump stop stiffness to control the compression more firmly.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do all cars in iRacing use the same bump stop range?</h3>
+        <p>No. Different cars have different suspension travel ranges and geometry. A single-seater like the Dallara IR18 has much tighter suspension than a GT car like the Porsche 963. Check the car's default setup to understand the baseline range, then adjust from there. A value of 10 mm packer on an IndyCar might be equivalent to 20 mm on a touring car in terms of practical effect.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="baseline-setup-vs-setup-shops-when-to-stop-fiddling.html"><span>Setup Guides</span>Baseline Setups vs. Setup Shops: When to Stop Fiddling</a>
+      <a class="related-card" href="rig-flex-and-wheelbase-mounting-ffb-feel.html"><span>Setup Guides</span>Your Force Feedback Feels Mushy and It Probably Isn't the Wheelbase</a>
+      <a class="related-card" href="choosing-gear-ratios-unfamiliar-track.html"><span>Setup Guides</span>Choosing Gear Ratios for a Track You Don't Know Yet</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
