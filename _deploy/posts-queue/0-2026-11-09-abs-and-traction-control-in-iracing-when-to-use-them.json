@@ -1,0 +1,130 @@
+{
+  "slug": "abs-and-traction-control-in-iracing-when-to-use-them",
+  "tag": "Driving Technique · Setup",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "ABS and Traction Control in iRacing: When to Use Them and When to Turn Them Off",
+  "description": "ABS and traction control help you stay on track but hide feedback. Here is how I decide when to keep them on, when to lower them, and what they change.",
+  "published": "2026-11-09",
+  "dateLabel": "November 9, 2026",
+  "gearKeys": [
+    "moza-crp2",
+    "moza-r9",
+    "cockpit"
+  ],
+  "sections": [
+    {
+      "p": "Every few weeks someone in a Discord asks whether they should turn ABS and traction control on or off in iRacing. The honest answer is that it depends on the car, the series and what you are trying to learn. After a lot of laps on my MOZA R9 and CRP2 rig, here is how I decide, and what each aid actually changes about how you drive."
+    },
+    {
+      "h2": "What ABS and traction control actually do"
+    },
+    {
+      "p": "ABS stops the wheels from locking under heavy braking by releasing and re-applying brake pressure for you. Traction control limits wheelspin when you put the power down by trimming torque. Neither makes the car faster in a pure sense. They widen the margin for error, and in exchange they change what the pedals and the tyres tell you."
+    },
+    {
+      "p": "In iRacing, many road cars and some racing cars offer these aids as adjustable options, while a lot of purpose-built race cars have neither. The simple rule I follow is to check the car's garage options and the series rules before every session instead of assuming. Settings can differ from one car to the next, and from one season to the next."
+    },
+    {
+      "h2": "Why a safety net can slow you down"
+    },
+    {
+      "p": "The trap is that the aid hides feedback. With ABS working, you can stamp on the brake pedal and the car will still slow down in a straight line, so you never learn exactly where the limit is. With traction control active, you can floor the throttle out of a slow corner and the car sorts it out, so you never learn the throttle trace that the fastest drivers use without any help."
+    },
+    {
+      "p": "That is fine when you are new to a car and just want to finish laps. It becomes a ceiling when you want to be consistent. The lap that feels safe with aids on can be a few tenths off the lap you could do by managing the tyres yourself, and the gap shows up most in long runs where tyre wear matters."
+    },
+    {
+      "h2": "When I keep the aids on"
+    },
+    {
+      "list": [
+        "Learning a new car or track, when staying on the road matters more than the last tenth.",
+        "Wet or low-grip sessions, where the limit moves around and the aid helps me find it safely.",
+        "Long endurance stints where mistakes cost positions and consistency beats a single fast lap.",
+        "Races where I have a big incident risk because of traffic and I need predictable behaviour."
+      ]
+    },
+    {
+      "h2": "When I turn them off or down"
+    },
+    {
+      "list": [
+        "Practice sessions where I want to build real brake and throttle control.",
+        "Qualifying or time trials once I know the car well enough to push without the net.",
+        "Series where the aids are limited or not allowed, since I do not want to learn habits I cannot use there.",
+        "Any time I notice I am leaning on the aid in a corner instead of fixing my inputs."
+      ]
+    },
+    {
+      "tip": "If a car lets you lower the aid gradually instead of switching it fully off, step it down a notch at a time across a few sessions. The jump from full help to none is where most people spin.",
+      "tipLabel": "Practice tip"
+    },
+    {
+      "h2": "How the aids change your braking technique"
+    },
+    {
+      "p": "Without ABS, the goal is a firm initial brake application followed by a smooth release, a technique usually called trail braking when it carries into the corner. You feel for the moment just before the tyres lock and you hold the pedal right at that edge. On my CRP2 pedals the load cell makes that easy to feel, because I am reading pressure, not just travel. If you are using a pedal with a spring and a travel-based sensor, the feel is different and the pedal may be harder to modulate at the limit."
+    },
+    {
+      "p": "With ABS on, you can brake later and harder, but you should still release smoothly. Many drivers get lazy with the release when ABS is active, which upsets the car's balance on corner entry. A good test is to ask whether your steering and brake release feel the same with and without the aid. If they feel very different, the aid is covering something."
+    },
+    {
+      "h2": "How the aids change your throttle technique"
+    },
+    {
+      "p": "Traction control rewards early full throttle. Without it, you need to roll onto the power, matching the throttle to the available grip and your steering angle. The rule of thumb is to unwind the steering while you add throttle so the tyre is not asked to turn and accelerate at full capacity at the same moment."
+    },
+    {
+      "p": "If you have a pedal set that lets you tune the throttle curve, a gentler curve near the start of the travel gives you more control at low throttle, which is where wheelspin begins. I keep my curve linear and rely on practice, but I can see why people use a curve while they build the habit."
+    },
+    {
+      "olist": [
+        "Brake in a straight line and release smoothly as you start to turn.",
+        "Pick your throttle application point after the apex rather than at it.",
+        "Add power progressively while you unwind the steering.",
+        "Watch the rear of the car on the exit: if it steps out, you were too early or too hard."
+      ]
+    },
+    {
+      "h2": "Using the replay and telemetry to see what the aid hides"
+    },
+    {
+      "p": "A good way to see the effect of an aid is to record a lap with it on and a lap with it off, then compare. Look at brake pressure, steering and throttle traces in the telemetry. With ABS on, the brake trace often shows a flat, hard peak. Without it, a good lap shows a sharp rise, a clear peak and a gradual release. The shape of the trace tells you more than the lap time does."
+    },
+    {
+      "p": "If you do not use telemetry, the replay works too. Watch the front tyres under braking and the rear tyres under power. Smoke, a flat spot sound or a car that wiggles on exit are signals that you are asking too much. Use them to guide the next session."
+    },
+    {
+      "h2": "A simple plan for the next week"
+    },
+    {
+      "p": "Pick one car you drive often. In the first session, run with the aids on and focus only on clean laps. In the second, lower the aid one step if the car allows it and repeat the same laps. In the third, run without the aid and compare feel and consistency. You are not trying to prove that driving without help is better. You are building a feel that you can choose to use when it matters."
+    },
+    {
+      "p": "Treat the aid as a tool, not a verdict. It is fine to use it in a race where it keeps you safe and to turn it off in practice to learn. Just be honest about which one you are doing, so the habits you build are the ones you want."
+    },
+    {
+      "tip": "Check the garage options and the series rules before every session. Do not assume that a car or a series uses the same aid settings as last season.",
+      "tipLabel": "Before you go out"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do all iRacing cars have ABS and traction control?",
+      "a": "No. Some cars offer adjustable ABS or traction control, while many purpose-built race cars have neither. Check the car's garage options and the series rules before each session instead of assuming."
+    },
+    {
+      "q": "Is driving without ABS faster in iRacing?",
+      "a": "It can be, because you control brake pressure and tyre wear yourself, but only once you have built the feel for it. For a newer driver, keeping the aid on may give more consistent laps and fewer incidents."
+    },
+    {
+      "q": "How do I practise without traction control?",
+      "a": "Step the aid down gradually if the car allows it, unwind the steering as you add throttle, and apply power progressively after the apex. Use the replay to watch the rear tyres on corner exit."
+    },
+    {
+      "q": "Does my pedal set matter for braking without ABS?",
+      "a": "Yes. A load cell pedal measures pressure, which makes it easier to hold the brake just below the lock-up point. A travel-based pedal can still work, but it usually takes more practice to modulate at the limit."
+    }
+  ]
+}
