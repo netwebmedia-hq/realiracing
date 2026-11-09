@@ -1,0 +1,142 @@
+{
+  "slug": "super-formula-lights-iracing-guide",
+  "tag": "Car Guide · Open Wheel",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Super Formula Lights iRacing guide: setup, braking, throttle control",
+  "description": "Learn how to drive the SF23 Lights competitive on iRacing. Setup baseline, braking technique, and throttle management for consistent lap times.",
+  "sections": [
+    {
+      "p": "The Super Formula Lights SF23 sits between the Dallara F3 and the full Super Formula SF23 in iRacing's open-wheel progression. It is quicker, more forgiving on entry, and more demanding on exit than the F3. Drivers often expect it to feel like a larger car with more grip, but the SF23 Lights rewards precision in throttle application and corner entry speed more than raw aggression."
+    },
+    {
+      "p": "This guide covers the fundamental differences in how you approach the SF23 Lights relative to junior open-wheel cars, baseline setup tuning, braking markers, and the throttle control required to extract consistent pace without crashing."
+    },
+    {
+      "h2": "Setup baseline and aerodynamic balance"
+    },
+    {
+      "p": "Start with the default setup and run 15-20 laps before making changes. The SF23 Lights is more sensitive to aero balance than the F3. A common baseline is neutral to slightly rear-biased aero (50/50 to 52/48 front to rear), which gives you predictable mid-corner rotation without loose front entry."
+    },
+    {
+      "list": [
+        "Ride height: start at minimum front, 2-3 mm rear. Lower ride height increases aero load and downforce. Increase rear ride height if the car feels planted on corner exit but loose on entry.",
+        "Anti-roll bars: front bar stiffer than rear for understeer control on long corners. A ratio of 10 front to 7 rear is a working starting point. Adjust front bar stiffness first if the car is loose or tight.",
+        "Brake bias: set 55-58 percent to front. The SF23 Lights has harder braking markers than the F3, so front bias is higher. Adjust bias backward if you lock the fronts repeatedly; forward if you lose confidence on late braking.",
+        "Differential: coast lock at 40-50 percent, power lock at 60-70 percent. Lower coast lock makes the rear slide on entry, which helps rotation but reduces edge grip. Increase coast lock if you are spun by understeer on turn-in."
+      ]
+    },
+    {
+      "tip": "Do not run aggressive front wing immediately. Pilots often add front wing to fix loose mid-corner behavior, but loose mid-corner is usually a throttle control or brake bias issue, not aero. Fix steering input first, then aero.",
+      "tipLabel": "Loose mid-corner fix"
+    },
+    {
+      "h2": "Braking and trail braking technique"
+    },
+    {
+      "p": "The SF23 Lights brakes later than the F3 and requires smooth brake application to avoid locking the fronts. Many drivers brake too hard at trail-brake entry and lose speed entering the turn. Progressive braking that releases brake pressure gradually into the corner is the fastest method."
+    },
+    {
+      "p": "Start your braking marker slightly later than you did in the F3. On most high-speed corners (130+ mph entry speed), move your marker 1-2 car lengths deeper into the braking zone. On slower corners, the difference is smaller. Once you find your marker, brake in a straight line for the first 50 percent of deceleration, then begin releasing brake pressure as you turn in."
+    },
+    {
+      "list": [
+        "Trail brake pressure: start with 60-70 percent brake force at turn-in and release to 20-40 percent by mid-corner. Release brake force progressively; avoid abrupt on/off inputs.",
+        "Lock prevention: if you are locking the fronts on entry, you are either braking too late, too hard, or not releasing brake pressure smoothly. Move your marker earlier by one car length and try again.",
+        "Threshold braking on downhill braking zones: brakes have more power downhill because weight transfers to the front. Use lighter pedal pressure and release earlier than on flat ground.",
+        "Brake temperature management: the SF23 Lights brakes heat up quickly in endurance stints. Monitor brake temperature on your dash. If brakes fade mid-stint, begin braking earlier to lower temperatures in the second half of the stint."
+      ]
+    },
+    {
+      "h2": "Throttle control and mid-corner momentum"
+    },
+    {
+      "p": "This is the largest difference from junior open-wheel cars. The SF23 Lights is sensitive to throttle input mid-corner. Applying throttle too aggressively destabilizes the rear and causes oversteer. Conversely, steering is slow if you delay throttle application waiting for the apex. The fastest drivers apply small throttle inputs early, building momentum smoothly."
+    },
+    {
+      "olist": [
+        "Apex speed first: decide your target apex speed before you enter the turn. Set your braking and entry speed to hit that apex speed with 100 percent throttle applied by the apex.",
+        "Smooth throttle progression: after turn-in, remain off throttle for 2-3 meters (roughly one-tenth of a second). Begin applying throttle gradually at 25 percent, then step to 50 percent by mid-corner, and reach 100 percent at or just before the apex.",
+        "Avoid on-off inputs: sudden throttle stabs cause the rear to slide. Smooth, progressive inputs keep the car stable.",
+        "Exit grip: once at 100 percent throttle at the apex, you have full power. Do not reduce throttle after the apex unless you are losing the rear. Keep your hands smooth and let the downforce stabilize the car through exit."
+      ]
+    },
+    {
+      "p": "A common error is lifting off throttle mid-corner to tighten the line. This causes sudden weight transfer rearward and oversteer. Instead, adjust your entry speed and apex speed target in the next lap. Consistency comes from committing to an apex speed and holding it with smooth inputs, not correcting mid-corner."
+    },
+    {
+      "tip": "Record a clean lap and compare your throttle trace to a faster pilot's on the same track. Most SF23 Lights lag time comes from insufficient throttle application before the apex, not from braking later.",
+      "tipLabel": "Debug your pace"
+    },
+    {
+      "h2": "Common driver errors and fixes"
+    },
+    {
+      "list": [
+        "Loose mid-corner despite soft aero: you are releasing brake pressure too quickly or applying throttle too early. Delay throttle application by 0.1-0.2 seconds and hold a small brake pressure into mid-corner (5-10 percent).",
+        "Spinning on corner exit: you are applying full throttle before reaching the apex, or your apex speed is too high. Lower your target apex speed by 2-3 mph and progress throttle more slowly.",
+        "Slow corner exit and low top speed on straights: you are not at 100 percent throttle by the apex. Check your telemetry. If throttle position is below 80 percent at the apex, you are leaving pace on the table.",
+        "Locking fronts and unable to fix with brake bias: your braking point is too late. Move it one car length earlier and see if lock disappears. If it does, your brake bias is correct."
+      ]
+    },
+    {
+      "h2": "Tire management across a stint"
+    },
+    {
+      "p": "The SF23 Lights tires degrade faster than the F3 tires, especially the front left and rear right in right-hand turns. After 20 laps, you will lose 0.3-0.5 seconds of pace. Plan your qualifying and race strategy accordingly."
+    },
+    {
+      "p": "In practice, run heat-cycle laps (one or two aggressive laps to warm tires, then two cooling laps) to match tire temperature in qualifying. In longer races, plan a pit stop around 30-40 minutes to swap tires before tire degradation costs more than 0.8 seconds per lap."
+    },
+    {
+      "list": [
+        "Tire pressure: start with 26-27 psi front and 26-27 psi rear. Tire pressure increases 0.5-1 psi per 10 laps due to heat. If tires are at 28+ psi by mid-stint, pit earlier.",
+        "Qualifying tires: use the heat cycle method to ensure tires are fully warm before your qualifying lap. Cold tires cost 0.2-0.3 seconds in the first lap.",
+        "Race tire management: pace your first 5 laps at 95 percent effort to bed tires. Run full pace laps 6-30. Plan a pit stop before lap 40 if tires are overheating."
+      ]
+    },
+    {
+      "h2": "Streaming and recording setup"
+    },
+    {
+      "p": "I stream and record iRacing races on OBS using the RTX 5060 Ti on a 1440p 120 Hz monitor. The SF23 Lights at most tracks runs above 100 fps at high settings. Enable G-SYNC in your monitor settings and set OBS to capture at 60 fps. This balance preserves your frame rate in the sim while providing a smooth stream or recording file."
+    },
+    {
+      "p": "When comparing your lap to faster drivers, use RaceHub or iRacing's telemetry viewer to overlay throttle, brake, and steering traces. These tools reveal exactly where you lose time relative to the car ahead. This is more effective than reviewing onboard footage alone. Capture 2-3 clean laps per track in practice and save them for review during the offseason."
+    },
+    {
+      "h2": "Recommended progression"
+    },
+    {
+      "p": "If you are stepping up from the Dallara F3, your first session in the SF23 Lights will feel slow and loose. This is normal. Commit to 30 laps before you adjust setup or conclude the car is wrong for you. By lap 20, the car will feel more planted as you adapt your throttle application and braking technique."
+    },
+    {
+      "p": "After 50 laps, you should be within 1 second of your personal F3 pace at the same track. After 200 laps across multiple tracks, you will be near your baseline pace and ready to focus on setup tuning. A safe approach is to run a track you know well (Okayama, Suzuka, or Spa) and complete 50 laps in a single session to build muscle memory before moving to unfamiliar tracks."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much harder should I brake in the SF23 Lights compared to the F3?",
+      "a": "The SF23 Lights brakes 8-12 percent harder than the F3 at most tracks. This means your braking marker moves deeper into the braking zone by roughly one car length at high-speed corners. Start with your F3 marker and move it one car length deeper, then adjust forward or backward based on whether you lock the fronts or run wide."
+    },
+    {
+      "q": "Why does my car feel loose mid-corner even with a soft front wing?",
+      "a": "Loose mid-corner is usually a throttle or brake issue, not aero. You are either releasing brake pressure too quickly (causing sudden weight transfer rearward) or applying throttle before your target apex. Delay throttle application and hold a small brake pressure (5-10 percent) into mid-corner. If that fixes it, your aero setup is correct."
+    },
+    {
+      "q": "What is a safe brake bias starting point for the SF23 Lights?",
+      "a": "Start with 55-58 percent front bias. Most drivers find 56-57 percent front produces consistent braking without lock-ups on typical road courses. If you are locking the fronts, move bias backward by 1 percent. If you lose front confidence on late braking, move bias forward by 1 percent."
+    },
+    {
+      "q": "How often should I pit in a 60-minute SF23 Lights race?",
+      "a": "One pit stop between lap 30 and lap 40 is typical for a 60-minute race on a road course. Tire degradation costs you 0.3-0.5 seconds per lap by lap 40, so a pit stop is faster than running the full race on one set. Monitor tire pressure in practice. If tires reach 28+ psi by lap 35, pit closer to lap 30."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-cs-v2",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-09",
+  "dateLabel": "November 9, 2026"
+}

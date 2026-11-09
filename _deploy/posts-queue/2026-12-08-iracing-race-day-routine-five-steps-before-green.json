@@ -1,0 +1,106 @@
+{
+  "slug": "iracing-race-day-routine-five-steps-before-green",
+  "tag": "iRacing Tips · Racecraft",
+  "author": "Carlos Martinez",
+  "readTime": "6 min read",
+  "title": "Pre-race routine for official iRacing events: five steps before green",
+  "description": "A structured five-step routine to settle nerves, verify your setup, and arrive at the grid focused and ready to race.",
+  "sections": [
+    {
+      "p": "Most drivers arrive at the grid minutes before the race start. The wheel is plugged in, the brake is pumped, and the race UI appears. Then the nerves hit. Your hands are tighter on the rim. Your focus splinters between the delta bar, the timing display, and the pit lane ahead. A proper pre-race routine collapses that noise into one continuous preparation. You arrive at the grid calm, your setup confirmed, your breathing steady, and your first lap already visualized. That is the frame of mind that stops anxiety from eating into your opening lap pace."
+    },
+    {
+      "h2": "Why a routine matters in official racing"
+    },
+    {
+      "p": "Official races carry real consequences. Your license rating, your iRating, your division standing, and your streak all hinge on the next 30 to 90 minutes. That weight creates mental friction. A routine removes the friction by replacing choice with procedure. You do not ask yourself whether you are ready. You follow the steps, and readiness arrives as a side effect. Routine also creates consistency. Every race you prepare the same way. Over time, your mind learns to enter that same focused state on command, not by accident."
+    },
+    {
+      "p": "The routine also catches failures before they cost you. A wheel calibration issue, a pedal axis that has drifted, an FFB setting that is too high for your wheelbase, or a cockpit component that has loosened—these things kill entire race days. Finding them now, in a calm walk-through, beats discovering them on lap three at full throttle."
+    },
+    {
+      "h2": "Step one: arrive early and power down your system"
+    },
+    {
+      "p": "Join the server 15 to 20 minutes before the scheduled race start. Do not use this time to fumble with last-minute setup edits or chat with other drivers. Close Discord, close Spotify, close your browser. Launch iRacing, load the race, and set your initial car setup from the series default or from a baseline you trust. If you have a saved setup from practice, load that. If not, use the stock tune and commit to it. Changing suspension geometry in the final minutes creates new unknowns. You are here to validate, not redesign."
+    },
+    {
+      "p": "Once iRacing is open and the car is in your hands, sit still for two minutes. Check your posture. Your back should be against the seat, your arms at roughly 90 degrees at full lock, your legs positioned so you can press throttle and brake without hip rotation. Adjust cockpit components if they have shifted since your last session. Loosen any clamps that have tightened around your rig."
+    },
+    {
+      "h2": "Step two: run the wheel and pedal system check"
+    },
+    {
+      "p": "Open the iRacing settings panel. Navigate to Controls and then Calibration. Run a full wheel calibration: center the wheel, turn it lock to left, turn it lock to right, then center it again. The calibration should complete without warnings. If any message appears, stop. Disconnect the wheel at the USB port, wait five seconds, reconnect it, and run the calibration again. Nine out of ten times this clears a firmware hiccup. If the warning persists, you have a hardware issue that will not resolve in the next ten minutes. Consider withdrawing from the race rather than starting with a compromised input device."
+    },
+    {
+      "p": "Next, calibrate your pedals. Press the brake pedal at half travel, then full travel, then release. Do the same for throttle and clutch if you use them. In the pedal input graph on the right side of the calibration screen, all three should produce smooth, linear lines from zero to maximum with no flatness, spikes, or dead zones. A flat spot at the top of the brake curve is the most common failure. It means load cell sensitivity is drifting and you will lose consistency under braking. If you spot this, check the pedal cable at both ends of its connection, reseat it firmly, and run the calibration again. If the curve remains flat, consider withdrawing."
+    },
+    {
+      "tip": "Test FFB strength now. Turn the wheel lock to lock in both directions with engine off. The resistance should feel crisp and predictable, not mushy or grabby. If something feels off—stiffness that was not there yesterday, a catch mid-lock, or dead zones around center—your FFB offset or damping is drifting. Do not assume you will adapt. A baseline adjustment now will save your race.",
+      "tipLabel": "FFB health check"
+    },
+    {
+      "h2": "Step three: complete a full out-lap simulation"
+    },
+    {
+      "p": "Enter the practice session on the same track at the same time of day as the race. Set the weather to match the race grid. Drive a complete lap at race pace. Do not push for a personal best. Instead, drive the line you will use on lap one of the race: smooth entry, progressive throttle, standard braking points. Feel the car respond. Listen for any audio glitches, stuttering, or frame drops. If the frame rate dips below your monitor refresh rate (typically 120 Hz), your GPU or CPU may be too loaded. Check your graphics settings and reduce them if needed before the race starts."
+    },
+    {
+      "p": "On the second lap, practice your start. Exit the pits, enter the grid area, and accelerate as if the green flag is coming. Feel the throttle response and the wheel weight. Get the pedal axis behavior under your feet. By lap three, your muscle memory has reacquainted itself with this car, track, and setup."
+    },
+    {
+      "h2": "Step four: lock in your mindset"
+    },
+    {
+      "p": "Exit the practice session and close iRacing. Step away from the rig for three minutes. Drink water. Use the restroom. Take three deep breaths. Your heart rate should be steady and calm. When you return, do not open iRacing again until two minutes before the race. Your mind needs that break to transition from practice mode to race mode."
+    },
+    {
+      "p": "One minute before the scheduled start time, rejoin the server and enter the queue for the race. Once you are in the grid, your routine is almost finished. Check your mirrors and camera angle one last time. If they are not how you set them, cycle the view again. Confirm your pit strategy is set. Take a final breath. You have done the work. The next 30 to 90 minutes are now just execution of what you already prepared."
+    },
+    {
+      "tip": "Visualization on the grid is not forced. A two-second mental picture of your first four turns is enough. Do not rehearse the entire race in your head. That breeds doubt. Instead, see turn one clearly, commit to that one moment, and let lap one unfold.",
+      "tipLabel": "Grid-side focus"
+    },
+    {
+      "h2": "What to do if something breaks during the routine"
+    },
+    {
+      "p": "A calibration warning, a frame rate stutter, a wheel glitch, or a pedal dead zone during your routine is not a distraction. It is information. That information now arrives with 10 to 15 minutes to spare. You have time to troubleshoot, time to roll back a driver update, or time to make a graceful withdrawal before the race begins. Drivers who skip the routine and discover these problems at lap one have already lost three things: lap time, license rating, and the race itself."
+    },
+    {
+      "p": "A withdrawal 10 minutes before the race is a loss. A DNF and a safety-rating hit at lap ten is catastrophic. Choose the first every time."
+    },
+    {
+      "h2": "The payoff"
+    },
+    {
+      "p": "A structured pre-race routine takes 20 minutes. Followed consistently, it catches failures, settles nerves, and builds confidence. You arrive at the green flag with a clear mind and a car you have already validated. That is not a guarantee of a win. It is the foundation of your best performance when it counts most. For more insight into race preparation, see the guide on <a href=\"iracing-pre-race-routine-five-minutes-before-green.html\">pre-race mindset in the final minutes before the start</a>, which covers breathing and mental focus once you are already on the grid."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much earlier than the race should I arrive on the server?",
+      "a": "Join 15 to 20 minutes before the scheduled start. This gives you time to load the race, validate your setup, run calibrations, complete a full out-lap practice, and return to the grid without rushing. If you arrive later, you skip the out-lap and forfeit critical feedback about frame rate, wheel feel, and track conditions."
+    },
+    {
+      "q": "Should I change my setup during the pre-race routine?",
+      "a": "No. Load a setup from practice or the series default, then lock it in. Changing suspension geometry, wing angle, or brake balance in the final 15 minutes introduces variables you have not tested. You will arrive at the grid uncertain about how the car will behave. Commit to what you know and save setup work for practice sessions."
+    },
+    {
+      "q": "What does a failed FFB or pedal calibration mean for my race?",
+      "a": "A failed calibration means your input device is not communicating cleanly with the sim. FFB flatness, pedal dead zones, or wheel lock warnings will hurt consistency and lap time. More critically, they signal a hardware issue that will not fix itself during the race. Troubleshoot it now. If it persists after a reconnect and recalibration, withdrawing before the start is better than suffering a DNF or iRating loss mid-race."
+    },
+    {
+      "q": "Can I skip the practice out-lap if I have already raced this track this season?",
+      "a": "No. Weather, time of day, and car setup change. The track grip and your brake balance respond to those changes. One out-lap at race pace and race conditions tells you whether your car is balanced or whether you need a quick adjustment. Skipping it leaves you guessing on lap one."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-09",
+  "dateLabel": "November 9, 2026"
+}

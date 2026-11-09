@@ -1,0 +1,140 @@
+{
+  "slug": "las-vegas-motor-speedway-iracing-guide",
+  "tag": "Track Guides · Oval Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Las Vegas Motor Speedway iRacing guide: banking, lane choice, fuel",
+  "description": "Learn the line choices, tire wear patterns, and fuel strategy for LVMS oval racing in iRacing.",
+  "sections": [
+    {
+      "p": "Las Vegas Motor Speedway presents one of the most physically demanding oval tracks in iRacing. The 1.5-mile D-shaped layout sits at 12 degrees of banking in the turns and 6 degrees on the straights, fast enough to run flat-out through the corners but tight enough that mistakes compound quickly. Throttle control, lane discipline, and fuel awareness separate competitive runs from slow traffic."
+    },
+    {
+      "p": "This guide covers the fundamentals: where to find grip, how to manage tire degradation across a long stint, when to lift, and how fuel strategy plays into your pit call and final laps. Most drivers arrive at LVMS with street-circuit habits and struggle to trust the banking. The track rewards smooth inputs and patience on entry and exit."
+    },
+    {
+      "h2": "Track layout and banking"
+    },
+    {
+      "p": "The 1.5-mile oval features two 120-foot-long straights connected by heavily banked turn complexes. Turns 1 and 2 are identical in shape and banking to turns 3 and 4. The straightaway from turn 2 to turn 3 is the main passing zone, while the backstretch presents fewer overtaking opportunities because most drivers run similarly quick lines there."
+    },
+    {
+      "p": "The banking angle means the high line (near the wall) is always faster on entry because it trades gravitational grip for less steering input. Coming off the straights, the low line is often competitive on exit because it's shorter and allows earlier throttle. This creates a natural flow: enter high, drop to the low line mid-corner, and exit accelerating upward. Deviating from that sequence costs time and stability."
+    },
+    {
+      "list": [
+        "Turns 1-2 and 3-4: 12 degrees of banking, nearly flat-out speeds in stock cars and lighter machines",
+        "Main straightaway: Defined passing zone; position matters before entry to turn 1",
+        "Backstretch: Tighter racing, single-file flow due to banking geometry",
+        "Low-grip transitions: Turn-in at turns 1 and 3, especially under caution or early in the run"
+      ]
+    },
+    {
+      "h2": "Grip and tire wear over a stint"
+    },
+    {
+      "p": "Tires come in hot and peak after 3 to 5 laps. Early in a run, confidence on cold tires is the limiting factor. Many drivers overdrive entry, scrub the front tires, and then wonder why they're loose on exit. Start conservative and let the track temperature and tire grip build."
+    },
+    {
+      "p": "Tire wear accelerates after lap 15 to 20, depending on fuel load and downforce. The left tires (in a stock car) suffer more because LVMS is a left-turn-dominant track. Managing throttle application in turns 1 and 3, where scrubbing kills remaining grip, becomes critical in the second half of a run. Drivers who feather the throttle in those corners often out-pace drivers who mash it and slide."
+    },
+    {
+      "tip": "On cold tires, treat the low line through the center of the turn as your primary line. The high line is tempting but punishes loose, aggressive inputs. Wait for lap 4 or 5 before hunting for high-line speed.",
+      "tipLabel": "Cold Tire Tempo"
+    },
+    {
+      "h2": "Line choices and lane discipline"
+    },
+    {
+      "p": "The high lane (near the wall) is fastest in clean air because the banking holds you up and reduces the steering lock needed. The middle and low lanes are shorter but demand more precise throttle control and carry more risk if traffic appears suddenly."
+    },
+    {
+      "p": "When trailing another car, the low line offers better sight lines for exit and reduces the time spent in the disturbed air directly behind. Switching lanes on entry eats momentum and time, so commit to a lane 2 to 3 car lengths before turn-in. On the straights, move for position early. Last-minute lane changes invite incidents."
+    },
+    {
+      "p": "In traffic, the high line is defensible. A following car struggles to make a move on the wall. If you're the pursuer, drop to the low line mid-corner and use the shorter path to close the gap on exit. Many drivers panic and climb the banking, which kills momentum and breaks traction."
+    },
+    {
+      "list": [
+        "High line, clean air: Fastest, requires smooth throttle application, defensive position",
+        "Low line in traffic: Shorter, better visibility behind, useful for passing or stalking a rival",
+        "Mid-corner lane switch: Costs time and stability; avoid unless running wide for damage or debris",
+        "Backstretch positioning: Multiple lines available; the low line is safest in congestion"
+      ]
+    },
+    {
+      "h2": "Fuel strategy and pit planning"
+    },
+    {
+      "p": "Fuel consumption at LVMS depends on throttle management, fuel tank capacity, and whether the track is running full throttle or under yellow conditions. A typical race distance determines pit frequency. In a 20-minute race, one stop is common. In a 45-minute or longer event, plan two stops and manage fuel around caution periods."
+    },
+    {
+      "p": "The math is straightforward: estimate your fuel burn per lap in practice and calculate laps per tank. Most drivers can run 25 to 35 laps per tank in a stock car, depending on fuel management. Pushing every lap burns more; running smooth and on line preserves fuel. A late caution that bunches the field often means a final sprint under green or a shootout for position after one more pit cycle."
+    },
+    {
+      "p": "Pit strategy often splits a race. Taking fuel only and short-filling to save weight can move you up, or taking a full tank to extend a run can position you well later. If you're off the pace early, don't risk fuel strategy gambling. Focus on consistent lap times and pit on the same schedule as the field. Outlap position after a caution is decided by pit crew speed and your entry into turn 1 on the restart, not fuel math."
+    },
+    {
+      "tip": "In the final 10 laps, know your fuel window exactly. If you have 2 laps of fuel left and a caution flies, you may not have enough to pit and rejoin ahead of the leaders. Pit early if uncertain; track position after a late caution is worth the gamble.",
+      "tipLabel": "Fuel Window Math"
+    },
+    {
+      "h2": "Common mistakes and fixes"
+    },
+    {
+      "p": "The high banking often tricks new LVMS drivers into carrying too much speed into turns 1 and 3. Brake pressure and trail-braking discipline matter as much here as on a road course. Locking the front tires or turning in too hot kills the run. Ease into the turn with steady brake release and allow the banking to carry you."
+    },
+    {
+      "p": "Another frequent error is running the low line exclusively and then struggling when traffic builds. The low line isn't always faster in a race. Practice the high line and mid-corner paths so you have options when you need them. Defensive racing demands flexibility."
+    },
+    {
+      "p": "Fuel panic costs races. Many drivers pit too early because they believe they're low on fuel, only to discover they had laps left. Calculate conservatively and trust the math. If you're genuinely unsure, log a few practice laps and note fuel at every lap interval."
+    },
+    {
+      "olist": [
+        "Overbraking on entry: Back off brake pressure and lengthen your trail-braking zone. The banking supports you if you let it.",
+        "Single-lane racecraft: Practice the high and low lines in practice. Build confidence on multiple paths so you're not trapped behind a rival.",
+        "Erratic fuel decisions: Time a few laps, multiply by race distance, and add 10 percent margin. Pit when your calculation says so, not when you feel nervous.",
+        "Cold-tire overconfidence: Run the first 5 laps smooth, not fast. Peak pace comes after tire warm-up. Early aggression leads to early crashes."
+      ]
+    },
+    {
+      "h2": "Practice session structure"
+    },
+    {
+      "p": "Spend the first 10 minutes of practice learning the braking zones. Hit the marks at 100 percent confidence; don't guess. Then run 5 laps at race pace and log your fuel consumption. Jump into a 5-lap quali sim if the session allows, and finish with a 10-lap race simulation under yellow flags to practice restarts and pit-stop timing."
+    },
+    {
+      "p": "If you're new to LVMS or playing with setup changes, focus on consistency over peak lap time. A 0.1-second variation lap-to-lap means you're building trust. A 0.3 or 0.4-second swing means you're pushing beyond the limit and will crash in a race. Sim racing doesn't reward one heroic lap; it rewards 20 clean ones."
+    },
+    {
+      "tip": "In the final 5 minutes of practice, run the exact car setup and fuel load you'll carry into the race. One practice lap at race conditions tells you more than 10 qualifying laps in an unrealistic setup.",
+      "tipLabel": "Setup Parity Check"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I always run the high line at Las Vegas Motor Speedway?",
+      "a": "No. The high line is fastest in clean air, but in traffic the low line offers better sight lines and a shorter path. Practice both so you can choose based on race conditions. Defensive racers hold the high line; attackers exploit the low line for passing."
+    },
+    {
+      "q": "How many laps can I run per tank of fuel at LVMS?",
+      "a": "Expect 25 to 35 laps per tank in a stock car, depending on throttle discipline and fuel tank size. Log a few practice laps at target pace, record your fuel at each lap, and calculate your actual consumption. Add 10 percent safety margin when planning pit stops."
+    },
+    {
+      "q": "Why do I loose traction on exit from turns 1 and 3?",
+      "a": "The left-side tires are under high load at LVMS due to the banking and turn direction. If you apply throttle too aggressively or come in too hot, the front tires are already at their limit and can't support additional input. Feather throttle application on exit and shorten your trail-braking zone on entry."
+    },
+    {
+      "q": "How do I know when to pit in a race with caution flags?",
+      "a": "Track your fuel window before the race starts. Calculate how many laps you can run, note when you'll be low, and pit on that schedule unless a caution bunches the field. If a caution flies and you're within 2 or 3 laps of your pit window, pit immediately to maintain position. Last-second fuel decisions under pressure lead to mistakes."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "monitor-1440p-120",
+    "gpu-rtx-5060-ti"
+  ],
+  "published": "2026-11-09",
+  "dateLabel": "November 9, 2026"
+}

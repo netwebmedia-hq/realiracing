@@ -1,0 +1,141 @@
+{
+  "slug": "nascar-xfinity-series-iracing-guide",
+  "tag": "Car Guide · Oval Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "NASCAR Xfinity Series iRacing Guide: Setup, Racing Line, Tire Strategy",
+  "description": "Master the Xfinity car on oval tracks. Learn setup fundamentals, racing line discipline, and tire-wear strategy to stay competitive.",
+  "sections": [
+    {
+      "h2": "Xfinity Car Characteristics and Handling"
+    },
+    {
+      "p": "The NASCAR Xfinity Series car sits between the Rookie stock car and the Cup Series machine in terms of downforce, power, and braking capacity. The Xfinity delivers ~750 horsepower and carries significant aerodynamic load, which means it responds sharply to small setup changes. Understeer and oversteer can flip quickly if you chase the balance instead of building a stable baseline."
+    },
+    {
+      "p": "The car generates grip through a combination of spring rates, anti-roll bars, and aerodynamic trim angle. Unlike road cars where you might dial in individual corner balance, oval setups on the Xfinity tend to favor symmetrical geometry. Front and rear springs, sway bars, and shock settings all work together to manage the car's tendency to push or loose under sustained cornering load."
+    },
+    {
+      "h2": "Baseline Setup Strategy"
+    },
+    {
+      "p": "Start with a balanced setup that does not over-commit to either the entry or exit phase of a turn. Most drivers begin with a modest amount of wedge (cross-weight transfer), around 50-100 pounds, depending on track banking and your preferred driving style. Wedge makes the car tighter in the center of the turn and looser off the corner. If you find yourself fighting the wheel through turns, you have too much wedge."
+    },
+    {
+      "list": [
+        "Front anti-roll bar: Medium stiffness (~60-70 percent of max) to control entry understeer without killing the front-end grip.",
+        "Rear anti-roll bar: Slightly softer than front to allow the rear to rotate and help you exit the turn cleanly.",
+        "Spring stiffness: Symmetric front and rear is a safe starting point; adjust in small increments if the car feels loose or tight over bumps.",
+        "Brake bias: Typically 50-55 percent front (varies by track). Test on a practice run to avoid locking the rear wheels.",
+        "Tire pressure: Increase pressure by ~1-2 PSI for high-speed tracks; lower pressure on short tracks provides more mechanical grip at the cost of tire wear."
+      ]
+    },
+    {
+      "tip": "Oval setups reward consistency over aggression. A car that is 0.1 seconds slower but predictable through 10 laps will beat a car that is 0.2 seconds faster but unstable. Build a setup that lets you repeat your line every single lap.",
+      "tipLabel": "Baseline Philosophy"
+    },
+    {
+      "h2": "Racing Line and Throttle Application"
+    },
+    {
+      "p": "The Xfinity car teaches discipline around the oval. Brake as late as you safely can, but brake in a straight line. Most drivers brake too hard into the turn, which unsettles the front end and forces you to use more steering angle. Use steady, controlled pressure and release the brakes while pointing the car toward the apex."
+    },
+    {
+      "p": "Throttle application begins as soon as the front wheels are pointed toward the exit. The Xfinity generates significant power and will spin the rear tires if you stab the throttle mid-turn, so roll it in smoothly. Many competitive drivers use a two-stage throttle philosophy: light throttle through the middle of the turn, then aggressive application once the steering angle begins to unwind at exit."
+    },
+    {
+      "p": "On banked tracks, you can run higher in the groove early in the stint when tires are fresh, then drop lower as grip fades. The car will feel more responsive to inputs on new tires, so be prepared to make small setup adjustments if your car feels loose or tight after the first pit stop."
+    },
+    {
+      "h2": "Tire Management and Strategy"
+    },
+    {
+      "p": "Xfinity tires wear predictably if you drive a repeatable line. The front tires wear faster than the rears because they carry steering load and brake load. A typical 100-lap run will show measurable wear by lap 30 to 40, and significant pace loss by lap 70 to 80. Plan your pit strategy around two or three stops depending on caution flags and track position."
+    },
+    {
+      "list": [
+        "New tires: Tires come in hot and lose some grip in the first 5 to 10 laps as they cool. Expect a dip in pace right after pit stops.",
+        "Mid-life tires (laps 20-60): Peak performance window. Drive smoothly and build a gap if you are ahead, or plan your move if you are chasing.",
+        "Worn tires (laps 60-100): Tire fall-off becomes severe. Brake earlier, add throttle smoothly, and focus on hitting your marks. Pit stop strategy becomes critical.",
+        "Tire stagger: Xfinity setups often use stagger (smaller rear tire than front), which helps the car rotate and exit cleanly. Check the setup sheet and adjust if the car feels over-rotated or plowed at exit."
+      ]
+    },
+    {
+      "h2": "Common Setup Adjustments and Fixes"
+    },
+    {
+      "p": "A tight car (pushing) in the center of the turn means the front end is over-loaded. Remove wedge, soften the front anti-roll bar, or add air pressure to the front tires. A loose car (sliding the rear) needs more front grip or rear stability. Add wedge, stiffen the rear anti-roll bar, or increase rear tire pressure."
+    },
+    {
+      "p": "If the car feels good on entry but struggles mid-turn, the issue is spring stiffness. Stiffer springs resist body roll and load transfer, which helps control the car through high-speed corners. If the car feels planted but sluggish, the springs may be too stiff or the anti-roll bars too aggressive. Adjust one variable at a time and run the same lap five to ten times before deciding if the change worked."
+    },
+    {
+      "p": "Brake bias changes dramatically affect how the car behaves into the turn. More front brake bias (higher percentage) transfers weight to the front and slows the car more aggressively, but risks locking the front wheels on cold tires or bumpy sections. Start at 52 percent and adjust by single percentage increments only after you have mastered your line."
+    },
+    {
+      "h2": "Pit Stop Execution and Fuel Strategy"
+    },
+    {
+      "p": "Fuel strategy in Xfinity racing can win or lose a race. Calculate your fuel consumption per lap and plan stops so you are not stranded on the track or over-fueling and losing track position to slower crews. A typical pit stop takes about 12 to 14 seconds if you add four tires and fuel. Use practice sessions to measure your car's fuel burn at the track you are racing."
+    },
+    {
+      "p": "During pit stops, coast into your box smoothly and let the crew work without interference. Stay alert for pit-road speed limits, which vary by track. Pit-road speeding penalties cost you several laps and destroy your race. If you are unsure of the limit, ask in practice or watch a replay to confirm the legal speed."
+    },
+    {
+      "tip": "Two-stop strategy often beats three if you can manage tire wear and fuel correctly. Fewer stops mean fewer opportunities to lose time in the pits and fewer moments when you are vulnerable to on-track passes.",
+      "tipLabel": "Pit Strategy"
+    },
+    {
+      "h2": "Multi-Car Racing and Track Position"
+    },
+    {
+      "p": "Xfinity racing in online series rewards clean passes and aggressive defense without wrecking. Stay to the inside or outside of your competitor through the turn and complete the pass decisively. Half-passes are dangerous because a small mistake by either driver can cause contact."
+    },
+    {
+      "p": "Defending requires you to anticipate where the other car will move. If you see a car on your bumper heading into a turn, shift your line slightly earlier and smoother to encourage them to find a different passing point. Many passes happen in low-grip zones (like restarts), so be especially careful and patient in these moments."
+    },
+    {
+      "p": "Lead changes often come on pit stops. If you pit one lap before your rival, you might exit the pits with a gap. If they pit first, you have a chance to track them and plan a move on track. Study your rival's pit strategy throughout the race and adjust yours accordingly. Also see <a href=\"pit-stop-strategy-undercut-overcut-track-position.html\">pit stop strategy guide</a> for in-depth examples."
+    },
+    {
+      "h2": "Practice Session Drill for Consistency"
+    },
+    {
+      "p": "Run your baseline setup for 15 to 20 laps at race pace. Log your lap times and note which laps are faster or slower. A spread of more than 0.3 seconds between your fastest and slowest lap means your line or throttle input is inconsistent. Slow down slightly and focus on repeatable inputs rather than raw speed."
+    },
+    {
+      "olist": [
+        "Build pace over the first 5 laps as tires heat up.",
+        "Run laps 6 through 15 at your goal race pace and document each time.",
+        "Make one setup change if needed and repeat the drill.",
+        "If times improve by 0.1 to 0.2 seconds and consistency improves, keep the change. If not, revert.",
+        "Finish with a pit stop sim: brake hard, roll into the box, and prepare to accelerate back onto track immediately."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the best tire pressure for Xfinity racing?",
+      "a": "Tire pressure depends on track banking and speed. Short, flat tracks typically run 28 to 30 PSI front and rear. High-speed banked ovals may run 30 to 32 PSI to handle sustained cornering load. Start at the middle of your track's range, run 10 laps, and check tire temperatures. Hotter tires indicate lower pressure is needed; cooler tires suggest you can add pressure. Adjust in 0.5 PSI increments."
+    },
+    {
+      "q": "How do I know if my car is too tight or too loose?",
+      "a": "A tight car pushes the nose down in the turn and resists your steering input. You feel constant pressure on the wheel and struggle to point the car where you want. A loose car feels responsive at first but slides the rear mid-turn or on exit. Your steering wheel lightens and the car feels hard to control. Tight cars need less wedge or softer front bars. Loose cars need more wedge or stiffer rear bars."
+    },
+    {
+      "q": "Should I brake before or during the turn entry?",
+      "a": "Brake before and during the earliest part of turn entry if needed, but release the brakes as the steering angle increases. Braking while fully turned in unsettles the front end and reduces grip. Most Xfinity drivers brake hard in a straight line, then transition to coast or light throttle as the car points toward the apex. This keeps front-tire grip in reserve for steering."
+    },
+    {
+      "q": "How many pit stops should I plan for a 100-lap race?",
+      "a": "Two pit stops is common for 100 laps. Measure fuel consumption and tire wear in practice, then calculate when you will need to stop. Three stops is safer if your fuel economy is poor or if tires wear faster than expected, but it costs track position. Two stops works if you drive cleanly and manage tire degradation. Always have a backup strategy if a caution flag changes the timing."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-09",
+  "dateLabel": "November 9, 2026"
+}

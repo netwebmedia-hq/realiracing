@@ -1,0 +1,108 @@
+{
+  "slug": "ram-storage-iracing-system-requirements",
+  "tag": "Hardware · PC Setup",
+  "author": "Carlos Martinez",
+  "readTime": "6 min read",
+  "title": "RAM and Storage for iRacing: How much do you actually need?",
+  "description": "Cut through the confusion: real iRacing RAM and storage needs, what overkill looks like, and how to spend smart on PC memory.",
+  "sections": [
+    {
+      "p": "Every PC builder encounters the same question when planning an iRacing rig: how much RAM do I need, and how much storage should I budget for? The honest answer sits between marketing hype and false economy. iRacing is not a memory-intensive sim relative to modern games. A single-monitor, single-race session has modest requirements. But the sim's library of tracks and cars, plus streaming and recording, pushes real systems into territory where 32 GB RAM and 1 TB storage start to make sense for most drivers. This post walks through the actual numbers."
+    },
+    {
+      "h2": "Minimum versus practical RAM for iRacing alone"
+    },
+    {
+      "p": "iRacing's official minimum is 8 GB RAM. That figure is real. A clean 8 GB system running iRacing on a single 1440p monitor with no streaming, no streaming overlays beyond the delta bar, and a modest FFB setup will not hit a memory ceiling during a race. The sim typically holds 2-3 GB resident memory during load and race. Pageout (spill to disk) is rare on a fresh boot."
+    },
+    {
+      "p": "The catch appears when you add secondary tools. A Discord overlay, a web browser with three tabs, Spotify, or even a second monitor with static content can push active memory use to 6-7 GB before iRacing launches. When you add OBS with a 1080p 60 fps stream encoding, expect 8-12 GB total system memory in use during a broadcast race, depending on scene complexity and bitrate. At that point, 8 GB total becomes tight. A system that started with spare headroom shrinks. The first stutter often occurs mid-stream on lap 15 when background tasks compete for cache."
+    },
+    {
+      "tip": "16 GB RAM is the practical floor for most iRacing drivers, especially those who stream or run overlays. It buys you breathing room and removes the need to close every other application.",
+      "tipLabel": "Real-world baseline"
+    },
+    {
+      "h2": "When 32 GB makes sense and when it doesn't"
+    },
+    {
+      "p": "32 GB RAM is popular in iRacing builds. It is also often unnecessary. A single-monitor, non-streaming driver racing clean iRacing sessions will see zero performance gain between 16 GB and 32 GB. Modern Windows 11 with a solid-state drive (SSD) manages memory pressure well. Pageout is predictable and fast on an NVMe drive. Performance degradation from memory pressure is much more obvious on a 5400 RPM hard drive than on any modern SSD."
+    },
+    {
+      "p": "The case for 32 GB builds when you also stream, record video in parallel, run multiple monitors with live browser content, or keep a second PC-heavy application open during racing. Streamers who run complex OBS scenes with multiple video filters, motion graphics, chat overlays, or background music sources can consume 10-14 GB during a 2-hour endurance race. At that consumption rate, 16 GB total system memory forces the OS into cache pressure. Race performance stays stable, but your PC feels sluggish on purpose, and alt-tabbing mid-stream becomes a slowdown risk."
+    },
+    {
+      "p": "If you race clean, single-monitor, and stream via a dedicated second PC or a hardware encoder, stick with 16 GB. If you stream from one PC with everything open, 32 GB removes a source of second-guessing and gives you room to add new software later."
+    },
+    {
+      "h2": "Storage: track library and video files"
+    },
+    {
+      "p": "iRacing itself occupies roughly 30-35 GB on disk after a full installation and cache of all active content. That is not the storage bottleneck. The bottleneck is video recording. A single 1-hour iRacing session recorded at 1440p 60 fps using a modern codec (H.264 or H.265) will produce 3-6 GB per hour depending on bitrate and quality settings. An evening of two or three races fills 10-15 GB. A week of streaming clips or race saves adds 50-100 GB. A month of content reaches 200-300 GB. Archiving a single season of endurance racing or competitive league races can exceed 500 GB."
+    },
+    {
+      "p": "A 256 GB SSD is barely adequate if iRacing is the only game on the drive. A 512 GB drive leaves you ~450 GB free space after OS and iRacing, which covers 1-2 weeks of recording if you are selective. A 1 TB drive is practical for most streamers and content creators. A 2 TB drive removes the need to manage video files monthly."
+    },
+    {
+      "list": [
+        "256 GB SSD: iRacing only, no video recording or selective archive to external drive",
+        "512 GB SSD: iRacing plus 1-2 weeks of video clips before external backup required",
+        "1 TB SSD: iRacing, monthly video archive, comfortable margin for OS and other software",
+        "2 TB SSD: iRacing plus a full season of recorded content on internal drive"
+      ]
+    },
+    {
+      "tip": "Store long-term video archives on an external USB 3.1 or Thunderbolt drive to keep your iRacing drive from becoming a media vault. Reserve your fast SSD for OS, software, and active work.",
+      "tipLabel": "Storage strategy"
+    },
+    {
+      "h2": "The GPU and CPU bottleneck is more real than RAM"
+    },
+    {
+      "p": "Most iRacing performance gains come from GPU and CPU choice, not memory size. A system with a GPU (like an RTX 5060 Ti or better) and a modern multi-core CPU (Ryzen 7 5700 or newer) will hold smooth frame rates at high graphics settings on a single 1440p monitor at 120 Hz with 16 GB RAM. Adding another 16 GB of RAM does not increase frame rate. The same build at 8 GB RAM will drop frames only if memory pressure triggers page swaps during load or if secondary applications consume more than 5 GB during a race. That is rare on a clean system."
+    },
+    {
+      "p": "The scenario where RAM speed or latency becomes visible is high-refresh multi-monitor setups. A driver running iRacing at 4K or across triple 1440p monitors on a budget CPU can benefit from faster RAM (3600 MHz CAS 16 or better) because memory bandwidth compounds with GPU stress. For single-monitor racing, standard-speed RAM (3200 MHz) is sufficient."
+    },
+    {
+      "h2": "A practical spec checklist"
+    },
+    {
+      "olist": [
+        "Choose 16 GB RAM as your baseline. Verify your motherboard supports your target speed (3200 MHz or higher).",
+        "If you stream from one PC, upgrade to 32 GB. If you use a second PC for streaming or encoding, 16 GB is enough.",
+        "Install iRacing on a 1 TB NVMe SSD and store video archives on an external USB 3.1 drive to keep the internal drive responsive.",
+        "Prioritize GPU and CPU upgrade over RAM. An RTX 5060 Ti with 16 GB RAM will deliver better iRacing performance than an RTX 4060 with 32 GB.",
+        "Leave 10-15% free space on your SSD to prevent OS cache pressure and maintain maximum read-write speed."
+      ]
+    },
+    {
+      "p": "RAM and storage specs matter, but they matter less than frame rate targets and graphics settings. A system tuned for responsive gameplay and clean recording will outperform a system with twice the memory and poor GPU-CPU balance. Budget $60-100 for 16 GB RAM and $80-150 for a 1 TB NVMe SSD. That leaves more to spend on the wheelbase, pedals, or that <a href=\"best-sim-racing-cockpit-2026.html\">cockpit frame</a> that will have a larger effect on lap times."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I run iRacing on 8 GB RAM?",
+      "a": "Yes, iRacing alone runs on 8 GB. But if you stream, record, or keep other applications open, 8 GB becomes limiting. A clean single-race session works. Background tasks and streaming will cause slowdowns and memory pressure. 16 GB is the practical minimum for most active iRacing setups."
+    },
+    {
+      "q": "Does iRacing use fast RAM or slow RAM?",
+      "a": "iRacing is not memory-bandwidth sensitive on a single 1440p monitor. Standard-speed DDR4 3200 MHz CAS 16 or DDR5 5600 MHz meets its needs. Fast RAM (4000+ MHz) shows no measurable frame rate difference on single-monitor setups. Only high-end multi-monitor or 4K builds benefit from premium RAM speed."
+    },
+    {
+      "q": "How much storage do I need if I record every race?",
+      "a": "A 1 TB SSD is practical if you record and keep 1-2 months of video on internal drive. Most content creators back up older files to external USB 3.1 drives to preserve internal drive speed and free space. Budget 3-6 GB per hour of recorded racing depending on resolution and bitrate."
+    },
+    {
+      "q": "Should I upgrade RAM or GPU first for better iRacing performance?",
+      "a": "Upgrade GPU first. An RTX 5060 Ti with 16 GB RAM will deliver higher frame rates and better graphics than an RTX 4060 with 32 GB. RAM only affects performance once you hit memory pressure, which is rare during racing. CPU matters more than RAM for frame rate stability."
+    }
+  ],
+  "gearKeys": [
+    "gpu-rtx-5060-ti",
+    "cpu-ryzen-7-5700",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-09",
+  "dateLabel": "November 9, 2026"
+}

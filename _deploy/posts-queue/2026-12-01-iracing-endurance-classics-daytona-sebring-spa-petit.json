@@ -1,0 +1,172 @@
+{
+  "slug": "iracing-endurance-classics-daytona-sebring-spa-petit",
+  "tag": "iRacing Tips · Endurance",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "iRacing Endurance Classics: Daytona 24, Sebring 12, Spa 24, Petit Le Mans",
+  "description": "Survive iRacing's toughest multi-hour events. Learn fuel strategy, driver discipline, and setup for 12- and 24-hour classics.",
+  "sections": [
+    {
+      "p": "iRacing's endurance calendar includes four defining 24-hour and 12-hour races: the Daytona 24, Sebring 12, Spa 24, and Petit Le Mans. These events demand more than pace. A single driver mistake in hour 16 can cost a podium. Fuel strategy, tire management, and driver swaps reshape the entire race. Most drivers approach them like sprint races run longer, which guarantees attrition. The real win comes from discipline: hitting lap time consistency, managing tire deg, and never pushing into the red when the race still has eight hours left."
+    },
+    {
+      "p": "Each event has its own physics and setups. Daytona is flat-out drafting; Sebring's bumps and concrete kerbs punish small setup mistakes. Spa demands high-speed confidence and rain preparedness. Petit Le Mans is a road course endurance test with traffic. This guide covers the shared principles and what makes each event unique."
+    },
+    {
+      "h2": "The Core of Endurance Racing: Consistency Over Pace"
+    },
+    {
+      "p": "In a 24-hour race, the driver who averages 2m01s for 6 hours finishes ahead of the driver who runs 2m00s for 5 hours then crashes. Endurance racing rewards stability, not quali-pace heroics. Most drivers lose races by pushing too hard in stints 2 and 3, destroying tires for the grind hours 8 through 20."
+    },
+    {
+      "list": [
+        "Set a target lap time 0.3 to 0.5 seconds slower than your quali-pace and commit to it for the entire stint.",
+        "Brake 10-15 meters earlier than your fastest laps to reduce tire spike and extend usable life.",
+        "Stay smooth on throttle application. Axle load transfer happens over time; rushing it loads tires instantly and triggers deg.",
+        "Manage fuel: run one lap before pit window to ensure you arrive with enough margin for a controlled pit stop.",
+        "Communicate pit stop times and driver swaps clearly via voice or chat to avoid pressure and mistakes."
+      ]
+    },
+    {
+      "tip": "Your lowest lap in a 6-hour stint is irrelevant. Your average lap time over 95% of the stint determines grid position in the next stage. Mental discipline wins endurance races.",
+      "tipLabel": "Endurance mentality"
+    },
+    {
+      "h2": "Daytona 24: High-Speed Discipline and Drafting Rotation"
+    },
+    {
+      "p": "Daytona is a 24-hour exhibition of top-speed tire management and drafting. The track is flat, 3.6 miles, and fuel consumption is extreme due to constant full throttle. Most teams run GT3 or GTP cars. The high-speed nature means a single aggressive move, a late brake into turn 1, or a lock-up in the banking can trigger a spin that collects multiple drivers."
+    },
+    {
+      "p": "Fuel mileage is brutal. A full tank in a GT3 at Daytona lasts roughly 35 to 40 minutes depending on fuel mix and car. Pit stops must be timed precisely: arrive with 1 to 2 laps of fuel remaining, not fumes. Plan your driver roster so pit stops align with driver swaps when possible, saving time and confusion."
+    },
+    {
+      "list": [
+        "Drafting consumes fuel slower than pushing solo. Commit to draft trains when possible, but never tailgate aggressively; a sudden brake by the lead car causes pile-ups.",
+        "Use the banking's high-speed corners to learn lift-off techniques. In GT3s, you can flat-foot the banking for many laps, but consistency means feathering lift earlier each lap to preserve tires.",
+        "Sebring and Spa have more braking zones. Daytona has three serious brakes: turn 1 (bus stop), turn 3 (oval bank), and the chicane. Practice these under fuel load to dial brake feel.",
+        "Rain at Daytona is rare but devastates the field. If rain is forecast, test wet setup and driver callouts during practice.",
+        "Tire deg on Daytona ovals peaks in the banking. Right-side tires wear much faster. Aim for a stint that doesn't exceed 50 minutes in GT3 to maintain grip."
+      ]
+    },
+    {
+      "h2": "Sebring 12: Bumps, Concrete, and Short-Fuel Stints"
+    },
+    {
+      "p": "Sebring is a former airfield with a 3.7-mile layout that feels nothing like Daytona. Concrete patches, hard kerbs, and significant elevation changes demand a smooth setup and smoother inputs. The 12-hour format compresses fatigue into a single day, but fuel consumption is moderate compared to Daytona because top speed is lower. A single aggressive curb strike can break suspension or trigger a slow puncture, costing 30 minutes to the pits."
+    },
+    {
+      "p": "Most GT3 fuel stints run 50 to 60 minutes. Sebring punishes drivers who brake late into the chicane (turn 17-18) or over-commit into turn 12. Setup is sensitive to fuel load and tire pressure. A setup dialed for a full tank feels loose when you're down to 5 liters in lap 45 of a stint."
+    },
+    {
+      "list": [
+        "Kerbs at Sebring are unavoidable on the racing line. Ride them smoothly; don't clip and jump. A small crest into turn 3 rewards a smooth downshift and controlled trail-brake.",
+        "Tire pressure rises faster at Sebring than road courses due to the airfield's heat reflection off concrete. Start stint one with slightly lower pressure than you'd run at Spa.",
+        "Brake feel changes with fuel load. Do a full-fuel practice lap in each session to calibrate where you'll be under race conditions late in stints.",
+        "The chicane (turn 17-18) is the main overtaking zone. If you're being pressured, pick a consistent line and hold it. A dive attempt here causes crashes.",
+        "Rain is common at Sebring in spring. Wet setup should prioritize rear stability over front turn-in because the concrete surface is slippery even in light rain."
+      ]
+    },
+    {
+      "h2": "Spa 24: Weather, Tire Pressure, and the Eau Rouge Complex"
+    },
+    {
+      "p": "Spa is 4.3 miles and one of the fastest road courses on the iRacing calendar. A 24-hour race here spans multiple weather windows. You might start in sun, race 4 hours dry, then run 8 hours wet, then dry again. Tire pressure management is critical because Spa's high-speed corners and long straights push thermal loads hard. A car set up dry will oversteer dangerously in wet conditions even on wet tires."
+    },
+    {
+      "p": "Fuel stints at Spa are longer than Sebring, often 65 to 75 minutes in GT3 depending on fuel mix. The Eau Rouge complex (turns 1-3) is the signature challenge: commit too early and you run out of track on exit. Commit too late and you lose draft on the following straight. Most lap time is gained or lost through turn 1 and the Kemmel straight."
+    },
+    {
+      "list": [
+        "Eau Rouge rewards smooth downshift and early throttle application. Practice this corner in practice mode until it's muscle memory; don't think during the race.",
+        "Tire pressure swings 5 to 8 kPa depending on dry-to-wet transitions. Have a dry baseline and a wet baseline prepared before the race. Communicate pressure targets clearly during driver swaps.",
+        "The run to Les Combes (turn 8) is a serious passing zone. If traffic is tight, brake early and take a tighter line; don't outbrake yourself.",
+        "Mulsanne corner (turn 13) rewards trail-braking because the corner opens up mid-apex. Practice modulation here under fuel load.",
+        "Rain increases aquaplaning risk into the Bus Stop chicane (turn 14-15). If rain is heavy, brake 30 meters earlier and accept losing time; a spin here loses the race."
+      ]
+    },
+    {
+      "tip": "Spa weather can shift every 2 to 3 hours during a 24-hour race. One driver might qualify in sun and race their stint in heavy rain. Communicate weather forecasts to incoming drivers so they're mentally ready.",
+      "tipLabel": "Weather prep"
+    },
+    {
+      "h2": "Petit Le Mans: Traffic, Fuel Strategy, and Grid Position Defense"
+    },
+    {
+      "p": "Petit Le Mans is a 10-hour race at Road Atlanta, a 2.54-mile track with 12 turns. The shorter format and tighter track mean traffic is constant. Overtaking happens in the bus stop, turn 10, and the chicane. Defense lines matter because the same cars you pass at hour 2 you'll face again at hour 6 and hour 9. Defensive driving is expected; aggressive blocking is not."
+    },
+    {
+      "p": "Fuel stints are 55 to 70 minutes depending on fuel mix and traffic intensity. Stint strategy can win or lose the race. A well-timed pit stop puts you on fresher tires in clean air. A mistimed stop drops you into traffic and costs 15 positions in the next two laps. Plan pit windows with the field in mind, not just fuel math."
+    },
+    {
+      "list": [
+        "Turn 10 (the main corner) is the best passing zone. If you're chasing a car, set up the pass here by braking deep and rotating late. Don't dive from three car-widths back; you'll lose the car.",
+        "Traffic defense: hold your line through the bus stop and turn 10. Weaving left and right to block is unsportsmanlike and dangerous. A single line, held firm, is enough.",
+        "Tire deg at Road Atlanta is moderate for the first hour of a stint, then accelerates. Aim for 65-75 minute max stints to preserve front tire life for the final 2 hours.",
+        "Pit stop timing: if the leader pits, wait one lap before you pit (the overcut). If a faster car behind you pits first, pit within two laps (the undercut). Communicate this plan before the race.",
+        "The final two hours are won or lost on consistency and tire preservation. Fuel will be tight; run conservative fuel numbers and lift off the throttle on the straight if needed."
+      ]
+    },
+    {
+      "h2": "Setup, Fuel Mix, and Pre-Race Prep"
+    },
+    {
+      "p": "All four endurance classics use roughly the same car and setup baseline, but fuel mix and brake bias differ per track. Daytona and Spa require more fuel consumption prediction. Sebring and Petit Le Mans are shorter, so fuel planning is more forgiving but traffic strategy is sharper."
+    },
+    {
+      "p": "Fuel mix is the single most important pre-race choice. A lean fuel mix (90) gives better mileage but less power. A rich mix (100) gives peak power but drinks fuel fast. Most competitive teams run 95 to 97 for the first 4 hours, then drop to 92 to 94 for the long middle stints, then return to 97 for the final push. Communicate fuel mix plans with your co-drivers so they can adjust their pace accordingly."
+    },
+    {
+      "olist": [
+        "Test your car at each track in a practice race with a full tank to measure fuel mileage under real race conditions.",
+        "Build a setup starting from the track baseline and add 20 to 30 laps of tuning. Endurance cars run heavier fuel loads, so setup needs to handle a wider range of balance than a sprint car.",
+        "Create a pit stop checklist: fuel amount, driver swap time, tire pressure changes (if needed), and any setup tweaks for the next driver.",
+        "Practice a full stint once before the race to calibrate your mental pace and tire degradation curve.",
+        "Brief co-drivers on weather, track evolution, and pit strategy at the start. A clear plan prevents panic decisions at hour 8."
+      ]
+    },
+    {
+      "h2": "Common Mistakes and How to Avoid Them"
+    },
+    {
+      "p": "Most teams that DNF in endurance races make predictable errors: pushing too hard early, running out of fuel before the pit window, or losing communication during driver swaps. A few deliberate choices eliminate most of these."
+    },
+    {
+      "list": [
+        "Running out of fuel is preventable. Calculate fuel mileage in practice and subtract 5% for safety. Arrive at the pits with at least two full laps remaining.",
+        "Pit stop mishaps stem from unclear handoff. Assign one person to call pit timing and fuel numbers. Everyone else stays quiet unless there's a safety issue.",
+        "Over-aggressive driving early wastes tires and fuel. Your pace at hour 4 should be your pace at hour 18. If you're 0.5 seconds faster at hour 2, you're going too hard.",
+        "Setup changes between drivers cause confusion. Pick a setup that works for all drivers and live with minor compromises. A 0.2-second pace difference is better than setup chaos.",
+        "Ignoring weather forecasts leads to unprepared wet stints. Check the forecast 1 hour before each driver's stint so they can mentally prepare for rain."
+      ]
+    },
+    {
+      "p": "Endurance racing is a test of discipline, communication, and long-term thinking. A single well-executed strategy beats three drivers pushing to their limit. Commit to your plan, hit your lap times, and let the others make mistakes. The checkered flag rewards patience."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much fuel should I put in my car at each pit stop?",
+      "a": "Calculate your fuel mileage in a full-tank practice stint, then subtract 5% as a safety margin. For example, if your GT3 gets 38 minutes per full tank, plan for 36-minute stints. At the pits, request enough fuel to reach your next pit window plus one extra lap. This gives you buffer time if traffic or cautions extend the stint."
+    },
+    {
+      "q": "Should I run wet setup during a 24-hour race if rain is forecasted?",
+      "a": "Yes. Test a wet setup baseline during the week before the race. When rain is forecast, send one co-driver into practice to dial the wet setup so your team has a known adjustment. During the race, communicate weather changes to incoming drivers so they mentally prepare for the transition. Switching setup mid-stint wastes precious pit time."
+    },
+    {
+      "q": "How do I know if I'm pushing too hard in an endurance stint?",
+      "a": "Track your average lap time over rolling 10-lap blocks. If your average is rising (getting slower) while your peak lap is the same, tire deg is accelerating and you're pushing the limit. Pull back 0.3 seconds and let tire deg stabilize. Consistency over the final 30 minutes of a stint is more valuable than a single fast lap in lap 15."
+    },
+    {
+      "q": "What's the most common reason teams lose endurance races they were leading?",
+      "a": "Poor pit stop communication and unplanned fuel strategy changes. A team is leading, fuel gets tight, the pit crew radios a new plan, but the incoming driver wasn't briefed. The driver overshoots their pit box or runs out of fuel 500 meters before the pits. Brief every co-driver on the pit strategy before the race and update only via one clear voice channel during the race."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "monitor-1440p-120",
+    "gpu-rtx-5060-ti"
+  ],
+  "published": "2026-11-09",
+  "dateLabel": "November 9, 2026"
+}

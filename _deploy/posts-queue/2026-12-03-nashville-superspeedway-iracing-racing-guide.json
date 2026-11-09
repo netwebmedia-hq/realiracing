@@ -1,0 +1,170 @@
+{
+  "slug": "nashville-superspeedway-iracing-racing-guide",
+  "tag": "Track Guides · Oval Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Nashville Superspeedway iRacing Guide: Drafting, Tire Wear, Setup",
+  "description": "Learn Nashville's high-speed banking, tire management strategy, and how to use the draft effectively in iRacing oval racing.",
+  "sections": [
+    {
+      "p": "Nashville Superspeedway is a 1.33-mile D-shaped concrete oval with 14 degrees of banking. It sits between a true superspeedway and a flat mile-and-a-half in terms of speed and handling. Lap times hover in the 29-30 second range depending on fuel and downforce, and the track demands respect for tire temperature, fuel mileage, and line consistency. Most races here are 300 laps or longer, so a single qualifying lap does not tell the full story. Setup, pit strategy, and racecraft matter far more than peak speed."
+    },
+    {
+      "p": "The track surface is high-grip concrete that changes character as fuel load increases and tire temperatures climb. Early in a race, the car will feel planted and responsive. By lap 150, the same setup may feel loose on entry and tight on exit. Understanding how to build a baseline that handles the full race window, not just a single lap, is the difference between a points finish and a lapped car."
+    },
+    {
+      "h2": "Banking, Groove, and Racing Line"
+    },
+    {
+      "p": "The 14-degree banking is enough to generate lateral grip but not so much that you can brake in the middle of the turn. The racing line stays high through turns one and two, and most drivers will apex between the middle and upper groove on exit. The backstretch and front stretch are nearly flat, so line choice there matters less than maintenance of momentum off the corners."
+    },
+    {
+      "p": "Early in the race, the preferred line is high. Cars run the upper groove, and that is where clean air is easiest to find. As the race progresses and the track rubbers in, a lower line may begin to develop grip. Winning races at Nashville often come down to whether a driver can adapt to groove changes mid-race or whether pit strategy forces a different line in traffic."
+    },
+    {
+      "list": [
+        "Turns one and two: Apex high, carry momentum off exit, avoid braking too hard mid-corner",
+        "Backstretch: Flat-out; focus on a consistent line to set up braking into turn three",
+        "Turns three and four: Mirror of turns one and two, less margin for error on exit",
+        "Front stretch: Brake in a straight line; early turn-in costs time and increases tire load"
+      ]
+    },
+    {
+      "tip": "The most common mistake is trying to lift off the throttle mid-corner to rotate the car. The banking wants the car to go straight; work with that. Patience on throttle application and a smooth line entry will result in faster lap times than aggressive steering inputs.",
+      "tipLabel": "Smooth Throttle Wins Here"
+    },
+    {
+      "h2": "Tire Wear and Temperature Management"
+    },
+    {
+      "p": "Nashville runs a short fuel window, so most pit stops are in the 20-25 lap window. Tire wear is moderate for a flat oval, but it is not even across all four tires. The right front sees the most load in the banked corners, and it will wear faster than the others. By lap 18-20, you may feel the right front begin to fall off, especially in turns three and four."
+    },
+    {
+      "p": "Tire temperature climb is gradual. In the first 5 laps of a stint, the car will gain grip. Laps 10-15 are often the fastest in a fuel run. After that, temperature and fuel load begin to trade off. A car on low fuel near the end of a fuel run can feel oversteery or loose on exit if the right side tires have climbed too hot. Manage throttle modulation late in the fuel window to extend tire life."
+    },
+    {
+      "list": [
+        "Right front tire carries the most load and wears fastest; monitor corner-exit balance closely",
+        "Peak performance window is typically laps 8-15 of a fuel run",
+        "Late-run tire management: lift earlier off corners, modulate throttle entry to cool tires",
+        "Qualifying strategy differs from race strategy; fuel load and tire age are not equal to a single-lap setup"
+      ]
+    },
+    {
+      "h2": "Drafting and Fuel Strategy"
+    },
+    {
+      "p": "The draft at Nashville is real but not overwhelming. A car running in another's wake will gain roughly 0.1 to 0.15 seconds per lap, depending on positioning. The draft is strongest on the backstretch, where the two cars spend the most time in a line. On the front stretch and in the turns, slipstream benefit shrinks because of the banking and turn entry."
+    },
+    {
+      "p": "Fuel mileage is a critical factor. Most competitive setups will achieve between 4.2 to 4.6 miles per gallon depending on fuel load and driving style. A driver pushing hard late in a fuel window will see fuel mileage drop to 4.0 mpg or lower. Conversely, conservative driving in qualifying laps or under caution can push mileage to 5.0+ mpg. Race strategy often hinges on whether a team can stretch fuel or is forced into an extra stop."
+    },
+    {
+      "p": "The undercut (pitting early to gain track position via faster laps on fresh tires) is viable at Nashville. If you pit 2-3 laps before the car ahead and run 0.15-0.25 seconds faster on new tires, you can gain 2-3 car lengths. The overcut (staying out longer to gain position as others pit) is riskier because the car that pitted later will have fresher fuel and tires for the final laps."
+    },
+    {
+      "list": [
+        "Calculate fuel mileage during practice: note fuel remaining and laps completed to set pit strategy",
+        "Draft on straights, not in turns; use the high line in the draft rather than the low line",
+        "Undercut works if your car is on a comparable or faster lap time after pit stop",
+        "Monitor cautions: a caution that bunches the field can destroy fuel strategy; be ready to adapt"
+      ]
+    },
+    {
+      "h2": "Setup for Nashville"
+    },
+    {
+      "p": "A starting setup typically features moderate downforce (50-60 rear wing angle), a stiff front anti-roll bar to combat the banking, and a softer rear anti-roll bar for exit grip. Brake bias is usually 50-52% front because the banking reduces the need for heavy front bias. Front camber runs around 3.0 to 3.5 degrees to manage tire loading in the turns."
+    },
+    {
+      "p": "Fuel load and tire age alter how the car handles. A car on low fuel will feel looser on exit, so many teams will add rear anti-roll bar stiffness or reduce rear wing angle as fuel burns. Conversely, a car early in a fuel run on cold tires may feel tight and require softer settings to free up entry."
+    },
+    {
+      "p": "The single greatest tuning mistake at Nashville is chasing balance by changing front end geometry rather than anti-roll bars or wing angle. The banking naturally wants understeer, so most baseline setups run mild understeer on entry and neutral to mild oversteer on exit. If the car feels loose mid-corner, the issue is usually too much rear downforce or too little front bite, not camber."
+    },
+    {
+      "olist": [
+        "Start with a baseline: moderate downforce, stiffer front anti-roll bar, softer rear anti-roll bar",
+        "Test entry balance first: adjust front anti-roll bar stiffness, not camber, if entry feels loose",
+        "Manage exit balance by tuning rear anti-roll bar and rear wing angle, not suspension geometry",
+        "Account for fuel load: plan softer settings for heavy fuel and stiffer settings for light fuel runs",
+        "Verify brake balance in a practice session; 50-52% front is a common starting point"
+      ]
+    },
+    {
+      "tip": "Record a replay and watch your car's body roll in turns one and two. Excessive roll (more than 3-4 degrees) signals anti-roll bars that are too soft. Very stiff anti-roll bars will cause understeer on entry because the front tire is not loading properly. Aim for smooth roll and linear grip gain through the turn.",
+      "tipLabel": "Body Roll is Your Feedback"
+    },
+    {
+      "h2": "Race Craft and Traffic"
+    },
+    {
+      "p": "Passing at Nashville is possible but requires patience and timing. The draft helps, but so does execution. A pass down the backstretch often works if the car ahead is running the high groove and you attack the low groove to set up entry into turn one. The car ahead will feel your presence, and many will lift or run a defensive line. Do not force the pass; wait for a cleaner opportunity in traffic."
+    },
+    {
+      "p": "Defending the position involves running a smooth line and not brake checking. The car behind will have a speed advantage from the draft, so holding the inside of a turn will invite an inside pass. Instead, run the high line, stay smooth, and let lap time and setup efficiency do the work. If a pass is inevitable, give it cleanly rather than risk a contact that costs both cars."
+    },
+    {
+      "p": "Lapped traffic is frequent in 300+ lap races. Communicate via your spotter or in-game system when you plan to move up or down. Most drivers will give you room if you ask clearly. Never assume a lapped car will move; brake and be ready to take a different line. A contact with a lapped car can end your race or damage tires you need for the final laps."
+    },
+    {
+      "list": [
+        "Backstretch passes: use the draft on the straightaway and the low groove to set up entry into turn one",
+        "Defend high and smooth: let the car behind work for the pass rather than driving defensively and slow",
+        "Lapped traffic: always assume the worst; brake early and adjust your line, do not rely on the lapped car moving",
+        "Late-race fuel: if you are on fumes in the final 10 laps, drive to the fuel window, not to the checkered flag"
+      ]
+    },
+    {
+      "h2": "Practice and Qualifying"
+    },
+    {
+      "p": "Qualifying is a single lap, but it does not reflect race pace. Your qualifying setup should be light on fuel and focused on entry balance to hit a clean lap. Your race setup is heavier on fuel and prioritizes mid-range and exit balance. Do not be alarmed if the qualifying car feels snappier than the race car."
+    },
+    {
+      "p": "Spend practice time on fuel mileage runs. Complete a full fuel tank and note the ending fuel level after 25 laps. Extrapolate that to a full race distance to confirm pit stop count. Then, run a pit stop sequence under caution to verify brake temperature recovery and re-entry time. Finally, run a few laps in traffic to confirm your car is balanced when following and being followed."
+    },
+    {
+      "p": "If you have a <a href=\"best-sim-racing-wheels-iracing.html\">direct-drive wheelbase like the MOZA R9</a>, take advantage of the steering feedback to feel subtle changes in tire grip through the corners. Throttle modulation and smoothness are easier to develop when you have finer feedback from the wheel. Do not over-interpret small vibrations; focus on the overall trend of grip loss or gain."
+    },
+    {
+      "olist": [
+        "Practice session goal one: establish a baseline lap time and understand the track feel",
+        "Practice session goal two: run a full fuel tank and confirm mileage data",
+        "Practice session goal three: execute pit stops and verify brake recovery",
+        "Practice session goal four: run in traffic to test car balance under real race conditions",
+        "Qualifying: use a lighter fuel load and focus on a single clean lap with good entry balance"
+      ]
+    },
+    {
+      "tip": "In the final practice session before the race, intentionally drive a lap that mimics the last lap of your fuel run. That is the lap time and balance you will need to execute late in the race when fuel is low and tires are worn. If that lap time is 0.5 seconds slower than your fresh-tire lap time, adjust your strategy to account for the pace loss.",
+      "tipLabel": "End-of-Stint Simulation"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What fuel mileage should I target for a full race at Nashville?",
+      "a": "Most competitive setups achieve 4.2 to 4.6 miles per gallon in a race trim. Conservative driving can push that to 5.0+ mpg. To confirm your specific fuel consumption, run a full tank in practice, note the fuel used and laps completed, then multiply by the target race distance. Plan pit stops conservatively: if you calculate 4.4 mpg, base your strategy on 4.2 mpg to avoid running out of fuel."
+    },
+    {
+      "q": "How much of a speed advantage does the draft provide at Nashville?",
+      "a": "A car running directly in another's wake will gain approximately 0.1 to 0.15 seconds per lap. The draft is strongest on the backstretch and least effective in the banked turns. The draft helps more on lower-speed tracks; at Nashville's sustained high speed, the aerodynamic benefit is moderate but real. Fuel mileage and traffic management often matter more than draft position for race wins."
+    },
+    {
+      "q": "Should I run understeer or oversteer setup at Nashville?",
+      "a": "Most drivers prefer mild understeer on corner entry and neutral to mild oversteer on exit. The banking naturally promotes understeer, so a baseline anti-roll bar setup (stiffer front, softer rear) is a good start. If the car feels loose mid-corner, the issue is usually too much rear wing angle or rear anti-roll bar stiffness, not insufficient front camber. Test anti-roll bar changes before adjusting suspension geometry."
+    },
+    {
+      "q": "How does tire wear change during a fuel run at Nashville?",
+      "a": "The right front tire wears fastest due to banking load in turns one and two. Peak grip is typically between laps 8 and 15 of a fuel run. After lap 15, tire temperature and fuel load begin to reduce grip. Late in a fuel run, modulate throttle entry and exit to reduce tire temperature and preserve speed. By lap 23-25, expect lap times to drop 0.2 to 0.4 seconds compared to peak grip."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "monitor-1440p-120",
+    "gpu-rtx-5060-ti",
+    "cpu-ryzen-7-5700"
+  ],
+  "published": "2026-11-09",
+  "dateLabel": "November 9, 2026"
+}

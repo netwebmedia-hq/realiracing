@@ -1,0 +1,146 @@
+{
+  "slug": "iracing-season-structure-build-updates-explained",
+  "tag": "iRacing Tips · Licenses",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "iRacing Season Structure and Build Updates Explained",
+  "description": "How iRacing seasons work, when builds update, and how to plan your racing calendar and setup changes around the schedule.",
+  "sections": [
+    {
+      "p": "iRacing runs on a predictable seasonal calendar, but the structure—when seasons start and end, when new builds roll out, and what that means for your setups—is less obvious if you're new. Understanding the rhythm of the iRacing year saves you from wasted setup work, helps you time your series choices, and tells you exactly when to expect major technical changes to your car."
+    },
+    {
+      "p": "The season structure is built around fixed 12-week cycles. Each of those 12 weeks is its own content block, which sounds abstract but matters because tracks, cars, and sometimes cars within a series rotate on that schedule. Missing a cycle means missing that car and track pair until next season. Knowing when builds drop and what they typically change also keeps you from tuning a setup that will behave differently next week."
+    },
+    {
+      "h2": "The 12-week season cycle"
+    },
+    {
+      "p": "iRacing splits its year into four seasons of 12 weeks each. The seasons run roughly: January to March (Season 1), April to June (Season 2), July to September (Season 3), October to December (Season 4). Each week within a season is a new content block with a new track and sometimes a new car pairing or series rotation."
+    },
+    {
+      "p": "The weeks are staggered. Week 1 is the same week for all series on iRacing—it starts on a Tuesday and runs until the following Monday. Week 2 starts the Tuesday after that week ends, and so on. This means that the same track at, say, Laguna Seca, stays in rotation for exactly one week across all series that run it. If you miss Laguna in Week 8, you are waiting for the next season to drive it."
+    },
+    {
+      "list": [
+        "Series typically rotate through 12 different track and car combinations, one per week, across the season",
+        "Some series (especially fixed setups or road series) may repeat a car or track in different weeks",
+        "Each season brings its own featured car or series additions; new cars and track updates are often released at season start",
+        "Seasonal achievements, awards, and championships reset at the end of each 12-week cycle"
+      ]
+    },
+    {
+      "tip": "Mark your calendar for Week 1 of each new season. That first Tuesday is when major build updates, new cars, and new track versions usually land. It's the heaviest upheaval and the best time to recalibrate your entire rig.",
+      "tipLabel": "Season Start Prep"
+    },
+    {
+      "h2": "When and what builds update"
+    },
+    {
+      "p": "A build update is a new release of the iRacing sim software. These are versioned (e.g., Build 2026.2, Build 2026.3) and they introduce new features, fix bugs, change physics, add tracks, or refresh existing cars. Not every build is a major physics revision, but every build can contain small changes that affect how your car behaves."
+    },
+    {
+      "p": "Builds typically roll out every two to four weeks. The largest updates happen at the start of each season. A season-start build might include a new track, a reworked car physics model, changes to tire degradation or fuel consumption, or audio updates. Mid-season builds are usually smaller and focus on bug fixes or minor adjustments. Patch notes are posted on the iRacing forums and website before the build goes live."
+    },
+    {
+      "p": "The consequence for setup work is this: if a build introduces a physics change to your car, every setup you've saved for that car will feel different. Braking zones may shift, throttle application may feel looser or tighter, and aero balance points may move. Mid-season, a small build might change almost nothing about how you drive. At season start, assume you are re-tuning from a baseline."
+    },
+    {
+      "list": [
+        "Season-start builds (Week 1 of each new season) are the biggest: new cars, tracks, physics revisions, and graphics updates",
+        "Mid-season builds typically address crashes, network stability, and minor gameplay tweaks",
+        "Patch notes list physics changes explicitly; read them before tuning a car you haven't driven since the last build",
+        "Setup changes from one build often carry forward, but tire temperatures, braking balance, and downforce response may shift"
+      ]
+    },
+    {
+      "h2": "Planning your series and car choices"
+    },
+    {
+      "p": "Because tracks and cars rotate weekly, your series and car options are fixed for the season. If you want to run the Porsche 992 GT3 R, you need to check the 12-week schedule and see which weeks it appears in. If you decide mid-season that you want to run it, you have to wait until the next season."
+    },
+    {
+      "p": "Most drivers pick their primary series before the season starts based on the car and track schedule. A common approach is to download the seasonal schedule from the iRacing website, open it in a spreadsheet, and highlight the weeks and cars you want to drive. Then you choose a series that fits that rotation. Series at the same license level often run the same tracks on the same weeks but with different cars, so you can often trade off between, for example, a GT3 series and an open-wheel series if they share that week."
+    },
+    {
+      "p": "If you're training in a specific series for competition or chasing a safety rating or iRating goal, the schedule doesn't matter as much—you run that series every week regardless. But if you like variety or are sampling different categories, the weekly rotation forces a choice."
+    },
+    {
+      "list": [
+        "Publish the full 12-week schedule before the season starts so you know what tracks and cars you'll see",
+        "Mid-season series changes and promotional rotations occasionally add or swap content, but they're rare",
+        "Fixed-setup series (such as rookie classes) have simplified schedules and less variety; open-setup series have more cars and track combinations",
+        "Some series intentionally skip certain weeks or sub-rotation their car choice; always cross-check the schedule for your chosen series, not the generic iRacing calendar"
+      ]
+    },
+    {
+      "h2": "How builds interact with setup work"
+    },
+    {
+      "p": "The overlap between season cycles and build cycles creates two practical scenarios. First, if a build drops in the middle of a season, your existing setups may need tweaks. How much depends on the build. A graphics optimization build changes nothing. A tire-model update or a car suspension refresh changes everything."
+    },
+    {
+      "p": "Second, a setup you tuned two weeks ago at Week 6 might not carry the same feel if a build lands between then and Week 8. This is especially true for endurance racing, where you might practice a setup for Daytona 24, then a build drops and changes fuel consumption or tire behavior. A 2-hour practice stint suddenly burns fuel differently, or tires wear at a new rate. You catch it in practice, but the work you did before the build was partly wasted."
+    },
+    {
+      "p": "The practical solution is straightforward: treat build day as a reset point for any setup you're committing to. If a build lands on Tuesday and you're racing on Wednesday, assume your setup may feel 10-15 percent different. If you have a week between the build and your race, one or two evening practice sessions will reveal the changes and let you make minor tweaks. Never assume a setup from before a build is valid after a build without testing."
+    },
+    {
+      "tip": "If a build includes physics notes about your specific car, load that car on track immediately after the build and spend 15 minutes just feeling the changes. Then decide whether your existing setup baseline needs work or if it's still a good starting point.",
+      "tipLabel": "Post-Build Tuning"
+    },
+    {
+      "h2": "Season resets and progression"
+    },
+    {
+      "p": "At the end of each 12-week season, several things reset: seasonal achievements (if you earned a time-trial championship, it clears), series points (championship standings reset), and race history for that series. Your iRating and safety rating carry forward as career stats. Your painted cars, rewards, and setup profiles all persist—there is no character reset or wipe."
+    },
+    {
+      "p": "The new season starts automatically on Tuesday of Week 1. You log in, and the new schedule is live. Any series you were in ends and closes to new entries; you can join a new series from the list. If you want to run the same series again, you re-join the new season of that series. If you want to try something different, the entire 12-week schedule is fresh and open."
+    },
+    {
+      "list": [
+        "Seasonal achievements and leaderboard positions clear at season end; career iRating and safety rating are permanent",
+        "Setup profiles and painted cars carry forward across seasons indefinitely",
+        "A new series is a fresh campaign; you cannot compete in the previous season's points standings once the new season starts",
+        "Driver swaps, team entries, and fixed-setup series have their own entry deadlines; read the series description to confirm dates"
+      ]
+    },
+    {
+      "h2": "Staying on top of changes"
+    },
+    {
+      "p": "The best way to stay aligned with the rhythm of iRacing is to check the website for the next build and next season schedule once a week. The iRacing UI shows the current season and week in real-time. The forums post patch notes before builds go live, and the seasonal schedule is published at least two weeks before the season starts."
+    },
+    {
+      "p": "If you're competitive or chasing a rating, set a reminder for the Tuesday of each new season and the Tuesday of major mid-season build updates. That gives you time to download the new build, test your primary car, and adjust your setup before major races that week. If you're casual, just glance at the schedule when you log in and pick a series that looks fun."
+    },
+    {
+      "p": "The iRacing newsroom and the official forums are the authoritative sources. YouTube creators and streamers often cover build highlights and season previews, but they're commentary on the official information, not primary sources. Read patch notes yourself to catch changes that affect your car specifically."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long is one iRacing season?",
+      "a": "Each season lasts exactly 12 weeks. iRacing splits the calendar year into four 12-week seasons: roughly January to March, April to June, July to September, and October to December. Each week is a new content block with a different track or car pairing."
+    },
+    {
+      "q": "If I miss a track this week, when will I see it again?",
+      "a": "You will see that track again in the same week number of the next season, 12 weeks later. For example, if you miss Laguna Seca in Week 8 of Season 1, the next time Laguna Seca Week occurs is Week 8 of Season 2 (12 weeks later). There is no mid-season rotation or repeats unless the series schedule specifically lists that track twice."
+    },
+    {
+      "q": "Do build updates reset my setups or my iRating?",
+      "a": "No. Build updates change the sim software but do not wipe your saved setups, iRating, safety rating, or painted cars. However, a build that changes car physics (tire model, suspension behavior, fuel consumption) will make your existing setups feel different when you load them. You may need to tune or adjust them, but the files themselves are not deleted."
+    },
+    {
+      "q": "Should I wait for a new season to join a series, or can I join mid-season?",
+      "a": "You can join a series at any point during its 12-week run. However, you will not earn points for races that occurred before you joined, so your championship standing will reflect only the weeks you participated in. If you want to compete for the full seasonal championship, joining in Week 1 is ideal."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-09",
+  "dateLabel": "November 9, 2026"
+}
