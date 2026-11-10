@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iRacing Black Boxes Explained: Relative, Fuel, Tires</title>
+  <meta name="description" content="What each iRacing black box shows, which one to keep up in a race, and how to map them to wheel buttons so fuel and tires are set before pit entry." />
+  <link rel="canonical" href="https://realiracing.com/blog/iracing-black-boxes-explained-relative-fuel-tires.html" />
+  <meta property="og:title" content="iRacing Black Boxes Explained: Relative, Fuel, Tires" />
+  <meta property="og:description" content="What each iRacing black box shows, which one to keep up in a race, and how to map them to wheel buttons so fuel and tires are set before pit entry." />
+  <meta property="og:url" content="https://realiracing.com/blog/iracing-black-boxes-explained-relative-fuel-tires.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/wheel-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: concentric arcs turning about a centre" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/wheel-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261103" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "iRacing Black Boxes Explained: Relative, Fuel, Tires",
+    "description": "What each iRacing black box shows, which one to keep up in a race, and how to map them to wheel buttons so fuel and tires are set before pit entry.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/iracing-black-boxes-explained-relative-fuel-tires.html",
+    "image": "https://realiracing.com/assets/photos/wheel-cover.jpg",
+    "datePublished": "2026-11-10",
+    "dateModified": "2026-11-10"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"iRacing Black Boxes Explained: Relative, Fuel, Tires","item":"https://realiracing.com/blog/iracing-black-boxes-explained-relative-fuel-tires.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA CS V2 Steering Wheel","description":"the round rim my whole FFB profile is tuned around","url":"https://realiracing.com/blog/iracing-black-boxes-explained-relative-fuel-tires.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/iracing-black-boxes-explained-relative-fuel-tires.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/iracing-black-boxes-explained-relative-fuel-tires.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which black box should I leave up during a race?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most drivers leave the Relative (F3 by default) up during a race. It shows the cars physically around you with time gaps, uses colours for cars a lap ahead, a lap behind and on your lap, and shows who is in the pits. Visit the other boxes briefly for fuel and tires, then return to it." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the Tire Info box show live tire temperatures?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Tire Info (F6 by default) shows wear and temperatures from the last time the car stopped, so it reflects the previous stop and not the current state of the tires. Use it to confirm what changed in the pits and rely on feel for grip during a stint." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I change the F key bindings for black boxes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. The F key assignments are defaults, and you can change them in Options > Controls. You can also bind next black box, previous black box, select next control and increment or decrement to wheel buttons so your hands stay on the wheel." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I rely on auto-fuel instead of setting fuel myself?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Auto-fuel is a useful starting point, but check the Fuel box before pit lane anyway. After a long caution or a change in pace, the amount may not match your plan, and it is easier to correct on a straight than in the pit box. Contents of the boxes also vary by car." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">How-To · iRacing</p>
+    <h1>iRacing Black Boxes Explained: Relative, Fuel, Tires</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated November 10, 2026</span>
+      <span class="dot">·</span>
+      <span>8 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/wheel-cover.jpg" width="1000" height="563" alt="Cover art: concentric arcs turning about a centre" srcset="/assets/photos/wheel-cover-sm.jpg 560w, /assets/photos/wheel-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">The pit entry sign was already behind me when I looked down and saw the fuel box still showing zero to add. I had planned to fill it two corners earlier, but my right hand was on the wheel, my left was fighting a slide, and the keyboard was a stretch away. I drove down pit lane, sat in the box, and watched the crew do nothing useful while the cars I had been racing rolled past. That stop is the reason I rebuilt how I handle black boxes. This post covers what each one shows, which one I leave up during a race, and how I map them to the wheel so the setup happens before I reach the pit lane.</p>
+
+      <h2>What black boxes are and how they cycle</h2>
+
+      <p>Black boxes are the small information panels that appear over the in-car view in iRacing. You cycle through them with the F keys by default, and every binding can be changed in Options > Controls. What each box contains varies by car, so a stock car, a GT3 car and a prototype will show different rows in some of them.</p>
+
+      <ul>
+        <li><strong>F1 Lap Timing:</strong> your lap, best lap and deltas for the session.</li>
+        <li><strong>F2 Standings:</strong> the running order for the session.</li>
+        <li><strong>F3 Relative:</strong> the cars around you on track, with time gaps.</li>
+        <li><strong>F4 Fuel:</strong> fuel remaining, laps estimate and fuel to add at the next stop.</li>
+        <li><strong>F5 Tires:</strong> which tires to change at the next stop.</li>
+        <li><strong>F6 Tire Info:</strong> wear and temperatures from the last time the car stopped.</li>
+        <li><strong>F7 Pit Stop Adjustments:</strong> car-dependent items such as wing, tire pressure, tear-off and fast repair.</li>
+        <li><strong>F8 In-Car Adjustments:</strong> car-dependent items such as brake bias, traction control, ABS, engine maps and anti-roll bars.</li>
+        <li><strong>F9 Mirror and graphics adjustments:</strong> quick tweaks to what you see.</li>
+        <li><strong>F10 Radio:</strong> the radio and chat controls.</li>
+      </ul>
+
+      <p>Only one box is shown at a time, which is the whole problem. If you want fuel, you have to leave whatever you were looking at. That is why the box you leave up between pit stops matters so much.</p>
+
+      <h2>Relative (F3): the box I leave up in a race</h2>
+
+      <p>The Relative shows the cars physically around you on the track, with time gaps, regardless of where they sit in the race order. A car that is half a lap down but right behind you appears here, while the leader a full straight ahead does not matter to your next ten seconds. Colours separate cars a lap ahead, cars a lap behind and cars on your lap, and it also shows who is in the pits.</p>
+
+      <p>Those colours do real work. When a car shown as a lap ahead appears behind me in the list, I know it is about to ask for a pass and I can plan where to give it room instead of getting surprised in a braking zone. When the car ahead is shown as a lap down, I know I am not racing it for position. Most drivers leave the Relative up for the whole race, and I do the same. It pairs well with a spotter, and I wrote about that setup in <a href="crew-chief-free-spotter-iracing.html">my post on the free crew chief and spotter</a>. The spotter tells me about the car beside me, while the Relative tells me how big the gap is to the cars in front and behind.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Race default</span>
+        <p>Treat the Relative as your home screen. Every other black box is a visit, and you return to the Relative as soon as the job is done.</p>
+      </div>
+
+      <h2>Fuel (F4): numbers I check on a straight</h2>
+
+      <p>The Fuel box shows how much fuel is left, an estimate of how many laps that covers, and how much fuel will be added at the next stop. You can set the amount to add and toggle fueling on or off right from the box. The laps estimate is a guide built from what you have burned so far, so it moves when you lift and coast or push hard. If you want to stretch a tank, my notes are in <a href="fuel-saving-technique-iracing.html">the fuel saving technique post</a>.</p>
+
+      <p>Here is how I use it. A few laps before a planned stop, I open the Fuel box on a straight and look at two things: the laps estimate and the amount to add. If the stop is the last one, I set the add amount so I finish with a small buffer, since a late yellow or an extra lap can change the plan. If more stops are coming, I set a round amount that fits the stint. Then I go back to the Relative.</p>
+
+      <p>iRacing also has an auto-fuel option that fills based on its own calculation. I use it as a starting point and I still check the box before pit lane every time. A calculation built on a mixed run of laps can be off after a long caution, and I would rather catch that on a straight than in the box.</p>
+
+      <h2>Tires (F5) and Tire Info (F6)</h2>
+
+      <p>The Tires box is where you choose which tires to change. Skipping tires shortens the stop, so choosing the right set is a real strategy lever, not a formality. Whether it is worth leaving two tires on depends on the car, the track and the gap behind you, which is the territory covered in <a href="pit-stop-strategy-undercut-overcut-track-position.html">the post on undercut, overcut and track position</a>.</p>
+
+      <p>Tire Info is easy to misread. It shows wear and temperatures from the last time the car stopped, not live values. If I look at it twenty laps into a stint, I am reading the numbers from the previous stop, not the current state of the tires. I use it right after a stop to confirm what the crew did, and I use my own feel for grip during the stint. Treating F6 as a live gauge would send me into the wrong decision.</p>
+
+      <h2>Pit Stop Adjustments (F7) and In-Car Adjustments (F8)</h2>
+
+      <p>F7 holds the extras you can change during a stop, and the list depends on the car. Depending on what I am driving, it can include wing, tire pressure, tear-off and fast repair. I set these before I arrive, the same way I set fuel, because the stop is not the time to scroll through a list.</p>
+
+      <p>F8 is for adjustments you make while driving: brake bias, traction control, ABS, engine maps and anti-roll bars, again depending on the car. I leave F8 for the moments between corners on a long straight, and I try to change one thing at a time so I know what caused the difference. Brake bias is the one I touch most as fuel burns off and the car gets lighter.</p>
+
+      <h2>Mapping black boxes to the wheel</h2>
+
+      <p>This is the part that fixed my pit entry problem. I race with a <a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> wheelbase (~9 N·m), a <a href="https://www.amazon.com/s?k=MOZA+CS+V2+steering+wheel&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-cs-v2" target="_blank" rel="sponsored noopener">MOZA CS V2</a> wheel and <a href="https://www.amazon.com/dp/B0DSHYFW1V?tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2</a> load cell pedals, in a fixed aluminium cockpit. The CS V2 has enough buttons that I never need to reach for the keyboard during a race. In Options > Controls, I bind the black box actions to buttons on the wheel.</p>
+
+      <ol>
+        <li><strong>Next black box and previous black box.</strong> Two buttons on the left side of the wheel let me move forward and back through the cycle without a hand leaving the rim.</li>
+        <li><strong>Select next control.</strong> This moves the highlight to the next row inside a box, such as from fuel to add to the fuel toggle.</li>
+        <li><strong>Increment and decrement.</strong> A pair of buttons that raises or lowers the highlighted value, so I can dial fuel up or down in steps.</li>
+        <li><strong>Return to the Relative.</strong> I count presses back to F3 and I have practised it until it is automatic.</li>
+      </ol>
+
+      <p>The point of grouping these on one side is muscle memory. My left thumb handles the box navigation and my right hand stays on the rim. After a few sessions I stopped looking at the wheel to find the buttons, which matters because looking down is exactly what costs me a corner.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Keep it consistent</span>
+        <p>Bind the same wheel buttons for every car you drive. If the buttons change from one car to another, the habit never sets and you are back to hunting for the keyboard.</p>
+      </div>
+
+      <h2>My pit entry routine</h2>
+
+      <p>With the buttons mapped, I run the same sequence on the last straight before pit entry. It takes a handful of seconds, and I do it only on a straight where the car is stable.</p>
+
+      <ol>
+        <li>Press next black box until the Fuel box is up, and check the laps estimate against the laps remaining.</li>
+        <li>Use select, increment and decrement to set the fuel to add, and confirm the toggle is on.</li>
+        <li>Move to the Tires box and choose which tires to change.</li>
+        <li>Open Pit Stop Adjustments if the car has items I want to change, such as tear-off or wing.</li>
+        <li>Return to the Relative and look for cars in the pit lane or around pit entry.</li>
+        <li>Brake for the pit speed limit and follow the pit lane rules.</li>
+      </ol>
+
+      <p>That last step ties into pit road discipline. A well-set stop does not help if I get a speeding penalty on the way in, so I keep <a href="iracing-pit-road-etiquette-avoid-speeding-penalties.html">the pit road etiquette checklist</a> in mind and use the Relative to see who else is entering.</p>
+
+      <h2>Habits that keep it simple</h2>
+
+      <ul>
+        <li>Set fuel and tires on a straight before pit entry, never in the braking zone.</li>
+        <li>Check the fuel box even when auto-fuel is on.</li>
+        <li>Remember that Tire Info reflects the last stop, not the current stint.</li>
+        <li>Return to the Relative as soon as a task is done.</li>
+        <li>Practise the button sequence in a test session before a race, with no one around you.</li>
+      </ul>
+
+      <p>After I rebuilt the routine around the wheel buttons, the late-fuel scramble stopped happening. If you take one idea from this post, bind next black box and increment to buttons you can reach without thinking, and give yourself a straight to use them on.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=iracing-black-boxes-explained-relative-fuel-tires">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CS+V2+steering+wheel&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-cs-v2" target="_blank" rel="sponsored noopener">MOZA CS V2 Steering Wheel</a></th><td>the round rim my whole FFB profile is tuned around</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0DSHYFW1V?tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>Which black box should I leave up during a race?</h3>
+        <p>Most drivers leave the Relative (F3 by default) up during a race. It shows the cars physically around you with time gaps, uses colours for cars a lap ahead, a lap behind and on your lap, and shows who is in the pits. Visit the other boxes briefly for fuel and tires, then return to it.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does the Tire Info box show live tire temperatures?</h3>
+        <p>No. Tire Info (F6 by default) shows wear and temperatures from the last time the car stopped, so it reflects the previous stop and not the current state of the tires. Use it to confirm what changed in the pits and rely on feel for grip during a stint.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I change the F key bindings for black boxes?</h3>
+        <p>Yes. The F key assignments are defaults, and you can change them in Options > Controls. You can also bind next black box, previous black box, select next control and increment or decrement to wheel buttons so your hands stay on the wheel.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I rely on auto-fuel instead of setting fuel myself?</h3>
+        <p>Auto-fuel is a useful starting point, but check the Fuel box before pit lane anyway. After a long caution or a change in pace, the amount may not match your plan, and it is easier to correct on a straight than in the pit box. Contents of the boxes also vary by car.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="sequential-vs-h-pattern-shifters-iracing.html"><span>Hardware</span>Sequential vs. H-Pattern Shifters on iRacing: Which One to Add First</a>
+      <a class="related-card" href="braking-markers-reference-points-iracing.html"><span>Technique</span>Braking Markers and Reference Points in iRacing</a>
+      <a class="related-card" href="iracing-starter-setup-guide-2026.html"><span>iRacing Tips</span>The Complete iRacing Starter Setup for Beginners (2026)</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-cs-v2","moza-r9","moza-crp2"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
