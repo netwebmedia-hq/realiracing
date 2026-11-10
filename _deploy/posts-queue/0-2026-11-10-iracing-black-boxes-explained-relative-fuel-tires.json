@@ -1,0 +1,159 @@
+{
+  "slug": "iracing-black-boxes-explained-relative-fuel-tires",
+  "tag": "How-To · iRacing",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "iRacing Black Boxes Explained: Relative, Fuel, Tires",
+  "description": "What each iRacing black box shows, which one to keep up in a race, and how to map them to wheel buttons so fuel and tires are set before pit entry.",
+  "sections": [
+    {
+      "p": "The pit entry sign was already behind me when I looked down and saw the fuel box still showing zero to add. I had planned to fill it two corners earlier, but my right hand was on the wheel, my left was fighting a slide, and the keyboard was a stretch away. I drove down pit lane, sat in the box, and watched the crew do nothing useful while the cars I had been racing rolled past. That stop is the reason I rebuilt how I handle black boxes. This post covers what each one shows, which one I leave up during a race, and how I map them to the wheel so the setup happens before I reach the pit lane."
+    },
+    {
+      "h2": "What black boxes are and how they cycle"
+    },
+    {
+      "p": "Black boxes are the small information panels that appear over the in-car view in iRacing. You cycle through them with the F keys by default, and every binding can be changed in Options > Controls. What each box contains varies by car, so a stock car, a GT3 car and a prototype will show different rows in some of them."
+    },
+    {
+      "list": [
+        "<strong>F1 Lap Timing:</strong> your lap, best lap and deltas for the session.",
+        "<strong>F2 Standings:</strong> the running order for the session.",
+        "<strong>F3 Relative:</strong> the cars around you on track, with time gaps.",
+        "<strong>F4 Fuel:</strong> fuel remaining, laps estimate and fuel to add at the next stop.",
+        "<strong>F5 Tires:</strong> which tires to change at the next stop.",
+        "<strong>F6 Tire Info:</strong> wear and temperatures from the last time the car stopped.",
+        "<strong>F7 Pit Stop Adjustments:</strong> car-dependent items such as wing, tire pressure, tear-off and fast repair.",
+        "<strong>F8 In-Car Adjustments:</strong> car-dependent items such as brake bias, traction control, ABS, engine maps and anti-roll bars.",
+        "<strong>F9 Mirror and graphics adjustments:</strong> quick tweaks to what you see.",
+        "<strong>F10 Radio:</strong> the radio and chat controls."
+      ]
+    },
+    {
+      "p": "Only one box is shown at a time, which is the whole problem. If you want fuel, you have to leave whatever you were looking at. That is why the box you leave up between pit stops matters so much."
+    },
+    {
+      "h2": "Relative (F3): the box I leave up in a race"
+    },
+    {
+      "p": "The Relative shows the cars physically around you on the track, with time gaps, regardless of where they sit in the race order. A car that is half a lap down but right behind you appears here, while the leader a full straight ahead does not matter to your next ten seconds. Colours separate cars a lap ahead, cars a lap behind and cars on your lap, and it also shows who is in the pits."
+    },
+    {
+      "p": "Those colours do real work. When a car shown as a lap ahead appears behind me in the list, I know it is about to ask for a pass and I can plan where to give it room instead of getting surprised in a braking zone. When the car ahead is shown as a lap down, I know I am not racing it for position. Most drivers leave the Relative up for the whole race, and I do the same. It pairs well with a spotter, and I wrote about that setup in <a href=\"crew-chief-free-spotter-iracing.html\">my post on the free crew chief and spotter</a>. The spotter tells me about the car beside me, while the Relative tells me how big the gap is to the cars in front and behind."
+    },
+    {
+      "tip": "Treat the Relative as your home screen. Every other black box is a visit, and you return to the Relative as soon as the job is done.",
+      "tipLabel": "Race default"
+    },
+    {
+      "h2": "Fuel (F4): numbers I check on a straight"
+    },
+    {
+      "p": "The Fuel box shows how much fuel is left, an estimate of how many laps that covers, and how much fuel will be added at the next stop. You can set the amount to add and toggle fueling on or off right from the box. The laps estimate is a guide built from what you have burned so far, so it moves when you lift and coast or push hard. If you want to stretch a tank, my notes are in <a href=\"fuel-saving-technique-iracing.html\">the fuel saving technique post</a>."
+    },
+    {
+      "p": "Here is how I use it. A few laps before a planned stop, I open the Fuel box on a straight and look at two things: the laps estimate and the amount to add. If the stop is the last one, I set the add amount so I finish with a small buffer, since a late yellow or an extra lap can change the plan. If more stops are coming, I set a round amount that fits the stint. Then I go back to the Relative."
+    },
+    {
+      "p": "iRacing also has an auto-fuel option that fills based on its own calculation. I use it as a starting point and I still check the box before pit lane every time. A calculation built on a mixed run of laps can be off after a long caution, and I would rather catch that on a straight than in the box."
+    },
+    {
+      "h2": "Tires (F5) and Tire Info (F6)"
+    },
+    {
+      "p": "The Tires box is where you choose which tires to change. Skipping tires shortens the stop, so choosing the right set is a real strategy lever, not a formality. Whether it is worth leaving two tires on depends on the car, the track and the gap behind you, which is the territory covered in <a href=\"pit-stop-strategy-undercut-overcut-track-position.html\">the post on undercut, overcut and track position</a>."
+    },
+    {
+      "p": "Tire Info is easy to misread. It shows wear and temperatures from the last time the car stopped, not live values. If I look at it twenty laps into a stint, I am reading the numbers from the previous stop, not the current state of the tires. I use it right after a stop to confirm what the crew did, and I use my own feel for grip during the stint. Treating F6 as a live gauge would send me into the wrong decision."
+    },
+    {
+      "h2": "Pit Stop Adjustments (F7) and In-Car Adjustments (F8)"
+    },
+    {
+      "p": "F7 holds the extras you can change during a stop, and the list depends on the car. Depending on what I am driving, it can include wing, tire pressure, tear-off and fast repair. I set these before I arrive, the same way I set fuel, because the stop is not the time to scroll through a list."
+    },
+    {
+      "p": "F8 is for adjustments you make while driving: brake bias, traction control, ABS, engine maps and anti-roll bars, again depending on the car. I leave F8 for the moments between corners on a long straight, and I try to change one thing at a time so I know what caused the difference. Brake bias is the one I touch most as fuel burns off and the car gets lighter."
+    },
+    {
+      "h2": "Mapping black boxes to the wheel"
+    },
+    {
+      "p": "This is the part that fixed my pit entry problem. I race with a MOZA R9 wheelbase (~9 N·m), a MOZA CS V2 wheel and MOZA CRP2 load cell pedals, in a fixed aluminium cockpit. The CS V2 has enough buttons that I never need to reach for the keyboard during a race. In Options > Controls, I bind the black box actions to buttons on the wheel."
+    },
+    {
+      "olist": [
+        "<strong>Next black box and previous black box.</strong> Two buttons on the left side of the wheel let me move forward and back through the cycle without a hand leaving the rim.",
+        "<strong>Select next control.</strong> This moves the highlight to the next row inside a box, such as from fuel to add to the fuel toggle.",
+        "<strong>Increment and decrement.</strong> A pair of buttons that raises or lowers the highlighted value, so I can dial fuel up or down in steps.",
+        "<strong>Return to the Relative.</strong> I count presses back to F3 and I have practised it until it is automatic."
+      ]
+    },
+    {
+      "p": "The point of grouping these on one side is muscle memory. My left thumb handles the box navigation and my right hand stays on the rim. After a few sessions I stopped looking at the wheel to find the buttons, which matters because looking down is exactly what costs me a corner."
+    },
+    {
+      "tip": "Bind the same wheel buttons for every car you drive. If the buttons change from one car to another, the habit never sets and you are back to hunting for the keyboard.",
+      "tipLabel": "Keep it consistent"
+    },
+    {
+      "h2": "My pit entry routine"
+    },
+    {
+      "p": "With the buttons mapped, I run the same sequence on the last straight before pit entry. It takes a handful of seconds, and I do it only on a straight where the car is stable."
+    },
+    {
+      "olist": [
+        "Press next black box until the Fuel box is up, and check the laps estimate against the laps remaining.",
+        "Use select, increment and decrement to set the fuel to add, and confirm the toggle is on.",
+        "Move to the Tires box and choose which tires to change.",
+        "Open Pit Stop Adjustments if the car has items I want to change, such as tear-off or wing.",
+        "Return to the Relative and look for cars in the pit lane or around pit entry.",
+        "Brake for the pit speed limit and follow the pit lane rules."
+      ]
+    },
+    {
+      "p": "That last step ties into pit road discipline. A well-set stop does not help if I get a speeding penalty on the way in, so I keep <a href=\"iracing-pit-road-etiquette-avoid-speeding-penalties.html\">the pit road etiquette checklist</a> in mind and use the Relative to see who else is entering."
+    },
+    {
+      "h2": "Habits that keep it simple"
+    },
+    {
+      "list": [
+        "Set fuel and tires on a straight before pit entry, never in the braking zone.",
+        "Check the fuel box even when auto-fuel is on.",
+        "Remember that Tire Info reflects the last stop, not the current stint.",
+        "Return to the Relative as soon as a task is done.",
+        "Practise the button sequence in a test session before a race, with no one around you."
+      ]
+    },
+    {
+      "p": "After I rebuilt the routine around the wheel buttons, the late-fuel scramble stopped happening. If you take one idea from this post, bind next black box and increment to buttons you can reach without thinking, and give yourself a straight to use them on."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Which black box should I leave up during a race?",
+      "a": "Most drivers leave the Relative (F3 by default) up during a race. It shows the cars physically around you with time gaps, uses colours for cars a lap ahead, a lap behind and on your lap, and shows who is in the pits. Visit the other boxes briefly for fuel and tires, then return to it."
+    },
+    {
+      "q": "Does the Tire Info box show live tire temperatures?",
+      "a": "No. Tire Info (F6 by default) shows wear and temperatures from the last time the car stopped, so it reflects the previous stop and not the current state of the tires. Use it to confirm what changed in the pits and rely on feel for grip during a stint."
+    },
+    {
+      "q": "Can I change the F key bindings for black boxes?",
+      "a": "Yes. The F key assignments are defaults, and you can change them in Options > Controls. You can also bind next black box, previous black box, select next control and increment or decrement to wheel buttons so your hands stay on the wheel."
+    },
+    {
+      "q": "Should I rely on auto-fuel instead of setting fuel myself?",
+      "a": "Auto-fuel is a useful starting point, but check the Fuel box before pit lane anyway. After a long caution or a change in pace, the amount may not match your plan, and it is easier to correct on a straight than in the pit box. Contents of the boxes also vary by car."
+    }
+  ],
+  "gearKeys": [
+    "moza-cs-v2",
+    "moza-r9",
+    "moza-crp2"
+  ],
+  "published": "2026-11-10",
+  "dateLabel": "November 10, 2026"
+}
