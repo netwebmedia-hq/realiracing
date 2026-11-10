@@ -1,0 +1,148 @@
+{
+  "slug": "nvidia-amd-driver-optimization-iracing",
+  "tag": "Hardware · PC Setup",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "GPU Driver Settings for iRacing: NVIDIA and AMD Optimization",
+  "description": "Tune NVIDIA and AMD driver settings to maximize iRacing frame rate and smoothness without sacrificing visual quality or causing stutters.",
+  "sections": [
+    {
+      "p": "GPU driver settings sit between your graphics card and iRacing, deciding how much processing power goes into rendering, synchronization, and frame pacing. Wrong settings cause stutters, tearing, input lag, or needless frame drops. Right settings let you hold 120 Hz on a 1440p monitor or maintain consistency in a long endurance race when temperatures climb. Most sim racers either ignore driver panels entirely or copy settings from a YouTube video made two years ago on different hardware. This guide covers the settings that matter for iRacing on both NVIDIA and AMD, explains what each one does, and shows you how to test whether a change actually helps."
+    },
+    {
+      "h2": "Why driver settings matter more than you think"
+    },
+    {
+      "p": "Your GPU has factories of settings: power limits, thermal throttling targets, memory clocks, frame sync modes, shader optimization levels, and driver-level anti-aliasing. Most of these ship at defaults designed for broad compatibility, not for sim racing. A game like iRacing taxes the GPU consistently across a 45-minute stint, which means thermal behavior and power delivery stability matter far more than in a single-player campaign. A small tweak that cuts 3 frames per second might be invisible in a shooter, but in a 120 Hz sim racing setup, losing 3 frames at a critical moment can feel like lag."
+    },
+    {
+      "p": "Also, driver versions themselves change behavior. A 12-month-old driver might handle frame pacing differently than the current release. You should not assume your current driver is optimal for iRacing without checking the release notes or testing it yourself."
+    },
+    {
+      "h2": "NVIDIA driver settings: the essentials"
+    },
+    {
+      "p": "Open the NVIDIA Control Panel (right-click the desktop or search Windows for it). Navigate to Manage 3D Settings. You will see Global Settings (affects all games) and Program Settings (per-game overrides). For iRacing, create a Program Setting so changes do not touch other applications. Look for iRacingSim64.exe in your iRacing folder."
+    },
+    {
+      "list": [
+        "<strong>Vertical Sync:</strong> Set to Off. NVIDIA's V-Sync introduces input lag by waiting for the next monitor refresh before pushing a frame. iRacing has its own frame sync; you do not need V-Sync enabled in the driver.",
+        "<strong>Triple Buffering:</strong> Set to Off. This is a legacy setting that worked around older CPU-GPU sync issues. It adds latency and is unnecessary with modern drivers.",
+        "<strong>Maximum Pre-rendered Frames:</strong> Set to 1. A higher value (2 or 3) lets the CPU feed frames to the GPU ahead of time, which sounds efficient but increases input lag. Sim racing demands the lowest latency possible, so use 1.",
+        "<strong>Power Management Mode:</strong> Set to Prefer Maximum Performance. This prevents the GPU from downclocking during a race to save power. Your fans will work harder, but your frame rate stays consistent through a 45-minute stint as your GPU heats up.",
+        "<strong>Texture Filtering:</strong> Set to High Performance. iRacing's track textures do not benefit from ultra-aggressive anisotropic filtering, and High Performance is faster than Quality or High Quality.",
+        "<strong>Shader Cache:</strong> Set to On (or Driver Default). This caches compiled shaders so iRacing does not recompile them each session, reducing stutters during loading or first lap."
+      ]
+    },
+    {
+      "tip": "Do not enable NVIDIA DLSS in the driver settings. iRacing implements its own frame scaling and resolution options in-game. Driver-level DLSS can conflict with those, causing visual glitches or crashes.",
+      "tipLabel": "DLSS and iRacing"
+    },
+    {
+      "h2": "NVIDIA: frame rate cap and adaptive refresh"
+    },
+    {
+      "p": "Modern NVIDIA drivers include an in-game frame rate limiter and adaptive refresh option. You can find these in Manage 3D Settings under Frame Rate Limiter (or set it per-game). If you run a 1440p 120 Hz monitor, you might cap the driver at 120 Hz to prevent wasted GPU work above your monitor's refresh rate. However, some drivers implement this limiter with a slight delay, which can feel like input lag. Test it: enable the limiter, run a couple of laps, and compare braking feel to your baseline."
+    },
+    {
+      "p": "G-SYNC is a separate feature that synchronizes your monitor's refresh to your GPU's frame output, eliminating tearing and input lag compared to traditional V-Sync. If you have a G-SYNC monitor, enable it in the NVIDIA Control Panel (3D Settings, G-SYNC). G-SYNC is safe for sim racing and reduces the need for a frame rate cap, since the monitor adapts to whatever frame rate your GPU produces up to the monitor's max refresh rate."
+    },
+    {
+      "h2": "AMD driver settings: the equivalent tuning"
+    },
+    {
+      "p": "AMD's driver panel is called Adrenalin. Open it from the system tray or search AMD Adrenalin. Navigate to Gaming, then Global Settings (or create a Game Profile for iRacingSim64.exe). AMD's layout differs from NVIDIA's but covers similar ground."
+    },
+    {
+      "list": [
+        "<strong>Wait for Vertical Refresh:</strong> Set to Off (equivalent to NVIDIA's V-Sync). AMD calls it by this older name, but the effect is the same: disable it.",
+        "<strong>Frame Rate Target Control:</strong> Set to Off or leave blank. This is AMD's frame rate limiter, and like NVIDIA's, it can introduce mild input lag if not tuned correctly. If you do use it, set it to your monitor's max refresh rate (120 Hz) and test.",
+        "<strong>Radeon Anti-Lag:</strong> Set to Enabled. This feature reduces input latency by executing draw commands closer to the point where your GPU actually needs them. For sim racing, enabled is generally better.",
+        "<strong>Radeon Chill:</strong> Set to Off or Disabled. Chill is a power-saving feature that throttles frame rate dynamically. In a competitive race, you do not want the GPU deciding to drop frames.",
+        "<strong>Texture Filtering Quality:</strong> Set to Performance. Like NVIDIA, iRacing does not require aggressive anisotropic filtering.",
+        "<strong>Shader Cache:</strong> Set to On. Same reason as NVIDIA: faster load times, fewer mid-session stutters."
+      ]
+    },
+    {
+      "tip": "AMD cards also support FreeSync (the open alternative to G-SYNC). If your monitor supports FreeSync and you own an AMD card, enable it. FreeSync reduces tearing and input lag at variable frame rates, much like G-SYNC.",
+      "tipLabel": "FreeSync and AMD"
+    },
+    {
+      "h2": "Testing and validating your changes"
+    },
+    {
+      "p": "Changing driver settings and assuming they work is a guess. Validate each change by running the same test lap at the same track with the same car in the same session, without AI, and measure frame rate and input lag."
+    },
+    {
+      "olist": [
+        "Launch iRacing and load a practice session at a familiar track. Enable the frame rate counter (Settings, General, Show FPS) and position it where you can see it during driving.",
+        "Complete 3 laps at a steady pace to warm up the GPU and let temperatures stabilize. Record the average frame rate and whether you see any stutters.",
+        "Change one driver setting only. Do not change multiple settings at once, or you will not know which one caused a change.",
+        "Repeat the test. If frame rate improved and you felt no input lag, the change was positive. If frame rate dropped or you felt input lag, revert it.",
+        "After you have tested all settings, run a 15-minute stint to confirm the GPU stays within your target frame rate under sustained load."
+      ]
+    },
+    {
+      "p": "Pay attention to input lag, not just frame rate. A setting that gains 5 frames but adds perceptible latency is a loss. Input lag is subjective and personal, so trust how the car feels when you brake or turn in, not just a benchmark number."
+    },
+    {
+      "h2": "Common pitfalls and what to avoid"
+    },
+    {
+      "p": "Driver-level anti-aliasing (FXAA, MSAA, or CSAA on NVIDIA; EQAA on AMD) usually hurts frame rate in iRacing without a visual benefit, because iRacing applies its own temporal anti-aliasing in-game. Disable driver-level AA and let iRacing handle it. If you enable both, you waste GPU work and may see visual artifacts."
+    },
+    {
+      "p": "Some users enable aggressive power-saving features to reduce electricity use. In iRacing, this is a trap. Radeon Chill, dynamic clock scaling, and low-power presets cause mid-race frame drops or thermal throttling. Prefer Maximum Performance on NVIDIA and set AMD to high performance mode."
+    },
+    {
+      "p": "Outdated drivers can cause stutters or crashes in newer iRacing builds. If you have not updated your driver in over six months, do so. Most NVIDIA and AMD drivers receive monthly updates. Check your GPU manufacturer's website or use their auto-update tool."
+    },
+    {
+      "h2": "When to tweak and when to leave it alone"
+    },
+    {
+      "p": "If you are holding a steady 120 frames per second at your monitor's refresh rate with no stutters or tearing during a long race, your driver settings are already dialed in. Do not change them. The temptation to optimize is strong, but chasing a single extra frame or chasing a feature you heard about online often introduces more problems than it solves."
+    },
+    {
+      "p": "If you are seeing consistent stutters, frame drops below your monitor's refresh, or input lag that did not exist before, then driver settings become worth investigating. Also, after a GPU driver update from your manufacturer, re-test your baseline. New driver versions sometimes reset your custom settings or behave differently on the same hardware."
+    },
+    {
+      "tip": "Document your working settings by taking screenshots of your driver panels. Store them in a text file or photo folder. If you update drivers and problems appear, you can revert to screenshots of what worked before.",
+      "tipLabel": "Backup your settings"
+    },
+    {
+      "h2": "The relationship between driver tuning and in-game settings"
+    },
+    {
+      "p": "Driver settings and in-game iRacing graphics settings are not the same thing. The driver controls how your GPU behaves at a low level. iRacing's graphics menu (Graphic Options) controls resolution, shadows, reflections, car detail, and other rendering features. A correct driver setup ensures your GPU can handle whatever graphics load iRacing throws at it without thermal throttling or instability. Then, use iRacing's graphics settings to dial in the visual quality you want at a frame rate you can sustain. See the <a href=\"iracing-graphics-settings-higher-fps-visibility.html\">iRacing graphics settings guide</a> for more detail on in-game optimization."
+    },
+    {
+      "p": "For reference, my setup uses an RTX 5060 Ti with driver default settings and a Ryzen 7 5700, which holds 120 frames at 1440p high settings on most tracks. Your mileage will depend on your exact hardware, but the approach is the same: start with these driver recommendations, test, and adjust only if needed."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I enable NVIDIA's or AMD's frame rate limiter in the driver?",
+      "a": "Only if you want to ensure your GPU does not render above your monitor's refresh rate (e.g., 120 Hz on a 1440p 120 Hz monitor). Some drivers implement this with slight input lag. Test it on your own hardware. If you use G-SYNC or FreeSync, you often do not need a hard cap, since your monitor adapts to the GPU's frame rate. If you do not use adaptive refresh, a cap can prevent wasted GPU work, but only if it does not add latency you can feel."
+    },
+    {
+      "q": "Is it safe to enable Radeon Anti-Lag or NVIDIA's maximum performance mode all the time?",
+      "a": "Yes. Anti-Lag reduces input latency without stability risk. Maximum Performance mode prevents your GPU from downclocking to save power; your power bill and fan noise may increase slightly, but frame rate stability improves. Both are safe for iRacing."
+    },
+    {
+      "q": "My iRacing suddenly has stutters after a driver update. What should I do?",
+      "a": "First, verify it is not an iRacing update (check your iRacing launcher). Then, check the GPU driver release notes to see if sim racing or direct-draw rendering was mentioned. If the new driver introduced the issue, roll back to the previous driver version (AMD and NVIDIA keep archives on their websites) and wait for a hotfix. If rollback does not help, revert your custom driver settings to defaults and test again."
+    },
+    {
+      "q": "Do I need to adjust driver settings if I use VR for iRacing?",
+      "a": "The same principles apply: disable V-Sync, enable maximum performance, set maximum pre-rendered frames to 1 (NVIDIA) or equivalent on AMD, and enable G-SYNC/FreeSync if your headset supports it. VR demanding higher frame rates (typically 90 Hz minimum) makes these settings even more important. Test on your headset and GPU combination to ensure smooth, lag-free performance."
+    }
+  ],
+  "gearKeys": [
+    "gpu-rtx-5060-ti",
+    "cpu-ryzen-7-5700",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-10",
+  "dateLabel": "November 10, 2026"
+}

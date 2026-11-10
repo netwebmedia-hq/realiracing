@@ -1,0 +1,156 @@
+{
+  "slug": "keyboard-mouse-tablet-mounts-sim-rig",
+  "tag": "Cockpit Setup · Mounting",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "Keyboard, Mouse, and Tablet Mounts for Your Sim Rig Setup",
+  "description": "Secure mounting solutions for peripherals keep them accessible during races and out of the way when you don't need them. Learn which mounts work best.",
+  "sections": [
+    {
+      "p": "A keyboard, mouse, or tablet on your sim rig desk can become a problem fast. Reach for it mid-corner and you'll bang your hand on the rim. Ignore it and it slides into your pedals during a hard braking zone. The best solution is a mount that holds these peripherals exactly where you need them: close enough to access without distraction, far enough that they never interfere with your rig geometry or your movement."
+    },
+    {
+      "p": "Most sim racers start by trying to wedge a keyboard under the rig or balance a tablet on a seat. That works until it doesn't. A proper mount is cheap insurance against fumbled inputs during a race, and it keeps your setup compact and professional-looking."
+    },
+    {
+      "h2": "Why mounting matters more than you think"
+    },
+    {
+      "p": "A keyboard or mouse on the desk surface forces you to break your seating position to use it. That means shifting weight, taking eyes off the monitor, and interrupting muscle memory. A mounted peripheral stays in a fixed place relative to your body, so you can reach it without thinking."
+    },
+    {
+      "p": "Tablets used for telemetry, pit board images, or setup notes face a different problem: they're easy to knock over. A magnetic or clamp-based mount keeps a tablet stable and at a readable angle, usually above or to the side of your rig where you can glance at it without losing focus on the road."
+    },
+    {
+      "p": "Collision is another issue. A keyboard left on the rig desk or in your footwell can shift during hard cornering. A tablet resting against your monitor stand can get nudged into the screen. Mounting solves both by anchoring each item to the rig frame itself."
+    },
+    {
+      "h2": "Common mounting types and where they excel"
+    },
+    {
+      "h3": "Arm-based mounts with C-clamps or ball joints"
+    },
+    {
+      "p": "The most flexible approach is an articulating arm (like those sold for tablets or cameras) clamped to your rig frame, monitor stand, or desk. These accept most devices and rotate into nearly any position. Look for arms with a ball joint at the device end, not a flat head, because it gives you tilt and swivel."
+    },
+    {
+      "list": [
+        "Strength: infinitely adjustable, works with phones, tablets, small cameras",
+        "Weakness: can sag under the weight of a heavy tablet after months of use; requires bolting to a solid part of your rig",
+        "Cost: typically 25 to 60 USD depending on arm length and clamp quality",
+        "Best for: tablets mounted above or beside your rig, or a single secondary device you'll move"
+      ]
+    },
+    {
+      "h3": "Magnetic suction mounts and magnetic pads"
+    },
+    {
+      "p": "Magnetic mounts stick to any metal surface on your rig or stand. They're quick to attach and remove, and they hold lighter devices (phones, small tablets under 1 kg) reliably. Some have a flexible gooseneck; others are rigid pads you attach to the back of a device case."
+    },
+    {
+      "list": [
+        "Strength: near-instant setup, no tools, reusable, works on cockpit frames and monitor arms",
+        "Weakness: weak hold on heavier tablets; won't work on carbon fibre or wood without a metal plate; magnetic field may affect old HDDs (rare in a gaming PC, but relevant if you record footage)",
+        "Cost: typically 15 to 35 USD",
+        "Best for: keeping a phone or small tablet accessible without a permanent mount"
+      ]
+    },
+    {
+      "h3": "Keyboard trays and pull-out drawers"
+    },
+    {
+      "p": "Some full cockpit frames come with a pull-out keyboard tray mounted to the chassis. These stay out of your way until you need them, then slide into position. A good tray holds a keyboard and mouse together and lets you tuck it under the desk when racing."
+    },
+    {
+      "list": [
+        "Strength: keeps keyboard and mouse together, saves desktop space, integrated into the rig",
+        "Weakness: only works if your cockpit frame has a mounting point; limits keyboard angle and height",
+        "Cost: built into cockpit price (10 to 25 USD as an aftermarket addition)",
+        "Best for: dedicated racing cockpits with a frame where you want to hide peripherals completely"
+      ]
+    },
+    {
+      "h3": "Stick-on adhesive mounts"
+    },
+    {
+      "p": "Small adhesive pads (3M VHB or similar) can hold lightweight items to a smooth surface. Some manufacturers sell phone mounts designed to stick to car dashboards, which work on monitor bezels or aluminum rig components. They're damage-free if you remove them correctly."
+    },
+    {
+      "list": [
+        "Strength: zero installation, leaves no marks if removed slowly, works on nearly any surface",
+        "Weakness: permanent-ish adhesive (can take hours to peel off cleanly), not suitable for heavy devices, leaves residue on plastic",
+        "Cost: typically 10 to 20 USD",
+        "Best for: temporary mounting or renters who can't modify their rig"
+      ]
+    },
+    {
+      "h2": "Mounting strategy by device type"
+    },
+    {
+      "h3": "Keyboard and mouse"
+    },
+    {
+      "p": "Most sim racers don't need a keyboard within arm's reach during a race. If you use one for setup changes or mid-session adjustments in practice, a pull-out tray or a dedicated desk shelf is better than an arm mount because a keyboard is hard to angle with a gooseneck. For mouse access only, a small magnetic pad on the side of your rig or under the rim works well."
+    },
+    {
+      "h3": "Tablet or iPad"
+    },
+    {
+      "p": "A tablet for pit board images, fuel/tyre data, or live telemetry needs to be visible at a glance. Mount it above the dashboard area of your rig, roughly at chin height or slightly higher, angled 15 to 30 degrees toward you. An articulating arm with a ball joint works best here because you can fine-tune the angle. Magnetic pads work if you're happy with a fixed position and the tablet is light."
+    },
+    {
+      "h3": "Phone"
+    },
+    {
+      "p": "A smartphone as a pit board or timer doesn't need to be close. A magnetic mount on your monitor bezel or a tiny adhesive pad on the right side of your monitor stand keeps it visible without taking up cockpit real estate."
+    },
+    {
+      "tip": "Before you buy a mount, measure the weight and dimensions of your device, then check the mount's rated capacity. A tablet arm that holds 2 kg will sag if you hang a 1.5 kg iPad plus case on it for eight hours a day.",
+      "tipLabel": "Weight rating matters"
+    },
+    {
+      "h2": "How to install without breaking your setup"
+    },
+    {
+      "p": "Clamp-based arms need a solid bolt point. If your cockpit is steel tube, find a vertical or horizontal member and use a C-clamp with a rubber pad to protect the finish. If it's a pre-made plastic cockpit, look for the manufacturer's mounting holes or reinforced anchor points. Never clamp to thin plastic or you'll crack it."
+    },
+    {
+      "p": "For a monitor stand, check whether the stand is hollow or solid. Most monitor arms have a VESA mount on the back and an internal cable run, so bolting a clamp to the rear post is usually safe. If the stand is all plastic, avoid it and use a magnetic pad instead."
+    },
+    {
+      "p": "Test the weight distribution before a race. Hang your device on the mount, run your rig through its full steering range (lock to lock, pedal press, seat slide if you have one), and watch whether the arm droops or the device shifts. If it does, tighten the joints or choose a heavier-duty mount."
+    },
+    {
+      "h2": "The real-world balance"
+    },
+    {
+      "p": "The goal is visibility and access without clutter. Most competitive racers keep a tablet or phone mounted for telemetry and pit communication, but hide everything else. A keyboard stays at the desk, not the rig, so you can use it between sessions without standing up. Mouse access is optional unless you're constantly adjusting setup or reviewing replays mid-session."
+    },
+    {
+      "p": "Budget 50 to 150 USD total for mounting your essential devices. A quality articulating arm (50 to 80 USD) plus a magnetic pad for your phone (15 USD) covers most setups. If you're building a cockpit from scratch, look for one with an integrated keyboard tray or tablet slot before you commit to add-on mounts. Once your peripherals are mounted, you'll recover that money in focus and consistency alone, because your hands stay where they belong: on the wheel or pedals."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I use a phone tripod as a tablet mount for my sim rig?",
+      "a": "Yes, but only if the tripod has adjustable legs that fit your rig geometry. Most phone tripods are designed for desks or floors and won't clamp to a rig frame securely. A tripod with a C-clamp base works better, but an articulating arm designed for cockpit mounting will be more stable and adjust faster."
+    },
+    {
+      "q": "Will a magnetic mount damage my tablet or phone?",
+      "a": "No. Magnetic mounts use permanent magnets or weak electromagnets, which don't harm modern smartphones or tablets. Older mechanical hard drives in external SSDs can be affected, but gaming PCs rarely use mechanical drives anymore. If you're concerned, test the mount on a non-essential device first."
+    },
+    {
+      "q": "Where should I mount a tablet to see pit board images without taking my eyes off the track?",
+      "a": "Mount it above your dashboard area, at roughly chin height or slightly higher, angled 15 to 30 degrees down toward you. This keeps it in your peripheral vision without requiring a head turn. Avoid mounting it to the side of your monitor, where you'll have to turn your head to read it."
+    },
+    {
+      "q": "What's the best mount for a keyboard if I need to adjust settings mid-session?",
+      "a": "A pull-out tray or roll-out drawer built into your cockpit frame is ideal because it keeps the keyboard hidden and clean between sessions. If your rig doesn't have one, mount the keyboard at the desk beside your rig and accept that you'll need to stop racing to reach it. Don't try to mount a full keyboard on an articulating arm because the weight and size make it unwieldy."
+    }
+  ],
+  "gearKeys": [
+    "cockpit"
+  ],
+  "published": "2026-11-10",
+  "dateLabel": "November 10, 2026"
+}

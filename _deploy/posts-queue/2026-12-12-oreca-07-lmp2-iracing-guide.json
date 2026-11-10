@@ -1,0 +1,166 @@
+{
+  "slug": "oreca-07-lmp2-iracing-guide",
+  "tag": "Car Guide · Endurance Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Oreca 07 LMP2 iRacing Guide: Setup, Braking, and Fuel",
+  "description": "Master the Oreca 07 LMP2 prototype in iRacing. Learn braking markers, fuel strategy for endurance races, and setup fundamentals for consistent pace.",
+  "sections": [
+    {
+      "p": "The Oreca 07 is a full-fledged LMP2 prototype, and it behaves nothing like a GT car. It accelerates harder, decelerates faster, and demands precision in inputs that feel extreme compared to road racing. If you're stepping up from GTs or stock cars, expect a learning curve. The car rewards smooth throttle application and aggressive trail braking because the front tires work at a narrow operating window. Miss that window by 5% and braking distances stretch, understeer builds, and your lap falls apart."
+    },
+    {
+      "p": "This guide covers the core techniques and setup adjustments that move you from survival to consistent pace in the Oreca 07. Most of it applies to other LMP2s in iRacing, though exact numbers will vary."
+    },
+    {
+      "h2": "Braking zones and threshold pressure"
+    },
+    {
+      "p": "The Oreca 07 stops harder than any GT car. On a 1440p 120 Hz monitor or better, you'll want solid braking reference points because the deceleration catches drivers off-guard."
+    },
+    {
+      "p": "Trail braking is mandatory in corners tighter than medium-speed (anything below ~120 mph entry speed). The car has aero-generated grip on corner entry, so you can continue braking while turning in. Release brake pressure gradually as you add steering input. If you stab the brakes, release them fully, then turn, you'll run wide or lock the fronts."
+    },
+    {
+      "list": [
+        "Set brake marker zones about 5-10% earlier than a GT car would use them, then work backward if you're over-slowing",
+        "On heavy braking zones (100+ mph to sub-60 mph), feather the pedal in the last 20% of deceleration to avoid locking fronts under trail braking",
+        "High-speed corners (chicanes, fast sweepers) demand brake release before turn-in; low-speed corners tolerate sustained light braking mid-corner",
+        "Front lock-ups waste tenths faster than rear lock-ups because the Oreca is aero-sensitive. If the front tires break loose, the car loses downforce and stability instantly"
+      ]
+    },
+    {
+      "tip": "Practice braking into one corner at a time in practice mode. Nail the marker and stopping point, then add trail braking in small increments. This builds muscle memory faster than guessing.",
+      "tipLabel": "Braking practice drill"
+    },
+    {
+      "h2": "Throttle application and low-speed corner exits"
+    },
+    {
+      "p": "The Oreca 07 has real torque and an aggressive power band. Snap the throttle open at low speeds and the rear tires spin immediately. This sounds dramatic, but it's actually your signal that you're loading the tires correctly on corner exit. The car wants you to push through understeer, not back out."
+    },
+    {
+      "p": "On exits from slow corners (hairpins, tight chicanes), apply throttle in two phases. First, roll on smoothly to 50-60% throttle and feel the rear settle. If the car is still pointing slightly inward and you have no traction loss, roll to full throttle. This is different from road cars where the smoothness matters constantly. Here, the car actually rewards a slightly aggressive second phase because the aero and slicks are built for it."
+    },
+    {
+      "p": "Oversteer on the Oreca 07 recovers slowly because of the aerodynamic imbalance. If you feel the rear step out mid-corner, you're often better off lifting off entirely and re-applying throttle than trying to catch it. The aero drag works against you if you're sideways."
+    },
+    {
+      "h2": "Fuel strategy and stint pacing"
+    },
+    {
+      "p": "The Oreca 07 consumes fuel at a predictable rate once you establish a pace. In a 6-hour or 24-hour race on a track like Spa, fuel strategy determines pit strategy as much as tire wear. Most endurance races on iRacing pit every 45-60 minutes depending on fuel consumption and track length."
+    },
+    {
+      "olist": [
+        "Log a baseline stint in practice: note fuel consumed over a clean, single lap. Multiply by your planned stint length (e.g., 50 minutes) and add a 2-lap buffer for heavy traffic or incident recovery.",
+        "Run hot laps only as long as you can refuel and reset. Pushing to the absolute limit and arriving at the pits on fumes wastes pace in the closing laps because fuel load affects weight, handling, and confidence.",
+        "In endurance races, undercut is possible but risky. Pitting 2-3 laps early to gain track position only works if you have clear air to put down fresh fuel gains. In heavy traffic, staying out and over-fueling your current stint is safer.",
+        "Tire wear over a stint is secondary to fuel in LMP2 endurance unless you hit a large accident or unusual track condition. Most teams pit for fuel and tires together."
+      ]
+    },
+    {
+      "tip": "Endurance fuel strategy is a team decision. Communicate tire wear and fuel burn to your co-drivers so the pit crew knows whether to expect an under-fuel or conservative refill.",
+      "tipLabel": "Endurance crew coordination"
+    },
+    {
+      "h2": "Baseline setup: dampers, springs, and anti-roll bars"
+    },
+    {
+      "p": "The Oreca 07 baseline setup is quite stiff compared to road cars. It needs to be because the car is designed for high-speed stability and consistent aerodynamic balance. If you start with the default iRacing setup, you're already close to competitive."
+    },
+    {
+      "p": "Most adjustments target circuit characteristics. At Spa, where high-speed corners and long straights dominate, teams run flatter aero angles and slightly softer front springs to reduce mid-corner instability. At slower tracks like Donington, stiffer setups improve turn-in and reduce exit oversteer."
+    },
+    {
+      "list": [
+        "Front anti-roll bar controls mid-corner understeer; increase if the car pushes on turn-in, decrease if it feels snappy and over-steers",
+        "Rear anti-roll bar should be softer than front to allow some rear compliance on track bumps; this improves overall balance and driver confidence",
+        "Spring rates stay in a narrow range (typically within 5-10 clicks of default). Drastic stiffness changes disrupt aero sensitivity and make the car harder to place precisely",
+        "Dampers are the fastest tuning tool: fast bump and rebound control tire loading through mid-corner compression. Start with factory dampers and adjust only if the car feels underdamped (bouncy) or overdamped (dead)"
+      ]
+    },
+    {
+      "h2": "Aero and straight-line stability"
+    },
+    {
+      "p": "Aerodynamic balance is the Oreca 07's personality. Most iRacing LMP2 events show you the front and rear wing angles. Reducing wing angle improves straight-line speed and fuel economy, but increases understeer and braking instability. Adding wing improves handling balance and braking confidence, but costs top speed and fuel mileage."
+    },
+    {
+      "p": "For 6-hour or longer races, a balanced setup often outpaces an extreme aero choice. You want tires within operating window for the full stint, and that means predictable, moderate understeer on most corners. Extreme setups require constant adaptation as fuel loads change."
+    },
+    {
+      "p": "Brake balance on the Oreca 07 is less aggressive than road cars because the aero generates braking grip. A common starting point is 52-54% front bias. In high-speed tracks with long straights (Spa, Le Mans), move front bias forward to 55-57% for stability. At technical circuits (Donington, Brands Hatch), drop to 50-52% to improve turn-in while braking."
+    },
+    {
+      "h2": "Tire management during a stint"
+    },
+    {
+      "p": "Oreca 07 tires warm quickly because of the downforce and weight. In the first lap after a pit stop, the car will feel nervous and under-gripped. By lap 3-5, tires reach operating temperature and pace settles. Push only after you've confirmed tire pressures and temperatures in the telemetry."
+    },
+    {
+      "p": "Tire wear on an LMP2 is gradual across a 50-60 minute stint. Front and rear wear at nearly the same rate, unlike GT cars where fronts typically take more abuse. If you see uneven wear (front much faster than rear, or vice versa), the problem is usually in brake balance, aero setup, or driving input consistency rather than a simple tire pressure fix."
+    },
+    {
+      "list": [
+        "Check tire pressure cold (immediately after stopping in the pits) and hot (after a cool-down lap). Pressure rises 2-4 psi over a stint, which is normal.",
+        "If hot tire pressure exceeds ~29-31 psi (varies by track), the tires are overheating. Reduce downforce, increase brake bias backward slightly, or lighten trail braking intensity.",
+        "Wear indicators in iRacing show as a line of damage on the tire. At 60-70% wear, the tire is still raceable for pace; above 80%, lap times fall noticeably.",
+        "Pit when tires reach 70-80% wear in endurance races, not when they show heavy visual damage. This ensures the next driver starts fresh and maintains pace consistency."
+      ]
+    },
+    {
+      "h2": "Common mistakes and how to fix them"
+    },
+    {
+      "p": "Over-aggressive initial steering input on corner entry destabilizes the front end. The Oreca 07 wants a late turn-in (compared to a GT3) with smooth, progressive steering. If you're correcting understeer mid-corner with extra wheel input, your turn-in was too early or too violent."
+    },
+    {
+      "p": "Lifting off the throttle mid-corner in search of more turn-in is a trap. The car loses aero grip instantly when you lift, which makes the problem worse. Instead, modulate throttle smoothly or trail brake more. Throttle modulation and brake modulation are your steering inputs on an LMP2."
+    },
+    {
+      "p": "Running out of fuel before you reach the pits costs minutes or races. Learn your fuel consumption exactly: practice stint, multiply by stint length, always add buffer. Most teams run out of fuel once per season by accident; don't be sloppy."
+    },
+    {
+      "tip": "Watch replays of your on-limit laps and compare your steering wheel input trace to a faster driver's. The best LMP2 drivers make smaller steering inputs and manage throttle and brake with more precision than road racers expect.",
+      "tipLabel": "Replay analysis for LMP2"
+    },
+    {
+      "h2": "Building pace in a new series or season"
+    },
+    {
+      "p": "The Oreca 07 appears in multiple iRacing series: IMSA Prototype Challenge, IMSA GTP (where it races as a private entry), and various endurance championships. Each series has different tracks and regulations, but the core driving technique is consistent."
+    },
+    {
+      "p": "Start with the baseline setup, a clean track, and focus on smooth inputs. Aim for lap consistency over outright pace in your first week. Once you can run 10 consecutive laps within 0.1 seconds, add one setup change per session and measure the effect. <a href=\"building-custom-setup-iracing-baseline-guide.html\">Start with a baseline setup and track every change</a> so you know what moved the needle."
+    },
+    {
+      "p": "Endurance racing in the Oreca 07 is a team sport. Communicate with co-drivers about tire and fuel status, and trust the pit crew's strategy calls. Consistent pace from all drivers matters far more than one hot lap from a single stint. Most wins come from zero-incident driving and clean pit stops, not from hanging it all out every lap."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What brake pressure (%) should I use in the Oreca 07?",
+      "a": "Start at 70-75% of your PC's maximum brake pressure (or ~65% brake pedal travel if using a load cell like the MOZA SR-P). The car is sensitive to brake modulation, so you want fine control. Adjust upward if you're under-braking into corners, or downward if you lock the fronts in heavy zones. Exact pressure depends on your pedal type and track, but the range is typically 65-85% input."
+    },
+    {
+      "q": "How much fuel does the Oreca 07 consume per lap?",
+      "a": "Fuel consumption depends on track length and driving style, but a baseline is roughly 2.5-3.5% of tank per lap on most circuits. At Spa (7 km), that's about 0.35% per km. Run a single hot lap in practice, note fuel remaining, and calculate your consumption rate. Always add a 2-lap safety buffer to your calculation for contingencies."
+    },
+    {
+      "q": "Should I use ABS in iRacing LMP2 racing?",
+      "a": "ABS is allowed and widely used in IMSA Prototype series on iRacing. It helps manage brake modulation, especially in endurance races where driver fatigue is a factor. Leave it on unless you're specifically practicing raw pedal feel. Traction control is also available and recommended for most drivers, set to a low level (1-3) to prevent wheelspin without removing driver input."
+    },
+    {
+      "q": "What is the ideal stint length in a 6-hour Oreca 07 race?",
+      "a": "Optimal stint length is 50-60 minutes, which typically translates to 20-30 laps depending on track. This balances fuel consumption, tire wear, and driver fatigue. Most teams pit every fuel cycle regardless of lap count. Coordinate with your team on the target stint time before the race starts so pit crew knows when to expect you."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-10",
+  "dateLabel": "November 10, 2026"
+}

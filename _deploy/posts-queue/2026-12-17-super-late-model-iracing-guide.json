@@ -1,0 +1,161 @@
+{
+  "slug": "super-late-model-iracing-guide",
+  "tag": "Car Guide · Oval Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Super Late Model iRacing guide: setup, braking, throttle control",
+  "description": "Master the Super Late Model's heavy steering, threshold braking and throttle sensitivity. Setup, racecraft and common mistakes for dirt oval success.",
+  "sections": [
+    {
+      "p": "The Super Late Model is one of iRacing's most rewarding dirt oval cars, but it punishes lazy inputs. It is heavier and less forgiving than the Late Model, with slower power steering, narrower throttle windows and more dramatic weight transfer. Success depends on smooth inputs, precise brake management and understanding how the chassis responds to setup changes on dirt surfaces."
+    },
+    {
+      "p": "This guide covers setup fundamentals, throttle and braking technique, and common mistakes that cost lap time and control. Whether you are moving up from the Late Model or learning dirt oval racing for the first time, these principles apply across all tracks and series."
+    },
+    {
+      "h2": "Steering weight and input speed"
+    },
+    {
+      "p": "The Super Late Model has power steering that feels noticeably heavier than the Late Model. This is not a bug. Heavier steering demands slower hands and more deliberate inputs. Rushing the wheel into a turn creates oversteer; the car drifts wider than expected because the front tires have not had time to load grip."
+    },
+    {
+      "p": "Start with smooth quarter-turn movements. Even tight corners should take 0.5 to 1 second to dial in full lock. Let the tires build lateral load before asking for more angle. On entry, turn-in should feel almost lazy compared to road cars. You will find that waiting for the front end to load actually reduces understeer and gives you better exit grip."
+    },
+    {
+      "p": "Practice on slow-motion laps where you consciously delay the steering input by half a second more than feels natural. You will overshoot the corner at first, but the car will tell you when you have the timing right. The rear will feel planted and the front will respond cleanly to small wheel adjustments."
+    },
+    {
+      "h2": "Threshold braking and trail braking"
+    },
+    {
+      "p": "The Super Late Model tolerates hard braking, but brake pressure must remain constant from the brake marker to the turn-in point. Any lift or sudden pressure change upsets the balance and triggers understeer or a sudden snap sideways."
+    },
+    {
+      "p": "Identify your brake marker for each corner. Come to a full stop on the straights and note when you release the throttle. That distance does not change; braking zones are repeatable. Apply brake pressure in one smooth step, not gradually. Lock in the pressure and hold it steady until you begin the steering input. Do not bleed off brakes slowly; the front tires will reload and the car will plow."
+    },
+    {
+      "p": "Trail braking works in the Super Late Model, but only on later corners where you have already scrubbed most of the speed. Release brakes gradually into the middle of the turn once the car is tracking through. Early corners with sharp angles demand braking off before any steering; attempting to trail brake a tight turn-in will break the front end loose."
+    },
+    {
+      "list": [
+        "Brake hard and early; the Super Late Model can handle strong deceleration",
+        "Release at a fixed point; the car enters the corner at the same speed every lap",
+        "Keep brake pressure constant; lifting the pedal mid-corner upsets weight transfer",
+        "Avoid trail braking into fast, early corners; save it for late-race technical turns"
+      ]
+    },
+    {
+      "h2": "Throttle control and mid-corner load"
+    },
+    {
+      "p": "Throttle sensitivity is high. A small increase in pedal input causes a large change in engine power, which can spin the rear tires on dirt. Smooth feeding of throttle is non-negotiable."
+    },
+    {
+      "p": "Begin applying throttle only after the car is pointed toward the apex and the steering wheel is at its peak angle. Start with very light pressure (10-20%) and let the rear build grip. Increase gradually over the next half-second. By mid-corner, you should be at 60-80% throttle. Full throttle should not arrive until the exit is clear and the car is straightening."
+    },
+    {
+      "p": "Dirt surfaces are less predictable than asphalt. If the rear steps out, do not lift; that will make it worse. Catch the slide with opposite lock and maintain throttle. Lifting kills weight transfer and the car will snap the other way. Early laps will feel scary; learn to steer and accelerate through small slides and the confidence builds fast."
+    },
+    {
+      "tip": "Set your throttle as progressive (non-linear) in iRacing settings. Start at 30-40% linearity instead of 100%. Progressive throttle mapping gives you finer control at low pedal inputs and reaches full power only at very high depression, which matches how the car behaves.",
+      "tipLabel": "Throttle calibration"
+    },
+    {
+      "h2": "Setup fundamentals for dirt ovals"
+    },
+    {
+      "p": "Setup changes feel magnified in the Super Late Model because the chassis is more rigid and has narrower adjustment windows than road cars. Small changes (1-2 clicks on most sliders) produce noticeable changes in handling."
+    },
+    {
+      "p": "Start with the iRacing base setup or a proven community setup from your league. Do not attempt to build a setup from scratch until you have logged 50+ laps in the car. Focus first on line consistency and inputs. Once your lap times stop improving, then begin adjusting setup."
+    },
+    {
+      "olist": [
+        "Increase front anti-roll bar if the car understeers mid-corner; decrease if it is loose on entry",
+        "Increase rear anti-roll bar stiffness if the rear slides excessively; decrease if the car feels planted but slow",
+        "Add tape to the grille if the car is overheating; remove tape if it is bogging down due to engine load",
+        "Lower ride height slightly to improve side bite and reduce wheelstanding on acceleration",
+        "Adjust wedge (cross-weight) by 0.5% steps; even tiny changes affect how the car sits"
+      ]
+    },
+    {
+      "p": "Dirt changes surface character during a race. Setup that felt perfect in practice may need small adjustments as the track speeds up or gets looser. Keep a second setup saved with slightly softer anti-roll bars and more downforce for late-race dirt conditions."
+    },
+    {
+      "h2": "Common mistakes that slow you down"
+    },
+    {
+      "p": "Rushing the steering wheel is the biggest lap-time killer. Most new Super Late Model drivers turn in too fast and then have to correct mid-corner. This costs line quality and mid-corner speed. Slow your steering inputs by 30% from your Late Model pace. Your lap time will drop immediately."
+    },
+    {
+      "p": "Over-braking is also common. The Super Late Model can stop quickly, but late braking does not make sense on dirt. Brake earlier and softer than you think you need. You will carry more mid-corner speed and exit better."
+    },
+    {
+      "p": "Pedal overlap (simultaneous steering and throttle in the middle of the turn) is tempting but leads to spinning. Separate your inputs: brake and steer first, then add throttle as the car straightens. This sounds slow, but it is actually fastest on dirt because weight transfer is cleaner."
+    },
+    {
+      "p": "Ignoring tire temperature is a mistake in endurance races. The Super Late Model tires take 3-5 warm-up laps to reach full grip. Do not push hard on lap one. Build speed gradually and your tires will grip harder than if you had attacked early. In short races, this cost is smaller, but the principle holds."
+    },
+    {
+      "tip": "Record a clean lap every session and play it back at 0.5x speed. Watch your steering inputs, brake timing and throttle application. You will see mistakes in slow motion that feel invisible at race pace.",
+      "tipLabel": "Replay analysis"
+    },
+    {
+      "h2": "Racecraft: racing other cars"
+    },
+    {
+      "p": "The Super Late Model rewards racecraft. Passing is possible but requires patience. A car one second faster per lap might need five or six laps to clear a slower car because passing windows are narrow on tight dirt ovals."
+    },
+    {
+      "p": "On entry, attack the inside line. Position your car so your front bumper is alongside the rear quarter of the car ahead as you brake. This forces them to respect your line. Do not bump them; a slight tap can cause both cars to slide. On exit, use the fact that they have to drive a tighter line. A wider line and better throttle application often means you exit faster and finish the pass down the straightaway."
+    },
+    {
+      "p": "Defending means using racecraft, not blocking. Hold your line, brake at your normal point and accelerate as usual. Most passes fail because the passing car makes a mistake, not because the car ahead does something special. Focus on your own execution and the pass attempt will either work or they will back out."
+    },
+    {
+      "p": "Late-race contact happens. If you get hit, steer opposite the direction the car is pushing, catch the slide with opposite lock, and get back on the power. Do not give up because you got bumped. Three-time around contact does not happen often in clean racing, but when it does, recover quickly and the other driver usually gets penalized."
+    },
+    {
+      "h2": "Practice plan: 30-minute session"
+    },
+    {
+      "p": "Start with setup validation, then move to consistency work. This structure is fast for learning:"
+    },
+    {
+      "olist": [
+        "Laps 1-5: Warm up the tires and baseline the car. Do not chase lap time.",
+        "Laps 6-15: Hit three clean laps in a row where you nail your braking points and throttle application. Focus on line consistency over speed.",
+        "Laps 16-20: Race the AI set to 95% difficulty. Treat this as practice for passing. Do not be aggressive; learn to position and execute one clean pass per lap.",
+        "Laps 21-30: Time trial mode. Two push laps, then two cool-down laps. This teaches you how the tires respond when hot."
+      ]
+    },
+    {
+      "p": "Record every push lap. After the session, review two that felt good and two that felt bad at 0.5x speed. Identify where your inputs changed and why. The same lap time can come from very different driving; fastest is smoothest, not most aggressive."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much different is the Super Late Model from the regular Late Model?",
+      "a": "The Super Late Model is heavier, has slower power steering, narrower throttle windows and requires more deliberate brake and steering inputs. It does not handle as sharply; patience and smooth technique are essential. If you have Late Model experience, expect to lose pace for the first 20 laps while you adapt to the slower input speeds and more dramatic weight transfer."
+    },
+    {
+      "q": "Should I trail brake in the Super Late Model?",
+      "a": "Only on late-race technical corners where you have already shed most of the speed. Early in corners with sharp angles, brake completely before you begin steering. Attempting to trail brake an early, tight turn-in will break the front end loose. Most Super Late Model success comes from braking hard and early, then managing throttle on exit."
+    },
+    {
+      "q": "What happens if I spin in a Super Late Model race?",
+      "a": "Steer opposite the direction the car is sliding and apply opposite lock smoothly. Once you catch the slide, get back on the throttle to regain momentum. Do not lock the brakes or lift the throttle during the spin; that will make the situation worse. Recovery from a spin is possible if you stay smooth. You will lose a few positions but stay in the race."
+    },
+    {
+      "q": "What setup changes help if the car is loose on entry but tight mid-corner?",
+      "a": "Reduce front anti-roll bar stiffness slightly to give the front more grip on entry. You can also lower the front ride height by 0.1 to 0.2 inches or reduce front wedge (cross-weight) by 0.25%. These changes load the front tires earlier and give you more entry confidence. Do not make all three changes at once; adjust one at a time and test."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-10",
+  "dateLabel": "November 10, 2026"
+}

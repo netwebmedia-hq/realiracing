@@ -1,0 +1,172 @@
+{
+  "slug": "supercars-gen3-iracing-guide-mustang-camaro",
+  "tag": "Car Guide · Oval Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Supercars Gen 3 iRacing Guide: Mustang and Camaro Setup Basics",
+  "description": "Master the 2024 Supercars Gen 3 cars on iRacing. Learn Mustang and Camaro setup fundamentals, braking zones, and oval racecraft.",
+  "sections": [
+    {
+      "p": "The Gen 3 Mustang and Camaro are iRacing's most recent addition to oval racing, and they represent a significant step up in tire behavior and mechanical complexity compared to the older stock cars. Both cars carry genuine downforce, active aerodynamics, and load-sensitive suspension tuning that reward precision over aggression. If you've spent time in the previous generation Supercars, expect a steeper learning curve. If you're new to modern oval racing entirely, these cars demand respect for tire temperature and brake management."
+    },
+    {
+      "p": "The Mustang and Camaro are mechanically identical in iRacing, with differences limited to visual appearance and minor livery options. Setup carries directly between them. What matters is understanding how the modern Supercars chassis responds to changes in wing angle, brake bias, and suspension stiffness, and how to extract performance from tires that behave very differently from older ovals cars."
+    },
+    {
+      "h2": "Tire behavior and temperature windows"
+    },
+    {
+      "p": "Gen 3 tires are grippier and more responsive than you might expect from oval racing. Cold tires have almost no grip, and overheating them on a short run will kill your exit traction. The sweet spot is narrow and depends heavily on track and fuel load."
+    },
+    {
+      "p": "Left-side tires (which carry most of the load on left-turn ovals) need special attention. A common mistake is running too much left-side weight jacking to generate front-end turn-in; this loads the left-side tires so aggressively that they overheat within five or six laps. The tire telemetry bar in iRacing shows left and right tire temperatures independently. Watch it. If your left-sides are climbing above roughly 95-100 Celsius (track-dependent), reduce weight jacking or increase front wing angle to free up the front."
+    },
+    {
+      "list": [
+        "Tire warm-up takes two to three laps of steady pushing. Don't overdrive on the out-lap.",
+        "Peak grip window is usually 85-95 Celsius for left-sides, 75-85 for right-sides on a road course; ovals are hotter due to sustained turning.",
+        "A sudden loss of rear traction mid-run often signals right-side tire overheating, not a setup problem.",
+        "Fuel load matters more than you think. A fresh tank (full fuel) makes the car handle much tighter than a low-fuel car. Adjust for this in practice."
+      ]
+    },
+    {
+      "tip": "Use the in-race telemetry overlay to monitor tire temps live. Drop fuel to a sustainable load early (don't experiment during a race), and tune your line and brake points around that known weight.",
+      "tipLabel": "Tire Management"
+    },
+    {
+      "h2": "Brake setup and pedal sensitivity"
+    },
+    {
+      "p": "The Gen 3 brakes are significantly more responsive than older ovals cars. A small increase in brake bias toward the front can turn the car into a spinning nightmare if you're not smooth on the pedal. Most drivers find success with a bias around 53-56 percent front (starting point varies by track and car setup), but the real key is linearity and modulation."
+    },
+    {
+      "p": "Load cell pedals (like the MOZA SR-P or Fanatec CSL Pedals with load cell) make a genuine difference here. The brakes respond to pressure, and a small mistake in brake input translates to a real problem. If you're using a spring-based pedal, you'll struggle with the precision this car demands, especially late in a race when fatigue sets in."
+    },
+    {
+      "p": "Brake force should be strong enough to scrub speed into the corner cleanly, but not so aggressive that the rear locks up or the car gets loose under heavy decel. A common setup is 65-75 percent max brake force. Test on a short oval (like Bristol or Martinsville) where braking zones are tight and mistakes are immediate feedback."
+    },
+    {
+      "olist": [
+        "Start with brake bias at 55 percent front and max force at 70 percent.",
+        "Make one 10-lap run and note the braking behavior. If the rear slides under heavy braking, reduce force by 2-3 percent or move bias forward by 1 percent.",
+        "If the front seems vague and you're running into the corner hot, increase bias toward the front or add 2-3 percent force.",
+        "Lock in your brake settings before a race. Changing them mid-event is a distraction that costs more than any small setup gain."
+      ]
+    },
+    {
+      "h2": "Weight jacking, front wing, and aerodynamic balance"
+    },
+    {
+      "p": "Weight jacking (adjusting the ride height of the left side relative to the right through springs and suspension geometry) is the primary tool for tuning turn-in and mid-corner balance in the Gen 3. More left-side jacking loads the left-side tires and generates more front-end grip, but it also increases tire heat."
+    },
+    {
+      "p": "The front wing is your second lever. More wing angle adds downforce and improves turn-in, but also increases drag and tires. Less wing loosens the front but saves fuel and tires. On high-speed tracks (like Charlotte or Kansas), you'll run less wing. On slower tracks (Bristol, Martinsville), more wing often helps."
+    },
+    {
+      "p": "A baseline starting point for most tracks is around 4-5 degrees of left-side jacking and 7-8 degrees of front wing. Practice will show whether you need to be more aggressive or conservative. If the car feels tight (understeers into the corner), add jacking or wing. If it's loose (oversteers), reduce jacking and add rear wing to balance it out, or simply reduce the amount you're turning the wheel."
+    },
+    {
+      "list": [
+        "Weight jacking range: most setups live between 3 and 6 degrees. Beyond 6 degrees, left-side tires usually overheat.",
+        "Front wing typical range: 5 to 12 degrees depending on track speed.",
+        "Rear wing: typically 5 to 9 degrees. More rear wing tightens the handling and helps stability on exit, but adds drag.",
+        "Downforce setup is a trade-off between corner speed and fuel consumption. Use practice to dial it in for your fuel strategy."
+      ]
+    },
+    {
+      "tip": "Set front wing and jacking in practice, then leave them alone during the race. Instead, manage line and brake input to adapt to tire wear. Consistent setup is faster than chasing feel lap-to-lap.",
+      "tipLabel": "Setup Stability"
+    },
+    {
+      "h2": "Suspension tuning: springs, dampers, and anti-roll bars"
+    },
+    {
+      "p": "The Gen 3 suspension is sensitive to spring stiffness changes. A soft setup generates more grip over bumps and keeps tires in contact with the track, but it can cause excessive body roll and slow exit traction. A stiff setup reduces body roll and improves directional response, but it can cause the car to hop over bumps and lose grip."
+    },
+    {
+      "p": "Most drivers start with a relatively soft setup and then stiffen as they gain confidence and understanding of their line. A common starting point is springs around 50,000-60,000 N/m on the front and 65,000-75,000 N/m on the rear. Front springs are usually softer than rear springs because the car carries most of its weight on the rear in a turn."
+    },
+    {
+      "p": "Dampers (shock absorbers) control how quickly the suspension compresses and extends. On a bumpy track, slower dampers help the car stay planted. On a smooth track, faster dampers improve turn-in response. Most setups run 3-6 clicks of compression and 5-8 clicks of rebound (the exact range depends on your sim rig and the track)."
+    },
+    {
+      "p": "Anti-roll bars (sway bars) control how much the car leans into a turn. Stiffer bars reduce body roll and improve turn-in, but they can make the car feel twitchy and lose grip over bumps. A common setup is 8-12 clicks front and 10-14 clicks rear. Start conservatively and add stiffness if the car feels wallowy."
+    },
+    {
+      "h2": "Brake cooling and sustaining performance over a race stint"
+    },
+    {
+      "p": "The Gen 3 Mustang and Camaro run modern brake cooling ducts. Hot brakes are a real problem on long stints, especially in endurance races. Unlike older oval cars where brakes are rarely an issue, these cars will see brake fade if you overdrive through a run."
+    },
+    {
+      "p": "Brake cooling is not a setup item in iRacing (the ducts are fixed), but your driving technique matters. Don't lock the brakes. Smooth, modulated application preserves brake energy and keeps temps down. If you find yourself braking later into a corner because brakes are fading, you're probably driving too hard and need to be more patient on entry."
+    },
+    {
+      "p": "Most Gen 3 stints in iRacing are short (30 to 60 minutes), so brake fade is manageable with smooth technique. For longer stints, monitor your telemetry. If brake temps climb consistently lap after lap, slow your entry speed or adjust your line to take a gentler path into the corners."
+    },
+    {
+      "h2": "Racecraft: how the Gen 3 behaves in traffic"
+    },
+    {
+      "p": "The Gen 3 is sensitive to aerodynamic turbulence. Following another car closely results in immediate loss of downforce and traction, especially in the high-speed corners. The dirty air is noticeable but not crippling if you're smooth with your inputs."
+    },
+    {
+      "p": "On a road course oval hybrid (like Road America or Sebring oval), the car responds well to trail braking and late apexes. On pure ovals, the Gen 3 rewards a high exit speed and a steady line. It's harder to move around than older ovals cars, so patience and positioning matter more than raw speed."
+    },
+    {
+      "p": "Passing on an oval requires you to make a clean pass into a corner or use the run-off area on exit to gain a positional advantage. The Gen 3 is competitive across the grid, so overtaking is possible, but it requires a clear plan and smooth execution."
+    },
+    {
+      "list": [
+        "Following a car: stay 3-4 lengths back to minimize dirty air impact, then make your move on the straights or into a corner where you can out-brake the car ahead.",
+        "Defending: hold your line and make decisive moves to block, but don't move more than once per straightaway or you'll attract a penalty.",
+        "Traffic balance: if you're losing grip in traffic, your line is too tight or your brakes are too aggressive. Loosen your entry and be smoother on the pedal.",
+        "Fuel strategy: plan your fuel load around your expected race length. The Gen 3 will run lean if you're pushing hard, so consider carrying extra fuel for a safety margin."
+      ]
+    },
+    {
+      "tip": "In your first few races, focus on consistency and learning the tire behavior. Don't worry about setting fastest lap time. Most grid positions in oval racing are decided by pit strategy and racecraft, not qualifying pace.",
+      "tipLabel": "First Races in Gen 3"
+    },
+    {
+      "h2": "Practice plan for a new track"
+    },
+    {
+      "p": "Spend your first practice session learning the track. Run steady, off-line passes to find the full track boundaries and identify the grip limits. Don't push hard; just get comfortable with the corners and where the braking zones are."
+    },
+    {
+      "p": "In your second session, settle on a baseline setup (use the default iRacing setup if you don't have a personal baseline) and run 10-15 consistent laps. Note the car's balance and any handling issues. Make small adjustments (one click, one degree) and feel the change."
+    },
+    {
+      "p": "By your third session, you should have a setup you're comfortable defending in a race. Lock it in and run qualifying prep: full fuel load, a warm-up lap, then three or four push laps. See what you're capable of, then dial back 2-3 percent for race pace."
+    },
+    {
+      "p": "If you have time, run a short 10-lap race with AI to practice pit stops (if it's an oval with pit stops) and tire management over a full distance. This is where setup tuning meets racecraft."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the quickest way to dial in a Gen 3 setup for a new track?",
+      "a": "Start with iRacing's default setup and run 15 consistent laps to understand the car's baseline handling. Make one change at a time: front wing up 1 degree, run 5 laps, then evaluate. Adjust weight jacking next if the car feels too tight or too loose. Lock in your settings after 30 minutes of practice and commit to that setup for qualifying and the race. Consistency beats perfection."
+    },
+    {
+      "q": "How much brake fade should I expect over a 45-minute race?",
+      "a": "With smooth braking technique, brake fade is minimal. Brakes may feel slightly softer in the final laps, but it's usually a 2-3 percent difference. If you're experiencing significant fade (brakes feel spongy and you're running into corners much hotter), you're either overdriving early in the stint or your brake setup is too aggressive for the track. Reduce brake force or adjust your line to be less demanding on the brakes."
+    },
+    {
+      "q": "Should I use the same setup on the Mustang and Camaro?",
+      "a": "Yes. In iRacing, both cars are mechanically identical. The only difference is cosmetic. You can swap setups directly between them without any concern. If you find a setup that works well in the Mustang, it will work just as well in the Camaro."
+    },
+    {
+      "q": "What happens if I overheat the left-side tires?",
+      "a": "Overheated left-sides lose grip progressively. You'll notice the front end becoming vague and less responsive to steering input around lap 4-6 of a run, and the car will drift higher toward the wall in high-speed corners. To fix it during a race, reduce your turning input, ease off the throttle earlier on exit, and wait for tires to cool. In setup, reduce weight jacking by 0.5-1 degree or add 1-2 degrees of front wing to free up the front and reduce the load on the left-side tires."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-10",
+  "dateLabel": "November 10, 2026"
+}

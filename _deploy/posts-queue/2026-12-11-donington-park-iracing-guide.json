@@ -1,0 +1,143 @@
+{
+  "slug": "donington-park-iracing-guide",
+  "tag": "Track Guides · Setup",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Donington Park iRacing Guide: Redgate, Craner Curves, Exits",
+  "description": "Master Donington Park's technical corners and elevation changes. Learn braking points, racing lines, and setup priorities for the UK classic.",
+  "sections": [
+    {
+      "p": "Donington Park sits on a hillside in Leicestershire, and that geography is everything. The circuit flows up and down, tightens unexpectedly, and punishes loose line work or hesitant braking. Most drivers arrive with experience from road-course racing but still lose time to the undulation and the narrow run-off at corners like Redgate and the Esses. The pace is there if you respect the elevation, commit to your apex, and trust the exit."
+    },
+    {
+      "p": "The track measures ~2.5 miles and takes roughly 1 minute 40 seconds in competitive road-racing cars. It hosts everything from single-seater testing to GT racing on iRacing, so the lines and braking points shift slightly by car class. This guide covers the core reference points and setup philosophy that apply across most vehicles."
+    },
+    {
+      "h2": "The Opening: Redgate to Hollywood"
+    },
+    {
+      "p": "Redgate is the first major test. You arrive at high speed from the pit-straight approach, and the braking zone is short. Most drivers brake too late or too hard here; the corner itself is a medium-speed, medium-radius right-hander that feeds into a slight kink before the Esses. The key is trail braking. Release the brake gradually as you turn in, keeping the car balanced so you can carry momentum through the transition to the Hollywood Kink just after."
+    },
+    {
+      "p": "Hollywood demands a gentle touch. It looks like a simple left flick, but the elevation is dropping, and the road narrows. Apex placement is slightly late to help rotate the car and set yourself up for the climb. Exit speed here matters because the next section is the Esses."
+    },
+    {
+      "list": [
+        "Redgate: brake at the 100-meter board, trail brake into the apex, avoid over-slowing and losing exit momentum.",
+        "Hollywood: a narrow left-hander on descent, late apex, smooth steering input to preserve rear-end balance.",
+        "Both corners: the road is tight; running wide even slightly will destroy your lap and draw penalties."
+      ]
+    },
+    {
+      "h2": "The Esses: Craner Curves and the Climb"
+    },
+    {
+      "p": "Craner Curves, or the Esses as many call them, are Donington's technical heart. The circuit rises sharply, and you have two quick direction changes to thread while the elevation steepens. The first corner is a right-hander, the second a left-hander, and they require rhythm and confidence."
+    },
+    {
+      "p": "Enter Craner from Hollywood with a smooth exit and minimal understeer. The first apex is relatively late; the car should be turning gently rather than cutting hard. Many drivers run the first apex too tight and then overshoot the second. Instead, treat the Esses as a flowing S: you're not apex-hunting separately on each kink. You're threading one continuous line. The elevation gain also means the car feels lighter through these corners, so over-aggressive steering will make the rear step out."
+    },
+    {
+      "p": "The exit from the Esses is critical because you immediately face Old Hairpin, and you need speed and rotation. Carry the most exit speed you can manage from the second crest, but do not sacrifice stability. The rear end loose through Craner will cost you in the hairpin."
+    },
+    {
+      "tip": "Craner Curves rewards smooth hands over aggression. The elevation and narrow run-off punish corrections. Find your rhythm on the approach and commit to a single fluid line rather than micro-correcting each kink.",
+      "tipLabel": "Flow over Aggression"
+    },
+    {
+      "h2": "Old Hairpin and the High Point"
+    },
+    {
+      "p": "Old Hairpin arrives fast after Craner. It is a tight, technical left-hander that sits near the circuit's highest elevation. Braking happens on a crest, which reduces grip and traction. Most drivers brake too early or brake too late and then over-correct the turn-in. The window is narrow."
+    },
+    {
+      "p": "Brake well before the apex, trail brake into the hairpin, and plant your apex deep into the turn. The hairpin is not fast, so exit speed is secondary to line accuracy. A tidy exit, even if slightly slower, sets you up for the descent and McLean's, which is faster. A sloppy hairpin line will have you chasing understeer or hunting for the next reference point."
+    },
+    {
+      "p": "After Old Hairpin, the track descends steeply toward McLean's Hairpin. This descent is a succession of minor kinks and crests. Manage compression here; the car is heavy on braking into each direction change, and small steering inputs will have outsized effects."
+    },
+    {
+      "h2": "The Lower Section: McLean's to Starkey's Bend"
+    },
+    {
+      "p": "McLean's Hairpin mirrors Old Hairpin but faces downhill. You are braking on descent, so the car has more weight transfer but less mechanical grip. The solution is to brake slightly earlier and carry less mid-corner speed than Old Hairpin, even though McLean's looks more open. Do not over-commit. A clean line and smooth exit matter more than peak speed through the corner itself."
+    },
+    {
+      "p": "From McLean's, the track opens slightly into a fast left-hander. Starkey's Bend is often overlooked, but it is the fastest section of the lap. Minimize steering lock, apex early to mid-track, and power hard off the exit. This is where you gain or lose a tenth against other drivers. Many people brake too much into Starkey's after exiting McLean's. Instead, trail brake gently and let the car rotate on the inside of the bend."
+    },
+    {
+      "list": [
+        "McLean's: brake on descent, smooth steering, prioritize clean exit, not peak corner speed.",
+        "Starkey's Bend: the fastest corner; minimize input, early apex, aggressive exit power to carry speed toward the chicane.",
+        "Compression through the lower section: the car is light on crest and heavy in dips. Smooth throttle and brake modulation is essential."
+      ]
+    },
+    {
+      "h2": "The Chicane and Pit Straight"
+    },
+    {
+      "p": "After Starkey's, the chicane arrives quickly. It is a slow, technical section that many drivers over-brake into. The first part is a right-hander, the second a left-hander, and they are tight. The goal is to maintain a consistent, flowing line and manage your exit speed onto the pit straight."
+    },
+    {
+      "p": "Brake earlier than you think for the first apex, then accelerate through both kinks with smooth steering. The pit straight is short but gives a brief drafting opportunity on race day. A clean chicane exit and early throttle application will help you gain ground into Redgate on the next lap."
+    },
+    {
+      "h2": "Setup Priorities for Donington"
+    },
+    {
+      "p": "Donington's elevation and technical corners mean setup choices have a direct impact. Start with a balanced baseline and make targeted changes."
+    },
+    {
+      "olist": [
+        "Front brake bias: Set slightly forward (53-55% front) to handle the heavy braking at Redgate and the hairpins without locking the rear on the crests.",
+        "Ride height: Lower ride height helps mechanical grip through Craner and the Esses, but monitor bottoming on compression zones. A half-stiff setup is a common starting point.",
+        "Differential locking: A 40-45% coast lock and 50-55% acceleration lock balance exit traction (crucial at Starkey's and the chicane) with turn-in rotation in tight corners.",
+        "Rear wing: Moderate downforce (25-35% rear wing depending on class) provides stability through the technical sections without sacrificing top speed on the pit straight.",
+        "Tire pressures: Start at manufacturer baseline and warm up on the opening lap. Elevation changes and mixed-speed corners mean tire wear is uneven; front-right and rear-left often run hotter."
+      ]
+    },
+    {
+      "tip": "The track temperature at Donington can shift throughout a session. Monitor tire temps over 3-4 laps before committing to large setup changes. Small brake bias or ARB adjustments are often more effective than chassis overhauls.",
+      "tipLabel": "Monitor and Adjust Gradually"
+    },
+    {
+      "h2": "Race Strategy and Consistency"
+    },
+    {
+      "p": "Donington favors drivers who are smooth and consistent. The narrow run-off and technical layout mean lock-ups and off-track excursions are common and costly. In practice, build your confidence at 95% pace, then gradually push the final 5%. This circuit will punish a last-lap qualification dive; instead, accumulate clean laps."
+    },
+    {
+      "p": "In racing, track position often matters more than raw pace. Donington's overtaking opportunities are limited because few corners have long straight approaches. Instead, focus on quality exits and tidy lines to stay ahead of pressure rather than attempting risky passes. A Redgate lock-up or an Esses off-track not only loses time but also invites retaliation or contact."
+    },
+    {
+      "p": "Endurance racing at Donington demands tire and fuel management because the stint can run 30 to 60 minutes. Tire degradation is steady rather than dramatic, so maintain a consistent pace and avoid over-driving in the first half of your stint. Save your tires for the final laps if you expect pressure from behind."
+    },
+    {
+      "p": "For more detail on setup tuning and how to diagnose what your car needs, see the <a href=\"building-custom-setup-iracing-baseline-guide.html\">custom setup guide</a>. Donington rewards baseline correctness, and small refinements compound into lap time over a race distance."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the ideal braking point for Redgate?",
+      "a": "Brake at or just before the 100-meter board on the approach to Redgate. The exact point depends on your car's braking power and downforce, but trail braking is essential. Release the brake gradually as you turn in to carry momentum through Hollywood without locking the front wheels."
+    },
+    {
+      "q": "Why do I lose time through Craner Curves?",
+      "a": "Craner rewards smooth, flowing inputs over aggressive steering. The elevation gain and narrow run-off mean the car is sensitive to corrections. Focus on entering with the right speed and letting the car flow through both kinks as one continuous arc rather than hunting separate apexes. Lock-ups and off-track excursions are common if you over-drive the line."
+    },
+    {
+      "q": "How should I approach the two hairpins differently?",
+      "a": "Old Hairpin sits at the high point and is braked on a crest, so grip is reduced. Brake earlier and trail brake smoothly into the apex. McLean's is downhill and demands even earlier braking, but exit speed is less critical than line accuracy. Both corners reward mid-to-deep apex placement and smooth steering to avoid upsetting the car balance."
+    },
+    {
+      "q": "What setup change helps most at Donington?",
+      "a": "Start with brake bias (53-55% front) to handle Donington's heavy braking zones on crests without locking the rear. A moderate rear wing and stiff anti-roll bars improve mechanical grip through the technical sections. Small adjustments to differential locking (40-45% coast, 50-55% accel) can also free up exit traction at Starkey's Bend and the chicane without over-rotating the car in tight corners."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-10",
+  "dateLabel": "November 10, 2026"
+}

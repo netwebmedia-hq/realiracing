@@ -1,0 +1,149 @@
+{
+  "slug": "martinsville-iracing-braking-rotation-paperclip",
+  "tag": "Track Guides · Oval Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Martinsville iRacing guide: braking and rotation on a paperclip oval",
+  "description": "Master the tight turns and heavy braking zones at Martinsville. Learn rotation technique and threshold braking for competitive pace on iRacing's tightest half-mile.",
+  "sections": [
+    {
+      "p": "Martinsville Speedway is unlike anywhere else in iRacing's oval roster. At less than half a mile and with banking only 12 degrees, it demands a different approach to braking, rotation, and throttle application than tracks like Bristol or Richmond. The turns are so tight that you'll be working the brake pedal deep into the corner, trail-braking through both apex and exit. Lap times here are won and lost not at top speed but in the precision of your deceleration zone and how cleanly you manage the car's rotation through the paper-thin racing line."
+    },
+    {
+      "p": "This guide covers the fundamental braking and rotation techniques that separate competitive Martinsville drivers from the rest of the field. You'll find that a single tenth of a second improvement in one turn carries forward through the entire lap because Martinsville forces you to trust the car and commit to heavy braking earlier than instinct suggests."
+    },
+    {
+      "h2": "Understanding Martinsville's tight geometry"
+    },
+    {
+      "p": "Martinsville's tight radius corners mean the car is always fighting to understeer. Banking at only 12 degrees adds to this challenge: the flat surface removes mechanical grip, so you're relying almost entirely on the tire's slip angle and brake balance to control the car's path. This is why setup at Martinsville often emphasizes front anti-roll bar stiffness, rear wing angle, and brake bias forward compared to faster ovals."
+    },
+    {
+      "p": "The paperclip-shaped oval has four distinct braking zones. Turns 1 and 2 flow into each other around the north end, and turns 3 and 4 do the same on the south end. Each corner demands entry speeds in the 80 to 100 mph range depending on setup and fuel load. That means heavy deceleration: you're often downshifting three gears in less than three seconds and managing brake temperature while doing it."
+    },
+    {
+      "list": [
+        "Turn 1/2 complex: Long braking zone into turn 1, fast transition to turn 2, immediate acceleration onto the backmarker straightaway.",
+        "Turn 3/4 complex: Similar structure on the south end. Turn 3 is often the hardest braking of the lap; turn 4 leads onto the main straight.",
+        "Main straight: Longest acceleration zone; fuel and tire management happen here.",
+        "Backmarker straight: Shorter but still valuable for gaining a few mph before turn 1."
+      ]
+    },
+    {
+      "tip": "Most Martinsville drivers brake too late and then panic-steer into the corner, causing understeer and mid-turn corrections. Earlier threshold braking and lighter steering input (even if it feels early) produces better rotation and lower lap times.",
+      "tipLabel": "Brake discipline matters more than aggression"
+    },
+    {
+      "h2": "Threshold braking technique for the turns"
+    },
+    {
+      "p": "Threshold braking at Martinsville means finding the exact point where the brake pressure keeps the tires at the edge of lockup without crossing it. On a load-cell pedal like the MOZA SR-P, this threshold is repeatable: apply consistent pressure and watch the telemetry trace in your mirror or external camera. On a non-load-cell pedal, threshold braking is harder to sustain but still possible with practice."
+    },
+    {
+      "p": "For turn 1, start braking on the main straight at approximately the 1000 ft marker (or your usual visual reference). Brake in a straight line; any steering input during heavy braking causes the front tires to lose longitudinal grip. Apply 85 to 90 percent of maximum brake pressure and hold it steady. Do not rise off the brake, dab it, or modulate it unless the car begins to lock. Smooth is fast. At around 100 mph, begin a gentle downshift sequence while maintaining brake pressure. The car should be pointing toward the turn-in point and decelerating smoothly."
+    },
+    {
+      "p": "Release the brake fully by the turn-in point. This abrupt transition feels odd at first because you're accustomed to trail-braking into slower corners on road courses. At Martinsville, releasing earlier actually helps rotation because it loads the front tires' slip angle instead of fighting it with continued brake pressure. A dirty driver might be off the brake 50 to 75 feet before the actual apex."
+    },
+    {
+      "h2": "Managing rotation through the apex and exit"
+    },
+    {
+      "p": "Once the brakes are released, the car's rotation depends on steering angle, throttle application, and aerodynamic balance. Martinsville's tight turns mean you'll be using near-maximum steering lock at the apex. This is uncomfortable and counterintuitive for drivers used to road courses, where you minimize steering angle and rely on speed scrubbing. Oval racing is different: you maximize steering angle and minimize speed scrubbing."
+    },
+    {
+      "p": "At the apex of turn 1, you'll be near full steering lock and off the throttle. The front tires are working hard to change the car's direction; any throttle input at this point will cause the rear to push wide. Instead, hold the wheel steady and let the car rotate through its natural arc. Your only job is to prevent understeer by maintaining that steady, light steering input and avoiding mid-turn corrections."
+    },
+    {
+      "p": "As the car exits the apex and the radius begins to open, you can begin feeding in throttle. This is progressive: small, smooth increments of throttle. Aggressive throttle application will cause a sudden load shift that the rear tires can't handle, resulting in a tight exit and lost time. Aim for 50 percent throttle by the midpoint of the exit and continue to full throttle as the track widens."
+    },
+    {
+      "list": [
+        "Apex phase: Wheel at maximum lock, off the throttle, steering input smooth and steady.",
+        "Exit phase: Gradually increase steering angle opening while adding throttle progressively.",
+        "Straightaway entry: Smooth to full throttle once the rear tires are no longer fighting for grip."
+      ]
+    },
+    {
+      "h2": "Turn 2 and the flow between corners"
+    },
+    {
+      "p": "Turn 2 is where most drivers lose time because it follows turn 1 so quickly. You're still at only 50 to 60 percent throttle when you need to brake again. This demands late braking into turn 2 and a sharp transition between the two corners. The car is still accelerating when you hit the brake, so engine braking and transmission downshifting help manage the deceleration."
+    },
+    {
+      "p": "Brake into turn 2 at around 80 to 90 mph, depending on setup and fuel. Use the same threshold-braking principle: steady, smooth pressure with no modulation. Release the brake by the turn-in point and rotate through the apex with light steering input. Turn 2 is slightly tighter than turn 1, so you may be at 95 percent steering lock rather than 85 percent. The key difference is that turn 2 leads directly onto the backmarker straightaway, so your exit speed and throttle application here determine your speed down the back."
+    },
+    {
+      "tip": "Lose one tenth in turn 1 and you'll feel it for 15 seconds. But lose one tenth in turn 2 because you weren't patient with the braking, and you'll lose three tenths down the backmarker straightaway as the car accelerates from a bad exit.",
+      "tipLabel": "Turn 2 exit speed is king"
+    },
+    {
+      "h2": "Fuel load, tire temp, and brake heat management"
+    },
+    {
+      "p": "Martinsville's heavy braking zones generate substantial brake heat. After 10 to 15 laps, brake fade becomes real: your threshold braking point will shift, and you'll need slightly more pedal pressure to achieve the same deceleration. This is why most Martinsville drivers run qualifying setup (low fuel, soft brakes, hot tires) very differently from race setup (heavy fuel, stiff brakes, cold tires)."
+    },
+    {
+      "p": "In practice and qualifying, you can push the braking point as late as the car allows because you're not worried about fading brakes. In race trim with 20 to 30 laps of fuel, you need to brake earlier by 50 to 100 feet and accept that your threshold braking will feel different than it did in practice. Build this into your muscle memory: find your race-fuel braking point before the race starts, not during it."
+    },
+    {
+      "p": "Tire temperature also shifts your rotation. Cold tires (common on lap 1 or after a caution) have less grip and require earlier braking, lighter steering input, and more progressive throttle application. Hot tires (lap 10 and beyond in race trim) allow later braking and more aggressive throttle. Learn to feel this difference and adjust your inputs accordingly. The steering angle stays the same, but the brake release point moves earlier when tires are cold."
+    },
+    {
+      "h2": "Braking on the straightaways and into turn 3"
+    },
+    {
+      "p": "Turn 3 is often the hardest braking of the lap because the backmarker straightaway is the longest acceleration zone. By the time you reach turn 3, you're at or near maximum speed. This demands heavy, committed braking and a willingness to hold 85 to 90 percent brake pressure for an extended period. On a ~9 N-m direct drive wheelbase like the MOZA R9, you'll feel significant resistance and vibration through the wheel as the car fights for grip."
+    },
+    {
+      "p": "Start braking at your reference point and commit to it. At Martinsville, second-guessing your brake point causes mid-turn corrections, which destroy your lap time. Brake in a straight line, release by the turn-in point, and rotate through using the same technique as turns 1 and 2. Turn 3 is slightly less tight than turn 2, so you might need 75 to 80 percent steering lock rather than 95 percent. This allows slightly more speed through the apex."
+    },
+    {
+      "h2": "Setup considerations for braking and rotation"
+    },
+    {
+      "p": "Your braking and rotation technique interacts directly with setup choices. A car set up for understeer (high front wing, stiff front anti-roll bar, high front brake bias) requires earlier braking and lighter steering input but rewards smooth application. A car set up for oversteer (low front wing, soft front anti-roll bar, rearward brake bias) allows later braking and heavier steering input but punishes any jerky pedal or wheel movement."
+    },
+    {
+      "p": "Most competitive setups at Martinsville are relatively neutral: enough front downforce to prevent understeer, enough stiffness in the front anti-roll bar to control the car's pitch during braking, and enough rear wing angle to make the car feel planted without excessive drag. This setup rewards smooth, threshold braking and steady steering inputs. If your setup feels twitchy or unpredictable, it's usually because brake balance or anti-roll bar stiffness is pushing the car toward understeer or oversteer at the limit."
+    },
+    {
+      "h2": "Practice routine: building consistency"
+    },
+    {
+      "p": "Spend the first 10 laps of practice finding your braking points and brake release points in good conditions. Use a single braking marker (distance to wall, visual reference on the track) and write it down. Note your brake release point separately (distance from apex). On lap 11, increase fuel load by 5 to 10 laps' worth and repeat the process. The braking point should stay relatively similar, but the brake release point will shift slightly rearward as the car decelerates more slowly. This is your race setup braking point."
+    },
+    {
+      "p": "Once you have your race braking points locked in, spend 5 to 10 laps focusing on consistency. Aim for identical lap times on consecutive laps. If lap 15 is 0.15 seconds faster than lap 14, figure out why. Did you brake later? Earlier? Was your steering smoother? This is how you separate fast drivers from consistent drivers. At Martinsville, consistency is worth more than peak pace."
+    },
+    {
+      "tip": "Record a replay of your best three laps and watch your steering input and brake traces. Most drivers brake too hard and release too late, then compensate with over-steering. Smooth braking traces and earlier brake releases will show you a faster line than you realized was possible.",
+      "tipLabel": "Replays reveal the real braking point"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I trail-brake into Martinsville's turns like I do on road courses?",
+      "a": "No. Martinsville's tight radius and light banking demand that you release the brake fully by the turn-in point. Trail-braking keeps the front tires loaded longitudinally and prevents them from developing the slip angle needed for the sharp direction change. Release the brake earlier than feels natural, and the car will rotate better with the same steering input."
+    },
+    {
+      "q": "How much earlier do I brake when fuel load is heavy in a race?",
+      "a": "Typically 50 to 100 feet earlier per turn, depending on how much fuel you're carrying. A full-fuel setup is 2 to 4 mph slower through the turns, which translates directly to earlier brake release points. Practice with race fuel and brake pressure during qualifying so you have muscle memory built in before the green flag."
+    },
+    {
+      "q": "What happens if I lock the brakes at Martinsville?",
+      "a": "A lock at Martinsville almost always results in either a spin or an off-track excursion because the steering input is so high that locked tires destroy what little directional control remains. Once locked, you're committed to running wide or spinning. Prevent locks entirely by using threshold braking: smooth pressure that keeps the tires at the edge without crossing it."
+    },
+    {
+      "q": "Is turn 2 or turn 4 typically faster around the oval?",
+      "a": "Turn 2 is usually faster because it exits onto the backmarker straightaway, which is the longest acceleration zone. Turn 4 is typically slightly tighter and leads onto the shorter main straight. A better turn 2 exit speed carries more time gain than a better turn 4 exit because you have more straightaway to capitalize on it. Focus on turn 2 consistency first."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-10",
+  "dateLabel": "November 10, 2026"
+}

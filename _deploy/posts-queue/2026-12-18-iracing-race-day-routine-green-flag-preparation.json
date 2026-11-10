@@ -1,0 +1,126 @@
+{
+  "slug": "iracing-race-day-routine-green-flag-preparation",
+  "tag": "iRacing Tips · Racecraft",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "Pre-race routine for official iRacing races: 30 minutes to green",
+  "description": "A structured 30-minute routine to settle nerves, verify your rig, and arrive at the grid mentally sharp for official iRacing races.",
+  "sections": [
+    {
+      "p": "The 30 minutes before you go green is when most drivers either sabotage themselves or build confidence. Nerves spike, distractions pile up, and a loose cable or misconfigured setting ruins a race you've prepared for all week. A race-day routine separates drivers who treat this moment as routine from those who treat it as chaos."
+    },
+    {
+      "p": "This is not superstition. A structured pre-race routine is a mental anchor. It forces you to check the things that matter (rig hardware, brake feel, monitor position), compartmentalizes the things you can't control (opponents' pace, weather luck), and puts you in the cockpit with a clear head. The drivers who keep climbing in iRacing run some version of this every single time."
+    },
+    {
+      "h2": "T-minus 30 minutes: rig and environment check"
+    },
+    {
+      "p": "Start here, before you load iRacing. Make this tactile. Walk to your rig and touch the things that can fail."
+    },
+    {
+      "list": [
+        "Steering wheel: grab the rim firmly at 9 and 3, twist left and right. Feel for play or grinding. Check that the quick release is fully seated (don't assume it is just because you used it last time).",
+        "Pedals: press the brake to the floor three times. Press the throttle fully. Repeat. Feel for inconsistency, dead zones, or sticking. A load cell pedal should be responsive and linear from cold.",
+        "Monitor: make sure it's positioned where you prefer it. Small changes in angle or distance between races wreck muscle memory and add unnecessary mental load. Confirm brightness and gamma are as you left them.",
+        "Keyboard, mouse, or tablet near your seat: make sure nothing will fall or tangle during a 45-minute race. Remove anything you don't need.",
+        "Network cable (if you're using Ethernet, which you should be): trace it from wall to PC. No loops that could snag or unplug if you shift in your seat."
+      ]
+    },
+    {
+      "tip": "You do not need a race suit or neck cooler or race-day ritual music to be serious about this. You do need to know your rig works before you strap in.",
+      "tipLabel": "Hardware first"
+    },
+    {
+      "h2": "T-minus 20 minutes: launch and load"
+    },
+    {
+      "p": "Open iRacing and load the race session. This is the boring part, and it's essential. You want to be in the pit lane with 10 minutes on the clock, not frantically loading a livery or setting FFB for the first time."
+    },
+    {
+      "list": [
+        "Launch iRacing. Let it fully load. Do not alt-tab or distract yourself.",
+        "Find your race in the schedule and click to enter. Read the series description one more time. Confirm the car, track, and weather.",
+        "Download the setup you've chosen (or load your baseline if you haven't tuned). Do not open the setup editor unless something is clearly wrong.",
+        "Load into the pit lane early. You want 10 to 12 minutes before green to sit in the car.",
+        "Check your controls one more time in the pit lane. Enable telemetry recording (if you log) and confirm your livery loaded."
+      ]
+    },
+    {
+      "p": "The goal here is to be fully loaded and ready with time to spare. Rushing this step makes you jittery and prone to careless mistakes like forgetting to turn off pit lane speeding or leaving damage repairs unchecked."
+    },
+    {
+      "h2": "T-minus 10 minutes: settle into the cockpit"
+    },
+    {
+      "p": "You're in the pit lane now. This is where you transition from logistics to racing. Strap in, lock the quick release wheel, and run through your pre-race checks."
+    },
+    {
+      "olist": [
+        "Adjust your seat and wheel position if needed. Confirm you can reach pedals and turn the wheel fully without hitting the cockpit.",
+        "Take three deep breaths. Slow, in through your nose, out through your mouth. This is not meditation. This is calibration.",
+        "Engage first gear or neutral (depending on the car and track) and hold the brake. Feel the brake bite. Confirm it's where you expect it.",
+        "Check your gauges and HUD. Fuel, tires, engine temperature, damage status, brake balance. Everything normal?",
+        "Pull out of the pit lane slowly and do one installation lap or a parade lap if the session allows. Get heat into the tires and let muscle memory wake up.",
+        "On the final approach to the grid, settle yourself into your baseline mental state. Not angry, not loose. Focused and ready."
+      ]
+    },
+    {
+      "p": "Installation laps or parade laps are not warm-up laps. You are not hunting for grip. You are putting your brain and body in sync with the car. Some drivers prefer silence during this lap. Others prefer white noise or familiar music. Know which one you are and stick with it every time."
+    },
+    {
+      "h2": "T-minus 5 minutes: grid position and final prep"
+    },
+    {
+      "p": "You're on the grid or holding position before the formation lap. This is the final window before the lights go out."
+    },
+    {
+      "list": [
+        "Confirm your position on the grid. Are you where you expected? Check your mirrors and understand who is behind and ahead.",
+        "Glance at tire temperature one more time. Cold tires are normal. Accept them.",
+        "If you're a manual shifter driver, confirm your shifter is set for the start. If you're using paddles, do a quick up-down to confirm response.",
+        "Place your hands on the wheel at 9 and 3. Loose grip, elbows slightly bent. This is your neutral position.",
+        "Close any unnecessary overlays (telemetry, damage, fuel calculator). You do not need visual noise in the first lap.",
+        "On the command to go green (or when the lights cycle), be present. Do not rehearse your start. Start when the light goes out and adapt."
+      ]
+    },
+    {
+      "tip": "Your first lap is the slowest lap you'll drive all race. Lap 2 and 3 are where you find rhythm. Accept this and lean on your lines rather than carrying speed into Turn 1.",
+      "tipLabel": "First lap reality"
+    },
+    {
+      "h2": "Why this routine matters"
+    },
+    {
+      "p": "This checklist is not about ritual. It is about reducing variables. When you follow the same steps every time, you remove the decision-making that eats mental energy and introduces mistakes. A driver who walks through this routine races the same car the same way every session, which means your setup decisions, your practice, and your racecraft stack up instead of getting buried under rig confusion or poor preparation."
+    },
+    {
+      "p": "The drivers who climb fastest in iRacing do not have secret setups or perfect racecraft. They have systems. They show up prepared. They lower their stress so they can focus on racing instead of worrying about whether their brake pedal is working or if their monitor is positioned right. That margin is real. Run this routine every time and you'll feel it."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much time do I actually need before a race?",
+      "a": "Thirty minutes is ideal and accounts for a full rig check, loading into the pit lane, and an installation lap. If you're short on time, the absolute minimum is 10 minutes (skip the rig walk-around and load the car cold). You will race slower and feel more stressed with less time."
+    },
+    {
+      "q": "What if I discover a problem during the pre-race check?",
+      "a": "If your wheel has play or your pedal feels wrong, you have time to diagnose it because you checked early. Tighten the quick release, recalibrate the brake, or restart iRacing if needed. If you find a real failure, you can still withdraw and reschedule without taking a participation incident. Better to know before you start."
+    },
+    {
+      "q": "Should I run a setup change immediately before the race?",
+      "a": "No. If you're going to change your setup, do it during practice week or your practice session earlier that day. In the last 30 minutes, load the setup you've chosen and trust it. Confidence in a known setup beats guessing on a change you haven't tested."
+    },
+    {
+      "q": "Does this routine change for dirt, ovals, road courses, or different series?",
+      "a": "The core steps are the same (rig check, load session, sit in pit lane, one lap, grid focus). The details change: oval drivers confirm gearing and brake bias; dirt drivers check for loose controls; rain races require monitor wipers off. Adapt the checklist to the car and track, but keep the structure identical every time."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-10",
+  "dateLabel": "November 10, 2026"
+}

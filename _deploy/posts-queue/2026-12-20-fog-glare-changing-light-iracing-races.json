@@ -1,0 +1,132 @@
+{
+  "slug": "fog-glare-changing-light-iracing-races",
+  "tag": "iRacing Tips · Visibility",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "Fog, sunset glare, and changing light in iRacing races",
+  "description": "How to adapt your setup, driving line, and monitor settings when fog, glare, and time-of-day shifts reduce visibility during long endurance races.",
+  "sections": [
+    {
+      "p": "Fog rolls in around hour three of a six-hour endurance race. A few laps later, the sun drops low enough to pour glare directly across the apex of turn eight. Your braking marker that worked all afternoon suddenly sits in shadow. Most drivers treat these light changes as random frustration, but they are predictable visual obstacles tied to track time, and adapting to them costs only attention and pre-race planning."
+    },
+    {
+      "p": "Dynamic lighting in iRacing follows the session clock. On a two-hour server downtime timer or a fixed sunrise-to-sunset progression, fog density, sun angle, and track temperature all change together. A race that starts at 16:00 and runs for six hours will end under partial darkness. That means your braking references, visual reference points, and throttle application change systematically. The drivers who spot the shift and adjust consistently gain places on those who rely on one setup and one line for the whole race."
+    },
+    {
+      "h2": "Why fog and glare affect lap time more than you expect"
+    },
+    {
+      "p": "Fog reduces forward visibility depth. Where you normally see the apex forty meters ahead, fog might cut that to twenty-five meters. Your eyes compensate by focusing closer, which raises perceived speed, even though your actual pace does not change. That shift forces a choice: brake sooner and run slower, or commit to the same markers and risk locking the wheels when the track comes into focus too late."
+    },
+    {
+      "p": "Sunset glare is directional. It does not cover the entire track evenly. High-priority apexes on the east or west sides of the circuit become harder to pick out against a bright sky. The racing line into turn one might be clear, but turn six becomes a guessing game. You lose the fine steering input precision that keeps lap time consistent. Time slip away lap after lap without a clear reason."
+    },
+    {
+      "p": "Both conditions also interact with monitor setup. A single 1440p 120 Hz monitor displays the scene at a fixed brightness and contrast. When sunlight or fog transitions happen in-sim, your monitor's luminance levels stay the same. Glare that sits at 60% brightness on a dimmer monitor feels less severe than the same glare on a bright display. Fog appears more opaque on a high-contrast panel."
+    },
+    {
+      "h2": "Setup changes that help in fog and low-light conditions"
+    },
+    {
+      "p": "Start with what you can control before the race. Most drivers assume setup does not interact with lighting, but a few changes reduce the penalty."
+    },
+    {
+      "list": [
+        "Lower front wing angle by 1-2 clicks. Reduced downforce means earlier apex rotation and a smoother steering arc. That smoother arc is easier to hold when visibility is poor and fine inputs become harder to judge.",
+        "Increase brake bias forward by 2-3%. Fog and glare make it harder to judge turn-in speed. A bias shift toward the front axle gives you more stopping power on entry, so a conservative braking point still works.",
+        "Dial out two-thirds of your usual roll stiffness. A looser car rotates on entry without needing as much precision. You lose some mid-corner speed, but consistency improves when visibility shrinks.",
+        "Set your differential lock slightly lower than usual. Less aggressive locking reduces snap oversteer on throttle, which helps when you cannot see exactly where the rear is pointing in fog."
+      ]
+    },
+    {
+      "tip": "These are tempo adjustments, not fundamental changes. Run five warm-up laps in fog at daytime first, then apply small tweaks to learn what works at your sim rig. A setup that handles fog well often feels loose and slow on clear laps, so avoid overtuning.",
+      "tipLabel": "Fog setup trade-off"
+    },
+    {
+      "h2": "Monitor and graphics settings that cut through fog and glare"
+    },
+    {
+      "p": "iRacing's graphics options give you real tools to manage visibility without cheating or reducing immersion."
+    },
+    {
+      "olist": [
+        "Increase contrast and gamma slightly during pre-race, but do this before the race starts. A gamma increase brightens the mid-tones without blowing out highlights, which helps fog feel less impenetrable. Start with +5 to +10 in your graphics settings menu.",
+        "Lower anti-aliasing quality from ultra to high or medium. Ultra AA smooths edges beautifully but can soften distant objects that should stand out. In fog, medium AA makes the racing line markers and apex boards crisper.",
+        "Boost global illumination by one tick. Fog absorbs and scatters light, so adding ambient brightness helps the braking markers and curbs stay visible without turning the scene into a blown-out white sheet.",
+        "Check your monitor brightness. If glare is the problem, a brighter monitor setting can paradoxically help: it increases the dynamic range between the dark track and the bright sky, so the glare feels distinct and less blown. Reduce contrast slightly if the image begins to look washed out."
+      ]
+    },
+    {
+      "p": "None of these changes are mandatory or a requirement for competitive pace. They are options to explore in practice. Some drivers prefer to race fog as it comes and accept a slightly slower lap time as the cost of immersion."
+    },
+    {
+      "h2": "Reference points and line changes when light shifts"
+    },
+    {
+      "p": "The most important adaptation happens in your head before it happens on the road. During practice, run your normal race distance or at least two hours. Watch for the exact lap when fog begins to thick or glare starts to cover a corner. Note which turns are affected first."
+    },
+    {
+      "p": "In fog, shift your visual reference from the apex to the curb and track markings. Those objects are closer, brighter, and always visible before the apex disappears into mist. A painted curb at turn three becomes your marker, not the apex cone. Brake at the last patch of white stripe instead of a distance marker that sits in fog. This feels less precise, but it is actually a more reliable input because you are using what you can see."
+    },
+    {
+      "p": "In glare, narrow your focus to objects that stay visible: the hood of your car, the braking board, and the edge of the racing line stripe. Ignore the vanishing point into the sun. Let your peripheral vision handle the glare and commit to the closer reference points. A common mistake is chasing the apex through glare; instead, aim to clip the inside curb and let the car's natural rotation carry you through."
+    },
+    {
+      "tip": "Record a practice lap and watch the replay at the exact moment fog thickens or glare appears. Note which visual references disappear first and which stay clear. Use those remaining references as your braking and turn-in points during the race.",
+      "tipLabel": "Replay analysis tip"
+    },
+    {
+      "h2": "Tire temperature and grip during weather transitions"
+    },
+    {
+      "p": "Fog and changing light also affect track temperature, which shifts tire grip. Fog cools the track. A race that runs from late afternoon into early evening will see track temperature drop 3 to 5 degrees Celsius as the sun sets. Tires that were at operating temperature in the afternoon become slightly cold as dusk approaches, and grip softens incrementally."
+    },
+    {
+      "p": "During practice, note the track temperature at the start and at the expected finish. Factor that range into your tire compound choice and brake balance setup. If the track will drop from 28 degrees to 24 degrees, you cannot run brake bias and wing angle tuned for 28-degree grip and expect consistency at 24 degrees. A small margin of setup conservatism at the start helps you maintain pace without a pit adjustment later."
+    },
+    {
+      "h2": "Endurance race strategy with fog and glare"
+    },
+    {
+      "p": "In long races, accept that your lap time will not be constant. Fog and glare impose a known pace loss. A lap that takes 1:52.3 in clear afternoon conditions might take 1:53.8 in fog. That is not a mistake; it is the cost of reduced visibility. If everyone in the field faces the same light and fog, relative pace stays similar, and track position matters more than absolute speed."
+    },
+    {
+      "p": "Offset that expected pace loss in your fuel and tire strategy. If you normally run a 45-minute stint, consider running 42-43 minutes in heavy fog. The pit stop costs time, but a green pit under caution is always available in endurance racing. Alternatively, run the full stint but accept that you will lose a few seconds per lap and plan your pit strategy around that loss rather than optimizing for your best lap time."
+    },
+    {
+      "p": "Glare and fog also create passing opportunities. Drivers who panic or fail to adapt will gradually lose pace and drop back. You cannot rely on outright speed to pass; instead, focus on smooth inputs and consistency. A driver running clean, repeatable laps in 1:53.5 will pass a driver running 1:52.0 followed by 1:54.5 because consistency beats raw pace over a long race."
+    },
+    {
+      "h2": "Practice routine for fog and light races"
+    },
+    {
+      "p": "Before entering an endurance race with fog or glare in the schedule, do this in a test session. Load the same track, set the server time to match the race start, and run laps for the full planned duration. Watch the lighting change in real time. Practice your adjustments and reference points as conditions degrade."
+    },
+    {
+      "p": "Run a full race simulation, not just a qualifying lap. Pace a lap or two at your absolute limit when conditions are best. Then spend the next 30 minutes running at 99% pace, deliberately smooth and focused on consistency. That consistency is what you will need when fog rolls in and glare appears. By race day, you will have already lived through the transition once, and the real thing will feel familiar, not surprising."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does fog affect lap time the same way at every track?",
+      "a": "No. Fog has the most impact at tracks with long sight lines and distant apexes, like Spa-Francorchamps or Daytona. Tight, technical circuits with close reference points are less affected because your braking and turn-in markers remain visible. Check the track layout during practice to identify corners where visibility will matter most."
+    },
+    {
+      "q": "Should I turn off dynamic lighting to avoid glare and fog penalties?",
+      "a": "You can, but official online races enforce dynamic lighting, so you cannot disable it in competition. Practice with it enabled so you adapt to real race conditions. If a practice session allows setting override, use it only to learn the track layout; always return to dynamic lighting for race preparation."
+    },
+    {
+      "q": "What is a good reference point when I cannot see the apex through fog?",
+      "a": "Use the nearest visible object in line with your intended path: a curb, track edge stripe, or braking board. Focus on clipping that object cleanly rather than hitting an apex you cannot see. A clean line through fog is faster than a perfect apex in glare because consistency beats precision when visibility is poor."
+    },
+    {
+      "q": "Do tire temperatures change in fog the same way they do in rain?",
+      "a": "Fog cools the track more gradually than rain, and tire temperature drops slowly over laps rather than instantly. The effect is subtle in short races but noticeable in endurance events. Check track temperature at the start and end of practice to predict the range and adjust your setup margin accordingly."
+    }
+  ],
+  "gearKeys": [
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-10",
+  "dateLabel": "November 10, 2026"
+}

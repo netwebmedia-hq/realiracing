@@ -1,0 +1,112 @@
+{
+  "slug": "pit-under-caution-stay-out-strategy-iracing",
+  "tag": "Strategy · Racecraft",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "Pit Under Caution or Stay Out: The Decision Tree",
+  "description": "Learn when to pit during a yellow flag and when to stay out. Track position, fuel, tires, and field gap math that wins races.",
+  "sections": [
+    {
+      "p": "A caution flag creates the most consequential decision in sim racing strategy. Do you pit and lose track position to gain fresh tires and fuel, or do you stay out and bank the advantage of running first? The answer depends on math, not instinct: your current gap to the field, fuel consumption relative to the laps remaining, tire degradation trend, and what your competitors will likely do."
+    },
+    {
+      "p": "Caution decisions cost races when driven by fear or greed. Most drivers pit too early in a season and stay out too late in an endurance race, because they don't measure their position in the field against their mechanical state. This guide breaks down the framework to make that decision measurable."
+    },
+    {
+      "h2": "The core variables: position, fuel, and tire life"
+    },
+    {
+      "p": "Your pit decision rests on four facts you must know before the yellow flies. First, your gap to the leader and to the car behind you. In a sprint race, a one-second deficit usually favors pitting if you expect to gain time under green. In a 30-car field where you're P8, that gap is much harder to close on fresh tires. Second, your fuel state relative to race distance. If you can reach the finish on your current load and your competitors cannot, staying out may win the race without overtaking. Third, your tire age in laps. A set of tires at lap 12 of 40 is not yet degraded; a set at lap 35 of 40 is spent whether you pit or not. Fourth, the fuel and tire state of the cars around you. If the car ahead just pitted two laps ago, that driver has no reason to pit again and you cannot close a gap by boxing."
+    },
+    {
+      "tip": "Pull up your fuel load and consumption rate in the garage before the race. If you're unsure whether you'll make the distance, calculate it: laps remaining times consumption per lap. A caution is no time to learn you're 0.5 gallons short.",
+      "tipLabel": "Pre-race math saves pit decisions"
+    },
+    {
+      "h2": "When staying out wins: the fuel math"
+    },
+    {
+      "p": "Stay out if you have structural fuel advantage. You're leading a 40-lap race, on lap 20, and you've burned 1.2 gallons so far. You can run another 18 laps on your current load. The car in second is also at lap 20 but runs hotter and will need to pit. If the caution comes on lap 28, that driver must pit and you hold the lead. Staying out is the automatic call because the math eliminates the chase."
+    },
+    {
+      "p": "This logic applies in any position if you have the fuel advantage. You're P4 and the three ahead will all need to pit within the next eight laps, but you won't need to pit for 12 more laps. Stay out now and your track position will be top-three when they exit the pits. The caution accelerates their pit window but doesn't change the math. You spend track position now to gain it back under green."
+    },
+    {
+      "p": "The exception: if multiple cars ahead also have low fuel consumption (common in slow-fuel formats), staying out does nothing. You'll sit in their exhaust through the restart and fall back to your true pace. Pitting costs you the position temporarily, but you exit with fresher tires to recover it. Read the setup, not just the fuel numbers."
+    },
+    {
+      "h2": "When pitting helps: tire degradation and track position recovery"
+    },
+    {
+      "p": "Pit if your tires are so worn that you're losing pace to the field faster than you're gaining from track position. A common trap: you're running P3 on tires at lap 38 of a 40-lap sprint, and a caution comes on lap 39. Staying out guarantees you finish P3, but your lap time is 0.8 seconds slower than fresh tires would be. The cars P4 and P5 will stay out too because they're close. You all finish in the same order. If you pit, you lose two positions in the pit stop but emerge with tires that are one full second faster than anyone else's. On a restart, you may pass both cars inside two laps. Pit."
+    },
+    {
+      "p": "The reverse trap: you're P8 with five laps to go and your tires are only three laps old. A caution comes. Staying out is worth more than pitting because the positions ahead are too far to close on fresh rubber, and you keep the advantage of newer tires over the cars behind you. Pitting guarantees you lose positions in the box and have no time to gain them back before the checkered flag. Stay out."
+    },
+    {
+      "list": [
+        "Pit if your tires are lapping significantly slower than the field average and more than two laps remain after the restart.",
+        "Stay out if your tires are within 0.3 seconds per lap of the leader and your track position is top-five.",
+        "Pit if you're mid-pack and a caution bunches the field, because overtaking a fresher car is easier than defending against one with new tires.",
+        "Stay out if you're running top-three and your tires still have pace. You lose more to pit stop time and exit gap than you gain from tire freshness."
+      ]
+    },
+    {
+      "h2": "Reading your competitors' strategies"
+    },
+    {
+      "p": "The best caution call accounts for what others will do. If the leader has old tires and low fuel, that driver will pit. The P2 car is fresher and will stay out. You're P3 with mid-range tire age. If you pit, you'll exit behind both and need multiple laps to recover. If you stay out, you'll be ahead of the leader but behind P2, and your tires will degrade faster than both. This call hinges on time remaining and restart position. Under three laps to go, stay out and gamble on luck or contact. Over five laps, pit and use tire advantage."
+    },
+    {
+      "p": "In endurance racing, cautions often trigger a cascade of decisions: some teams pit for splash-and-go fuel, others box the full service, some stay out entirely. Your strategy must account for the pit stop delay versus pit stop gain. A 45-second stop costs you one full position in the field. Will the tires you gain back make up for that one position in the remaining distance? If the answer is no, stay out. If the answer is yes and you have confidence in your pace, pit."
+    },
+    {
+      "tip": "Set a lap-time threshold before the race. If you drop 0.5 seconds per lap due to tire wear, you pit the next caution. If you stay within 0.2 seconds, you stay out. Measuring removes emotion.",
+      "tipLabel": "Preset your decision threshold"
+    },
+    {
+      "h2": "Common mistakes in caution strategy"
+    },
+    {
+      "p": "Pitting because you're bored or anxious. A caution gives permission to enter the pits, not a requirement. Most drivers who lead an endurance race and pit under caution lose because they break a working strategy. You were managing fuel and tires perfectly. The caution didn't change your mechanical state. Stay out and execute the plan."
+    },
+    {
+      "p": "Staying out to protect position when you have no chance to keep it. You're running P2, eight laps to go, and the yellows fly. The leader is on lap 31 of old tires and will need to pit. You stay out to keep P2. The leader pits and exits P3. You're still P2 on much older tires. For the next five laps, you watch the leader climb back past you as your grip falls away. You sacrificed pace to hold a position you couldn't maintain. Pit, gain tires, and finish P2 cleanly instead of dropping to P4 because you guessed wrong."
+    },
+    {
+      "p": "Ignoring what the field does. In a 30-car race, if 20 cars pit and five stay out, you're now running against a very small group with huge fuel and tire advantages. Your decision can't be made in isolation. Watch the pit exit telemetry and commit to the majority strategy. If most leaders pit, pit too. If most mid-pack drivers stay out, consider staying out. Outliers lose races."
+    },
+    {
+      "h2": "Practice the decision framework"
+    },
+    {
+      "p": "Build a mental checklist before every race. During caution laps, answer these questions in order: (1) How many laps remain after the restart? (2) Can I fuel to the finish from this moment, or will I need another pit stop? (3) How worn are my tires relative to the leader? (4) What gap do I have to the cars I care about (leader, position behind me, next car I can realistically pass)? (5) What did the top-three finishers do in this series last week? The last point matters because track and car parity tend to repeat strategies. If a certain setup, fuel, or tire plan won races on this track before, it's likely to work again."
+    },
+    {
+      "p": "A caution is noise in a longer race, not fate. Your pit decision under yellow is one of maybe three or four in a full endurance race. The drivers who win are those who measure each one and own the result. Stay out and fall back to P6, knowing you had fresher tires and ran faster. Pit and hold P3 on older tires, understanding that's the trade you chose. The math makes the strategy defensible. Instinct makes it a complaint."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I know if my tires are degraded enough to pit under caution?",
+      "a": "Compare your current lap time to your best lap time on this set of tires. If you're more than 0.5 seconds per lap slower than your peak and more than three laps remain in the race, degradation is working against you and pitting gains pace. If you're within 0.2 seconds of peak, your tires still have grip; stay out and protect position. Check the telemetry delta bar during practice to establish that baseline."
+    },
+    {
+      "q": "What if I'm not sure whether I can fuel to the finish on my current load?",
+      "a": "Pit. Uncertainty in endurance racing is resolved by putting. Running out of fuel five laps from the end loses the race entirely. A caution that creates doubt about your fuel margin is the caution to pit. Use the stop to top up or splash-and-go, even if you had planned to stay out, because the risk of a late-race fuel stop under green is far higher than the risk of losing two positions under yellow."
+    },
+    {
+      "q": "In a sprint race, is staying out under caution ever the right call if I'm not leading?",
+      "a": "Yes, if your tires are significantly fresher than the cars ahead and you have at least five laps to overtake. You're P4 on lap 30 of a 40-lap race with tires that are five laps old, while P1-P3 are all on tires that are 12 laps old. A caution comes. Staying out and restarting P4 with fresher tires than the entire podium is worth more than pitting and exiting P6 or P7 with no time to close the gap."
+    },
+    {
+      "q": "Should I always pit if the leader pits under caution?",
+      "a": "No. The leader's strategy is built on leading and managing a 30-second gap. Yours may be built on track position in mid-pack or recovering from a bad start. What works for the leader (pitting to keep P1 against a bunched field) may not work for you. Read your own fuel and tire state, not the pit stop of others. That said, if you're in the lead group (P1-P3) and they pit, follow them. The pace differential is real and you'll fall behind if you don't."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9"
+  ],
+  "published": "2026-11-10",
+  "dateLabel": "November 10, 2026"
+}

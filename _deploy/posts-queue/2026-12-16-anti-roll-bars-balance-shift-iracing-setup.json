@@ -1,0 +1,138 @@
+{
+  "slug": "anti-roll-bars-balance-shift-iracing-setup",
+  "tag": "Setup Guides · Suspension",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Anti-roll bars shift your balance: front and rear ARB tuning",
+  "description": "Understand how front and rear anti-roll bar stiffness moves your car's balance point and when to adjust them for understeer or oversteer.",
+  "sections": [
+    {
+      "p": "Anti-roll bars (ARBs), also called sway bars or anti-sway bars, are springs that resist the car's body roll in corners. A stiffer ARB reduces body roll and transfers load to the outside wheels faster. A softer ARB allows more roll and keeps load on the inside wheels longer. This load transfer directly changes how much grip each end of the car develops, which is why ARB tuning is one of the most direct balance controls in sim racing."
+    },
+    {
+      "p": "Most drivers assume they need to fiddle with springs, dampers, or brake bias to fix understeer or oversteer. ARB changes are often overlooked, yet they work faster and more predictably. A stiffer front ARB reduces front grip and increases understeer. A stiffer rear ARB reduces rear grip and increases oversteer. The relationship is simple enough to remember, and the effect is immediate."
+    },
+    {
+      "h2": "How ARBs change load transfer and grip"
+    },
+    {
+      "p": "When you turn the wheel, the car's body wants to roll outward. The ARB fights that roll by pushing down on the outside wheel and pulling up on the inside wheel. A stiff ARB does this job aggressively, so the outside wheel carries much more load and the inside wheel carries much less. A soft ARB resists roll weakly, so load spreads more evenly across the axle."
+    },
+    {
+      "p": "Grip depends on load. Tires generate the most grip at a particular load for a given temperature. Too little load and the tire slides. Too much load and the tire overheats and loses grip. ARBs shift this balance between the two wheels on each end. When the front ARB is stiff, the outside front tire gets fat with load while the inside front tire goes light. If the outside front tire is already at peak grip, stiffening the front ARB actually hurts total front grip because you are adding load to the heavy wheel and removing load from the light wheel, which is losing even more grip as it becomes even lighter."
+    },
+    {
+      "p": "In practice, most road and GT cars run a stiffer front ARB than rear. This biases the balance toward understeer so the car feels safer and more predictable for most drivers. Raising rear ARB stiffness is the classic fix for understeer because it moves grip bias toward the front."
+    },
+    {
+      "h2": "Front ARB stiffness and understeer"
+    },
+    {
+      "p": "A stiffer front ARB increases understeer because it reduces front grip. The front wheels carry less total load across both sides of the axle, so they have less grip to turn the car. You will feel the nose push wide and the car refuse to rotate into the apex."
+    },
+    {
+      "list": [
+        "Stiffer front ARB: nose pushes, understeer, car feels stable but slow through corners",
+        "Softer front ARB: nose turns in earlier, car rotates more, front grip increases",
+        "Use softer front ARB if you are losing time at entry or the car feels sluggish to turn",
+        "Use stiffer front ARB if the front is too sharp, causing snap-oversteer on entry"
+      ]
+    },
+    {
+      "p": "Front ARB changes show up most on entry and mid-corner. If the car plows straight through a tighter corner no matter how much steering angle you feed in, a softer front ARB will help. If the car is too eager to rotate and the front feels twitchy over mid-corner bumps, a stiffer front ARB will settle it."
+    },
+    {
+      "h2": "Rear ARB stiffness and oversteer"
+    },
+    {
+      "p": "A stiffer rear ARB increases oversteer because it reduces rear grip. The rear axle has less total grip, so when you power on or turn harder, the rear slides earlier. A softer rear ARB keeps the rear planted by spreading load more evenly."
+    },
+    {
+      "list": [
+        "Stiffer rear ARB: tail comes out, oversteer, car feels loose, harder to control under power",
+        "Softer rear ARB: rear stays planted, car feels stable, more understeer, easier to drive",
+        "Use stiffer rear ARB if the car is too stable and boring, requires lots of steering to rotate",
+        "Use softer rear ARB if the rear is snappy and the car is hard to manage mid-corner or exit"
+      ]
+    },
+    {
+      "p": "Rear ARB changes show up most on mid-corner and exit. If the car wants to oversteer when you hit mid-corner bumps or accelerate hard on corner exit, soften the rear ARB. If the car is planted but refuses to rotate even with opinionated steering input and trail braking, stiffen the rear ARB to loosen it up."
+    },
+    {
+      "h2": "ARB tuning order and baseline thinking"
+    },
+    {
+      "p": "Start with a baseline ARB setup that matches your track and car class, not a guess. Most default setups in iRacing are tuned for a neutral balance with a mild understeer bias. That is a safe starting point for learning. Once you know the baseline, small ARB changes teach you the balance quickly."
+    },
+    {
+      "p": "ARB tuning is almost always a one-step-at-a-time job. Change front or rear, not both at once. Make a 10 to 20 percent stiffness change, take three or four laps, and evaluate. Many drivers make the mistake of chasing balance with huge ARB swings and lose sight of what the car is actually doing."
+    },
+    {
+      "p": "A common sequence is: start with your baseline setup, run a few laps to find the balance problem, adjust front ARB if the issue is entry or mid-corner rotation, adjust rear ARB if the issue is exit or mid-corner stability. Once you think the balance is close, lock in those values and tune dampers or springs to refine the feel."
+    },
+    {
+      "tip": "ARB changes are not a replacement for springs or dampers. Springs control ride height and overall stiffness. Dampers control how quickly the suspension responds. ARBs control load transfer and roll. A car with weak springs and stiff ARBs will roll too much and feel broken. Balance all three.",
+      "tipLabel": "ARB is not the whole setup"
+    },
+    {
+      "h2": "ARB limits and when to stop tuning"
+    },
+    {
+      "p": "Most GT and road cars in iRacing have an ARB range from very soft to very stiff, and the defaults are middle-of-the-road. Pushing either end of the range usually makes the car worse. Extremely stiff front ARB will destroy grip and make the car snap unpredictably. Extremely soft ARB will roll so much that the car leans off the track."
+    },
+    {
+      "p": "A useful discipline is to stay within 50 to 150 percent of the baseline value. If the default front ARB is 10.0, a reasonable range is 5.0 to 15.0. Going much softer or stiffer usually means the underlying balance problem is not an ARB issue. It is likely a tire temperature problem, brake balance problem, or a setup direction that needs springs or dampers instead."
+    },
+    {
+      "p": "After ARB tuning, if you still have understeer, look at front tire pressure, brake bias, or spring rates. If you still have oversteer, look at rear tire pressure, throttle control technique, or rear wing angle. ARBs are a fast way to dial in balance, but they are not a magic fix for every handling complaint. See <a href=\"best-sim-racing-wheels-iracing.html\">our guide to sim racing wheels</a> for hardware that will help you feel ARB changes more clearly."
+    },
+    {
+      "h2": "Putting it together: a practical tuning example"
+    },
+    {
+      "p": "You arrive at a track with a default GT3 setup. The first lap feels planted and safe, but the car is slow. You run three lap runs and measure your lap times. Turn 3 is especially painful: the car plows wide no matter how much steering lock you use. Turns 7 and 8 feel stable enough, so the rear is fine. Turn 3 is an entry-heavy turn where understeer is the problem."
+    },
+    {
+      "p": "You soften the front ARB by about 15 percent. One lap later, the car rotates into Turn 3 much earlier. Two laps in, you have already gained 0.2 seconds and the turn feels linear. The rear is still stable. A few more laps show that the car is more responsive everywhere, not just Turn 3. You have found your front ARB range."
+    },
+    {
+      "p": "Later in the session, Turns 7 and 8 start to feel boring. The car is planted but the rear is not helping you rotate mid-corner. You stiffen the rear ARB by 10 to 15 percent. The car now rotates more eagerly. You can use less steering angle and the car feels less like it wants to understeer away. A few more laps confirm the change is right."
+    },
+    {
+      "olist": [
+        "Identify the balance problem: where in the corner (entry, mid, exit) and which end of the car",
+        "Change one ARB by 10 to 20 percent in the direction that should fix it",
+        "Take three to four laps and feel the change across multiple corners",
+        "If the change helped, lock it in and move on. If it did not work, revert and look elsewhere",
+        "After balance is close, tune dampers or springs to refine consistency and feel"
+      ]
+    },
+    {
+      "p": "ARB tuning is one of the fastest ways to move a setup toward your driving style. Once you internalize the relationship between stiffness and balance, you can read a car in a lap or two and make a small adjustment that moves you toward speed."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "If I stiffer both front and rear ARB equally, does the balance stay the same?",
+      "a": "No. Both front and rear grip will drop equally, but the balance depends on the ratio between them. If you need to stiffen both to reduce overall roll and improve turn-in sharpness, you are better off stiffening springs or dampers. ARBs work best when you adjust them one end at a time to shift balance. Equal stiffness changes might make the car feel more stable but do not fix understeer or oversteer."
+    },
+    {
+      "q": "Why does a stiffer front ARB increase understeer if stiffer usually means more grip?",
+      "a": "Stiffer does not always mean more grip. A stiffer ARB means faster load transfer. The outside wheel gets heavier and the inside wheel gets lighter. If your inside front wheel is already light and losing grip, making it lighter makes the total front grip worse. That is understeer. The outside wheel is already at peak grip, so adding more load to it does not help either. This is why extremely stiff front ARBs feel like the car plows off the track."
+    },
+    {
+      "q": "Can I use ARB alone to fix all my handling problems?",
+      "a": "No. ARBs control balance through load transfer, but they do not fix tire temperature issues, brake balance problems, or aerodynamic imbalances. If your tires are cold and sliding, stiffer ARBs will make it worse. If your brake bias is too rearward and the rear is locking up on entry, a softer rear ARB will not solve that. Use ARBs to dial in balance once tires and brakes are working correctly."
+    },
+    {
+      "q": "What is a safe starting point for ARB changes?",
+      "a": "Most default setups in iRacing are reasonable baselines. Start there. Make changes in 10 to 20 percent increments. Stay within 50 to 150 percent of the default value. If you have pushed an ARB to either extreme and the car still has a balance problem, the issue is likely not ARB related. Look at springs, dampers, tire pressure, or brake balance instead."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p"
+  ],
+  "published": "2026-11-10",
+  "dateLabel": "November 10, 2026"
+}

@@ -1,0 +1,154 @@
+{
+  "slug": "honda-civic-type-r-tcr-iracing-guide",
+  "tag": "Car Guide · Touring Cars",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Honda Civic Type R TCR iRacing: Setup, Braking, Throttle Control",
+  "description": "Master the Civic Type R TCR on iRacing with practical setup tuning, braking technique, and throttle discipline for consistent lap times.",
+  "sections": [
+    {
+      "p": "The Honda Civic Type R TCR is a front-wheel-drive touring car with a narrow power band and predictable handling, making it forgiving enough for newer drivers while rewarding smooth inputs and discipline. Unlike the heavier GT3 grid, the TCR demands precision in application. Weight transfer happens faster, grip threshold is narrower, and mistakes compound quickly over a race stint. Success in the Civic Type R means building a baseline setup, nailing throttle modulation off slow corners, and trusting the front end through high-speed direction changes."
+    },
+    {
+      "p": "This guide covers the fundamentals that separate consistent pace from erratic lap times on the Civic Type R TCR. The focus is on what the car responds to, how to read it, and where setup adjustments create measurable improvements."
+    },
+    {
+      "h2": "Starting setup: wing, brake balance, and anti-roll bars"
+    },
+    {
+      "p": "Begin with a balanced baseline rather than chasing front or rear bias. The Civic Type R benefits from moderate front anti-roll bar stiffness (ARB) around 10-14 clicks front and 8-12 clicks rear, depending on track. This keeps the front engaged without inducing understeer on entry. Rear ARB should trail front by 2-4 clicks to maintain predictability under load transfer."
+    },
+    {
+      "p": "Brake balance is typically 55-58% front. The Civic Type R is lightweight and sits on a narrow track, so it does not need as much rear brake as heavier GT3 cars. If you experience trail-braking understeer into fast corners, small rear bias reductions (moving 1-2% forward) improve turn-in. If the rear locks or feels unpredictable, raise rear brake slightly."
+    },
+    {
+      "p": "Wing angles start at 2-3 clicks on both front and rear. Increase front wing if entry understeer dominates slow corners. Increase rear wing if the car rotates too much mid-corner or falls out of line. Most setups land at 3 front and 2-3 rear for general-purpose tracks, with increases for high-downforce circuits like Zandvoort or Hungaroring."
+    },
+    {
+      "tip": "Brake balance is interactive with corner speed. At road courses with mixed corner types, 56-57% front is a reliable start. Oval-style turns demand lower rear bias (54-55%) because weight transfer is sudden. Road America or Le Mans require slight rear bias increase (57-58%) to manage the Civic Type R's tendency to pitch forward under long braking zones.",
+      "tipLabel": "Brake balance by corner type"
+    },
+    {
+      "h2": "Throttle modulation and mid-corner speed"
+    },
+    {
+      "p": "The Civic Type R's handling changes dramatically as you apply throttle. Off-throttle, it understeers gently and is very stable. On-throttle, especially mid-corner, it rotates and the front unloads. Exploiting this requires a smooth, disciplined throttle application rather than sudden power inputs."
+    },
+    {
+      "p": "For a typical slow-to-medium corner, apex at 50-60% throttle rather than full idle or full throttle. Progressively increase to 80-90% as the car reaches mid-exit. This maintains stability and prevents the front from sliding on exit. Aggressive drivers often apply too much throttle too early, causing the TCR to push understeer or spin the fronts. The car rewards patience."
+    },
+    {
+      "p": "On fast corners (Eau Rouge, Copse, 130R at Suzuka), lift slightly on entry (80-90% throttle maintained) and increase only once the steering wheel is straight. Partial throttle through 90-degree turns keeps the car balanced and prevents sudden weight transfer. Full throttle is reserved for straights and exits of high-speed corners where the road is already aligned with your direction."
+    },
+    {
+      "list": [
+        "Slow corners (hairpin, chicane, tight turn-in): apex at 40-50% throttle, build to 70-80% at exit.",
+        "Medium corners (90-degree turns): maintain 70-80% through apex, increase to 95% only after mid-exit.",
+        "Fast corners (sweepers, high-speed chicanes): stay at 90%+ throttle, lift only for sudden direction change. Return to throttle immediately after steering returns to straight.",
+        "Braking zones into corners: full brake on approach, trail-brake lightly (10-20% throttle) on entry if needed for rotation."
+      ]
+    },
+    {
+      "h2": "Trail-braking and turn-in technique"
+    },
+    {
+      "p": "The Civic Type R responds well to light trail-braking into medium-speed corners. Apply brake pressure with the wheel straight, then reduce brake as you turn the wheel. This does two things: it keeps weight on the front tires during the critical grip moment, and it helps the car rotate naturally."
+    },
+    {
+      "p": "Common error: lifting completely off the brakes, then turning hard. This unloads the front and causes understeer on entry. Instead, smooth brake release should occur over the same window as your steering input, roughly 1-2 seconds before apex for a typical corner. Release brake pressure proportionally as steering angle increases. By apex, you should be fully off brake and beginning throttle application."
+    },
+    {
+      "p": "On very tight corners, trail-brake harder. On fast flowing corners, reduce trail-brake and shift brake application earlier. Read the corner geometry first. A technical chicane (Spoon Curve at Suzuka or the Bus Stop at Spa) demands trail-braking. A long sweeper does not."
+    },
+    {
+      "tip": "Trail-braking is where most TCR improvements happen because every driver can execute it better. Practice one corner per session: pick a corner where you struggle for grip, apply 15-20% throttle while braking, and feel how the car turns. Once confident, reduce brake pressure and increase throttle. The Civic Type R will tell you when the front is saturated by pushing understeer or by rotating too much.",
+      "tipLabel": "Trail-brake to find the limit"
+    },
+    {
+      "h2": "Suspension tuning for circuit consistency"
+    },
+    {
+      "p": "Damper settings affect how the car responds to mid-corner bumps and weight transfer. A common starting point is 7 clicks front rebound, 6 clicks rear rebound, with bump damping 1-2 clicks lower. This keeps the car settled mid-corner without making it loose on kerbs or rough pavement."
+    },
+    {
+      "p": "If the car feels unstable under heavy braking or mid-corner (especially noticeable at high-speed corners), increase rebound damping gradually: 8 front, 7 rear. If it feels slow to rotate mid-corner and understeer dominates, reduce rebound slightly: 6 front, 5 rear. These are small adjustments; each click changes the character significantly."
+    },
+    {
+      "p": "Ride height and springs: lower ride height improves grip at smooth tracks. At bumpy circuits, raise ride height 1-2 clicks to avoid bottoming and maintain suspension compliance. Spring stiffness should be moderate; the Civic Type R does not need very stiff springs. A reasonable range is 120-135 kN/m front depending on track. Rear springs typically sit 10-15% softer to allow weight transfer without inducing oversteer."
+    },
+    {
+      "olist": [
+        "Establish a baseline setup using defaults or a community setup from a trusted sim racer.",
+        "Drive 3-4 laps at moderate pace and note where the car understeers or oversteers.",
+        "Make one change (typically ARB, brake balance, or damper rebound) and drive the same corner again. Feel the difference.",
+        "Once you identify a direction (e.g., 'I need more rotation mid-corner'), continue in that direction until the car responds predictably.",
+        "Run a full stint of 8-12 laps to assess consistency. A good setup should maintain grip throughout, not just show speed on fresh tires."
+      ]
+    },
+    {
+      "h2": "Tire management and fuel consumption"
+    },
+    {
+      "p": "The Civic Type R TCR runs on slick tires with a narrow operating window. Tire warm-up takes 2-3 laps at racing pace. On lap 1, expect 2-3 tenths slower. The front tires are more sensitive to temperature than the rear, so aggressive steering inputs before lap 3 will cause understeer or sudden oversteer as the car builds grip asymmetrically."
+    },
+    {
+      "p": "In longer races, monitor tire wear closely from lap 8 onward. Worn fronts lose turn-in grip and require earlier braking. Worn rears lose mid-corner grip and can cause oversteer on exit. If you notice increasing understeer, brake earlier and reduce mid-corner throttle. If oversteer increases, add rear anti-roll bar stiffness or reduce brake bias to rear (moving 1-2% forward) to help the rear stay planted."
+    },
+    {
+      "p": "Fuel consumption depends on track and driving style. Smooth throttle application burns less fuel. Aggressive on-throttle inputs and high rpms increase consumption. A typical road course stint (30-40 minutes) uses roughly 1.2-1.5 units of fuel per lap, meaning a 15-lap stint requires about 18-22 units. Always add 2-3 units as a safety buffer to avoid running out on the final lap."
+    },
+    {
+      "h2": "Common mistakes and how to fix them"
+    },
+    {
+      "list": [
+        "<strong>Excessive understeer on entry:</strong> Brake balance is too forward, or trail-braking is too light. Increase rear brake bias by 1-2%, then increase trail-brake pressure and duration. The front needs load during turn-in.",
+        "<strong>Oversteer on mid-corner or exit:</strong> Reduce rear anti-roll bar stiffness by 2 clicks, or increase front ARB by 2 clicks. Also check throttle application: full throttle too early unloads the front and rotates the rear. Delay throttle application until the wheel is straight.",
+        "<strong>Inconsistent lap times (0.5+ second spread):</strong> Throttle modulation is erratic. Focus on one corner and use the same throttle percentage every lap. Once you can run the same time in that corner consistently, apply the same discipline to the next corner.",
+        "<strong>Poor traction out of slow corners:</strong> You are applying throttle too aggressively. Start at 40-50% throttle at apex and build gradually over 1-2 seconds. Also check if brake bias is too forward; if the rear is under-braked, the car cannot pivot as the rear end pushes forward.",
+        "<strong>Feeling disconnected from the car, high steering effort:</strong> Check if you are running a realistic steering sensitivity (1.0x to 1.5x depending on your wheel). If using a direct drive wheelbase like the MOZA R9, <a href=\"moza-r9-iracing-settings.html\">verify your FFB settings</a> are tuned for road cars, not open-wheel. Touring cars should have moderate feedback, not extreme forces."
+      ]
+    },
+    {
+      "tip": "The Civic Type R TCR teaches throttle discipline better than almost any car in iRacing. If you struggle with consistent pace in GT3 cars, spend 5-10 races in the Civic Type R, focusing entirely on smooth throttle application. The skills transfer directly to faster machinery.",
+      "tipLabel": "Use TCR as throttle school"
+    },
+    {
+      "h2": "Adapting to different track types"
+    },
+    {
+      "p": "The Civic Type R setup philosophy changes based on track characteristics. High-speed circuits (COTA, Spa, Le Mans) benefit from stiffer anti-roll bars and higher brake bias forward because long braking zones demand stability. Technical, low-speed tracks (Oulton Park, Road America) need softer ARBs and slightly more rear brake bias to help the car rotate through quick direction changes."
+    },
+    {
+      "p": "Bumpy tracks (Zandvoort, Watkins Glen, Donington Park) require softer suspension and higher ride height to absorb impacts. Smooth tracks allow lower ride height and stiffer springs. On gravel-adjacent circuit sections (Rally Finland, Dirt courses), expect the car to be unpredictable; run softer ARBs and higher brake bias to rear (54-55%) to improve rotational control."
+    },
+    {
+      "p": "Wet conditions: reduce wing angles by 1 click on both ends and increase brake bias to rear by 2-3% because wet tires lock easily and the front lacks grip. Trail-brake more gently; the margin between understeer and oversteer narrows significantly. Throttle modulation becomes even more critical. Small adjustments yield large handling changes."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the optimal brake balance for the Civic Type R TCR?",
+      "a": "Start at 56-57% front for most circuits. Increase to 57-58% on high-speed tracks or if the car feels loose braking in a straight line. Reduce to 54-55% on technical tracks with many tight corners where you need rear grip for rotation. Adjust in 1% increments and test over a full lap, not just one corner."
+    },
+    {
+      "q": "How much throttle should I apply at the apex of a typical corner?",
+      "a": "For a 90-degree turn, apply 50-70% throttle at apex and increase to 85-95% by mid-exit. For slow corners (under 60 mph equivalent), stay at 40-50% at apex. For fast corners (over 100 mph equivalent), maintain 80-90% through apex and increase only after the wheel is straight. Smooth progression prevents wheel spin and maintains grip."
+    },
+    {
+      "q": "Why is my Civic Type R understeering on entry to every corner?",
+      "a": "Check three things in order: first, brake balance is too forward; move 1-2% toward the rear. Second, you are not trail-braking; apply 10-20% throttle while braking to load the front. Third, anti-roll bar balance is stiff at the rear; reduce rear ARB by 2 clicks. Often the cause is not setup but technique: lifting completely off the brakes unloads the front tire."
+    },
+    {
+      "q": "What setup changes help with tire wear in longer races?",
+      "a": "Softer anti-roll bars and dampers (1-2 clicks) reduce mechanical grip and lower peak tire stress early in the stint, extending tire life. Stiffer settings make tires peak sooner but degrade faster. For a 30-minute stint where tire wear is a factor, use softer settings and smooth, progressive throttle. For a 15-minute race, you can run stiffer settings and push harder."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-10",
+  "dateLabel": "November 10, 2026"
+}

@@ -1,0 +1,130 @@
+{
+  "slug": "oran-park-iracing-guide-setup-strategy",
+  "tag": "Track Guide · Setup",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Oran Park iRacing Guide: Setup, Braking Points, and Racing Lines",
+  "description": "Master Oran Park's tight technical corners and heavy braking zones. Learn setup, apex references, and overtaking strategy for consistent lap time.",
+  "sections": [
+    {
+      "p": "Oran Park Raceway sits on the northern outskirts of Sydney and ranks among the trickiest road courses in iRacing. The track combines extreme elevation change, heavy compression on braking zones, and a sequence of corners so tight they demand precision throttle control. Unlike wider European circuits, Oran Park punishes setup mistakes and poor line discipline. The margin between a clean lap and a wall is measured in inches, particularly through Turn 1 and the chicane complex."
+    },
+    {
+      "p": "The layout is roughly 2.4 km, shaped like a reversed teardrop. You'll spend half the lap climbing or descending, which affects both brake modulation and traction on corner exit. Overtaking happens in only two or three realistic spots, so qualifying and consistency matter far more than late-braking heroics. This guide covers the core setup philosophy, visual references for each sector, and how to build speed without destroying your car."
+    },
+    {
+      "h2": "Brake Balance, Suspension, and Rig Geometry"
+    },
+    {
+      "p": "Oran Park demands a front-heavy brake balance because the car is constantly rotating into slow corners rather than carrying speed. Most drivers run 58-62% front bias depending on car class. Start at 60% and move backward only if you lock the front on entry into Turn 1 or Turn 3. The track's compression zones (especially the drop into Turn 2) mean your suspension will settle hard, so bump stops become critical. You need enough compliance to absorb the kerbs without bottoming out on the heavy braking events."
+    },
+    {
+      "p": "For anti-roll bars, a stiffer front helps turn in at low speed and reduces understeer through the chicane. Rear stiffness should balance rotation: too soft and the car will oversteer on corner exit when you accelerate uphill; too stiff and you'll struggle with mid-corner grip on the technical sequence. Spring rates depend on your car, but avoid extreme softness. The road surface is bumpy and broken in places, so a setup that's too compliant will wobble through Turns 4, 5, and 6."
+    },
+    {
+      "tip": "Oran Park rewards a slightly nose-down rake. The heavy compression and forward weight bias on braking mean the car naturally dives. A small static rake helps you dial in the balance without adding excessive front wing, which hurts top speed on the longer straights.",
+      "tipLabel": "Rake Setup"
+    },
+    {
+      "h2": "Sector 1: Turn 1 through the Chicane"
+    },
+    {
+      "p": "The first corner is an immediate right-hander that demands late braking and a sharp rotation. Brake on the straight until just before the apex, then tip the car in hard. The apex sits roughly at the inside edge of the first kerb. Many drivers overdrive this corner and run up the inside. Use the full track on entry, brake deep, and trail-brake to the apex. You should be on about 30-40% throttle mid-corner, not fully coasting. Exit is clean if you let the car find grip; early acceleration is a guaranteed spin or wall contact."
+    },
+    {
+      "p": "After Turn 1, accelerate up onto the higher road section. Turn 2 approaches quickly. This is a medium-speed left that flows into a compression as the road drops away. Brake earlier than your instinct suggests. Use the downhill momentum to your advantage on entry. Apex the inside of the kerb and roll back on throttle progressively. The car will naturally settle as it goes downhill. Do not trail-brake deep into this corner; you will run off the inside and lose time."
+    },
+    {
+      "p": "Turns 3, 4, and 5 form a tight left-right-left chicane. This is where lap consistency lives or dies. Brake before Turn 3 and let off the pedal entirely. Use a single smooth motion through all three corners without braking between them. The line is almost a straight diagonal across the track, touching the inside of Turn 3, the outside of Turn 4, and the inside of Turn 5. Throttle should be building during Turn 4 and 5. Any braking between corners loses a tenth easily."
+    },
+    {
+      "list": [
+        "Turn 1: Deep braking, sharp rotation, minimal throttle at apex",
+        "Turn 2: Downhill entry, let gravity help, avoid late trail-braking",
+        "Turns 3-5: Single flowing motion, one braking zone before Turn 3, progressive throttle from 4 to 5"
+      ]
+    },
+    {
+      "h2": "Sector 2: The Back Straight and Turn 6"
+    },
+    {
+      "p": "After the chicane, you have a brief acceleration zone heading uphill. Short straights reward clean exits and early throttle application. Do not carry too much speed into this section; the road narrows and the next braking event is hard. Turn 6 is a fast left that leads into a longer straight. Brake moderately into Turn 6, let the car roll through the corner with progressive throttle application, and exit hard onto the longer back section. This is the only real overtaking opportunity, but it requires a better exit from Turn 5 to make a pass stick."
+    },
+    {
+      "p": "The back straight climbs steeply. Your braking power reduces significantly on the uphill, so plan your deceleration for Turn 7 earlier than the braking marker suggests. Turn 7 is a slow hairpin on a hill. Brake hard and deep, then trail-brake to the apex at the tightest point. Throttle application here is delayed; the road surface is bumpy and the car is climbing. Let the car settle before applying full throttle on exit."
+    },
+    {
+      "tip": "Uphill braking stations (Turn 7, the entry to Turn 9) benefit from slightly softer front springs. The car naturally loads the rear suspension when climbing, so a softer front helps the brake feel more responsive and prevents front-lock sensitivity on the upgrade.",
+      "tipLabel": "Uphill Braking Feel"
+    },
+    {
+      "h2": "Sector 3: Turn 8 and the Descent"
+    },
+    {
+      "p": "Turn 8 follows Turn 7 after a very short throttle section. This is a technical right-hand corner on an adverse slope (the road tilts down). The car will naturally want to run wide. Use late apexing here and plan to let the car drift toward the outside. Brake lighter than you expect because gravity is working against you, and aggressive braking will pitch the weight forward dangerously. The line is wide entry, late apex, and a smooth roll onto throttle exiting downhill."
+    },
+    {
+      "p": "Turn 9 is the fastest section of the track: a high-speed left as the road descends. This is a downhill braking zone with compression. Brake earlier and lighter than you think necessary. The downhill momentum will carry the car to the apex. The biggest mistake is braking too late or too hard, which causes understeer or locks. Let the car settle as it goes down, turn in smoothly, and carry momentum through. Throttle application can be progressive but substantial; the downhill load helps grip."
+    },
+    {
+      "p": "Turn 10 is a slow right immediately after Turn 9. The elevation is at its lowest here, and the track widens. This corner is almost a relief after the previous sequence. Brake on the exit of Turn 9, roll to the apex of Turn 10, and track out onto the main straight. A clean line through Turns 9 and 10 gains tenths simply by carrying flow. Avoid braking between the two corners; it always costs time and can cause a spin if the car is unsettled."
+    },
+    {
+      "olist": [
+        "Turn 8: Brake light on downhill entry, use late apex, let gravity work for you",
+        "Turn 9: Heavy compression left, brake early, carry momentum, progressive throttle",
+        "Turn 10: Slow right after downhill, single braking event, flow trumps aggression"
+      ]
+    },
+    {
+      "h2": "Common Setup Mistakes and Fixes"
+    },
+    {
+      "p": "Understeer in the chicane (Turns 3-5) usually means too much front wing or too soft a front anti-roll bar. Reduce front wing first, then increase front ARB stiffness. Oversteer on corner exit, especially after Turn 2 or Turn 9, suggests the rear is too loose. Stiffen the rear anti-roll bar slightly or increase rear spring stiffness if the car is wandering on acceleration. Neither change should be large; Oran Park is sensitive to small adjustments."
+    },
+    {
+      "p": "Brake lockup at Turn 1 or Turn 7 usually means brake balance is too far forward. Move it back 1-2%. If the rears lock instead, your balance is rear-biased; shift forward. A consistent lock point means a calibration issue, not a setup problem. Check your pedal calibration and lock threshold in the iRacing controller settings. Locking at the start of every session wastes time and confidence."
+    },
+    {
+      "p": "Bottoming out on compression (especially at Turn 2 or Turn 9) points to bump stops that are too soft or springs that are too low. Increase bump stop stiffness before raising springs. If the car feels floaty and unstable on the bumpy sections (Turns 4-6), increase overall spring stiffness incrementally. One step at a time prevents overtuning."
+    },
+    {
+      "h2": "Qualifying and Race Pace"
+    },
+    {
+      "p": "Qualifying at Oran Park is about consistency and hitting your marks. The track is short, so a single mistake (a lock, a small throttle blip, a missed apex) costs a tenth or more per lap. Spend the first half of qualifying building heat in tyres and settling the setup. The second half is for pushing. In a multi-lap session, your best lap often comes in the fourth or fifth push lap before fuel and tyre wear degrade pace significantly."
+    },
+    {
+      "p": "Race pace differs from qualifying because traffic and fuel load affect balance. Add a touch of front wing for stability in traffic if you qualify P2 or lower. Run slightly softer brakes for endurance events to manage heat. The track is small enough that a single mistake in lap 1 or lap 2 can end your race, so focus on a clean exit from the chicane and a smooth line through the final sequence. Track position matters far more than risky overtakes on this circuit."
+    },
+    {
+      "tip": "Practice the transition from Turn 10 to Turn 1 on a second PC or session. Many drivers lose their focus during the straights and arrive at Turn 1 anxious. The straight is short; there is no time to think. Arrive calm, brake deep, rotate late, and flow through. A clean Turn 1 sets the tone for the whole lap.",
+      "tipLabel": "Mental Preparation"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What brake bias should I start with at Oran Park?",
+      "a": "Start at 60% front bias. This is a front-heavy circuit with constant low-speed corners and heavy braking. Move back 1-2% only if you lock the front consistently at Turn 1 or Turn 7. Most cars benefit from 58-62% depending on brake pedal feel and car class."
+    },
+    {
+      "q": "Which corner is the most common cause of crashes?",
+      "a": "Turn 1. Drivers overdrive the braking zone or carry too much entry speed. Late braking alone does not work; you need to trail-brake smoothly and let the car rotate. The second most dangerous moment is the chicane (Turns 3-5) because any mid-corner braking or throttle stab causes instability."
+    },
+    {
+      "q": "How much do I gain or lose from elevation changes and bumpy sections?",
+      "a": "Elevation changes affect brake modulation more than grip. Uphill braking requires earlier or softer application; downhill allows later braking because gravity adds to your deceleration. Bumpy sections (Turns 4-6) reward setup consistency over driving aggression. A tenth or two per lap comes from a compliant setup that absorbs impacts without wandering."
+    },
+    {
+      "q": "What is the best passing spot at Oran Park?",
+      "a": "The exit of Turn 7 and into the back straight offers the clearest opportunity. You need a better mid-corner speed through Turn 6 to build a run up the hill. Turn 10 to Turn 1 is too short to pass safely. Realistically, overtaking at Oran Park is difficult, so qualifying well is more important than late-race moves."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-10",
+  "dateLabel": "November 10, 2026"
+}

@@ -1,0 +1,135 @@
+{
+  "slug": "porsche-718-cayman-gt4-clubsport-iracing",
+  "tag": "Car Guide · GT Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Porsche 718 Cayman GT4 Clubsport iRacing setup and racecraft guide",
+  "description": "Master the Cayman's mid-engine balance, tire management, and brake modulation. Setup notes and race strategy for iRacing club and ranked GT4 series.",
+  "sections": [
+    {
+      "p": "The Porsche 718 Cayman GT4 Clubsport is a mid-engine GT4 that demands precision over aggression. Its weight distribution and mechanical balance reward smooth inputs and punish abrupt corrections. On iRacing, the Cayman suits drivers who commit to brake markers and carry momentum through corners rather than oversteer their way through traffic. This guide covers baseline setup, tire warmup strategy, and how to extract pace without destabilizing the rear."
+    },
+    {
+      "p": "The Cayman feels responsive compared to front-engine GT4s. Turn-in is eager, and mid-corner adjustments matter more than raw throttle application. Most drivers either brake too deep and lose the front, or trail brake unevenly and induce oversteer mid-corner. Understanding the margin between grip and wheelspin separates consistent pace from costly spins."
+    },
+    {
+      "h2": "Baseline setup and balance philosophy"
+    },
+    {
+      "p": "Start with the official series setup or the community baseline. The Cayman's default setup is tuned for medium-speed circuits and neutral balance. From there, adjust anti-roll bars (ARB) before modifying spring rates or dampers. Front ARB stiffness controls initial turn-in aggression; rear ARB controls mid-corner stability. Most drivers run 8-12 front ARB on smaller circuits and 5-8 on high-speed layouts, with rear typically 1-2 clicks softer."
+    },
+    {
+      "p": "Brake bias is critical on this car. The Cayman sits lower in the chassis than other GT4s, and trail braking sensitivity is high. Start with factory bias (usually 52-54% front) and move only 1% at a time. A 1% change in bias can shift the balance from neutral to rear-biased in a single corner. Test brake bias in isolation: do three identical laps at a heavy braking zone and feel for consistency. If the rear locks before the front, reduce front bias by 0.5%. If the front washes out on entry, increase it."
+    },
+    {
+      "tip": "The Cayman locks the rear more easily than front-engine GT4s if you over-brake or trail brake too late into a corner. Adjust bias in small steps and always test over the same braking zone three times before moving on.",
+      "tipLabel": "Brake bias sensitivity"
+    },
+    {
+      "h2": "Tire warmup and management strategy"
+    },
+    {
+      "p": "The Cayman's tires warm quickly but peak inconsistently during stints. Cold tires are relatively forgiving at low slip angles, but the car will oversteer dramatically if you demand too much lock before temps climb to 60-70°C. Spend the first lap gently building temps: coast more, brake softer, and use gentle steering inputs. Most online races see you start on cold tires, so a controlled first lap beats a fast first lap and a spin on lap two."
+    },
+    {
+      "p": "Once tires are warm, manage tire deg in longer stints by smoothing inputs on corner exit. The rear tires degrade faster than the front under sustained load. If you're lapping consistently by lap 12 of a 25-lap race, you're ready to push. By lap 20, fuel load will make the car slower anyway, so fuel strategy controls pace more than tire deg in most online series."
+    },
+    {
+      "list": [
+        "Lap 1: Build temps gently; expect to be 1.5-2 seconds slower than pace.",
+        "Laps 2-4: Tires peak; lock into your baseline pace and stay consistent.",
+        "Laps 5-10: Manage corner exit smoothness; avoid overdriving the exit to save tire life.",
+        "Laps 11+: Fuel load is the limiting factor. Tire temps will rise but pace won't improve significantly."
+      ]
+    },
+    {
+      "h2": "Braking and trail braking technique"
+    },
+    {
+      "p": "Trail braking is where the Cayman separates good drivers from quick ones. The mid-engine platform allows you to carry brake pressure deep into corners without inducing oversteer, but only if you release brake smoothly and hit your apex speed on throttle exit. Abrupt brake release or stabbing throttle will spin the rear instantly."
+    },
+    {
+      "p": "Practice this drill at any corner: approach your normal braking point, hit the brakes 10% harder than usual, then hold brake pressure until 5 meters before apex. Release brake linearly (not suddenly) over that final 5 meters, and feed throttle as you release brakes. The brake and throttle should swap smoothly, with no gap between them. If you feel the rear sliding, you released brakes too quickly. Repeat the drill with slightly more progressive release until you feel control through apex."
+    },
+    {
+      "p": "On heavy braking zones, the Cayman is stable. On medium braking (50-75% pedal) into medium-speed corners, trail braking is essential to carry speed. This is where most online drivers lose time: they brake to a lower speed, then accelerate, instead of using brake pressure to rotate and adjust mid-corner. The lap-time delta is often 0.3-0.5 seconds per corner. Over a 15-turn circuit, that's 4-7 seconds per lap."
+    },
+    {
+      "tip": "Release brakes smoothly, not suddenly. A sudden brake release on cold or high-wear tires will cause immediate oversteer. Smooth release over 0.5 seconds keeps the chassis balanced through apex.",
+      "tipLabel": "Brake release timing"
+    },
+    {
+      "h2": "Corner-by-corner racecraft"
+    },
+    {
+      "p": "High-speed corners (140+ mph) are where the Cayman excels. The mid-engine balance and low CG reward committed turn-in and smooth mid-corner adjustments. Attack high-speed corners with conviction: hit your line, maintain steady throttle, and only add throttle once you're past apex. Hesitation or mid-corner backing off will slow you more than a small run-wide."
+    },
+    {
+      "p": "Medium-speed corners (60-120 mph) are the demanding ones. These are your trail-braking corners. Most drivers run too much ARB stiffness at these corners, thinking it will help turn-in, when in reality it makes the rear twitch on power application. If you find yourself spinning in medium-speed, tighter corners on low-fuel exit, dial back front and rear ARB by 1-2 clicks, then adjust brake bias forward by 0.5% to regain front confidence on entry."
+    },
+    {
+      "p": "Low-speed corners and tight hairpins require lock steering. The Cayman has good steering feedback, so lock up more than you think feels natural. Many drivers underestimate the amount of steering angle needed, hit the apex wide, run off track, or clip the curb. Practice at a neutral circuit like Watkins Glen or Road Atlanta where mistakes are less punishing, and establish a habit of hitting your apex tight every lap."
+    },
+    {
+      "h2": "Setup tuning for specific circuit types"
+    },
+    {
+      "p": "On tight, technical circuits (Road America, Donington, Bathurst layouts), reduce front and rear ARB by 2-3 clicks from baseline and increase bump (compression) damping slightly to handle curbs and bumps. The softer ARB helps the chassis flow through transitions; the stiffer bump handles impact without harshness. Brake bias often comes forward 1-2% on these tracks due to the higher percentage of braking zones."
+    },
+    {
+      "p": "On smooth, fast circuits (Sebring, Road Atlanta, Laguna Seca), maintain stiffer ARB settings and focus on brake trail-braking feel. These circuits reward smooth inputs and consistency. ARB stiffness of 9-10 front and 7-8 rear is common. Fuel strategy becomes more important than tire deg; most lap-time variance comes from braking points and exit smoothness."
+    },
+    {
+      "p": "On street courses, the Cayman needs more brake bias (54-56% front) and slightly softer ARBs to handle the abrupt transitions and shallow braking zones. The car can be tricky under late-stage fuel loads on street circuits because fuel is heavily back-loaded in the Cayman's engine bay; a 3-liter fuel load changes balance noticeably. Compensate by softening front ARB by 1 click per 3 liters of fuel."
+    },
+    {
+      "h2": "Race strategy and traffic management"
+    },
+    {
+      "p": "The Cayman is a strong defensive car. Its mid-engine balance and quick steering make it easy to hold your line under pressure. Don't default to blocking or weaving; instead, focus on executing your entry, mid-corner, and exit perfectly. Most overtake attempts fail because the attacking driver brakes later and deeper, destabilizes the car, and loses momentum. If you're consistent through your line, the overtaker will struggle to find a pass."
+    },
+    {
+      "p": "When attacking ahead, trail braking into a tight corner is your best move. The Cayman's mid-engine platform lets you brake deeper than the car ahead while maintaining line integrity. On exit, smooth throttle application gives you better drive-out speed than an abrupt stab. This is why attacking drivers who are smooth beat those who are aggressive: smoothness compounds the advantage over a 3-lap race."
+    },
+    {
+      "p": "In multi-class or multi-pit-stop races, manage your fuel burn rate in the first stint. Many drivers push hard early and then run low fuel and tire deg for 10 laps straight. Instead, run consistently fast for 40-50% of your stint, then dial pace back by 0.2-0.3 seconds for the final 50%. This keeps tire deg linear and fuel burn predictable, making your next stop time more certain. Consistency beats heroics in endurance."
+    },
+    {
+      "h2": "Common mistakes and fixes"
+    },
+    {
+      "olist": [
+        "Spinning mid-corner on power: reduce front ARB by 1-2 clicks, or dial back throttle aggression at exit. The Cayman doesn't forgive abrupt inputs when tires are warm.",
+        "Front end washing out on entry: increase brake bias forward by 0.5-1%, or reduce corner-entry speed slightly. You may be over-braking into corners and losing front grip before turn-in.",
+        "Understeer in high-speed corners: check that you're not carrying too much speed from the previous corner. Understeer is often a momentum carry-over issue, not a setup issue. Review replays and compare your entry speed to the car ahead.",
+        "Rear tires overheating mid-stint: soften rear ARB by 1-2 clicks and smooth throttle application on exit. Also check fuel load; high fuel loads make oversteer more likely early in the stint.",
+        "Inconsistent lap times across a stint: brake bias is probably wrong for the current tire temp. Start stints with brake bias 1% more forward than you run mid-stint, then dial it back by 1% every 5 laps as tires heat up."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a good starting brake bias for the Cayman GT4 Clubsport?",
+      "a": "Start with 52-54% front bias, depending on the circuit and track temperature. Tight circuits with heavy braking zones usually run 54-56% front; smooth, fast circuits run 50-52% front. Test in practice by doing three identical laps at a heavy braking zone and feeling for consistent braking feel. Adjust by 0.5% at a time. A 1% change shifts the balance noticeably."
+    },
+    {
+      "q": "How do I stop spinning the rear when exiting corners in the Cayman?",
+      "a": "Smooth throttle application is key. Build throttle gradually over 0.5-1 second, not suddenly. If you're still spinning, reduce front anti-roll bar (ARB) stiffness by 1-2 clicks to allow the chassis to roll slightly and load the rear tires more evenly. Also check that you're not over-braking into corners; brake later and softer, then trust the car's mid-engine balance to rotate you to apex."
+    },
+    {
+      "q": "What anti-roll bar settings should I use on a tight technical circuit like Donington Park?",
+      "a": "Reduce both front and rear ARB by 2-3 clicks from baseline (typically 6-8 front, 5-6 rear). Softer ARBs help the chassis flow through rapid transitions and absorb curbs better. You'll feel more body roll, but corner-to-corner consistency improves. Increase bump damping slightly to handle impacts. Test this setup in practice before qualifying."
+    },
+    {
+      "q": "How much does fuel load affect the Cayman's balance and lap time?",
+      "a": "Fuel load affects balance noticeably because the fuel sits in a tank behind the rear axle. Every 3 liters of fuel shifts the balance rearward slightly, making the car more prone to oversteer on power and more stable on entry. In a 25-lap race starting with 25 liters, you'll see balance shift by the equivalent of 0.5-1% brake bias change per 5 laps. Compensate by softening front ARB by 1 click every 10 laps, or dial brake bias forward by 0.5% as fuel load increases."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-cs-v2",
+    "moza-sr-p"
+  ],
+  "published": "2026-11-10",
+  "dateLabel": "November 10, 2026"
+}

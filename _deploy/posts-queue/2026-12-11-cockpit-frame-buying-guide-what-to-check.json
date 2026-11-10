@@ -1,0 +1,180 @@
+{
+  "slug": "cockpit-frame-buying-guide-what-to-check",
+  "tag": "Buyer's Guide · Hardware",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Sim Racing Cockpit Frame Buying Guide: What to Check Before You Buy",
+  "description": "Learn the real specs that matter when choosing a cockpit frame: profile size, wheel base compatibility, adjustability, and build quality that won't fail mid-season.",
+  "sections": [
+    {
+      "p": "A cockpit frame is the foundation of your entire rig. It determines what wheelbase you can mount, how adjustable your seating position is, how rigid it feels under load, and whether it survives years of braking and turning forces without flex or rattle. The difference between a well-chosen frame and a poor one is not cosmetic. It affects FFB consistency, braking repeatability, and your confidence in race craft. Most drivers overlook frame specs until they feel play in their pedal platform or watch their wheel shift under hard cornering."
+    },
+    {
+      "p": "Buying a cockpit frame is not like buying a wheelbase or pedals where spec sheets tell most of the story. A frame is hardware that must fit your space, support your specific combination of gear, and survive real use. This guide walks through the checks that separate a solid investment from a purchase you will regret."
+    },
+    {
+      "h2": "Profile size and wall thickness"
+    },
+    {
+      "p": "Cockpit frames are built from either 1.5-inch or 2-inch square steel tubing. The difference matters far more than price alone suggests. A 1.5-inch profile is lighter and cheaper, but thinner walls flex more under the combined load of a direct drive wheelbase, a fixed seat, and a driver applying full brake pressure. A 2-inch profile with thicker walls (80mm or thicker) is stiffer and handles heavier hardware without play."
+    },
+    {
+      "p": "Check the actual wall thickness specification, not just the outer dimension. A 2-inch tube with 1.5mm walls is not the same as one with 3mm walls. Thicker walls cost more to fabricate, and manufacturers trying to undercut competitors often skimp here. If the listing does not state wall thickness, email the seller and ask. If they will not answer, look elsewhere."
+    },
+    {
+      "list": [
+        "1.5-inch profile works for belt drive wheelbases (~5 N·m) and light direct drive (~6-8 N·m) in a tight space",
+        "2-inch profile with 2mm-plus walls handles the MOZA R9 (~9 N·m), Fanatec CSL DD, and heavier direct drive gear with minimal flex",
+        "Measure diagonal bracing if listed. X-bracing or triangulated supports reduce flex far more than a single horizontal tie beam",
+        "Look for welds or full gusset plates at joints. Bolted connections alone introduce play over time under load"
+      ]
+    },
+    {
+      "tip": "A frame that feels solid in your garage may flex noticeably when you hit the brakes hard for the first time. If you plan to run a direct drive wheelbase above 8 N·m, 2-inch profile is not optional. It is the minimum.",
+      "tipLabel": "Wall thickness matters more than price"
+    },
+    {
+      "h2": "Wheelbase mounting compatibility"
+    },
+    {
+      "p": "The cockpit must secure your wheelbase without adapters or drilling new holes. Most modern direct drive bases use VESA 75 or VESA 100 mounting patterns, but some brands use proprietary mounts. A frame with a pre-drilled VESA plate and a quick release standard match saves headache and money."
+    },
+    {
+      "p": "Check whether the frame is designed for front-mount or side-mount wheelbase placement. Front-mount puts the wheel closer to your body and feels more natural. Side-mount moves the wheel outward, which can reduce immersion but sometimes fits better in a narrow space. The frame's steering column design either allows or prevents this. If you own a wheelbase now, verify that the frame supports it. If you plan to upgrade later, confirm the frame's VESA pattern and quick release standard will accept future bases."
+    },
+    {
+      "list": [
+        "Request photos of the mounting plate and see if it has VESA 75/100 holes or a proprietary setup",
+        "Ask whether the frame accepts industry-standard quick releases like Fanatec ClubSport Quick Release, VESA standard, or a brand-specific system",
+        "Check the wheel base offset and reach. Some frames position the wheel 200mm from the seat; others push it 300mm or more",
+        "Verify the frame allows caster and camber adjustment if your preferred wheelbase needs it"
+      ]
+    },
+    {
+      "h2": "Adjustability in all axes"
+    },
+    {
+      "p": "A rigid frame is only useful if it adjusts to your body and driving style. Poor adjustability locks you into a compromised position that kills consistency and causes fatigue. Look for adjustment in seat height, seat distance from the wheel, seat angle (recline), pedal distance from the seat, and pedal angle."
+    },
+    {
+      "p": "Some frames call themselves adjustable but offer only one or two axes. The best frames let you move the seat forward and backward on rails (at least 100mm of travel), up and down by 80mm or more, recline from 90 degrees to 110 degrees or further, and tilt or slide the pedal platform. If a frame lacks seat distance adjustment, you may outgrow it if your wheelbase changes or your legs need more or less reach."
+    },
+    {
+      "list": [
+        "Seat fore-aft travel: minimum 100mm, ideally 150mm or more for different body sizes and wheel bases",
+        "Seat height adjustment: at least 80mm of vertical travel to dial in your hip-to-wheel angle",
+        "Seat angle (recline): range from 90 to 110 degrees or further. Steeper (more reclined) feels sportier; shallower (more upright) suits longer sessions",
+        "Pedal platform adjustability: slides or tilts independently so brake and throttle angle match your shoe and leg length",
+        "Steering column angle: some frames angle the wheel closer or further from your chest; confirm the range suits your preference"
+      ]
+    },
+    {
+      "h2": "Build quality and hardware"
+    },
+    {
+      "p": "How the frame is assembled reveals whether it will hold tolerances for years. Welds should be continuous, not spotty. Bolt heads should be flush or recessed so they do not catch your leg or cable. Adjustment slides should have proper bushings or ball bearings, not bare metal on bare steel. Paint or powder coat protects steel from rust; cheap frames skip this and show surface corrosion within months."
+    },
+    {
+      "p": "Feel the frame if you can, or ask the seller for video of assembly. Try to move each joint by hand. You should feel no play when you push hard. If bolts loosen easily by hand or you can feel a quarter-inch of give anywhere, that frame will rattle and creak during races and require constant re-tightening."
+    },
+    {
+      "list": [
+        "Inspect welds for continuity and absence of cracks or pits. Spotty welds fail under repeated dynamic load",
+        "Check all bolt heads and fasteners. They should be M8 or larger for structural joints, not M6 or smaller",
+        "Look for lock washers or nylon-insert lock nuts on all adjustment bolts so they do not vibrate loose",
+        "Verify the frame is powder-coated or painted, not bare steel. Bare steel rusts quickly in a garage or basement",
+        "Request a torque specification sheet for main assembly bolts. A quality frame maker provides one"
+      ]
+    },
+    {
+      "h2": "Pedal platform and support"
+    },
+    {
+      "p": "Pedals are bolted to the frame under high force. During hard braking, a 200-pound driver can apply 300 pounds of force to the brake pedal alone. A pedal platform that flexes or twists throws off your brake feel and makes smooth modulation impossible. Inspect how the pedal platform connects to the frame and whether it can be angled or tilted independently of the frame itself."
+    },
+    {
+      "p": "The platform should be at least 1.5-inch tubing welded solidly to the main frame. If it is bolted with only four bolts, it will flex. If it is bolted with eight or more bolts and gusseted, it will stay rigid. Some premium frames offer a sloped pedal angle adjustment; others angle the entire platform. Both work, but the sloped approach is more adjustable."
+    },
+    {
+      "list": [
+        "Pedal platform should be continuous welded steel, not an add-on plate that flexes independently",
+        "At least eight attachment points (bolts or welds) to the main frame, ideally with gusset bracing",
+        "Check whether the platform can angle or tilt. A fixed angle may not suit your leg length or driving position",
+        "Verify there is enough width (at least 18 inches) to fit three pedals comfortably with space between them"
+      ]
+    },
+    {
+      "tip": "Pedal platform flex is one of the most common complaints about budget frames. Before you buy, ask the seller how they secure the platform and whether flex or rattle has been reported by past buyers.",
+      "tipLabel": "Pedal platform is critical"
+    },
+    {
+      "h2": "Space and fit in your room"
+    },
+    {
+      "p": "A frame spec sheet gives you overall length, width, and height. But you also need to know how much space the frame takes when the seat is fully reclined, when the pedals are fully extended, and when the wheel is at full lock. Measure your actual space and then add a 12-inch clearance on all sides. You need to get in and out of the rig, and you may adjust settings during testing."
+    },
+    {
+      "p": "Confirm whether the frame sits low enough that your line of sight clears a monitor or TV. If your seating position is too low, you will be looking at the bottom of the screen instead of through the center. Conversely, if the frame is too tall and narrow, it may feel cramped and unstable."
+    },
+    {
+      "list": [
+        "Measure the footprint (length times width) and compare it against your available space",
+        "Ask about the height of the seat back and top rail when the seat is reclined to its furthest angle",
+        "Calculate eye height relative to a ~40-inch or 48-inch monitor mounted 24 to 28 inches in front of the seat",
+        "Check whether casters are offered and whether they fit under the frame so it does not take up extra floor space",
+        "Confirm the frame can be disassembled for transport if you live in an apartment or plan to move it"
+      ]
+    },
+    {
+      "h2": "Brand reputation and warranty"
+    },
+    {
+      "p": "Cockpit frames are not a commodity. Small manufacturers build most of them. Before you buy, search for reviews on YouTube or forums. Look for videos of people actually using the frame under load, not just a 30-second unboxing. See whether the same complaints appear across multiple reviews. A welding defect or adjustment mechanism that fails is a pattern worth knowing about before your money is spent."
+    },
+    {
+      "p": "Ask about warranty. A solid frame maker offers at least one year coverage on welds and structural defects. Some offer five years. If the seller does not mention warranty or says it is void if you disassemble the frame, take that as a red flag. A well-made frame can be disassembled and reassembled without damage."
+    },
+    {
+      "list": [
+        "Read customer reviews across at least two platforms. YouTube reviews often show the frame under real use",
+        "Check social media groups for the frame brand and see whether the same issues appear repeatedly",
+        "Ask the seller for contact information of three recent buyers you can email for feedback",
+        "Confirm the warranty terms, coverage period, and what defects are included. Shipping is sometimes excluded",
+        "Verify the seller has a return policy in case the frame arrives damaged or does not fit your space"
+      ]
+    },
+    {
+      "h2": "Cost-to-value trade-offs"
+    },
+    {
+      "p": "Budget frames (~500 to ~800) often use 1.5-inch profile with thin walls, bolted assembly, and limited adjustability. They work for light direct drive or belt drive bases and fit tight spaces, but flex under heavy load and adjust poorly. Mid-range frames (~800 to ~1200) step up to 2-inch profile, better welds, and more adjustment. Premium frames (~1200 and above) add features like adjustable pedal angle, better materials, and superior build quality."
+    },
+    {
+      "p": "The value breakpoint is usually at ~1000. Spending less risks structural issues. Spending more buys convenience and adjustability you may not use. If you run a MOZA R9, a Fanatec CSL DD, or plan to keep the frame for five years, the mid-range or premium tier is worth it. If you rent or move frequently and use a lighter wheelbase, a budget frame works if you pick one with solid reviews and 2-inch profile. Do not buy on price alone."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What size wheelbase can a 1.5-inch profile cockpit handle?",
+      "a": "A 1.5-inch profile frame with reasonable wall thickness (1.5mm or more) can handle belt drive wheelbases and direct drive bases up to about 6-8 N·m. The MOZA R9 at ~9 N·m or heavier direct drive bases will cause flex and play. If you own or plan to buy a wheelbase above 8 N·m, move to 2-inch profile."
+    },
+    {
+      "q": "How much seat travel do I really need?",
+      "a": "Minimum 100mm of fore-aft adjustment lets you dial in reach for different wheelbase mounts and body sizes. If you share the rig with others or plan to upgrade your wheelbase in the future, 150mm or more is safer. Less than 80mm is too restrictive."
+    },
+    {
+      "q": "Can I modify or add to a budget cockpit frame later?",
+      "a": "Modifications are possible if the frame is welded construction, but budget frames often use bolted assembly that does not support heavy drilling or re-welding. Before you buy, ask whether the manufacturer will support custom brackets or drilling. Some will; others refuse to avoid liability."
+    },
+    {
+      "q": "What is the difference between a cockpit frame and a complete cockpit?",
+      "a": "A frame is the bare structure and seat. A complete cockpit includes the frame, seat, wheel deck, pedal platform, and sometimes monitor stand or button box mounts. If you already own a seat or prefer a specific model, buying a frame alone and adding your own seat is often cheaper than a bundle. Check compatibility before you assume you can bolt your seat to the frame."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "cockpit"
+  ],
+  "published": "2026-11-10",
+  "dateLabel": "November 10, 2026"
+}
