@@ -488,6 +488,76 @@ const TOPIC_POOL = [
   'winton motor raceway iracing guide',
   'sandown raceway iracing guide',
   'kentucky speedway iracing guide',
+  // ─── Expansion 2026-11-10 (second batch) ───────────────────────────────────
+  // The first 2026-11-10 batch was consumed by the same day's catch-up run
+  // (20 posts), leaving ~3 unused. A weekly run spends ~20 topics, so the pool
+  // needs floor (14) + one week of headroom. Keyword-checked like the batch above.
+
+  // Rules, flags & stewarding
+  'the meatball flag in iracing: fast repairs and when to pit',
+  'black flags, drive-throughs and slow-down penalties in iracing',
+  'how iracing disqualifications work and how to avoid one',
+  'dive bombs in iracing: why they fail and what to do instead',
+  'racing side by side in iracing: leaving racing room',
+  'how iracing stewards review a protest: what evidence helps',
+
+  // Car systems & setup
+  'brake migration in iracing gtp cars explained',
+  'diff preload in iracing setups: what it changes on entry and exit',
+  'traction control maps in iracing gt3 cars: choosing a setting',
+  'fuel maps and engine maps in iracing: when to switch',
+  'hybrid regen and deploy in iracing gtp cars',
+  'abs settings by car in iracing: which gt3s lean on it',
+
+  // iRacing account & content
+  'iracing credits and participation credits: how to earn free content',
+  'which free cars and tracks in iracing are worth racing',
+  'reading the iracing season schedule pdf to plan purchases',
+  'laser-scanned tracks in iracing: why accuracy matters for practice',
+  'iracing pro license and the path to pro series',
+  'running an iracing league: admin tools, sessions and points',
+  'testing a car before buying it in iracing: test drives and ai',
+  'sponsorship for sim racers: what brands actually look for',
+  'can sim racing become a career: esports, coaching and content',
+
+  // Cars & disciplines
+  'formula 4 in iracing: the first step into downforce',
+  'touring car racing in iracing: tcr cars and close contact',
+  'mercedes w13 in iracing: driving a modern f1 car',
+  'lotus 49 in iracing: vintage formula cars without downforce',
+  'vintage racing in iracing: historic cars that teach car control',
+  'snow and ice driving: what iracing does and does not simulate',
+
+  // VR & graphics
+  'openxr settings for iracing vr explained',
+  'pimax headsets for iracing: wide field of view trade-offs',
+  'bigscreen beyond for sim racing: tiny headset, big clarity',
+  'eye tracking and foveated rendering for sim racing vr',
+  'anti-aliasing and shadows in iracing: what to turn down first',
+  'projector sim racing setups: big image, real trade-offs',
+
+  // Audio, broadcast & replays
+  'engine audio and sound settings in iracing for better feel',
+  'voice attack and voice commands for iracing pit calls',
+  'replay camera tools for cinematic iracing videos',
+  'broadcasting an iracing league race: tools and roles',
+
+  // Hardware brands & add-ons
+  'simagic alpha wheelbases: where they fit against moza and fanatec',
+  'asetek simsports pedals and wheelbases reviewed for iracing',
+  'cammus and conspit: budget direct drive brands worth a look',
+  'fanatec dd vs clubsport dd: picking a fanatec base',
+  'logitech g pro wheel vs moza r5 for first-time buyers',
+  'sim lab vs trak racer vs next level racing cockpits compared',
+  'playseat and gt omega: foldable vs fixed cockpits',
+  'abs pedal vibration and rumble motors: do you need them',
+  'hotas and button panels on a sim racing rig',
+
+  // Access & family
+  'sim racing for kids: wheel size, safety and settings',
+  'a family sim rig: sharing one setup between drivers of different sizes',
+  'sim racing with glasses: vr spacers, monitor distance and comfort',
+  'accessible sim racing: hand controls and one-handed setups',
 ];
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
