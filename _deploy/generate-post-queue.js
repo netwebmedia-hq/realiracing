@@ -427,6 +427,67 @@ const TOPIC_POOL = [
   'iracing vs acc vs le mans ultimate: which sim fits which driver',
   'switching from console racing to iracing on pc',
   'what sim racing teaches you for real karting and track days',
+  // ─── Expansion 2026-11-10 ──────────────────────────────────────────────────
+  // The 2026-11-09 weekly run failed on "only ~-21 unused topic(s) left": 292
+  // topics against 313 posts. Each subject below was keyword-checked against
+  // every live, queued and published slug and every entry above.
+
+  // Racecraft & race situations
+  'surviving the first lap in iracing: lap-one positioning and patience',
+  'blue flags and being lapped in iracing: how to let faster cars by',
+  'pit window strategy in iracing: undercut, overcut and when to box',
+  'iracing pit limiter and pit entry: hitting the speed without losing time',
+  'safety car and full-course caution procedure in iracing road races',
+  'lucky dog and wave around rules on iracing ovals explained',
+  'bump drafting and push drafting on iracing superspeedways',
+  'using the slipstream on road courses: when a tow beats a clean lap',
+  'fog, sunset glare and changing light in iracing races',
+  'night racing in iracing: headlights, visibility and reference points',
+
+  // Driving technique
+  'lift and coast in iracing: saving fuel and brakes without losing time',
+  'reading a throttle trace: smooth vs stabbed application',
+  'where to look: vision and look-ahead technique for sim racers',
+  'riding curbs in iracing: which ones to use and which ones bite',
+  'tyre wear in iracing: reading the black box and adapting your line',
+  'brake temperatures and brake fade in long iracing races',
+  'reaction time and race starts: can you train it',
+  'fixed setup vs open setup series in iracing: which to choose',
+  'caster, camber and toe in iracing setups explained simply',
+
+  // Mental side & driver fitness
+  'handling nerves before an iracing race',
+  'tilt control: staying calm after an incident in iracing',
+  'flow state in sim racing: how to find it on long stints',
+  'visualisation for sim racers: rehearsing a lap off the rig',
+  'sleep, hydration and nutrition for endurance sim racing',
+  'sim racing shoes and gloves: do they help on load cell pedals',
+
+  // Hardware niches
+  'head tracking for sim racing: tobii and webcam trackers on single screens',
+  'motion platforms and seat movers: what they add to sim racing',
+  'haptic pedal transducers vs bass shakers compared',
+  'pedal elastomers and rubber stacks: tuning brake feel',
+  'wheel deadzone and steering lock checks for new wheelbases',
+  'force feedback lut files explained: do you still need them',
+  'simhub dash apps on a phone or tablet: a cheap dash display',
+  'shared rig for sim racing and flight sim: what carries over',
+
+  // Other sims & cross-over
+  'assetto corsa competizione vs iracing for gt3 drivers',
+  'automobilista 2 vs iracing: physics, cars and cost',
+  'rfactor 2 and le mans ultimate: the endurance alternative',
+  'gran turismo 7 to iracing: what changes for console drivers',
+  'f1 25 to iracing: moving from an arcade-leaning game to a sim',
+  'beamng for sim racers: crash physics and car control practice',
+  'real racing school vs sim training: what transfers and what does not',
+
+  // Tracks with no post and no pool entry
+  'sachsenring iracing guide: the corkscrew-style waterfall corner',
+  'navarra iracing guide',
+  'winton motor raceway iracing guide',
+  'sandown raceway iracing guide',
+  'kentucky speedway iracing guide',
 ];
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
