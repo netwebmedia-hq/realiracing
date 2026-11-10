@@ -41,6 +41,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createRequire } from 'node:module';
+
+const { loadTitles, compareTitles } = createRequire(import.meta.url)('../_deploy/lib/title-dedupe.js');
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const QUEUE = path.join(ROOT, '_deploy', 'posts-queue');
@@ -94,6 +97,23 @@ for (const slug of [...new Set([...liveSlugs, ...queueSlugs])]) {
   // — "best-budget-sim-racing-wheel-2026" is a year, not a collision.
   if (liveSlugs.includes(base) || queueSlugs.includes(base)) {
     errors.push(`"${slug}" is a suffixed twin of "${base}" — drop it, never publish both`);
+  }
+}
+
+// ─── 1b. no identical-title twins ────────────────────────────────────
+
+// A different slug does not make a different post: three pairs of posts with the
+// same title shipped (2026-11-10 audit). An exact normalised-title match across
+// live + queued posts fails; a near match (token overlap >= 0.8) only warns,
+// because a few legitimate sibling guides score high.
+{
+  const titles = loadTitles(ROOT);
+  for (let i = 0; i < titles.length; i++) {
+    for (let j = i + 1; j < titles.length; j++) {
+      const kind = compareTitles(titles[i].title, titles[j].title);
+      if (kind === 'exact') errors.push(`duplicate title "${titles[i].title}": ${titles[i].where} and ${titles[j].where} — keep one, 301 or delete the other`);
+      else if (kind === 'near') console.log(`::warning title=Near-identical blog titles::${titles[i].where} and ${titles[j].where}`);
+    }
   }
 }
 

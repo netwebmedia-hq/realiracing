@@ -138,3 +138,9 @@ ErrorDocument 404 /404.html
 # web-readable (sibling property climalerta.com served it 200 on 2026-09-01).
 # The action reads it back over FTP, so an HTTP 404 costs deploys nothing.
 RedirectMatch 404 (^|/)\.ftp-deploy-sync-state
+
+# Duplicate-title posts removed 2026-11-10 (audit): the older post is kept, the
+# newer twin 301s to it so inbound links and indexed URLs keep working.
+RedirectMatch 301 ^/blog/consistency-over-pace-spread-wins-races\.html$ https://realiracing.com/blog/consistency-over-pace-lap-time-spread-wins.html
+RedirectMatch 301 ^/blog/motion-rigs-cost-benefit-analysis-iracing\.html$ https://realiracing.com/blog/motion-rigs-cost-benefit-sim-racing.html
+RedirectMatch 301 ^/blog/pedal-spacing-setup-consistent-braking-technique\.html$ https://realiracing.com/blog/pedal-spacing-angle-consistent-braking.html
