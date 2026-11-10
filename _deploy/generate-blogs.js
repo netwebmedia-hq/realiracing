@@ -491,7 +491,7 @@ ${relatedHtml}
     <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
     <p style="margin-top:6px;font-size:0.78rem;">
       <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
-      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
     </p>
     <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
   <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
@@ -561,20 +561,50 @@ function readPublishedCardMeta(slug) {
   };
 }
 
+const PAGE_SIZE = 30;
+const PAGES_DIR = path.join(BLOG_DIR, 'page');
+
+function pagerHtml(n, total) {
+  if (total <= 1) return '';
+  const href = (i) => (n === 1 ? (i === 1 ? './' : `page/${i}.html`) : (i === 1 ? '../' : `${i}.html`));
+  const parts = [];
+  if (n > 1) parts.push(`<a class="blog-pager-link" rel="prev" href="${href(n - 1)}">Newer</a>`);
+  for (let i = 1; i <= total; i++) {
+    parts.push(i === n ? `<span class="blog-pager-link blog-pager-current" aria-current="page">${i}</span>`
+                       : `<a class="blog-pager-link" href="${href(i)}">${i}</a>`);
+  }
+  if (n < total) parts.push(`<a class="blog-pager-link" rel="next" href="${href(n + 1)}">Older</a>`);
+  return `<nav class="blog-pager" aria-label="Blog pages">${parts.join(' ')}</nav>`;
+}
+
 function rebuildBlogIndex(newPosts, opts) {
   const idxPath = path.join(BLOG_DIR, 'index.html');
   if (!fs.existsSync(idxPath)) return false;
   let html = fs.readFileSync(idxPath, 'utf8');
 
+  // Cards live on blog/index.html (newest PAGE_SIZE) and blog/page/N.html (the rest). Page
+  // files carry ../ hrefs; strip it so every card is read back in index form.
   const cardRe = /<a class="blog-card" href="([^"]+)">[\s\S]*?<\/a>/g;
-  let m;
   const existing = [];
-  while ((m = cardRe.exec(html))) {
-    const block = m[0];
-    const slug = m[1].replace(/\.html$/, '');
-    const dateMatch = block.match(/<strong>[^<]*<\/strong>\s*·\s*([A-Za-z]{3,9}\.?\s+\d{1,2},\s*\d{4})/);
-    const d = dateMatch ? new Date(dateMatch[1]) : new Date(0);
-    existing.push({ slug, html: block, date: isNaN(d) ? new Date(0) : d });
+  const seen = new Set();
+  const sources = [html];
+  if (fs.existsSync(PAGES_DIR)) {
+    for (const f of fs.readdirSync(PAGES_DIR).filter(n => /^\d+\.html$/.test(n))) {
+      sources.push(fs.readFileSync(path.join(PAGES_DIR, f), 'utf8').replace(/href="\.\.\//g, 'href="'));
+    }
+  }
+  for (const src of sources) {
+    let m;
+    cardRe.lastIndex = 0;
+    while ((m = cardRe.exec(src))) {
+      const block = m[0];
+      const slug = m[1].replace(/\.html$/, '');
+      if (seen.has(slug)) continue;
+      seen.add(slug);
+      const dateMatch = block.match(/<strong>[^<]*<\/strong>\s*·\s*([A-Za-z]{3,9}\.?\s+\d{1,2},\s*\d{4})/);
+      const d = dateMatch ? new Date(dateMatch[1]) : new Date(0);
+      existing.push({ slug, html: block, date: isNaN(d) ? new Date(0) : d });
+    }
   }
 
   const newSlugs = new Set(newPosts.map(p => p.slug));
@@ -607,18 +637,40 @@ function rebuildBlogIndex(newPosts, opts) {
     .concat(added)
     .sort((a, b) => b.date - a.date);
 
-  const cardsHtml = all.map(c => '    ' + c.html).join('\n\n');
+  // Paginate: the index grew with every post (231 KB at 260 posts). The newest PAGE_SIZE
+  // cards stay on blog/index.html, older ones go to blog/page/2.html, 3.html, ... Every card
+  // stays a plain crawlable link and the pager links every page.
+  const totalPages = Math.max(1, Math.ceil(all.length / PAGE_SIZE));
+  const gridFor = (n, sub) => all.slice((n - 1) * PAGE_SIZE, n * PAGE_SIZE)
+    .map(c => '    ' + (sub ? c.html.replace('href="', 'href="../') : c.html)).join('\n\n') +
+    '\n\n    ' + pagerHtml(n, totalPages);
 
-  const rebuilt = html.replace(
-    /(<div class="blog-grid">)[\s\S]*?(\n\s*<\/div>\s*\n\s*(?:<\/main>\s*\n\s*)?<footer>)/,
-    (_, g1, g2) => g1 + '\n\n' + cardsHtml + '\n\n' + g2
-  );
+  const gridRe = /(<div class="blog-grid">)[\s\S]*?(\n\s*<\/div>\s*\n\s*(?:<\/main>\s*\n\s*)?<footer>)/;
+  const rebuilt = html.replace(gridRe, (_, g1, g2) => g1 + '\n\n' + gridFor(1, false) + g2.replace(/^\s*/, '\n  '));
 
   if (rebuilt === html) {
     console.warn('  Warning: blog/index.html grid marker not found — index left unchanged.');
     return false;
   }
   fs.writeFileSync(idxPath, rebuilt);
+
+  // Pages 2..N reuse the index shell with their own title, canonical, hero and ../ paths.
+  fs.mkdirSync(PAGES_DIR, { recursive: true });
+  for (let n = 2; n <= totalPages; n++) {
+    const url = `https://realiracing.com/blog/page/${n}.html`;
+    const page = html.replace(gridRe, (_, g1, g2) => g1 + '\n\n' + gridFor(n, true) + g2.replace(/^\s*/, '\n  '))
+      .replace(/<title>[\s\S]*?<\/title>/, `<title>The RealIRacing Blog, page ${n} of ${totalPages} | RealIRacing</title>`)
+      .replace(/<link rel="canonical" href="[^"]*" \/>/, `<link rel="canonical" href="${url}" />`)
+      .replace(/(<meta property="og:url" content=")[^"]*/, '$1' + url)
+      .replace('href="blog.css', 'href="../blog.css')
+      .replace(/<div class="blog-hero">[\s\S]*?<\/div>/,
+        `<div class="blog-hero">\n    <p class="section-label">The Blog</p>\n    <h1>All guides, page ${n} of ${totalPages}</h1>\n  </div>`);
+    fs.writeFileSync(path.join(PAGES_DIR, `${n}.html`), page);
+  }
+  for (const f of fs.readdirSync(PAGES_DIR)) {
+    const m = /^(\d+)\.html$/.exec(f);
+    if (m && Number(m[1]) > totalPages) fs.unlinkSync(path.join(PAGES_DIR, f));
+  }
   return true;
 }
 
