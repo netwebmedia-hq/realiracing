@@ -1,0 +1,157 @@
+{
+  "slug": "console-racing-iracing-pc-switch-guide",
+  "tag": "iRacing Tips · Getting Started",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Console Racing to iRacing on PC: What Changes and What Stays the Same",
+  "description": "Moving from Gran Turismo or Forza to iRacing on PC? Learn what skills transfer, what hardware you'll need, and how to adjust your expectations.",
+  "sections": [
+    {
+      "p": "Console racing and iRacing feel similar until the moment they don't. You sit in a seat, hold a wheel, and chase lap time. But the physics model is stricter, the online community plays by different rules, and your PC will demand respect. If you're coming from Gran Turismo 7 or Forza Motorsport on PlayStation or Xbox, the jump to iRacing on PC is learnable but real. Most of what you've learned about smooth inputs and brake markers transfers directly. Everything else requires honest recalibration."
+    },
+    {
+      "h2": "Skills that carry over immediately"
+    },
+    {
+      "p": "Braking markers, turn-in points, and throttle modulation learned on console are valid foundations. If you can trail-brake consistently in Gran Turismo, you understand the fundamental technique. A smooth steering input works the same way on iRacing as it does on Forza. Your muscle memory for racing lines is not lost. The difference is that iRacing will punish sloppy execution harder. A 5% mistake on console might cost a tenth of a second. On iRacing, that same mistake kills you in traffic."
+    },
+    {
+      "p": "Car control and throttle application transfer well because the underlying physics are consistent: grip goes down as you increase slip angle, and weight transfer matters everywhere. Drivers who have practiced racecraft on console often understand overtaking, defensive positioning, and how to read another driver's line. That racecraft is valuable on iRacing and harder to teach than pedal technique."
+    },
+    {
+      "tip": "Your console racing habits with controller sensitivity, assist levels, and aggressive turning will feel too light and slow in iRacing at first. This is not a problem with iRacing. Adjust your expectations for a week before you adjust your settings.",
+      "tipLabel": "Expect a Learning Curve"
+    },
+    {
+      "h2": "Physics and tire model differences"
+    },
+    {
+      "p": "iRacing's tire model is less forgiving than Gran Turismo's or Forza's. On console, you can carry more speed into corners and scrub off excess entry speed with late, aggressive braking. On iRacing, the tires heat up and cool down more realistically, and a cold tire or an overheated one behaves very differently. This means your first few laps in a car will be slower because the tires are not ready."
+    },
+    {
+      "p": "Understeer and oversteer feel sharper in iRacing because the margin between grip and loss is narrower. You cannot overdrive the entry and rely on weight transfer alone to save the corner. The car will tell you quickly and without ambiguity that you made a mistake. This directness is one reason iRacing is valued for sim racing: the feedback is immediate and honest."
+    },
+    {
+      "p": "Console games are tuned to feel exciting and forgiving. iRacing is tuned to feel accurate. A car that feels stable and predictable on Forza might feel twitchy on iRacing because iRacing is showing you what the real car would do. You will adapt faster than you expect, but not instantly."
+    },
+    {
+      "list": [
+        "Tire temperature matters: cold tires slide, hot tires overheat and lose grip. Plan an outlap.",
+        "Fuel load affects handling: qualifying setups are different from race setups because fuel weight changes everything.",
+        "Setup balance is non-negotiable: a 5mm change to ride height or wing angle alters lap time measurably.",
+        "Damage is realistic: contact that would leave a cosmetic mark on console results in lost downforce or worse on iRacing."
+      ]
+    },
+    {
+      "h2": "Online community and safety ratings"
+    },
+    {
+      "p": "Console online racing is fun, but iRacing's safety rating and incident point system change the game. On Forza, you can rage-quit, rejoin, and the slate is reset. On iRacing, every contact is logged, every off-track excursion is recorded, and your safety rating decays with incidents. This is not punishment. It is enforcement of the rule that everyone gets to finish the race without being rammed."
+    },
+    {
+      "p": "The console mentality of \"last lap, anything goes\" does not work on iRacing. You will lose your safety rating faster than you expect if you dive bomb the first corner or defend by moving in front of a braking point. The community polices itself with data, not anger. Respect the racing line and you will stay clean. Disrespect it and you will be segregated into lobbies with drivers at your incident level."
+    },
+    {
+      "p": "Licenses and series structure are also different. On console, you pick a lobby and drive. On iRacing, you start as a Rookie, climb through D, C, B, and A class licenses, and each license has minimum safety rating and iRating requirements. This structure takes weeks to climb through if you drive daily. It is designed to keep you learning against drivers at your level."
+    },
+    {
+      "tip": "Join a beginner-friendly series first, not an open-wheel car or an endurance race. Rookie Street Stock or Rookie Legends is where most console players should start.",
+      "tipLabel": "Choose Your First Series Carefully"
+    },
+    {
+      "h2": "Hardware expectations and PC setup"
+    },
+    {
+      "p": "A console wheel works on iRacing if you have a PC, but the experience changes when you move up. Console wheels like the Logitech G923 are entry-level: they use belt or gear drives, have lower force feedback resolution, and lower maximum torque. They work and many drivers race on iRacing with them, but they also hide information that a direct drive wheelbase would show you. Information about grip loss, road surface, and weight transfer."
+    },
+    {
+      "p": "You do not need a high-end rig to start on iRacing. A used G923 or Thrustmaster T300 RS GT, a plastic seat and stand, a monitor, and a PC with an RTX 5060 Ti and a Ryzen 7 5700 or equivalent will run iRacing at high frame rates and settings. The focus should be on consistency: a single monitor is better than chasing VR if your PC is modest. Stable 100+ frames per second is better than beautiful 60 frames per second."
+    },
+    {
+      "p": "If you are serious about climbing the iRating or safety rating ladder, a better wheel will help. A direct drive wheel like the MOZA R9 or CSL DD costs roughly 5 to 10 times what your console wheel cost, but the feedback is vastly richer. You will feel suspension compliance, tire slip, and road texture. This information helps you brake later, turn-in sooner, and manage tire temperature. For your first month, a console wheel is fine. After that, upgrade path matters."
+    },
+    {
+      "list": [
+        "Monitor and frame rate: 144 Hz is the practical sweet spot. VR is excellent but demands a better GPU than console wheels do.",
+        "Pedals: A load cell brake pedal makes a measurable difference in consistency. Console throttle-button inputs do not teach you brake modulation.",
+        "Cockpit: A proper seat and rig keeps you stable under heavy braking and acceleration. A wheel stand works but is tiring over 30 laps.",
+        "Internet: Wired Ethernet is non-negotiable. WiFi introduces latency and packet loss that will cause disconnects and unfair incidents."
+      ]
+    },
+    {
+      "h2": "Setup tuning and practice structure"
+    },
+    {
+      "p": "Console racing often uses community setups or default tuning. iRacing expects you to tune. Most tracks have a baseline setup provided by iRacing, and the expectation is that you will adjust it for your driving style and tire strategy. This sounds daunting, but the changes are small and the gains are measurable."
+    },
+    {
+      "p": "A common starting point is to download a setup from iRacingSetupSheets or a driver's shared setups, use it for one session, then adjust brake bias and front wing by one or two clicks based on how the car felt. Did understeer at entry? Add front wing. Did oversteer on exit? Reduce rear wing. The learning loop is tight and fast."
+    },
+    {
+      "p": "Practice structure is also different. Console players often jump into public lobbies and learn by doing. iRacing rewards structured practice. Spend 10 to 15 minutes in time trial mode learning the track, then 20 minutes in practice session mode developing a setup, then run a race. Your first race will be slower than your 10th because you will have data and tire knowledge."
+    },
+    {
+      "olist": [
+        "Download a baseline setup or create one from default",
+        "Run 5 laps to establish brake points and turn-in markers",
+        "Make one setup change (usually brake bias or wing), run 3 laps, evaluate",
+        "Repeat changes until the car feels stable through your weakest corners",
+        "Race when the setup is good enough, not when it is perfect"
+      ]
+    },
+    {
+      "h2": "Common mistakes console players make"
+    },
+    {
+      "p": "Overdriving early is the biggest trap. Console players arrive on iRacing expecting to set a fast lap on lap three. The fastest drivers on iRacing run soft, slow laps for the first 15 minutes to build tire temperature and grip. They then gradually increase pace as the tires come up. A cold lap on iRacing feels slippery and unrewarding. A hot lap feels locked in. Learn to be patient."
+    },
+    {
+      "p": "Setup paranoia is the second. Console players will change five settings between sessions and wonder why the car feels different. Change one thing, run three laps, evaluate, then change the next thing. This teaches cause and effect. Changing everything teaches chaos."
+    },
+    {
+      "p": "Fuel and tire strategy confusion is real. On console, you often know fuel load and tire wear before the race starts. On iRacing, fuel consumption and tire degradation vary by track, car, and setup. Read the series rules before racing. Learn whether fuel is mandatory or optional. Learn whether pit stops are allowed. This information prevents rage-quitting when the rules were different from what you assumed."
+    },
+    {
+      "tip": "Watch a top-split race as a spectator first. See how the fastest drivers hold lines, how early they brake, how late they exit, and how they manage traffic. Most of what you learn will contradict your console instincts. That is the point.",
+      "tipLabel": "Learn by Watching"
+    },
+    {
+      "h2": "The timeline to competence"
+    },
+    {
+      "p": "Most console players are racecraft-competent on iRacing within two weeks if they practice daily. Your Rookie license will take three to four weeks to earn and your C license another month. By the time you are running Road C or Oval C, you will have 40 to 60 hours in the sim and will be comfortable with the car and track knowledge. Your lap times will be slow relative to top drivers, but they will be consistent and safe."
+    },
+    {
+      "p": "The jump from slow but safe to fast and smooth takes another month. This is where setup knowledge, race craft refinement, and muscle memory alignment intersect. Drivers who climb quickly often credit time in a single car at a single track, not variety. The fastest path upward is depth, not breadth."
+    },
+    {
+      "p": "Real progression in iRacing happens over a season, not a week. A season on iRacing is typically eight to ten weeks. If you commit to a series for the full season, race every week, and practice three or four times per week, you will improve faster than drivers who hop between series and tracks."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need a new wheel to start iRacing from console?",
+      "a": "No. A console wheel like the G923 or T300 works on iRacing. The experience is limited by lower force feedback resolution and lower maximum torque compared to a direct drive wheel, but it is adequate for learning. After your first month or two, a direct drive wheel will improve consistency and feedback measurably."
+    },
+    {
+      "q": "What is the minimum PC spec to run iRacing smoothly?",
+      "a": "An RTX 5060 Ti or equivalent GPU, a Ryzen 7 5700 or equivalent CPU, 32 GB RAM, and one 1440p monitor will run iRacing at high settings and 100+ frames per second. A wired Ethernet connection is mandatory. VR is possible with a better GPU, but a single monitor is a practical starting point."
+    },
+    {
+      "q": "How long until I stop feeling like a rookie?",
+      "a": "Most console players feel competent within two to three weeks of daily practice. You will earn your Rookie license in three to four weeks if you drive consistently and follow safety rules. Earning a C license takes another month. Feeling smooth and confident in close racing takes two to three months of steady practice."
+    },
+    {
+      "q": "Can I use my console racing habits and settings right away?",
+      "a": "No. Console games have lower force feedback, gentler tire models, and more forgiving physics. Your sensitivity settings will feel too light, your inputs will be too aggressive, and your brake pressure will be inconsistent. Spend a week getting used to the car and track before tuning anything. Your muscle memory will adapt faster than you expect."
+    }
+  ],
+  "gearKeys": [
+    "gpu-rtx-5060-ti",
+    "cpu-ryzen-7-5700",
+    "monitor-1440p-120",
+    "moza-r9"
+  ],
+  "published": "2026-11-10",
+  "dateLabel": "November 10, 2026"
+}

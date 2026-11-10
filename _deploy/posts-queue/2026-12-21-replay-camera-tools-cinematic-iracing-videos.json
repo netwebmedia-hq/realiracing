@@ -1,0 +1,172 @@
+{
+  "slug": "replay-camera-tools-cinematic-iracing-videos",
+  "tag": "Streaming · Production",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Replay camera tools for cinematic iRacing videos",
+  "description": "Master iRacing's replay system and free camera tools to shoot broadcast-quality race footage without post-production.",
+  "sections": [
+    {
+      "p": "Most sim racers upload their iRacing replays as raw gameplay footage: one static camera angle, one lap, one take. That approach wastes the replay system. iRacing's replay editor and free camera mode let you shoot multi-angle cinematic sequences that rival broadcast coverage. The difference between a raw race clip and a polished replay is not better hardware or paid software. It is knowing how to position the camera, when to cut between angles, and how to time pans and zooms to the action on track."
+    },
+    {
+      "p": "Building cinematic replay footage does not require a second PC, video editing software, or a graphics card beyond what you already need for streaming. You can shoot, edit and export everything inside iRacing's replay system or capture multiple passes with OBS and compile them in post. This guide covers the camera tools available, how to frame shots like a director, and the workflow that produces publication-ready clips without leaving the sim."
+    },
+    {
+      "h2": "iRacing's replay editor and camera modes"
+    },
+    {
+      "p": "Every race you complete saves to your replays folder. Open a replay from the UI and enter the replay editor. From there, you control playback speed, seek to any moment in the race, and switch between camera modes. The key modes are cockpit (driver's view), bumper (hood-mounted), chase (third-person behind the car), TV (broadcast-style overhead), and free camera."
+    },
+    {
+      "p": "Free camera is where cinematic work happens. Once in free camera mode, you can position the viewpoint anywhere on track, pan smoothly, zoom in and out, and follow the action without being locked to the car. You control the camera with mouse and keyboard: WASD for position, scroll wheel or keyboard keys to zoom, and the mouse to rotate the view. Camera movement speed can be adjusted so you have fine control over slow dramatic pans or quick cuts to distant action."
+    },
+    {
+      "h3": "Setting up your free camera view"
+    },
+    {
+      "list": [
+        "Start with the race paused at a moment before the action you want to capture.",
+        "Switch to free camera mode from the camera selector in the replay UI.",
+        "Position the camera at a wide angle to show the corner, the run-in, and the apex.",
+        "Zoom to a focal length that frames the lead car with space around it, not centered but slightly off to one side for visual interest.",
+        "Test smooth pans by slowly moving the camera left and right while keeping the target car in frame.",
+        "Use zoom to guide the viewer's eye: pull back before a major event, zoom in as the car commits to the corner."
+      ]
+    },
+    {
+      "tip": "Free camera movement is smooth only if you move the mouse or keyboard gradually. Sudden inputs create jerky pans. Plan your shot first, then move slowly and deliberately. A 3-5 second pan across the corner looks professional; a half-second pan looks amateur.",
+      "tipLabel": "Camera Pacing"
+    },
+    {
+      "h2": "Framing shots for broadcast clarity"
+    },
+    {
+      "p": "Broadcast racing coverage follows rules that make the action readable. The lead car is usually on-frame, the camera is close enough to see the car's inputs (steering, braking, throttle) but far enough back to show the corner geometry and surrounding cars. The background should be clear enough that viewers recognize the track."
+    },
+    {
+      "p": "When you have multiple cars competing for position, frame the shot to show both. A three-quarter rear angle from the outside of the corner shows the leading car on the line and the chasing car attempting to overtake. If the overtake happens on a straight, move to a side angle so viewers see the lateral spacing and the moment one car clears the other. Overhead TV camera angles work well for high-speed sections and passing maneuvers on straights, because they flatten the perspective and make the grid spacing obvious."
+    },
+    {
+      "h3": "Common angles and when to use them"
+    },
+    {
+      "list": [
+        "Chase camera (third-person): best for showing driver inputs and car movement. Frame 2-3 car lengths behind, slightly to one side. Works for braking zones and accelerating out of corners.",
+        "Side angle (free camera): position perpendicular to the racing line, at track height or slightly elevated. Ideal for tight corners and wheel-to-wheel passes. Viewers see lateral separation clearly.",
+        "Elevated outside angle (free camera): place the camera high and far to the outside of a corner. Shows the full corner geometry, the line, and the car's path through it. Great for establishing the track.",
+        "Inside corner angle (free camera): low camera on the inside of a tight corner. Dramatic shot that emphasizes how close the car is to the kerb or wall. Use sparingly to avoid disorientation.",
+        "Overhead TV angle (free camera): zoom way out and position the camera directly above the racing line. Shows traffic flow, spacing, and passes clearly. Less emotional but highly informative."
+      ]
+    },
+    {
+      "h2": "Building a multi-camera sequence"
+    },
+    {
+      "p": "A cinematic replay is not one long static shot. It is a series of camera angles, each held for 2-5 seconds, that cut to show different aspects of the action. Professional productions call this coverage. You shoot from multiple angles so the editor can cut to the most interesting view at each moment."
+    },
+    {
+      "p": "Start by identifying the moments worth capturing: the start, the first corner, the first overtake, a defensive move, a mistake, the finish. For each moment, plan three to four camera angles. On the start, you might shoot from the grid (wide overhead), then from inside the first corner, then from a chase angle as the pack enters turn one. On an overtake, you shoot the approach (side angle showing both cars), the pass itself (close on the outside car), and the aftermath (both cars separated)."
+    },
+    {
+      "p": "To capture multiple angles without editing software, use OBS to record several passes through the same section of replay, each with a different free camera position. Play the replay from the same start point, position the camera, record the section with OBS, then reload the replay and reposition for the next shot. Save each recording with a clear name (start-grid, start-t1-inside, start-t1-chase, etc.). Then, import all recordings into a video editor and arrange them in sequence. Cuts should happen on natural breaks: when a car moves out of frame, when the focus shifts to a different car, or when a new section of track begins."
+    },
+    {
+      "tip": "Record 1-2 seconds longer than you think you need on each shot. A 5-second clip is easier to edit than a 3-second clip where the camera motion is cut off abruptly. Extra footage gives the editor breathing room to adjust the cut point.",
+      "tipLabel": "Recording Buffer"
+    },
+    {
+      "h2": "Technical settings for clean replay footage"
+    },
+    {
+      "p": "Replay quality depends partly on your graphics settings. The replay is rendered in real-time from the sim's engine, so your frame rate, resolution, and visual settings affect the output. For cinematic work, prioritize a steady frame rate. Use a 1440p 120 Hz monitor or equivalent display resolution. Set your in-game graphics to maintain a consistent 60 fps or higher during replay playback. Enable anti-aliasing and shadows so the footage looks polished, but disable motion blur if you plan to do slow camera pans (motion blur on a panning camera looks shaky)."
+    },
+    {
+      "p": "When capturing with OBS, record at a bitrate high enough that camera motion does not artifact or compress. For 1440p 60 fps, use a bitrate of ~12,000 to 15,000 kbps. If you are streaming and recording simultaneously on a single PC, a Ryzen 7 5700 and RTX 5060 Ti are capable of encoding in hardware (NVIDIA NVENC), so the record bitrate does not significantly impact streaming quality. Test a short replay capture first to confirm your encoder settings are stable."
+    },
+    {
+      "list": [
+        "Disable cockpit motion blur and head motion in replay mode (Settings > Replay > Camera) so the free camera does not jitter.",
+        "Set replay graphics quality to High or Ultra if your GPU can maintain 60 fps; lower if you drop below 60 fps during complex scenes (rain, night, heavy traffic).",
+        "Record OBS output at a codec that balances file size and quality; H.264 hardware encoding is fast and compatible, but H.265 (HEVC) cuts file size roughly in half if your editor supports it.",
+        "Disable driver telemetry overlays (delta bar, fuel, tire temps) unless they are essential to the narrative. A clean track view is more cinematic than a heads-up display."
+      ]
+    },
+    {
+      "h2": "Workflow: from race to finished clip"
+    },
+    {
+      "olist": [
+        "Finish the race and let iRacing auto-save the replay.",
+        "Open the replay from the UI and identify 2-3 key moments (pass, incident, fast lap, close finish).",
+        "For each moment, plan camera positions. Sketch them out on paper or in your head.",
+        "In replay editor, seek to the start of the first moment and position your free camera.",
+        "Record a 5-10 second pass through that moment with OBS, noting the camera position.",
+        "Reload the replay, seek to the same start point, reposition the camera for angle two, and record again.",
+        "Repeat until you have 3-4 camera angles of each key moment.",
+        "Import all recordings into a video editor (DaVinci Resolve Free, Shotcut, or similar).",
+        "Arrange the clips in a sequence, cutting between angles every 3-5 seconds.",
+        "Add a music track, color grading, or lower-third graphics if desired.",
+        "Export as an MP4 and upload to YouTube or your streaming platform."
+      ]
+    },
+    {
+      "p": "The workflow sounds long, but in practice, shooting coverage for a 3-minute highlights reel takes 20-30 minutes of replay time. The result is broadcast-quality footage that looks like it was edited by a professional, because you shot it with multi-angle coverage instead of trying to fix a single-angle recording in post."
+    },
+    {
+      "tip": "Keep music pacing in mind while editing. Cuts should align with music beats or phrasing, not land randomly. If the music has a drop or bass hit, cut to a dramatic camera angle or close-up at that moment. Sync between sound and image makes the clip feel intentional.",
+      "tipLabel": "Audio Timing"
+    },
+    {
+      "h2": "Common mistakes and how to avoid them"
+    },
+    {
+      "p": "The most common error is holding a single camera angle for too long. A 15-second unbroken shot of a car going around a corner is slow and loses viewer attention. Cut to a new angle every 3-5 seconds, especially during high-action moments (passes, crashes, close racing). During slow parts (long straights, practice sessions), holding a shot a bit longer is acceptable, but even then, a slow pan or zoom adjustment keeps the camera active."
+    },
+    {
+      "p": "Another mistake is framing the subject too tightly. If the lead car fills 80% of the frame, viewers see only the car, not the corner or the surrounding track. Frame the subject to occupy 40-50% of the frame, leaving space to show the line, the next apex, or a chasing car. The empty space around the main subject guides the viewer's eye and provides context."
+    },
+    {
+      "p": "Jerky or unnatural camera movement breaks immersion. If you are panning to follow a car, move the camera at the same speed as the car moves through the shot, so it stays in a similar position in the frame. If you are zooming, zoom gradually over 1-2 seconds, not instantly. Test your camera movements in replay before recording; if a pan looks shaky or too fast, adjust and try again."
+    },
+    {
+      "p": "Finally, avoid mixing camera positions inconsistently. If you have shot an overtake from the outside of the corner on angle one, angle two should be from a clearly different position (inside, elevated, or distant), not from nearly the same spot. Inconsistent angles feel like mistakes. Deliberate angle changes feel professional."
+    },
+    {
+      "h2": "Examples and tools for reference"
+    },
+    {
+      "p": "Watch broadcast racing footage (Formula 1, IMSA, GT racing) and pay attention to how the director cuts between angles. Notice that cuts usually happen at natural moments: when the car accelerates out of a corner, when the camera is about to lose the subject, or when a new piece of action begins. Notice that many shots are held for exactly 3-5 seconds. Notice how wide shots establish the section of track, and close shots add detail and emotion. This is the template for your replay footage."
+    },
+    {
+      "p": "iRacing's replay system does not include a timeline or multi-angle editor built into the client, so your footage must be assembled in external software. However, the free camera is powerful enough to create any shot a broadcast director would use. DaVinci Resolve Free is the industry standard for editing and color grading, and it runs on any PC capable of sim racing. Shotcut is another free option with a simpler interface. Both support multi-camera import and frame-accurate editing."
+    },
+    {
+      "p": "After you finish a few replay projects, you will develop a sense of which angles work and which do not. Build a personal library of camera positions that you know are effective: your favorite inside-corner shot, your best overhead angle, your signature panning move. Reuse these positions across different races and tracks. Consistency in your visual style makes your content recognizable and professional."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I edit camera angles inside the iRacing replay UI itself?",
+      "a": "No. iRacing's replay editor lets you position a free camera and play back the race, but it does not have a multi-camera timeline or cut functionality. You must capture multiple camera positions separately with OBS, then assemble them in a video editor like DaVinci Resolve or Shotcut."
+    },
+    {
+      "q": "Does recording replay footage at high quality take up a lot of storage?",
+      "a": "A 5-minute race clip at 1440p 60fps and ~12,000 kbps bitrate is roughly 4-5 GB uncompressed. Store recordings on an external SSD if your PC's primary drive is tight. After editing, the final exported video is much smaller (500 MB to 1.5 GB for a 3-minute highlight reel)."
+    },
+    {
+      "q": "What is the best free camera distance from the car for a chase angle?",
+      "a": "Position the camera 2-3 car lengths behind the rear bumper, at approximately the same height as the car's roofline or slightly higher. This distance shows the car clearly and reveals steering and throttle inputs without being so close that you lose sight of the track ahead."
+    },
+    {
+      "q": "Should I use cockpit or chase camera for my replay footage?",
+      "a": "Cockpit camera is personal but limited to one perspective. Chase and free camera give you flexibility to move around and show different angles. For cinematic multi-angle sequences, free camera is the only tool that does the job. Use cockpit or bumper camera as one of several angles to add variety, but plan to do most of your work in free camera mode."
+    }
+  ],
+  "gearKeys": [
+    "monitor-1440p-120",
+    "gpu-rtx-5060-ti"
+  ],
+  "published": "2026-11-10",
+  "dateLabel": "November 10, 2026"
+}

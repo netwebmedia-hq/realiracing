@@ -1,0 +1,133 @@
+{
+  "slug": "misano-adriatico-iracing-guide-setup-strategy",
+  "tag": "Track Guides · Road Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Misano Adriatico iRacing Guide: Setup, Lines, and Wet Weather",
+  "description": "Learn the racing line through Misano's fast corners, brake markers, setup priorities for wet and dry, and common mistakes that cost lap time and position.",
+  "sections": [
+    {
+      "p": "Misano Adriatico is a high-speed Italian track that punishes imprecision but rewards smooth inputs. The circuit combines long, fast-flowing corners with late-apex turns that demand both commitment and patience. Unlike technical parkland circuits, Misano is built into a seafront resort town, which means narrow run-off areas, concrete barriers, and little margin for error once you slip off line. On iRacing, the track's racing surface changes character dramatically from dry to wet, and your setup and driving style must adapt accordingly."
+    },
+    {
+      "p": "The key to speed at Misano is carrying momentum through the high-speed sections. Most drivers lose time by over-braking into corners or running too much brake pressure for too long. The track also demands respect for kerb usage: some kerbs are acceptable, others will upset the car or cost you traction. Setup changes between conditions are significant, and tire temperature management is critical because Misano offers long straights that cool tires quickly if you're not careful."
+    },
+    {
+      "h2": "The racing line through turn 1 to turn 5"
+    },
+    {
+      "p": "Misano begins with a gentle left-hander at turn 1 (Curva Bassa) that leads onto the long straight. Most drivers brake too early here, which kills momentum onto the straight. Aim for the late-apex approach: coast down from full throttle, tap the brakes around 100 meters before the apex, and turn in smoothly so that you're back at full throttle well before the apex. The apex is tight against the inside kerb, but don't scrub the kerb; kiss it lightly and let the car roll through."
+    },
+    {
+      "p": "Turn 2 (Rivazza, the opening of the high-speed right-hander complex) is where pace separates quick drivers from fast ones. This is a commitment corner: brake in a straight line, down-shift early, and commit to the turning point. Most brake pressure should be released before you turn in. The inside kerb can be used but do not hook it hard; a light touch keeps the car stable. Carry as much speed as you can manage without locking the rears or washing out. The exit is critical because the next part of Rivazza (turn 3, the continuation to the right) requires you to hold a wide line so that you can maximize entry speed into Rivazza turn 3."
+    },
+    {
+      "list": [
+        "Turn 1 (Curva Bassa): Late apex, light kerb use, full throttle by apex",
+        "Turn 2 (Rivazza left): Commitment corner, brake early, roll speed through turn-in, light inside kerb",
+        "Turn 3 (Rivazza right continuation): Wide entry, maintain speed, wait for the straightening before heavy throttle",
+        "Turn 4 (Carro): Downhill braking zone, late apex, watch for brake fade in longer races",
+        "Turn 5 (Aqua Minerale): Fast left-hander, minimal braking, carry momentum onto the long straight"
+      ]
+    },
+    {
+      "h2": "Brake zones and threshold points"
+    },
+    {
+      "p": "Misano has three main heavy braking zones. The first is before turn 1 (Curva Bassa), where most drivers over-slow. Use your practice telemetry as a baseline, but aim to brake approximately 80-90 meters before the turn-in point, not 130 meters. The second is before turn 4 (Carro), a downhill braking zone that can feel grabby in GT cars because of load transfer. The third is before turn 8 (Quercia), where most drivers simply trail-brake too hard and upset the car."
+    },
+    {
+      "p": "A common mistake is carrying too much brake pressure into the medium-speed turns like turn 5 (Aqua Minerale) and turn 7 (Rivazza turn 3 again, the chicane). These corners do not require heavy braking. Instead, lift off throttle and let engine braking do most of the work, then modulate brake pressure lightly as you turn in. This keeps the tires fresher and the car more planted."
+    },
+    {
+      "tip": "Record your baseline lap with telemetry enabled. Export the replay and check your brake points against a setup guide for your specific car class. Misano brake zones shift by 10-15 meters depending on fuel load and tire wear, so use the telemetry delta as a reference, not a law.",
+      "tipLabel": "Telemetry setup"
+    },
+    {
+      "h2": "Kerb usage and track limits"
+    },
+    {
+      "p": "Misano's kerbs are painted red and white. Most are driveable, but aggressive use can unsettle the car. The inside kerb at turn 2 (Rivazza left) is hard and can be clipped; the inside kerb at turn 4 (Carro) is rougher and should be avoided entirely. The outside red-white kerb at turn 5 (Aqua Minerale) can be used on exit to widen your line, but don't mount it; brush it only. The chicane at turn 7 (Rivazza turn 3) has a tight inside kerb that must not be used at all."
+    },
+    {
+      "p": "Track limits at Misano are strict. The painted line marks the edge of track. If all four wheels go beyond the line, you will get a track-limits warning. This is most common at turn 1 (Curva Bassa), where drivers run too wide on exit. Also watch turn 5 (Aqua Minerale) and the chicane (turn 7) exit. In wet weather, the temptation to run wide and early on throttle is strong; resist it because the wet track surface extends well beyond the painted limits."
+    },
+    {
+      "h2": "Dry-weather setup priorities"
+    },
+    {
+      "p": "Dry-weather setup at Misano depends heavily on your car class. For GT3 cars, the priority is balanced aero and mechanical grip. Most drivers should start with a baseline setup from a trusted source (such as a setup guide for your specific car), then adjust downforce and anti-roll bars to suit your style. Higher downforce will increase turn-in response but slow you on the straights; lower downforce will give you more top speed but make Rivazza and Aqua Minerale (turns 2 and 5) feel loose."
+    },
+    {
+      "p": "Brake balance is critical. Most drivers run 54-58% front bias on dry day at Misano for GT3 cars, but this varies by car. Too much front brake causes lockup into turn 1 and turn 4; too much rear allows the rear to slide under braking, especially on downhill turn 4. Suspension stiffness should favor mechanical grip over comfort. Stiffer anti-roll bars will reduce roll in fast corners like Rivazza and Aqua Minerale. Tire pressure is often overlooked: aim for ~27-28 psi cold for fronts and 28-29 for rears at the start of the session, and let them heat soak to ~31-32 during running. Check your telemetry to confirm."
+    },
+    {
+      "h2": "Wet-weather driving and setup changes"
+    },
+    {
+      "p": "Misano in the wet becomes a different track. Grip is reduced everywhere, but especially through the high-speed sections like Rivazza and Aqua Minerale. Your brake points move 20-30 meters later because wet braking distances are much longer. Entry speed into turn 2 (Rivazza left) drops noticeably; commit less aggressively and prioritize exit grip so you can accelerate hard onto the straightaway."
+    },
+    {
+      "p": "Setup changes for rain include lower front aero (remove wing if possible), softer anti-roll bars to improve grip and feel, and softer brake force to prevent lock-up. Brake balance should shift rearward by 2-3% because the fronts will have less grip. Tire pressures drop to ~24-25 psi cold because the tires will not heat up as much. The wet chicane at turn 7 (Rivazza turn 3) becomes treacherous; reduce speed significantly and do not trail-brake hard into it. Most drivers find their wet pace by reducing throttle application aggression and increasing trail-braking modulation."
+    },
+    {
+      "tip": "In wet qualifying or practice, run a few warm-up laps without pushing. Wet grip at Misano is deceptive: the track feels faster than it is until your tires are fully cold. Cold tires at Misano in the rain will cause massive slides at turn 2 and turn 5.",
+      "tipLabel": "Wet-weather warm-up"
+    },
+    {
+      "h2": "Common mistakes and how to avoid them"
+    },
+    {
+      "list": [
+        "Over-braking into turn 1: This kills momentum and forces you to work harder to regain speed. Use telemetry to dial in a precise brake point and stick to it.",
+        "Under-committing at Rivazza (turn 2): Fear of the wall causes many drivers to brake too early or turn in too slowly. Commit to the throttle exit by mid-corner.",
+        "Chasing the kerb at turn 4: Carro's inside kerb is rough and will unsettle the car. Apex the turn with a smooth line and avoid aggressive kerb use.",
+        "Early throttle application in the wet: Aqua Minerale (turn 5) and the Rivazza chicane (turn 7) will spin you if you add throttle too soon in rain. Wait until the car is pointed downtrack.",
+        "Locking tires through the braking zones: Misano's long straights encourage high braking confidence. Use engine braking and trail-braking modulation instead of heavy pedal input."
+      ]
+    },
+    {
+      "h2": "Tire management and fuel strategy in longer races"
+    },
+    {
+      "p": "Misano is a fast circuit, which means tire degradation is accelerated by constant cornering load. In endurance races, plan for a 5-8 lap pit window for fresh tires, depending on fuel load and track conditions. The rear tires degrade faster than the fronts because of the high-speed corners and long acceleration zones. If you're running a long stint, prioritize tire temperature by avoiding excessive kerb strikes and managing brake pressure smoothly."
+    },
+    {
+      "p": "Fuel strategy at Misano is straightforward because the track has consistent lap times. Most GT3 cars run a 45-minute fuel load for a race stint, which allows for moderate fuel-saving. However, Misano is a power track: you can't lift and coast effectively without losing 2-4 tenths per lap. Focus on smooth inputs and consistent lines instead of aggressive fuel conservation. In shorter races or qualifying, run a minimal fuel load to maximize speed."
+    },
+    {
+      "h2": "Building consistent lap times"
+    },
+    {
+      "p": "Consistency at Misano comes from repetition and precision at the braking zones. Most lap-time gains come from earlier throttle application on the straights and smoother brake modulation through the technical sections. Record three solid baseline laps in practice, export the telemetry, and compare your throttle, brake, and steering inputs lap-to-lap. Look for where your pace varies. Most drivers will find that turn 2 (Rivazza left) and turn 5 (Aqua Minerale) are where they lose the most time through inconsistent throttle timing."
+    },
+    {
+      "p": "After you've dialed in your baseline, focus on one corner at a time. Spend 5-10 laps working on turn 2, then move to turn 5, then the chicane. Once you're confident in those sections, run full qualifying runs and compare your delta bar to your baseline. This structured approach will show you where you still have room to improve and where you've already maxed out your pace. <a href=\"how-to-review-iracing-replays-to-find-lap-time.html\">Use iRacing's replay tools to check your lines</a> against your telemetry and identify any over-steering or under-steering that costs time."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the correct brake point for turn 1 at Misano?",
+      "a": "The brake point for Curva Bassa (turn 1) depends on your car and fuel load, but a solid baseline is approximately 80-90 meters before the turn-in point. Use your practice telemetry to dial it in: export your fastest lap and check exactly where you release the brake pedal. Most drivers brake too early here, which kills momentum onto the straight."
+    },
+    {
+      "q": "Should I use the inside kerb at Rivazza turn 2?",
+      "a": "Yes, but lightly. The inside kerb at Rivazza turn 2 is hard and can be clipped on the apex. Do not hook it aggressively or mount it; brush it only and let the car roll through. Aggressive kerb use here will unsettle the car and slow you on the exit. Keep the input smooth and prioritize throttle application as you unwind the steering."
+    },
+    {
+      "q": "How much do I need to change my setup when it rains at Misano?",
+      "a": "Significant changes are needed. Reduce front wing aero by 2-3 clicks, soften anti-roll bars by 2-3 clicks, shift brake balance rearward by 2-3%, lower tire pressures to 24-25 psi cold, and reduce brake force to prevent lock-up. Wet grip at Misano is sensitive to setup, so these adjustments are baseline; test and adjust based on your practice sessions."
+    },
+    {
+      "q": "What is the biggest mistake drivers make at Misano?",
+      "a": "Over-braking into the main corners, especially turn 1 and turn 4. This kills momentum and forces recovery work that costs time on the straights. A secondary mistake is under-committing at Rivazza turn 2 through fear of the wall. Commit to the corner, use smooth throttle application, and trust your setup. Most drivers will find an extra 1-2 tenths per lap by dialing in precise brake points and committing to turn-in."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-cs-v2",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-10",
+  "dateLabel": "November 10, 2026"
+}
