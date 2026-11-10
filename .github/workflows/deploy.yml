@@ -33,6 +33,9 @@ jobs:
       - name: Validate blog queue
         run: node _ci/validate-blog-queue.mjs
 
+      - name: Title-dedupe self-test
+        run: node --test _ci/title-dedupe.test.mjs
+
       # Which reply shapes the generator must turn into posts. A bare object —
       # what the model returns for a single-post batch about a third of the time
       # — was being discarded as unparseable, losing 11 already-written posts in

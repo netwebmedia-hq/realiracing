@@ -14,6 +14,7 @@ const path = require('path');
 const { callClaude, claudeConfigured } = require('./lib/claude-call.js');
 const { withHumanizeRules } = require('./lib/humanize-rules.js');
 const { parseBatchReply } = require('./lib/salvage.js');
+const { loadTitles, findDuplicate } = require('./lib/title-dedupe.js');
 
 process.chdir(path.join(__dirname, '..'));
 
@@ -721,6 +722,7 @@ async function main() {
   }
 
   const used   = existingSlugs();
+  const usedTitles = loadTitles(process.cwd());
   const topics = shuffle(TOPIC_POOL);
   let written  = 0;
   let topicIdx = 0;
@@ -817,6 +819,15 @@ async function main() {
         continue;
       }
 
+      // Title-level dedupe: the model picks a fresh slug for a topic that is already
+      // covered, so a slug check alone let identical-title twins ship. Drop an exact
+      // normalised-title match or a near-identical title (token overlap >= 0.8).
+      const dup = findDuplicate(post.title, usedTitles);
+      if (dup) {
+        console.warn(`  ✗ dropped "${slug}" — ${dup.kind} title match with ${dup.of.where}`);
+        continue;
+      }
+
       // Validate gearKeys against the live allowlist; never let a post ship
       // with zero valid keys — fall back to the core rig.
       let gearKeys = Array.isArray(post.gearKeys) ? post.gearKeys.filter(k => allowedKeySet.has(k)) : [];
@@ -833,6 +844,7 @@ async function main() {
       const filepath = path.join(QUEUE_DIR, filename);
       fs.writeFileSync(filepath, JSON.stringify(post, null, 2) + '\n');
       used.add(slug);
+      usedTitles.push({ where: filename, title: post.title });
       written++;
       wroteThisBatch++;
       dayCount++;
