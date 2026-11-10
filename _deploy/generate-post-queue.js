@@ -686,7 +686,16 @@ Rules:
   if (via === 'salvage') {
     console.warn(`    ⚠ batch JSON was malformed; salvaged ${posts.length} post(s)`);
   }
+  if (via === 'repair') {
+    console.warn('    ⚠ batch JSON had unescaped quotes; repaired');
+  }
   if (posts.length) return posts;
+  // Show where the JSON broke: "could not be parsed" alone has never been
+  // enough to tell an unescaped quote from any other malformation.
+  try { JSON.parse(clean); } catch (e) {
+    const at = Number((/position (\d+)/.exec(e.message) || [])[1]);
+    console.warn(`    parse error: ${e.message}` + (Number.isFinite(at) ? ` | near: ${JSON.stringify(clean.slice(Math.max(0, at - 80), at + 40))}` : ''));
+  }
   throw new Error(
     data.stop_reason === 'max_tokens'
       ? `the model ran out of room mid-batch (stop_reason=max_tokens) — lower BATCH_SIZE or raise MAX_TOKENS (${MAX_TOKENS})`

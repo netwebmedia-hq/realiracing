@@ -62,6 +62,8 @@ const post = (slug) => ({
 const one = post('okayama-iracing-guide');
 const two = post('mid-ohio-iracing-guide');
 
+const linked = { ...one, sections: [{ p: 'See <a href="okayama-iracing-guide.html">the Okayama guide</a> first.' }, ...one.sections] };
+
 const cases = [
   ['array of one', JSON.stringify([one], null, 2), 1],
   ['array of two', JSON.stringify([one, two], null, 2), 2],
@@ -74,6 +76,8 @@ const cases = [
   // reporting none — that is the max_tokens case, which has its own error text.
   ['bare object truncated mid-post yields nothing', JSON.stringify(one).slice(0, 300), 0],
   ['prose with no JSON at all yields nothing', 'I was unable to write these posts.', 0],
+  // Inline HTML is allowed in "p", and the model writes href="..." unescaped.
+  ['unescaped quotes in an inline link', JSON.stringify([linked]).replace(/\\"/g, '"'), 1],
 ];
 
 const failures = [];
@@ -107,6 +111,7 @@ const routes = [
   ['clean bare object', JSON.stringify(one), 'object'],
   ['truncated array', JSON.stringify([one, two]).slice(0, -80), 'salvage'],
   ['no JSON at all', 'sorry, nothing', 'none'],
+  ['unescaped quotes', JSON.stringify([linked]).replace(/\\"/g, '"'), 'repair'],
 ];
 for (const [name, raw, expected] of routes) {
   const via = parseBatchReply(raw).via;
@@ -119,6 +124,10 @@ const generatorSrc = fs.readFileSync(path.join(ROOT, '_deploy', 'generate-post-q
 if (!/parseBatchReply\s*\(/.test(generatorSrc)) {
   failures.push('generate-post-queue.js no longer calls parseBatchReply() — this file would be testing nothing');
 }
+
+// The repaired post must keep its link intact, not just parse.
+const repaired = parseReply(JSON.stringify([linked]).replace(/\\"/g, '"'))[0];
+if (repaired?.sections?.[0]?.p !== linked.sections[0].p) failures.push('unescaped quotes: repaired text differs from the original');
 
 if (failures.length) {
   console.error(`\n✗ batch parse contract broken (${failures.length}):`);

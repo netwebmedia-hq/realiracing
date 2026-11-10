@@ -55,6 +55,31 @@ function salvageObjects(raw) {
   return out;
 }
 
+/**
+ * Escape double quotes the model left bare inside a JSON string.
+ *
+ * The prompt allows inline HTML, and <a href="x.html"> written as-is inside a
+ * "p" string ends that string early. A quote inside a string is a real
+ * terminator only when the next non-space character is , } ] : or the end of
+ * the text; any other quote is content and gets escaped. A quoted phrase
+ * followed by a comma still defeats this, and then the caller falls through to
+ * salvage exactly as before.
+ */
+function repairQuotes(raw) {
+  let out = '';
+  let inStr = false;
+  for (let i = 0; i < raw.length; i++) {
+    const ch = raw[i];
+    if (inStr && ch === '\\') { out += ch + (raw[i + 1] ?? ''); i++; continue; }
+    if (ch !== '"') { out += ch; continue; }
+    if (!inStr) { inStr = true; out += ch; continue; }
+    let j = i + 1;
+    while (j < raw.length && /\s/.test(raw[j])) j++;
+    if (j >= raw.length || ',}]:'.includes(raw[j])) { inStr = false; out += ch; } else out += '\\"';
+  }
+  return out;
+}
+
 /** A post object this queue can actually render. */
 function isUsablePost(o) {
   return !!(o && typeof o.slug === 'string' && o.slug && Array.isArray(o.sections) && o.sections.length);
@@ -83,10 +108,17 @@ function parseBatchReply(clean) {
     // just is not an Array, and rejecting it binned a complete, paid-for post
     // on 11 of 31 calls in the 2026-09-16 run.
     if (isUsablePost(parsed)) return { posts: [parsed], via: 'object' };
+  } catch { /* fall through to repair, then salvage */ }
+
+  // Same shapes again after escaping bare quotes (unescaped href="..." in prose).
+  try {
+    const parsed = JSON.parse(repairQuotes(clean));
+    const posts = (Array.isArray(parsed) ? parsed : [parsed]).filter(isUsablePost);
+    if (posts.length) return { posts, via: 'repair' };
   } catch { /* fall through to salvage */ }
 
   const salvaged = salvageObjects(clean).filter(isUsablePost);
   return salvaged.length ? { posts: salvaged, via: 'salvage' } : { posts: [], via: 'none' };
 }
 
-module.exports = { salvageObjects, isUsablePost, parseBatchReply };
+module.exports = { salvageObjects, repairQuotes, isUsablePost, parseBatchReply };
