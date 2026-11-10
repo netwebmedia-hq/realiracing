@@ -1307,14 +1307,14 @@
       <h2>Real Motorsport Media</h2>
       <p class="section-sub">Sim racing + real-world racing photography & video — all from Carlos's own accounts.</p>
 
-      <div class="media-tabs">
-        <button type="button" class="media-tab active" data-tab="iracing" aria-selected="true" aria-controls="panel-iracing">🎮 @realiracing (iRacing)</button>
-        <button type="button" class="media-tab" data-tab="photo" aria-selected="false" aria-controls="panel-photo">📸 @tapephotocom (IRL Photography)</button>
-        <button type="button" class="media-tab" data-tab="youtube" aria-selected="false" aria-controls="panel-youtube">▶ @realtape (YouTube)</button>
+      <div class="media-tabs" role="tablist" aria-label="Media channels">
+        <button type="button" role="tab" id="tab-iracing" class="media-tab active" data-tab="iracing" aria-selected="true" aria-controls="panel-iracing" tabindex="0">🎮 @realiracing (iRacing)</button>
+        <button type="button" role="tab" id="tab-photo" class="media-tab" data-tab="photo" aria-selected="false" aria-controls="panel-photo" tabindex="-1">📸 @tapephotocom (IRL Photography)</button>
+        <button type="button" role="tab" id="tab-youtube" class="media-tab" data-tab="youtube" aria-selected="false" aria-controls="panel-youtube" tabindex="-1">▶ @realtape (YouTube)</button>
       </div>
 
       <!-- TAB 1: @realiracing iRacing posts -->
-      <div class="media-panel active" id="panel-iracing">
+      <div class="media-panel active" id="panel-iracing" role="tabpanel" aria-labelledby="tab-iracing">
         <div class="media-grid">
 
           <!-- Post 1: Nürburgring Nordschleife -->
@@ -1459,7 +1459,7 @@
       </div>
 
       <!-- TAB 2: @tapephotocom IRL photography -->
-      <div class="media-panel" id="panel-photo">
+      <div class="media-panel" id="panel-photo" role="tabpanel" aria-labelledby="tab-photo">
         <div class="media-grid">
 
           <!-- Photo 1: Takuma Sato Panasonic IndyCar -->
@@ -1604,7 +1604,7 @@
       </div>
 
       <!-- TAB 3: YouTube @realtape videos — thumbnail grid -->
-      <div class="media-panel" id="panel-youtube">
+      <div class="media-panel" id="panel-youtube" role="tabpanel" aria-labelledby="tab-youtube">
         <div class="yt-grid">
 
           <a class="yt-thumb" href="https://www.youtube.com/watch?v=Y1BXOa_9kI8" target="_blank">

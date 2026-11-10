@@ -33,6 +33,9 @@ jobs:
       - name: Validate blog queue
         run: node _ci/validate-blog-queue.mjs
 
+      - name: Verify Twitter card tags
+        run: python3 _deploy/backfill-twitter-tags.py --check
+
       - name: Title-dedupe self-test
         run: node --test _ci/title-dedupe.test.mjs _ci/consent.test.mjs
 
