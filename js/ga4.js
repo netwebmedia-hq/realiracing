@@ -40,12 +40,12 @@
   var isEs = /^es/i.test(document.documentElement.lang || '');
   var TXT = isEs ? {
     t: 'Cookies de analítica',
-    b: 'Usamos Google Analytics para contar visitas. Solo se activa si lo aceptas.',
+    b: 'Medimos visitas con Google Analytics. Sin cookies si no aceptas; con cookies solo si aceptas.',
     more: 'Política de privacidad',
     ok: 'Aceptar', no: 'Rechazar', url: '/privacy.html#analytics'
   } : {
     t: 'Analytics cookies',
-    b: 'We use Google Analytics to count visits. It only switches on if you accept.',
+    b: 'We measure visits with Google Analytics: cookieless unless you accept.',
     more: 'Privacy policy',
     ok: 'Accept', no: 'Reject', url: '/privacy.html#analytics'
   };
