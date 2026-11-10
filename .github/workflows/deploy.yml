@@ -33,8 +33,11 @@ jobs:
       - name: Validate blog queue
         run: node _ci/validate-blog-queue.mjs
 
+      - name: Verify Twitter card tags
+        run: python3 _deploy/backfill-twitter-tags.py --check
+
       - name: Title-dedupe self-test
-        run: node --test _ci/title-dedupe.test.mjs
+        run: node --test _ci/title-dedupe.test.mjs _ci/consent.test.mjs
 
       # Which reply shapes the generator must turn into posts. A bare object —
       # what the model returns for a single-post batch about a third of the time

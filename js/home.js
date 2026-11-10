@@ -105,6 +105,17 @@
       panel.classList.add('active');
       e.currentTarget.classList.add('active');
       e.currentTarget.setAttribute('aria-selected', 'true');
+      // Roving tabindex: only the selected tab is in the Tab order; arrows move between tabs.
+      document.querySelectorAll('.media-tab').forEach(function (t) { t.tabIndex = t === e.currentTarget ? 0 : -1; });
+    });
+    tab.addEventListener('keydown', function (e) {
+      var tabs = Array.prototype.slice.call(document.querySelectorAll('.media-tab'));
+      var i = tabs.indexOf(tab), n = null;
+      if (e.key === 'ArrowRight') n = tabs[(i + 1) % tabs.length];
+      else if (e.key === 'ArrowLeft') n = tabs[(i + tabs.length - 1) % tabs.length];
+      else if (e.key === 'Home') n = tabs[0];
+      else if (e.key === 'End') n = tabs[tabs.length - 1];
+      if (n) { e.preventDefault(); n.focus(); n.click(); }
     });
   });
 

@@ -1307,14 +1307,14 @@
       <h2>Real Motorsport Media</h2>
       <p class="section-sub">Sim racing + real-world racing photography & video — all from Carlos's own accounts.</p>
 
-      <div class="media-tabs">
-        <button type="button" class="media-tab active" data-tab="iracing" aria-selected="true" aria-controls="panel-iracing">🎮 @realiracing (iRacing)</button>
-        <button type="button" class="media-tab" data-tab="photo" aria-selected="false" aria-controls="panel-photo">📸 @tapephotocom (IRL Photography)</button>
-        <button type="button" class="media-tab" data-tab="youtube" aria-selected="false" aria-controls="panel-youtube">▶ @realtape (YouTube)</button>
+      <div class="media-tabs" role="tablist" aria-label="Media channels">
+        <button type="button" role="tab" id="tab-iracing" class="media-tab active" data-tab="iracing" aria-selected="true" aria-controls="panel-iracing" tabindex="0">🎮 @realiracing (iRacing)</button>
+        <button type="button" role="tab" id="tab-photo" class="media-tab" data-tab="photo" aria-selected="false" aria-controls="panel-photo" tabindex="-1">📸 @tapephotocom (IRL Photography)</button>
+        <button type="button" role="tab" id="tab-youtube" class="media-tab" data-tab="youtube" aria-selected="false" aria-controls="panel-youtube" tabindex="-1">▶ @realtape (YouTube)</button>
       </div>
 
       <!-- TAB 1: @realiracing iRacing posts -->
-      <div class="media-panel active" id="panel-iracing">
+      <div class="media-panel active" id="panel-iracing" role="tabpanel" aria-labelledby="tab-iracing">
         <div class="media-grid">
 
           <!-- Post 1: Nürburgring Nordschleife -->
@@ -1459,7 +1459,7 @@
       </div>
 
       <!-- TAB 2: @tapephotocom IRL photography -->
-      <div class="media-panel" id="panel-photo">
+      <div class="media-panel" id="panel-photo" role="tabpanel" aria-labelledby="tab-photo">
         <div class="media-grid">
 
           <!-- Photo 1: Takuma Sato Panasonic IndyCar -->
@@ -1604,7 +1604,7 @@
       </div>
 
       <!-- TAB 3: YouTube @realtape videos — thumbnail grid -->
-      <div class="media-panel" id="panel-youtube">
+      <div class="media-panel" id="panel-youtube" role="tabpanel" aria-labelledby="tab-youtube">
         <div class="yt-grid">
 
           <a class="yt-thumb" href="https://www.youtube.com/watch?v=Y1BXOa_9kI8" target="_blank">
@@ -1932,7 +1932,7 @@
       <a href="/blog/">Blog</a> ·
       <a href="/gear.html">My Rig</a> ·
       Photography: <a href="https://www.instagram.com/tapephotocom/" target="_blank">@tapephotocom</a> ·
-      <a href="/go/">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a>
+      <a href="/go/">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
     </p>
   
     <p class="footer-social" style="margin-top:10px;display:flex;justify-content:center;gap:16px" aria-label="Social media"><a href="https://www.instagram.com/realiracing/" rel="me noopener" target="_blank" aria-label="RealiRacing on Instagram" style="color:inherit;display:inline-flex;align-items:center"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 0c-3.26 0-3.667.015-4.947.072-1.278.06-2.148.261-2.913.558-.789.306-1.459.717-2.126 1.384s-1.079 1.336-1.384 2.126c-.297.765-.499 1.635-.558 2.913-.06 1.28-.072 1.687-.072 4.947s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558 1.28.06 1.687.072 4.947.072s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126-.667-.667-1.335-1.079-2.126-1.384-.765-.297-1.636-.499-2.913-.558-1.28-.06-1.687-.072-4.947-.072zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zm0 10.162c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44s.646-1.439 1.44-1.439c.793-.001 1.44.645 1.44 1.439z"/></svg></a><a href="https://www.facebook.com/profile.php?id=61556874721569" rel="me noopener" target="_blank" aria-label="RealiRacing on Facebook" style="color:inherit;display:inline-flex;align-items:center"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.24 2.69.24v2.97h-1.52c-1.49 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a><a href="https://www.youtube.com/@realtape" rel="me noopener" target="_blank" aria-label="Realtape on YouTube" style="color:inherit;display:inline-flex;align-items:center"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.13C19.55 3.55 12 3.55 12 3.55s-7.55 0-9.4.52A3 3 0 0 0 .5 6.2C0 8.07 0 12 0 12s0 3.93.5 5.8a3 3 0 0 0 2.1 2.13c1.85.52 9.4.52 9.4.52s7.55 0 9.4-.52a3 3 0 0 0 2.1-2.13C24 15.93 24 12 24 12s0-3.93-.5-5.8zM9.6 15.57V8.43L15.82 12 9.6 15.57z"/></svg></a><a href="https://x.com/realiracing" rel="me noopener" target="_blank" aria-label="RealiRacing on X" style="color:inherit;display:inline-flex;align-items:center"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg></a><a href="https://www.tiktok.com/@realiracing" rel="me noopener" target="_blank" aria-label="RealiRacing on TikTok" style="color:inherit;display:inline-flex;align-items:center"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M19.6 6.32a5.46 5.46 0 0 1-3.36-1.13 5.46 5.46 0 0 1-2.16-3.7h-3.5v13.6a3.3 3.3 0 1 1-2.31-3.15V8.32a6.78 6.78 0 1 0 5.81 6.71V8.66a8.92 8.92 0 0 0 5.52 1.88V7.05a5.49 5.49 0 0 1 0-.73z"/></svg></a></p>
