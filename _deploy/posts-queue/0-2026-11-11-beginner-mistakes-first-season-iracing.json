@@ -1,0 +1,86 @@
+{
+  "slug": "beginner-mistakes-first-season-iracing",
+  "tag": "Beginner's Guide · Technique",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "The beginner mistakes that cost new iRacing drivers the most",
+  "description": "The six habits that quietly cost new iRacing drivers the most positions in their first season, and how to fix each one from the MOZA R9 rig.",
+  "published": "2026-11-11",
+  "dateLabel": "November 11, 2026",
+  "gearKeys": ["moza-r9", "moza-crp2"],
+  "sections": [
+    {
+      "p": "My first season on iRacing looked nothing like my first season of real improvement. I finished races, I avoided the big obvious wrecks, and I still lost positions every single week to mistakes I could not name at the time. Looking back from the MOZA R9 and CRP2 rig I run now, the pattern is obvious. A handful of habits were quietly costing me spots, and none of them were about raw speed."
+    },
+    {
+      "h2": "Skipping practice laps to get to qualifying faster"
+    },
+    {
+      "p": "The rookie instinct is to jump straight into qualifying because the race feels like the point of the session. In practice this means your first flying lap of the week is also your first lap learning where the grip actually is that day. Track temperature, time of day, and even the server you load into change the limit by a meaningful margin. A short, deliberate practice run before you touch qualifying, even just five or six laps focused on brake points rather than lap time, pays back more positions than squeezing out one extra qualifying attempt ever will."
+    },
+    {
+      "h2": "Chasing the optimal line instead of a repeatable one"
+    },
+    {
+      "p": "Overlay tools and setup guides show you a single ideal line, and it is tempting to copy it exactly from lap one. The problem is that the optimal line assumes a clean track with no traffic and tires at their best. Early in a race, with cold tires and cars around you, the optimal line is often not available or not safe. New drivers who insist on it anyway end up running wide, losing the rear, or getting caught out of position. A slightly more conservative, repeatable line that you can hit lap after lap under pressure will usually out-score a theoretically faster one you can only drive clean in isolation."
+    },
+    {
+      "h2": "Overbraking into traffic instead of giving racing room"
+    },
+    {
+      "p": "When another car is close on entry, the instinct is to brake earlier to avoid any risk of contact. This feels safe, but it almost always costs more than it protects. Braking well before your normal marker breaks your own rhythm, invites the car behind to dive past, and often causes more contact than it prevents because the closing speed difference catches people off guard. The better habit is to hold your normal brake point and simply give the other car room on the outside or let them through cleanly if the gap genuinely is not there, rather than stabbing the brakes mid-corner."
+    },
+    {
+      "h2": "Treating the license and safety rating ramp as a formality"
+    },
+    {
+      "p": "It is easy to see the rookie license restrictions as a speed bump on the way to the series you actually want to race, and to jump into higher split, higher safety rating fields the moment the number allows it. Those fields race closer and punish small errors harder. A season spent actually learning incident avoidance at the level your rating earned you, rather than rushing past it, builds habits that transfer up. Jumping ahead of your own readiness tends to produce exactly the incidents you were trying to avoid, just at a higher cost."
+    },
+    {
+      "h2": "Ignoring incident points until they block you from a series"
+    },
+    {
+      "p": "Incident points accumulate quietly in the background of a race you otherwise feel good about, and new drivers often do not check the breakdown until a cutoff is already a problem. See our guide on <a href=\"iracing-incident-points-how-they-work.html\">how iRacing incident points work</a> for the full mechanics. A clean-feeling race can still carry two or three points from a brush you barely noticed. Checking the incident summary after every session, not just after a bad one, catches small bad habits, like clipping an apex curb at the wrong angle, before they become a pattern that follows you into every field you join."
+    },
+    {
+      "h2": "Never reviewing the replay after a bad incident"
+    },
+    {
+      "p": "The fastest way to actually fix a recurring mistake is to watch it happen from outside your own car. New drivers who get caught in contact tend to form an opinion about what happened in the heat of the moment and move on without checking. Pulling up the replay and watching the same corner from a neutral camera, especially one from the other car involved, almost always reveals something the onboard view hid, whether that is braking a fraction late or simply misjudging a closing speed. Our piece on <a href=\"rejoining-the-track-safely-after-a-spin-iracing.html\">rejoining the track safely after a spin</a> covers the related skill of getting back into the field without causing a second incident."
+    },
+    {
+      "list": [
+        "Run a short, deliberate practice stint before qualifying instead of skipping straight to it",
+        "Build a repeatable line you can hold under pressure rather than chasing the theoretical optimal one",
+        "Hold your normal brake point near traffic and give racing room instead of overbraking",
+        "Treat the license ramp as skill building, not a delay, before moving up a split",
+        "Check your incident summary after every race, not only the bad ones",
+        "Review the replay of any contact from a neutral camera before deciding what actually happened"
+      ]
+    },
+    {
+      "h2": "None of this is about raw pace"
+    },
+    {
+      "p": "What struck me looking back is that fixing these six habits did more for my results than any setup change or hardware upgrade did that first season. Positions lost to a late practice start, an unpredictable line, or an unreviewed incident are positions that were never about how fast the car could go. They were about decisions made before the green flag or after the checkered one, and those are the cheapest gains available to a new driver willing to look honestly at a replay."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many practice laps do I actually need before qualifying?",
+      "a": "There is no fixed number, but five to eight focused laps, prioritizing brake points and track limit over outright pace, is usually enough to adapt to that day's grip level. The goal is removing surprises, not setting a fast lap."
+    },
+    {
+      "q": "Should I always use the line shown by overlay or setup tools?",
+      "a": "Use it as a reference, not a script. Early in a race with cold tires and cars nearby, a slightly more conservative line you can repeat under pressure will usually score better than a theoretical optimal line you can only drive clean in isolation."
+    },
+    {
+      "q": "Is it worth staying in a lower split longer than the rules require?",
+      "a": "Often yes. Staying at a level where you can consistently avoid incidents builds habits that carry up with you. Moving to a higher split before you are ready tends to produce the same mistakes at a higher cost in rating and iRating."
+    },
+    {
+      "q": "How often should I actually check my incident point breakdown?",
+      "a": "After every race, not just the ones that felt bad. A race that feels clean can still carry a couple of points from contact you barely noticed, and catching that pattern early is easier than fixing it after it has already blocked you from a series."
+    }
+  ]
+}
