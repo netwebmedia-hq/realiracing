@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stream Deck and macro pads for sim racing: setup and workflow</title>
+  <meta name="description" content="Map pit stops, setup changes, and camera views to dedicated buttons. Learn which macro pads work best and how to configure them for iRacing." />
+  <link rel="canonical" href="https://realiracing.com/blog/stream-deck-macro-pads-sim-racing.html" />
+  <meta property="og:title" content="Stream Deck and macro pads for sim racing: setup and workflow" />
+  <meta property="og:description" content="Map pit stops, setup changes, and camera views to dedicated buttons. Learn which macro pads work best and how to configure them for iRacing." />
+  <meta property="og:url" content="https://realiracing.com/blog/stream-deck-macro-pads-sim-racing.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/track-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: a circuit traced as a route with marked points" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/track-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261103" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Stream Deck and macro pads for sim racing: setup and workflow",
+    "description": "Map pit stops, setup changes, and camera views to dedicated buttons. Learn which macro pads work best and how to configure them for iRacing.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/stream-deck-macro-pads-sim-racing.html",
+    "image": "https://realiracing.com/assets/photos/track-cover.jpg",
+    "datePublished": "2026-10-26",
+    "dateModified": "2026-10-26"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Stream Deck and macro pads for sim racing: setup and workflow","item":"https://realiracing.com/blog/stream-deck-macro-pads-sim-racing.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/stream-deck-macro-pads-sim-racing.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Sim Racing Cockpit / Wheel Stand","description":"a rigid mount matters more than the brand — flex kills FFB detail","url":"https://realiracing.com/blog/stream-deck-macro-pads-sim-racing.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need a macro pad for competitive iRacing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Single-race events and sprint seasons do not require a macro pad. Drivers in endurance races, team events, or who stream benefit most because they need to send frequent text messages, switch camera angles, or toggle settings without leaving the race line. If you race solo and do not broadcast, the hardware is optional." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a regular keyboard with a macro layer instead?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, if your keyboard supports programmable layers (many mechanical keyboards do). However, a dedicated macro pad is quieter, more compact, and keeps your main keyboard uncluttered. A dedicated pad also costs less than a high-end programmable keyboard. For most sim racers, a cheap macro pad or Stream Deck is the faster path to the same result." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between Stream Deck and Stream Deck+?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The Stream Deck+ has 8 buttons instead of 15, a touch strip (encoder dial) on the left side for volume or value adjustment, and a higher price (~$250+ vs ~$90 to $100). The + is better for streamers who need to adjust audio levels on the fly or for users with limited desk space. For most sim racers focused on pit stop commands and camera switching, the standard 15-button Stream Deck offers more buttons for the cost." }
+    },
+    {
+      "@type": "Question",
+      "name": "Will a macro pad work if I use VR instead of a monitor?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Macro pads communicate via USB and send keyboard inputs regardless of your display method. You feel the tactile press of the button and rely on muscle memory, which actually works better in VR because you cannot see the pad anyway. Streaming is trickier in VR because screen capture is more complex, but the macro pad itself functions identically." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Hardware · Setup</p>
+    <h1>Stream Deck and macro pads for sim racing: setup and workflow</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 26, 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/track-cover.jpg" width="1000" height="563" alt="Cover art: a circuit traced as a route with marked points" srcset="/assets/photos/track-cover-sm.jpg 560w, /assets/photos/track-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">A macro pad or Stream Deck sits between your wheel, pedals, and keyboard. Instead of hunting for keys mid-race or during practice, you press a single button to trigger pit instructions, change camera angles, adjust settings, or log telemetry. For endurance racers and active streamers, this hardware investment cuts distraction and keeps both hands on the wheel where they belong.</p>
+
+      <p>Most sim racers fall into one of two categories: those who race clean and consistent in one-hour events, and those who run longer stints, swap drivers, or broadcast. The second group feels the friction instantly. Typing text to your spotter over voice chat, tabbing out to adjust seat position between sessions, or fumbling for F-keys to change camera—these moments drain focus. A macro pad removes that tax.</p>
+
+      <h2>Stream Deck vs. dedicated macro pads</h2>
+
+      <p>Elgato Stream Deck is the known name, and for good reason. The original 15-button model (~$90 to $100) offers an LCD screen on each button so you can see labels and icons. That visual feedback matters in a dark cockpit. Software support is solid, and integration with OBS (the streaming tool most sim racers use) is built in. If you stream to YouTube or Twitch, a Stream Deck becomes a second control surface without much learning curve.</p>
+
+      <p>Dedicated macro pads like the X-Keys, Elgato Stream Deck+, or mechanical keyboard macro layers are lighter weight and cheaper. An X-Keys USB pad (~$60 to $120 depending on button count) offers programmable keys without an LCD and less desktop footprint. Some sim racers prefer mechanical macro boards for the tactile feedback and compact form factor. The trade-off is no on-device screen, so you rely on muscle memory or a printed legend.</p>
+
+      <ul>
+        <li>Stream Deck (15 or 32 buttons): LCD screens, OBS integration, ~90 to 250 dollars, larger physical footprint.</li>
+        <li>Stream Deck+ (8 buttons plus touch strip): Smaller, encoder dial for volume or settings adjustment, ~250+ dollars.</li>
+        <li>X-Keys macro pad (various button layouts): Programmable, no screen, compact, ~60 to 120 dollars.</li>
+        <li>Mechanical macro keyboard (Elgato Stream Deck Pedal or DIY layer): Very cheap but requires a full keyboard or a custom build.</li>
+      </ul>
+
+      <h2>Essential macros for endurance racing</h2>
+
+      <p>Endurance racing in iRacing demands coordination. You need to signal pit stops, request or confirm driver swaps, toggle mirrors and spotters, and manage fuel consumption feedback. Mapping these to a single button press means you stay focused on the racing line instead of breaking concentration to type.</p>
+
+      <ul>
+        <li>Pit stop command: Send a standardized message to your crew (e.g. 'box this lap, fuel and tires') in one press.</li>
+        <li>Driver swap confirmation: Auto-reply when a teammate signals they are ready to take over the car.</li>
+        <li>Spotter on/off: Toggle spotter audio without tabbing to settings if concentration lapses.</li>
+        <li>Fuel saving mode alert: Remind yourself or your engineer when fuel margins tighten (broadcast to crew if using team comms).</li>
+        <li>Telemetry dump: Trigger a data export if you use telemetry tools like Garage61 to log and compare setups mid-race.</li>
+      </ul>
+
+      <div class="tip-box">
+        <span class="box-label">Start small</span>
+        <p>Start with one macro: pit stop requests. In a 4-hour race, this button press alone saves you 30 seconds of distraction per stop and ensures consistent pit lane communication. Add one macro per week as muscle memory solidifies.</p>
+      </div>
+
+      <h2>Streaming integration: camera and scene switching</h2>
+
+      <p>If you stream iRacing to YouTube or Twitch using OBS on the same PC, a Stream Deck cuts out the entire software layer. Instead of alt-tabbing or using hotkeys to switch camera angles or flip to a setup/standings scene, you press a single button illuminated and labeled on the device itself. The latency is instant, and your viewer sees the transition cleanly.</p>
+
+      <ul>
+        <li>Onboard camera (helmet or cockpit view): Press and the OBS scene cuts to the in-game camera feed.</li>
+        <li>Chase camera (external third-person): Switch to the car from behind for overtakes or incident review.</li>
+        <li>Multi-view scene: Show spotter audio levels, iRating, incident points, and track map in a quad layout.</li>
+        <li>Setup screen: Alt-tab to the garage to show tuning changes between sessions without cutting broadcast.</li>
+        <li>Pause and resume encoding: Pause streaming for a brief break without dropping the broadcast entirely.</li>
+      </ul>
+
+      <p>OBS profiles and custom plug-ins extend this further. Some streamers map a Stream Deck button to trigger a full OBS profile change (lighting theme, microphone level, scene collection for a specific series). This keeps your broadcast consistent without manual fiddling during a race or between events.</p>
+
+      <h2>Setup and configuration basics</h2>
+
+      <p>Configuration depends on the hardware. Stream Deck uses Elgato's official app (free, available on Windows and macOS) to map buttons. X-Keys and similar pads use their own proprietary software, typically requiring you to assign a macro to a USB key code or a series of key presses.</p>
+
+      <ol>
+        <li>Download and install the manufacturer's software (Elgato app, X-Keys manager, etc.).</li>
+        <li>Open iRacing and identify the in-game key bindings you want to automate (check Settings > Controller Options or the Help menu for a full list).</li>
+        <li>In the macro pad software, assign each button to the matching key press or text output. For example, if iRacing's 'request pit stop' is bound to the 'P' key, map your Stream Deck button to send 'P' when pressed.</li>
+        <li>For text macros (like team radio messages), type the full message into the macro field. When pressed, the button outputs the text as if you typed it character by character.</li>
+        <li>Test each macro in a practice session before a race. Confirm that camera angles switch, pit stop text posts to the chat or team radio, and OBS scenes update if streaming.</li>
+      </ol>
+
+      <p>Most macro pads allow profiles or layers, so you can have different button maps for different series or race formats. A 24-hour endurance setup might prioritize fuel messages and driver swaps, while a 30-minute sprint configuration might focus on camera angles and OBS scene toggles. Switching profiles takes seconds and keeps the hardware flexible.</p>
+
+      <h2>Positioning and cable management</h2>
+
+      <p>Physical placement matters. A Stream Deck or macro pad should sit within arm's reach of your wheel, ideally to the side (left or right depending on your steering hand preference). Most sim racers mount it on an adjacent shelf, tray table, or use a light arm clamp to keep it stable and visible.</p>
+
+      <p>Cable management becomes important if your rig already has wheel, pedals, and a shifter drawing USB ports. A powered USB hub with at least 4 ports (~$20 to $40) isolates your macro pad and other peripherals from the main PC. This prevents device dropout if too many high-draw devices share the same hub. Place the hub on a power strip separate from your monitor or other equipment to avoid ground loops and electrical interference.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Avoid interference</span>
+        <p>If you use a macro pad and a load cell pedal set like the <a href="https://www.amazon.com/s?k=MOZA+SR-P+pedals&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-sr-p" target="_blank" rel="sponsored noopener">MOZA SR-P</a>, mount the pad on the left side of your setup (opposite your preferred steering hand). This keeps your throwing arm clear for heel-toe braking or aggressive steering inputs.</p>
+      </div>
+
+      <h2>Realistic expectations and learning curve</h2>
+
+      <p>A macro pad is not a shortcut to faster lap times. It removes friction from communication and camera work, but racing speed comes from line consistency, braking precision, and tire management. Expect the first two or three races to feel awkward as you build muscle memory for button locations. After that, the pad becomes transparent and saves you real mental energy.</p>
+
+      <p>Cost and complexity scale together. A basic X-Keys pad (~$60) gets the job done with minimal setup. A full Stream Deck system with OBS profiles, custom icons, and multiple scenes takes several hours to configure correctly. Neither is mandatory for competitive iRacing, but both offer measurable quality-of-life improvements for endurance racers and streamers.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before you go live, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=stream-deck-macro-pads-sim-racing">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&amp;tag=realiracing-20" data-aff="cockpit" target="_blank" rel="sponsored noopener">Sim Racing Cockpit / Wheel Stand</a></th><td>a rigid mount matters more than the brand — flex kills FFB detail</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>Do I need a macro pad for competitive iRacing?</h3>
+        <p>No. Single-race events and sprint seasons do not require a macro pad. Drivers in endurance races, team events, or who stream benefit most because they need to send frequent text messages, switch camera angles, or toggle settings without leaving the race line. If you race solo and do not broadcast, the hardware is optional.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I use a regular keyboard with a macro layer instead?</h3>
+        <p>Yes, if your keyboard supports programmable layers (many mechanical keyboards do). However, a dedicated macro pad is quieter, more compact, and keeps your main keyboard uncluttered. A dedicated pad also costs less than a high-end programmable keyboard. For most sim racers, a cheap macro pad or Stream Deck is the faster path to the same result.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is the difference between Stream Deck and Stream Deck+?</h3>
+        <p>The Stream Deck+ has 8 buttons instead of 15, a touch strip (encoder dial) on the left side for volume or value adjustment, and a higher price (~$250+ vs ~$90 to $100). The + is better for streamers who need to adjust audio levels on the fly or for users with limited desk space. For most sim racers focused on pit stop commands and camera switching, the standard 15-button Stream Deck offers more buttons for the cost.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Will a macro pad work if I use VR instead of a monitor?</h3>
+        <p>Yes. Macro pads communicate via USB and send keyboard inputs regardless of your display method. You feel the tactile press of the button and rely on muscle memory, which actually works better in VR because you cannot see the pad anyway. Streaming is trickier in VR because screen capture is more complex, but the macro pad itself functions identically.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="gpu-upgrade-guide-sim-racing-frame-rates.html"><span>Hardware</span>GPU Upgrade for iRacing: Frame Rate Targets and Real-World Trade-offs</a>
+      <a class="related-card" href="internet-and-network-requirements-iracing.html"><span>Hardware</span>Internet and Network Requirements for iRacing: What Actually Matters</a>
+      <a class="related-card" href="sim-racing-chair-buying-guide.html"><span>Hardware</span>Sim Racing Chair Buying Guide: What Actually Matters From Someone Who Sits in One for Hours</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","cockpit"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
