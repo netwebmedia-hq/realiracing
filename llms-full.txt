@@ -18,6 +18,7 @@
 
 ## All blog posts (newest first)
 
+- [Night racing in iRacing: seeing the track after dark](https://realiracing.com/blog/night-racing-iracing-seeing-the-track-after-dark.html): How I set up my monitor, pick braking markers and handle headlights in the mirrors so night stints in iRacing endurance races stop feeling like guesswork.
 - [The beginner mistakes that cost new iRacing drivers the most](https://realiracing.com/blog/beginner-mistakes-first-season-iracing.html): The six habits that quietly cost new iRacing drivers the most positions in their first season, and how to fix each one from the MOZA R9 rig.
 - [iRacing Black Boxes Explained: Relative, Fuel, Tires](https://realiracing.com/blog/iracing-black-boxes-explained-relative-fuel-tires.html): What each iRacing black box shows, which one to keep up in a race, and how to map them to wheel buttons so fuel and tires are set before pit entry.
 - [ABS and Traction Control in iRacing: When to Use Them and When to Turn Them Off](https://realiracing.com/blog/abs-and-traction-control-in-iracing-when-to-use-them.html): ABS and traction control help you stay on track but hide feedback. Here is how I decide when to keep them on, when to lower them, and what they change.
@@ -47,7 +48,6 @@
 - [iRacing AI Races: Practice Racecraft Offline | RealIRacing](https://realiracing.com/blog/iracing-ai-races-practice-racecraft.html): How I use iRacing AI races to practise starts, traffic and defending before official races, plus where AI misleads and how to protect safety rating.
 - [Sim Rig Upgrade Order: What to Buy First | RealIRacing](https://realiracing.com/blog/sim-rig-upgrade-order-what-to-buy-first.html): The order I would upgrade a sim rig for iRacing, from my MOZA R9, CRP2 and fixed aluminium cockpit: what pays off first and what can wait.
 - [Eldora Speedway iRacing Dirt Oval Guide: Banking and Grip](https://realiracing.com/blog/eldora-speedway-iracing-dirt-oval-guide.html): Master Eldora's unique half-mile banking, groove transitions, and setup choices for consistent dirt oval pace.
-- [Recover cleanly after a spin or off-track incident in iRacing](https://realiracing.com/blog/recovering-from-a-spin-or-off-track-incident-iracing.html): Learn the safe technique to rejoin the racing line after a spin, avoid penalties, and minimize time loss in iRacing.
 
 ## More
 - Sitemap: https://realiracing.com/sitemap.xml

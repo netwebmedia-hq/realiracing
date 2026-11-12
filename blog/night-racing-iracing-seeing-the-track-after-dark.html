@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Night racing in iRacing: seeing the track after dark</title>
+  <meta name="description" content="How I set up my monitor, pick braking markers and handle headlights in the mirrors so night stints in iRacing endurance races stop feeling like guesswork." />
+  <link rel="canonical" href="https://realiracing.com/blog/night-racing-iracing-seeing-the-track-after-dark.html" />
+  <meta property="og:title" content="Night racing in iRacing: seeing the track after dark" />
+  <meta property="og:description" content="How I set up my monitor, pick braking markers and handle headlights in the mirrors so night stints in iRacing endurance races stop feeling like guesswork." />
+  <meta property="og:url" content="https://realiracing.com/blog/night-racing-iracing-seeing-the-track-after-dark.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/display-monitors.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="615" />
+  <meta property="og:image:alt" content="Monitors set up on a desk" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/display-monitors.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261103" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Night racing in iRacing: seeing the track after dark",
+    "description": "How I set up my monitor, pick braking markers and handle headlights in the mirrors so night stints in iRacing endurance races stop feeling like guesswork.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/night-racing-iracing-seeing-the-track-after-dark.html",
+    "image": "https://realiracing.com/assets/photos/display-monitors.jpg",
+    "datePublished": "2026-11-12",
+    "dateModified": "2026-11-12"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Night racing in iRacing: seeing the track after dark","item":"https://realiracing.com/blog/night-racing-iracing-seeing-the-track-after-dark.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup — high refresh matters more than size","url":"https://realiracing.com/blog/night-racing-iracing-seeing-the-track-after-dark.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Meta Quest 3","description":"the most common way into PCVR sim racing","url":"https://realiracing.com/blog/night-racing-iracing-seeing-the-track-after-dark.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/night-racing-iracing-seeing-the-track-after-dark.html#rir-gear"}},{"@type":"ListItem","position":4,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/night-racing-iracing-seeing-the-track-after-dark.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why can I not see anything at night in iRacing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Usually the monitor is crushing shadow detail. Dim the room, raise the monitor brightness, then adjust in-game brightness and gamma on a paused night replay until kerbs are visible without the sky turning grey." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use HDR for night racing in iRacing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Only if you have already tuned HDR on your specific display. HDR behaviour varies between monitors, so for a race it is safer to run SDR and test HDR in practice first." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I deal with headlights blinding my mirrors?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Rely on the relative black box instead of the mirrors. It shows the gap, the class and the lap status of the car behind, which is the information the mirror can no longer give you at night." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find braking points when the track is dark?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Learn the track in daylight, then pick references that stay visible at night such as lit boards, kerb starts and track-side lights. Brake a little earlier for the first stint and work back towards your daylight marker." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Racecraft · Visibility</p>
+    <h1>Night racing in iRacing: seeing the track after dark</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated November 12, 2026</span>
+      <span class="dot">·</span>
+      <span>8 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/display-monitors.jpg" width="1000" height="615" alt="Monitors set up on a desk" srcset="/assets/photos/display-monitors-sm.jpg 560w, /assets/photos/display-monitors.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Photo: <a href="https://commons.wikimedia.org/w/index.php?title=User:Dauvis&amp;action=edit&amp;redlink=1" target="_blank" rel="noopener nofollow">Dauvis</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener nofollow">CC0</a> · Source: <a href="https://commons.wikimedia.org/wiki/File:Abstract_monitor_with_IDE.png" target="_blank" rel="noopener nofollow">Wikimedia Commons</a></figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">The first time the sun went down on me in an iRacing endurance special, I braked for a corner I could no longer see. In daylight practice I had used a darker patch of tarmac and a gap in the trees as my marker. At night both were gone, my headlights lit maybe two car lengths of grey, and I locked the fronts into the gravel. Nothing about the car had changed. What changed was the information reaching my eyes, and I had prepared for none of it.</p>
+
+      <p>This guide is what I do now before and during night stints on my rig: a <a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> base at ~9 N·m, <a href="https://www.amazon.com/dp/B0DSHYFW1V?tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">CRP2</a> load-cell pedals, a fixed aluminium cockpit and a single monitor. Most of it applies to VR and triples too, and I will point out where it differs.</p>
+
+      <h2>Why night feels harder than it should</h2>
+
+      <p>At night you lose three things at once. You lose distance cues, because the track beyond your headlights is dark unless the circuit is lit. You lose the scenery you were using as reference points without realising it. And you lose your mirrors in traffic, because the car behind you is now two bright lights instead of a shape you can read.</p>
+
+      <p>The car is the same, but your brain has to work harder for every corner. That extra load is what makes people miss braking points in hour two of a night stint, not a lack of pace.</p>
+
+      <h2>Set up the screen before you set up the car</h2>
+
+      <p>A monitor tuned for movies or for a bright room usually crushes the dark end of the image. In daylight you never notice. At night the kerb you need is sitting in exactly the range of shadow detail your screen throws away.</p>
+
+      <ul>
+        <li><strong>Turn the room lights down.</strong> Glare on the panel washes out the darkest part of the picture far more than any setting does. A dim lamp behind the monitor is easier on the eyes than full darkness.</li>
+        <li><strong>Raise brightness on the monitor, not only in the game.</strong> I start from the monitor's own brightness, then fine-tune with the in-game brightness and gamma options in the graphics settings.</li>
+        <li><strong>Check shadow detail on a dark replay.</strong> Load a replay at night, pause on a section with kerbs and run-off, and adjust until you can tell the kerb from the tarmac without the sky turning milky grey.</li>
+        <li><strong>Switch off dynamic contrast or eco modes.</strong> They change the image as the scene gets darker or brighter, so the track seems to pump every time a lit grandstand enters the frame.</li>
+        <li><strong>Treat HDR as a separate project.</strong> HDR behaviour varies a lot between displays. If you have not tuned it on your specific screen, run the stint in SDR and save the experiment for practice.</li>
+      </ul>
+
+      <p>My <a href="iracing-field-of-view-single-monitor-setup.html">single-monitor field of view</a> stays the same at night. A correct FOV matters even more here, because judging distance from a narrow headlight beam is hard enough without the image being stretched.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Rig note</span>
+        <p>Write your night settings down. I keep a note with my monitor brightness, in-game brightness and gamma so I can switch back to daytime values after the race instead of rediscovering them.</p>
+      </div>
+
+      <h3>VR and triples</h3>
+
+      <p>In VR the headset's own brightness and the lens sweet spot matter more than any in-game slider, and the black level of the panel decides how much you see in unlit sections. I covered the wider trade-offs in <a href="iracing-vr-vs-triple-monitors.html">VR vs triple monitors</a>. On triples, the side screens are where approaching headlights show up first, so make sure all three panels match in brightness or the sides will look like a different time of day.</p>
+
+      <h2>Pick braking markers that survive the dark</h2>
+
+      <p>The fix for my gravel moment was simple and a little boring. In practice I now drive the track in daylight first and learn the corners. Then I deliberately look for references that will still exist at night.</p>
+
+      <ul>
+        <li>Lit distance boards and track-side lights, where the circuit has them.</li>
+        <li>The start of a kerb, which usually catches the headlights before the apex does.</li>
+        <li>Painted lines and the edge of the track surface under the lights.</li>
+        <li>Bridges, gantries and anything that is backlit by a lit area further down the road.</li>
+      </ul>
+
+      <p>If the series runs a dynamic time of day, I also do a few laps in practice with the session set to dusk or night so the first dark lap is not in the race. On unlit sections I brake a touch earlier than my daylight marker for the first stint and work back towards it once I trust what I am seeing. Giving up a little in the first hour is far cheaper than a trip through the gravel.</p>
+
+      <p>The load-cell brake helps here. Because the CRP2 responds to pressure rather than travel, I can repeat the same braking effort even when my visual reference is vague. If your pedals are not calibrated for consistent pressure, fix that in daylight. Night is the worst time to discover your threshold moves around.</p>
+
+      <h2>Headlights in the mirrors</h2>
+
+      <p>At night, a car behind you becomes two points of light. You cannot see its shape or which class it is, and at some tracks you cannot tell if it is one car or two. My mirrors stop being a reliable tool and the relative black box takes over.</p>
+
+      <p>I keep the relative box on screen for the whole night stint. It tells me the gap, the class and whether the car behind is on the same lap, which is everything the mirror used to tell me. If you have not set up your boxes yet, start with <a href="iracing-black-boxes-explained-relative-fuel-tires.html">the black boxes explained</a>.</p>
+
+      <p>Headlight flash is worth binding to a button. I use it sparingly, mainly to let a slower car know I am there before a braking zone. Flashing over and over at someone who is already moving over helps nobody.</p>
+
+      <h2>Multiclass traffic after dark</h2>
+
+      <p>Closing speeds feel bigger at night because you see the faster car later. If you are in the slower class, the best thing you can do is be predictable: hold your line, do not jump out of the way at the last second and let the relative box tell you when someone is about to arrive. If you are in the faster class, pick your passing spots where the slower car can see you coming, such as lit straights, and avoid committing on an unlit corner exit.</p>
+
+      <p>The same principles from my <a href="multiclass-racing-traffic-management-iracing.html">multiclass traffic guide</a> apply, you just have less time to react. I add a little more margin to every pass and accept that a few laps will be slower than in daylight.</p>
+
+      <h2>Pit stops and fatigue</h2>
+
+      <p>Pit entry is harder to judge in the dark, and the pit lane speed limiter still has to go on at the right moment. I pick a lit reference for the pit entry line during practice and treat it as seriously as a braking marker. For the rest of the etiquette, see <a href="iracing-pit-road-etiquette-avoid-speeding-penalties.html">pit road etiquette</a>.</p>
+
+      <p>Night stints are also where fatigue shows. Staring into a dark screen is tiring in a way that daylight laps are not. I keep stints shorter if the team allows it, drink water during cautions and stand up between stints. When I notice I am missing the same marker twice in a row, that is my signal to hand over rather than push on.</p>
+
+      <h2>The force feedback does not change, so use it</h2>
+
+      <p>One thing the dark cannot take away is what comes through the wheel. On the R9 the kerbs, the bumps and the moment the front tyres start to slide feel exactly the same at night. I lean on that more after sunset. If the wheel tells me I have touched the inside kerb, I believe it over what I think I saw. If your force feedback is clipping or vague, sort it out first with <a href="iracing-force-feedback-explained.html">the force feedback basics</a> and my <a href="moza-r9-iracing-settings.html">MOZA R9 settings</a>.</p>
+
+      <p>Temperatures also drop at night, which changes grip and tyre behaviour. That is a setup topic of its own, and for stint planning around it, <a href="endurance-fuel-tire-strategy-basics.html">endurance fuel and tyre basics</a> is the place to start.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=night-racing-iracing-seeing-the-track-after-dark">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup — high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=Meta+Quest+3+512GB+VR+headset&amp;rh=p_89%3AMeta&amp;tag=realiracing-20" data-aff="meta-quest-3" target="_blank" rel="sponsored noopener">Meta Quest 3</a></th><td>the most common way into PCVR sim racing</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0DSHYFW1V?tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>Why can I not see anything at night in iRacing?</h3>
+        <p>Usually the monitor is crushing shadow detail. Dim the room, raise the monitor brightness, then adjust in-game brightness and gamma on a paused night replay until kerbs are visible without the sky turning grey.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I use HDR for night racing in iRacing?</h3>
+        <p>Only if you have already tuned HDR on your specific display. HDR behaviour varies between monitors, so for a race it is safer to run SDR and test HDR in practice first.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I deal with headlights blinding my mirrors?</h3>
+        <p>Rely on the relative black box instead of the mirrors. It shows the gap, the class and the lap status of the car behind, which is the information the mirror can no longer give you at night.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I find braking points when the track is dark?</h3>
+        <p>Learn the track in daylight, then pick references that stay visible at night such as lit boards, kerb starts and track-side lights. Brake a little earlier for the first stint and work back towards your daylight marker.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="rejoining-the-track-safely-after-a-spin-iracing.html"><span>Racecraft</span>How to Rejoin the Track Safely After a Spin in iRacing</a>
+      <a class="related-card" href="aluminum-cockpit-assembly-guide.html"><span>Hardware</span>Building Your Fixed Aluminum Cockpit Frame</a>
+      <a class="related-card" href="iracing-brake-bias-explained.html"><span>Setup Guides</span>iRacing Brake Bias Explained: When to Move It and Why</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["monitor-1440p-120","meta-quest-3","moza-r9","moza-crp2"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
