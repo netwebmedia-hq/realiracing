@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Differential settings for corner entry and exit grip</title>
+  <meta name="description" content="Tune your differential lock and preload to find more grip on corner entry, exit rotation, and mid-corner speed." />
+  <link rel="canonical" href="https://realiracing.com/blog/differential-settings-corner-entry-exit.html" />
+  <meta property="og:title" content="Differential settings for corner entry and exit grip" />
+  <meta property="og:description" content="Tune your differential lock and preload to find more grip on corner entry, exit rotation, and mid-corner speed." />
+  <meta property="og:url" content="https://realiracing.com/blog/differential-settings-corner-entry-exit.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/track-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: a circuit traced as a route with marked points" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/track-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261103" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Differential settings for corner entry and exit grip",
+    "description": "Tune your differential lock and preload to find more grip on corner entry, exit rotation, and mid-corner speed.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/differential-settings-corner-entry-exit.html",
+    "image": "https://realiracing.com/assets/photos/track-cover.jpg",
+    "datePublished": "2026-10-26",
+    "dateModified": "2026-10-26"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Differential settings for corner entry and exit grip","item":"https://realiracing.com/blog/differential-settings-corner-entry-exit.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/differential-settings-corner-entry-exit.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Should entry lock always be lower than exit lock?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not always, but it's common. Most cars feel better with entry lock 10-20 points lower than exit lock because you want rotation during braking and turn-in, then traction on throttle. Some cars with naturally high understeer (like low-downforce GT3 cars on medium-speed tracks) work well with entry and exit lock closer together, or even entry slightly higher. The best approach is to start with entry 15 points lower than exit, then adjust each independently based on feel." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much preload should I run?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most competitive setups run preload between 20 and 50, with 30-40 being a safe starting point for most cars and tracks. Preload matters more for steering feel than outright pace. If you're tuning entry and exit lock and the car feels right, leave preload alone. Change preload only if you feel the car is twitchy or sluggish through mid-corner, and then adjust by 5-10 point increments. Higher preload (above 40) requires more entry lock to compensate for reduced rotation sensitivity." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I tune differential settings to fix understeer or oversteer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Partially, but differential is not a cure-all. High entry lock and high exit lock can reduce oversteer slightly by stiffening the rear, and low entry lock can reduce understeer by improving rotation. However, if your car is fundamentally understeering, you should address brake bias, anti-roll bar stiffness, or wing angle first. Differential tuning is best used to fine-tune balance and find confidence in an already-reasonable setup. Use differential to add 2-3 tenths, not to rebuild a broken setup." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does differential setting change much between fuel loads in endurance racing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In most iRacing cars, fuel load does not noticeably affect how the differential should be tuned. However, a heavier car (full fuel tank) may feel slightly more stable with the same entry and exit lock values, and as fuel burns and the car gets lighter, it may feel more twitchy. If you're running a long endurance race and want to maintain consistency across stints, test your differential settings at both full and low fuel levels during practice. You may find a single setup works well across the range, or you may want a slightly higher preload when fuel is light to restore planted feel." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Setup Guides · Handling</p>
+    <h1>Differential settings for corner entry and exit grip</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 26, 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/track-cover.jpg" width="1000" height="563" alt="Cover art: a circuit traced as a route with marked points" srcset="/assets/photos/track-cover-sm.jpg 560w, /assets/photos/track-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">The differential is one of the most misunderstood setup tools in sim racing. Most drivers focus on anti-roll bars or brake balance, but your diff settings control how power is delivered to each rear wheel during acceleration and steering input, and that directly affects whether you rotate mid-corner, whether you can power out of a hairpin, and how early you can get back on throttle. Understanding the gap between entry lock and exit lock, and how preload shapes both, is the fastest path to finding lap time without changing your braking or line.</p>
+
+      <p>The differential in iRacing works in a simplified but realistic way. Entry lock resists the inner wheel from spinning slower than the outer wheel when you're turning into a corner. Exit lock controls how aggressively the diff locks when you're accelerating out. Preload is the baseline resistance that applies before any locking occurs. Most drivers inherit the default setup and never touch it, which means they're leaving time on the table at every corner.</p>
+
+      <h2>How differential lock affects corner entry</h2>
+
+      <p>Corner entry lock determines how much the diff resists unloading the inside rear tire as you brake and turn. Higher entry lock stiffens the connection between the rear wheels, which can help a few things: the inside rear stays loaded longer as you trail brake into the corner, and the car feels more stable and controllable during that rotation phase. Lower entry lock allows the inside rear to unload more freely, which can reduce understeer if your car is pushing hard at turn-in.</p>
+
+      <p>The key insight is that entry lock doesn't directly make you faster in the corner. Instead, it affects your confidence and control during the most critical phase: the moment between full braking and full steering. A car that rotates predictably under trail brake input lets you carry more speed and commit harder to your line. A car that feels twitchy or unstable under entry lock often produces higher corner speeds that feel fast but actually cost time over a lap because you're over-managing the steering input.</p>
+
+      <ul>
+        <li>High entry lock (80-100): Stiffens the rear axle during braking and turn-in, reduces inside rear unload, feels planted but can increase understeer on tight turns</li>
+        <li>Mid entry lock (50-70): A common starting point; balances stability with rotation and works well for most road courses and street circuits</li>
+        <li>Low entry lock (20-40): Softens the rear and prioritizes rotation; useful on hairpins or tracks where the car is naturally understeering hard</li>
+      </ul>
+
+      <div class="tip-box">
+        <span class="box-label">Entry Lock Feel</span>
+        <p>Entry lock tuning is most noticeable in slow corners where trail braking is the longest phase. Try adjusting entry lock by 10-point increments and focus on how the car feels between the brake release and initial turn-in. If the rear feels loose and the car darts into oversteer, increase entry lock slightly. If the nose won't turn and you're fighting understeer, lower entry lock by 5-10 points.</p>
+      </div>
+
+      <h2>Exit lock and power-on rotation</h2>
+
+      <p>Exit lock is where most drivers see the biggest opportunity cost. This setting controls the differential's response when you're accelerating out of a corner and applying throttle. Higher exit lock locks the rear wheels together more aggressively, which transfers power to the outside wheel and can help prevent inside wheel spin, but it also resists the car's ability to rotate and transition mid-corner. Lower exit lock allows more inside wheel slip, which can reduce mid-corner stability but gives you earlier throttle application and a more planted feel on corner exit.</p>
+
+      <p>The relationship between entry and exit lock is where setup depth comes in. Many competitive setups run a lower entry lock and higher exit lock. This combination allows the car to rotate freely during trail braking and mid-corner, but locks down hard once you're on the throttle to prevent spin and maximize traction. The opposite setup (high entry, low exit) tends to feel nervous and difficult to manage because the car rotates aggressively when you're already committed to a line, and then loses traction on exit.</p>
+
+      <p>On high-speed corners like the turn 1 at Road America or the esses at Watkins Glen, a moderately high exit lock (75-85) keeps the rear planted and lets you power up earlier. On tight, low-speed hairpins like the chicane at Lime Rock, a lower exit lock (40-60) prevents the inside rear from loading too hard and allows you to manage throttle application more smoothly. The mid-corner speed gain from better exit rotation usually outweighs any traction loss.</p>
+
+      <h2>Preload: the foundation under both</h2>
+
+      <p>Preload is the baseline spring load that acts on the differential clutch pack before any locking occurs. Think of it as the idle resistance the diff applies when the car is going straight or at light corner speeds. Higher preload means the diff resists unloading at all times, which reduces sensitivity to small steering and throttle inputs. Lower preload allows the diff to respond more freely to steering angle and wheel slip.</p>
+
+      <p>Preload affects the feel more than it affects raw lap time, but the feel shapes your inputs, which shapes lap time. A setup with low preload feels responsive and twitchy, especially on turn-in. A setup with higher preload feels planted and forgiving, but can feel sluggish in slow corners where you want rotation. Most competitive setups run preload between 20 and 50, depending on the car and track. A safe starting point is whatever comes in the baseline setup, then adjust entry and exit lock first before tuning preload.</p>
+
+      <ul>
+        <li>Preload below 20: Diff responds quickly to input, feels sharp but can be unpredictable, useful in cars that naturally oversteer</li>
+        <li>Preload 20-40: Mid-range stability; works well with moderate entry and exit lock values</li>
+        <li>Preload above 40: More resistant to change; the car feels settled and safe but may require higher entry lock to maintain rotation</li>
+      </ul>
+
+      <h2>Practical tuning workflow</h2>
+
+      <p>Start by running a few laps with the baseline setup and noting where you feel the car is weakest. If you're pushing hard at turn-in and struggling to rotate, your entry lock is likely too high or your preload is too stiff. If you're spinning on exit or losing traction when you stab the throttle, your exit lock is too low. If the car feels nervous and twitchy through mid-corner, preload might be too low.</p>
+
+      <ol>
+        <li>Run the baseline for 5-10 laps to establish a reference lap time and driver confidence level.</li>
+        <li>Identify one weak point: entry stability, mid-corner rotation, or exit traction.</li>
+        <li>Adjust entry lock first by 10 points at a time. Most cars improve with entry lock between 50 and 75. Run 3-5 laps and compare how the car feels and your lap times.</li>
+        <li>Once entry lock feels natural, move to exit lock. Try a value 15-25 points higher than entry lock as a first guess. Again, tune in 10-point steps.</li>
+        <li>Only adjust preload if the car still feels inconsistent. Start with changes of 5-10 points and be patient. Preload changes take a few laps to settle into your muscle memory.</li>
+        <li>After each change, run at least 3 consecutive laps. Lap 1 is always a settling lap; lap 2 and 3 show real pace.</li>
+      </ol>
+
+      <div class="tip-box">
+        <span class="box-label">Validating Setup Changes</span>
+        <p>Use telemetry comparisons to validate your changes. If you lowered entry lock and lap time improved, but your throttle application is earlier on exit and brake zones are shorter, that's real improvement. If lap time improved but braking distance stayed the same and throttle came in later, something else changed. Replay the two fastest laps from before and after your adjustment to confirm the setup change, not just driver improvement, made the difference.</p>
+      </div>
+
+      <h2>Common setup combinations</h2>
+
+      <p>Different car types and tracks favor different differential philosophies. High-powered cars with lots of understeer bias (Porsche 911 GT3 R, BMW M4 GT3) often run lower entry lock (40-60) and higher exit lock (80-95) to prioritize rotation and traction. Lower-powered cars or front-heavy cars (Aston Martin Vantage GT4, Honda NSX GT3) can handle higher entry lock (70-85) because they need help rotating, and mid-range exit lock (60-75) because spin risk is lower.</p>
+
+      <p>Street circuits like Street Legally and Singapore demand more entry lock (65-80) because there's less room to experiment, and exit lock can stay moderate (65-75) because speeds are lower and traction margins are wider. Open road courses like Road America and Laguna Seca favor lower entry lock (50-65) to keep the car responsive through fast direction changes, with higher exit lock (75-85) to manage power on long straights out of medium-speed turns. Ovals and fast semi-permanent circuits benefit from higher both values (75-85 entry, 85-95 exit) because the car is always turning slightly and traction is the limiting factor.</p>
+
+      <h2>Why differential setup matters</h2>
+
+      <p>Most drivers assume tire compound, brake balance, and wing angle are the primary setup knobs. Differential settings are often treated as secondary. In reality, the differential touches every corner of every lap. Even a 5-point adjustment can shift your comfort zone enough to let you carry two tenths of a second more speed through a chicane, or find an earlier throttle point on exit without spinning. Over a 5-lap sprint, that's often the difference between pole and second on the grid.</p>
+
+      <p>The deeper value is consistency. A car with well-tuned differential settings feels predictable lap after lap. You learn to trust the rotation mid-corner and the traction on exit. That trust compounds: you brake later, turn in harder, carry more speed, and apply throttle earlier. You're not driving faster because the setup is faster; you're driving faster because the setup is honest.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=differential-settings-corner-entry-exit">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>Should entry lock always be lower than exit lock?</h3>
+        <p>Not always, but it's common. Most cars feel better with entry lock 10-20 points lower than exit lock because you want rotation during braking and turn-in, then traction on throttle. Some cars with naturally high understeer (like low-downforce GT3 cars on medium-speed tracks) work well with entry and exit lock closer together, or even entry slightly higher. The best approach is to start with entry 15 points lower than exit, then adjust each independently based on feel.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How much preload should I run?</h3>
+        <p>Most competitive setups run preload between 20 and 50, with 30-40 being a safe starting point for most cars and tracks. Preload matters more for steering feel than outright pace. If you're tuning entry and exit lock and the car feels right, leave preload alone. Change preload only if you feel the car is twitchy or sluggish through mid-corner, and then adjust by 5-10 point increments. Higher preload (above 40) requires more entry lock to compensate for reduced rotation sensitivity.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I tune differential settings to fix understeer or oversteer?</h3>
+        <p>Partially, but differential is not a cure-all. High entry lock and high exit lock can reduce oversteer slightly by stiffening the rear, and low entry lock can reduce understeer by improving rotation. However, if your car is fundamentally understeering, you should address brake bias, anti-roll bar stiffness, or wing angle first. Differential tuning is best used to fine-tune balance and find confidence in an already-reasonable setup. Use differential to add 2-3 tenths, not to rebuild a broken setup.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does differential setting change much between fuel loads in endurance racing?</h3>
+        <p>In most iRacing cars, fuel load does not noticeably affect how the differential should be tuned. However, a heavier car (full fuel tank) may feel slightly more stable with the same entry and exit lock values, and as fuel burns and the car gets lighter, it may feel more twitchy. If you're running a long endurance race and want to maintain consistency across stints, test your differential settings at both full and low fuel levels during practice. You may find a single setup works well across the range, or you may want a slightly higher preload when fuel is light to restore planted feel.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="posture-back-pain-fixed-cockpit-solutions.html"><span>Setup Guides</span>Posture and Back Pain in a Fixed Cockpit: Real Solutions</a>
+      <a class="related-card" href="bump-stops-packers-bumpy-tracks-setup.html"><span>Setup Guides</span>Bump Stops and Packers on Bumpy Tracks: What They Actually Do</a>
+      <a class="related-card" href="brake-pressure-curves-iracing-series.html"><span>Setup Guides</span>Brake Pressure Curves for GT3, Oval, Road</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
