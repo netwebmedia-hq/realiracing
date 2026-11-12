@@ -1,0 +1,60 @@
+{
+  "slug": "night-racing-iracing-seeing-the-track-after-dark",
+  "tag": "Racecraft · Visibility",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "Night racing in iRacing: seeing the track after dark",
+  "description": "How I set up my monitor, pick braking markers and handle headlights in the mirrors so night stints in iRacing endurance races stop feeling like guesswork.",
+  "published": "2026-11-12",
+  "dateLabel": "November 12, 2026",
+  "gearKeys": ["monitor-1440p-120", "meta-quest-3", "moza-r9", "moza-crp2"],
+  "sections": [
+    {"p": "The first time the sun went down on me in an iRacing endurance special, I braked for a corner I could no longer see. In daylight practice I had used a darker patch of tarmac and a gap in the trees as my marker. At night both were gone, my headlights lit maybe two car lengths of grey, and I locked the fronts into the gravel. Nothing about the car had changed. What changed was the information reaching my eyes, and I had prepared for none of it."},
+    {"p": "This guide is what I do now before and during night stints on my rig: a MOZA R9 base at ~9 N·m, CRP2 load-cell pedals, a fixed aluminium cockpit and a single monitor. Most of it applies to VR and triples too, and I will point out where it differs."},
+    {"h2": "Why night feels harder than it should"},
+    {"p": "At night you lose three things at once. You lose distance cues, because the track beyond your headlights is dark unless the circuit is lit. You lose the scenery you were using as reference points without realising it. And you lose your mirrors in traffic, because the car behind you is now two bright lights instead of a shape you can read."},
+    {"p": "The car is the same, but your brain has to work harder for every corner. That extra load is what makes people miss braking points in hour two of a night stint, not a lack of pace."},
+    {"h2": "Set up the screen before you set up the car"},
+    {"p": "A monitor tuned for movies or for a bright room usually crushes the dark end of the image. In daylight you never notice. At night the kerb you need is sitting in exactly the range of shadow detail your screen throws away."},
+    {"list": [
+      "<strong>Turn the room lights down.</strong> Glare on the panel washes out the darkest part of the picture far more than any setting does. A dim lamp behind the monitor is easier on the eyes than full darkness.",
+      "<strong>Raise brightness on the monitor, not only in the game.</strong> I start from the monitor's own brightness, then fine-tune with the in-game brightness and gamma options in the graphics settings.",
+      "<strong>Check shadow detail on a dark replay.</strong> Load a replay at night, pause on a section with kerbs and run-off, and adjust until you can tell the kerb from the tarmac without the sky turning milky grey.",
+      "<strong>Switch off dynamic contrast or eco modes.</strong> They change the image as the scene gets darker or brighter, so the track seems to pump every time a lit grandstand enters the frame.",
+      "<strong>Treat HDR as a separate project.</strong> HDR behaviour varies a lot between displays. If you have not tuned it on your specific screen, run the stint in SDR and save the experiment for practice."
+    ]},
+    {"p": "My <a href=\"iracing-field-of-view-single-monitor-setup.html\">single-monitor field of view</a> stays the same at night. A correct FOV matters even more here, because judging distance from a narrow headlight beam is hard enough without the image being stretched."},
+    {"tip": "Write your night settings down. I keep a note with my monitor brightness, in-game brightness and gamma so I can switch back to daytime values after the race instead of rediscovering them.", "tipLabel": "Rig note"},
+    {"h3": "VR and triples"},
+    {"p": "In VR the headset's own brightness and the lens sweet spot matter more than any in-game slider, and the black level of the panel decides how much you see in unlit sections. I covered the wider trade-offs in <a href=\"iracing-vr-vs-triple-monitors.html\">VR vs triple monitors</a>. On triples, the side screens are where approaching headlights show up first, so make sure all three panels match in brightness or the sides will look like a different time of day."},
+    {"h2": "Pick braking markers that survive the dark"},
+    {"p": "The fix for my gravel moment was simple and a little boring. In practice I now drive the track in daylight first and learn the corners. Then I deliberately look for references that will still exist at night."},
+    {"list": [
+      "Lit distance boards and track-side lights, where the circuit has them.",
+      "The start of a kerb, which usually catches the headlights before the apex does.",
+      "Painted lines and the edge of the track surface under the lights.",
+      "Bridges, gantries and anything that is backlit by a lit area further down the road."
+    ]},
+    {"p": "If the series runs a dynamic time of day, I also do a few laps in practice with the session set to dusk or night so the first dark lap is not in the race. On unlit sections I brake a touch earlier than my daylight marker for the first stint and work back towards it once I trust what I am seeing. Giving up a little in the first hour is far cheaper than a trip through the gravel."},
+    {"p": "The load-cell brake helps here. Because the CRP2 responds to pressure rather than travel, I can repeat the same braking effort even when my visual reference is vague. If your pedals are not calibrated for consistent pressure, fix that in daylight. Night is the worst time to discover your threshold moves around."},
+    {"h2": "Headlights in the mirrors"},
+    {"p": "At night, a car behind you becomes two points of light. You cannot see its shape or which class it is, and at some tracks you cannot tell if it is one car or two. My mirrors stop being a reliable tool and the relative black box takes over."},
+    {"p": "I keep the relative box on screen for the whole night stint. It tells me the gap, the class and whether the car behind is on the same lap, which is everything the mirror used to tell me. If you have not set up your boxes yet, start with <a href=\"iracing-black-boxes-explained-relative-fuel-tires.html\">the black boxes explained</a>."},
+    {"p": "Headlight flash is worth binding to a button. I use it sparingly, mainly to let a slower car know I am there before a braking zone. Flashing over and over at someone who is already moving over helps nobody."},
+    {"h2": "Multiclass traffic after dark"},
+    {"p": "Closing speeds feel bigger at night because you see the faster car later. If you are in the slower class, the best thing you can do is be predictable: hold your line, do not jump out of the way at the last second and let the relative box tell you when someone is about to arrive. If you are in the faster class, pick your passing spots where the slower car can see you coming, such as lit straights, and avoid committing on an unlit corner exit."},
+    {"p": "The same principles from my <a href=\"multiclass-racing-traffic-management-iracing.html\">multiclass traffic guide</a> apply, you just have less time to react. I add a little more margin to every pass and accept that a few laps will be slower than in daylight."},
+    {"h2": "Pit stops and fatigue"},
+    {"p": "Pit entry is harder to judge in the dark, and the pit lane speed limiter still has to go on at the right moment. I pick a lit reference for the pit entry line during practice and treat it as seriously as a braking marker. For the rest of the etiquette, see <a href=\"iracing-pit-road-etiquette-avoid-speeding-penalties.html\">pit road etiquette</a>."},
+    {"p": "Night stints are also where fatigue shows. Staring into a dark screen is tiring in a way that daylight laps are not. I keep stints shorter if the team allows it, drink water during cautions and stand up between stints. When I notice I am missing the same marker twice in a row, that is my signal to hand over rather than push on."},
+    {"h2": "The force feedback does not change, so use it"},
+    {"p": "One thing the dark cannot take away is what comes through the wheel. On the R9 the kerbs, the bumps and the moment the front tyres start to slide feel exactly the same at night. I lean on that more after sunset. If the wheel tells me I have touched the inside kerb, I believe it over what I think I saw. If your force feedback is clipping or vague, sort it out first with <a href=\"iracing-force-feedback-explained.html\">the force feedback basics</a> and my <a href=\"moza-r9-iracing-settings.html\">MOZA R9 settings</a>."},
+    {"p": "Temperatures also drop at night, which changes grip and tyre behaviour. That is a setup topic of its own, and for stint planning around it, <a href=\"endurance-fuel-tire-strategy-basics.html\">endurance fuel and tyre basics</a> is the place to start."}
+  ],
+  "faqs": [
+    {"q": "Why can I not see anything at night in iRacing?", "a": "Usually the monitor is crushing shadow detail. Dim the room, raise the monitor brightness, then adjust in-game brightness and gamma on a paused night replay until kerbs are visible without the sky turning grey."},
+    {"q": "Should I use HDR for night racing in iRacing?", "a": "Only if you have already tuned HDR on your specific display. HDR behaviour varies between monitors, so for a race it is safer to run SDR and test HDR in practice first."},
+    {"q": "How do I deal with headlights blinding my mirrors?", "a": "Rely on the relative black box instead of the mirrors. It shows the gap, the class and the lap status of the car behind, which is the information the mirror can no longer give you at night."},
+    {"q": "How do I find braking points when the track is dark?", "a": "Learn the track in daylight, then pick references that stay visible at night such as lit boards, kerb starts and track-side lights. Brake a little earlier for the first stint and work back towards your daylight marker."}
+  ]
+}
