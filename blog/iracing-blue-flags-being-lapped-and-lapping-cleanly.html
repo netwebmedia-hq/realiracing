@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blue flags in iRacing: getting lapped and lapping cleanly</title>
+  <meta name="description" content="What the blue flag means in iRacing, what the lapped car should do, and how the leader gets past without a 4x. Notes from my own rig." />
+  <link rel="canonical" href="https://realiracing.com/blog/iracing-blue-flags-being-lapped-and-lapping-cleanly.html" />
+  <meta property="og:title" content="Blue flags in iRacing: getting lapped and lapping cleanly" />
+  <meta property="og:description" content="What the blue flag means in iRacing, what the lapped car should do, and how the leader gets past without a 4x. Notes from my own rig." />
+  <meta property="og:url" content="https://realiracing.com/blog/iracing-blue-flags-being-lapped-and-lapping-cleanly.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/rig-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: overlapping isometric blocks" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/rig-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261103" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Blue flags in iRacing: getting lapped and lapping cleanly",
+    "description": "What the blue flag means in iRacing, what the lapped car should do, and how the leader gets past without a 4x. Notes from my own rig.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/iracing-blue-flags-being-lapped-and-lapping-cleanly.html",
+    "image": "https://realiracing.com/assets/photos/rig-cover.jpg",
+    "datePublished": "2026-11-13",
+    "dateModified": "2026-11-13"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Blue flags in iRacing: getting lapped and lapping cleanly","item":"https://realiracing.com/blog/iracing-blue-flags-being-lapped-and-lapping-cleanly.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/iracing-blue-flags-being-lapped-and-lapping-cleanly.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/iracing-blue-flags-being-lapped-and-lapping-cleanly.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup — high refresh matters more than size","url":"https://realiracing.com/blog/iracing-blue-flags-being-lapped-and-lapping-cleanly.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you get a penalty for ignoring blue flags in iRacing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. In iRacing the blue flag is advisory. The sim does not issue a penalty for staying on the racing line while it shows. Deliberate blocking can still be protested under the sporting code, and any contact gives incident points to both cars." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should a lapped car move off the racing line in iRacing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not in the middle of a corner or a braking zone. Hold your normal line, then stay to one side and lift slightly on the next straight so the faster car can complete the pass before the following corner." }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is responsible for a safe pass when lapping in iRacing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Both drivers have duties. The lapped car should be predictable and should not block. The faster car is the one making the pass, so it carries the responsibility of completing it safely." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if the car behind is lapping me or racing me?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Check the relative black box. It marks cars that are a lap ahead of you, a lap behind you and on your lap with different colours. If the car behind is on your lap it is a fight for position, and normal defending rules apply." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">iRacing Tips · Racecraft</p>
+    <h1>Blue flags in iRacing: getting lapped and lapping cleanly</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated November 13, 2026</span>
+      <span class="dot">·</span>
+      <span>8 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/rig-cover.jpg" width="1000" height="563" alt="Cover art: overlapping isometric blocks" srcset="/assets/photos/rig-cover-sm.jpg 560w, /assets/photos/rig-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">Lap 14 of a 25 minute GT3 race at Spa. I am running P16, having a quiet fight with the car ahead, and the spotter says the leaders are coming. A blue flag with a yellow stripe appears at the top of the screen. My first instinct, for most of my first year on the service, was to panic: brake early, jump off the racing line, wave everybody through. That instinct caused more of my incidents than any overtake I ever attempted.</p>
+
+      <p>The blue flag is the most misread signal in iRacing. New drivers treat it as an order to disappear. Some leaders treat it as a right of way. Both readings put cars in the wall. This is how I handle it now from both seats, after a lot of races spent in the middle of the field on a <a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> and <a href="https://www.amazon.com/dp/B0DSHYFW1V?tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">CRP2</a> pedals in a fixed cockpit.</p>
+
+      <h2>What the blue flag means in iRacing</h2>
+
+      <p>In iRacing the blue flag with the diagonal yellow stripe is information. It tells you a faster car is close behind and about to put you a lap down, or that a faster class is arriving in a multiclass race. The sim does not penalise you for staying on the racing line while it is showing. There is no drive-through and no automatic disqualification attached to it.</p>
+
+      <p>That is different from some real-world series, where ignoring blue flags for several marshal posts earns a penalty. A lot of the confusion in voice chat comes from people who watch one of those series on Sunday and expect the same rule on Tuesday night in a rookie split.</p>
+
+      <p>The sporting code puts the duty on both drivers. The lapped car should be predictable and should not block. The lapping car is the one making the pass, so the job of completing it safely sits with that driver. Neither side gets to switch their brain off.</p>
+
+      <h2>Why jumping out of the way causes crashes</h2>
+
+      <p>The leader behind you has been reading your car for several corners. They have already planned the pass around where you normally brake and which line you normally hold. When you lift in the middle of a fast corner or dart to the inside at the braking marker, you delete the plan they built and replace it with a guess.</p>
+
+      <p>The second problem is grip. The racing line is the clean, rubbered part of the track. The moment I leave it under braking the car takes longer to stop and wants to slide wide at the exit, which is right where the leader is now trying to drive. I have spun into a leader that way while trying to be polite to them.</p>
+
+      <p>Predictable beats generous. A lapped car that brakes at its normal point and holds its normal line is easy to pass. A lapped car trying to help in the middle of a corner is a hazard.</p>
+
+      <h2>Being lapped: what I actually do</h2>
+
+      <ol>
+        <li>Hear the spotter call or see the flag, then check the relative black box. Cars a lap ahead of you show in a different colour from the cars you are racing, so you know who is coming and how fast the gap is closing.</li>
+        <li>Keep driving the normal line through the corner you are in. No change of line and no early braking.</li>
+        <li>Pick the next straight. On the exit, stay to one side and lift slightly, about a car length worth, so the pass is finished well before the next braking zone.</li>
+        <li>If the leader arrives inside a braking zone anyway, brake at the normal point and leave a car width on the side they have chosen. Do not turn in on them.</li>
+        <li>Once they are through, get back to your own race. Following a faster car for a few corners is free coaching on lines and braking points.</li>
+      </ol>
+
+      <p>The lift on the straight costs me a few tenths. Fighting a leader for two corners costs me more than that in dirty laps, and it risks a 4x contact that hurts my Safety Rating as much as theirs. If you are still climbing licences, the <a href="iracing-safety-rating-guide.html">Safety Rating guide</a> explains why that single contact is so expensive.</p>
+
+      <div class="tip-box">
+        <span class="box-label">One exception</span>
+        <p>If the car behind is on your lap and only looks faster, that is a fight for position. The blue flag is about laps and classes. You are allowed to defend against a car you are racing, within the normal rules on blocking.</p>
+      </div>
+
+      <h2>Lapping: what I do as the faster car</h2>
+
+      <p>When I am the one doing the lapping, usually in a split below my normal one or late in a long race, I assume the driver ahead has not seen me. Maybe their spotter is off, maybe they are looking at a fuel number. I plan the pass as if the flag did not exist.</p>
+
+      <ul>
+        <li>Close up through the corner and pass on the straight after it. A lunge into the braking zone from a long way back is how leaders throw away races.</li>
+        <li>Choose a side early and stay on it. Weaving behind a lapped car makes them guess, and guessing drivers move.</li>
+        <li>Leave more room than I would in a fight for position. The other driver has nothing to gain from racing me and may be on worn tyres.</li>
+        <li>If they are in a battle of their own, wait one more corner. Two cars fighting side by side have nowhere to go.</li>
+        <li>No flashing lights for a whole lap and no shouting on voice chat. One flash on a straight is plenty.</li>
+      </ul>
+
+      <p>Losing a second behind a backmarker feels terrible when second place is right behind. It is still cheaper than a tow. Most of the lead changes I have seen in traffic came from the leader forcing a gap that would have opened by itself two corners later.</p>
+
+      <h2>Multiclass races change the rhythm</h2>
+
+      <p>In multiclass racing the blue flag shows constantly, because the faster class reaches the slower class every few minutes. The same rules apply, with one difference in how the speed is made. A prototype gains most of its time on the straights and under braking, while a GT car can be close to it in slow corners. The safest place for the faster class to pass is almost always the straight.</p>
+
+      <p>As the slower class car, I hold my line through a corner sequence and never lift in the middle of one. The prototype driver is expecting me to carry normal GT speed. If I suddenly slow at an apex to let them by, they arrive at a closed door with a lot more speed than they planned for.</p>
+
+      <p>As the faster class car, patience through one sequence of corners is the entire skill. A slower car that is given a clean corner will usually give the straight back.</p>
+
+      <h2>Ovals: hold your lane</h2>
+
+      <p>On ovals the convention is simpler. A lapped car holds its lane and lets the leaders choose theirs. Moving up or down the track when a leader is already alongside is how big wrecks start. If I am about to be lapped on a short track, I stay in whichever groove I am already in, lift a little on corner exit, and let the spotter tell me when I am clear.</p>
+
+      <p>Under caution the picture changes again, because lapped cars and lead lap cars are sorted for the restart. Listen to the spotter and race control messages there and do not improvise. I wrote about the calls worth listening for in <a href="spotter-calls-what-to-listen-for.html">spotter calls and what to listen for</a>.</p>
+
+      <h2>The tools that make this easier</h2>
+
+      <p>Nearly all of this depends on knowing what is behind you before it arrives. On a single ~27 inch 1440p monitor I cannot see much out of the side windows, so three things do the work.</p>
+
+      <ul>
+        <li>The spotter. The built-in one calls cars alongside and leaders approaching. <a href="crew-chief-free-spotter-iracing.html">Crew Chief</a> adds more detail if you want it.</li>
+        <li>The relative black box. It shows the gap to the cars around me on track and marks who is a lap up, a lap down or on my lap. It is covered in <a href="iracing-black-boxes-explained-relative-fuel-tires.html">black boxes explained</a>.</li>
+        <li>The virtual mirror. On one screen it is the only way to see both rear quarters at once.</li>
+      </ul>
+
+      <p>Hardware matters less here than awareness, with one exception: brake control. Lifting a little on a straight is easy on any pedal set. Holding a normal braking point with a faster car filling the mirror is easier on a load cell, because my foot repeats a pressure it already knows. That is one of the reasons I moved to the CRP2 set.</p>
+
+      <h2>A short checklist for the next race</h2>
+
+      <ul>
+        <li>Blue flag showing: check the relative, keep the line, breathe.</li>
+        <li>Give the place on a straight with a small lift, never in the middle of a corner.</li>
+        <li>If the car behind is on your lap, race it fairly.</li>
+        <li>When lapping: pass on straights, choose a side early, wait one corner if in doubt.</li>
+        <li>After any contact in traffic, save the replay and watch it from both cars before deciding whose fault it was.</li>
+      </ul>
+
+      <p>I still get lapped in top splits, and I still catch backmarkers in the lower ones. Both go better now that I treat the blue flag as a heads-up and keep driving the car the way I was already driving it.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=iracing-blue-flags-being-lapped-and-lapping-cleanly">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0DSHYFW1V?tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup — high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>Do you get a penalty for ignoring blue flags in iRacing?</h3>
+        <p>No. In iRacing the blue flag is advisory. The sim does not issue a penalty for staying on the racing line while it shows. Deliberate blocking can still be protested under the sporting code, and any contact gives incident points to both cars.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should a lapped car move off the racing line in iRacing?</h3>
+        <p>Not in the middle of a corner or a braking zone. Hold your normal line, then stay to one side and lift slightly on the next straight so the faster car can complete the pass before the following corner.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Who is responsible for a safe pass when lapping in iRacing?</h3>
+        <p>Both drivers have duties. The lapped car should be predictable and should not block. The faster car is the one making the pass, so it carries the responsibility of completing it safely.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I know if the car behind is lapping me or racing me?</h3>
+        <p>Check the relative black box. It marks cars that are a lap ahead of you, a lap behind you and on your lap with different colours. If the car behind is on your lap it is a fight for position, and normal defending rules apply.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="heel-toe-braking-load-cell-technique.html"><span>iRacing Tips</span>Heel-Toe Braking on Load Cell Pedals: Technique and Pressure Control</a>
+      <a class="related-card" href="spotter-calls-what-to-listen-for.html"><span>iRacing Tips</span>Spotter Calls Decoded: What to Actually Listen For</a>
+      <a class="related-card" href="how-to-improve-iracing-irating-fast.html"><span>iRacing Tips</span>How to Improve Your iRacing iRating Fast — Without Wrecking Your Safety Rating</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","moza-crp2","monitor-1440p-120"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>

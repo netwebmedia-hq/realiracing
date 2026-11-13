@@ -18,6 +18,7 @@
 
 ## All blog posts (newest first)
 
+- [Blue flags in iRacing: getting lapped and lapping cleanly](https://realiracing.com/blog/iracing-blue-flags-being-lapped-and-lapping-cleanly.html): What the blue flag means in iRacing, what the lapped car should do, and how the leader gets past without a 4x. Notes from my own rig.
 - [Night racing in iRacing: seeing the track after dark](https://realiracing.com/blog/night-racing-iracing-seeing-the-track-after-dark.html): How I set up my monitor, pick braking markers and handle headlights in the mirrors so night stints in iRacing endurance races stop feeling like guesswork.
 - [The beginner mistakes that cost new iRacing drivers the most](https://realiracing.com/blog/beginner-mistakes-first-season-iracing.html): The six habits that quietly cost new iRacing drivers the most positions in their first season, and how to fix each one from the MOZA R9 rig.
 - [iRacing Black Boxes Explained: Relative, Fuel, Tires](https://realiracing.com/blog/iracing-black-boxes-explained-relative-fuel-tires.html): What each iRacing black box shows, which one to keep up in a race, and how to map them to wheel buttons so fuel and tires are set before pit entry.
@@ -47,7 +48,6 @@
 - [Shift Lights and Dash Displays for iRacing: Do You Need One?](https://realiracing.com/blog/shift-lights-and-dash-displays-iracing-do-you-need-one.html): What a shift light bar or dash display actually adds in iRacing, what the sim already shows you for free, and the order I would buy in from a MOZA R9 and CRP2 rig.
 - [iRacing AI Races: Practice Racecraft Offline | RealIRacing](https://realiracing.com/blog/iracing-ai-races-practice-racecraft.html): How I use iRacing AI races to practise starts, traffic and defending before official races, plus where AI misleads and how to protect safety rating.
 - [Sim Rig Upgrade Order: What to Buy First | RealIRacing](https://realiracing.com/blog/sim-rig-upgrade-order-what-to-buy-first.html): The order I would upgrade a sim rig for iRacing, from my MOZA R9, CRP2 and fixed aluminium cockpit: what pays off first and what can wait.
-- [Eldora Speedway iRacing Dirt Oval Guide: Banking and Grip](https://realiracing.com/blog/eldora-speedway-iracing-dirt-oval-guide.html): Master Eldora's unique half-mile banking, groove transitions, and setup choices for consistent dirt oval pace.
 
 ## More
 - Sitemap: https://realiracing.com/sitemap.xml
