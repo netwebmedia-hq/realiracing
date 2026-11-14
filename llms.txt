@@ -18,6 +18,7 @@
 
 ## Latest blog posts (newest first)
 
+- [iRacing Virtual Mirror and Look Left/Right: Seeing the Cars Beside You on One Screen](https://realiracing.com/blog/iracing-virtual-mirror-look-left-right-single-screen.html): How I combine the iRacing virtual mirror, look left/right buttons, the Relative and the spotter to avoid side contact on a single monitor.
 - [Blue flags in iRacing: getting lapped and lapping cleanly](https://realiracing.com/blog/iracing-blue-flags-being-lapped-and-lapping-cleanly.html): What the blue flag means in iRacing, what the lapped car should do, and how the leader gets past without a 4x. Notes from my own rig.
 - [Night racing in iRacing: seeing the track after dark](https://realiracing.com/blog/night-racing-iracing-seeing-the-track-after-dark.html): How I set up my monitor, pick braking markers and handle headlights in the mirrors so night stints in iRacing endurance races stop feeling like guesswork.
 - [The beginner mistakes that cost new iRacing drivers the most](https://realiracing.com/blog/beginner-mistakes-first-season-iracing.html): The six habits that quietly cost new iRacing drivers the most positions in their first season, and how to fix each one from the MOZA R9 rig.
@@ -37,7 +38,6 @@
 - [2023 YellaWood 500 at Talladega: Filmed From the Stands](https://realiracing.com/blog/talladega-2023-yellawood-500-from-the-grandstand.html): I filmed the 2023 YellaWood 500 at Talladega from the grandstand: the pack, pit road and a 0.012-second photo finish.
 - [iRacing Hockenheim: Mazda MX-5 From P20 to P14 | RealIRacing](https://realiracing.com/blog/iracing-hockenheim-mx5-p20-to-p14.html): Clips from my iRacing Mazda MX-5 race at Hockenheim. I started P20 and finished P14. This is a racing simulator, not real life.
 - [iRacing at the Nordschleife: Clips From the Ring](https://realiracing.com/blog/iracing-nordschleife-stream-clips.html): Short iRacing clips from the Nürburgring Nordschleife: starts, GT cars, forest corners and rain, filmed in a racing simulator.
-- [iRacing at Okayama: MX-5 and Porsche Clips | RealIRacing](https://realiracing.com/blog/iracing-okayama-mx5-stream-clips.html): Short iRacing clips from Okayama International Circuit in Japan, with Mazda MX-5 race action and laps from a Porsche cockpit.
 
 ## More
 - Every post, one line each: https://realiracing.com/llms-full.txt
