@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iRacing Replay System: Saving and Reviewing Incidents</title>
+  <meta name="description" content="Learn how to capture, save, and analyze replays to identify contact, track limits, and lap-time leaks after every race." />
+  <link rel="canonical" href="https://realiracing.com/blog/iracing-replay-system-saving-reviewing-incidents.html" />
+  <meta property="og:title" content="iRacing Replay System: Saving and Reviewing Incidents" />
+  <meta property="og:description" content="Learn how to capture, save, and analyze replays to identify contact, track limits, and lap-time leaks after every race." />
+  <meta property="og:url" content="https://realiracing.com/blog/iracing-replay-system-saving-reviewing-incidents.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/track-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: a circuit traced as a route with marked points" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/track-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261103" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "iRacing Replay System: Saving and Reviewing Incidents",
+    "description": "Learn how to capture, save, and analyze replays to identify contact, track limits, and lap-time leaks after every race.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/iracing-replay-system-saving-reviewing-incidents.html",
+    "image": "https://realiracing.com/assets/photos/track-cover.jpg",
+    "datePublished": "2026-10-26",
+    "dateModified": "2026-10-26"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"iRacing Replay System: Saving and Reviewing Incidents","item":"https://realiracing.com/blog/iracing-replay-system-saving-reviewing-incidents.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup — high refresh matters more than size","url":"https://realiracing.com/blog/iracing-replay-system-saving-reviewing-incidents.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where does iRacing store my replays?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Replays are stored in Documents/iRacing/replays. After finishing a session, click \"Save Replay\" to move it to a saved subfolder where it won't be overwritten. Unsaved replays stay in the temporary buffer for a few sessions, then are deleted." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I compare my lap to a faster driver's lap using replay telemetry?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Open your replay, press F to toggle telemetry overlay, and play your lap at normal speed while watching your inputs. Then jump to the same section of a faster driver's replay file (saved from their ghost car or from a league/team recording) and compare their telemetry side by side. Look for differences in brake release point, throttle ramp, apex speed, and steering smoothness." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I export or record video from an iRacing replay?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Open the replay, run OBS on your PC to capture the game window, and record the video feed to disk. You can then edit the video file in your video editor or upload it directly to YouTube. Replay files themselves are not video formats, so screen recording is the standard way to share replay footage." }
+    },
+    {
+      "@type": "Question",
+      "name": "If I file a protest, do I need to provide the replay file or screenshot?",
+      "acceptedAnswer": { "@type": "Answer", "text": "iRacing stewards have access to all replays from official races automatically. You do not need to upload a file. In your protest, include the lap number, time into the session, turn number, and a clear description of what happened. A screenshot of the telemetry or a timestamp from your own replay can help clarify your claim, but it is not required." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">iRacing Tips · Analysis</p>
+    <h1>iRacing Replay System: Saving and Reviewing Incidents</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 26, 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/track-cover.jpg" width="1000" height="563" alt="Cover art: a circuit traced as a route with marked points" srcset="/assets/photos/track-cover-sm.jpg 560w, /assets/photos/track-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">Every incident on track leaves a trace. The iRacing replay system records your entire session by default, but most drivers never touch it after crossing the finish line. Replays are one of the fastest ways to understand what happened when you made contact, where you lost time in a race, or whether a penalty was justified. The difference between a driver who improves season after season and one who stalls at the same iRating is often replay discipline: watching what went wrong instead of guessing.</p>
+
+      <h2>Where replays are stored and how to access them</h2>
+
+      <p>iRacing automatically records every session you complete. Replays are stored in your Documents folder under iRacing/replays, organized by season, series, and date. After you finish a race or practice session, you will see a "Save Replay" prompt. Clicking that button stores a copy in a separate "saved" subfolder; if you don't save it, the replay is kept in a temporary buffer and may be overwritten after a few sessions. Save replays of any incident you want to review later, or after a strong race where you want to revisit your strategy.</p>
+
+      <p>To open a saved replay, launch iRacing, click "Replay" from the main menu, and browse to the saved file. Replays open in the spectator view by default, and you can immediately pause, rewind, and scrub through the footage using your mouse or arrow keys. You do not need to be in a multiplayer session to review a replay. A single-player replay of your own race loads in under a minute on most systems.</p>
+
+      <h2>Replay camera controls and navigation</h2>
+
+      <p>Once a replay is open, you have full freedom to move the camera and change your viewpoint. Use the number pad keys (1-9) to switch between preset cameras: hood view, bumper cam, onboard, chase cam, far chase, and several others. Each camera angle reveals different information. Hood cam shows your steering input and braking point; chase cam lets you see your line relative to curbs and other cars; far chase gives spatial context for multi-car incidents.</p>
+
+      <ul>
+        <li>Number pad keys (1-9): Switch between preset camera angles</li>
+        <li>Mouse drag: Pan and rotate the camera freely in any view</li>
+        <li>Spacebar or arrow keys: Play, pause, and frame-advance through the replay</li>
+        <li>Scroll wheel or +/- keys: Zoom in and out</li>
+        <li>F (or click the telemetry icon): Toggle on-screen telemetry overlays</li>
+        <li>Num 0: Switch to a free-floating spectator camera you can move anywhere on track</li>
+      </ul>
+
+      <div class="tip-box">
+        <span class="box-label">Best for contact analysis</span>
+        <p>Use free-floating spectator camera (Num 0) to position yourself outside the incident and watch it unfold from a neutral angle. This removes any bias from onboard perspective and shows closing speed and overlap clearly.</p>
+      </div>
+
+      <h2>Analyzing contact and on-track incidents</h2>
+
+      <p>Contact is the most common reason drivers review replays. When you get hit, or when you hit someone else, the replay shows exactly who was ahead, how much overlap existed, and what the other driver's car was doing before impact. This matters for filing a protest, for understanding whether you were at fault, and for adjusting your defensive or attacking lines in future races.</p>
+
+      <p>To review a contact incident, rewind to about 10 seconds before the collision. Watch the approach in chase cam to see both cars' closing speeds and line choices. Pause a few frames before impact. Switch to free spectator cam and position yourself perpendicular to the turn so you can see the moment of contact from the side. Check the telemetry overlay (F key) to see brake pressure, throttle, steering angle, and car speeds at the exact moment of impact. A driver who locked the brakes will show 100% brake input and a sudden speed drop. A driver who turned in too early will show maximum steering lock before the other car had completed its pass.</p>
+
+      <p>Replays also show whether a car left the track or went off the curb before a collision. Many incidents involve the other driver running wide first, which changes the entire fault assessment. Watch from multiple angles to be certain of the sequence.</p>
+
+      <h2>Using telemetry overlays to find lap-time loss</h2>
+
+      <p>Replays do much more than explain incidents. Overlay your telemetry on the video to spot where you lost time compared to your best lap or compared to a faster driver's line. Press F while a replay is running to toggle the telemetry display. You will see a dashboard showing speed, throttle, brake, steering angle, gear, and fuel load in real time as the replay plays.</p>
+
+      <p>Fast drivers brake later and later into corners, carry more corner speed, and accelerate harder on corner exit. Compare your telemetry lap to a lap driven by someone faster in the same car. Pause at a slow section of track and note your inputs: how much brake pressure did you use, how early did you release the brakes, and when did you start turning? Then jump ahead to see that same corner on a faster driver's lap and compare frame by frame. The differences are often small but compound across a 10-lap race.</p>
+
+      <ul>
+        <li>Brake release point: Faster drivers trail-brake deeper, not just brake harder earlier</li>
+        <li>Throttle application: Smooth ramp is faster than on-off, especially on corner exit</li>
+        <li>Steering input: Aggressive turn-in followed by smooth unwinding beats a gradual steering ramp</li>
+        <li>Apex speed: The fastest drivers carry more speed mid-corner, not just at entry or exit</li>
+        <li>Line choice: A wider entry and tighter exit (late apex) is often faster than early-apex lines</li>
+      </ul>
+
+      <h2>Reviewing pit stop strategy and tire wear</h2>
+
+      <p>In longer races, replays show how your tire and fuel strategy played out. You can scrub through the entire race at high speed, then slow down to watch each pit stop in detail. Check your pit entry angle, speed crossing the pit entrance line, and how accurately you hit your pit box marker. Slow pit stops often come from overbraking at the entrance or missing your box slightly and having to reverse or adjust.</p>
+
+      <p>Watch how your car felt and how your lap times changed as fuel load increased during a stint. Look at your brake pressure, throttle modulation, and steering lock to see if you were overdriving the tires or staying within the grip limit. Tire wear is visible in the visual model: heavily worn tires will show worn paint on the sidewall and tread. Correlate worn tires to your inputs (excessive brake temperature or hard acceleration out of slow corners).</p>
+
+      <h2>Saving key moments and organizing your replay library</h2>
+
+      <p>After you save a replay in iRacing, the file will remain in your saved folder indefinitely unless you delete it. Over time, a season of regular racing creates hundreds of replay files. Organize them into subfolders on your PC by series, track, or date so you can find a specific race without scrolling through everything. Many drivers keep a separate folder for "great overtakes" or "incident reviews" for offline study.</p>
+
+      <p>If you stream or upload iRacing videos to YouTube, replays are the raw material. You can load a replay, run OBS on your PC to capture the video feed, and output it at any resolution and frame rate you want. A single cockpit-view lap of a track at 1440p can take 1-3 GB of disk space, so manage your storage.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Review while memory is fresh</span>
+        <p>Save replays immediately after every race where you had an incident, finished in the points, or drove a personal best. Reviewing them within hours keeps the details fresh in your memory, and your recall of what you felt in the car is still accurate.</p>
+      </div>
+
+      <h2>Common mistakes when reviewing replays</h2>
+
+      <p>Watching a replay in cockpit view from start to finish is rarely useful. Your eyes get tired, and you miss details because you are watching the whole screen instead of focusing on a single input or moment. Always use a specific camera angle and a specific moment in time as your target. "I want to know why I missed the apex at turn 7 on lap 3" is a better goal than "I want to understand the whole race."</p>
+
+      <p>Do not assume the other driver saw you. Replays show the full third-person view, but the other driver saw only their own onboard cam. They cannot see cars beside them or behind them without active mirror checking. An incident that looks like deliberate contact on replay might have been an honest mistake if the other driver had no mirror, had a wide car setup, or was braking hard and could not see your position.</p>
+
+      <p>Comparing your onboard cam directly to another driver's onboard cam is misleading. Different field-of-view settings, monitor sizes, and camera positions make the corner look different at the same speed. Use telemetry numbers (speed, throttle, brake) and free-cam angles to compare fairly.</p>
+
+      <h2>When to share or protest based on replay evidence</h2>
+
+      <p>If you believe you were unfairly hit or that another driver violated the <a href="iracing-protest-sporting-code-process.html">iRacing Sporting Code</a>, a replay is your proof. When filing a protest, export the relevant section of the replay or take a screenshot of the telemetry at the moment of impact. iRacing stewards review protested incidents using the same replay system and telemetry overlay, so having this evidence ready strengthens your case. Include the lap number, time into the session, and a plain description of what you believe happened.</p>
+
+      <p>Sharing replays with teammates or coaches accelerates improvement. A coach can watch your lap in any angle and speed, pause to discuss your inputs, and give feedback without being in the car with you. Many iRacing communities and leagues encourage sharing replays of clean, competitive racing as a way to celebrate good driving and learn from others' lines.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=iracing-replay-system-saving-reviewing-incidents">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup — high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>Where does iRacing store my replays?</h3>
+        <p>Replays are stored in Documents/iRacing/replays. After finishing a session, click "Save Replay" to move it to a saved subfolder where it won't be overwritten. Unsaved replays stay in the temporary buffer for a few sessions, then are deleted.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I compare my lap to a faster driver's lap using replay telemetry?</h3>
+        <p>Open your replay, press F to toggle telemetry overlay, and play your lap at normal speed while watching your inputs. Then jump to the same section of a faster driver's replay file (saved from their ghost car or from a league/team recording) and compare their telemetry side by side. Look for differences in brake release point, throttle ramp, apex speed, and steering smoothness.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I export or record video from an iRacing replay?</h3>
+        <p>Yes. Open the replay, run OBS on your PC to capture the game window, and record the video feed to disk. You can then edit the video file in your video editor or upload it directly to YouTube. Replay files themselves are not video formats, so screen recording is the standard way to share replay footage.</p>
+      </div>
+      <div class="faq-item">
+        <h3>If I file a protest, do I need to provide the replay file or screenshot?</h3>
+        <p>iRacing stewards have access to all replays from official races automatically. You do not need to upload a file. In your protest, include the lap number, time into the session, turn number, and a clear description of what happened. A screenshot of the telemetry or a timestamp from your own replay can help clarify your claim, but it is not required.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="racing-clean-against-dirty-drivers-iracing.html"><span>iRacing Tips</span>Racing Clean Against Dirty Drivers: Strategy and Survival</a>
+      <a class="related-card" href="time-trials-time-attack-racing-yourself.html"><span>iRacing Tips</span>Time Trials and Time Attack: Racing Against Yourself in iRacing</a>
+      <a class="related-card" href="console-racing-to-iracing-pc-transition-guide.html"><span>iRacing Tips</span>Moving from console racing to iRacing on PC: what changes</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["monitor-1440p-120"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>

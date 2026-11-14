@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMW M Hybrid V8 GTP iRacing Guide: Setup and Racecraft</title>
+  <meta name="description" content="Master the BMW M Hybrid V8 GTP in iRacing. Learn setup priorities, hybrid management, and overtaking lines for competitive GTP racing." />
+  <link rel="canonical" href="https://realiracing.com/blog/bmw-m-hybrid-v8-gtp-iracing-guide.html" />
+  <meta property="og:title" content="BMW M Hybrid V8 GTP iRacing Guide: Setup and Racecraft" />
+  <meta property="og:description" content="Master the BMW M Hybrid V8 GTP in iRacing. Learn setup priorities, hybrid management, and overtaking lines for competitive GTP racing." />
+  <meta property="og:url" content="https://realiracing.com/blog/bmw-m-hybrid-v8-gtp-iracing-guide.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/track-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: a circuit traced as a route with marked points" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/track-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261103" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "BMW M Hybrid V8 GTP iRacing Guide: Setup and Racecraft",
+    "description": "Master the BMW M Hybrid V8 GTP in iRacing. Learn setup priorities, hybrid management, and overtaking lines for competitive GTP racing.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/bmw-m-hybrid-v8-gtp-iracing-guide.html",
+    "image": "https://realiracing.com/assets/photos/track-cover.jpg",
+    "datePublished": "2026-10-26",
+    "dateModified": "2026-10-26"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"BMW M Hybrid V8 GTP iRacing Guide: Setup and Racecraft","item":"https://realiracing.com/blog/bmw-m-hybrid-v8-gtp-iracing-guide.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/bmw-m-hybrid-v8-gtp-iracing-guide.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup — high refresh matters more than size","url":"https://realiracing.com/blog/bmw-m-hybrid-v8-gtp-iracing-guide.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the ideal hybrid battery charge target for road-course GTP racing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most road-course drivers run a charge target between 50-70%. This leaves headroom to harvest energy under braking while ensuring you have enough stored power for mid-corner and exit acceleration. Sprint events can lean toward 60-70%, while endurance stints often favor 45-55% to maximize harvest potential over long fuel runs." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I stop the BMW from locking the brakes under trail braking?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Reduce the front brake balance percentage (aim for 57-59% front). If that doesn't solve it, check that you're not over-braking early in your stint when brake temperatures are cold. Also make sure your pedal input isn't too abrupt; load the brakes smoothly and modulate pressure as you turn in." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use automatic or manual hybrid deploy mode?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Automatic is recommended for most drivers and stints. It manages the hybrid efficiently based on throttle input and battery state. Manual mode is only beneficial in specific fuel-save scenarios or if you're hunting for every last tenth in qualifying. For races, automatic saves mental energy and is faster for typical pace." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much faster is a properly managed hybrid stint versus careless deployment?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Smart battery management can save 0.3-0.7 seconds per lap in endurance racing by extending your fuel window and using the stored energy instead of engine power. Over a 2-hour race, this translates to 2-3 fewer pit stops, which is a massive advantage. The benefit is most obvious in fuel-multiplier events." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Car Guide · GT Racing</p>
+    <h1>BMW M Hybrid V8 GTP iRacing Guide: Setup and Racecraft</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated October 26, 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/track-cover.jpg" width="1000" height="563" alt="Cover art: a circuit traced as a route with marked points" srcset="/assets/photos/track-cover-sm.jpg 560w, /assets/photos/track-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">The BMW M Hybrid V8 GTP is a front-running prototype that rewards smooth inputs and intelligent hybrid energy deployment. On paper it looks planted. In practice, the hybrid system adds a layer of strategy that catches drivers off guard, especially during fuel and tire windows in endurance races. This guide covers the car's core handling traits, how to manage the hybrid battery across a stint, and the setup priorities that keep you competitive in GTP.</p>
+
+      <p>Unlike fixed-power GT3 cars, the M Hybrid's power delivery fluctuates with the hybrid battery state of charge. That means your throttle response, mid-corner drive, and exit acceleration shift throughout a stint. Accepting that variability and building your braking points and corner entry speed around a baseline are the foundation of consistency in this car.</p>
+
+      <h2>Hybrid system and energy management</h2>
+
+      <p>The hybrid battery is your reserve tank. It charges under braking and provides power burst under acceleration when deployed. In iRacing, the battery has a charge target, a maximum state of charge, and a discharge strategy you can set in the setup menu. Most drivers run a charge target around 50-70% for road courses, leaving headroom to harvest energy into corners and deploy it on corner exit.</p>
+
+      <p>During a race, watch your battery percentage on the HUD. If it's maxed out, you're wasting regen potential under braking. If it's empty during a high-speed section, you lose the power advantage when you need it most. A common rhythm is to let the battery deplete slightly on the straights under hybrid deploy, then harvest it hard into braking zones so it's ready for the next corner exit acceleration.</p>
+
+      <ul>
+        <li>Set hybrid deploy mode to 'Automatic' for most road-course stints. Manual mode requires constant attention and is slower for most drivers unless you're in a high-pressure fuel-save scenario.</li>
+        <li>Check your battery charge target in setup before a race. ~50% is a safe middle ground; road-course endurance racing often favors a bit more charge reserve than sprint events.</li>
+        <li>On straights, deploy hybrid early if traffic is ahead or if you need to close a gap. On clear track, let the battery run down so you can harvest aggressively into the next braking zone.</li>
+        <li>In multi-class traffic, the battery surge gives you a brief acceleration advantage to pass backmarkers. Plan your overtake on a straight or early-exit corner where hybrid boost compounds your speed.</li>
+      </ul>
+
+      <div class="tip-box">
+        <span class="box-label">Hybrid equals extra fuel</span>
+        <p>Battery management is a form of fuel saving. Every time you deploy hybrid, you're using stored energy that didn't come from the fuel tank. In endurance races, a driver who manages the battery smoothly can run 1-2 laps longer on a fuel stint than one who deploys it carelessly.</p>
+      </div>
+
+      <h2>Baseline setup priorities</h2>
+
+      <p>The M Hybrid responds well to a balanced setup. It has good front aero grip, a relatively forgiving mid-corner feel, and powerful brakes that require discipline. Start with the baseline setup from iRacing and adjust in this order: brake balance, front wing, roll bars, and dampers.</p>
+
+      <p>Brake balance is the first tuning lever. The BMW likes a setup biased toward the rear compared to many GT3 cars. A common starting point is 57-59% front. You want to avoid locking the fronts under heavy trail braking into fast corners and avoid diving the car under hard emergency stops. If the car wants to understeer off brakes, add front brake balance. If it locks the rears under hard braking, reduce front brake percentage.</p>
+
+      <p>Front wing is the next adjustment. Lower wing reduces drag and adds speed on straights but makes the front looser in fast corners. Higher wing tightens the front and improves turn-in but kills speed on high-speed straights like Sebring's long sections or Road Atlanta's downhill approach to turn 10. For road-course GTP, most drivers settle on a low-to-medium front wing, around 3-5 clicks from minimum depending on the track.</p>
+
+      <ul>
+        <li>Anti-roll bars: start with front roll bar slightly stiffer than rear. This stops the car from rolling excessively into corners and gives you confidence in turn-in.</li>
+        <li>Dampers: set bump damping on both axles to a moderate value; GTP cars benefit from compliance. Too stiff and you'll feel every kerb and lose mid-corner grip. Rebound damping can be tuned to eliminate oscillation after big braking.</li>
+        <li>Brake pressure: default is fine for most drivers. Only reduce it if you find the brake pedal feels too grabby at threshold.</li>
+        <li>Differential: factory setup is close to optimal. Only adjust locking percentages if corner exit traction is poor relative to front-end speed.</li>
+      </ul>
+
+      <h2>Cornering technique and line selection</h2>
+
+      <p>The M Hybrid wants smooth steering inputs and an early throttle application. It doesn't reward abrupt mid-corner corrections. Most drivers find their pace by working on entry speed and a committed line rather than trying to add pace through mid-corner adjustment.</p>
+
+      <p>On technical sections like Imola's Rivazza or Road Atlanta's esses, the key is to trust the front grip. Many sim racers over-brake and then try to accelerate harder mid-corner to make up time. The M Hybrid rewards the opposite: brake a bit later, carry more speed, and roll less steering input. This requires confidence and a smooth throttle. Practice in a time trial with no traffic to build that feel.</p>
+
+      <p>In chicanes and alternating corners, use the hybrid boost strategically. On a left-right-left sequence, if you have full battery charge by the final left-hand corner, you can deploy hybrid on corner exit and gain an advantage. This is especially useful on straights following the section where you're trying to gap an opponent.</p>
+
+      <h2>Fuel and tire strategy in endurance</h2>
+
+      <p>The M Hybrid's fuel consumption is similar to other GTP prototypes. In a 2-hour race, most drivers run 3-4 fuel stints depending on fuel multiplier and track. The hybrid system doesn't consume fuel, so aggressive battery deployment early in a stint can reduce fuel consumption relative to a driver who relies on the engine alone.</p>
+
+      <p>Tire wear favors smooth driving. The hybrid helps here because it provides mid-corner and exit acceleration without you needing to ask the tires for extra grip through more throttle input. Tire temperatures climb quickly with GTP cars; monitor your tire temps in the first two laps and adjust your inputs if any tire is overheating early.</p>
+
+      <p>In a long stint, tire degradation is real. By lap 30 on a full tank, your grip has dropped noticeably. Account for this by adjusting your fuel window. If you're planning to pit on lap 40, don't be surprised if your pace drops 0.3-0.5 seconds per lap by lap 35 as tires wear and degrade. Fuel saving in the final laps requires not just less throttle application but accepting a slower pace overall.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Battery first, fuel second</span>
+        <p>Hybrid battery state matters less in fuel-save mode. If you're saving fuel, deploy the hybrid early when you still have energy to burn, and run the battery low by the end of the stint. This reduces dependency on engine power and extends your fuel capacity per lap.</p>
+      </div>
+
+      <h2>Overtaking and defending</h2>
+
+      <p>The M Hybrid's straight-line speed is competitive but not exceptional compared to other GTP cars. Overtakes usually come via corner advantage or setup synergy. If you have a battery advantage (opponent has just deployed theirs), a straight following a technical section is your window to pass.</p>
+
+      <p>Defend by keeping your exits tight and carrying speed into following straights. The BMW's brake performance is strong, so trail-braking deep into corners and turning in hard makes it difficult for a pursuer to find a clean passing angle. In multiclass traffic, this same technique helps you out-brake GT3 traffic into slower corners.</p>
+
+      <p>In close racing, consistency beats heroics. The M Hybrid doesn't reward aggressive inputs; a mistake costs more here than it does in a more forgiving car. If you're fighting for position, focus on executing the same line lap after lap. Your opponent will make the mistake first.</p>
+
+      <h2>Common setup mistakes</h2>
+
+      <ul>
+        <li>Over-braking early in a stint: The car is heavy and brakes take time to cool. Many drivers brake harder than necessary on lap 1 and overheat the fronts by lap 5. Modulate brake pressure through the first stint and only add aggression once brakes cool.</li>
+        <li>Deploying hybrid too late: If you're trying to catch someone on a straight, deploy the hybrid earlier, not later. Late deploy wastes the effect because your speed is already high and the hybrid can't add proportional benefit.</li>
+        <li>Running brake balance too far forward: A common instinct is to brake harder on the fronts to slow the car faster. The M Hybrid's brakes are already powerful. Too much front bias locks the wheels and scrubs speed, costing time mid-corner.</li>
+        <li>Ignoring tire temperature: GTP cars heat tires quickly. If your tire temps are above 105C after a few laps, your setup is too stiff or your driving inputs are too aggressive. Back off and re-baseline.</li>
+      </ul>
+
+      <p>The BMW M Hybrid V8 GTP rewards patience and smooth technique. You don't need a perfect setup or an aggressive driving style to be competitive. Focus on managing the hybrid strategically, understanding when your battery is charged and when to deploy it, and building consistent lap times through corner entry and exit discipline. As you log more hours, the car's nuances will click, and your pace will climb naturally. For more detailed technical guidance on other GTP cars and setups, check the <a href="best-sim-racing-wheels-iracing.html">best sim racing wheels for iRacing</a> and look into how different input devices affect car control feedback in prototypes.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=bmw-m-hybrid-v8-gtp-iracing-guide">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup — high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>What's the ideal hybrid battery charge target for road-course GTP racing?</h3>
+        <p>Most road-course drivers run a charge target between 50-70%. This leaves headroom to harvest energy under braking while ensuring you have enough stored power for mid-corner and exit acceleration. Sprint events can lean toward 60-70%, while endurance stints often favor 45-55% to maximize harvest potential over long fuel runs.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I stop the BMW from locking the brakes under trail braking?</h3>
+        <p>Reduce the front brake balance percentage (aim for 57-59% front). If that doesn't solve it, check that you're not over-braking early in your stint when brake temperatures are cold. Also make sure your pedal input isn't too abrupt; load the brakes smoothly and modulate pressure as you turn in.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I use automatic or manual hybrid deploy mode?</h3>
+        <p>Automatic is recommended for most drivers and stints. It manages the hybrid efficiently based on throttle input and battery state. Manual mode is only beneficial in specific fuel-save scenarios or if you're hunting for every last tenth in qualifying. For races, automatic saves mental energy and is faster for typical pace.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How much faster is a properly managed hybrid stint versus careless deployment?</h3>
+        <p>Smart battery management can save 0.3-0.7 seconds per lap in endurance racing by extending your fuel window and using the stored energy instead of engine power. Over a 2-hour race, this translates to 2-3 fewer pit stops, which is a massive advantage. The benefit is most obvious in fuel-multiplier events.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="cadillac-v-series-r-gtp-iracing-guide.html"><span>Car Guide</span>Cadillac V-Series.R GTP iRacing Guide: Setup and Technique</a>
+      <a class="related-card" href="gtp-hybrid-energy-deployment-iracing.html"><span>Car Guide</span>GTP hybrid energy deployment: when to use it in iRacing</a>
+      <a class="related-card" href="lotus-79-historic-formula-cars-iracing.html"><span>Car Guide</span>Lotus 79 and Historic Formula Cars on iRacing</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","monitor-1440p-120"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
