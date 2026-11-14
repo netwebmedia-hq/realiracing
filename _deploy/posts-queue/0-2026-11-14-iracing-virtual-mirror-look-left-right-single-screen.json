@@ -1,0 +1,151 @@
+{
+  "slug": "iracing-virtual-mirror-look-left-right-single-screen",
+  "tag": "Racecraft · Single Screen",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "iRacing Virtual Mirror and Look Left/Right: Seeing the Cars Beside You on One Screen",
+  "description": "How I combine the iRacing virtual mirror, look left/right buttons, the Relative and the spotter to avoid side contact on a single monitor.",
+  "published": "2026-11-14",
+  "dateLabel": "November 14, 2026",
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2",
+    "cockpit"
+  ],
+  "sections": [
+    {
+      "p": "The contact that taught me the most on a single monitor was not a dive-bomb or a late braker. It was a clean, boring run through a medium-speed left-hander, with a car I had passed a few corners earlier. I assumed he had dropped back. He had not. He was sitting exactly where my screen could not show him, and when I turned in he was already there. Nobody did anything outrageous. I simply had no picture of the space beside my car."
+    },
+    {
+      "p": "That is the real problem with one screen. A triple setup or a VR headset gives you side information for free, because your eyes do the work. On a single monitor you have to build that picture on purpose, from four sources: the virtual mirror, the look left and look right controls, the Relative box and the spotter. None of them is enough alone. Together they get close to what peripheral vision would give you, and this post is how I stack them in my own rig."
+    },
+    {
+      "h2": "Why a single screen hides the cars that matter"
+    },
+    {
+      "p": "On a single monitor, the area directly beside and slightly behind your car is outside the image. In a real car you would catch it with a glance at the door mirror or with your peripheral vision. On screen, the in-car mirrors may sit outside the visible frame, depending on your field of view and the car. If you are still tuning how much of the cockpit you see, my write-up on <a href=\"iracing-field-of-view-single-monitor-setup.html\">field of view for a single monitor</a> is the place to start, because the mirror strategy sits on top of that decision."
+    },
+    {
+      "p": "The unpopular truth is that no single tool fixes this. People look for the one setting that solves it, usually the mirror, and then get caught by the gap the mirror does not cover. The mirror is best at showing what is behind you. The car that is alongside is a different problem, and it needs a different tool."
+    },
+    {
+      "h2": "The virtual mirror: a wide strip where you can actually see it"
+    },
+    {
+      "p": "iRacing has a Virtual Mirror option under Options > Graphics. It draws a wide rear-view strip across the top of the screen, so you are not relying on a physical mirror that may be outside your view. On a single monitor this is the most useful passive tool you have. A quick flick of the eyes upward shows you what is closing from behind, and how many cars are in the pack."
+    },
+    {
+      "p": "There is a cost, and it is worth knowing before you switch it on. Rendering mirrors uses frame rate. The graphics options include a setting for the maximum number of cars drawn in mirrors, and you can also disable the in-car mirrors entirely. If you use the virtual mirror, it makes sense to turn off the in-car mirrors you no longer need, and to keep the mirror car count modest. I would rather give up a little mirror detail than a smooth image, because a stuttering frame rate hurts my car control far more than a slightly less detailed reflection of a car behind me."
+    },
+    {
+      "p": "What the virtual mirror will not do is show you the car whose front wheel is level with your door. Think of it as an early warning system. It tells you who is coming, so that you are not surprised later. It does not tell you whether the door is closed."
+    },
+    {
+      "h2": "Look left and look right: the glance you have to bind"
+    },
+    {
+      "p": "Look Left and Look Right are bindable controls under Options > Controls. They let a single-screen driver do what a triple-screen driver does naturally: turn the view sideways for a moment to check the space beside the car. I bound both to buttons I can reach without moving my hands from the wheel."
+    },
+    {
+      "p": "Binding them is the easy part. Using them well takes discipline, because the button is a tool for the straights and the quiet parts of a lap. If I press it on corner entry, I am looking at the side of my car while the car is still moving toward an apex I can no longer see. I use the glance when the car is settled: on a straight, in a long, gentle sweeper, or while the field is strung out behind a restart."
+    },
+    {
+      "p": "A glance is also a decision, not a habit. If I look right and see nothing, I have learned only that the space was empty at that moment. Cars close the gap quickly, so the information has a short life. That is why I treat the look buttons as a confirmation tool, used right before I commit to a move, not as a way of keeping a running picture."
+    },
+    {
+      "h2": "The Relative: your radar for who is near"
+    },
+    {
+      "p": "The Relative black box, shown with F3 by default, lists the cars ahead and behind with the gap in time. It is not a picture of the side of your car, but it is a very good predictor of when one will appear there. If the Relative shows a car close behind me and closing, I know that a pass attempt is coming, and I can think about which side it will be on before the car appears in the mirror strip. For a fuller explanation of the box itself, there is a separate guide on <a href=\"iracing-black-boxes-explained-relative-fuel-tires.html\">black boxes, including the Relative</a>."
+    },
+    {
+      "p": "The mistake I made early on was reading the Relative like a leaderboard. The useful way to read it is as a list of threats and opportunities. A very small gap behind me means I should expect a car beside me soon. A small gap ahead means I may be the one making a move, and I should check my own side before I do. It takes a quick, repeatable glance, and it is more reliable than trying to remember who was where three corners ago."
+    },
+    {
+      "h2": "The spotter: the call that closes the loop"
+    },
+    {
+      "p": "The built-in spotter calls the events that matter most to a single-screen driver: car left, car right, still there and clear. If you prefer a different voice or want more control, Crew Chief is a free third-party spotter app, and I have written about it in <a href=\"crew-chief-free-spotter-iracing.html\">why Crew Chief is worth trying</a>. There is also a guide on what to listen for in spotter calls at <a href=\"spotter-calls-what-to-listen-for.html\">spotter calls explained</a>."
+    },
+    {
+      "p": "The reason the spotter matters is that it covers exactly the gap the mirror leaves. The mirror shows what is behind; the spotter tells you what is alongside. Of its four calls, the one I rely on most is the quiet one: clear. It is the cue that the space is free again. The absence of a car in the mirror is not that cue. A car can sit in the blind zone beside you for a long time and never show up in the mirror strip at all."
+    },
+    {
+      "p": "Run the spotter at a volume you can hear over your engine and tire noise. A call you cannot hear is no help, and in a fixed rig with good audio it is easy to set the engine too loud and bury the voice."
+    },
+    {
+      "h2": "Putting the four together"
+    },
+    {
+      "p": "Here is the routine I actually follow. It is simple on purpose, because anything complicated falls apart in the middle of a pack."
+    },
+    {
+      "olist": [
+        "Before a straight, glance at the Relative to see who is close behind and closing.",
+        "On the straight, check the virtual mirror strip for the shape of the pack.",
+        "If I plan to move across, use Look Left or Look Right once, then commit or abort.",
+        "Listen for the spotter: car left or car right means someone is there, and still there means they have not gone.",
+        "Only treat the space as free after the spotter says clear, not because the mirror looks empty."
+      ]
+    },
+    {
+      "p": "Notice that no step asks me to stare at anything. Each source is read in a fraction of a second, and each one covers the weakness of another. The Relative predicts, the mirror shows the pack, the look button confirms the specific side and the spotter keeps the information current."
+    },
+    {
+      "h2": "Racecraft: hold your line when a car is alongside"
+    },
+    {
+      "p": "The tools are only half of avoiding side contact. The other half is what you do with the information. When a car is alongside, the best thing you can usually do is hold your line and be predictable. Do not squeeze toward the other car, do not apex early to close the door, and do not change your mind at the last moment. The driver beside you is making his own plan on the assumption that you will stay where you are."
+    },
+    {
+      "p": "This is where the spotter call becomes a rule, not a suggestion. If the spotter has called a car on my side and has not said clear, I stay on my line. If I am unsure, I give a little more room, not less. Giving up a small amount of space costs a position at worst, and often not even that. Making contact costs a lot more, for both of us, and it can end a race."
+    },
+    {
+      "tip": "Make clear the only trigger for moving back across. If you wait for the spotter's clear before changing your line, you remove most of the guesswork. A mirror that looks empty is only a hint, while the call is the confirmation.",
+      "tipLabel": "Rule of thumb"
+    },
+    {
+      "h2": "How my rig helps, and where it does not"
+    },
+    {
+      "p": "I drive on a MOZA R9, a direct drive base rated at roughly ~9 N.m, with CRP2 pedals, mounted in a fixed aluminium cockpit. The rig does not solve the visibility problem, but it does make the routine more consistent. Because the cockpit is rigid, my seating position and my eye position do not change from session to session, so the mirror strip and the screen look the same every time. That consistency matters, because the whole system depends on knowing where to look without thinking."
+    },
+    {
+      "p": "The wheel matters in a smaller way. With the base's force feedback clear and not noisy, I can feel the car loading up in a corner, which tells me when it is the wrong moment to take a hand off the rim or press a look button. A good feel through the wheel is a second, quieter warning system for when the car is busy. The pedals help in a similar way. Stable braking lets me reduce speed in a controlled way when the spotter calls a car beside me, so the reaction is a measured lift or a steady brake instead of a panic stab."
+    },
+    {
+      "h2": "Mistakes I see, and made myself"
+    },
+    {
+      "list": [
+        "Trusting the mirror alone. It shows the car behind you, not the car beside you.",
+        "Turning the mirror car count up too high and losing frame rate, then driving worse because of it.",
+        "Pressing the look button on corner entry, when the car needs your eyes forward.",
+        "Treating the Relative as a leaderboard instead of a prediction of who will be beside you next.",
+        "Setting the spotter too quiet, so the calls arrive but are not heard.",
+        "Moving back across the moment the mirror looks empty, without waiting for clear."
+      ]
+    },
+    {
+      "p": "None of this will make a single monitor as good as three screens or a headset at showing the sides of the car. I would not pretend otherwise. What it can do is give you a dependable habit that makes the unseen space beside you something you manage, not something you discover when the cars touch. Start with the spotter volume and the look button bindings, add the virtual mirror, then let the Relative teach you when to expect company. Over a few sessions it becomes automatic."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Where do I turn on the virtual mirror in iRacing?",
+      "a": "It is in Options > Graphics. When enabled it draws a wide rear-view strip at the top of the screen, which is helpful on a single monitor where the real mirrors may fall outside the view."
+    },
+    {
+      "q": "Does the virtual mirror reduce my frame rate?",
+      "a": "Rendering mirrors costs frame rate. The graphics options include a setting for the maximum number of cars shown in mirrors and an option to disable in-car mirrors, so you can reduce the load if your frame rate suffers."
+    },
+    {
+      "q": "How do I set up Look Left and Look Right?",
+      "a": "Both are bindable in Options > Controls. Assign them to buttons you can reach without taking your hands off the wheel, then use them on straights or settled sections, not during corner entry."
+    },
+    {
+      "q": "Is the spotter or the mirror more important for avoiding side contact?",
+      "a": "For the space directly beside you, the spotter. The mirror shows what is behind, while the spotter calls car left, car right, still there and clear. Treat the clear call as your cue to move back across, not the mirror alone."
+    }
+  ]
+}
