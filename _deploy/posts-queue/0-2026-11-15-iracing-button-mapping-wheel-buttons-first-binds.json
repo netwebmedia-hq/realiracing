@@ -1,0 +1,179 @@
+{
+  "slug": "iracing-button-mapping-wheel-buttons-first-binds",
+  "tag": "Setup · Controls",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "iRacing Button Mapping: What I Bind to My Wheel Buttons First",
+  "description": "A rim only has a handful of buttons. Here is which iRacing controls I put under my thumbs first, and which ones I leave on the keyboard.",
+  "published": "2026-11-15",
+  "dateLabel": "November 15, 2026",
+  "gearKeys": [
+    "moza-r9",
+    "moza-cs-v2",
+    "moza-crp2"
+  ],
+  "sections": [
+    {
+      "p": "The first time I got caught out by my own button layout, I was exiting the final corner of a pit entry, one hand still on the rim, the other reaching for a keyboard that sits well off to the side of my cockpit. The speed limiter was on the keyboard. The pit lane line was coming up fast. I made it, barely, and the next evening I rebuilt my bindings from scratch."
+    },
+    {
+      "p": "If you drive on a rim with a limited number of buttons, you are not short of options so much as short of space. iRacing lets you bind a long list of controls, and most guides tell you to bind everything. I disagree. Every button you assign is a button you have to remember under pressure, and a wheel full of half-remembered functions is worse than a clean one. This is how I decided what earns a place under my thumbs on my MOZA R9 base (~9 N.m) with the CS V2 rim, and what stays on the keyboard."
+    },
+    {
+      "h2": "The rule I use: hands on the wheel, eyes on the road"
+    },
+    {
+      "p": "My test is simple. If I need a control while the car is moving and I cannot afford to look down, it goes on the wheel. If I touch it once per session, usually while stationary or on a safe stretch, it stays on the keyboard or a button box. That is the whole system. Everything else in this post is applying that test honestly."
+    },
+    {
+      "p": "The honest part matters. It is easy to bind something because it feels important, such as the wipers or the starter, and then discover that I use it twice a night. Frequency and consequence are the two things I weigh: how often I reach for the control, and how bad it is if I fumble it."
+    },
+    {
+      "p": "A note on setup before I get into it. Everything is assigned in iRacing under Options, then Controls. In-car adjustments and the black boxes each have their own bindable control, so you can wire exactly what you want. Which in-car adjustments exist at all depends on the car, so a bind that is vital in one car can do nothing in another. Check the car you actually race."
+    },
+    {
+      "h2": "Tier one: bind these first"
+    },
+    {
+      "p": "These are the controls I would put on the wheel before anything else. If you only have a few spare buttons, stop after this section."
+    },
+    {
+      "h3": "Pit speed limiter"
+    },
+    {
+      "p": "This is the one that started my rebuild. The pit speed limiter is a high-consequence, time-pressured control: you need it at a precise moment, and getting it wrong is a penalty and a lost race. It belongs on a button I can hit without thinking. If you want the reasoning behind the penalty side of things, I covered it in <a href=\"iracing-pit-road-etiquette-avoid-speeding-penalties.html\">the pit road etiquette post</a>."
+    },
+    {
+      "h3": "Brake bias up and down"
+    },
+    {
+      "p": "On cars that offer it, brake bias is something I adjust mid-stint as fuel burns off and conditions change. Two buttons, one for each direction, so I never have to hunt. If you have a rotary or a pair of buttons on your rim, this is where they earn their keep. I wrote a longer explainer on what the adjustment actually does in <a href=\"iracing-brake-bias-explained.html\">the brake bias post</a>; here I only care that it is reachable without looking."
+    },
+    {
+      "h3": "Push-to-talk"
+    },
+    {
+      "p": "If you use voice chat in leagues or team events, push-to-talk needs to be somewhere your thumb finds by feel. Fumbling for a keyboard key while a teammate is asking a question is a small embarrassment that repeats all night. If you never use voice chat, skip it and give the button to something else."
+    },
+    {
+      "h3": "Look left and look right"
+    },
+    {
+      "p": "I run a single screen, so I do not get peripheral vision for free. Look left and look right are the controls that replace the head movement I would make in a real car, and I use them for side-by-side battles and for checking a car I know is there. They are held-style actions in practice, so they deserve a button I can press and release cleanly."
+    },
+    {
+      "h2": "Tier two: bind these if you have room"
+    },
+    {
+      "p": "These are useful and I do bind them, but they are the first to lose their place if the rim is crowded."
+    },
+    {
+      "h3": "Black box navigation"
+    },
+    {
+      "p": "The black boxes are where I check relative gaps, fuel and tire information, and the controls to move through them are next, previous, select, increment and decrement. I will be straight about this: wiring all five to the wheel is a lot of buttons. If you rely on black boxes constantly, bind next and previous at minimum, and decide whether the others can live on the keyboard. If you want a refresher on what each one shows, there is a separate post on <a href=\"iracing-black-boxes-explained-relative-fuel-tires.html\">the black boxes</a>."
+    },
+    {
+      "h3": "Traction control and ABS adjust"
+    },
+    {
+      "p": "On cars that have them, these are mid-race adjustments, not constant ones. I bind them when I am racing a car where I tweak them often, and I unbind them when I move to something that does not offer the option. Because availability depends on the car, this is a seasonal bind, not a permanent one."
+    },
+    {
+      "h3": "Tear off visor"
+    },
+    {
+      "p": "This cleans the screen, and when it matters it matters right now. Spray in the face of a following car is not the moment to reach for the keyboard. I treat it as high-consequence and low-frequency, which puts it in tier two: worth a button if you race in the wet or in traffic often, optional otherwise."
+    },
+    {
+      "h3": "FFB strength adjust"
+    },
+    {
+      "p": "Force feedback strength is something I adjust while driving more than I expected, especially after changing cars or tracks. Having it on the wheel means I can nudge it during a quiet straight rather than pausing to dig through settings. If your base has its own software for tuning, you may prefer to set it once there and leave it, which is a perfectly good choice."
+    },
+    {
+      "h2": "What stays on the keyboard"
+    },
+    {
+      "p": "Some controls I deliberately keep off the rim."
+    },
+    {
+      "list": [
+        "Starter and ignition: I use these at the start of a session or after a stall, usually stationary. A keyboard key is fine.",
+        "Wiper toggle: useful in rain, but I flip it once and leave it. It does not need a permanent spot.",
+        "Enter / Exit / Tow Car (reset): I keep this one on the keyboard on purpose. It is the control I least want to hit by accident in the middle of a race, and a little distance from my thumbs is a feature.",
+        "Rarely used black box controls: increment and decrement, if you have already covered next and previous elsewhere."
+      ]
+    },
+    {
+      "p": "The reset deserves one more sentence. People often put it on the wheel for convenience. I understand why, but a stray thumb on a reset button is a worse outcome than a few seconds of reaching during a genuine tow. Your habits may differ, so think about how you actually press buttons under stress."
+    },
+    {
+      "h2": "A practical order for building your layout"
+    },
+    {
+      "olist": [
+        "List every control you use in a normal session, from green flag to chequered flag, and write them down.",
+        "Mark each one as high consequence, high frequency, or neither. Be honest.",
+        "Bind the pit speed limiter and brake bias first, then push-to-talk if you use voice chat, then look left and right.",
+        "Fill remaining buttons with black box next and previous, then whichever of traction control, ABS, visor and FFB strength you touch most.",
+        "Leave the rest on the keyboard or a button box, and revisit after a week of actual racing."
+      ]
+    },
+    {
+      "p": "That last step is the one people skip. My first layout looked sensible on paper and was wrong in two places by the end of the first week. I had bound something I never touched and left something off that I reached for every race."
+    },
+    {
+      "tip": "After you bind something, drive a full session without looking at the rim. If you catch yourself glancing down for a button, either move it or take it off the wheel. A bind you cannot find by feel is not saving you anything.",
+      "tipLabel": "Test by feel"
+    },
+    {
+      "h2": "Hardware context, briefly"
+    },
+    {
+      "p": "My rig is a MOZA R9 base (~9 N.m) with the CS V2 rim and CRP2 pedals, mounted in a fixed aluminium cockpit with a single screen. The fixed cockpit matters here because my keyboard sits in one place and does not move with me. That is exactly why I am strict about what lives on the wheel: anything I cannot reach with a thumb is a real stretch away. If your keyboard is on a movable tray or you use a button box within easy reach, your line between wheel and keyboard can sit further toward the keyboard than mine."
+    },
+    {
+      "p": "I would also say this plainly: the number of buttons on a rim is a limit worth respecting, not a problem to solve by buying more hardware right away. A tight, well-chosen layout beats a crowded one. If you later find you are constantly fighting for space, a button box is a reasonable next step, but I would live with a disciplined rim for a few weeks first."
+    },
+    {
+      "h2": "Mistakes I see (and made)"
+    },
+    {
+      "list": [
+        "Binding everything because the option exists, then forgetting half of it.",
+        "Putting reset next to a control I press constantly.",
+        "Binding car-specific adjustments permanently, then wondering why nothing happens in a different car.",
+        "Not testing by feel, and relying on glancing at the rim.",
+        "Skipping the pit speed limiter because it only matters once per stop. Once per stop is exactly when it matters most."
+      ]
+    },
+    {
+      "p": "None of this is complicated, but it does take a little honesty about how you really drive. Start with the few controls that cost you something when you miss them, and let the rest earn their place."
+    },
+    {
+      "h2": "Frequently asked questions"
+    },
+    {
+      "p": "The four questions below come up most often when people ask me about this."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What should I bind to my wheel buttons first in iRacing?",
+      "a": "I start with the pit speed limiter and brake bias up and down, since both are time-pressured or used mid-stint. Then push-to-talk if you use voice chat, and look left and right if you race on a single screen. Everything else is a lower priority."
+    },
+    {
+      "q": "Where do I assign controls in iRacing?",
+      "a": "In the iRacing UI under Options, then Controls. In-car adjustments and the black boxes each have their own bindable control, so you can map them individually. Which in-car adjustments are available depends on the car you are driving."
+    },
+    {
+      "q": "Should I put the reset (Enter / Exit / Tow Car) on the wheel?",
+      "a": "I keep it on the keyboard. It is a control I do not want to hit by accident mid-race, and a little reach is a useful safeguard. Some drivers do bind it to the rim, so decide based on how you press buttons under stress."
+    },
+    {
+      "q": "Do I need a button box if my rim has limited buttons?",
+      "a": "Not necessarily. I would first build a disciplined layout with the controls that matter most and keep the rarely used ones on the keyboard. If after a few weeks you are still running out of buttons, a button box becomes a reasonable addition."
+    }
+  ]
+}
