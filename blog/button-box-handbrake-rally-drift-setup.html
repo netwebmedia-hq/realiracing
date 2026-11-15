@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Button Box and Handbrake for Rally and Drift in iRacing</title>
+  <meta name="description" content="Add tactile controls for handbrake, shifter, and aux functions to master rally and drift events with the right peripheral setup." />
+  <link rel="canonical" href="https://realiracing.com/blog/button-box-handbrake-rally-drift-setup.html" />
+  <meta property="og:title" content="Button Box and Handbrake for Rally and Drift in iRacing" />
+  <meta property="og:description" content="Add tactile controls for handbrake, shifter, and aux functions to master rally and drift events with the right peripheral setup." />
+  <meta property="og:url" content="https://realiracing.com/blog/button-box-handbrake-rally-drift-setup.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/track-corner.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="715" />
+  <meta property="og:image:alt" content="A race car through a corner" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/track-corner.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261103" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Button Box and Handbrake for Rally and Drift in iRacing",
+    "description": "Add tactile controls for handbrake, shifter, and aux functions to master rally and drift events with the right peripheral setup.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/button-box-handbrake-rally-drift-setup.html",
+    "image": "https://realiracing.com/assets/photos/track-corner.jpg",
+    "datePublished": "2026-11-02",
+    "dateModified": "2026-11-02"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Button Box and Handbrake for Rally and Drift in iRacing","item":"https://realiracing.com/blog/button-box-handbrake-rally-drift-setup.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/button-box-handbrake-rally-drift-setup.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Sim Racing Cockpit / Wheel Stand","description":"a rigid mount matters more than the brand — flex kills FFB detail","url":"https://realiracing.com/blog/button-box-handbrake-rally-drift-setup.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need a button box and handbrake to be competitive in rally and drift iRacing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. A fast sim racer can win rallies and drifts using only a wheel, keyboard, and pedals. However, a handbrake lever gives you smoother control and faster input times, which translates to more consistent corner entries and fewer mistakes. A button box is optional; it saves time reaching for keys but is not required to be fast." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a sequential shifter as a handbrake?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. A shifter sends gear selection commands to iRacing, not handbrake input. Some shifters include a paddle or button for aux functions, but they do not provide the analog handbrake axis that iRacing needs. Use a dedicated handbrake lever instead." }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my USB hub keeps dropping the handbrake or button box connection?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Upgrade to a powered USB 3.0 hub (not a cheap 2.0 unpowered hub). Cheap hubs do not supply enough power to multiple devices and cause dropout. Alternatively, plug the handbrake directly into a rear USB port on your PC and the button box into a separate hub. Test one device at a time to isolate which is causing the issue." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I set up the handbrake lever input curve to feel natural?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In iRacing's Controller settings, find the handbrake axis and open the input curve editor. Set deadzone to 2 to 5 percent so small lever movements are ignored. Then adjust the curve itself. A slight S-curve (flat at low pressure, steep at high pressure) gives you fine throttle modulation at low brake percentages and full rotation at high pressure. Test in a drift practice session and tweak until it feels responsive without being twitchy." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Hardware · Input Devices</p>
+    <h1>Button Box and Handbrake for Rally and Drift in iRacing</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated November 2, 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/track-corner.jpg" width="1000" height="715" alt="A race car through a corner" srcset="/assets/photos/track-corner-sm.jpg 560w, /assets/photos/track-corner.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Photo: <a href="https://www.flickr.com/photos/36021014@N06" target="_blank" rel="noopener nofollow">Michael Elleray</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener nofollow">CC BY 2.0</a> · Source: <a href="https://www.flickr.com/photos/36021014@N06/8093250997" target="_blank" rel="noopener nofollow">Flickr</a></figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">Rally and drift demand control inputs that a steering wheel alone cannot deliver cleanly. A handbrake lever and a programmable button box let you manage the parking brake, select gear modes, adjust camera views, and toggle clutch cuts without lifting off the wheel or losing focus on the apex. These are not luxury upgrades for rally and drift. They are function.</p>
+
+      <p>Whether you are learning Rallycross at Lalibenné or chasing records in drift lobbies, the difference between a smooth handbrake pull and a panic stab at the keyboard is the difference between carrying speed and losing it. This guide covers what a handbrake and button box do, how they integrate into your rig, and which configurations work best for both rally and drift disciplines.</p>
+
+      <h2>Why a handbrake and button box matter for rally and drift</h2>
+
+      <p>In road racing and oval, the throttle, brake, and steering wheel do the heavy lifting. Rally and drift flip that equation. Both disciplines ask you to rotate the car mid-corner using the parking brake, manage weight transfer with precision throttle control, and chain together inputs so fast that reaching for the keyboard breaks your flow.</p>
+
+      <p>A handbrake lever sits within arm reach. You squeeze or pull it while steering, throttle, and brake remain independent. A button box clips to the wheel or mounts on the cockpit so programmable buttons are always under your fingers. Together, they let your hands stay on the inputs that matter and your eyes stay on the track.</p>
+
+      <ul>
+        <li>Handbrake lever: transfers parking brake input from keyboard to analog trigger or pull, freeing you from alt-key combinations during cornering</li>
+        <li>Button box: assigns aux functions (clutch, camera cycle, resets, fuel mix) to tactile buttons within reach of your hand on the wheel</li>
+        <li>Faster reflexes: no delay hunting for a keyboard key when the car is rotating</li>
+        <li>Haptic feedback: mechanical buttons and lever resistance give you feel for input pressure, not just binary on/off</li>
+      </ul>
+
+      <div class="tip-box">
+        <span class="box-label">Start simple</span>
+        <p>You do not need both at once to start. A handbrake lever alone will improve rally immediately. Add a button box once you have settled on your most-used aux functions.</p>
+      </div>
+
+      <h2>Handbrake lever types and integration</h2>
+
+      <p>Handbrake peripherals range from simple USB levers to full hydraulic or cable simulators. In iRacing, what matters is that the device sends an analog axis value (0 to 100%) as the input, not just on/off.</p>
+
+      <h3>Common handbrake designs</h3>
+
+      <ul>
+        <li>USB lever (e.g., Fanatec Handbrake Lever, Logitech Driving Force Shifter, DIY Arduino builds): budget-friendly, plug-and-play, outputs analog axis directly to iRacing. Most affordable entry point at ~$40 to ~$120.</li>
+        <li>Hydraulic upgrade (e.g., simXperience handbrake, custom rig builds): high resistance, realistic modulation, much higher cost and mount complexity. Not necessary for competitive rally.</li>
+        <li>Cable or spring-return lever: intermediate cost and feel. Requires mounting to a rig frame or wheel stand.</li>
+        <li>Shifter combo unit: some shifters bundle a handbrake pull. Saves space but limits handbrake geometry and feel.</li>
+      </ul>
+
+      <p>For most sim racers, a basic USB lever costing ~$60 to ~$100 is the practical choice. It plugs directly into a PC USB hub and appears as a joystick axis in iRacing's controller settings. You bind it to the handbrake action and adjust sensitivity via the input curve if the raw output feels too sharp or too soft.</p>
+
+      <h3>Mounting and cable management</h3>
+
+      <p>A handbrake mounts either to your rig frame, your cockpit, or directly to the wheel. Wheel-mounted levers are compact and travel with the wheel, so steering and brake geometry stay constant even if you swap wheels. Rig-mounted levers sit fixed and can feel more realistic but take up more space and require cable routing.</p>
+
+      <p>If you use a wheel stand or simple cockpit frame, consider a desk-clamp lever or a DIY bracket. Keep the USB cable routed away from moving pedals and the shifter to avoid snags. Many builders use cable ties or flexible conduit to manage the run from the handbrake to a hub mounted near the PC.</p>
+
+      <h2>Button box layout and function for rally and drift</h2>
+
+      <p>A button box is any keyboard or input device that sends discrete button commands. Commercial button boxes (e.g., Fanatec Button Box, DIY Arduino or Elgato Stream Deck variants) range from 4 to 32 buttons in different shapes. For rally and drift, you only need 6 to 12 buttons for the most common functions.</p>
+
+      <h3>Essential button assignments for rally</h3>
+
+      <ul>
+        <li>Clutch: critical for launch and mid-race downshifts in manual-clutch rally cars. A toggle or hold button is faster than a pedal.</li>
+        <li>Handbrake (alternate): if your handbrake lever is unavailable, a button or trigger on the box can backup the lever.</li>
+        <li>Lights (toggle): some rally stages run at dusk or night. Quick-cycle headlights with one button.</li>
+        <li>Camera cycle: flipping between cockpit, bumper, and chase camera helps you judge distance in tight hairpins.</li>
+        <li>Rewind (single-player practice): test different lines without exiting the session.</li>
+      </ul>
+
+      <h3>Essential button assignments for drift</h3>
+
+      <ul>
+        <li>Clutch cut: used by some drift setups to keep engine revs high during rotation. Less critical than in rally but useful for chaining drifts.</li>
+        <li>Handbrake (backup): redundancy if your lever fails mid-session.</li>
+        <li>Fuel mix (cycle): drift lobbies often include fuel consumption. Adjusting mix on the fly saves pit stops.</li>
+        <li>Differential mode (if supported): some drift cars allow on-the-fly diff tweaks. A button is faster than a menu.</li>
+        <li>Camera cycle: inside line camera helps you judge entry and track your entry point consistency.</li>
+      </ul>
+
+      <p>Do not assign a button to every possible function. Stick to the five to eight inputs you actually use during a race. Muscle memory beats flexibility. If you add buttons later, you will already know where your hand goes without looking.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Layer by moment</span>
+        <p>Assign buttons you use during the lap (handbrake, clutch, camera) on the box itself. Reserve the keyboard for pit-stop or setup functions you only touch in the pits.</p>
+      </div>
+
+      <h2>Button box and handbrake in practice rally and drift workflows</h2>
+
+      <h3>Rally: from grid to finish</h3>
+
+      <p>You approach the first hairpin in a dirt rally. The handbrake is within one finger of your right hand, held in a ready position. As you brake and downshift into the corner, a single tap on the lever rotates the rear and bleeds off speed without asking for a keyboard press. Your left hand stays on the wheel. Your eyes stay focused. If you need to cycle cameras to judge the exit better, one thumb finds the camera button on the wheel without moving your palms.</p>
+
+      <p>In a longer endurance rally stage, fuel mix and diff settings matter. A button box mounted on your cockpit frame or standing rig lets you reach over without letting go of the wheel to adjust mix during a slower section. A dedicated clutch button eliminates the hunt for the keyboard clutch key mid-downshift.</p>
+
+      <h3>Drift: chaining entries and holds</h3>
+
+      <p>Drift sessions are shorter but faster-paced. A handbrake lever lets you tap into a drift entry or hold the rotation during a long sweeper without moving your hand. The pressure you apply on the lever translates directly to brake pressure, giving you analog control over rotation intensity. A button box nearby handles less critical adjustments, so you can keep full attention on the throttle and wheel input.</p>
+
+      <p>In a team drift event, camera angles help you judge your entry consistency across runs. A single button to cycle views lets you stay ready without breaking focus.</p>
+
+      <h2>Wiring and configuration in iRacing</h2>
+
+      <p>Both handbrake levers and button boxes appear as USB HID devices when plugged into your PC. iRacing detects them in the controller settings without drivers for most commercial and DIY units.</p>
+
+      <ol>
+        <li>Plug the handbrake lever into an available USB 2.0 port on your PC or a powered USB hub.</li>
+        <li>Open iRacing. Go to Options > Controller > Calibrate. The lever should appear as 'Handbrake' or 'Analog Axis X' in the device list.</li>
+        <li>Assign it to the Handbrake action. Adjust the input curve if the raw output feels too sensitive (raise deadzone or flatten the curve).</li>
+        <li>For button boxes, assign each button to its corresponding action (Clutch, Camera Cycle, Lights, etc.) in the same Controller menu.</li>
+        <li>Test in a practice session. Make sure the handbrake responds smoothly and buttons fire immediately without lag.</li>
+      </ol>
+
+      <p>If a device does not appear, check that the USB cable is seated fully, the device is powered (if external power is required), and Windows Device Manager lists the device. Some budget USB hubs do not provide enough power. Plug directly into the PC or upgrade to a powered hub.</p>
+
+      <h2>Common mistakes and setup tips</h2>
+
+      <ul>
+        <li>Over-binding: do not map every key on your button box. Unused buttons create confusion and slow down muscle memory. Start with five to eight core functions.</li>
+        <li>Ignoring the input curve: out of the box, a handbrake lever might feel twitchy or unresponsive. Tweak the deadzone and curve in iRacing's controller settings. A slight S-curve gives you fine control at low pressures and full rotation at high pressure.</li>
+        <li>Mounting too far away: a button box or handbrake lever out of arm reach turns it into decoration. Mount everything within 12 to 18 inches of your dominant hand.</li>
+        <li>Skipping the practice: spend 10 to 15 minutes in a test session learning the lever pressure needed for different corner speeds. It is not like road racing. Handbrake inputs are deliberate and modulated, not binary.</li>
+        <li>USB hub power starvation: a cheap unpowered hub can cause dropout or lag. If buttons feel sluggish or the handbrake jitters, upgrade to a powered USB 3.0 hub or plug directly into the PC.</li>
+      </ul>
+
+      <h2>Budget breakdown and buying strategy</h2>
+
+      <p>A basic handbrake lever costs ~$60 to ~$120. A commercial button box (e.g., Fanatec or Logitech) runs ~$80 to ~$200. Together, you are looking at a realistic investment of ~$150 to ~$300 to add both to an existing rig.</p>
+
+      <p>If budget is tight, start with a handbrake. It has a higher impact on rally lap time than a button box. Once you have settled your button layout and confirmed you use more than three or four aux functions consistently, add the box.</p>
+
+      <p>Many sim racers build button boxes from Arduino and standard arcade buttons for ~$25 to ~$50, saving money and gaining full customization. If you are comfortable with soldering and coding, a DIY route is viable. If not, a commercial option costs more but requires no assembly.</p>
+
+      <p>Check the return policy before buying. Handbrakes and button boxes are niche enough that not every vendor stocks them, and feel is personal. Some rig builders also sell used or refurbished units at a discount if you are willing to test and adjust.</p>
+
+      <h2>When to upgrade and what to skip</h2>
+
+      <p>A handbrake is worth buying the moment you start rally racing in iRacing. It is a single-purpose tool that solves one problem elegantly. A button box is more optional. If you only race road courses and oval, skip it entirely. If you drift or rally regularly, invest after you confirm your most-used aux bindings.</p>
+
+      <p>Hydraulic or cable simulators add expense and complexity without improving your lap time in iRacing. The game does not reward realism of input pressure. It rewards precision of input timing. A basic USB lever delivers that.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=button-box-handbrake-rally-drift-setup">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&amp;tag=realiracing-20" data-aff="cockpit" target="_blank" rel="sponsored noopener">Sim Racing Cockpit / Wheel Stand</a></th><td>a rigid mount matters more than the brand — flex kills FFB detail</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>Do I need a button box and handbrake to be competitive in rally and drift iRacing?</h3>
+        <p>No. A fast sim racer can win rallies and drifts using only a wheel, keyboard, and pedals. However, a handbrake lever gives you smoother control and faster input times, which translates to more consistent corner entries and fewer mistakes. A button box is optional; it saves time reaching for keys but is not required to be fast.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I use a sequential shifter as a handbrake?</h3>
+        <p>No. A shifter sends gear selection commands to iRacing, not handbrake input. Some shifters include a paddle or button for aux functions, but they do not provide the analog handbrake axis that iRacing needs. Use a dedicated handbrake lever instead.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What if my USB hub keeps dropping the handbrake or button box connection?</h3>
+        <p>Upgrade to a powered USB 3.0 hub (not a cheap 2.0 unpowered hub). Cheap hubs do not supply enough power to multiple devices and cause dropout. Alternatively, plug the handbrake directly into a rear USB port on your PC and the button box into a separate hub. Test one device at a time to isolate which is causing the issue.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I set up the handbrake lever input curve to feel natural?</h3>
+        <p>In iRacing's Controller settings, find the handbrake axis and open the input curve editor. Set deadzone to 2 to 5 percent so small lever movements are ignored. Then adjust the curve itself. A slight S-curve (flat at low pressure, steep at high pressure) gives you fine throttle modulation at low brake percentages and full rotation at high pressure. Test in a drift practice session and tweak until it feels responsive without being twitchy.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="direct-drive-wheelbase-maintenance-firmware.html"><span>Hardware</span>Direct Drive Wheelbase Maintenance and Firmware Updates Guide</a>
+      <a class="related-card" href="sim-racing-chair-buying-guide.html"><span>Hardware</span>Sim Racing Chair Buying Guide: What Actually Matters From Someone Who Sits in One for Hours</a>
+      <a class="related-card" href="bass-shakers-tactile-feedback-worth-it.html"><span>Hardware</span>Bass Shakers and Tactile Feedback: Real Benefit or Expensive Gimmick?</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","cockpit"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>

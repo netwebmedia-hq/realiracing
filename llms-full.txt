@@ -45,9 +45,9 @@
 - [iRacing Stream Clips: GT Cars, Stock Cars and Rain](https://realiracing.com/blog/iracing-stream-clips-gt-cars-stock-cars-rain.html): A gallery of short iRacing clips from my streams: GT3 and GT4 packs, stock cars on a banked oval, rain laps and the Red Bull Ring.
 - [Redondo Beach Car Show, April 2018: Hot Rods and Corvettes](https://realiracing.com/blog/redondo-beach-car-show-april-2018.html): Phone clips from a car show by the harbor in Redondo Beach, California, April 2018. A rat rod, a Viper, Corvettes, a Chevelle and a sunset.
 - [iRacing lag: fix Wi-Fi, warping and connection drops](https://realiracing.com/blog/iracing-lag-wifi-ethernet-connection-fix.html): Cars warping, sudden teleports or a dropped session in iRacing? How I separate connection problems from PC stutter, and what to fix first on a home network.
+- [Button Box and Handbrake for Rally and Drift in iRacing](https://realiracing.com/blog/button-box-handbrake-rally-drift-setup.html): Add tactile controls for handbrake, shifter, and aux functions to master rally and drift events with the right peripheral setup.
+- [Sim Racing Cockpit Frame Buying Guide: What to Check Before You Buy](https://realiracing.com/blog/sim-racing-cockpit-frame-buying-guide-what-to-check.html): Learn what to inspect before buying a sim racing cockpit frame: build quality, compatibility, adjustment range, and real trade-offs that matter to your setup.
 - [Braking Markers and Reference Points in iRacing](https://realiracing.com/blog/braking-markers-reference-points-iracing.html): How I pick fixed braking markers and corner reference points in iRacing, move them in small steps, and keep them honest as fuel and tyres change.
-- [iRacing Safety Rating: How to Climb Out of Rookie](https://realiracing.com/blog/iracing-safety-rating-license-climb-from-rookie.html): How iRacing's Safety Rating and license classes work, what costs you incident points and the habits that get a new driver out of Rookie without wrecking.
-- [Shift Lights and Dash Displays for iRacing: Do You Need One?](https://realiracing.com/blog/shift-lights-and-dash-displays-iracing-do-you-need-one.html): What a shift light bar or dash display actually adds in iRacing, what the sim already shows you for free, and the order I would buy in from a MOZA R9 and CRP2 rig.
 
 ## More
 - Sitemap: https://realiracing.com/sitemap.xml
