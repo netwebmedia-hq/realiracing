@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iRacing Min Force: Fixing a Dead Centre on Direct Drive</title>
+  <meta name="description" content="What iRacing's Min Force does, why direct-drive owners leave it at zero, when it helps weaker bases, and a one-change test you can run in an evening." />
+  <link rel="canonical" href="https://realiracing.com/blog/iracing-min-force-dead-centre-direct-drive.html" />
+  <meta property="og:title" content="iRacing Min Force: Fixing a Dead Centre on Direct Drive" />
+  <meta property="og:description" content="What iRacing's Min Force does, why direct-drive owners leave it at zero, when it helps weaker bases, and a one-change test you can run in an evening." />
+  <meta property="og:url" content="https://realiracing.com/blog/iracing-min-force-dead-centre-direct-drive.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/wheel-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: concentric arcs turning about a centre" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/wheel-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261103" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "iRacing Min Force: Fixing a Dead Centre on Direct Drive",
+    "description": "What iRacing's Min Force does, why direct-drive owners leave it at zero, when it helps weaker bases, and a one-change test you can run in an evening.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/iracing-min-force-dead-centre-direct-drive.html",
+    "image": "https://realiracing.com/assets/photos/wheel-cover.jpg",
+    "datePublished": "2026-11-16",
+    "dateModified": "2026-11-16"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"iRacing Min Force: Fixing a Dead Centre on Direct Drive","item":"https://realiracing.com/blog/iracing-min-force-dead-centre-direct-drive.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/iracing-min-force-dead-centre-direct-drive.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/iracing-min-force-dead-centre-direct-drive.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Sim Racing Cockpit / Wheel Stand","description":"a rigid mount matters more than the brand — flex kills FFB detail","url":"https://realiracing.com/blog/iracing-min-force-dead-centre-direct-drive.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Should I set Min Force to zero on a direct-drive wheel?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For most direct-drive owners, yes. A direct-drive base has little mechanical deadband, so a force floor tends to add a notchy step through centre or make the wheel hunt, rather than fill a gap. Start at zero, set overall strength with iRacing's auto and max force tools, and only change Min Force if you can clearly show it helps." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my wheel feel dead around centre in iRacing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Often because the car really is light there. Aligning torque at small slip angles is low in many cars, so there is not much force to report until the tyres start working. Check that overall strength is set properly and that you are not clipping before assuming something is wrong with the base." }
+    },
+    {
+      "@type": "Question",
+      "name": "When is Min Force useful?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Mainly on weaker belt or gear-driven bases and older entry-level wheels, where friction and slack swallow small force commands. A small increase can make low forces readable. Raise it in small steps and stop as soon as the wheel starts to feel notchy or ticks around centre." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I test a Min Force change properly?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Use one car and one track, record your Pit House values for road sensitivity, damping, friction and inertia, and drive a few laps at zero. Then change only Min Force by a small step and drive a few more laps, noting notchiness or oscillation with relaxed hands. Return to the previous value if it feels worse, and only then move on to another setting." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Force Feedback · Min Force</p>
+    <h1>iRacing Min Force: Fixing a Dead Centre on Direct Drive</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated November 16, 2026</span>
+      <span class="dot">·</span>
+      <span>7 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/wheel-cover.jpg" width="1000" height="563" alt="Cover art: concentric arcs turning about a centre" srcset="/assets/photos/wheel-cover-sm.jpg 560w, /assets/photos/wheel-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">You are on a straight in a car you know well, the wheel is almost centred, and nothing is coming through your hands. A few degrees either way and the force builds nicely, but right at the middle it feels like a hole. The obvious reaction is to open iRacing's force feedback settings, find the Min Force slider, and push it up until the hole fills in. I did exactly that on my <a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> (~9 N·m), and I spent an evening making the car worse before I understood why.</p>
+
+      <p>This post covers what Min Force actually does, why most direct-drive owners should leave it at zero, the narrower case where it helps, and a test procedure that changes one thing at a time so you can trust what you feel.</p>
+
+      <h2>What Min Force actually does</h2>
+
+      <p>Min Force sets a floor under the force the sim sends to the wheel. Instead of letting small forces stay small, it lifts anything above zero up to at least that floor. The reason it exists is practical: weaker wheels, especially belt and gear-driven bases, have a deadband. Friction and slack in the mechanism mean that a gentle force command does not move or load anything. The motor is being asked for something, and nothing reaches your hands. Min Force pushes past that dead zone so small signals still become something you can feel.</p>
+
+      <p>That is a fix for a hardware limitation. It makes sense when the wheel genuinely swallows small forces.</p>
+
+      <h2>Why direct-drive owners usually leave it at zero</h2>
+
+      <p>A direct-drive base has the motor attached to the wheel shaft. There is no belt to stretch or gears to lash, so there is very little mechanical deadband to overcome in the first place. Small forces get through. When you add a force floor to a wheel that did not need one, you are not filling a hole, you are creating a step.</p>
+
+      <p>Think about what happens as you pass through centre. The force on one side of centre pulls one direction, and on the other side it pulls the opposite way. With a floor in place, that signal cannot fade smoothly through zero. It jumps from a minimum push one way to a minimum push the other. On a direct-drive wheel you feel that as a notch at centre, and if your hands are loose or the car is wandering slightly, the wheel can start to hunt back and forth around the middle. That is the oscillation people describe, and it is easy to mistake for a problem with the car or the base.</p>
+
+      <p>So the instinct to add Min Force to cure a dead centre often trades one complaint for a worse one. A wheel that feels light on centre is at least telling the truth. A wheel that feels notchy on centre is telling you something the car is not doing.</p>
+
+      <h2>The lightness at centre is often real</h2>
+
+      <p>Before you change anything, accept that a lot of that dead feeling is not a fault. In many cars the aligning torque at small slip angles is genuinely low. The tyres have barely started to build lateral load, so there is simply not much force to report. Hold the wheel nearly straight on a smooth straight and the self-aligning force is small because the physics says it should be.</p>
+
+      <p>That is why the same wheel can feel alive in a corner and empty on a straight. The signal is there once the tyres are working. Around centre, the sim is faithfully reporting a light car. Raising Min Force papers over that with a constant artificial push, which is not information from the tyres at all.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Check this first</span>
+        <p>If the lightness only shows up very close to centre and the wheel comes alive as soon as you add a little steering angle, treat that as accurate feedback before you treat it as a setting problem.</p>
+      </div>
+
+      <h2>When Min Force does help</h2>
+
+      <p>I am not saying the slider is useless. If you run a weaker belt or gear base, the deadband is real, and a small amount of Min Force can make low-speed or near-centre forces readable. The same applies if you are on an older entry-level wheel where small commands clearly produce no movement or resistance at all. In that situation the floor is doing what it was designed to do.</p>
+
+      <p>Even then, the rule is small steps. Go up just far enough that small forces start to register, then stop. If the wheel starts to feel notchy or begins to tick back and forth around centre, you have gone past what the hardware needs. Weaker bases also tend to feel the downside less, because their own friction damps out the hunting that a direct-drive motor would happily show you.</p>
+
+      <h2>How it interacts with MOZA Pit House settings</h2>
+
+      <p>On the R9, Min Force is not the only thing shaping the centre feel, and the settings stack on top of each other. That is where most of the confusion comes from, because several of them can produce a similar sensation.</p>
+
+      <ul>
+        <li>Road sensitivity: raises or lowers how much fine surface and tyre detail reaches the wheel. Turning it up can make centre feel busier, but it is texture, not a force floor.</li>
+        <li>Damping: adds resistance that scales with how fast the wheel moves. It can calm oscillation, but too much makes the wheel feel heavy and slow and can mask the very detail you were looking for.</li>
+        <li>Friction: adds a constant drag. Used lightly it gives a sense of weight around centre, but it can also make the wheel feel sticky when you try to make small corrections.</li>
+        <li>Inertia: makes the wheel feel as if it has mass. It can steady the feel, but it also delays the wheel's response to quick changes.</li>
+      </ul>
+
+      <p>If you have already adjusted several of these and also raised Min Force, you cannot tell which one is responsible for what you feel. I covered the damping and friction side separately in <a href="direct-drive-damping-friction-settings.html">my damping and friction guide</a>, and it is worth reading before you stack changes on top of one another.</p>
+
+      <p>There is one more thing to keep separate. Clipping is a different problem. If the wheel is saturating on loaded corners, you will lose detail at the top end, and that has nothing to do with feel at centre. If you suspect that, work through <a href="iracing-ffb-clipping-diagnosis-and-fixes.html">the clipping diagnosis guide</a> first. Fixing a clipping problem and a centre problem at the same time is another way to end up chasing the wrong cause.</p>
+
+      <h2>Get overall strength right before touching Min Force</h2>
+
+      <p>Overall strength is the foundation, and guessing at it is how people end up with a hole at centre they then try to patch. Use iRacing's auto and max force tools to set the strength rather than eyeballing the slider. Those tools are built to find a level where the strongest forces in the car sit near the top of what your wheel can deliver without flattening them. If strength is set too low, everything feels weak, including centre. If it is too high, you clip. Either way, adjusting Min Force will not fix it.</p>
+
+      <p>On my setup I fixed strength first with the sim's tools, left Min Force at zero, and only then judged the centre feel. That order matters. Otherwise you are judging a symptom of the wrong base setting.</p>
+
+      <h2>A one-change test procedure</h2>
+
+      <p>This is the routine I use now. It is deliberately boring, because boring is how you separate cause from effect.</p>
+
+      <ol>
+        <li>Pick one car and one track, and stick with them for the whole test. Choose something familiar with a decent straight and a few gentle, sweeping corners, so you can feel both centre and loaded steering.</li>
+        <li>Set overall strength with iRacing's auto and max force tools, and note your Pit House values for road sensitivity, damping, friction and inertia. Write them down so you can return to them.</li>
+        <li>Set Min Force to zero and drive a few laps. Do not chase pace. Pay attention to how the wheel feels on the straight, while changing lanes, and when you are holding a gentle arc.</li>
+        <li>Change exactly one thing. If you are testing Min Force, raise it a small step and leave every Pit House value alone.</li>
+        <li>Drive another few laps on the same car and track. Note whether the centre feels more informative or just more artificial. Watch specifically for notchiness, ticking, or the wheel hunting when you loosen your grip.</li>
+        <li>If it is worse, return to the previous value. If it is slightly better, change nothing else and run another few laps to confirm that it is the improvement and not just you warming up.</li>
+        <li>Only after Min Force is settled should you move to a second setting, and again change only that one.</li>
+      </ol>
+
+      <p>The key discipline is the single change. If you adjust Min Force and damping at once and the wheel feels better, you have learned nothing you can reuse. Run the same test on a second car afterwards, because aligning torque varies between cars and a setting that suits one may not suit another.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Test tip</span>
+        <p>Judge centre feel with relaxed hands. A firm grip can hide oscillation that shows up the moment you loosen up. My notes on hands are in <a href="grip-pressure-hand-position-direct-drive-wheel-iracing.html">the grip pressure post</a>.</p>
+      </div>
+
+      <h2>What I do on the R9 and the cockpit</h2>
+
+      <p>On my R9 I leave Min Force at zero and accept that centre is light in a lot of cars, because that is what the tyres are reporting. The rig matters too. On a fixed aluminium-profile cockpit there is very little flex to blur small forces, so what I feel near centre is mostly the sim and the base, which makes the notchiness from a force floor even easier to spot. If your mounting has flex, it can soften or exaggerate these effects, which I touched on in <a href="rig-flex-and-wheelbase-mounting-ffb-feel.html">the rig flex post</a>.</p>
+
+      <p>My pedals are a separate matter. The <a href="https://www.amazon.com/dp/B0DSHYFW1V?tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">CRP2</a> load-cell pedals do not affect how the wheel feels at centre, so there is no need to change anything there while you test steering. Keeping the variables apart is the whole point.</p>
+
+      <h2>The short version</h2>
+
+      <ul>
+        <li>Min Force exists to overcome the deadband of weaker belt and gear wheels.</li>
+        <li>On direct-drive it can create a notch at centre or cause the wheel to hunt, so leave it at zero unless you have a clear reason.</li>
+        <li>Lightness near centre is often accurate, because aligning torque at small slip angles is low in many cars.</li>
+        <li>Set overall strength with iRacing's auto and max force tools before you touch anything else.</li>
+        <li>Test with one car, one track, one change at a time, and a few laps per step.</li>
+      </ul>
+
+      <p>If you take away one habit, make it this: before you add force to fix a dead feeling, ask whether the wheel is actually dead or simply honest.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=iracing-min-force-dead-centre-direct-drive">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0DSHYFW1V?tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&amp;tag=realiracing-20" data-aff="cockpit" target="_blank" rel="sponsored noopener">Sim Racing Cockpit / Wheel Stand</a></th><td>a rigid mount matters more than the brand — flex kills FFB detail</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>Should I set Min Force to zero on a direct-drive wheel?</h3>
+        <p>For most direct-drive owners, yes. A direct-drive base has little mechanical deadband, so a force floor tends to add a notchy step through centre or make the wheel hunt, rather than fill a gap. Start at zero, set overall strength with iRacing's auto and max force tools, and only change Min Force if you can clearly show it helps.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Why does my wheel feel dead around centre in iRacing?</h3>
+        <p>Often because the car really is light there. Aligning torque at small slip angles is low in many cars, so there is not much force to report until the tyres start working. Check that overall strength is set properly and that you are not clipping before assuming something is wrong with the base.</p>
+      </div>
+      <div class="faq-item">
+        <h3>When is Min Force useful?</h3>
+        <p>Mainly on weaker belt or gear-driven bases and older entry-level wheels, where friction and slack swallow small force commands. A small increase can make low forces readable. Raise it in small steps and stop as soon as the wheel starts to feel notchy or ticks around centre.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I test a Min Force change properly?</h3>
+        <p>Use one car and one track, record your Pit House values for road sensitivity, damping, friction and inertia, and drive a few laps at zero. Then change only Min Force by a small step and drive a few more laps, noting notchiness or oscillation with relaxed hands. Return to the previous value if it feels worse, and only then move on to another setting.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="audi-r8-lms-gt3-iracing-guide.html"><span>Car Guide</span>The Audi R8 LMS GT3 on iRacing: Stable Under Braking, Rewarding on Exit</a>
+      <a class="related-card" href="best-sim-racing-wheels-iracing.html"><span>Buyer's Guide</span>Best Sim Racing Wheels for iRacing in 2026 — From Budget to Direct Drive</a>
+      <a class="related-card" href="sim-racing-gloves-grip-sweat-wheel-wear.html"><span>Buyer's Guide</span>Sim Racing Gloves: Grip, Sweat, and Wheel Wear Explained</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","moza-crp2","cockpit"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>

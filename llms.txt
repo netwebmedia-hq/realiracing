@@ -18,6 +18,7 @@
 
 ## Latest blog posts (newest first)
 
+- [iRacing Min Force: Fixing a Dead Centre on Direct Drive](https://realiracing.com/blog/iracing-min-force-dead-centre-direct-drive.html): What iRacing's Min Force does, why direct-drive owners leave it at zero, when it helps weaker bases, and a one-change test you can run in an evening.
 - [iRacing Button Mapping: What I Bind to My Wheel Buttons First](https://realiracing.com/blog/iracing-button-mapping-wheel-buttons-first-binds.html): A rim only has a handful of buttons. Here is which iRacing controls I put under my thumbs first, and which ones I leave on the keyboard.
 - [iRacing Virtual Mirror and Look Left/Right: Seeing the Cars Beside You on One Screen](https://realiracing.com/blog/iracing-virtual-mirror-look-left-right-single-screen.html): How I combine the iRacing virtual mirror, look left/right buttons, the Relative and the spotter to avoid side contact on a single monitor.
 - [Blue flags in iRacing: getting lapped and lapping cleanly](https://realiracing.com/blog/iracing-blue-flags-being-lapped-and-lapping-cleanly.html): What the blue flag means in iRacing, what the lapped car should do, and how the leader gets past without a 4x. Notes from my own rig.
@@ -37,7 +38,6 @@
 - [Rally Chile 2019: My Stage Side Clips | RealIRacing](https://realiracing.com/blog/rally-chile-2019-stage-side.html): I filmed Rally Chile 2019 on my phone from the side of the stages near Concepción. What happened, and what my clips show.
 - [Belgian GP 2025 at Spa: My Grandstand Clips | RealIRacing](https://realiracing.com/blog/spa-francorchamps-2025-belgian-gp-from-the-grandstand.html): My phone clips from the 2025 F1 Belgian Grand Prix at Spa-Francorchamps, filmed from the grandstand at La Source.
 - [2023 YellaWood 500 at Talladega: Filmed From the Stands](https://realiracing.com/blog/talladega-2023-yellawood-500-from-the-grandstand.html): I filmed the 2023 YellaWood 500 at Talladega from the grandstand: the pack, pit road and a 0.012-second photo finish.
-- [iRacing Hockenheim: Mazda MX-5 From P20 to P14 | RealIRacing](https://realiracing.com/blog/iracing-hockenheim-mx5-p20-to-p14.html): Clips from my iRacing Mazda MX-5 race at Hockenheim. I started P20 and finished P14. This is a racing simulator, not real life.
 
 ## More
 - Every post, one line each: https://realiracing.com/llms-full.txt
