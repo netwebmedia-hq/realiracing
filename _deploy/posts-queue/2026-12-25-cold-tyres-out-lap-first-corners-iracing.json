@@ -1,0 +1,113 @@
+{
+  "slug": "cold-tyres-out-lap-first-corners-iracing",
+  "tag": "iRacing Tips · Racecraft",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "Cold Tires on the out-lap: how to build heat safely",
+  "description": "Cold tires won't grip. Learn how to manage the out-lap and first two corners to build heat without losing time or crashing into turn one.",
+  "sections": [
+    {
+      "p": "Every race session starts the same way: you roll out of the pits on ice-cold tires with zero grip and a time penalty waiting if you lock up or miss the apex. The first lap is a tightrope. Push too hard and you spin. Brake too gently and you waste tire potential on a track where everyone else is warming their tires faster. This is where most drivers leak time or cause incidents, often without realizing why."
+    },
+    {
+      "p": "Cold tires are a physics problem, not a mental one. Tire temperatures rise fastest under combined load: steering input plus throttle plus braking. The out-lap and first two corners determine whether you roll into turn three with 60-degree tires or 40-degree tires. That gap means the difference between a consistent lap and a lock-up or understeer push."
+    },
+    {
+      "h2": "The out-lap: weaving and throttle discipline"
+    },
+    {
+      "p": "The out-lap has one job: build tire temperature before the first braking zone. Most drivers skip this or do it wrong. Weaving (small side-to-side inputs on a straight) generates lateral load and heat on the sidewall, but only if you do it early and with purpose."
+    },
+    {
+      "p": "Start weaving in turn one and two, or as soon as the track opens. Use shallow steering angles and roll the wheel back and forth every two to three seconds. Each weave should cover about one lane width, never more. Deep weaves waste time and add risk. The goal is friction, not entertainment."
+    },
+    {
+      "p": "On the throttle out of slow corners, stay at partial throttle (60-70%) rather than full throttle. Full throttle on cold tires means wheelspin and no load transfer to the drive wheels. Partial throttle keeps the contact patch loaded and warm without spinning. Build it gradually. By the time you reach turn three or four, you can go to full throttle."
+    },
+    {
+      "list": [
+        "Weave starting on the first straight or shortly after turn two",
+        "Use shallow steering angles to avoid a loss of focus or running wide",
+        "Keep throttle partial (60-70%) out of slow corners on the out-lap",
+        "Build heat on the sidewalls by rolling back and forth every 2-3 seconds",
+        "Avoid heavy braking until tires show temperature"
+      ]
+    },
+    {
+      "h2": "Turn one: threshold, not aggression"
+    },
+    {
+      "p": "Turn one is where most cold-tire crashes happen. Cold tires have grip, but it's brittle. Push past that edge by even a few percent and the front washes out or the rear steps sideways. The entry speed rule is simple: take whatever your normal line and speed would be, then reduce by 15-20% on cold tires."
+    },
+    {
+      "p": "Hit the threshold of grip on entry. That means braking hard enough to load the front end (which warms it), but not so hard that you lock. Release the brake as you turn in, not before and not after. The turn-in should feel nearly normal, but slower. Your reference point should be slightly earlier in your marker zone."
+    },
+    {
+      "p": "On corner exit, light throttle first. Don't stab it. Build throttle as the steering wheel unwinds. If the rear feels loose or light, you're on cold tires and spinning the wheels. Back off slightly. Cold tires need a smooth hand on the throttle, not a switch."
+    },
+    {
+      "tip": "Many drivers brake too early or softly on the out-lap to save the tires. That's backward. Cold tires warm fastest under load. Brake late and hard (but controlled), then release smoothly as you turn. This loads the front end and builds heat faster than gentle braking.",
+      "tipLabel": "Build heat with load"
+    },
+    {
+      "h2": "Turn two and the apex zone: progressive commitment"
+    },
+    {
+      "p": "By turn two, tires should have more heat than turn one, but not full temperature. The key is progressive commitment. Take turn two at 85-90% of normal entry speed. If your first lap entry was at 15% reduction, turn two should be at 10% reduction. This gradual ramp allows the tires to build temperature without sudden shock."
+    },
+    {
+      "p": "At the apex, focus on mid-corner speed, not entry speed. Cold tires have poor turn-in grip, so your steering will feel heavy and the front will push. Accept this. Run a slightly wider line through the middle if needed. As you exit and roll on throttle, the tires warm further. By the time you're pointed toward turn three, you should feel grip returning to the steering."
+    },
+    {
+      "p": "Many drivers make the mistake of turning in too hard at turn two to prove the tires are warm. They are not. A cold tire giving you turn-in feel is a tire near its limit, not a warm tire. Respect that. The payoff comes in turn three and beyond, when temperature really shows up."
+    },
+    {
+      "h2": "What happens at turn three"
+    },
+    {
+      "p": "Turn three is where the out-lap and first two corners bear fruit or cost you a lap. If you managed turn one and two correctly, turn three should feel like grip is returning. You can increase entry speed closer to race pace. If you were too aggressive at turn one, you might still be sliding at turn three, losing lap time and rolling off or crashing."
+    },
+    {
+      "p": "Temperature matters most on fast-direction corners or high-speed entries. A cold tire at a 100-mph entry will not turn. A warm one will. By turn three or four, most track layouts reach a faster-direction zone. This is where your out-lap warmup gets tested in real time. If the tires feel alive, you did it right. If the front is pushing hard or the rear is loose, you either went too easy on the out-lap or too aggressive at turn one or two."
+    },
+    {
+      "h2": "Common cold-tire mistakes to avoid"
+    },
+    {
+      "list": [
+        "Braking too softly on the out-lap. Light braking saves nothing if the tires are cold. Brake hard enough to load the front end.",
+        "Weaving too late. Start weaving by turn two, not on the final straight before the race start.",
+        "Full throttle out of slow corners. Partial throttle keeps load on the drive wheels without wheelspin.",
+        "Turning in too hard at turn one. Cold tires need a delayed turn-in and a wider mid-corner line.",
+        "Assuming cold tires have the same grip as warm tires. They do not. Build a 15-20% speed buffer into the first two corners."
+      ]
+    },
+    {
+      "p": "Cold tires are a temporary problem if you approach the out-lap and first corners with a plan. Build heat progressively with load (braking and throttle), not aggression. Weave early. Reduce entry speed by 15-20% and increase it slowly over the first two corners. By turn three or four, you should feel the tires come alive. By lap two, they will be warm enough for a good effort. This discipline avoids crashes and builds solid pace from the start. See <a href=\"best-sim-racing-pedals-iracing-2026.html\">load cell pedals</a> can help you modulate braking pressure finely on the out-lap, though smooth input from any pedal set will work."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much should I reduce my entry speed on cold tires?",
+      "a": "Reduce entry speed by 15-20% on the out-lap and first lap. At turn one, this reduction is highest. By turn two, reduce it to 10%. By turn three, most tires should be warm enough to run near race pace. The exact number depends on track temperature and tire compound, but starting with 15-20% is a safe baseline."
+    },
+    {
+      "q": "Should I weave on the out-lap if the race starts immediately after?",
+      "a": "Yes. Weave starting from your first few corners. Shallow weaves (one lane width, side to side every 2-3 seconds) take almost no extra time and build tire heat significantly faster than a straight out-lap. Even 60 seconds of weaving on cold tires is worth the small time cost."
+    },
+    {
+      "q": "Why do my tires lock up at turn one even though I think I'm braking gently?",
+      "a": "Cold tires lock easier than warm tires because they have less grip. If you are using the same braking input as a warm-tire lap, you will lock. On cold tires, brake hard enough to load the front (which builds heat), but release smoothly as you turn in. The lock happens because you are holding brake pressure while turning, not because you are braking hard on the straight."
+    },
+    {
+      "q": "How do I know when my tires are warm enough to push hard?",
+      "a": "Feel the steering and throttle response. Warm tires return steering feel quickly when you unwind the wheel and grip is predictable when you roll on throttle. Cold tires feel heavy on turn-in and loose on exit. By turn three or four, if the steering is light and responsive, the tires are warm enough for a solid effort. By lap two, they are fully warm."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p"
+  ],
+  "published": "2026-11-16",
+  "dateLabel": "November 16, 2026"
+}

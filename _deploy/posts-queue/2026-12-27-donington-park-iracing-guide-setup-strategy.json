@@ -1,0 +1,147 @@
+{
+  "slug": "donington-park-iracing-guide-setup-strategy",
+  "tag": "Setup Guides · Road Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Donington Park iRacing Guide: Setup, Braking, and Line Through the Esses",
+  "description": "Master Donington's technical esses and tight corners with proven setup adjustments, braking markers, and racing lines for consistent lap times.",
+  "sections": [
+    {
+      "p": "Donington Park separates drivers who understand how to manage mid-corner grip from those who overdrive and lose time. The 1.957-mile Leicestershire circuit demands precision through the tight second-gear esses in the opening corners, then rewards smooth throttle application down the back straight and through the demanding Craner Curves complex. Most drivers arrive at Donington expecting a flowing track but instead find a circuit that punishes small setup mistakes and inconsistent steering inputs."
+    },
+    {
+      "p": "The key to consistent lap times at Donington is building enough front-end grip to carry speed through the esses while maintaining rear stability under heavy braking into Redgate and the Craner left-hander. Setup changes here are small but measurable, and line precision matters more than raw speed."
+    },
+    {
+      "h2": "Suspension and anti-roll bar tuning"
+    },
+    {
+      "p": "Donington rewards a relatively stiff baseline setup because the track is smooth and left-hander heavy. Begin with front anti-roll bar stiffness around 7 to 9 (depending on your car class), then adjust based on what you feel through the esses."
+    },
+    {
+      "p": "If the car feels loose and drifts wide off the apex in the first or second part of the Esses (Redgate area), add stiffness to the front bar in 0.5-unit increments. If the front digs in and you feel understeer building through the middle of the corner, reduce front bar stiffness slightly and check your brake pressure. The esses are second-gear corners, so you are not loading the suspension heavily. Small anti-roll bar changes show up clearly here."
+    },
+    {
+      "p": "Rear anti-roll bar stiffness should sit 1 to 2 units stiffer than the front to manage the rear load under acceleration exiting the Craner Curves. If the car rotates too much under throttle on exit, dial in more rear stiffness. If the rear feels planted but understeer dominates the entire sequence, the front bar may be too soft relative to the rear."
+    },
+    {
+      "list": [
+        "Front anti-roll bar: 7 to 9 (adjust for esses grip and turn-in response)",
+        "Rear anti-roll bar: 8 to 11 (stiffer than front by 1 to 2 units)",
+        "Brake pressure: 95 to 97 percent, depending on car weight and pedal curve",
+        "Brake balance: 50 to 52 percent front (adjust 0.5 units per corner for Redgate vs. Craner feel)"
+      ]
+    },
+    {
+      "h2": "Brake markers and trail braking through tight corners"
+    },
+    {
+      "p": "Braking at Donington is multi-corner focused. The hardest stops are Redgate and the Craner left, with a secondary braking zone into the Hairpin on exit of the back straight. Most drivers arrive at Redgate with too much speed because the esses flow naturally into the braking zone without a clear visual reference."
+    },
+    {
+      "p": "Use the curbing at the end of the second-gear esses (after the left-hand kink before Redgate) as your trail-braking entry point. Begin shedding speed here as you exit the esses, then hit full braking pressure as the track opens toward Redgate. This prevents locking the front wheels on turn-in and allows the car to settle into the corner with mid-brake throttle blending."
+    },
+    {
+      "p": "The Craner Curves (a technical left-right complex at mid-track) also rewards trail braking. Enter Craner 1 (the left) while still releasing brake pressure, feel the front load, then immediately feather throttle on the exit curb to set up for Craner 2. If you brake fully before Craner 1, you will overshoot the apex because there is little room to turn mid-corner."
+    },
+    {
+      "olist": [
+        "Exit the second esses on the inside curbing and begin trailing brake into Redgate by the entry curb",
+        "Release brake pressure as you turn, blending to mid-throttle mid-corner to stabilize the car",
+        "Accelerate progressively off Redgate, aiming for the inside curb of the following left-hander",
+        "At Craner 1, brake less aggressively and trail brake deeper into the corner to avoid a wide exit",
+        "Roll throttle at the exit curb of Craner 1, then balance braking and throttle into Craner 2"
+      ]
+    },
+    {
+      "h2": "Line precision through the opening esses"
+    },
+    {
+      "p": "The opening esses (Redgate and the left-hand kink) define your lap. This is a second-gear sequence where the smallest line error costs two or three tenths. Most sim racers default to an early turn-in and wide exit, which works for high-speed third-gear corners but loses time here."
+    },
+    {
+      "p": "Instead, delay your turn-in to Redgate slightly, aiming to hit the apex halfway through the corner. This keeps the car settled and allows a tighter radius exit, putting you on the inside curbing for the following left-hander. The key is not to fight for a full-throttle exit. Leave the car settled on the apex so you can carry smooth, progressive throttle into the left-hand kink without wheel slip."
+    },
+    {
+      "p": "After the left-hand kink, the second left-hander (the final part of the esses before the straight) benefits from a late apex approach. Turn in later than your instinct suggests, hit a mid-corner apex, then track-out to the outside curbing in a continuous arc. This prevents unsettling the car mid-sequence and sets you up with clean steering input for the Craner Curves approach."
+    },
+    {
+      "tip": "Record a replay of your best lap and watch the steering input trace. At Donington, smooth steering with minimal corrections through the esses is the fastest approach. If you see lots of small steering adjustments, the front end is sliding earlier than your brake release, meaning you need more brake trail or stiffer front anti-roll bar.",
+      "tipLabel": "Steering smoothness first"
+    },
+    {
+      "h2": "Throttle application and power down the straights"
+    },
+    {
+      "p": "The back straight offers throttle precision over raw power. Accelerate fully after the esses complex exit, but do not make sudden throttle moves into Craner 1. Instead, build speed steadily and prepare for the entry braking zone. The Craner Curves demand the car be settled and balanced, not unsettled by mid-corner throttle spikes."
+    },
+    {
+      "p": "Exiting Craner 2 (the right-hander), the track opens and you can apply full throttle without worry until the braking zone into the Hairpin. The Hairpin is a sharp right-hander at the end of the back straight where most drivers over-brake. Use the approach straight as a visual reference. Begin braking as you pass a specific marshal stand or curb mark, then release brakes smoothly into the Hairpin. A light touch on the pedal here maintains grip better than a full lock-up and rebind."
+    },
+    {
+      "h2": "Common setup mistakes"
+    },
+    {
+      "list": [
+        "Front anti-roll bar too soft: the car drifts in the esses and you feel loose mid-corner. Add 0.5 to 1 unit of stiffness.",
+        "Brake balance too far forward: locking front wheels under braking at Redgate and Craner. Move brake balance rearward by 0.5 to 1 percent.",
+        "Throttle application too aggressive exiting corners: the rear slides and you lose the racing line. Build throttle more gradually and use progressive inputs.",
+        "Late braking into Redgate: overshooting the apex and running wide, forcing a correction mid-corner. Begin trailing brake earlier as you exit the previous corner.",
+        "Stiff rear anti-roll bar without stiff front: understeer builds everywhere because the rear is locked down. Balance front and rear within 1 to 2 units of each other."
+      ]
+    },
+    {
+      "h2": "Setup baseline for different car classes"
+    },
+    {
+      "p": "Lighter open-wheel cars (Dallara F3, Formula Vee) benefit from softer anti-roll bar settings and earlier turn-in points because the car rotates quickly. Use 5 to 7 for front bar and 6 to 8 for rear bar, then adjust based on understeer or oversteer in the esses."
+    },
+    {
+      "p": "GT cars (Lamborghini Huracan GT3 Evo, BMW M4 GT4) need stiffer anti-roll bars and more brake pressure. The added weight requires 8 to 10 for front bar and 10 to 12 for rear bar, with brake pressure often at 97 to 99 percent. Brake balance for heavier cars sits 51 to 53 percent front because the extra inertia requires more front grip under deceleration."
+    },
+    {
+      "p": "Stock cars present a different challenge. Without anti-roll bar tuning, focus on brake pressure and suspension height. Soften the suspension slightly to maintain turn-in response, and use a firmer brake setup because stock cars transfer weight more gradually during deceleration."
+    },
+    {
+      "tip": "Start every session at Donington with 95 percent brake pressure and 50 percent brake balance, then adjust by 1 percent for brake balance based on what you feel. Lock-ups mean more front balance; locking rears mean less front balance. Record these settings and reference them in future sessions.",
+      "tipLabel": "Baseline brake settings"
+    },
+    {
+      "h2": "Race strategy and traffic management"
+    },
+    {
+      "p": "Donington is a passing circuit with limited overtaking zones. The back straight into the Hairpin and the entry to Redgate after the opening corners offer realistic opportunities. Use the esses to build your exit speed if you are following a car, then commit to a pass on the straight."
+    },
+    {
+      "p": "In racing situations, defending means holding a tight line through the esses and preventing a tow down the straight. If you are ahead, focus on smooth outputs and clean exits. If you are behind, use the approach to the esses to build momentum and look for a gap into Redgate if the leading driver runs a wide exit."
+    },
+    {
+      "p": "Fuel and tire wear are managed over longer stints. Plan 50-50 fuel splits for endurance races, and monitor tire wear through the esses. The left-side tires (front and rear) carry more load at Donington, so front-left and rear-left wear faster. Manage tire temperature in the opening laps to extend the stint."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the ideal brake balance at Donington?",
+      "a": "Start with 50 to 51 percent front brake balance and adjust in 0.5 percent increments based on lock-up feel. If you lock the front wheels under braking at Redgate or Craner, reduce brake balance by moving it rearward (toward 49 to 50 percent). If the rear locks, increase front balance. Most drivers settle between 50 and 52 percent depending on car weight and brake pressure."
+    },
+    {
+      "q": "How do I stop sliding in the opening esses?",
+      "a": "Sliding usually means too much speed entry or insufficient trail braking. First, reduce your brake release pressure by holding the brake slightly longer as you turn in. Second, increase front anti-roll bar stiffness by 0.5 to 1 unit to build front-end grip. Third, check your line, the apex should be at the halfway point of Redgate, not early. Small corrections to all three usually solve the issue."
+    },
+    {
+      "q": "Should I use different suspension settings for qualifying versus racing?",
+      "a": "Yes. Use softer anti-roll bars (1 unit less front and rear) for qualifying to maximize single-lap grip and turn-in response. For racing, increase stiffness by 0.5 to 1 unit on both front and rear to manage tire wear and maintain stability through longer stints. The changes are small but measurable over ten-lap races."
+    },
+    {
+      "q": "What is the best gearing for the back straight at Donington?",
+      "a": "Gearing depends on your car, but most GT cars use third gear for the back straight exit onto the Hairpin braking zone. Open-wheel cars run third or fourth depending on downforce setup. Set final drive so you reach peak RPM halfway through the back straight, allowing acceleration into the Hairpin braking zone without shifting. Avoid short-shifting before Craner 1 as it unsettles the car."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-cs-v2",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-16",
+  "dateLabel": "November 16, 2026"
+}

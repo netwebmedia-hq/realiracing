@@ -1,0 +1,119 @@
+{
+  "slug": "clutch-pedal-calibration-manual-cars-iracing",
+  "tag": "Setup Guides · Pedals",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "Clutch Pedal Calibration for Manual Cars in iRacing",
+  "description": "Get consistent shift behavior and faster lap times by tuning clutch bite point, linearity, and deadzone for manual transmissions.",
+  "sections": [
+    {
+      "p": "Manual transmissions in iRacing reward precision, but only if your clutch pedal is calibrated correctly. A poorly tuned clutch causes wheel spin on downshifts, sluggish upshifts, and costly stalls on restarts. The setup process is straightforward once you understand what each parameter does and why it matters for shift timing, engine braking, and smooth throttle application."
+    },
+    {
+      "p": "Unlike throttle or brake pedals, the clutch doesn't just measure travel distance. It controls engine disconnection during gear changes and engine braking force on downshifts. iRacing's clutch model responds to bite point position, the angle at which the clutch starts to grip, and how quickly you release it. Get this wrong, and you'll spend a lap regaining control after every downshift."
+    },
+    {
+      "h2": "Understanding clutch bite point and linearity"
+    },
+    {
+      "p": "Bite point is the pedal position where the clutch begins to engage the engine. If your bite point is set too low (too much pedal travel before engagement), you'll need a larger motion to blip the throttle and shift smoothly. If it's set too high (engagement starts near the top), a small pedal twitch can cause wheel spin or stalling."
+    },
+    {
+      "p": "Linearity controls how the clutch grip increases as you release the pedal. A linear curve (100 percent) means grip increases evenly across the full range. A lower linearity value creates a more aggressive engagement near the bite point, then levels off, giving you finer control in the sensitive zone where engine braking happens."
+    },
+    {
+      "list": [
+        "Bite point: typically 60 to 85 percent for road cars; lower values (50-70 percent) for high-torque racing cars",
+        "Linearity: 100 percent for predictable, even response; 70 to 90 percent if you want more precision near bite point",
+        "Start with 70 percent linearity and adjust up only if you need sharper control over engine braking force"
+      ]
+    },
+    {
+      "h2": "Dead zone and peak force settings"
+    },
+    {
+      "p": "Dead zone creates a range at the top of the pedal (fully released) where the clutch is fully engaged and no longer responding to input. This prevents small vibrations or noise from the pedal affecting your lap. Most drivers use 2 to 5 percent dead zone."
+    },
+    {
+      "p": "Peak force is the maximum clutch engagement pressure. In iRacing, this is capped at 100 percent, but you can lower it to soften the engagement curve if you find the clutch locks up too aggressively. For manual transmissions, 90 to 100 percent is standard; drop to 80 percent only if you're fighting uncontrollable wheel spin on every downshift."
+    },
+    {
+      "tip": "Start with zero dead zone when you first tune your clutch, then add 2 to 3 percent and test a few shifts. You'll feel the difference immediately if the pedal is too sensitive or too loose at full release.",
+      "tipLabel": "Setup Tip"
+    },
+    {
+      "h2": "Testing and tuning your clutch in practice"
+    },
+    {
+      "p": "Load a test car (a manual GT3 or Formula car works well) in a practice session and find a straight with space to accelerate and brake hard. The goal is to shift smoothly without locking the wheels on downshift or spinning wheels on upshift."
+    },
+    {
+      "olist": [
+        "Accelerate from a standstill in first gear. The car should launch smoothly without stalling or jerking. If it stalls, your bite point is too high.",
+        "Blip the throttle mid-shift (downshift), then release the clutch. Wheels should not lock up or slide. If they do, lower your linearity to reduce engine braking intensity, or increase bite point slightly.",
+        "Upshift at steady throttle. The car should catch gear cleanly without wheel spin. Spin on upshift means bite point is too low or linearity is too high.",
+        "Perform a few consecutive gear changes at racing pace. Shifts should feel identical each time. If shift behavior varies, dead zone is too high or your pedal needs calibration."
+      ]
+    },
+    {
+      "h2": "Practical settings for common car types"
+    },
+    {
+      "p": "Different cars have different engine torque characteristics, so your clutch tuning should adapt. Formula cars need sharper control because engine braking is severe. GT cars are more forgiving because they have gearbox protection and lower peak torque."
+    },
+    {
+      "list": [
+        "<strong>Formula or open-wheel manual</strong>. Bite point 60-70 percent, linearity 80-90 percent, 1-2 percent dead zone. High linearity means engine braking is easier to modulate for trail braking.",
+        "<strong>GT3 or sports car manual</strong>. Bite point 70-80 percent, linearity 95-100 percent, 2-3 percent dead zone. Lower linearity sensitivity is acceptable because torque is spread across a wider RPM band.",
+        "<strong>Stock car or oval manual (rare)</strong>. Bite point 75-85 percent, linearity 100 percent, 3-5 percent dead zone. Oval cars rarely require precision clutch modulation, so a standard setup works."
+      ]
+    },
+    {
+      "p": "Test your chosen settings in a qualifying session at a track where you're comfortable. If you catch a snap oversteer on downshift, lower your linearity by 5 percent. If shifts feel sluggish or the car won't lock in gear, raise bite point by 5 percent and test again."
+    },
+    {
+      "h2": "Common mistakes and fixes"
+    },
+    {
+      "p": "Stalling on restart or launch: bite point too high. Lower it by 10 percent and try again. Wheel spin on upshift or throttle application: bite point too low or linearity too low. Raise bite point first, test, then adjust linearity if needed."
+    },
+    {
+      "p": "Locking wheels on downshift or severe oversteer: linearity too high or dead zone too low. Start by raising dead zone to 3-4 percent, then lower linearity to 85 percent if the problem persists. Inconsistent shift behavior or clutch catching randomly: pedal calibration is off. Recalibrate your load cell pedals in Windows or your pedal software, then reset iRacing clutch settings to default and re-tune."
+    },
+    {
+      "p": "Remember that your clutch setup is not a one-time setting. Temperature swings during long endurance races can change how your pedal responds, and different cars require different tuning. Save two or three clutch profiles (one for formula, one for GT3, one for stock cars) and swap between them as you change series. This beats spending ten minutes tuning clutch at the start of every race."
+    },
+    {
+      "tip": "If you're using load cell pedals like the MOZA SR-P or similar, calibrate your pedals in iRacing's controller settings first (press fully down, then fully up). Do this before you adjust clutch bite point or linearity. A miscalibrated pedal range will throw off all your tuning.",
+      "tipLabel": "Must Do First"
+    },
+    {
+      "p": "Once your clutch is dialed in, you'll notice smoother shifts, faster lap times, and far fewer incidents caused by wheel spin or stalling. The setup takes 20 minutes in a test session but saves countless laps wasted to recovery. For more on pedal tuning, see the <a href=\"best-sim-racing-pedals-iracing-2026.html\">pedal buyer's guide</a>, which covers how load cell feel affects clutch response."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the difference between clutch bite point and dead zone?",
+      "a": "Bite point is where the clutch starts to grip the engine during release. Dead zone is a range at the top of the pedal (fully released) where the clutch is fully engaged and input is ignored. A bite point of 70 percent means you must release 30 percent of the pedal before engagement starts. A dead zone of 3 percent means the top 3 percent of pedal travel produces no change in clutch grip."
+    },
+    {
+      "q": "Why do my wheels lock on downshift even with a smooth blip?",
+      "a": "Linearity is too high, which creates too much engine braking force near the bite point. Lower linearity to 85-90 percent and test again. If locking persists, raise bite point by 5 percent so the clutch engages later and engine braking has less effect. Locking also happens if dead zone is too low; try raising it to 3-4 percent."
+    },
+    {
+      "q": "Should I use the same clutch settings for every car?",
+      "a": "No. High-torque formula cars need sharper bite point control (60-70 percent, linearity 80-90 percent) because engine braking is severe. GT3 cars are more forgiving (70-80 percent bite point, 95-100 percent linearity). Save separate profiles for each car type or series you race and swap as needed."
+    },
+    {
+      "q": "My car stalls when I launch from the grid. What do I adjust?",
+      "a": "Your bite point is too high, so the clutch doesn't engage until you've released the pedal too far. Lower bite point by 10 percent and try again. If the car still stalls, recalibrate your pedals in iRacing's controller settings to ensure the full range is recognized, then lower bite point again."
+    }
+  ],
+  "gearKeys": [
+    "moza-sr-p",
+    "fanatec-csl-pedals-lc",
+    "thrustmaster-t-lcm"
+  ],
+  "published": "2026-11-16",
+  "dateLabel": "November 16, 2026"
+}

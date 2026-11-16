@@ -1,0 +1,180 @@
+{
+  "slug": "tsukuba-circuit-iracing-guide",
+  "tag": "Track Guides · Road Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Tsukuba Circuit iRacing guide: compact layout brake points",
+  "description": "Master Tsukuba's tight Japanese layout. Learn braking points, turn-in references, and setup for high-downforce cars on this demanding 2.77 km circuit.",
+  "sections": [
+    {
+      "p": "Tsukuba Circuit is a 2.77 km permanent road course in Ibaraki, Japan, built in 1992 and famous for time-attack events. In iRacing, it appears in select series and offers a punishing test of precision. The layout is tight, technical, and unforgiving. Turn radii are sharp, run-off areas are minimal, and the asphalt surface is abrasive. Most laps are decided by consistency through the first sector and by brake timing into the chicane complex. Unlike flowing European circuits, Tsukuba rewards smooth inputs over raw speed."
+    },
+    {
+      "p": "The track demands high downforce setup, strong brake feel, and mechanical grip over aero. Fuel burns quickly due to high cornering load and constant steering input. Tire degradation is real on longer stints. This guide covers racing lines, braking points, and setup priorities for cars you'll encounter at Tsukuba in iRacing, from GT3 machines to open-wheel entries."
+    },
+    {
+      "h2": "Track layout overview"
+    },
+    {
+      "p": "Tsukuba is clockwise and splits logically into three sections. The first sector runs from the start-finish line through Turn 1, the Hairpin, and into the Spoon Curve. This is where most time is lost or found. The second sector includes the 100R and the high-speed Hairpin at Turn 11. The final sector is the technical chicane complex at the end of the back straight, then Turn 15 and 16 before the front straight."
+    },
+    {
+      "p": "Total elevation change is roughly 20 metres across the lap. The start-finish line sits at the highest point. The track dips slightly into Turns 1 and 2, then climbs gradually through the middle sector. Braking zones are short because speeds never build as high as on faster circuits. Cornering speed and exit grip matter far more than top speed."
+    },
+    {
+      "h2": "Sector 1: Turn 1 to Spoon Curve"
+    },
+    {
+      "h3": "Turn 1 (entry and apex)"
+    },
+    {
+      "p": "Turn 1 is a medium-radius left-hander approached at ~180 km/h. Brake hard on the main straight, releasing the pedal as you turn in. Use the left curb as your turn-in point. The apex sits about mid-curb on the inside. Early apex is tempting but kills exit speed because the corner opens late. Trail brake into the apex, feel the front load up, then accelerate smoothly once you pass the mid-corner point."
+    },
+    {
+      "p": "Common error: braking too early on the straight. If you're not deep on the pedal into the braking zone, you've cost yourself entry speed. Another trap: turning in too early. Wait for the curb markings; they align with the geometric apex. Exit is tight because Turn 2 arrives immediately."
+    },
+    {
+      "h3": "Turn 2 (Hairpin) through Spoon Curve"
+    },
+    {
+      "p": "Turn 2 is a sharp right-hand hairpin. Carry momentum from Turn 1 and begin your line early. Brake in a straight line down to ~90 km/h, then pitch in hard. Apex is tight on the inside curb. The exit is crucial because the Spoon Curve (Turn 3) is left-hand and demands momentum. Exit Turn 2 on the rightmost part of the track, then immediately set up for Turn 3 by moving left."
+    },
+    {
+      "p": "The Spoon Curve is a fast left-hander with a slight downhill and banking. This is a trailing throttle corner. Keep speed high and lean on aero grip. If you've exited Turn 2 cleanly, you'll carry good pace through Spoon. The exit of Spoon leads onto a short straight before the 100R."
+    },
+    {
+      "list": [
+        "Turn 1: brake hard, mid-curb apex, smooth exit acceleration",
+        "Turn 2 Hairpin: shift weight to right, tight inside line, power early to set up Turn 3",
+        "Spoon Curve: fast flowing line, lean on downforce, maintain throttle"
+      ]
+    },
+    {
+      "h2": "Sector 2: 100R and high-speed hairpin"
+    },
+    {
+      "p": "The 100R (Turn 4) is a fast right-hand corner at the bottom of a dip. Approach at ~180 km/h and use all of the track width on entry. Apex is early because the corner tightens. Load aero, feel rear grip, and roll through. This corner must be smooth; any steering input correction will upset the rear."
+    },
+    {
+      "p": "After 100R, the track climbs slightly and straightens. Turn 5 is a tightening left-hander. Keep throttle modulation smooth and don't rush turn-in. The goal is to set up for the high-speed Hairpin at Turn 11, which approaches via a long straight and demands a late-apex, high-speed entry."
+    },
+    {
+      "p": "The Hairpin (Turn 11) is at ~200 km/h and is the highest-speed direction change on track. Brake modestly on the straight before turn-in. Use the full width of the track on entry, make a progressive turn-in, and apex late. The exit is wide and forgiving. Accelerate hard once you've passed mid-corner; this is where you gain time over slower drivers."
+    },
+    {
+      "tip": "If you're losing time in Sector 2, the problem is usually too much steering input at the 100R or a poor exit from Turn 11. Film your lap and compare your line to a faster driver. Small differences in throttle modulation here compound into big lap-time gaps.",
+      "tipLabel": "Sector 2 precision"
+    },
+    {
+      "h2": "Sector 3: chicane complex and home"
+    },
+    {
+      "p": "After Turn 11, the back straight is long and straight. This is the only place to gain slipstream overtakes, though at Tsukuba overtaking is rare because the straight is short relative to the speed. Brake modestly for Turn 13, a right-hand chicane entry. Turn in early and keep speed high through the first element."
+    },
+    {
+      "p": "The chicane includes Turns 13, 14, and 15. Turn 13 is entry and right-hand. Keep the car low, clip the apex, then immediately set up for Turn 14 (left-hand). This requires a sharp direction change and demands smooth steering inputs. Exit Turn 14 wide to set up Turn 15. Turn 15 is another right-hander and the final corner before the straight. Exit is critical; you have the whole straight to accelerate before braking for Turn 1 again."
+    },
+    {
+      "list": [
+        "Turn 13: deep entry speed, tight right-hander, quick weight transfer",
+        "Turn 14: left-hand chicane element, smooth direction change, don't overdrive",
+        "Turn 15: exit wide, full throttle up the straight"
+      ]
+    },
+    {
+      "h2": "Setup priorities for GT3 and open-wheel cars"
+    },
+    {
+      "p": "Tsukuba responds well to high downforce. Add wing angle above baseline for most cars. The front wing should be ~2-3 clicks stiffer than a European 2.0 km circuit. Rear wing should follow suit. This reduces top speed slightly but improves cornering confidence and rear stability."
+    },
+    {
+      "p": "Brake balance typically sits forward of center (55-60% front). The short braking zones and tight corners favor strong trail-braking feel. Test your balance in practice; if the front locks before the rear in heavy braking, move brake bias rearward by 1-2 clicks. If the rear locks first, the car is loose under heavy pedal pressure, so move forward."
+    },
+    {
+      "p": "Suspension should be relatively stiff. Tsukuba's compact layout means body roll and pitch are more noticeable. Roll bars (anti-roll) one or two clicks stiffer than baseline reduce mid-corner understeer. Ride height sits at minimum or one click above minimum. Dampers can run stiffer in bump (compression) because the track surface is smooth and elevation change is small."
+    },
+    {
+      "p": "Differential tuning is subtle. On-throttle differential can be slightly open (more locking) through Spoon and Turn 11 to maintain speed in fast corners. Under-throttle differential (coast) should be slightly loose to prevent snap-oversteer during trail-brake transitions. Test in practice sessions."
+    },
+    {
+      "olist": [
+        "Start with high downforce setup (front and rear wing up 2-3 clicks from baseline)",
+        "Tune brake balance forward 55-60% to enable strong trail braking",
+        "Increase anti-roll bars one or two clicks to control mid-corner roll",
+        "Test differential tuning under acceleration and coasting through quick direction changes",
+        "Record your fastest lap and replay to identify where steering corrections or tire slip appear"
+      ]
+    },
+    {
+      "h2": "Tire management on Tsukuba"
+    },
+    {
+      "p": "Tires degrade quickly at Tsukuba due to high cornering load and constant steering input. Front tires are especially affected because of trail-braking and fast direction changes. Plan for a small performance dip after 15-20 laps on the same set, depending on track temperature and car class."
+    },
+    {
+      "p": "In practice, start on cold tires and push progressively. By lap 5-7, tires reach working temperature and you should be close to full pace. In race stints, the first lap is often the slowest. Push harder on lap 2-3 as tires heat. If you have a pit stop, fresh rubber on lap 10 or 12 will feel instantly faster."
+    },
+    {
+      "p": "Fuel load also affects pace. A full tank adds ~20 kg of mass, which feels heavier through Turn 1 and the chicane. If you're qualifying, run a minimal fuel load. For longer races, monitor fuel burn; Tsukuba's high-load corners mean you'll burn more than expected at first glance. Plan a stint length of 20-25 laps on a full tank for most GT3 cars, depending on fuel mixture settings."
+    },
+    {
+      "tip": "Review your tire temperatures and pressures in the telemetry after practice. If rear tires are running 5-10 degrees hotter than fronts, increase rear wing angle slightly or decrease brake balance. If fronts overheat, consider a softer front anti-roll bar setting or slightly earlier turn-in points to reduce steering input demand.",
+      "tipLabel": "Tire temperature clues"
+    },
+    {
+      "h2": "Common mistakes and fixes"
+    },
+    {
+      "p": "Braking too early into Turn 1 is a widespread habit. Tsukuba demands late braking and smooth trail-brake transitions. Record your lap and compare your braking zone to a fast reference. Most drivers find they can brake 15-20 metres later than they think and still make the corner. This one fix can drop your lap time by 0.3-0.5 seconds."
+    },
+    {
+      "p": "Overdriving the chicane is the second trap. Drivers rush turn-in at Turn 13 and lose the rear because speed is too high. Reduce your entry speed by 2-3 km/h and you'll find more exit grip and better overall sector time. The chicane is not a place to gain time against others; it's a place to maintain consistency."
+    },
+    {
+      "p": "Poor line through Spoon Curve costs lap time easily. If you're hitting the inside curb on entry and exit, your line is too tight. Spoon is a flowing corner that benefits from a wider entry and a mid-to-wide apex. Use the full track width and roll through with minimal steering angle. This setup carries speed for the 100R and sets you up for a solid lap."
+    },
+    {
+      "p": "Finally, inconsistent throttle modulation through Turn 2 and Turn 11 kills pace. These corners demand smooth application of throttle. If you're on-off with the throttle, the rear slides and you lose mid-corner speed. Practice smooth throttle application by video-recording your inputs and comparing them lap to lap. Smooth is faster at Tsukuba."
+    },
+    {
+      "h2": "Practice plan for Tsukuba"
+    },
+    {
+      "p": "Spend your first 10 laps in a solo practice session learning the racing line and brake points. Don't push; focus on smooth inputs and consistency. Your aim is to understand where the curbs are, where the apex sits, and how much brake pressure the car needs into each corner."
+    },
+    {
+      "p": "Laps 11-20, begin pushing slightly harder. You should be approaching 95% of your pace. Focus on one corner that feels uncomfortable (usually Turn 1 or the chicane) and repeat laps perfecting just that corner. Film your lap."
+    },
+    {
+      "p": "Laps 21-30, now push to your limit. This is where you'll find your pace ceiling on the current setup. If you feel the car is loose or tight in specific corners, note it and plan a small setup change. Tire temperature data should guide you.</p>"
+    },
+    {
+      "p": "Finally, run a 15-lap race simulation with a pit stop. This teaches you how fuel load affects pace and when to stop for fresh rubber. Race pace is usually 0.3-0.5 seconds per lap slower than qualifying due to fuel load, so plan accordingly."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the best line through Turn 1?",
+      "a": "Brake hard on the main straight and release braking as you turn in. Use the left curb as your turn-in point. Apex mid-curb on the inside. Early apex is a trap; wait for the corner to open fully before heavy acceleration. This keeps exit speed high for Turn 2."
+    },
+    {
+      "q": "How much downforce should I run at Tsukuba?",
+      "a": "Tsukuba rewards high downforce. Add 2-3 clicks of wing angle (front and rear) above your baseline setup for a typical European circuit. The compact, tight layout and multiple fast direction changes demand strong aero grip. Test in practice to find the balance between downforce gain and top-speed loss on the back straight."
+    },
+    {
+      "q": "Why do I lose the rear at the high-speed Hairpin (Turn 11)?",
+      "a": "Entry speed is too high, or your brake bias is set too far forward. Reduce entry speed by 2-3 km/h and practice smooth, progressive turn-in. If the rear slides even at lower speed, increase rear brake bias by 1-2 clicks to load the rear axle during trail braking. Film your lap and compare throttle application to a faster driver; jerky throttle input will upset the rear."
+    },
+    {
+      "q": "How should I adjust my setup if the car feels loose through the chicane?",
+      "a": "Increase front anti-roll bar stiffness by one click to reduce front roll and load the front tires more. If that doesn't help, slightly decrease your entry speed because the chicane is speed-sensitive. You can also lower the brake balance 1-2 clicks rearward to load the rear during the trail-brake transition before Turn 13, which stabilizes the rear through the direction changes."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-16",
+  "dateLabel": "November 16, 2026"
+}

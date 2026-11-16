@@ -1,0 +1,158 @@
+{
+  "slug": "zandvoort-iracing-guide-banking-blind-crests",
+  "tag": "Track Guides · Road Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Zandvoort iRacing Guide: Banking, Blind Crests, and Setup",
+  "description": "Master Zandvoort's unique banking and elevation changes. Learn braking zones, turn-in points, and setup trade-offs for the Dutch GP circuit.",
+  "sections": [
+    {
+      "p": "Zandvoort is a track that punishes guessing. The banking at turn 3 and turn 14 combines with tight blind crests and compression corners to create a rhythm problem rather than a pure speed problem. Most drivers arrive with a qualifying setup and immediately struggle in the race because elevation and banking work against predictable weight transfer. The track also has two narrow sections where a half-meter mistake becomes a wall hit, and the run from turn 1 to turn 3 compresses so severely that threshold braking and trail-braking technique matter more than raw horsepower."
+    },
+    {
+      "p": "Understanding how banking affects brake balance, entry speed, and mid-corner load will cut your lap time faster than a tenth of setup work. This guide covers the layout in sections, the blind spots and compression zones that catch new drivers, and practical setup pointers for both GT and single-seater cars."
+    },
+    {
+      "h2": "Turn 1 and the compression run to turn 3"
+    },
+    {
+      "p": "Turn 1 is a medium-speed right-hander that feeds directly into a heavy braking zone. The track surface dips on exit and the elevation begins climbing almost immediately, so you can't carry mid-corner speed the way you would at a flatter track. Most drivers brake too early or brake too hard, leaving time on the table in the entry phase."
+    },
+    {
+      "p": "Start braking in a straight line just after the DRS board, not before it. The goal is to arrive at the apex with the car still settling so you can trail brake through mid-corner and unwind the steering as the downhill section turns into an uphill compression. If you brake to a fixed speed before turn 1, you'll either run wide or run slow."
+    },
+    {
+      "p": "The run from turn 1 to turn 3 is deceptively short. The elevation climbs steeply, the track narrows, and there is a blind crest just before turn 3 on the left side. You cannot see the apex of turn 3 from the exit of turn 2, so you must commit to a line before cresting the hill. Most spins and wall hits at turn 3 happen because drivers trail brake into the blind section, lose reference points, and arrive offline."
+    },
+    {
+      "list": [
+        "Brake hard but in a straight line at turn 1. Do not turn and brake together.",
+        "Trail brake gently through the compression as you approach turn 2, letting weight settle mid-corner.",
+        "Exit turn 2 on the inside curb and begin accelerating early to gain momentum into the blind crest before turn 3.",
+        "Commit to your turn 3 entry line before the crest hides the apex. Turn 3 is banked, so early turn-in works better than late turn-in."
+      ]
+    },
+    {
+      "h2": "Turn 3: the first banked corner and the esses"
+    },
+    {
+      "p": "Turn 3 is banked roughly 18 degrees, making it feel faster than a flat equivalent at the same radius. The banking reduces the amount of lateral grip you need to carry speed, so drivers who arrive offline often run out of track rather than losing grip. The blind crest a few meters before the apex means you need to trust your line work from earlier in the lap."
+    },
+    {
+      "p": "Banking also works against trail braking at turn 3. If you brake into the banked section, the downward slope of the inside curb combines with the banking to load the inside wheels heavily, which can cause the car to bite down and understeer. Finish all your braking before the banking starts. This is counterintuitive because flat turns reward trail braking, so many drivers arrive at Zandvoort with the wrong habit."
+    },
+    {
+      "p": "Accelerate hard mid-corner and carry the banking all the way through. The exit of turn 3 leads into turn 4, which is a tight left-hand kink. The banking helps carry speed, so you can be aggressive on the throttle sooner than a flat section would allow. This feeds into turn 5, a blind left crest followed by a right-hander."
+    },
+    {
+      "tip": "Banking reduces the grip load you need but increases the penalty for trail braking. Finish braking before the banking, then accelerate mid-corner to carry the banking's advantage.",
+      "tipLabel": "Banking and trail braking"
+    },
+    {
+      "h2": "The esses and turn 7"
+    },
+    {
+      "p": "After turn 5, the track flows through turns 6 and 7 as a quick double apex sequence. Turn 5 is blind on entry, so early steering input based on a memorized line is essential. Turn 6 is tight, and turn 7 is a faster right-hander that leads to the main straight."
+    },
+    {
+      "p": "The rhythm here depends on how much grip you carry out of turn 5. If you're fast through the blind section, you have more entry speed into turn 6, which means a sharper initial turn-in and less mid-corner steering adjustment. If you arrive at turn 5 cautiously, the whole sequence feels sluggish. Practice turn 5 alone until you can commit to the line without seeing the apex."
+    },
+    {
+      "h2": "Turn 14: the second banked corner and pit entry"
+    },
+    {
+      "p": "Turn 14 is banked roughly 19 degrees and leads directly to the pit entry zone. It is a faster corner than turn 3 and the banking is more severe. Many drivers brake too late for turn 14 because they equate the banking with high speed, but the tight radius still requires a disciplined entry."
+    },
+    {
+      "p": "The pit entry is located just after turn 14, on the right side of the track. If you run wide at turn 14, you either hit the wall or run across the pit lane entry, which incurs penalties. This creates a conflict: the racing line through turn 14 runs close to the right edge, but the pit lane is also on the right. In a race, you need to know exactly how far right you can go without crossing into the pit zone."
+    },
+    {
+      "p": "Banking at turn 14 also increases the vertical load on the inside wheels, which can cause the rear to slide out if you turn in too aggressively. A smooth, early turn-in works better than a late, aggressive one. The banking then helps carry speed mid-corner, so you can accelerate hard once the steering is fully unwound."
+    },
+    {
+      "h2": "Setup for banking and elevation"
+    },
+    {
+      "p": "Banking and elevation changes create setup conflicts. The banked turns reward higher downforce and stiffer springs because the banking provides grip and reduces squat. The elevation changes and blind crests reward softer damping and more rake to maintain mechanical grip on the compression zones."
+    },
+    {
+      "p": "A common starting point for Zandvoort is a balanced setup that prioritizes mid-corner stability over turn-in agility. The banked turns don't require a sharp, responsive car. Instead, they reward a stable car that carries mid-corner speed without sliding. This means stiffer anti-roll bars and a slightly higher downforce setting than a flat track would use."
+    },
+    {
+      "p": "Brake balance is critical. Because of the blind crests and compression zones, the front wheels need to be loaded before the apex, not during. A rear-biased brake balance can cause understeer on the blind entry to turn 3 and turn 5 because the front wheels don't have enough load to decelerate and turn at the same time. Start with brake balance 2-3 percentage points more forward than your flat-track baseline, then adjust based on how the car feels under hard braking into blind sections."
+    },
+    {
+      "list": [
+        "Anti-roll bars: Stiffer than your flat-track baseline, especially the rear. Banking reduces the need for lateral flex.",
+        "Downforce: A setting 10-15% higher than flat tracks helps the car feel planted through the banked turns.",
+        "Brake balance: Favor the front by 2-3 points to load the front wheels early on the approach to blind corners.",
+        "Dampers: Stiffer in compression to help the car handle compression zones and elevation changes without losing grip.",
+        "Rake: A slightly higher rake (more front wing angle) helps maintain grip over blind crests."
+      ]
+    },
+    {
+      "h2": "Throttle modulation and momentum carry"
+    },
+    {
+      "p": "Zandvoort rewards smooth throttle application more than most tracks. The banking forgives a bit of mid-corner oversteer if you're carrying the throttle, but it punishes sharp throttle changes because the car's weight transfers violently on the slope."
+    },
+    {
+      "p": "The banked turns also reward early throttle application. Because the banking provides grip, you can begin accelerating at a point where a flat turn would still require steering input. This means that the fastest drivers at Zandvoort are not the ones braking the hardest into corners, but the ones exiting with the most momentum."
+    },
+    {
+      "p": "Practice the transition from braking to throttle at both banked corners. The goal is to have the car fully settled on the racing line before the banking starts, so you can be on full throttle mid-corner. This is the opposite of a trail-braking philosophy. It is a commit-and-accelerate philosophy."
+    },
+    {
+      "tip": "Zandvoort's banking rewards smooth throttle modulation and early acceleration mid-corner. Avoid sharp brake-to-throttle transitions or the car will slide on the slope.",
+      "tipLabel": "Momentum over trail braking"
+    },
+    {
+      "h2": "Common mistakes and reference points"
+    },
+    {
+      "p": "Most drivers lose time at Zandvoort by trying to brake deeper than the track allows due to the blind crests. Turn 1 braking looks late from the grandstand camera angle, but it is typically already right for the uphill compression. Turn 3 and turn 5 suffer from the same issue: drivers see other cars brake late and assume there is more braking available, but the blind section makes overbraking feel faster because the car is lighter on its feet."
+    },
+    {
+      "p": "Another common mistake is running the racing line too close to the outside curbs at the banked corners. The banking makes it easy to drift wide, but the walls at Zandvoort are unforgiving. Use the curbs as a visual cue to know when you've reached the absolute limit, not as a target line. Stay a half-meter inside the edge of the racing line to give yourself a margin."
+    },
+    {
+      "p": "Finally, many drivers neglect the first sector because it looks slow on the data. Turn 1 is not fast in absolute terms, but the compression run from turn 1 to turn 3 is where the lap time advantage lives. The drivers who nail this section and arrive at turn 3 with speed and stability carry that momentum through the esses and exit with a 0.1-0.2 second advantage. Spend time perfecting the rhythm from turn 1 to turn 3 before worrying about the banked corners."
+    },
+    {
+      "olist": [
+        "Memorize the blind sections at turn 3, turn 5, and the approach to turn 14. Commit to your line before the crest hides the apex.",
+        "Finish braking before the banking starts. Banking and trail braking do not combine well.",
+        "Carry mid-corner throttle through the banked turns. This is an acceleration-based philosophy, not a trail-braking one.",
+        "Set up with stiffer springs and anti-roll bars to handle the banking, and bias brake balance forward to manage the blind compressions.",
+        "Practice turn 1 to turn 3 as a single flowing section. This is where the lap time advantage exists."
+      ]
+    },
+    {
+      "p": "Zandvoort is a track where smooth, committed driving beats aggressive setup changes. Once you understand that banking reduces the grip load and that blind crests require pre-committed lines, the track becomes a rhythm puzzle rather than a speed puzzle. Focus on a stable, momentum-carrying line through the first sector and the banked turns, and the lap times will follow from better flow rather than bigger risks."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why do I spin at turn 3 even though I'm not exceeding the grip circle?",
+      "a": "The banking at turn 3 combined with a blind crest creates an optical illusion. If you arrive offline or trail brake into the banked section, the downward slope of the inside curb loads the wheels unevenly, and the car's weight is still transferring as the banking increases. Finish all braking before the banking starts, and ensure you've exited turn 2 on the inside curb so you have room to run the racing line through turn 3."
+    },
+    {
+      "q": "My setup works at other tracks but feels loose at Zandvoort. What should I change?",
+      "a": "Banking reduces the need for lateral grip and stability, so your anti-roll bars and spring rates from flat-track setups are likely too soft. Increase rear anti-roll bar stiffness by 2-3 clicks and reduce front wing angle by 1-2 points to match the banking's grip. Also bias brake balance forward by 2-3 points so the front wheels load early on the approach to blind corners."
+    },
+    {
+      "q": "Is Zandvoort faster with trail braking or early throttle application?",
+      "a": "Early throttle application is significantly faster at Zandvoort. The banking at turns 3 and 14 provides grip, so you can be on the throttle mid-corner while the car is still unwinding its steering. Trail braking into the banked sections loads the inside wheels and causes understeer or spins. Commit to your line before the banking, then accelerate mid-corner."
+    },
+    {
+      "q": "How much of the racing line can I use at turn 14 without crossing into the pit entry?",
+      "a": "This depends on your car and setup, but typically you should stay at least 0.5 meters from the right edge of the track at turn 14. The pit entry zone extends onto the racing surface, and running too far right incurs penalties. During practice, gradually move right until you trigger the pit entry penalty, then back off. Use that limit minus a safety margin as your reference point."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-16",
+  "dateLabel": "November 16, 2026"
+}

@@ -1,0 +1,166 @@
+{
+  "slug": "kentucky-speedway-iracing-oval-guide",
+  "tag": "Track Guides · Oval Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Kentucky Speedway iRacing: Setup, Passing, and Survival",
+  "description": "Master Kentucky's fast 1.5-mile D-shaped oval. Learn turn geometry, throttle control, fuel strategy, and how to pass safely in iRacing.",
+  "sections": [
+    {
+      "p": "Kentucky Speedway is a 1.5-mile D-shaped oval with a 14-degree banking in the turns and a relatively flat front stretch. It sits in the middle ground between slower bullrings like Richmond and high-speed 2-mile tracks like Michigan. The turns are wide, the racing is clean when it's clean, and the fuel window is tight enough that strategy matters as much as pace. Most drivers arrive with a road-course mentality and leave frustrated because Kentucky asks for something different: smooth, predictable inputs and discipline on the throttle."
+    },
+    {
+      "p": "This guide covers setup fundamentals, the actual line through each turn, how to manage fuel on a 400-lap race, and the specific passing angles that work at this track. Everything here is built on common Kentucky setups and published telemetry, not a personal baseline."
+    },
+    {
+      "h2": "The Line and Turn Geometry"
+    },
+    {
+      "p": "Kentucky's turns are banked at 14 degrees. That is enough to let you carry throttle through the middle of the turn, but not so much that the banking does the work for you. Turn 1 is the widest turn on the track. Most drivers can run a relatively high line through entry, track out to the outer wall, and carry speed onto the front stretch. The key is to be smooth on initial turn-in. A sharp steering input will unload the right-side tires and kill your mid-turn speed."
+    },
+    {
+      "p": "Turn 2 is the opposite problem. It is tighter than Turn 1 and many drivers run it too aggressively. The apex is roughly mid-track, and the exit wants you to stay mid-track as well because Turn 3 begins immediately. Running too far out at the exit of Turn 2 forces you to cut across the track, loses time, and makes you vulnerable to contact going into Turn 3."
+    },
+    {
+      "p": "Turns 3 and 4 (the back stretch turns) are the slowest corners on the track, but they are still flowing. You should not be on the brakes longer than 1 to 2 car lengths. Enter around mid-track, track out to the wall, and accelerate hard off Turn 4 because the front stretch is long and acceleration matters for draft positioning."
+    },
+    {
+      "list": [
+        "Turn 1: High entry line, smooth input, track to outer wall, begin throttle application mid-corner",
+        "Turn 2: Tighter than Turn 1, mid-track apex, mid-track exit to avoid cross-track travel",
+        "Turns 3 & 4: Minimal braking, flow through the corners, full throttle off Turn 4 onto the front stretch",
+        "Front stretch: Use the draft if you are following, work your line to set up a pass into Turn 1 if you are hunting"
+      ]
+    },
+    {
+      "tip": "Kentucky's banking is mild enough that your line through the turns will not feel intuitive if you have been racing high-banked tracks like Talladega or Bristol. Expect to feel understeer early. That is normal. Build in a small amount of rear wing to increase midcorner turn-in without gearing too far into oversteer on exit.",
+      "tipLabel": "Banking Transition"
+    },
+    {
+      "h2": "Setup Overview"
+    },
+    {
+      "p": "A solid Kentucky baseline focuses on two things: a consistent, predictable front end through the turn and enough downforce to maintain speed through Turns 3 and 4. Most competitive setups run a moderate amount of front wing (around 4 to 5 degrees) and rear wing (around 7 to 8 degrees). These are reference points, not prescriptions. Your fuel load, driver weight, and car tuning will shift these numbers slightly."
+    },
+    {
+      "p": "Stagger (the difference between left-side and right-side tire sizes) is critical at Kentucky. The turns are long enough that the inside tires need to be significantly smaller than the outside tires. A common starting stagger is roughly 2 to 3 inches of left-side diameter reduction. Too much stagger and the car will feel loose on corner exit. Too little and you will push."
+    },
+    {
+      "olist": [
+        "Front wing: 4 to 5 degrees as a starting point; add wing if you need more turn-in, remove it if the car is too loose off-corner",
+        "Rear wing: 7 to 8 degrees as a starting point; adjust for overall balance rather than individual corners",
+        "Stagger: 2 to 3 inches of left-side reduction; test within this range and pick the highest stagger where the car does not feel unstable",
+        "Brake bias: 55 to 60 percent front bias is typical; Kentucky braking zones are short, so you do not need extreme bias",
+        "Springs, bars, and dampers: Use a balanced setup and do not chase individual corner problems early; most imbalance is tire-related at Kentucky"
+      ]
+    },
+    {
+      "p": "One common mistake is trying to gain downforce too early in setup. If your front end feels loose, your first move should be to increase stagger or add a touch of front wing. Piling on overall wing will make the car inefficient and kill your top speed, which matters on the front stretch when you are trying to position yourself for a pass."
+    },
+    {
+      "h2": "Fuel Strategy and Pacing"
+    },
+    {
+      "p": "Kentucky races typically run 400 to 500 laps depending on the series. Fuel mileage is a constant calculation. Most stock cars will get roughly 4.5 to 5.5 miles per gallon at Kentucky when driven at race pace. That means a 400-lap race will require 1 to 2 pit stops, and a 500-lap race will likely require 2 to 3 stops. Your fuel strategy is not separate from your race strategy. It drives it."
+    },
+    {
+      "p": "If you plan a two-stop strategy on a 400-lap race, your first pit window opens around lap 120 to 140. Wait too long and you will lose position because fresher cars will pit earlier and gain track position. Pit too early and you might have to pit again late in the race when everyone else is pitting, creating chaos. A solid early-race plan is to pit when you see the top 5 pit. You will not have the information to know the exact fuel burn without race data, but mirroring the front of the field is a reliable tactic."
+    },
+    {
+      "p": "The final stint is where fuel awareness wins races. If you are running 500 laps on a three-stop strategy, your last pit window might open at lap 350 and close around lap 380. After you pit for the last time, you have fewer than 120 laps to go. That is roughly 20 to 25 minutes of racing. Knowing that you will not pit again, you can be aggressive with tire wear and fuel burn. Many drivers make the mistake of driving conservatively in the last stint to \"save fuel,\" which costs them more time than it saves."
+    },
+    {
+      "list": [
+        "Build a pit strategy before the race, not during it; check public fuel consumption data for your car and calculate pit windows in advance",
+        "Mirror the front of the field's pit timing in the early race; you do not have to match the exact lap, but staying within 5 laps of the leaders minimizes position loss",
+        "Fuel mileage varies with throttle input and line smoothness; expect variance of 0.5 to 1.0 mph between different drivers in the same car",
+        "In the final stint, drive to win, not to conserve; every lap saved on fuel is worth less than one lost position"
+      ]
+    },
+    {
+      "h2": "Passing and Racing Cleanly"
+    },
+    {
+      "p": "Kentucky's passing zones are specific. Turn 1 is the primary opportunity. If you exit Turn 4 with a better line or more speed than the car ahead, you will carry that advantage onto the front stretch. Use the draft if you can, but do not overdrive Turn 1. A common mistake is to brake late into Turn 1 thinking you will gain an advantage. Kentucky's banking means that the inside line is slower. Braking late pushes you into the apex, kills your midcorner speed, and you will fall back."
+    },
+    {
+      "p": "The correct passing move at Kentucky is to exit Turn 4 with more speed than the car ahead, carry the draft onto the front stretch, and use that momentum to set up a later Turn 1 apex. By running a later apex (deeper into the turn), you can build a run on the exit and drift to the outside wall, creating a passing lane. This move takes time to set up. It is not a one-lap overtake. Most passes at Kentucky happen over 3 to 5 laps of positioning."
+    },
+    {
+      "p": "Turns 3 and 4 are not passing zones. The cars are closer together, the speed is lower, and there is nowhere to go if something goes wrong. If you are behind into Turn 3, stay behind until Turn 4 exit. Trying to dive to the inside in Turn 3 is a common cause of contact and rebuilding your car. The backmarkers in those corners are also more likely to be unpredictable. Build your pass in the open road, not in heavy traffic."
+    },
+    {
+      "tip": "Kentucky's physics model rewards smooth steering input more than any other single factor. A driver who is 1 to 2 mph slower on a straightaway but 2 to 3 mph faster through the turns will pass the speedier, jerky driver every race. Practice flowing through Turns 1 and 4 on a Friday night and dial in the hand inputs before you race.",
+      "tipLabel": "Steering Input Wins"
+    },
+    {
+      "h2": "Tire Management and Pit Stops"
+    },
+    {
+      "p": "Tire wear at Kentucky is moderate. The banking keeps heat off the tires compared to flat tracks, but the stagger and speed still cause the right-side tires to wear faster. Most sets will gain about 0.3 to 0.5 seconds of pace in the first 20 to 30 laps as they come up to temperature. After about 60 laps, wear becomes the dominant factor and lap times will begin to drop."
+    },
+    {
+      "p": "When you pit, four new tires are standard. Many drivers waste time debating whether to pit two or four tires. At Kentucky, pit four. The right-side tires will be significantly worn and new tires on the right side make a measurable difference in the first 10 to 15 laps after a pit stop. The pit stop time penalty for changing four tires is worth the pace gain."
+    },
+    {
+      "p": "One tactical consideration: if you pit early, your fresh tires will be at peak performance when the rest of the field is still on old rubber. If you pit late, you will have an advantage in the final laps when everyone else is on worn tires. Neither is universally better. The correct choice depends on your position in the race and whether you are hunting or defending."
+    },
+    {
+      "h2": "Common Mistakes and Fixes"
+    },
+    {
+      "list": [
+        "<strong>Overdriving the entry of Turn 1.</strong> Kentucky's banking is shallow enough that your instinct will be to brake late. Resist this. A smooth, earlier apex through Turn 1 is faster than a dramatic late-braking move. You will pass more cars by being consistent.",
+        "<strong>Pitting on no plan.</strong> Calculate fuel mileage and pit windows before the race. If you pit randomly, you will fall into a bad cycle where you are always pitting around the same time as 20 other cars, losing position in every stop.",
+        "<strong>Running too much wing.</strong> High downforce feels like control in a simulator, but Kentucky is an efficiency track. A setup that is too heavy on wing will be 0.1 to 0.3 seconds slower on the straightaway, and you will never make up those tenths in the corners.",
+        "<strong>Ignoring tire stagger.</strong> Stagger is not optional at Kentucky. If you are running equal tire sizes left and right, your car will either push through the turn or be loose on exit. There is no middle ground."
+      ]
+    },
+    {
+      "h2": "Weather and Night Racing"
+    },
+    {
+      "p": "Kentucky iRacing races often run in the afternoon and sometimes under lights. Night racing is visually clearer on most monitors because the track contrast is higher. The physics do not change, but the psychological effect is real. Many drivers find night racing at Kentucky easier because they feel more confident in their line through the turns."
+    },
+    {
+      "p": "Rain at Kentucky is rare in the iRacing schedule, but if it happens, the same principles apply as dry racing. The banking does not pool water, so standing water is not a hazard. Wet Kentucky actually races similarly to wet other ovals because the track stays relatively consistent. Manage your fuel burn more conservatively in the wet because full throttle will cause more tire spin and less actual acceleration."
+    },
+    {
+      "h2": "Practice and Race Preparation"
+    },
+    {
+      "p": "Before you race Kentucky, spend at least one hour on a Friday or test session running the same fuel load you will run in the race. If you are planning a two-stop strategy on 400 laps, load 15 to 17 gallons of fuel and do a 30-lap run to measure actual fuel consumption. That data point will make your race strategy significantly better than a guess."
+    },
+    {
+      "p": "Run at least one full-distance race or two 150-lap sessions before you jump into an official race. Kentucky is a momentum track. It takes 20 to 30 laps to fully understand the grip and line, and an additional 20 to 30 laps to settle into a consistent pace. If you go in cold, your first 50 laps will be uncompetitive and you will burn a lot of fuel learning."
+    },
+    {
+      "p": "Kentucky rewards consistency and patience more than any other single factor. The drivers who win are not necessarily the fastest on a single lap. They are the ones who run 300 consecutive laps within 0.1 seconds of their best pace while managing fuel, strategy, and traffic. That is a learned skill. Practice it in a test session and bring it to the race."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the best line through Turn 1 at Kentucky?",
+      "a": "Enter Turn 1 with a relatively high line (near the wall), run a smooth input at the steering wheel, and track out to the outer wall. The turn is banked at 14 degrees, which means you can carry throttle mid-corner, but you must be smooth with your input or the car will push or become loose. A common mistake is to brake late into Turn 1 thinking you will overtake. Late braking actually pushes you into a lower apex, which is slower and harder to recover from. Build your pass on the front stretch setup, not the Turn 1 brake zone."
+    },
+    {
+      "q": "How much fuel does a stock car burn at Kentucky in iRacing?",
+      "a": "Most stock cars will achieve 4.5 to 5.5 miles per gallon at Kentucky race pace. This varies based on driver input smoothness, line consistency, and fuel load. A heavier fuel load (more gallons) tends to hurt mileage slightly because you are carrying more weight. Test fuel mileage in a practice session by running 30 laps at race pace with a measured fuel load, and divide the total laps by the fuel used. That actual number is more reliable than any generalized estimate."
+    },
+    {
+      "q": "Should I run two or four tires at a pit stop?",
+      "a": "Run four tires. The right-side tires wear significantly faster at Kentucky due to the stagger and speed through the turns. New tires on the right side provide a measurable pace improvement in the 10 to 15 laps immediately after a pit stop. The pit stop time for four tires is worth the pace gain. Two-tire stops are only worth considering if you are stuck in a situation where you are running out of fuel and have no choice, which should not happen if you calculated your strategy correctly before the race."
+    },
+    {
+      "q": "What setup changes should I make if the car feels loose on corner exit?",
+      "a": "First, reduce stagger. If you are running 3 inches of left-side reduction and the car is loose on exit, try 2.5 inches. If stagger is already low or reducing it does not help, add a small amount of rear wing (0.5 to 1 degree) to restore balance. Do not reduce front wing or add excessive rear downforce early in the tuning process because this will slow you down overall. Looseness on exit is usually a stagger and balance problem, not a downforce problem."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-cs-v2",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-16",
+  "dateLabel": "November 16, 2026"
+}

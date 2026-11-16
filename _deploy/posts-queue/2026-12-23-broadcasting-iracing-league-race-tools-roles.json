@@ -1,0 +1,164 @@
+{
+  "slug": "broadcasting-iracing-league-race-tools-roles",
+  "tag": "Streaming · OBS",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Broadcasting an iRacing League Race: Tools, Setup, and Roles",
+  "description": "Learn how to produce a professional iRacing broadcast. Camera angles, audio mixing, graphics overlays, and the roles needed to run a live league race stream.",
+  "sections": [
+    {
+      "p": "A league race broadcast is a live production, not just a replay export. It needs a director who is planning camera cuts in real time, an audio engineer catching driver callouts and in-car sound, graphics placement so the viewer knows who is leading and what the gap is, and a PC or encoder managing the bitrate to Twitch or YouTube without dropping frames. Most sim racing broadcasts fail on audio or graphics, not because the streaming PC cannot handle it, but because nobody owns those decisions during the race."
+    },
+    {
+      "p": "This guide walks through the minimum viable broadcast setup: who does what, what software and hardware solve real problems, and how to run it without a dedicated streaming rig. The focus is on league racing, where drivers are ranked by skill and you have predictable driver counts and track time."
+    },
+    {
+      "h2": "The core broadcast roles"
+    },
+    {
+      "p": "A league broadcast needs four roles: director, audio engineer, graphics operator, and chat moderator. A single person cannot do all of these well during a live race."
+    },
+    {
+      "list": [
+        "<strong>Director.</strong> Calls camera cuts and manages pacing. Decides which car to follow, when to show the leaderboard, when to show pit stops, when to replay a collision. Must watch driver positions, gaps, and incident locations in real time. Usually also handles scene transitions in OBS.",
+        "<strong>Audio engineer.</strong> Monitors in-car audio, team radio, and event commentary. Adjusts levels so the audience hears the race unfold. Catches radio chatter, spotter callouts, and collision sounds.",
+        "<strong>Graphics operator.</strong> Places lower third, leaderboard, sector times, and incident alerts on screen. Updates driver names, positions, and gaps. Sometimes called the technical director if they also manage scene layout.",
+        "<strong>Chat moderator.</strong> Monitors chat and enforces rules. Answers viewer questions about penalties, standings, or driver changes. Prevents spam and keeps the energy positive. Can also run alerts for new followers or subs if that is part of the event."
+      ]
+    },
+    {
+      "tip": "Start with three people: director, audio engineer, and a combined graphics + chat operator. The graphics operator handles lower third and leaderboard updates while monitoring chat. It is not ideal, but it works for a 30-minute feature race.",
+      "tipLabel": "Three-person crew minimum"
+    },
+    {
+      "h2": "PC and encoder setup"
+    },
+    {
+      "p": "You do not need a separate streaming PC if you are not racing. If the director or any crew is a driver, they cannot stream from the same machine. For a league broadcast, one streaming PC running OBS is the standard."
+    },
+    {
+      "p": "The PC does not need to be a powerhouse. An RTX 5060 Ti or better can handle 1080p 60 fps H.264 encoding at ~6000 kbps while running OBS and monitoring sources. If you are pulling in multiple video feeds (game capture, webcam, NDI streams from other PCs), the CPU matters more than the GPU. A Ryzen 7 5700 or equivalent is a safe baseline."
+    },
+    {
+      "list": [
+        "<strong>Game capture or NDI input.</strong> OBS Game Capture will grab one monitor or window. If the race is on a different PC (the streaming PC is not racing), use OBS Windowed Projector to display the race on a monitor, then capture that monitor. Alternatively, use NDI to stream video from the racing PC to the streaming PC over your local network. NDI is cleaner and uses less CPU.",
+        "<strong>Encoder bitrate.</strong> 1080p 60 fps is the standard for league racing. Use H.264 (libx264) at 5500 to 6500 kbps depending on your upload speed. YouTube and Twitch both accept this format. Test your upload speed before race day. Use speedtest.net and aim for at least 10 Mbps upload.",
+        "<strong>Ethernet, not WiFi.</strong> Connect the streaming PC to your router with Ethernet. WiFi introduces jitter and packet loss. Even a single dropped frame is visible to 1000+ viewers.",
+        "<strong>Monitor the bitrate.</strong> OBS shows current bitrate in the status bar. If it drops below your target by more than 500 kbps consistently, lower your bitrate by 500 kbps or reduce to 1080p 30 fps."
+      ]
+    },
+    {
+      "h2": "Video sources and camera angles"
+    },
+    {
+      "p": "A league broadcast minimally shows the race from one angle. The best angle is an in-car view of the leading car, or a wide shot of Turn 1 or a battle zone. Many leagues use multiple angles and cut between them to show position changes, track limits violations, and pit stops."
+    },
+    {
+      "list": [
+        "<strong>Spectator camera or in-car view.</strong> If the league records the replay file server-side, you can play it back during the stream and select any in-car or static camera. This gives you unlimited angles and the ability to follow any car instantly.",
+        "<strong>Static trackside cameras.</strong> Useful for showing pit lane activity and starts. Place a camera feed on Turn 1 or the main straight.",
+        "<strong>Leaderboard and graphic overlay.</strong> Always visible. Updates every few seconds to show position, gaps, and laps remaining.",
+        "<strong>Incident replay.</strong> If a collision or penalty occurs, replay a 10-15 second clip at half speed with slow-motion if possible. OBS can replay the last 30 seconds of recording using the Replay Buffer feature."
+      ]
+    },
+    {
+      "tip": "Use iRacing's Replay System to export trackside or in-car video of the race, then play it back in a media player or OBS as a source. This avoids the lag and latency of a live spectator feed.",
+      "tipLabel": "Replay-based broadcast is simpler"
+    },
+    {
+      "h2": "Audio sources and mixing"
+    },
+    {
+      "p": "Audio is where most league broadcasts sound amateur. The engineer needs to hear in-car audio from multiple drivers, spot team radio chatter, and control the mix so the viewer understands what is happening without the feed becoming a noise floor."
+    },
+    {
+      "list": [
+        "<strong>iRacing in-car audio.</strong> OBS can capture iRacing's desktop audio (the race sounds). Adjust the game volume in Windows to 70-80% so it does not clip. This is your base layer.",
+        "<strong>Driver audio or commentary.</strong> If a driver is on a team radio (Discord, TeamSpeak, or iRacing's own built-in voice chat), capture that as a separate input in OBS. Use a virtual audio mixer like VB-Audio Virtual Mixer to route individual driver audio into OBS.",
+        "<strong>Event commentary.</strong> If a commentator is describing the race, capture their Discord or Skype audio as a separate input. This should be the loudest element in the mix during race action.",
+        "<strong>Compression and EQ.</strong> Use OBS's audio mixer panel to apply a compressor to in-car audio (reduce dynamic range so quiet moments are audible and loud moments do not spike). A simple 4:1 ratio with 10 ms attack works well."
+      ]
+    },
+    {
+      "p": "Test your audio mix 30 minutes before the race broadcast. Have one driver in a car, run a qualifying lap, and monitor the levels in OBS. Adjust slider faders so in-car sound sits at minus 6 dB, commentary at minus 3 dB, and driver radio at minus 9 dB (quieter, emergency use only)."
+    },
+    {
+      "h2": "Graphics and overlays"
+    },
+    {
+      "p": "OBS Scenes are the foundation. Create one Scene for the race (main feed plus graphics), one for pit stops, one for replays, and one for intermission or ads."
+    },
+    {
+      "list": [
+        "<strong>Lower third graphics.</strong> Display the leading driver, their iRating, and time delta to second place. Update this manually or use a tool like RaceLabEd (which connects to OBS via plugin) to push live lap times and gaps.",
+        "<strong>Leaderboard.</strong> A static image showing top 5 or top 10 drivers, their position, iRating, laps completed, and gaps. Update this every 2 laps by replacing the image in OBS.",
+        "<strong>Lap counter and time remaining.</strong> Clock or lap counter in a corner of the screen.",
+        "<strong>Incident alert.</strong> A graphic or text alert when a penalty, collision, or disconnection occurs. Many leagues use a simple red banner with white text."
+      ]
+    },
+    {
+      "p": "Tools like <a href=\"best-sim-racing-wheels-iracing.html\">RaceLabEd</a> (formerly RaceLab) can feed live telemetry, gaps, and leaderboard data directly into OBS as text or image overlays. If your league uses iRacing's official results API, you can build a simple web page that displays the standings and embed it in OBS as a browser source."
+    },
+    {
+      "h2": "Setup before race day"
+    },
+    {
+      "olist": [
+        "Test the streaming PC and iRacing on the same LAN. Run a 10-minute practice race and stream it to a private YouTube link. Watch the stream on a phone to check latency (usually 10-30 seconds behind live).",
+        "Create OBS Scenes for each segment of the broadcast: Pre-race (title card, leaderboard), Race (main feed with graphics), Pit Stops (wider angle, leaderboard), Incident Replay (slow-motion clip), Post-race (final standings, thank you message).",
+        "Build a graphics package (lower third, leaderboard, alerts) in Photoshop or Canva. Export as PNG with transparency so they overlay cleanly on the race feed. Import into OBS as Image elements.",
+        "Run a full-length test with the entire crew. Stream a 15-minute qualifying session. Each person practices their role: director calls cuts, audio engineer adjusts levels, graphics operator updates leaderboard, chat moderator monitors Twitch chat.",
+        "Set up a Discord or Slack channel for crew communication during the race. Director, audio engineer, and graphics operator should be able to chat without viewers hearing it.",
+        "Create a stream title, description, and thumbnail that includes the league name, event, and driver names. Upload these to YouTube or Twitch 24 hours before the race so they are live when the stream starts."
+      ]
+    },
+    {
+      "tip": "Save your OBS configuration as a profile. Create a new profile for each league season so you can run events on different platforms (Twitch vs. YouTube) and bitrates without losing your scene layouts.",
+      "tipLabel": "OBS profiles for consistency"
+    },
+    {
+      "h2": "Common mistakes and fixes"
+    },
+    {
+      "list": [
+        "<strong>Audio levels clipping.</strong> In-car sound is loud. Set game audio to 50-60% in Windows before OBS sees it. Use OBS's audio mixer to bring in-car audio down another 6-12 dB.",
+        "<strong>Graphics updates lag behind the race.</strong> Manual leaderboard updates are slow. Use an API feed or telemetry plugin if available. If not, assign a dedicated graphics operator who updates standings every 2 laps without distraction.",
+        "<strong>Dropped frames during scene transitions.</strong> Avoid complex animations. Keep transitions to Fade or Cut. If you have drops, disable any filters on sources (like color correction) and reduce monitor resolution or refresh rate on the streaming PC.",
+        "<strong>Chat becomes unreadable.</strong> Set chat to slow mode (1 message per 10 seconds per user) and add a moderator early. Have a pinned message with league rules and social links."
+      ]
+    },
+    {
+      "h2": "What you actually need to buy"
+    },
+    {
+      "p": "If you have a streaming PC and a monitor, you have the core. The only real expense is graphics design (tools like Canva Pro are ~$120/year) and optionally a plug-in like RaceLabEd (one-time ~$30-50 depending on features). Do not buy dedicated streaming hardware like Blackmagic ATEM unless your league broadcasts high-profile championships and you want to add cameras or mixing equipment later."
+    },
+    {
+      "p": "Many league broadcasters start with OBS, two monitors (one for the race, one for the stream layout and chat), and a PC that is not racing. That is enough to run a professional-looking broadcast. The rest comes down to crew training and rehearsal."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can one person run a league broadcast alone?",
+      "a": "Technically yes, but the quality suffers. A solo broadcaster cannot call camera cuts, monitor audio, update graphics, and answer chat all at the same time. Start with two people: one on director and audio mixing, one on graphics and chat. As your league grows, split those into separate roles."
+    },
+    {
+      "q": "What is the difference between streaming live from the race and playing back a replay file?",
+      "a": "A live stream captures the race as it happens and sends it to Twitch or YouTube with a 10-30 second delay. A replay-based broadcast plays back a recorded or server-side replay file, which gives you unlimited camera angles and the ability to pause or slow down without losing sync. Replay-based is easier for single-camera production because you can cut to any angle instantly. Live is more exciting but requires careful camera planning."
+    },
+    {
+      "q": "How do I get driver audio into the broadcast?",
+      "a": "If drivers are on Discord, Skype, or TeamSpeak, use a virtual audio mixer like VB-Audio Virtual Mixer or VoiceMeeter to route that audio into OBS as a separate input. Set the driver audio to a lower level than commentary so it does not distract. Test with one driver before race day to confirm audio levels and synchronization."
+    },
+    {
+      "q": "What is NDI and do I need it?",
+      "a": "NDI (Network Device Interface) is a protocol that streams video over your local network with low latency. If your racing PC and streaming PC are on the same network, NDI lets you send the race video from the racing PC to the streaming PC without USB cables or capture cards. It is faster and cleaner than game capture. Most free NDI tools work, but check OBS documentation for the latest compatible plugin."
+    }
+  ],
+  "gearKeys": [
+    "gpu-rtx-5060-ti",
+    "cpu-ryzen-7-5700"
+  ],
+  "published": "2026-11-16",
+  "dateLabel": "November 16, 2026"
+}

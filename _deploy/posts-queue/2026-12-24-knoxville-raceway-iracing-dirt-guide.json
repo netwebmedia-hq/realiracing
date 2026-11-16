@@ -1,0 +1,171 @@
+{
+  "slug": "knoxville-raceway-iracing-dirt-guide",
+  "tag": "Track Guides · Dirt Oval",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Knoxville Raceway iRacing Dirt Guide: Setup, Lines, and Strategy",
+  "description": "Master Knoxville's high-banked dirt oval with proven setup choices, racing lines, and tire strategy for consistent podiums in iRacing.",
+  "sections": [
+    {
+      "p": "Knoxville Raceway is one of iRacing's most distinctive dirt ovals: high banking, a smooth surface compared to other dirt tracks, and a half-mile distance that rewards consistent throttle control and line precision. The track sits at ~14 degrees of banking, steep enough to let you carry real speed through the corners without fear of running out of grip, yet forgiving enough that small mistakes don't immediately end your race. Learning to trust the banking and attack it cleanly is the difference between running mid-pack and running up front."
+    },
+    {
+      "p": "This guide covers the setup fundamentals that work on Knoxville's surface, the racing lines that maximize speed, and the tire and fuel strategy that will keep you in contention over a full stint. Whether you are racing the sprint format or preparing for a longer feature event, the principles remain the same: find the groove, manage your tires, and stay smooth under throttle."
+    },
+    {
+      "h2": "Setup foundation for Knoxville's banking"
+    },
+    {
+      "p": "Knoxville's high banking allows you to run a relatively stiff setup compared to flatter dirt ovals. The banking does much of the work for you, so you can focus on minimizing excess motion rather than relying on soft springs and dampers to generate grip."
+    },
+    {
+      "list": [
+        "Front spring rate: start in the mid-to-stiff range (around 1200-1400 N/mm for most dirt modifieds). The banking supports the front end, so you do not need softness to maintain contact.",
+        "Rear spring rate: match it closely to the front or run slightly stiffer (1300-1500 N/mm). A stiffer rear helps keep the car planted through the high-speed corners.",
+        "Front and rear anti-roll bars: run stiffer than you might on a flat oval. Knoxville's banking reduces the need for compliance, and stiffness improves turn-in response.",
+        "Front and rear dampers (bump and rebound): tune these in small increments. Too soft and the car wallows and loses precision; too stiff and it chatters on the bumpy sections near the infield and wall."
+      ]
+    },
+    {
+      "tip": "Start with a baseline setup from the iRacing setup shop or a trusted community builder, then make small changes (25-50 N/mm for springs, one click for anti-roll bars) and log lap times. Knoxville rewards consistency, so five laps on a stable setup beats ten laps tweaking endlessly.",
+      "tipLabel": "Baseline first"
+    },
+    {
+      "h2": "Finding and holding the groove"
+    },
+    {
+      "p": "The groove on Knoxville is typically one or two car widths wide around the bottom. The banking naturally pushes you toward the bottom, so defending it and running it cleanly are essential. The key is throttle modulation: you can be at full throttle in the middle of the corner, but how you get there and how you exit matter enormously."
+    },
+    {
+      "olist": [
+        "Enter Turn 1 (turns 1 and 3 are the main corners; turns 2 and 4 are the straights) on the high side of the track, brake in a straight line to avoid upsetting the car, then trail brake down toward the bottom groove.",
+        "At the apex (the lowest point of the groove), begin adding throttle smoothly. Full throttle is your goal, but arrive at it gradually—ramming the throttle on a dirt oval usually just spins the tires and kills your exit speed.",
+        "Exit aggressively toward the wall, using the full width of the track. This gives you the most room to accelerate and sets you up well for the next straightaway.",
+        "On the straights (turns 2 and 4), stay off the wall and use a smooth line. Dirt ovals have bump zones everywhere, and sudden steering inputs at high speed will upset the car."
+      ]
+    },
+    {
+      "p": "Many drivers run Knoxville too fast in the corners and too loose on exit. The banking is seductive—it feels like you can carry speed forever. The truth is that speed comes from traction on exit, not from carrying more steering angle in the corner. Practice hitting your apexes with minimal steering input and maximum throttle exit. That is where lap time lives."
+    },
+    {
+      "h2": "Tire management and compound choice"
+    },
+    {
+      "p": "Knoxville's dirt surface is relatively slick compared to other dirt ovals, and tires heat up quickly under the banking and consistent cornering speeds. Tire choice and management can be the deciding factor in a longer race."
+    },
+    {
+      "list": [
+        "Tire compound: soft is the standard choice for most field sizes and track conditions at Knoxville. It offers the grip you need early and maintains it reasonably well through 15-20 laps. Hard compound is typically used only in very high-traffic races or long endurance events.",
+        "Tire pressure: start at the high end of the recommended range (around 40-45 psi for most modifieds). As the tires heat and dirt and rubber are ground into the groove, pressure will climb. Monitor your tire pressure in the telemetry view and dial in the starting point so you do not exceed safe limits late in the stint.",
+        "Tire wear: Knoxville is kind to tires because the groove is smooth and you can run a consistent line lap after lap. Tire degradation is gradual. Monitor your lap times and telemetry: once you see a half-tenth drop per lap, consider pitting if the race format allows it.",
+        "Cold tire management: Knoxville's banking generates grip quickly, but on the opening laps, tires are cold and traction is lower. Treat the first two laps as a warm-up: smooth steering, early throttle application, avoid sudden braking or turns."
+      ]
+    },
+    {
+      "h2": "Fuel strategy for sprints and features"
+    },
+    {
+      "p": "Knoxville hosts both short sprints (25-30 laps) and longer feature races (50-100 laps). Fuel strategy differs between them, so know the race distance and format before you race."
+    },
+    {
+      "list": [
+        "Sprint races (25-30 laps): fuel consumption is not a constraint for most drivers. Run flat out from green to checkered, focusing on consistency and line precision. If you do run low on fuel, back off slightly in the final laps and lean out the fuel mixture, but do not let conserving fuel compromise your pace early.",
+        "Feature races (50+ laps): map your fuel consumption over the first 10 laps and calculate whether you can make it to the finish without pitting. If a pit stop is necessary, plan it for a caution or when you are running in a position you can afford to lose (p8 or worse). Pitting in the lead is risky; a yellow after your stop means you have wasted a pit stop and lost track position.",
+        "Fuel mixture: on Knoxville, the smooth groove and consistent lap times mean fuel consumption is fairly predictable. Run a richer mixture (better reliability, slightly higher fuel burn) in hot, dusty conditions and a leaner mixture in cooler conditions or if you are approaching fuel limits."
+      ]
+    },
+    {
+      "tip": "Save 3-5 laps of fuel as a buffer. Dirt ovals can throw yellows for incidents in the groove, and running out of fuel in the final laps because you saved 'just enough' is a common and crushing mistake.",
+      "tipLabel": "Fuel buffer rule"
+    },
+    {
+      "h2": "Passing and defending on the high-banked groove"
+    },
+    {
+      "p": "Passing at Knoxville is relatively open because the banking provides multiple racing surfaces: the groove, the middle of the track, and the wall. However, passing is also risky if you are impatient, because a bad pass often results in a spin and a caution."
+    },
+    {
+      "list": [
+        "Passing in the groove: if you are significantly faster, you can dive to the inside (higher up the banking) on entry and try to establish yourself lower than the car ahead by the apex. This is high-risk; if the car ahead does not see you and moves down, you will collide. Only do this when you are clearly faster.",
+        "Passing on exit: a better option is to exit higher than the car ahead and use your exit speed to gain positions on the straightaway. This requires patience and consistent throttle control, but it is safer and more repeatable.",
+        "Defending: if someone is running your line, hold it and do not give ground. Smooth driving and predictability are your defense. If a faster car is riding your rear wing through the corners, let them pass on the exit and then follow them to study their line; often their setup is better and you can learn something.",
+        "Lapped traffic: on longer races, you will lap slower cars. Pass them on the inside or outside depending on where they are running, signal your intent (racetrack courtesy applies in iRacing too), and move on. Do not spend half a lap fighting for position against a car you are lapping."
+      ]
+    },
+    {
+      "h2": "Common mistakes and how to avoid them"
+    },
+    {
+      "list": [
+        "Over-braking into the corners: Knoxville's high banking rewards late apexes and smooth entry. Brake hard in a straight line, then immediately begin trailing brake down and toward the apex. Do not brake all the way to the apex; this loses exit grip.",
+        "Steering too much in the groove: the banking does the work. Excessive steering angle in the corner kills exit traction and forces you to lift throttle earlier than necessary. Aim for minimal steering input and maximum throttle at the apex.",
+        "Lifting off throttle mid-corner: once committed to the corner and rolling at reasonable speed, stay on throttle or at cruise (zero throttle input). Lifting causes the car to wash up the track and lose line, forcing you into a rally-style recovery.",
+        "Pushing the rear too far: a rear that is stepping out is usually a sign of too much entry speed or too much throttle too early. Slow your entry, brake later (in a straight line), and add throttle more gradually. Do not muscle through it with steering corrections."
+      ]
+    },
+    {
+      "h2": "Practice session structure for Knoxville"
+    },
+    {
+      "p": "Knoxville rewards rhythm and consistency. A focused 30-45 minute practice session is more valuable than aimless laps. Here is a structure that works."
+    },
+    {
+      "olist": [
+        "Laps 1-5: build heat in the tires and get a baseline feel for the track. Run a smooth line, do not push, and focus on hitting apexes consistently.",
+        "Laps 6-15: now push pace and work on the driving line. Make small steering inputs, practice early throttle application, and log your best lap. This is your qualifying run.",
+        "Laps 16-25: run a 10-lap stint with minimal pit stops to simulate a race. Monitor tire pressure and wear, fuel consumption, and your ability to maintain pace lap after lap.",
+        "Laps 26-30: adjust setup or strategy based on what you learned, then do one more qualifying run. If you found something that works, do not over-tweak it.",
+        "Final 10-15 laps: run full race pace with the final setup, treating it like the first laps of a real race. Build confidence in your car and your line."
+      ]
+    },
+    {
+      "p": "After practice, review your telemetry replay. Watch your best lap and your average lap side by side. The difference is usually in brake timing (later = better) and throttle application (earlier = better). Most drivers can find a tenth or two just by sharpening these inputs without changing setup at all."
+    },
+    {
+      "tip": "Knoxville is a momentum track. If you lock up a tire or slide wide, you will lose half a second recovering. Practice smooth steering and smooth throttle inputs until they are muscle memory. That consistency is worth more than any setup tweak.",
+      "tipLabel": "Momentum over power"
+    },
+    {
+      "h2": "Setup adjustments for changing conditions"
+    },
+    {
+      "p": "Track conditions at Knoxville can shift between sessions. Temperature, moisture, and rubber laid down by other cars all affect grip and tire behavior. Know how to adjust on the fly."
+    },
+    {
+      "list": [
+        "High grip (cooler, damp, freshly watered): loosen front anti-roll bar slightly, run softer dampers, and reduce front wing (if available). The track is forgiving, so softer settings help the car work over the bumps.",
+        "Low grip (hot, dry, track rubbered up): stiffen front anti-roll bar, increase front wing, and run stiffer dampers. You need less compliance and more predictability.",
+        "Very bumpy track surface: soften dampers and reduce spring rates slightly. Stiff setups chatter on rough dirt and lose traction. A softer car that works over the bumps beats a stiff car that bounces.",
+        "Tires cold or struggling: check tire pressure is not too high, run a richer fuel mixture, and add a few clicks of front wing for added downforce. These changes buy grip early in the stint."
+      ]
+    },
+    {
+      "p": "Change one thing at a time and log a lap or two to feel the effect. Knoxville responds quickly to setup changes, so you will know within two laps whether a change helps or hurts."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a good starting setup for Knoxville if I have no baseline?",
+      "a": "Start with a mid-stiff spring setup (1200-1400 N/mm front, 1300-1500 N/mm rear), stiffer anti-roll bars than you would run on a flat oval, and moderate damper settings. Build heat in the tires over five laps, then push pace and log a best lap. Use community setups from iRacing's setup shop as a reference if available. The key is consistency, not perfection, so do not spend hours tuning before you race."
+    },
+    {
+      "q": "How do I find the right line and apex at Knoxville?",
+      "a": "The groove is at the bottom of the banking, typically one to two car widths wide. Enter the corner high, brake in a straight line, then trail brake down toward the apex. At the apex, begin adding throttle smoothly and exit aggressively toward the wall. Practice this line for 10-15 laps until it feels natural. Watch fast drivers in replays to see their steering inputs and throttle application; you will often notice they use less steering than you think."
+    },
+    {
+      "q": "Should I pit during a long feature race at Knoxville?",
+      "a": "It depends on tire wear and fuel. If your lap times are dropping consistently and you have fuel to reach the end, consider pitting only if a yellow comes out and you are in a position to afford the lost track position. If tires are gone (losing a tenth per lap or more) and no yellow is likely, pit on a caution or when you are running p8 or worse. Always save a 3-5 lap fuel buffer to avoid running dry late in the race."
+    },
+    {
+      "q": "What is the most common setup mistake drivers make at Knoxville?",
+      "a": "Over-braking and carrying too much steering angle into the corners. The banking is forgiving, which tempts drivers to brake later and turn harder. This kills exit traction. The winning move is to brake early (in a straight line), roll into the corner with minimal steering input, and add throttle aggressively at the apex. Smooth inputs and traction management beat aggression every time on Knoxville."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "gpu-rtx-5060-ti",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-16",
+  "dateLabel": "November 16, 2026"
+}

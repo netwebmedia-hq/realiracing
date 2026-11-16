@@ -1,0 +1,170 @@
+{
+  "slug": "gran-turismo-7-to-iracing-console-transition",
+  "tag": "iRacing Tips · Getting Started",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Gran Turismo 7 to iRacing: What Changes for Console Drivers",
+  "description": "Moving from Gran Turismo 7 to iRacing? Learn the physics shifts, multiplayer rules, and rig setup differences that console drivers face.",
+  "sections": [
+    {
+      "p": "Gran Turismo 7 is a polished racing sim on PlayStation, but iRacing demands a different mindset. Physics behave differently, multiplayer has real consequences, and your console wheel may not work at all. Console drivers moving to PC iRacing often find the first week harder than expected, not because they lack talent, but because they are learning a new ruleset."
+    },
+    {
+      "p": "The gap is not insurmountable. Many sim racers come from GT7 and climb iRacing licence grades without issue. The key is understanding where the two sims diverge, what your hardware needs to be, and how to reset your expectations about feedback, tire behavior, and competitive rules."
+    },
+    {
+      "h2": "Physics and tire behavior shift"
+    },
+    {
+      "p": "Gran Turismo 7 uses a physics engine tuned for console play. It is forgiving, responsive, and rewards smooth inputs. Tires grip earlier, lose grip more gradually, and mistakes are often recoverable. iRacing runs on a different engine, and the tire model is strict. It reflects real tire physics more closely, which means grip drops sharply at the edge, oversteer and understeer penalties are immediate, and the margin for error shrinks."
+    },
+    {
+      "p": "In Gran Turismo 7, you can brake late into a corner, turn in with moderate steering angle, and the car will grip. In iRacing, the same line will produce a spin or a wide exit. iRacing tires have a sharp breakpoint. Cross it and you lose traction instantly. This is not harder or easier, only different. It requires you to find the edge gradually, not search for how much the car will forgive."
+    },
+    {
+      "list": [
+        "Braking points are earlier and harder in iRacing; threshold braking produces tiny threshold-braking inputs rather than long trail-braking zones",
+        "Throttle application is more linear; aggressive mid-corner power will produce oversteer, not grip",
+        "Downforce behaves more realistically; losing DRS or running in turbulent air has a stronger effect",
+        "Tire temperature builds and drops faster; a cold lap after pit stop will slide more than in GT7",
+        "Setup changes have larger effects; small camber or brake-bias adjustments shift lap time more noticeably"
+      ]
+    },
+    {
+      "tip": "Spend your first week driving the MX-5 Cup series. The low grip and forgiving racing format lets you learn the iRacing tire edge without the pressure of GT3 or stock car racing. Once you understand how much you can push before losing traction, moving to faster cars feels natural.",
+      "tipLabel": "Start with the MX-5"
+    },
+    {
+      "h2": "Force feedback is weaker and more subtle"
+    },
+    {
+      "p": "Gran Turismo 7 delivers strong, almost cinematic force feedback. The wheel tugs, shakes, and communicates every road ripple. iRacing outputs force feedback, but many drivers find it feels quieter and more refined. This is partly because iRacing runs on a PC (not a PlayStation with a dedicated servo), and partly by design. iRacing feedback emphasizes small changes in grip, not dramatic shakes."
+    },
+    {
+      "p": "If you plug a DualSense or PlayStation-compatible wheel into iRacing on PC, the wheel may work for steering input but often the FFB is weak or missing entirely. iRacing was built around Fanatec, Thrustmaster, and MOZA hardware. Console wheels have mixed compatibility. Many console racers upgrading to PC iRacing also upgrade to a PC-native wheel like the MOZA R9, which outputs iRacing's FFB faithfully."
+    },
+    {
+      "p": "The shift in feedback can feel unsettling. You lose the constant rumble and gain a quieter sense of what the tires are doing. Adapt by turning up force feedback in iRacing settings once your wheel is working, and trust the steering angle and visual cues more. Within a few races, you will read the wheel correctly."
+    },
+    {
+      "h2": "Multiplayer has real rules and consequences"
+    },
+    {
+      "p": "Gran Turismo 7 penalizes reckless driving through pit lane lane restrictions and time penalties, but collision physics are soft and casual play rarely ends a race early. iRacing is strict. A serious collision ends your race immediately, your safety rating drops, and your incident count climbs. These consequences matter. Your safety rating gates you out of faster series and cleaner racing for weeks if you drop it."
+    },
+    {
+      "p": "iRacing also enforces pit road speed limits, yellow flag procedures, and rule-of-the-road etiquette. Rejoining after a spin or off-track excursion is risky. If another car hits you while you are coming back on track, you share the blame. Many console drivers are shocked by how fragile the first lap can be. A tap that would be a nothingburger in Gran Turismo 7 becomes a 4x incident (four times the incident count) in iRacing."
+    },
+    {
+      "olist": [
+        "Start in Rookie and low-license series (D license oval, C license road) where the racing is less intense and you can rebuild safety rating if needed",
+        "Avoid the inside line on the first lap if you are not at the front; stay left, stay smooth, and let aggressive drivers pass",
+        "Learn pit road speed limits for each track before the race; exceeding them costs time and compounds mistakes",
+        "Understand yellow flag rules: you cannot advance position under yellow, and aggressive overtaking under caution is illegal",
+        "If you spin or go off, stay off the track until traffic clears before rejoining; a collision while rejoining is partly your fault"
+      ]
+    },
+    {
+      "h2": "PC hardware is non-negotiable"
+    },
+    {
+      "p": "iRacing runs on Windows PC only. If you are on PlayStation, you need a PC. The good news: iRacing runs on modest hardware. A used mid-range gaming PC from 2021 or later will handle 60+ FPS at 1440p. A modern budget PC is cheaper than a PlayStation 5 Pro plus a racing wheel."
+    },
+    {
+      "p": "Your console wheel likely will not work on PC iRacing. PlayStation wheels, Xbox wheels, and even premium console wheels have poor or zero support in the iRacing driver. You will need a PC-compatible wheel like a Logitech G923, Thrustmaster T300, or MOZA wheelbase. If you already have a PC wheel, you are set. If not, budget ~200-800 USD for a wheel and pedals depending on your budget.</p>"
+    },
+    {
+      "list": [
+        "PC requirement: Windows 10 or 11, any CPU from the last 5 years, 16 GB+ RAM, RTX 2070 / RX 5700 or newer GPU, and 1 monitor (VR optional but not required)",
+        "Wheel requirement: Fanatec, Thrustmaster, or MOZA hardware with native PC iRacing support; console wheels often do not work reliably",
+        "Internet: wired Ethernet is preferred; WiFi adds latency and packet loss in a multiplayer race, which can cause lag and disconnections",
+        "Monitor: 60 Hz minimum, 100+ Hz recommended to match iRacing frame rates and reduce input lag"
+      ]
+    },
+    {
+      "h2": "Setup tuning is more direct"
+    },
+    {
+      "p": "Gran Turismo 7 has deep tuning menus. iRacing also has tuning, but most tracks and series come with preset setups. Rookies cannot modify setups in Rookie class; they race with one stock setup. This is intentional. iRacing wants new drivers to learn driving first, setup second."
+    },
+    {
+      "p": "Once you advance beyond Rookie, you can tune. The iRacing setup menu is less visual than Gran Turismo 7, but the logic is clearer. A change to brake bias or downforce has a direct effect you can measure in the lap timer. iRacing also lets you download setups from the community and modify them. Many console drivers find this less overwhelming than Gran Turismo 7, where tuning is more art than science."
+    },
+    {
+      "tip": "Do not obsess over setup your first week. Nine out of ten lap-time gains come from smooth inputs and understanding the tire edge, not from camber or sway bar tweaks. Run the stock setup, learn the track, and revisit setup once you have a baseline lap time.",
+      "tipLabel": "Setup comes second"
+    },
+    {
+      "h2": "Licensing and progression feel different"
+    },
+    {
+      "p": "Gran Turismo 7 gates content by car level and progression milestones. iRacing gates it by safety rating and driver rating. Your safety rating (SR) is a behavior score. It climbs when you race clean, drops when you cause incidents. Your driver rating (iR) is a skill estimate, calculated like a chess rating. It rises when you beat faster drivers, falls when you lose to slower ones. Both matter, and both are visible to everyone."
+    },
+    {
+      "p": "New drivers start at Rookie license with ~1200 iR and 4.0 SR (before modifiers). To advance, you need a threshold iR (usually 1600-2000) and minimum SR (usually 3.0 to 4.0). The first month is about climbing to D license and understanding the multiplayer rules. After that, progression is real. If you want to race GT3 cars or Indycar, you will need C or B license.</p>"
+    },
+    {
+      "list": [
+        "Safety rating starts high and drops fast if you cause damage; losing SR to 2.0 locks you out of most series until you climb back to 3.0+",
+        "Driver rating is hidden from you but public to others; it determines the strength of your competition and affects series you are eligible for",
+        "Progression is seasonal; each season is 12 weeks, and your rating can swing a lot based on a few key results",
+        "Rejoining your former GT7 friends may be hard at first; you will all be in Rookie, but your iR will reflect actual pace within a few races"
+      ]
+    },
+    {
+      "h2": "Track learning is faster but requires precision"
+    },
+    {
+      "p": "iRacing tracks are detailed and accurate to the real world. Many are based on laser scans. This means layout is realistic, but it also means curb placement, elevation, and surface changes matter. Gran Turismo 7 tracks are stylized; iRacing tracks are documentation."
+    },
+    {
+      "p": "The upside: once you learn an iRacing track, you have learned the real track (or a very close facsimile). Many iRacing drivers say that learning Road Atlanta or Suzuka in iRacing taught them line and pace better than YouTube prep. The downside: there are fewer margin-for-error corners. A subtle brake bias adjustment or a quarter-turn of steering at the apex changes your line significantly."
+    },
+    {
+      "p": "Use iRacing's practice mode to brake-test, experiment with apexes, and build a mental map. The community builds and shares setups on sites like setups.gg. Download a decent setup, run 10 laps to feel the car, and you will be ready for a race within 30 minutes."
+    },
+    {
+      "h2": "Your first week checklist"
+    },
+    {
+      "olist": [
+        "Buy or borrow a Windows PC and a PC-compatible wheel; test both before committing to iRacing subscription",
+        "Start iRacing with a trial week; run Rookie MX-5 Cup or Rookie stock car (if you prefer ovals) for 5-10 races",
+        "Read iRacing's Sporting Code (available free online); pay special attention to blue flag rules and rejoining procedures",
+        "Disable high force feedback settings in iRacing controls; start conservative and tune up once you trust the wheel",
+        "Join a beginner league or use the hosted sessions (non-official races) for a few sessions to acclimate before official races",
+        "Track your lap time using the Delta bar; focus on consistency and pace over a 5-lap run, not single outlaps",
+        "After 20 official races, review your incident log and identify if incidents are your fault or due to rules misunderstanding"
+      ]
+    },
+    {
+      "p": "The transition from Gran Turismo 7 to iRacing is not a wall. It is a shift in expectations and a new set of rules. Console drivers bring smooth inputs and racing intuition; they just need to learn where the tire edge is in iRacing, respect the multiplayer penalty system, and upgrade their PC. Within a month, most console racers find their pace and climb into D license racing. Within three months, they forget Gran Turismo 7 ever felt normal. That is when you know the transition is complete."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I use my PlayStation wheel in iRacing on PC?",
+      "a": "Most PlayStation wheels (DualSense, official PlayStation Racing Wheel, etc.) have poor or no support in iRacing on PC. Some controllers may detect as input devices but force feedback often does not work. You will need a PC-compatible wheel from Fanatec, Thrustmaster, or MOZA for a proper iRacing experience."
+    },
+    {
+      "q": "How much does it cost to switch from Gran Turismo 7 to iRacing?",
+      "a": "If you need a PC and wheel: a used mid-range gaming PC is ~300-800 USD, a budget wheel and pedals are ~200-400 USD, and iRacing subscription is ~5 USD per month. If you already own a PC and a compatible wheel, iRacing costs ~60 USD per year. Tracks and cars are included in the base subscription."
+    },
+    {
+      "q": "Why does my lap time feel so much slower in iRacing compared to Gran Turismo 7?",
+      "a": "iRacing tires have a sharper grip breakpoint, so the driving style that works in Gran Turismo 7 (late braking, smooth mid-corner power) will overshoot corners and lose time in iRacing. You need to brake earlier, turn in more decisively, and apply throttle more gradually. Your baseline lap time will drop 1-2 seconds per lap initially, then climb back as you adapt to iRacing's physics."
+    },
+    {
+      "q": "What is the best starting series for a Gran Turismo 7 player moving to iRacing?",
+      "a": "Rookie MX-5 Cup (road racing) or Rookie street stock (oval racing) are both excellent entry points. The MX-5 Cup is slower and more forgiving, making it ideal for learning iRacing's physics and multiplayer rules. After 20-30 races and promotion to D license, you can move to GT3, Indycar Rookie, or other series depending on your preference."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p",
+    "gpu-rtx-5060-ti",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-16",
+  "dateLabel": "November 16, 2026"
+}

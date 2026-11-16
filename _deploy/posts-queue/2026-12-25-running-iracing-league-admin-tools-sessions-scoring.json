@@ -1,0 +1,154 @@
+{
+  "slug": "running-iracing-league-admin-tools-sessions-scoring",
+  "tag": "League Racing · Community",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Running an iRacing League: Admin Tools, Sessions, Scoring",
+  "description": "Build a stable league structure with the right tools, session format, and points system. A practical blueprint for league admins managing cars, drivers, and results.",
+  "sections": [
+    {
+      "p": "Running an iRacing league is not about driving fast. It is about keeping 12 to 30 drivers showing up on the same night, following the same rules, and trusting that the grid and championship are fair. That requires three things working together: a league management platform, a clear session structure, and a scoring system that rewards what you actually care about."
+    },
+    {
+      "p": "Most sim racers know the difference between hosted sessions and official series. A league sits in between. You build your own calendar, set your own cars and tracks, manage your own grid and license rules, and you keep the results. The technical backbone depends on which tools you choose, how you schedule races, and whether your points system encourages the racing culture you want."
+    },
+    {
+      "h2": "League Management Platforms and Tools"
+    },
+    {
+      "p": "iRacing itself provides hosted session creation, but it does not manage a multi-week championship or pull results automatically. That is where league management platforms come in. The most common options are dedicated websites and spreadsheets that sit on top of iRacing data."
+    },
+    {
+      "p": "A league management site reads your iRacing league ID and pulls results after each race, calculates standings, tracks penalties, and shows drivers their points and position in real time. Popular platforms include LeagueRanker, SimRacing.GP, and others that connect to the iRacing API. Many are free or low-cost and handle grid management, driver registration, and championship math automatically."
+    },
+    {
+      "list": [
+        "Driver roster and license class verification (keeping rookies, A-class, and pros separated if you run split grids)",
+        "Automatic result import so you do not manually enter lap times after every race",
+        "Penalty logging (protest resolutions, DNF penalties, points deductions) that persist across the season",
+        "Standings and points display that updates in real time and shows championship gaps",
+        "Notification system so drivers know when they are registered, when the grid is locked, or when results are posted",
+        "Export and audit trails for disputes"
+      ]
+    },
+    {
+      "tip": "Before picking a platform, verify that it imports from the iRacing API and that you can customize point values and penalty rules. A platform that requires manual entry after every race will burn you out by week three.",
+      "tipLabel": "API and Automation First"
+    },
+    {
+      "p": "If your league is very small or you want full control, a well-designed spreadsheet can work. Use VLOOKUP or similar formulas to reference iRacing league results, calculate points, and track grid assignments. The tradeoff is that you spend more time managing data yourself, but you have total flexibility on rules and penalties."
+    },
+    {
+      "h2": "Session Structure and Grid Management"
+    },
+    {
+      "p": "How you organize your races affects everything: driver morale, entry list turnout, and how much work you do each week. The most common formats are weekly series (same night every week), multi-round events, and endurance rotations. Each has different demands on your tooling and your time."
+    },
+    {
+      "p": "A weekly series means every driver races the same track on the same night, same time. Consistency is high, but you need a solid grid lock process so drivers do not miss the start. Most weekly leagues open registration a few days before the race, lock the grid 15-30 minutes before green flag, and auto-withdraw drivers who do not show up. That prevents last-minute no-shows from scrambling your points and grid order."
+    },
+    {
+      "p": "For multi-round events (think a sprint weekend with practice, qualify, and a race), you need to manage driver car setups between sessions. iRacing hosted sessions let you set the same car for all sessions, but drivers can still build different setups. Most leagues either allow free setup or request drivers run a baseline (and post questions in Discord so the admin can help). The goal is fast racing, not fast setup work."
+    },
+    {
+      "olist": [
+        "Open registration on Monday or Tuesday (3-4 days before race)",
+        "Post the official series rule book, track guide, and car specs in a pinned message",
+        "Lock the grid 20-30 minutes before the first session (practice, qualify, or race) so latecomers do not join",
+        "Run practice 15-30 minutes if your league includes new drivers",
+        "If you run qualifying, start it at a fixed time so drivers do not spread across the lobby for hours",
+        "Post the starting grid and confirm that all drivers see their qualifying position",
+        "Race at the scheduled time; do not delay for stragglers"
+      ]
+    },
+    {
+      "h2": "Points Systems and Penalty Handling"
+    },
+    {
+      "p": "Your points system shapes the entire season. Some leagues use a simple 25-18-15-12-10-8-6-4-2-1 breakdown, others add bonus points for pole or fastest lap, and some use inversed grids or lottery-based grid selection to shuffle the field every week. The choice depends on your culture: do you reward pace, consistency, or simply showing up and racing clean?"
+    },
+    {
+      "p": "A flat points structure (everyone in one division, same point values) is simplest to manage. Drivers know exactly what they are chasing. If you run split grids (pro drivers separate from amateurs, or by safety rating), you need separate point tables and a way to decide if a driver promoted mid-season gets pro or amateur points. Most leagues say: you race where you are registered for the season, or they set a cutoff date for moves."
+    },
+    {
+      "list": [
+        "Standard Formula 1 style: 25-18-15-12-10-8-6-4-2-1, with 1 point for participation if you finish",
+        "Flat points: every position gets the same gap (e.g. 10 points for a win, 9 for second, 8 for third) so the field is tighter and mistakes matter less",
+        "Bonus points: add 2-4 points for pole position or fastest lap, rewarding one-lap pace and consistency",
+        "Dropped races: drop the worst 1-2 results, so a single DNF or bad week does not ruin the championship",
+        "Handicap or inverted grids: reverse the standings so the last-place driver starts up front next week, or use a ballast/fuel system if iRacing supports it, to shuffle the grid and prevent one team running away"
+      ]
+    },
+    {
+      "tip": "Start with a simple points system and add layers only if the league asks for them. Dropped races and bonus points add complexity but help drivers who have one bad night. Avoid overly punitive scoring: drivers should feel like one bad race can be recovered from, or they will not come back.",
+      "tipLabel": "Keep Scoring Simple at First"
+    },
+    {
+      "p": "Penalties and protests are the hard part. When a driver spins another, hits the wall and causes a caution, or uses a shortcut, you need a clear escalation: warning, points deduction, race ban, or season-long suspension. Most leagues handle this via a protest form (a Google Form or Discord thread) where the aggrieved driver provides a replay clip and timestamp. You review it within 24-48 hours and post a ruling."
+    },
+    {
+      "p": "Common mistakes: punishing contact too hard on the first offense (drivers will not return), allowing repeat offenders to race without warnings (the field will resent it), and changing rules mid-season without notice (drivers will feel robbed). Write your rules down before week one. Publish penalties visibly so everyone knows the standard."
+    },
+    {
+      "h2": "Keeping the League Alive"
+    },
+    {
+      "p": "A league survives on turnout, communication, and consistency. The best tool and best points system will collapse if drivers do not know when to show up or if the admin vanishes for two weeks."
+    },
+    {
+      "list": [
+        "Post the calendar and race times in one fixed place (Discord, a league website, or an email list) and do not change them without 2-3 weeks notice",
+        "Send a reminder 3 days before each race with the track, car, and registration link",
+        "Post results within 1-2 hours of the race so drivers can see the standings and talk about what happened while it is fresh",
+        "Hold a brief debrief or Q&A in Discord after the race (even 10 minutes) so drivers feel heard",
+        "Watch for drivers who stop showing up and ask if they are okay or if the league is not working for them",
+        "Rotate tracks and cars so every driver has a favorite race (variety keeps long seasons from getting stale)"
+      ]
+    },
+    {
+      "p": "Consistency in administration is worth more than fancy features. Drivers will forgive a simple spreadsheet or a small league site if you are on top of grid locks, protest resolutions, and posting results on time. They will abandon a beautiful platform if the admin is flaky or plays favorites in penalties."
+    },
+    {
+      "h2": "Common Pitfalls and How to Avoid Them"
+    },
+    {
+      "p": "Turnout drops after week two or three for a reason. New leagues often fail because the admin underestimates how much work it takes to keep 20 drivers coordinated, or they let the first conflict fester instead of handling it immediately."
+    },
+    {
+      "list": [
+        "Do not let disputes sit. A protest from week one that you ignore will poison the league by week five. Rule quickly and explain the decision.",
+        "Do not let one dominant driver or team run away unchallenged for the first half of the season without asking if the grid balancing is working. Consider inverted grids, tracks that suit other cars, or a mid-season mix to keep the championship close.",
+        "Do not add new rules mid-season without a vote or unanimous agreement. Drivers who signed up expecting one rule set will feel robbed if you suddenly change penalties or points.",
+        "Do not assume drivers will update their iRacing licenses or sign up on your platform the day before the race. Send reminders early and have a plan for latecomers (they race if there is space, but the grid is locked so they start at the back).",
+        "Do not run a race if fewer than half your registered drivers show up. Postpone it, run a fun practice session, or reschedule. A single race with 5 drivers will kill momentum for the whole season."
+      ]
+    },
+    {
+      "p": "Start small. A 12-driver league that meets every Thursday for 10 weeks is better than a 40-driver league that you cannot manage. You can always grow it next season once you know the rhythm and your tools."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the difference between a hosted session and a league?",
+      "a": "A hosted session is a one-off race that iRacing creates and closes after the event. A league is a series of hosted sessions tied together by a points table, standings, and persistent driver registration. You set the calendar, choose the cars and tracks, manage the grid rules, and keep all the results across a season. iRacing official series do that for you; a league means you do it."
+    },
+    {
+      "q": "How do I import results automatically from iRacing into my league website?",
+      "a": "Most league management platforms (LeagueRanker, SimRacing.GP, and others) connect to the iRacing API using your league ID. After you create a hosted session and run a race, the platform polls iRacing for the results and imports them into your standings within minutes. You need to authenticate your league account with the platform once, and then it happens automatically. If you are using a spreadsheet, you can manually paste results or use a macro, but that is slower."
+    },
+    {
+      "q": "Should I use the same points system as Formula 1 or make up my own?",
+      "a": "The F1 system (25-18-15-12-10-8-6-4-2-1) is familiar and works well. But simpler systems like 10-9-8-7-6-5-4-3-2-1 or even flat points (everyone gets 10 points for finishing, one less per place behind first) can work too. Choose based on what you want to reward: a steep points curve rewards winning and consistency, while a flat curve means more drivers stay in contention and one bad race does not end the season. Test it for a few weeks and adjust if the championship is too runaway or too tight."
+    },
+    {
+      "q": "How do I handle protests and penalties fairly?",
+      "a": "Create a simple protest form that asks for the driver name, the incident details, and a link to the replay clip with a timestamp. Set a deadline (48 hours after the race) and post a decision within 24 hours of that. Write your decision down and explain it briefly so drivers understand the standard. Use warnings first, points deductions second, and race bans only for repeat offenders or extreme unsportsmanlike conduct. Post all penalties visibly so the whole league knows the precedent and you are not accused of favoritism."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "cockpit"
+  ],
+  "published": "2026-11-16",
+  "dateLabel": "November 16, 2026"
+}
