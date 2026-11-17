@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iRacing Tow and Fast Repairs: Reset or Save the Repair?</title>
+  <meta name="description" content="What an iRacing tow actually does, how fast repairs work, and how to decide before the green flag whether to reset or keep limping home after a crash." />
+  <link rel="canonical" href="https://realiracing.com/blog/iracing-tow-fast-repair-reset-or-save.html" />
+  <meta property="og:title" content="iRacing Tow and Fast Repairs: Reset or Save the Repair?" />
+  <meta property="og:description" content="What an iRacing tow actually does, how fast repairs work, and how to decide before the green flag whether to reset or keep limping home after a crash." />
+  <meta property="og:url" content="https://realiracing.com/blog/iracing-tow-fast-repair-reset-or-save.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/sim-rig-event.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="667" />
+  <meta property="og:image:alt" content="A sim racing rig set up at an event" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/sim-rig-event.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261103" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "iRacing Tow and Fast Repairs: Reset or Save the Repair?",
+    "description": "What an iRacing tow actually does, how fast repairs work, and how to decide before the green flag whether to reset or keep limping home after a crash.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/iracing-tow-fast-repair-reset-or-save.html",
+    "image": "https://realiracing.com/assets/photos/sim-rig-event.jpg",
+    "datePublished": "2026-11-17",
+    "dateModified": "2026-11-17"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"iRacing Tow and Fast Repairs: Reset or Save the Repair?","item":"https://realiracing.com/blog/iracing-tow-fast-repair-reset-or-save.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/iracing-tow-fast-repair-reset-or-save.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/iracing-tow-fast-repair-reset-or-save.html#rir-gear"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Sim Racing Cockpit / Wheel Stand","description":"a rigid mount matters more than the brand — flex kills FFB detail","url":"https://realiracing.com/blog/iracing-tow-fast-repair-reset-or-save.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is the tow instant in iRacing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not in a race. The tow delay applies in races and is longer the farther you are from pit entry. In practice and test sessions the reset is instant, so do not judge race recovery by how it feels in practice." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between required and optional repairs?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Required repairs must be finished before the crew releases the car. Optional repairs can be skipped by leaving the pit box early, which saves time but means you keep driving with that damage and lose pace." }
+    },
+    {
+      "@type": "Question",
+      "name": "How many fast repairs do I get?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It depends on the series. Many official series give ~1 per race, some give 0, and hosted sessions set their own allowance. Check the series rules before the race, because the car cannot tell you." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use a fast repair in a sprint race?",
+      "acceptedAnswer": { "@type": "Answer", "text": "If the damage is real and you have the allowance, usually yes, since a tow plus long repairs tends to end the fight for position in a short race. Finishing still matters for points. For a cosmetic scrape, hold it." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Race Craft · Damage Decisions</p>
+    <h1>iRacing Tow and Fast Repairs: Reset or Save the Repair?</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated November 17, 2026</span>
+      <span class="dot">·</span>
+      <span>7 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/sim-rig-event.jpg" width="1000" height="667" alt="A sim racing rig set up at an event" srcset="/assets/photos/sim-rig-event-sm.jpg 560w, /assets/photos/sim-rig-event.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Photo: <a href="https://www.flickr.com/people/101790889@N08" target="_blank" rel="noopener nofollow">Krémer Krisztián from Siklós, Hungary</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener nofollow">Public Domain Mark 1.0</a> · Source: <a href="https://commons.wikimedia.org/wiki/File:Guerrieri_sim_racing_(34535361512).jpg" target="_blank" rel="noopener nofollow">Wikimedia Commons</a></figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">You get nudged at the end of the back straight, the car snaps sideways, and the nose finds the wall. The wheel on my <a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> (~9 N.m class) goes light and then thumps, and for about a second my brain is a mess of questions. Is the car bent? Do I drive to the pits? Do I tow? Do I use the fast repair, or is that for something worse? Every one of those questions is cheaper to answer before the race than in that second. This is the guide I wish I had read when I was new.</p>
+
+      <h2>The two ways out of a crash</h2>
+
+      <p>After damage you have two basic options. You can drive the car back to the pits under its own power, or you can request a tow, which iRacing calls a reset. The tow puts the car in your pit stall. It does not put you back on track at the spot where you crashed, and it does not undo the damage by itself. It simply moves the car to the stall so the pit crew can work on it.</p>
+
+      <p>The part newer racers miss is the tow delay. In a race, the tow is not instant. The delay is longer the farther you are from pit entry, so a crash right before pit entry costs far less than one on the opposite side of the circuit. I now treat the car's distance from the pits as part of the decision. If I can still steer and the car is in one piece, driving it back is sometimes faster than waiting on a long tow, and I keep the option to drive on to the pits even when the car is hurt.</p>
+
+      <p>In practice and test sessions the reset is instant. That is a wonderful place to learn, and also a trap. If you get used to tapping reset every time you clip a wall in practice, the tow delay in a real race will feel like a punishment you did not see coming. I try to practise the full recovery at least once: drive back, stop in the stall, and watch what the crew does.</p>
+
+      <h2>Required repairs and optional repairs</h2>
+
+      <p>Once you are in the stall, the damage gets sorted into two kinds. Required repairs must be completed before the crew releases the car. You cannot skip them, and they hold you in the box for as long as the work takes. Optional repairs are different. You can skip them by leaving the pit box early, which saves time at the cost of pace. The car goes back out still carrying whatever you chose not to fix.</p>
+
+      <p>That trade is the whole game. Optional damage is not cosmetic in a way that makes the car feel normal. Skipping it means you are driving a worse car for the rest of the race, and a worse car on a long run can cost more than the time you saved standing still. On a short race you may never pay that cost. On a long one you almost certainly will. My own rule is to skip optional repairs only when there are few laps left or when the damage is something I can feel and drive around.</p>
+
+      <p>I have written more about holding a damaged car together in a separate post, <a href="damaged-car-pit-stop-strategy-iracing.html">damaged-car-pit-stop-strategy-iracing</a>. Read it alongside this one if you want the strategy side in more depth.</p>
+
+      <h2>What a fast repair actually does</h2>
+
+      <p>A fast repair is the shortcut. It fixes the car to like-new almost instantly in your stall. No long wait on required work, no leaving optional damage behind. It is a checkbox in the pit-stop black box, and it is easy to tick without thinking.</p>
+
+      <p>It is also limited. The allowance is set per race by the series. Many official series give ~1, some give 0, and hosted sessions set their own number. That variation is why I always check the rules page before I qualify. Nothing about the car or the track tells you how many you have. If the count is 0, the whole conversation about when to spend it is moot, and the tow plus the full repair is your only path.</p>
+
+      <p>One practical habit: if you do not want to use the fast repair on a given stop, uncheck it. I have come close to burning mine on a routine stop because the box was already ticked, then caught it only because I read the black box every time I enter the pits. The checkbox is a decision. Treat it like one.</p>
+
+      <h2>Deciding before the race, not during the crash</h2>
+
+      <p>This is the part I most want newer racers to take away. The worst time to work out whether a fast repair is worth it is with a bent car and cars flying past. Your judgement is poor, your heart rate is up, and you will tend to either panic and burn the repair or stubbornly drive a broken car for ten laps. So I decide on the grid, in advance, based on the length and the series.</p>
+
+      <h3>Short sprint races</h3>
+
+      <p>In a short sprint, a tow plus long repairs usually ends the fight for position. The field does not wait, and there are not enough laps left to recover the places. Even so, finishing still matters for points, so I do not simply park the car. The question in a sprint is whether the fast repair buys back enough to keep me in the same race, or whether I am already racing for a finishing position far down the order. If I have the allowance and the damage is real, I spend it, because there is no later in a short race to save it for.</p>
+
+      <h3>Longer races</h3>
+
+      <p>In longer races the fast repair is worth holding for real damage, not a cosmetic scrape. A scuffed panel that does not change how the car drives is not worth it. A bent wing, a car that pulls to one side, or a tyre that will not hold pressure is. My test is simple: can I feel it through the wheel and pedals? If the car is still driving straight and my braking is consistent through the <a href="https://www.amazon.com/dp/B0DSHYFW1V?tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">CRP2</a>, I keep going and keep the repair in my pocket. If the car has changed character, I spend it.</p>
+
+      <p>Longer races also reward patience on the tow. With more laps to recover, a long tow delay is less fatal than in a sprint. That is another reason to look at where you are on the circuit before deciding between driving back and resetting.</p>
+
+      <h2>My pre-race checklist</h2>
+
+      <ol>
+        <li>Open the series rules and find the fast repair count. Write it down: ~1, 0, or whatever the host set.</li>
+        <li>Decide the race length category. Short sprint means spend early on real damage. Long race means hold it for real damage only.</li>
+        <li>Decide what counts as real damage for me: handling change, aero damage, or a car that will not hold a line. Cosmetic does not count.</li>
+        <li>Know which pit entry I would drive back toward, and how far the farthest corner is from it.</li>
+        <li>Confirm in the pit-stop black box that the fast repair checkbox starts unchecked unless I choose to spend it.</li>
+      </ol>
+
+      <h2>Tow or drive back: how I choose</h2>
+
+      <p>If the car can still steer and brake, and I am close to pit entry, I drive back. It keeps me moving and lets me see exactly what is wrong. If the car is stuck, facing the wrong way, or clearly undriveable, I request the tow and accept the delay. In a race, the farther I am from pit entry, the more painful that delay, which is a reason to avoid the risky overtake on the far side of the lap when I am already behind.</p>
+
+      <p>What I do not do is reset reflexively. In practice sessions that habit costs nothing. In a race it costs places, and the tow delay depends on distance in a way I cannot control after the fact.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Grid rule</span>
+        <p>Make the fast repair decision at the grid and say it to yourself in one sentence: spend on real damage, hold for scrapes, or no allowance in this series. When the crash comes, you are executing a plan, not inventing one.</p>
+      </div>
+
+      <h2>A note on the rig</h2>
+
+      <p>On my fixed aluminium cockpit, with the MOZA R9 at ~9 N.m class output and the CRP2 pedals under my foot, a wall hit is obvious in the hands and a bent car feels different afterward. That feedback is exactly what I use to judge whether damage is real. A car that suddenly needs a different steering correction on the straight is a repair candidate. A car that feels the same after a scrape is not. You do not need expensive hardware to read this, but a rig that does not flex helps you trust what you feel, because the change is in the car and not in the seat.</p>
+
+      <h2>Mistakes I made so you do not have to</h2>
+
+      <ul>
+        <li>Spending the fast repair on a scuff that did not change how the car drove, then needing it twenty minutes later.</li>
+        <li>Resetting in a race the way I did in practice and being surprised by the tow delay.</li>
+        <li>Skipping optional repairs on a long race to save time and paying for it lap after lap.</li>
+        <li>Not checking the rules and assuming every series gives the same allowance.</li>
+      </ul>
+
+      <p>None of this makes a crash painless. It does make it a managed event instead of a panic. Decide the plan before the race, read the black box on every stop, and let the car tell you whether the damage is real.</p>
+
+      <p>If you want the black box side of this, including how the pit-stop options are laid out, that is worth a read too once you have the repair logic settled.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=iracing-tow-fast-repair-reset-or-save">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0DSHYFW1V?tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&amp;tag=realiracing-20" data-aff="cockpit" target="_blank" rel="sponsored noopener">Sim Racing Cockpit / Wheel Stand</a></th><td>a rigid mount matters more than the brand — flex kills FFB detail</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>Is the tow instant in iRacing?</h3>
+        <p>Not in a race. The tow delay applies in races and is longer the farther you are from pit entry. In practice and test sessions the reset is instant, so do not judge race recovery by how it feels in practice.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is the difference between required and optional repairs?</h3>
+        <p>Required repairs must be finished before the crew releases the car. Optional repairs can be skipped by leaving the pit box early, which saves time but means you keep driving with that damage and lose pace.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How many fast repairs do I get?</h3>
+        <p>It depends on the series. Many official series give ~1 per race, some give 0, and hosted sessions set their own allowance. Check the series rules before the race, because the car cannot tell you.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I use a fast repair in a sprint race?</h3>
+        <p>If the damage is real and you have the allowance, usually yes, since a tow plus long repairs tends to end the fight for position in a short race. Finishing still matters for points. For a cosmetic scrape, hold it.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="iracing-pre-race-routine-five-minutes-before-green.html"><span>Race Craft</span>My iRacing pre-race routine: the five minutes before green</a>
+      <a class="related-card" href="iracing-pit-road-etiquette-avoid-speeding-penalties.html"><span>Race Craft</span>iRacing Pit Road Etiquette: How I Stopped Taking Speeding Penalties</a>
+      <a class="related-card" href="spa-francorchamps-2025-belgian-gp-from-the-grandstand.html"><span>Real-World Racing</span>Belgian GP 2025 at Spa: My Grandstand Clips</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","moza-crp2","cockpit"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
