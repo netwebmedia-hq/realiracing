@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strength of Field in iRacing: What the SOF Number Really Means</title>
+  <meta name="description" content="Understand how SOF calculates field quality, why it matters for your iRating gains, and how to spot competitive races worth entering." />
+  <link rel="canonical" href="https://realiracing.com/blog/strength-of-field-iracing-rating-safety.html" />
+  <meta property="og:title" content="Strength of Field in iRacing: What the SOF Number Really Means" />
+  <meta property="og:description" content="Understand how SOF calculates field quality, why it matters for your iRating gains, and how to spot competitive races worth entering." />
+  <meta property="og:url" content="https://realiracing.com/blog/strength-of-field-iracing-rating-safety.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/sim-rig-event.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="667" />
+  <meta property="og:image:alt" content="A sim racing rig set up at an event" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/sim-rig-event.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261103" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Strength of Field in iRacing: What the SOF Number Really Means",
+    "description": "Understand how SOF calculates field quality, why it matters for your iRating gains, and how to spot competitive races worth entering.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/strength-of-field-iracing-rating-safety.html",
+    "image": "https://realiracing.com/assets/photos/sim-rig-event.jpg",
+    "datePublished": "2026-11-02",
+    "dateModified": "2026-11-02"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Strength of Field in iRacing: What the SOF Number Really Means","item":"https://realiracing.com/blog/strength-of-field-iracing-rating-safety.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/strength-of-field-iracing-rating-safety.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Sim Racing Cockpit / Wheel Stand","description":"a rigid mount matters more than the brand — flex kills FFB detail","url":"https://realiracing.com/blog/strength-of-field-iracing-rating-safety.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does a high SOF race always have cleaner, faster drivers?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A high SOF means the average iRating is higher, but it doesn't guarantee clean racing or skill distribution. You could have one very highly rated driver pulling the average up while the rest of the field is uneven. Check the driver list and safety ratings if you want to assess actual competition quality." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does SOF affect my iRating gains or losses?",
+      "acceptedAnswer": { "@type": "Answer", "text": "iRacing scales your rating change based on the difference between the field's average SOF and your iRating. Racing in a SOF 200 points higher than your rating earns you more iRating per place gained, and costs more per place lost. The exact multiplier is not published, but the effect is significant enough to matter over a season." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I always chase the highest SOF races possible?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Chasing only the highest SOF races is a fast way to lose iRating while you're learning. Pick races where SOF is close to your skill level, execute clean races, and let your rating climb naturally. Once you're consistently placing well in those races, move up to higher SOF fields." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does SOF change after the race starts or only during the lobby phase?",
+      "acceptedAnswer": { "@type": "Answer", "text": "SOF is locked once the race session starts. Drivers who join during a practice session after the race has begun do not affect the official SOF used to calculate iRating changes for that race." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">iRacing Tips · Licenses</p>
+    <h1>Strength of Field in iRacing: What the SOF Number Really Means</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated November 2, 2026</span>
+      <span class="dot">·</span>
+      <span>7 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/sim-rig-event.jpg" width="1000" height="667" alt="A sim racing rig set up at an event" srcset="/assets/photos/sim-rig-event-sm.jpg 560w, /assets/photos/sim-rig-event.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Photo: <a href="https://www.flickr.com/people/101790889@N08" target="_blank" rel="noopener nofollow">Krémer Krisztián from Siklós, Hungary</a> · <a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener nofollow">Public Domain Mark 1.0</a> · Source: <a href="https://commons.wikimedia.org/wiki/File:Guerrieri_sim_racing_(34535361512).jpg" target="_blank" rel="noopener nofollow">Wikimedia Commons</a></figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">Every iRacing race displays a Strength of Field number in the lobby. That SOF score tells you something real about the competition you're about to face, but many drivers either ignore it or misinterpret what it means. A high SOF doesn't guarantee a better race, and a low SOF doesn't mean the field is full of rookies. Learning to read SOF helps you pick races that match your current pace and protect your iRating from unnecessary swings.</p>
+
+      <p>SOF is a single number that represents the average iRating of everyone currently in the race lobby. The system totals the iRating of all drivers, divides by the number of participants, and displays the result. That's it. It's a quick snapshot of field quality, nothing more.</p>
+
+      <h2>How SOF is calculated and what it actually represents</h2>
+
+      <p>iRacing calculates SOF on the fly as drivers join and leave the lobby. A race with ten 2000 iRating drivers has an SOF of 2000. A race with five 2000 iRating drivers and five 1000 iRating drivers has an SOF of 1500. The number shifts every time someone joins or leaves, right up until the race session closes.</p>
+
+      <p>This means SOF tells you the average skill of the field, but it doesn't tell you the range. A 1600 SOF field could be fifteen drivers clustered between 1500 and 1700, or it could be three top-rated drivers carrying the average while the rest of the field sits at 1000. The distribution matters for how the race will actually play out.</p>
+
+      <ul>
+        <li>SOF is an average, not a minimum or maximum</li>
+        <li>SOF updates as the lobby fills and changes until the race closes</li>
+        <li>One very high-rated driver can boost SOF significantly in a small field</li>
+        <li>SOF does not predict who will win or how clean the race will be</li>
+      </ul>
+
+      <div class="tip-box">
+        <span class="box-label">Lobby timing</span>
+        <p>Watch the lobby SOF as it fills. If it's rising steadily, experienced drivers are joining. If it drops after closing, you may have gotten lucky with a weaker final grid.</p>
+      </div>
+
+      <h2>Why SOF matters for your iRating</h2>
+
+      <p>iRating gains and losses are scaled based on SOF. When you finish a race, iRacing calculates your performance relative to the field average. If the field SOF is higher than your own iRating, you gain extra iRating for a strong finish because you've outperformed higher-rated drivers. If the field SOF is lower than your iRating, your gains shrink and your losses grow larger.</p>
+
+      <p>This is how iRacing prevents high-rated drivers from farming iRating in low-skill lobbies and low-rated drivers from stagnating in easy fields. A 1800 driver who finishes second in a 1600 SOF race gains less iRating than a 1800 driver who finishes second in a 2000 SOF race, even if the lap times are identical.</p>
+
+      <p>The practical outcome: entering a higher SOF race is a bigger risk and a bigger reward. A win or podium against stronger competition pushes your iRating up more quickly. A crash or poor result costs more. A lower SOF race is safer for your rating, but the gains are smaller.</p>
+
+      <h2>Reading SOF to pick the right race for you</h2>
+
+      <p>A rough guide for most drivers is to target races where SOF is within a few hundred points of your current iRating. If you're at 1500 iRating, a 1400-1600 SOF race is probably competitive but fair. A 1200 SOF race will feel easy and reward you with slow iRating gains. A 1800 SOF race will be harder and punish mistakes heavily.</p>
+
+      <p>Early in a season when lobbies are small, SOF can swing wildly. A single 2500-rated driver joining a five-car lobby of 1200-rated drivers can push SOF to 1700. That same lobby without the ringer feels completely different. If you join a small lobby with an unusually high SOF, check the driver list. One or two top-rated drivers can distort the average.</p>
+
+      <p>As seasons progress and lobbies fill, SOF tends to stabilize. A 30-car race field is less likely to be pulled by a single outlier. Lobby closing time also affects field strength. Early lobbies often have fewer entries and wider skill spreads. Peak-time lobbies are larger and more consistent.</p>
+
+      <ol>
+        <li>Look for SOF within 200-300 points of your iRating for competitive, fair racing</li>
+        <li>In small lobbies under ten cars, check who is racing and whether a ringer is skewing SOF upward</li>
+        <li>Higher SOF multiplies both your gains on success and your losses on failure</li>
+        <li>Join at peak times for larger fields and more predictable SOF readings</li>
+      </ol>
+
+      <h2>SOF and actual race quality aren't the same thing</h2>
+
+      <p>A high SOF doesn't guarantee a clean, competitive race. It means the average iRating is high, but you could still face aggressive drivers, mistakes, or poor sportsmanship at any skill level. Similarly, a low SOF race isn't automatically chaotic. You might find a clean, well-run race with newer drivers who are focused and respectful.</p>
+
+      <p>SOF is a tool for managing your iRating expectations and gains, not a predictor of race quality or entertainment value. It tells you the mathematical caliber of the field, nothing about driver behavior or the actual difficulty of the race track that night.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Rating vs. safety</span>
+        <p>SOF and safety rating are separate systems. A high-SOF race can still include drivers with poor safety ratings. Check the driver list before joining if you want to know how clean the field actually is.</p>
+      </div>
+
+      <h2>Building a season plan with SOF in mind</h2>
+
+      <p>Strategic drivers use SOF as part of a season approach. Early in a new season, join races where SOF is close to or slightly below your target rating while you learn track layouts and cars. As you feel more confident, gradually move into higher SOF races to climb your iRating. This approach builds skill and rating together rather than chasing big iRating swings and risking crashes.</p>
+
+      <p>If you're trying to break into a higher license class that requires a specific iRating, targeting races 100-200 points above your current rating over time is more sustainable than jumping straight into 500-point-higher fields and losing rating on mistakes. Consistency over a season matters more than a single good result.</p>
+
+      <p>Understanding SOF also helps you interpret your own results honestly. If you finished fifth in a 1400 SOF race at 1500 iRating, your result is genuinely competitive. If you finished fifth in a 1200 SOF race, the same result means less in terms of real skill gain. Neither is bad. One is just a more useful data point for where you actually stand against your peers.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=strength-of-field-iracing-rating-safety">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&amp;tag=realiracing-20" data-aff="cockpit" target="_blank" rel="sponsored noopener">Sim Racing Cockpit / Wheel Stand</a></th><td>a rigid mount matters more than the brand — flex kills FFB detail</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>Does a high SOF race always have cleaner, faster drivers?</h3>
+        <p>A high SOF means the average iRating is higher, but it doesn't guarantee clean racing or skill distribution. You could have one very highly rated driver pulling the average up while the rest of the field is uneven. Check the driver list and safety ratings if you want to assess actual competition quality.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How much does SOF affect my iRating gains or losses?</h3>
+        <p>iRacing scales your rating change based on the difference between the field's average SOF and your iRating. Racing in a SOF 200 points higher than your rating earns you more iRating per place gained, and costs more per place lost. The exact multiplier is not published, but the effect is significant enough to matter over a season.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I always chase the highest SOF races possible?</h3>
+        <p>No. Chasing only the highest SOF races is a fast way to lose iRating while you're learning. Pick races where SOF is close to your skill level, execute clean races, and let your rating climb naturally. Once you're consistently placing well in those races, move up to higher SOF fields.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does SOF change after the race starts or only during the lobby phase?</h3>
+        <p>SOF is locked once the race session starts. Drivers who join during a practice session after the race has begun do not affect the official SOF used to calculate iRating changes for that race.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="endurance-fuel-tire-strategy-basics.html"><span>iRacing Tips</span>Endurance Racing Fuel and Tire Strategy: Essential Basics</a>
+      <a class="related-card" href="saving-a-slide-before-the-spin.html"><span>iRacing Tips</span>How to Catch a Slide Before It Becomes a Spin</a>
+      <a class="related-card" href="time-trials-time-attack-racing-yourself.html"><span>iRacing Tips</span>Time Trials and Time Attack: Racing Against Yourself in iRacing</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","cockpit"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
