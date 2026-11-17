@@ -1,0 +1,143 @@
+{
+  "slug": "iracing-tow-fast-repair-reset-or-save",
+  "tag": "Race Craft · Damage Decisions",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "iRacing Tow and Fast Repairs: Reset or Save the Repair?",
+  "description": "What an iRacing tow actually does, how fast repairs work, and how to decide before the green flag whether to reset or keep limping home after a crash.",
+  "published": "2026-11-17",
+  "dateLabel": "November 17, 2026",
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2",
+    "cockpit"
+  ],
+  "sections": [
+    {
+      "p": "You get nudged at the end of the back straight, the car snaps sideways, and the nose finds the wall. The wheel on my MOZA R9 (~9 N.m class) goes light and then thumps, and for about a second my brain is a mess of questions. Is the car bent? Do I drive to the pits? Do I tow? Do I use the fast repair, or is that for something worse? Every one of those questions is cheaper to answer before the race than in that second. This is the guide I wish I had read when I was new."
+    },
+    {
+      "h2": "The two ways out of a crash"
+    },
+    {
+      "p": "After damage you have two basic options. You can drive the car back to the pits under its own power, or you can request a tow, which iRacing calls a reset. The tow puts the car in your pit stall. It does not put you back on track at the spot where you crashed, and it does not undo the damage by itself. It simply moves the car to the stall so the pit crew can work on it."
+    },
+    {
+      "p": "The part newer racers miss is the tow delay. In a race, the tow is not instant. The delay is longer the farther you are from pit entry, so a crash right before pit entry costs far less than one on the opposite side of the circuit. I now treat the car's distance from the pits as part of the decision. If I can still steer and the car is in one piece, driving it back is sometimes faster than waiting on a long tow, and I keep the option to drive on to the pits even when the car is hurt."
+    },
+    {
+      "p": "In practice and test sessions the reset is instant. That is a wonderful place to learn, and also a trap. If you get used to tapping reset every time you clip a wall in practice, the tow delay in a real race will feel like a punishment you did not see coming. I try to practise the full recovery at least once: drive back, stop in the stall, and watch what the crew does."
+    },
+    {
+      "h2": "Required repairs and optional repairs"
+    },
+    {
+      "p": "Once you are in the stall, the damage gets sorted into two kinds. Required repairs must be completed before the crew releases the car. You cannot skip them, and they hold you in the box for as long as the work takes. Optional repairs are different. You can skip them by leaving the pit box early, which saves time at the cost of pace. The car goes back out still carrying whatever you chose not to fix."
+    },
+    {
+      "p": "That trade is the whole game. Optional damage is not cosmetic in a way that makes the car feel normal. Skipping it means you are driving a worse car for the rest of the race, and a worse car on a long run can cost more than the time you saved standing still. On a short race you may never pay that cost. On a long one you almost certainly will. My own rule is to skip optional repairs only when there are few laps left or when the damage is something I can feel and drive around."
+    },
+    {
+      "p": "I have written more about holding a damaged car together in a separate post, <a href=\"damaged-car-pit-stop-strategy-iracing.html\">damaged-car-pit-stop-strategy-iracing</a>. Read it alongside this one if you want the strategy side in more depth."
+    },
+    {
+      "h2": "What a fast repair actually does"
+    },
+    {
+      "p": "A fast repair is the shortcut. It fixes the car to like-new almost instantly in your stall. No long wait on required work, no leaving optional damage behind. It is a checkbox in the pit-stop black box, and it is easy to tick without thinking."
+    },
+    {
+      "p": "It is also limited. The allowance is set per race by the series. Many official series give ~1, some give 0, and hosted sessions set their own number. That variation is why I always check the rules page before I qualify. Nothing about the car or the track tells you how many you have. If the count is 0, the whole conversation about when to spend it is moot, and the tow plus the full repair is your only path."
+    },
+    {
+      "p": "One practical habit: if you do not want to use the fast repair on a given stop, uncheck it. I have come close to burning mine on a routine stop because the box was already ticked, then caught it only because I read the black box every time I enter the pits. The checkbox is a decision. Treat it like one."
+    },
+    {
+      "h2": "Deciding before the race, not during the crash"
+    },
+    {
+      "p": "This is the part I most want newer racers to take away. The worst time to work out whether a fast repair is worth it is with a bent car and cars flying past. Your judgement is poor, your heart rate is up, and you will tend to either panic and burn the repair or stubbornly drive a broken car for ten laps. So I decide on the grid, in advance, based on the length and the series."
+    },
+    {
+      "h3": "Short sprint races"
+    },
+    {
+      "p": "In a short sprint, a tow plus long repairs usually ends the fight for position. The field does not wait, and there are not enough laps left to recover the places. Even so, finishing still matters for points, so I do not simply park the car. The question in a sprint is whether the fast repair buys back enough to keep me in the same race, or whether I am already racing for a finishing position far down the order. If I have the allowance and the damage is real, I spend it, because there is no later in a short race to save it for."
+    },
+    {
+      "h3": "Longer races"
+    },
+    {
+      "p": "In longer races the fast repair is worth holding for real damage, not a cosmetic scrape. A scuffed panel that does not change how the car drives is not worth it. A bent wing, a car that pulls to one side, or a tyre that will not hold pressure is. My test is simple: can I feel it through the wheel and pedals? If the car is still driving straight and my braking is consistent through the CRP2, I keep going and keep the repair in my pocket. If the car has changed character, I spend it."
+    },
+    {
+      "p": "Longer races also reward patience on the tow. With more laps to recover, a long tow delay is less fatal than in a sprint. That is another reason to look at where you are on the circuit before deciding between driving back and resetting."
+    },
+    {
+      "h2": "My pre-race checklist"
+    },
+    {
+      "olist": [
+        "Open the series rules and find the fast repair count. Write it down: ~1, 0, or whatever the host set.",
+        "Decide the race length category. Short sprint means spend early on real damage. Long race means hold it for real damage only.",
+        "Decide what counts as real damage for me: handling change, aero damage, or a car that will not hold a line. Cosmetic does not count.",
+        "Know which pit entry I would drive back toward, and how far the farthest corner is from it.",
+        "Confirm in the pit-stop black box that the fast repair checkbox starts unchecked unless I choose to spend it."
+      ]
+    },
+    {
+      "h2": "Tow or drive back: how I choose"
+    },
+    {
+      "p": "If the car can still steer and brake, and I am close to pit entry, I drive back. It keeps me moving and lets me see exactly what is wrong. If the car is stuck, facing the wrong way, or clearly undriveable, I request the tow and accept the delay. In a race, the farther I am from pit entry, the more painful that delay, which is a reason to avoid the risky overtake on the far side of the lap when I am already behind."
+    },
+    {
+      "p": "What I do not do is reset reflexively. In practice sessions that habit costs nothing. In a race it costs places, and the tow delay depends on distance in a way I cannot control after the fact."
+    },
+    {
+      "tip": "Make the fast repair decision at the grid and say it to yourself in one sentence: spend on real damage, hold for scrapes, or no allowance in this series. When the crash comes, you are executing a plan, not inventing one.",
+      "tipLabel": "Grid rule"
+    },
+    {
+      "h2": "A note on the rig"
+    },
+    {
+      "p": "On my fixed aluminium cockpit, with the MOZA R9 at ~9 N.m class output and the CRP2 pedals under my foot, a wall hit is obvious in the hands and a bent car feels different afterward. That feedback is exactly what I use to judge whether damage is real. A car that suddenly needs a different steering correction on the straight is a repair candidate. A car that feels the same after a scrape is not. You do not need expensive hardware to read this, but a rig that does not flex helps you trust what you feel, because the change is in the car and not in the seat."
+    },
+    {
+      "h2": "Mistakes I made so you do not have to"
+    },
+    {
+      "list": [
+        "Spending the fast repair on a scuff that did not change how the car drove, then needing it twenty minutes later.",
+        "Resetting in a race the way I did in practice and being surprised by the tow delay.",
+        "Skipping optional repairs on a long race to save time and paying for it lap after lap.",
+        "Not checking the rules and assuming every series gives the same allowance."
+      ]
+    },
+    {
+      "p": "None of this makes a crash painless. It does make it a managed event instead of a panic. Decide the plan before the race, read the black box on every stop, and let the car tell you whether the damage is real."
+    },
+    {
+      "p": "If you want the black box side of this, including how the pit-stop options are laid out, that is worth a read too once you have the repair logic settled."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is the tow instant in iRacing?",
+      "a": "Not in a race. The tow delay applies in races and is longer the farther you are from pit entry. In practice and test sessions the reset is instant, so do not judge race recovery by how it feels in practice."
+    },
+    {
+      "q": "What is the difference between required and optional repairs?",
+      "a": "Required repairs must be finished before the crew releases the car. Optional repairs can be skipped by leaving the pit box early, which saves time but means you keep driving with that damage and lose pace."
+    },
+    {
+      "q": "How many fast repairs do I get?",
+      "a": "It depends on the series. Many official series give ~1 per race, some give 0, and hosted sessions set their own allowance. Check the series rules before the race, because the car cannot tell you."
+    },
+    {
+      "q": "Should I use a fast repair in a sprint race?",
+      "a": "If the damage is real and you have the allowance, usually yes, since a tow plus long repairs tends to end the fight for position in a short race. Finishing still matters for points. For a cosmetic scrape, hold it."
+    }
+  ]
+}
