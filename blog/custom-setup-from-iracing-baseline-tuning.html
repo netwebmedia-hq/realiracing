@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Building Your Own Setup From the iRacing Baseline: A Methodical Approach</title>
+  <meta name="description" content="Learn how to tune iRacing setups from the stock baseline by changing one variable at a time and understanding what each adjustment does to your car." />
+  <link rel="canonical" href="https://realiracing.com/blog/custom-setup-from-iracing-baseline-tuning.html" />
+  <meta property="og:title" content="Building Your Own Setup From the iRacing Baseline: A Methodical Approach" />
+  <meta property="og:description" content="Learn how to tune iRacing setups from the stock baseline by changing one variable at a time and understanding what each adjustment does to your car." />
+  <meta property="og:url" content="https://realiracing.com/blog/custom-setup-from-iracing-baseline-tuning.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/track-corner.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="715" />
+  <meta property="og:image:alt" content="A race car through a corner" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/track-corner.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261103" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Building Your Own Setup From the iRacing Baseline: A Methodical Approach",
+    "description": "Learn how to tune iRacing setups from the stock baseline by changing one variable at a time and understanding what each adjustment does to your car.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/custom-setup-from-iracing-baseline-tuning.html",
+    "image": "https://realiracing.com/assets/photos/track-corner.jpg",
+    "datePublished": "2026-11-02",
+    "dateModified": "2026-11-02"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Building Your Own Setup From the iRacing Baseline: A Methodical Approach","item":"https://realiracing.com/blog/custom-setup-from-iracing-baseline-tuning.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/custom-setup-from-iracing-baseline-tuning.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup — high refresh matters more than size","url":"https://realiracing.com/blog/custom-setup-from-iracing-baseline-tuning.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many laps should I run before I change a setup variable?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Run five laps minimum. Lap one is always a reference as your tires heat. Lap two continues warming. Lap three is where you start finding rhythm. Lap four is your push lap. Lap five is your comparison. This five-lap structure removes the noise of a single outlier lap and gives you a real sample of how the car behaves under that setting." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I ever change multiple setup variables at once?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, unless you are testing a known package someone else published. When you change two things at once, you cannot tell which one caused the result. You will spend twice as long figuring out what works. Single-variable testing is slower in the moment but faster overall because you learn the cause-and-effect relationship." }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the baseline setup is terrible and I cannot make progress?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Download a proven setup for that car and track, study what it changed from baseline, and then use that as your new baseline. You will still learn the logic by seeing the differences. Some baselines are older and not optimized for current tire models or physics changes. Swapping to a community-built setup and then tuning from there is legitimate. The goal is understanding, not suffering through a bad baseline." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know when my setup is race-ready?",
+      "acceptedAnswer": { "@type": "Answer", "text": "When your lap times stop improving after 30 to 40 laps of changes, and you can repeat your fastest lap within 0.05 to 0.1 seconds multiple times, you are ready. Run a practice race or time trial at that setup. If you are comfortable and the times are consistent, you can race it. Do not wait for perfection. A setup you understand and can drive is faster than a perfect setup you do not trust." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Setup Guides · Setup Philosophy</p>
+    <h1>Building Your Own Setup From the iRacing Baseline: A Methodical Approach</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated November 2, 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/track-corner.jpg" width="1000" height="715" alt="A race car through a corner" srcset="/assets/photos/track-corner-sm.jpg 560w, /assets/photos/track-corner.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Photo: <a href="https://www.flickr.com/photos/36021014@N06" target="_blank" rel="noopener nofollow">Michael Elleray</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener nofollow">CC BY 2.0</a> · Source: <a href="https://www.flickr.com/photos/36021014@N06/8093250997" target="_blank" rel="noopener nofollow">Flickr</a></figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">The iRacing baseline setup is the worst place to end, but the best place to start. Most drivers load it, hate how the car feels, and either hunt for a downloaded setup or dive into blind changes hoping something sticks. The real edge comes from understanding what every knob does and testing changes one variable at a time. This approach is slower than copy-pasting a setup, but it teaches you to read your car and adapt faster than any download ever will.</p>
+
+      <p>Building a setup from baseline does not mean starting from scratch. iRacing's default setups are engineered to be neutral and drivable for the broadest audience. Your job is to make that foundation respond to your driving style, your hardware, and the specific conditions you face today.</p>
+
+      <h2>Why the baseline matters more than you think</h2>
+
+      <p>A baseline is a reference, not a promise. It has no grip, no feel, and no opinionated handling traits. That sounds bad until you realize it also has no hidden surprises. When you change one thing and the car responds in a way you did not expect, you know exactly what caused it. Downloaded setups compress months of someone else's tuning into a file, but they also hide their logic. You adjust wing angle and suddenly your understeer becomes oversteer because three other settings are compensating for each other in ways you cannot see.</p>
+
+      <p>Starting from baseline means you build a mental model of cause and effect. That mental model is portable. It works at Imola, at Daytona, in the Formula 3, and in the Corvette C8 GT3. A setup is not a blueprint; it is a tuning story. You need to understand the story.</p>
+
+      <h2>The single-variable rule</h2>
+
+      <p>Change one thing. Test it. Write down the result. Change another. This is not just best practice; it is the only way to know what actually changed your lap time.</p>
+
+      <p>In a 20-minute practice session, make one major change (say, brake bias) or 2 to 3 minor tweaks (say, front wing, rear wing, ride height 5 mm). Run a steady five laps and focus on consistency, not pace. Your first lap is always a reference; lap three is where the car starts to tell the truth. On lap five, commit to a smooth reference corner and compare your feeling there to the last session. Did the car turn in easier? Did it feel more planted on exit? Did the front tire feel lighter over kerbs?</p>
+
+      <p>Write it down. Not in your head. In a text file or spreadsheet. Record the change, the lap time, the weather, and your commentary. After five sessions, you will have a map. After ten, patterns emerge. Brake bias down 5 percent made turn-in cleaner but added mid-corner push. Front wing down one level made corner exit faster but killed entry stability. These are your clues.</p>
+
+      <h2>Start with the big three: grip, balance, and feel</h2>
+
+      <h3>Grip (tire pressure, wing angle, suspension stiffness)</h3>
+
+      <p>Tire pressure is the fastest way to add or lose overall grip. The iRacing baseline often runs pressures that are conservative. Most road cars run front and rear pressure within 1 to 2 PSI of each other. Try dropping front pressure 0.2 to 0.4 PSI from baseline and run a consistent lap. More heat in the front tire means earlier grip. Do the same at the rear. Most drivers find 0.3 to 0.5 PSI lower than baseline at both ends improves driveability without making the tires overheat in a 30-minute stint.</p>
+
+      <p>Wing angle comes next. The baseline wing setting on most GT cars is neutral and slow. Reduce rear wing 1 to 2 degrees below baseline and feel the car respond. You will lose some stability on corner exit, but you will gain speed on the straights and sharper turn-in. If the car starts to slide on exit, you are past the limit for your skill and the tire choice. Back it up 0.5 degrees. If the car still feels mushy in, reduce front wing 0.5 to 1 degree. Run three to five laps each configuration and compare the feel and the delta on your fastest lap.</p>
+
+      <ul>
+        <li>Tire pressure: start with 0.3 PSI lower than baseline at both ends; test in 0.2 PSI increments</li>
+        <li>Wing angle: reduce rear wing 1 to 2 degrees first, then front wing 0.5 to 1 degree if needed</li>
+        <li>Suspension stiffness: leave it alone until you have tire and wing dialed; then shift stiffness to match your preference (stiffer front = more oversteer, stiffer rear = more understeer)</li>
+      </ul>
+
+      <h3>Balance (brake bias, throttle application, turn-in response)</h3>
+
+      <p>Brake bias controls how much of your braking force goes to the front wheels. The baseline is safe but often too conservative for fast lap work. Start by running baseline brake bias for five laps and identifying the turn where you feel most unstable under braking. Is the rear sliding left and right (rear bias is too low)? Is the front locking or diving hard into the corner (front bias is too high)?</p>
+
+      <p>If the rear is loose, increase brake bias 0.5 to 1 percent toward the front. If the front is locking, shift 0.5 to 1 percent toward the rear. Run three laps at the new setting and compare the same corner. You will find a balance point where the car feels planted and stable. That is your brake bias for this track and these tires.</p>
+
+      <h3>Feel (steering lock, steering ratio, FFB volume)</h3>
+
+      <p>The baseline steering feels generic. Steering ratio (how much you need to turn the wheel to move the car) is baked into the car, but many drivers run tighter steering lock on the wheel than the baseline supports. Check how many degrees your wheel supports. If you run a direct-drive wheel like the <a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a>, you have unlimited range, but iRacing's default lock may be 630 degrees. Try running full lock available in the vehicle setup and feel how much weight the steering has. Some drivers prefer 720 degrees (two full turns lock to lock); others prefer 630 (1.75 turns). Test both in a five-lap session and see which feels more natural.</p>
+
+      <p>Force feedback volume on your wheel is not a setup parameter, but it is part of tuning the feel. If the wheel is so strong that you cannot hold the line, you are working harder than you need to. If it is so light that you lose input feel, you are flying blind. Start with 80 to 85 percent volume and adjust in 5 percent increments until the weight in your hands feels like information, not a barrier.</p>
+
+      <h2>The session structure that teaches</h2>
+
+      <ol>
+        <li>Run five laps at baseline. Do not try hard on lap one. Use lap two to warm the tires, lap three to find rhythm, lap four to push, and lap five as a reference.</li>
+        <li>Change one variable by a small amount. For wing angle, that is 0.5 to 1 degree. For brake bias, 0.5 to 1 percent. For tire pressure, 0.2 to 0.3 PSI.</li>
+        <li>Run five laps at the new setting. Record the fastest lap and your commentary on how the car felt.</li>
+        <li>If the change was positive, test the next increment in the same direction. If it was negative, reverse it or return to baseline.</li>
+        <li>After 15 to 20 laps, step back. Look at your lap times and your notes. Where is the consistency? Where did you lose it?</li>
+      </ol>
+
+      <p>This structure works because it removes emotion. You are not chasing one perfect lap; you are hunting for consistent improvement over five-lap stints. Consistency wins races. The fastest lap in practice that you cannot repeat is worse than a 0.1 second slower lap you hit five times in a row.</p>
+
+      <h2>Common baseline gaps and what to fix first</h2>
+
+      <p>Most iRacing baselines have two problems: not enough front downforce for sharp turn-in, and too much brake bias toward the rear for modern trail-braking technique. Start there. Increase front wing 0.5 to 1 degree and shift brake bias 1 to 2 percent toward the front. Run ten laps. You will find the car sharper and easier to modulate under heavy braking. That solves 70 percent of baseline complaints immediately.</p>
+
+      <p>The second issue is tire pressure. Baseline pressures keep tires cool and in the middle of the operating window, which means they feel slow. Most competitive drivers run 0.3 to 0.6 PSI lower at the front and 0.2 to 0.4 PSI lower at the rear to get the tire in its optimal heat range faster. A 30-minute race will still stay within safe limits, and a 1-hour endurance will only climb into the high-temperature zone if you are driving the car hard for the entire second half. That is not a problem unless you are locked in a fuel-save stint.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Tuning order matters</span>
+        <p>Never change suspension stiffness before you have dialed wing angle and brake bias. Stiffness hides the real feel of the car. Get the aero and braking right first, then use suspension to fine-tune balance. That order saves you 20 laps of confusion.</p>
+      </div>
+
+      <h2>When to stop and race</h2>
+
+      <p>You can tune forever. There is always another tenth to chase. The trap is tuning past the point of diminishing return. After 30 laps of baseline setup work, your lap time will plateau. You are no longer finding setup improvements; you are just refining yourself as a driver. That is when you stop and race. Take the setup into a time trial or a practice race and see how it holds up under pressure.</p>
+
+      <p>A setup that is 99 percent there but easy to drive will beat a setup that is 100 percent optimized but punishes any small mistake. The baseline-derived setup teaches you where the limits are because you built them yourself. That is worth more than one tenth of pace.</p>
+
+      <p>If you want to go deeper, read your telemetry. iRacing's built-in tools show you throttle input, brake pressure, and steering angle overlaid on your lap. Compare a good lap to a bad one and you will see where you are losing time. Sometimes the setup is fine; sometimes you are just driving inconsistently. Knowing the difference is the whole point of building from baseline.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=custom-setup-from-iracing-baseline-tuning">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup — high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>How many laps should I run before I change a setup variable?</h3>
+        <p>Run five laps minimum. Lap one is always a reference as your tires heat. Lap two continues warming. Lap three is where you start finding rhythm. Lap four is your push lap. Lap five is your comparison. This five-lap structure removes the noise of a single outlier lap and gives you a real sample of how the car behaves under that setting.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I ever change multiple setup variables at once?</h3>
+        <p>No, unless you are testing a known package someone else published. When you change two things at once, you cannot tell which one caused the result. You will spend twice as long figuring out what works. Single-variable testing is slower in the moment but faster overall because you learn the cause-and-effect relationship.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What if the baseline setup is terrible and I cannot make progress?</h3>
+        <p>Download a proven setup for that car and track, study what it changed from baseline, and then use that as your new baseline. You will still learn the logic by seeing the differences. Some baselines are older and not optimized for current tire models or physics changes. Swapping to a community-built setup and then tuning from there is legitimate. The goal is understanding, not suffering through a bad baseline.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I know when my setup is race-ready?</h3>
+        <p>When your lap times stop improving after 30 to 40 laps of changes, and you can repeat your fastest lap within 0.05 to 0.1 seconds multiple times, you are ready. Run a practice race or time trial at that setup. If you are comfortable and the times are consistent, you can race it. Do not wait for perfection. A setup you understand and can drive is faster than a perfect setup you do not trust.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="when-to-stop-setup-tuning-baseline-racing.html"><span>Setup Guides</span>When to Stop Tuning Your Setup: Baseline vs. the Setup Shop Trap</a>
+      <a class="related-card" href="setup-changes-night-temperature-swings-endurance.html"><span>Setup Guides</span>Setup Changes for Night and Temperature Swings in Endurance Racing</a>
+      <a class="related-card" href="iracing-ffb-clipping-how-to-diagnose-and-fix.html"><span>Setup Guides</span>iRacing FFB Clipping — How to Diagnose It and Fix It Without Losing Detail</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","monitor-1440p-120"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
