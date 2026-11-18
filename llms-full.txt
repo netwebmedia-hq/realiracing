@@ -18,6 +18,7 @@
 
 ## All blog posts (newest first)
 
+- [iRacing Fixed vs Open Setup Series: Which to Race First](https://realiracing.com/blog/iracing-fixed-vs-open-setup-series-which-first.html): Fixed setup or open setup in iRacing? What each format locks, what it leaves to you, and how I decide which series to race on a given week.
 - [iRacing Tow and Fast Repairs: Reset or Save the Repair?](https://realiracing.com/blog/iracing-tow-fast-repair-reset-or-save.html): What an iRacing tow actually does, how fast repairs work, and how to decide before the green flag whether to reset or keep limping home after a crash.
 - [iRacing Min Force: Fixing a Dead Centre on Direct Drive](https://realiracing.com/blog/iracing-min-force-dead-centre-direct-drive.html): What iRacing's Min Force does, why direct-drive owners leave it at zero, when it helps weaker bases, and a one-change test you can run in an evening.
 - [iRacing Button Mapping: What I Bind to My Wheel Buttons First](https://realiracing.com/blog/iracing-button-mapping-wheel-buttons-first-binds.html): A rim only has a handful of buttons. Here is which iRacing controls I put under my thumbs first, and which ones I leave on the keyboard.
@@ -47,7 +48,6 @@
 - [iRacing Stream Clips: GT Cars, Stock Cars and Rain](https://realiracing.com/blog/iracing-stream-clips-gt-cars-stock-cars-rain.html): A gallery of short iRacing clips from my streams: GT3 and GT4 packs, stock cars on a banked oval, rain laps and the Red Bull Ring.
 - [Redondo Beach Car Show, April 2018: Hot Rods and Corvettes](https://realiracing.com/blog/redondo-beach-car-show-april-2018.html): Phone clips from a car show by the harbor in Redondo Beach, California, April 2018. A rat rod, a Viper, Corvettes, a Chevelle and a sunset.
 - [iRacing lag: fix Wi-Fi, warping and connection drops](https://realiracing.com/blog/iracing-lag-wifi-ethernet-connection-fix.html): Cars warping, sudden teleports or a dropped session in iRacing? How I separate connection problems from PC stutter, and what to fix first on a home network.
-- [Button Box and Handbrake for Rally and Drift in iRacing](https://realiracing.com/blog/button-box-handbrake-rally-drift-setup.html): Add tactile controls for handbrake, shifter, and aux functions to master rally and drift events with the right peripheral setup.
 
 ## More
 - Sitemap: https://realiracing.com/sitemap.xml
