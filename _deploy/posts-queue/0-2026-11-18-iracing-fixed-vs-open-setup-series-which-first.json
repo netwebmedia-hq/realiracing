@@ -1,0 +1,57 @@
+{
+  "slug": "iracing-fixed-vs-open-setup-series-which-first",
+  "tag": "Race Craft · Series Choice",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "iRacing Fixed vs Open Setup Series: Which to Race First",
+  "description": "Fixed setup or open setup in iRacing? What each format locks, what it leaves to you, and how I decide which series to race on a given week.",
+  "published": "2026-11-18",
+  "dateLabel": "November 18, 2026",
+  "gearKeys": ["moza-r9", "moza-crp2", "cockpit"],
+  "sections": [
+    { "p": "Every Tuesday when the new race week starts, I open the series list and the same small question comes up: fixed or open? Some series run both versions side by side, and the word in the series name changes what happens in the garage before the race even starts. For a long time I picked whichever one had a session starting soonest. That was a mistake, and it cost me more than a few safety rating points before I understood why." },
+    { "h2": "What fixed and open actually mean" },
+    { "p": "In a <strong>fixed setup</strong> series, iRacing supplies one setup for the car and everyone races with it. You cannot change springs, dampers, wings, gearing or anything else in the garage. Every car on the grid is mechanically the same, so the gap between you and the driver ahead is the gap between your driving and theirs." },
+    { "p": "In an <strong>open setup</strong> series, the garage is unlocked. You can load the iRacing baseline, download a setup someone else built, or build your own from scratch. The car you race is whatever you bring." },
+    { "p": "One detail people miss: fixed does not mean you touch nothing. You still control the in-car adjustments the real car has, such as brake bias, and on cars that have them, settings like ABS and traction control. You also choose how much fuel to start with. What is locked is the garage, not the cockpit." },
+    { "h2": "Why I tell newer drivers to start fixed" },
+    { "p": "Most rookie and entry-level series in iRacing run fixed setups, and there is a good reason for it. When the car is the same for everyone, the only variable left is you. That makes the feedback loop very short. If you are half a second off, it is your braking point, your line or your exit, and you can go find it." },
+    { "p": "It also makes comparison honest. When I load a faster driver's lap in a telemetry tool like the ones I covered in <a href=\"garage61-telemetry-comparison-tools.html\">my Garage 61 post</a>, I know the difference on the trace comes from the inputs, not from a different rear wing angle. In open series that comparison gets muddy fast." },
+    { "p": "And it keeps you out of the setup rabbit hole. I have written before about how <a href=\"fast-setup-makes-you-slower-iracing.html\">a fast setup can make you slower</a> when you are not yet consistent. A twitchy, aggressive setup built by an alien is quick in their hands and a spin waiting to happen in mine. Fixed setups are usually built to be stable and forgiving, which is exactly what you want while you are still learning a car." },
+    { "h2": "What open series give you" },
+    { "p": "Open series are where setup knowledge starts to pay off. If you understand what a change in rear ride height or diff preload does, you can shape the car to your style and to a specific track. On a bumpy circuit or a high-downforce one, a sensible open setup can feel much nicer to drive than the fixed one." },
+    { "p": "The cost is time. Every week is a new track, and a proper setup takes laps to test. Many drivers buy setups from setup shops or start from the iRacing baseline and make small changes, which I covered in <a href=\"building-setup-from-iracing-baseline.html\">building a setup from the iRacing baseline</a>. Both are fine. The trap is spending your whole practice budget in the garage and arriving at the race without having run a clean stint." },
+    { "h2": "How I choose on a given week" },
+    { "p": "These days I decide with three questions before I click register." },
+    { "olist": [
+      "Do I know this car well? If not, I race the fixed version until I can put in clean, repeatable laps.",
+      "Do I know this track well? A new track plus open setup is two unknowns at once. I pick fixed so I only have one problem to solve.",
+      "How much time do I have this week? If it is one evening, I race fixed. Open only makes sense when I can spend a session testing changes."
+    ] },
+    { "p": "If the answer to all three points toward open, I go open and enjoy the extra control. Most weeks, honestly, I end up in fixed." },
+    { "tip": "If a series runs both fixed and open versions of the same car, run a few practice laps in the fixed one first. It gives you a clean reference before you start changing things in the open garage.", "tipLabel": "Rig note" },
+    { "h2": "What the rig changes, and what it does not" },
+    { "p": "On my rig, a MOZA R9 wheelbase (~9 N·m) with CRP2 load-cell pedals on a fixed aluminium cockpit, fixed setups are where the hardware helps most. The force feedback tells me when the front is about to wash out, and the load cell lets me repeat the same brake pressure lap after lap. Those two things are what fixed racing rewards." },
+    { "p": "In open setups, hardware matters less than understanding. No wheelbase will tell you whether you should soften the rear anti-roll bar. That knowledge comes from testing and reading, not from torque." },
+    { "p": "Whichever format you pick, brake bias is the one adjustment worth learning early, because it is available in both. My <a href=\"iracing-brake-bias-explained.html\">brake bias guide</a> covers how I set it and when I move it during a race." },
+    { "h2": "Safety rating does not care which you choose" },
+    { "p": "Fixed and open series count toward your license the same way. What helps your safety rating is clean racing, and that comes much faster when the car is predictable. If you are working up through the licenses, my <a href=\"iracing-safety-rating-guide.html\">safety rating guide</a> explains how incidents add up. In my experience, the fixed series were where I finally stopped collecting them." },
+    { "h2": "Mistakes I made moving from fixed to open" },
+    { "p": "The first time I raced an open series, I downloaded the fastest setup I could find, loaded it ten minutes before the race and went straight to qualifying. The car rotated far more than the fixed one I knew, and I spun it on my out lap. I had changed the car and the driving at the same time, with no reference for either." },
+    { "p": "The second mistake was changing too many things at once. I would adjust springs, wing and brake bias in one go, run three laps, and have no idea which change helped. These days I change one thing, run a short stint, and write down what I felt before I look at the lap time. The notes matter more than the time, because one lap can be quick for reasons that have nothing to do with the change." },
+    { "p": "The third was forgetting that the fixed setup is a perfectly good tool even in an open series. Many open series let you load the same setup the fixed version uses, or the iRacing baseline, which is often close. Starting from that, rather than from someone else's extreme setup, gives me a car I already understand. Then every change I make is a step I can feel. My post on <a href=\"baseline-setup-vs-setup-shops-when-to-stop-fiddling.html\">baseline setups versus setup shops</a> goes into when I stop tweaking and just drive." },
+    { "list": [
+      "Load a setup you know before the race, never a new one right before qualifying.",
+      "Change one thing per test run and write down how it felt.",
+      "Keep a stable baseline saved so you can always go back."
+    ] },
+    { "h2": "The short answer" },
+    { "p": "Start fixed. Learn the car, the track and the race craft with the setup off the table. Move to open when you can name what you want the car to do differently and you have the time to test it. Then come back to fixed whenever a week gets busy, because a clean race in a fixed series is still the best practice there is." }
+  ],
+  "faqs": [
+    { "q": "What is a fixed setup series in iRacing?", "a": "It is a series where iRacing supplies one setup for each car and the garage is locked, so every driver races the same mechanical car. You can still change in-car settings such as brake bias and choose your fuel load." },
+    { "q": "Can I change brake bias in a fixed setup race?", "a": "Yes. In-car adjustments that the real car has, such as brake bias and on some cars ABS and traction control, stay available in fixed series. Only the garage setup is locked." },
+    { "q": "Should a new iRacing driver race fixed or open?", "a": "Fixed is usually the better start. With the setup the same for everyone, your lap time depends only on your driving, which makes it easier to learn and to compare with faster drivers." },
+    { "q": "Do I need to buy setups for open series?", "a": "No. You can start from the iRacing baseline setup and make small changes, or build your own. Setup shops are an option if you would rather spend your time driving than testing." }
+  ]
+}
