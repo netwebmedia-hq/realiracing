@@ -1,0 +1,54 @@
+{
+  "slug": "iracing-local-yellow-flags-road-courses-what-to-do",
+  "tag": "Race Craft · Flags",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "iRacing Local Yellow Flags: What to Do on Road Courses",
+  "description": "A yellow shows up ahead on an iRacing road course. What it means, how I slow down without losing the race, and how to rejoin safely after your own spin.",
+  "published": "2026-11-19",
+  "dateLabel": "November 19, 2026",
+  "gearKeys": ["moza-r9", "moza-crp2", "cockpit"],
+  "sections": [
+    { "p": "Lap three at a busy road course, I come over a crest at full throttle and the yellow flag lights up on my screen. I can't see anything yet. Two seconds later there is a car sitting sideways across the racing line at the exit of the next corner, and the driver ahead of me is already lifting. That gap between the flag and the wreck is where most of my avoidable incidents used to come from, and it is the part of racing that nobody teaches you in the rookie series." },
+    { "p": "This post is how I handle local yellows on road courses now, from the seat of my MOZA R9 and CRP2 rig. It covers what the yellow is telling you, how much to slow down, what to do when you are the car that caused it, and why ignoring yellows costs you more than the half second you think you are saving." },
+    { "h2": "What a local yellow means in iRacing" },
+    { "p": "A local yellow is a warning for one part of the track. Something ahead is slow, stopped, off and about to come back, or spinning. On road courses it is the normal way iRacing warns you, because most of the road series I race run with full-course cautions turned off. The race keeps going everywhere else. Only the area around the problem is affected." },
+    { "p": "The sim shows it as a yellow flag indication on your screen, and the exact look depends on the HUD and overlays you run. What matters is the habit: the moment you see yellow, you start looking for the problem and you stop assuming the next corner is clear. The flag usually arrives before you have line of sight, especially over crests and around blind exits, which is exactly where a stopped car is most dangerous." },
+    { "h2": "How much to slow down" },
+    { "p": "There is no fixed number, and I would be making one up if I gave you a speed. What I do is closer to how you would drive on a real road when someone puts their hazard lights on ahead:" },
+    { "list": [
+      "Lift early, even a little, until I can see the problem. A small lift costs very little time; arriving flat out at a blind wreck costs the race.",
+      "Widen the gap to the car ahead. If they have to brake hard for the wreck, I want room to react to them, not to the wreck.",
+      "Pick the side away from the stopped car as soon as I can see it, and commit to it. Changing my mind at the last moment is how I collect the car that was trying to avoid it too.",
+      "Expect the stopped car to move. A car that spun will try to rejoin, often at low speed and often across the line."
+    ] },
+    { "p": "Once I am past the incident and the track ahead is clear, I go back to racing. Local yellows are local. Staying slow for half a lap does not make you safer, it makes you a slow car for the people behind you." },
+    { "h2": "Passing under yellow" },
+    { "p": "In real racing, overtaking in a yellow zone is not allowed. In iRacing it is less clear cut. As far as I know, iRacing does not automatically penalise a pass under a local yellow in most road series, but that does not make it free. A driver who feels you passed them unsafely in a yellow zone can file a protest, and the stewards look at the replay. I covered how that works in <a href=\"iracing-protest-sporting-code-process.html\">the protest and sporting code guide</a>." },
+    { "p": "My own rule is simple: I do not attack in a yellow zone. If the car ahead slows for the incident and I can get by cleanly because they lifted more than me, I take the position only if it happens naturally on the straight. I never dive inside a slowed car into the next corner. That move looks clever in the moment and ends badly often enough that I stopped trying it. Rules can vary by series, so read the sporting code for the series you race." },
+    { "tip": "If your overlay has a relative or radar view, glance at it when the yellow appears. It often shows you how many cars are bunched up around the incident before you can see them.", "tipLabel": "Rig note" },
+    { "h2": "When you are the reason for the yellow" },
+    { "p": "Sooner or later you will be the car sitting sideways. This is where most of the big pileups start, because the instinct is to get going again immediately. The car behind you is the problem. They saw the flag maybe two seconds ago and they are deciding which side to pass on based on where you are right now. If you suddenly roll back onto the line, you have moved into the space they chose." },
+    { "olist": [
+      "Brake and hold the car still while the spin finishes. Do not keep the throttle pinned hoping to save it.",
+      "Look at your mirror, your relative or your spotter calls before you move. If cars are coming, wait for them.",
+      "Rejoin off the racing line and accelerate along the edge of the track, not across it.",
+      "Only move to the racing line once you are up to a reasonable speed and the cars behind you have seen you."
+    ] },
+    { "p": "The few seconds you lose waiting are nothing compared to a contact that wrecks two cars. I go into more detail on the rejoin itself in <a href=\"recovering-from-a-spin-or-off-track-incident-iracing.html\">recovering from a spin or off-track</a>, and if you race on a single screen, setting up <a href=\"iracing-virtual-mirror-look-left-right-single-screen.html\">the virtual mirror and look left and right</a> makes the check before rejoining a lot easier." },
+    { "h2": "Why yellows matter for your licence" },
+    { "p": "iRacing does not have to penalise a yellow flag pass for yellows to hurt your licence. Most of the incident points I used to collect on road courses came from yellow situations: hitting a car that was stopped, going off to avoid one, or touching someone who braked for the wreck before I did. Every one of those adds incident points and pulls your safety rating down. If you are trying to climb out of rookie, how you handle yellows matters more than your pace." },
+    { "p": "There is also a racing reason. The drivers who arrive at the wreck carefully come out of it with their cars intact. The ones who stayed flat often do not. Some of my better finishes came from simply being the car that did not get involved." },
+    { "h2": "Local yellows vs full-course cautions on ovals" },
+    { "p": "On ovals the system is different. Many oval series use full-course cautions: the whole field slows, a pace car comes out, the field bunches up and there is a restart. Those have their own rules for pit stops and lining up, and they are a separate skill. On the road series I race, cautions are usually off and only local yellows apply. Check the series info before the race so you know which system you are dealing with." },
+    { "h2": "How the rig helps" },
+    { "p": "Hardware will not make you read flags, but it helps you act on them. On my R9 the force feedback tells me quickly when the rear starts to step out as I lift mid-corner for a yellow, and the CRP2 load cell brake lets me add a small, controlled amount of brake instead of a stab. A stab is what spins the car behind the wreck, and then you are the second car in the yellow. Whatever wheel and pedals you run, practise lifting and light braking in the middle of a corner so it is not new to you when the flag comes out." },
+    { "p": "If you want the companion habit for faster traffic, read <a href=\"iracing-blue-flags-being-lapped-and-lapping-cleanly.html\">how I handle blue flags</a>. Yellows and blues are the two flags you will see most on a road course, and handling both calmly is what keeps your races clean." }
+  ],
+  "faqs": [
+    { "q": "What does a yellow flag mean in iRacing road racing?", "a": "It is a local warning that something ahead is slow, stopped, off track or about to rejoin. The race continues elsewhere; you should slow down, look for the problem and avoid it." },
+    { "q": "Can you overtake under a local yellow in iRacing?", "a": "As far as I know iRacing does not automatically penalise a pass under a local yellow in most road series, but other drivers can protest an unsafe pass and stewards can act on it. Check your series sporting code and avoid attacking in a yellow zone." },
+    { "q": "How should I rejoin after a spin in iRacing?", "a": "Hold the car still, check your mirror or relative for oncoming cars, wait if anyone is close, then rejoin along the edge of the track and move to the racing line only once you are up to speed." },
+    { "q": "Do iRacing road courses have full-course cautions?", "a": "Most road series run with full-course cautions turned off and rely on local yellows, while many oval series use full-course cautions with a pace car. The series information tells you which applies." }
+  ]
+}
