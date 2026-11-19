@@ -18,6 +18,7 @@
 
 ## Latest blog posts (newest first)
 
+- [iRacing Local Yellow Flags: What to Do on Road Courses](https://realiracing.com/blog/iracing-local-yellow-flags-road-courses-what-to-do.html): A yellow shows up ahead on an iRacing road course. What it means, how I slow down without losing the race, and how to rejoin safely after your own spin.
 - [iRacing Fixed vs Open Setup Series: Which to Race First](https://realiracing.com/blog/iracing-fixed-vs-open-setup-series-which-first.html): Fixed setup or open setup in iRacing? What each format locks, what it leaves to you, and how I decide which series to race on a given week.
 - [iRacing Tow and Fast Repairs: Reset or Save the Repair?](https://realiracing.com/blog/iracing-tow-fast-repair-reset-or-save.html): What an iRacing tow actually does, how fast repairs work, and how to decide before the green flag whether to reset or keep limping home after a crash.
 - [iRacing Min Force: Fixing a Dead Centre on Direct Drive](https://realiracing.com/blog/iracing-min-force-dead-centre-direct-drive.html): What iRacing's Min Force does, why direct-drive owners leave it at zero, when it helps weaker bases, and a one-change test you can run in an evening.
@@ -37,7 +38,6 @@
 - [Monaco and Cannes Supercar Spotting 2025 | RealIRacing](https://realiracing.com/blog/monaco-cannes-supercars-summer-2025.html): Phone clips I filmed myself in Monaco and Cannes in summer 2025: a Ferrari F40, Casino Square, a Bugatti Chiron and more.
 - [Monsters on the Beach 2011: Virginia Beach Fence Clips](https://realiracing.com/blog/monsters-on-the-beach-2011-virginia-beach-monster-trucks.html): My own fence-side clips from Monsters on the Beach 2011 on the Virginia Beach oceanfront, with Grave Digger and Stone Crusher.
 - [I Drove the Nordschleife in Heavy Rain: Golf GTI 2025 | RealIRacing](https://realiracing.com/blog/nordschleife-in-heavy-rain-golf-gti-back-seat.html): I drove a VW Golf GTI MK7 around the Nürburgring Nordschleife in heavy rain on July 29, 2025. Onboard clips, filmed from inside the car.
-- [Rally Chile 2019: My Stage Side Clips | RealIRacing](https://realiracing.com/blog/rally-chile-2019-stage-side.html): I filmed Rally Chile 2019 on my phone from the side of the stages near Concepción. What happened, and what my clips show.
 
 ## More
 - Every post, one line each: https://realiracing.com/llms-full.txt
