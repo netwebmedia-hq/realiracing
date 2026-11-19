@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to read a MoTeC trace without an engineering degree</title>
+  <meta name="description" content="Learn the core telemetry channels that reveal pace, mistakes and setup issues. Start spotting problems in your own data today." />
+  <link rel="canonical" href="https://realiracing.com/blog/reading-motec-trace-without-engineering-background.html" />
+  <meta property="og:title" content="How to read a MoTeC trace without an engineering degree" />
+  <meta property="og:description" content="Learn the core telemetry channels that reveal pace, mistakes and setup issues. Start spotting problems in your own data today." />
+  <meta property="og:url" content="https://realiracing.com/blog/reading-motec-trace-without-engineering-background.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/track-pitlane.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="562" />
+  <meta property="og:image:alt" content="Crew working in the pit lane" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/track-pitlane.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261103" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to read a MoTeC trace without an engineering degree",
+    "description": "Learn the core telemetry channels that reveal pace, mistakes and setup issues. Start spotting problems in your own data today.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/reading-motec-trace-without-engineering-background.html",
+    "image": "https://realiracing.com/assets/photos/track-pitlane.jpg",
+    "datePublished": "2026-11-02",
+    "dateModified": "2026-11-02"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"How to read a MoTeC trace without an engineering degree","item":"https://realiracing.com/blog/reading-motec-trace-without-engineering-background.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/reading-motec-trace-without-engineering-background.html#rir-gear"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup — high refresh matters more than size","url":"https://realiracing.com/blog/reading-motec-trace-without-engineering-background.html#rir-gear"}}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What telemetry tool should I use to read MoTeC traces?",
+      "acceptedAnswer": { "@type": "Answer", "text": "iRacing exports telemetry that opens in MoTeC i2 Pro, which is free to download from the MoTeC website. You can also use Garage61, which is web-based and free, or RaceStudio which is what many real racers use. All three will show you the same five core channels. Start with whatever is easiest to access. The software doesn't matter as much as your ability to read the channels." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I compare two laps if the telemetry tool won't load them together?",
+      "acceptedAnswer": { "@type": "Answer", "text": "If your tool doesn't have an overlay feature, export both laps as CSV or another data format and load them into a spreadsheet (Excel, Google Sheets). Plot speed vs. time for both laps on the same chart. You won't get the color-coded detail, but you'll see the differences. Most tools made for sim racing (MoTeC, Garage61, RaceStudio) do support overlay, so this is a fallback only." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my speed trace look jagged even in a straight?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Straights should show smooth acceleration or coasting. Jagged lines usually come from two sources: your data log is recording at a low frequency (sampling rate too slow), or your game graphics are running at low frame rates (causing data points to be inconsistent). A data logging frequency of at least 60 Hz will smooth this out. If you're playing at 30 fps, upgrade your monitor or graphics settings first. A jagged straight trace almost never means you're doing something wrong." }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do if I see an obvious difference in one channel between two laps?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Trace through the entire sector to understand the cause. A lower speed at corner exit usually traces back to a weaker entry (more braking, later apex, or less commitment). Don't fix one channel in isolation. Read the story: brake trace, then steering trace, then speed trace together. If brake pressure is lower in the worse lap but steering and lateral G look the same, your brake application was inconsistent. If speed is lower but nothing else changed, you might be carrying too much steering angle or the car balance shifted." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">iRacing Tips · Telemetry</p>
+    <h1>How to read a MoTeC trace without an engineering degree</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated November 2, 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/track-pitlane.jpg" width="1000" height="562" alt="Crew working in the pit lane" srcset="/assets/photos/track-pitlane-sm.jpg 560w, /assets/photos/track-pitlane.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Photo: <a href="https://commons.wikimedia.org/wiki/User:Just_a_Man" target="_blank" rel="noopener nofollow">Just a Man</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener nofollow">CC BY 4.0</a> · Source: <a href="https://commons.wikimedia.org/wiki/File:TC_Gran_Premio_Coronaci%C3%B3n_2025._Domingo._Post_Carrera_-_37.jpg" target="_blank" rel="noopener nofollow">Wikimedia Commons</a></figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">MoTeC i2 Pro opens a wall of data. Twenty channels scroll past, each line a different color, and most of them look like noise if you have never been taught to read them. The good news: you don't need an engineering degree to spot the difference between a clean lap and a messy one, or to see where your setup is fighting you. You need to focus on five channels that tell a story about pace, control, and efficiency. Start there and the rest becomes optional.</p>
+
+      <p>A trace is a time-series plot. One axis is time (usually from 0 to maybe 2 minutes for a lap), the other is magnitude (speed, angle, pressure, whatever the channel measures). When lines spike or dip, something happened. Your job is to ask: does this make sense, or is it telling me I made a mistake or my setup is wrong?</p>
+
+      <h2>The five channels you must learn first</h2>
+
+      <p>Speed, throttle position, brake pressure, steering angle, and lateral acceleration tell almost everything about how fast and how cleanly you drove a lap. If you export a trace from iRacing telemetry or log one from a real-world sim, these five channels should be your first stop.</p>
+
+      <ul>
+        <li><strong>Speed:</strong> The top line on most traces. On a road course, you brake down to a minimum speed (the apex speed), then accelerate back out. A ragged speed trace means you're bleeding energy through mid-corner or braking too late. A smooth curve down and back up means efficient corner entry, apex, and exit.</li>
+        <li><strong>Throttle position:</strong> Shows how hard you're pressing the pedal, usually 0 to 100%. Ideally it's binary: full throttle or off. Anything in between (like 40% or 60%) means you're feathering, which costs lap time. Look for smooth on/off transitions, not gradual ramps.</li>
+        <li><strong>Brake pressure:</strong> How hard you're pressing the brake pedal. Again, binary is fast. A long, smooth ramp down to the apex means you're trail-braking (acceptable), but a lot of micro-adjustments (small spikes and dips) means you're fighting the car or unsure of your braking point.</li>
+        <li><strong>Steering angle:</strong> How far you've turned the wheel. The peak steering angle at the apex should match the corner's radius. A wobble in steering (small up-and-down movements) is a sign of over-corrections or a setup that doesn't like the line you chose.</li>
+        <li><strong>Lateral acceleration (G):</strong> How hard the car is being pushed sideways. Peak lateral G at the apex should be as high and as smooth as possible. A jagged or peaky trace means you're running out of grip or making jerky inputs.</li>
+      </ul>
+
+      <h2>Reading the speed trace like a map</h2>
+
+      <p>Start with speed because it tells you the most about your lap immediately. Overlay two of your fastest laps on top of each other (most telemetry tools let you compare). Find the places where one lap's speed line is consistently lower than the other.</p>
+
+      <p>If your speed is lower in a straight, you made an error (lock-up, off-track excursion, or poor exit from the prior corner) that cost momentum. If it's lower mid-corner, you ran out of grip or hit the apex too fast and had to slow down to recover. If it's lower on corner entry, you either braked too late (speed was too high) or backed out of the throttle too early on the prior straight.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Comparing laps</span>
+        <p>When comparing two laps, don't just look at the final delta in the display. Trace your finger along each line and watch where the gap opens and closes. That's where the real differences live.</p>
+      </div>
+
+      <h2>Spotting mistakes in throttle and brake traces</h2>
+
+      <p>A clean throttle trace looks like a square wave: full on, then off at the braking point, then back on at corner exit. If your throttle chart looks like a saw tooth with lots of small bumps, you're feathering (modulating throttle at partial position) during acceleration. This is always slower than full throttle or full off.</p>
+
+      <p>Brake pressure should be a clean ramp. At trail-braking corners (like a high-speed sweeper), a linear decay from peak brake to zero at the apex is ideal. Multiple peaks or a stepped decay (high, drop, high again) means you're reapplying brake after an initial release. That costs lap time. It's also a sign that your braking point is inconsistent or your reference is wrong.</p>
+
+      <p>If your throttle and brake are active at the same time (overlap), you're trail-braking deliberately. That's fine for a few high-speed corners. But if you see brake and throttle overlapped at a 90-degree corner, you're making a mistake. Either your brake point is too late or your throttle comes on too early.</p>
+
+      <h2>Understanding steering and lateral G</h2>
+
+      <p>Steering angle and lateral acceleration should rise together and fall together. A smooth, single-peak curve is fast. If your steering trace has two bumps (double apex), you're turning in too much, straightening, then turning again. That's either a line error or the car is pushing and making you correct. Compare it to a lap where the steering is one smooth input.</p>
+
+      <p>Lateral G should peak at the apex and should match the speed trace. If lateral G peaks before the speed minimum, you're entering the corner too fast and the car is fighting. If it peaks after the apex, you're carrying too much speed and the car is starting to wash wide. The ideal lap has both peaking at the same time.</p>
+
+      <p>Oscillation in steering (small up-and-down wiggles) is almost always a bad sign. It means you're making tiny corrections instead of committing to one input. This often points to either a setup problem (the car is twitchy or loose) or your own lack of confidence in the car's balance.</p></p>
+
+      <h2>Using the trace to spot setup issues</h2>
+
+      <p>Setup problems show up clearly on a telemetry trace. If your car is loose (rear sliding), lateral G will plateau or drop before you reach maximum steering angle. If it's tight (understeering), you'll reach maximum steering angle before lateral G peaks. A well-balanced car rises smoothly into the apex and holds it.</p>
+
+      <p>Brake traces reveal lockups instantly. A spike in brake pressure with a dip in speed (not smooth) is a lock-up. If you see this consistently at one corner, either adjust your reference point earlier or soften your brake balance. If it's erratic, it's a driver input problem.</p>
+
+      <p>Throttle wheelspin looks like a speed drop during acceleration with full throttle applied. The car is sliding, not gripping. If this happens coming out of a slow corner, your exit line is wrong or you need more rear grip. If you're on a straight, it's usually just over-enthusiasm.</p>
+
+      <ul>
+        <li>A loose car shows falling lateral G as steering angle increases.</li>
+        <li>A tight car reaches steering lock before lateral G peaks.</li>
+        <li>Brake lockups appear as pressure spikes with speed drops that don't match throttle changes.</li>
+        <li>Wheelspin during acceleration shows as speed dips with full throttle applied.</li>
+        <li>Inconsistent braking points cause multiple peaks in brake pressure or throttle.</li>
+      </ul>
+
+      <h2>The workflow: compare a good lap to a bad one</h2>
+
+      <p>Export or log two laps. One should be your personal best in a session, the other a lap where you feel you made mistakes or were slower than expected. Load them both into your telemetry tool and overlay them. Now step through each sector (a corner, a set of corners, or a straight) and ask these questions:</p>
+
+      <ol>
+        <li>Where does the speed line diverge first? That's where the lap started to go wrong.</li>
+        <li>Is the throttle on/off cleaner in the faster lap? Look for feathering in the slower lap.</li>
+        <li>Does the faster lap brake later, or earlier? Note the braking point difference.</li>
+        <li>Is steering smoother or wobblier in the faster lap? A single curve vs. bumps.</li>
+        <li>Is lateral G higher and more consistent in the faster lap? That's confidence and grip.</li>
+      </ol>
+
+      <p>This comparison is faster and more reliable than watching a replay, because the data doesn't lie and you won't miss small inputs. A replay might not show the nuance of a 2% throttle input, but the trace will.</p>
+
+      <h2>Common beginner mistakes in reading traces</h2>
+
+      <p>People often zoom too far in or out on the time axis. If you zoom all the way in on a single corner, you'll see noise and small corrections that look bigger than they are. If you zoom out and look at the whole lap at once, you'll miss the detail. Start with a single sector (one corner plus the straights around it) and work from there.</p>
+
+      <p>Another mistake is ignoring the scale. A lateral G trace that looks jagged might actually be a 0.1 G variation, which is nothing. But if the scale is 0.01 G per grid square, it looks huge. Always check the axis labels. A 0.2 G variation at the apex is not the same as a 0.02 G variation.</p>
+
+      <p>Finally, avoid the trap of chasing a single channel. If your speed is 1 mph lower than your best lap, that's worth investigating. But if every other channel looks identical, the 1 mph is probably just normal variation. Look for patterns. A good lap usually has multiple channels that align better, not just one channel that is exceptional.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Create a reference lap</span>
+        <p>Export your best lap from a practice session and keep it as a reference. When you jump into a new race or a new car, compare your first flying lap to that reference. You'll spot setup changes, driver errors, or track condition shifts immediately.</p>
+      </div>
+
+      <h2>Next steps: dig deeper if you want</h2>
+
+      <p>Once you're comfortable with these five channels, telemetry gets deeper. Brake temperature, front and rear lateral load transfer, engine RPM, suspension movement, tire slip ratio and tire slip angle all add nuance. But they're not necessary to drive faster. The fundamentals of reading a trace come from understanding speed, throttle, brake, steering, and lateral G. Everything else is refinement. Start there, and you'll catch most of your own mistakes before they cost you lap time in the race. For a deeper dive into how your setup affects the car's behavior on track, the principles in <a href="best-sim-racing-wheels-iracing.html">a structured rig setup</a> feed directly into what you'll see in these traces.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=reading-motec-trace-without-engineering-background">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup — high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>What telemetry tool should I use to read MoTeC traces?</h3>
+        <p>iRacing exports telemetry that opens in MoTeC i2 Pro, which is free to download from the MoTeC website. You can also use Garage61, which is web-based and free, or RaceStudio which is what many real racers use. All three will show you the same five core channels. Start with whatever is easiest to access. The software doesn't matter as much as your ability to read the channels.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I compare two laps if the telemetry tool won't load them together?</h3>
+        <p>If your tool doesn't have an overlay feature, export both laps as CSV or another data format and load them into a spreadsheet (Excel, Google Sheets). Plot speed vs. time for both laps on the same chart. You won't get the color-coded detail, but you'll see the differences. Most tools made for sim racing (MoTeC, Garage61, RaceStudio) do support overlay, so this is a fallback only.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Why does my speed trace look jagged even in a straight?</h3>
+        <p>Straights should show smooth acceleration or coasting. Jagged lines usually come from two sources: your data log is recording at a low frequency (sampling rate too slow), or your game graphics are running at low frame rates (causing data points to be inconsistent). A data logging frequency of at least 60 Hz will smooth this out. If you're playing at 30 fps, upgrade your monitor or graphics settings first. A jagged straight trace almost never means you're doing something wrong.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What should I do if I see an obvious difference in one channel between two laps?</h3>
+        <p>Trace through the entire sector to understand the cause. A lower speed at corner exit usually traces back to a weaker entry (more braking, later apex, or less commitment). Don't fix one channel in isolation. Read the story: brake trace, then steering trace, then speed trace together. If brake pressure is lower in the worse lap but steering and lateral G look the same, your brake application was inconsistent. If speed is lower but nothing else changed, you might be carrying too much steering angle or the car balance shifted.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="iracing-safety-rating-guide.html"><span>iRacing Tips</span>iRacing Safety Rating Explained — How to Reach an A License Fast</a>
+      <a class="related-card" href="hosted-sessions-vs-official-races-vs-leagues.html"><span>iRacing Tips</span>Hosted Sessions vs Official Races vs Leagues: Which Suits Your Goals</a>
+      <a class="related-card" href="endurance-racing-fuel-tire-strategy-basics.html"><span>iRacing Tips</span>Endurance Racing Fuel and Tire Strategy Basics for iRacing</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","monitor-1440p-120"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
