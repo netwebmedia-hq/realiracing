@@ -562,5 +562,29 @@
     "sm_width": 560,
     "sm_height": 315,
     "post_slug": "redondo-beach-car-show-april-2018"
+  },
+  {
+    "file": "/assets/photos/event-gta6-first-hours-2026.jpg",
+    "width": 1000,
+    "height": 562,
+    "bytes": 54299,
+    "author": "Carlos Martinez",
+    "author_full": "Carlos Martinez",
+    "author_url": "https://realiracing.com/",
+    "license": "RealiRacing own work",
+    "license_url": "https://realiracing.com/",
+    "source": "https://realiracing.com/",
+    "source_name": "RealiRacing",
+    "commons_title": "",
+    "generator": "frame of own footage",
+    "alt_en": "A dark retro sports coupe sliding past a gas station in GTA 6 on a sunny day",
+    "alt_es": "Un cupé deportivo retro oscuro derrapando frente a una gasolinera en GTA 6 en un día soleado",
+    "slug": "event-gta6-first-hours-2026",
+    "tag": "event",
+    "kind": "own",
+    "motif": "event",
+    "sm_width": 560,
+    "sm_height": 315,
+    "post_slug": "gta-6-driving-sim-racers-first-hours-xbox-series-x"
   }
 ]

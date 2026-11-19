@@ -168,6 +168,23 @@
         name: 'Sim Racing Cockpit / Wheel Stand',
         amazonUrl: 'https://www.amazon.com/s?k=sim+racing+cockpit+stand',
         note: 'a rigid mount matters more than the brand — flex kills FFB detail'
+      },
+      /* 2026-11-19: rule 3, plain category searches for the GTA 6 stream post.
+         No ASINs: these are classes of part, not one SKU. */
+      'capture-card': {
+        name: 'HDMI Capture Card (1080p60)',
+        amazonUrl: 'https://www.amazon.com/s?k=HDMI+capture+card+1080p60',
+        note: 'the cleaner fix for streaming a console: no Remote Play window, no focus pauses'
+      },
+      'xbox-controller': {
+        name: 'Xbox Wireless Controller',
+        amazonUrl: 'https://www.amazon.com/s?k=Xbox+Wireless+Controller',
+        note: 'what I played GTA 6 on, from the couch'
+      },
+      'webcam-c920': {
+        name: 'Logitech C920 Webcam',
+        amazonUrl: 'https://www.amazon.com/s?k=Logitech+C920+webcam',
+        note: 'the facecam on my streams'
       }
     }
   };
