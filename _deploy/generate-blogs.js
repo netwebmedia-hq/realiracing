@@ -205,6 +205,7 @@ function buildFallbackFaqs(post) {
 function renderSections(sections) {
   let leadUsed = false;
   return (sections || []).map(s => {
+    if (s.html) return s.html; // raw block, e.g. one lite-yt video card
     if (s.reels) return `      <!-- reels:slot:${esc(s.reels)} -->`; // filled after the affiliate pass, so reel titles are never turned into product links
     if (s.h2) return `      <h2>${esc(s.h2)}</h2>`;
     if (s.h3) return `      <h3>${esc(s.h3)}</h3>`;
@@ -343,7 +344,7 @@ function renderPostHtml(post, related, allowedGearKeys) {
   const taggedBody = enforceAmazonTags(renderSections(post.sections), affCfg).html;
   const bodyHtml = linkProductMentions(taggedBody, affCfg, { max: 5 }).html
     .replace(/ *<!-- reels:slot:([a-z0-9-]+) -->/g, (_, key) => reelsBlock(key));
-  const hasReels = (post.sections || []).some(s => s.reels);
+  const hasReels = (post.sections || []).some(s => s.reels || (s.html && /lite-yt/.test(s.html)));
 
   const faqJsonLd = faqs.map(f => `    {
       "@type": "Question",

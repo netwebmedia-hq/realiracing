@@ -1,0 +1,114 @@
+{
+  "slug": "gta-6-driving-sim-racers-first-hours-xbox-series-x",
+  "tag": "Streaming · Gaming",
+  "author": "Carlos Martinez",
+  "readTime": "4 min read",
+  "title": "GTA 6 Driving: A Sim Racer's First Hours on Xbox Series X",
+  "description": "A sim racer's first hours of GTA 6 driving on Xbox Series X with a controller: the vehicles, five driving moments, and how the stream was set up without a capture card.",
+  "sections": [
+    {
+      "p": "I race in iRacing, so I looked at GTA 6 driving the way a sim racer does. I played the first hours live on launch day, on an Xbox Series X with a controller, blind, with no guide open. This is a log of what happened behind the wheel, not a review and not a handling test."
+    },
+    {
+      "p": "This is fan content. It is not affiliated with Rockstar Games."
+    },
+    {
+      "html": "      <div class=\"lite-yt\" data-video-id=\"lOp7pZ-1qZY\">\n        <a class=\"lite-yt-link\" href=\"https://www.youtube.com/watch?v=lOp7pZ-1qZY\" target=\"_blank\" rel=\"noopener\" data-title=\"GTA 6 LIVE: Sim Racer Plays for the First Time\"><img src=\"https://img.youtube.com/vi/lOp7pZ-1qZY/hqdefault.jpg\" alt=\"GTA 6 LIVE: Sim Racer Plays for the First Time\" width=\"480\" height=\"360\" loading=\"lazy\" decoding=\"async\"><span class=\"lite-yt-play\" aria-hidden=\"true\"></span><span class=\"lite-yt-label\">GTA 6 LIVE: Sim Racer Plays for the First Time</span></a>\n      </div>"
+    },
+    {
+      "p": "The full stream is above. It runs 2 hours and 5 minutes, live on the @realtape YouTube channel on November 19, 2026."
+    },
+    {
+      "h2": "What I drove"
+    },
+    {
+      "p": "In these hours I drove several kinds of vehicle. There were pickup trucks, a red retro sports car, a dark retro sports coupe, a motorcycle and a grey SUV. At one point I took a car off a tow truck. The world around them looks like a sunny coastal region, with palm trees, highways, long bridges over water and run-down streets."
+    },
+    {
+      "p": "I did not set out to test cars. Much of the driving happened with a police wanted level on, so these are chase moments, not calm laps. Keep that in mind when you watch."
+    },
+    {
+      "h2": "Five driving moments from the stream"
+    },
+    {
+      "p": "I cut five Shorts and Reels from the stream. Each one is a single driving moment, with no story context needed."
+    },
+    {
+      "list": [
+        "<strong>Red Sports Car Slams Into a Gate at Sunset.</strong> A red retro sports car runs along a road and over a bridge with the police on its tail. It reaches an industrial site with a closed gate and hits it.",
+        "<strong>Bike Rider Gets Launched Into the Air.</strong> A rider on a motorcycle goes down a sunny road past traffic. At an intersection a pickup appears beside the bike, the game switches to a slow crash camera, and the rider is thrown into a flip. The rider lands and stands up.",
+        "<strong>Sliding a Retro Coupe Past a Gas Station.</strong> A dark retro coupe cuts across grass and a corner, brushes some plants and a pole, then slides sideways in front of a gas station and drives on.",
+        "<strong>Pickup Swings Around a Junction.</strong> A beige pickup comes into a junction and swings hard around it, then drives on under an overpass between other cars.",
+        "<strong>Gunfight Between Parked Cars in a Car Lot.</strong> The most graphic of the five, so it comes last. It is a third-person gunfight among rows of parked cars in a fenced lot."
+      ]
+    },
+    {
+      "p": "The Shorts are on <a href=\"https://www.youtube.com/@realtape/shorts\" target=\"_blank\" rel=\"noopener\">YouTube @realtape</a> and the Reels are on <a href=\"https://www.instagram.com/realiracing/\" target=\"_blank\" rel=\"noopener\">Instagram @realiracing</a>."
+    },
+    {
+      "h2": "A sim racer on a controller"
+    },
+    {
+      "p": "I am used to a wheel, pedals and force feedback. Here I had a controller and a game that does not try to be a simulator. I will not give handling numbers or a verdict, because I did not measure anything. What I can say is what the footage shows: cars that slide sideways, cut across grass and hit gates and poles. A proper handling breakdown needs more hours than this."
+    },
+    {
+      "p": "If you race in iRacing, you will see how different this is. In iRacing a big slide usually means I have made a mistake. In the gas station clip I slid sideways and kept driving."
+    },
+    {
+      "h2": "How I streamed GTA 6 from Chile"
+    },
+    {
+      "p": "Here is the setup. I do not use a capture card. The Xbox picture reaches OBS through Xbox Remote Play in a browser window on the PC. OBS captures that window and streams 1080p60 to YouTube. I use a Logitech C920 webcam for the facecam and a USB audio interface for the microphone."
+    },
+    {
+      "p": "It worked, but it has real downsides that I saw during the stream:"
+    },
+    {
+      "list": [
+        "Remote Play pauses when its window loses focus, so clicking another window can freeze the picture.",
+        "It disconnects after a long idle. A disconnect near the end of my session ended the feed.",
+        "There is picture delay if you play from the PC screen."
+      ]
+    },
+    {
+      "p": "The better way to run this is to play on the TV that is wired to the Xbox, and use the PC only as a mirror for OBS. The cleaner fix is a capture card, which takes the Remote Play window out of the chain. If you plan to stream a console, that is the route to look at."
+    },
+    {
+      "h2": "What I did not show"
+    },
+    {
+      "p": "There are story moments in the stream that I kept out of this post and out of the clip titles, so I do not spoil anything for you. The clips only show driving and crashing."
+    },
+    {
+      "h2": "Where to see more"
+    },
+    {
+      "p": "Watch the full stream above, then check the Shorts and Reels. More sim racing posts are on <a href=\"/blog/\">the blog</a>, and my racing rig is on the <a href=\"/gear.html\">My Rig</a> page."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is this a GTA 6 handling review?",
+      "a": "No. It is a log of my first hours driving on launch day, played blind with a controller. I did not measure anything, so there are no handling numbers or scores."
+    },
+    {
+      "q": "What did you play GTA 6 on?",
+      "a": "An Xbox Series X with a controller. The stream is on the @realtape YouTube channel and runs 2 hours and 5 minutes."
+    },
+    {
+      "q": "How do you stream an Xbox to YouTube without a capture card?",
+      "a": "The Xbox picture reaches OBS through Xbox Remote Play in a browser window on the PC. OBS captures that window and streams 1080p60. Remote Play pauses when its window loses focus and can disconnect after a long idle, so a capture card is the cleaner fix."
+    },
+    {
+      "q": "Is this affiliated with Rockstar Games?",
+      "a": "No. This is fan content and is not affiliated with Rockstar Games."
+    }
+  ],
+  "gearKeys": [
+    "capture-card",
+    "xbox-controller",
+    "webcam-c920"
+  ],
+  "published": "2026-11-19",
+  "dateLabel": "November 19, 2026"
+}
