@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multi-camera setup for sim racing streams: angles, switching, and gear</title>
+  <meta name="description" content="Learn how to add cockpit, monitor, and wide angles to your stream without needing multiple PCs. Practical camera placement and OBS switching techniques." />
+  <link rel="canonical" href="https://realiracing.com/blog/multi-camera-sim-racing-stream-setup.html" />
+  <meta property="og:title" content="Multi-camera setup for sim racing streams: angles, switching, and gear" />
+  <meta property="og:description" content="Learn how to add cockpit, monitor, and wide angles to your stream without needing multiple PCs. Practical camera placement and OBS switching techniques." />
+  <meta property="og:url" content="https://realiracing.com/blog/multi-camera-sim-racing-stream-setup.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/rig-seat.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="750" />
+  <meta property="og:image:alt" content="A racing bucket seat and harness" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/rig-seat.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261103" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Multi-camera setup for sim racing streams: angles, switching, and gear",
+    "description": "Learn how to add cockpit, monitor, and wide angles to your stream without needing multiple PCs. Practical camera placement and OBS switching techniques.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/multi-camera-sim-racing-stream-setup.html",
+    "image": "https://realiracing.com/assets/photos/rig-seat.jpg",
+    "datePublished": "2026-11-02",
+    "dateModified": "2026-11-02"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Multi-camera setup for sim racing streams: angles, switching, and gear","item":"https://realiracing.com/blog/multi-camera-sim-racing-stream-setup.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"name":"NVIDIA GeForce RTX 5060 Ti (8 GB)","description":"renders iRacing and NVENC-encodes the stream on the same chip","url":"https://realiracing.com/blog/multi-camera-sim-racing-stream-setup.html#rir-gear"},{"@type":"ListItem","position":2,"name":"AMD Ryzen 7 5700","description":"8 cores — plenty for iRacing plus OBS on one PC","url":"https://realiracing.com/blog/multi-camera-sim-racing-stream-setup.html#rir-gear"},{"@type":"ListItem","position":3,"name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup — high refresh matters more than size","url":"https://realiracing.com/blog/multi-camera-sim-racing-stream-setup.html#rir-gear"}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Will adding two USB cameras to my streaming PC tank my frame rate in iRacing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Not if your PC has spare CPU headroom. USB camera capture itself uses minimal CPU; the overhead comes from OBS compositing them into your output. On a Ryzen 7 5700 with encoding bitrate at 6000-8000 kbps, two cameras at 720p 30fps typically add 5-10% CPU usage. Monitor your OBS encoding CPU during a race. If it's above 70%, reduce camera resolution or bitrate, or run cameras on a second PC." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use a capture card for my monitor or just let OBS screen-crop it?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A capture card (HDMI USB 3.0) is more reliable and offloads CPU work. OBS screen-region capture is free but uses CPU to encode that region, which matters if your PC is already at 60-70% encoding load. If your streaming PC is tight, a ~£100 capture card is worth it. If you have spare CPU, screen crop works fine." }
+    },
+    {
+      "@type": "Question",
+      "name": "What camera resolution should I use for a cockpit close-up?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Start at 1280x720 30fps. Most viewers watch compressed streams at 540p or lower, so 720p is sharp enough and uses reasonable USB bandwidth. If you have spare USB and CPU, bump it to 1920x1080 30fps. Anything above 1080p is wasted on a small corner inset; save high resolution for a full-screen cockpit or rig shot." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I run three USB cameras on one streaming PC without dropping frames?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Rarely without trade-offs. Three USB cameras at 720p 30fps each, plus encoding your main 1080p 60fps feed, can saturate USB bandwidth and CPU. Most single-PC setups max out at two USB cameras running cleanly. If you need three, use a second PC for two cameras and stream via NDI, or use a dedicated USB hub with its own power supply to reduce bus contention." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Streaming · OBS</p>
+    <h1>Multi-camera setup for sim racing streams: angles, switching, and gear</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated November 2, 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/rig-seat.jpg" width="1000" height="750" alt="A racing bucket seat and harness" srcset="/assets/photos/rig-seat-sm.jpg 560w, /assets/photos/rig-seat.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Photo: <a href="https://www.flickr.com/photos/25632349@N04" target="_blank" rel="noopener nofollow">The Car Spy</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener nofollow">CC BY 2.0</a> · Source: <a href="https://commons.wikimedia.org/wiki/File:Bucket_seat_with_Schroth_six-point_harness_in_a_2010_Porsche_997_GT3_RS_3.8.jpg" target="_blank" rel="noopener nofollow">Wikimedia Commons</a></figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">Most sim racers stream from a single monitor on one PC, which means camera bandwidth competes with encoding bandwidth. Adding a second or third camera to your stream setup means choosing: buy a more expensive capture card, run cameras on a separate PC, or use USB webcams on your streaming PC and accept modest quality. The payoff is real though. A cockpit camera adds immersion and credibility. A rig-wide angle shows your physical setup. A monitor capture proves you're not using assists and keeps viewers locked on the action. Done well, multi-camera angles keep a stream engaging across a longer broadcast.</p>
+
+      <h2>Why multi-camera matters for sim racing</h2>
+
+      <p>Viewers are skeptical of sim racing streams by default. A single monitor view leaves questions: Are you using a controller? Assists? Is this actually the iRacing world you claim? A second angle, especially a monitor-input capture or close-up of your wheel and pedals in action, closes that gap. Cockpit cameras also reduce the boredom of long endurance races. When your lap times flatten or traffic builds, cutting to a rig shot keeps the stream visually alive.</p>
+
+      <p>The technical barrier is lower than it was five years ago. USB webcams now ship with decent low-light performance. OBS scene switching is reliable and free. The constraint is not technology but your streaming PC's CPU headroom and USB bandwidth. On a system like the one I stream from (<a href="https://www.amazon.com/s?k=RTX+5060+Ti+8GB+graphics+card&amp;tag=realiracing-20" data-aff="gpu-rtx-5060-ti" target="_blank" rel="sponsored noopener">RTX 5060 Ti</a> and <a href="https://www.amazon.com/s?k=AMD+Ryzen+7+5700+processor&amp;rh=p_89%3AAMD&amp;tag=realiracing-20" data-aff="cpu-ryzen-7-5700" target="_blank" rel="sponsored noopener">Ryzen 7 5700</a> with OBS on one PC), adding two USB cameras is feasible as long as your encoder settings leave room for their overhead.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Start simple</span>
+        <p>Start with one additional camera before committing to a three-angle setup. Most viewers respond more to consistent, clean audio and a stable 60 fps main feed than to adding a third angle. Add angles only if your PC and internet upload handle them without frame drops.</p>
+      </div>
+
+      <h2>Camera types and placement for sim racing</h2>
+
+      <h3>Monitor or racing line input capture</h3>
+
+      <p>The gold standard for a second angle is a direct input capture of your monitor or a separate small display showing the in-game view. This proves the build, the track, your iRating and safety rating, and that you're not using AI opponents or offline practice. If your monitor has HDMI or DisplayPort out, you can route a second output to a capture card on a separate USB 3.0 bus. If not, use an HDMI splitter (one for your display, one for capture).</p>
+
+      <p>A capture card approach adds cost (budget ~£80 to £150 for a reliable USB 3.0 card) but uses no PC CPU time after the capture driver loads. If you must avoid extra hardware, screen-region capture in OBS (crop your monitor view) works but will slow your encoder if your main stream already fills your CPU.</p>
+
+      <h3>Cockpit angle: wheel and pedals</h3>
+
+      <p>Mount a USB webcam or USB mirrorless camera above or to the side of your wheel to frame your steering input and hand position. This angle is most impactful during high-stress corners or overtakes, and it builds trust that you're actually driving. Position the camera roughly 60 cm from your wheel at an angle that keeps your hands visible without glare or backlighting washing out detail. A ~1080p 30 fps USB webcam is enough; most viewers watch at lower quality anyway.</p>
+
+      <ul>
+        <li>Mount on a desk arm or camera tripod pointed at the wheel from the driver's right side (passenger perspective on the footage), roughly 45 degrees to the steering plane</li>
+        <li>Avoid direct overhead mounting; it hides hand and steering motion and creates glare</li>
+        <li>Position the focus distance at your hands, not the dashboard. The steering wheel itself becomes the reference point</li>
+        <li>Test the view in low light; many budget USB cameras lose detail in a dimly lit room, so consider a cheap LED panel or directional desk light</li>
+      </ul>
+
+      <h3>Wide rig shot</h3>
+
+      <p>A third camera framing your full cockpit or rig setup is optional but adds production value for long streams. This angle proves you have real hardware, not a controller, and breaks up the visual monotony of hour-long endurance races. Mount it 1.5 to 2 metres away from your seat, slightly elevated, framing seat, wheel, and pedals in one shot.</p>
+
+      <h2>OBS scene switching and layout</h2>
+
+      <p>Your stream layout depends on bandwidth and CPU overhead. A common approach: main scene has your monitor capture in the foreground, cockpit camera in a bottom corner (10-15% of frame), and wide rig shot in another corner. During slow racing (lead changes, fuel stops), full-screen the cockpit or rig for 10-15 seconds, then return to the main view. This keeps the visual hierarchy clear (racing action first) while rewarding engaged viewers with extra angles.</p>
+
+      <ol>
+        <li>Set up each camera as a separate source in OBS: monitor capture via HDMI card, cockpit USB camera, rig wide-angle USB camera</li>
+        <li>Create two or three scenes: 'Racing Main' (monitor large, cameras in corners), 'Cockpit Focus' (cockpit camera full-screen), 'Rig Wide' (rig angle full-screen)</li>
+        <li>Use scene-switching hotkeys or a secondary monitor to flip between scenes without cutting awkwardly</li>
+        <li>Keep each camera input at a consistent resolution (1920x1080 or 1280x720) to avoid re-scaling drops in OBS; use the camera settings or OBS filter to resize before compositing</li>
+        <li>Set a delay of 2-3 seconds on non-main cameras if your upload bandwidth is tight; a slight audio delay is less noticeable than a video stutter</li>
+      </ol>
+
+      <div class="tip-box">
+        <span class="box-label">Test first</span>
+        <p>Test your full multi-camera setup on a local private lobby before a public stream. Watch the replay and CPU usage in OBS. If your encoding bitrate spikes above 80% CPU usage, drop one camera or reduce a resolution.</p>
+      </div>
+
+      <h2>USB bandwidth and PC overhead</h2>
+
+      <p>Two USB 3.0 cameras on the same hub can saturate bandwidth if both are streaming 1080p 30fps. Use separate USB 3.0 buses if your PC has them (many do: front USB 3.0 hub, rear USB 3.0 header, and internal USB 2.0 for less bandwidth-hungry devices). Stagger camera resolutions: cockpit at 1080p 30fps, wide rig at 720p 30fps. This spreads the load and rarely impacts perceived quality on stream.</p>
+
+      <p>CPU overhead comes from OBS compositing (blending multiple sources into one output frame). A Ryzen 5700 can handle two USB cameras plus monitor capture and 1080p 60fps encoding if the cameras run at 720p or 1080p 30fps and your encoder bitrate sits at 6000-8000 kbps. Higher bitrates push encoding CPU above 60%, leaving little room for in-game CPU spikes. Lower your resolution or framerate if your CPU usage trends near 70% during a race.</p>
+
+      <h2>Gear: cameras and capture cards</h2>
+
+      <p>Budget USB webcams (Logitech C920 or C930e clones, ~£40-60) work for cockpit and rig angles. They struggle in low light and have poor autofocus, but many viewers watch compressed streams at 540p anyway, so the image quality loss is acceptable. Higher-end USB mirrorless cameras (Sony A6400, ~£600+) offer exceptional image quality, fast autofocus, and manual focus; they're overkill for a small cockpit corner but valuable if you're serious about stream presentation and have the budget.</p>
+
+      <p>For monitor capture, a dedicated HDMI USB 3.0 capture card (Elgato Cam Link, Magewell USB Capture, ~£100-150) is more reliable than screen-region capture in OBS. Capture cards use hardware to compress the video feed and offload the work from your CPU. If your streaming PC is tight on CPU budget, a capture card pays for itself in stability and available encoder headroom.</p>
+
+      <ul>
+        <li><strong>Budget option:</strong> two USB webcams (~£60 each) and screen-region OBS capture (no extra hardware); works if your PC has spare CPU</li>
+        <li><strong>Balanced:</strong> USB webcam for cockpit, USB webcam for wide rig, HDMI capture card for monitor; ~£250 total, reliable, clean layout</li>
+        <li><strong>Premium:</strong> USB mirrorless for cockpit (Sony A6400, ~£600), USB webcam for rig, capture card for monitor; best image quality, supports future upgrade to 1440p or 4K elements</li>
+      </ul>
+
+      <h2>Audio and sync</h2>
+
+      <p>USB cameras do not carry audio to OBS by default. Use your existing headset or microphone input and route it through OBS as a separate audio source. If video encoding lags slightly (a 1-2 frame delay on a camera angle), audio and video stay in sync because OBS handles them separately. Noticeable lip-sync issues only occur if your upload bandwidth is truly maxed and OBS begins dropping frames; that's a sign to reduce camera resolution or bitrate, not to add audio delay compensation.</p>
+
+      <h2>Practical setup workflow</h2>
+
+      <ol>
+        <li>Install one USB camera first (cockpit angle). Test it in OBS at 720p 30fps for one week of streams. Verify CPU and USB stability</li>
+        <li>Add a second camera (wide rig) on a separate USB port or hub. Test at 720p 30fps for another week</li>
+        <li>If CPU and bandwidth are stable, raise the cockpit camera to 1080p 30fps. Monitor your OBS encoding CPU; if it climbs above 70%, drop the rig camera to 480p or reduce your main stream bitrate by 1000 kbps</li>
+        <li>Add monitor capture last, via capture card or OBS screen crop. Start with a smaller monitor area (1280x720) and scale up only if CPU headroom allows</li>
+        <li>Create your multi-camera scenes in OBS. Set keyboard shortcuts for quick scene switching during a race. Practice switching without fumbling</li>
+        <li>Run a 30-minute test stream on a private YouTube stream or Discord channel. Watch the replay for dropped frames, stutters, or desync. Adjust camera resolution or bitrate if needed</li>
+      </ol>
+
+      <p>Multi-camera streaming on a single PC is achievable and credible. Start small, test thoroughly, and upgrade only when your CPU and upload bandwidth clearly support the next angle. Viewers prefer one stable, high-frame-rate feed with clean audio over three laggy or stuttering angles, so resist the temptation to add cameras faster than your rig can handle them.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before you go live, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=multi-camera-sim-racing-stream-setup">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=RTX+5060+Ti+8GB+graphics+card&amp;tag=realiracing-20" data-aff="gpu-rtx-5060-ti" target="_blank" rel="sponsored noopener">NVIDIA GeForce RTX 5060 Ti (8 GB)</a></th><td>renders iRacing and NVENC-encodes the stream on the same chip</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=AMD+Ryzen+7+5700+processor&amp;rh=p_89%3AAMD&amp;tag=realiracing-20" data-aff="cpu-ryzen-7-5700" target="_blank" rel="sponsored noopener">AMD Ryzen 7 5700</a></th><td>8 cores — plenty for iRacing plus OBS on one PC</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup — high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>Will adding two USB cameras to my streaming PC tank my frame rate in iRacing?</h3>
+        <p>Not if your PC has spare CPU headroom. USB camera capture itself uses minimal CPU; the overhead comes from OBS compositing them into your output. On a Ryzen 7 5700 with encoding bitrate at 6000-8000 kbps, two cameras at 720p 30fps typically add 5-10% CPU usage. Monitor your OBS encoding CPU during a race. If it's above 70%, reduce camera resolution or bitrate, or run cameras on a second PC.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I use a capture card for my monitor or just let OBS screen-crop it?</h3>
+        <p>A capture card (HDMI USB 3.0) is more reliable and offloads CPU work. OBS screen-region capture is free but uses CPU to encode that region, which matters if your PC is already at 60-70% encoding load. If your streaming PC is tight, a ~£100 capture card is worth it. If you have spare CPU, screen crop works fine.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What camera resolution should I use for a cockpit close-up?</h3>
+        <p>Start at 1280x720 30fps. Most viewers watch compressed streams at 540p or lower, so 720p is sharp enough and uses reasonable USB bandwidth. If you have spare USB and CPU, bump it to 1920x1080 30fps. Anything above 1080p is wasted on a small corner inset; save high resolution for a full-screen cockpit or rig shot.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I run three USB cameras on one streaming PC without dropping frames?</h3>
+        <p>Rarely without trade-offs. Three USB cameras at 720p 30fps each, plus encoding your main 1080p 60fps feed, can saturate USB bandwidth and CPU. Most single-PC setups max out at two USB cameras running cleanly. If you need three, use a second PC for two cameras and stream via NDI, or use a dedicated USB hub with its own power supply to reduce bus contention.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="how-to-stream-iracing-obs.html"><span>Streaming</span>How to Stream iRacing with OBS Without Lag — Single-PC Settings That Work</a>
+      <a class="related-card" href="iracing-stream-overlay-hud-tools.html"><span>Streaming</span>iRacing Stream Overlays and HUD Tools: Build a Pro-Looking Broadcast</a>
+      <a class="related-card" href="racelab-overlays-iracing-telemetry-streaming.html"><span>Streaming</span>RaceLab Overlays for iRacing: Real-Time Telemetry on Stream</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["gpu-rtx-5060-ti","cpu-ryzen-7-5700","monitor-1440p-120"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>

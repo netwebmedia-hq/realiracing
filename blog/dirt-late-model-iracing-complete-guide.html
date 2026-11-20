@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dirt Late Model iRacing Guide: Setup, Throttle Control, Track Feel</title>
+  <meta name="description" content="Master dirt late model racing on iRacing. Learn setup fundamentals, throttle modulation, and how to feel the track through your wheel." />
+  <link rel="canonical" href="https://realiracing.com/blog/dirt-late-model-iracing-complete-guide.html" />
+  <meta property="og:title" content="Dirt Late Model iRacing Guide: Setup, Throttle Control, Track Feel" />
+  <meta property="og:description" content="Master dirt late model racing on iRacing. Learn setup fundamentals, throttle modulation, and how to feel the track through your wheel." />
+  <meta property="og:url" content="https://realiracing.com/blog/dirt-late-model-iracing-complete-guide.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/pedals-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: a rising series of bars" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/pedals-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261103" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Dirt Late Model iRacing Guide: Setup, Throttle Control, Track Feel",
+    "description": "Master dirt late model racing on iRacing. Learn setup fundamentals, throttle modulation, and how to feel the track through your wheel.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/dirt-late-model-iracing-complete-guide.html",
+    "image": "https://realiracing.com/assets/photos/pedals-cover.jpg",
+    "datePublished": "2026-11-02",
+    "dateModified": "2026-11-02"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Dirt Late Model iRacing Guide: Setup, Throttle Control, Track Feel","item":"https://realiracing.com/blog/dirt-late-model-iracing-complete-guide.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/dirt-late-model-iracing-complete-guide.html#rir-gear"},{"@type":"ListItem","position":2,"name":"NVIDIA GeForce RTX 5060 Ti (8 GB)","description":"renders iRacing and NVENC-encodes the stream on the same chip","url":"https://realiracing.com/blog/dirt-late-model-iracing-complete-guide.html#rir-gear"},{"@type":"ListItem","position":3,"name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup — high refresh matters more than size","url":"https://realiracing.com/blog/dirt-late-model-iracing-complete-guide.html#rir-gear"}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is the dirt late model harder than oval asphalt or road racing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It's different, not harder. The car is inherently loose, which means throttle modulation becomes the primary control input rather than steering precision. Road racing rewards hits on apexes. Dirt rewards smooth weight management. If you're used to braking hard and turning, expect a learning curve. Most drivers improve noticeably in their first 20 laps as they retrain their throttle foot." }
+    },
+    {
+      "@type": "Question",
+      "name": "What wheel settings should I use for dirt late model?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Start with a lower force feedback level than you'd use on road courses, around 70 to 80 percent. Dirt cars produce a lot of chatter and oscillation that can feel overwhelming at full FFB strength. Lower steering ratio helps too, around 10 to 12 for shorter tracks and up to 14 for Eldora. These are starting points; adjust based on how much detail you feel and whether you're spinning." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I practice with or without damage?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Always practice with damage off. You need to focus on throttle control and line, not babying a car that handles differently on lap 8 than lap 1 because the suspension changed. Run a few races with damage on once you're confident in the car, so you learn how to adapt when something breaks." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does track temperature affect the car?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Significantly. A cold track at 6 PM practice is much slicker than a warmed track at 9 PM. Your baseline setup will feel loose in cold conditions and tight as the track heats. You'll make small adjustments (anti-roll bar, brake bias) between sessions, but major setup overhauls between practice and race are red flags. If you need a completely different setup, something was wrong in practice." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Car Guide · Dirt Racing</p>
+    <h1>Dirt Late Model iRacing Guide: Setup, Throttle Control, Track Feel</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated November 2, 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/pedals-cover.jpg" width="1000" height="563" alt="Cover art: a rising series of bars" srcset="/assets/photos/pedals-cover-sm.jpg 560w, /assets/photos/pedals-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">Dirt late models demand a different mindset than road racing or oval asphalt. The car is loose by design, the track surface changes every lap, and success depends less on precision hitting marks and more on reading weight transfer and staying smooth on throttle. iRacing's dirt late model model captures that challenge well. If you come from circuit racing, expect a learning curve. If you're new to sim racing, start here.</p>
+
+      <p>This guide covers the core setup choices, how to drive the car efficiently, and what to listen for from your wheel's feedback. The fundamentals apply across most dirt ovals on the service: Eldora, Charlotte Motor Speedway's dirt surface, and community-run tracks.</p>
+
+      <h2>Setup: Start with baseline, then adjust for track grip</h2>
+
+      <p>Dirt late models in iRacing ship with a solid baseline setup. The car is already biased toward oversteer because that's how dirt racing works. Your first three sessions should be about learning the car, not changing everything.</p>
+
+      <p>Start a 10-lap practice stint at 70% fuel and note your lap times and how the car feels early, mid, and late in the stint. Most drivers improve noticeably as fuel load drops and rear grip increases. If you're 0.3 seconds slower at lap 1 than lap 10, that's normal and means the setup is working.</p>
+
+      <ul>
+        <li>Front anti-roll bar: higher stiffness adds forward bite but can kill mid-corner speed on low-grip tracks. Start at baseline and raise it only if the car feels undriveable loose on entry.</li>
+        <li>Rear anti-roll bar: this is your primary loose/tight tool. Looser rear (lower value) helps you carry more speed mid-corner and exit. Tighter rear adds stability on power but will push the front if overdone.</li>
+        <li>Springs: stiffer springs help on high-grip tracks and bumpy surfaces. Lower spring rates give the car more compliance and feel softer, useful on slick nights. Don't chase perfect setups on Tuesday practice; the track will be different Saturday night.</li>
+        <li>Brake bias: bias forward 55 to 58 percent. Dirt cars stop shorter with a front-biased setup because the rear wants to lock easily on loose surface.</li>
+        <li>Differential: an open or limited-slip diff is typical. Locked diffs are rare on dirt; you'll oversteer on corner entry. Keep your diff setting conservative unless the car spins mid-corner under power.</li>
+      </ul>
+
+      <div class="tip-box">
+        <span class="box-label">Track Evolution</span>
+        <p>Dirt grip is not static. The racing line gets polished slicker, the high side gets rougher and grippier, and track temperature swings change everything. A setup that felt perfect in practice can be too loose by feature time. Expect to need minor adjustments (anti-roll bar, brake bias) between sessions.</p>
+      </div>
+
+      <h2>Throttle modulation: the core skill</h2>
+
+      <p>Road racing rewards smooth, progressive inputs. Dirt late model racing rewards <strong>anticipation and restraint</strong>. You apply throttle before the car is fully turned, not after, and you modulate it constantly through the corner to manage weight transfer and tire slip.</p>
+
+      <p>On entry, brake in a straight line and trail brake slightly as you begin to turn. The car wants to slide; you're using brake pressure to load the front and control that slide. As you unwind the wheel, begin blending in throttle before the steering wheel is straight. Sounds early? It is. Your goal is to never have full steering angle and full throttle at the same time.</p>
+
+      <p>Mid-corner is where dirt late models separate amateur from competent drivers. The car is sliding, the rear is loose, and your throttle pedal input is the only control you have left. Small increases in throttle increase rear slip and let you rotate the car further. But more slip means slower corner exit. The balance is finding the throttle level that lets you maintain arc speed without overdriving.</p>
+
+      <p>Exit is also not a binary on-off switch. Roll into full throttle gradually as you unwind steering, not all at once. Most spins and off-track excursions at entry or mid-corner happen because a driver stabbed throttle during mid-corner slide instead of managing it. Short, smooth stabs on throttle, one to two inches of pedal travel, teach you feel. Full throttle inputs teach you how to recover from spins.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Learn by Video</span>
+        <p>Record a replay of yourself against a faster driver. Watch their replay on-board camera and focus on their throttle pedal trace, not their steering. Notice how much throttle they carry mid-corner, how early they start rolling it in on exit, and how they handle the moment the rear gets loose. Copy that pattern before you copy their braking point.</p>
+      </div>
+
+      <h2>Wheel feedback: what the FFB is telling you</h2>
+
+      <p>Direct drive wheels like the <a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> give you detailed feedback about tire slip and weight transfer. A lot of that data is noise if you don't know what to listen for. Dirt late models produce distinctive FFB signals that tell you whether you're at the edge of grip or past it.</p>
+
+      <p>A slight oscillation or chatter in the wheel during mid-corner means the rear tires are sliding at the edge of traction. That's good. You have room to manage it with throttle. A sudden dead or hollow feeling in the wheel, especially after you've felt chatter, usually means the rear has lost grip entirely and a spin is coming if you don't ease off throttle immediately.</p>
+
+      <p>On corner exit, a sharp kick or jolt back toward center, especially under moderate or heavy throttle, is the rear stepping out. Again, this is normal and expected. Let your arms absorb it and ease throttle slightly. If the kick is violent and the wheel twists hard, ease off earlier next lap.</p>
+
+      <p>The front end during entry will feel heavy and loaded if braking and turning are balanced well. If the car refuses to turn and the wheel feels numb, the front is sliding and you're overdoing brake pressure while steering. Trailbake less or brake earlier in a straight line.</p>
+
+      <ul>
+        <li>Chatter or oscillation: tires at the edge, still in control</li>
+        <li>Dead/hollow feeling: losing grip, ease throttle or brake</li>
+        <li>Sharp kick or jolt: rear sliding mid-corner, reduce throttle slightly</li>
+        <li>Numb, heavy front end: too much brake pressure while steering, brake straighter</li>
+      </ul>
+
+      <h2>Track-specific patterns: Eldora and short tracks</h2>
+
+      <p>Eldora Speedway is the most common dirt late model track on iRacing. The high bank in turn 3 and the relatively smooth, established racing groove teach you how dirt racing works at a faster speed. The low bank in turns 1 and 2 shows you how the car behaves when grip is lower.</p>
+
+      <p>On the high-banked turn 3, you can carry more speed through mid-corner because the bank does some of the work for you. But don't overshoot on entry. Bank or not, a high-speed spin in turn 3 will collect traffic. On the low bank, the car is much looser, and mid-corner throttle management becomes critical.</p>
+
+      <p>Short tracks like I-44 Speedway and US 36 Raceway reward more aggressive steering inputs and tighter anti-roll bar settings because the turns are tighter and you need more rotation. Throttle modulation becomes even finer because the car reacts faster to input changes.</p>
+
+      <ol>
+        <li>Arrive at a track in practice night with the baseline setup unchanged. Drive 15 to 20 laps and note where the car is loose and where it's tight.</li>
+        <li>If you're spinning on entry, the car is probably too loose overall or you're braking too late and too hard into the turn. Tighten the rear anti-roll bar 1 to 2 steps, or brake 50 feet earlier.</li>
+        <li>If you're pushing mid-corner and running wide, reduce front anti-roll bar stiffness or tighten the rear. A setup that's tight overall will push; a loose setup will spin.</li>
+        <li>Once the car feels balanced for a 5-lap run, stop changing setup and drive. Consistency and learning throttle modulation matter more than a perfect setup.</li>
+      </ol>
+
+      <h2>Common mistakes and fixes</h2>
+
+      <p>The biggest amateur mistake is braking too late and too hard into a turn. Dirt tires don't like heavy brake loads combined with steering. You'll lock the front or lose rotation. Brake earlier, brake straighter, and trail brake gently as the turn-in begins.</p>
+
+      <p>The second mistake is stabbing throttle mid-corner and immediately lifting when the rear gets loose. This snap-on, snap-off pattern causes spins because you're unsettling the car repeatedly. Smooth throttle changes, even in small increments, keep the car stable.</p>
+
+      <p>Overheating the tires happens when you've set up the car too stiff or asked the tires to work too hard early in a stint. In race trim, watch your tire temperature on lap 3 and lap 8. If they're rising sharply and your lap times are falling, the setup is too aggressive for that track tonight. Loosen the anti-roll bars slightly or lift off throttle a bit earlier on exit to let the tires cool.</p>
+
+      <p>Finally, chasing setup changes lap to lap kills consistency. Make one adjustment, run five laps, and decide if it was better or worse. Gut feel is reliable only after you've built confidence in the car. Use data.</p>
+
+      <h2>Practicing effectively</h2>
+
+      <p>Dirt late model practice should be short, focused sprints, not endless single-file running. Run 10-lap stints with 2 to 3 minute breaks to reset your mental model. Each stint should test one thing: braking point, mid-corner throttle, or exit speed.</p>
+
+      <p>Record your best laps and watch them back. Note the specific corners where you lose time, and dedicate the next stint to fixing one. Throttle modulation can't be coached; you have to feel it. But analyzing your steering wheel input trace and comparing it to a faster driver's replay will accelerate that learning.</p>
+
+      <p>Join a dirt late model race even if you expect to finish mid-field. Racecraft on dirt differs from road racing. You'll learn how to manage looser cars around traffic, how to pick lines that don't destroy your tires, and how to read the track as grip changes lap to lap. A single feature teaches you more than five hours of solo practice.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=dirt-late-model-iracing-complete-guide">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=RTX+5060+Ti+8GB+graphics+card&amp;tag=realiracing-20" data-aff="gpu-rtx-5060-ti" target="_blank" rel="sponsored noopener">NVIDIA GeForce RTX 5060 Ti (8 GB)</a></th><td>renders iRacing and NVENC-encodes the stream on the same chip</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup — high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>Is the dirt late model harder than oval asphalt or road racing?</h3>
+        <p>It's different, not harder. The car is inherently loose, which means throttle modulation becomes the primary control input rather than steering precision. Road racing rewards hits on apexes. Dirt rewards smooth weight management. If you're used to braking hard and turning, expect a learning curve. Most drivers improve noticeably in their first 20 laps as they retrain their throttle foot.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What wheel settings should I use for dirt late model?</h3>
+        <p>Start with a lower force feedback level than you'd use on road courses, around 70 to 80 percent. Dirt cars produce a lot of chatter and oscillation that can feel overwhelming at full FFB strength. Lower steering ratio helps too, around 10 to 12 for shorter tracks and up to 14 for Eldora. These are starting points; adjust based on how much detail you feel and whether you're spinning.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I practice with or without damage?</h3>
+        <p>Always practice with damage off. You need to focus on throttle control and line, not babying a car that handles differently on lap 8 than lap 1 because the suspension changed. Run a few races with damage on once you're confident in the car, so you learn how to adapt when something breaks.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How much does track temperature affect the car?</h3>
+        <p>Significantly. A cold track at 6 PM practice is much slicker than a warmed track at 9 PM. Your baseline setup will feel loose in cold conditions and tight as the track heats. You'll make small adjustments (anti-roll bar, brake bias) between sessions, but major setup overhauls between practice and race are red flags. If you need a completely different setup, something was wrong in practice.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="audi-r8-lms-gt3-iracing-guide.html"><span>Car Guide</span>The Audi R8 LMS GT3 on iRacing: Stable Under Braking, Rewarding on Exit</a>
+      <a class="related-card" href="dirt-late-model-iracing-guide.html"><span>Car Guide</span>Dirt Late Model iRacing Guide: Setup, Technique, and Racecraft</a>
+      <a class="related-card" href="cadillac-v-series-r-gtp-iracing-guide.html"><span>Car Guide</span>Cadillac V-Series.R GTP iRacing Guide: Setup and Technique</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","gpu-rtx-5060-ti","monitor-1440p-120"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
