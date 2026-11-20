@@ -1,0 +1,182 @@
+{
+  "slug": "iracing-black-flag-meatball-flag-explained",
+  "tag": "Race Rules · Penalties",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "iRacing Black Flag and Meatball Flag: How to Clear Them",
+  "description": "A first-person guide to serving an iRacing black flag penalty and answering a meatball repair flag without throwing away the rest of your race.",
+  "published": "2026-11-20",
+  "dateLabel": "November 20, 2026",
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2",
+    "cockpit"
+  ],
+  "sections": [
+    {
+      "p": "You are running in the top half of the field, the tyres are finally behind you, and a black flag appears on screen with a short line of text underneath. Your stomach drops. The first time it happened to me, I did what most people do: I ignored it, hoped it would go away, and kept racing. That was the wrong call. A black flag does not fade, and the longer you drive around with it showing, the worse your afternoon gets. This guide covers what the black flag and the meatball flag mean in iRacing, how I clear each one, and how I keep a penalty from turning into a lost race."
+    },
+    {
+      "h2": "Two flags that look similar and mean different things"
+    },
+    {
+      "p": "The black flag and the meatball flag get mixed up because both pull you toward pit road and both are black. They are not the same message."
+    },
+    {
+      "list": [
+        "Black flag: you have a penalty. Something you did triggered it, and you have to serve it.",
+        "Meatball flag (black with an orange circle): your car has damage that needs repair, and you are being told to come in for a repair stop.",
+        "Neither one is cleared by driving fast or driving clean for a while. Both are cleared on pit road."
+      ]
+    },
+    {
+      "p": "One flag is about your behaviour. The other is about the condition of your car. Keeping that distinction clear in my head makes the next decision quicker, and quick decisions are the whole game here."
+    },
+    {
+      "h2": "The black flag: a penalty with a reason on screen"
+    },
+    {
+      "p": "In iRacing, a black flag is a penalty. The common versions I see are a drive-through or a stop-and-hold. They are typically handed out for speeding on pit road, for cutting the course, or for jumping a start. The reason is displayed on screen, so you do not have to guess what you did. Read it. It tells you whether you are about to repeat the mistake on your way into the pits."
+    },
+    {
+      "p": "The two penalty types work like this:"
+    },
+    {
+      "list": [
+        "Drive-through: you enter pit road and drive through at the pit limit speed without stopping in your box.",
+        "Stop-and-hold: you enter pit road, stop in your pit box, and wait out the hold time before leaving."
+      ]
+    },
+    {
+      "p": "Either way, you serve it by entering pit road. That is the entire mechanism. You do not need to stop anywhere clever or do anything special beyond respecting the pit limiter and the instructions on screen."
+    },
+    {
+      "h3": "What happens if you ignore it"
+    },
+    {
+      "p": "If you sit on a black flag for a few laps, you get disqualified. The exact number of laps you are allowed varies by series, so I will not quote a figure. Check the rules for the series you are in. My own rule is simpler: I treat the penalty as something to serve on the very next opportunity to enter the pits."
+    },
+    {
+      "p": "A disqualification is a worse result than almost any penalty you could be serving. A drive-through costs you some track position. A DQ costs you the race."
+    },
+    {
+      "h2": "How I serve a black flag step by step"
+    },
+    {
+      "olist": [
+        "Read the reason on screen. If it says pit road speeding, I know my entry was sloppy and I need to be tighter on the limiter this time.",
+        "Decide which lap I will come in. I do not stay out for another lap hoping for a caution. I look for the next clean entry.",
+        "Finish the lap cleanly. Do not take risks to make up time before you pit. A crash on the way in turns one problem into two.",
+        "Hit the pit limiter before the entry line, with margin. Serving a penalty and picking up a second one for speeding is a very avoidable, very embarrassing result.",
+        "If it is a drive-through, stay at the limit speed all the way through and leave at the exit without stopping in the box.",
+        "If it is a stop-and-hold, stop in my box and stay there for the full hold time. I keep my foot off the throttle and wait for the signal rather than creeping early.",
+        "Rejoin carefully. Cars coming up behind at racing speed do not expect you to merge at pit exit."
+      ]
+    },
+    {
+      "p": "If you want to cut down the number of speeding flags in the first place, my post on pit road etiquette, iracing-pit-road-etiquette-avoid-speeding-penalties, covers the entry and exit habits that keep the limiter honest."
+    },
+    {
+      "h2": "Where black flags actually come from"
+    },
+    {
+      "p": "Most of mine have come from three places, which lines up with the usual causes:"
+    },
+    {
+      "list": [
+        "Pit road speeding: braking too late for the limiter and crossing the entry line too hot.",
+        "Cutting the course: taking a shortcut through a corner or off-track surface and gaining an advantage.",
+        "Jumping a start: rolling forward early or beating the green flag.",
+        "Related penalties around track limits are covered in track-limits-and-off-track-penalties-iracing for anyone who keeps getting flagged for cutting."
+      ]
+    },
+    {
+      "p": "Once you know your own pattern, prevention is cheaper than cure. Mine used to be pit entry. I now start slowing earlier than feels necessary, and the problem mostly went away."
+    },
+    {
+      "h2": "The meatball flag: repair, not punishment"
+    },
+    {
+      "p": "The meatball flag, the black one with an orange circle, tells you the car has damage that needs a pit stop for repairs. It is not a penalty for something you did wrong in the rulebook sense. It is the sim saying your car is hurt and has to be fixed."
+    },
+    {
+      "p": "That changes the mindset. With a black flag I am annoyed at myself. With a meatball flag I am doing arithmetic: how bad is the damage, how much pace am I losing, and when is the cheapest moment to stop."
+    },
+    {
+      "h3": "Do I have to stop right now"
+    },
+    {
+      "p": "Treat it as an instruction to pit, and do not let it hang for many laps. How the repair time is shown, and what the car can still do, depends on the damage. I read the repair information on the screen when I enter the pit box rather than assuming. If the car feels undriveable, pitting immediately is easy. If it feels almost fine, the temptation is to carry on, and that is where I have lost races by being stubborn."
+    },
+    {
+      "p": "I keep a deeper breakdown of when to stop and when to stay out in damaged-car-pit-stop-strategy-iracing, which pairs well with this one."
+    },
+    {
+      "h2": "How I handle a meatball flag without throwing the race"
+    },
+    {
+      "olist": [
+        "Check the car first. I feel for pulling under braking, a vibrating wheel, or lost downforce through fast corners.",
+        "Decide on the cheapest lap to pit. Under a full-course caution, a stop costs much less than under green, so I weigh that before diving in.",
+        "Come in at the limiter and stop in my box. I do not overthink the approach; a messy entry just adds a second problem.",
+        "Wait for the repair to complete. Leaving early with unfinished work usually means I am back in again a few laps later.",
+        "Rejoin and reset. I treat the next stint as a fresh race, not as a rescue mission."
+      ]
+    },
+    {
+      "p": "If you also happen to be sitting on a black flag when you get a meatball flag, the same pit visit may be where you sort both. I would not bet on exact sequencing, so I follow whatever the screen tells me in the box."
+    },
+    {
+      "h2": "Incident points are the quiet background cause"
+    },
+    {
+      "p": "A lot of these flags come from contact. Incident points build up through the session and, at series thresholds, can trigger a penalty or a disqualification. If you want to understand how those totals accumulate, I wrote a separate post on how iRacing incident points work. The practical takeaway is that a meatball flag from a crash often comes bundled with incident points, so a damaged car is also a reason to drive more conservatively afterward."
+    },
+    {
+      "h2": "Staying composed in the cockpit"
+    },
+    {
+      "p": "The flag itself is rarely what ruins a race. The reaction is. Right after a flag, I tense up, grip the wheel harder, and start overdriving to make up for the lost time. Having the same setup every session helps me stay calm. I race on a MOZA R9 wheelbase, which is a ~9 N.m class direct drive, with CRP2 pedals, all bolted to a fixed aluminium cockpit. Because nothing flexes or shifts under braking, my pit entry braking point is more repeatable. That matters when a limiter line is the difference between a clean pit lap and a second flag."
+    },
+    {
+      "p": "I would not claim hardware prevents penalties. It just removes one source of inconsistency, so my mistakes are more obviously mine and easier to fix."
+    },
+    {
+      "tip": "When a flag appears, drive one calm lap before you pit. Read the on-screen reason, plan the entry, and set the limiter early. Rushing into pit road angry is how a single drive-through becomes a speeding penalty on top of it.",
+      "tipLabel": "Calm lap rule"
+    },
+    {
+      "h2": "A short checklist to keep on your screen"
+    },
+    {
+      "list": [
+        "Black flag means a penalty, so read the reason and serve it by entering pit road.",
+        "Meatball flag means repair, so pit and let the work finish.",
+        "Do not ignore either for multiple laps; ignoring a black flag leads to a DQ, with the exact lap count varying by series.",
+        "Limiter on before the entry line, every time.",
+        "After the stop, rejoin carefully and reset your head."
+      ]
+    },
+    {
+      "p": "None of this will make you immune from flags. Everyone gets them. What it does is shrink the damage, so one mistake stays one mistake and the race stays alive."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What does a black flag mean in iRacing?",
+      "a": "A black flag means you have a penalty. Common ones are a drive-through or a stop-and-hold, given for things like pit road speeding, cutting the course, or jumping a start. The reason is shown on screen, and you clear it by entering pit road and serving it."
+    },
+    {
+      "q": "What does the meatball flag mean?",
+      "a": "The meatball flag is black with an orange circle. It means your car has damage that needs a pit stop for repairs. It is a repair call rather than a rule penalty, and you clear it by pitting and letting the repair complete."
+    },
+    {
+      "q": "What happens if I ignore a black flag?",
+      "a": "If you ignore it for a few laps, you will be disqualified. The exact number of laps varies by series, so check the rules for the series you are racing in, and serve the penalty as soon as you can enter pit road safely."
+    },
+    {
+      "q": "How do I serve a drive-through versus a stop-and-hold?",
+      "a": "For a drive-through, enter pit road and travel through at the pit limit speed without stopping in your box. For a stop-and-hold, stop in your pit box and wait out the hold time before leaving. In both cases, keep to the limiter to avoid picking up another penalty."
+    }
+  ]
+}
