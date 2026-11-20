@@ -107,19 +107,16 @@ ${rows.join('\n')}
       </div></div>`;
 }
 
-/* schema.org ItemList of Product entries for a post's gear keys. Deliberately
+/* schema.org ItemList of plain ListItem entries (no Product type: Google requires offers/review/aggregateRating on Product) for a post's gear keys. Deliberately
  * has no offers, price, rating or review: none of those exist as real data, and
  * affiliate URLs are not the product's canonical page. */
 function gearItemListLd(cfg, keys, pageUrl, title) {
   const items = (keys || []).filter((k) => cfg.products[k]).map((k, i) => ({
     '@type': 'ListItem',
     position: i + 1,
-    item: {
-      '@type': 'Product',
-      name: cfg.products[k].name,
-      description: cfg.products[k].note,
-      url: `${pageUrl}#rir-gear`,
-    },
+    name: cfg.products[k].name,
+    description: cfg.products[k].note,
+    url: `${pageUrl}#rir-gear`,
   }));
   if (!items.length) return null;
   return { '@context': 'https://schema.org', '@type': 'ItemList', name: title || 'The gear in this guide', itemListElement: items };

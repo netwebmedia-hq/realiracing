@@ -46,7 +46,7 @@ const files = ['index.html', 'gear.html']
  * JSON-LD ItemList in <head> repeats both, so it is rewritten too. */
 const LD_RENAMES = [
   {
-    from: '{"@type":"Product","name":"Thrustmaster T-LCM Pedals","description":"cheapest genuine load cell, works with any base over USB"',
+    from: '"name":"Thrustmaster T-LCM Pedals","description":"cheapest genuine load cell, works with any base over USB"',
     key: 'thrustmaster-t-lcm',
   },
 ];
@@ -98,7 +98,7 @@ for (const f of files) {
   for (const r of LD_RENAMES) {
     if (!html.includes(r.from)) continue;
     const p = cfg.products[r.key];
-    const to = `{"@type":"Product","name":${JSON.stringify(p.name)},"description":${JSON.stringify(p.note)}`;
+    const to = `"name":${JSON.stringify(p.name)},"description":${JSON.stringify(p.note)}`;
     html = html.split(r.from).join(to);
     stats.ldRenamed++;
   }

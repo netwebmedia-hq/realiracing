@@ -209,8 +209,7 @@ patchFile('gear.html', (html) => {
     const byName = new Map(Object.entries(cfg.products).map(([k, p]) => [p.name.replace(/\s+/g, ' '), k]));
     const rigCards = [...html.matchAll(/<h3>([^<]+)<\/h3>[\s\S]*?<p>([^<]*)<\/p>[\s\S]*?data-aff="([a-z0-9-]+)"/g)];
     const info = new Map(rigCards.map((m) => [m[3], { name: m[1].replace(/&amp;/g, '&'), desc: m[2].replace(/&amp;/g, '&').trim() }]));
-    const brandOf = { 'moza-r9': 'MOZA', 'moza-cs-v2': 'MOZA', 'moza-crp2': 'MOZA', 'gpu-rtx-5060-ti': 'NVIDIA', 'cpu-ryzen-7-5700': 'AMD', whoop: 'WHOOP' };
-    const keys = Object.keys(info);
+        const keys = Object.keys(info);
     if (keys.length) {
       const list = {
         '@context': 'https://schema.org',
@@ -218,10 +217,9 @@ patchFile('gear.html', (html) => {
         name: 'RealIRacing Sim Racing Rig',
         description: 'The hardware Carlos Martinez races and streams iRacing on.',
         itemListElement: keys.map((k, i) => {
-          const product = { '@type': 'Product', name: cfg.products[k] ? cfg.products[k].name : info.get(k).name, url: `${SITE}/gear.html` };
-          if (info.get(k).desc) product.description = info.get(k).desc;
-          if (brandOf[k]) product.brand = { '@type': 'Brand', name: brandOf[k] };
-          return { '@type': 'ListItem', position: i + 1, item: product };
+          const entry = { '@type': 'ListItem', position: i + 1, name: cfg.products[k] ? cfg.products[k].name : info.get(k).name, url: `${SITE}/gear.html` };
+          if (info.get(k).desc) entry.description = info.get(k).desc;
+          return entry;
         }),
       };
       html = html.replace(/  <script type="application\/ld\+json">\s*\{\s*"@context": "https:\/\/schema.org",\s*"@type": "ItemList",[\s\S]*?<\/script>\n/, () => ldBlock(list));
