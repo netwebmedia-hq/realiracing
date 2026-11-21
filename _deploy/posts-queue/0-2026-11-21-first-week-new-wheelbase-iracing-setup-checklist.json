@@ -1,0 +1,156 @@
+{
+  "slug": "first-week-new-wheelbase-iracing-setup-checklist",
+  "tag": "Setup Guide · Black Friday",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "First Week With a New Wheelbase: iRacing Setup Checklist",
+  "description": "A day-by-day plan for your first week with a new direct drive wheelbase, from tightening bolts to your first iRacing race, based on my MOZA R9 rig.",
+  "published": "2026-11-21",
+  "dateLabel": "November 21, 2026",
+  "gearKeys": [
+    "moza-r9",
+    "moza-cs-v2",
+    "moza-crp2",
+    "cockpit"
+  ],
+  "sections": [
+    {
+      "p": "The box turns up, you tear the tape off, and within ten minutes the base is clamped to the rig and you are sitting in a car with the wheel fighting your hands. It feels like the best purchase of the year, and it is also the moment most people make the mistakes that cost them the first week: a loose bolt, a stale firmware version, force feedback turned up until the detail disappears. I have been through this on my own rig, a MOZA R9 (~9 N·m direct drive) with the CS V2 wheel, CRP2 load-cell pedals and a fixed aluminium-profile cockpit. This is the plan I would follow again, one day at a time, from bolts to your first race."
+    },
+    {
+      "p": "A direct drive base is not a gift-wrapped toy. It is a motor that can move the wheel with real force, and it deserves a few boring hours of preparation before it deserves any lap time. The order below matters, so resist the urge to skip ahead to the fun part."
+    },
+    {
+      "h2": "Day 0: Bolts, cables and power"
+    },
+    {
+      "p": "Do this before you ever turn the base on. Check every bolt in the cockpit, and I mean every one, not only the ones you tightened last. Aluminium-profile rigs are very stiff when they are tight and surprisingly annoying when a single T-nut has crept loose. A cockpit that flexes under braking or steering will make you think the force feedback is broken when the real problem is the frame."
+    },
+    {
+      "list": [
+        "Tighten the wheelbase mounting bolts first. This is the part that takes the torque, so it gets your full attention.",
+        "Go over the rest of the cockpit: seat rails, pedal plate, wheel deck, monitor stand if it is attached to the frame.",
+        "Route all cables away from the pedals. A USB lead caught under a pedal arm is an easy way to ruin a session on day two.",
+        "Use the power supply that came with the base. Do not borrow one that fits the connector from another device."
+      ]
+    },
+    {
+      "p": "If you are still deciding on the frame itself, my own experience is with a fixed aluminium-profile cockpit, and the thing I value most is that nothing moves when I load the wheel or the brake. Rigidity is worth more to me than any feature on a spec sheet."
+    },
+    {
+      "h2": "Day 1: Software and firmware before the first lap"
+    },
+    {
+      "p": "Install MOZA Pit House before you drive anything. Then update the firmware of the base, the wheel and the pedals, in that order of attention, even if everything seems to work out of the box. Running mismatched firmware is how you end up chasing odd behaviour that has nothing to do with your settings."
+    },
+    {
+      "p": "Once the updates are done, set your steering angle in Pit House. Common choices are ~900 or ~1080 degrees. Depending on how the base reports its range, iRacing can apply each car's own steering lock on top of that, so I treat the Pit House value as a ceiling rather than a final answer. I would not assume it works identically for every car, so watch how the wheel lock feels in a couple of different cars before you decide it is right."
+    },
+    {
+      "p": "Then run the iRacing calibration wizard, found under Options, Controls, Calibrate. Do it for the wheel and again for the pedals. Remember this step is not a one-off: repeat it after any firmware change, because a calibration done on old firmware can leave you with odd end points."
+    },
+    {
+      "tip": "Write down the date and the firmware versions you installed. When something feels different a week later, you will want to know whether it was a setting or an update.",
+      "tipLabel": "Keep a record"
+    },
+    {
+      "h2": "Days 1 to 2: Short sessions, one car, one track"
+    },
+    {
+      "p": "This is where discipline pays. Pick one car you already know and one track you could drive with your eyes closed. Keep the sessions short. You are not trying to be fast. You are trying to learn what the new hardware is telling you, and you can only do that against a familiar reference."
+    },
+    {
+      "p": "A new wheelbase changes everything you feel: the weight building through a corner, the moment the front lets go, the way a kerb arrives through your hands. If you change the car and the track as well, you cannot separate what comes from the hardware and what comes from the unfamiliar car. Familiar car, familiar track, short stints."
+    },
+    {
+      "h3": "Start the force low"
+    },
+    {
+      "p": "In Pit House, begin with a low overall strength. I know the temptation to find out what the base can do. Resist it for now. A strong motor with a wheel in your hands and a cold grip is how thumbs get bent. Low strength also lets you hear the detail, which is exactly what gets buried once you turn everything up."
+    },
+    {
+      "p": "After a few laps, go into iRacing's force feedback settings and press the auto button. It measures what you are actually driving and sets the strength so the signal does not clip. Clipping means the force hits the ceiling and flattens, so you lose the difference between a loaded tyre and a tyre that is about to slide. If you want a deeper explanation of how that signal works, my post on force feedback in iRacing covers the idea, and for the base itself I keep a longer write-up in <a href=\"moza-r9-iracing-settings.html\">my MOZA R9 iRacing settings notes</a>."
+    },
+    {
+      "h2": "Days 3 to 5: Fine-tune, one change at a time"
+    },
+    {
+      "p": "Now the base feels familiar enough to start adjusting. The rule is simple and almost nobody follows it: change one thing, drive, and judge it before changing anything else. If you change three settings in one evening and the car feels better, you will never know which one did the work. If it feels worse, you will not know which one to undo."
+    },
+    {
+      "p": "Keep a plain log. It does not need to be elegant. A text file or a notebook next to the rig is fine. For each change, write the setting, the old value, the new value and a short note on what you felt. After a week that log is more valuable than any forum thread, because it describes your hands on your hardware."
+    },
+    {
+      "h3": "Pedals: pressure, not travel"
+    },
+    {
+      "p": "This is where load-cell pedals surprise new buyers. My CRP2 pedals measure how hard I push, not how far the pedal moves. That changes how you think about the brake. With a load cell, the brake pedal does not have to travel a long way for you to modulate it. Pressure is the signal."
+    },
+    {
+      "p": "In Pit House, set the brake curve and the maximum force for the load cell. The maximum force is the pressure at which iRacing reads a full brake. Set it too high and you will never reach the full stop you need in a panic. Set it too low and the pedal turns into an on-off switch. Adjust the curve to shape how the first part of the pedal feels, then trim the max force until a hard stop is something you can repeat without straining your leg. Re-run the iRacing calibration afterwards so the sim sees the same range you set."
+    },
+    {
+      "p": "If you are still comparing pedal options, I wrote about them in my best sim racing pedals for iRacing guide for 2026, and the same principle applies there: judge a pedal by how repeatable it is, not by how it looks."
+    },
+    {
+      "h3": "Revisit the wheel"
+    },
+    {
+      "p": "By day four or five you will probably want to nudge the overall strength up a little. Do it in small steps and run the auto button again after each change. If you start to feel the wheel going numb in big loads, you have probably pushed it past the point of useful detail. Step back a little. More force is not more information."
+    },
+    {
+      "p": "Also spend an evening in a second car, still on the known track. If the feel is consistent between the two, your base is behaving. If one car feels wildly different, check whether iRacing is applying that car's steering lock the way you expect before you blame the base."
+    },
+    {
+      "h2": "Days 6 to 7: Race"
+    },
+    {
+      "p": "By now you have a stable setup, a log, and a base you trust. Time to race. Pick a series you are comfortable in, not the hardest one you can enter. Your first race on new hardware is as much a test as a result."
+    },
+    {
+      "p": "Before the green flag, check three things: the cockpit bolts, a recent calibration, and that your cables are still clear of the pedals. Then go and drive. Do not change settings during the race weekend unless something is clearly broken. If something feels off, write it down and fix it afterwards, one change at a time, like the rest of the week."
+    },
+    {
+      "p": "I would also keep expectations honest. A new wheelbase does not make you quicker overnight. What it does is give you better information about the car, and the improvement comes from learning to read that information over the following weeks. Treat the first race as a baseline and move on from there."
+    },
+    {
+      "h2": "The week at a glance"
+    },
+    {
+      "olist": [
+        "Day 0: tighten every cockpit and wheelbase bolt, clear the cables, use the supplied power supply.",
+        "Day 1: install Pit House, update firmware on base, wheel and pedals, set the steering angle, run the iRacing calibration.",
+        "Day 2: short sessions in one familiar car and track, low overall strength, press auto after a few laps.",
+        "Days 3 to 5: change one setting at a time, shape the brake curve and max force, log everything.",
+        "Days 6 to 7: race, with no setting changes during the weekend."
+      ]
+    },
+    {
+      "h2": "What I would skip"
+    },
+    {
+      "p": "I would skip the urge to download someone else's full profile on day one. Other people's settings were tuned for their rigs, their wrists and their cars. Starting from the defaults and your own log teaches you what each control actually does, and that knowledge outlasts any shared file."
+    },
+    {
+      "p": "I would also skip the long marathon session on the first night. You will be tired, you will overdrive the car, and you will walk away with a muddled opinion of hardware that is actually fine. Short and repeatable wins the first week."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I really need to update firmware before my first session?",
+      "a": "I do it every time. Update the base, the wheel and the pedals through Pit House before driving, then run the iRacing calibration wizard. Repeat the calibration after any later firmware change so the sim sees the correct ranges."
+    },
+    {
+      "q": "What steering angle should I set in Pit House?",
+      "a": "~900 or ~1080 degrees are common choices. iRacing can apply each car's own steering lock when the base reports its range, but I would verify that in a couple of cars rather than assume it, and adjust from there."
+    },
+    {
+      "q": "How strong should the force feedback be at the start?",
+      "a": "Start with a low overall strength in Pit House. After a few laps in iRacing, press the auto button in the force feedback settings so it sets the strength without clipping. Then raise it in small steps only if you feel you are missing detail."
+    },
+    {
+      "q": "How do I set up load-cell pedals differently from potentiometer pedals?",
+      "a": "A load cell responds to pressure, not travel. In Pit House, set the brake curve and the maximum force, then recalibrate in iRacing. Adjust the max force until a hard stop is repeatable without straining your leg."
+    }
+  ]
+}
