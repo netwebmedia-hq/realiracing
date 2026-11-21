@@ -18,6 +18,7 @@
 
 ## Latest blog posts (newest first)
 
+- [First Week With a New Wheelbase: iRacing Setup Checklist](https://realiracing.com/blog/first-week-new-wheelbase-iracing-setup-checklist.html): A day-by-day plan for your first week with a new direct drive wheelbase, from tightening bolts to your first iRacing race, based on my MOZA R9 rig.
 - [iRacing Black Flag and Meatball Flag: How to Clear Them](https://realiracing.com/blog/iracing-black-flag-meatball-flag-explained.html): A first-person guide to serving an iRacing black flag penalty and answering a meatball repair flag without throwing away the rest of your race.
 - [iRacing Local Yellow Flags: What to Do on Road Courses](https://realiracing.com/blog/iracing-local-yellow-flags-road-courses-what-to-do.html): A yellow shows up ahead on an iRacing road course. What it means, how I slow down without losing the race, and how to rejoin safely after your own spin.
 - [GTA 6 Driving: A Sim Racer's First Hours on Xbox Series X](https://realiracing.com/blog/gta-6-driving-sim-racers-first-hours-xbox-series-x.html): A sim racer's first hours of GTA 6 driving on Xbox Series X with a controller: the vehicles, five driving moments, and how the stream was set up without a capture card.
@@ -37,7 +38,6 @@
 - [Grip pressure and hand position on a direct drive wheel](https://realiracing.com/blog/grip-pressure-hand-position-direct-drive-wheel-iracing.html): Why a death grip hides force feedback detail in iRacing, how to hold a direct drive wheel, and a practice routine to test your own grip pressure.
 - [ISDE 2018 in Chile: My Motocross Clips | RealIRacing](https://realiracing.com/blog/isde-2018-vina-del-mar-chile-final-motocross.html): I filmed the 2018 ISDE in Viña del Mar, Chile: the final motocross on November 17, plus an enduro mass start.
 - [Toyota Grand Prix of Long Beach 2018: My Fan Footage](https://realiracing.com/blog/long-beach-grand-prix-2018-from-the-grandstand.html): My own clips from the 2018 Toyota Grand Prix of Long Beach: IndyCars, Stadium Super Trucks and the Mothers Exotic Car Paddock.
-- [Monaco and Cannes Supercar Spotting 2025 | RealIRacing](https://realiracing.com/blog/monaco-cannes-supercars-summer-2025.html): Phone clips I filmed myself in Monaco and Cannes in summer 2025: a Ferrari F40, Casino Square, a Bugatti Chiron and more.
 
 ## More
 - Every post, one line each: https://realiracing.com/llms-full.txt

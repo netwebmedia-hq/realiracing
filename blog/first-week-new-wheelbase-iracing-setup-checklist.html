@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Week With a New Wheelbase: iRacing Setup Checklist</title>
+  <meta name="description" content="A day-by-day plan for your first week with a new direct drive wheelbase, from tightening bolts to your first iRacing race, based on my MOZA R9 rig." />
+  <link rel="canonical" href="https://realiracing.com/blog/first-week-new-wheelbase-iracing-setup-checklist.html" />
+  <meta property="og:title" content="First Week With a New Wheelbase: iRacing Setup Checklist" />
+  <meta property="og:description" content="A day-by-day plan for your first week with a new direct drive wheelbase, from tightening bolts to your first iRacing race, based on my MOZA R9 rig." />
+  <meta property="og:url" content="https://realiracing.com/blog/first-week-new-wheelbase-iracing-setup-checklist.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/wheel-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: concentric arcs turning about a centre" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/wheel-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261103" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "First Week With a New Wheelbase: iRacing Setup Checklist",
+    "description": "A day-by-day plan for your first week with a new direct drive wheelbase, from tightening bolts to your first iRacing race, based on my MOZA R9 rig.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/first-week-new-wheelbase-iracing-setup-checklist.html",
+    "image": "https://realiracing.com/assets/photos/wheel-cover.jpg",
+    "datePublished": "2026-11-21",
+    "dateModified": "2026-11-21"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"First Week With a New Wheelbase: iRacing Setup Checklist","item":"https://realiracing.com/blog/first-week-new-wheelbase-iracing-setup-checklist.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/first-week-new-wheelbase-iracing-setup-checklist.html#rir-gear"},{"@type":"ListItem","position":2,"name":"MOZA CS V2 Steering Wheel","description":"the round rim my whole FFB profile is tuned around","url":"https://realiracing.com/blog/first-week-new-wheelbase-iracing-setup-checklist.html#rir-gear"},{"@type":"ListItem","position":3,"name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/first-week-new-wheelbase-iracing-setup-checklist.html#rir-gear"},{"@type":"ListItem","position":4,"name":"Sim Racing Cockpit / Wheel Stand","description":"a rigid mount matters more than the brand — flex kills FFB detail","url":"https://realiracing.com/blog/first-week-new-wheelbase-iracing-setup-checklist.html#rir-gear"}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I really need to update firmware before my first session?",
+      "acceptedAnswer": { "@type": "Answer", "text": "I do it every time. Update the base, the wheel and the pedals through Pit House before driving, then run the iRacing calibration wizard. Repeat the calibration after any later firmware change so the sim sees the correct ranges." }
+    },
+    {
+      "@type": "Question",
+      "name": "What steering angle should I set in Pit House?",
+      "acceptedAnswer": { "@type": "Answer", "text": "~900 or ~1080 degrees are common choices. iRacing can apply each car's own steering lock when the base reports its range, but I would verify that in a couple of cars rather than assume it, and adjust from there." }
+    },
+    {
+      "@type": "Question",
+      "name": "How strong should the force feedback be at the start?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Start with a low overall strength in Pit House. After a few laps in iRacing, press the auto button in the force feedback settings so it sets the strength without clipping. Then raise it in small steps only if you feel you are missing detail." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I set up load-cell pedals differently from potentiometer pedals?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A load cell responds to pressure, not travel. In Pit House, set the brake curve and the maximum force, then recalibrate in iRacing. Adjust the max force until a hard stop is repeatable without straining your leg." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Setup Guide · Black Friday</p>
+    <h1>First Week With a New Wheelbase: iRacing Setup Checklist</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated November 21, 2026</span>
+      <span class="dot">·</span>
+      <span>7 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/wheel-cover.jpg" width="1000" height="563" alt="Cover art: concentric arcs turning about a centre" srcset="/assets/photos/wheel-cover-sm.jpg 560w, /assets/photos/wheel-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">The box turns up, you tear the tape off, and within ten minutes the base is clamped to the rig and you are sitting in a car with the wheel fighting your hands. It feels like the best purchase of the year, and it is also the moment most people make the mistakes that cost them the first week: a loose bolt, a stale firmware version, force feedback turned up until the detail disappears. I have been through this on my own rig, a <a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> (~9 N·m direct drive) with the <a href="https://www.amazon.com/s?k=MOZA+CS+V2+steering+wheel&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-cs-v2" target="_blank" rel="sponsored noopener">CS V2</a> wheel, <a href="https://www.amazon.com/dp/B0DSHYFW1V?tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">CRP2</a> load-cell pedals and a fixed aluminium-profile cockpit. This is the plan I would follow again, one day at a time, from bolts to your first race.</p>
+
+      <p>A direct drive base is not a gift-wrapped toy. It is a motor that can move the wheel with real force, and it deserves a few boring hours of preparation before it deserves any lap time. The order below matters, so resist the urge to skip ahead to the fun part.</p>
+
+      <h2>Day 0: Bolts, cables and power</h2>
+
+      <p>Do this before you ever turn the base on. Check every bolt in the cockpit, and I mean every one, not only the ones you tightened last. Aluminium-profile rigs are very stiff when they are tight and surprisingly annoying when a single T-nut has crept loose. A cockpit that flexes under braking or steering will make you think the force feedback is broken when the real problem is the frame.</p>
+
+      <ul>
+        <li>Tighten the wheelbase mounting bolts first. This is the part that takes the torque, so it gets your full attention.</li>
+        <li>Go over the rest of the cockpit: seat rails, pedal plate, wheel deck, monitor stand if it is attached to the frame.</li>
+        <li>Route all cables away from the pedals. A USB lead caught under a pedal arm is an easy way to ruin a session on day two.</li>
+        <li>Use the power supply that came with the base. Do not borrow one that fits the connector from another device.</li>
+      </ul>
+
+      <p>If you are still deciding on the frame itself, my own experience is with a fixed aluminium-profile cockpit, and the thing I value most is that nothing moves when I load the wheel or the brake. Rigidity is worth more to me than any feature on a spec sheet.</p>
+
+      <h2>Day 1: Software and firmware before the first lap</h2>
+
+      <p>Install MOZA Pit House before you drive anything. Then update the firmware of the base, the wheel and the pedals, in that order of attention, even if everything seems to work out of the box. Running mismatched firmware is how you end up chasing odd behaviour that has nothing to do with your settings.</p>
+
+      <p>Once the updates are done, set your steering angle in Pit House. Common choices are ~900 or ~1080 degrees. Depending on how the base reports its range, iRacing can apply each car's own steering lock on top of that, so I treat the Pit House value as a ceiling rather than a final answer. I would not assume it works identically for every car, so watch how the wheel lock feels in a couple of different cars before you decide it is right.</p>
+
+      <p>Then run the iRacing calibration wizard, found under Options, Controls, Calibrate. Do it for the wheel and again for the pedals. Remember this step is not a one-off: repeat it after any firmware change, because a calibration done on old firmware can leave you with odd end points.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Keep a record</span>
+        <p>Write down the date and the firmware versions you installed. When something feels different a week later, you will want to know whether it was a setting or an update.</p>
+      </div>
+
+      <h2>Days 1 to 2: Short sessions, one car, one track</h2>
+
+      <p>This is where discipline pays. Pick one car you already know and one track you could drive with your eyes closed. Keep the sessions short. You are not trying to be fast. You are trying to learn what the new hardware is telling you, and you can only do that against a familiar reference.</p>
+
+      <p>A new wheelbase changes everything you feel: the weight building through a corner, the moment the front lets go, the way a kerb arrives through your hands. If you change the car and the track as well, you cannot separate what comes from the hardware and what comes from the unfamiliar car. Familiar car, familiar track, short stints.</p>
+
+      <h3>Start the force low</h3>
+
+      <p>In Pit House, begin with a low overall strength. I know the temptation to find out what the base can do. Resist it for now. A strong motor with a wheel in your hands and a cold grip is how thumbs get bent. Low strength also lets you hear the detail, which is exactly what gets buried once you turn everything up.</p>
+
+      <p>After a few laps, go into iRacing's force feedback settings and press the auto button. It measures what you are actually driving and sets the strength so the signal does not clip. Clipping means the force hits the ceiling and flattens, so you lose the difference between a loaded tyre and a tyre that is about to slide. If you want a deeper explanation of how that signal works, my post on force feedback in iRacing covers the idea, and for the base itself I keep a longer write-up in <a href="moza-r9-iracing-settings.html">my MOZA R9 iRacing settings notes</a>.</p>
+
+      <h2>Days 3 to 5: Fine-tune, one change at a time</h2>
+
+      <p>Now the base feels familiar enough to start adjusting. The rule is simple and almost nobody follows it: change one thing, drive, and judge it before changing anything else. If you change three settings in one evening and the car feels better, you will never know which one did the work. If it feels worse, you will not know which one to undo.</p>
+
+      <p>Keep a plain log. It does not need to be elegant. A text file or a notebook next to the rig is fine. For each change, write the setting, the old value, the new value and a short note on what you felt. After a week that log is more valuable than any forum thread, because it describes your hands on your hardware.</p>
+
+      <h3>Pedals: pressure, not travel</h3>
+
+      <p>This is where load-cell pedals surprise new buyers. My CRP2 pedals measure how hard I push, not how far the pedal moves. That changes how you think about the brake. With a load cell, the brake pedal does not have to travel a long way for you to modulate it. Pressure is the signal.</p>
+
+      <p>In Pit House, set the brake curve and the maximum force for the load cell. The maximum force is the pressure at which iRacing reads a full brake. Set it too high and you will never reach the full stop you need in a panic. Set it too low and the pedal turns into an on-off switch. Adjust the curve to shape how the first part of the pedal feels, then trim the max force until a hard stop is something you can repeat without straining your leg. Re-run the iRacing calibration afterwards so the sim sees the same range you set.</p>
+
+      <p>If you are still comparing pedal options, I wrote about them in my best sim racing pedals for iRacing guide for 2026, and the same principle applies there: judge a pedal by how repeatable it is, not by how it looks.</p>
+
+      <h3>Revisit the wheel</h3>
+
+      <p>By day four or five you will probably want to nudge the overall strength up a little. Do it in small steps and run the auto button again after each change. If you start to feel the wheel going numb in big loads, you have probably pushed it past the point of useful detail. Step back a little. More force is not more information.</p>
+
+      <p>Also spend an evening in a second car, still on the known track. If the feel is consistent between the two, your base is behaving. If one car feels wildly different, check whether iRacing is applying that car's steering lock the way you expect before you blame the base.</p>
+
+      <h2>Days 6 to 7: Race</h2>
+
+      <p>By now you have a stable setup, a log, and a base you trust. Time to race. Pick a series you are comfortable in, not the hardest one you can enter. Your first race on new hardware is as much a test as a result.</p>
+
+      <p>Before the green flag, check three things: the cockpit bolts, a recent calibration, and that your cables are still clear of the pedals. Then go and drive. Do not change settings during the race weekend unless something is clearly broken. If something feels off, write it down and fix it afterwards, one change at a time, like the rest of the week.</p>
+
+      <p>I would also keep expectations honest. A new wheelbase does not make you quicker overnight. What it does is give you better information about the car, and the improvement comes from learning to read that information over the following weeks. Treat the first race as a baseline and move on from there.</p>
+
+      <h2>The week at a glance</h2>
+
+      <ol>
+        <li>Day 0: tighten every cockpit and wheelbase bolt, clear the cables, use the supplied power supply.</li>
+        <li>Day 1: install Pit House, update firmware on base, wheel and pedals, set the steering angle, run the iRacing calibration.</li>
+        <li>Day 2: short sessions in one familiar car and track, low overall strength, press auto after a few laps.</li>
+        <li>Days 3 to 5: change one setting at a time, shape the brake curve and max force, log everything.</li>
+        <li>Days 6 to 7: race, with no setting changes during the weekend.</li>
+      </ol>
+
+      <h2>What I would skip</h2>
+
+      <p>I would skip the urge to download someone else's full profile on day one. Other people's settings were tuned for their rigs, their wrists and their cars. Starting from the defaults and your own log teaches you what each control actually does, and that knowledge outlasts any shared file.</p>
+
+      <p>I would also skip the long marathon session on the first night. You will be tired, you will overdrive the car, and you will walk away with a muddled opinion of hardware that is actually fine. Short and repeatable wins the first week.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=first-week-new-wheelbase-iracing-setup-checklist">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CS+V2+steering+wheel&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-cs-v2" target="_blank" rel="sponsored noopener">MOZA CS V2 Steering Wheel</a></th><td>the round rim my whole FFB profile is tuned around</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0DSHYFW1V?tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&amp;tag=realiracing-20" data-aff="cockpit" target="_blank" rel="sponsored noopener">Sim Racing Cockpit / Wheel Stand</a></th><td>a rigid mount matters more than the brand — flex kills FFB detail</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>Do I really need to update firmware before my first session?</h3>
+        <p>I do it every time. Update the base, the wheel and the pedals through Pit House before driving, then run the iRacing calibration wizard. Repeat the calibration after any later firmware change so the sim sees the correct ranges.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What steering angle should I set in Pit House?</h3>
+        <p>~900 or ~1080 degrees are common choices. iRacing can apply each car's own steering lock when the base reports its range, but I would verify that in a couple of cars rather than assume it, and adjust from there.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How strong should the force feedback be at the start?</h3>
+        <p>Start with a low overall strength in Pit House. After a few laps in iRacing, press the auto button in the force feedback settings so it sets the strength without clipping. Then raise it in small steps only if you feel you are missing detail.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I set up load-cell pedals differently from potentiometer pedals?</h3>
+        <p>A load cell responds to pressure, not travel. In Pit House, set the brake curve and the maximum force, then recalibrate in iRacing. Adjust the max force until a hard stop is repeatable without straining your leg.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="sim-rig-cable-management-guide.html"><span>Setup Guide</span>Sim Rig Cable Management: A Practical Guide</a>
+      <a class="related-card" href="sequential-vs-h-pattern-shifters-iracing.html"><span>Hardware</span>Sequential vs. H-Pattern Shifters on iRacing: Which One to Add First</a>
+      <a class="related-card" href="watkins-glen-iracing-setup-guide.html"><span>Track Guide</span>Watkins Glen on iRacing: Setup Guide for the Boot and the Bus Stop</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","moza-cs-v2","moza-crp2","cockpit"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
