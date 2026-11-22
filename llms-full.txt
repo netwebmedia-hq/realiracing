@@ -18,6 +18,7 @@
 
 ## All blog posts (newest first)
 
+- [iRacing Week 13: What I Do in the Off-Week | RealIRacing](https://realiracing.com/blog/iracing-week-13-off-week-between-seasons-checklist.html): Week 13 is the quiet gap between iRacing seasons. Here is how I use it on my MOZA R9 rig: rest, rig checks, calibration, FFB cleanup and practice.
 - [First Week With a New Wheelbase: iRacing Setup Checklist](https://realiracing.com/blog/first-week-new-wheelbase-iracing-setup-checklist.html): A day-by-day plan for your first week with a new direct drive wheelbase, from tightening bolts to your first iRacing race, based on my MOZA R9 rig.
 - [iRacing Black Flag and Meatball Flag: How to Clear Them](https://realiracing.com/blog/iracing-black-flag-meatball-flag-explained.html): A first-person guide to serving an iRacing black flag penalty and answering a meatball repair flag without throwing away the rest of your race.
 - [iRacing Local Yellow Flags: What to Do on Road Courses](https://realiracing.com/blog/iracing-local-yellow-flags-road-courses-what-to-do.html): A yellow shows up ahead on an iRacing road course. What it means, how I slow down without losing the race, and how to rejoin safely after your own spin.
@@ -47,7 +48,6 @@
 - [iRacing Hockenheim: Mazda MX-5 From P20 to P14 | RealIRacing](https://realiracing.com/blog/iracing-hockenheim-mx5-p20-to-p14.html): Clips from my iRacing Mazda MX-5 race at Hockenheim. I started P20 and finished P14. This is a racing simulator, not real life.
 - [iRacing at the Nordschleife: Clips From the Ring](https://realiracing.com/blog/iracing-nordschleife-stream-clips.html): Short iRacing clips from the Nürburgring Nordschleife: starts, GT cars, forest corners and rain, filmed in a racing simulator.
 - [iRacing at Okayama: MX-5 and Porsche Clips | RealIRacing](https://realiracing.com/blog/iracing-okayama-mx5-stream-clips.html): Short iRacing clips from Okayama International Circuit in Japan, with Mazda MX-5 race action and laps from a Porsche cockpit.
-- [iRacing IMSA Clips at Road Atlanta | RealIRacing](https://realiracing.com/blog/iracing-road-atlanta-imsa-stream-clips.html): Short iRacing clips from Road Atlanta in IMSA multiclass races. This is a racing simulator. See prototypes, Porsches and GT cars in the trees.
 
 ## More
 - Sitemap: https://realiracing.com/sitemap.xml
