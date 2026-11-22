@@ -1,0 +1,152 @@
+{
+  "slug": "iracing-week-13-off-week-between-seasons-checklist",
+  "tag": "Season Planning · Rig Care",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "iRacing Week 13: What I Do in the Off-Week",
+  "description": "Week 13 is the quiet gap between iRacing seasons. Here is how I use it on my MOZA R9 rig: rest, rig checks, calibration, FFB cleanup and practice.",
+  "published": "2026-11-22",
+  "dateLabel": "November 22, 2026",
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2",
+    "cockpit"
+  ],
+  "sections": [
+    {
+      "p": "The last race of the season is done, the iRating number has settled, and the iRacing schedule screen shows a gap where week 13 should be. For years I treated that gap as a week to do nothing, then showed up to the new season with a wheel that felt slightly off and a plan I had made in the first ten minutes of the first race. My rig is a MOZA R9 (~9 N·m direct drive), MOZA CRP2 load-cell pedals and a fixed aluminium-profile cockpit, and it gets one maintenance and tuning pass a season. Week 13 is when I do it."
+    },
+    {
+      "p": "This is what I do with that week, in the order I do it. Nothing here needs new gear. It needs a few quiet evenings and a notebook."
+    },
+    {
+      "h2": "What week 13 usually is"
+    },
+    {
+      "p": "iRacing seasons usually run ~12 weeks, followed by a short gap before the next season's build goes live. The official series usually pause during that gap, and there is often a handful of fun or unofficial events running in their place. The exact lineup changes from season to season, so check the schedule in the sim rather than trusting my memory. What stays the same is the opportunity: no season standings are on the line, so mistakes cost you very little."
+    },
+    {
+      "h2": "Day 1: rest, then look at the rig"
+    },
+    {
+      "p": "After 12 weeks of racing, the first thing I do is nothing. Take at least a day away from the wheel. If your wrists or forearms have been sore, the off-week is when you notice it, because the daily habit of pushing through is gone. I wrote about the strain side of this in my post on <a href=\"wrist-forearm-strain-high-torque-wheelbase.html\">wrist and forearm strain with a high-torque wheelbase</a>, and the short version is that a week of lighter use costs you nothing and often helps."
+    },
+    {
+      "p": "Then I walk around the cockpit with a hex key. A fixed aluminium-profile frame is very stiff when everything is tight, and over a season of braking and wheel loads a T-nut here and there can creep. I check these in the same order each time:"
+    },
+    {
+      "list": [
+        "Wheelbase mounting bolts first, because they carry the torque.",
+        "Pedal plate and the pedal mounting bolts, since load-cell pedals are pushed hard and repeatedly.",
+        "Seat rails and the seat itself.",
+        "Monitor stand or arms, if they are attached to the frame.",
+        "Cables: look for anything rubbing near the pedals or the rotating parts."
+      ]
+    },
+    {
+      "p": "I would rather find a loose bolt now than in the middle of a race next season, when I will blame the force feedback for a flex that is really in the frame."
+    },
+    {
+      "h2": "Day 2: updates and backups"
+    },
+    {
+      "p": "Week 13 is the quietest time to update things, because a broken setup costs you nothing. I do these in a fixed order, one at a time, so I can tell which change caused a problem:"
+    },
+    {
+      "olist": [
+        "Update the MOZA Pit House software, then the firmware on the base and the pedals if there are new versions. Reboot between updates.",
+        "Update the graphics driver, if I have been holding back during the season.",
+        "Run iRacing's own update and let it finish before opening any car.",
+        "Back up my Pit House profiles and my iRacing app.ini and setup files to another drive."
+      ]
+    },
+    {
+      "p": "The backup step is the one I skipped for years. A profile that took an afternoon to tune can disappear in one bad update. Copy it somewhere else, and give the copy a date in its name."
+    },
+    {
+      "h2": "Day 3: re-check calibration"
+    },
+    {
+      "p": "After any update to Pit House or the base firmware, I calibrate again. In Pit House I confirm the wheel range and center. Then in iRacing I run the calibration for the wheel and pedals and check the pedal bars in the controls screen. With the CRP2, I press the brake as hard as I normally do under braking and confirm the bar reaches the top without me stretching for it. If it does not, I adjust the maximum pressure value in Pit House and run the calibration again."
+    },
+    {
+      "p": "For the finer points of brake setup, I keep my notes on <a href=\"moza-crp2-brake-calibration-pressure-curves.html\">calibrating the CRP2 and its pressure curves</a> open in another window. The point of redoing it now is consistency: the first lap of next season should feel like the last lap of this one."
+    },
+    {
+      "h2": "Day 4: clean up force feedback"
+    },
+    {
+      "p": "This is the part I look forward to. I open Pit House and iRacing and compare my current settings to my saved baseline. Over a season I tend to nudge things: a bit more strength after a good week, a bit less after a sore one. By week 13 the settings have often drifted from where I meant them to be."
+    },
+    {
+      "p": "My approach is to reset to the baseline I trust, then test in two or three cars I know well. If you want a starting point, my <a href=\"moza-r9-iracing-settings.html\">MOZA R9 iRacing settings</a> post lays out where I begin. I drive a short run, press the auto force feedback button in iRacing to set the strength without clipping, and then change one slider at a time. If I change two and the feel improves, I do not know which one helped."
+    },
+    {
+      "p": "Keep a short log. A line each time: what I changed, which car, and how it felt. It takes a minute and it ends the argument with yourself three weeks later about which setting was better."
+    },
+    {
+      "h2": "Day 5: try next season's cars and series"
+    },
+    {
+      "p": "Next, I check which series I plan to race in the new season, and I load the cars for them in a test session. This is the best use of the quiet week. In a test session you can run laps without traffic, and you can learn what the car does before it counts. I focus on one question per car: where does it feel nervous, and where does it feel calm?"
+    },
+    {
+      "p": "Many weeks I also look at which tracks the series will visit. I do not try to learn all of them. I pick the two or three that I know I find hardest and give each a proper session. If you want a plan for how to structure that kind of practice, I wrote one in <a href=\"iracing-practice-week-structured-improvement.html\">my structured practice week post</a>."
+    },
+    {
+      "h2": "Day 6: practice one weak corner type"
+    },
+    {
+      "p": "Instead of hot-lapping my favorite track, I pick one corner type I struggle with and work on it. For me it is usually slow corners where I run wide on exit, or the heavy braking zones that I enter too fast. I choose a track with several of that corner type and drive only those sections. I brake earlier than feels natural, then slowly move the braking point later and watch the car's reaction."
+    },
+    {
+      "p": "The off-week is perfect for this because nobody is behind you and your license is not at stake. Ten careful laps of one corner teach more than fifty laps of everything at once."
+    },
+    {
+      "h2": "Day 7: review your season's replays"
+    },
+    {
+      "p": "If you have saved any replays from the season, now is the time to watch them. I look for the incidents that cost me the most, usually a lap-one contact or a late braking mistake, and I ask what I could have done earlier. Most of mine start two corners before the incident, with a decision made too late or a position I should have given up."
+    },
+    {
+      "p": "If you have not been saving replays, start with the next season. My post on <a href=\"iracing-replay-system-saving-reviewing-incidents.html\">saving and reviewing incidents in the iRacing replay system</a> covers how I save them and how I go through them without getting lost."
+    },
+    {
+      "h2": "Planning next season by license"
+    },
+    {
+      "p": "Last, I sit down with the new season's series list and sort it by the license class I hold. I choose one main series and, if I have time, one for variety. I also check whether the series uses a fixed setup or an open one, since that changes how much of my week goes to preparation. I write down my target number of races a week. Fewer, well-prepared races usually beat many rushed ones."
+    },
+    {
+      "h2": "A few things I skip"
+    },
+    {
+      "list": [
+        "Buying new gear in the week 13 rush. A decision made on a gift list tends to be worse than one made a week later.",
+        "Chasing one huge session. Several short sessions leave me fresher and I remember more.",
+        "Changing everything at once. One thing at a time, with a note."
+      ]
+    },
+    {
+      "p": "When week 13 ends I have a tight frame, up-to-date software, a backup of my profiles, a calibrated wheel and pedals, and a short list of series and cars to start the new season with. It is not exciting, and it is the reason my first race of a new season feels like a continuation of the last one."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is iRacing week 13?",
+      "a": "It is the short gap between two seasons, after the 12 racing weeks end and before the next season build goes live. The official series usually pause, and there are often fun or unofficial events. Check the in-sim schedule for the exact lineup, since it changes each season."
+    },
+    {
+      "q": "Should I recalibrate my wheel and pedals after an update?",
+      "a": "I do, every time. After a Pit House or firmware update I confirm the wheel range and center, then run the iRacing calibration and check the pedal bars. With load-cell pedals I also confirm that a hard brake press reaches full travel in the controls screen."
+    },
+    {
+      "q": "What is the best use of the off-week for improving lap times?",
+      "a": "Pick one weak corner type and one or two next-season cars, then drive short focused sessions with no traffic. A few careful laps of a single skill usually teach more than long sessions of everything. Keep a short log of what you changed and how it felt."
+    },
+    {
+      "q": "Is it safe to update drivers and firmware during week 13?",
+      "a": "It is the lowest-cost time to do it, because a problem will not affect a race that counts. Update one thing at a time, reboot in between, and back up your profiles and setups first so you can go back if something behaves differently."
+    }
+  ]
+}
