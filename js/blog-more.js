@@ -58,11 +58,16 @@
     var vis = Math.min(shown, list.length);
     cards.forEach(function (c) { c.hidden = true; });
     list.forEach(function (c, i) { c.hidden = i >= vis; });
-    status.textContent = 'Showing ' + vis + ' of ' + list.length + ' on this page · page ' +
-      status.getAttribute('data-page') + ' of ' + status.getAttribute('data-pages');
     var all = vis >= list.length;
+    // With a topic chip on, the count talks about that topic on this page and the page row stays
+    // hidden: page numbers describe the whole archive, not the filtered list (Joni R9).
+    var NOUN = { guides: ' guides', gear: ' gear posts', real: ' real-world posts' };
+    status.textContent = current === 'all'
+      ? 'Showing ' + vis + ' of ' + list.length + ' on this page · page ' +
+        status.getAttribute('data-page') + ' of ' + status.getAttribute('data-pages')
+      : 'Showing ' + vis + ' of ' + list.length + NOUN[current] + ' on this page';
     btn.hidden = all;
-    if (pager) pager.hidden = !all;
+    if (pager) pager.hidden = !all || current !== 'all';
   }
 
   btn.addEventListener('click', function () {
