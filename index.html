@@ -23,8 +23,8 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <!-- Slide 1 is the LCP image; preload the variant this viewport will use so it
        starts with the HTML instead of after the inline stylesheet is applied. -->
-  <link rel="preload" as="image" href="/slides/slide1-sm.jpg" media="(max-width: 640px) and (orientation: portrait)" fetchpriority="high" />
-  <link rel="preload" as="image" href="/slides/slide1.jpg" media="(min-width: 641px), (orientation: landscape)" fetchpriority="high" />
+  <link rel="preload" as="image" href="/slides/hero-cockpit-sm.jpg" media="(max-width: 640px) and (orientation: portrait)" fetchpriority="high" />
+  <link rel="preload" as="image" href="/slides/hero-cockpit.jpg" media="(min-width: 641px), (orientation: landscape)" fetchpriority="high" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -288,14 +288,16 @@
       opacity: 1;
       transform: scale(1.0);
     }
-    /* Slide photos — self-hosted JPEGs under slides/ (Pexels licence, credited in
+    /* Hero image: a frame from Carlos's own iRacing race at the Nordschleife (his capture,
+       see slides/CREDITS.md). The older slide photos below are Pexels files, no longer shown.
+       Slide photos — self-hosted JPEGs under slides/ (Pexels licence, credited in
        slides/CREDITS.md). Only slide 1 is declared here so it is the one image on
        the critical path; slides 2-7 carry data-bg / data-bg-sm and js/home.js
        attaches them after window.load. The -sm variant is a 3:5 centre crop —
        exactly what cover + center shows on a phone — at a third of the bytes. */
-    .slide-1 { background-image: url('/slides/slide1.jpg'); }
+    .slide-1 { background-image: url('/slides/hero-cockpit.jpg'); }
     @media (max-width: 640px) and (orientation: portrait) {
-      .slide-1 { background-image: url('/slides/slide1-sm.jpg'); }
+      .slide-1 { background-image: url('/slides/hero-cockpit-sm.jpg'); }
     }
 
     /* SVG graphics only shown on non-photo (gradient) slides */
@@ -1154,7 +1156,7 @@
     .section-sub { max-width: 940px; }
     .tail .linktree-section .link-btn { min-height: 40px; }
     #faq h2 { margin-bottom: 0; } .faq-updated { margin: 0 0 10px; }
-    .slide-1 .slide-vignette { background: linear-gradient(to top, rgba(10,10,10,.92) 0%, rgba(10,10,10,.6) 35%, transparent 60%), rgba(10,10,10,.84); }
+    .slide-1 .slide-vignette { background: radial-gradient(ellipse 62% 70% at 50% 46%, rgba(10,10,10,.62) 0%, rgba(10,10,10,.34) 70%, rgba(10,10,10,.18) 100%), linear-gradient(to top, rgba(10,10,10,.92) 0%, rgba(10,10,10,.45) 28%, transparent 55%); } /* own cockpit frame: dark behind the text, the track and dash stay visible at the edges */
     @media (max-width: 760px) { .proof { grid-template-columns: 1fr; } .proof .stats-bar { grid-template-columns: 1fr 1fr 1fr 1fr; gap: 6px; padding: 12px 8px; } .stat-num { font-size: 1.15rem; } .stat-label { font-size: .62rem; } }
   </style>
   <!-- Google Analytics 4 -->

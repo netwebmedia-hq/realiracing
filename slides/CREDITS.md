@@ -42,3 +42,7 @@ a third of the bytes. `index.html` picks between them with a media query for sli
 4. Slide 1 is the page's Largest Contentful Paint element: it is declared in the stylesheet
    and preloaded in `<head>`. Slides 2-7 must stay in `data-bg` so they are not fetched
    before first paint.
+
+## Homepage hero (since 2026-11-23)
+
+`hero-cockpit.jpg` and `hero-cockpit-sm.jpg` are a frame from Carlos Martinez's own iRacing race at the Nürburgring Nordschleife (November 2026), captured on his own rig. They replace the Pexels photo `slide1.jpg` as the hero: an outside review found a stock drift-car photo did not say sim racing. The Pexels slide files stay in this folder, unused.
