@@ -79,10 +79,12 @@
     function btn(label, value) {
       var b = document.createElement('button');
       b.type = 'button'; b.className = 'consent-btn'; b.textContent = label;
-      b.addEventListener('click', function () {
+      b.addEventListener('click', function (e) {
         writeConsent(value);
         gtag('consent', 'update', signals(value));
         box.remove();
+        // Accept starts GA4 (the click is trusted input); Reject keeps gtag.js unloaded.
+        if (value === 'all') { if (trusted(e)) load(); } else armed = false;
       });
       return b;
     }
@@ -124,8 +126,36 @@
     });
   }, true);
 
-  var s = document.createElement('script');
-  s.async = true;
-  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
-  document.head.appendChild(s);
+  // 2026-11-23: data-center browsers (Singapore, Ashburn, Council Bluffs; Chrome 1920x1080, homepage only,
+  // 0 s engaged) were a large share of GA4 users. Same rule as netwebmedia.com js/nwm-ga4-loader.js: only
+  // trusted, visible input starts GA4. Visitors who leave without touching the page are not counted.
+  var EV = ['pointerdown', 'keydown', 'wheel', 'touchstart'], armed = false, loaded = false;
+  function trusted(e) {
+    return !!e && e.isTrusted === true && (typeof document.visibilityState !== 'string' || document.visibilityState === 'visible');
+  }
+  function load() {
+    if (!armed || loaded) return;
+    loaded = true;
+    for (var i = 0; i < EV.length; i++) window.removeEventListener(EV[i], onInput, { capture: true });
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
+    document.head.appendChild(s);
+  }
+  function onInput(e) {
+    if (!trusted(e)) return;
+    if (e.target && e.target.closest && e.target.closest('#consent-banner')) return; // banner buttons decide
+    load();
+  }
+  var bot = !!navigator.webdriver ||
+    /headless|bot|crawl|spider|lighthouse|python|curl|wget|phantom|selenium|puppeteer|playwright/i.test(String(navigator.userAgent)) ||
+    (!!navigator.languages && navigator.languages.length === 0);
+  try {
+    var brands = navigator.userAgentData && navigator.userAgentData.brands;
+    for (var b = 0; brands && b < brands.length; b++) if (/headless/i.test(brands[b].brand)) bot = true;
+  } catch (_) {}
+  if (!bot) {
+    armed = true;
+    for (var j = 0; j < EV.length; j++) window.addEventListener(EV[j], onInput, { capture: true, passive: true });
+  }
 })();
