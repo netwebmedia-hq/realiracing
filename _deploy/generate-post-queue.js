@@ -567,7 +567,6 @@ const TOPIC_POOL = [
   // content with no post yet.
   'tyre pressure targets in iracing: hot vs cold and why they drift',
   'slip angle explained for sim racers: why the tyre has to slide a little',
-  'the out lap in iracing: warming tyres and brakes before a hot lap',
   'tyre compounds in iracing: when softs and hards are worth it',
   'fuel load and lap time in iracing: what a full tank costs per lap',
   'rev matching vs auto blip in iracing: what the car does for you',
@@ -595,6 +594,32 @@ const TOPIC_POOL = [
   'vw beetle grc lite iracing guide',
   'lanier national speedway iracing guide',
   'lucas oil raceway iracing guide',
+
+  // ─── Expansion 2026-11-23 (second batch) ───────────────────────────────────
+  // The same day's weekly run spent 20 topics, leaving ~17 unused against a 20-a-week
+  // spend. Checked against pool, live titles AND queued drafts (the first batch was
+  // not checked against the queue: its out-lap topic twinned a queued post, removed).
+  'downshifting in iracing: avoiding money shifts and rear lockups',
+  'snap oversteer in iracing: why the rear lets go and how to catch it',
+  'mid-corner speed in iracing: when to carry it and when to give it up',
+  'wheelspin on corner exit in high-power iracing cars',
+  'lift-off oversteer in iracing: using a lift to rotate the car',
+  'fuel calculators for iracing: working out laps and margin',
+  'virtual racing school for iracing: what the subscription gives you',
+  'the indy 500 in iracing: preparing for the special event',
+  'the daytona 500 in iracing: surviving the pack',
+  'your first iracing official race: what to expect on the grid',
+  'racing side by side through a corner sequence in iracing',
+  'iracing race weekends: practice, qualifying and warmup in one session',
+  'ballast and balance of performance in iracing gt3 racing',
+  'reading iracing results pages and lap charts after a race',
+  'the busiest times to race on iracing and why it matters',
+  'pace laps and formation laps in iracing explained',
+  'single-make spec series in iracing: why they make you faster',
+  'wet tyres in iracing: when to switch to rain tyres',
+  'pit service options in iracing: what each pit box checkbox does',
+  'the iracing damage model: what breaks and what it costs you',
+  'racing etiquette in iracing: chat, apologies and staying classy',
 ];
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
