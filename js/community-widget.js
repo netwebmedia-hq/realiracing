@@ -86,6 +86,18 @@
     return es ? 'hace un momento' : 'just now';
   }
 
+  /** "Nov 2, 2026" / "2 nov 2026" from the API's created_at (UTC). Empty string when missing or unparseable. */
+  function fmtDate(iso, lang) {
+    if (!iso) return '';
+    var norm = String(iso).replace(' ', 'T');
+    if (!/[Zz]|[+-]\d\d:?\d\d$/.test(norm)) norm += 'Z';
+    var d = new Date(norm);
+    if (isNaN(d.getTime())) return '';
+    try {
+      return d.toLocaleDateString(lang === 'es' ? 'es-CL' : 'en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
+    } catch (e) { return ''; }
+  }
+
   /** Absolute URL of the blog post a thread belongs to. Each property files its
       blog somewhere different; entrepoker additionally splits by language. */
   function postHref(property, slug, lang) {
@@ -112,7 +124,7 @@
       sending: 'Sending…',
       pending: 'Thanks — your post is awaiting review.',
       failed: 'Could not send that. Please try again in a moment.',
-      reply: 'Reply', replies: 'replies', reply1: 'reply',
+      reply: 'Reply', replies: 'replies', reply1: 'reply', first: 'Be the first to reply',
       starter: 'starter question',
       loading: 'Loading the conversation…',
       loadFailed: 'The conversation could not be loaded right now.',
@@ -128,7 +140,7 @@
       sending: 'Enviando…',
       pending: 'Gracias — tu mensaje está en revisión.',
       failed: 'No se pudo enviar. Inténtalo de nuevo en un momento.',
-      reply: 'Responder', replies: 'respuestas', reply1: 'respuesta',
+      reply: 'Responder', replies: 'respuestas', reply1: 'respuesta', first: 'Sé el primero en responder',
       starter: 'pregunta inicial',
       loading: 'Cargando la conversación…',
       loadFailed: 'No se pudo cargar la conversación en este momento.',
@@ -322,9 +334,19 @@
     card.appendChild(h);
 
     var n = th.replies_count || 0;
-    var metaText = th.author + ' · ' + relTime(th.last_activity_at || th.created_at, ctx.lang) +
-                   ' · ' + n + ' ' + (n === 1 ? L.reply1 : L.replies);
-    card.appendChild(el('p', S.meta, metaText));
+    // Author and opened-on date come straight from the API; a missing field is skipped, never invented.
+    var bits = [th.author, fmtDate(th.created_at, ctx.lang)].filter(Boolean);
+    var metaP = el('p', S.meta, bits.join(' · '));
+    metaP.setAttribute('data-thread-meta', '1');
+    if (n === 0) {
+      var first = el('span', { fontWeight: '600' }, L.first);
+      first.setAttribute('data-first-reply', '1');
+      metaP.appendChild(document.createTextNode(bits.length ? ' · ' : ''));
+      metaP.appendChild(first);
+    } else {
+      metaP.appendChild(document.createTextNode((bits.length ? ' · ' : '') + n + ' ' + (n === 1 ? L.reply1 : L.replies)));
+    }
+    card.appendChild(metaP);
 
     card.appendChild(el('p', S.body, th.body || th.excerpt || ''));
 
@@ -469,6 +491,6 @@
   // Node-only export for tests/js/community-widget.test.js. The browser IIFE is
   // unaffected: `module` is undefined there, so this whole block is skipped.
   if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { esc: esc, relTime: relTime, postHref: postHref, STR: STR, t: t };
+    module.exports = { esc: esc, relTime: relTime, fmtDate: fmtDate, postHref: postHref, STR: STR, t: t };
   }
 })();

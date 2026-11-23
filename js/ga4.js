@@ -42,11 +42,13 @@
   var TXT = isEs ? {
     t: 'Cookies de analítica',
     b: 'Medimos visitas con Google Analytics. Rechazar desactiva las cookies de analítica; en la UE, el Reino Unido y Suiza siguen desactivadas hasta que aceptes.',
+    s: 'Usamos cookies de analítica.',
     more: 'Política de privacidad',
     ok: 'Aceptar', no: 'Rechazar', url: '/privacy.html#analytics'
   } : {
     t: 'Analytics cookies',
     b: 'We measure visits with Google Analytics. Reject turns analytics cookies off; in the EU, UK and Switzerland they stay off until you Accept.',
+    s: 'We use analytics cookies.',
     more: 'Privacy policy',
     ok: 'Accept', no: 'Reject', url: '/privacy.html#analytics'
   };
@@ -54,7 +56,7 @@
     if (document.getElementById('consent-banner') || !document.body) return;
     if (!document.getElementById('consent-css')) {
       var css = document.createElement('link');
-      css.id = 'consent-css'; css.rel = 'stylesheet'; css.href = '/consent.css?v=2';
+      css.id = 'consent-css'; css.rel = 'stylesheet'; css.href = '/consent.css?v=3';
       document.head.appendChild(css);
     }
     var box = document.createElement('div');
@@ -63,7 +65,12 @@
     box.setAttribute('aria-label', TXT.t);
     var p = document.createElement('p');
     p.className = 'consent-text';
-    p.appendChild(document.createTextNode(TXT.b + ' '));
+    // Two spans: the full sentence, and a short one shown instead on phones (consent.css).
+    var long = document.createElement('span');
+    long.className = 'consent-long'; long.textContent = TXT.b + ' ';
+    var short = document.createElement('span');
+    short.className = 'consent-short'; short.textContent = TXT.s + ' ';
+    p.appendChild(long); p.appendChild(short);
     var a = document.createElement('a');
     a.href = TXT.url; a.textContent = TXT.more;
     p.appendChild(a);
