@@ -636,3 +636,12 @@ a.blog-pager-link:hover { border-color: var(--accent); color: var(--accent); }
 }
 .blog-card-glyph { flex: none; width: 44px; height: 44px; color: rgb(var(--cat)); fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .blog-card-banner--text .blog-card-cat { position: static; max-width: none; padding: 0; background: none; color: var(--text); font-size: .8rem; line-height: 1.35; }
+
+/* ── Joni R8: topic chips under the blog hero (js/blog-more.js builds them; no JS = no chips) ── */
+.blog-filter { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 1100px; margin: 28px auto 0; padding: 0 24px; }
+.blog-filter + .blog-grid { margin-top: 20px; }
+.blog-chip { min-height: 44px; padding: 0 18px; font: inherit; font-size: .9rem; font-weight: 600; color: var(--text); background: var(--card); border: 1px solid var(--border); border-radius: 999px; cursor: pointer; }
+.blog-chip:hover { border-color: var(--accent); color: var(--accent); }
+.blog-chip:focus-visible { outline: 2px solid var(--accent2); outline-offset: 2px; }
+.blog-chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #0a0a0a; }
+@media (max-width: 640px) { .blog-filter { margin-top: 20px; padding: 0 16px; } .blog-filter + .blog-grid { margin-top: 16px; } }
