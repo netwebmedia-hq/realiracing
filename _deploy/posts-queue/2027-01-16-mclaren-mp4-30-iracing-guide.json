@@ -1,0 +1,142 @@
+{
+  "slug": "mclaren-mp4-30-iracing-guide",
+  "tag": "Car Guide · Formula 1",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "McLaren MP4-30 iRacing guide: setup, braking, throttle control",
+  "description": "Master the McLaren MP4-30 with proven setup fundamentals, braking technique, and throttle management for consistent lap times in iRacing.",
+  "sections": [
+    {
+      "p": "The McLaren MP4-30 is a low-downforce, high-speed platform that demands precision over aggression. Unlike GT cars, where a generous power band and forgiving aerodynamics let you muscle through corners, the MP4-30 punishes hesitation and rewards smooth inputs. It corners on the edge of losing grip, brakes hard enough to lock rear wheels if you're careless, and deploys power so quickly that throttle control separates the mid-pack from the podium. This guide covers the essential setup moves, braking markers, and throttle discipline that build consistent pace in the MP4-30."
+    },
+    {
+      "h2": "Starting setup: baseline and common adjustments"
+    },
+    {
+      "p": "Begin with the default setup provided in-game. Most Formula 1 cars in iRacing load a balanced baseline tuned for a mid-range circuit, so you should expect reasonable turn-in and exit grip out of the box. Rather than chasing exotic changes, focus on three core adjustments that apply across most tracks: front wing angle, brake bias, and differential locking on corner exit."
+    },
+    {
+      "p": "Front wing angle controls straight-line speed and high-speed stability. Tracks like Monza or Spa demand low angles (around 1-3 degrees) to minimize drag; tighter circuits like Monaco need 5-7 degrees for downforce and mechanical grip. Start with the track default and adjust in one-degree increments after a few practice laps. If you're losing the front end entering fast corners, add one degree. If you're running wide on exit or struggling for top speed, subtract one degree."
+    },
+    {
+      "p": "Brake bias determines how much stopping force goes to the front axle versus the rear. The MP4-30 typically runs 60-65% front at most tracks, but that changes with fuel load and circuit design. Light fuel on a short track like Singapore might sit at 58% front; a heavy fuel load at Monza might need 62% front to prevent rear lockups. Adjust brake bias only after you have established a consistent braking point; chasing bias during qualifying often leads to inconsistency."
+    },
+    {
+      "list": [
+        "Front wing angle: start with track default, then adjust 1 degree for speed vs. grip trade-off",
+        "Brake bias: begin at 60% front, then adjust 1-2% if you lock rear wheels or run out of braking grip",
+        "Differential exit lock: set to 70-80% for most road courses; higher values help exit grip on tight circuits",
+        "ARB (anti-roll bar) stiffness: stiffer front reduces understeer on entry; stiffer rear tightens exit",
+        "Fuel load: lighter fuel sharpens turn-in and reduces overall drag; heavier fuel increases tire wear and reduces peak pace"
+      ]
+    },
+    {
+      "h2": "Braking technique and threshold points"
+    },
+    {
+      "p": "The MP4-30 is fast enough that brake points shift by 50-100 meters between light and heavy fuel loads, and by 30-50 meters between low-fuel and full-tank qualifying modes. Learn each track's brake markers at your typical race fuel level first, then apply small adjustments for quali and shorter stint variations."
+    },
+    {
+      "p": "Trail braking in the MP4-30 is essential for maintaining front grip into slow-speed corners. Enter the braking zone at full throttle, then brake progressively while gradually releasing pressure as you turn in. The goal is to still be on the brakes at 50-70% of the steering angle, then come off the brakes cleanly as you hit apex speed. Releasing brakes too early often causes understeer; trailing too deep into the corner destabilizes the rear. Practice each corner at a fixed fuel load until trail-braking inputs feel reflexive rather than deliberate."
+    },
+    {
+      "p": "Locking the rear wheels is easy in the MP4-30 and costly. If you lock the rear under braking, it typically means brake bias is too aggressive for your fuel load, or you are braking too hard at the entry of a corner with high initial speed. Dial back bias by 1-2% if locking happens consistently at the same point on track. If locking is sporadic, reduce initial brake pressure (press the pedal more gently) and rely on trail braking to slow the car smoothly."
+    },
+    {
+      "tip": "Use telemetry to spot braking inconsistency. A good brake trace shows smooth pressure release over 1-2 seconds, mirroring your steering input. Sudden pressure spikes or flat lines signal jerky inputs that waste grip and tire life.",
+      "tipLabel": "Telemetry tip"
+    },
+    {
+      "h2": "Throttle control and corner exit authority"
+    },
+    {
+      "p": "The MP4-30 produces ~940 horsepower with DRS engaged and ~750 without it. That is enough power to spin or slide the rear dramatically if you apply throttle at the wrong moment. Exit velocity matters more than entry smoothness, so train yourself to identify the apex and commit to full throttle shortly after, not before, reaching it."
+    },
+    {
+      "p": "On tight corners (Turn 1 at Monaco, Turn 1 at Singapore, Turn 3 at Suzuka), the apex is often earlier than you think. Roll to 50-60% throttle on the inside of the turn, then advance smoothly to full throttle 1-2 car lengths past the apex. Applying full power at the apex itself will cause oversteer or a wide exit, losing time on the following straight. On faster corners, you can carry more throttle mid-corner and reach full power earlier; use the differential exit lock setting and ARB stiffness to fine-tune how much power the rear can handle."
+    },
+    {
+      "p": "DRS in iRacing follows real F1 rules: you can deploy it only in designated zones after a gap from the car ahead. In practice and quali, DRS is always available once you're below the detection threshold (typically Lap 1 onwards in most sessions). Use DRS on straights where the rear wing opens to reduce drag. Avoid opening DRS mid-corner under any circumstance; a sudden loss of rear downforce is an instant spin waiting to happen."
+    },
+    {
+      "h2": "Setup tuning for specific corner types"
+    },
+    {
+      "p": "The MP4-30 responds sharply to small setup changes, so approach tuning methodically. Test one variable per lap, hold it for 3-5 consecutive laps, then assess consistency before moving to the next variable."
+    },
+    {
+      "olist": [
+        "Fast-corner understeer (Eau Rouge at Spa, Turn 3 at Suzuka): reduce front wing angle by 1 degree, or reduce front ARB stiffness by 1-2 clicks. If the car already has low wing, increase differential locking by 5% on entry.",
+        "Tight-corner oversteer (Monaco Turn 1, Singapore Turn 1): add 1-2 degrees of front wing, or increase front ARB stiffness. Dial back differential exit lock slightly (reduce by 5%).",
+        "Mid-corner push (losing front grip mid-turn, Track position relative to reference point moves outward): add front wing angle, or reduce front ride height by 2-3 mm to increase aero load.",
+        "Corner exit wheelspin (rear slides even at moderate throttle): reduce differential exit lock by 5-10%, or add 1 degree of front wing to shift balance forward."
+      ]
+    },
+    {
+      "h2": "Tire management and fuel strategy"
+    },
+    {
+      "p": "Formula 1 tires in iRacing model wear and thermal cycling closely. Pushing to the absolute limit of grip every lap accelerates wear and builds heat; managing pace to stay 95-98% committed extends tire life and maintains consistency over a full stint."
+    },
+    {
+      "p": "In practice and qualifying, run qualifying spec fuel (minimum) and push for single-lap pace. In race stints, back off 0.3-0.5 seconds per lap from your personal best to manage wear. This margin feels large on each lap but compounds over 20-30 laps into a critical advantage in pace and pit-stop strategy. Monitor tire wear and temperature via telemetry; front tires typically wear faster than rear on most road courses. If front tires are worn significantly by lap 15, reduce front wing angle or add front ARB stiffness to unload the front slightly."
+    },
+    {
+      "p": "Pit stops cost 3-4 seconds in time penalty plus the stop duration itself. Plan pit stops around natural fuel consumption and tire wear cycles. A long first stint conserves fuel for a shorter final stint, reducing overall pit time. A shorter early stint lets you pit with fresh fuel for a faster car on worn tires, then push later when the car is fresh again."
+    },
+    {
+      "h2": "Qualifying approach and single-lap pace"
+    },
+    {
+      "p": "Qualifying in iRacing limits fuel load to race minimum and sometimes reduces setup flexibility, so adapt your mental model for 25-30 laps of practice before the qualifying session. Practice your push lap repeatedly during the practice session using the race fuel level you will carry in qualifying, then dial in one final baseline setup to use for all qualifying attempts."
+    },
+    {
+      "p": "On the push lap itself, build through Lap 1 and 2 as the tires heat, targeting peak pace on Lap 3. Exit the pits with a gap to other cars; a tow from a slower car will distort your data and waste your qualifying run. If you make a mistake (small lock, minor kerb strike), pit and try again. One clean push lap beats three moderately rushed laps."
+    },
+    {
+      "tip": "Save your best qualifying setup separately from your race setup. Quali setups often run lower fuel, different brake bias, and stiffer ARBs for single-lap sharpness. Race setups prioritize tire life and stability over a full stint.",
+      "tipLabel": "Setup files"
+    },
+    {
+      "h2": "Common mistakes and fixes"
+    },
+    {
+      "list": [
+        "Over-braking on entry: leads to understeer and missed apexes. Brake harder earlier, then trail brake smoothly. Avoid heavy braking while steering.",
+        "Applying full throttle before the apex: causes oversteer or wide exits. Roll throttle mid-corner, then commit to full power 1-2 car lengths past the apex.",
+        "Chasing brake bias and wing angle mid-session: introduces inconsistency. Set brake bias once at race fuel load, then leave it alone unless you are locking the rear repeatedly.",
+        "Ignoring tire temperature: cold tires lock easily and have low grip. Warm tires with progressive speed buildup in Lap 1-2 of each session.",
+        "Using aggressive differential locking on entry: causes mid-corner snap oversteer. Reserve high locking percentages for corner exit only."
+      ]
+    },
+    {
+      "p": "Master the fundamentals of braking, throttle discipline, and trail-braking inputs before diving into deep setup work. A mediocre setup driven smoothly will consistently beat a perfect setup driven poorly. Focus on three laps of error-free, smooth driving at 95% effort, then review telemetry to identify one specific area to refine. This methodical approach builds pace faster than chasing lap-time gains through endless setup tweaks."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a good starting brake bias for the MP4-30?",
+      "a": "Start at 60% front brake bias. Adjust by 1-2% increments based on fuel load: lighter fuel often sits at 58-60%, heavier fuel at 61-64%. Lock the rear repeatedly? Drop bias by 1-2%. Lock the front? Increase it slightly. Adjust only once per stint when you have a consistent feeling for the car."
+    },
+    {
+      "q": "Should I use DRS in corners, or only on straights?",
+      "a": "DRS is for straights only. Never deploy DRS mid-corner or under heavy steering input. The sudden loss of rear downforce from an open wing causes immediate oversteer and a likely spin. Wait until you are on a straight and clear of corners before opening DRS."
+    },
+    {
+      "q": "How do I stop locking the rear under braking?",
+      "a": "Rear lockups happen because brake bias is too aggressive for your current fuel load, or you are braking too hard too late into a corner. First, reduce initial brake pressure and start braking earlier. Second, reduce front brake bias by 1-2% and test the same corner. Third, focus on trail-braking technique so you release brake pressure smoothly as you turn in. If only one corner locks, adjust your brake point for that corner specifically."
+    },
+    {
+      "q": "What setup change helps the most if I am losing the front end in fast corners?",
+      "a": "Add 1-2 degrees of front wing angle to increase mechanical and aerodynamic grip at the front axle. If that does not help enough, slightly increase front ride height by 2-3 mm to load more downforce. Avoid stiffening the front ARB first, as it often worsens the problem by reducing grip."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-cs-v2",
+    "moza-sr-p",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

@@ -1,0 +1,165 @@
+{
+  "slug": "sandown-raceway-iracing-guide",
+  "tag": "Track Guide · Road Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Sandown Raceway iRacing Guide: Setup, Strategy, and Turn-by-Turn",
+  "description": "Master Sandown's tight left-hander and fast esses. Setup advice, braking points, and corner-exit strategy for consistent lap times.",
+  "sections": [
+    {
+      "p": "Sandown Raceway sits on the outskirts of Melbourne, Australia, and presents one of iRacing's most punishing technical challenges. The 2.945-kilometer layout demands precision over raw speed. Corner entry is abrupt, run-off is unforgiving, and a single locked brake into the famous Turn 3 left-hander can cost you the entire lap. Most drivers find Sandown humbling at first, then rewarding once you unlock the rhythm."
+    },
+    {
+      "p": "The track flows in two distinct halves. The opening section (Turns 1 and 2) brakes hard, turns tight, and demands immediate line precision. After the brief straight up to Turn 3, you enter a carousel of high-speed corners where steady steering and throttle modulation separate the fast from the damaged. This guide covers setup priorities, corner-by-corner technique, and how to handle Sandown's reputation for rewarding smooth drivers and punishing the aggressive."
+    },
+    {
+      "h2": "Setup priorities for Sandown"
+    },
+    {
+      "p": "Sandown rewards a stiff, responsive chassis that communicates front-end grip without introducing unnecessary instability on the high-speed sections. The track's mix of sudden direction changes and fast sweeps means you cannot afford vagueness in steering response, yet you also need enough mechanical grip and damping to carry speed through the esses without overloading the front tires."
+    },
+    {
+      "list": [
+        "<strong>Brake balance.</strong> Set a mid-range base and bias it slightly forward (usually 54-57 percent front, depending on car) to handle the heavy Trail-braking into Turn 3. Test in-session and adjust 1 percent at a time if the car locks or dives under heavy pedal application.",
+        "<strong>Front wing.</strong> A common starting point is mid-range downforce (30-40 percent, depending on the car). Sandown is not a pure power track like Monza, so you need mechanical grip more than slip angle. If you oversteer mid-corner on the esses, add front wing and adjust rear wing down slightly to rebalance.",
+        "<strong>Differential.</strong> Entry locking around 60-70 percent suits the tight-radius corners. Mid-range accel (20-30 percent) prevents inside-wheel spin under heavy throttle on exit. Conservative on decel slip (10-15 percent) to retain front-end feel on trail-brake entries.",
+        "<strong>Springs and anti-roll bars.</strong> Favor stiffness slightly over comfort. Sandown's bumps and curbing will expose a soft setup, turning it into a handling liability. If your car porpoises over the exit curbs at Turns 2 and 7, increase spring rates and anti-roll bar stiffness slightly.",
+        "<strong>Tire pressures.</strong> Run toward the cooler end of your car's window early (e.g., 25.5-26.0 psi). Sandown's sustained lateral load on the esses heats tires fast. Monitor after two or three laps and adjust 0.1-0.2 psi at a time, aiming for peak grip without sudden drop-off mid-stint."
+      ]
+    },
+    {
+      "tip": "Sandown's bumpy asphalt punishes bottoming-out. If you hit curbs hard and feel the car get light or unstable, your ride height or bump stops are too soft for the circuit. Raise ride height incrementally and tighten bump stops before resorting to spring changes.",
+      "tipLabel": "Ride height and curb strike"
+    },
+    {
+      "h2": "Turn 1 and 2: The heavy braking section"
+    },
+    {
+      "p": "You enter Sandown hot from the main straight and must arrest speed dramatically for Turn 1, a medium-radius left-hand corner. Most drivers brake at the 100-meter marker and trail-brake into the 50-meter zone, using steering input to tighten the line and hit the apex around the middle of the corner."
+    },
+    {
+      "list": [
+        "Hit the apex of Turn 1 near the inside curb. Early apex here kills your exit onto the short straight toward Turn 2.",
+        "Roll off brakes smoothly around the apex and apply light throttle on exit. Clip the outside curb if necessary, but do not overdrive and lock the rear tires.",
+        "Coast or use very light throttle onto the Turn 2 straight. Turn 2 is a fast right-hand sweeper that requires a different entry approach than Turn 1.",
+        "Brake again around the 50-meter board. Trail-brake deep into Turn 2, rotating the car with steering input while still on the pedal.",
+        "Apex Turn 2 late (deep into the corner) to maximize corner-exit speed onto the following straight toward Turn 3. The exit is forgiving for width, so position for speed over smoothness."
+      ]
+    },
+    {
+      "h2": "Turn 3: The signature corner"
+    },
+    {
+      "p": "Turn 3 is Sandown's defining moment. This heavy left-hand corner is fast and tight, and the approach straight does not give you much run-off if you brake too late. A locked wheel here sends you toward the inside barrier, and over-rotation leads to a spin or the outside wall."
+    },
+    {
+      "olist": [
+        "Brake at the 100-meter marker. Aim to scrub speed at a steady rate; erratic pedal inputs destabilize the car.",
+        "Trail-brake to around the 50-meter board, where you should be fully off the pedal and feeding in steering lock.",
+        "Apex Turn 3 near the inside curb. The curb is aggressive; clip it lightly and do not mount it fully or risk a tire lock or unload.",
+        "Hold steady steering angle through mid-corner. The temptation is to unwind and add throttle early; resist. Sandown punishes this every time.",
+        "Begin throttle application only after the car rotates past the apex (roughly 2/3 through the turn). The exit opens to the right, so feed power gradually as the steering wheel unwinds.",
+        "Clip the outside curb on exit, but be ready for it to pitch the car. Adjust throttle or steering angle to manage any sudden load change."
+      ]
+    },
+    {
+      "tip": "Turn 3 is the best place on track to gain or lose time. Practice this corner in isolation for 10 laps, focusing on brake consistency and smooth throttle application on exit. A laptime delta of 0.3 to 0.5 seconds separates smooth drivers from those who lock up or oversteer.",
+      "tipLabel": "Turn 3 isolation practice"
+    },
+    {
+      "h2": "The carousel section: Turns 4 through 7"
+    },
+    {
+      "p": "After Turn 3, Sandown opens into a series of high-speed left and right sweepers. These corners carry impressive speed, but entry precision determines whether you exit clean or start losing time to understeer or tight handling."
+    },
+    {
+      "list": [
+        "<strong>Turn 4 (fast left).</strong> This is a low-speed entry at the start of the esses. Brake lightly into it, then commit to full steering lock early to load the inside front tire and rotate the car. Apex early to maximize mid-corner speed, then accelerate smoothly toward Turn 5.",
+        "<strong>Turn 5 (fast right).</strong> Minimal braking. Use light trail-braking to rotate and flow into the right-hand sweep. Apex mid-corner and roll throttle as the corner opens. This transition is rapid; overdrive and you will understeer across the apex.",
+        "<strong>Turn 6 (fast left).</strong> Similar rhythm to Turn 5, but in reverse. Light braking or lift, smooth trail-brake, early apex, roll throttle. The key is not to stab the throttle; progressive application keeps the front end planted.",
+        "<strong>Turn 7 (exit right onto the back straight).</strong> The fastest corner on the lap. Carry maximum speed through the inside and feed throttle aggressively once past the apex. The outside curb is benign and wide; use all of it and exit onto the back straight full throttle."
+      ]
+    },
+    {
+      "h2": "The back straight and Turn 8"
+    },
+    {
+      "p": "After Turn 7, you have a decent straight with a slight uphill gradient. This is your longest acceleration zone, and most drivers will reach near-top speed before Turn 8, a 90-degree left-hander that opens onto the final section."
+    },
+    {
+      "olist": [
+        "Accelerate hard out of Turn 7. Build a good exit speed to carry momentum onto the straight.",
+        "Brake at the 100-meter board for Turn 8. This braking zone is straightforward; heavy pedal input is required because you are coming in fast.",
+        "Trail-brake into the apex, keeping the car pointing ahead. Turn 8 is tight enough that mid-corner understeer is common if you do not rotate early.",
+        "Apex early to mid-corner and roll throttle. The exit is wide, so position for speed rather than a perfect clipping line."
+      ]
+    },
+    {
+      "h2": "The final section and pit straight"
+    },
+    {
+      "p": "The final section features a couple of moderate-speed corners before you roll onto the pit straight and begin the lap again. These corners demand precision, but they are less punishing than the opening."
+    },
+    {
+      "list": [
+        "<strong>Turn 9 (fast right).</strong> Light braking or trail-braking, early apex, smooth throttle application. Clip the apex curb and prepare to unwind into the penultimate corner.",
+        "<strong>Turn 10 (slower left).</strong> Medium-radius left-hander that leads onto the final straight. Brake lightly and rotate early, then trail-brake to maximize exit speed onto the pit straight. Clip the inside and accelerate hard.",
+        "<strong>Pit straight run-in.</strong> You have roughly 300 meters to full throttle before braking for Turn 1. This is your warmup lap phase where consistent braking and acceleration prepare the tires for the esses and Turn 3."
+      ]
+    },
+    {
+      "h2": "Common mistakes and how to avoid them"
+    },
+    {
+      "list": [
+        "<strong>Over-braking into Turn 3.</strong> Drivers brake too hard or too long into Sandown's signature corner, locking the front wheels or running out of braking area. Result: understeer into the apex and loss of time or contact. Practice threshold braking and consistency; use a fixed brake point for 10 laps and adjust by only 1 meter at a time.",
+        "<strong>Early throttle application on the esses.</strong> The carousel requires smooth, progressive throttle. Stabbing the throttle in Turns 4 or 5 unloads the front tires, forcing understeer and ruining mid-corner speed. Apply throttle in small increments and wait for the car to rotate fully before adding power.",
+        "<strong>Harsh curb strikes.</strong> Sandown's curbs are aggressive, especially at Turns 2, 3, 7, and 10. Clipping them is fine; mounting them fully or striking them while off-throttle destabilizes the car. Reduce ride height or stiffen bump stops if you are bottoming out or getting light.",
+        "<strong>Tire temperature management.</strong> The esses generate sustained lateral load, heating tires rapidly. If your pressures are too high at lap 1, they will be in the peak zone by lap 3. Run slightly cool at the start and monitor throughout the stint."
+      ]
+    },
+    {
+      "h2": "Race strategy at Sandown"
+    },
+    {
+      "p": "Sandown is a technical circuit where consistency and smooth driving matter more than outright pace. In online racing, this means defending your line and not letting traffic panic you into poor decisions."
+    },
+    {
+      "list": [
+        "Build heat into your tires and brakes gradually. A rushed first lap often results in a lock or a spin that sets you back minutes. Treat the first two or three laps as a warmup.",
+        "On restarts or after pit stops, avoid late-apex passes into Turn 3. The apex is punishing, and a misjudged entry frequently ends in contact or a wall strike.",
+        "If you are defending, hold the inside line through the carousel (Turns 4-7). This section is narrow, and an overtake attempt here often results in contact because a trailing driver cannot see your car through the esses.",
+        "Manage tire degradation over the stint. Sandown's mix of braking and high-speed corners wears front-left and rear-right tires. Plan pit stops if the race is long, and avoid pushing to the limit early."
+      ]
+    },
+    {
+      "tip": "Sandown is an excellent circuit for practicing <a href=\"best-sim-racing-pedals-iracing-2026.html\">brake consistency</a> and throttle control. The heavy braking sections and trail-brake zones expose lazy pedal inputs immediately. Use Sandown to build muscle memory for smooth, threshold braking.",
+      "tipLabel": "Skill-builder track"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the ideal brake pressure for Sandown's heavy-braking sections?",
+      "a": "Brake pressure is car-dependent, but a common reference point is 85-95 percent of maximum for threshold braking into Turns 1 and 3. Test in practice and adjust by 5 percent increments. The goal is to brake hard without locking; consistent, sustained pressure beats oscillating pedal inputs."
+    },
+    {
+      "q": "How do I stop understeering into Turn 3?",
+      "a": "Understeer into Turn 3 usually means you are braking too deep or carrying too much speed. Reduce brake pressure, brake earlier, or both. If that does not help, increase front wing downforce by 5-10 percent and reduce rear wing slightly. A higher brake bias (forward) also improves front grip under heavy pedal application."
+    },
+    {
+      "q": "Is Sandown suitable for endurance racing?",
+      "a": "Yes, but tire degradation is noticeable across a 30-plus minute stint. Front-left and rear-right tires wear first. Plan pit stops every 20-25 minutes, depending on fuel and tire condition. Sandown rewards smooth driving, so pacing your effort and avoiding lock-ups is critical for multi-stint races."
+    },
+    {
+      "q": "What setup change helps most with Turn 7 oversteer?",
+      "a": "Reduce rear wing downforce by 5-10 percent, increase front wing slightly, or stiffen the rear anti-roll bar. If the car is still loose, check that your front tire pressures are not too high. High pressures reduce mechanical grip and promote mid-corner oversteer on the high-speed esses."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

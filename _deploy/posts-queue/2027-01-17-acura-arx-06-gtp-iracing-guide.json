@@ -1,0 +1,150 @@
+{
+  "slug": "acura-arx-06-gtp-iracing-guide",
+  "tag": "Car Guide · GTP Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Acura ARX-06 GTP iRacing Guide: Setup, Hybrid Energy, Lines",
+  "description": "Master the ARX-06's hybrid system, aero balance, and energy deployment strategy to find consistent pace in GTP races.",
+  "sections": [
+    {
+      "p": "The Acura ARX-06 is a mid-field contender in GTP that rewards precision over raw pace. Unlike the Cadillac Lmdh and BMW M Hybrid V8, the ARX-06 demands cleaner inputs and smarter hybrid energy management. It sits between raw pace and mechanical grip, making it sensitive to both setup balance and driver discipline. Getting it dialed means understanding how its hybrid system interacts with track surface, managing fuel across a stint, and reading what the car tells you through the wheel."
+    },
+    {
+      "p": "This guide covers baseline setup direction, hybrid deployment discipline, turn-in geometry, and how to read lap telemetry to find the gaps holding you back. The goal is consistency that scales to endurance racing and competitive fuel windows."
+    },
+    {
+      "h2": "Hybrid energy deployment: when to harvest and when to spend"
+    },
+    {
+      "p": "The ARX-06's hybrid motor produces electrical power during braking and stores it in a battery that holds a fixed charge limit. You harvest energy most efficiently when braking hard from high speed, so corner entry is your primary harvest window. Mid-corner coast or light braking wastes the opportunity. Exit acceleration, particularly on wide-open throttle out of slow corners, is where you spend that energy to gain time."
+    },
+    {
+      "p": "Many drivers treat the hybrid system as a free power boost and deploy energy on every corner exit. This burns your charge quickly and forces a recharge cycle when you need it most. Instead, prioritize energy spend on corners that lead onto straights where top-end speed matters: low-speed hairpins to main straights, technical chicanes that feed DRS zones. Corners that feed into tighter sections get less benefit."
+    },
+    {
+      "list": [
+        "Harvest aggressively on hard braking zones. Enter each major braking event with throttle fully released to maximize regeneration.",
+        "Spend energy only where exit speed feeds a long straight or a low-downforce section. Skip mid-pack chicanes unless you're chasing a position.",
+        "Monitor your battery state display during practice to learn the rhythm. Full charge depletes in roughly 2-3 aggressive corner exits on a typical road course.",
+        "In endurance stints, reserve one or two full charges for the final 15 minutes to defend positions or chase down traffic ahead."
+      ]
+    },
+    {
+      "tip": "Energy spending is most valuable when you're 0.1-0.3 seconds adrift of a car you're chasing. A single tow down a straight with full hybrid deploy can close a gap that aerodynamic setup tweaks take half a lap to replicate.",
+      "tipLabel": "Hybrid Timing Matters"
+    },
+    {
+      "h2": "Setup baseline: downforce and ride height"
+    },
+    {
+      "p": "Start with the default setup provided in the car selector and test it for one or two laps to understand the baseline behavior. The ARX-06 runs high downforce levels (500+ on front wing) to generate grip through high-speed corners, but that creates long braking distances and sluggish turn-in if you over-commit to aero."
+    },
+    {
+      "p": "Ride height is your first dial. The ARX-06 is sensitive to plank ride height because it sits relatively low; too low and you'll porpoise over bumps and lose time to oscillation, too high and the floor loses downforce efficiency. Set front ride height to roughly 55-60 mm (adjust by track bumps), rear to 65-70 mm. If you're porpoising visibly on bumpy sections, raise the front by 2-3 mm and test again."
+    },
+    {
+      "p": "Wing angle comes next. Many baseline setups run 10-12 degrees front, 15-16 rear. If you're understeering on entry or struggling to rotate mid-corner, reduce front wing by 1-2 degrees and test. If you're oversteering on exit or losing rear grip on power, increase rear wing slightly. The goal is neutral balance through the middle of a corner, with the car asking for steering input rather than fighting it."
+    },
+    {
+      "list": [
+        "Front wing: 9-11 degrees for technical circuits, 12-14 for high-speed tracks (Spa, Le Mans). Lower = quicker straights, higher = more entry grip.",
+        "Rear wing: 14-16 degrees as a baseline. Increase if the rear steps out on power or under braking, decrease if the rear dives and locks up.",
+        "Brake balance: Start at 55-57% rear bias. The ARX-06 uses brake regeneration heavily, so a rear-biased balance works here. Adjust forward by 1-2% if braking feels unstable or the rear locks.",
+        "ARB (anti-roll bar): Front 12-15, rear 8-11. Soften front if turn-in feels harsh or the car snaps mid-corner. Soften rear if the rear sits down under braking."
+      ]
+    },
+    {
+      "h2": "Turn-in and throttle application"
+    },
+    {
+      "p": "The ARX-06 responds well to smooth inputs and punishes aggressive steering. Turn-in should be deliberate, aiming to load the front tires progressively over the first third of the corner. Many drivers yank the wheel too hard too early, which loads the front but then forces a correction as the car understeers past the apex."
+    },
+    {
+      "p": "Aim to reach your target steering angle by the apex, not before. This keeps the front tire in its grip window longer and allows you to maintain or even reduce steering lock slightly through the middle and exit. If the car understeers on entry, it usually means one of three things: not enough front grip (too little downforce, too low speed), too aggressive initial turn-in (steering angle too high too fast), or braking too late."
+    },
+    {
+      "p": "Throttle application should match steering angle. Early throttle (before the apex) is a common mistake that kills mid-corner balance. Wait until you're pointing toward the exit, then blend throttle in. The rear tires need load reduction during the mid-corner phase to allow the front to work. Full throttle comes once steering angle has reduced to roughly 25% of maximum."
+    },
+    {
+      "list": [
+        "On entry: brake hard with trailing brake to the apex mark, begin steering smoothly 50-100 meters before the turn-in point.",
+        "At apex: steering angle is at maximum, throttle at or below 10%, weight on the front tires only.",
+        "Exit: reduce steering lock progressively as you increase throttle. By 30% steering angle remaining, you should be at 50-60% throttle.",
+        "Full acceleration: steering near zero, full throttle available. If the rear slides, you over-applied power. Lift 2-3% and reapply."
+      ]
+    },
+    {
+      "tip": "Record a replay and study steering angle versus throttle position using the telemetry overlay. If your steering angle and throttle are rising at the same time, you're asking the tires to do two jobs at once. Desync them: steering down, then throttle up.",
+      "tipLabel": "Steering-Throttle Separation"
+    },
+    {
+      "h2": "Reading telemetry to find lap-time gaps"
+    },
+    {
+      "p": "Use iRacing's delta bar and replay system to compare your best lap to a reference (your own previous best, or a teammate's fast lap). Overlay telemetry in the replay and look for three common areas where seconds hide: braking zones, mid-corner speed, and exit acceleration."
+    },
+    {
+      "p": "In braking zones, check if you're trailing brake later or over-braking earlier than your reference. The ARX-06 stops well due to its mass-to-power ratio, so look for trails that extend deeper into corners. If your braking line is longer, you're carrying more speed and shedding it less efficiently. Adjust your braking point forward by 5-10 meters and focus on modulation rather than raw deceleration."
+    },
+    {
+      "p": "Mid-corner speed is where most time hides. If your reference carries 10-15 kph more than you through a fast corner (say, turn 3 at Spa or turn 1 at Road Atlanta), the gap is usually setup (not enough front downforce) or line choice (you're taking a wider path that requires more steering). Check both. If your line looks similar, roll the front wing up 1-2 degrees and test."
+    },
+    {
+      "p": "Exit acceleration reveals hybrid deployment efficiency and throttle sensitivity. If your reference pulls away 0.2-0.3 seconds per lap on corner exits, they're likely using hybrid energy more selectively or carrying more entry speed (which allows earlier full throttle). Record a lap where you deploy hybrid on every exit versus one where you deploy on only high-value corners and compare.</p>"
+    },
+    {
+      "h2": "Common pitfalls and fixes"
+    },
+    {
+      "olist": [
+        "Understeer on entry that doesn't improve with less steering input. This usually means you're not braking deep enough to load the front. Try trail-braking deeper and carrying more brake pressure into the corner. The ARX-06's brakes are strong, so you have more margin than you think.",
+        "Rear stepping out under acceleration mid-corner. This is over-aggressive throttle application before you've unloaded steering lock. Count to one full second of increasing throttle after you begin steering reduction. The rear tires need time to handle both forward load and the slight weight transfer from steering.",
+        "Tire temps climbing rapidly (front tires 100+ C above ambient). This signals too much steering input or abusive braking. Focus on smoother turn-in and roll more brake pressure into corners rather than dumping it all at once. Tire wear accelerates at extreme temps and wastes a stint.",
+        "Battery depleting by lap 3 of a 1-hour session. You're harvesting inefficiently or deploying on low-value corners. Reduce deploy frequency to only straight-feeding corners and monitor your battery state. Aim for a cycle (full harvest, full deploy) every 2-3 laps on a road course."
+      ]
+    },
+    {
+      "h2": "Endurance stint strategy"
+    },
+    {
+      "p": "Long stints in the ARX-06 reward fuel awareness and conservative energy management. Fuel consumption scales with throttle application and hybrid deploy; aggressive drivers empty fuel 10-15% faster. Set a target fuel level (usually 60-65% of capacity) halfway through your planned stint, then adjust pace if you're running rich or lean."
+    },
+    {
+      "p": "Tire wear is gentler than fuel stress. The ARX-06's broad grip window means old tires perform reasonably, so focus on fuel math first. In a 1-hour stint, expect to come in with 10-15% fuel remaining to avoid a splash-and-dash. Any less and you're risking a yellow-flag fuel call that costs position."
+    },
+    {
+      "p": "During the final 15 minutes, reserve your hybrid battery at high state of charge. Fuel window closure and traffic often intersect near the end of a stint; having full hybrid deploy available lets you attack a gap or defend against a hungry driver behind. Dial back aggressive energy spend on early laps if it means a charged battery for laps 55-60."
+    },
+    {
+      "h2": "Track-specific notes"
+    },
+    {
+      "p": "At Sebring and Watkins Glen, the ARX-06 runs higher fuel consumption due to aggressive throttle zones (Watkins Glen's flat-out sections) and bumpy, sustained cornering (Sebring's bumpy mid-field). Start conservative on fuel and build headroom. Road Atlanta and VIR reward mid-range downforce; baseline wing angles work well. Le Mans and Spa demand aggressive brake balance (up to 59-60% rear) because long straights and downforce levels create heavy stopping events where rear lock is a risk. Toronto and street circuits benefit from slightly softer ride heights (down 2-3 mm front) to avoid curb strike and planing over road imperfections."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much hybrid energy should I carry into the final lap of a race?",
+      "a": "Aim for 70-80% state of charge in the final 5 laps. This gives you one or two full deploy cycles for defending position or making a late push. Avoid arriving at the final lap empty; you'll lose 2-3 kph on critical straights and can't respond to traffic or a competitor's energy spend."
+    },
+    {
+      "q": "My front tires are overheating (115+ C) but the rear is cool. What should I change?",
+      "a": "Reduce front wing angle by 1-2 degrees to lower front tire load. If overheating persists, check your turn-in aggressiveness: steer in more gradually over a longer distance and avoid choppy corrections mid-corner. High-stress inputs (sudden steering angles) spike tire temperature. Soften the front ARB by 1-2 clicks to reduce harshness and allow smoother tracking."
+    },
+    {
+      "q": "Should I adjust brake balance differently for fuel-saving runs versus attack laps?",
+      "a": "Brake balance should stay consistent. Changing it lap-to-lap confuses your muscle memory and increases lock-up risk. Instead, brake modulation (how aggressively you apply the pedal) is what changes. Fuel-saving laps use gentler, longer brake applications with less peak pressure. Attack laps use deeper trail-braking and higher peak pressure. The balance pedal position stays the same."
+    },
+    {
+      "q": "What is the best way to compare my lap to a pro's lap in the replay system?",
+      "a": "Load the pro's lap in replay, enable telemetry overlay (steering, throttle, brake, speed), and play through two or three corners at half-speed. Pause at the apex of each corner and check three numbers: speed, steering angle, and brake pressure if visible. If the pro carries 5-10 kph more into a fast corner, that is your biggest gap. Focus on replicating their line and entry speed first; setup changes come second."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "monitor-1440p-120",
+    "gpu-rtx-5060-ti"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

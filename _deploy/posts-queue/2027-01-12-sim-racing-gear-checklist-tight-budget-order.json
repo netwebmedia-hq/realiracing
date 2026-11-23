@@ -1,0 +1,132 @@
+{
+  "slug": "sim-racing-gear-checklist-tight-budget-order",
+  "tag": "Buyer's Guide · Hardware",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Sim Racing Gear Checklist: What to Buy First on Tight Budget",
+  "description": "Prioritize your first sim racing purchases to build a usable rig under $500. Start with what matters most for lap time and progression.",
+  "sections": [
+    {
+      "p": "Every sim racer on a budget faces the same puzzle: a wheelbase costs more than a monitor, pedals cost as much as a wheel, and suddenly a \"simple\" rig is $2,000. The temptation is to buy all at once or chase the cheapest option in every category. That's backwards. A coherent budget build means buying in the right order so each purchase makes the next one worth buying. Start with the wrong piece and you lock yourself into compromises for months. This guide maps the actual priority order for a working, fun, progression-friendly rig under $500, and explains why each step comes before the next."
+    },
+    {
+      "h2": "Start with a monitor, not a wheel"
+    },
+    {
+      "p": "The hardest principle to follow is this: buy your display first. A bad monitor wastes every other dollar you spend. A 1440p 120 Hz+ G-SYNC compatible gaming monitor costs ~$180-250 used or on sale, and you can find them from brands like ASUS, BenQ or Dell. This is the foundation. iRacing demands clean, crisp visibility to spot braking markers, race lines, and other cars. 1080p at 60 Hz leaves you squinting and slow. A 1440p 120 Hz display gives you the headroom to see detail and frame rate that keeps input lag low enough to feel direct feedback from your wheelbase."
+    },
+    {
+      "p": "Why not build around the wheel instead? Because you can sim race with a controller or keyboard for a few weeks while you save. You cannot sim race properly on a CRT monitor or a 60 Hz laptop display. The display touches every single session and costs less than any wheelbase. Lock it in first."
+    },
+    {
+      "tip": "Look for older gaming monitors on the used market or last-season models on sale. A 2-3 year old IPS or VA panel with 144 Hz refresh and G-SYNC compatible will cost half the new price and perform identically for sim racing.",
+      "tipLabel": "Budget hack"
+    },
+    {
+      "h2": "Second: a mid-range direct drive wheelbase"
+    },
+    {
+      "p": "Once you have a monitor, buy the wheel. Skip the entry-level belt-drive wheels (G923, T300 RS GT). Instead, find a used MOZA R5 Bundle (~$250-350) or save an extra $100-150 for a new MOZA R9 direct drive wheelbase (~$400). The R5 includes a wheel, but the R9 offers superior torque feedback (~9 N·m) and noise characteristics. Direct drive means the motor connects straight to the shaft, so feedback is immediate and precise. Belt-drive wheels have lag and filter feedback in ways that slow your learning."
+    },
+    {
+      "p": "Why not buy a cheap wheel and upgrade later? Because you will have already learned bad habits on soft, distant feedback. When you move to direct drive, your muscle memory misfires. Buy direct drive once and keep it for years. The used MOZA R5 or a discounted R9 is the sweetspot: immediate, honest feedback without the $700+ entry price of a Fanatec CSL DD or ClubSport DD+."
+    },
+    {
+      "h2": "Third: load cell pedals"
+    },
+    {
+      "p": "Pedals usually come third, and load cell is non-negotiable. Potentiometer pedals (spring-based, with a slider) teach you poor throttle modulation because they reward squeamish inputs. Load cell pedals measure how hard you press, like a real car, so progressive braking feels natural. The MOZA SR-P pedals (~$150-180) or used MOZA CRP2 (~$120-150) are compact and consistent. The Thrustmaster Load Cell Pedals (T-LCM / Raceline III LC) are also solid at ~$150-170 used."
+    },
+    {
+      "p": "Many beginners skip to pedals last. That's a mistake. Throttle control and brake modulation matter as much as steering input, and potentiometer pedals mask your mistakes. By the time you reach ~1500-2000 iRating, you need load cell feedback or you plateau. Buy them early so your setups and muscle memory are anchored to real, progressive inputs."
+    },
+    {
+      "list": [
+        "Look for open-box or used MOZA SR-P or CRP2 pedals on classified sites or sim racing communities",
+        "Check eBay completed listings to benchmark fair prices in your region",
+        "Avoid very cheap spring pedals (sub-$80) even if they look like a bargain; they will slow your learning"
+      ]
+    },
+    {
+      "h2": "What you can skip for now"
+    },
+    {
+      "p": "A cockpit frame, shifter, handbrake, button box, VR headset, or triple-monitor setup are all luxuries. They make racing more immersive or efficient, but they do not change your lap time or iRating. Build your first 50-100 hours on a monitor, wheel, and pedals at a desk or on your lap. When you've progressed past 1500-2000 iRating and you know you want to stay in sim racing, then invest in comfort and immersion."
+    },
+    {
+      "p": "The same applies to high-end gear. A Fanatec ClubSport DD+ wheel (~$750+), a Meta Quest 3 VR headset (~$500), or a full motion rig (~$2000+) are premature if you're still learning racecraft. They're a reward after you've proven you'll use them consistently."
+    },
+    {
+      "h2": "The budget build assembly order"
+    },
+    {
+      "olist": [
+        "1440p 120 Hz+ G-SYNC monitor (used or sale): ~$180-250",
+        "MOZA R5 Bundle or R9 direct drive wheelbase: ~$250-400",
+        "Load cell pedals (MOZA SR-P, CRP2, or T-LCM): ~$120-180",
+        "Total: ~$550-830 depending on used vs new and regional pricing"
+      ]
+    },
+    {
+      "p": "If you must cut it tighter, reduce the monitor to a 1080p 144 Hz model (~$100-150 used) and buy the R5 Bundle used (~$250-300) plus entry-level load cell pedals like the CRP2 used (~$100-130). That gets you under $450. But do not skip the monitor or the load cell pedals. Those two choices define your learning ceiling."
+    },
+    {
+      "h2": "PC hardware: what you already have matters most"
+    },
+    {
+      "p": "iRacing runs on modest hardware. A mid-range gaming PC from 2018-2020 with an RTX 1660 or similar and a Ryzen 5 5600 will deliver 100+ FPS at 1440p medium settings. If you're upgrading a PC specifically for sim racing, prioritize your GPU over your CPU. Frame rate directly affects input lag, so a step up in GPU from an RTX 1660 to an RTX 4070 Super (~$500-600) is worth considering. CPU upgrades are less urgent unless you're running older hardware from before 2018."
+    },
+    {
+      "p": "One PC and one monitor is enough to start. Do not buy a second monitor, an HDMI capture card, or streaming hardware yet. Stream later when you're comfortable. Buy the cheapest possible PC desk chair if you don't have one, but don't sink $300 into ergonomics until you've confirmed you race for more than a month."
+    },
+    {
+      "tip": "Test your current PC first. Run iRacing's benchmark on your existing machine at the resolution and frame rate you're targeting. If you hit your target, your PC is fine. Only upgrade if the benchmark shows you're below 80 FPS consistently.",
+      "tipLabel": "Skip the upgrade"
+    },
+    {
+      "h2": "Common mistakes on a tight budget"
+    },
+    {
+      "list": [
+        "Buying a cheap wheel first (G923, T300 RS GT) and skipping load cell pedals. You'll learn on soft, delayed feedback and stall at 1500-2000 iRating",
+        "Chasing a \"complete cockpit\" from day one. Spend $500 on a frame before you know you like racing and you've wasted money",
+        "Saving money on the monitor. A 60 Hz, 1080p display compounds every other purchase. See the track clearly first",
+        "Buying multiple items on the same tight timeline so you can't return them if one fails. Stagger purchases by 2-3 weeks so you can test each component"
+      ]
+    },
+    {
+      "h2": "What comes next once you've hit $500"
+    },
+    {
+      "p": "After 100-200 hours on a base rig, you'll have a clear sense of what matters next. A cockpit frame or wheel stand (under $200) lifts the experience by keeping your wheel stable and your posture consistent. A button box or dedicated shifter (~$100-150) streamlines pit stops and car setup changes. A second monitor or a VR headset (~$500) opens new series and immersion levels. These are upgrades, not foundations."
+    },
+    {
+      "p": "The order you've built so far—monitor, direct drive wheel, load cell pedals—sets you up to race competitively in any iRacing series. Everything else refines that core. Your first month of racing will teach you exactly what to buy next. For now, lock in a solid base and progress."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I start with a cheap wheel and pedals and upgrade later?",
+      "a": "Technically yes, but it teaches you poor habits. Belt-drive wheels and spring pedals feel soft and delayed compared to direct drive and load cell. When you upgrade, your muscle memory and setup knowledge don't transfer cleanly. You'll re-learn braking and steering all over again. It's faster to save and buy direct drive and load cell once."
+    },
+    {
+      "q": "Do I need VR or triple monitors to be competitive?",
+      "a": "No. A single 1440p 120 Hz monitor is competitive up to iRating 3000+. VR and triple setups add immersion and peripheral vision, which help at road courses, but they cost $500-1500 and they're not essential for lap time. Buy them when you're sure you'll race long-term, not when you're starting."
+    },
+    {
+      "q": "How much PC hardware matters for sim racing performance?",
+      "a": "Less than gear. A mid-range gaming PC from 2019-2021 with an RTX 1660 or 2060 and a Ryzen 5 5600 hits 100+ FPS on 1440p medium settings, which is plenty. GPU affects frame rate and input lag more than CPU. If your current PC is from 2018 or earlier, upgrading the GPU is worth considering. Only upgrade the CPU if your frame rate is bottlenecked below 80 FPS at your target resolution."
+    },
+    {
+      "q": "Should I buy used or new gear on a budget?",
+      "a": "Used wheelbase gear is safe if it has no visible damage and comes from a trusted community member or small reseller. Pedals and wheels hold up well over years of use. Monitors are lower risk used as long as there's no dead pixel zone. Focus your new budget on the parts most likely to have warranty issues: load cell pedals (failure risk over 500+ hours) and direct drive wheelbase motors. For everything else, used saves 20-40% and is worth exploring."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

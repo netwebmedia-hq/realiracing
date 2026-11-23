@@ -1,0 +1,155 @@
+{
+  "slug": "brake-migration-gtp-cars-iracing",
+  "tag": "Setup Guides · Braking",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Brake migration in GTP cars explained: why brakes move forward",
+  "description": "Learn what brake migration is, why it happens in GTP cars, and how to adjust your setup to compensate for forward brake bias shift.",
+  "sections": [
+    {
+      "p": "Brake migration is a real aerodynamic effect in high-speed racing where the balance of braking force shifts forward as downforce increases. In iRacing's GTP cars, particularly the Acura ARX-06 and BMW M Hybrid V8, this happens because the rear wing generates downforce that reduces rear axle load during braking. The front axle simultaneously gains load from the front wing and overall aerodynamic pressure, pulling the braking bias forward. If you don't adjust for this, your rear axle unloads excessively under hard braking, the rear tires lose grip, and you'll slide or lock the fronts."
+    },
+    {
+      "p": "Understanding brake migration means the difference between tricky mid-corner understeer and predictable, stable deceleration into fast corners. This matters most on the high-speed circuits in GTP where you're carrying real velocity into heavy braking zones. At low speed, brake migration barely registers. At 180 mph approaching a 90-degree turn, the effect becomes critical."
+    },
+    {
+      "h2": "Why brake migration happens"
+    },
+    {
+      "p": "Braking balance in any car is determined by brake force distribution between front and rear axles, plus the load on each axle at that moment. In a static car parked in a garage, the brake bias dial in your setup menu controls everything. But the moment you're racing at speed, aerodynamic downforce redistributes the actual load on your tires."
+    },
+    {
+      "p": "GTP cars run significant rear wing angles to generate downforce for high-speed stability. That rear wing creates a nose-down pitch moment and loads the rear tires hard in corners. The instant you brake, that rear wing still exists and is still generating downforce, but now the car is decelerating. The rear suspension compresses, the rear wing's downforce presses down on a suspension that's transitioning from load to compression, and the net effect is that the rear axle loses effective load while the front axle gains it from forward weight transfer plus front wing downforce."
+    },
+    {
+      "list": [
+        "Front wing downforce pushes the nose down during braking, increasing front axle load",
+        "Rear wing downforce persists but becomes a nose-down moment as the car pitches forward",
+        "Weight transfer from deceleration adds to front axle load and subtracts from rear",
+        "The combined effect pulls braking grip requirement forward, away from the rear tires"
+      ]
+    },
+    {
+      "tip": "Brake migration is not a setup bug or a tire model quirk. It is modeled in GTP cars because it happens in real GTP racing. High-downforce cars brake differently at race speed than they do at a standstill.",
+      "tipLabel": "Real effect, real consequence"
+    },
+    {
+      "h2": "How migration shows up in your lap"
+    },
+    {
+      "p": "If your brake balance is set for a stationary car (or for lower downforce circuits), you'll see specific symptoms at speed. The rear end will feel loose and unpredictable during heavy braking. You might experience rear-end slides on entry to quick corners, or the car will feel like it wants to spin if you trail-brake. Alternatively, if you're trying to compensate by running more rear bias, you'll lock the fronts easily and lose the front end on trailing braking zones."
+    },
+    {
+      "p": "The experience is often described as \"the car changing character between practice and the race\" because migration is load-dependent. A slow, careful practice lap generates less downforce, so less migration happens. A flat-out race lap at full speed shows the full effect. You set your brakes in qualifying or practice, then in the race the rear feels unstable."
+    },
+    {
+      "olist": [
+        "Identify the symptom: rear slides or lockups during heavy braking at race speed",
+        "Check whether the problem is worse at high-speed circuits than low-speed ones",
+        "Note if the issue improves when you ease into braking versus stabbing the pedal hard",
+        "Observe whether the problem worsens as the race progresses (more fuel, higher speeds, different tire state)"
+      ]
+    },
+    {
+      "h2": "Adjusting your setup for brake migration"
+    },
+    {
+      "p": "There are two main controls for brake migration in GTP: brake balance bias and brake pressure distribution. Neither is a perfect fix because migration is a function of load, not a constant value. What you're really doing is finding a compromise bias that works across your fastest, hardest-braking scenarios."
+    },
+    {
+      "p": "Start by biasing the brakes forward (toward the front). If your car's default is 50/50 or 48/52 front/rear, try 51/49 or 52/48 front/rear for a first test. Run a few qualifying laps at race pace, not medium pace. The brakes should feel more stable on entry to high-speed corners and you should have fewer rear slides. If you now lock the fronts or feel excessive underbraking at the rear, you've gone too far forward. Back off by 0.5 percent and try again."
+    },
+    {
+      "p": "The exact number depends on the car (Acura and BMW have different wing angles and brake system tuning), the track (high-speed layouts show more migration than street circuits), and your fuel load (heavier cars migrate less because more of the load is weight transfer rather than aero). A common starting point for GTP at a high-speed track like Road America or Spa is 52 to 54 percent front bias. At street circuits like Long Beach or Detroit, 50 to 51 percent often works."
+    },
+    {
+      "p": "One technique is to set your bias for high-speed, high-load braking first (the scenario where migration is strongest), then test on a low-speed corner or street circuit to verify it doesn't overcorrect. If the front locks easily at low speed, your bias is too far forward for the full range of speeds you'll encounter in a race."
+    },
+    {
+      "list": [
+        "Increase front bias by 0.5 to 1.0 percent and test at race pace on a high-speed circuit",
+        "Feel for rear stability during threshold braking into fast corners",
+        "Check for front lock-up or underbraking at low-speed corners",
+        "Make small adjustments and repeat rather than large jumps",
+        "Account for fuel load and traffic (heavier cars and cars in dirty air migrate differently)"
+      ]
+    },
+    {
+      "h2": "Track-specific brake migration considerations"
+    },
+    {
+      "p": "High-speed circuits like Road America, Spa-Francorchamps, or Watkins Glen show pronounced brake migration because you're braking from genuine race speed with full downforce. These are the places where a 1 percent bias shift makes an obvious difference. You'll notice a rear-end slide or stability improvement very clearly."
+    },
+    {
+      "p": "Street circuits like Long Beach or Detroit have slower corners and shorter straights, so downforce builds less before you brake. Migration is present but less dramatic. You can often run a flatter bias here without rear instability, though each car and corner is different."
+    },
+    {
+      "p": "Wet weather reduces downforce significantly, so brake migration becomes much smaller. If you've set your dry setup with heavy front bias to compensate for high-speed migration, that same setup may oversteer or understeer under braking in the rain because migration is weaker."
+    },
+    {
+      "h2": "Common mistakes with brake balance in GTP"
+    },
+    {
+      "p": "One frequent error is confusing brake migration with general brake balance. Drivers often think \"my rear slides, so I need more rear bias\" and end up with a bias that locks the front on the first lap of the race when downforce hasn't built yet. The correct diagnosis is \"my rear slides at race speed with full downforce,\" which calls for more front bias."
+    },
+    {
+      "p": "Another mistake is setting brakes in practice or qualifying at half throttle, then running the race at full commitment. The practice brake setting was optimized for lower downforce. Race-pace braking requires a forward-biased adjustment. Test your brakes at the speed you'll race, not the speed you practice at."
+    },
+    {
+      "p": "A third trap is forgetting that fuel load affects both weight distribution and braking feel. A full fuel tank at the start of a 2-hour race brakes differently than the same car 90 minutes later on fumes. Many drivers set brakes for the mid-race feel and then struggle in the opening stint with full fuel. Set your bias for the full-fuel condition since that's your longest braking period."
+    },
+    {
+      "tip": "Test brake migration by running multiple laps at identical pace but different fuel loads. If your rear feels stable at 90 kg of fuel but slides at 150 kg, migration is real and you should bias forward. If the problem persists regardless of fuel, it's a different issue.",
+      "tipLabel": "Fuel load test"
+    },
+    {
+      "h2": "Tools to diagnose brake migration"
+    },
+    {
+      "p": "The telemetry tools in iRacing can show you brake bias behavior across a lap. Load up a replay, enable the black box view, and look at brake pedal input versus car rotation. If the rear is rotating (yaw increasing) during heavy braking, you're losing rear grip. That's brake migration or insufficient rear grip. Adjust bias forward in your next session and replay the same corner to see the difference."
+    },
+    {
+      "p": "Another approach is the methodical test session. Set your bias at 50/50 front/rear and run three consecutive laps at race pace on a high-speed corner. Document which lap feels best. Then shift the bias 1 percent forward (51/49) and repeat. Continue until you find the bias that gives you the most stable rear and no front lockup. That's your starting point for the track and car combination. <a href=\"best-sim-racing-pedals-iracing-2026.html\">Load cell pedals</a> will give you finer control over threshold braking, making these tests clearer."
+    },
+    {
+      "h2": "Putting it together: a practical brake setup plan"
+    },
+    {
+      "olist": [
+        "Start with the baseline setup from iRacing or the community (usually around 50-51 percent front for GTP)",
+        "Run three qualifying laps at race pace on a high-speed section of the track",
+        "If the rear slides or feels unstable on entry, increase front bias by 0.5 percent",
+        "Test at low-speed corners to confirm you haven't locked the fronts",
+        "Document the bias that feels stable across both high-speed and low-speed braking",
+        "In the race, re-test your brakes in the opening laps as the car reaches race temperature and downforce builds"
+      ]
+    },
+    {
+      "p": "Brake migration in GTP is not a one-setup-fits-all problem. The correct bias depends on your speed, your fuel load, the track layout, and the specific car you're driving. What works on the Acura at Road America may not work on the BMW at Watkins Glen. Treat your brake balance as a tunable parameter tied to downforce, not a one-time setup choice. Once you understand why the effect exists, finding the right bias becomes a systematic test rather than a guessing game."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does my rear feel unstable in the race but stable in practice?",
+      "a": "In practice, most drivers run at half pace or moderate intensity. At race pace, aerodynamic downforce builds significantly higher, and brake migration increases. Your rear axle loses more load during braking at full speed than it does at practice speeds. Increase your front brake bias by 0.5 to 1 percent and test at race pace to compensate."
+    },
+    {
+      "q": "Is brake migration the same as a loose rear end?",
+      "a": "No. A loose rear end usually means insufficient rear grip overall (bad camber, tire pressure, or wear). Brake migration is specific to the braking moment and happens because aerodynamic load shifts during deceleration. Brake migration gets worse at high speed and shows up mostly under hard braking, while a generally loose rear shows up in corners too."
+    },
+    {
+      "q": "How much brake bias change should I make for brake migration?",
+      "a": "Start with 0.5 to 1.0 percent more front bias than your baseline. If your car runs 50/50 front/rear, try 50.5 to 51 percent front. For high-speed tracks, GTP cars often run 52 to 54 percent front. Make small adjustments and test at race pace before large changes."
+    },
+    {
+      "q": "Does brake migration affect wet-weather setups?",
+      "a": "Yes, but less. Wet conditions reduce downforce significantly, so brake migration is weaker. If you've set your dry brakes aggressively forward to handle high-speed migration, your wet-weather brakes should be less front-biased (closer to 50/50) because migration won't be as strong. Expect to adjust backward by 0.5 to 1 percent for rain."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

@@ -1,0 +1,119 @@
+{
+  "slug": "texas-motor-speedway-iracing-guide",
+  "tag": "Track Guide · Oval",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Texas Motor Speedway iRacing guide: banking, tire wear, and passing lanes",
+  "description": "Master TMS oval racing with banking-specific setup, tire wear patterns, and lane-by-lane passing strategy for clean wins.",
+  "sections": [
+    {
+      "p": "Texas Motor Speedway demands respect in iRacing. The 1.5-mile D-shaped oval combines steep banking, high speeds, and unpredictable tire wear across four distinct racing grooves. A setup that works in qualifying can fall apart in lap 50 of a race as the track evolves and your tires age. Understanding how the banking shapes handling, where the grip lives on a given day, and how to execute clean passes in heavy traffic separates consistent podium finishes from DNF frustration."
+    },
+    {
+      "h2": "The banking and its effect on setup"
+    },
+    {
+      "p": "Texas turns 1 and 2 bank at 20 degrees and turns 3 and 4 at 24 degrees. That banking is aggressive enough to mask setup errors early in a run but punishing once tire grip fades. The high banking naturally loads the outside wheels hard, which is why many drivers run stiffer springs and anti-roll bars on the inside to prevent the car from collapsing mid-turn. However, overdo this and the front end pushes mid-corner, forcing you into the wall as the banking fights your steering input."
+    },
+    {
+      "p": "Start with an open-setup series baseline (most exist in fixed setups on TMS) and assess how the car feels on the main straight and into turn 1. If the nose dives and pulls left, increase front spring stiffness by 2-3 clicks and add 1-2 clicks of front anti-roll bar. If the car feels loose off-corner and kicks the rear out, leave springs moderate and focus on damping and brake balance instead. The banking does much of the work for you; fighting it wastes your setup budget."
+    },
+    {
+      "list": [
+        "Increase front anti-roll bar slightly (front stiff) to prevent inside-wheel lift in high-speed turns",
+        "Dial in engine braking and transmission shaping early to control trailing-throttle oversteer on exit",
+        "Run lower rear wing angle than you would at a flat 1.5-miler (Homestead or Kansas) because banking generates downforce",
+        "Check bump stop settings if the car bottoms out in turns 3-4; raising the rear bump stop 1-2 clicks reduces harshness"
+      ]
+    },
+    {
+      "h2": "Tire wear and lane management across a race"
+    },
+    {
+      "p": "Tire wear at Texas is not uniform. The inside grooves (1 and 2) see less tire load and wear more slowly for the first 20-30 laps. The outside line (3 and 4) starts hot and grips hard but degrades faster as the banking hammers the sidewall. By lap 40-50 in a 100-lap race, the grip profile inverts: the high line becomes marginal, and drivers are forced down into lanes 1 and 2, compacting the field and creating chaos at pit stops."
+    },
+    {
+      "p": "In practice and qualifying, run your best lap in the groove where you plan to race early in the event. If you qualify in lane 3, expect qualifying tires to feel loose after 15 laps of racing. Set up your car to be stable in that lane at race start, then plan for a mid-race pit stop to reset tires and move lower if the high lanes fail. Drivers who refuse to pit and stay high on old tires often spin off or get collected in traffic."
+    },
+    {
+      "tip": "On lap 1, run the same line as qualification. On lap 20, run 1-2 lanes lower. By lap 50, run the lowest grip lanes you can find without hitting the apron. Plan your pit stop timing around this tire-wear cliff, not arbitrary fuel windows.",
+      "tipLabel": "Lane-shift strategy"
+    },
+    {
+      "h2": "Passing and traffic management"
+    },
+    {
+      "p": "Texas allows passing in both high and low lanes, but the success rate and risk differ sharply. Passing on the inside (lane 1-2) requires the car ahead to push high or run a wide entry. Passing on the outside (lane 3-4) is faster but closer to the wall and more vulnerable to being checked by lapped traffic. Most clean passes happen when a faster car times a pit-stop sequence to gain track position or when a slower car runs out of grip and drifts high into turn 1."
+    },
+    {
+      "p": "When you are racing clean against a similar-pace competitor, avoid forcing the issue in heavy traffic. Set up your exit from the previous corner to maximize run-out of turn 4 on the main straight, then assess whether a pass is likely before turn 1. If the driver ahead is protecting the high lane and you do not have clear speed, back off, save tires, and attack again after the next pit stop cycle. Forcing a low-line pass into turn 1 often ends in contact and a penalty."
+    },
+    {
+      "olist": [
+        "Identify the racing groove before the green flag using pace-car laps and practice sessions. Note where the grip is strongest and where the curbing sits relative to your line.",
+        "In the opening laps, stay in your qualifying groove and focus on maintaining tire temperatures. Do not attempt passes on cold tires.",
+        "By lap 15-20, assess whether the high or low line is faster and begin nudging your line accordingly. If lane 3 is still gripping, run it; if it is pushing, move to lane 2.",
+        "Execute passes after pit stops when you have new tires and competitors are still on worn rubber. This is where most passing occurs and risk is lowest.",
+        "If you are lapped by a faster car and cannot match pace, signal early by moving to the low line and holding steady. Do not block or move unpredictably."
+      ]
+    },
+    {
+      "h2": "Common mistakes and how to avoid them"
+    },
+    {
+      "p": "New drivers at TMS often trail-brake too deep into turn 1, expecting the banking to hold them on a wide line. The banking does not excuse bad braking; lift too late and the car goes high, into traffic or the wall. Always brake straight, downshift in a steady rhythm, and turn-in only after the speed is committed. The banking rewards smooth inputs, not last-lap desperation."
+    },
+    {
+      "p": "Another trap is running setup that is too loose in qualifying because it feels playful on new tires. When tire grip drops 10-15 percent mid-race, that loose setup becomes a lottery ticket in traffic. Prioritize understeer over oversteer in your setup; a slight push is predictable and forgiving, while snap oversteer kills races. If the car is sliding on exit at lap 30, it is too late to change the setup; you chose poorly in the garage."
+    },
+    {
+      "p": "Finally, do not pit on a whim because one competitor did. Texas is a long race for most series. Fuel consumption and tire wear are predictable if you stick to your plan. If you pit 2 laps earlier than necessary, you will fall into a cycle of running short fuel stints and losing positions at the end of a stage. Commit to a pit strategy before green, then execute it unless weather changes or accidents force a restart."
+    },
+    {
+      "h2": "Setup starting point for TMS"
+    },
+    {
+      "p": "If your series offers a default setup, use it as written for the first few practice laps to understand the baseline. Then make small changes: increase front anti-roll bar by 2 clicks, increase rear spring rate by 1 click, and check that the car does not hit bump stops. Run a 10-lap race distance to simulate fatigue. If the car feels loose on exit in lap 8-10, the springs are too soft; stiffen them. If it pushes mid-corner on new tires, dial back the front anti-roll bar."
+    },
+    {
+      "p": "Most iRacing oval fixed setups at TMS run brake bias at 55-60 percent front. Adjust this 1-2 percent at a time based on your braking feel. If the rear locks under hard braking, increase front bias slightly. If the fronts fade, decrease it. This single dial often solves understeer or oversteer issues faster than changing springs or bars."
+    },
+    {
+      "tip": "Save three setups in your garage: one for new tires and qualifying (slightly loose, full downforce), one for mid-race racing (stiffer springs, more anti-roll bar), and one for the final laps (tight and stable). Swapping between them during practice teaches you how setup changes feel at different tire ages.",
+      "tipLabel": "Three-setup method"
+    },
+    {
+      "h2": "Weather and restarts"
+    },
+    {
+      "p": "Light rain at TMS is rare in iRacing, but cautions are common. After a yellow-flag restart, the track rubbered-in areas (high-use grooves) will have more grip than the low-use areas. If the race was running lanes 2-3, those lanes will have marbles and reduced grip immediately after a restart. Expect the grip to be higher in lane 1 or 4 (the unused grooves). Position yourself mentally for a brief slide or loose feeling on the restart; then, as the groove laps settle the tires, grip normalizes."
+    },
+    {
+      "p": "During caution laps, use the time to review tire pressures and fuel consumption. iRacing does not adjust these automatically, so if you notice fuel running high, lean the mixture slightly for the next stint. If rear tires are overheating (high pressure), increase tire pressure 1-2 PSI to reduce sliding."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the best line through turns 1 and 2 at Texas Motor Speedway?",
+      "a": "Early in a race on fresh tires, the high line (lane 3-4) offers the most speed because banking supports high entry and exit speeds. Brake straight on the main straight, turn-in at the 1-marker (or later if traffic is heavy), and apex around mid-turn. As tires age or fuel load increases, move lower into lanes 2-3 for more stable turn-in and exit grip. The apron (lane 1) is usable but tight; use it only when the high lanes are worn or blocked."
+    },
+    {
+      "q": "How do I know when to pit for new tires at Texas?",
+      "a": "Plan pit stops based on fuel consumption first, not tire feel. Calculate laps to empty at your fuel burn rate before the race begins. Then pit at that window plus or minus 2 laps depending on traffic and position. Do not wait for the car to feel loose; by then, you are already losing time and risk. Most 100-lap races at TMS require two stops, one around lap 25-30 and another around lap 55-60. Adjust based on caution flags."
+    },
+    {
+      "q": "Why does my car push into turn 1 even though the setup feels loose on the straight?",
+      "a": "High banking loads the outside wheel heavily. If your front anti-roll bar is too stiff or your front wing angle is too high, the car will push mid-corner as the banking amplifies load transfer. Try reducing front anti-roll bar by 1-2 clicks or lowering front wing angle by 2-3 clicks. Also check that your brake balance is not biased too far forward; if the front is locked under braking, you will have less grip in the initial turn-in."
+    },
+    {
+      "q": "What is the difference between qualifying setup and race setup at Texas?",
+      "a": "Qualifying setup prioritizes peak grip on fresh tires over a 1-2 lap sprint. Use lower spring rates, less anti-roll bar, and aggressive wing angles. Race setup must handle tire wear and fuel load over 10-30 laps between pit stops. Increase spring stiffness, add anti-roll bar, and soften wing angles slightly to reduce instability on older tires. Many drivers run a looser qualifying setup and find their car is undrivable in lap 15 of a race; build your race setup first, then loosen it 2-3 clicks for qualifying."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

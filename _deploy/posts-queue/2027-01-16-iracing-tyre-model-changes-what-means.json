@@ -1,0 +1,124 @@
+{
+  "slug": "iracing-tyre-model-changes-what-means",
+  "tag": "iRacing Tips · Setup",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "iRacing tyre model overhaul: What changed and why it matters",
+  "description": "The 2024 tyre physics update rewrote grip, temperature, and degradation behavior. Here's what shifted and how to adapt your driving.",
+  "sections": [
+    {
+      "p": "iRacing's tyre model has never been static. In early 2024, the platform received its most substantial tyre physics revision in years, introducing new grip curves, temperature sensitivity, and wear mechanics that fundamentally altered how cars behave across a lap. If your setups from 2023 feel loose or your confidence on cold tyres has evaporated, the tyre model rewrite is likely the culprit. Understanding what changed helps you stop chasing phantom setup problems and instead adapt your approach to how modern iRacing rubber actually works."
+    },
+    {
+      "p": "The old model, while stable, produced some behaviors that didn't match real-world tire dynamics. Cold tires felt too slippery too early, hot tires didn't degrade consistently, and the grip loss from temperature swings was often overblown or underwhelming depending on the track and car. The new model tightened the gap between physics simulation and ontrack reality, particularly around how tires build grip during an out-lap, how they behave when pushed into the edge of adhesion, and what happens under sustained temperature or load stress."
+    },
+    {
+      "h2": "The core changes: grip curves and peak performance"
+    },
+    {
+      "p": "The revised tyre model rebuilt the grip curve from the ground up. In the old model, tire slip angle (the angle between where the tire is pointing and where it's actually rolling) produced a relatively linear rise to peak grip, then a sharper cliff after that point. Real tires, and the new iRacing model, show a much more gradual falloff after peak. This means the threshold between maximum grip and understeer is not as knife-edge as it used to be."
+    },
+    {
+      "p": "Peak grip itself also shifted. For many cars, cold-tire grip increased slightly, reducing that nervous sensation of locking up or sliding on a qualifying out-lap. Conversely, optimal operating temperature changed. Tires now reach full grip potential at a wider band of temperatures, but the penalty for operating outside that window is steeper than before. A tire that's only 10 degrees Celsius too hot can lose noticeably more grip than it would have under the old model."
+    },
+    {
+      "list": [
+        "Grip plateaus longer after the peak slip angle, making cars more forgiving in sustained slides or drifts",
+        "Cold tire performance improved, so out-lap slides are more controllable",
+        "Temperature sensitivity increased, making thermal management and tire warm-up strategy more critical",
+        "Load-dependent grip (how much grip changes with brake or throttle load) now scales differently across the slip curve"
+      ]
+    },
+    {
+      "h2": "Temperature and thermal dynamics"
+    },
+    {
+      "p": "The new model introduced a more realistic thermal layer. Under the old system, tire temperature was broadly uniform across the contact patch. The updated model now tracks surface and core temperatures separately, meaning the tire can feel very different from lap one to lap 30, and that difference is not just a simple linear decay."
+    },
+    {
+      "p": "During a practice or qualifying session, your first flying lap may feel looser in mid-corner than it should, because the tire's core hasn't yet absorbed the heat needed to reach full stiffness and compound reactivity. This aligns with real driving. A race tire in cold condition is slippery in ways you can't simply dial out of a setup. You have to warm it up. The new model enforces this more strictly. Drivers who used to treat the first lap as nearly as quick as the fifth now need to budget two to three laps minimum for tire heat in fixed-setup series, particularly on cold mornings or night races."
+    },
+    {
+      "p": "Temperature also affects tire compliance and load transfer. A cold tire is stiffer, reducing the car's ability to load the outside wheels in a corner. A hot tire is more compliant, increasing grip to a point, then shedding it as compound degradation sets in. The window of ideal operating temperature narrowed slightly, making thermal management on long stints or high-ambient-temperature tracks a real discipline rather than a background concern."
+    },
+    {
+      "tip": "If a setup felt loose at the start of a race but locked in after a few laps under the old model, the new tyre model may require you to dial in slightly more front wing or reduce brake balance forward by a small margin to stabilize the car during the cold phase. Test this in practice, not on race day.",
+      "tipLabel": "Cold-tire setup compensation"
+    },
+    {
+      "h2": "Degradation and tire wear over distance"
+    },
+    {
+      "p": "Long-stint racing changed. The old wear model was abstract; tires degraded, but the loss of grip was often small enough that most drivers could ignore it. The new model makes wear visual and consequential. By lap 15 of a 20-lap race, a soft-compound tire may have visibly different feel. By lap 25 of an endurance race, you'll need an entirely different braking point and cornering speed."
+    },
+    {
+      "p": "Wear now correlates more closely to workload. A rear tire that spent ten laps locked in a battle, managing small slides and corrections, will wear faster than one that spent the same ten laps in smooth, consistent corner entries. This encourages racecraft that minimizes tire abuse, rewards smooth inputs, and makes tire strategy (pit windows, tire changes) more mathematically interesting in endurance series."
+    },
+    {
+      "p": "Fuel load and car weight also interact differently with the new wear model. A heavy car on fuel will put more vertical load on the tires, increasing both grip and wear. As fuel burns, the car gets lighter and faster, but the tires may actually feel more slippery because the reduced load changes the operational window. Understanding this dynamic is key to predicting pace during a long run."
+    },
+    {
+      "h2": "What this means for setup and driving technique"
+    },
+    {
+      "p": "Setup tuning now requires a different mental model. The old system rewarded setups that produced immediate grip on a fresh tire. The new model rewards consistency across the thermal range. A setup that feels planted on lap five might feel pushy on lap one and twitchy on lap 25. Finding the compromise requires testing across the full run, not just chasing that one magic hot lap."
+    },
+    {
+      "olist": [
+        "Start practice sessions with a tire-warm-up plan. Run one lap to settle, then a second flying lap. Don't throw away lap one data; use it to understand cold behavior.",
+        "During qualifying, factor in a two-to-three lap build to thermal equilibrium before you attack. Teams that try to nail it on lap one now often leave time on the table.",
+        "In races, manage tire temperature actively. Smooth throttle application, gradual brake buildup, and controlled steering inputs preserve tire feel and extend the window where peak grip is available.",
+        "Review your telemetry side-by-side across laps one, ten, and twenty. Watch how line choice, braking position, and throttle modulation shift as tires age. The new model makes these shifts more pronounced.",
+        "In setup, start conservative on wing angles and spring rates. The new model is less forgiving of overloaded or underloaded tires. A softer, more compliant setup often works better across the thermal window."
+      ]
+    },
+    {
+      "p": "Driving technique also matured. The old tyre model allowed aggressive, late-apex inputs because grip forgiveness was high at the threshold. The new model punishes late-entry understeer more harshly and rewards earlier, smoother apex-turn inputs. If you've noticed that your old lap-time references no longer apply, particularly in the first sector of a track, your muscle memory is working against the new physics. Retraining yourself to turn in earlier and roll in mid-corner speed gradually takes time, but it's worth the investment."
+    },
+    {
+      "h2": "Setup migration: how to adapt your old setups"
+    },
+    {
+      "p": "You don't need to discard old setups entirely. Use them as a starting point, then adjust systematically. A setup that worked in 2023 is likely 5 to 10 percent too stiff and 2 to 3 degrees too aggressive on wing. Begin by softening springs by 5 to 10 percent and reducing wing angles by 1 to 2 degrees. Test a 10-lap race run to see how the car feels across the thermal window."
+    },
+    {
+      "p": "Pay special attention to brake balance. The new tyre model makes front-end load more critical during braking. If your old setup had brake bias pushed far back (thinking the front didn't need protection), bring it forward by 1 to 2 percent. Test under hard braking in practice before you commit to a race setup."
+    },
+    {
+      "p": "For more detailed guidance on how to build a custom setup from baseline under the new model, I recommend <a href=\"custom-setup-from-iracing-baseline-tuning.html\">starting with iRacing's baseline and tuning systematically</a>. The process is similar, but the diagnostics are clearer: tire slip angle telemetry and temperature data are your best friends in understanding where the new physics is pushing you."
+    },
+    {
+      "h2": "The practical takeaway"
+    },
+    {
+      "p": "The 2024 tyre model rewrite is not a nerf or a buff. It's a realignment toward more realistic tire behavior. This means more discipline in thermal management, more patience on out-laps, more precision in driving inputs, and more thoughtfulness in setup construction. Drivers who adapted quickly gained an advantage; those who kept fighting the old muscle memory lost time for weeks."
+    },
+    {
+      "p": "If you're returning to iRacing after a season away, or if you've struggled with car feel since the update, recognize that the problem is not your skills or your rig. The tyre model is genuinely different. Spend one focused practice session learning the new thermal window and cold-tire behavior. Reset your expectations on what pace is achievable in lap one of a session. Test setup changes with a 15-to-20-lap run, not a three-lap average. Within a few hours, the new model will feel normal, and your lap times will climb back to where they belong."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "When did iRacing update the tyre model?",
+      "a": "The major tyre physics revision began rolling out in early 2024, with updates to multiple cars and series occurring throughout the year. Some vehicles and series received the new model before others. Check the official iRacing patch notes for your specific car's implementation date."
+    },
+    {
+      "q": "Why do my setups from 2023 feel loose and unpredictable?",
+      "a": "The new tyre model increased sensitivity to thermal range and load. A setup optimized for the old model's grip characteristics may now be too stiff or too aggressive on wing for how the new tires behave. Soften springs by 5-10 percent and reduce wing by 1-2 degrees as a starting point, then test a full race run."
+    },
+    {
+      "q": "How does the new model affect endurance racing and pit strategy?",
+      "a": "Tire degradation is now more visible and consequential. Long stints show real grip loss, particularly on soft compounds. This makes pit windows more strategic and rewards smooth driving that minimizes tire abuse. Fuel load interactions with tire wear are also more pronounced, affecting pace predictions during fuel burns."
+    },
+    {
+      "q": "Should I warm up tires differently in qualifying or races?",
+      "a": "Yes. The new model requires a full two-to-three lap warm-up before tires reach optimal operating temperature. In qualifying, don't expect lap one to be quick; invest time building thermal energy first. In races, smooth inputs during the opening laps help reach that thermal window without overdegrading the tire surface."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

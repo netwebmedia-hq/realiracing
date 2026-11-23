@@ -1,0 +1,132 @@
+{
+  "slug": "night-stints-endurance-racing-visibility-fatigue",
+  "tag": "iRacing Tips · Endurance",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Night stints in endurance races: managing visibility and fatigue",
+  "description": "Master night racing in endurance series. Learn monitor setup, lighting, fatigue management, and driving technique adjustments for multi-hour stints after dark.",
+  "sections": [
+    {
+      "p": "Night stints in endurance races introduce a layer of difficulty that daylight laps do not. Your monitor becomes your only source of track information. Fatigue compounds as your eyes work harder and your body clock fights the extended concentration. Drivers who understand the specific demands of night racing finish their stints stronger and hand off to teammates with better pace rather than struggling through the final corners."
+    },
+    {
+      "p": "Whether you are racing a four-hour stint in a Porsche 911 GT3 R or a two-hour stint in LMP2, the same principles apply: prepare your cockpit lighting, train your eyes to pick out markers in lower visibility, manage alertness through the night, and adjust your driving line to account for reduced peripheral cues."
+    },
+    {
+      "h2": "Cockpit lighting and monitor contrast"
+    },
+    {
+      "p": "Most drivers attempt night racing with the same cockpit lighting and monitor settings they use during the day. This is the first mistake. When track lighting is dim, your monitor becomes the brightest object in your field of view. That contrast causes your pupils to constrict and your eyes to fatigue faster."
+    },
+    {
+      "p": "Dim your room lights before the night stint begins, ideally 20 to 30 minutes before you race. If you have bias lighting behind your monitor, use it. A soft, indirect light source that matches your screen's color temperature (around 6500 K) reduces the strain of a brightly lit monitor against a dark cockpit. Avoid overhead lights or desk lamps that shine directly on your monitor."
+    },
+    {
+      "list": [
+        "Reduce monitor brightness by 20 to 30 percent below your daytime setting and check in-game visual clarity after a few laps",
+        "Lower game gamma or brightness slider slightly if your sim supports it, but stop before the dark areas of the track become indistinguishable",
+        "Increase contrast on your monitor by 5 to 10 points to sharpen corner markers and curbing without making the image harsh",
+        "Disable any bright UI elements (speedometer digits, MFD backgrounds, telemetry overlays) that do not serve your immediate racing need"
+      ]
+    },
+    {
+      "tip": "Test your cockpit lighting during a practice session at the same track under night conditions. What looks correct in a solo shakedown may feel wrong during a full race when you are fatigued. Give yourself a lap or two to adjust.",
+      "tipLabel": "Practice night lighting first"
+    },
+    {
+      "h2": "Eye strain and focal distance during long night stints"
+    },
+    {
+      "p": "During daylight laps, your eyes focus on the monitor but also receive ambient light and peripheral motion cues. At night, nearly all your visual input comes from a single screen. Your eyes remain at a fixed focal distance for two, three, or four hours without the natural breaks that daylight racing provides."
+    },
+    {
+      "p": "This sustained focus leads to accommodation lag. Your eyes work to keep the racing line sharp while also processing the HUD and mirrors. The ciliary muscles in your eyes fatigue, and by the end of the stint you may notice that the curbing or apex marker becomes harder to pick out even though the monitor settings have not changed."
+    },
+    {
+      "olist": [
+        "Every 10 to 15 laps during a full-length stint, glance away from the monitor toward a point 15 to 20 feet away (or as far as your cockpit allows) for 2 to 3 seconds. This resets your focal point and reduces accommodation lag.",
+        "Blink deliberately every few seconds, especially on straights. At night, drivers unconsciously blink less because the display demands constant attention. Conscious blinking keeps the cornea moist and reduces irritation.",
+        "Position your monitor at arm's length, roughly 24 to 28 inches from your eyes. If you are closer, accommodation fatigue accelerates. If you are farther, corner markers become harder to resolve at night."
+      ]
+    },
+    {
+      "p": "Many endurance drivers also find that keeping the racing line reference on (or mapping a button to toggle it) reduces visual search time at night. Rather than scanning for the apex, you follow the line. This lowers mental load and allows your eyes to relax slightly between corners."
+    },
+    {
+      "h2": "Circadian rhythm and alertness management"
+    },
+    {
+      "p": "Night racing in iRacing typically runs between 20:00 and 04:00 sim time, which maps to real time around your race clock. If you are racing a stint that begins at 22:00 or later, your body's circadian rhythm is already signaling sleep. You cannot override this through willpower alone."
+    },
+    {
+      "p": "Preparation begins hours before the race. In the day before your night stint, avoid a heavy lunch so your blood sugar does not crash in the late evening. Stay hydrated throughout the day. Thirty minutes before the race, consume a light snack with protein and slow carbohydrates. A small rice cake with almond butter or a handful of nuts keeps your blood glucose stable without causing a spike that leads to a later crash."
+    },
+    {
+      "list": [
+        "Avoid caffeine within four hours of your stint end time. A coffee two hours into a three-hour stint will keep you alert but make sleep difficult afterward, and the half-life of caffeine in your system is 5 to 6 hours.",
+        "Brief exposure to bright light 30 minutes before the race (a bright window, a desk lamp pointed away from your face, or a blue-light phone screen) can suppress melatonin and increase alertness by 1 to 2 hours.",
+        "Keep your cockpit temperature cool, ideally 62 to 65 degrees Fahrenheit. A warm cockpit induces drowsiness. A cool environment keeps you physiologically alert.",
+        "Have water within reach and take small sips every 10 laps. Dehydration worsens both visual fatigue and circadian fatigue."
+      ]
+    },
+    {
+      "p": "During the stint itself, maintain consistent brake markers and turn-in points. When fatigue sets in, drivers tend to brake later or miss apexes by inches. These deviations disrupt your mental model of the track. Sticking to consistent lines requires less cognitive effort than constantly recalibrating."
+    },
+    {
+      "tip": "On a 90-minute stint, pace yourself. The first 20 minutes are often your fastest as freshness peaks. Expect a small pace drop (0.1 to 0.3 seconds per lap) in the final 30 minutes as fatigue accumulates. This is normal. Plan your fuel and tire strategy accordingly.",
+      "tipLabel": "Expect the fatigue dip late stint"
+    },
+    {
+      "h2": "Driving technique adjustments for reduced visibility"
+    },
+    {
+      "p": "Daylight racing allows early apex identification and aggressive trail-braking into corners because you can see the entire corner geometry well in advance. Night racing compresses this window. You see the braking zone, the entry, and the apex itself, but peripheral visibility of the runoff and marbles is reduced."
+    },
+    {
+      "p": "Adjust your approach by trusting your muscle memory and your previous daylight laps around the track. Use track landmarks more heavily at night. Rather than hunting for a visual apex, brake at your established mark, turn in at your established point, and expect the apex to be where it always was. This consistency reduces the cognitive load of hunting for visual cues in darkness."
+    },
+    {
+      "list": [
+        "Increase your use of the racing line or reference markers if the sim supports them. At night, they are navigational aids, not crutches.",
+        "Avoid aggressive late apex setups at night, especially on street courses where runoff is tight. An early or mid-apex line is safer when visibility of track limits is poor.",
+        "In rain-and-night sessions, reduce your tire pressures slightly to increase contact patch. The combined reduction in grip from darkness (less traction due to lower track temperature) and rain demands every available tool.",
+        "On high-speed corners where you rely on feeling lateral G-forces, trust your physical feedback more at night than daylight. When vision is unreliable, your seat and wheel provide better data about cornering speed."
+      ]
+    },
+    {
+      "p": "Mental focus at night also requires a different cadence. Instead of planning three corners ahead, plan one corner ahead. This reduces the amount of information your brain must process when it is already fatigued and partially suppressed by your circadian rhythm."
+    },
+    {
+      "h2": "Handing off to your teammate in better shape"
+    },
+    {
+      "p": "The measure of a good endurance night stint is not lap time alone. It is how well-prepared your teammate is to take over. A driver who pushes too hard in the final laps of a night stint and abuses the tires or brakes may set a fast lap time but hands off a damaged car or degraded consumables. The team falls behind."
+    },
+    {
+      "p": "Instead, treat the final 10 minutes of your stint as a transition phase. Bring the tires and brakes into the window your teammate prefers. Settle into a sustainable pace, even if it costs 0.2 seconds per lap. Report fuel consumption, tire condition, and any setup observations to your teammate before exiting the car. If you feel alertness slipping significantly in the final laps, communicate this to your team. A driver who knows when to ease off rather than push through fatigue is worth more over a full race distance than a driver who hunts personal best times at every opportunity."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is it better to race night stints early in the season to get practice, or should I jump straight into endurance races?",
+      "a": "Practice night visibility during league practice sessions or test events before committing to an endurance race. One or two night practice sessions will teach you far more about your personal fatigue thresholds and monitor settings than a full race. After that, start with shorter night stints (90 minutes) in endurance races before moving to longer ones."
+    },
+    {
+      "q": "How much should I reduce my pace during a night stint compared to daylight?",
+      "a": "Expect 0.1 to 0.4 seconds per lap slower on average during a night stint, with the gap widening as fatigue accumulates. The exact amount depends on your personal fatigue susceptibility and cockpit setup. Measure your pace during a practice session under similar conditions so you can plan your endurance strategy with real data rather than guesses."
+    },
+    {
+      "q": "What can I do if I feel drowsy partway through a night stint but cannot stop?",
+      "a": "Increase your cockpit airflow, reduce monitor brightness another 10 percent to ease eye strain, and shift your sitting position frequently. Squeeze your hands around the wheel, brace your feet hard on the pedals for a few seconds, or flex your legs. These isometric contractions increase blood flow and alertness without destabilizing your driving. Use the next pit window to re-evaluate if drowsiness persists."
+    },
+    {
+      "q": "Should I use blue-light blocking glasses during a night stint?",
+      "a": "Blue-light glasses reduce monitor glare but can also reduce overall contrast and color perception, making corner markers harder to spot at night. Some drivers find them helpful for reducing eye strain over very long stints (4 hours or more), while others report no benefit. Test them during practice sessions under night conditions before using them in a race. They are optional, not essential."
+    }
+  ],
+  "gearKeys": [
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

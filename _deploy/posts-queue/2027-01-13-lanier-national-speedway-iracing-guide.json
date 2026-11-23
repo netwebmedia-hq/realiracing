@@ -1,0 +1,140 @@
+{
+  "slug": "lanier-national-speedway-iracing-guide",
+  "tag": "Track Guides · Oval Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Lanier National Speedway iRacing Guide: Setup and Racing Lines",
+  "description": "Master Lanier's tight 0.54-mile oval with banking angles, tire wear patterns, and high-speed setup tips for competitive oval racing.",
+  "sections": [
+    {
+      "p": "Lanier National Speedway is a half-mile D-shaped oval in Hall County, Georgia. In iRacing it appears in the NASCAR Truck Series and several stock-car classes, and it demands respect for its banking, its relatively narrow racing surface, and the tire management challenges that come with running multiple laps at speed on such tight geometry. The track's sharp corners and high-speed sections punish imprecision and require setup choices that balance entry grip with mid-corner stability and exit drive."
+    },
+    {
+      "p": "Understanding Lanier's layout, tire wear patterns, and the aerodynamic balance needed to run competitively will cut your learning curve and help you avoid common mistakes that cost positions in the closing laps."
+    },
+    {
+      "h2": "Track layout and racing surface"
+    },
+    {
+      "p": "Lanier is a 0.54-mile D-shaped oval with 14 degrees of banking in the turns and minimal banking on the straights. The straightaways are short, and the entire lap is high-speed; there is no true 'recovery zone' where you can reset your line or take a break from focus. Runs off the racing surface into the marbles are common, especially under braking into Turns 1 and 3, because the apron and the marbles sit lower than the racing line and will kill your momentum if you lose grip."
+    },
+    {
+      "p": "The inside groove is fast in qualifying trim, but as the track wears and rubber lays down on the second and third lanes, the racing line moves up and down the banking depending on tire temperature, fuel load, and traffic. Early in a race, the bottom lane in Turns 1 and 3 is the preferred line; as the race progresses and tires harden, you may find the middle or upper groove faster."
+    },
+    {
+      "list": [
+        "Turn 1: Long, gradual right-hander at the end of the front straight. Banking helps mid-corner speed, but entry understeer is common if you carry too much speed or have insufficient front grip.",
+        "Turn 3: Shorter, tighter right-hander off the back straight. This corner is tighter and demands more brake pressure than Turn 1, and mistakes here often lead to spins or hard contact.",
+        "Front and back straights: Short acceleration zones. The front straight is longer than the back straight, but neither offers a true passing advantage on their own; passes usually set up in the corners or into Turns 1 and 3."
+      ]
+    },
+    {
+      "h2": "Tire wear and fuel strategy"
+    },
+    {
+      "p": "Tire wear at Lanier is moderate in short races but becomes critical in endurance events or multi-heat formats. The inside front tire, especially the left front, sees the most load through the high-speed corners and will degrade faster. After 20 to 30 laps, depending on fuel load and setup, the left front will begin to feel loose on entry and push on exit, forcing you to lift earlier and lose momentum."
+    },
+    {
+      "p": "Fuel consumption is steady because the track is small and you are always at or near full throttle. Plan for approximately 0.8 to 1.0 gallons per lap in a stock car or truck, depending on the vehicle. In a 60-lap race, you will make at least one fuel stop unless you are running a very fuel-efficient line or strategy. Early stops can help you pit before the peak traffic and get out of the pits with clean air; late stops can help you run a longer final stint with fresher tires and capitalize on attrition."
+    },
+    {
+      "tip": "On restarts after cautions, tire temperature drops quickly because you will roll behind the pace car at low speed. When the green flag drops, the first lap after a restart is often slower than steady-state racing because tires are cold and grip is reduced. Plan your line and braking points for cold tires, then adjust as they warm over the next 2 to 3 laps.",
+      "tipLabel": "Restart tire temperature"
+    },
+    {
+      "h2": "Setup fundamentals for Lanier"
+    },
+    {
+      "p": "A starting point for most stock cars or trucks at Lanier is a neutral or slightly loose setup. Lanier rewards mid-corner grip and consistent exit drive over front-end bite on entry. If your baseline is a typical short-track setup from the iRacing defaults, begin by softening the front anti-roll bar and stiffening the rear to shift load rearward and improve rear stability through the tight corners."
+    },
+    {
+      "p": "Downforce and drag become meaningful at Lanier because the lap is very tight and speed carries from corner to corner. If you have adjustable downforce (as in some truck or cup-series configurations), set front and rear wing angles to generate enough grip without excessive drag on the straights. A common starting point is a balanced wing setup (e.g., 2 to 4 clicks front and rear) that prioritizes mid-corner speed over outright top-end speed."
+    },
+    {
+      "olist": [
+        "Front anti-roll bar: Start ~1 to 2 clicks softer than your baseline to reduce understeer on entry and mid-corner. If the car feels too loose, add stiffness in quarter-click increments.",
+        "Rear anti-roll bar: Stiffen by ~1 to 2 clicks from baseline to improve rear grip on exit and reduce rear-end instability. A loose rear will cause slip angle changes and unpredictable handling.",
+        "Ride height: Set both front and rear to the minimum allowed by series rules to lower the center of gravity and improve turn-in response. Lower ride height also increases downforce if you are using aerodynamic components.",
+        "Spring rates: Keep front springs soft enough to maintain tire load through the corner, and rear springs stiff enough to support the car under acceleration without bottoming out."
+      ]
+    },
+    {
+      "h2": "Braking and entry technique"
+    },
+    {
+      "p": "Braking into Turns 1 and 3 is the most demanding phase of the lap because Lanier's corners are small and tightly banked. Most drivers arrive at Turn 1 from the back straight at or above 100 mph and must shed 20 to 30 mph to apexes around 70 to 85 mph. Doing this while staying on the racing line and maintaining line position relative to competitors is the core challenge."
+    },
+    {
+      "p": "Begin braking approximately 150 to 170 feet before the apex of Turn 1, applying maximum brake pressure as you approach the turn-in point. Release brake pressure smoothly as you enter the corner, aiming for a light squeeze of brakes still applied as you roll down to the apex. This trailing-brake technique keeps weight on the front tires and maintains a tight line. If you brake too early or too hard, you will coast down and run wide; if you trail-brake too aggressively, the front tires will lock and you will push into the wall."
+    },
+    {
+      "list": [
+        "Entry understeer: Caused by too much speed or insufficient front grip. Brake earlier, reduce brake pressure as you enter the corner, or add more front anti-roll bar stiffness.",
+        "Mid-corner push: The car runs wide off the apex. Reduce front wing angle (if available), soften the front springs, or use a slightly lower entry speed on the next lap.",
+        "Rear-end instability: Loose feeling on exit or through mid-corner. Stiffen the rear anti-roll bar, increase rear spring rate, or move the wedge adjustments rearward."
+      ]
+    },
+    {
+      "h2": "Exit drive and momentum conservation"
+    },
+    {
+      "p": "Exit drive at Lanier determines your speed onto the straights, and because the straights are short, there is very little time to gain additional speed. If you lose momentum or run a wide line out of Turn 3, you will carry that disadvantage across the back straight and lose positions or find it difficult to pass on the next lap."
+    },
+    {
+      "p": "Focus on getting full throttle as early as possible off the apex of Turn 3, even if that means sacrificing a small amount of mid-corner speed. The payoff is a faster exit and a better starting point for the front straight and the approach to Turn 1. Practice rolling the steering wheel straight and feeding in throttle in one smooth motion, rather than waiting to be fully straight before applying full throttle."
+    },
+    {
+      "tip": "Many drivers attempt passes exiting Turn 3 by running a wider line and using a tighter arc to gain a run on the car ahead. This often results in a loss of exit grip because you are running off the racing line and over fresher, stickier rubber. Instead, focus on exiting Turn 3 with solid momentum on the preferred line, then use that speed to close the gap on the back straight.",
+      "tipLabel": "Passing strategy at Lanier"
+    },
+    {
+      "h2": "Race strategy and traffic management"
+    },
+    {
+      "p": "In a typical Lanier race with 40 to 60 trucks or stock cars, traffic will build quickly because the track is small and passing opportunities are limited. Early-race strategy should focus on running a clean line, maintaining tire temperature, and positioning yourself in a mid-pack group that moves together rather than a solo drive that becomes isolated."
+    },
+    {
+      "p": "When traffic arrives, adjust your approach to match the speed of the car ahead. Many drivers make the mistake of staying on a hot lap inside a train of traffic and running out of fuel or wearing tires prematurely. Instead, settle into a consistent pace and look for small advantages like slightly better exit drive or a small run on the car ahead exiting Turn 3. A well-timed pass on the back straight or into Turn 1 often requires you to close by one or two car lengths on the previous lap, then execute on the next lap; this requires patience and consistency rather than aggressive driving."
+    },
+    {
+      "h2": "Common mistakes and how to avoid them"
+    },
+    {
+      "list": [
+        "Over-braking into Turn 1: Many drivers arrive at Turn 1 from the back straight with too much speed and brake too hard. This results in understeer and running wide into the marbles. Plan your braking point for a stable entry.",
+        "Running too low in the turns: The inside lane is fastest early in the race, but as tires wear and rubber accumulates, running too low will cause you to run over marbles and lose grip. Watch for this and adjust upward if necessary.",
+        "Aggressive fuel management errors: Running out of fuel in the closing laps or missing a fuel stop entirely. Use the fuel black box to track consumption and plan pit stops based on fuel burn and race length.",
+        "Loose rear-end setup causing spin exits: If the rear breaks loose exiting Turn 3, you will spin or slide high into the marbles. Increase rear anti-roll bar stiffness and test on a practice session before racing."
+      ]
+    },
+    {
+      "p": "Lanier National Speedway rewards smooth, consistent driving and precise tire and fuel management. Build a baseline setup that balances entry grip with exit drive, focus on smooth braking and throttle application, and manage traffic and tire wear carefully. The small track and tight corners leave little room for error, but that same tightness means that small improvements in line and consistency pay off quickly in lap time and race position. Spend time in practice sessions perfecting your entry technique and experimenting with setup changes, then execute that plan with discipline in the race."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a good starting lap time at Lanier for a stock car?",
+      "a": "A solid baseline lap time for a stock car at Lanier is around 18 to 19 seconds in a cold, clean-air lap. This varies significantly based on fuel load, tire age, aerodynamic setup, and engine horsepower configuration. Fast drivers run 17.5 to 18 seconds in qualifying trim; typical race laps with fuel load run 18.5 to 19.5 seconds depending on tire wear. Use the 18-second lap as a reference and build from there."
+    },
+    {
+      "q": "How much fuel do I need for a 60-lap race at Lanier?",
+      "a": "A stock car or truck at Lanier consumes approximately 0.8 to 1.0 gallons per lap depending on engine power and downforce settings. For a 60-lap race, plan for 48 to 60 gallons of fuel total. Most series have fuel capacity limits around 20 to 25 gallons, which means you will need at least one fuel stop (likely two) during a 60-lap race. Use the fuel black box to monitor consumption and adjust pit strategy accordingly."
+    },
+    {
+      "q": "Why does the car feel loose exiting Turn 3?",
+      "a": "A loose rear end exiting Turn 3 is usually caused by insufficient rear anti-roll bar stiffness or rear spring rate that is too soft. The rear tires are losing load as you apply throttle and the rear slides outward. Increase rear anti-roll bar stiffness by 1 to 2 clicks, raise rear spring rates slightly, or reduce rear wing angle if available. Test changes in practice sessions to find the right balance between grip and stability."
+    },
+    {
+      "q": "What is the best line through the Turn 1 and Turn 3 combination?",
+      "a": "The ideal line for both Turn 1 and Turn 3 follows the inside of the banking at the apex (around 1 to 2 car widths from the inside wall) and allows you to run the racing line on exit. For Turn 1, brake late and trail-brake to the apex, then exit with steady throttle and a smooth steering input. For Turn 3, repeat the same technique but be more aggressive with braking because the corner is tighter. As tire wear develops, the preferred line may move up the banking; be ready to adjust your apex and exit point to maintain grip."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-cs-v2",
+    "moza-sr-p",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

@@ -1,0 +1,164 @@
+{
+  "slug": "f1-25-to-iracing-arcade-sim-transition",
+  "tag": "iRacing Tips · Getting Started",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "F1 25 to iRacing: What Changes When You Switch Sims",
+  "description": "F1 25 rewards smooth inputs and momentum. iRacing demands precision, tire management, and setup knowledge. Here's what to expect.",
+  "sections": [
+    {
+      "p": "F1 25 is a beautiful, accessible racing game. iRacing is a racing simulator. The gap between them is not about graphics or car count. It is about how the physics engine responds to your steering wheel, how tire grip changes lap to lap, and what happens when you ignore fuel or brake temperature. Moving from F1 25 to iRacing means unlearning some habits and building new reflexes."
+    },
+    {
+      "p": "The transition is real but not impossible. Thousands of drivers make it every year. The difference is that F1 25 will let you lap consistently on feel alone. iRacing will not. You will need to understand what the car is doing, why it is doing it, and how setup changes affect that behavior."
+    },
+    {
+      "h2": "F1 25 rewards smooth, flowing inputs"
+    },
+    {
+      "p": "F1 25 car handling is tuned to forgive. Steering inputs smooth out into the chassis. A small correction becomes a medium one. Braking is linear and predictable. You can trail-brake deep into a corner and the car will rotate on demand. This is by design. The game wants you to feel like a racing driver."
+    },
+    {
+      "p": "iRacing cars punish imprecision. The steering input you make is the steering input the tire reads. If you turn the wheel 5 degrees too much at corner entry, the car loses grip on the front axle. If you release the brake 20 milliseconds late, the front end is still compressed and won't turn. Tire physics are reactive, not smoothed."
+    },
+    {
+      "list": [
+        "In F1 25, you can apply brake pressure and steering at the same time and the car will manage it. In iRacing, you are managing it. The car will understeer or spin.",
+        "F1 25 brakes fade gradually if you overheat them. iRacing brakes fade in steps, and once gone, they're gone until the next pit stop.",
+        "F1 25 tire wear happens on a simple schedule. iRacing tire wear depends on load, temperature, slip, track surface, and fuel weight."
+      ]
+    },
+    {
+      "h2": "Setup matters far more than you think"
+    },
+    {
+      "p": "F1 25 setups exist, but the differences between a good setup and a default one are small. The car will drive reasonably on most setups. iRacing cars are sensitive to every suspension parameter. A 1-degree change in front wing angle can cost or gain half a tenth per lap."
+    },
+    {
+      "p": "When you join an iRacing race, you will start with a default setup. Many drivers don't touch it. Those drivers will be two to four tenths slower than drivers running a tuned setup. That gap will grow on fuel as the car gets heavier. After a pit stop with fresh tires and low fuel, it will grow again."
+    },
+    {
+      "p": "You don't need to be a setup wizard to be competitive. You need to understand the basics. <a href=\"custom-setup-from-iracing-baseline-tuning.html\">Starting with a baseline and making small changes based on what the car does in the first few laps</a> will get you close. The goal is not perfect. The goal is faster than the default."
+    },
+    {
+      "list": [
+        "If the car understeers on entry, reduce front wing or add front brake balance.",
+        "If the car oversteers on exit, reduce rear wing or add rear brake balance.",
+        "If the car feels loose over bumps, increase bump stop stiffness.",
+        "If the car bottoms out hard, reduce spring stiffness or increase ride height."
+      ]
+    },
+    {
+      "tip": "Many iRacing series publish a baseline setup in the forums or on YouTube. Start there. Drive 10 laps on fresh tires, then make one change and drive 10 more. Write down how the car feels. That is how you learn.",
+      "tipLabel": "Baseline beats guessing"
+    },
+    {
+      "h2": "Tire management is a continuous task"
+    },
+    {
+      "p": "F1 25 handles tire heat for you. Temperature ranges are narrow. Grip is consistent. You manage wear by driving smoothly, but the physics don't require you to think about brake temperature, tire pressure, or how hard a corner is pushing the outside rear tire."
+    },
+    {
+      "p": "iRacing tires are living systems. They start cold and grip improves for the first 2 to 3 laps. If you push hard too early, they overheat and grip falls off. If you baby them, they won't reach optimal temperature. Brake temperature, tire pressure, fuel load, and track temperature all move the grip window."
+    },
+    {
+      "p": "In a 30-minute race, tire management can decide the winner. The driver who keeps tires in the sweet spot for the entire stint will be faster than the driver who overdrive them early and then struggles with cold tires at the end."
+    },
+    {
+      "list": [
+        "Warm up tires slowly for the first lap. Build heat gradually.",
+        "Monitor tire temperature in the telemetry bar or black box. Aim for 80 to 95 degrees Celsius.",
+        "If tires are over 100 degrees, they are losing grip. Ease off slightly or the next stint will punish you.",
+        "Cold tires have no grip. After a pit stop, give yourself a lap to warm them before pushing hard."
+      ]
+    },
+    {
+      "h2": "The steering wheel demands different technique"
+    },
+    {
+      "p": "F1 25 on a gamepad teaches you to hold the wheel steady and make small adjustments. F1 25 with a steering wheel teaches you smooth inputs, but the game will still tolerate a rushed return to center. iRacing will not."
+    },
+    {
+      "p": "On a direct drive wheelbase like the MOZA R9, every millimeter of rotation the wheel makes becomes an input. If your hands are tense and jumpy, the car will be tense and jumpy. Grip pressure must be light. The wheel should feel like it is floating. Steering inputs should be slow and deliberate, with the wheel returning to center smoothly, not jerked back."
+    },
+    {
+      "p": "F1 25 also allows higher steering lock angles and faster steering ratios. iRacing cars use lower lock angles and slower ratios. This means you turn the wheel less per degree of road angle. This is realistic but feels less responsive at first. <a href=\"steering-rotation-and-ratio-iracing.html\">Most drivers adjust to it after a few hours</a>."
+    },
+    {
+      "h2": "Race traffic and rules are unforgiving"
+    },
+    {
+      "p": "F1 25 AI is aggressive but predictable. iRacing drivers are real and unpredictable. They make mistakes. They get desperate. They hit you. And iRacing has rules about contact."
+    },
+    {
+      "p": "The first rule: you will get hit. Someone will brake late into turn 1 and you will be on the wrong end of it. Someone will cut a chicane and rejoin into your line. Someone will punt you into a wall and complain about it in chat. This is normal."
+    },
+    {
+      "p": "The second rule: contact costs you. iRacing records every incident. Too many incidents in one season and your safety rating drops. Drop it low enough and you lose access to certain series or tracks. This is not a ban. It is a reflection of your ability to race without hitting people."
+    },
+    {
+      "p": "The third rule: some drivers will race you clean. Those are the ones to race with. If you join a league or find a good hosted session, you will find them. <a href=\"hosted-sessions-vs-official-races-vs-leagues.html\">Official races tend to have more chaos than leagues</a>, but official races also have more drivers and more competition."
+    },
+    {
+      "h2": "Your first laps will feel slow"
+    },
+    {
+      "p": "You will join a practice session and your lap time will be three to four seconds slower than fast drivers in the same car. This is not because iRacing is harder. It is because you are not yet driving the car. You are still thinking about driving it. Fast drivers think about nothing. They are part of the wheel."
+    },
+    {
+      "p": "This gap closes fast. After 30 laps, you will be one second slower. After 100 laps, half a second. After 300 laps, you will be within a tenth. At 1000 laps, you are competitive. The progression is real and measurable."
+    },
+    {
+      "p": "Expect to spend 10 to 15 hours on a single car and track combination before you are driving it well. This sounds like a lot. It is. It is also how long it took to master an F1 car or track in F1 25, and you just did not notice because the game made most of the work invisible."
+    },
+    {
+      "list": [
+        "Join a practice session and do 30 laps. Write down your fastest lap.",
+        "Come back tomorrow and do 30 more laps. You will be faster.",
+        "After five days of practice, you will be close to your true pace.",
+        "After two weeks, you will understand the car."
+      ]
+    },
+    {
+      "tip": "Lap time matters less than consistency. A driver who does 1:48.2, 1:48.5, 1:48.1, 1:48.3 will beat a driver who does 1:47.9, 1:49.2, 1:48.1, 1:49.5. The first driver is in control. The second is lucky.",
+      "tipLabel": "Consistency wins races"
+    },
+    {
+      "h2": "The first series to try"
+    },
+    {
+      "p": "Pick a series with simple cars and simple tracks. The MX-5 Cup is the standard entry point. It is a lightweight, low-power car that is forgiving of mistakes and easy to understand. The tracks are mostly small road courses without long straights or extreme speeds. A season is 12 weeks and races are 30 minutes. This is a low commitment investment."
+    },
+    {
+      "p": "The GT3 Fixed series is another option. The car is powerful and complex, but the fixed setup removes setup tuning from the equation. You focus on driving alone. The cars are harder to manage but interesting to drive. Tracks are longer and racing is more competitive."
+    },
+    {
+      "p": "Avoid high-speed ovals and street circuits if you are new. Ovals require different line management and tire management. Street circuits punish mistakes harder. After mastering the MX-5, you will be ready for them."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Will my F1 25 skills transfer to iRacing?",
+      "a": "Yes, partially. Your racecraft, your ability to find a line and manage fuel, and your understanding of tire behavior all transfer. Your steering technique, your setup knowledge, and your ability to manage real tire physics do not. Expect to feel like a beginner for 20 to 30 hours, then progress rapidly."
+    },
+    {
+      "q": "Do I need to buy a steering wheel for iRacing?",
+      "a": "An Xbox controller will work, but it is limiting. iRacing driving with a gamepad is possible. iRacing driving well with a gamepad is very hard. A used entry-level wheel like the Logitech G923 or MOZA R5 Bundle is worth the investment. Force feedback alone makes you faster."
+    },
+    {
+      "q": "How much does iRacing cost?",
+      "a": "The subscription is roughly USD 10 to 15 per month depending on your region. Additional cars and tracks cost extra, roughly 15 USD per car or track. The free content is enough to get started, but serious racing will require purchasing content you enjoy."
+    },
+    {
+      "q": "Can I race real F1 cars in iRacing?",
+      "a": "No. iRacing does not have FIA Formula 1 cars. It has open-wheel cars like the Dallara IR-18 and IR-21, which are single-seaters with realistic physics and competitive racing. The experience is similar but the cars are different."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-cs-v2",
+    "logitech-g923"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

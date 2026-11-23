@@ -1,0 +1,172 @@
+{
+  "slug": "circuit-ricardo-tormo-valencia-iracing-guide",
+  "tag": "Track Guides · Road Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Circuit Ricardo Tormo Valencia iRacing Guide: Braking Points, Apexes, Setup",
+  "description": "Master Valencia's flowing street circuit on iRacing. Learn every braking point, apex, and setup adjustment for consistent lap times.",
+  "sections": [
+    {
+      "p": "Circuit Ricardo Tormo in Valencia is one of iRacing's most rewarding road courses. The track flows naturally when you understand its rhythm, but the speed builds on small details: precise braking zones, mid-corner speed conservation, and setup that suits both the flowing section and the technical area after turn 10. This guide walks through the layout corner by corner, with braking references, apex targets, and setup fundamentals that apply whether you are running GT3, GTP, or prototype machinery."
+    },
+    {
+      "h2": "Track layout and corner names"
+    },
+    {
+      "p": "Valencia spans 5.419 km and runs clockwise. The first sector flows east through a series of medium-speed lefts and rights before the long back straight. The second sector includes a heavy braking zone, the tight left-hander at turn 10, and then a third technical section with camber changes and compressed corners leading into the final turn before the main straight."
+    },
+    {
+      "list": [
+        "Turn 1 (Curva Paco Fernandez): Uphill right-hander off the main straight. Brake late but not past track-out. Second gear entry.",
+        "Turn 2 (Curva Remanso): Quick left out of turn 1. Minimal braking. Keep momentum.",
+        "Turn 3: Sharp downhill left. Light trail braking allows later apex.",
+        "Turn 4 to 7: A series of quick transitions. No heavy braking, flow through on throttle.",
+        "Turn 8 (Curva Galera): Fast left-hander. Downhill and banked slightly. Carry speed here.",
+        "Turn 9 and 10: Heavy braking zone into a double left. Turn 9 is a wider entry, turn 10 is the tight geometric constraint. Downshift to second, early apex on turn 10.",
+        "Turn 11 onwards: Technical sequence with elevation and camber. Requires mid-range throttle control and smooth steering inputs.",
+        "Turn 15 (Horquilla): The final tight left into the main straight. Accelerate early for a strong exit."
+      ]
+    },
+    {
+      "h2": "Braking zones and reference points"
+    },
+    {
+      "p": "Valencia rewards smooth braking inputs and patience on trail-braking. Most corners allow you to blend brake and steering into the apex rather than fully releasing the pedal before turning. Use track features and marshal posts as visual anchors. The main challenge lies in turn 9-10, where threshold braking and downshifts need to happen in quick succession without upsetting the car."
+    },
+    {
+      "list": [
+        "Turn 1: Brake into the hairpin at or just before the first marshal post on the right. Release brakes completely by mid-corner.",
+        "Turn 8: Light braking at the top of the hill; the downhill gradient helps slow the car. Preserve speed through the apex.",
+        "Turn 9-10: This is the reference point for the lap. Brake at the red-and-white striping or first marshal box you see after the back straight. Downshift in two stages (usually 6-5-4-3-2 depending on gear ratios). Heel-toe or use engine braking to rotate the car into turn 10.",
+        "Turn 15: Brake hard but not past the inside kerb. Turn-in point is typically mid-marshal-box. Accelerate through apex."
+      ]
+    },
+    {
+      "tip": "On your out-lap or warm-up laps, map every braking marker visually. Take a screenshot of replay footage or note the exact location of each marshal post and kerb stripe. This removes guesswork when throttle and brakes compete for your attention.",
+      "tipLabel": "Visual anchor strategy"
+    },
+    {
+      "h2": "Apex and line strategy"
+    },
+    {
+      "p": "Valencia rewards a late apex, early acceleration philosophy on most corners. The layout does not demand early apexes; instead, sacrifice mid-corner speed slightly to gain a superior exit. This pays dividends on the following straights, particularly after turn 1 (into the long run to turn 8) and after turn 10 (into the technical closing sequence)."
+    },
+    {
+      "list": [
+        "Turn 1: Apex just before the inside kerb. Wait until past the kerb to begin acceleration.",
+        "Turns 2-7: Smooth input, mid-corner apex. Carry momentum rather than brake hard.",
+        "Turn 8: Late apex on this fast left; the banked floor helps. Accelerate hard to the straight.",
+        "Turn 10: Tight geometric corner. Apex is the inside kerb, but arrive smoothly. Transition immediately to turn 11.",
+        "Turn 11-14: Progressive apexes through the technical section. Each turn's exit is the next turn's entry, so plan lines that link the sequence.",
+        "Turn 15: Late apex on the final turn. Maximize acceleration onto the main straight."
+      ]
+    },
+    {
+      "h2": "Setup considerations for Valencia"
+    },
+    {
+      "p": "Circuit Ricardo Tormo demands a balanced setup. The track has fast flowing sections (turn 8, the first three turns) and tight geometric elements (turn 10, turn 15). Aerodynamic balance is critical: too much rear wing and the car oversteers mid-corner; too little and turn 9-10 becomes a loose, difficult left-hander. Begin with your baseline and adjust for Valencia's specific characteristics."
+    },
+    {
+      "list": [
+        "Front wing: Start at the recommended baseline for your car. If you lack turn-in bite at turn 10 or struggle to rotate mid-corner at turn 8, add 1-2 steps of wing. If the car feels loose or unstable on the main straight, reduce wing by 1 step.",
+        "Brake bias: Set at 54-56% front. Valencia requires heavy trail-braking at turn 9-10, so a stable rear helps. Test a 1-step change if the rear slides during threshold braking.",
+        "Ride height: Lower settings improve aero and grip but increase bottoming risk on the downhill sections. Balance with a mid-range ride height (usually baseline or 1 step lower).",
+        "Anti-roll bars: Medium stiffness front and rear suits Valencia. Too soft causes mid-corner roll; too stiff makes turn-in abrupt. If the car feels wallowy through turns 2-7, stiffen the front by 1 step.",
+        "Downforce and straight-line speed: If you are losing time on the main straight despite good corner exits, reduce rear wing by 1 step and confirm brake balance suits the lighter load."
+      ]
+    },
+    {
+      "h2": "Common mistakes and fixes"
+    },
+    {
+      "p": "New drivers to Valencia typically overshoot the braking zone at turn 9-10 or enter turn 1 too deep. Both errors destroy the following sector. Lock-ups also occur at turn 9 when drivers brake later in an attempt to gain time; this usually costs more time than the marginal braking advantage. Practice threshold braking under control first, then gradually adjust the brake point forward or backward in small increments."
+    },
+    {
+      "list": [
+        "Overshooting turn 9-10: This happens when you brake past the reference point or downshift too aggressively. Brake 5-10 metres earlier than you think necessary, then adjust forward 1 metre per lap.",
+        "Turn 1 entry too deep: The uphill gradient tricks drivers into carrying too much speed. Treat turn 1 as a medium-speed corner, not a high-speed turn. Brake earlier and apex further around the corner.",
+        "Mid-corner understeer at turns 2-7: Caused by too much brake into the corner or steering input too early. Release brakes fully before the turn-in point. If understeer persists, reduce front anti-roll bar stiffness by 1 step.",
+        "Loose rear at turn 8: Often a sign of too little front downforce or over-aggressive throttle application mid-corner. Add 1 step of front wing or smooth the throttle application.",
+        "Consistency loss in the technical section (turns 11-14): These corners require smooth, progressive inputs and low steering lock. Avoid abrupt steering corrections. If the car feels twitchy, reduce front wing by 1 step or increase ride height."
+      ]
+    },
+    {
+      "h2": "Sector-by-sector approach"
+    },
+    {
+      "p": "Breaking Valencia into three sectors helps isolate where you lose time. Sector 1 runs from the start of turn 1 through turn 8. Sector 2 is the braking zone and technical double-left (turns 9-10). Sector 3 spans turns 11-14, the final left-hander, and the main straight. Test each sector separately during practice, refining apexes and throttle inputs in isolation before combining them into a full lap."
+    },
+    {
+      "olist": [
+        "Focus on sector 1 consistency first. Build rhythm through the flowing section, nailing turn 1 and turn 8 exits. Run 10-15 consecutive laps without lifting, focusing only on smooth inputs.",
+        "Move to sector 2. Brake hard at the reference point, downshift in one clean sequence, and apex turn 10 at the same point every lap. Lock-up control matters most here.",
+        "Practice sector 3 as a link: smooth line through turns 11-14, nailing the apex of turn 15, and maxing acceleration onto the straight.",
+        "Combine all three and chase lap consistency. Once you can run five laps within 0.1 seconds of each other, begin chasing outright pace."
+      ]
+    },
+    {
+      "tip": "Stream or save replay footage of a fast lap. Watch from the cockpit view at 1x speed, noting exactly where the steering wheel turns and when you apply throttle at each corner. This builds muscle memory faster than mental notes alone.",
+      "tipLabel": "Replay-based learning"
+    },
+    {
+      "h2": "Weather and tire degradation"
+    },
+    {
+      "p": "Valencia runs on a combination of old asphalt and newer resurfaced sections, creating variable grip levels. This means tire temperature and degradation matter significantly, especially over a full distance race. Front tires wear faster than rears, primarily due to heavy braking and turn-in demands at turn 9-10. Plan tire strategy accordingly: assume 1-2 tenths per lap of pace loss per stint, depending on fuel load and track temperature."
+    },
+    {
+      "list": [
+        "In wet conditions, the technical section (turns 11-14) becomes treacherous. Reduce brake pressure and trail-brake more softly. The apex speeds drop noticeably.",
+        "On drying track, rubber transfers from the racing line, creating a narrow fast path. Stay committed to the ideal line; deviations immediately lose grip.",
+        "Front tire life: Monitor tire temperature in the first few laps of a race. If front tires peak in lap 3-4, expect significant pace loss by lap 8-10. Adjust brake bias or braking points incrementally to manage heat.",
+        "Rear tire life: Less critical, but watch for mid-corner instability in the later stint as rear tires cycle. This manifests as loose transitions at turns 2-7."
+      ]
+    },
+    {
+      "h2": "Practice session structure for Valencia"
+    },
+    {
+      "p": "A focused 60-minute practice session on Valencia should follow this structure: 15 minutes to acclimate to the car and baseline setup, 20 minutes to map braking points and refine lines sector by sector, 15 minutes to build race-distance pace and consistency, and 10 minutes for a final setup tweak based on what you learned. This maximizes skill development without wasting time on aimless laps."
+    },
+    {
+      "olist": [
+        "Laps 1-3: Acclimatization and reference point mapping. Use these to confirm braking markers, apex zones, and shift points.",
+        "Laps 4-10: Sector work. Focus on sector 1 consistency, then move to sector 2 braking precision, then sector 3 flow.",
+        "Laps 11-20: Consecutive lap runs. Aim for three runs of five laps, tracking whether you can hold pace across a stint.",
+        "Laps 21-25: One final five-lap run to confirm your best setup settings and lock in a baseline."
+      ]
+    },
+    {
+      "h2": "Related resources"
+    },
+    {
+      "p": "For more on direct-drive wheelbase setup and FFB tuning, see the <a href=\"moza-r9-iracing-settings.html\">MOZA R9 iRacing settings guide</a>. For general GT3 and GTP setup philosophy that applies across all tracks, check the <a href=\"best-sim-racing-cockpit-2026.html\">cockpit and rig setup guide</a> to ensure your physical environment supports the precision this track demands."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the best braking point for turn 10 at Valencia?",
+      "a": "Brake at the red-and-white striped marshal box or the first marker you see clearly after the back straight. For most GT3 and GTP cars, this is approximately 150-170 metres before the apex. Downshift in stages (do not dump to second in one shift) and use trail-braking to rotate the car into the tight left. Lock-ups occur when drivers brake past this point; if you lock up, brake 10 metres earlier next lap."
+    },
+    {
+      "q": "Should I apex earlier or later at Valencia corners?",
+      "a": "Later apexes work better on Valencia. The track rewards smooth exits and early acceleration rather than mid-corner speed. Late apexes let you gain traction earlier and exit faster, particularly into the long main straight after turn 1 and after turn 15. The only exception is turn 10, which is geometrically tight and benefits from a mid-corner apex you hold through the transition to turn 11."
+    },
+    {
+      "q": "How much front wing should I run at Valencia?",
+      "a": "Start at your car's baseline recommendation. If you feel loose or understeery mid-corner at turn 8 or struggle to rotate turn 10, add 1-2 steps of wing. If the car feels stable but you are losing straight-line speed, reduce wing by 1 step. Most drivers find 54-58% of their car's total wing range works well at Valencia, depending on the car model and weather."
+    },
+    {
+      "q": "What causes mid-corner understeer at Valencia?",
+      "a": "Understeer usually comes from one of three sources: braking too deep into the corner (trail-braking did not release fully), steering input too early (turning in before the apex point), or insufficient front downforce. Test these in order: first, focus on releasing brakes fully before turn-in; second, delay your turn-in point by half a metre; third, add 1 step of front wing. The first two fixes work for most drivers."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-cs-v2",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

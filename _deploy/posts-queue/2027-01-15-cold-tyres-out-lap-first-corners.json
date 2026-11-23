@@ -1,0 +1,130 @@
+{
+  "slug": "cold-tyres-out-lap-first-corners",
+  "tag": "iRacing Tips · Setup",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Cold Tyres, Out-Lap Strategy, and the First Two Corners",
+  "description": "Build tyre temperature methodically before the race. Learn out-lap technique and corner entry priorities to avoid losing positions in lap one.",
+  "sections": [
+    {
+      "p": "Cold tyres feel slippery on the out-lap. The rubber has not yet reached operating temperature, grip levels sit well below what you will have three laps in, and a single mistake or moment of impatience can cost you track position before the race has really begun. The first two corners after the green flag are where most drivers stumble: they brake as if the tyres are warm, turn in hard, and either miss the apex or push wide and lose a spot to a more patient competitor. Winning the out-lap and the opening sequence is not about speed; it is about rhythm, thermal awareness, and understanding which inputs matter most when grip is scarce."
+    },
+    {
+      "p": "Many drivers treat the out-lap as a time trial. They build heat as fast as possible, brake late, and lean on steering angle to scrub temperature into the rubber. That approach works occasionally, especially on fast circuits where sustained momentum is high, but it is brittle. On technical tracks or in the rain, rushing the warm-up often backfires. The smart approach is methodical: use smooth, consistent steering inputs to generate load, avoid sudden brake applications, and prioritise symmetry over aggression. The goal is to reach the grid or the first lap of the race with both front and rear tyres at a stable baseline temperature, not at their ceiling."
+    },
+    {
+      "h2": "Out-Lap Basics: Heat Generation Without Wheelspin"
+    },
+    {
+      "p": "Cold tyres generate heat through sustained mechanical load. Cornering load, sustained throttle application, and consistent braking all contribute, but each has trade-offs when grip is low. Aggressive braking on a cold tyre wastes energy on lock-up risk and does not transfer heat evenly; aggressive steering can induce understeer or oversteer and ruin your line. The most reliable method is smooth, medium-intensity cornering over several laps."
+    },
+    {
+      "p": "On the out-lap, take each corner at around 70 to 80 percent of your race pace. This means you are using enough steering angle and lateral load to warm the rubber, yet you are not pushing so hard that you lose confidence or risk a lock-up. Hold steady throttle (do not pulse it) through the middle sections of the track, and brake progressively rather than stabbing the pedal. The idea is to send a consistent signal to the tyres: load, load, load, with no sudden shock."
+    },
+    {
+      "list": [
+        "Maintain smooth steering inputs through each corner; avoid abrupt corrections or over-correction after a slide.",
+        "Use steady throttle application; pulses and lifts do not build uniform heat.",
+        "Brake progressively; hard, late braking on cold rubber risks locking the rears or washing out the fronts.",
+        "Avoid wheelspin on corner exit; it burns fuel and heat unevenly and can damage confidence.",
+        "Drive two or three consistent out-laps if the session allows; one lap is rarely enough to reach stable temperature."
+      ]
+    },
+    {
+      "tip": "On circuits with a long run before turn one (like ovals or high-speed road courses), use that straight to run medium throttle and let wind speed help cool the tyres slightly; this prevents over-heating before the race and can help brake balance settle.",
+      "tipLabel": "Throttle on the Straights"
+    },
+    {
+      "h2": "The First Corner: Patience Over Position"
+    },
+    {
+      "p": "The first corner after the green flag is the moment most drivers lose the race. The tyres are still not fully warm, the field is bunched, and pressure is high. A common mistake is to brake as late as normal, turn in with the speed and steering angle you would use in a warm-up lap, and then realize the tyres are not responding. The result is a wide exit, a nudge from the car behind, or a spin."
+    },
+    {
+      "p": "The solution is to brake slightly earlier and turn in slightly later than you would in race conditions. If your normal braking point for turn one is at the 50-meter board, brake at the 75-meter board on the out-lap and the first lap. If your normal turn-in is 10 meters before the apex, turn in 15 meters before the apex. This margin does two things: it allows the tyres to do more of the work (they are gripping, even if only 70 percent), and it prevents you from over-driving and losing control. You will exit the corner slower, but you will exit cleanly and predictably."
+    },
+    {
+      "olist": [
+        "Brake 20 to 30 percent earlier than your race braking point; this gives cold tyres room to work.",
+        "Turn in gradually and smoothly; cold tyres need time to build load, not an abrupt steering input.",
+        "Accelerate smoothly out of the corner; avoid sudden throttle application that could induce wheelspin or oversteer.",
+        "Accept a slightly wider exit if necessary; a wide but stable exit is safer than a tight exit where the rear is sliding."
+      ]
+    },
+    {
+      "h2": "The Second Corner and Beyond: Building Confidence"
+    },
+    {
+      "p": "By the second corner, the tyres are warmer than they were at turn one, but they are not yet at their operating temperature. This is where you can begin to press slightly harder. If turn one demanded caution, turn two and three allow incremental aggression. Brake a few meters later, turn in with a hair more confidence, and roll a touch more throttle on exit."
+    },
+    {
+      "p": "The key is incremental. Do not jump from defensive to attacking between corner one and corner two. Instead, increase your inputs by 10 to 15 percent: a slightly later brake point, slightly sharper turn-in, slightly firmer throttle. This gradual ramp allows you to gauge how much grip is available and avoid overshooting into a moment where the tyres let go."
+    },
+    {
+      "p": "Many drivers also make the mistake of running defensive fuel mixture and engine mapping during the warm-up. If your sim vehicle supports it, switch to full power (or race mapping) on the out-lap so you are accustomed to the engine and throttle feel before the race starts. The same applies to brake balance and differential settings. If your team is allowed to tweak these between warm-up and race, do so at least two laps before the formation lap so you can re-adapt."
+    },
+    {
+      "tip": "If you are running a multi-lap out-lap, the second out-lap should feel noticeably more confident than the first. If it does not, your tyres are cold. Run a third lap or brake even later to build more heat. It is better to arrive at the grid slightly over-heated than to start the race hesitant.",
+      "tipLabel": "Confidence is the Signal"
+    },
+    {
+      "h2": "Cold Tyres in the Rain and on Ovals"
+    },
+    {
+      "p": "Wet weather magnifies the out-lap challenge. Cold tyres on a wet track have almost no grip, and a single aggressive corner can induce aquaplaning or hydroplaning. The warmup strategy becomes even more defensive: brake much earlier, use very smooth steering, and accept slow out-lap times. The first two corners after the green flag should feel almost cautious. Rain washes heat away, so plan to spend the first two or three racing laps gradually building temperature and speed rather than attacking from lap one."
+    },
+    {
+      "p": "On oval tracks, the problem is different but related. Cold front tyres on an oval can induce push (understeer) on entry, and cold rear tyres can cause the car to feel loose (oversteer) on exit. The out-lap should focus on smooth, rhythmic cornering around the high-speed oval, holding steady medium throttle through the turns, and avoiding aggressive brake or lift inputs. By the time you reach the green flag on an oval, the tyres should feel settled and predictable, even if they are not yet at peak temperature."
+    },
+    {
+      "h2": "Common Out-Lap Mistakes and Fixes"
+    },
+    {
+      "list": [
+        "<strong>Excessive brake pressure early:</strong> Braking hard on cold rubber risks locking and flat-spotting. Brake progressively and reduce pressure as the lap progresses.",
+        "<strong>Steering wheel lock or sharp inputs:</strong> Cold tyres need gradual steering load. Abrupt wheel movements induce slides. Keep inputs smooth and deliberate.",
+        "<strong>Wheelspin on throttle:</strong> This wastes heat and energy. Roll throttle smoothly; if the rear is spinning, ease off and try again.",
+        "<strong>Inconsistent throttle in straights:</strong> Pulses and lifts prevent steady heat buildup. Use constant, moderate throttle instead.",
+        "<strong>One out-lap:</strong> Most drivers need at least two out-laps to reach a stable baseline. If the session is short, run a second lap if possible.",
+        "<strong>Running defensive fuel/power settings:</strong> Switch to full race settings at least two laps before the race so you adapt to the engine feel."
+      ]
+    },
+    {
+      "h2": "Mental Approach: Accept Lap One as Warm-Up"
+    },
+    {
+      "p": "Professional and fast amateur drivers think of lap one not as a time to gain positions, but as the final phase of the warm-up. If you can keep your position and exit turn two safely, you are ahead. The real race begins on lap two, when the tyres have crossed into the 60 to 70 percent temperature range and your inputs can become more forceful."
+    },
+    {
+      "p": "This mindset takes pressure off the opening sequence. You are not trying to overtake; you are just trying to survive and adapt. By lap three, the tyres will be significantly warmer, your confidence will be higher, and you will be ready to race hard. Many positions are lost (and won) not by pace, but by patience. The drivers who pass you on lap two and three are often the same ones who refused to overcommit in lap one."
+    },
+    {
+      "p": "Track position matters, but tyre temperature matters more. A cold-tyre mistake in turn two can cost you a whole season. A measured out-lap and a conservative first two corners will keep you in the race and ready to push when the rubber is ready."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many out-laps do I need before a race?",
+      "a": "Most drivers need two out-laps to reach a stable tyre baseline. One is rarely enough. If the session allows, run two or three. The second should feel noticeably more confident than the first. If it does not, run a third or brake later on lap two to build more heat before the race."
+    },
+    {
+      "q": "Should I brake late on the out-lap to build heat faster?",
+      "a": "No. Late, hard braking on cold tyres risks locking and flat-spotting without uniform heat buildup. Instead, use progressive braking and smooth, steady cornering over multiple laps. This builds heat evenly and keeps you in control."
+    },
+    {
+      "q": "What do I do if the first corner feels slippery in lap one?",
+      "a": "Brake 20 to 30 percent earlier than your race braking point and turn in slightly later. Cold tyres need a wider margin. Accept a slower corner exit on lap one; the tyres will be significantly warmer by lap two, and you can then press harder. Do not over-commit in lap one trying to gain a position."
+    },
+    {
+      "q": "How do I warm up cold tyres in the rain?",
+      "a": "Use an even more defensive out-lap: brake much earlier, use very smooth steering inputs, and accept slow times. Rain removes heat, so cold tyres in the wet have almost no grip. The first two or three laps of the race should be cautious. Build temperature gradually rather than attacking from lap one."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-cs-v2",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

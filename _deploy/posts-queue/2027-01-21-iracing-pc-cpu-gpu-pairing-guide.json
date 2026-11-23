@@ -1,0 +1,155 @@
+{
+  "slug": "iracing-pc-cpu-gpu-pairing-guide",
+  "tag": "Hardware · PC Build",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "CPU and GPU Pairing for iRacing: Build a Dedicated Sim PC",
+  "description": "Match CPU and bottleneck-free GPUs for smooth iRacing frame rates. Learn what pairing actually delivers 100+ fps at 1440p.",
+  "sections": [
+    {
+      "p": "Building a dedicated iRacing PC means choosing a CPU and GPU that work together without leaving performance on the table. Many sim racers buy a powerful graphics card then pair it with a budget CPU, or the reverse, and end up with either frame rate caps or wasted silicon. The goal is a balanced pairing that holds 100+ fps at your monitor's native resolution without one component throttling the other."
+    },
+    {
+      "p": "iRacing is not as GPU-intensive as a triple-A title or a high-fidelity circuit sim, but it scales well with both CPU and GPU power. Your choice depends on your display resolution, desired frame rate floor, and how many extra CPU-bound features (shadows, motion blur, high-contrast UI) matter to you. This guide covers the pairings that work for the most common single-monitor setup: 1440p 120 Hz."
+    },
+    {
+      "h2": "What CPU and GPU do in iRacing"
+    },
+    {
+      "p": "The GPU draws every frame. It handles geometry, textures, lighting and post-processing. iRacing's graphics engine is not brute-force demanding, so a ~8-year-old card can run the sim at 1080p 60 fps. But to hit 120+ fps at 1440p with high draw distance and shadow quality, you need current-generation silicon."
+    },
+    {
+      "p": "The CPU feeds data to the GPU and runs the physics and logic loop. iRacing physics runs at 360 Hz per second, independent of frame rate. A slower CPU still computes the same physics; what it does not do well is juggle many frame-buffers without stalling the GPU or missing frame deadlines. For single-screen iRacing, a mid-range CPU (released in the last 5-7 years, with 6+ cores) is plenty."
+    },
+    {
+      "h2": "Single-monitor 1440p 120 Hz pairings"
+    },
+    {
+      "p": "At 1440p 120 Hz, the GPU must produce 120 frames per second. That is roughly 285 million pixels per second. iRacing at high detail runs this workload on a modern $400-600 graphics card, leaving headroom for replays, multi-camera streams, or higher settings."
+    },
+    {
+      "h3": "Nvidia RTX 5060 Ti (8 GB) + Ryzen 7 5700 or newer"
+    },
+    {
+      "p": "The RTX 5060 Ti delivers ~8-10 TFLOPS. At 1440p 120 Hz with shadow distance at high, draw distance slider at ~1.0, and motion blur off, it sustains 120+ fps in most series. The Ryzen 7 5700 (a proven pairing on this site) feeds the card smoothly enough. If you want to add CPU-side features later (OBS encoding, background streams), step to a Ryzen 7 7700X or Intel Core i7-14700KF (both ~8 cores, ~40-45 W per core at load)."
+    },
+    {
+      "list": [
+        "Best for: single-monitor, high detail, 1440p 120 Hz, tight budget",
+        "Bottleneck risk: minimal — card and CPU stay balanced across a full endurance stint",
+        "Upgrade path: swap GPU to RTX 5080 for 4K, or CPU to newer Ryzen 7 7700X for stream encoding headroom"
+      ]
+    },
+    {
+      "h3": "RTX 4070 (12 GB) + Ryzen 7 7700X"
+    },
+    {
+      "p": "If you have higher settings in mind (all-high graphics, replay quality, shadow distance slider at max), the RTX 4070 offers more margin. It is ~25% faster than the 5060 Ti and costs ~$150-200 more. The Ryzen 7 7700X is a newer platform (AM5 socket) that leaves room for future upgrades to DDR5 and next-gen AM5 chips without changing the motherboard."
+    },
+    {
+      "list": [
+        "Best for: future-proofing, all-high graphics, secondary streaming, or VR experiments later",
+        "Bottleneck risk: negligible — the CPU does not lag at any reasonable graphics setting",
+        "Cost trade-off: ~$550 more for the full pairing than RTX 5060 Ti + Ryzen 7 5700"
+      ]
+    },
+    {
+      "h3": "RTX 4090 or 5090 + Ryzen 9 7950X or 9950X"
+    },
+    {
+      "p": "Top-tier pairings make sense only if you are streaming multi-camera 1440p 120 fps, running <a href=\"iracing-vs-acc-vs-lmu-which-sim-fits.html\">ACC or LMU</a> in parallel test sessions, or planning to upgrade to triple monitors or VR later. The GPU cost alone (~$1600-2000) puts this out of reach for a first build."
+    },
+    {
+      "list": [
+        "Best for: dual-monitor or VR, full-time content creation, or extreme overkill for a hobby",
+        "Real bottleneck: your power supply (1000+ W), case airflow, and time to monetize the content",
+        "Not recommended: if 1440p 120 Hz solo iRacing is your only need"
+      ]
+    },
+    {
+      "h2": "Avoiding bottlenecks"
+    },
+    {
+      "p": "A bottleneck means one component idles while the other works. At 1440p 120 Hz iRacing, the GPU almost always finishes its work first, then waits for the CPU to issue the next frame. This is healthy; it means the frame rate is GPU-bound, the most common case. A CPU bottleneck (GPU idle, waiting for physics or logic) is rarer and only shows up if you pair a fast RTX 4090 with a 6-core CPU from 2015 or if you run very high-resolution graphics that stall the GPU."
+    },
+    {
+      "p": "To stay safe, follow this rule: do not pair a GPU older than 5 years with a CPU newer than 2 years, or vice versa. If the GPU is current-gen (RTX 50 or 40 series), use a CPU released in the last 5 years (Ryzen 7 5700, 7700X, Intel Core i7-12700K or newer). If you are reusing an old GPU (RTX 3070, RTX 2080), pair it with a Ryzen 7 5700 or older; newer CPUs will not help."
+    },
+    {
+      "tip": "Check power draw before you buy. A Ryzen 7 5700 and RTX 5060 Ti use ~270 W combined at load. An RTX 4090 and Ryzen 9 7950X can hit 850-900 W. If your power supply is under 750 W, the high-end pairing will trigger shutdowns. Upgrade the PSU first.",
+      "tipLabel": "Power Budget"
+    },
+    {
+      "h2": "RAM and storage"
+    },
+    {
+      "p": "iRacing itself uses ~2-3 GB of RAM per session. OBS streaming adds ~500 MB-1 GB. 32 GB is the safe baseline for any new build; it costs little more than 16 GB and leaves room for browser tabs, Discord, and replay saving. DDR4 (Ryzen 5000-series) is sufficient; DDR5 (Ryzen 7000+, Intel 12th gen) offers no iRacing benefit today, but it is the platform for future upgrades."
+    },
+    {
+      "p": "Storage: iRacing installs to ~40-60 GB depending on track and car count. Use a 1 TB NVMe SSD for the OS and iRacing, with a second 2 TB drive for replays and local recordings. Replays grow fast; a full endurance stint at 1440p 120 fps is ~50-80 GB."
+    },
+    {
+      "h2": "Monitor and other peripherals"
+    },
+    {
+      "p": "Your monitor is as important as the GPU. A single 1440p 120 Hz display (with G-SYNC or FreeSync support, to smooth out frame time variance) is the proven setup. It costs ~$300-500 and matches any CPU-GPU pairing in this guide. Avoid high-refresh 4K displays (above 144 Hz) for now; they require an RTX 4080 or higher and do not improve your lap times."
+    },
+    {
+      "p": "Connect the monitor to the GPU with DisplayPort, not HDMI. HDMI can introduce frame pacing issues at high refresh rates. Enable G-SYNC in the driver and in the game settings to eliminate tearing and reduce stutter."
+    },
+    {
+      "h2": "Build order and testing"
+    },
+    {
+      "p": "Once you have chosen your pairing, assemble in this order: motherboard, CPU, RAM, power supply, GPU, storage, case, then monitor and peripherals. After assembly, run a 30-minute iRacing session on a full grid at Road America to verify sustained frame rate and thermals. CPU should stay below 75°C, GPU below 80°C under load."
+    },
+    {
+      "p": "If frame rate dips below 100 fps mid-race, check in-game graphics settings first: drop shadow distance, disable motion blur, or lower draw distance. If temps spike above 85°C, improve case airflow (add intake fans, remove obstructions). Only then consider a faster GPU or CPU."
+    },
+    {
+      "list": [
+        "Open OBS performance metrics (Alt+Shift+M if running OBS) to see GPU and CPU load in real time",
+        "Record a replay of the session and play it back at 2x speed; if frame pacing is smooth, the pairing is good",
+        "Run a replay at all-high settings to stress the GPU; if fps holds above 90, upgrade budget is well spent"
+      ]
+    },
+    {
+      "tip": "Do not obsess over frame rate above 120 fps if your monitor is 120 Hz. The surplus frames are discarded, wasting power. Lock frame rate to 120 Hz in the iRacing settings or via the driver (NVIDIA Control Panel > Max Frame Rate). This saves power and reduces thermal load.",
+      "tipLabel": "Frame Rate Lock"
+    },
+    {
+      "h2": "Upgrading later"
+    },
+    {
+      "p": "A solid CPU-GPU pairing today stays relevant for 3-5 years. After that, game and sim engine improvements pull frame rates down. When you feel slow, upgrade the GPU first (cheapest path to more fps). Your CPU will likely keep pace; Ryzen 7 5700 and 7700X are still fast enough for 1440p 120 Hz iRacing in 2026."
+    },
+    {
+      "p": "If you add triple monitors or VR later, you will need a faster GPU (RTX 4080 or higher). The CPU swap can wait. For a detailed look at rig upgrade priorities, see <a href=\"sim-rig-upgrade-order-what-to-buy-first.html\">what to buy first</a> when funds are tight."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I use a CPU from 2018 with a new RTX 5060 Ti?",
+      "a": "No. CPUs older than 2018 lack the cores and instruction throughput needed to feed a modern GPU at high frame rates. At 1440p 120 Hz, even a good RTX 5060 Ti will stall waiting for physics and frame logic. Start with a Ryzen 7 5700 or Intel Core i7-11700K as a minimum. Older CPUs work fine with older GPUs (RTX 2080, RTX 3070)."
+    },
+    {
+      "q": "Is 32 GB RAM required for iRacing?",
+      "a": "No. iRacing alone uses 2-3 GB. 16 GB is enough for racing and basic OBS streaming. 32 GB gives you headroom for browser tabs, Discord, YouTube reference videos, and replay file archiving without slowdown. It costs little more than 16 GB, so choose 32 GB if budget allows."
+    },
+    {
+      "q": "How much does a balanced 1440p 120 Hz iRacing PC cost?",
+      "a": "Expect 1200-1600 dollars total: CPU 300-500, GPU 400-600, motherboard 150-250, RAM 100-150, SSD 100-150, power supply 100-150, case 80-150, monitor 300-500. The pairing (RTX 5060 Ti + Ryzen 7 5700) is on the lower end. Nicer peripherals (nicer case, more storage, premium monitor) push it higher."
+    },
+    {
+      "q": "Should I buy a used GPU to save money?",
+      "a": "With caution. Used GPUs from 2022 and newer (RTX 3070, RTX 3080, RTX 4070) are reliable buys if they have no visible damage and you test them immediately. Older cards may show signs of wear (fans failing, thermal paste dried out). Buy only from sellers with return policies. Avoid cards used for crypto mining (high heat stress history). Factor in a potential cooler replacement if thermals run high on first test."
+    }
+  ],
+  "gearKeys": [
+    "gpu-rtx-5060-ti",
+    "cpu-ryzen-7-5700",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

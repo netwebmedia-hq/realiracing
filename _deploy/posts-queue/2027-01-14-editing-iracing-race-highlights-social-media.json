@@ -1,0 +1,156 @@
+{
+  "slug": "editing-iracing-race-highlights-social-media",
+  "tag": "Streaming · OBS",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Editing iRacing Race Highlights for TikTok, YouTube Shorts, and Instagram",
+  "description": "Cut race footage into shareable clips that hook viewers in 3 seconds and hold attention. Timing, pacing, and sound matter more than length.",
+  "sections": [
+    {
+      "p": "A three-lap stint through the Nordschleife in a wet Grand Prix car is thrilling to drive, but a 15-minute replay sits unwatched on your phone. Social media clips live or die in the first three seconds. The difference between a clip that gets shared and one that disappears is not better footage; it is ruthless editing. You are cutting for viewers who will swipe if they are bored, not drivers who want to study every corner."
+    },
+    {
+      "p": "Race highlights work best when they tell a story in tight chunks. A pass, a recovery, a close call, a pole position lap, a spin caught and saved. One moment. One sequence. The edit should make that moment feel urgent and inevitable at the same time."
+    },
+    {
+      "h2": "Start with the footage you already have"
+    },
+    {
+      "p": "If you are streaming or recording iRacing on OBS to your PC (as I do on this rig), you have full replays saved automatically or manually. Throw them into your editor of choice. DaVinci Resolve is free and capable of multi-track editing and color grading. Adobe Premiere Pro costs ~$30 per month and handles overlays and transitions faster. CapCut, free on mobile and desktop, cuts clips in minutes if you do not need frame-perfect precision."
+    },
+    {
+      "p": "Open the replay. Scrub through it. Look for a single turning point, a dramatic moment, or a clean racing line that feels almost cinematic. That 8-second clip of a dive to the inside at a braking zone is your anchor. Everything else serves it."
+    },
+    {
+      "h2": "The first cut: Hook in three seconds"
+    },
+    {
+      "p": "Start the clip one second before the action begins, not 10 seconds before. If the moment is a pass, viewers should see the car approaching the corner, the brake point, and the overlap all within the first two seconds. Use a cut or hard transition between angles if you have on-board and chase-cam views. That contrast keeps the eye moving."
+    },
+    {
+      "list": [
+        "On-board (cockpit view) for the most immersive angle; viewers feel the steering input.",
+        "Chase cam or bumper cam for clarity on track position and the actual pass or recovery.",
+        "Overhead or TV cam to show how tight the gap is or how close to the wall the car got.",
+        "Cockpit during the braking event (dramatic moment), chase cam for the exit (the payoff)."
+      ]
+    },
+    {
+      "p": "Cut between views every 2 to 5 seconds. Longer single-camera shots lose momentum. The editing pace is not about technical skill; it is about rhythm and anticipation."
+    },
+    {
+      "h2": "Sound and music make the clip"
+    },
+    {
+      "p": "Race car audio is compelling but can blur into noise. Isolate the engine roar during braking and acceleration, then duck it (lower the volume) during the moment of maximum tension, like a drift or a near-miss. Silence followed by a crescendo is more impactful than constant volume."
+    },
+    {
+      "p": "Overlay music underneath. A fast-paced, energetic track without words works best; instrumental hip-hop, electronic, or rock keeps viewers engaged without distraction. Use royalty-free libraries like Epidemic Sound (~$9.99 per month), YouTube Audio Library (free for YouTube uploads), or Artlist (~$15 per month). Mute any copyrighted music before uploading to avoid claims or strikes."
+    },
+    {
+      "p": "Layer the sound: engine audio at 50 percent, music at 70 percent, and brief SFX (like a gear shift or tire screech) at full volume for one frame. That detail rewards careful viewers."
+    },
+    {
+      "h2": "Pacing and rhythm: Six to thirty seconds"
+    },
+    {
+      "p": "TikTok and Shorts favor clips under 15 seconds. Instagram Reels can run up to 90 seconds, but most viral racing clips are 6 to 20 seconds. Build to a climax and exit cleanly. No trailing footage of the car cruising away."
+    },
+    {
+      "olist": [
+        "Build tension in the first third (braking line, body roll, overlap visible).",
+        "Peak action in the middle (the pass, the save, the close call).",
+        "Resolution in the final third (clean exit, confirmed position, or dramatic spin). End on a cut, not a fade to black."
+      ]
+    },
+    {
+      "p": "Use J-cuts and L-cuts. A J-cut means audio starts before the visual cuts in. An L-cut means the visual cuts before the audio ends. This keeps transitions smooth and maintains momentum. Straight hard cuts (audio and video at the same moment) work for fast-paced moments. Dissolves slow down rhythm and feel dated."
+    },
+    {
+      "h2": "Overlays and text"
+    },
+    {
+      "p": "Keep them minimal. A one-line callout at the moment of action works. \"P1 Pole Lap\" or \"Save from the Wall\" on screen for 2 seconds during the climactic moment. Use a clean font (Montserrat, Roboto, or any sans-serif) in white or a high-contrast color. Add a subtle drop shadow so text reads over busy backgrounds."
+    },
+    {
+      "p": "Avoid watermark spam. Your channel name or logo in a corner is enough. Stacking overlays for every hit point dilutes the visual impact."
+    },
+    {
+      "p": "Overlay telemetry data (speed, throttle, brake traces) if the moment is technical: a wet braking zone or a late apex setup. iRacing can export telemetry via its replay system; plug it into tools like Motec i2 (free for display, paid for analysis) or use video telemetry overlays from apps like SimHub. Only use it if it adds clarity, not because you can."
+    },
+    {
+      "tip": "Export your clip at 1080p60 (1920x1080, 60 frames per second). Most platforms compress heavily, so give them good source material. A 1080p60 clip stays sharp after platform encoding; 720p looks soft on larger screens.",
+      "tipLabel": "Export Settings"
+    },
+    {
+      "h2": "Platform specifics"
+    },
+    {
+      "p": "TikTok and Shorts reward vertical or square aspect ratios (9:16 or 1:1). iRacing footage is 16:9 (landscape), so either crop it, add black bars top and bottom, or reframe using a moving crop to follow the action. The crop method (following the car through the frame) feels more dynamic than static bars."
+    },
+    {
+      "p": "YouTube shorts can run landscape 16:9, but TikTok performs better in full vertical. If you are cutting for both, export a 16:9 version for YouTube and a 9:16 version for TikTok in the same project. Most editors let you save multiple aspect ratios from one timeline."
+    },
+    {
+      "p": "Instagram Reels accept 9:16, 1:1, or 16:9. Test clips in all three formats and see which ratio your audience engages with most. Post the same clip across platforms; the edit time is front-loaded, and distribution is free."
+    },
+    {
+      "h2": "Common mistakes to avoid"
+    },
+    {
+      "list": [
+        "Starting too early: Show the action, not the approach. Begin one second before the moment, not ten.",
+        "Ending too late: Exit after the resolution. Do not show the car settling; viewers have already decided if they liked it.",
+        "Underestimating silence: Pausing audio for one second in a climactic moment (like before a pass) makes the eventual sound hit harder.",
+        "Ignoring pacing: If every cut lasts the same length, the rhythm feels robotic. Vary between 1-frame cuts (hard quick transitions) and 3-second holds (steady moments).",
+        "Overexplaining: No need to tell viewers what they are watching. The visuals and sound should communicate it in real time.",
+        "Ignoring the game HUD: If iRacing's on-screen widgets (fuel, tire wear, delta bars) clutter the frame, crop them out or use chase cam for clean racing footage."
+      ]
+    },
+    {
+      "h2": "Workflow efficiency"
+    },
+    {
+      "p": "Edit in batches. Collect 5 to 10 race replays across a week, mark the best moments in each, then spend a single editing session cutting clips in bulk. Set up a template in your editor with your preferred music bed, font, and color grade. That cuts 50 percent of setup time per clip."
+    },
+    {
+      "p": "Use keyboard shortcuts. Learning Premiere Pro or DaVinci Resolve shortcuts (cut, trim, slip, slip offset) shaves minutes off every edit. YouTube tutorials for your specific editor are fast to follow."
+    },
+    {
+      "p": "Export and upload immediately after editing. Social media algorithms favor fresh content, and posting within hours of a race keeps your channel feeling live and active. If you stream on the YouTube channel @realtape, uploading clips the same evening capitalizes on viewers already in your notifications."
+    },
+    {
+      "h2": "One last principle: Intention matters"
+    },
+    {
+      "p": "Every cut, every transition, every music swell should serve the moment you are showing. A clip of a wet-track save is tense; use slower cuts and held frames. A clip of an aggressive pass is fast; rapid cuts and sharp music work. Let the racing dictate the edit pace, not a formula."
+    },
+    {
+      "p": "Edit for someone who has never watched you race before. Assume they know nothing about iRacing, the car, or the track. The clip should stand on its own as compelling racing, not as an inside joke for your existing audience. That discipline is what turns followers into new viewers."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What editing software should I use if I'm on a tight budget?",
+      "a": "CapCut (free, desktop and mobile) handles basic clips fast. DaVinci Resolve (free version, desktop only) is powerful for color grading, multi-camera editing, and fusion effects without paying. Adobe Premiere Pro costs ~$30 per month and is fastest for exports and batch processing. For social clips, free software is enough; you are cutting iRacing footage, not building a documentary."
+    },
+    {
+      "q": "How long should my race highlight be for TikTok and YouTube Shorts?",
+      "a": "Aim for 6 to 20 seconds. TikTok favors 15 seconds or less for maximum engagement. Shorts can run up to 60 seconds, but most viral racing clips finish in 15 to 30 seconds. Longer clips require a tighter story; most single race moments (a pass, a save, a pole lap) peak in impact around 10 to 15 seconds."
+    },
+    {
+      "q": "Should I use the in-game sound from iRacing or replace it with music?",
+      "a": "Layer them. Keep engine audio at 50 percent volume as the natural anchor and add music underneath at 70 percent. This keeps the clip feeling like racing while maintaining viewer engagement through music rhythm. Pure music alone feels generic; pure engine noise gets fatiguing over six seconds. The blend is best."
+    },
+    {
+      "q": "What if my race has no dramatic moments, just consistent pace?\"",
+      "a": "Show a clean, smooth lap or a string of perfect apexes. Focus on the driving line, smooth steering inputs, and throttle modulation. Overlay telemetry (speed trace, brake points) to highlight technical precision. Clips about smooth driving appeal to other sim racers who value racecraft. Not every clip needs a pass or a close call; mastery is compelling."
+    }
+  ],
+  "gearKeys": [
+    "gpu-rtx-5060-ti",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}
