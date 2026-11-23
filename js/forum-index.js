@@ -5,6 +5,12 @@
 (function () {
   'use strict';
   var API = 'https://netwebmedia.com/api/community/threads?property=realiracing&page=1&post=';
+  // "Nov 22, 2026" from the API's created_at (UTC, "YYYY-MM-DD HH:MM:SS"); '' when missing.
+  function fmtDate(iso) {
+    var d = new Date(String(iso || '').replace(' ', 'T') + 'Z');
+    if (isNaN(d.getTime())) return '';
+    try { return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' }); } catch (e) { return ''; }
+  }
   document.querySelectorAll('[data-board]').forEach(function (node) {
     var board = node.getAttribute('data-board');
     function say(text) { node.textContent = text; }
@@ -27,6 +33,14 @@
         node.textContent = '';
         node.appendChild(strong);
         node.appendChild(document.createTextNode(' · Latest: ' + latest.title));
+        // Author and date as the API returns them; nothing shown when a field is missing.
+        var by = [latest.author, fmtDate(latest.created_at)].filter(Boolean).join(' · ');
+        if (by) {
+          var line = document.createElement('span');
+          line.className = 'board-by';
+          line.textContent = by;
+          node.appendChild(line);
+        }
       })
       .catch(function () { say('Threads could not be loaded right now. Open the board to see them.'); });
   });
