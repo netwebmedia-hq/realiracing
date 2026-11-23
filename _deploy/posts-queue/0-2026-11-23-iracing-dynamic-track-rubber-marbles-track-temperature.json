@@ -1,0 +1,147 @@
+{
+  "slug": "iracing-dynamic-track-rubber-marbles-track-temperature",
+  "tag": "Beginner Guide · Track Conditions",
+  "author": "Carlos Martinez",
+  "readTime": "8 min read",
+  "title": "iRacing Dynamic Track: Rubber, Marbles and Temperature",
+  "description": "A beginner guide to iRacing's dynamic track: how rubber, marbles and track temperature change grip, and what I do about each from my MOZA R9 rig.",
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026",
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2",
+    "cockpit"
+  ],
+  "sections": [
+    {
+      "p": "I spent an evening in a solo test session learning a corner until I could hit the same braking marker every lap. The next day I joined the official race, arrived at the same corner with a field of cars, and went wide on lap one. Same car, same track, same marker. The surface was different. After many cars had run on it, the racing line had rubber on it and the car stuck to the road in a way it never did during my test. I had practised on a clean track and raced on a used one."
+    },
+    {
+      "p": "That gap has a name in iRacing: the dynamic track. I race on a MOZA R9 wheelbase (~9 N·m), MOZA CRP2 load-cell pedals and a fixed aluminium-profile cockpit, and the wheel and pedals show me these changes clearly once I know what to look for. This guide explains the three things that move grip during a session (rubber, marbles and temperature) in plain words, then lists what I do about each."
+    },
+    {
+      "h2": "What the dynamic track is"
+    },
+    {
+      "p": "iRacing models the track surface as something that changes while you drive on it. A brand new surface has little rubber on it. As cars lap, tyres leave a thin layer of rubber on the path they follow most, which is the racing line. That layer gives the tyres more to grip, so grip on the racing line tends to rise as the session goes on. Away from the line, the surface stays cleaner and slipperier."
+    },
+    {
+      "p": "Think of it like a floor in a busy hallway. The path everyone walks gets polished, and the corners stay dusty. The track works in a similar way, except it affects how much speed you can carry into a corner."
+    },
+    {
+      "h2": "Rubber: what it does to you"
+    },
+    {
+      "p": "More rubber on the racing line means more grip there. The practical effect is that corner speeds and braking points that felt right early in a session can move as the line rubbers in. On a track with lots of rubber, I can usually brake a little later and carry a little more speed through the same corner than I could on a clean surface. The change is gradual, so I rarely notice it lap by lap. I notice it when I compare the start of a session to the end."
+    },
+    {
+      "p": "Here is the part that surprised me most as a beginner. The rubber only helps on the line. If I step off it, to pass or to avoid a spinning car, I leave the grippy strip and land on a cleaner, slipperier surface. The car feels like it changed its mind in the middle of the corner. Through the MOZA R9, I feel this as the wheel going light for a moment, with less of the steady weight I feel on the line."
+    },
+    {
+      "h2": "Marbles: the slippery bits off the line"
+    },
+    {
+      "p": "As tyres wear, small bits of rubber come off them. These bits roll away from the racing line and collect on the outside of corners and on the edges of the track. Drivers call them marbles, because driving on them feels a little like driving on tiny balls. They are most common off the racing line, which is exactly where you drive when you pass or defend late in a race."
+    },
+    {
+      "p": "Two things happen when you go through marbles. First, the car slides more easily, so a turn that felt safe becomes a slide. Second, some of the bits stick to your tyres, and grip drops for a few corners until they wear off. That is why a short trip off the line can cost you more than the moment itself suggests."
+    },
+    {
+      "p": "My rule is simple. If I have to leave the line, I turn a little less sharply, brake a little earlier and keep my inputs smooth. Then I return to the racing line and stay on it for a few corners so the tyres can clean themselves. With the CRP2 load-cell pedals I can feel how much brake pressure I am giving, which helps me brake gently on a surface that offers less grip."
+    },
+    {
+      "h2": "Track temperature"
+    },
+    {
+      "p": "The surface of the track gets hotter or cooler during a session, depending on the sun, cloud, air temperature and time of day. A hotter surface generally gives less grip and wears the tyres faster. A cooler surface generally gives more grip. You can see the track temperature in the session information inside the sim, so you do not need to guess."
+    },
+    {
+      "p": "In practice, I think of temperature as a background setting for the whole session. If the track is cooler than it was in practice, I expect the car to feel more planted. If it is hotter, I expect it to slide earlier and wear its tyres sooner, so I stay patient and avoid overdriving the car in the first laps. Clouds drifting across a sunny track can change the surface temperature during the race, and the car can feel different from one lap to the next."
+    },
+    {
+      "p": "Rain is a separate subject, and my post on <a href=\"iracing-rain-weather-system-explained.html\">how the iRacing rain and weather system works</a> covers it. Here I am only talking about a dry track that changes with temperature and use."
+    },
+    {
+      "h2": "Why your practice session may not match the race"
+    },
+    {
+      "p": "A session starts from a set track state, which means how much rubber is already on the surface. In many official series, the track state carries over from practice to qualifying to the race. The race surface is therefore shaped by every car that has run before it. A solo test session does not give you that. It usually starts from a cleaner state, and you are the only car adding rubber."
+    },
+    {
+      "p": "This is the main reason my braking points from a solo test can be off in the race. On a clean track I brake earlier, because there is less grip. In the race I may be able to brake later. The reverse can also happen in some conditions, so I never treat a test number as a promise. I treat it as a starting point."
+    },
+    {
+      "h2": "What changes on an oval"
+    },
+    {
+      "p": "On ovals, the groove can move as the race goes on. The lower line, which is usually the shortest, gets worn as cars use it, and the grip there can fade. Cars then begin to run higher up the track, where there is fresh surface and rubber building up. The best line at the start may not be the best line late in the race. My post on <a href=\"bristol-motor-speedway-iracing-banking-tire-wear-lanes.html\">Bristol Motor Speedway, banking, tire wear and lanes</a> shows how this plays out on one short, steep oval."
+    },
+    {
+      "h2": "What I do about it"
+    },
+    {
+      "p": "Here is the routine I follow. Nothing in it needs new gear, only a few habits."
+    },
+    {
+      "olist": [
+        "Practise in the official practice session for that week, as well as solo tests. That session shows me the surface the race will use, with other cars adding rubber to it.",
+        "Check the track temperature in the session info before I start, and again if the session is long.",
+        "Leave extra margin on lap one. The field is bunched, the tyres are cold, and I have not yet felt how grippy the line is today.",
+        "Treat the first laps of any session as a measurement, not a performance. I note where the car feels light or heavy before I push.",
+        "When I go off the line, I smooth my inputs and brake earlier, then stay on the line for a few corners to clean the tyres.",
+        "On ovals, watch where other cars run late in the race, and be ready to move up the track if the bottom line fades."
+      ]
+    },
+    {
+      "p": "For the practice session itself, I use the plan from <a href=\"iracing-practice-session-plan-45-minutes.html\">my 45-minute practice session plan</a>. It keeps me from spending the whole time chasing speed when I should be learning how the surface behaves today."
+    },
+    {
+      "h2": "Reading it through the wheel and pedals"
+    },
+    {
+      "p": "The track is easier to read through force feedback than through the screen. On the racing line, the wheel feels weighty and steady, and the front end feels connected. Off the line, the weight can drop away, and the car can feel vague. With a ~9 N·m wheelbase I get clear detail without needing to push the strength high, and a rigid aluminium cockpit means the signals reach me without frame flex adding noise."
+    },
+    {
+      "p": "The pedals tell a similar story. On a grippy line I can lean on the brake harder without locking a wheel. On a marbled or hot surface, the same pressure locks sooner, so I ease the pedal. Load-cell pedals measure pressure rather than travel, which makes that easier to repeat. I still recommend a beginner on any hardware do the same thing: listen to the wheel and watch the feel change from lap to lap."
+    },
+    {
+      "h2": "Black boxes and tyre information"
+    },
+    {
+      "p": "iRacing's on-screen black boxes (the small information panels you can switch on) show tyre information and fuel. They help you spot when tyre wear is building, which usually goes together with a hotter surface. If you have not set them up yet, <a href=\"iracing-black-boxes-explained-relative-fuel-tires.html\">my post on black boxes, relative, fuel and tires</a> explains each one in simple terms."
+    },
+    {
+      "h2": "Common beginner mistakes"
+    },
+    {
+      "list": [
+        "Trusting braking points from a solo test as though they are fixed.",
+        "Going off line in a pass and expecting the same grip as on the line.",
+        "Ignoring the track temperature, then wondering why the car slides in the afternoon.",
+        "Pushing hard on lap one with cold tyres and a bunched field.",
+        "Staying in the marbles after a mistake instead of returning to the line."
+      ]
+    },
+    {
+      "p": "The dynamic track is one of the best reasons to race instead of only test. Each session starts from a different state, and the surface keeps changing until the checkered flag. A beginner who gets used to that will usually feel calmer in traffic, because the car's behaviour stops being a surprise and starts being something to read."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the dynamic track in iRacing?",
+      "a": "It is the way iRacing changes the track surface during a session. As cars lap, rubber builds up on the racing line and grip there changes, while bits of worn tyre collect off the line and make that area slippery. Track temperature also changes the grip."
+    },
+    {
+      "q": "What are marbles in iRacing?",
+      "a": "Marbles are small pieces of worn tyre rubber that collect away from the racing line, usually on the outside of corners. Driving through them reduces grip, and some can stick to your tyres and keep grip lower for a few corners afterward."
+    },
+    {
+      "q": "Does track temperature change how the car drives?",
+      "a": "Yes. A hotter surface generally gives less grip and more tyre wear, and a cooler one generally gives more grip. You can check the track temperature in the session information inside iRacing and adjust how hard you push, especially in the first laps."
+    },
+    {
+      "q": "Why do my braking points from a solo test not match the race?",
+      "a": "A solo test often starts from a cleaner track state than an official session. In many official series the track state carries over from practice to qualifying to the race, so the race surface has more rubber on it. Treat solo test braking points as a starting point and re-check them in the official practice session."
+    }
+  ]
+}
