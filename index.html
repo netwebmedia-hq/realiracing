@@ -921,9 +921,79 @@
     .lite-yt iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
     .video-note { font-size: 0.82rem; color: var(--muted); }
     a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+    /* ── Joni R1 2026-11-23: static hero, readable text, one primary action ── */
+    .slide-1 { opacity: 1; transform: none; transition: none; }
+    .slide-1 .slide-vignette {
+      background:
+        linear-gradient(to top, rgba(10,10,10,.92) 0%, rgba(10,10,10,.55) 35%, transparent 60%),
+        rgba(10,10,10,.72);
+    }
+    .hero p { color: #f0f0f0; text-shadow: none; }
+    .hero p.hero-sub {
+      font-size: clamp(1.15rem, 3vw, 1.5rem); font-weight: 700; line-height: 1.35;
+      max-width: 640px; margin: 0 auto 14px; color: #fff;
+    }
+    .btn-ghost {
+      background: transparent; backdrop-filter: none;
+      border: 2px solid rgba(240,240,240,.75);
+    }
+    .btn-ghost:hover { border-color: var(--accent); background: rgba(232,255,0,.08); }
+    /* ── NAV v2 (2026-11-23): quiet Subscribe pill + phone menu (js/nav.js) ───────── */
+    .nav-cta,
+    .nav-links a.nav-cta {
+      background: transparent;
+      color: var(--text) !important;
+      border: 1px solid rgba(240,240,240,.45);
+      padding: 7px 18px;
+      font-weight: 600 !important;
+    }
+    .nav-cta:hover { opacity: 1; border-color: var(--accent); color: var(--accent) !important; }
+    .nav-toggle, .nav-cta-m { display: none; }
+    .nav-toggle-bars, .nav-toggle-bars::before, .nav-toggle-bars::after {
+      display: block; width: 20px; height: 2px; background: var(--text); border-radius: 2px;
+      transition: transform .2s, opacity .2s;
+    }
+    .nav-toggle-bars { position: relative; }
+    .nav-toggle-bars::before, .nav-toggle-bars::after { content: ''; position: absolute; left: 0; }
+    .nav-toggle-bars::before { top: -6px; }
+    .nav-toggle-bars::after { top: 6px; }
+    .nav-js.open .nav-toggle-bars { background: transparent; }
+    .nav-js.open .nav-toggle-bars::before { top: 0; transform: rotate(45deg); }
+    .nav-js.open .nav-toggle-bars::after { top: 0; transform: rotate(-45deg); }
+
+    @media (max-width: 900px) {
+      nav.nav-js { flex-wrap: nowrap; row-gap: 0; gap: 8px; padding: 8px 16px; }
+      nav.nav-js .nav-logo { width: 150px; flex: 0 0 150px; }
+      nav.nav-js .nav-cta-m { display: inline-flex; align-items: center; margin-left: auto; min-height: 44px; padding: 0 16px; white-space: nowrap; text-decoration: none; border-radius: 999px; font-size: .85rem; }
+      nav.nav-js .nav-toggle {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 44px; height: 44px; flex: 0 0 44px; padding: 0;
+        background: transparent; border: 1px solid rgba(240,240,240,.25); border-radius: 10px; cursor: pointer;
+      }
+      nav.nav-js .nav-toggle:focus-visible, nav.nav-js .nav-links a:focus-visible, nav.nav-js .nav-cta-m:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+      nav.nav-js .nav-links {
+        display: none; position: absolute; top: 100%; left: 0; right: 0; width: auto;
+        flex-direction: column; gap: 0; overflow-y: auto; overflow-x: hidden;
+        max-height: calc(100vh - 62px); padding: 6px 16px 14px;
+        background: #0a0a0a; border-bottom: 1px solid var(--border);
+      }
+      nav.nav-js.open .nav-links { display: flex; }
+      nav.nav-js .nav-links li { flex: none; padding: 0; margin: 0; background: none; position: static; }
+      nav.nav-js .nav-links li:last-child, nav.nav-js .nav-links li:nth-last-child(2) { padding: 0; margin: 0; background: none; position: static; }
+      nav.nav-js .nav-links li.nav-cta-li { display: none; }
+      nav.nav-js .nav-links a { display: flex; align-items: center; min-height: 44px; padding: 0 4px; font-size: 1rem; white-space: normal; border-bottom: 1px solid var(--border); }
+      nav.nav-js .nav-links li:last-of-type a { border-bottom: 0; }
+    }
+    @media (max-width: 640px) {
+      nav.nav-js ~ .article-wrap, nav.nav-js ~ .blog-hero { padding-top: 96px; }
+    }
+    @media (prefers-reduced-motion: reduce) { .nav-toggle-bars, .nav-toggle-bars::before, .nav-toggle-bars::after { transition: none; } }
+
   </style>
   <!-- Google Analytics 4 -->
   <script src="/js/ga4.js" defer></script>
+  <script src="/js/nav.js" defer></script>
   <script src="/js/lite-yt.js" defer></script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[{"@type":"VideoObject","name":"iRacing Live — 2025 Season 4 Week 12 · Imola & Mt Panorama","description":"iRacing Live — 2025 Season 4 Week 12 · Imola & Mt Panorama. Live iRacing stream from the @realtape YouTube channel.","thumbnailUrl":["https://img.youtube.com/vi/vPj0IvaQiR8/hqdefault.jpg"],"uploadDate":"2025-12-03T17:59:38-08:00","duration":"PT106M30S","embedUrl":"https://www.youtube-nocookie.com/embed/vPj0IvaQiR8","publisher":{"@type":"Organization","name":"RealIRacing","url":"https://realiracing.com/"}},{"@type":"VideoObject","name":"iRacing Live — 2025 Season 1 Week 9 Daytona Special","description":"iRacing Live — 2025 Season 1 Week 9 Daytona Special. Live iRacing stream from the @realtape YouTube channel.","thumbnailUrl":["https://img.youtube.com/vi/AXtlTyr16_w/hqdefault.jpg"],"uploadDate":"2025-02-15T21:15:03-08:00","duration":"PT289M50S","embedUrl":"https://www.youtube-nocookie.com/embed/AXtlTyr16_w","publisher":{"@type":"Organization","name":"RealIRacing","url":"https://realiracing.com/"}},{"@type":"VideoObject","name":"iRacing Live — DOF Reality Dallara F3 Series · Silverstone","description":"iRacing Live — DOF Reality Dallara F3 Series · Silverstone. Live iRacing stream from the @realtape YouTube channel.","thumbnailUrl":["https://img.youtube.com/vi/lfrYhZjowhU/hqdefault.jpg"],"uploadDate":"2024-01-10T00:33:10-08:00","duration":"PT222M25S","embedUrl":"https://www.youtube-nocookie.com/embed/lfrYhZjowhU","publisher":{"@type":"Organization","name":"RealIRacing","url":"https://realiracing.com/"}},{"@type":"VideoObject","name":"iRacing Live — 2025 Winter NASCAR Series · Talladega","description":"iRacing Live — 2025 Winter NASCAR Series · Talladega. Live iRacing stream from the @realtape YouTube channel.","thumbnailUrl":["https://img.youtube.com/vi/n4OH2fK6svg/hqdefault.jpg"],"uploadDate":"2025-02-01T06:27:15-08:00","duration":"PT23M35S","embedUrl":"https://www.youtube-nocookie.com/embed/n4OH2fK6svg","publisher":{"@type":"Organization","name":"RealIRacing","url":"https://realiracing.com/"}},{"@type":"VideoObject","name":"iRacing Live — Daily Ranked Races · Season 4 Week 3 (Nürburgring · BMW M4 GT4)","description":"iRacing Live — Daily Ranked Races · Season 4 Week 3 (Nürburgring · BMW M4 GT4). Live iRacing stream from the @realtape YouTube channel.","thumbnailUrl":["https://img.youtube.com/vi/_T_3I-ftYtI/hqdefault.jpg"],"uploadDate":"2024-09-25T17:22:35-07:00","duration":"PT5M1S","embedUrl":"https://www.youtube-nocookie.com/embed/_T_3I-ftYtI","publisher":{"@type":"Organization","name":"RealIRacing","url":"https://realiracing.com/"}}]}
@@ -960,7 +1030,7 @@
     </ul>
   </nav>
 
-  <!-- HERO SLIDESHOW -->
+  <!-- HERO: one static photo (carousel + Pause control removed 2026-11-23) -->
   <div class="hero">
 
     <!-- Slideshow background layers -->
@@ -987,226 +1057,7 @@
         </div>
         <div class="slide-grid"></div>
         <div class="slide-vignette"></div>
-        <div class="slide-caption">
-          <div class="slide-caption-dot"></div>
-          <span class="slide-caption-text">High-Speed Drift · Motorsport Arena</span>
-          <span class="slide-caption-account">@realiracing</span>
-        </div>
       </div>
-
-      <!-- Slide 2: Takuma Sato #21 Panasonic IndyCar -->
-      <div class="slide slide-2" data-bg="/slides/slide2.jpg" data-bg-sm="/slides/slide2-sm.jpg">
-        <div class="slide-graphic">
-          <svg viewBox="0 0 700 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- IndyCar silhouette -->
-            <ellipse cx="350" cy="230" rx="280" ry="14" fill="#00c8ff" opacity="0.25"/>
-            <path d="M120 210 Q160 175 240 162 Q295 153 350 152 Q405 153 460 162 Q540 175 580 210 Z" fill="#0050c8"/>
-            <path d="M240 162 Q295 138 350 136 Q405 138 460 162" fill="#00a0ff" opacity="0.7"/>
-            <!-- #21 -->
-            <text x="335" y="185" font-size="22" font-weight="900" fill="white" font-family="Arial Black" opacity="0.9">21</text>
-            <!-- Front wing -->
-            <path d="M80 212 L130 205 L130 218 L80 222 Z" fill="#0040a0"/>
-            <path d="M570 205 L620 212 L620 222 L570 218 Z" fill="#0040a0"/>
-            <!-- Wheels -->
-            <circle cx="185" cy="218" r="30" fill="#111" stroke="#00c8ff" stroke-width="2.5"/>
-            <circle cx="185" cy="218" r="18" fill="#1a1d23"/>
-            <circle cx="515" cy="218" r="30" fill="#111" stroke="#00c8ff" stroke-width="2.5"/>
-            <circle cx="515" cy="218" r="18" fill="#1a1d23"/>
-            <!-- Motion blur lines -->
-            <line x1="0" y1="185" x2="80"  y2="183" stroke="#00c8ff" stroke-width="2" opacity="0.6"/>
-            <line x1="0" y1="192" x2="60"  y2="190" stroke="#00c8ff" stroke-width="1" opacity="0.4"/>
-            <line x1="620" y1="183" x2="700" y2="185" stroke="#00c8ff" stroke-width="2" opacity="0.6"/>
-          </svg>
-        </div>
-        <div class="slide-grid"></div>
-        <div class="slide-vignette"></div>
-        <div class="slide-caption">
-          <div class="slide-caption-dot"></div>
-          <span class="slide-caption-text">Vintage Racing · Track Day</span>
-          <span class="slide-caption-account">@realiracing</span>
-        </div>
-      </div>
-
-      <!-- Slide 3: Marco Andretti #98 US Concrete IndyCar -->
-      <div class="slide slide-3" data-bg="/slides/slide3.jpg" data-bg-sm="/slides/slide3-sm.jpg">
-        <div class="slide-graphic">
-          <svg viewBox="0 0 700 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="350" cy="230" rx="280" ry="14" fill="#cc0000" opacity="0.25"/>
-            <path d="M120 210 Q160 175 240 162 Q295 153 350 152 Q405 153 460 162 Q540 175 580 210 Z" fill="#990000"/>
-            <path d="M240 162 Q295 138 350 136 Q405 138 460 162" fill="#cc2200" opacity="0.8"/>
-            <text x="328" y="185" font-size="22" font-weight="900" fill="white" font-family="Arial Black" opacity="0.95">98</text>
-            <path d="M80 212 L130 205 L130 218 L80 222 Z" fill="#660000"/>
-            <path d="M570 205 L620 212 L620 222 L570 218 Z" fill="#660000"/>
-            <circle cx="185" cy="218" r="30" fill="#111" stroke="#cc0000" stroke-width="2.5"/>
-            <circle cx="185" cy="218" r="18" fill="#1a1d23"/>
-            <circle cx="515" cy="218" r="30" fill="#111" stroke="#cc0000" stroke-width="2.5"/>
-            <circle cx="515" cy="218" r="18" fill="#1a1d23"/>
-            <line x1="0" y1="185" x2="80"  y2="183" stroke="#cc0000" stroke-width="2" opacity="0.7"/>
-            <line x1="0" y1="192" x2="60"  y2="190" stroke="#e8ff00" stroke-width="1" opacity="0.4"/>
-            <line x1="620" y1="183" x2="700" y2="185" stroke="#cc0000" stroke-width="2" opacity="0.7"/>
-          </svg>
-        </div>
-        <div class="slide-grid"></div>
-        <div class="slide-vignette"></div>
-        <div class="slide-caption">
-          <div class="slide-caption-dot"></div>
-          <span class="slide-caption-text">Race Cars on the Move</span>
-          <span class="slide-caption-account">@realiracing</span>
-        </div>
-      </div>
-
-      <!-- Slide 4: WRC Chile 2019 -->
-      <div class="slide slide-4" data-bg="/slides/slide4.jpg" data-bg-sm="/slides/slide4-sm.jpg">
-        <div class="slide-graphic">
-          <svg viewBox="0 0 700 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Rally car silhouette -->
-            <ellipse cx="350" cy="250" rx="230" ry="12" fill="#80c020" opacity="0.2"/>
-            <path d="M160 228 Q180 200 220 192 Q280 182 350 181 Q420 182 480 192 Q520 200 540 228 Z" fill="#2a5010"/>
-            <path d="M220 192 Q280 170 350 168 Q420 170 480 192" fill="#4a8020" opacity="0.7"/>
-            <rect x="235" y="172" width="230" height="36" rx="8" fill="#0a0a0a" opacity="0.6"/>
-            <!-- Trees in background -->
-            <polygon points="60,230 80,170 100,230"  fill="#1a4010" opacity="0.6"/>
-            <polygon points="90,230 115,155 140,230" fill="#1e5012" opacity="0.5"/>
-            <polygon points="570,230 595,165 620,230" fill="#1a4010" opacity="0.6"/>
-            <circle cx="205" cy="232" r="26" fill="#111" stroke="#80c020" stroke-width="2.5"/>
-            <circle cx="205" cy="232" r="16" fill="#1a1d23"/>
-            <circle cx="495" cy="232" r="26" fill="#111" stroke="#80c020" stroke-width="2.5"/>
-            <circle cx="495" cy="232" r="16" fill="#1a1d23"/>
-            <!-- dust -->
-            <ellipse cx="100" cy="238" rx="55" ry="10" fill="white" opacity="0.06"/>
-          </svg>
-        </div>
-        <div class="slide-grid"></div>
-        <div class="slide-vignette"></div>
-        <div class="slide-caption">
-          <div class="slide-caption-dot"></div>
-          <span class="slide-caption-text">Speed · Precision · Competition</span>
-          <span class="slide-caption-account">@realiracing</span>
-        </div>
-      </div>
-
-      <!-- Slide 5: NASCAR Talladega 2023 -->
-      <div class="slide slide-5" data-bg="/slides/slide5.jpg" data-bg-sm="/slides/slide5-sm.jpg">
-        <div class="slide-graphic">
-          <svg viewBox="0 0 700 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- NASCAR stock car -->
-            <ellipse cx="350" cy="255" rx="290" ry="15" fill="#ff8000" opacity="0.2"/>
-            <path d="M100 235 Q130 205 200 196 Q270 186 350 185 Q430 186 500 196 Q570 205 600 235 Z" fill="#1a0800"/>
-            <path d="M200 196 Q270 176 350 174 Q430 176 500 196" fill="#ff6000" opacity="0.5"/>
-            <rect x="215" y="176" width="270" height="38" rx="6" fill="#0a0a0a" opacity="0.55"/>
-            <!-- Grandstand shapes behind -->
-            <rect x="0"   y="100" width="160" height="130" fill="#181208" opacity="0.6" rx="2"/>
-            <rect x="540" y="100" width="160" height="130" fill="#181208" opacity="0.6" rx="2"/>
-            <!-- Crowd dots -->
-            <circle cx="40"  cy="130" r="3" fill="white" opacity="0.3"/>
-            <circle cx="60"  cy="125" r="3" fill="white" opacity="0.25"/>
-            <circle cx="80"  cy="135" r="3" fill="white" opacity="0.3"/>
-            <circle cx="100" cy="128" r="3" fill="white" opacity="0.2"/>
-            <circle cx="120" cy="132" r="3" fill="white" opacity="0.3"/>
-            <circle cx="600" cy="130" r="3" fill="white" opacity="0.3"/>
-            <circle cx="620" cy="125" r="3" fill="white" opacity="0.25"/>
-            <circle cx="640" cy="133" r="3" fill="white" opacity="0.3"/>
-            <circle cx="660" cy="127" r="3" fill="white" opacity="0.2"/>
-            <circle cx="185" cy="242" r="30" fill="#111" stroke="#ff6000" stroke-width="2.5"/>
-            <circle cx="185" cy="242" r="18" fill="#1a1d23"/>
-            <circle cx="515" cy="242" r="30" fill="#111" stroke="#ff6000" stroke-width="2.5"/>
-            <circle cx="515" cy="242" r="18" fill="#1a1d23"/>
-          </svg>
-        </div>
-        <div class="slide-grid"></div>
-        <div class="slide-vignette"></div>
-        <div class="slide-caption">
-          <div class="slide-caption-dot"></div>
-          <span class="slide-caption-text">On Track · Full Throttle</span>
-          <span class="slide-caption-account">@realiracing</span>
-        </div>
-      </div>
-
-      <!-- Slide 6: iRacing Porsche -->
-      <div class="slide slide-6" data-bg="/slides/slide6.jpg" data-bg-sm="/slides/slide6-sm.jpg">
-        <div class="slide-graphic">
-          <svg viewBox="0 0 700 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Porsche GT3 silhouette -->
-            <ellipse cx="350" cy="252" rx="270" ry="15" fill="#00c8ff" opacity="0.15"/>
-            <path d="M130 232 Q165 200 240 190 Q295 182 350 181 Q405 182 460 190 Q535 200 570 232 Z" fill="#0d1525"/>
-            <path d="M240 190 Q295 170 350 168 Q405 170 460 190" fill="#1a3060" opacity="0.8"/>
-            <!-- Rear wing -->
-            <rect x="215" y="163" width="270" height="10" rx="3" fill="#00c8ff" opacity="0.5"/>
-            <rect x="220" y="155" width="260" height="14" rx="4" fill="#0a1530" opacity="0.8"/>
-            <rect x="285" y="155" width="12" height="30" fill="#00c8ff" opacity="0.4"/>
-            <rect x="403" y="155" width="12" height="30" fill="#00c8ff" opacity="0.4"/>
-            <circle cx="200" cy="236" r="28" fill="#111" stroke="#00c8ff" stroke-width="2.5"/>
-            <circle cx="200" cy="236" r="17" fill="#1a1d23"/>
-            <circle cx="500" cy="236" r="28" fill="#111" stroke="#00c8ff" stroke-width="2.5"/>
-            <circle cx="500" cy="236" r="17" fill="#1a1d23"/>
-            <!-- track markings -->
-            <line x1="0" y1="260" x2="700" y2="250" stroke="white" stroke-width="1.5" stroke-dasharray="40 30" opacity="0.12"/>
-          </svg>
-        </div>
-        <div class="slide-grid"></div>
-        <div class="slide-vignette"></div>
-        <div class="slide-caption">
-          <div class="slide-caption-dot"></div>
-          <span class="slide-caption-text">Race Day · Grid Ready</span>
-          <span class="slide-caption-account">@realiracing</span>
-        </div>
-      </div>
-
-      <!-- Slide 7: Sim Rig / Moza setup -->
-      <div class="slide slide-7" data-bg="/slides/slide7.jpg" data-bg-sm="/slides/slide7-sm.jpg">
-        <div class="slide-graphic">
-          <svg viewBox="0 0 700 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Monitor bank -->
-            <rect x="80"  y="60" width="175" height="110" rx="6" fill="#0d1525" stroke="#00c8ff" stroke-width="1.5"/>
-            <rect x="262" y="50" width="176" height="120" rx="6" fill="#0d1525" stroke="#00c8ff" stroke-width="2"/>
-            <rect x="445" y="60" width="175" height="110" rx="6" fill="#0d1525" stroke="#00c8ff" stroke-width="1.5"/>
-            <!-- Screen glow -->
-            <rect x="85"  y="65" width="165" height="100" rx="4" fill="#001830" opacity="0.9"/>
-            <rect x="267" y="55" width="166" height="110" rx="4" fill="#001a35" opacity="0.9"/>
-            <rect x="450" y="65" width="165" height="100" rx="4" fill="#001830" opacity="0.9"/>
-            <!-- iRacing UI elements on center screen -->
-            <rect x="290" y="90" width="120" height="8"  rx="2" fill="#e8ff00" opacity="0.6"/>
-            <rect x="290" y="104" width="80"  height="5"  rx="2" fill="#00c8ff" opacity="0.5"/>
-            <rect x="290" y="115" width="100" height="5"  rx="2" fill="white"   opacity="0.2"/>
-            <!-- Steering wheel -->
-            <circle cx="350" cy="240" r="48" fill="none" stroke="#2a2d35" stroke-width="14"/>
-            <circle cx="350" cy="240" r="48" fill="none" stroke="#e8ff00" stroke-width="2.5"
-              stroke-dasharray="50 250" stroke-dashoffset="-60"/>
-            <line x1="350" y1="240" x2="315" y2="252" stroke="#e8ff00" stroke-width="2" stroke-linecap="round"/>
-            <line x1="350" y1="240" x2="385" y2="228" stroke="#e8ff00" stroke-width="2" stroke-linecap="round"/>
-            <line x1="350" y1="240" x2="350" y2="286" stroke="#e8ff00" stroke-width="2" stroke-linecap="round"/>
-            <circle cx="350" cy="240" r="10" fill="#1a1d23" stroke="#e8ff00" stroke-width="2"/>
-            <circle cx="350" cy="240" r="4"  fill="#e8ff00"/>
-            <!-- Rig frame -->
-            <rect x="280" y="285" width="140" height="8" rx="3" fill="#2a2d35"/>
-            <rect x="310" y="290" width="12"  height="25" rx="2" fill="#2a2d35"/>
-            <rect x="378" y="290" width="12"  height="25" rx="2" fill="#2a2d35"/>
-          </svg>
-        </div>
-        <div class="slide-grid"></div>
-        <div class="slide-vignette"></div>
-        <div class="slide-caption">
-          <div class="slide-caption-dot"></div>
-          <span class="slide-caption-text">Sim Racing · Real Passion</span>
-          <span class="slide-caption-account">@realiracing</span>
-        </div>
-      </div>
-
-      <!-- Progress dots — 7 real photo slides -->
-      <div class="slideshow-progress" id="progress">
-        <button type="button" class="progress-dot active" aria-label="Show slide 1" aria-current="true"></button>
-        <button type="button" class="progress-dot" aria-label="Show slide 2"></button>
-        <button type="button" class="progress-dot" aria-label="Show slide 3"></button>
-        <button type="button" class="progress-dot" aria-label="Show slide 4"></button>
-        <button type="button" class="progress-dot" aria-label="Show slide 5"></button>
-        <button type="button" class="progress-dot" aria-label="Show slide 6"></button>
-        <button type="button" class="progress-dot" aria-label="Show slide 7"></button>
-        <button type="button" class="slide-toggle" aria-label="Pause slideshow" aria-pressed="false">Pause</button>
-      </div>
-
-      <!-- Nav arrows -->
-      <button type="button" class="slide-nav slide-nav-prev" aria-label="Previous slide">&#8592;</button>
-      <button type="button" class="slide-nav slide-nav-next" aria-label="Next slide">&#8594;</button>
     </div>
 
     <!-- Hero content over slideshow -->
@@ -1217,6 +1068,7 @@
         <span class="yellow">Stream.</span><br>
         <span class="blue">Compete.</span>
       </h1>
+      <p class="hero-sub">iRacing setups, force-feedback guides and real sim-racing gear picks.</p>
       <p data-seo-hero>Honest iRacing setup guides, force feedback settings and gear picks from Carlos Martinez, tested on a real MOZA direct-drive rig. Real motorsport roots.</p>
       <div class="hero-buttons">
         <a class="btn-primary" href="/blog/iracing-force-feedback-explained.html">Start with the FFB guide &rarr;</a>
