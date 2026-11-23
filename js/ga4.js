@@ -18,11 +18,12 @@
   window.gtag = window.gtag || gtag;
 
   // ── Consent ─────────────────────────────────────────────────────────────
-  // Same behaviour as netwebmedia.com (js/main.js "Cookie Consent Banner"): GA4 Consent Mode
-  // v2, default denied until the visitor chooses, choice kept 365 days in the first-party
+  // Same banner as netwebmedia.com (js/main.js "Cookie Consent Banner"): GA4 Consent Mode
+  // v2, choice kept 365 days in the first-party
   // cookie nwm_consent = all | essential. No inline script or style: the banner is built with
-  // the DOM API and styled by /consent.css, so the strict CSP stays untouched. GA4 always
-  // loads; until the visitor accepts, every storage signal is denied (cookieless pings).
+  // the DOM API and styled by /consent.css, so the strict CSP stays untouched. Since 2026-11-23
+  // analytics_storage is granted by default (a stored Reject turns it off); EEA, UK and
+  // Switzerland stay denied until Accept. Advertising signals stay denied until Accept.
   var CK = 'nwm_consent';
   function readConsent() {
     var m = document.cookie.match(/(?:^|;\s*)nwm_consent=([^;]+)/);
@@ -40,12 +41,12 @@
   var isEs = /^es/i.test(document.documentElement.lang || '');
   var TXT = isEs ? {
     t: 'Cookies de analítica',
-    b: 'Medimos visitas con Google Analytics. Sin cookies si no aceptas; con cookies solo si aceptas.',
+    b: 'Medimos visitas con Google Analytics. Rechazar desactiva las cookies de analítica; en la UE, el Reino Unido y Suiza siguen desactivadas hasta que aceptes.',
     more: 'Política de privacidad',
     ok: 'Aceptar', no: 'Rechazar', url: '/privacy.html#analytics'
   } : {
     t: 'Analytics cookies',
-    b: 'We measure visits with Google Analytics: cookieless unless you accept.',
+    b: 'We measure visits with Google Analytics. Reject turns analytics cookies off; in the EU, UK and Switzerland they stay off until you Accept.',
     more: 'Privacy policy',
     ok: 'Accept', no: 'Reject', url: '/privacy.html#analytics'
   };
@@ -89,9 +90,12 @@
   });
   var saved = readConsent();
   var defaults = signals(saved);
-  defaults.wait_for_update = 500;
+  defaults.analytics_storage = saved === 'essential' ? 'denied' : 'granted';
   gtag('consent', 'default', defaults);
   if (!saved) {
+    // Where the law asks for consent first (EEA, UK, Switzerland) analytics stays denied until Accept.
+    gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500,
+      region: ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'GB', 'CH'] });
     // Like netwebmedia.com: mount 1.5 s after DOMContentLoaded, so it never competes with first paint.
     var later = function () { setTimeout(mountBanner, 1500); };
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', later);

@@ -1,6 +1,6 @@
 // node --test _ci/consent.test.mjs
 // Runs js/ga4.js against a tiny fake DOM and checks the Consent Mode behaviour:
-// denied by default, banner shown, Accept/Reject write the cookie and update gtag,
+// analytics granted by default (EEA/UK/CH denied via region), ads denied, banner shown, Accept/Reject write the cookie and update gtag,
 // a stored choice skips the banner. No network, no browser.
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -39,12 +39,21 @@ function run(cookie, lang = 'en') {
 
 const find = (n, pred) => (pred(n) ? n : (n.children || []).map((c) => find(c, pred)).find(Boolean));
 
-test('no choice: default denied, banner shown, Reject keeps analytics denied', () => {
+test('no choice: analytics granted by default, ads denied, EEA/UK/CH denied, Reject turns analytics off', () => {
   const { win, doc, body, classes } = run('');
-  const def = win.dataLayer.find((a) => a[0] === 'consent' && a[1] === 'default');
-  assert.equal(def[2].analytics_storage, 'denied');
-  assert.equal(def[2].ad_storage, 'denied');
-  assert.equal(def[2].wait_for_update, 500);
+  const defs = win.dataLayer.filter((a) => a[0] === 'consent' && a[1] === 'default').map((a) => a[2]);
+  assert.equal(defs.length, 2);
+  assert.equal(defs[0].analytics_storage, 'granted');
+  assert.equal(defs[0].region, undefined);
+  for (const d of defs) {
+    assert.equal(d.ad_storage, 'denied');
+    assert.equal(d.ad_user_data, 'denied');
+    assert.equal(d.ad_personalization, 'denied');
+  }
+  assert.equal(defs[1].analytics_storage, 'denied');
+  assert.equal(defs[1].wait_for_update, 500);
+  for (const c of ['DE', 'FR', 'ES', 'GB', 'CH', 'IS', 'NO']) assert.ok(defs[1].region.includes(c), c);
+  assert.ok(win.dataLayer.findIndex((a) => a[0] === 'config') > win.dataLayer.findIndex((a) => a[1] === 'default' && a[2].region));
   const banner = doc.getElementById('consent-banner');
   assert.ok(banner);
   const [no, ok] = find(banner, (n) => n.className === 'consent-actions').children;
@@ -69,6 +78,15 @@ test('stored choice: no banner, default follows the cookie', () => {
   const { win, doc } = run('nwm_consent=all');
   assert.equal(doc.getElementById('consent-banner'), null);
   assert.equal(win.dataLayer.find((a) => a[1] === 'default')[2].analytics_storage, 'granted');
+  assert.equal(win.dataLayer.filter((a) => a[1] === 'default').length, 1);
+});
+
+test('stored Reject: analytics and ads stay denied, no banner', () => {
+  const { win, doc } = run('nwm_consent=essential');
+  assert.equal(doc.getElementById('consent-banner'), null);
+  const def = win.dataLayer.find((a) => a[1] === 'default')[2];
+  assert.equal(def.analytics_storage, 'denied');
+  assert.equal(def.ad_storage, 'denied');
 });
 
 test('Spanish page gets Spanish copy', () => {
