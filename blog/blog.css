@@ -602,3 +602,23 @@ a.blog-pager-link:hover { border-color: var(--accent); color: var(--accent); }
   .gear-page .article-lead { font-size: 1rem; margin-bottom: 4px; }
 }
 .related-card .board-stat .board-by { display: block; margin: 2px 0 0; font-size: .78rem; color: var(--muted); text-transform: none; letter-spacing: 0; }
+
+/* ── Joni R6 2026-11-23 ── */
+/* Blog cards: the category chip sits wholly inside the picture (no banner padding), never across its edge. */
+.blog-card-banner { padding: 0; }
+.blog-card-banner .blog-card-cat {
+  left: 10px; bottom: 10px; max-width: calc(100% - 20px);
+  padding: 4px 9px; background: rgba(10,10,10,.82); border-radius: 4px; line-height: 1.3;
+}
+/* /gear.html: two columns from 667px; an odd last card spans both so no cell is empty, its body in two columns. */
+@media (min-width: 667px) {
+  .rig-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .rig-grid > .rig-item:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .rig-grid > .rig-item:last-child:nth-child(odd) .rig-item-body {
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: auto 1fr;
+    column-gap: 28px; row-gap: 12px; align-items: start;
+  }
+  .rig-grid > .rig-item:last-child:nth-child(odd) .rig-item-body h3 { grid-column: 1; grid-row: 1; }
+  .rig-grid > .rig-item:last-child:nth-child(odd) .rig-item-body p { grid-column: 2; grid-row: 1 / span 2; }
+  .rig-grid > .rig-item:last-child:nth-child(odd) .rig-item-body .rig-buy { grid-column: 1; grid-row: 2; align-self: end; margin-top: 0; }
+}

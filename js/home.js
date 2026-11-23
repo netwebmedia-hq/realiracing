@@ -1,4 +1,4 @@
-/* RealIRacing — homepage behaviour (media tabs, poll, smooth scroll).
+/* RealIRacing — homepage behaviour (media tabs, smooth scroll).
    Extracted from an inline <script> in index.html on 2026-08-18 so the site can
    enforce a Content-Security-Policy without 'unsafe-inline' in script-src. The
    onclick="" attributes that used to drive these are now addEventListener
@@ -51,16 +51,6 @@
   window.addEventListener('load', updateAllFades);
   document.querySelectorAll('.media-tab').forEach(function (t) { t.addEventListener('click', function () { setTimeout(updateAllFades, 0); }); });
   updateAllFades();
-
-  /* ── POLL ── */
-  document.querySelectorAll('.poll-option').forEach(function (opt) {
-    opt.addEventListener('click', function (e) {
-      document.querySelectorAll('.poll-option').forEach(function (o) { o.classList.remove('selected'); });
-      document.querySelectorAll('.poll-option').forEach(function (o) { o.setAttribute('aria-pressed', 'false'); });
-      e.currentTarget.classList.add('selected');
-      e.currentTarget.setAttribute('aria-pressed', 'true');
-    });
-  });
 
   /* ── SMOOTH SCROLL ── */
   document.querySelectorAll('a[href^="#"]').forEach(function (a) {

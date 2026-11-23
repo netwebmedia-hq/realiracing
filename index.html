@@ -788,31 +788,10 @@
     .platform-name { font-weight: 700; font-size: 0.95rem; }
     .platform-handle { font-size: 0.78rem; color: var(--muted); margin-top: 4px; }
 
-    /* ── POLL ────────────────────────────── */
-    .poll-section { max-width: 600px; margin: 0 auto; padding: 80px 24px; text-align: center; }
-    .poll-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 36px; margin-top: 32px;
-    }
-    .poll-question { font-size: 1.15rem; font-weight: 700; margin-bottom: 24px; }
-    .poll-options { display: flex; flex-direction: column; gap: 12px; }
-    .poll-option {
-      display: flex; align-items: center; gap: 12px;
-      background: var(--dark);
-      border: 1px solid var(--border);
-      border-radius: 8px; padding: 14px 18px;
-      cursor: pointer; transition: border-color .2s; text-align: left;
-      font: inherit; color: inherit;
-    }
-    .poll-option:hover { border-color: var(--accent); }
-    .poll-option.selected { border-color: var(--accent); background: rgba(232,255,0,.07); }
-    .poll-option-dot {
-      width: 18px; height: 18px; border-radius: 50%;
-      border: 2px solid var(--border); flex-shrink: 0;
-    }
-    .poll-option.selected .poll-option-dot { border-color: var(--accent); background: var(--accent); }
+    /* ── REQUEST: centred prompt + one button to the forum (replaces the old poll, which recorded nothing) ── */
+    .request-section { max-width: 640px; margin: 0 auto; padding: 36px 0 12px; text-align: center; }
+    .request-section h2 { font-size: 1.5rem; margin-bottom: 8px; }
+    .request-section p:not(.section-label) { color: var(--muted); margin: 0 auto 18px; max-width: 520px; }
 
     /* ── ALL LINKS ───────────────────────── */
     .linktree-section {
@@ -1068,13 +1047,7 @@
     details.faq-item summary h3 { margin: 0; font-size: 1rem; }
     details.faq-item p { padding: 0 18px 16px; margin: 0; }
 
-    /* poll and link list: compact, at the bottom */
-    .poll-section { max-width: 760px; padding: 28px 24px 8px; }
-    .poll-section h2 { font-size: 1.3rem; }
-    .poll-card { padding: 16px; margin-top: 14px; }
-    .poll-question { margin-bottom: 12px; font-size: 1rem; }
-    .poll-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; }
-    .poll-option { padding: 10px 12px; }
+    /* link list: compact, at the bottom */
     .linktree-section { padding: 24px 24px 28px; margin-bottom: 0; max-width: 900px; border-radius: var(--radius); }
     .linktree-section h2 { font-size: 1.3rem; margin-bottom: 4px; }
     .linktree-section p { margin-bottom: 14px; }
@@ -1098,8 +1071,7 @@
       .media-section, .platforms-section { padding: 28px 16px; }
       .media-tabs { flex-wrap: nowrap; overflow-x: auto; }
       .media-tab { white-space: nowrap; }
-      .poll-section { padding: 20px 16px 4px; }
-      .poll-options { grid-template-columns: 1fr 1fr; }
+      .request-section { padding: 24px 0 8px; }
       #ladder .gear-box { padding: 14px; }
       #ladder .gear-table tbody th { min-width: 8em; }
     }
@@ -1141,16 +1113,16 @@
     .post-card .post-thumb { height: 120px; aspect-ratio: auto; }
     .post-info { padding: 12px 14px; }
     .media-grid.h-row > .post-card, .yt-grid.h-row > .yt-thumb, .yt-grid.h-row > .yt-cta-card { width: 250px; }
-    .poll-section { padding-top: 16px; }
-    .poll-section > p:not(.section-label) { margin: 0; font-size: .9rem; }
+    .request-section { padding-top: 20px; }
+    .request-section h2 { font-size: 1.3rem; }
+    .request-section p:not(.section-label) { margin-bottom: 14px; font-size: .9rem; }
     .linktree-section { padding: 16px 20px 18px; margin-top: 0; }
     .linktree-section > p:not(.section-label) { margin-bottom: 10px; font-size: .9rem; }
     footer { padding-top: 24px; padding-bottom: 24px; }
-    .tail { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.3fr); gap: 16px; align-items: start; padding: 0 24px 24px; }
-    .tail .poll-section { max-width: none; padding: 16px 0 0; }
+    .tail { max-width: 760px; margin: 0 auto; padding: 0 24px 24px; }
     .tail > div[style] { padding: 16px 0 0 !important; }
     .tail .linktree-section { margin: 0; max-width: none; }
-    @media (max-width: 860px) { .tail { grid-template-columns: 1fr; padding: 0 16px 16px; } }
+    @media (max-width: 860px) { .tail { padding: 0 16px 16px; } }
     .proof { grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); }
     .platforms-grid.h-row > .platform-card { padding: 12px; width: 150px; }
     .platform-icon { font-size: 1.5rem; margin-bottom: 6px; }
@@ -1164,7 +1136,8 @@
     @media (max-width: 440px) { .proof .stats-bar { grid-template-columns: 1fr 1fr; gap: 12px 6px; } .stat-num { font-size: 1.3rem; } .stat-label { font-size: .7rem; } }
 
     /* ── Joni R3 2026-11-23: one gear block, real poster, own photos in the media row, phone hero ── */
-    #gear .aff-note { font-size: .85rem; color: var(--muted); margin: 2px 0 6px; }
+    #gear .aff-box { margin: 8px 0 10px; padding: 12px 16px; background: rgba(232,255,0,.08); border: 1px solid rgba(232,255,0,.2); border-radius: var(--radius); font-size: .88rem; line-height: 1.5; color: var(--muted); }
+    #gear .aff-box strong { color: var(--text); }
     #gear .section-sub { font-size: .92rem; }
 
     /* media row: own trackside photographs; a right/left edge fade while there is more to scroll */
@@ -1250,7 +1223,6 @@
       <li><a href="/forum/">Forum</a></li>
       <li><a href="/gear.html">My Rig</a></li>
       <li><a href="#platforms">Where to watch</a></li>
-      <li><a href="#poll">Vote</a></li>
       <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
     </ul>
   </nav>
@@ -1324,8 +1296,10 @@
     <div class="gear-inner" style="max-width:1000px;margin:0 auto;">
       <p class="section-label">Gear & Hardware</p>
       <h2 id="gear-h">Sim Racing Gear I Actually Use</h2>
-      <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
-      <p class="section-sub">Every link below is affiliate. I earn a small commission when you buy — at no cost to you — which helps keep RealIRacing running. What I race on is on my own rig; the rest are researched recommendations. Full reviews are in the <a href="/blog/best-sim-racing-wheels-iracing.html" style="color:var(--accent2)">wheel buyer's guide</a>.</p>
+      <div class="aff-box" role="note">
+        <strong>Affiliate disclosure:</strong> As an Amazon Associate I earn from qualifying purchases. Some links on this page are affiliate links. I may earn a commission at no cost to you.
+      </div>
+      <p class="section-sub">What I race on is on my own rig; the rest are researched recommendations. Full reviews are in the <a href="/blog/best-sim-racing-wheels-iracing.html" style="color:var(--accent2)">wheel buyer's guide</a>.</p>
 
       <div class="gear-cards h-row">
         <!-- My rig — what I race on -->
@@ -1381,9 +1355,6 @@
         <p style="margin:12px 0 0;color:var(--muted);font-size:0.9rem;">Streaming or fighting stutters? <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=home&amp;utm_campaign=pitstop" style="color:var(--accent2);font-weight:700;text-decoration:underline;">NWM PitStop</a> cleans up the PC and gives the sim priority before every session.</p>
       </div>
 
-      <div style="margin-top:48px;padding:20px;background:rgba(232,255,0,.08);border:1px solid rgba(232,255,0,.2);border-radius:var(--radius);text-align:center;font-size:0.85rem;color:var(--muted);">
-        <strong style="color:var(--text);">Affiliate Disclosure:</strong> As an Amazon Associate I earn from qualifying purchases. Some links on this page are affiliate links. I may earn a commission at no cost to you. Everything pictured is hardware I personally own and race on.
-      </div>
     </div>
   </section>
 
@@ -1444,7 +1415,7 @@
   <section id="content">
     <p class="section-label">Content</p>
     <h2>What's on the channel</h2>
-    <p class="section-sub">Four core content types — voted on by the community.</p>
+    <p class="section-sub">Four core content types, shaped by what you ask for on the forum.</p>
 
     <div class="pillars-grid h-row">
       <div class="pillar-card">
@@ -1702,39 +1673,19 @@
   </section>
 
   <div class="tail">
-  <!-- COMMUNITY POLL -->
-  <div class="poll-section" id="poll">
-    <p class="section-label">Community Poll</p>
-    <h2>You decide the content</h2>
-    <p style="color:var(--muted); margin-bottom:0;">Vote on YouTube — your pick shapes what gets made next.</p>
-
-    <div class="poll-card">
-      <p class="poll-question">🏁 What do you want to see most on this channel?</p>
-      <div class="poll-options">
-        <button type="button" class="poll-option selected" aria-pressed="true">
-          <div class="poll-option-dot"></div> Race Highlights
-        </button>
-        <button type="button" class="poll-option" aria-pressed="false">
-          <div class="poll-option-dot"></div> Setup Guides
-        </button>
-        <button type="button" class="poll-option" aria-pressed="false">
-          <div class="poll-option-dot"></div> Rig Tours
-        </button>
-        <button type="button" class="poll-option" aria-pressed="false">
-          <div class="poll-option-dot"></div> iRacing Tips
-        </button>
-      </div>
-      <p style="margin-top:20px; font-size:0.8rem; color:var(--muted)">
-        Vote on the real poll → <a href="https://www.youtube.com/@realtape" target="_blank" style="color:var(--accent)">YouTube Community tab</a>
-      </p>
-    </div>
+  <!-- WHAT TO COVER NEXT: one real destination, no fake poll -->
+  <div class="request-section" id="request">
+    <p class="section-label">You decide the content</p>
+    <h2>What should I cover next?</h2>
+    <p>Name the car, the track or the setup problem you want a guide for. Requests go on the forum, where I read every one.</p>
+    <a class="btn-primary" href="/forum/setups.html">Make a request on the forum</a>
   </div>
 
   </div>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong></p>
     <p style="margin-top:6px;font-size:0.78rem;">
       <a href="/blog/">Blog</a> ·
       <a href="/gear.html">My Rig</a> ·
