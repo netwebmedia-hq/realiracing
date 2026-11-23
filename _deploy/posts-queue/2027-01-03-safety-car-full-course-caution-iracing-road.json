@@ -1,0 +1,153 @@
+{
+  "slug": "safety-car-full-course-caution-iracing-road",
+  "tag": "iRacing Tips · Racing Rules",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Safety car and full-course caution procedure in iRacing road races",
+  "description": "Learn when safety car deploys, how to bunch field safely, pit strategy under yellow, and restart positioning so you don't get penalized.",
+  "sections": [
+    {
+      "p": "A safety car period stops individual racing and bunches the field behind a pace car that leads a lap or more at slow speed. On road courses, the safety car procedure is tighter than oval racing: you must stay off throttle, hold position, and time your pit window precisely. Mistakes here cost you places, laps, and sometimes safety ratings. This guide covers deployment conditions, bunching mechanics, pit window strategy, and restart protocols."
+    },
+    {
+      "h2": "When does the safety car deploy on road courses?"
+    },
+    {
+      "p": "The safety car typically deploys when debris blocks the racing line, a car is stuck in a dangerous spot, or an accident blocks marshal marshalling points. On road courses, single-car incidents in runoff areas often do not trigger a safety car. The incident has to pose a clear hazard to oncoming traffic or block a critical section of track."
+    },
+    {
+      "p": "Once deployed, all cars must abandon their qualifying or race pace and form a single-file line behind the pace car. The safety car will lead the field for one or more laps at reduced speed, typically around 80-100 km/h depending on track. During this period, no overtaking is permitted except under restart conditions."
+    },
+    {
+      "list": [
+        "Debris in racing line or on track surface (oil, parts, gravel)",
+        "Car unable to restart or stranded in an unsafe location",
+        "Major accident blocking multiple car widths of track",
+        "Track surface damage (barrier pieces, curbing collapse)",
+        "Inclement weather transition requiring full-course yellow"
+      ]
+    },
+    {
+      "h2": "Bunching the field behind the pace car"
+    },
+    {
+      "p": "When the safety car is called, you will see a message on screen and yellow flags will wave. Immediately lift off throttle and begin slowing. The pace car will be ahead somewhere on track, and you must catch up to it and position yourself single-file in order of your race standing. This is not a free-for-all sprint to the leader; bunching is controlled by pace car speed and your duty to maintain order."
+    },
+    {
+      "p": "The key rule: stay on the racing line and do not pass other cars while bunching. If a car ahead of you is slower to react, you must back off and let the field organize naturally. Aggressive moves during bunching trigger warnings or penalties. The pace car will slow to a speed that allows all cars to catch up evenly."
+    },
+    {
+      "olist": [
+        "Identify the pace car ahead and reduce speed steadily (avoid hard braking in a straight line if traffic is behind you)",
+        "Hold your position relative to the car directly ahead; do not close to bumper distance",
+        "Stay on the racing line; do not weave or move side-to-side unless necessary to avoid a car that is broken down",
+        "Once you reach pace car speed, hold that speed and position until restart signal"
+      ]
+    },
+    {
+      "tip": "If you are running P1 or P2 when safety car deploys, your position is already set. Focus on smooth downshifting and line management. Do not over-brake; the pace car's deceleration is forgiving and smooth.",
+      "tipLabel": "Pace car following"
+    },
+    {
+      "h2": "Pit strategy under yellow: window, timing, and penalties"
+    },
+    {
+      "p": "One of the biggest tactical decisions under yellow is whether to pit. The pit window is open immediately after the safety car is called, and you can pit at any point during the yellow-flag period until a specified window closes (usually 2-3 laps into the yellow). If you pit after the window closes, you incur a penalty or are lapped by the field."
+    },
+    {
+      "p": "Pitting under yellow offers fuel and tire strategy gains. You serve your stop while the field is bunched and moving slowly, so you lose less track position than you would in green-flag traffic. However, if many cars pit ahead of you, you can be held by pit crew traffic or rejoin into a train of slower cars. The first lap or two of yellow pit traffic is fast; after that, congestion builds."
+    },
+    {
+      "list": [
+        "Front-runners often pit early in the yellow window to minimize time loss and secure a fresh set of tires for restart racing",
+        "Mid-field drivers weigh the cost of lost position against gaining a pit stop credit; pitting when the window is closing means fewer drivers pit after you, so traffic lessens",
+        "Drivers on a one-stop strategy may pit under yellow to extend their range and avoid a final stop in traffic later",
+        "In multi-driver or endurance races, the yellow window is crucial for driver changes; miss it and your next stop will be under green, costing places"
+      ]
+    },
+    {
+      "p": "After you pit and rejoin, you rejoin at the back of the field. The safety car is still out leading the front-runners, so you must catch back up behind the pace car at reduced speed. This regrouping lap gives you time to settle in and prepare for the restart. Do not attempt to gain positions on the pace car lap. Stay single-file and in order."
+    },
+    {
+      "h2": "Restart positioning and acceleration rules"
+    },
+    {
+      "p": "The restart occurs when the safety car returns to the pit lane and green flag waves. The pace car will accelerate or slow to signal the start is imminent. Depending on track and series, the restart may happen on a designated line (like the control line at the start/finish), or the leader may accelerate at any point once the green is waved."
+    },
+    {
+      "p": "Critical restart rules: you must not pass before the green flag is waved. Doing so triggers a jump-start penalty. You must hold your position on the racing line and accelerate smoothly once the leader accelerates or the green flag is shown. Do not use the restart as an excuse to brake-test or jostle; maintain line discipline and smooth inputs."
+    },
+    {
+      "olist": [
+        "Watch the pace car or the flag stand to anticipate green flag. The pace car will often ease off throttle slightly or brake less hard as the restart zone approaches",
+        "Accelerate at the same moment as the leader to avoid being left behind or accused of a jump-start",
+        "The first corner after restart is wheel-to-wheel racing again; use your exit line and momentum to gain any advantage you can, but do not force a pass if the door closes"
+      ]
+    },
+    {
+      "tip": "Restart timing is tight. If you trail the leader by half a car length, you will fall behind significantly once acceleration peaks. Build a small rolling start and release slightly early so you have a moment of momentum when the leader accelerates.",
+      "tipLabel": "Restart launch"
+    },
+    {
+      "h2": "Common restart penalties and what to avoid"
+    },
+    {
+      "p": "Jumping the restart before the green flag is shown incurs a drive-through penalty. This applies if you accelerate noticeably before the leader, or if you pass a car before the restart zone. A second infraction or a severe jump-start may result in a black flag."
+    },
+    {
+      "p": "During the yellow-flag lap, excessive weaving, passing under yellow, or failing to maintain order triggers a warning. A repeat offense is a penalty. Aggressive driving during bunching (especially at high speeds or close proximity) can also draw penalties if reported or caught on replay."
+    },
+    {
+      "p": "If you pit after the pit window closes, you receive either a penalty or are lapped by the race. You must serve the penalty immediately (if it is a drive-through) or accept being down a lap. Some series allow you to unlap yourself during a future safety car or restart; others do not. Check the series rules."
+    },
+    {
+      "list": [
+        "Jump-start: accelerating before green flag is shown, costing a drive-through penalty",
+        "Late pit window: pitting after the official window closes, resulting in a penalty or being lapped",
+        "Unsafe rejoin: returning to track in an unsafe manner or cutting in front of other cars exiting pit lane",
+        "Speeding on pit road: accelerating above pit speed limit on entry or exit, costing a penalty",
+        "Passing under yellow: overtaking a car before the restart zone, triggering a warning or penalty"
+      ]
+    },
+    {
+      "h2": "Setup and driving for consistent pace under yellow"
+    },
+    {
+      "p": "The safety car period tests your smoothness and throttle control. Downshifting at reduced speeds, managing trail-braking into corners, and holding tight lines while following a pack all reward well-balanced setups. A setup that feels responsive under green can feel jerky or unpredictable at slow pace if brake bias is too forward or throttle map is aggressive."
+    },
+    {
+      "p": "During pace car laps, practice your corner entry and exit at low speed. Use the replay feature or telemetry after the race to compare your steering inputs and throttle application to faster drivers. Many sim racers lose places under yellow simply because they re-enter traffic with jerky steering or abrupt throttle transitions."
+    },
+    {
+      "p": "One final note: a safety car period is a mental reset. Do not use it to adjust your mental state; use it to refocus on the restart. Many drivers arrive at the restart zone tense or distracted after a pit stop or a close call. Take the yellow lap to breathe, check your tire temperatures, review your fuel load, and prepare for clean, smooth acceleration off the line. That 10 seconds of focus often yields 1-2 tenths of pace at the restart."
+    },
+    {
+      "p": "For more on race craft and responding to track conditions, see the guide on <a href=\"iracing-local-yellow-flags-road-courses-what-to-do.html\">local yellow flags and yellow-flag protocols</a>. Understanding the full spectrum of yellow-flag rules helps you anticipate safety car calls and position yourself mentally before they happen."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I pit on the pace car lap if the pit window is still open?",
+      "a": "Yes. The pit window typically opens immediately after the safety car is called and remains open for 2-3 laps into the yellow period. You can pit at any time during that window without penalty. Pitting early in the window gets you served faster, but pitting late in the window can be strategic if many drivers pit ahead of you and cause traffic. After the window closes, pitting incurs a penalty or gets you lapped."
+    },
+    {
+      "q": "What happens if I accelerate before the green flag waves at restart?",
+      "a": "You receive a jump-start penalty: typically a drive-through penalty served on the next lap or at the next pit stop. The penalty moves you down in position and costs you lap time. If you jump-start a second time in the same race, the penalty increases or results in a black flag disqualification."
+    },
+    {
+      "q": "If I miss the pit window, can I rejoin at the back and unlap myself later?",
+      "a": "No. If you pit after the official pit window closes, you are lapped by the field and must serve a penalty or accept being down a lap for the rest of the race. Some series allow you to unlap yourself during a future safety car; most do not. Check your series rules before the race."
+    },
+    {
+      "q": "How fast is the pace car, and can I draft behind it like I do other cars?",
+      "a": "The pace car runs at approximately 80-100 km/h depending on track and conditions. Drafting behind the pace car has minimal effect because the pace car is designed to be stable and predictable, not competitive. Focus on smooth line following and maintaining your position in the field. Any aggressive moves to gain a tow or close the gap too tightly can trigger a warning."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-cs-v2",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

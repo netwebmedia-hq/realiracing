@@ -1,0 +1,171 @@
+{
+  "slug": "hand-controls-one-handed-sim-racing-setups",
+  "tag": "Setup Guides · Accessibility",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Hand Controls and One-Handed Sim Racing Setups Explained",
+  "description": "Learn how to configure a sim rig for one-handed racing using hand controllers, paddle shifters, and adaptive input methods.",
+  "sections": [
+    {
+      "p": "One-handed sim racing is fully viable with the right controller setup and input mapping. Whether you have limited hand mobility, an injury, or simply prefer a single-controller layout, modern sim hardware and iRacing's flexible control binding system make it possible to race competitively without compromise."
+    },
+    {
+      "p": "The key is choosing hardware that consolidates steering, throttle, braking, and shifting into inputs you can physically reach and operate. This isn't about acceptance or workarounds. It's about matching your physiology to a control scheme that lets you focus on racecraft instead of fighting the rig."
+    },
+    {
+      "h2": "Hand controller types and how they work"
+    },
+    {
+      "p": "A hand controller is a single input device that combines multiple axes (steering, throttle, braking) into one unit, typically held in one hand. The most common options are steering wheels with integrated throttle and brake buttons, and racing joysticks with multiple analog inputs."
+    },
+    {
+      "p": "A direct drive wheelbase like the MOZA R9 (or any entry-level wheel) can be operated one-handed if you map throttle and braking to buttons on the wheel itself. Most modern racing wheels include programmable buttons, thumb wheels, or paddle shifters that can be reassigned to analogue inputs via software or the sim's control panel."
+    },
+    {
+      "list": [
+        "Steering wheel with button throttle and brake: Turn the wheel with your fingers or palm, use thumb buttons or rotary encoders for throttle and brake modulation.",
+        "Racing joystick (e.g., Logitech Extreme 3D Pro, CH Products Fighterstick): Single-hand joystick with hat switch, trigger, and thumb buttons for all controls.",
+        "Adaptive game controller: Xbox or PlayStation controllers with button remapping, used with adapters or native sim support.",
+        "Hand-operated throttle pedal and separate wheel: If you have one functional hand and one with limited range, a hand throttle unit mounted on a pedal frame lets you operate gas and brake with your foot while steering with your hand."
+      ]
+    },
+    {
+      "tip": "Button-based throttle and brake demand precise, repeated thumb or finger input. For longer races, fatigue matters. Load cell resistance on traditional pedals is gentler on fatigue-prone muscles. If you go button-based, test for 30 to 45 minutes before committing to a league session.",
+      "tipLabel": "Fatigue and input method"
+    },
+    {
+      "h2": "Mapping controls in iRacing"
+    },
+    {
+      "p": "iRacing's control menu (Settings > Controls > Buttons and Keys) lets you bind any physical input to any in-game function. Crucially, you can map analogue inputs (like a thumbwheel or hat switch) to throttle and brake, not just on-off buttons."
+    },
+    {
+      "p": "Start by identifying what hardware inputs your device reports to your PC. Use Windows Device Manager or your wheel's native software to confirm which axes and buttons are detected. Then open iRacing and test each one."
+    },
+    {
+      "olist": [
+        "Plug in your hand controller and launch iRacing.",
+        "Go to Settings > Controls > Buttons and Keys.",
+        "Find throttle and brake in the control list.",
+        "Click on each and physically move the input you want to assign (e.g., push your thumb wheel forward for throttle).",
+        "iRacing will register and save the binding.",
+        "Test in a practice session. Adjust sensitivity or dead zone in the same menu if needed.",
+        "Map shift up and shift down to buttons or paddles you can reach easily."
+      ]
+    },
+    {
+      "p": "Many steering wheels allow software remapping before the input even reaches iRacing. The MOZA R9, for instance, has software that can assign wheel buttons to custom functions. This can simplify your iRacing control panel and let you layer commands efficiently."
+    },
+    {
+      "h2": "One-handed input methods in detail"
+    },
+    {
+      "h3": "Thumb-based throttle and brake on a wheel"
+    },
+    {
+      "p": "If your wheel has a rotary encoder or thumb wheel on the rim, you can often map it to throttle (turn clockwise to increase) and brake (turn counter-clockwise to increase), or use two separate thumb buttons for progressive input. The advantage is that your steering hand never leaves the wheel. The trade-off is resolution. A single thumbwheel may not let you modulate brake pressure as finely as a pedal would, especially at the threshold of locking."
+    },
+    {
+      "p": "Practice in time trial first. Experiment with sensitivity settings in iRacing's control menu. Many sim racers find that setting a custom curve (if the game allows) or using a slight dead zone helps thumb inputs feel more natural."
+    },
+    {
+      "h3": "Paddle shifters for throttle and brake"
+    },
+    {
+      "p": "Some wheels have multiple paddle shifters. You can assign shift up and shift down to two paddles, leaving others for throttle increase, brake increase, and release. This requires careful finger choreography but is fast once learned. Most racing drivers adapt to paddle-based input within a few hours of practice."
+    },
+    {
+      "h3": "Hand throttle pedal units"
+    },
+    {
+      "p": "A hand throttle is a pneumatic or mechanical throttle lever mounted on a pedal frame or bracket. You operate it with your one functional hand by pulling or pushing a handle. The other hand steers the wheel. This setup mimics the layout of some adaptive motorsports vehicles and offers full analogue control over throttle and brake without button fatigue."
+    },
+    {
+      "p": "Hand throttles are specialized equipment and not widely stocked by mainstream sim racing retailers. They are most common in organizations that support drivers with mobility differences in real motorsport. Talk to local adaptive racing programs or fabricators who build custom cockpits."
+    },
+    {
+      "h3": "Joystick plus separate wheel for steering"
+    },
+    {
+      "p": "Some racers use a joystick mounted near their knee or lap with the other hand on a steering wheel. The joystick handles throttle, brake, and shifting. The wheel is rotated by hand only. This requires a custom mount but separates the demands on each hand and can reduce fatigue. It also gives you two full analogue axes for throttle and brake, which is smoother than buttons alone."
+    },
+    {
+      "tip": "If you plan to race oval track, button-based throttle and brake can be harder because you're modulating gas and brakes constantly while steering. Road courses with longer straights and heavier braking demand less simultaneous multi-axis input, making them a better starting point.",
+      "tipLabel": "Oval vs. road racing"
+    },
+    {
+      "h2": "Practical rig setup and ergonomics"
+    },
+    {
+      "p": "Mount your steering wheel at a height and angle you can reach comfortably without leaning or twisting. Your arm should sit naturally at roughly a 90-degree angle at the elbow. If you're using a hand throttle or joystick, place it where your free hand can reach it without crossing your body."
+    },
+    {
+      "p": "Test your reach during setup. You'll be holding these positions for 30 to 90 minutes during a race. Discomfort early will compound into pain and slower lap times. A well-designed sim racing cockpit with adjustable mounting points (see the cockpit buying guide for frame options) makes this easier."
+    },
+    {
+      "list": [
+        "Wheel height: Roughly at chest level, tilted toward you at 20 to 40 degrees, so you're not reaching upward or hunching forward.",
+        "Hand throttle or secondary input: Mounted 6 to 12 inches to the side of the wheel, at or slightly below waist level, within easy reach of your free hand.",
+        "Monitor or VR headset: Positioned directly ahead, at or slightly below eye level. Single-screen setups are simpler than triple monitors if you have one functional hand.",
+        "Backrest and seat: Firm support to prevent sliding or twisting, reducing strain on your control arm and core."
+      ]
+    },
+    {
+      "h2": "Testing and gradual progression"
+    },
+    {
+      "p": "Before entering a league race, spend at least two to three hours in private practice sessions. Focus on baseline control feel, not lap time. Run the same track repeatedly to develop muscle memory for the specific car and input method. Fatigue will reveal weaknesses in your setup that high-concentration practice sessions might hide."
+    },
+    {
+      "p": "Start with lower-stress series. Formula cars or stock cars with forgiving tire models are friendlier than high-downforce GT cars that demand precise inputs. Daytime driving at familiar tracks is easier than night racing or unfamiliar circuits. Once you're comfortable, move up to more demanding content."
+    },
+    {
+      "p": "Join hosted sessions before official races. Hosted racing is lower pressure and attracts racers of varying skill. You'll gain race craft and exposure to real racers' behavior without the stress of an official finish affecting your safety rating or iRating."
+    },
+    {
+      "h2": "Customization and long-term solutions"
+    },
+    {
+      "p": "If you plan to race regularly, consider a custom rig. Many sim cockpit builders can fabricate mounts for hand throttles, joysticks, or adaptive controllers. Organizations like AccessibleSim and racing-specific disability advocacy groups often have contacts for builders who specialize in adaptive setups."
+    },
+    {
+      "p": "Also explore your sim's support for accessibility features. Some sims have native or third-party accessibility mods. The community forums on <a href=\"best-sim-racing-wheels-iracing.html\">racing wheel and input device guides</a> often contain threads from adaptive racers sharing configurations and advice specific to your hardware."
+    },
+    {
+      "list": [
+        "Talk to other one-handed sim racers on forums, subreddits (r/simracing), or iRacing league communities. Configuration and ergonomic advice from people with your specific setup saves months of trial and error.",
+        "Check whether your wheelbases or controllers have official or community mapping software beyond what iRacing provides. Some wheels ship with deeper control customization.",
+        "Consider hiring a local fabricator to mount a hand throttle or build a custom bracket for your joystick. The cost (typically USD 300 to 800) is much lower than upgrading hardware.",
+        "Stream or record your practice sessions. Watching replays helps you spot input timing issues that you might not notice while racing."
+      ]
+    },
+    {
+      "p": "One-handed sim racing is not a limitation if your controls are intentional and well-tuned. The barrier is usually not the hand, but the initial investment in finding the right hardware combination and learning the control scheme. Once that's done, your skill, racecraft, and consistency determine your lap times and race results, just like any other sim racer."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I race competitively with a hand controller?",
+      "a": "Yes. Many sim racers compete in iRacing leagues and official races using button-based throttle and brake or joystick inputs. Your pace depends on how well you adapt to the input method and your driving skill, not the control hardware itself. Road courses are generally more forgiving than oval tracks for one-handed control because braking and acceleration demands often occur separately from steering."
+    },
+    {
+      "q": "What's easier: button throttle and brake, or a hand throttle pedal?",
+      "a": "Hand throttles (pneumatic or mechanical levers) offer full analogue control and reduce fatigue because they separate throttle and brake into smooth lever movements rather than repeated button presses. Button-based systems on a wheel are simpler to set up and cheaper but demand more finger precision and stamina. Try buttons first on your existing wheel. If fatigue becomes an issue, explore hand throttle options."
+    },
+    {
+      "q": "How do I map throttle and brake to wheel buttons in iRacing?",
+      "a": "Open Settings > Controls > Buttons and Keys in iRacing. Find throttle and brake in the control list. Click on each, then physically move or press the input you want to assign (e.g., push a thumbwheel or press a paddle). iRacing will register and save the binding. Test in practice first. You can adjust sensitivity and dead zone in the same menu."
+    },
+    {
+      "q": "Is iRacing better for one-handed racing than other sims?",
+      "a": "iRacing has a mature control mapping system and a large competitive community, so finding advice and racing partners is straightforward. Other sims like Assetto Corsa Competizione, Assetto Corsa, and rFactor 2 also support flexible control binding. iRacing is not uniquely better for accessibility, but its infrastructure and community size make it a good starting point for finding resources and support."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-cs-v2",
+    "xbox-controller"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

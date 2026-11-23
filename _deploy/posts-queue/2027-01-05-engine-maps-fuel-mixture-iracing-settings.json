@@ -1,0 +1,151 @@
+{
+  "slug": "engine-maps-fuel-mixture-iracing-settings",
+  "tag": "Setup Guides · FFB",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Engine Maps and Fuel Mixture Settings Explained for iRacing",
+  "description": "Learn how engine maps, fuel mixture, and boost affect power delivery, fuel consumption, and race strategy in iRacing.",
+  "sections": [
+    {
+      "p": "Engine maps in iRacing control how the engine delivers power. They are not cosmetic. A road car might call these \"ECU presets\", but in racing they are real control surfaces that affect torque output, peak power, fuel consumption, and turbo boost timing. Many sim racers leave engine maps on a default and never touch them, leaving performance on the table or running out of fuel unnecessarily."
+    },
+    {
+      "p": "Understanding when and why to change engine maps, and how fuel mixture interacts with race strategy, separates drivers who tune by habit from drivers who tune with intention. This guide covers what each setting does, the trade-offs you face, and how to integrate them into pit strategy and qualifying runs."
+    },
+    {
+      "h2": "What engine maps do"
+    },
+    {
+      "p": "An engine map is a software profile that changes how the engine breathes, burns fuel, and deploys available power. In real racing, an engineer might program a conservative map for qualifying fuel conservation, a hot map for attack, a rain map for lower grip, and a long-run map for reliability over a 2-hour endurance stint. iRacing lets you select from several pre-built maps per car, and some cars offer more granular control via the fuel mixture slider."
+    },
+    {
+      "p": "Common map names include \"Road Map\" (conservative, long fuel range), \"Sport Map\" (balanced), and \"Race Map\" (maximum power, high consumption). Some cars add \"Wet\" or \"Damp\" variants for rain. The exact names and counts vary by car model in iRacing."
+    },
+    {
+      "list": [
+        "Road Map: lower boost, later ignition timing, richer mixture. Fuel consumption is lowest, power is moderate, engine temps stay cool.",
+        "Sport Map: mid-range boost, standard timing, balanced mixture. A middle ground for practice and shorter qualifying stints.",
+        "Race Map: aggressive boost, early ignition, leaner mixture. Maximum power output, highest fuel burn, risk of engine knock in some cars.",
+        "Wet/Damp Map: adjusted turbo response, mixture tuned for cooler air and lower grip. Used when track temps drop or wet conditions arrive."
+      ]
+    },
+    {
+      "tip": "Switching maps mid-race during a pit stop is free in iRacing. You can run a hot map on a fresh fuel load in the final laps and switch to a road map on old tires if you need to extend, as long as you are in the pits.",
+      "tipLabel": "Map switching is a pit strategy tool"
+    },
+    {
+      "h2": "Fuel mixture and consumption"
+    },
+    {
+      "p": "Fuel mixture controls the ratio of fuel to air in the combustion chamber. A richer mixture (more fuel) burns cooler, produces less power, and uses more fuel per lap. A leaner mixture (less fuel) burns hotter, squeezes more power out of each drop, and saves fuel but risks engine knock and high intake temps in some cars."
+    },
+    {
+      "p": "Many iRacing cars let you dial fuel mixture as a slider, usually labeled 0 to 100 or \"Lean\" to \"Rich\". A setting of 50 is often the neutral baseline. Moving toward 0 (lean) improves fuel economy at the cost of power; moving toward 100 (rich) increases power and engine safety at the cost of tank range."
+    },
+    {
+      "p": "The relationship between fuel mixture and engine temperature is direct. Lean mixtures burn hotter. If you run lean on a hot track or on a long fuel stint without cooling, intake and coolant temps will spike. Engines in iRacing can overheat and suffer performance loss or damage if temps exceed the red line. Richer mixtures protect against this."
+    },
+    {
+      "olist": [
+        "Open the Setup menu and navigate to the Engine section.",
+        "Locate the Fuel Mixture slider. Note the baseline (usually 50 on a 0-100 scale).",
+        "Leaner (lower number): better fuel economy, more knock risk, hotter engine temps.",
+        "Richer (higher number): worse fuel economy, safer engine, cooler temps, slightly less power."
+      ]
+    },
+    {
+      "tip": "On a 2-hour endurance race, start rich to protect the engine. As fuel load decreases and engine temp stabilizes, you can lean out to squeeze more power in the final stint without overheating.",
+      "tipLabel": "Adapt fuel mixture to race length"
+    },
+    {
+      "h2": "Boost and turbo strategy"
+    },
+    {
+      "p": "Turbocharged cars in iRacing have engine maps that also govern boost pressure and turbo response. A conservative map keeps boost low and delivery smooth; a race map cranks boost higher and spools the turbo more aggressively. This interacts with fuel mixture: higher boost and leaner fuel can produce knock. Many drivers run richer fuel on high-boost maps to stay safe."
+    },
+    {
+      "p": "Knock occurs when the air-fuel mix ignites before the spark plug fires, causing a pressure spike that damages the engine. It is audible in some cars as a metallic pinging. If knock reaches a threshold, iRacing reduces power output or causes engine failure. Leaning out aggressively on a hot race map in hot conditions can trigger knock within a few laps."
+    },
+    {
+      "p": "The solution is not to avoid race maps. Instead, match the fuel mixture to the boost setting. Run race map with 65-70 fuel mixture, then lean progressively as the race cools or as you save fuel. Practice in a test session to find the edge without crossing into knock."
+    },
+    {
+      "h2": "Practical race day application"
+    },
+    {
+      "p": "Qualifying: Most drivers run a sport or balanced map on a single flying lap with no fuel load. The goal is peak power for one lap. Fuel mixture is less critical on a half-tank because the engine is fresh and runs cool. A setting of 50 or leaning toward 45-48 is a safe starting point."
+    },
+    {
+      "p": "Race (early stint): You have a full fuel load. The engine has not yet warmed to full temp. Run a road or sport map to conserve fuel and keep temps low. Rich fuel mixture (60-70) protects against heat spikes in the opening laps when the car is heavier and you are building heat in the tires."
+    },
+    {
+      "p": "Race (pit stop strategy): If you are on old tires and can hold position on fuel, stay conservative. If you pit and get fresh tires, switch to race map and lean fuel slightly to maximize pace on the new rubber. If traffic or weather forces a longer stint, dial fuel back to rich and drop to sport map to extend."
+    },
+    {
+      "p": "Race (final laps): Fresh fuel, old tires, nothing left to lose. Run race map, lean fuel to 30-40, and attack. The stint is short, so engine temp is not a problem."
+    },
+    {
+      "list": [
+        "Qualifying: Sport map, balanced fuel mixture (45-50), focus on clean, smooth lap.",
+        "Race stint 1 (full fuel, fresh tires): Road map, rich mixture (65-70), build tire heat gradually.",
+        "Race pit stop (fresh tires or fuel crisis): Switch to race map, lean toward 50-55, two-three lap maximum push.",
+        "Race final laps (last fuel load): Race map, lean fuel (30-40), all-in until checkered."
+      ]
+    },
+    {
+      "h2": "Common mistakes and how to avoid them"
+    },
+    {
+      "p": "Running race map for the entire race: This is the fastest way to run out of fuel or overheat. Race maps are feast or famine. Use them for attack phases, not cruising."
+    },
+    {
+      "p": "Leaning fuel too aggressively: Knock degrades power instantly. If a car has a reputation for knock on the forums, start richer and work down over several test sessions. Do not arrive at a race and find out the hard way."
+    },
+    {
+      "p": "Ignoring fuel consumption data: Before the race, run a qualifying sim and a race sim on your chosen map and mixture. Note fuel per lap. If you need a 20-minute stint but average 1.2 kg per lap and start with 20 kg, you will not make it. Adjust the map or the target lap time."
+    },
+    {
+      "p": "Forgetting to change maps at the pit stop: Most sim racers set a single map and do not change it. Create a habit: before every pit stop, ask yourself \"Do I need a different map for this next stint?\" If the answer is yes, switch it in the pits before you pit out."
+    },
+    {
+      "h2": "Testing engine maps in practice"
+    },
+    {
+      "p": "Load a practice session at the same track and time of day as the race. Set fuel to match your expected race stint (a 25-minute stint + safety buffer). Run three consecutive laps on each map to let the engine warm and stabilize. Record the lap times and the fuel consumption. This takes 20 minutes and gives you a real data point."
+    },
+    {
+      "p": "Also test at different fuel mixture settings. Run one map across laps 1-3 at lean (40), laps 4-6 at neutral (50), and laps 7-9 at rich (65). Note which setting gives the best balance of pace, fuel range, and temps. Many drivers find they can run neutral or lean-neutral for a full stint if they avoid early overheating by running rich in lap 1-2."
+    },
+    {
+      "p": "Check the multi-class endurance calendar and <a href=\"best-sim-racing-pedals-iracing-2026.html\">build your rig for consistency</a> before heavy testing. Engine settings matter most when you are chasing small gains and long stints. Tire calibration and baseline setup are still the foundation; engine maps amplify good strategy."
+    },
+    {
+      "tip": "Save a text file with engine settings for each car and each track. Include: qualifying map, race map (stint 1, 2, 3), fuel mixture for each, and fuel per lap. Paste it into your pre-race checklist so you do not guess.",
+      "tipLabel": "Build an engine setting reference card"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the difference between engine maps and turbo boost?",
+      "a": "Engine maps are preset profiles that change boost pressure, ignition timing, and fuel ratio all together. Turbo boost is part of a map. Some maps increase boost aggressively; others keep it moderate. Fuel mixture is usually a separate slider you can adjust independently or combine with a map choice. A race map might pair high boost with lean fuel; you then adjust the mixture slider to richer or leaner to dial in safety and economy."
+    },
+    {
+      "q": "How do I know if my engine is knocking?",
+      "a": "In iRacing, knock usually sounds like pinging or a metallic rattle in the engine audio. Some cars are louder and easier to hear. The clearest sign is a sudden loss of power mid-corner or a small pop in the telemetry. If you are running a lean mix on a hot race map on a hot track and suddenly lose pace, you are likely knocking. Switch to a richer mix or a less aggressive map, and the power returns."
+    },
+    {
+      "q": "Should I change engine maps during a pit stop?",
+      "a": "Yes, if the strategy changes. Pit for fresh fuel and tires with five laps to go? Switch to race map and lean fuel. Pit because you overheated and need to extend the next stint? Switch to road map and go rich. Making the map choice part of your pit stop routine gains you 0.2 to 0.5 seconds per lap in those final push phases."
+    },
+    {
+      "q": "What happens if I run out of fuel before the finish line?",
+      "a": "You coast to a stop and are classified last in the race with a \"finish due to fuel depletion\" note. iRacing sim races do not let you limp home on fumes the way real cars sometimes do. Always plan your fuel load and mixture to reach the finish with 0.5 to 1 kg margin. Use practice telemetry to calculate fuel per lap, then multiply by stint time plus 10 percent safety buffer."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

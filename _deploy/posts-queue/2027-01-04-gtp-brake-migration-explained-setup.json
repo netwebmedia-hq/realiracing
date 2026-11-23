@@ -1,0 +1,141 @@
+{
+  "slug": "gtp-brake-migration-explained-setup",
+  "tag": "Setup Guides · GTP",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "GTP Brake Migration explained: how hybrid energy shifts stopping power",
+  "description": "Learn why GTP hybrids brake differently mid-corner and how to adjust your line, braking point, and setup when energy deploys.",
+  "sections": [
+    {
+      "p": "GTP hybrid cars in iRacing do something that catches most drivers mid-braking zone: the available brake balance shifts when the energy recovery system deploys. That shift isn't a glitch. It's the electrical power assist coming online, and it changes how hard the rear axle can stop, often just as you've committed to your entry. Understanding brake migration—where the braking torque distribution moves between front and rear axles—transforms chaotic lockups into predictable cornering."
+    },
+    {
+      "p": "The hybrid battery drains under acceleration and refills under braking and coasting. When you cross the line from low battery into deployment zones, the motor adds torque to the rear axle. That rear torque arrives on top of whatever hydraulic brake balance you've dialed in, effectively moving the whole balance forward (harder on the front). A car that felt well-balanced under heavy braking now has more rear bias than you expected, and the rear axle loads differently in the corner."
+    },
+    {
+      "h2": "Why brake migration matters in GTP cars"
+    },
+    {
+      "p": "In a fixed-setup car with a stable power unit, your brake balance is static. You brake, the same ratio of front to rear stopping force applies every lap, and you dial in your threshold and trail-braking feel once. GTP hybrids don't work that way. The braking experience is dynamic: heavy braking on a full battery feels different from heavy braking when the motor is feeding power back to the rear wheels."
+    },
+    {
+      "p": "The practical effect is that your confidence in the rear axle changes mid-corner entry. You might brake later than the reference because the rear feels planted under heavy load with the motor off. Then, two corners later when the battery is charged and deploying, the same brake input rolls the rear tighter, and you lose rear grip earlier. That's brake migration disguised as a driving inconsistency."
+    },
+    {
+      "list": [
+        "Late braking zones: motor assist sharpens the entry but can overload the rear if you're not expecting it",
+        "Trail braking: rear torque adds to hydraulic braking, changing lock-up feel mid-corner and shifting your release point",
+        "High-speed corners: migration affects how much brake you carry mid-turn and how quickly you can transition to throttle",
+        "Consistency lap to lap: battery state varies; brake feel varies; your reference points drift if you don't account for it"
+      ]
+    },
+    {
+      "h2": "How to identify brake migration in your data"
+    },
+    {
+      "p": "The clearest sign is inconsistent rear-axle behavior under the same braking input. Load a replay and watch your onboard throttle and brake traces. Look for corners where you apply identical brake pressure but the rear axle locks or unloads at different points in successive laps. That's usually not driver input; it's the battery state changing your effective brake balance."
+    },
+    {
+      "p": "Check the battery gauge in your dash display. Most GTP cars show remaining battery as a percentage or bar. When you're low, the motor isn't adding rear torque, so you're running pure hydraulic balance. When you're high and deploying, the rear gets a stiff assist. Compare your braking trace and rear-axle behavior side by side across two laps: one where the battery is low during braking, one where it's high. The shape of the trace and the moment of lock or slip will differ, often by several hundredths in peak brake pressure."
+    },
+    {
+      "tip": "Pay attention to brake release, not just application. The rear torque assist doesn't cut instantly when you lift off. The motor keeps pushing the rear for a brief moment, which can cause a delayed lock-up or a slip just as you roll into the corner. That's a classic brake migration tell.",
+      "tipLabel": "Lag effect"
+    },
+    {
+      "h2": "Setup adjustments for brake migration"
+    },
+    {
+      "p": "You can't remove brake migration—it's how the hybrid system works—so the goal is to build a setup that tolerates it and to drive in a way that expects it."
+    },
+    {
+      "olist": [
+        "Dial your base brake balance for the high-battery scenario. Most drivers run a bit more rear bias than a traditional GT car would use, because when the motor is deploying, you need that forward shift to stay balanced. A common starting point is 1 to 2 percent more front bias than the car's stock setting, but test this on your track.",
+        "Soften the rear brake pad. A less aggressive pad (lower mu) gives you more range before rear lock-up, which buys margin when the motor adds unexpected torque. This costs some initial stopping power, so only push it as far as your braking zone still feels efficient.",
+        "Increase rear brake stiffness slightly. Stiffer rear brake lines and caliper stiffness dampen the torque spikes from motor assist, making the rear feel smoother across battery states. Again, small changes: a 10% increase can make a real difference without hurting baseline stopping power.",
+        "Review your pedal calibration. Some drivers run a softer brake curve (less aggressive initial pressure ramp) to give themselves finer control in the transition between high and low battery phases. This requires practice to feel natural, but it's one way to stay smooth across the variance."
+      ]
+    },
+    {
+      "h2": "Driving technique to manage brake migration"
+    },
+    {
+      "p": "Setup alone can't solve brake migration because the motor assist is real and variable. Your driving has to adapt."
+    },
+    {
+      "p": "Build in brake release margin. Instead of braking all the way to your planned turn-in point, lift off a touch earlier and use the final 10 to 15 meters to load the rear axle and settle the car. That margin absorbs migration swings. If the rear suddenly overbrakes due to motor assist, you've got throttle control coming available soon enough to manage it."
+    },
+    {
+      "p": "Use battery state to plan your line. If you know the battery is high as you approach a heavy-braking corner, choose a slightly longer brake zone and ease out earlier. If the battery is low, you can run a tighter line because the rear will be softer. This isn't reactive; it's proactive. Check the dash battery bar on approach and adjust your mental commitment one corner ahead."
+    },
+    {
+      "p": "Smooth the trail-brake. Brake migration is harshest mid-corner where you're blending brake and throttle. A smooth, gradual release of brake pressure leaves less room for motor torque to surprise you. Quick, abrupt lift-offs expose you to sudden rear-axle behavior changes. Practice a trailing brake that feels like a continuous ramp rather than a step."
+    },
+    {
+      "list": [
+        "High battery entering a corner: expect the rear to be more eager; lift brake pressure earlier and don't trail as deep",
+        "Low battery entering a corner: expect softer rear feel; you can be bolder with brake depth and trail it longer",
+        "Medium battery: this is your baseline; use it as reference to compare high and low scenarios",
+        "Back-to-back corners: watch the battery bar; if it swings from low to high or vice versa, your brake feel will swap between corners"
+      ]
+    },
+    {
+      "h2": "Common brake migration mistakes"
+    },
+    {
+      "p": "Many drivers blame themselves for brake inconsistency when brake migration is the culprit. If you're consistently locking the rear or washing the rear out in the same corner across multiple laps, and your pedal input looks clean, check the battery state. You'll often find that rear-axle failure correlates with high battery deployment."
+    },
+    {
+      "p": "Another common trap is adjusting brake balance too far forward to compensate for migration. This makes the front work harder, which loads the front tires heavily and can cause understeer mid-corner—the opposite problem. A small adjustment works better than a large one. Start with 0.5 to 1 percent and test for a full race length to see how the battery swing affects your overall balance."
+    },
+    {
+      "p": "Drivers also sometimes confuse brake migration with dynamic track changes. A cool track heats up, grip drops, and the rear feels slippery—but that's not migration, that's temperature. Use your telemetry graph to separate the two. If brake pressure and release point stay consistent but the rear axle slip timing moves, that's brake migration. If your brake input changes but the rear axle slip timing stays the same, that's track temperature."
+    },
+    {
+      "h2": "Testing brake migration in practice"
+    },
+    {
+      "p": "Run a 15-lap practice session dedicated to brake feel. On laps 1 to 5, brake hard into the same corner every lap and watch the battery bar. Note the battery state and your rear-axle behavior. On laps 6 to 10, run easy to let the battery charge, then hit that same corner again. Compare the two. The difference in brake feel between high-battery and low-battery scenarios is your brake migration window."
+    },
+    {
+      "p": "Once you've felt the range, do a qualifying run where you manage energy deliberately. Plan to have the battery low for a critical braking zone, then high for a different corner. See if you can predict your brake feel and control it. That prediction skill is what separates drivers who fight migration from drivers who use it. <a href=\"moza-r9-iracing-settings.html\">If you're running a high-torque wheelbase like the MOZA R9, you'll feel brake migration more sharply because the motor assist has more power to shift your balance.</a>"
+    },
+    {
+      "tip": "Save a replay of a race stint and log all the corners where you expected rear lock-up but didn't get it, or expected stability but got a slip. Cross-reference the battery state at each moment. You'll see the pattern. Brake migration isn't random; it's tied to battery management and your power unit's deployment schedule.",
+      "tipLabel": "Replay analysis"
+    },
+    {
+      "h2": "The bigger picture: hybrid energy strategy"
+    },
+    {
+      "p": "Brake migration is a side effect of energy management. The battery state isn't just a visual; it's the engine of your car's feel. In longer races, managing when you deploy energy and when you recover it affects not only your power delivery but also your stopping behavior. Some drivers run lean on purpose—keeping the battery low during heavy-braking zones so they get predictable, stable rear feel—and then deploy later in the lap during acceleration or on long straights. That's energy strategy linked to brake behavior, and it's how the fastest GTP drivers maintain consistency across a full stint."
+    },
+    {
+      "p": "Understanding brake migration is the first step. The next level is using battery state as a tool, not fighting it as a problem. Once you accept that your brake balance will shift with energy deployment, you can plan your line, your pedal input, and your exit strategy around that shift. That's the difference between a driver who notices brake inconsistency and a driver who controls it."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is brake migration in GTP cars?",
+      "a": "Brake migration is the shift in brake balance distribution (front to rear) that occurs when a GTP hybrid car's energy recovery motor deploys rear axle torque. The motor assist adds stopping force to the rear wheels, making the overall brake balance feel more front-heavy. This changes your car's braking behavior depending on the battery state, making brake feel and rear-axle grip inconsistent lap to lap if you don't account for it."
+    },
+    {
+      "q": "How do I know if brake migration is affecting my lap times?",
+      "a": "Load a replay and compare your brake pressure and rear axle behavior across two laps: one where the battery is low during your braking zone, and one where it's high and deploying. If the rear axle locks or slips at different points even though your brake input looks identical, that's brake migration. You can also check your telemetry graph: if the brake trace is consistent but rear slip markers move around, brake migration is the cause."
+    },
+    {
+      "q": "Should I adjust my brake balance to fix brake migration?",
+      "a": "Yes, but only slightly. Set your base brake balance for the high-battery scenario (when the motor is deploying and adding rear torque), because that's your most aggressive braking state. A small adjustment of 0.5 to 1 percent more front bias is usually enough. Larger changes risk creating understeer mid-corner. The bigger tool is adjusting your driving: smooth trail-braking, earlier brake release, and proactive line choice based on battery state."
+    },
+    {
+      "q": "How does battery state affect my brake feel lap to lap?",
+      "a": "When the battery is low, the motor isn't assisting, so you get pure hydraulic braking and softer rear-axle feel. When the battery is high and deploying, the motor adds rear torque, stiffening the rear and moving your balance forward. This means your rear axle will lock up sooner or underperform sooner in high-battery scenarios. Checking your dash battery gauge as you approach a corner lets you predict which scenario you're in and adjust your brake input or release point accordingly."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

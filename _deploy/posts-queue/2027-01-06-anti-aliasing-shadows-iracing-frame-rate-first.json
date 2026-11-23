@@ -1,0 +1,128 @@
+{
+  "slug": "anti-aliasing-shadows-iracing-frame-rate-first",
+  "tag": "iRacing Tips · Graphics",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Anti-Aliasing and Shadows in iRacing: Which to Cut First",
+  "description": "Cut the right graphics setting and gain 20+ FPS without losing track clarity. Here's the hierarchy that matters most.",
+  "sections": [
+    {
+      "p": "Frame rate and input lag matter more than visual fidelity in a competitive sim. At 60 FPS, you feel every millisecond of steering delay. At 100 FPS on a 120 Hz monitor, your eyes and hands sync cleanly with the track ahead. When your GPU can't hold your target refresh rate, the culprit is usually one of two settings: anti-aliasing or shadows. Knowing which one to disable first—and by how much—will buy you the frame rate you need without the blurry, aliased track surface that kills consistency."
+    },
+    {
+      "h2": "Why shadows and anti-aliasing hurt frame rate"
+    },
+    {
+      "p": "Shadows are expensive because the GPU has to render the scene twice: once from the light source to create a depth map, then again from the camera's view. At high settings on complex tracks like Le Mans or Nuremberg, you're asking the GPU to calculate shadows for every tree, barrier, grandstand and marshal post across the entire track. That compounds quickly. Anti-aliasing, meanwhile, works by sampling pixels multiple times per frame and blending the samples to smooth jagged edges. The more samples, the more GPU work, and the bigger the frame rate hit."
+    },
+    {
+      "p": "Both settings improve image quality in ways your eye notices. Shadows add depth and realism to the track surface and curbing. Anti-aliasing removes the shimmer and jagged lines on road markings and distant objects. But on a single 1440p 120 Hz monitor at typical seating distance, the visual improvement plateaus quickly. Dropping shadows from Ultra to Medium or High gains 15-30 FPS on most systems. Dropping anti-aliasing from 4x to 2x or FXAA gains 10-20 FPS. The order matters."
+    },
+    {
+      "h2": "Start with anti-aliasing, not shadows"
+    },
+    {
+      "p": "If you're 10-15 FPS short of your target, reduce anti-aliasing first. The reason is simple: at typical monitor distance and 1440p resolution, 2x anti-aliasing removes most of the visible aliasing on road markings and distant trees. You lose a small amount of edge smoothness, but the trade-off is minor. FXAA, iRacing's fastest anti-aliasing option, looks softer than 2x but still readable at race pace. The frame rate gain is immediate and noticeable."
+    },
+    {
+      "list": [
+        "4x anti-aliasing to 2x: saves 5-10 FPS, visual impact is very small at distance",
+        "2x anti-aliasing to FXAA: saves another 5-8 FPS, slight softness but no visible shimmering",
+        "FXAA to Off: saves 3-5 FPS, now aliasing returns on fine details and road marks",
+        "Off to any setting: adds back quality, so only go back up if you have headroom"
+      ]
+    },
+    {
+      "tip": "FXAA is often the best compromise. It runs fast, removes most aliasing, and doesn't blur the track surface the way older post-process anti-aliasing did. Try it before turning anti-aliasing completely off.",
+      "tipLabel": "Sweet spot"
+    },
+    {
+      "h2": "When to cut shadows instead"
+    },
+    {
+      "p": "If anti-aliasing is already off or set to FXAA, and you still need frame rate, shadows are next. Shadows have more leeway in settings than anti-aliasing does. You can drop from Ultra to High and barely notice the difference on the track itself. The shadows under trees and pit lane structures become slightly softer or absent in distant areas, but lap times and visual reference points stay sharp."
+    },
+    {
+      "p": "Shadow quality scales in tiers. Ultra renders high-resolution shadow maps from every light source across the entire track. High and Medium reduce shadow resolution and distance. Low removes most shadows except the most visible ones. At Medium or High, you keep shadows on the racing surface and pit structure, which helps with depth perception and curb definition. At Low, the track looks flatter, but you gain another 20-25 FPS if you need it."
+    },
+    {
+      "list": [
+        "Shadows Ultra to High: saves 8-12 FPS, almost no visible change in racing quality",
+        "Shadows High to Medium: saves another 8-10 FPS, distant shadows fade but track surface stays sharp",
+        "Shadows Medium to Low: saves 5-8 FPS, track looks flatter, some reference depth is lost",
+        "Shadows Low to Off: saves another 5 FPS, almost no shadows except from cars nearby"
+      ]
+    },
+    {
+      "h2": "The recommended order for frame rate hunting"
+    },
+    {
+      "olist": [
+        "Check your current anti-aliasing setting. If it's 4x, drop to 2x. Measure FPS.",
+        "If still short, drop 2x to FXAA. Measure again.",
+        "If FXAA is not enough, drop anti-aliasing to Off. This is usually a last resort.",
+        "Check shadow quality. If it's Ultra, drop to High. Very small visual trade-off for good frame rate gain.",
+        "If you still need frame rate, drop shadows to Medium. The track will look slightly flatter in distant areas, but racing quality remains high.",
+        "Only then consider reducing other settings like texture detail, reflection quality, or grass simulation."
+      ]
+    },
+    {
+      "p": "This order works because anti-aliasing gives you the best frame rate-to-visual-quality ratio in the first few steps. Shadows offer larger gains but with a more noticeable visual trade-off, so you use them second. By the time you're cutting shadows to Low or Off, you've already optimized the cheaper settings."
+    },
+    {
+      "h2": "Track and system specifics matter"
+    },
+    {
+      "p": "Some tracks are heavier on shadows than others. Night racing at Daytona or Talladega, with large lit structures, hits shadows harder than a daylight oval. Tracks with dense scenery like Hockenheim or Nordschleife tank frame rate faster when shadows are on Ultra. Street circuits like Long Beach benefit visually from shadows on curbing and buildings, so dropping them to Medium might feel like a bigger loss there."
+    },
+    {
+      "p": "Your GPU matters too. A system with an RTX 5060 Ti or similar will see frame rate scale differently than a high-end card. The RTX 5060 Ti is roughly mid-range for 1440p sim racing, so shadows and anti-aliasing have real impact. If your system is at the minimum spec for iRacing, dropping shadows to Medium and anti-aliasing to FXAA is likely your permanent setup. If you're on newer hardware, you can keep both higher and still hit 100+ FPS."
+    },
+    {
+      "tip": "Test settings on a practice session on a track you know well, not in qualifying or a race. Use telemetry or a frame counter overlay to measure FPS at different spots on track, not just on the straights.",
+      "tipLabel": "How to test"
+    },
+    {
+      "h2": "What you should NOT cut to save frame rate"
+    },
+    {
+      "p": "Avoid cutting resolution, FOV, or draw distance first. Lowering resolution makes the track surface blurrier and harder to judge braking points. Narrowing your field of view removes peripheral awareness of walls and other cars. Shortening draw distance means you can't see brake markers or turns far enough ahead at high speed. These cuts hurt lap times directly. Anti-aliasing and shadows do not."
+    },
+    {
+      "p": "Particle effects and grass simulation are also less important than anti-aliasing. Grass density and rain particle count do not affect track clarity or reference points. Texture detail is worth keeping at High or Ultra because distant road markings depend on it. Reflections can be dropped to Medium if needed; the visual difference is small. But anti-aliasing and shadows first, always."
+    },
+    {
+      "h2": "The practical target: 120 FPS or your monitor refresh rate"
+    },
+    {
+      "p": "Most sim racers target the refresh rate of their monitor plus a small buffer. On a 120 Hz monitor, aim for 120 FPS or slightly higher. On a 144 Hz display, target 144 FPS. Dipping below your refresh rate introduces screen tearing or stuttering. The anti-aliasing and shadow settings I've described here—keeping anti-aliasing at FXAA or 2x, shadows at High or Medium—allow most systems to hit that target while keeping the track visually sharp and readable at race pace."
+    },
+    {
+      "p": "Once you lock in your anti-aliasing and shadow settings and hit your target FPS, leave them alone. Dial in a few practice laps on your favorite track, confirm you can see brake markers clearly, and move on to setup and racecraft. Graphics tuning is not where lap time lives."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I use FXAA or 2x anti-aliasing for better image quality?",
+      "a": "FXAA is faster and removes most aliasing at race pace, so start there if you need frame rate. 2x looks sharper up close but costs more GPU. At typical seating distance and 1440p, FXAA is the smarter choice for competitive racing. If you have frame rate headroom, 2x gives slightly cleaner edges on distant objects."
+    },
+    {
+      "q": "How much FPS do shadows really cost?",
+      "a": "Shadows on Ultra can cost 15-30 FPS depending on track and GPU, with darker or more complex scenery costing more. Dropping from Ultra to High usually saves 8-12 FPS with almost no visual change. Medium saves another 8-10 FPS. The cost is real, but it scales well: you can tune your FPS up or down by adjusting shadow quality alone."
+    },
+    {
+      "q": "Will turning off anti-aliasing and shadows make me slower?",
+      "a": "No. What matters for lap time is seeing brake markers, curbs, and track edges clearly—not how smooth the edges of distant trees are. FXAA or 2x anti-aliasing and Medium or High shadows keep the track readable while saving frame rate. Off or Ultra is the trade-off edge, but you should tune long before reaching it."
+    },
+    {
+      "q": "Why not just lower resolution instead of cutting anti-aliasing and shadows?",
+      "a": "Lowering resolution from 1440p to 1080p makes the track surface and road markings blurry, which directly hurts your ability to place the car precisely. Anti-aliasing and shadows do not affect track clarity. Keep resolution high and tune anti-aliasing and shadows to maintain sharpness while gaining frame rate."
+    }
+  ],
+  "gearKeys": [
+    "gpu-rtx-5060-ti",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

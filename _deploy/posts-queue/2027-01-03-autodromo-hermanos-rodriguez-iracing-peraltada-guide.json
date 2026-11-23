@@ -1,0 +1,149 @@
+{
+  "slug": "autodromo-hermanos-rodriguez-iracing-peraltada-guide",
+  "tag": "Track Guides · Road Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Autodromo Hermanos Rodriguez iRacing: Peraltada Banking and Stadium Walls",
+  "description": "Master the Peraltada's unique banking, stadium section wall management, and how to build a setup that trusts the grip on iRacing's Mexico City layout.",
+  "sections": [
+    {
+      "p": "Autodromo Hermanos Rodriguez sits 2250 meters above sea level in Mexico City, and the thin air changes everything about how you drive it on iRacing. The track's signature feature, the Peraltada, is a high-speed banked left-hander that feels like nothing else in the sim. The banking is real and steep, the runoff is aggressively walled, and the optical illusion of the stadium section makes it easy to brake too early or carry too much speed into the turn. Most drivers arrive at this track expecting a smooth cruise. The first lap usually teaches them that Hermanos Rodriguez demands precision on entry, smooth weight transfer, and trust in the banking."
+    },
+    {
+      "h2": "The Peraltada: Banking, Braking Point, and Entry Speed"
+    },
+    {
+      "p": "The Peraltada is not a chicane or a technical turn. It is a single high-speed corner with banking that reaches roughly 17 degrees. The banking allows the car to carry more speed than the grip alone would suggest, but only if you approach it correctly. The trap is overcomplicating it. Many drivers brake too early because the stadium wall on the inside looks close, or they misjudge how much speed they can hold through the banking."
+    },
+    {
+      "p": "Braking should happen before Turn 1 (the left-hander leading into the Peraltada approach). Most setups are strong on downforce at Hermanos Rodriguez because the thin air reduces downforce everywhere, so the team compensates. This means more stability and more grip than you might expect on paper. Use that. Brake hard, brake late, and trust the banking to work. The key is to pitch the car once and commit to the line. Mid-corner corrections, steering adjustments, and trail-braking typically make the problem worse, not better."
+    },
+    {
+      "h3": "Entry speed and line through the banking"
+    },
+    {
+      "p": "The optimal line through the Peraltada is not tight. It is wide, using all of the track on entry and exiting toward the apex. Many sim racers instinctively cut the corner early to avoid the wall, but cutting it tightly kills speed because you sacrifice the banking. The banking works best when you hold the car wide on entry, brake in a straight line before the turn, then roll in smoothly at a relatively high speed. The banking then holds the car on line without excessive steering input. As you unwind the steering wheel on exit, the inside curbing will slow you if you run over it, so learn where the apron begins."
+    },
+    {
+      "list": [
+        "Brake fully before the turn, not mid-corner. The Peraltada punishes trail-braking harshly.",
+        "Carry entry speed higher than feels natural. The banking provides grip.",
+        "Use the wide line. Exiting deep onto the curbing costs exit speed.",
+        "Keep steering input smooth. Big corrections or over-corrections unseat the car.",
+        "In the wet, reduce entry speed slightly and be gentler on the throttle on exit."
+      ]
+    },
+    {
+      "h2": "The Stadium Section: Walls, Optical Illusion, and Turn-In Discipline"
+    },
+    {
+      "p": "The stadium section is the most visually intimidating part of Hermanos Rodriguez. The grandstands create a narrow visual field, and the walls are painted and right there. Psychologically, this section slows drivers down more than it needs to. The actual walls are farther from the racing line than they appear, but they are close enough that a mistake costs paint."
+    },
+    {
+      "p": "Turn-in is the critical moment. If you turn in too early, you will slide toward the inside wall. If you turn in too late or too shallow, you run to the outside wall on corner exit. The reference is the apex curbing. The stadium section's turns have clear curbing marks. Use them. Many drivers brake too early into the stadium corners because the walls feel threatening. Brake up to the final meter before turn-in, then commit. The car has grip. Trust it. Once you stop second-guessing and start driving to the curbing, lap time comes."
+    },
+    {
+      "h3": "Wall management and runoff strategy"
+    },
+    {
+      "p": "Unlike many modern circuits, there is no massive margin for error at Hermanos Rodriguez. Runoff is tight, and the walls are part of the design. This is a circuit that rewards smooth, deliberate inputs and punishes jerky steering or braking. If you feel that you are sliding toward a wall mid-corner, the instinct is to steer harder or brake. Neither works. Steer more and you oversteer into the wall. Brake and you lock up and go straight into it. The fix is easier: smooth out your inputs before you enter the corner. Build the setup and your own technique so that you are always in control, not always at the edge of the wall."
+    },
+    {
+      "tip": "The stadium grandstands create a visual perspective that makes the walls look closer than they are. On your first few laps, pick a visual reference point (a logo, a section of seats, the corner apex) and trust it, not your fear. Your line is correct if you are hitting the curbing. The walls will not catch you.",
+      "tipLabel": "Optical illusion"
+    },
+    {
+      "h2": "Setup for Thin Air and High Speed"
+    },
+    {
+      "p": "Autodromo Hermanos Rodriguez is a high-downforce track, and the altitude amplifies the need for it. At 2250 meters, the air density is roughly 75% of sea level. This means wings, splitters, and all aero surfaces generate less downforce. Teams typically run higher downforce settings and stiffer springs to compensate. For your setup, start with a baseline that pushes downforce higher than your usual settings, then adjust from there."
+    },
+    {
+      "p": "Braking stability is crucial. The Peraltada and the stadium section both demand a car that is stable under heavy braking. A loose rear under braking will make the Peraltada much harder. Focus on brake balance, brake pressure modulation, and ensuring that your front tires are not over-braked. Many drivers overcook front brake pressure, locking the fronts and losing mid-corner grip. If you are locking into any corner, reduce brake pressure or adjust brake bias slightly toward the rear."
+    },
+    {
+      "h3": "Dampers and spring rate"
+    },
+    {
+      "p": "The track surface is relatively smooth, so very soft dampers and springs can work. However, the constant cornering load and the high banking demand enough stiffness to prevent the car from rolling too far on its side. A common starting point is a setup with moderate springs (stiffer than a road-course baseline, softer than a high-speed oval), moderate-to-stiff dampers, and a slight anti-roll bar increase in both directions. This keeps the car settled through the Peraltada and stable through the high-speed corners."
+    },
+    {
+      "list": [
+        "Increase downforce (wing, splitter) compared to your road-course baseline.",
+        "Stiffen springs and dampers moderately to handle the banking and cornering loads.",
+        "Adjust brake balance so that you are not locking the fronts on entry to the stadium section.",
+        "Set differential lock to roughly 60-70% on entry and 80-90% on exit to maintain rear grip coming out of the high-speed turns.",
+        "Check anti-roll bar settings. Too soft and the car will roll excessively on the banking."
+      ]
+    },
+    {
+      "h2": "Tire Temperature and Altitude Effects"
+    },
+    {
+      "p": "The altitude does not just affect downforce. It affects tire temperatures and grip. Tires heat up slightly more slowly in thin air because there is less air density to generate friction and heat as you brake and corner. This means that tires may feel loose during the first lap of a race or the first run in practice. Expect this. Warm tires over 2-3 laps, and the car will grip better. In the wet, this effect is even more pronounced. Wet tires need more temperature to work, and the altitude makes that harder to achieve. If you are racing in wet conditions, give yourself an extra lap or two to build temperature."
+    },
+    {
+      "p": "Fuel strategy at this altitude is straightforward: lighter fuel loads heat tires faster and reduce drag slightly, but the savings are marginal compared to lower-altitude circuits. For practice, run light fuel to find your best lap time and get to know the track. For races, calculate your fuel load based on your fuel consumption at this track, then add a small buffer. Stint length is long enough that you will likely pit once per race if the fuel rule requires it, so plan accordingly."
+    },
+    {
+      "h2": "Common Mistakes and How to Fix Them"
+    },
+    {
+      "olist": [
+        "Braking too early into the Peraltada because the wall looks close. Solution: Move your braking point 10 meters later and trust the banking. The car will not hit the wall.",
+        "Over-steering and catching the inside wall in the stadium section. Solution: Reduce steering input, turn in smoother, and use the curbing as your guide.",
+        "Locking the front tires on entry because brake pressure is too high for the thin air. Solution: Reduce brake pressure by 2-3% and test. If locking stops and grip improves, you have found your threshold.",
+        "Running too much downforce on the wing and losing top-end speed on the straights. Solution: Start with baseline wing, then subtract 1 click on the wing and see if lap time improves. Altitude means you need less wing than you think.",
+        "Spinning on exit from the high-speed corners because the rear slides out under power. Solution: Increase rear wing, dial in exit differential lock, or reduce throttle application smoothness. Build power delivery more gradually.",
+        "Drifting too close to the outside wall on the exits. Solution: Shorter gearing or more downforce can help, but the real fix is smoother steering. You are probably over-correcting on exit."
+      ]
+    },
+    {
+      "h2": "Practice Plan: Building Speed at Hermanos Rodriguez"
+    },
+    {
+      "p": "Start your first session with low fuel and high downforce. The goal is to feel the track, not necessarily to find the absolute fastest lap. Spend 15 laps learning the Peraltada entry and exit, the stadium section line, and where the walls actually are (not where they look like they are). After that, work on consistent braking points and smooth steering inputs. Many drivers see improvement just from committing harder and trusting the grip."
+    },
+    {
+      "p": "Once you are comfortable with the line, work on setup changes. Reduce downforce by 1 or 2 clicks and see if lap time improves. Adjust brake balance 1-2% at a time and test for lockup. Try higher corner-exit differential lock and see if it increases rear-wheel spin or improves grip. Each change should be small and tested over at least 3-4 laps. <a href=\"best-sim-racing-wheels-iracing.html\">Your wheelbase and wheel setup matter here</a> too. Smooth steering input is paramount at this track, so if you find yourself over-correcting, check your wheel sensitivity and steering filter settings. A quick input response can be a liability when the walls are this tight."
+    },
+    {
+      "tip": "Autodromo Hermanos Rodriguez rewards smooth, committed drivers. Cautious inputs, mid-corner corrections, and second-guessing cost time. Build a setup you trust, then commit to your line. One smooth lap with high speed is faster than three nervous laps trying to avoid the walls.",
+      "tipLabel": "Confidence matters"
+    },
+    {
+      "h2": "Weather and Tire Strategy"
+    },
+    {
+      "p": "Wet weather at Autodromo Hermanos Rodriguez changes the track significantly. The banking becomes slippery because water runs off the high side, making the low side (outside of the Peraltada) the safest line. Wet braking requires longer stopping distances and earlier application, so adjust your braking points accordingly. The stadium section becomes narrower in effect because aquaplaning risk is high. Keep speeds down and use smooth steering."
+    },
+    {
+      "p": "Tire choice is critical in wet conditions. Intermediate tires are common for mixed sessions, and full wets are essential if heavy rain arrives. The altitude means that tire temperatures climb slowly, so you may need to extend your warm-up laps or accept that your first qualifying or race lap will be slightly loose. If you are using rain tires and the track is drying, resist the urge to switch back to slicks immediately. Even if a few patches of dry tarmac appear, the banking and high speeds still reward wet-weather rubber until the entire circuit is dry."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much later should I brake into the Peraltada compared to a normal high-speed turn?",
+      "a": "Brake 1 to 2 car-lengths later than feels instinctive. The banking provides grip that makes the turn feel slower than it actually is. Many drivers brake too early because the stadium wall on the inside is visually intimidating. Move your braking point incrementally (5-10 meters at a time) until you find the limit. If the car is stable under braking and hitting the apex curbing, your braking point is correct."
+    },
+    {
+      "q": "Why does my rear slide out on exit from the high-speed turns?",
+      "a": "Thin air at altitude means less aerodynamic grip on the rear wing. Add 1 to 2 clicks of rear wing, increase rear differential lock on exit to 85-90%, or reduce throttle application so it is smoother. If the car is locking up the rear tires, the problem is throttle application, not setup. Build power delivery more gradually. If the car is simply sliding despite smooth throttle input, add rear wing or differential lock."
+    },
+    {
+      "q": "How does altitude affect tire temperatures and grip at this circuit?",
+      "a": "Thin air (roughly 75% of sea-level density) means less air friction, so tires heat up more slowly. Expect the car to feel looser and less grippy for the first 2-3 laps until tires reach operating temperature. This is normal and predictable. Warm your tires with 2-3 building laps, then push. In wet conditions, the effect is more pronounced. Wet tires need extra warmup time, so plan on 3-4 exploratory laps before pushing in rain."
+    },
+    {
+      "q": "Should I run more downforce at Hermanos Rodriguez than at other road courses?",
+      "a": "Yes. Start with 1 to 2 clicks more wing than your baseline, then adjust from there. The altitude reduces downforce generation, so the team compensates with higher wing angles. However, more wing increases drag on the straights. Find the balance by testing lap time with 1-click adjustments. Usually, a slight downforce increase nets faster lap times. If your car feels unstable in the high-speed turns despite extra downforce, the problem is likely dampers or brake balance, not wing angle."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-cs-v2",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

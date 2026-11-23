@@ -1,0 +1,111 @@
+{
+  "slug": "damper-settings-explained-setup-without-engineering",
+  "tag": "Setup Guides · Suspension",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Damper Settings Explained: Suspension Tuning Without the Engineering Degree",
+  "description": "Learn what bump and rebound damping do, how they affect handling, and which direction to turn when your car feels loose or tight.",
+  "sections": [
+    {
+      "p": "Dampers are the shock absorbers on your car. They control how fast the suspension compresses (bump) and extends (rebound) after hitting a bump or braking hard. In iRacing, damper settings often seem like a mystery because the numbers don't translate to real-world units, and the relationship between adjustment and feel is not obvious. This guide cuts through that fog. You will learn what each damper setting actually does, why it matters, and which way to adjust when your car feels wrong."
+    },
+    {
+      "p": "The key insight: dampers don't add or remove grip. They manage how quickly weight shifts through the chassis. A car with weak dampers wallows and bounces, wasting suspension travel. A car with stiff dampers snaps around corners but becomes nervous on bumps. Finding the right balance means your suspension can do its job: keeping the tires loaded and ready to grip."
+    },
+    {
+      "h2": "What bump and rebound damping actually do"
+    },
+    {
+      "p": "Bump damping resists the suspension compressing downward. When you hit a bump or brake hard, your front suspension wants to dive. Bump damping slows that dive. Stiffer bump damping means the suspension compresses more slowly, so the car stays flatter and more level through the corner."
+    },
+    {
+      "p": "Rebound damping resists the suspension extending upward. After the bump passes or braking ends, the suspension pushes back. Rebound damping controls how fast it pushes back. Stiffer rebound damping means the suspension takes longer to extend, keeping weight on the tires longer after weight transfers."
+    },
+    {
+      "p": "Here is the practical difference: bump damping affects how the car behaves when load is being added (braking, turning, hitting a bump). Rebound damping affects how the car behaves when load is being removed (exiting a corner, leaving the bumpy zone, accelerating). They work together. Too much bump stiffness and the car becomes nervous and snappy on bumpy tracks. Too much rebound stiffness and the car loses grip on corner exit because the suspension can't extend fast enough to unload the tires properly."
+    },
+    {
+      "h2": "Common symptoms and which damper to adjust"
+    },
+    {
+      "list": [
+        "<strong>Car feels loose, unstable, or bouncy over bumps</strong>: Bump damping is too soft. The suspension compresses too quickly and the car oscillates. Increase bump damping.",
+        "<strong>Car feels planted but heavy, or slow to respond to steering input</strong>: Bump damping is too stiff. The suspension can't absorb the track, so the chassis sits too low and doesn't turn in sharply. Decrease bump damping slightly.",
+        "<strong>Car won't settle after braking or on corner exit, keeps bouncing</strong>: Rebound damping is too soft. The suspension extends too fast and the car never settles. Increase rebound damping.",
+        "<strong>Rear slides out on corner exit or car feels like it's on ice</strong>: Rebound damping is too stiff. The rear suspension can't extend fast enough to load the rear tires. Decrease rebound damping.",
+        "<strong>Front end dives hard under braking, then rebounds and pitches the nose up</strong>: Bump damping is too soft and rebound damping is too soft. The suspension compresses and extends too quickly. Increase bump damping first, then rebound if needed."
+      ]
+    },
+    {
+      "tip": "Start by adjusting one damper at a time, in small steps (2-4 clicks). Bump damping affects the moment the suspension compresses. Rebound damping affects what happens after. If you're not sure which one is causing the problem, adjust bump damping first because it has the most noticeable effect on turn-in feel and stability.",
+      "tipLabel": "Tune one at a time"
+    },
+    {
+      "h2": "Front and rear dampers work in pairs"
+    },
+    {
+      "p": "Every car in iRacing has four dampers: front bump, front rebound, rear bump, rear rebound. The front dampers control how the front suspension compresses and extends. The rear dampers control the rear. This matters because the front and rear can have very different requirements."
+    },
+    {
+      "p": "A heavy braking zone requires stiff front bump damping to prevent dive and keep the front tires loaded. But the rear barely brakes, so the rear damping can stay softer. A fast sweeper might need soft front damping for compliance and stiffer rear damping to keep the rear from sliding. The balance between front and rear damping is part of what determines whether the car understeers or oversteers."
+    },
+    {
+      "p": "When a setup feels generally loose, start by increasing rear bump damping. This keeps the rear planted under load. When a setup feels tight and difficult to turn in, try decreasing front bump damping first. When the car bounces or oscillates after a bump, increase the rebound damping for the end of the car that's affected most (front if the nose pitches, rear if the tail rises)."
+    },
+    {
+      "h2": "Track conditions and damper changes"
+    },
+    {
+      "p": "Bumpy tracks require softer damping so the suspension can absorb the bumps without bottoming out or making the car unstable. Smooth tracks can tolerate stiffer damping because there is less suspension movement. Temperature changes also matter: a cold track is slippery, so the car is more likely to slide and oversteer. Slightly softer rebound damping in cold conditions allows the suspension to respond more quickly and keep weight on the tires longer."
+    },
+    {
+      "p": "Night races on the same track as the day session often require a small rebound damping increase because the track cools down and tires lose grip. A multi-hour endurance race will heat the track progressively, so you might need to increase bump damping slightly as grip increases and the car becomes more planted. These are small tweaks, usually 2-4 clicks, but they add up to consistency across a whole race distance."
+    },
+    {
+      "h2": "The practical tuning order"
+    },
+    {
+      "olist": [
+        "Dial in your spring rates and anti-roll bars first. These set the baseline stiffness. Dampers fine-tune how the suspension responds within that baseline.",
+        "Drive a few laps on a fresh setup. Take notes on whether the car feels bouncy, planted, responsive, or wallowy.",
+        "If the car bounces or oscillates, increase rebound damping for the affected end (front or rear) by 3-4 clicks. Drive again.",
+        "If the car feels too heavy or unresponsive to steering input, decrease front bump damping by 2-3 clicks.",
+        "If the car feels loose or slides on corner exit, increase rear bump damping by 2-3 clicks.",
+        "Make one change and drive at least two or three laps. Damper changes are subtle and require consistent corners to feel fully.",
+        "Once the car feels stable and responsive, adjust rebound damping if needed to dial in how quickly the chassis settles after weight transfer."
+      ]
+    },
+    {
+      "p": "The goal is a car that turns in sharply when you ask it to, stays flat through the corner, loads the rear tires on exit without sliding, and doesn't bounce over bumps or oscillate after braking. You will not achieve all of that with dampers alone. Brakes, springs, anti-roll bars, and tire pressures all contribute. But dampers are the tuning tool that makes the suspension feel responsive and predictable, and that feel is what separates a good setup from one that fights you lap after lap."
+    },
+    {
+      "p": "Many drivers skip damper tuning because the iRacing default setups are often adequate enough to be competitive. But on tracks with significant bumps or over long stints where the chassis is constantly loading and unloading, dialing in bump and rebound damping correctly will reward you with lap time and consistency. Start with small changes, feel the difference, and build your intuition over a few setup sessions. That skill will transfer to every car and track you drive."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the difference between bump damping and rebound damping?",
+      "a": "Bump damping controls how fast the suspension compresses when weight is added (braking, turning into a corner, hitting a bump). Rebound damping controls how fast the suspension extends when weight is removed (exiting a corner, after a bump passes). Bump damping affects turn-in and stability over bumps. Rebound damping affects how quickly the car settles and how much grip the tires have when weight is transferring off them."
+    },
+    {
+      "q": "My car bounces after braking. What should I adjust?",
+      "a": "Increase front rebound damping. The front suspension is compressing hard under braking and then extending too quickly, causing a pitch oscillation. Start with a 3 to 4 click increase and drive a few laps. If the bounce continues, increase by another 2 to 3 clicks. If the car still feels unsettled, the front bump damping might also be too soft, so try increasing that by 2 clicks as well."
+    },
+    {
+      "q": "My car feels unstable and wallows over track bumps. Where do I start?",
+      "a": "Start by increasing bump damping for the end of the car where the wallowing is most noticeable. If it is the front, increase front bump damping by 3 to 4 clicks. Drive a few laps to feel the change. If wallowing continues, also increase rebound damping by 2 to 3 clicks to prevent the suspension from extending too quickly after each bump. Make one change and test before making a second change."
+    },
+    {
+      "q": "How do I know if my damper settings are balanced between front and rear?",
+      "a": "Drive a consistent corner and pay attention to whether the car understeers (pushes wide) or oversteers (slides the rear). If you oversteer in fast corners, increase rear bump damping or increase front rebound damping. If you understeer, increase front bump damping or increase rear rebound damping. Balance is also achieved by testing the same corner repeatedly with small changes and noticing when the car feels responsive and planted, not fighting you."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-cs-v2",
+    "moza-sr-p",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

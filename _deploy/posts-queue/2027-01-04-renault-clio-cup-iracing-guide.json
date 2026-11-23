@@ -1,0 +1,154 @@
+{
+  "slug": "renault-clio-cup-iracing-guide",
+  "tag": "Car Guide · Touring",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Renault Clio Cup iRacing: Setup, Braking, and Race Craft",
+  "description": "Master the Renault Clio Cup in iRacing with practical setup tuning, braking points, and overtaking strategy for tight touring car racing.",
+  "sections": [
+    {
+      "p": "The Renault Clio Cup is a front-wheel-drive touring car that rewards smooth inputs and discipline. It has limited grip compared to GT cars, low downforce, and a narrow torque band that punishes wheelspin. The car teaches racecraft fundamentals: brake early, carry speed through corners, and manage fuel and tires over long stints. This guide covers setup priorities, braking technique, and how to overtake and defend in close pack racing."
+    },
+    {
+      "h2": "Setup Priorities for the Clio Cup"
+    },
+    {
+      "p": "The Clio Cup is sensitive to small changes. Start with the baseline from iRacing and move in small increments. Front-end grip is the primary tuning lever because the car is front-wheel drive and tends to push on entry unless the front has bite."
+    },
+    {
+      "list": [
+        "Front anti-roll bar: Softer than stock helps turn-in on bumpy tracks. If the car understeers mid-corner, reduce front ARB first.",
+        "Rear anti-roll bar: Keep stiff relative to front to maintain balance and prevent oversteer under acceleration.",
+        "Brake bias: 55-60% front is a common starting point. Adjust 1 percent at a time based on how the front tires lock. Lock the rears on trail-braking and you lose rear stability; lock the front and turn-in suffers.",
+        "Differential lock on acceleration: 50-60% helps rear traction without killing steering feel. Too high and the car becomes nervous on corner exit.",
+        "Tire pressure: Lower pressures (around 25.5 psi front, 24.5 rear as a baseline) increase grip but warm the tires faster. Watch for graining in short sprints.",
+        "Suspension geometry: Caster and camber have large effects on a low-grip car. Increase front camber (negative, e.g., 2.5-3.5 degrees) to extend tire life and improve turn-in feel."
+      ]
+    },
+    {
+      "tip": "On a fresh set of tires, lap times improve for 3-5 laps as the tires heat. If you are qualifying in a session with tire wear enabled, do your first hot lap early so tires are hot for your best lap.",
+      "tipLabel": "Tire Heat in Qualifying"
+    },
+    {
+      "h2": "Braking Technique and Trail-Braking"
+    },
+    {
+      "p": "The Clio Cup has limited brake performance, and the pedal pressure to lock is small. Load the brakes early and deeply, then feather as you approach the corner. Trail-braking (braking while turning) is essential to rotate the car on entry because the low grip means you cannot rely on mid-corner speed alone."
+    },
+    {
+      "olist": [
+        "Identify the braking zone: begin braking ~100-150 meters before the apex depending on corner speed and track. Use trees, curbs, or distance markers to build a consistent reference.",
+        "Brake hard: apply full pressure immediately. The Clio responds well to threshold braking, so threshold-brake into the corner and hold that brake pressure until turn-in.",
+        "Transition to trail-braking: as you turn the wheel, reduce brake pressure smoothly (not abruptly) over 1-2 seconds. The front tires are now doing braking and cornering, so smooth feedback prevents lockup.",
+        "Release the brakes at the apex: by the apex, brakes should be fully off. Any braking past the apex compromises corner exit speed.",
+        "Accelerate early and smoothly: the Clio does not have a large power band, so early throttle application is faster than waiting for the apex. Use smooth throttle modulation to avoid wheelspin."
+      ]
+    },
+    {
+      "p": "Common mistakes: braking too late forces hard mid-corner braking, which locks the fronts or causes the rear to slide out. Braking too early wastes time. Practice with the brake marker feature or telemetry to find consistent reference points on each track."
+    },
+    {
+      "h2": "Overtaking and Defending"
+    },
+    {
+      "p": "Pack racing in the Clio Cup means overtaking is tight and defensive driving is key. Because grip is low, the car that makes the fewest mistakes usually wins. Overtaking from behind is dangerous; positioning and patience are faster."
+    },
+    {
+      "list": [
+        "On the exit of a slow corner, the car ahead has poor traction. If you can build a tow down the following straight, use that speed to outbrake them into the next corner.",
+        "Braking earlier and harder than the car ahead, then carrying mid-corner speed, often works in lower-grip cars. Sacrifice entry speed to keep momentum through the middle and out.",
+        "If you are defending in the mirrors, hold your line through the apex and trust your exit. A twitchy defensive move causes a lock-up or spin, which loses you two positions.",
+        "Overtaking on the inside of a high-speed corner is risky in a front-wheel-drive car. The inside car (you) is in understeer territory and cannot afford a mistake. Wait for a slower corner."
+      ]
+    },
+    {
+      "tip": "In a 30-minute race, the first 10 minutes are about survival and learning who is fast and who is defensive. A clean start avoids contact and damage. Overtaking usually comes later when others make mistakes or run out of fuel.",
+      "tipLabel": "Patience Over Aggression"
+    },
+    {
+      "h2": "Fuel and Tire Management"
+    },
+    {
+      "p": "Fuel consumption is roughly 1.2-1.5 kg per 10 laps on a 2-mile track, depending on how much you are on the throttle and brake balance. Tire wear is gradual; a set lasts 20-30 laps before graining becomes obvious."
+    },
+    {
+      "list": [
+        "In a fixed-fuel race, calculate fuel in the pits and adjust your planned fuel for each stint. A 1-lap safety margin is wise because fuel consumption varies by driver.",
+        "Tire temperatures peak around lap 5-7 of a fresh set. Don't risk an overtake in the first few laps on cold tires.",
+        "If tires grain, smooth inputs and steady pace preserve what's left. Aggressive throttle or steering application after graining usually results in a spin or puncture.",
+        "During a full-course yellow or safety car, braking in a straight line to cool the brakes and preserve tire heat. Rolling brake checks (light braking) during parade laps keep tires warm for the restart."
+      ]
+    },
+    {
+      "h2": "Common Setup Mistakes"
+    },
+    {
+      "p": "New drivers often over-stiffen the suspension trying to reduce body roll. High stiffness reduces grip on bumpy tracks and makes the car nervous in a crowd. A softer, compliant setup gives more consistent lap times and is safer in wheel-to-wheel racing."
+    },
+    {
+      "list": [
+        "Front bar too stiff: The car will not turn in and understeer early in the corner. Soften front ARB before cutting spring rates.",
+        "Brake bias too rear-biased: You lock the rears under hard braking and lose stability. Shift bias forward 2-3 percent and try again.",
+        "Tire pressure too high: Pressures above 26 psi front hurt grip and cause wheelspin on exit. Dial back to 25-25.5 psi and adjust based on lap times and graining.",
+        "Differential lock too high: 70+ percent lock makes the car sensitive to throttle application and can cause mid-corner oversteer if you are not smooth. Use 55-60 percent as a starting point."
+      ]
+    },
+    {
+      "h2": "Track-by-Track Notes"
+    },
+    {
+      "p": "The Clio Cup races at a mix of street circuits and short ovals. Each track type has different demands."
+    },
+    {
+      "list": [
+        "Street circuits (Brands Hatch, Knockhill): Bumps and tight cornering make a softer, more compliant setup faster. Use lower front ARB and softer springs. Braking zones are short, so trail-braking is critical.",
+        "Short ovals (Tsukuba, Sachsenring): Lower speeds and constant turning mean tire temperatures stay high. Run slightly lower tire pressures and stiffer rear ARB to prevent loose handling.",
+        "High-speed circuits (Monza, Silverstone): The car will not keep pace with GT machinery, but racecraft and consistency earn points. Use a balanced setup and focus on clean driving and fuel strategy."
+      ]
+    },
+    {
+      "tip": "Review lap data in iRacing telemetry to compare your braking zones and throttle modulation against a faster driver in the series. Most differences come down to brake timing and corner exit smoothness, not setup.",
+      "tipLabel": "Learn From Telemetry"
+    },
+    {
+      "h2": "Practice Plan for the Clio Cup"
+    },
+    {
+      "olist": [
+        "Warm up with 10 laps at 90 percent effort to learn the track. Mark braking zones visually and note corner names.",
+        "Run 5 laps at competitive pace to establish a baseline lap time. If this time is 1.5-2 seconds off the fastest lap posted by others, the car and setup are working.",
+        "Spend 10 laps practicing overtaking in a hosted session or practice lobby. Try different lines and positions, then reset and practice defending.",
+        "Run a 15-20 minute race with tire wear and fuel to simulate race conditions. If you run out of fuel or have to pit, your fuel calculation needs adjustment.",
+        "Review telemetry for the fastest lap in your session. Look at braking points, turn-in speed, and corner exit acceleration. Adjust one element per lap."
+      ]
+    },
+    {
+      "p": "The Clio Cup teaches discipline and smooth inputs in a way that carries to faster cars. Lap-time gains come from consistency, braking precision, and racecraft, not horsepower or grip. If you are progressing from open-wheel or rookie series, you will find the Clio rewards patience and planning. For related guidance on setup fundamentals across other cars, see the <a href=\"best-sim-racing-wheels-iracing.html\">best sim racing wheels</a> and <a href=\"moza-r9-iracing-settings.html\">MOZA R9 iRacing settings</a> guides that cover how to configure feedback for precise control in touring cars."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the ideal brake bias for the Clio Cup?",
+      "a": "Start at 55-60 percent front. Adjust 1 percent at a time based on lock behavior. If you lock the rears under hard braking, shift bias forward. If the front locks easily, shift rearward. The goal is threshold braking where you are on the edge of lockup but not over."
+    },
+    {
+      "q": "How much fuel does the Clio Cup consume per lap?",
+      "a": "Roughly 1.2-1.5 kg per 10 laps on a 2-mile track, depending on how much throttle and braking you use. Calculate fuel for your planned stint and add 1 lap as a safety margin. Always confirm fuel remaining before each pit stop in a race."
+    },
+    {
+      "q": "Should I soften or stiffen the anti-roll bars?",
+      "a": "Start with the baseline and reduce front ARB stiffness first if the car understeers on entry. Keep the rear stiffer than the front to maintain balance and prevent loose handling on acceleration. Run 2-3 laps after each change to judge the effect."
+    },
+    {
+      "q": "What is the most important skill for overtaking in the Clio Cup?",
+      "a": "Smooth, early braking and trail-braking. Because grip is low, the car that stops and turns best gains position. Practice braking earlier and harder than other drivers, then carry mid-corner speed. Aggressive, late-braking attempts usually result in contact or a lock-up that destroys your race."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-cs-v2",
+    "moza-sr-p"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

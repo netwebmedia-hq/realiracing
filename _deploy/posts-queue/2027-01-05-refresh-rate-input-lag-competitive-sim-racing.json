@@ -1,0 +1,149 @@
+{
+  "slug": "refresh-rate-input-lag-competitive-sim-racing",
+  "tag": "Hardware · Displays",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Refresh Rate and Input Lag: What Really Matters for Competitive Sim Racing",
+  "description": "How monitor refresh rate, frame rate, and input lag combine to affect lap times and consistency. Practical numbers and trade-offs for competitive iRacing.",
+  "sections": [
+    {
+      "p": "A competitive sim racer's reaction to track changes happens in a fraction of a second. If your monitor displays that change a frame later than it should, you correct later, brake later, or miss the apex. Refresh rate and input lag are not marketing numbers. They are hard limits on how fast you can perceive and respond to the track, and how much latency sits between your steering input and the car's response on screen."
+    },
+    {
+      "p": "Many racers buy a 60 Hz monitor and assume that is enough because iRacing runs smoothly. Others chase 240 Hz thinking more Hz always wins. The truth is narrower. What matters is the relationship between your monitor's refresh rate, your graphics card's frame rate, and the total latency budget you can afford. Miss this connection and you spend money on gear that does not improve your lap times."
+    },
+    {
+      "h2": "Refresh rate, frame rate, and frame pacing"
+    },
+    {
+      "p": "Refresh rate is how many times per second your monitor redraws the image. A 120 Hz monitor redraws 120 times per second, so each frame stays on screen for roughly 8.3 milliseconds. A 60 Hz monitor holds each frame for 16.7 ms. The faster the refresh, the fresher the image of the track."
+    },
+    {
+      "p": "Frame rate is how many new images your graphics card renders per second. If your RTX 5060 Ti renders 100 frames per second but your monitor refreshes at 60 Hz, your GPU is working ahead and some frames are discarded. This wasted compute is not the problem. The problem is what happens when frame rate and refresh rate fall out of sync."
+    },
+    {
+      "p": "When your GPU renders 100 fps on a 60 Hz monitor without V-sync, some refresh cycles display a frame that is mid-render, so you see tearing. With V-sync locked on, the GPU waits for the monitor to ask for the next frame. If the GPU cannot deliver a frame every 16.7 ms on 60 Hz, it waits a full cycle and you drop to 30 fps. This is the classic V-sync stutter."
+    },
+    {
+      "p": "Modern monitors use variable refresh rate (G-SYNC or FreeSync compatible) to close this gap. Your monitor syncs to the GPU, not the other way around. If the GPU renders 72 fps on a 120 Hz monitor, the monitor refreshes at 72 Hz that moment and no frame is wasted or torn. Latency stays low and consistent."
+    },
+    {
+      "h2": "What input lag actually is"
+    },
+    {
+      "p": "Input lag is the delay between pressing a key or moving the wheel and seeing the car respond on screen. It has multiple sources. Your wheel or pedal sends a signal to the PC (a few milliseconds). The PC processes your input and updates the physics simulation. iRacing renders the new frame. Your GPU sends that frame to the monitor. The monitor displays it. Sum all these steps and you get total latency."
+    },
+    {
+      "p": "Most PC sim racing setups stack latency like this: 1-3 ms for USB input transmission, 1-5 ms for iRacing to process the input and step the physics, 0-5 ms for GPU rendering, and 0-16 ms for monitor display latency. On a 60 Hz monitor with no V-sync, you can add another 16 ms if your frame lands just after the monitor refreshes. Total: up to 50+ ms from steering input to car movement on screen."
+    },
+    {
+      "p": "On a 120 Hz G-SYNC monitor with a solid 120 fps frame rate locked, the display latency alone drops to 8 ms (one refresh cycle), and frame delivery is synchronized. Total latency often sits in the 15-25 ms range, depending on GPU and CPU load."
+    },
+    {
+      "list": [
+        "60 Hz monitor, 60 fps, V-sync: 25-35 ms typical",
+        "120 Hz monitor, 120 fps, G-SYNC: 15-25 ms typical",
+        "144 Hz monitor, 144 fps, G-SYNC: 12-20 ms typical",
+        "240 Hz monitor, 240 fps, G-SYNC: 8-15 ms typical"
+      ]
+    },
+    {
+      "p": "These are not worst-case or peak numbers. They are what you should expect in a steady race when frame rates stay near the target refresh rate."
+    },
+    {
+      "h2": "Does refresh rate matter for lap time?"
+    },
+    {
+      "p": "Yes, but not equally to all drivers or all tracks. A driver who brakes by reference points (braking markers, board positions, previous laps) benefits less from high refresh rate than a driver who relies on visual feel and throttle position feedback."
+    },
+    {
+      "p": "Very bumpy or technical tracks amplify the difference. At a track like Mid-Ohio Motorsports Park with quick direction changes and uneven pavement, the car's attitude shifts frame to frame. A 60 Hz image updates twice per second slower than a 120 Hz image. If your cornering speed is on the edge of grip, that half-frame delay can mean the difference between holding it and sliding. Fast road courses like Spa Francorchamps reward higher refresh rate more than smooth ovals."
+    },
+    {
+      "p": "But a 15-20 millisecond latency difference does not cost a tenth of a second in one corner. It costs consistency. Over twenty laps, the driver on 120 Hz makes fewer tiny corrections and runs tighter lines because feedback is fresher. Over a season, consistency compounds."
+    },
+    {
+      "tip": "A competitive driver on 60 Hz is not locked out of podiums. A driver on 120 Hz with unstable frame rates or poor FFB tuning will lose more time than the refresh rate gains. Consistency matters more than peak refresh rate.",
+      "tipLabel": "Hz ≠ Lap Time"
+    },
+    {
+      "h2": "What you can actually afford and control"
+    },
+    {
+      "p": "The common advice is to run your monitor refresh rate close to your frame rate, with enough headroom that you never drop below the target. If your GPU averages 110 fps on 1440p High settings at a busy track, lock the target to 100 fps and run a 120 Hz monitor. This prevents sudden latency spikes from dropped frames."
+    },
+    {
+      "p": "For a PC with an RTX 5060 Ti, Ryzen 7 5700, and 32 GB RAM on a 1440p 120 Hz monitor, iRacing at High settings runs 110-130 fps at most tracks, and 90-110 fps at heavy-traffic races or night events. This is enough to keep 120 fps locked most of the time, so a 120 Hz monitor is a natural fit. Dropping to 1080p or Medium graphics settings pushes 140+ fps, but 1440p is better for visibility and corner speed reference."
+    },
+    {
+      "p": "If you are budget-limited, a 1440p 120 Hz G-SYNC monitor is a smarter buy than 1440p 240 Hz. The jump from 60 to 120 Hz is noticeable. The jump from 120 to 240 Hz is small unless you are already locked at 240 fps, which many GPUs cannot sustain at high settings."
+    },
+    {
+      "olist": [
+        "Check what frame rate your hardware averages at your favorite tracks and graphics settings.",
+        "Choose a monitor refresh rate that your GPU can hit consistently, with ~10 fps headroom.",
+        "Enable G-SYNC and lock V-sync in iRacing graphics settings.",
+        "Run a third-party frame rate counter (Steam overlay or Overlay app) during races to verify stability."
+      ]
+    },
+    {
+      "h2": "The hidden cost of chasing high refresh rate"
+    },
+    {
+      "p": "Stepping up to 240 Hz often means buying a smaller display (24-27 inches) or sacrificing color accuracy and contrast for speed. High refresh rate panels use fast pixel response times, which sometimes come at the cost of viewing angles or brightness consistency. If you race in a bright room or use a single monitor for work and racing, a 144 Hz or 165 Hz IPS panel might serve better than a 240 Hz TN panel."
+    },
+    {
+      "p": "Also, 240 Hz monitors cost roughly 1.5 to 2 times as much as 144 Hz equivalents. For most competitive drivers outside esports titles, that money is better spent on a <a href=\"best-sim-racing-pedals-iracing-2026.html\">load-cell pedal upgrade</a>, better seating, or rig stability."
+    },
+    {
+      "h2": "What matters more than raw Hz"
+    },
+    {
+      "p": "Consistency beats maximum refresh rate. A rock-solid 60 fps on a 60 Hz monitor with no frame pacing issues will feel better than erratic jumps between 90 and 144 fps. Erratic frame rates introduce micro-stutters that distract even if average latency is low."
+    },
+    {
+      "p": "FFB responsiveness and <a href=\"moza-r9-iracing-settings.html\">wheelbase damping settings</a> matter more than display latency for immediate steering feedback. A wheelbase set to minimum damper with live FFB tuning gives you force feedback in 5-10 ms. A monitor adds 10-20 ms on top. FFB is felt first, vision second."
+    },
+    {
+      "p": "Track familiarity trumps both. A driver who has studied the racing line and memorized apexes through replay analysis will beat a driver chasing marginal hardware gains on an unfamiliar circuit. Use your display latency as one input signal among many, not the foundation of your performance."
+    },
+    {
+      "tip": "Upgrading from 60 Hz to 120 Hz on a system that can sustain 120 fps is real and worth doing. Beyond 144 Hz, the return diminishes sharply for most sim racers unless you are chasing esports money or running a highly optimized rig.",
+      "tipLabel": "Practical Upgrade Path"
+    },
+    {
+      "h2": "One monitor, one setup"
+    },
+    {
+      "p": "You are limited to one 1440p 120 Hz monitor on this PC. This is not a constraint. It is a standard competitive setup that works for road and oval racing at all iRating levels up to and including top splits. Consistency and FFB tuning will drive faster lap times than chasing a third screen or VR headset."
+    },
+    {
+      "p": "Lock your refresh rate to 120 Hz in iRacing graphics settings, enable G-SYNC, and keep frame rate between 110 and 130 fps on High settings. This guarantees low, consistent latency across all race types. Dial in your <a href=\"moza-r9-iracing-settings.html\">FFB and damping</a> for the car and track, trust your reference points, and focus on smooth inputs. Lap time comes from driver discipline, not display hertz."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is 120 Hz enough for competitive iRacing, or do I need 144 Hz or higher?",
+      "a": "120 Hz is fully competitive at all iRating levels. The difference between 120 and 144 Hz is about 2-4 milliseconds of latency, which is below the threshold most drivers can consciously feel over a lap. If your GPU sustains 120 fps consistently, 120 Hz is enough. Prioritize frame rate stability over raw Hz."
+    },
+    {
+      "q": "What is the latency difference between 60 Hz and 120 Hz in a real race?",
+      "a": "On a 60 Hz monitor with V-sync locked, latency is typically 25-35 ms from steering input to car movement on screen. On 120 Hz with G-SYNC and steady 120 fps, it drops to 15-25 ms. That 10 ms difference is real but small. Consistency matters more than the absolute number. Erratic frame rates on 120 Hz feel worse than steady 60 Hz."
+    },
+    {
+      "q": "Should I prioritize higher refresh rate or better graphics settings?",
+      "a": "Lock your frame rate to your target refresh rate first, then maximize graphics quality within that frame budget. For an RTX 5060 Ti, running 120 fps at High settings on 1440p beats running 240 fps at Low settings. Visibility and reference points (apexes, curbing, brake markers) improve more with better graphics than any refresh rate gain."
+    },
+    {
+      "q": "Does a G-SYNC monitor really reduce input lag compared to a standard monitor?",
+      "a": "Yes. G-SYNC synchronizes the monitor refresh to your GPU frame rate, eliminating frame pacing delays. Without G-SYNC, if your frame arrives just after the monitor refreshes, you wait a full refresh cycle before seeing it (8-16 ms). With G-SYNC, the monitor waits for the frame and displays it immediately. For sim racing, enable G-SYNC in your graphics driver settings."
+    }
+  ],
+  "gearKeys": [
+    "monitor-1440p-120",
+    "gpu-rtx-5060-ti",
+    "moza-r9"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

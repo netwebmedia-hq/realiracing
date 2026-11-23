@@ -1,0 +1,130 @@
+{
+  "slug": "fuji-speedway-iracing-guide-setup-strategy",
+  "tag": "Track Guides · Road Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "Fuji Speedway iRacing guide: setup, braking, and the 130R",
+  "description": "Master Fuji's high-speed corners and elevation changes. Learn braking zones, the 130R line, and setup priorities for consistency and speed.",
+  "sections": [
+    {
+      "p": "Fuji Speedway is a fast, undulating circuit that separates careful line management from pure throttle control. The 4.563-kilometer layout sits high in the mountains and crosses itself twice, creating two very different race environments. The first half flows through quick, medium-speed corners with tight margins for error. The second half, beyond the crossover at Turn 7, opens up into high-speed terrain that demands precision on entry and commitment on exit. Setup matters here because track temperature swings throughout a session, tire degradation happens fast on the climbing sections, and a half-meter of track position change between Turn 1 and the 130R can cost a tenth of a second."
+    },
+    {
+      "p": "Understanding Fuji means respecting its geography. The track rises over 100 meters from the pit straight to the highest point near Spoon Curve, then dips and rises again toward the second crossover. That elevation means brake balance shifts mid-corner as the nose of the car pitches downward, camber changes feel different section to section, and your mental model of \"this corner is medium-speed\" falls apart if you approach it on the downhill versus the uphill. Begin by driving the track at half pace for 10 laps, noting which corners feel loose and which feel planted. Mark your three biggest lock-ups, your two biggest wheelspin exits, and the one corner where you consistently lose time. That diagnostic lap saves setup work later."
+    },
+    {
+      "h2": "The first lap sectors: Turn 1 through 100R"
+    },
+    {
+      "p": "Turn 1 is a heavy braking event into a medium-radius left-hander. Most drivers brake in a straight line and turn in late, then realize the corner opens and they've already committed to a line that won't hold speed. The correct approach is to arrive at the corner with brake pressure still applied but already pointing the car 2 to 3 meters before the apex. This gives the front tires permission to load while the brakes are still doing work. Release brake pressure smoothly over the first third of the turn-in, and use full throttle on the exit. Missing this transition costs two car lengths down the straight."
+    },
+    {
+      "p": "Turns 2 and 3 flow quickly. Turn 2 is a fast left that most drivers take flat or near-flat on a qualifying lap. Turn 3 is a tighter right immediately after. The key is to brake early enough into Turn 2 to load the left-side tires, then trail brake into Turn 3 to keep speed while setting up for the right. Many drivers hit the apex of Turn 3 and expect mid-corner power. The elevation pitches downward as you exit Turn 3, so the grip window is narrower than it feels."
+    },
+    {
+      "list": [
+        "Turn 1: brake to ~160 km/h, turn in early, smooth brake release during turn-in, full exit power",
+        "Turn 2: carry speed with light trail brake, stay mid-track to set up for Turn 3",
+        "Turn 3: brake to ~140 km/h, light rotation, power builds into the descent toward 100R",
+        "100R (Turns 4 and 5): these flow together as a chicane; stay on the throttle through the crest"
+      ]
+    },
+    {
+      "p": "The 100R is where many sim racers overdrive and lose time in traffic. This fast left-right sequence sits at the crest of a hill. At speed, the nose of the car will weight the front axle as it crests, then as you pitch over the downhill the chassis feels lighter. Wait for that lightness to pass before you commit full lock into the right-hand portion of the chicane. If you turn in too early, the inside tires will unload and you will push wide. If you turn in too late, you lose the racing line into 200R."
+    },
+    {
+      "h2": "The high-speed section: 200R through Spoon Curve"
+    },
+    {
+      "p": "200R is Fuji's most demanding corner. It is a long, sweeping, left-hand curve that climbs steeply. The apex is not at the geometric middle of the corner, but closer to the exit. Most drivers brake too early and lose time; a qualifying line involves braking to around 180 km/h, turning in while still on light brakes, and then accelerating mid-corner as grip builds on the climbing surface. The car will feel heavy in mid-corner as it climbs, so your steering input feels correct but the car understeers. Add more throttle and reduce steering angle fractionally; this loads the rear tires and allows the front to track."
+    },
+    {
+      "p": "Spoon Curve follows immediately after, turning right and pitching back downward. The transition is abrupt. Most of the time you are still holding throttle through 200R's exit when you need to lift, brake, and position for Spoon's entry. This is the most common lockup zone on the circuit. The solution is to brake slightly earlier than feels natural, in the slight dip between 200R and Spoon, so that your wheels are not at peak load when the downhill gradient hits. A car with insufficient brake balance bias toward the rear will lock the fronts here repeatedly."
+    },
+    {
+      "tip": "Braking into 200R while climbing teaches the car's balance under load. If you lock the inside rear tire, your brake bias is too far rear for Fuji's setup. If you lock the fronts at Spoon, your bias is too far front. A common baseline is 56-57% front bias. Adjust in 1% steps and do two full pushes per change to feel the difference in both zones.",
+      "tipLabel": "Brake Balance Test"
+    },
+    {
+      "h2": "The 130R, the crossover, and the second half"
+    },
+    {
+      "p": "130R is the most famous corner on the circuit. It is a high-speed left-hand bend that sits on a downhill and is taken flat-out or near-flat on most race setups. Many drivers spend hours trying to get 130R perfect, only to lose the lap time somewhere else. The 130R line is simple: brake for Spoon Curve, exit Spoon with controlled throttle application, coast to build speed through the transition into 130R, and then squeeze full throttle at the apex or just before. The inside line through 130R puts the car at the edge of the track. The outside line is safer but slower. Qualifying pace requires the inside line. Race pace requires consistency over flat-out speed."
+    },
+    {
+      "p": "After 130R, Turn 7 is a right-hand kink that leads to the crossover where the track intersects itself. This is a blind corner and a frequent contact zone in multiclass or traffic. Hold the racing line through Turn 7, brake to around 100 km/h for the crossover itself, and then immediately build speed toward Turn 8. The crossover is usually safe on a solo lap but becomes a problem when faster traffic is coming through or when backmarkers are exiting the pits. In a race, assume someone will be on the wrong line or braking harder than expected."
+    },
+    {
+      "list": [
+        "130R entry: carry speed from Spoon, light brake or coast into the high-speed kink",
+        "130R apex: aim for the inside curbing, full throttle at apex or slightly before",
+        "130R exit: manage throttle to stay off the curbing on exit, do not chop the wheel mid-accelerate",
+        "Turn 7 to crossover: short right kink, then brake to 100 km/h, assume traffic on the crossover"
+      ]
+    },
+    {
+      "h2": "Setup priorities for Fuji"
+    },
+    {
+      "p": "Fuji's setup is a balance between downforce for the high-speed section and stability over the elevation changes. Most series run Fuji with moderate downforce. If you start with the fixed setup, your first task is to test front wing angle. One step of wing (usually 2 to 4 degrees depending on the car) is worth 0.15 to 0.25 seconds in qualifying trim. Fuji usually benefits from a touch more wing than a medium-speed road course because 200R and 130R demand front-end grip, and the bumpy sections reward compliance more than raw pace."
+    },
+    {
+      "p": "Brake bias and brake lockup are your next priorities. The circuit has three hard-braking zones: Turn 1, into 200R, and Spoon Curve. Set brake bias so that you can lock the fronts slightly before the rears at Turn 1 (the longest straight brake zone). If your rear wheels lock before the fronts, your bias is too far rear. If the fronts lock and you feel nothing at the rear, your bias is too far front. Fuji usually settles around 56 to 59% front bias depending on the car model."
+    },
+    {
+      "p": "Dampers benefit from a medium stiffness approach. Too soft and the car will wallow over the crests and lose front-end response at 200R. Too stiff and the ride height will pump and the car will catch air. A common starting point is 7 to 9 on rebound and 6 to 8 on bump. Test one full fuel load with these settings and note which corner feels most nervous. If 200R feels twitchy, increase rebound stiffness. If Spoon Curve feels light on the brakes, increase bump stiffness."
+    },
+    {
+      "p": "Tire pressure is critical at Fuji. The elevation gain means that early in the session, tires run cool and pressures stay low. By lap 15 to 20, the same tires have climbed 100 meters and pressured up significantly as track temperature rises. Start with cold tire pressures about 1.5 to 2 psi below your target operating pressure. This allows the tires to warm into their optimal window by the fifth or sixth lap. If you start at target pressure, your tires will overpressure and lose rear grip mid-stint."
+    },
+    {
+      "tip": "Fuji's elevation means tire pressure rises faster than on a flat circuit. Plan a tire pressure check at lap 10. If cold pressures were 25.5 psi and you are now at 27.2 psi and struggling for rear grip, your starting pressure was too high. Drop it by 0.5 psi for the next session and retest. Overpressure at Fuji feels like sudden mid-corner understeer that disappears the next lap.",
+      "tipLabel": "Tire Pressure Management"
+    },
+    {
+      "h2": "Common mistakes and how to avoid them"
+    },
+    {
+      "p": "The most common mistake is driving 200R and 130R as pure flat-out corners. Both are fast, but neither is taken at absolute maximum steering input at maximum throttle. 200R is climbed and requires you to manage load transfer. 130R is a crest and requires you to stay off full lock until the car is settled. Drivers who ignore this tend to either oversteer mid-corner and lock a rear tire, or understeer wide and lose the apex entirely."
+    },
+    {
+      "p": "The second mistake is locking the brakes into Spoon Curve. This corner is approached too fast by default because the previous corner (200R) is a long acceleration zone that builds speed naturally. Brake 15 to 20 meters earlier than feels natural. You will feel slow the first lap. By the second lap, you will be on throttle mid-corner again and carrying higher average speed because you are not fighting understeer from too much speed on entry."
+    },
+    {
+      "p": "The third mistake is not adjusting brake bias for Fuji's specific braking zones. Many drivers arrive with a setup biased heavily rear for drift or balance concerns from other tracks, then encounter fronts that lock at Spoon Curve or Turn 1. This is not a driving issue, it is a setup issue. Test brake bias in 1% increments over three full laps per change. Record which corner you are locking and why. Spoon Curve locks at the downhill transition suggest the rear needs more bias. Turn 1 locks when braking hard in a straight suggest the front needs more bias."
+    },
+    {
+      "h2": "Race strategy at Fuji"
+    },
+    {
+      "p": "Fuji is a track where qualifying pace is markedly different from race pace. In qualifying, drivers run at the edge of grip, often making contact with curbs and carrying speed that is not sustainable over 30 minutes. In a race, tire degradation and fuel load mean that the first 10 laps are slower than qualifying, the middle stint holds relatively consistent pace, and the final 10 laps often see another drop as tires age. Plan your tire strategy around this curve. If you start on medium tires, expect to gain 0.3 to 0.5 seconds for the first three laps as they reach temperature, hold pace for laps 5 through 15, and then start to lose grip in the high-speed sections (200R and 130R primarily) as the tires wear."
+    },
+    {
+      "p": "Fuel consumption at Fuji is moderate. Most GT cars will burn 2.5 to 2.8 liters per lap at race pace. Use the first three laps to establish your fuel burn rate by looking at fuel percentage drop. If you burned 7.5% in three laps, you will burn about 25% over a 10-lap stint. Downshifting before 200R and coasting into 130R saves 0.1 liters per lap with minimal pace loss. This is especially useful on the final stint when fuel is critical."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is 130R really a flat-out corner?",
+      "a": "On a qualifying lap with cold tires and light fuel, yes, most GT cars take 130R near flat. In a race with aged tires and full fuel, most drivers brake slightly or coast before the corner and then apply throttle mid-corner. The difference between flat and 5% throttle lift is often less than 0.05 seconds but provides margin for small lockups on the crests. The inside line requires commitment; the outside line is safer. Use the inside line in qualifying and practice, then adjust your bravery based on tire condition and fuel during the race."
+    },
+    {
+      "q": "Why do my brakes lock at Spoon Curve but nowhere else?",
+      "a": "Spoon Curve is braked downhill after a long acceleration zone (200R). Most drivers arrive with more speed than they can hold, and the downhill gradient reduces rear tire load exactly when the front tires are loaded. This is a classic downhill braking lock. The solution is to brake 15 to 20 meters earlier than feels right, in the small dip between 200R and Spoon. If brake bias is biased heavily rear (60%+ front), you will lock the fronts here even with early braking. Test 56-57% front bias and brake 10 meters earlier. Lock should disappear."
+    },
+    {
+      "q": "What tire pressure should I use at Fuji?",
+      "a": "Fuji's elevation means tire pressure rises 1.5 to 2 psi over the first 10 laps as the track temperature climbs. Start about 1.5 psi below your target operating pressure (e.g., if your target is 27.5 psi, start at 26.0 psi cold). Check pressure at lap 10. By lap 15 to 20, pressures should stabilize within 0.3 psi of your target. If pressures creep above target and do not stabilize, your starting pressure was too high. Overpressure causes sudden understeer mid-stint, usually visible at 200R and 130R first."
+    },
+    {
+      "q": "How much time is lost if I take the outside line through 130R instead of the inside?",
+      "a": "On a qualifying lap, 0.15 to 0.25 seconds depending on car model and setup. The outside line requires more steering angle and later throttle application. In a race with traffic, the outside line is often the smarter choice because it reduces risk of contact or a lock-up under pressure. Practice the inside line in solo sessions so you understand the boundary, then use the outside line during races when positioning and consistency matter more than raw lap time. Many racers miss the inside line by 0.1 seconds and lose 0.3 seconds trying."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}

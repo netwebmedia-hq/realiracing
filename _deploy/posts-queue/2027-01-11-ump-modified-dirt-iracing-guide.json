@@ -1,0 +1,180 @@
+{
+  "slug": "ump-modified-dirt-iracing-guide",
+  "tag": "Car Guide · Dirt Racing",
+  "author": "Carlos Martinez",
+  "readTime": "9 min read",
+  "title": "UMP Modified dirt iRacing guide: setup, braking, and throttle control",
+  "description": "Master the UMP Modified on dirt in iRacing. Learn setup fundamentals, braking points, throttle management, and how to build momentum through loose corners.",
+  "sections": [
+    {
+      "p": "The UMP Modified is one of iRacing's most rewarding and unforgiving dirt cars. It has real weight, significant power, and very little grip. That combination makes it feel alive in a way that road cars do not. Drivers who come from tarmac racing often struggle because they expect the car to respond to steering input the way a GT3 does. It does not. The Modified demands rhythm, patience, and a willingness to let the car move around underneath you. Once you understand how to manage that motion, you will find that consistency and speed come together naturally."
+    },
+    {
+      "p": "Dirt racing in iRacing differs from road racing in fundamental ways. The track surface changes throughout each session as it gets rougher and faster. Tire wear, fuel consumption, and setup work in ways that do not always match road-course experience. This guide covers the core skills and setup approach you need to build a foundation on the UMP Modified, then adapt as conditions change."
+    },
+    {
+      "h2": "Understanding the UMP Modified's character"
+    },
+    {
+      "p": "The Modified is a high-power, light-frame car designed for oval dirt racing. It produces roughly 400+ horsepower in the iRacing model, delivered through a live rear axle with minimal suspension compliance. That means the car will step out in the rear under acceleration, and it will stay stepped out until you manage it with throttle and steering input. Front-end grip is also limited, so the car will push wide if you brake too late or carry too much speed into a corner."
+    },
+    {
+      "p": "The car rewards smooth, predictable inputs. Any sudden steering correction, brake stab, or throttle snap will kill your line and momentum. This is not a car where you can dive deep into the corner and work your way out. You have to plan the line before you arrive, brake in a controlled manner, and roll in throttle as the car turns. Speed comes from consistency, not aggression."
+    },
+    {
+      "list": [
+        "Live rear axle means the rear end will step out under power; manage it with throttle control and opposite-lock steering",
+        "Limited front grip means overbraking or late trail braking will push the car wide",
+        "Weight transfer is slow compared to road cars, so weight the front before you need to turn",
+        "Track evolution changes conditions dramatically; a setup that works lap 5 may not work lap 50",
+        "Tire temperature and pressure affect handling far more than on road courses; monitor and adjust during the race"
+      ]
+    },
+    {
+      "tip": "Dirt oval racing rewards rhythm and repetition over heroic individual corners. Find a consistent line through three to five representative corners, repeat it perfectly five times in a row, then assess what changed. Build speed incrementally by tightening your line or rolling in throttle earlier, not by braking later.",
+      "tipLabel": "Build momentum through rhythm"
+    },
+    {
+      "h2": "Setup fundamentals for dirt ovals"
+    },
+    {
+      "p": "Setup on dirt differs significantly from road racing because the driving surface itself is constantly changing and grip levels are much lower. A setup that feels planted on a paved surface will feel disconnected on dirt. You are chasing balance and predictability, not outright grip."
+    },
+    {
+      "h3": "Front end"
+    },
+    {
+      "p": "Start with modest front anti-roll bar stiffness. A common baseline is around 100-200 depending on the track, but you should test at your chosen venue. Front end stiffness should allow the car to rotate without feeling like the front end is pushing. If the car pushes the front wide on entry, stiffen the bar. If it feels twitchy and the rear steps out too aggressively, soften it. Front camber is usually run around negative 2 to 4 degrees to build tire contact patch. Front caster is typically around 4 to 6 degrees to provide self-centering and stability."
+    },
+    {
+      "h3": "Rear end"
+    },
+    {
+      "p": "Rear anti-roll bar stiffness controls how much the rear end will step out during acceleration and cornering. A softer rear bar allows more roll and can help traction if the track is very loose. A stiffer rear bar makes the car more responsive to steering input but will increase rear instability if overdone. Most drivers find a moderate setting between 200-350 works across a range of conditions. Rear camber is usually negative 1 to 2 degrees. Rear toe-in is typically 0 to 0.1 inches (a hair of toe-out in some cases). Check your chosen track's setup database for reference starting points, as dirt ovals vary considerably."
+    },
+    {
+      "h3": "Springs and dampers"
+    },
+    {
+      "p": "Spring rates on dirt should be softer than on road courses to allow the car to work through bumps and ruts. Stiff springs will cause the car to skip and lose grip. A common baseline is around 800-1200 on front springs and 1000-1400 on rear springs, depending on driver weight and the track. Bump damping (compression) should be moderate to allow the suspension to compress and then push back smoothly. Rebound damping should be softer than you might run on tarmac to allow weight to transition quickly from corner to corner. Start conservative (lower numbers) and increase only if the car feels too loose."
+    },
+    {
+      "h2": "Braking and trail braking on dirt"
+    },
+    {
+      "p": "Braking on dirt is fundamentally different from road racing. The tire has much less grip, so you must brake in a straight line or with very minimal steering input. Any braking while turning will cause either the front to push wide or the rear to step out. The Modified does not have ABS in iRacing, so threshold braking (braking right at the edge of lockup) is both skill and risk."
+    },
+    {
+      "olist": [
+        "Identify your braking zone by finding a visual reference point (a grandstand, a berm, a track marker) well before the corner. Most drivers brake 150 to 300 feet before the turn, depending on speed and track layout.",
+        "Brake in a straight line or with the car pointing very close to straight. Avoid any steering input while at peak brake pressure.",
+        "Release brake pressure smoothly as you begin to turn. This is not a sudden transition; it is gradual. By the time the front wheels are pointed at the apex, brake pressure should be near zero.",
+        "Once steering input is in, you are off the brake. Any trailing brake input at that point will upset the front or rear.",
+        "Roll throttle in smoothly as the car exits. The rear will step out; control it with opposite-lock and modulation of throttle."
+      ]
+    },
+    {
+      "p": "Many newer drivers try to brake deep and steer at the same time, thinking that will save time. It does not. It kills your front grip immediately, pushes you wide, and you have to slow down more in the following corners to get back on line. Brake early, turn, then accelerate. That sequence is slower on paper but faster in lap time."
+    },
+    {
+      "tip": "If you are locking the front tires during braking, reduce brake pressure or move your braking point earlier. A locked tire has zero grip, and you will push wide. Threshold braking takes practice; start with slightly lighter brake pressure and build from there once the car feels predictable.",
+      "tipLabel": "Threshold braking requires practice"
+    },
+    {
+      "h2": "Throttle control and managing the loose rear"
+    },
+    {
+      "p": "The Modified's power is its identity and its challenge. Roll in throttle aggressively out of a corner, and the rear will step out dramatically. Roll in too conservatively, and you sacrifice momentum and lose places to braver drivers. The sweet spot is smooth, progressive throttle application that lets the rear settle gradually."
+    },
+    {
+      "olist": [
+        "Identify the initial throttle point. This is typically a visual reference where you have completed your steering input and the car is settled. At this point, the chassis is calm enough to accept throttle.",
+        "Roll in throttle smoothly over 2 to 3 seconds. Do not stab the throttle; sweep your foot gradually from zero to full.",
+        "As the rear steps out, steer opposite-lock gently (a few degrees of counter-steering). The rear will come back toward the centerline as power builds.",
+        "Once the rear is settled and tracking straight, you can be at full throttle. The car may drift slightly, but it should feel predictable and stable.",
+        "If the rear is stepping out excessively and you cannot control it with opposite-lock, reduce throttle slightly or move your throttle point later in the corner."
+      ]
+    },
+    {
+      "p": "Learning to trust opposite-lock is essential. Many drivers see the rear step out and panic, cutting throttle and ruining their exit. The loose rear is normal and expected. Manage it with gentle counter-steering and smooth throttle modulation. Once you accept that the car will move around, you will stop fighting it and start driving it."
+    },
+    {
+      "h2": "Track evolution and in-race adjustments"
+    },
+    {
+      "p": "Dirt gets rougher, faster, and grippier as the race progresses (up to a point). The track will also rubber in, meaning fast lines become visible and have more grip. This means your setup and driving style need to evolve too. What works in qualifying may feel slow by lap 50, and what works at lap 50 may become too loose by the end of the race."
+    },
+    {
+      "list": [
+        "In early laps, the track is slick. Brake points will be longer, and you will carry less speed through corners. Accept this and focus on being smooth and consistent.",
+        "By mid-race, the track has roughed up and developed a racing groove. Your braking points will shorten, and you will be able to carry more speed. Lap times will drop significantly.",
+        "Late in the race, tire wear and track conditions may shift balance. The rear may become loose if you are on old tires, or the car may feel more planted if track temperature has risen.",
+        "If the car feels loose, reduce rear anti-roll bar stiffness slightly or add wedge (cross-weight) to tighten the rear. If it feels tight, increase bar stiffness or remove wedge.",
+        "Tire pressure changes are real. Monitor pressure and adjust during pit stops if needed. Higher pressure (by 1 to 2 PSI) will make the car looser; lower pressure will make it tighter and may improve grip slightly."
+      ]
+    },
+    {
+      "p": "Many drivers run the same setup for an entire race and wonder why they fall off at the end. The best racers make small adjustments during cautions or pit stops. A single click of anti-roll bar stiffness or a 0.1-inch wedge adjustment can refind balance and keep you competitive as the track evolves. <a href=\"custom-setup-from-iracing-baseline-tuning.html\">Learn how to interpret your setup changes systematically</a>, then apply that method during the race."
+    },
+    {
+      "h2": "Common mistakes and how to fix them"
+    },
+    {
+      "list": [
+        "<strong>Braking too late:</strong> This is the number one error. You brake late, push the front wide, and then have to slow down more to get back on line. Brake early, turn cleanly, then accelerate. Slower braking point, faster total exit.",
+        "<strong>Steering and braking at the same time:</strong> You will kill front grip and push wide. Brake straight, then turn. Turn, then throttle.",
+        "<strong>Panicking when the rear steps out:</strong> The loose rear is normal. Apply gentle opposite-lock and trust the car. Cutting throttle suddenly will only make it worse.",
+        "<strong>Not respecting tire wear:</strong> Old tires have no grip. Adjust your inputs (lighter throttle, earlier braking) for worn tires, or pit for fresh rubber if the race is long.",
+        "<strong>Identical setup all race:</strong> The track changes. Make small, strategic adjustments during cautions to stay balanced as conditions evolve.",
+        "<strong>Running too much front anti-roll bar stiffness:</strong> This kills rotation and makes the car feel dead and slow. Dial it back and allow the front to work."
+      ]
+    },
+    {
+      "tip": "Record a replay of your best lap and a mediocre lap. Watch the steering input, braking point, and throttle delivery in both. You will see the difference immediately. The good lap has smooth, early braking, clean turning, and progressive throttle. The slow lap has late braking, steering input mixed with braking, and abrupt throttle. Dial in the smooth lap mentally, then repeat it.",
+      "tipLabel": "Replay comparison reveals technique instantly"
+    },
+    {
+      "h2": "Practice plan for rapid improvement"
+    },
+    {
+      "p": "Dirt oval racing has a steep learning curve, but progress comes fast once you understand the fundamentals. A focused practice plan will cut your learning time significantly."
+    },
+    {
+      "olist": [
+        "Session 1 (30 minutes): Run practice laps at a track with a simple layout (3-4 corners). Focus on consistent braking points and smooth, early throttle roll-in. Do not chase lap time; chase consistency. Five identical laps in a row is the goal.",
+        "Session 2 (30 minutes): Repeat the same track. By now, you should feel more confident on throttle and looser rear. Work on tightening your lines and rolling in throttle earlier.",
+        "Session 3 (45 minutes): Run a short race (15-20 laps). Focus on managing tire wear and making small setup adjustments during your pit stop if one is needed. Observe how the track and car feel as laps accumulate.",
+        "Session 4 (60 minutes): Run a longer race (30-50 laps). By now, you should have comfort with the car's handling. Use this race to practice racecraft (defending, following, managing fuel and tires over a full distance).",
+        "Session 5 (30 minutes): Replay your race and your best lap. Identify three specific things you did well and three areas to improve. Work on those points in your next session."
+      ]
+    },
+    {
+      "p": "After five sessions of focused practice, you will have a solid grasp of the Modified's character and dirt oval racecraft. Continue to practice on different tracks and conditions to build adaptability. Each track will have quirks, but the core skills (smooth inputs, early braking, progressive throttle) carry across all of them."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the most common beginner mistake on dirt in iRacing?",
+      "a": "Braking too late and trying to steer while braking. This destroys front grip and pushes the car wide, forcing you to slow down even more in the following corners. The fix is to brake in a straight line earlier than feels natural, then turn cleanly once braking is complete. It feels counterintuitive but delivers faster lap times immediately."
+    },
+    {
+      "q": "Why does the rear step out so much on the Modified?",
+      "a": "The Modified has a live rear axle, significant power, and very low tire grip on dirt. When you roll in throttle, the rear tires cannot grip the loose surface, so the car rotates. This is normal and expected. Control it with gentle opposite-lock steering and smooth throttle modulation. If the rear is stepping out excessively, reduce throttle slightly or move your throttle point later in the corner."
+    },
+    {
+      "q": "How much should I adjust my setup during a race?",
+      "a": "Make small, targeted adjustments during cautions or pit stops. A single click of anti-roll bar stiffness, 0.1 inches of wedge adjustment, or 1 to 2 PSI of tire pressure change can refind balance as the track gets rougher and faster. Avoid large changes; small tweaks are easier to predict and faster to test on track."
+    },
+    {
+      "q": "Should I use a soft or stiff rear anti-roll bar on dirt?",
+      "a": "Start with a moderate setting (around 250-300 depending on the track) and test from there. A softer bar allows the rear to roll more and may help traction if the track is very loose and your tires are old. A stiffer bar makes steering response sharper but increases rear instability. The ideal setting depends on track surface, tire wear, and your driving style, so reference your track's setup database and adjust based on feel."
+    }
+  ],
+  "gearKeys": [
+    "moza-r9",
+    "moza-sr-p",
+    "monitor-1440p-120"
+  ],
+  "published": "2026-11-23",
+  "dateLabel": "November 23, 2026"
+}
