@@ -559,6 +559,42 @@ const TOPIC_POOL = [
   'a family sim rig: sharing one setup between drivers of different sizes',
   'sim racing with glasses: vr spacers, monitor distance and comfort',
   'accessible sim racing: hand controls and one-handed setups',
+
+  // ─── Expansion 2026-11-23 ──────────────────────────────────────────────────
+  // The 2026-11-23 weekly run failed the floor check at ~7 unused. 30 topics,
+  // each checked against all pool topics and live post titles (token overlap
+  // under 0.5) and by keyword for reworded twins. Car and track guides cover
+  // content with no post yet.
+  'tyre pressure targets in iracing: hot vs cold and why they drift',
+  'slip angle explained for sim racers: why the tyre has to slide a little',
+  'the out lap in iracing: warming tyres and brakes before a hot lap',
+  'tyre compounds in iracing: when softs and hards are worth it',
+  'fuel load and lap time in iracing: what a full tank costs per lap',
+  'rev matching vs auto blip in iracing: what the car does for you',
+  'pit strategy in iracing sprint races: when one stop beats none',
+  'picking which iracing series to run each season',
+  'using sector times in iracing to find where you lose time',
+  'copying a faster drivers line from an iracing replay',
+  'how to read a telemetry trace for the first time',
+  'iracing subscription renewals and content sales: when to buy',
+  'dampers in iracing setups: bump, rebound and what to change first',
+  'learning a new track in iracing: a first-session plan',
+  'engine braking in iracing and how it changes corner entry',
+  'running iracing on linux with proton: what works',
+  'backing up iracing settings, setups and replays before a reinstall',
+  'windows and gpu driver updates before an iracing race: what to check',
+  'dual pc sim racing setups: streaming without losing frames',
+  'working with a sim racing coach: what a paid session covers',
+  'silver crown iracing guide',
+  'williams fw31 iracing guide',
+  'mclaren mp4-30 iracing guide',
+  'ruf rt 12r iracing guide',
+  'pro 2 lite and pro 4 off-road trucks iracing guide',
+  'subaru wrx sti rallycross iracing guide',
+  'ford fiesta rallycross iracing guide',
+  'vw beetle grc lite iracing guide',
+  'lanier national speedway iracing guide',
+  'lucas oil raceway iracing guide',
 ];
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
