@@ -499,6 +499,7 @@ ${relatedHtml}
   </footer>
 
   <script src="/js/ga4.js" defer></script>
+  <script src="/js/nav.js" defer></script>
   <script src="/js/affiliates.js" defer></script>${hasReels ? '\n  <script src="/js/lite-yt.js" defer></script>' : ''}
   ${JOIN_SCRIPT_TAG}
   <script>
