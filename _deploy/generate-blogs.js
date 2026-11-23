@@ -522,17 +522,41 @@ ${relatedHtml}
 // position — it does NOT regenerate the whole grid from scratch, since the
 // per-card emoji/color choices for the 14 hand-written posts aren't
 // recoverable from the post HTML itself.
+// Joni R7: a post whose only picture is one of RealiRacing's generic art tiles (kind
+// "generated") gets a designed text card instead: category colour band, the category name
+// and a simple line glyph. The glyph key is the tile's own tag (wheel/track/pedals/rig/
+// display/sim). Everything is inline SVG, no image file.
+const CARD_GLYPHS = {
+  wheel:   { rgb: '232,255,0',   vb: '0 0 48 48', svg: '<circle cx="24" cy="24" r="18"/><circle cx="24" cy="24" r="5"/><path d="M6 24h13M29 24h13M24 29v13"/>' },
+  track:   { rgb: '0,200,255',   vb: '0 0 48 48', svg: '<path d="M12 42V8"/><path d="M12 8h26v20H12z"/><path d="M12 8h6.5v10H12zM25 8h6.5v10H25zM18.5 18H25v10h-6.5zM31.5 18H38v10h-6.5z" fill="currentColor"/>' },
+  pedals:  { rgb: '255,160,0',   vb: '0 0 48 48', svg: '<path d="M16 8h16l4 32H12z"/><path d="M18 18h12M17 26h14M16 34h16"/>' },
+  rig:     { rgb: '0,220,180',   vb: '0 0 24 24', svg: '<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>' },
+  display: { rgb: '180,120,255', vb: '0 0 48 48', svg: '<rect x="5" y="14" width="38" height="20" rx="7"/><circle cx="16" cy="24" r="4"/><circle cx="32" cy="24" r="4"/><path d="M5 24H2M43 24h3"/>' },
+  sim:     { rgb: '120,160,255', vb: '0 0 48 48', svg: '<path d="M8 34a16 16 0 1 1 32 0"/><path d="M24 34l9-14"/><circle cx="24" cy="34" r="2.5"/><path d="M8 34h4M36 34h4"/>' },
+};
+const BANNER_TILE_RE = /<div class="blog-card-banner"[^>]*>\s*<img class="blog-card-photo"[^>]*>\s*<div class="blog-card-cat">([^<]*)<\/div>\s*<\/div>/;
+function textBanner(key, labelHtml) {
+  const g = CARD_GLYPHS[key] || CARD_GLYPHS.sim;
+  return `<div class="blog-card-banner blog-card-banner--text" data-glyph="${CARD_GLYPHS[key] ? key : 'sim'}" style="--cat:${g.rgb};">
+        <svg class="blog-card-glyph" viewBox="${g.vb}" width="44" height="44" aria-hidden="true" focusable="false">${g.svg}</svg>
+        <div class="blog-card-cat">${labelHtml}</div>
+      </div>`;
+}
+
 function buildCardHtml(post) {
   const style = CARD_STYLES[hash(post.slug) % CARD_STYLES.length];
   // The banner keeps its per-post tint, but the emoji is replaced by the
   // article's own picture — the emoji pool had fourteen entries for thirty-one
   // posts, so cards repeated each other on sight.
   const photo = photos.photoFor(post);
-  return `<a class="blog-card" href="${post.slug}.html">
-      <div class="blog-card-banner" style="background:linear-gradient(135deg,rgba(${style.rgb},.10),rgba(0,0,0,.4));">
+  const banner = photo.kind === 'generated'
+    ? textBanner(photo.tag, esc(post.tag || ''))
+    : `<div class="blog-card-banner" style="background:linear-gradient(135deg,rgba(${style.rgb},.10),rgba(0,0,0,.4));">
         <img class="blog-card-photo" src="${esc(photos.smFile(photo.file))}" width="${photo.sm_width || 560}" height="${photo.sm_height || 315}" alt="${esc(photo.alt_en)}" loading="lazy" decoding="async">
         <div class="blog-card-cat">${esc(post.tag || '')}</div>
-      </div>
+      </div>`;
+  return `<a class="blog-card" href="${post.slug}.html">
+      ${banner}
       <div class="blog-card-body">
         <h2>${esc(post.title)}</h2>
         <p>${esc(post.description)}</p>
@@ -576,23 +600,30 @@ const CARD_PIC_WINDOW = 5;
 function varyCardImages(cardsNewestFirst) {
   const reg = photos.registry();
   const bySm = new Map(reg.map(p => [photos.smFile(p.file), p]));
-  const own = reg.filter(p => !p.post_slug && p.kind !== 'sourced' && !/sim-race-poster/.test(p.file));
+  // Joni R7: the generic art tiles (kind "generated") are no longer card pictures at all; a
+  // card that would show one becomes a text card (see textBanner). Substitutes are the
+  // owner's own trackside photographs only.
+  const own = reg.filter(p => !p.post_slug && p.kind === 'own' && !/sim-race-poster/.test(p.file));
   const used = new Map();
   const recent = [];
+  const toText = (c, key) => {
+    c.html = c.html.replace(BANNER_TILE_RE, (_, label) => textBanner(key, label));
+  };
   for (const c of cardsNewestFirst.slice().reverse()) {
     const m = c.html.match(/<img class="blog-card-photo" src="([^"]+)" width="[^"]*" height="[^"]*" alt="[^"]*"/);
-    const cur = m && bySm.get(m[1]);
+    if (!m) continue; // already a text card: no picture to keep apart
+    const cur = bySm.get(m[1]);
     if (!cur) { recent.length = 0; continue; }
+    if (cur.kind === 'generated') { toText(c, cur.tag); continue; }
     let pick = cur;
     if (!cur.post_slug && recent.includes(cur.file)) {
       const h = hash(c.slug) % own.length;
       pick = own.slice(h).concat(own.slice(0, h))
         .filter(p => !recent.includes(p.file))
-        .sort((x, y) => (used.get(x.file) || 0) - (used.get(y.file) || 0))[0] || cur;
-      if (pick !== cur) {
-        c.html = c.html.replace(m[0], '<img class="blog-card-photo" src="' + esc(photos.smFile(pick.file)) +
-          '" width="' + (pick.sm_width || 560) + '" height="' + (pick.sm_height || 315) + '" alt="' + esc(pick.alt_en) + '"');
-      }
+        .sort((x, y) => (used.get(x.file) || 0) - (used.get(y.file) || 0))[0] || null;
+      if (!pick) { toText(c, cur.tag); continue; }
+      c.html = c.html.replace(m[0], '<img class="blog-card-photo" src="' + esc(photos.smFile(pick.file)) +
+        '" width="' + (pick.sm_width || 560) + '" height="' + (pick.sm_height || 315) + '" alt="' + esc(pick.alt_en) + '"');
     }
     used.set(pick.file, (used.get(pick.file) || 0) + 1);
     recent.push(pick.file);
@@ -614,6 +645,12 @@ function pagerHtml(n, total) {
   }
   if (n < total) parts.push(`<a class="blog-pager-link" rel="next" href="${href(n + 1)}">Older</a>`);
   return `<nav class="blog-pager" aria-label="Blog pages">${parts.join(' ')}</nav>`;
+}
+
+// The one count line of every index page. Written out here for no-JS visitors; js/blog-more.js
+// rewrites it from the same data-* values while "Load more" reveals the page's cards.
+function countHtml(n, total, shown) {
+  return `<p class="blog-more-status blog-count" data-page="${n}" data-pages="${total}" aria-live="polite">Showing ${shown} of ${shown} on this page · page ${n} of ${total}</p>`;
 }
 
 function rebuildBlogIndex(newPosts, opts) {
@@ -683,6 +720,7 @@ function rebuildBlogIndex(newPosts, opts) {
   const totalPages = Math.max(1, Math.ceil(all.length / PAGE_SIZE));
   const gridFor = (n, sub) => all.slice((n - 1) * PAGE_SIZE, n * PAGE_SIZE)
     .map(c => '    ' + (sub ? c.html.replace('href="', 'href="../') : c.html)).join('\n\n') +
+    '\n\n    ' + countHtml(n, totalPages, all.slice((n - 1) * PAGE_SIZE, n * PAGE_SIZE).length) +
     '\n\n    ' + pagerHtml(n, totalPages);
 
   const gridRe = /(<div class="blog-grid">)[\s\S]*?(\n\s*<\/div>\s*\n\s*(?:<\/main>\s*\n\s*)?<footer>)/;
