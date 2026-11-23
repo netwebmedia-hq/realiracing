@@ -990,6 +990,172 @@
     }
     @media (prefers-reduced-motion: reduce) { .nav-toggle-bars, .nav-toggle-bars::before, .nav-toggle-bars::after { transition: none; } }
 
+
+    /* ── Joni R2 2026-11-23: shorter home, one proof block, scroll rows, accordion ── */
+    :root { --muted: #b4b8bf; } /* 8.5:1 on --card, was #888 (4.6:1) */
+    .hero { min-height: 0; padding: 88px 24px 40px; }
+    .hero h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); margin-bottom: 18px; }
+    .hero-badge { margin-bottom: 20px; }
+    .hero p.hero-sub { margin-bottom: 28px; }
+    section { padding: 32px 24px; }
+    #packs, #ladder, #start, #content, #faq { padding-top: 24px; padding-bottom: 24px; }
+    h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); margin-bottom: 8px; letter-spacing: -.5px; }
+    .section-label { margin-bottom: 6px; }
+    .section-sub { margin-bottom: 0; max-width: 760px; font-size: 1rem; }
+    #ladder .gear-table th, #ladder .gear-table td { padding: 6px 10px; }
+    #ladder .gear-box { margin-top: 12px; padding: 14px 18px; }
+    #start .section-sub + .start-grid { margin-top: 12px; }
+    #gear h2 { margin-bottom: 6px; }
+
+    /* horizontal scroll rows (packs, gear, guides, pillars, media, channels) */
+    .h-row { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x proximity; padding: 4px 2px 12px; margin-top: 20px; -webkit-overflow-scrolling: touch; }
+    .h-row > * { flex: 0 0 auto; scroll-snap-align: start; }
+    .media-grid.h-row > .post-card, .yt-grid.h-row > .yt-thumb, .yt-grid.h-row > .yt-cta-card { width: 280px; }
+    .media-grid.h-row, .yt-grid.h-row { grid-template-columns: none; }
+    .platforms-grid.h-row > .platform-card { width: 170px; }
+    .pillars-grid.h-row > .pillar-card { width: 250px; padding: 18px; }
+    .pillar-card .pillar-icon { margin-bottom: 8px; }
+    .start-grid.h-row { margin-top: 20px; }
+    .start-grid.h-row > .start-card { width: 280px; padding: 16px 18px; }
+    .gear-cards.h-row > div { width: 320px; }
+    #gear { padding: 28px 24px !important; }
+    #gear .gear-cards { margin-top: 14px !important; }
+    #gear .gear-inner > div[style*="margin-top:48px"] { margin-top: 20px !important; }
+    #gear .rir-pack-cta { margin-top: 20px !important; padding: 16px !important; }
+    .media-section, .platforms-section { padding: 40px 24px; }
+    .media-tabs { margin-bottom: 8px; }
+    .post-thumb { aspect-ratio: 16 / 9; height: auto; }
+
+    /* packs */
+    .packs-row .pack-mini { width: 270px; display: flex; flex-direction: column; gap: 6px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; color: var(--text); text-decoration: none; }
+    .packs-row .pack-mini:hover, .packs-row .pack-mini:focus-visible { border-color: var(--accent); }
+    .pack-mini-k { font-size: 0.7rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); }
+    .pack-mini strong { font-size: 1.02rem; line-height: 1.3; }
+    .pack-mini-d { color: var(--muted); font-size: 0.88rem; line-height: 1.45; }
+    .pack-mini-b { margin-top: auto; padding-top: 6px; font-weight: 700; color: var(--accent2); }
+    .packs-all { margin-top: 4px; } .packs-all a { color: var(--accent2); font-weight: 700; }
+    @media (min-width: 1100px) {
+      .packs-row { display: grid; grid-template-columns: repeat(4, 1fr); overflow: visible; }
+      .packs-row .pack-mini { width: auto; }
+      .start-grid.h-row { display: grid; grid-template-columns: repeat(3, 1fr); overflow: visible; }
+      .start-grid.h-row > .start-card { width: auto; }
+      .gear-cards.h-row { display: grid; grid-template-columns: repeat(3, 1fr); overflow: visible; }
+      .gear-cards.h-row > div { width: auto; }
+      .pillars-grid.h-row { display: grid; grid-template-columns: repeat(4, 1fr); overflow: visible; }
+      .pillars-grid.h-row > .pillar-card { width: auto; }
+    }
+
+    /* one proof block: channel numbers + latest live race */
+    .proof { max-width: 1100px; margin: 0 auto; padding: 36px 24px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 28px; align-items: center; }
+    .proof .stats-bar { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 24px; border: 1px solid var(--border); border-radius: var(--radius); }
+    .proof #watch { padding: 0; margin: 0; max-width: none; }
+    .proof #watch .lite-yt { margin: 12px 0 6px; max-width: none; }
+    .proof #watch h2 { font-size: 1.4rem; margin-bottom: 0; }
+
+    /* FAQ: closed accordion */
+    #faq h2 { margin-bottom: 4px; }
+    .faq-updated { margin-bottom: 14px; }
+    details.faq-item { padding: 0; margin-bottom: 8px; }
+    details.faq-item summary { cursor: pointer; list-style: none; padding: 14px 44px 14px 18px; position: relative; min-height: 44px; display: flex; align-items: center; }
+    details.faq-item summary::-webkit-details-marker { display: none; }
+    details.faq-item summary::after { content: '+'; position: absolute; right: 18px; top: 50%; transform: translateY(-50%); color: var(--accent); font-size: 1.3rem; font-weight: 700; }
+    details.faq-item[open] summary::after { content: '\2212'; }
+    details.faq-item summary h3 { margin: 0; font-size: 1rem; }
+    details.faq-item p { padding: 0 18px 16px; margin: 0; }
+
+    /* poll and link list: compact, at the bottom */
+    .poll-section { max-width: 760px; padding: 28px 24px 8px; }
+    .poll-section h2 { font-size: 1.3rem; }
+    .poll-card { padding: 16px; margin-top: 14px; }
+    .poll-question { margin-bottom: 12px; font-size: 1rem; }
+    .poll-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; }
+    .poll-option { padding: 10px 12px; }
+    .linktree-section { padding: 24px 24px 28px; margin-bottom: 0; max-width: 900px; border-radius: var(--radius); }
+    .linktree-section h2 { font-size: 1.3rem; margin-bottom: 4px; }
+    .linktree-section p { margin-bottom: 14px; }
+    .link-buttons { flex-direction: row; flex-wrap: wrap; justify-content: center; max-width: none; gap: 8px; }
+    .link-btn { padding: 8px 14px; font-size: 0.85rem; min-height: 44px; border-radius: 999px; }
+    .link-btn:hover { transform: none; }
+    .linktree-section { margin-top: 8px; }
+    body > div[style*="padding: 0 24px 80px"] { padding-bottom: 32px !important; }
+
+    @media (max-width: 760px) {
+      .hero { padding: 88px 20px 36px; }
+      .hero p.hero-sub { font-size: 1.1rem; }
+      section { padding: 36px 16px; }
+      #packs, #ladder, #start, #content, #faq { padding-top: 24px; padding-bottom: 24px; }
+      .proof { grid-template-columns: 1fr; gap: 16px; padding: 24px 16px; }
+      .proof .stats-bar { padding: 16px; gap: 14px; }
+      .stat-num { font-size: 1.6rem; }
+      #gear { padding: 28px 16px !important; }
+      .gear-cards.h-row > div { width: 82vw; max-width: 320px; }
+      .packs-row .pack-mini, .start-grid.h-row > .start-card { width: 80vw; max-width: 300px; }
+      .media-section, .platforms-section { padding: 28px 16px; }
+      .media-tabs { flex-wrap: nowrap; overflow-x: auto; }
+      .media-tab { white-space: nowrap; }
+      .poll-section { padding: 20px 16px 4px; }
+      .poll-options { grid-template-columns: 1fr 1fr; }
+      #ladder .gear-box { padding: 14px; }
+      #ladder .gear-table tbody th { min-width: 8em; }
+    }
+
+
+    /* the gear-section pack strip repeats the Setup Packs block above: keep the PitStop line only */
+    #gear .rir-pack-cta > div, #gear .rir-pack-cta > h3, #gear .rir-pack-cta > p:first-of-type { display: none; }
+    #gear .rir-pack-cta { padding: 12px 16px !important; }
+    #gear .rir-pack-cta p { margin: 0 !important; }
+    .platforms-section .section-sub { margin-bottom: 4px !important; }
+    .platforms-section { padding: 24px 24px; }
+    .proof { padding: 24px 24px; }
+    .proof .stats-bar { padding: 16px; gap: 14px; }
+    .proof #watch .lite-yt { margin: 8px 0 4px; }
+    #ladder .gear-table { min-width: 560px; }
+    @media (max-width: 760px) {
+      .link-btn { padding: 6px 12px; }
+      .proof .lite-yt-label { font-size: .75rem; }
+    }
+
+    /* round 2 compaction */
+    .pack-mini-d { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .packs-row .pack-mini { padding: 12px 16px; gap: 4px; }
+    .packs-all { margin: 0; }
+    #ladder .gear-table th, #ladder .gear-table td { padding: 4px 10px; }
+    #ladder .aff-note { margin-top: 8px; padding-top: 6px; }
+    #gear .gear-cards > div { padding: 16px !important; }
+    #gear .gear-cards ul { gap: 6px !important; }
+    #gear .gear-cards > div > div[style*="margin-top:16px"] { margin-top: 10px !important; padding-top: 10px !important; }
+    #gear .gear-cards h3 { margin-bottom: 8px !important; }
+    #gear .gear-inner > div[style*="margin-top:48px"] { padding: 10px 14px !important; }
+    .start-card span.start-desc { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .start-grid.h-row > .start-card { padding: 12px 16px; }
+    .pillar-card { padding: 12px 14px !important; }
+    .pillar-card .pillar-icon { display: inline-block; font-size: 1.3rem; margin: 0 8px 0 0; }
+    .pillar-card h3 { display: inline; font-size: 1rem; }
+    .pillar-card p { margin-top: 6px; font-size: .85rem; }
+    #content .section-sub { margin-bottom: 0; }
+    .post-card .post-thumb { height: 120px; aspect-ratio: auto; }
+    .post-info { padding: 12px 14px; }
+    .media-grid.h-row > .post-card, .yt-grid.h-row > .yt-thumb, .yt-grid.h-row > .yt-cta-card { width: 250px; }
+    .poll-section { padding-top: 16px; }
+    .poll-section > p:not(.section-label) { margin: 0; font-size: .9rem; }
+    .linktree-section { padding: 16px 20px 18px; margin-top: 0; }
+    .linktree-section > p:not(.section-label) { margin-bottom: 10px; font-size: .9rem; }
+    footer { padding-top: 24px; padding-bottom: 24px; }
+    .tail { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.3fr); gap: 16px; align-items: start; padding: 0 24px 24px; }
+    .tail .poll-section { max-width: none; padding: 16px 0 0; }
+    .tail > div[style] { padding: 16px 0 0 !important; }
+    .tail .linktree-section { margin: 0; max-width: none; }
+    @media (max-width: 860px) { .tail { grid-template-columns: 1fr; padding: 0 16px 16px; } }
+    .proof { grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); }
+    .platforms-grid.h-row > .platform-card { padding: 12px; width: 150px; }
+    .platform-icon { font-size: 1.5rem; margin-bottom: 6px; }
+    .hero { padding-top: 80px; padding-bottom: 32px; }
+    .hero-badge { margin-bottom: 14px; }
+    .section-sub { max-width: 940px; }
+    .tail .linktree-section .link-btn { min-height: 40px; }
+    #faq h2 { margin-bottom: 0; } .faq-updated { margin: 0 0 10px; }
+    .slide-1 .slide-vignette { background: linear-gradient(to top, rgba(10,10,10,.92) 0%, rgba(10,10,10,.6) 35%, transparent 60%), rgba(10,10,10,.84); }
+    @media (max-width: 760px) { .proof { grid-template-columns: 1fr; } .proof .stats-bar { grid-template-columns: 1fr 1fr 1fr 1fr; gap: 6px; padding: 12px 8px; } .stat-num { font-size: 1.15rem; } .stat-label { font-size: .62rem; } }
   </style>
   <!-- Google Analytics 4 -->
   <script src="/js/ga4.js" defer></script>
@@ -1068,8 +1234,7 @@
         <span class="yellow">Stream.</span><br>
         <span class="blue">Compete.</span>
       </h1>
-      <p class="hero-sub">iRacing setups, force-feedback guides and real sim-racing gear picks.</p>
-      <p data-seo-hero>Honest iRacing setup guides, force feedback settings and gear picks from Carlos Martinez, tested on a real MOZA direct-drive rig. Real motorsport roots.</p>
+      <p class="hero-sub" data-seo-hero>iRacing setups, force-feedback guides and real sim-racing gear picks, tested on Carlos Martinez's own MOZA direct-drive rig.</p>
       <div class="hero-buttons">
         <a class="btn-primary" href="/blog/iracing-force-feedback-explained.html">Start with the FFB guide &rarr;</a>
         <a class="btn-ghost" href="https://www.youtube.com/@realtape" target="_blank" rel="noopener">&#9654; Watch on YouTube</a>
@@ -1078,42 +1243,21 @@
 
   </div>
 
-  <!-- STATS -->
-  <div class="stats-bar">
-    <div class="stat">
-      <span class="stat-num">975+</span>
-      <span class="stat-label">Videos</span>
+  <!-- SETUP PACKS (moved up 2026-11-23, Joni R2) -->
+  <section id="packs" aria-labelledby="packs-h">
+    <p class="section-label">Setup Packs</p>
+    <h2 id="packs-h">Skip the trial and error</h2>
+    <p class="section-sub">The force-feedback, pedal and baseline settings I actually race, for MOZA, iRacing, ACC and Le Mans Ultimate. Every pack has a free preview.</p>
+    <div class="h-row packs-row">
+      <a class="pack-mini" href="/packs/moza-r9-iracing-ffb-pack.html"><span class="pack-mini-k">Setup Pack 01</span><strong>MOZA R9 + iRacing Force Feedback Pack</strong><span class="pack-mini-d">The profile I run on my own MOZA R9 in iRacing, the order to apply it in, and a table for when it does not feel right.</span><span class="pack-mini-b">See the pack &rarr;</span></a>
+      <a class="pack-mini" href="/packs/moza-acc-lmu-ffb-pack.html"><span class="pack-mini-k">Setup Pack 02</span><strong>MOZA R9 for ACC and Le Mans Ultimate</strong><span class="pack-mini-d">How the two Pit House effect layers work in ACC and Le Mans Ultimate, plus a protocol for finding your own level.</span><span class="pack-mini-b">See the pack &rarr;</span></a>
+      <a class="pack-mini" href="/packs/iracing-baseline-setup-pack.html"><span class="pack-mini-k">Setup Pack 03</span><strong>iRacing Baseline Setup and Pedal Calibration Pack</strong><span class="pack-mini-d">A process, not a set of car numbers: a practice routine, a one-change-per-session method and a pedal calibration checklist.</span><span class="pack-mini-b">See the pack &rarr;</span></a>
+      <a class="pack-mini" href="/packs/nwm-pitstop.html"><span class="pack-mini-k">PC tool</span><strong>NWM PitStop: clean and stream-proof your racing PC</strong><span class="pack-mini-d">The routine I run on my own iRacing and OBS rig before every stream, as three readable PowerShell scripts.</span><span class="pack-mini-b">See the pack &rarr;</span></a>
     </div>
-    <div class="stat">
-      <span class="stat-num">1,700+</span>
-      <span class="stat-label">Subscribers</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num">15 yrs</span>
-      <span class="stat-label">On YouTube</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num">IRL + Sim</span>
-      <span class="stat-label">Motorsport</span>
-    </div>
-  </div>
-
-<!-- seo:start-here:begin -->
-  <section id="start" aria-labelledby="start-h">
-    <p class="section-label">Start here</p>
-    <h2 id="start-h">iRacing guides and gear, from a driver who races them</h2>
-    <p class="section-sub">Written guides on force feedback, setup, buying and racecraft, tested on the same MOZA R9 rig you see on the channel.</p>
-    <div class="start-grid">
-        <a class="start-card" href="/blog/iracing-force-feedback-explained.html"><span class="start-tag">Force feedback</span><strong>iRacing Force Feedback Explained</strong><span class="start-desc">How the FFB signal really works and which sliders matter.</span></a>
-        <a class="start-card" href="/blog/moza-r9-iracing-settings.html"><span class="start-tag">Setup guide</span><strong>MOZA R9 iRacing Settings</strong><span class="start-desc">The Pit House and in-sim values from a real R9 owner.</span></a>
-        <a class="start-card" href="/blog/best-sim-racing-wheels-iracing.html"><span class="start-tag">Buyer's guide</span><strong>Best Sim Racing Wheels for iRacing</strong><span class="start-desc">From budget gear and belt drive to direct drive, tier by tier.</span></a>
-        <a class="start-card" href="/blog/best-sim-racing-pedals-iracing-2026.html"><span class="start-tag">Buyer's guide</span><strong>Best Sim Racing Pedals for iRacing</strong><span class="start-desc">The load cell guide: why pressure-based braking protects your Safety Rating.</span></a>
-        <a class="start-card" href="/blog/iracing-starter-setup-guide-2026.html"><span class="start-tag">Beginners</span><strong>The Complete iRacing Starter Setup</strong><span class="start-desc">What to buy first, first-week FFB settings and common mistakes.</span></a>
-        <a class="start-card" href="/blog/iracing-safety-rating-guide.html"><span class="start-tag">Racecraft</span><strong>iRacing Safety Rating Explained</strong><span class="start-desc">Corners per incident, promotion thresholds and the road to an A license.</span></a>
-    </div>
-    <p class="section-sub" style="margin-top:20px"><a href="/blog/" style="color:var(--accent2)">Browse every guide &rarr;</a></p>
+    <p class="packs-all"><a href="/packs/">See all setup packs &rarr;</a></p>
   </section>
 
+<!-- seo:start-here:begin -->
   <section id="ladder" aria-labelledby="ladder-h">
     <p class="section-label">Gear</p>
     <h2 id="ladder-h">Where to start on wheels and wheelbases</h2>
@@ -1138,6 +1282,93 @@
       </div></div>
   </section>
 
+
+  <!-- RECOMMENDED GEAR -->
+  <section id="gear" style="background:linear-gradient(180deg,rgba(232,255,0,.05) 0%,rgba(0,200,255,.05) 100%);padding:80px 24px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+    <div class="gear-inner" style="max-width:1000px;margin:0 auto;">
+      <p class="section-label">Gear & Hardware</p>
+      <h2>Sim Racing Gear I Actually Use</h2>
+      <p class="section-sub">Every link below is affiliate. I earn a small commission when you buy — at no cost to you — which helps keep RealIRacing running.</p>
+
+      <div class="gear-cards h-row">
+        <!-- My rig — what I race on -->
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;">
+          <div style="font-weight:700;color:var(--accent);margin-bottom:4px;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;">What I Race On</div>
+          <h3 style="margin-top:0;margin-bottom:16px;font-size:1.1rem;">My Rig</h3>
+          <ul style="list-style:none;margin:0;padding:0;gap:12px;display:flex;flex-direction:column;">
+            <li><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">MOZA R9 Wheelbase</a> — Direct drive powerhouse</li>
+            <li><a href="https://www.amazon.com/s?k=MOZA+CS+V2+steering+wheel&rh=p_89%3AMOZA&tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">MOZA CS V2 Wheel</a> — Premium rim</li>
+            <li><a href="https://www.amazon.com/s?k=MOZA+SR-P+pedals&rh=p_89%3AMOZA&tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">MOZA SR-P Pedals</a> — Same Pit House software as the base</li>
+          </ul>
+          <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border);">
+            <a href="/gear.html" style="color:var(--muted);font-size:0.85rem;text-decoration:none;display:inline-flex;align-items:center;gap:4px;">Full rig breakdown →</a>
+          </div>
+        </div>
+
+        <!-- Budget-friendly entry points -->
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;">
+          <div style="font-weight:700;color:var(--accent);margin-bottom:4px;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;">Getting Started</div>
+          <h3 style="margin-top:0;margin-bottom:16px;font-size:1.1rem;">Best Beginner Gear</h3>
+          <ul style="list-style:none;margin:0;padding:0;gap:12px;display:flex;flex-direction:column;">
+            <li><a href="https://www.amazon.com/dp/B07PGGDJSG?tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">Logitech G923</a> — Gear drive, entry point</li>
+            <li><a href="https://www.amazon.com/s?k=MOZA+R5+bundle&rh=p_89%3AMOZA&tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">MOZA R5 Bundle</a> — First direct drive</li>
+            <li><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">Sim Racing Cockpit</a> — Rigid mount</li>
+          </ul>
+          <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border);">
+            <a href="/blog/" style="color:var(--muted);font-size:0.85rem;text-decoration:none;display:inline-flex;align-items:center;gap:4px;">Browse buyer's guides →</a>
+          </div>
+        </div>
+
+        <!-- Premium/high-end tier -->
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;">
+          <div style="font-weight:700;color:var(--accent);margin-bottom:4px;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;">High Performance</div>
+          <h3 style="margin-top:0;margin-bottom:16px;font-size:1.1rem;">Premium Tier</h3>
+          <ul style="list-style:none;margin:0;padding:0;gap:12px;display:flex;flex-direction:column;">
+            <li><a href="https://www.amazon.com/s?k=MOZA+R12+wheel+base&rh=p_89%3AMOZA&tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">MOZA R12 Wheelbase</a> — Maximum torque</li>
+            <li><a href="https://www.amazon.com/dp/B0FBGZHFN3?tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">Fanatec CSL DD</a> — Alternative DD</li>
+            <li><a href="https://www.amazon.com/s?k=Meta+Quest+3+512GB+VR+headset&amp;rh=p_89%3AMeta&amp;tag=realiracing-20" data-aff="meta-quest-3" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">Meta Quest 3</a> — VR sim racing</li>
+          </ul>
+          <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border);">
+            <a href="https://www.youtube.com/@realtape" style="color:var(--muted);font-size:0.85rem;text-decoration:none;display:inline-flex;align-items:center;gap:4px;">See it in action →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="rir-pack-cta" style="margin-top:32px;padding:24px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);text-align:center;">
+        <div style="font-weight:700;color:var(--accent);margin-bottom:4px;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;">Setup Packs</div>
+        <h3 style="margin:0 0 8px;font-size:1.1rem;">Skip the trial and error</h3>
+        <p style="margin:0 0 16px;color:var(--muted);font-size:0.95rem;">The force-feedback, pedal and baseline settings I actually race, for MOZA, iRacing, ACC and Le Mans Ultimate. Every pack has a free preview.</p>
+        <a href="/packs/" style="color:var(--accent2);font-weight:700;text-decoration:underline;">See the setup packs &rarr;</a>
+        <p style="margin:12px 0 0;color:var(--muted);font-size:0.9rem;">Streaming or fighting stutters? <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=home&amp;utm_campaign=pitstop" style="color:var(--accent2);font-weight:700;text-decoration:underline;">NWM PitStop</a> cleans up the PC and gives the sim priority before every session.</p>
+      </div>
+
+      <div style="margin-top:48px;padding:20px;background:rgba(232,255,0,.08);border:1px solid rgba(232,255,0,.2);border-radius:var(--radius);text-align:center;font-size:0.85rem;color:var(--muted);">
+        <strong style="color:var(--text);">Affiliate Disclosure:</strong> As an Amazon Associate I earn from qualifying purchases. Some links on this page are affiliate links. I may earn a commission at no cost to you. Everything pictured is hardware I personally own and race on.
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROOF: the real channel numbers + the latest live race, one block (Joni R2) -->
+  <div class="proof">
+  <div class="stats-bar">
+    <div class="stat">
+      <span class="stat-num">975+</span>
+      <span class="stat-label">Videos</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">1,700+</span>
+      <span class="stat-label">Subscribers</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">15 yrs</span>
+      <span class="stat-label">On YouTube</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">IRL + Sim</span>
+      <span class="stat-label">Motorsport</span>
+    </div>
+  </div>
   <section id="watch" aria-labelledby="watch-h">
     <p class="section-label">Watch</p>
     <h2 id="watch-h">Latest live race on the channel</h2>
@@ -1150,7 +1381,55 @@
     </div>
     <p class="video-note">Full live stream from @realtape. YouTube loads (privacy-enhanced mode) only when you press play.</p>
   </section>
+  
+  </div>
+
+  <section id="start" aria-labelledby="start-h">
+    <p class="section-label">Start here</p>
+    <h2 id="start-h">iRacing guides and gear, from a driver who races them</h2>
+    <p class="section-sub">Written guides on force feedback, setup, buying and racecraft, tested on the same MOZA R9 rig you see on the channel.</p>
+    <div class="start-grid h-row">
+        <a class="start-card" href="/blog/iracing-force-feedback-explained.html"><span class="start-tag">Force feedback</span><strong>iRacing Force Feedback Explained</strong><span class="start-desc">How the FFB signal really works and which sliders matter.</span></a>
+        <a class="start-card" href="/blog/moza-r9-iracing-settings.html"><span class="start-tag">Setup guide</span><strong>MOZA R9 iRacing Settings</strong><span class="start-desc">The Pit House and in-sim values from a real R9 owner.</span></a>
+        <a class="start-card" href="/blog/best-sim-racing-wheels-iracing.html"><span class="start-tag">Buyer's guide</span><strong>Best Sim Racing Wheels for iRacing</strong><span class="start-desc">From budget gear and belt drive to direct drive, tier by tier.</span></a>
+        <a class="start-card" href="/blog/best-sim-racing-pedals-iracing-2026.html"><span class="start-tag">Buyer's guide</span><strong>Best Sim Racing Pedals for iRacing</strong><span class="start-desc">The load cell guide: why pressure-based braking protects your Safety Rating.</span></a>
+        <a class="start-card" href="/blog/iracing-starter-setup-guide-2026.html"><span class="start-tag">Beginners</span><strong>The Complete iRacing Starter Setup</strong><span class="start-desc">What to buy first, first-week FFB settings and common mistakes.</span></a>
+        <a class="start-card" href="/blog/iracing-safety-rating-guide.html"><span class="start-tag">Racecraft</span><strong>iRacing Safety Rating Explained</strong><span class="start-desc">Corners per incident, promotion thresholds and the road to an A license.</span></a>
+    </div>
+    <p class="section-sub" style="margin-top:20px"><a href="/blog/" style="color:var(--accent2)">Browse every guide &rarr;</a></p>
+  </section>
+
   <!-- seo:start-here:end -->
+
+  <!-- CONTENT PILLARS -->
+  <section id="content">
+    <p class="section-label">Content</p>
+    <h2>What's on the channel</h2>
+    <p class="section-sub">Four core content types — voted on by the community.</p>
+
+    <div class="pillars-grid h-row">
+      <div class="pillar-card">
+        <span class="pillar-icon">🏁</span>
+        <h3>Race Highlights</h3>
+        <p>Best moments, close battles, and full race recaps from iRacing sessions.</p>
+      </div>
+      <div class="pillar-card">
+        <span class="pillar-icon">⚙️</span>
+        <h3>Setup Guides</h3>
+        <p>Car setups, tuning tips, and garage walkthroughs to help you go faster.</p>
+      </div>
+      <div class="pillar-card">
+        <span class="pillar-icon">🖥️</span>
+        <h3>Rig Tours</h3>
+        <p>Behind-the-scenes looks at the sim rig, hardware, and software stack.</p>
+      </div>
+      <div class="pillar-card">
+        <span class="pillar-icon">💡</span>
+        <h3>iRacing Tips</h3>
+        <p>Techniques, racecraft, and strategies for all skill levels on iRacing.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- ══ MEDIA GALLERY ══ -->
   <div class="media-section" id="media">
@@ -1167,7 +1446,7 @@
 
       <!-- TAB 1: @realiracing iRacing posts -->
       <div class="media-panel active" id="panel-iracing" role="tabpanel" aria-labelledby="tab-iracing">
-        <div class="media-grid">
+        <div class="media-grid h-row">
 
           <!-- Post 1: Nürburgring Nordschleife -->
           <a class="post-card" href="https://www.instagram.com/realiracing/p/DNw025JXAgY/" target="_blank">
@@ -1312,7 +1591,7 @@
 
       <!-- TAB 2: @tapephotocom IRL photography -->
       <div class="media-panel" id="panel-photo" role="tabpanel" aria-labelledby="tab-photo">
-        <div class="media-grid">
+        <div class="media-grid h-row">
 
           <!-- Photo 1: Takuma Sato Panasonic IndyCar -->
           <a class="post-card" href="https://www.instagram.com/tapephotocom/p/CEP1gdkhXNr/" target="_blank">
@@ -1457,7 +1736,7 @@
 
       <!-- TAB 3: YouTube @realtape videos — thumbnail grid -->
       <div class="media-panel" id="panel-youtube" role="tabpanel" aria-labelledby="tab-youtube">
-        <div class="yt-grid">
+        <div class="yt-grid h-row">
 
           <a class="yt-thumb" href="https://www.youtube.com/watch?v=Y1BXOa_9kI8" target="_blank">
             <img class="yt-thumb-img" src="https://img.youtube.com/vi/Y1BXOa_9kI8/hqdefault.jpg" alt="iRacing Season 4 Week 7" loading="lazy">
@@ -1548,135 +1827,13 @@
     </div>
   </div>
 
-  <!-- CONTENT PILLARS -->
-  <section id="content">
-    <p class="section-label">Content</p>
-    <h2>What's on the channel</h2>
-    <p class="section-sub">Four core content types — voted on by the community.</p>
-
-    <div class="pillars-grid">
-      <div class="pillar-card">
-        <span class="pillar-icon">🏁</span>
-        <h3>Race Highlights</h3>
-        <p>Best moments, close battles, and full race recaps from iRacing sessions.</p>
-      </div>
-      <div class="pillar-card">
-        <span class="pillar-icon">⚙️</span>
-        <h3>Setup Guides</h3>
-        <p>Car setups, tuning tips, and garage walkthroughs to help you go faster.</p>
-      </div>
-      <div class="pillar-card">
-        <span class="pillar-icon">🖥️</span>
-        <h3>Rig Tours</h3>
-        <p>Behind-the-scenes looks at the sim rig, hardware, and software stack.</p>
-      </div>
-      <div class="pillar-card">
-        <span class="pillar-icon">💡</span>
-        <h3>iRacing Tips</h3>
-        <p>Techniques, racecraft, and strategies for all skill levels on iRacing.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- RECOMMENDED GEAR -->
-  <section id="gear" style="background:linear-gradient(180deg,rgba(232,255,0,.05) 0%,rgba(0,200,255,.05) 100%);padding:80px 24px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
-    <div class="gear-inner" style="max-width:1000px;margin:0 auto;">
-      <p class="section-label">Gear & Hardware</p>
-      <h2>Sim Racing Gear I Actually Use</h2>
-      <p class="section-sub">Every link below is affiliate. I earn a small commission when you buy — at no cost to you — which helps keep RealIRacing running.</p>
-
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:40px;">
-        <!-- My rig — what I race on -->
-        <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;">
-          <div style="font-weight:700;color:var(--accent);margin-bottom:4px;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;">What I Race On</div>
-          <h3 style="margin-top:0;margin-bottom:16px;font-size:1.1rem;">My Rig</h3>
-          <ul style="list-style:none;margin:0;padding:0;gap:12px;display:flex;flex-direction:column;">
-            <li><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">MOZA R9 Wheelbase</a> — Direct drive powerhouse</li>
-            <li><a href="https://www.amazon.com/s?k=MOZA+CS+V2+steering+wheel&rh=p_89%3AMOZA&tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">MOZA CS V2 Wheel</a> — Premium rim</li>
-            <li><a href="https://www.amazon.com/s?k=MOZA+SR-P+pedals&rh=p_89%3AMOZA&tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">MOZA SR-P Pedals</a> — Same Pit House software as the base</li>
-          </ul>
-          <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border);">
-            <a href="/gear.html" style="color:var(--muted);font-size:0.85rem;text-decoration:none;display:inline-flex;align-items:center;gap:4px;">Full rig breakdown →</a>
-          </div>
-        </div>
-
-        <!-- Budget-friendly entry points -->
-        <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;">
-          <div style="font-weight:700;color:var(--accent);margin-bottom:4px;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;">Getting Started</div>
-          <h3 style="margin-top:0;margin-bottom:16px;font-size:1.1rem;">Best Beginner Gear</h3>
-          <ul style="list-style:none;margin:0;padding:0;gap:12px;display:flex;flex-direction:column;">
-            <li><a href="https://www.amazon.com/dp/B07PGGDJSG?tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">Logitech G923</a> — Gear drive, entry point</li>
-            <li><a href="https://www.amazon.com/s?k=MOZA+R5+bundle&rh=p_89%3AMOZA&tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">MOZA R5 Bundle</a> — First direct drive</li>
-            <li><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">Sim Racing Cockpit</a> — Rigid mount</li>
-          </ul>
-          <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border);">
-            <a href="/blog/" style="color:var(--muted);font-size:0.85rem;text-decoration:none;display:inline-flex;align-items:center;gap:4px;">Browse buyer's guides →</a>
-          </div>
-        </div>
-
-        <!-- Premium/high-end tier -->
-        <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;">
-          <div style="font-weight:700;color:var(--accent);margin-bottom:4px;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;">High Performance</div>
-          <h3 style="margin-top:0;margin-bottom:16px;font-size:1.1rem;">Premium Tier</h3>
-          <ul style="list-style:none;margin:0;padding:0;gap:12px;display:flex;flex-direction:column;">
-            <li><a href="https://www.amazon.com/s?k=MOZA+R12+wheel+base&rh=p_89%3AMOZA&tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">MOZA R12 Wheelbase</a> — Maximum torque</li>
-            <li><a href="https://www.amazon.com/dp/B0FBGZHFN3?tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">Fanatec CSL DD</a> — Alternative DD</li>
-            <li><a href="https://www.amazon.com/s?k=Meta+Quest+3+512GB+VR+headset&amp;rh=p_89%3AMeta&amp;tag=realiracing-20" data-aff="meta-quest-3" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">Meta Quest 3</a> — VR sim racing</li>
-          </ul>
-          <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border);">
-            <a href="https://www.youtube.com/@realtape" style="color:var(--muted);font-size:0.85rem;text-decoration:none;display:inline-flex;align-items:center;gap:4px;">See it in action →</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="rir-pack-cta" style="margin-top:32px;padding:24px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);text-align:center;">
-        <div style="font-weight:700;color:var(--accent);margin-bottom:4px;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;">Setup Packs</div>
-        <h3 style="margin:0 0 8px;font-size:1.1rem;">Skip the trial and error</h3>
-        <p style="margin:0 0 16px;color:var(--muted);font-size:0.95rem;">The force-feedback, pedal and baseline settings I actually race, for MOZA, iRacing, ACC and Le Mans Ultimate. Every pack has a free preview.</p>
-        <a href="/packs/" style="color:var(--accent2);font-weight:700;text-decoration:underline;">See the setup packs &rarr;</a>
-        <p style="margin:12px 0 0;color:var(--muted);font-size:0.9rem;">Streaming or fighting stutters? <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=home&amp;utm_campaign=pitstop" style="color:var(--accent2);font-weight:700;text-decoration:underline;">NWM PitStop</a> cleans up the PC and gives the sim priority before every session.</p>
-      </div>
-
-      <div style="margin-top:48px;padding:20px;background:rgba(232,255,0,.08);border:1px solid rgba(232,255,0,.2);border-radius:var(--radius);text-align:center;font-size:0.85rem;color:var(--muted);">
-        <strong style="color:var(--text);">Affiliate Disclosure:</strong> As an Amazon Associate I earn from qualifying purchases. Some links on this page are affiliate links. I may earn a commission at no cost to you. Everything pictured is hardware I personally own and race on.
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq">
-    <p class="section-label">FAQ</p>
-    <h2>Frequently asked questions</h2>
-    <p class="faq-updated">Last updated: <time datetime="2026-09-29">September 29, 2026</time></p>
-      <div class="faq-item">
-        <h3>Who is behind RealIRacing?</h3>
-        <p>RealIRacing is run by Carlos Martinez, who races on iRacing under the user name Carlos Martinez9. The site and the @realtape YouTube channel cover iRacing from a racer's perspective with real motorsport roots; the channel lists 975+ videos and 1,700+ subscribers, and has been on YouTube for 15 years.</p>
-      </div>
-      <div class="faq-item">
-        <h3>What sim racing gear does RealIRacing race on?</h3>
-        <p>The rig is a MOZA R9 direct drive wheelbase (9 N·m), a MOZA CS V2 steering wheel and MOZA SR-P pedals, driven by an RTX 5060 Ti and a Ryzen 7 5700 with 32 GB of RAM on a single 1440p 120 Hz monitor. Every part is hardware Carlos owns and races on, and the full breakdown is on the <a href="/gear.html">My Rig page</a>.</p>
-      </div>
-      <div class="faq-item">
-        <h3>What content does RealIRacing publish?</h3>
-        <p>Four kinds of content: race highlights, setup guides, rig tours and iRacing tips. The <a href="/blog/">blog</a> adds written guides on force feedback settings, wheel and pedal buyer's guides, safety rating and racecraft, car and track guides, and OBS streaming configurations.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Are the gear links on RealIRacing affiliate links?</h3>
-        <p>Yes. Gear links go to Amazon and carry an affiliate tag, so Carlos may earn a small commission if you buy, at no extra cost to you. That income helps keep the site running. The affiliate disclosure sits in the gear section of this page.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Where can I watch and follow RealIRacing?</h3>
-        <p>Watch race highlights, setup guides and rig tours on YouTube at @realtape. Follow @realiracing on Instagram, TikTok and X, or find every platform in one place at <a href="/go/">realiracing.com/go</a>.</p>
-      </div>
-  </section>
-
   <!-- PLATFORMS -->
   <div class="platforms-section" id="platforms">
     <div class="platforms-inner">
       <p class="section-label">Follow Along</p>
       <h2>Find RealIRacing everywhere</h2>
       <p class="section-sub" style="margin-bottom:40px;">YouTube @realtape · Socials @realiracing.</p>
-      <div class="platforms-grid">
+      <div class="platforms-grid h-row">
         <a class="platform-card" href="https://www.youtube.com/@realtape" target="_blank">
           <span class="platform-icon">▶️</span>
           <div class="platform-name">YouTube</div>
@@ -1711,6 +1868,19 @@
     </div>
   </div>
 
+  <!-- FAQ -->
+  <section id="faq">
+    <p class="section-label">FAQ</p>
+    <h2>Frequently asked questions</h2>
+    <p class="faq-updated">Last updated: <time datetime="2026-09-29">September 29, 2026</time></p>
+      <details class="faq-item"><summary><h3>Who is behind RealIRacing?</h3></summary><p>RealIRacing is run by Carlos Martinez, who races on iRacing under the user name Carlos Martinez9. The site and the @realtape YouTube channel cover iRacing from a racer's perspective with real motorsport roots; the channel lists 975+ videos and 1,700+ subscribers, and has been on YouTube for 15 years.</p></details>
+      <details class="faq-item"><summary><h3>What sim racing gear does RealIRacing race on?</h3></summary><p>The rig is a MOZA R9 direct drive wheelbase (9 N·m), a MOZA CS V2 steering wheel and MOZA SR-P pedals, driven by an RTX 5060 Ti and a Ryzen 7 5700 with 32 GB of RAM on a single 1440p 120 Hz monitor. Every part is hardware Carlos owns and races on, and the full breakdown is on the <a href="/gear.html">My Rig page</a>.</p></details>
+      <details class="faq-item"><summary><h3>What content does RealIRacing publish?</h3></summary><p>Four kinds of content: race highlights, setup guides, rig tours and iRacing tips. The <a href="/blog/">blog</a> adds written guides on force feedback settings, wheel and pedal buyer's guides, safety rating and racecraft, car and track guides, and OBS streaming configurations.</p></details>
+      <details class="faq-item"><summary><h3>Are the gear links on RealIRacing affiliate links?</h3></summary><p>Yes. Gear links go to Amazon and carry an affiliate tag, so Carlos may earn a small commission if you buy, at no extra cost to you. That income helps keep the site running. The affiliate disclosure sits in the gear section of this page.</p></details>
+      <details class="faq-item"><summary><h3>Where can I watch and follow RealIRacing?</h3></summary><p>Watch race highlights, setup guides and rig tours on YouTube at @realtape. Follow @realiracing on Instagram, TikTok and X, or find every platform in one place at <a href="/go/">realiracing.com/go</a>.</p></details>
+  </section>
+
+  <div class="tail">
   <!-- COMMUNITY POLL -->
   <div class="poll-section" id="poll">
     <p class="section-label">Community Poll</p>
@@ -1775,6 +1945,8 @@
         </a>
       </div>
     </div>
+  </div>
+
   </div>
 
   <!-- FOOTER -->
