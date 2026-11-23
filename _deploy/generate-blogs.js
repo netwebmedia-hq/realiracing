@@ -489,7 +489,7 @@ ${relatedHtml}
   </div>
 
   <footer>
-    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong></p>
     <p style="margin-top:6px;font-size:0.78rem;">
       <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
       <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
@@ -561,6 +561,43 @@ function readPublishedCardMeta(slug) {
     dateLabel: updated.replace(/^Updated /, ''),
     readTime,
   };
+}
+
+// Card pictures. A card shows the picture of its own post where it has one (the event
+// posts) and otherwise one of a few shared pictures, so with hash-per-slug the same one ran
+// on neighbouring cards (63 cards shared one tile). Walking oldest to newest, a card keeps
+// its picture unless one of the 5 cards before it already shows it; then it takes the
+// least-used of RealiRacing's own pictures (the six art tiles and the owner's trackside
+// photographs: own work needs no credit beside a card) that none of those 5 shows. Any 6
+// consecutive cards are therefore all different, which covers a row of 3 plus the row
+// below it. Oldest first means a new post at the top never changes the picture of a card
+// that is already published.
+const CARD_PIC_WINDOW = 5;
+function varyCardImages(cardsNewestFirst) {
+  const reg = photos.registry();
+  const bySm = new Map(reg.map(p => [photos.smFile(p.file), p]));
+  const own = reg.filter(p => !p.post_slug && p.kind !== 'sourced' && !/sim-race-poster/.test(p.file));
+  const used = new Map();
+  const recent = [];
+  for (const c of cardsNewestFirst.slice().reverse()) {
+    const m = c.html.match(/<img class="blog-card-photo" src="([^"]+)" width="[^"]*" height="[^"]*" alt="[^"]*"/);
+    const cur = m && bySm.get(m[1]);
+    if (!cur) { recent.length = 0; continue; }
+    let pick = cur;
+    if (!cur.post_slug && recent.includes(cur.file)) {
+      const h = hash(c.slug) % own.length;
+      pick = own.slice(h).concat(own.slice(0, h))
+        .filter(p => !recent.includes(p.file))
+        .sort((x, y) => (used.get(x.file) || 0) - (used.get(y.file) || 0))[0] || cur;
+      if (pick !== cur) {
+        c.html = c.html.replace(m[0], '<img class="blog-card-photo" src="' + esc(photos.smFile(pick.file)) +
+          '" width="' + (pick.sm_width || 560) + '" height="' + (pick.sm_height || 315) + '" alt="' + esc(pick.alt_en) + '"');
+      }
+    }
+    used.set(pick.file, (used.get(pick.file) || 0) + 1);
+    recent.push(pick.file);
+    if (recent.length > CARD_PIC_WINDOW) recent.shift();
+  }
 }
 
 const PAGE_SIZE = 30;
@@ -638,6 +675,7 @@ function rebuildBlogIndex(newPosts, opts) {
   const all = existing.filter(e => !newSlugs.has(e.slug))
     .concat(added)
     .sort((a, b) => b.date - a.date);
+  varyCardImages(all);
 
   // Paginate: the index grew with every post (231 KB at 260 posts). The newest PAGE_SIZE
   // cards stay on blog/index.html, older ones go to blog/page/2.html, 3.html, ... Every card
@@ -665,7 +703,8 @@ function rebuildBlogIndex(newPosts, opts) {
       .replace(/<link rel="canonical" href="[^"]*" \/>/, `<link rel="canonical" href="${url}" />`)
       .replace(/(<meta property="og:url" content=")[^"]*/, '$1' + url)
       .replace('href="blog.css', 'href="../blog.css')
-      .replace(/<div class="blog-hero">[\s\S]*?<\/div>/,
+      // the shell's hero is the photo hero (blog-hero--photo) since round 4: swap the whole hero for the plain one
+      .replace(/<div class="blog-hero[^"]*">[\s\S]*?(?=\n\s*<div class="blog-grid">)/,
         `<div class="blog-hero">\n    <p class="section-label">The Blog</p>\n    <h1>All guides, page ${n} of ${totalPages}</h1>\n  </div>`);
     fs.writeFileSync(path.join(PAGES_DIR, `${n}.html`), page);
   }
