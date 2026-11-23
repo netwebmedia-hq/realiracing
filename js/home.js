@@ -37,6 +37,21 @@
     });
   });
 
+  /* ── EDGE FADE on the media rows: fade the side that still has cards to scroll to ── */
+  var fadeRows = document.querySelectorAll('.media-panel .h-row');
+  function updateFade(row) {
+    var max = row.scrollWidth - row.clientWidth;
+    row.classList.add('fade-js');
+    row.classList.toggle('fade-r', max > 2 && row.scrollLeft < max - 2);
+    row.classList.toggle('fade-l', row.scrollLeft > 2);
+  }
+  function updateAllFades() { fadeRows.forEach(updateFade); }
+  fadeRows.forEach(function (row) { row.addEventListener('scroll', function () { updateFade(row); }, { passive: true }); });
+  window.addEventListener('resize', updateAllFades);
+  window.addEventListener('load', updateAllFades);
+  document.querySelectorAll('.media-tab').forEach(function (t) { t.addEventListener('click', function () { setTimeout(updateAllFades, 0); }); });
+  updateAllFades();
+
   /* ── POLL ── */
   document.querySelectorAll('.poll-option').forEach(function (opt) {
     opt.addEventListener('click', function (e) {
