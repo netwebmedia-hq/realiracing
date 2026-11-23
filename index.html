@@ -1158,6 +1158,51 @@
     #faq h2 { margin-bottom: 0; } .faq-updated { margin: 0 0 10px; }
     .slide-1 .slide-vignette { background: radial-gradient(ellipse 62% 70% at 50% 46%, rgba(10,10,10,.62) 0%, rgba(10,10,10,.34) 70%, rgba(10,10,10,.18) 100%), linear-gradient(to top, rgba(10,10,10,.92) 0%, rgba(10,10,10,.45) 28%, transparent 55%); } /* own cockpit frame: dark behind the text, the track and dash stay visible at the edges */
     @media (max-width: 760px) { .proof { grid-template-columns: 1fr; } .proof .stats-bar { grid-template-columns: 1fr 1fr 1fr 1fr; gap: 6px; padding: 12px 8px; } .stat-num { font-size: 1.15rem; } .stat-label { font-size: .62rem; } }
+
+    /* ── Joni R3 2026-11-23: one gear block, real poster, own photos in the media row, phone hero ── */
+    #gear .aff-note { font-size: .85rem; color: var(--muted); margin: 2px 0 6px; }
+    #gear .section-sub { font-size: .92rem; }
+
+    /* media row: own trackside photographs; a right/left edge fade while there is more to scroll */
+    .post-card .post-thumb { height: auto; aspect-ratio: 3 / 2; }
+    .post-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .post-title { font-weight: 700; font-size: .95rem; line-height: 1.3; }
+    .post-credit { font-size: .72rem; color: var(--muted); }
+    .post-card .post-info { gap: 4px; }
+    .media-grid.h-row > .post-card { width: calc((100% - 104px) / 4); min-width: 200px; }
+    .media-panel .h-row:not(.fade-js),
+    .media-panel .h-row.fade-r:not(.fade-l) { -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 48px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 48px), transparent); }
+    .media-panel .h-row.fade-l:not(.fade-r) { -webkit-mask-image: linear-gradient(to left, #000 calc(100% - 48px), transparent); mask-image: linear-gradient(to left, #000 calc(100% - 48px), transparent); }
+    .media-panel .h-row.fade-l.fade-r { -webkit-mask-image: linear-gradient(to right, transparent, #000 48px, #000 calc(100% - 48px), transparent); mask-image: linear-gradient(to right, transparent, #000 48px, #000 calc(100% - 48px), transparent); }
+    @media (max-width: 1099px) { .media-grid.h-row > .post-card { width: 240px; } }
+    @media (max-width: 760px) { .media-grid.h-row > .post-card { width: min(72vw, 270px); min-width: 0; } }
+
+    /* phone hero: the sub-line leads, the slogan is a small kicker above it, a lighter photo overlay */
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 1rem; letter-spacing: .16em; text-transform: uppercase; font-weight: 800; line-height: 1.25; margin-bottom: 10px; }
+      .hero h1 br { display: none; }
+      .hero p.hero-sub { font-size: 1.55rem; line-height: 1.22; font-weight: 800; margin-bottom: 20px; }
+      .slide-1 { filter: brightness(1.18); }
+      .slide-1 .slide-vignette { background: radial-gradient(ellipse 80% 60% at 50% 45%, rgba(10,10,10,.5) 0%, rgba(10,10,10,.3) 100%), linear-gradient(to top, rgba(10,10,10,.8) 0%, rgba(10,10,10,.3) 30%, transparent 55%); }
+    }
+
+    /* R3 compaction: one-line slogan, tighter section rhythm, two link buttons per row on phones */
+    .hero h1 br { display: none; }
+    .hero h1 { font-size: clamp(2.2rem, 4.5vw, 3.4rem); margin-bottom: 12px; }
+    .hero { padding-top: 72px; padding-bottom: 28px; }
+    #packs, #start, #content, #faq { padding-top: 14px; padding-bottom: 14px; }
+    #gear { padding-top: 20px !important; padding-bottom: 20px !important; }
+    .media-section { padding-top: 24px; padding-bottom: 20px; }
+    .platforms-section { padding-top: 16px; padding-bottom: 12px; }
+    .proof { padding-top: 16px; padding-bottom: 16px; }
+    .post-card .post-thumb { aspect-ratio: 16 / 10; }
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 1rem; margin-bottom: 10px; }
+      .hero h1 .blue { color: #bdeeff; } /* brand blue measured 3.0:1 on the brighter phone photo */
+      .link-buttons .link-btn { flex: 1 1 44%; justify-content: center; }
+      .platforms-grid.h-row > .platform-card { width: 130px; }
+      section { padding-top: 16px; padding-bottom: 16px; }
+    }
   </style>
   <!-- Google Analytics 4 -->
   <script src="/js/ga4.js" defer></script>
@@ -1260,37 +1305,15 @@
   </section>
 
 <!-- seo:start-here:begin -->
-  <section id="ladder" aria-labelledby="ladder-h">
-    <p class="section-label">Gear</p>
-    <h2 id="ladder-h">Where to start on wheels and wheelbases</h2>
-    <p class="section-sub">One table, tier by tier. Picks marked "Raced on" are on my own rig; the rest are researched recommendations. Full reviews are in the <a href="/blog/best-sim-racing-wheels-iracing.html" style="color:var(--accent2)">wheel buyer's guide</a>.</p>
-    <div id="rir-ladder"><div class="gear-box">
-        <span class="box-label">Wheel and wheelbase ladder, entry to high end</span>
-        <div class="table-scroll">
-          <table class="gear-table">
-            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
-            <tbody>
-            <tr><th scope="row"><a href="https://www.amazon.com/dp/B07PGGDJSG?tag=realiracing-20" data-aff="logitech-g923" target="_blank" rel="sponsored noopener">Logitech G923 Racing Wheel</a></th><td>gear-driven, the easiest on-ramp into iRacing</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
-            <tr><th scope="row"><a href="https://www.amazon.com/dp/B01M1L2NRL?tag=realiracing-20" data-aff="thrustmaster-t300" target="_blank" rel="sponsored noopener">Thrustmaster T300 RS GT</a></th><td>long-standing budget pick</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R5+bundle&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r5" target="_blank" rel="sponsored noopener">MOZA R5 Bundle</a></th><td>entry direct drive — the first real fidelity jump</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
-            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FBGZHFN3?tag=realiracing-20" data-aff="fanatec-csl-dd" target="_blank" rel="sponsored noopener">Fanatec CSL DD</a></th><td>entry direct drive with Fanatec’s ecosystem</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
-            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+R12+wheel+base&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-r12" target="_blank" rel="sponsored noopener">MOZA R12 Direct Drive Wheelbase</a></th><td>high-end direct drive, maximum headroom</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
-            <tr><th scope="row"><a href="https://www.amazon.com/s?k=Fanatec+ClubSport+DD%2B&amp;tag=realiracing-20" data-aff="fanatec-clubsport-dd" target="_blank" rel="sponsored noopener">Fanatec ClubSport DD+</a></th><td>high-end, deep licensed-rim catalog</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
-      </div></div>
-  </section>
 
 
   <!-- RECOMMENDED GEAR -->
   <section id="gear" style="background:linear-gradient(180deg,rgba(232,255,0,.05) 0%,rgba(0,200,255,.05) 100%);padding:80px 24px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
     <div class="gear-inner" style="max-width:1000px;margin:0 auto;">
       <p class="section-label">Gear & Hardware</p>
-      <h2>Sim Racing Gear I Actually Use</h2>
-      <p class="section-sub">Every link below is affiliate. I earn a small commission when you buy — at no cost to you — which helps keep RealIRacing running.</p>
+      <h2 id="gear-h">Sim Racing Gear I Actually Use</h2>
+      <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      <p class="section-sub">Every link below is affiliate. I earn a small commission when you buy — at no cost to you — which helps keep RealIRacing running. What I race on is on my own rig; the rest are researched recommendations. Full reviews are in the <a href="/blog/best-sim-racing-wheels-iracing.html" style="color:var(--accent2)">wheel buyer's guide</a>.</p>
 
       <div class="gear-cards h-row">
         <!-- My rig — what I race on -->
@@ -1298,7 +1321,7 @@
           <div style="font-weight:700;color:var(--accent);margin-bottom:4px;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;">What I Race On</div>
           <h3 style="margin-top:0;margin-bottom:16px;font-size:1.1rem;">My Rig</h3>
           <ul style="list-style:none;margin:0;padding:0;gap:12px;display:flex;flex-direction:column;">
-            <li><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">MOZA R9 Wheelbase</a> — Direct drive powerhouse</li>
+            <li><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">MOZA R9 Wheelbase</a> — 9 N·m direct drive, the base bolted to my rig right now</li>
             <li><a href="https://www.amazon.com/s?k=MOZA+CS+V2+steering+wheel&rh=p_89%3AMOZA&tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">MOZA CS V2 Wheel</a> — Premium rim</li>
             <li><a href="https://www.amazon.com/s?k=MOZA+SR-P+pedals&rh=p_89%3AMOZA&tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">MOZA SR-P Pedals</a> — Same Pit House software as the base</li>
           </ul>
@@ -1312,8 +1335,9 @@
           <div style="font-weight:700;color:var(--accent);margin-bottom:4px;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;">Getting Started</div>
           <h3 style="margin-top:0;margin-bottom:16px;font-size:1.1rem;">Best Beginner Gear</h3>
           <ul style="list-style:none;margin:0;padding:0;gap:12px;display:flex;flex-direction:column;">
-            <li><a href="https://www.amazon.com/dp/B07PGGDJSG?tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">Logitech G923</a> — Gear drive, entry point</li>
-            <li><a href="https://www.amazon.com/s?k=MOZA+R5+bundle&rh=p_89%3AMOZA&tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">MOZA R5 Bundle</a> — First direct drive</li>
+            <li><a href="https://www.amazon.com/dp/B07PGGDJSG?tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">Logitech G923</a> — Gear-driven, the easiest on-ramp into iRacing</li>
+            <li><a href="https://www.amazon.com/dp/B01M1L2NRL?tag=realiracing-20" data-aff="thrustmaster-t300" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">Thrustmaster T300 RS GT</a> — Long-standing budget pick</li>
+            <li><a href="https://www.amazon.com/s?k=MOZA+R5+bundle&rh=p_89%3AMOZA&tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">MOZA R5 Bundle</a> — Entry direct drive, the first real fidelity jump</li>
             <li><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">Sim Racing Cockpit</a> — Rigid mount</li>
           </ul>
           <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border);">
@@ -1326,8 +1350,9 @@
           <div style="font-weight:700;color:var(--accent);margin-bottom:4px;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em;">High Performance</div>
           <h3 style="margin-top:0;margin-bottom:16px;font-size:1.1rem;">Premium Tier</h3>
           <ul style="list-style:none;margin:0;padding:0;gap:12px;display:flex;flex-direction:column;">
-            <li><a href="https://www.amazon.com/s?k=MOZA+R12+wheel+base&rh=p_89%3AMOZA&tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">MOZA R12 Wheelbase</a> — Maximum torque</li>
-            <li><a href="https://www.amazon.com/dp/B0FBGZHFN3?tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">Fanatec CSL DD</a> — Alternative DD</li>
+            <li><a href="https://www.amazon.com/s?k=MOZA+R12+wheel+base&rh=p_89%3AMOZA&tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">MOZA R12 Wheelbase</a> — High-end direct drive, maximum headroom</li>
+            <li><a href="https://www.amazon.com/dp/B0FBGZHFN3?tag=realiracing-20" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">Fanatec CSL DD</a> — Alternative DD, with Fanatec’s ecosystem</li>
+            <li><a href="https://www.amazon.com/s?k=Fanatec+ClubSport+DD%2B&amp;tag=realiracing-20" data-aff="fanatec-clubsport-dd" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">Fanatec ClubSport DD+</a> — High-end, deep licensed-rim catalog</li>
             <li><a href="https://www.amazon.com/s?k=Meta+Quest+3+512GB+VR+headset&amp;rh=p_89%3AMeta&amp;tag=realiracing-20" data-aff="meta-quest-3" target="_blank" rel="sponsored noopener" style="color:var(--accent2);text-decoration:underline;">Meta Quest 3</a> — VR sim racing</li>
           </ul>
           <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border);">
@@ -1376,7 +1401,7 @@
     <h2 id="watch-h">Latest live race on the channel</h2>
     <div class="lite-yt" data-video-id="vPj0IvaQiR8">
       <a class="lite-yt-link" href="https://www.youtube.com/watch?v=vPj0IvaQiR8" target="_blank" rel="noopener" data-title="iRacing Live — 2025 Season 4 Week 12 · Imola &amp; Mt Panorama">
-        <img src="https://img.youtube.com/vi/vPj0IvaQiR8/hqdefault.jpg" width="480" height="360" alt="iRacing Live — 2025 Season 4 Week 12 · Imola &amp; Mt Panorama" loading="lazy" decoding="async">
+        <img src="/assets/photos/sim-race-poster.jpg" width="960" height="540" alt="View from the cockpit of Carlos Martinez’s own iRacing race at the Nürburgring Nordschleife, looking down the track" loading="lazy" decoding="async">
         <span class="lite-yt-play" aria-hidden="true"></span>
         <span class="lite-yt-label">&#9654; Play: iRacing Live — 2025 Season 4 Week 12 · Imola &amp; Mt Panorama</span>
       </a>
@@ -1441,294 +1466,76 @@
       <p class="section-sub">Sim racing + real-world racing photography & video — all from Carlos's own accounts.</p>
 
       <div class="media-tabs" role="tablist" aria-label="Media channels">
-        <button type="button" role="tab" id="tab-iracing" class="media-tab active" data-tab="iracing" aria-selected="true" aria-controls="panel-iracing" tabindex="0">🎮 @realiracing (iRacing)</button>
-        <button type="button" role="tab" id="tab-photo" class="media-tab" data-tab="photo" aria-selected="false" aria-controls="panel-photo" tabindex="-1">📸 @tapephotocom (IRL Photography)</button>
-        <button type="button" role="tab" id="tab-youtube" class="media-tab" data-tab="youtube" aria-selected="false" aria-controls="panel-youtube" tabindex="-1">▶ @realtape (YouTube)</button>
+        <button type="button" role="tab" id="tab-photo" class="media-tab active" data-tab="photo" aria-selected="true" aria-controls="panel-photo" tabindex="0">Trackside photos</button>
+        <button type="button" role="tab" id="tab-youtube" class="media-tab" data-tab="youtube" aria-selected="false" aria-controls="panel-youtube" tabindex="-1">@realtape (YouTube)</button>
       </div>
 
-      <!-- TAB 1: @realiracing iRacing posts -->
-      <div class="media-panel active" id="panel-iracing" role="tabpanel" aria-labelledby="tab-iracing">
+      <!-- TAB 1: Carlos's own trackside photographs (Long Beach 2018, WRC Rally Chile 2019) -->
+      <div class="media-panel active" id="panel-photo" role="tabpanel" aria-labelledby="tab-photo">
         <div class="media-grid h-row">
 
-          <!-- Post 1: Nürburgring Nordschleife -->
-          <a class="post-card" href="https://www.instagram.com/realiracing/p/DNw025JXAgY/" target="_blank">
-            <div class="post-thumb">
-              <div class="post-thumb-bg">
-                <div class="post-thumb-stripe" style="background:#1a2a0a;"></div>
-                <div class="post-thumb-stripe" style="background:#0f1a0a;"></div>
-                <div class="post-thumb-stripe" style="background:#0a1505;"></div>
-              </div>
-              <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(232,255,0,.08),rgba(0,0,0,.5));"></div>
-              <div class="post-thumb-label">
-                <div class="post-thumb-emoji">🏎️</div>
-                <div class="post-thumb-title">Nürburgring Nordschleife</div>
-                <div class="post-thumb-tag">iRacing · Cockpit View</div>
-              </div>
-              <div class="post-badge">📸 Photo</div>
-            </div>
+          <a class="post-card" href="https://www.instagram.com/realiracing/reel/DHcSN9QMp5k/" target="_blank" rel="noopener">
+            <div class="post-thumb"><img src="/assets/photos/trackside-wrc-chile-2019-sm.jpg" width="560" height="373" alt="A red Citroën C3 WRC rally car sliding through a dusty gravel corner on a forest stage in Chile" loading="lazy" decoding="async"></div>
             <div class="post-info">
               <div class="post-account">@realiracing</div>
-              <div class="post-caption">Behind the wheel at the Green Hell — iRacing cockpit view at the Nordschleife.</div>
-              <div class="post-cta">View on Instagram →</div>
-            </div>
-          </a>
-
-          <!-- Post 2: Porsche / iRacing -->
-          <a class="post-card" href="https://www.instagram.com/realiracing/p/DJoUatatbPB/" target="_blank">
-            <div class="post-thumb">
-              <div class="post-thumb-bg">
-                <div class="post-thumb-stripe" style="background:#1a1230;"></div>
-                <div class="post-thumb-stripe" style="background:#120e24;"></div>
-                <div class="post-thumb-stripe" style="background:#0d0b1a;"></div>
-              </div>
-              <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,200,255,.1),rgba(0,0,0,.5));"></div>
-              <div class="post-thumb-label">
-                <div class="post-thumb-emoji">🏁</div>
-                <div class="post-thumb-title">Porsche on Track</div>
-                <div class="post-thumb-tag">iRacing · @realiracing</div>
-              </div>
-              <div class="post-badge">📸 Photo</div>
-            </div>
-            <div class="post-info">
-              <div class="post-account">@realiracing</div>
-              <div class="post-caption">Porsche cup car iRacing session — chasing the apex.</div>
-              <div class="post-cta">View on Instagram →</div>
-            </div>
-          </a>
-
-          <!-- Post 3: WRC Chile 2019 Reel -->
-          <a class="post-card" href="https://www.instagram.com/realiracing/reel/DHcSN9QMp5k/" target="_blank">
-            <div class="post-thumb">
-              <div class="post-thumb-bg">
-                <div class="post-thumb-stripe" style="background:#1a2a10;"></div>
-                <div class="post-thumb-stripe" style="background:#2a1a0a;"></div>
-                <div class="post-thumb-stripe" style="background:#1a1510;"></div>
-              </div>
-              <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(100,200,50,.1),rgba(0,0,0,.55));"></div>
-              <div class="post-thumb-label">
-                <div class="post-thumb-emoji">🌿</div>
-                <div class="post-thumb-title">WRC Chile 2019</div>
-                <div class="post-thumb-tag">Real Rally Stage · #wrc #chile #rally</div>
-              </div>
-              <div class="post-badge">🎬 Reel</div>
-            </div>
-            <div class="post-info">
-              <div class="post-account">@realiracing</div>
+              <div class="post-title">WRC Chile 2019</div>
               <div class="post-caption">At the WRC rally stage in Chile 2019 — real motorsport in the wild.</div>
-              <div class="post-cta">Watch Reel →</div>
+              <div class="post-credit">Foto / Photo: Carlos Martinez</div>
+              <div class="post-cta">Watch the reel on Instagram →</div>
             </div>
           </a>
 
-          <!-- Post 4: Long Beach GP 2018 Reel -->
-          <a class="post-card" href="https://www.instagram.com/realiracing/reel/DF_xNrrMqtn/" target="_blank">
-            <div class="post-thumb">
-              <div class="post-thumb-bg">
-                <div class="post-thumb-stripe" style="background:#1a0a0a;"></div>
-                <div class="post-thumb-stripe" style="background:#200f0f;"></div>
-                <div class="post-thumb-stripe" style="background:#150808;"></div>
-              </div>
-              <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(232,100,0,.12),rgba(0,0,0,.55));"></div>
-              <div class="post-thumb-label">
-                <div class="post-thumb-emoji">🏙️</div>
-                <div class="post-thumb-title">Long Beach Grand Prix 2018</div>
-                <div class="post-thumb-tag">IMSA · IndyCar · #longbeach</div>
-              </div>
-              <div class="post-badge">🎬 Reel</div>
-            </div>
-            <div class="post-info">
-              <div class="post-account">@realiracing</div>
-              <div class="post-caption">Long Beach Grand Prix 2018 — IMSA + IndyCar weekend, on-track action.</div>
-              <div class="post-cta">Watch Reel →</div>
-            </div>
-          </a>
-
-          <!-- Post 5: NASCAR Talladega 2023 Reel -->
-          <a class="post-card" href="https://www.instagram.com/realiracing/reel/DF_wwA4sOmD/" target="_blank">
-            <div class="post-thumb">
-              <div class="post-thumb-bg">
-                <div class="post-thumb-stripe" style="background:#1a0f00;"></div>
-                <div class="post-thumb-stripe" style="background:#251500;"></div>
-                <div class="post-thumb-stripe" style="background:#180d00;"></div>
-              </div>
-              <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,160,0,.12),rgba(0,0,0,.5));"></div>
-              <div class="post-thumb-label">
-                <div class="post-thumb-emoji">🏟️</div>
-                <div class="post-thumb-title">NASCAR Talladega 2023</div>
-                <div class="post-thumb-tag">Cup Series Playoffs · #talladega</div>
-              </div>
-              <div class="post-badge">🎬 Reel</div>
-            </div>
-            <div class="post-info">
-              <div class="post-account">@realiracing</div>
-              <div class="post-caption">NASCAR Cup Series Playoff race at Talladega 2023 — grandstand view, packed house.</div>
-              <div class="post-cta">Watch Reel →</div>
-            </div>
-          </a>
-
-          <!-- Post 6: iRacing Rig -->
-          <a class="post-card" href="https://www.instagram.com/realiracing/reel/DGaqyUisY2y/" target="_blank">
-            <div class="post-thumb">
-              <div class="post-thumb-bg">
-                <div class="post-thumb-stripe" style="background:#0a101a;"></div>
-                <div class="post-thumb-stripe" style="background:#0d1520;"></div>
-                <div class="post-thumb-stripe" style="background:#0a0f18;"></div>
-              </div>
-              <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,200,255,.12),rgba(0,0,0,.5));"></div>
-              <div class="post-thumb-label">
-                <div class="post-thumb-emoji">🖥️</div>
-                <div class="post-thumb-title">The Sim Rig</div>
-                <div class="post-thumb-tag">#iracing #moza · Full Setup</div>
-              </div>
-              <div class="post-badge">🎬 Reel</div>
-            </div>
-            <div class="post-info">
-              <div class="post-account">@realiracing</div>
-              <div class="post-caption">Full sim rig tour — iRacing setup with Moza hardware.</div>
-              <div class="post-cta">Watch Reel →</div>
-            </div>
-          </a>
-
-        </div>
-      </div>
-
-      <!-- TAB 2: @tapephotocom IRL photography -->
-      <div class="media-panel" id="panel-photo" role="tabpanel" aria-labelledby="tab-photo">
-        <div class="media-grid h-row">
-
-          <!-- Photo 1: Takuma Sato Panasonic IndyCar -->
-          <a class="post-card" href="https://www.instagram.com/tapephotocom/p/CEP1gdkhXNr/" target="_blank">
-            <div class="post-thumb">
-              <div class="post-thumb-bg">
-                <div class="post-thumb-stripe" style="background:#001040;"></div>
-                <div class="post-thumb-stripe" style="background:#000d30;"></div>
-                <div class="post-thumb-stripe" style="background:#000820;"></div>
-              </div>
-              <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,120,255,.15),rgba(0,0,0,.45));"></div>
-              <div class="post-thumb-label">
-                <div class="post-thumb-emoji">🔵</div>
-                <div class="post-thumb-title">Takuma Sato #21 — Panasonic / Mi-Jack IndyCar</div>
-                <div class="post-thumb-tag">Long Beach GP 2018 · Shot by Carlos Martinez</div>
-              </div>
-              <div class="post-badge">📷 OWN PHOTO</div>
-            </div>
+          <a class="post-card" href="https://www.instagram.com/tapephotocom/p/CEP1gdkhXNr/" target="_blank" rel="noopener">
+            <div class="post-thumb"><img src="/assets/photos/trackside-sato-21-sm.jpg" width="560" height="373" alt="Takuma Sato’s number 21 Panasonic Mi-Jack IndyCar at speed at the Long Beach Grand Prix" loading="lazy" decoding="async"></div>
             <div class="post-info">
               <div class="post-account">@tapephotocom</div>
+              <div class="post-title">Takuma Sato #21 — Panasonic / Mi-Jack IndyCar</div>
               <div class="post-caption">Takuma Sato — Indy 500 winner. Shot at Long Beach Grand Prix 2018. Canon 6D.</div>
+              <div class="post-credit">Foto / Photo: Carlos Martinez</div>
               <div class="post-cta">View on Instagram →</div>
             </div>
           </a>
 
-          <!-- Photo 2: Marco Andretti #98 US Concrete IndyCar -->
-          <a class="post-card" href="https://www.instagram.com/tapephotocom/p/CEPZNQNBm4v/" target="_blank">
-            <div class="post-thumb">
-              <div class="post-thumb-bg">
-                <div class="post-thumb-stripe" style="background:#300000;"></div>
-                <div class="post-thumb-stripe" style="background:#200000;"></div>
-                <div class="post-thumb-stripe" style="background:#180000;"></div>
-              </div>
-              <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(200,0,0,.15),rgba(0,0,0,.45));"></div>
-              <div class="post-thumb-label">
-                <div class="post-thumb-emoji">🔴</div>
-                <div class="post-thumb-title">Marco Andretti #98 — US Concrete IndyCar</div>
-                <div class="post-thumb-tag">Acura Grand Prix of Long Beach 2018 · Shot by Carlos Martinez</div>
-              </div>
-              <div class="post-badge">📷 OWN PHOTO</div>
-            </div>
+          <a class="post-card" href="https://www.instagram.com/tapephotocom/p/B-HgzIIJ5ex/" target="_blank" rel="noopener">
+            <div class="post-thumb"><img src="/assets/photos/trackside-wrc-coquimbo-sm.jpg" width="560" height="373" alt="A Hyundai i20 WRC rally car coming straight at the camera on a forest stage in the Coquimbo region of Chile" loading="lazy" decoding="async"></div>
             <div class="post-info">
               <div class="post-account">@tapephotocom</div>
-              <div class="post-caption">Marco Andretti, Pole Position Indy 500 — shot at the Long Beach Grand Prix 2018. #indy #indycar</div>
-              <div class="post-cta">View on Instagram →</div>
-            </div>
-          </a>
-
-          <!-- Photo 3: Long Beach / IMSA -->
-          <a class="post-card" href="https://www.instagram.com/tapephotocom/p/CB48vfkhjTM/" target="_blank">
-            <div class="post-thumb">
-              <div class="post-thumb-bg">
-                <div class="post-thumb-stripe" style="background:#101018;"></div>
-                <div class="post-thumb-stripe" style="background:#0d0d15;"></div>
-                <div class="post-thumb-stripe" style="background:#080810;"></div>
-              </div>
-              <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(232,255,0,.08),rgba(0,0,0,.5));"></div>
-              <div class="post-thumb-label">
-                <div class="post-thumb-emoji">🌅</div>
-                <div class="post-thumb-title">Long Beach, California</div>
-                <div class="post-thumb-tag">Race Weekend · @tapephotocom</div>
-              </div>
-              <div class="post-badge">📷 OWN PHOTO</div>
-            </div>
-            <div class="post-info">
-              <div class="post-account">@tapephotocom</div>
-              <div class="post-caption">Race weekend in Long Beach, California. Canon 6D. All photos taken and edited by Carlos.</div>
-              <div class="post-cta">View on Instagram →</div>
-            </div>
-          </a>
-
-          <!-- Photo 4: WRC Chile / Coquimbo -->
-          <a class="post-card" href="https://www.instagram.com/tapephotocom/p/B-HgzIIJ5ex/" target="_blank">
-            <div class="post-thumb">
-              <div class="post-thumb-bg">
-                <div class="post-thumb-stripe" style="background:#0a1a08;"></div>
-                <div class="post-thumb-stripe" style="background:#0d2010;"></div>
-                <div class="post-thumb-stripe" style="background:#081508;"></div>
-              </div>
-              <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(80,180,40,.1),rgba(0,0,0,.5));"></div>
-              <div class="post-thumb-label">
-                <div class="post-thumb-emoji">🌄</div>
-                <div class="post-thumb-title">Coquimbo Region, Chile</div>
-                <div class="post-thumb-tag">WRC Chile · Rally Stage · Carlos Martinez</div>
-              </div>
-              <div class="post-badge">📷 OWN PHOTO</div>
-            </div>
-            <div class="post-info">
-              <div class="post-account">@tapephotocom</div>
+              <div class="post-title">Coquimbo Region, Chile</div>
               <div class="post-caption">WRC rally stage in Chile — Coquimbo region. Shot on location at the special stage.</div>
+              <div class="post-credit">Foto / Photo: Carlos Martinez</div>
               <div class="post-cta">View on Instagram →</div>
             </div>
           </a>
 
-          <!-- Photo 5: Coquimbo Region Rally -->
-          <a class="post-card" href="https://www.instagram.com/tapephotocom/p/B3VnTREJTKN/" target="_blank">
-            <div class="post-thumb">
-              <div class="post-thumb-bg">
-                <div class="post-thumb-stripe" style="background:#1a1a00;"></div>
-                <div class="post-thumb-stripe" style="background:#141400;"></div>
-                <div class="post-thumb-stripe" style="background:#0f0f00;"></div>
-              </div>
-              <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(200,180,0,.1),rgba(0,0,0,.5));"></div>
-              <div class="post-thumb-label">
-                <div class="post-thumb-emoji">🛣️</div>
-                <div class="post-thumb-title">Chile Rally Stage — On Location</div>
-                <div class="post-thumb-tag">Coquimbo · WRC · #rally</div>
-              </div>
-              <div class="post-badge">📷 OWN PHOTO</div>
-            </div>
+          <a class="post-card" href="https://www.instagram.com/tapephotocom/p/CEPZNQNBm4v/" target="_blank" rel="noopener">
+            <div class="post-thumb"><img src="/assets/photos/trackside-andretti-98-sm.jpg" width="560" height="373" alt="Marco Andretti’s US Concrete IndyCar panning past the wall at the Long Beach Grand Prix" loading="lazy" decoding="async"></div>
             <div class="post-info">
               <div class="post-account">@tapephotocom</div>
+              <div class="post-title">Marco Andretti #98 — US Concrete IndyCar</div>
+              <div class="post-caption">Marco Andretti, Pole Position Indy 500 — shot at the Long Beach Grand Prix 2018. #indy #indycar</div>
+              <div class="post-credit">Foto / Photo: Carlos Martinez</div>
+              <div class="post-cta">View on Instagram →</div>
+            </div>
+          </a>
+
+          <a class="post-card" href="https://www.instagram.com/realiracing/reel/DF_xNrrMqtn/" target="_blank" rel="noopener">
+            <div class="post-thumb"><img src="/assets/photos/trackside-long-beach-imsa-sm.jpg" width="560" height="373" alt="A yellow number 4 Corvette GTLM car panning past the barriers at the Long Beach Grand Prix" loading="lazy" decoding="async"></div>
+            <div class="post-info">
+              <div class="post-account">@realiracing</div>
+              <div class="post-title">Long Beach Grand Prix 2018</div>
+              <div class="post-caption">Long Beach Grand Prix 2018 — IMSA + IndyCar weekend, on-track action.</div>
+              <div class="post-credit">Foto / Photo: Carlos Martinez</div>
+              <div class="post-cta">Watch the reel on Instagram →</div>
+            </div>
+          </a>
+
+          <a class="post-card" href="https://www.instagram.com/tapephotocom/p/B3VnTREJTKN/" target="_blank" rel="noopener">
+            <div class="post-thumb"><img src="/assets/photos/trackside-wrc-gravel-sm.jpg" width="560" height="373" alt="A Toyota Yaris WRC car sideways through a gravel corner on a rally stage in Chile" loading="lazy" decoding="async"></div>
+            <div class="post-info">
+              <div class="post-account">@tapephotocom</div>
+              <div class="post-title">Chile Rally Stage — On Location</div>
               <div class="post-caption">On the ground at the WRC rally stage in the Coquimbo region of Chile.</div>
-              <div class="post-cta">View on Instagram →</div>
-            </div>
-          </a>
-
-          <!-- Photo 6: Laguna Seca area -->
-          <a class="post-card" href="https://www.instagram.com/tapephotocom/p/B3J6EbmJkcp/" target="_blank">
-            <div class="post-thumb">
-              <div class="post-thumb-bg">
-                <div class="post-thumb-stripe" style="background:#001520;"></div>
-                <div class="post-thumb-stripe" style="background:#001018;"></div>
-                <div class="post-thumb-stripe" style="background:#000c12;"></div>
-              </div>
-              <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,200,255,.1),rgba(0,0,0,.5));"></div>
-              <div class="post-thumb-label">
-                <div class="post-thumb-emoji">💧</div>
-                <div class="post-thumb-title">Laguna Big Pond</div>
-                <div class="post-thumb-tag">Carlos Martinez Photography · DJI Phantom</div>
-              </div>
-              <div class="post-badge">📷 OWN PHOTO</div>
-            </div>
-            <div class="post-info">
-              <div class="post-account">@tapephotocom</div>
-              <div class="post-caption">Aerial photography at Laguna — DJI Phantom 4. All photos taken and edited by Carlos Martinez.</div>
+              <div class="post-credit">Foto / Photo: Carlos Martinez</div>
               <div class="post-cta">View on Instagram →</div>
             </div>
           </a>
@@ -1736,7 +1543,7 @@
         </div>
       </div>
 
-      <!-- TAB 3: YouTube @realtape videos — thumbnail grid -->
+      <!-- TAB 2: YouTube @realtape videos — thumbnail grid -->
       <div class="media-panel" id="panel-youtube" role="tabpanel" aria-labelledby="tab-youtube">
         <div class="yt-grid h-row">
 

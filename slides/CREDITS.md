@@ -46,3 +46,7 @@ a third of the bytes. `index.html` picks between them with a media query for sli
 ## Homepage hero (since 2026-11-23)
 
 `hero-cockpit.jpg` and `hero-cockpit-sm.jpg` are a frame from Carlos Martinez's own iRacing race at the Nürburgring Nordschleife (November 2026), captured on his own rig. They replace the Pexels photo `slide1.jpg` as the hero: an outside review found a stock drift-car photo did not say sim racing. The Pexels slide files stay in this folder, unused.
+
+## Round 3 images (2026-11-23)
+
+The home page also uses `assets/photos/sim-race-poster.jpg` (poster of the latest-race video: a frame from Carlos Martinez's own iRacing race at the Nürburgring Nordschleife) and six `assets/photos/trackside-*.jpg` photographs taken by Carlos Martinez at the 2018 Long Beach Grand Prix and the 2019 WRC Rally Chile. Credit: "Foto / Photo: Carlos Martinez". Registered in `assets/photos/credits.json` and `assets/photos/ATTRIBUTION.md`.

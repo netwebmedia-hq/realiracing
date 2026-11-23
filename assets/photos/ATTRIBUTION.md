@@ -49,3 +49,12 @@ node _deploy/fetch-blog-photos.js --property <name> --write-attribution
 | `/assets/photos/event-monaco-cannes-2025.jpg` | [Carlos Martinez](https://realiracing.com/) | [RealiRacing own work](https://realiracing.com/) | [RealiRacing](https://realiracing.com/) |
 | `/assets/photos/event-redondo-beach-2018.jpg` | [Carlos Martinez](https://realiracing.com/) | [RealiRacing own work](https://realiracing.com/) | [RealiRacing](https://realiracing.com/) |
 | `/assets/photos/event-gta6-first-hours-2026.jpg` | [Carlos Martinez](https://realiracing.com/) | [RealiRacing own work](https://realiracing.com/) | [RealiRacing](https://realiracing.com/) |
+| `/assets/photos/trackside-wrc-chile-2019.jpg` | [Carlos Martinez](https://realiracing.com/) | [RealiRacing own work](https://realiracing.com/) | [RealiRacing](https://realiracing.com/) |
+| `/assets/photos/trackside-long-beach-imsa.jpg` | [Carlos Martinez](https://realiracing.com/) | [RealiRacing own work](https://realiracing.com/) | [RealiRacing](https://realiracing.com/) |
+| `/assets/photos/trackside-sato-21.jpg` | [Carlos Martinez](https://realiracing.com/) | [RealiRacing own work](https://realiracing.com/) | [RealiRacing](https://realiracing.com/) |
+| `/assets/photos/trackside-andretti-98.jpg` | [Carlos Martinez](https://realiracing.com/) | [RealiRacing own work](https://realiracing.com/) | [RealiRacing](https://realiracing.com/) |
+| `/assets/photos/trackside-wrc-coquimbo.jpg` | [Carlos Martinez](https://realiracing.com/) | [RealiRacing own work](https://realiracing.com/) | [RealiRacing](https://realiracing.com/) |
+| `/assets/photos/trackside-wrc-gravel.jpg` | [Carlos Martinez](https://realiracing.com/) | [RealiRacing own work](https://realiracing.com/) | [RealiRacing](https://realiracing.com/) |
+| `/assets/photos/sim-race-poster.jpg` | [Carlos Martinez](https://realiracing.com/) | [RealiRacing own work](https://realiracing.com/) | [RealiRacing](https://realiracing.com/) |
+
+The six `trackside-*` photographs were taken by Carlos Martinez at the 2018 Long Beach Grand Prix and the 2019 WRC Rally Chile (also published on tapephoto.com). `sim-race-poster.jpg` is a frame from his own iRacing race at the Nürburgring Nordschleife. Credit line: "Foto / Photo: Carlos Martinez". No image shows Carlos, a text overlay or a watermark.
