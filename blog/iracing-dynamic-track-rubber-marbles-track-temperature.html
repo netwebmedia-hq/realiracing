@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iRacing Dynamic Track: Rubber, Marbles and Temperature</title>
+  <meta name="description" content="A beginner guide to iRacing's dynamic track: how rubber, marbles and track temperature change grip, and what I do about each from my MOZA R9 rig." />
+  <link rel="canonical" href="https://realiracing.com/blog/iracing-dynamic-track-rubber-marbles-track-temperature.html" />
+  <meta property="og:title" content="iRacing Dynamic Track: Rubber, Marbles and Temperature" />
+  <meta property="og:description" content="A beginner guide to iRacing's dynamic track: how rubber, marbles and track temperature change grip, and what I do about each from my MOZA R9 rig." />
+  <meta property="og:url" content="https://realiracing.com/blog/iracing-dynamic-track-rubber-marbles-track-temperature.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/rig-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: overlapping isometric blocks" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/rig-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261103" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "iRacing Dynamic Track: Rubber, Marbles and Temperature",
+    "description": "A beginner guide to iRacing's dynamic track: how rubber, marbles and track temperature change grip, and what I do about each from my MOZA R9 rig.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/iracing-dynamic-track-rubber-marbles-track-temperature.html",
+    "image": "https://realiracing.com/assets/photos/rig-cover.jpg",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"iRacing Dynamic Track: Rubber, Marbles and Temperature","item":"https://realiracing.com/blog/iracing-dynamic-track-rubber-marbles-track-temperature.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/iracing-dynamic-track-rubber-marbles-track-temperature.html#rir-gear"},{"@type":"ListItem","position":2,"name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/iracing-dynamic-track-rubber-marbles-track-temperature.html#rir-gear"},{"@type":"ListItem","position":3,"name":"Sim Racing Cockpit / Wheel Stand","description":"a rigid mount matters more than the brand — flex kills FFB detail","url":"https://realiracing.com/blog/iracing-dynamic-track-rubber-marbles-track-temperature.html#rir-gear"}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the dynamic track in iRacing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It is the way iRacing changes the track surface during a session. As cars lap, rubber builds up on the racing line and grip there changes, while bits of worn tyre collect off the line and make that area slippery. Track temperature also changes the grip." }
+    },
+    {
+      "@type": "Question",
+      "name": "What are marbles in iRacing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Marbles are small pieces of worn tyre rubber that collect away from the racing line, usually on the outside of corners. Driving through them reduces grip, and some can stick to your tyres and keep grip lower for a few corners afterward." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does track temperature change how the car drives?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. A hotter surface generally gives less grip and more tyre wear, and a cooler one generally gives more grip. You can check the track temperature in the session information inside iRacing and adjust how hard you push, especially in the first laps." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do my braking points from a solo test not match the race?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A solo test often starts from a cleaner track state than an official session. In many official series the track state carries over from practice to qualifying to the race, so the race surface has more rubber on it. Treat solo test braking points as a starting point and re-check them in the official practice session." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Beginner Guide · Track Conditions</p>
+    <h1>iRacing Dynamic Track: Rubber, Marbles and Temperature</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated November 23, 2026</span>
+      <span class="dot">·</span>
+      <span>8 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/rig-cover.jpg" width="1000" height="563" alt="Cover art: overlapping isometric blocks" srcset="/assets/photos/rig-cover-sm.jpg 560w, /assets/photos/rig-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">I spent an evening in a solo test session learning a corner until I could hit the same braking marker every lap. The next day I joined the official race, arrived at the same corner with a field of cars, and went wide on lap one. Same car, same track, same marker. The surface was different. After many cars had run on it, the racing line had rubber on it and the car stuck to the road in a way it never did during my test. I had practised on a clean track and raced on a used one.</p>
+
+      <p>That gap has a name in iRacing: the dynamic track. I race on a <a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> wheelbase (~9 N·m), <a href="https://www.amazon.com/dp/B0DSHYFW1V?tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2</a> load-cell pedals and a fixed aluminium-profile cockpit, and the wheel and pedals show me these changes clearly once I know what to look for. This guide explains the three things that move grip during a session (rubber, marbles and temperature) in plain words, then lists what I do about each.</p>
+
+      <h2>What the dynamic track is</h2>
+
+      <p>iRacing models the track surface as something that changes while you drive on it. A brand new surface has little rubber on it. As cars lap, tyres leave a thin layer of rubber on the path they follow most, which is the racing line. That layer gives the tyres more to grip, so grip on the racing line tends to rise as the session goes on. Away from the line, the surface stays cleaner and slipperier.</p>
+
+      <p>Think of it like a floor in a busy hallway. The path everyone walks gets polished, and the corners stay dusty. The track works in a similar way, except it affects how much speed you can carry into a corner.</p>
+
+      <h2>Rubber: what it does to you</h2>
+
+      <p>More rubber on the racing line means more grip there. The practical effect is that corner speeds and braking points that felt right early in a session can move as the line rubbers in. On a track with lots of rubber, I can usually brake a little later and carry a little more speed through the same corner than I could on a clean surface. The change is gradual, so I rarely notice it lap by lap. I notice it when I compare the start of a session to the end.</p>
+
+      <p>Here is the part that surprised me most as a beginner. The rubber only helps on the line. If I step off it, to pass or to avoid a spinning car, I leave the grippy strip and land on a cleaner, slipperier surface. The car feels like it changed its mind in the middle of the corner. Through the MOZA R9, I feel this as the wheel going light for a moment, with less of the steady weight I feel on the line.</p>
+
+      <h2>Marbles: the slippery bits off the line</h2>
+
+      <p>As tyres wear, small bits of rubber come off them. These bits roll away from the racing line and collect on the outside of corners and on the edges of the track. Drivers call them marbles, because driving on them feels a little like driving on tiny balls. They are most common off the racing line, which is exactly where you drive when you pass or defend late in a race.</p>
+
+      <p>Two things happen when you go through marbles. First, the car slides more easily, so a turn that felt safe becomes a slide. Second, some of the bits stick to your tyres, and grip drops for a few corners until they wear off. That is why a short trip off the line can cost you more than the moment itself suggests.</p>
+
+      <p>My rule is simple. If I have to leave the line, I turn a little less sharply, brake a little earlier and keep my inputs smooth. Then I return to the racing line and stay on it for a few corners so the tyres can clean themselves. With the CRP2 load-cell pedals I can feel how much brake pressure I am giving, which helps me brake gently on a surface that offers less grip.</p>
+
+      <h2>Track temperature</h2>
+
+      <p>The surface of the track gets hotter or cooler during a session, depending on the sun, cloud, air temperature and time of day. A hotter surface generally gives less grip and wears the tyres faster. A cooler surface generally gives more grip. You can see the track temperature in the session information inside the sim, so you do not need to guess.</p>
+
+      <p>In practice, I think of temperature as a background setting for the whole session. If the track is cooler than it was in practice, I expect the car to feel more planted. If it is hotter, I expect it to slide earlier and wear its tyres sooner, so I stay patient and avoid overdriving the car in the first laps. Clouds drifting across a sunny track can change the surface temperature during the race, and the car can feel different from one lap to the next.</p>
+
+      <p>Rain is a separate subject, and my post on <a href="iracing-rain-weather-system-explained.html">how the iRacing rain and weather system works</a> covers it. Here I am only talking about a dry track that changes with temperature and use.</p>
+
+      <h2>Why your practice session may not match the race</h2>
+
+      <p>A session starts from a set track state, which means how much rubber is already on the surface. In many official series, the track state carries over from practice to qualifying to the race. The race surface is therefore shaped by every car that has run before it. A solo test session does not give you that. It usually starts from a cleaner state, and you are the only car adding rubber.</p>
+
+      <p>This is the main reason my braking points from a solo test can be off in the race. On a clean track I brake earlier, because there is less grip. In the race I may be able to brake later. The reverse can also happen in some conditions, so I never treat a test number as a promise. I treat it as a starting point.</p>
+
+      <h2>What changes on an oval</h2>
+
+      <p>On ovals, the groove can move as the race goes on. The lower line, which is usually the shortest, gets worn as cars use it, and the grip there can fade. Cars then begin to run higher up the track, where there is fresh surface and rubber building up. The best line at the start may not be the best line late in the race. My post on <a href="bristol-motor-speedway-iracing-banking-tire-wear-lanes.html">Bristol Motor Speedway, banking, tire wear and lanes</a> shows how this plays out on one short, steep oval.</p>
+
+      <h2>What I do about it</h2>
+
+      <p>Here is the routine I follow. Nothing in it needs new gear, only a few habits.</p>
+
+      <ol>
+        <li>Practise in the official practice session for that week, as well as solo tests. That session shows me the surface the race will use, with other cars adding rubber to it.</li>
+        <li>Check the track temperature in the session info before I start, and again if the session is long.</li>
+        <li>Leave extra margin on lap one. The field is bunched, the tyres are cold, and I have not yet felt how grippy the line is today.</li>
+        <li>Treat the first laps of any session as a measurement, not a performance. I note where the car feels light or heavy before I push.</li>
+        <li>When I go off the line, I smooth my inputs and brake earlier, then stay on the line for a few corners to clean the tyres.</li>
+        <li>On ovals, watch where other cars run late in the race, and be ready to move up the track if the bottom line fades.</li>
+      </ol>
+
+      <p>For the practice session itself, I use the plan from <a href="iracing-practice-session-plan-45-minutes.html">my 45-minute practice session plan</a>. It keeps me from spending the whole time chasing speed when I should be learning how the surface behaves today.</p>
+
+      <h2>Reading it through the wheel and pedals</h2>
+
+      <p>The track is easier to read through force feedback than through the screen. On the racing line, the wheel feels weighty and steady, and the front end feels connected. Off the line, the weight can drop away, and the car can feel vague. With a ~9 N·m wheelbase I get clear detail without needing to push the strength high, and a rigid aluminium cockpit means the signals reach me without frame flex adding noise.</p>
+
+      <p>The pedals tell a similar story. On a grippy line I can lean on the brake harder without locking a wheel. On a marbled or hot surface, the same pressure locks sooner, so I ease the pedal. Load-cell pedals measure pressure rather than travel, which makes that easier to repeat. I still recommend a beginner on any hardware do the same thing: listen to the wheel and watch the feel change from lap to lap.</p>
+
+      <h2>Black boxes and tyre information</h2>
+
+      <p>iRacing's on-screen black boxes (the small information panels you can switch on) show tyre information and fuel. They help you spot when tyre wear is building, which usually goes together with a hotter surface. If you have not set them up yet, <a href="iracing-black-boxes-explained-relative-fuel-tires.html">my post on black boxes, relative, fuel and tires</a> explains each one in simple terms.</p>
+
+      <h2>Common beginner mistakes</h2>
+
+      <ul>
+        <li>Trusting braking points from a solo test as though they are fixed.</li>
+        <li>Going off line in a pass and expecting the same grip as on the line.</li>
+        <li>Ignoring the track temperature, then wondering why the car slides in the afternoon.</li>
+        <li>Pushing hard on lap one with cold tyres and a bunched field.</li>
+        <li>Staying in the marbles after a mistake instead of returning to the line.</li>
+      </ul>
+
+      <p>The dynamic track is one of the best reasons to race instead of only test. Each session starts from a different state, and the surface keeps changing until the checkered flag. A beginner who gets used to that will usually feel calmer in traffic, because the car's behaviour stops being a surprise and starts being something to read.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=iracing-dynamic-track-rubber-marbles-track-temperature">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0DSHYFW1V?tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&amp;tag=realiracing-20" data-aff="cockpit" target="_blank" rel="sponsored noopener">Sim Racing Cockpit / Wheel Stand</a></th><td>a rigid mount matters more than the brand — flex kills FFB detail</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>What is the dynamic track in iRacing?</h3>
+        <p>It is the way iRacing changes the track surface during a session. As cars lap, rubber builds up on the racing line and grip there changes, while bits of worn tyre collect off the line and make that area slippery. Track temperature also changes the grip.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What are marbles in iRacing?</h3>
+        <p>Marbles are small pieces of worn tyre rubber that collect away from the racing line, usually on the outside of corners. Driving through them reduces grip, and some can stick to your tyres and keep grip lower for a few corners afterward.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does track temperature change how the car drives?</h3>
+        <p>Yes. A hotter surface generally gives less grip and more tyre wear, and a cooler one generally gives more grip. You can check the track temperature in the session information inside iRacing and adjust how hard you push, especially in the first laps.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Why do my braking points from a solo test not match the race?</h3>
+        <p>A solo test often starts from a cleaner track state than an official session. In many official series the track state carries over from practice to qualifying to the race, so the race surface has more rubber on it. Treat solo test braking points as a starting point and re-check them in the official practice session.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="eye-strain-screen-distance-long-sim-racing-sessions.html"><span>iRacing Tips</span>Eye strain and screen distance: protecting your vision during endurance racing</a>
+      <a class="related-card" href="iracing-esports-pathways-pro-racing.html"><span>iRacing Tips</span>iRacing Esports Pathways: From Official Races to Pro Series</a>
+      <a class="related-card" href="multi-camera-sim-racing-stream-setup.html"><span>Streaming</span>Multi-camera setup for sim racing streams: angles, switching, and gear</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong> · Built with 🏎️</p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","moza-crp2","cockpit"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
