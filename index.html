@@ -470,6 +470,10 @@
       animation: blink 1.5s infinite;
     }
     @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+    a.hero-badge { display: inline-block; text-align: center; line-height: 1.35; text-decoration: none; text-transform: none; letter-spacing: .2px; max-width: 100%; }
+    @media (max-width: 640px) { a.hero-badge { padding: 9px 16px; font-size: .76rem; } }
+    a.hero-badge::before { content: '\25B6'; display: inline-block; margin-right: 8px; font-size: 0.6rem; animation: none; vertical-align: 1px; }
+    a.hero-badge:hover, a.hero-badge:focus-visible { background: rgba(232,255,0,.22); }
 
     .hero h1 {
       font-size: clamp(3rem, 8vw, 6rem);
@@ -1259,7 +1263,7 @@
 
     <!-- Hero content over slideshow -->
     <div class="hero-content">
-      <div class="hero-badge">Now Live on iRacing</div>
+      <a class="hero-badge" href="https://www.youtube.com/watch?v=vPj0IvaQiR8" target="_blank" rel="noopener">Stream replay: Imola &amp; Mt Panorama &middot; <time datetime="2025-12-03">Dec&nbsp;3,&nbsp;2025</time></a>
       <h1>
         Race.<br>
         <span class="yellow">Stream.</span><br>
