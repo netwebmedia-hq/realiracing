@@ -50,3 +50,7 @@ a third of the bytes. `index.html` picks between them with a media query for sli
 ## Round 3 images (2026-11-23)
 
 The home page also uses `assets/photos/sim-race-poster.jpg` (poster of the latest-race video: a frame from Carlos Martinez's own iRacing race at the Nürburgring Nordschleife) and six `assets/photos/trackside-*.jpg` photographs taken by Carlos Martinez at the 2018 Long Beach Grand Prix and the 2019 WRC Rally Chile. Credit: "Foto / Photo: Carlos Martinez". Registered in `assets/photos/credits.json` and `assets/photos/ATTRIBUTION.md`.
+
+## Round 4 (2026-11-23)
+
+The blog index hero (`blog/index.html`) now uses `assets/photos/sim-race-poster.jpg` (with the `-sm` and `.webp` variants) behind a dark scrim: the same own iRacing Nordschleife frame already registered above. No new image was added. It shows no person.
