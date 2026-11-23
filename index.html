@@ -1156,9 +1156,9 @@
 
     /* phone hero: the sub-line leads, the slogan is a small kicker above it, a lighter photo overlay */
     @media (max-width: 640px) {
-      .hero h1 { font-size: 1rem; letter-spacing: .16em; text-transform: uppercase; font-weight: 800; line-height: 1.25; margin-bottom: 10px; }
+      .hero h1 { font-size: clamp(30px, 8.6vw, 38px); letter-spacing: -1px; text-transform: none; font-weight: 900; line-height: 1.08; margin-bottom: 12px; }
       .hero h1 br { display: none; }
-      .hero p.hero-sub { font-size: 1.55rem; line-height: 1.22; font-weight: 800; margin-bottom: 20px; }
+      .hero p.hero-sub { font-size: 1.05rem; line-height: 1.4; font-weight: 600; margin-bottom: 18px; }
       .slide-1 { filter: brightness(1.18); }
       .slide-1 .slide-vignette { background: radial-gradient(ellipse 80% 60% at 50% 45%, rgba(10,10,10,.5) 0%, rgba(10,10,10,.3) 100%), linear-gradient(to top, rgba(10,10,10,.8) 0%, rgba(10,10,10,.3) 30%, transparent 55%); }
     }
@@ -1174,7 +1174,7 @@
     .proof { padding-top: 16px; padding-bottom: 16px; }
     .post-card .post-thumb { aspect-ratio: 16 / 10; }
     @media (max-width: 640px) {
-      .hero h1 { font-size: 1rem; margin-bottom: 10px; }
+      .hero h1 { font-size: clamp(30px, 8.6vw, 38px); margin-bottom: 12px; }
       .hero h1 .blue { color: #bdeeff; } /* brand blue measured 3.0:1 on the brighter phone photo */
       .link-buttons .link-btn { flex: 1 1 44%; justify-content: center; }
       .platforms-grid.h-row > .platform-card { width: 130px; }
