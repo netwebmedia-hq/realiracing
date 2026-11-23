@@ -15,7 +15,7 @@
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://realiracing.com/og-image.png" />
-  <link rel="stylesheet" href="blog.css?v=20261123" />
+  <link rel="stylesheet" href="blog.css?v=20261123b" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -61,10 +61,18 @@
   </nav>
 
   <main>
-  <div class="blog-hero">
+  <div class="blog-hero blog-hero--photo">
+    <picture class="blog-hero-bg" aria-hidden="true">
+      <source type="image/webp" media="(max-width: 640px)" srcset="/assets/photos/sim-race-poster-sm.jpg.webp">
+      <source type="image/webp" srcset="/assets/photos/sim-race-poster.jpg.webp">
+      <source media="(max-width: 640px)" srcset="/assets/photos/sim-race-poster-sm.jpg">
+      <img src="/assets/photos/sim-race-poster.jpg" width="960" height="540" alt="" fetchpriority="high" decoding="async">
+    </picture>
+    <div class="blog-hero-in">
     <p class="section-label">The Blog</p>
     <h1>Guides from a <span class="yellow">real rig</span>, not a spec sheet</h1>
     <p>FFB settings, hardware buyer's guides, license strategy and streaming configs: everything tested on my own MOZA R9 rig before it gets written up here.</p>
+    </div>
   </div>
 
   <div class="blog-grid">

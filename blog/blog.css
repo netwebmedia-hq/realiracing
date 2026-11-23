@@ -80,6 +80,14 @@ nav {
 }
 .blog-hero h1 .yellow { color: var(--accent); }
 .blog-hero p { color: var(--muted); font-size: 1.05rem; }
+/* Blog index hero: own frame (iRacing, Nordschleife cockpit) behind the title; the scrim keeps text well above 4.5:1. */
+.blog-hero--photo { position: relative; isolation: isolate; overflow: hidden; max-width: none; margin: 0; padding: 150px 24px 60px; background: #0b0b10; }
+.blog-hero-bg, .blog-hero-bg img { position: absolute; inset: 0; width: 100%; height: 100%; }
+.blog-hero-bg { z-index: -2; display: block; }
+.blog-hero-bg img { object-fit: cover; object-position: center 40%; }
+.blog-hero--photo::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(11,11,16,.64) 0%, rgba(11,11,16,.58) 55%, rgba(11,11,16,.92) 100%); }
+.blog-hero-in { max-width: 760px; margin: 0 auto; }
+.blog-hero--photo p { color: #d6d9df; }
 
 .blog-grid {
   display: grid;
