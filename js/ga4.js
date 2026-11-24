@@ -40,15 +40,15 @@
   }
   var isEs = /^es/i.test(document.documentElement.lang || '');
   var TXT = isEs ? {
-    t: 'Cookies de analítica',
-    b: 'Medimos visitas con Google Analytics. Rechazar desactiva las cookies de analítica; en la UE, el Reino Unido y Suiza siguen desactivadas hasta que aceptes.',
-    s: 'Usamos cookies de analítica.',
+    t: 'Cookies de analítica y anuncios',
+    b: 'Medimos visitas con Google Analytics y, si aceptas, usamos el píxel de Meta para mostrarte anuncios de RealiRacing en Facebook e Instagram. Rechazar desactiva ambos; en la UE, el Reino Unido y Suiza siguen desactivados hasta que aceptes.',
+    s: 'Cookies de analítica y de anuncios (Meta).',
     more: 'Política de privacidad',
     ok: 'Aceptar', no: 'Rechazar', url: '/privacy.html#analytics'
   } : {
-    t: 'Analytics cookies',
-    b: 'We measure visits with Google Analytics. Reject turns analytics cookies off; in the EU, UK and Switzerland they stay off until you Accept.',
-    s: 'We use analytics cookies.',
+    t: 'Analytics and ad cookies',
+    b: 'We measure visits with Google Analytics and, if you accept, use the Meta pixel to show you RealiRacing ads on Facebook and Instagram. Reject turns both off; in the EU, UK and Switzerland they stay off until you Accept.',
+    s: 'Analytics and ad (Meta) cookies.',
     more: 'Privacy policy',
     ok: 'Accept', no: 'Reject', url: '/privacy.html#analytics'
   };
@@ -80,11 +80,13 @@
       var b = document.createElement('button');
       b.type = 'button'; b.className = 'consent-btn'; b.textContent = label;
       b.addEventListener('click', function (e) {
+        // Accept on this banner (it names Meta) is the only thing that allows the pixel.
+        document.cookie = 'nwm_ads=1;path=/;SameSite=Lax;max-age=' + (value === 'all' ? 31536000 : 0);
         writeConsent(value);
         gtag('consent', 'update', signals(value));
         box.remove();
         // Accept starts GA4 (the click is trusted input); Reject keeps gtag.js unloaded.
-        if (value === 'all') { if (trusted(e)) load(); } else armed = false;
+        if (value === 'all') { if (trusted(e)) { load(); loadPixel(); } } else armed = false;
       });
       return b;
     }
@@ -139,7 +141,25 @@
   function trusted(e) {
     return !!e && e.isTrusted === true && (typeof document.visibilityState !== 'string' || document.visibilityState === 'visible');
   }
+  // Meta pixel for retargeting (2026-11-24). Loads only for a visitor who pressed Accept on the
+  // banner that names Meta (cookie nwm_ads=1). An Accept stored before that date covered
+  // analytics only, so it never loads the pixel. Never for bots (armed stays false for them).
+  var PIXEL = '932250764227701', pixelLoaded = false;
+  function loadPixel() {
+    if (!armed || pixelLoaded) return;
+    if (readConsent() !== 'all' || !/(?:^|;\s*)nwm_ads=1/.test(document.cookie)) return;
+    pixelLoaded = true;
+    var q = window.fbq = function () { q.callMethod ? q.callMethod.apply(q, arguments) : q.queue.push(arguments); };
+    q.push = q; q.loaded = true; q.version = '2.0'; q.queue = [];
+    var px = document.createElement('script');
+    px.async = true;
+    px.src = 'https://connect.facebook.net/en_US/fbevents.js';
+    document.head.appendChild(px);
+    q('init', PIXEL);
+    q('track', 'PageView');
+  }
   function load() {
+    loadPixel();
     if (!armed || loaded) return;
     loaded = true;
     for (var i = 0; i < EV.length; i++) window.removeEventListener(EV[i], onInput, { capture: true });
