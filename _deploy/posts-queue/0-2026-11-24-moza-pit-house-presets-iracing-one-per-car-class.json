@@ -1,0 +1,167 @@
+{
+  "slug": "moza-pit-house-presets-iracing-one-per-car-class",
+  "tag": "Setup Guide · Hardware",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "MOZA Pit House Presets for iRacing: One Per Car Class",
+  "description": "How I organise MOZA Pit House presets for iRacing on an R9, one per car class, with the naming scheme and what changes for GT3, formula and oval.",
+  "published": "2026-11-24",
+  "dateLabel": "November 24, 2026",
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2",
+    "cockpit"
+  ],
+  "sections": [
+    {
+      "p": "I used to run one Pit House profile for every car in iRacing. It felt fine in a GT3 car, a little numb in a Formula car, and strangely heavy on ovals. Once I started keeping one preset per car class on my MOZA R9, I stopped chasing the wheel feel every time I changed series. This is how I organise them, how I name them, and what I change between GT3, formula and oval."
+    },
+    {
+      "p": "My rig is a MOZA R9 (~9 N·m), CRP2 load cell pedals and a fixed aluminium cockpit. Everything below comes from that setup. Treat any number as a place to start."
+    },
+    {
+      "h2": "What Pit House does and what iRacing already does"
+    },
+    {
+      "p": "Pit House is MOZA's PC software for base, wheel and pedal settings and for firmware updates. On the base side it exposes maximum steering angle, game force feedback intensity, a maximum torque limit, road sensitivity, maximum wheel speed, and the natural effects: damper, friction, inertia and spring. It also has an FFB effect equalizer, and it can save presets you switch between."
+    },
+    {
+      "p": "The first thing to settle is who owns what. iRacing sets each car's steering rotation itself once the wheel is calibrated, so the usual advice is to calibrate the full rotation in iRacing and let the sim soft-lock per car. iRacing also keeps its own force setting (strength or max force in N·m, with the auto button) per car and saves it. So I treat the two layers differently. iRacing owns the force level for each car. Pit House presets own the feel layer: damping, friction, road sensitivity and wheel speed."
+    },
+    {
+      "p": "If you want the full walkthrough of the sim-side numbers, my <a href=\"moza-r9-iracing-settings.html\">MOZA R9 iRacing settings</a> post covers the baseline, and <a href=\"iracing-force-feedback-explained.html\">iRacing force feedback explained</a> breaks down what the in-sim sliders do."
+    },
+    {
+      "h2": "Why one preset per car class"
+    },
+    {
+      "p": "A GT3 car has a heavy front end, a lot of weight transfer and a steering rack that loads up hard. A Formula car is light, quick and precise, and the wheel needs to move out of your hands fast. An oval car spends long stretches turning one way at a steady load. A single profile has to compromise between all of that, and the compromise usually lands somewhere that is slightly wrong for every car."
+    },
+    {
+      "p": "Presets remove the compromise. Each class gets a starting point that suits how those cars behave, and I only fine-tune from there. The other benefit is repeatability. When something feels off, I can load the preset and know the base is in a known state, which makes it much easier to tell whether the problem is the preset or the car setup."
+    },
+    {
+      "h2": "How I name presets"
+    },
+    {
+      "p": "Naming is where most of the time savings come from. A list of presets called \"new 2\", \"test\" and \"final final\" tells you nothing three weeks later. I use a short scheme with the class first, the character second and the date last."
+    },
+    {
+      "list": [
+        "<strong>Class first:</strong> GT3, FORM, OVAL, plus a spare tag for dirt or rally style. Sorting the list alphabetically groups each family together.",
+        "<strong>Character second:</strong> a one-word note on what the preset is for, such as base, light or smooth.",
+        "<strong>Date last:</strong> year, month and day, for example 2026-11-24. If I change a preset, I save it under a new date instead of overwriting the old one.",
+        "<strong>Version suffix only when needed:</strong> if I make two changes on the same day, I add a letter, like 2026-11-24b."
+      ]
+    },
+    {
+      "p": "So a typical list looks like GT3-base-2026-11-24, FORM-light-2026-11-24 and OVAL-smooth-2026-11-24. The date matters more than it sounds. Firmware updates and game updates both change how a wheel feels, and a date tells me which presets predate which change."
+    },
+    {
+      "tip": "Write the date in the preset name every time. When a preset starts to feel wrong, the date is the fastest clue about whether a firmware or sim update came after it.",
+      "tipLabel": "Naming tip"
+    },
+    {
+      "h2": "GT3 and GT4: heavier, more damping"
+    },
+    {
+      "p": "GT cars are my base case, so this is the first preset I build. These cars have weight, grip and a lot of load going through the steering, and I want the wheel to feel settled instead of nervous. The reasonable split puts GT3 and GT4 on the heavier side with more damping."
+    },
+    {
+      "p": "Roughly where I start: damper in the moderate range, friction low to moderate, and road sensitivity near the middle so I can feel kerbs and surface changes without the wheel buzzing in my hands. Wheel speed stays at a moderate value, since GT steering does not need the wheel to snap back instantly. I keep game force feedback intensity around the middle of its range and leave the actual force strength to iRacing's per-car setting, which I check with the auto button."
+    },
+    {
+      "p": "What I listen for in a GT3 car is how the wheel behaves on corner entry under braking and on the transition to throttle. If the weight shift feels vague, I lean on road sensitivity or the equalizer. If the wheel feels like it is fighting me on direction changes, I back off the damper a touch. I make one change, drive several laps, and only then judge."
+    },
+    {
+      "h2": "Formula and open wheel: lighter, less damping, quicker wheel speed"
+    },
+    {
+      "p": "For open wheel cars I flip the character of the preset. These cars are light and responsive, and the wheel should feel crisp and quick. That means less damping, so the rack does not feel like it is moving through syrup, and a higher maximum wheel speed so the wheel can return to centre fast when I catch a slide."
+    },
+    {
+      "p": "Roughly where I start: damper lower than my GT preset, friction low, inertia kept small, and wheel speed noticeably higher. Road sensitivity stays moderate. Too much road detail in a Formula car turns into noise, because the cars already transmit a lot of fine information through the wheel."
+    },
+    {
+      "p": "The thing I check in a Formula car is whether I can feel the front tyres letting go before the car actually slides. With too much damping, that information gets smothered. With too little, the wheel can feel twitchy and I start over-correcting. If you hit that second case, move damper up in small steps and test again."
+    },
+    {
+      "h2": "Ovals: smoother, a touch more damping"
+    },
+    {
+      "p": "Ovals ask for something different again. You are holding the wheel at a steady angle for long stretches, with small corrections. I want a smooth wheel here, one that does not tire me out and does not pass on every ripple as a jolt. The reasonable class split for ovals is smoother with a touch more damping."
+    },
+    {
+      "p": "Roughly where I start: damper slightly above my GT preset, friction low to moderate, and road sensitivity a little lower than the other presets so bumps do not pull my hands off the line. I also watch the torque limit more closely on ovals. A sustained one-direction load for a long run is where a wheelbase works hardest, so I keep headroom instead of running the base near its ceiling."
+    },
+    {
+      "p": "For the care side of long sessions, my post on <a href=\"direct-drive-wheelbase-maintenance-firmware.html\">direct drive wheelbase maintenance and firmware</a> covers heat, cables and update habits."
+    },
+    {
+      "h2": "A fourth preset for dirt and rally style"
+    },
+    {
+      "p": "I keep one extra preset for dirt, rally and anything with a lot of steering rotation and a loose car. The reasonable starting point here is fast rotation and low friction, so the wheel can move quickly and freely when the car steps out. I tag it DIRT and treat it like the others."
+    },
+    {
+      "h2": "A workflow that keeps presets honest"
+    },
+    {
+      "olist": [
+        "Calibrate the full rotation in iRacing first, and let the sim soft-lock per car.",
+        "Load the class preset in Pit House before you launch the sim, so the base is in the right state.",
+        "Set iRacing's force for that car, using the auto button as a starting point, and let the sim save it.",
+        "Drive several laps before touching anything. Change one setting at a time, then drive several more laps.",
+        "When a change helps, save a new preset with today's date in the name. Keep the old one until you are sure.",
+        "Back up or export your presets before any firmware update."
+      ]
+    },
+    {
+      "p": "That last step has saved me more than once. Firmware updates can reset or alter how presets behave, and a quick export means I can restore my starting points in a few minutes instead of rebuilding them from memory."
+    },
+    {
+      "h2": "Pedals live in Pit House too"
+    },
+    {
+      "p": "The CRP2 pedal curves also live in Pit House, so I keep my pedal setup alongside the wheel presets. I do not split pedals per class, because the braking position I train my foot on should stay consistent across cars. If you want to tune the curve and the pressure feel, my <a href=\"moza-crp2-brake-calibration-pressure-curves.html\">CRP2 brake calibration and pressure curves</a> guide goes through it step by step."
+    },
+    {
+      "h2": "Mistakes I made along the way"
+    },
+    {
+      "list": [
+        "Changing three sliders at once, then not knowing which one fixed the problem or caused a new one.",
+        "Overwriting a good preset without keeping a dated copy, then losing the version I liked.",
+        "Fighting iRacing's per-car force with Pit House intensity, so the two layers cancelled each other out.",
+        "Skipping the backup before a firmware update."
+      ]
+    },
+    {
+      "h2": "Hardware notes"
+    },
+    {
+      "p": "None of this needs extra hardware, only software discipline. That said, a solid mount makes preset changes easier to judge. On a fixed aluminium cockpit, I do not have to wonder whether flex is changing how a setting feels. The wheelbase, pedals and rig I mention are listed in the gear box below."
+    },
+    {
+      "p": "The idea behind all of this is simple. Pick a handful of classes, give each a known starting point, name them so you can read the list in a month, and keep the changes small and dated. After that, switching from a GT3 race to a Formula session is a two-second preset change instead of a twenty-minute tweak session."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I make a Pit House preset for every car in iRacing?",
+      "a": "No. One preset per car class is enough for most drivers. GT3 and GT4, open wheel, ovals and a dirt or rally style preset cover most of what changes. Fine-tune from those starting points instead of building dozens of profiles."
+    },
+    {
+      "q": "Should I set steering angle in Pit House or in iRacing?",
+      "a": "The usual advice is to calibrate the full rotation in iRacing and let the sim soft-lock per car, because iRacing sets each car's steering rotation itself. Keep Pit House for the feel layer such as damping, friction and road sensitivity."
+    },
+    {
+      "q": "How should I name my Pit House presets?",
+      "a": "I put the class first, a one-word character second and the date last, for example GT3-base-2026-11-24. The date tells you whether a preset predates a firmware or sim update, and the class prefix keeps similar presets grouped together in the list."
+    },
+    {
+      "q": "Do I need to back up presets before a firmware update?",
+      "a": "Yes. Export or back up your presets before any firmware update. If an update changes how a preset behaves, you can restore your starting points quickly instead of rebuilding them from memory."
+    }
+  ]
+}
