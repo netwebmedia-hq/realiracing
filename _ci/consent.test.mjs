@@ -168,3 +168,15 @@ test('gate: Accept on the banner loads gtag.js once (trusted click only)', () =>
   assert.equal(r.gtagEl().length, 1);
   assert.equal(r.win.dataLayer.filter((a) => a[1] === 'update').pop()[2].analytics_storage, 'granted');
 });
+
+test('Meta pixel loads only after Accept on the banner that names Meta (nwm_ads=1)', () => {
+  const pixel = (r) => r.head.children.some((c) => /connect\.facebook\.net/.test(c.src || ''));
+  const go = (cookie, nav) => { const r = run(cookie, 'en', nav); r.fire('pointerdown', { isTrusted: true, target: {} }); return r; };
+  const yes = go('nwm_consent=all; nwm_ads=1');
+  assert.ok(pixel(yes));
+  assert.deepEqual(Array.from(yes.win.fbq.queue[0]), ['init', '932250764227701']);
+  assert.equal(pixel(go('nwm_consent=all')), false, 'older analytics-only Accept');
+  assert.equal(pixel(go('')), false, 'no choice');
+  assert.equal(pixel(go('nwm_consent=essential; nwm_ads=1')), false, 'Reject');
+  assert.equal(pixel(go('nwm_consent=all; nwm_ads=1', { webdriver: true })), false, 'bot');
+});
