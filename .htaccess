@@ -15,7 +15,8 @@ DirectoryIndex index.html
   RewriteEngine On
   RewriteCond %{HTTPS} !=on
   RewriteRule ^ https://realiracing.com%{REQUEST_URI} [R=301,L]
-  RewriteCond %{HTTP_HOST} ^www\.realiracing\.com$ [NC]
+  # mail. is cPanel's mail alias on this docroot and served a full duplicate of the site.
+  RewriteCond %{HTTP_HOST} ^(www|mail)\.realiracing\.com$ [NC]
   RewriteRule ^ https://realiracing.com%{REQUEST_URI} [R=301,L]
 </IfModule>
 
