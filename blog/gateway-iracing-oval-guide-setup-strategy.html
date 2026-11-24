@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gateway (WWTRaceway) iRacing Oval Guide: Setup, Line, Strategy</title>
+  <meta name="description" content="Master Gateway's high-banked oval layout. Learn racing line, braking points, setup tuning, and fuel strategy for consistent wins." />
+  <link rel="canonical" href="https://realiracing.com/blog/gateway-iracing-oval-guide-setup-strategy.html" />
+  <meta property="og:title" content="Gateway (WWTRaceway) iRacing Oval Guide: Setup, Line, Strategy" />
+  <meta property="og:description" content="Master Gateway's high-banked oval layout. Learn racing line, braking points, setup tuning, and fuel strategy for consistent wins." />
+  <meta property="og:url" content="https://realiracing.com/blog/gateway-iracing-oval-guide-setup-strategy.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/track-corner.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="715" />
+  <meta property="og:image:alt" content="A race car through a corner" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/track-corner.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261123" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Gateway (WWTRaceway) iRacing Oval Guide: Setup, Line, Strategy",
+    "description": "Master Gateway's high-banked oval layout. Learn racing line, braking points, setup tuning, and fuel strategy for consistent wins.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/gateway-iracing-oval-guide-setup-strategy.html",
+    "image": "https://realiracing.com/assets/photos/track-corner.jpg",
+    "datePublished": "2026-11-02",
+    "dateModified": "2026-11-02"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Gateway (WWTRaceway) iRacing Oval Guide: Setup, Line, Strategy","item":"https://realiracing.com/blog/gateway-iracing-oval-guide-setup-strategy.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/gateway-iracing-oval-guide-setup-strategy.html#rir-gear"},{"@type":"ListItem","position":2,"name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup — high refresh matters more than size","url":"https://realiracing.com/blog/gateway-iracing-oval-guide-setup-strategy.html#rir-gear"},{"@type":"ListItem","position":3,"name":"NVIDIA GeForce RTX 5060 Ti (8 GB)","description":"renders iRacing and NVENC-encodes the stream on the same chip","url":"https://realiracing.com/blog/gateway-iracing-oval-guide-setup-strategy.html#rir-gear"},{"@type":"ListItem","position":4,"name":"AMD Ryzen 7 5700","description":"8 cores — plenty for iRacing plus OBS on one PC","url":"https://realiracing.com/blog/gateway-iracing-oval-guide-setup-strategy.html#rir-gear"}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the best brake point at Gateway turn 1?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Use the start/finish line stripe or the first turn's entrance marker as your visual reference. Brake when that marker is roughly 2-3 car lengths ahead, which translates to braking around the 2500-2300-foot marker depending on your car's braking power. The key is consistency; mark it visually and hit it every lap rather than chasing a specific footage number." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much fuel do I need for a 60-lap race at Gateway?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most oval cars get 3.5 to 4.5 miles per gallon. At 1.3 miles per lap, that is roughly 17-20 laps per gallon. A 60-lap race is 78 miles, requiring 17-22 gallons depending on your pace and car. Add 1-2 gallons of safety margin. Test this in practice by running your race pace for 10-15 laps, checking fuel used, and calculating forward." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I adjust setup differently for qualifying versus racing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. For qualifying, run slightly softer springs and anti-roll bars to reduce tire load and improve one-lap pace. For racing, increase stiffness to help the car handle over 20-30 consecutive laps and to reduce tire wear from overloading. The difference is usually 5-10 clicks on each bar and 10-15 N/mm on springs." }
+    },
+    {
+      "@type": "Question",
+      "name": "What causes the car to be loose exiting turn 4?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Trailing-throttle oversteer caused by the rear tires losing grip as you transition from braking to throttle. Increase rear anti-roll bar stiffness by 3-5 clicks, stiffen rear dampers (compression), or increase rear brake balance slightly to shift weight forward. Also check that you are not braking too hard into turn 4; a lighter brake application leaves more grip available for the exit." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Track Guides · Oval Racing</p>
+    <h1>Gateway (WWTRaceway) iRacing Oval Guide: Setup, Line, Strategy</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated November 2, 2026</span>
+      <span class="dot">·</span>
+      <span>9 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/track-corner.jpg" width="1000" height="715" alt="A race car through a corner" srcset="/assets/photos/track-corner-sm.jpg 560w, /assets/photos/track-corner.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Photo: <a href="https://www.flickr.com/photos/36021014@N06" target="_blank" rel="noopener nofollow">Michael Elleray</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener nofollow">CC BY 2.0</a> · Source: <a href="https://www.flickr.com/photos/36021014@N06/8093250997" target="_blank" rel="noopener nofollow">Flickr</a></figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">World Wide Technology Raceway, commonly called Gateway, is a 1.3-mile D-shaped oval with 20-degree banking that sits roughly halfway between the flat, demanding precision of short tracks and the high-speed flow of intermediate ovals. The layout rewards smooth steering input, consistent throttle management, and a setup that balances side-bite under load with stability off the throttle. Whether you are running the stock car classes or oval racing in a lower-tier series, Gateway's unique geometry makes setup and racecraft distinct from Bristol or Martinsville. This guide covers the line through each corner, how to find extra grip without pushing the car loose, fuel strategy for longer races, and common mistakes that cost tenths every lap.</p>
+
+      <h2>The racing line through Gateway's main corners</h2>
+
+      <p>Gateway's racing surface breaks into two main sections: the banked turns 1-2 and the tighter, less-banked turns 3-4. The distinction matters because your entry speed, apex placement, and throttle application differ significantly. Turn 1, the faster half of the track, begins the moment you cross the start/finish line. You want to brake hard and early, targeting the low apron at the brake point, then drift high into the corner. The banking helps you carry speed, but too much entry speed pushes you up the track; too little and you lose the aero benefit of the banking and run a wider arc.</p>
+
+      <p>The apex of turn 1 should be near the middle of the track at roughly the halfway point of the corner. At that apex, you are already on throttle, gradually rolling it open as you work toward the exit. By the time you reach the exit, the car should be pointed up toward the wall, and you should be at or near full throttle. A common mistake is turning in too late and exiting too low; this forces you to go slower into turn 2 because you are not set up to use the banking efficiently.</p>
+
+      <p>Turn 2 flows directly from turn 1. It is shallower and slightly more banked. Many drivers brake again between turns 1 and 2, but the best approach is to hold steady throttle or lift only, then reapply throttle immediately as you turn in. Braking twice in quick succession scrubs speed; holding throttle and using the banking's mechanical grip is faster. Your line should be high entry, apex mid-corner, and exit low into the straightaway, setting up for the turn-3 brake zone.</p>
+
+      <p>Turns 3 and 4 form the tighter half of the oval. The banking here is less aggressive, so mechanical grip and your car's balance matter more. Turn 3 is where speed differences between drivers show. You need a strong, confident brake application; trail braking into this corner will often cause the rear to slide. Brake in a straight line, slow to the target speed, then turn in. The apex is middle to low-middle of the track, and you should be on throttle by the exit. Turn 4 is fast and shallow; treat it almost like an extension of turn 3. Early throttle, hold the outside groove, and roll speed into the front straightaway.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Apex placement matters</span>
+        <p>Most drivers lose time at Gateway by turning in too early at turns 1 and 3. The banking makes late apexes faster than they feel. Practice hitting the apex at 50-55% of the corner length, not 40%.</p>
+      </div>
+
+      <h2>Setup tuning: banking, side-bite, and stability</h2>
+
+      <p>Gateway's 20-degree banking is steep enough to provide aero and mechanical grip benefits, but not so steep that you can ignore balance. A baseline setup should prioritize side-bite (lateral stiffness) and a slight front downforce bias to keep the nose planted under braking. Start with a common low-downforce oval setup and tune from there.</p>
+
+      <ul>
+        <li>Anti-roll bars (sway bars): Run stiff front, softer rear to help the front grip turn-in and reduce understeer on entry. A common starting point is front around 50-60 clicks, rear around 25-35 clicks, depending on the car class. The stiffer front helps bite into the banking; the softer rear prevents the car from being too nervous.</li>
+        <li>Springs: Oval setups typically run medium to stiff springs (~150-200 N/mm front, ~180-240 N/mm rear). The stiffer springs help the car respond to banking and reduce roll. Start stiff and soften only if the car feels harsh or unpredictable.</li>
+        <li>Dampers (shocks): High-speed damping (compression under cornering load) should be moderate to stiff to reduce body roll. Low-speed damping (slow suspension compliance) should allow some travel so the car does not feel like a pogo stick over minor bumps. A common split is 25-35 clicks compression, 20-30 clicks rebound.</li>
+        <li>Downforce: Run just enough front wing to keep the nose stable under braking, typically 2-3 clicks of front wing. Too much front downforce causes understeer mid-corner; too little makes braking unstable. Rear wing should be minimal, around 1 click.</li>
+        <li>Brake balance: Favour the front (55-60% front, 40-45% rear) to keep the car stable under braking and reduce trailing-throttle oversteer. The banking helps rear grip, so a front-biased brake balance is safe and faster.</li>
+      </ul>
+
+      <p>Tuning from a baseline should focus on two problems: understeer and oversteer. If the car understeers on entry (push) at turns 1 and 3, increase front anti-roll bar stiffness by 3-5 clicks, add a touch of front downforce, or soften the rear anti-roll bar. If the car oversteers off-throttle (loose) exiting turns 2 and 4, increase rear anti-roll bar stiffness or stiffen rear dampers slightly. Gateway is sensitive to small changes; adjust one setting at a time and do three to five laps before moving to the next.</p>
+
+      <h2>Fuel strategy and tire wear over long races</h2>
+
+      <p>Gateway races often run 30 to 60 laps depending on the series. Fuel mileage on most oval cars is around 3.5 to 4.5 miles per gallon, meaning a 60-lap race requires careful planning. The key is to start with enough fuel to run a reasonable first stint (usually 15-20 laps) without pitting, then plan pit stops to avoid traffic and high-fuel strategies that slow the car.</p>
+
+      <p>Tire wear is gradual on Gateway. The smoother line and slower corner speeds mean tires do not degrade as quickly as on road courses. Expect tires to peak around lap 12-15, then gradually lose grip for the next 15-20 laps. A two-stop race would involve a green-flag pit around lap 15-20, a second stop around lap 40-45, and a final run to the finish. A one-stop strategy works if fuel allows; run the first stint aggressively on fresh tires, then settle into fuel mileage mode for the final stint.</p>
+
+      <ul>
+        <li>Early stops (lap 15-20): Fast, but you run the back half of the race on older tires and may lose track position to drivers who stop later.</li>
+        <li>Middle stops (lap 25-30): Balances fresh tires for the run to the finish with reasonable track position. Most competitive drivers use this window.</li>
+        <li>Late stops (lap 35-40): Minimizes laps on worn tires but requires very tight fuel mileage and may leave you short on fuel if cautions extend the race.</li>
+      </ul>
+
+      <p>Watch fuel consumption during qualifying and practice. Run your race pace for 3-5 laps, check fuel used, and calculate total fuel needed for your stint length. Round up by 0.5 gallons to account for safety margin. In a race, do not chase down a car ahead if it costs more fuel than you planned; patience and consistent lap times beat aggressive fuel consumption early.</p>
+
+      <h2>Racecraft and passing at Gateway</h2>
+
+      <p>Passing at Gateway happens primarily on the straights and into turn 1. The banked corners are wide enough that dive-bombing the inside rarely works; instead, set up a tow down the straightaway, use the slipstream to build a run, and pass into the braking zone at turn 1 or turn 3.</p>
+
+      <p>Respect the racing line when defending. A driver behind you will try to slingshot out of turn 4 or turn 2 to gain a run. Block the inside line into turn 1 or 3, but do not move suddenly; sudden direction changes cause contact and loose cars. Hold your line, brake predictably, and let them make a clean attempt or back out. Aggressive defending usually backfires at Gateway because there is room for two cars through the corners if both drivers are smooth.</p>
+
+      <p>Cautions bunch the field, so manage tire and fuel strategy around yellow-flag cycles. If a caution comes late in the race with few laps remaining, ensure your pit strategy accounts for it. Do not over-fuel on a late-race restart if you had planned a green-flag stop; you will be heavier and slower than competitors on fresher tires.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Consistency beats pace</span>
+        <p>The car that makes fewer mistakes wins at Gateway, not the car that is fastest in isolation. Smooth inputs, consistent speed, and clean exits matter more than one-lap heroics.</p>
+      </div>
+
+      <h2>Common mistakes to avoid</h2>
+
+      <ul>
+        <li>Braking too late or hard into turn 1: The banking and the need to carry speed into turn 2 mean you should brake early and soft, not late and aggressive. A locked rear at the brake point costs more time than an early apex.</li>
+        <li>Over-correcting the car mid-corner: The banking amplifies steering input. Small changes in wheel position cause big changes in grip. Smooth, deliberate steering will find more speed than tentative, reactive inputs.</li>
+        <li>Running too low on fuel and losing pace in the final laps: Plan your fuel to finish the race at your target pace, not to coast across the line with fumes. The last five laps are where passes happen; do not be a sitting duck.</li>
+        <li>Ignoring tire temperature: Cold tires at the start of a long stint have less grip. Warm them gently for the first lap, then push. Jumping on the throttle with cold tires causes oversteer and ruins your qualifying or race start.</li>
+        <li>Adjusting setup mid-race based on one lap: Tire fatigue and fuel load change lap-to-lap. Do not pit and change downforce or bars after one bad lap. Give the setup three to five laps to stabilize before deciding on a change.</li>
+      </ul>
+
+      <h2>Practice routine for Gateway</h2>
+
+      <p>Spend your first practice session learning the racing line and finding your personal brake markers. You are not chasing pace yet; mark your braking zone at each corner with a landmark (the wall stripe, the grandstand post, a specific tire mark). Once you have repeatable markers, speed will come naturally.</p>
+
+      <p>In your second practice, run qualifying simulations. Three laps on fresh tires, pushing hard on lap 2 (after a warm-up lap), then cool-down. Note your best lap, the setup you used, and any loose or tight spots. If the car is unstable, do one setup change and repeat the drill.</p>
+
+      <p>Final practice should be race pace simulation. Run 20-25 laps on a simulated race fuel load and tire age, hitting your target lap time consistently. This teaches you how the car degrades, how fuel weight feels, and whether your strategy is realistic. You will often find that you are one to two tenths slower on lap 20 than lap 5; plan your race pace around that degradation, not your best practice lap.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=gateway-iracing-oval-guide-setup-strategy">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup — high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=RTX+5060+Ti+8GB+graphics+card&amp;tag=realiracing-20" data-aff="gpu-rtx-5060-ti" target="_blank" rel="sponsored noopener">NVIDIA GeForce RTX 5060 Ti (8 GB)</a></th><td>renders iRacing and NVENC-encodes the stream on the same chip</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=AMD+Ryzen+7+5700+processor&amp;rh=p_89%3AAMD&amp;tag=realiracing-20" data-aff="cpu-ryzen-7-5700" target="_blank" rel="sponsored noopener">AMD Ryzen 7 5700</a></th><td>8 cores — plenty for iRacing plus OBS on one PC</td><td><span class="rig-badge">Raced on</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>What is the best brake point at Gateway turn 1?</h3>
+        <p>Use the start/finish line stripe or the first turn's entrance marker as your visual reference. Brake when that marker is roughly 2-3 car lengths ahead, which translates to braking around the 2500-2300-foot marker depending on your car's braking power. The key is consistency; mark it visually and hit it every lap rather than chasing a specific footage number.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How much fuel do I need for a 60-lap race at Gateway?</h3>
+        <p>Most oval cars get 3.5 to 4.5 miles per gallon. At 1.3 miles per lap, that is roughly 17-20 laps per gallon. A 60-lap race is 78 miles, requiring 17-22 gallons depending on your pace and car. Add 1-2 gallons of safety margin. Test this in practice by running your race pace for 10-15 laps, checking fuel used, and calculating forward.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I adjust setup differently for qualifying versus racing?</h3>
+        <p>Yes. For qualifying, run slightly softer springs and anti-roll bars to reduce tire load and improve one-lap pace. For racing, increase stiffness to help the car handle over 20-30 consecutive laps and to reduce tire wear from overloading. The difference is usually 5-10 clicks on each bar and 10-15 N/mm on springs.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What causes the car to be loose exiting turn 4?</h3>
+        <p>Trailing-throttle oversteer caused by the rear tires losing grip as you transition from braking to throttle. Increase rear anti-roll bar stiffness by 3-5 clicks, stiffen rear dampers (compression), or increase rear brake balance slightly to shift weight forward. Also check that you are not braking too hard into turn 4; a lighter brake application leaves more grip available for the exit.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="detroit-belle-isle-iracing-guide-walls-bumps.html"><span>Track Guides</span>Detroit Belle Isle iRacing Guide: Walls, Bumps, and Street Circuit Damage</a>
+      <a class="related-card" href="st-petersburg-street-circuit-iracing-guide.html"><span>Track Guides</span>St. Petersburg Street Circuit iRacing Guide: Smooth Lines and Late Braking</a>
+      <a class="related-card" href="imola-iracing-guide-kerbs-chicanes-braking.html"><span>Track Guides</span>Imola iRacing Guide: Master the Kerbs, Chicanes, and Braking Zones</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong></p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/nav.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","monitor-1440p-120","gpu-rtx-5060-ti","cpu-ryzen-7-5700"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
