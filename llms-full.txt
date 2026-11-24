@@ -18,6 +18,7 @@
 
 ## All blog posts (newest first)
 
+- [MOZA Pit House Presets for iRacing: One Per Car Class](https://realiracing.com/blog/moza-pit-house-presets-iracing-one-per-car-class.html): How I organise MOZA Pit House presets for iRacing on an R9, one per car class, with the naming scheme and what changes for GT3, formula and oval.
 - [iRacing Dynamic Track: Rubber, Marbles and Temperature](https://realiracing.com/blog/iracing-dynamic-track-rubber-marbles-track-temperature.html): A beginner guide to iRacing's dynamic track: how rubber, marbles and track temperature change grip, and what I do about each from my MOZA R9 rig.
 - [iRacing Week 13: What I Do in the Off-Week | RealIRacing](https://realiracing.com/blog/iracing-week-13-off-week-between-seasons-checklist.html): Week 13 is the quiet gap between iRacing seasons. Here is how I use it on my MOZA R9 rig: rest, rig checks, calibration, FFB cleanup and practice.
 - [First Week With a New Wheelbase: iRacing Setup Checklist](https://realiracing.com/blog/first-week-new-wheelbase-iracing-setup-checklist.html): A day-by-day plan for your first week with a new direct drive wheelbase, from tightening bolts to your first iRacing race, based on my MOZA R9 rig.
@@ -47,7 +48,6 @@
 - [Belgian GP 2025 at Spa: My Grandstand Clips | RealIRacing](https://realiracing.com/blog/spa-francorchamps-2025-belgian-gp-from-the-grandstand.html): My phone clips from the 2025 F1 Belgian Grand Prix at Spa-Francorchamps, filmed from the grandstand at La Source.
 - [2023 YellaWood 500 at Talladega: Filmed From the Stands](https://realiracing.com/blog/talladega-2023-yellawood-500-from-the-grandstand.html): I filmed the 2023 YellaWood 500 at Talladega from the grandstand: the pack, pit road and a 0.012-second photo finish.
 - [iRacing Hockenheim: Mazda MX-5 From P20 to P14 | RealIRacing](https://realiracing.com/blog/iracing-hockenheim-mx5-p20-to-p14.html): Clips from my iRacing Mazda MX-5 race at Hockenheim. I started P20 and finished P14. This is a racing simulator, not real life.
-- [iRacing at the Nordschleife: Clips From the Ring](https://realiracing.com/blog/iracing-nordschleife-stream-clips.html): Short iRacing clips from the Nürburgring Nordschleife: starts, GT cars, forest corners and rain, filmed in a racing simulator.
 
 ## More
 - Sitemap: https://realiracing.com/sitemap.xml

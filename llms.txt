@@ -18,6 +18,7 @@
 
 ## Latest blog posts (newest first)
 
+- [MOZA Pit House Presets for iRacing: One Per Car Class](https://realiracing.com/blog/moza-pit-house-presets-iracing-one-per-car-class.html): How I organise MOZA Pit House presets for iRacing on an R9, one per car class, with the naming scheme and what changes for GT3, formula and oval.
 - [iRacing Dynamic Track: Rubber, Marbles and Temperature](https://realiracing.com/blog/iracing-dynamic-track-rubber-marbles-track-temperature.html): A beginner guide to iRacing's dynamic track: how rubber, marbles and track temperature change grip, and what I do about each from my MOZA R9 rig.
 - [iRacing Week 13: What I Do in the Off-Week | RealIRacing](https://realiracing.com/blog/iracing-week-13-off-week-between-seasons-checklist.html): Week 13 is the quiet gap between iRacing seasons. Here is how I use it on my MOZA R9 rig: rest, rig checks, calibration, FFB cleanup and practice.
 - [First Week With a New Wheelbase: iRacing Setup Checklist](https://realiracing.com/blog/first-week-new-wheelbase-iracing-setup-checklist.html): A day-by-day plan for your first week with a new direct drive wheelbase, from tightening bolts to your first iRacing race, based on my MOZA R9 rig.
@@ -37,7 +38,6 @@
 - [Throttle Pedal Feel: Travel, Spring and Calibration](https://realiracing.com/blog/throttle-pedal-feel-load-cell-travel-spring-calibration.html): How I set up the throttle on my MOZA CRP2 pedals for smoother exits: travel, spring choice, plate angle and calibration, with the mistakes I made first.
 - [iRacing Pit Road Etiquette: How I Stopped Taking Speeding Penalties](https://realiracing.com/blog/iracing-pit-road-etiquette-avoid-speeding-penalties.html): How I approach iRacing pit road with a MOZA R9 and CRP2: limiter timing, entry line, box position and exit, so speeding penalties stop costing races.
 - [My iRacing pre-race routine: the five minutes before green](https://realiracing.com/blog/iracing-pre-race-routine-five-minutes-before-green.html): The checks I run between qualifying and the green flag in iRacing: fuel, setup, brake bias, FFB, pedals, the entry list and a calm head for turn one.
-- [Grip pressure and hand position on a direct drive wheel](https://realiracing.com/blog/grip-pressure-hand-position-direct-drive-wheel-iracing.html): Why a death grip hides force feedback detail in iRacing, how to hold a direct drive wheel, and a practice routine to test your own grip pressure.
 
 ## More
 - Every post, one line each: https://realiracing.com/llms-full.txt
