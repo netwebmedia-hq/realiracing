@@ -114,6 +114,12 @@
   gtag('js', new Date());
   gtag('config', ID, { anonymize_ip: true });
 
+  // Back from the double opt-in confirmation page (api-php brand_welcome): ONE key event, then clean the URL.
+  if (/[?&]subscribed=1/.test(location.search)) {
+    gtag('event', 'generate_lead', { method: 'double_opt_in', brand: 'realiracing' });
+    try { history.replaceState(null, '', location.pathname + location.hash); } catch (e) {}
+  }
+
   // Affiliate clicks are the revenue event. Logged by name so they can be marked
   // a key event in GA4, instead of hunting for them among generic outbound clicks.
   document.addEventListener('click', function (e) {

@@ -645,3 +645,7 @@ a.blog-pager-link:hover { border-color: var(--accent); color: var(--accent); }
 .blog-chip:focus-visible { outline: 2px solid var(--accent2); outline-offset: 2px; }
 .blog-chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #0a0a0a; }
 @media (max-width: 640px) { .blog-filter { margin-top: 20px; padding: 0 16px; } .blog-filter + .blog-grid { margin-top: 16px; } }
+.rir-consent { display: block; max-width: 440px; margin: 10px auto 0; font-size: 0.8rem; line-height: 1.45; text-align: left; }
+.rir-consent input { margin-right: 6px; }
+.rir-consent a { text-decoration: underline; }
+.rir-join.done .rir-consent { display: none; }
