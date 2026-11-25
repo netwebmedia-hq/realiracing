@@ -1,0 +1,183 @@
+{
+  "slug": "back-up-iracing-settings-before-update-reinstall-moza-r9",
+  "tag": "Setup · Maintenance",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "Back Up Your iRacing Settings Before an Update or Reinstall: What I Copy and How I Restore on a MOZA R9 Rig",
+  "description": "What to copy from Documents\\iRacing, what lives in MOZA Pit House instead, and how I restore both on a MOZA R9 and CRP2 rig after an update or reinstall.",
+  "published": "2026-11-25",
+  "dateLabel": "November 25, 2026",
+  "gearKeys": [
+    "moza-r9",
+    "moza-crp2",
+    "cockpit"
+  ],
+  "sections": [
+    {
+      "p": "Picture the evening. You have a race coming up, you sit down in the seat, and you decide to get the sim sorted first. Maybe it is a reinstall because something stuttered, maybe it is a Windows change, maybe you just want a clean start. Twenty minutes later iRacing opens, and the wheel is centred wrong, the pedals are bound to the wrong axes, the graphics are back to defaults, and you cannot remember what you had the force feedback set to. The setup that took weeks to settle is gone, and you are rebuilding it from memory when you should be warming up."
+    },
+    {
+      "p": "I run a MOZA R9 (~9 N.m class direct drive), CRP2 pedals and a fixed aluminium cockpit, and I now treat a backup as the first step of any update or reinstall, not an afterthought. It takes a few minutes. This post covers what I copy, when I copy it, and how I put it all back."
+    },
+    {
+      "h2": "The honest reason most people skip this"
+    },
+    {
+      "p": "Nobody backs up settings because nothing has gone wrong yet. The sim works, the wheel feels right, and the folder with your configuration is invisible in daily use. You only learn it mattered on the day it vanishes. I would rather be slightly annoyed at copying a folder that turned out to be fine than be sure I have lost my bindings and calibration."
+    },
+    {
+      "p": "The other reason is that the settings are split across two places, and people back up one and forget the other. That split is the most important idea in this post, so I will start there."
+    },
+    {
+      "h2": "Two places your setup lives"
+    },
+    {
+      "p": "On a MOZA rig, your configuration is not in one location. It is in two, and each one is looked after by different software."
+    },
+    {
+      "list": [
+        "The iRacing user folder. On Windows this is Documents\\iRacing. It holds your sim-side settings: app.ini, controls.cfg, joyCalib.yaml and the renderer files such as rendererDX11Monitor.ini.",
+        "MOZA Pit House. The wheel base software keeps its own presets separately from iRacing. Your force feedback profiles and base-side settings live there, and you export them from that software, not from the iRacing folder."
+      ]
+    },
+    {
+      "p": "If you only copy Documents\\iRacing, you keep your sim configuration but not your wheel base presets. If you only export from Pit House, you keep the base tuning but lose bindings and graphics. You need both, and I do them together every time."
+    },
+    {
+      "h2": "What I copy from Documents\\iRacing"
+    },
+    {
+      "p": "The simplest approach is to copy the whole Documents\\iRacing folder. That is what I do, because it removes any need to remember which file does what. If you prefer to be selective, these are the files I would not want to lose:"
+    },
+    {
+      "list": [
+        "app.ini, the main sim settings file.",
+        "controls.cfg, which is where I would look for my control assignments.",
+        "joyCalib.yaml, the calibration data for the wheel and pedals.",
+        "Renderer .ini files such as rendererDX11Monitor.ini, which carry the graphics configuration for your display setup."
+      ]
+    },
+    {
+      "p": "The folder contains more than these files, and I do not claim to know the role of every item in it. That is exactly why I copy the whole thing and treat the named files as the ones I check first when I restore."
+    },
+    {
+      "tip": "Close iRacing and the iRacing UI completely before you copy. A running sim can be writing to those files while you copy them, and a half-written backup is worse than none because you will trust it. Check the system tray as well as the taskbar.",
+      "tipLabel": "Close the sim first"
+    },
+    {
+      "h2": "What I export from Pit House"
+    },
+    {
+      "p": "Pit House is where the base itself gets tuned, so this is the half people forget. I open the software and export my presets using its own export function. The exact menu wording depends on your version, so I will not pretend to give you a click path. The principle is what matters: get the presets out as files you can store, rather than trusting that the software will still remember them after a reinstall."
+    },
+    {
+      "p": "Before I export, I save my current setup under a name that says what it is. A preset called Test2 is useless in three months. I name mine by car type or by feel, so when I import later I know which one I am reaching for."
+    },
+    {
+      "p": "If you are unsure how the force feedback choices in those presets interact with what iRacing is doing on the sim side, I wrote about that in <a href=\"iracing-force-feedback-explained.html\">iRacing force feedback explained</a>. It is worth reading before you restore, because it helps you judge whether a restored profile feels the way you intended."
+    },
+    {
+      "h2": "When I make the backup"
+    },
+    {
+      "p": "There are specific moments where I copy first, no exceptions."
+    },
+    {
+      "olist": [
+        "Before an iRacing update or a sim reinstall. This is the obvious one.",
+        "Before a Windows update that is bigger than the routine ones, or any time I am reinstalling Windows.",
+        "Before updating Pit House or flashing new firmware on the base. Software and firmware changes are the moments I least want to be relying on memory.",
+        "Before I swap the wheel rim, pedals or any hardware that changes the calibration picture.",
+        "After I finally get a setup feeling right. This is the one people miss. A backup of a good state is worth more than a backup taken at a random moment."
+      ]
+    },
+    {
+      "p": "That last one has changed how I work. I used to back up only defensively. Now when a session ends and the wheel feels right, the pedal travel feels right and the graphics are stable, I copy the folder and export the preset the same evening. Then I always have a known-good point to return to, rather than a vague idea of one."
+    },
+    {
+      "h2": "Where I keep the copies"
+    },
+    {
+      "p": "I keep the backup somewhere that is not the drive I am about to touch. If a reinstall wipes the system drive and my backup was sitting on it, I have achieved nothing. A second drive, an external drive or a cloud folder all work, as long as the copy survives the thing you are about to do."
+    },
+    {
+      "p": "I also add the date to the folder name, for example iRacing-settings-2026-11-25. When you keep more than one backup, the date tells you which is the newer, and it stops you from restoring an older configuration over a better one by accident."
+    },
+    {
+      "p": "Keep the Pit House export next to it, in the same dated folder. One folder, two halves of the same setup, so there is never a question about which preset belongs with which iRacing configuration."
+    },
+    {
+      "h2": "How I restore"
+    },
+    {
+      "p": "Restoring is the same discipline in reverse. Order matters, and so does not rushing."
+    },
+    {
+      "olist": [
+        "Finish the update or reinstall first. Let iRacing install and run through whatever first-launch process it needs, then close it fully.",
+        "Make sure the sim and the UI are closed. Same rule as when copying.",
+        "Copy the backed-up files, or the whole folder, back into Documents\\iRacing, replacing what is there.",
+        "Open Pit House and import your exported presets. Confirm the base is connected and the preset you want is the active one.",
+        "Launch iRacing and check the basics before you load into a session: that the wheel turns the right way, that the pedals register on the right axes, and that the graphics look as you left them."
+      ]
+    },
+    {
+      "p": "I deliberately let the sim run once before restoring, then close it, rather than pasting files into an empty folder that does not exist yet. A reinstalled sim may create the folder fresh, and I want the structure in place before I overwrite anything. If your reinstall leaves the folder as is, you can simply copy over it."
+    },
+    {
+      "tip": "If you restored and something feels off, do not panic and start changing ten things. Restore the files again from the backup, confirm the sim was closed, and test one thing at a time. Most of my restore surprises were me skipping a step, not a broken backup.",
+      "tipLabel": "If it feels off"
+    },
+    {
+      "h2": "Check the pedals and the centre after restoring"
+    },
+    {
+      "p": "This is where my CRP2 pedals get a quick look. Calibration data is one of the things in the backup, but I still press each pedal to full travel and watch the input in the sim before I trust it. It costs a minute. The same goes for wheel rotation and centre on the R9. If calibration looks wrong, I re-run it rather than assume the backup is at fault, because hardware that has been moved or re-plugged can present differently."
+    },
+    {
+      "p": "On a fixed aluminium cockpit this is quicker than it sounds, because nothing about the mounting has moved. The pedals and the base sit where they were. When a restore feels wrong on a rigid rig, the cause is almost always software, which narrows down your checking."
+    },
+    {
+      "h2": "The mistakes I see, and have made"
+    },
+    {
+      "list": [
+        "Copying while the sim is still running, or while the UI is minimised in the background.",
+        "Backing up the iRacing folder and forgetting Pit House entirely.",
+        "Storing the only copy on the drive being wiped.",
+        "Restoring an old backup over a newer, better configuration because the folders were not dated.",
+        "Never testing a restore, then discovering the backup was incomplete on the day it mattered."
+      ]
+    },
+    {
+      "p": "That last one deserves a plain statement. A backup you have never restored is a hope, not a plan. I do not claim any backup method is perfect, and I would not describe mine as foolproof. What I can say is that doing a trial restore once, when nothing is at stake, tells you whether you copied the right things."
+    },
+    {
+      "h2": "A short routine you can actually keep"
+    },
+    {
+      "p": "If this reads like a lot, it is not. The routine fits in a few lines: close the sim, copy Documents\\iRacing to a dated folder on another drive, export Pit House presets into the same folder, and do it again whenever the setup is in a good place. Restoring is the same steps in reverse, with the sim closed. Do it before every update and every reinstall, and the day something goes wrong becomes a minor delay instead of a lost evening."
+    },
+    {
+      "p": "Your wheel feel and your bindings are worth more than the few minutes this takes. I would rather spend those minutes on a copy than on rebuilding from memory with a race waiting."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Where does iRacing store my settings on Windows?",
+      "a": "User settings are kept in the Documents\\iRacing folder. It includes files such as app.ini, controls.cfg, joyCalib.yaml and renderer .ini files like rendererDX11Monitor.ini. I copy the whole folder rather than picking files."
+    },
+    {
+      "q": "Does backing up the iRacing folder also save my MOZA base settings?",
+      "a": "No. Wheel base software such as MOZA Pit House keeps its own presets separately, so you need to export them from that software. I back up both and store them together in one dated folder."
+    },
+    {
+      "q": "Does iRacing need to be closed when I copy or restore the files?",
+      "a": "Yes. Close iRacing and the iRacing UI before copying, and keep the sim closed while you copy the files back. This avoids copying files while the sim may be writing to them."
+    },
+    {
+      "q": "When should I make a backup?",
+      "a": "Before an iRacing update or reinstall, before a major Windows change, and before updating Pit House or the base firmware. I also back up whenever I finish a session with a setup that feels right, so I have a known-good point to return to."
+    }
+  ]
+}
