@@ -18,6 +18,7 @@
 
 ## Latest blog posts (newest first)
 
+- [Back Up Your iRacing Settings Before an Update or Reinstall: What I Copy and How I Restore on a MOZA R9 Rig](https://realiracing.com/blog/back-up-iracing-settings-before-update-reinstall-moza-r9.html): What to copy from Documents\iRacing, what lives in MOZA Pit House instead, and how I restore both on a MOZA R9 and CRP2 rig after an update or reinstall.
 - [MOZA Pit House Presets for iRacing: One Per Car Class](https://realiracing.com/blog/moza-pit-house-presets-iracing-one-per-car-class.html): How I organise MOZA Pit House presets for iRacing on an R9, one per car class, with the naming scheme and what changes for GT3, formula and oval.
 - [iRacing Dynamic Track: Rubber, Marbles and Temperature](https://realiracing.com/blog/iracing-dynamic-track-rubber-marbles-track-temperature.html): A beginner guide to iRacing's dynamic track: how rubber, marbles and track temperature change grip, and what I do about each from my MOZA R9 rig.
 - [iRacing Week 13: What I Do in the Off-Week | RealIRacing](https://realiracing.com/blog/iracing-week-13-off-week-between-seasons-checklist.html): Week 13 is the quiet gap between iRacing seasons. Here is how I use it on my MOZA R9 rig: rest, rig checks, calibration, FFB cleanup and practice.
@@ -37,7 +38,6 @@
 - [ABS and Traction Control in iRacing: When to Use Them and When to Turn Them Off](https://realiracing.com/blog/abs-and-traction-control-in-iracing-when-to-use-them.html): ABS and traction control help you stay on track but hide feedback. Here is how I decide when to keep them on, when to lower them, and what they change.
 - [iRacing Endurance Classics: Daytona 24, Sebring 12, Spa 24, Petit Le Mans](https://realiracing.com/blog/iracing-endurance-classics-daytona-sebring-spa-petit.html): Survive iRacing's toughest multi-hour events. Learn fuel strategy, driver discipline, and setup for 12- and 24-hour classics.
 - [Throttle Pedal Feel: Travel, Spring and Calibration](https://realiracing.com/blog/throttle-pedal-feel-load-cell-travel-spring-calibration.html): How I set up the throttle on my MOZA CRP2 pedals for smoother exits: travel, spring choice, plate angle and calibration, with the mistakes I made first.
-- [iRacing Pit Road Etiquette: How I Stopped Taking Speeding Penalties](https://realiracing.com/blog/iracing-pit-road-etiquette-avoid-speeding-penalties.html): How I approach iRacing pit road with a MOZA R9 and CRP2: limiter timing, entry line, box position and exit, so speeding penalties stop costing races.
 
 ## More
 - Every post, one line each: https://realiracing.com/llms-full.txt

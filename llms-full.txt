@@ -18,6 +18,7 @@
 
 ## All blog posts (newest first)
 
+- [Back Up Your iRacing Settings Before an Update or Reinstall: What I Copy and How I Restore on a MOZA R9 Rig](https://realiracing.com/blog/back-up-iracing-settings-before-update-reinstall-moza-r9.html): What to copy from Documents\iRacing, what lives in MOZA Pit House instead, and how I restore both on a MOZA R9 and CRP2 rig after an update or reinstall.
 - [MOZA Pit House Presets for iRacing: One Per Car Class](https://realiracing.com/blog/moza-pit-house-presets-iracing-one-per-car-class.html): How I organise MOZA Pit House presets for iRacing on an R9, one per car class, with the naming scheme and what changes for GT3, formula and oval.
 - [iRacing Dynamic Track: Rubber, Marbles and Temperature](https://realiracing.com/blog/iracing-dynamic-track-rubber-marbles-track-temperature.html): A beginner guide to iRacing's dynamic track: how rubber, marbles and track temperature change grip, and what I do about each from my MOZA R9 rig.
 - [iRacing Week 13: What I Do in the Off-Week | RealIRacing](https://realiracing.com/blog/iracing-week-13-off-week-between-seasons-checklist.html): Week 13 is the quiet gap between iRacing seasons. Here is how I use it on my MOZA R9 rig: rest, rig checks, calibration, FFB cleanup and practice.
@@ -47,7 +48,6 @@
 - [I Drove the Nordschleife in Heavy Rain: Golf GTI 2025 | RealIRacing](https://realiracing.com/blog/nordschleife-in-heavy-rain-golf-gti-back-seat.html): I drove a VW Golf GTI MK7 around the Nürburgring Nordschleife in heavy rain on July 29, 2025. Onboard clips, filmed from inside the car.
 - [Rally Chile 2019: My Stage Side Clips | RealIRacing](https://realiracing.com/blog/rally-chile-2019-stage-side.html): I filmed Rally Chile 2019 on my phone from the side of the stages near Concepción. What happened, and what my clips show.
 - [Belgian GP 2025 at Spa: My Grandstand Clips | RealIRacing](https://realiracing.com/blog/spa-francorchamps-2025-belgian-gp-from-the-grandstand.html): My phone clips from the 2025 F1 Belgian Grand Prix at Spa-Francorchamps, filmed from the grandstand at La Source.
-- [2023 YellaWood 500 at Talladega: Filmed From the Stands](https://realiracing.com/blog/talladega-2023-yellawood-500-from-the-grandstand.html): I filmed the 2023 YellaWood 500 at Talladega from the grandstand: the pack, pit road and a 0.012-second photo finish.
 
 ## More
 - Sitemap: https://realiracing.com/sitemap.xml
