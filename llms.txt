@@ -18,6 +18,7 @@
 
 ## Latest blog posts (newest first)
 
+- [iRacing Active Reset: Practise One Corner on Repeat](https://realiracing.com/blog/iracing-active-reset-practise-one-corner-on-repeat.html): How I use iRacing Active Reset on a MOZA R9 and CRP2 rig to drill a single braking zone: the two binds, the save point and a one-variable drill.
 - [Back Up Your iRacing Settings Before an Update or Reinstall: What I Copy and How I Restore on a MOZA R9 Rig](https://realiracing.com/blog/back-up-iracing-settings-before-update-reinstall-moza-r9.html): What to copy from Documents\iRacing, what lives in MOZA Pit House instead, and how I restore both on a MOZA R9 and CRP2 rig after an update or reinstall.
 - [MOZA Pit House Presets for iRacing: One Per Car Class](https://realiracing.com/blog/moza-pit-house-presets-iracing-one-per-car-class.html): How I organise MOZA Pit House presets for iRacing on an R9, one per car class, with the naming scheme and what changes for GT3, formula and oval.
 - [iRacing Dynamic Track: Rubber, Marbles and Temperature](https://realiracing.com/blog/iracing-dynamic-track-rubber-marbles-track-temperature.html): A beginner guide to iRacing's dynamic track: how rubber, marbles and track temperature change grip, and what I do about each from my MOZA R9 rig.
@@ -37,7 +38,6 @@
 - [iRacing Black Boxes Explained: Relative, Fuel, Tires](https://realiracing.com/blog/iracing-black-boxes-explained-relative-fuel-tires.html): What each iRacing black box shows, which one to keep up in a race, and how to map them to wheel buttons so fuel and tires are set before pit entry.
 - [ABS and Traction Control in iRacing: When to Use Them and When to Turn Them Off](https://realiracing.com/blog/abs-and-traction-control-in-iracing-when-to-use-them.html): ABS and traction control help you stay on track but hide feedback. Here is how I decide when to keep them on, when to lower them, and what they change.
 - [iRacing Endurance Classics: Daytona 24, Sebring 12, Spa 24, Petit Le Mans](https://realiracing.com/blog/iracing-endurance-classics-daytona-sebring-spa-petit.html): Survive iRacing's toughest multi-hour events. Learn fuel strategy, driver discipline, and setup for 12- and 24-hour classics.
-- [iRacing Season Structure and Build Updates Explained](https://realiracing.com/blog/iracing-season-structure-build-updates-explained.html): How iRacing seasons work, when builds update, and how to plan your racing calendar and setup changes around the schedule.
 
 ## More
 - Every post, one line each: https://realiracing.com/llms-full.txt

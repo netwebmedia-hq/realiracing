@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iRacing Active Reset: Practise One Corner on Repeat</title>
+  <meta name="description" content="How I use iRacing Active Reset on a MOZA R9 and CRP2 rig to drill a single braking zone: the two binds, the save point and a one-variable drill." />
+  <link rel="canonical" href="https://realiracing.com/blog/iracing-active-reset-practise-one-corner-on-repeat.html" />
+  <meta property="og:title" content="iRacing Active Reset: Practise One Corner on Repeat" />
+  <meta property="og:description" content="How I use iRacing Active Reset on a MOZA R9 and CRP2 rig to drill a single braking zone: the two binds, the save point and a one-variable drill." />
+  <meta property="og:url" content="https://realiracing.com/blog/iracing-active-reset-practise-one-corner-on-repeat.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/rig-seat.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="750" />
+  <meta property="og:image:alt" content="A racing bucket seat and harness" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/rig-seat.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261123" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "iRacing Active Reset: Practise One Corner on Repeat",
+    "description": "How I use iRacing Active Reset on a MOZA R9 and CRP2 rig to drill a single braking zone: the two binds, the save point and a one-variable drill.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/iracing-active-reset-practise-one-corner-on-repeat.html",
+    "image": "https://realiracing.com/assets/photos/rig-seat.jpg",
+    "datePublished": "2026-11-26",
+    "dateModified": "2026-11-26"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"iRacing Active Reset: Practise One Corner on Repeat","item":"https://realiracing.com/blog/iracing-active-reset-practise-one-corner-on-repeat.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/iracing-active-reset-practise-one-corner-on-repeat.html#rir-gear"},{"@type":"ListItem","position":2,"name":"MOZA CRP2 Load Cell Pedals","description":"load-cell brake, managed in the same Pit House software","url":"https://realiracing.com/blog/iracing-active-reset-practise-one-corner-on-repeat.html#rir-gear"},{"@type":"ListItem","position":3,"name":"Sim Racing Cockpit / Wheel Stand","description":"a rigid mount matters more than the brand — flex kills FFB detail","url":"https://realiracing.com/blog/iracing-active-reset-practise-one-corner-on-repeat.html#rir-gear"}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the two Active Reset controls called in iRacing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "They are \"Active Reset Save Start Point\" and \"Active Reset Run\". You bind both in Options > Controls. Save Start Point stores the car's position, speed and state, and Run puts the car back at that saved point." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use Active Reset in an official race?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. It is a practice tool and it is not available in official races. Check the session type you joined before you assume your binds are broken, because in a session that does not offer the feature the buttons will simply do nothing." }
+    },
+    {
+      "@type": "Question",
+      "name": "Where should I place the save point for a corner drill?",
+      "acceptedAnswer": { "@type": "Answer", "text": "On the straight before the corner you are working on, at a realistic approach speed, with the car settled. If you save too close to the corner you stop practising the approach, and if you save too far back each attempt wastes time on straight." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does a lap time set after an Active Reset count as a real lap?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Tyre and fuel state repeat from the saved point, and you did not drive the lap that led to it, so the time is not a real lap. Use it as feedback on the corner only, then confirm the change with normal full laps." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Technique · Practice</p>
+    <h1>iRacing Active Reset: Practise One Corner on Repeat</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated November 26, 2026</span>
+      <span class="dot">·</span>
+      <span>7 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/rig-seat.jpg" width="1000" height="750" alt="A racing bucket seat and harness" srcset="/assets/photos/rig-seat-sm.jpg 560w, /assets/photos/rig-seat.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Photo: <a href="https://www.flickr.com/photos/25632349@N04" target="_blank" rel="noopener nofollow">The Car Spy</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener nofollow">CC BY 2.0</a> · Source: <a href="https://commons.wikimedia.org/wiki/File:Bucket_seat_with_Schroth_six-point_harness_in_a_2010_Porsche_997_GT3_RS_3.8.jpg" target="_blank" rel="noopener nofollow">Wikimedia Commons</a></figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">I knew exactly where I was losing time. It was the braking zone into the slow corner at the end of the back straight, the one where I kept arriving a touch hot and then fighting the car all the way to the apex. The problem was the cost of trying again. Each attempt meant finishing the lap, which at that track is roughly a minute and a half of driving for about eight seconds of useful work. I would get one go at the braking zone, think about what I had done wrong, and then spend the next ninety seconds with that thought rattling around while I drove through sections I was already fine at. That is a poor ratio, and Active Reset is the feature that fixes it.</p>
+
+      <p>This post covers how I set it up on my rig, where I put the save point, and how I structure a drill so I come away with one clear answer instead of a pile of vague feelings. My setup is a <a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> wheelbase (~9 N·m), <a href="https://www.amazon.com/dp/B0DSHYFW1V?tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2</a> load-cell pedals and a fixed aluminium cockpit, with a single 1440p monitor in front of me. None of the method depends on that hardware, but it shapes how I bind the controls, so I mention it where it matters.</p>
+
+      <h2>What Active Reset actually is</h2>
+
+      <p>Active Reset is an iRacing feature built around two controls. One is called "Active Reset Save Start Point" and the other is "Active Reset Run". The first stores the car's position, speed and state at the moment you trigger it. The second puts the car back at that saved point so you can retry the same section without driving a full lap to get there.</p>
+
+      <p>That is the whole idea. You are driving down the straight at a speed that matches a real approach, you press one button to remember that moment, and from then on a second button throws you back to it on demand. A corner that used to give you one attempt per lap can give you one attempt every ten or fifteen seconds.</p>
+
+      <h2>Check the session type first</h2>
+
+      <p>Before you build a habit around this, check the session type you are in. Active Reset is a practice tool for test and offline style sessions, and it is not available in official races. I have seen people bind the controls, go to a practice session, and then be confused when the same buttons do nothing in a race weekend. The feature simply is not offered there, so check the session type before you assume something is broken on your wheel or in your bindings.</p>
+
+      <h2>The two binds and where to set them</h2>
+
+      <p>Both controls live in Options > Controls, in the same place as the rest of your bindings. You look for "Active Reset Save Start Point" and "Active Reset Run", select each one, and press the button you want to assign. If you have not mapped anything on your wheel before, my post on <a href="iracing-button-mapping-wheel-buttons-first-binds.html">button mapping and your first binds</a> walks through the general routine, and the same steps apply here.</p>
+
+      <p>I bind both to wheel buttons rather than to the keyboard. Reaching for a keyboard in the middle of a drill breaks my hands off the rim and wrecks the rhythm, and rhythm is the entire point of repeating a corner. On my rig I keep the two buttons next to each other, so my thumb can find Run without looking. I also keep them well away from anything I press by accident under braking, because a stray reset in the middle of a good attempt is annoying enough to ruin the next three.</p>
+
+      <ul>
+        <li>Save Start Point: a button I press deliberately, once per drill, on the approach.</li>
+        <li>Run: a button I will press dozens of times, so it needs to be the easiest one to hit.</li>
+        <li>Neither one shares a position with pit limiter, flags or radio, so I never fire them by mistake.</li>
+      </ul>
+
+      <div class="tip-box">
+        <span class="box-label">Test the binds first</span>
+        <p>After you bind both, test them in a practice session before you rely on them. Save a point, drive off, press Run, and confirm the car comes back. It takes thirty seconds and saves you from discovering a missing bind halfway through a drill.</p>
+      </div>
+
+      <h2>Where to place the save point</h2>
+
+      <p>The save point decides how good the drill is. Place it too close to the corner and you stop practising the approach, which is where most of my mistakes start. Place it too far back and you are driving a lot of straight for every attempt, which brings back the problem you were trying to solve.</p>
+
+      <p>My rule is to save on the straight before the corner I am working on, at a realistic approach speed. Realistic matters. If you save while rolling slowly, every attempt starts from a speed you would never carry in a lap, and the braking point you find does not transfer. I drive the straight as I would in a normal lap, reach the speed I would have at that stage, and press Save Start Point there.</p>
+
+      <h2>A drill structure: one variable at a time</h2>
+
+      <p>The mistake I made for a long time was changing everything at once. I would brake later, turn in earlier and get on the throttle sooner in the same attempt, then have no idea which change helped. With Active Reset you can afford to be strict, because attempts are cheap. Pick one variable and hold everything else still.</p>
+
+      <ol>
+        <li>Save the start point on the straight at a normal approach speed.</li>
+        <li>Run the corner three or four times without changing anything, just to see what your baseline attempt looks like.</li>
+        <li>Pick one variable: brake point, brake release or turn-in. Write it down if it helps.</li>
+        <li>Change only that variable and run the corner again, several times, so you see a pattern and not a lucky attempt.</li>
+        <li>Decide whether the change helped. Keep it, undo it or adjust it, then move to the next variable.</li>
+      </ol>
+
+      <p>Brake point is usually where I start, because it is the easiest to see. I pick a reference on the side of the track and brake at that mark every time. If the car runs wide, I move the mark a little earlier. If I get to the apex with grip to spare, I try a little later. Only once the brake point is settled do I touch the release, which is the part of braking that the load-cell feel of my CRP2 pedals helps me with, since I am working on pressure and not only on travel.</p>
+
+      <p>Turn-in comes last. It depends on the entry speed you settled in the earlier steps, so changing it first gives you moving targets. By the end I usually have one clear sentence about the corner, something like "brake at the second marker and release smoothly until the nose bites." That sentence is worth more to me than twenty vague laps.</p>
+
+      <h2>What Active Reset does not teach</h2>
+
+      <p>It is a narrow tool, and it helps to be honest about its edges. A few things it does not cover.</p>
+
+      <ul>
+        <li>Tyre wear over a stint. Tyre and fuel state repeat from the saved point, so every attempt starts with the same tyres in the same condition. You learn the corner on those tyres, not how the corner changes as they fade.</li>
+        <li>Traffic. Nobody is racing you during a drill, so you do not practise defending, being passed or choosing a line around slower cars.</li>
+        <li>A real lap time. A time set after a reset is not a real lap, because you did not drive the lap that led to it. I ignore any time that appears during a drill.</li>
+      </ul>
+
+      <p>That last one catches people out. It is tempting to look at a fast sector after a reset and feel good. I treat it as feedback on the corner and nothing more. The real test is whether the change holds up when I drive the full lap again with a cold head, which is where my tyre and traffic habits come back into play.</p>
+
+      <h2>How it fits into a practice session</h2>
+
+      <p>I do not spend a whole session on Active Reset. It is one block inside a larger plan. In my <a href="iracing-practice-session-plan-45-minutes.html">45 minute practice session plan</a> I warm up with normal laps first, because the tyres and my own hands need to settle before a drill means anything. Then I pick the single corner that cost me the most time in those laps and spend a short block on it with Active Reset.</p>
+
+      <p>How do I know which corner that is? Usually I have a good guess from the laps themselves, and when I do not, I look at the data. My notes on <a href="iracing-telemetry-basics-reading-your-laps.html">reading your laps with telemetry basics</a> cover how I find the braking zone that is worth the time, so I am not drilling the corner I happen to dislike instead of the one that actually matters.</p>
+
+      <p>After the drill I go back to full laps. This step is important, because it checks whether the work transfers once the car, the tyres and the rest of the lap are back in the picture. If the new brake point survives a normal lap, it stays. If it only works from the saved point, I did not learn the corner, I learned the drill.</p>
+
+      <h2>Why the rig matters here</h2>
+
+      <p>One more note from my own rig. With a ~9 N·m wheelbase and a fixed aluminium cockpit, the car feels the same from the first reset to the fortieth, which makes it easier to trust what I am feeling in the brake pedal. A flexing seat or a wandering pedal tray would add noise to a drill that depends on repeatable inputs, and I would be chasing the rig instead of the corner.</p>
+
+      <p>The ninety second lap I used to drive for one attempt now gives me a dozen. I still make the same mistake sometimes, but I find out in a few seconds, change one thing and try again.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=iracing-active-reset-practise-one-corner-on-repeat">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0DSHYFW1V?tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">MOZA CRP2 Load Cell Pedals</a></th><td>load-cell brake, managed in the same Pit House software</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&amp;tag=realiracing-20" data-aff="cockpit" target="_blank" rel="sponsored noopener">Sim Racing Cockpit / Wheel Stand</a></th><td>a rigid mount matters more than the brand — flex kills FFB detail</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>What are the two Active Reset controls called in iRacing?</h3>
+        <p>They are "Active Reset Save Start Point" and "Active Reset Run". You bind both in Options > Controls. Save Start Point stores the car's position, speed and state, and Run puts the car back at that saved point.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I use Active Reset in an official race?</h3>
+        <p>No. It is a practice tool and it is not available in official races. Check the session type you joined before you assume your binds are broken, because in a session that does not offer the feature the buttons will simply do nothing.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Where should I place the save point for a corner drill?</h3>
+        <p>On the straight before the corner you are working on, at a realistic approach speed, with the car settled. If you save too close to the corner you stop practising the approach, and if you save too far back each attempt wastes time on straight.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does a lap time set after an Active Reset count as a real lap?</h3>
+        <p>No. Tyre and fuel state repeat from the saved point, and you did not drive the lap that led to it, so the time is not a real lap. Use it as feedback on the corner only, then confirm the change with normal full laps.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="iracing-race-start-technique.html"><span>Technique</span>iRacing Race Start Technique: Standing Starts, Rolling Starts, and Not Losing Ten Spots on Lap One</a>
+      <a class="related-card" href="how-to-learn-a-new-track-iracing.html"><span>Technique</span>How to Learn a New iRacing Track Fast (Without 200 Laps)</a>
+      <a class="related-card" href="fuel-saving-technique-iracing.html"><span>Technique</span>Fuel Saving Technique on iRacing: Stretching a Stint Without Losing the Race</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong></p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/nav.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","moza-crp2","cockpit"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
