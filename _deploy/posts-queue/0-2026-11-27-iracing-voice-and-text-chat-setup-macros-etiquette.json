@@ -1,0 +1,172 @@
+{
+  "slug": "iracing-voice-and-text-chat-setup-macros-etiquette",
+  "tag": "Guide · iRacing",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "iRacing Voice and Text Chat: Setup, Macros and Etiquette",
+  "description": "Set up iRacing push-to-talk, radio channels and text macros from a MOZA R9 rig, plus the chat etiquette that keeps lobbies friendly.",
+  "published": "2026-11-27",
+  "dateLabel": "November 27, 2026",
+  "gearKeys": [
+    "moza-r9",
+    "moza-cs-v2",
+    "cockpit"
+  ],
+  "sections": [
+    {
+      "p": "The first time I got on the radio in an iRacing race, I was doing it wrong. I was fumbling for a key mid-straight, my mic was open to the fans and the wheelbase hum, and the whole session heard my cockpit instead of my message. Setting up iRacing voice and text chat properly takes about ten minutes, and it saves you from being that driver. This is how I run it from my MOZA R9 and CRP2 rig in a fixed aluminium cockpit."
+    },
+    {
+      "h2": "What iRacing gives you out of the box"
+    },
+    {
+      "p": "Every session has two built-in channels: voice chat (the radio) and text chat. You do not need Discord or any third-party tool to talk to other drivers, though plenty of teams use them for private strategy. For open lobbies, the built-in system is enough, and it is the one race control and admins use to reach you."
+    },
+    {
+      "p": "One thing to keep straight early: your spotter and crew chief audio is separate from driver voice chat. If you want to understand what that spotter is actually telling you, I covered it in <a href=\"spotter-calls-what-to-listen-for.html\">spotter calls: what to listen for</a>. This article is only about talking to other humans."
+    },
+    {
+      "h2": "Voice chat: push-to-talk is the whole game"
+    },
+    {
+      "p": "iRacing voice works on push-to-talk. You hold a button, you transmit, you let go. That sounds trivial until you try to do it with your hands busy on a wheel in a braking zone, which is exactly why the binding matters more than anything else in this setup."
+    },
+    {
+      "olist": [
+        "Open your Options screen and find the controls and voice settings. Menu layouts shift between sim updates, so check your Options screen rather than trusting a path from a blog post, including this one.",
+        "Bind the transmit control to something you can hit without looking. A keyboard key works, but a wheel button is far better.",
+        "Pick the correct microphone and speaker in the audio settings, then test it.",
+        "Load a practice session before any race and confirm that other drivers can hear you and that you can hear them."
+      ]
+    },
+    {
+      "tip": "Never find out your push-to-talk is broken on the grid of a race. Test it in a practice session every time you change a headset, a driver or a binding.",
+      "tipLabel": "Test before the green flag"
+    },
+    {
+      "h2": "Why I bind push-to-talk to a wheel button"
+    },
+    {
+      "p": "On my MOZA R9 setup I put push-to-talk on a button I can reach with a thumb without changing my grip. A keyboard key means taking a hand off the wheel or reaching sideways in the cockpit, and neither is safe at speed. A wheel button also keeps the habit consistent: same thumb, same motion, every race."
+    },
+    {
+      "p": "The second reason is noise. An always-open mic picks up everything in a sim room: the wheelbase hum, the fans, a pedal rattling against the frame. With a headset mic and push-to-talk on the wheel, the channel stays clean unless I decide to speak. Other drivers will thank you for it, even if they never say so."
+    },
+    {
+      "p": "If you are building out a rig around this, the wheel hardware and the cockpit both matter here, which is why I linked them in the gear box below. A rigid frame means less rattle reaching the mic, and a wheel with a good spread of buttons gives you room for both push-to-talk and macros."
+    },
+    {
+      "h2": "Radio channels: know who you are talking to"
+    },
+    {
+      "p": "iRacing radio uses channels with @ names. A few you will see: @DRIVERS is everyone in the session, @TEAM is your team, @RACECONTROL is the admins and @CLUB is your club. You transmit on one channel and can scan or mute others."
+    },
+    {
+      "list": [
+        "<strong>@DRIVERS</strong>: everyone in the session. Use it sparingly, because everyone hears you.",
+        "<strong>@TEAM</strong>: only your team. This is where strategy and driver swaps belong.",
+        "<strong>@RACECONTROL</strong>: the admins in hosted and league sessions.",
+        "<strong>@CLUB</strong>: members of your club."
+      ]
+    },
+    {
+      "p": "Before you hit that transmit button, check which channel you are on. Transmitting a frustrated reaction to the entire field instead of your team is a mistake you make exactly once."
+    },
+    {
+      "h2": "Muting: your best tool for a calm race"
+    },
+    {
+      "p": "You are allowed to protect your focus. You can mute an individual driver, either from the session entry list or from chat, and you can mute all voice if it is a distraction. I do not hesitate to use it. If someone in a lobby is shouting, playing music into their mic or narrating their own race, muting them takes a moment and costs me nothing."
+    },
+    {
+      "p": "Muting is not rudeness. It is the same thing as turning down a radio that is too loud. Do it early, before it affects your driving."
+    },
+    {
+      "h2": "Text chat and macros"
+    },
+    {
+      "p": "Text chat works the way you would expect: press the chat key (the default is T), type your message, press Enter. The problem is the first part of that sentence. Typing while driving costs attention, and attention is the thing you cannot spare in traffic."
+    },
+    {
+      "p": "The fix is text macros, also called auto-text. You bind short pre-written messages to keys or buttons. The ones I find useful are the shortest:"
+    },
+    {
+      "list": [
+        "\"Sorry\", for any contact you caused or got caught in.",
+        "\"Pitting this lap\", so cars behind you are not surprised.",
+        "\"Thanks\", for a driver who gave you room or let you through."
+      ]
+    },
+    {
+      "p": "Bind them to buttons you can reach on the wheel or a nearby button box, and keep the set small. Three or four macros you remember beat fifteen you do not. If you need a longer message, wait for a straight or send it after the session. Do not type a paragraph through a corner."
+    },
+    {
+      "tip": "A good macro is a short message you can send without thinking. If you need to read the button to remember what it says, it is the wrong macro.",
+      "tipLabel": "Keep macros tiny"
+    },
+    {
+      "h2": "Etiquette that keeps lobbies friendly"
+    },
+    {
+      "p": "Most of voice etiquette in iRacing is common sense, but common sense is rare when someone has just been hit. These are the habits I try to keep:"
+    },
+    {
+      "list": [
+        "<strong>Say sorry briefly.</strong> One word is enough. A long apology on the radio is another distraction for everyone.",
+        "<strong>Do not argue mid-race.</strong> Nobody wins a radio argument at racing speed, and you will probably drive worse for the next few corners.",
+        "<strong>Keep the channel clear at the start.</strong> The first lap is chaos. Leave the radio free for admins and for anyone who needs it.",
+        "<strong>Call \"pitting in\".</strong> A short message lets the cars behind you know what you are about to do.",
+        "<strong>Use the protest system after the race.</strong> If something went wrong, the correct place to settle it is afterward, not over voice."
+      ]
+    },
+    {
+      "p": "That last point deserves its own space. If you believe another driver broke the rules, arguing on the radio does nothing except add heat to the session. The protest process exists so a disagreement can be reviewed calmly, and I walk through it in <a href=\"iracing-protest-sporting-code-process.html\">the iRacing protest and sporting code process</a>. File it, move on and race the next one clean."
+    },
+    {
+      "h2": "Hosted and league sessions: read race control"
+    },
+    {
+      "p": "In hosted and league sessions, admins use race control messages to communicate with the field. These can be rule reminders, penalty notices or instructions. Read them. A lot of avoidable penalties come from drivers who saw the message and ignored it, or never looked at it at all."
+    },
+    {
+      "p": "If an admin addresses you directly, answer briefly and move on. Treat race control the same way you would treat a marshal at a real track: they decide how the session runs, and you are a guest in it."
+    },
+    {
+      "h2": "My setup checklist"
+    },
+    {
+      "olist": [
+        "Headset with a mic, not the room mic, so the wheelbase and fans stay out of the channel.",
+        "Push-to-talk bound to a wheel button, tested in practice.",
+        "Three or four text macros on buttons I can reach without looking.",
+        "Correct channel selected before I speak, usually @TEAM unless I mean it for everyone.",
+        "Spotter audio checked separately, since it is not the same as driver voice.",
+        "A mute plan: I know where the entry list is and I am not afraid to use it."
+      ]
+    },
+    {
+      "p": "None of this is complicated, and none of it needs expensive gear. A headset, one assigned button and a couple of macros will do almost everything. What changes your races is habit: the same thumb, the same few short messages, and the discipline to stay quiet when the radio is not the right place for what you are feeling."
+    },
+    {
+      "p": "Set it up once, test it in practice and then forget about it. The best voice setup is the one you never have to think about during a race."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I set up push-to-talk in iRacing?",
+      "a": "iRacing voice chat uses push-to-talk, so you bind a transmit key or a wheel button in the Options screen. Menus can change between updates, so check your Options screen for the current layout, and test the binding in a practice session before you race."
+    },
+    {
+      "q": "What do @DRIVERS, @TEAM, @RACECONTROL and @CLUB mean?",
+      "a": "They are radio channels. @DRIVERS reaches everyone in the session, @TEAM reaches your team, @RACECONTROL is for admins in hosted and league sessions, and @CLUB reaches your club. You transmit on one channel and can scan or mute others."
+    },
+    {
+      "q": "Can I mute another driver in iRacing?",
+      "a": "Yes. You can mute an individual driver from the session entry list or from chat, and you can mute all voice if it is distracting. Muting is a normal way to protect your focus during a race."
+    },
+    {
+      "q": "Should I type in text chat while I am driving?",
+      "a": "It is better not to. Typing costs attention. Use text macros bound to keys or buttons for short messages such as sorry, pitting this lap or thanks, and save longer messages for a straight or for after the session."
+    }
+  ]
+}
