@@ -18,6 +18,7 @@
 
 ## All blog posts (newest first)
 
+- [iRacing Voice and Text Chat: Setup, Macros and Etiquette](https://realiracing.com/blog/iracing-voice-and-text-chat-setup-macros-etiquette.html): Set up iRacing push-to-talk, radio channels and text macros from a MOZA R9 rig, plus the chat etiquette that keeps lobbies friendly.
 - [iRacing Active Reset: Practise One Corner on Repeat](https://realiracing.com/blog/iracing-active-reset-practise-one-corner-on-repeat.html): How I use iRacing Active Reset on a MOZA R9 and CRP2 rig to drill a single braking zone: the two binds, the save point and a one-variable drill.
 - [Back Up Your iRacing Settings Before an Update or Reinstall: What I Copy and How I Restore on a MOZA R9 Rig](https://realiracing.com/blog/back-up-iracing-settings-before-update-reinstall-moza-r9.html): What to copy from Documents\iRacing, what lives in MOZA Pit House instead, and how I restore both on a MOZA R9 and CRP2 rig after an update or reinstall.
 - [MOZA Pit House Presets for iRacing: One Per Car Class](https://realiracing.com/blog/moza-pit-house-presets-iracing-one-per-car-class.html): How I organise MOZA Pit House presets for iRacing on an R9, one per car class, with the naming scheme and what changes for GT3, formula and oval.
@@ -47,7 +48,6 @@
 - [My iRacing pre-race routine: the five minutes before green](https://realiracing.com/blog/iracing-pre-race-routine-five-minutes-before-green.html): The checks I run between qualifying and the green flag in iRacing: fuel, setup, brake bias, FFB, pedals, the entry list and a calm head for turn one.
 - [Grip pressure and hand position on a direct drive wheel](https://realiracing.com/blog/grip-pressure-hand-position-direct-drive-wheel-iracing.html): Why a death grip hides force feedback detail in iRacing, how to hold a direct drive wheel, and a practice routine to test your own grip pressure.
 - [ISDE 2018 in Chile: My Motocross Clips | RealIRacing](https://realiracing.com/blog/isde-2018-vina-del-mar-chile-final-motocross.html): I filmed the 2018 ISDE in Viña del Mar, Chile: the final motocross on November 17, plus an enduro mass start.
-- [Toyota Grand Prix of Long Beach 2018: My Fan Footage](https://realiracing.com/blog/long-beach-grand-prix-2018-from-the-grandstand.html): My own clips from the 2018 Toyota Grand Prix of Long Beach: IndyCars, Stadium Super Trucks and the Mothers Exotic Car Paddock.
 
 ## More
 - Sitemap: https://realiracing.com/sitemap.xml

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iRacing Voice and Text Chat: Setup, Macros and Etiquette</title>
+  <meta name="description" content="Set up iRacing push-to-talk, radio channels and text macros from a MOZA R9 rig, plus the chat etiquette that keeps lobbies friendly." />
+  <link rel="canonical" href="https://realiracing.com/blog/iracing-voice-and-text-chat-setup-macros-etiquette.html" />
+  <meta property="og:title" content="iRacing Voice and Text Chat: Setup, Macros and Etiquette" />
+  <meta property="og:description" content="Set up iRacing push-to-talk, radio channels and text macros from a MOZA R9 rig, plus the chat etiquette that keeps lobbies friendly." />
+  <meta property="og:url" content="https://realiracing.com/blog/iracing-voice-and-text-chat-setup-macros-etiquette.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/rig-cover.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="563" />
+  <meta property="og:image:alt" content="Cover art: overlapping isometric blocks" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/rig-cover.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261123" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "iRacing Voice and Text Chat: Setup, Macros and Etiquette",
+    "description": "Set up iRacing push-to-talk, radio channels and text macros from a MOZA R9 rig, plus the chat etiquette that keeps lobbies friendly.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/iracing-voice-and-text-chat-setup-macros-etiquette.html",
+    "image": "https://realiracing.com/assets/photos/rig-cover.jpg",
+    "datePublished": "2026-11-27",
+    "dateModified": "2026-11-27"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"iRacing Voice and Text Chat: Setup, Macros and Etiquette","item":"https://realiracing.com/blog/iracing-voice-and-text-chat-setup-macros-etiquette.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/iracing-voice-and-text-chat-setup-macros-etiquette.html#rir-gear"},{"@type":"ListItem","position":2,"name":"MOZA CS V2 Steering Wheel","description":"the round rim my whole FFB profile is tuned around","url":"https://realiracing.com/blog/iracing-voice-and-text-chat-setup-macros-etiquette.html#rir-gear"},{"@type":"ListItem","position":3,"name":"Sim Racing Cockpit / Wheel Stand","description":"a rigid mount matters more than the brand — flex kills FFB detail","url":"https://realiracing.com/blog/iracing-voice-and-text-chat-setup-macros-etiquette.html#rir-gear"}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I set up push-to-talk in iRacing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "iRacing voice chat uses push-to-talk, so you bind a transmit key or a wheel button in the Options screen. Menus can change between updates, so check your Options screen for the current layout, and test the binding in a practice session before you race." }
+    },
+    {
+      "@type": "Question",
+      "name": "What do @DRIVERS, @TEAM, @RACECONTROL and @CLUB mean?",
+      "acceptedAnswer": { "@type": "Answer", "text": "They are radio channels. @DRIVERS reaches everyone in the session, @TEAM reaches your team, @RACECONTROL is for admins in hosted and league sessions, and @CLUB reaches your club. You transmit on one channel and can scan or mute others." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I mute another driver in iRacing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can mute an individual driver from the session entry list or from chat, and you can mute all voice if it is distracting. Muting is a normal way to protect your focus during a race." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I type in text chat while I am driving?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It is better not to. Typing costs attention. Use text macros bound to keys or buttons for short messages such as sorry, pitting this lap or thanks, and save longer messages for a straight or for after the session." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Guide · iRacing</p>
+    <h1>iRacing Voice and Text Chat: Setup, Macros and Etiquette</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated November 27, 2026</span>
+      <span class="dot">·</span>
+      <span>7 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/rig-cover.jpg" width="1000" height="563" alt="Cover art: overlapping isometric blocks" srcset="/assets/photos/rig-cover-sm.jpg 560w, /assets/photos/rig-cover.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Illustration: RealiRacing</figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">The first time I got on the radio in an iRacing race, I was doing it wrong. I was fumbling for a key mid-straight, my mic was open to the fans and the wheelbase hum, and the whole session heard my cockpit instead of my message. Setting up iRacing voice and text chat properly takes about ten minutes, and it saves you from being that driver. This is how I run it from my <a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> and <a href="https://www.amazon.com/dp/B0DSHYFW1V?tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">CRP2</a> rig in a fixed aluminium cockpit.</p>
+
+      <h2>What iRacing gives you out of the box</h2>
+
+      <p>Every session has two built-in channels: voice chat (the radio) and text chat. You do not need Discord or any third-party tool to talk to other drivers, though plenty of teams use them for private strategy. For open lobbies, the built-in system is enough, and it is the one race control and admins use to reach you.</p>
+
+      <p>One thing to keep straight early: your spotter and crew chief audio is separate from driver voice chat. If you want to understand what that spotter is actually telling you, I covered it in <a href="spotter-calls-what-to-listen-for.html">spotter calls: what to listen for</a>. This article is only about talking to other humans.</p>
+
+      <h2>Voice chat: push-to-talk is the whole game</h2>
+
+      <p>iRacing voice works on push-to-talk. You hold a button, you transmit, you let go. That sounds trivial until you try to do it with your hands busy on a wheel in a braking zone, which is exactly why the binding matters more than anything else in this setup.</p>
+
+      <ol>
+        <li>Open your Options screen and find the controls and voice settings. Menu layouts shift between sim updates, so check your Options screen rather than trusting a path from a blog post, including this one.</li>
+        <li>Bind the transmit control to something you can hit without looking. A keyboard key works, but a wheel button is far better.</li>
+        <li>Pick the correct microphone and speaker in the audio settings, then test it.</li>
+        <li>Load a practice session before any race and confirm that other drivers can hear you and that you can hear them.</li>
+      </ol>
+
+      <div class="tip-box">
+        <span class="box-label">Test before the green flag</span>
+        <p>Never find out your push-to-talk is broken on the grid of a race. Test it in a practice session every time you change a headset, a driver or a binding.</p>
+      </div>
+
+      <h2>Why I bind push-to-talk to a wheel button</h2>
+
+      <p>On my MOZA R9 setup I put push-to-talk on a button I can reach with a thumb without changing my grip. A keyboard key means taking a hand off the wheel or reaching sideways in the cockpit, and neither is safe at speed. A wheel button also keeps the habit consistent: same thumb, same motion, every race.</p>
+
+      <p>The second reason is noise. An always-open mic picks up everything in a sim room: the wheelbase hum, the fans, a pedal rattling against the frame. With a headset mic and push-to-talk on the wheel, the channel stays clean unless I decide to speak. Other drivers will thank you for it, even if they never say so.</p>
+
+      <p>If you are building out a rig around this, the wheel hardware and the cockpit both matter here, which is why I linked them in the gear box below. A rigid frame means less rattle reaching the mic, and a wheel with a good spread of buttons gives you room for both push-to-talk and macros.</p>
+
+      <h2>Radio channels: know who you are talking to</h2>
+
+      <p>iRacing radio uses channels with @ names. A few you will see: @DRIVERS is everyone in the session, @TEAM is your team, @RACECONTROL is the admins and @CLUB is your club. You transmit on one channel and can scan or mute others.</p>
+
+      <ul>
+        <li><strong>@DRIVERS</strong>: everyone in the session. Use it sparingly, because everyone hears you.</li>
+        <li><strong>@TEAM</strong>: only your team. This is where strategy and driver swaps belong.</li>
+        <li><strong>@RACECONTROL</strong>: the admins in hosted and league sessions.</li>
+        <li><strong>@CLUB</strong>: members of your club.</li>
+      </ul>
+
+      <p>Before you hit that transmit button, check which channel you are on. Transmitting a frustrated reaction to the entire field instead of your team is a mistake you make exactly once.</p>
+
+      <h2>Muting: your best tool for a calm race</h2>
+
+      <p>You are allowed to protect your focus. You can mute an individual driver, either from the session entry list or from chat, and you can mute all voice if it is a distraction. I do not hesitate to use it. If someone in a lobby is shouting, playing music into their mic or narrating their own race, muting them takes a moment and costs me nothing.</p>
+
+      <p>Muting is not rudeness. It is the same thing as turning down a radio that is too loud. Do it early, before it affects your driving.</p>
+
+      <h2>Text chat and macros</h2>
+
+      <p>Text chat works the way you would expect: press the chat key (the default is T), type your message, press Enter. The problem is the first part of that sentence. Typing while driving costs attention, and attention is the thing you cannot spare in traffic.</p>
+
+      <p>The fix is text macros, also called auto-text. You bind short pre-written messages to keys or buttons. The ones I find useful are the shortest:</p>
+
+      <ul>
+        <li>"Sorry", for any contact you caused or got caught in.</li>
+        <li>"Pitting this lap", so cars behind you are not surprised.</li>
+        <li>"Thanks", for a driver who gave you room or let you through.</li>
+      </ul>
+
+      <p>Bind them to buttons you can reach on the wheel or a nearby button box, and keep the set small. Three or four macros you remember beat fifteen you do not. If you need a longer message, wait for a straight or send it after the session. Do not type a paragraph through a corner.</p>
+
+      <div class="tip-box">
+        <span class="box-label">Keep macros tiny</span>
+        <p>A good macro is a short message you can send without thinking. If you need to read the button to remember what it says, it is the wrong macro.</p>
+      </div>
+
+      <h2>Etiquette that keeps lobbies friendly</h2>
+
+      <p>Most of voice etiquette in iRacing is common sense, but common sense is rare when someone has just been hit. These are the habits I try to keep:</p>
+
+      <ul>
+        <li><strong>Say sorry briefly.</strong> One word is enough. A long apology on the radio is another distraction for everyone.</li>
+        <li><strong>Do not argue mid-race.</strong> Nobody wins a radio argument at racing speed, and you will probably drive worse for the next few corners.</li>
+        <li><strong>Keep the channel clear at the start.</strong> The first lap is chaos. Leave the radio free for admins and for anyone who needs it.</li>
+        <li><strong>Call "pitting in".</strong> A short message lets the cars behind you know what you are about to do.</li>
+        <li><strong>Use the protest system after the race.</strong> If something went wrong, the correct place to settle it is afterward, not over voice.</li>
+      </ul>
+
+      <p>That last point deserves its own space. If you believe another driver broke the rules, arguing on the radio does nothing except add heat to the session. The protest process exists so a disagreement can be reviewed calmly, and I walk through it in <a href="iracing-protest-sporting-code-process.html">the iRacing protest and sporting code process</a>. File it, move on and race the next one clean.</p>
+
+      <h2>Hosted and league sessions: read race control</h2>
+
+      <p>In hosted and league sessions, admins use race control messages to communicate with the field. These can be rule reminders, penalty notices or instructions. Read them. A lot of avoidable penalties come from drivers who saw the message and ignored it, or never looked at it at all.</p>
+
+      <p>If an admin addresses you directly, answer briefly and move on. Treat race control the same way you would treat a marshal at a real track: they decide how the session runs, and you are a guest in it.</p>
+
+      <h2>My setup checklist</h2>
+
+      <ol>
+        <li>Headset with a mic, not the room mic, so the wheelbase and fans stay out of the channel.</li>
+        <li>Push-to-talk bound to a wheel button, tested in practice.</li>
+        <li>Three or four text macros on buttons I can reach without looking.</li>
+        <li>Correct channel selected before I speak, usually @TEAM unless I mean it for everyone.</li>
+        <li>Spotter audio checked separately, since it is not the same as driver voice.</li>
+        <li>A mute plan: I know where the entry list is and I am not afraid to use it.</li>
+      </ol>
+
+      <p>None of this is complicated, and none of it needs expensive gear. A headset, one assigned button and a couple of macros will do almost everything. What changes your races is habit: the same thumb, the same few short messages, and the discipline to stay quiet when the radio is not the right place for what you are feeling.</p>
+
+      <p>Set it up once, test it in practice and then forget about it. The best voice setup is the one you never have to think about during a race.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before your next session, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=iracing-voice-and-text-chat-setup-macros-etiquette">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=MOZA+CS+V2+steering+wheel&amp;rh=p_89%3AMOZA&amp;tag=realiracing-20" data-aff="moza-cs-v2" target="_blank" rel="sponsored noopener">MOZA CS V2 Steering Wheel</a></th><td>the round rim my whole FFB profile is tuned around</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=sim+racing+cockpit+stand&amp;tag=realiracing-20" data-aff="cockpit" target="_blank" rel="sponsored noopener">Sim Racing Cockpit / Wheel Stand</a></th><td>a rigid mount matters more than the brand — flex kills FFB detail</td><td><span class="rig-badge rig-badge--rec">Researched pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>How do I set up push-to-talk in iRacing?</h3>
+        <p>iRacing voice chat uses push-to-talk, so you bind a transmit key or a wheel button in the Options screen. Menus can change between updates, so check your Options screen for the current layout, and test the binding in a practice session before you race.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What do @DRIVERS, @TEAM, @RACECONTROL and @CLUB mean?</h3>
+        <p>They are radio channels. @DRIVERS reaches everyone in the session, @TEAM reaches your team, @RACECONTROL is for admins in hosted and league sessions, and @CLUB reaches your club. You transmit on one channel and can scan or mute others.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I mute another driver in iRacing?</h3>
+        <p>Yes. You can mute an individual driver from the session entry list or from chat, and you can mute all voice if it is distracting. Muting is a normal way to protect your focus during a race.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I type in text chat while I am driving?</h3>
+        <p>It is better not to. Typing costs attention. Use text macros bound to keys or buttons for short messages such as sorry, pitting this lap or thanks, and save longer messages for a straight or for after the session.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="iracing-field-of-view-single-monitor-setup.html"><span>Guide</span>How to Set Field of View in iRacing on a Single Monitor</a>
+      <a class="related-card" href="iracing-league-racing-getting-started.html"><span>Guide</span>iRacing League Racing: How to Find One and Not Wash Out</a>
+      <a class="related-card" href="how-to-review-iracing-replays-to-find-lap-time.html"><span>Guide</span>How to Review iRacing Replays to Find Lap Time</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong></p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/nav.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","moza-cs-v2","cockpit"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>
