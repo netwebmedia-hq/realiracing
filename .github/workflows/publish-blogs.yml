@@ -93,6 +93,7 @@ jobs:
             _deploy/build-linkinbio.py
             _deploy/linkhubs/
             _deploy/realiracing-social-queue.json
+            entrepoker/js/main.js
           sparse-checkout-cone-mode: false
 
       - name: Rebuild the link-in-bio hub
