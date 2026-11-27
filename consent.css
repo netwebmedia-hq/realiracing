@@ -19,6 +19,13 @@
 }
 #consent-banner .consent-btn:hover, #consent-banner .consent-btn:focus-visible { background: #f2f2f2; color: #14171c; }
 #consent-banner .consent-short { display: none; }
+/* Desktop: wider text measure and tighter padding so the bar is 2 lines (~60px) and no longer covers
+   the setup-pack cards in the first view. Same text, same buttons, same consent logic. */
+@media (min-width: 561px) {
+  #consent-banner { padding: 8px 16px calc(8px + env(safe-area-inset-bottom, 0px)); }
+  #consent-banner .consent-text { max-width: 120ch; }
+  #consent-banner .consent-btn { min-height: 36px; padding: 4px 18px; }
+}
 @media (max-width: 560px) {
   /* Joni R5: one row, 53px tall (4px + 44px tap targets + 4px + 1px border): a short sentence and the
      privacy link on the left, Reject / Accept on the right, equal weight, same consent logic. */

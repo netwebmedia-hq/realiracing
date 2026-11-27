@@ -56,7 +56,7 @@
     if (document.getElementById('consent-banner') || !document.body) return;
     if (!document.getElementById('consent-css')) {
       var css = document.createElement('link');
-      css.id = 'consent-css'; css.rel = 'stylesheet'; css.href = '/consent.css?v=3';
+      css.id = 'consent-css'; css.rel = 'stylesheet'; css.href = '/consent.css?v=4';
       document.head.appendChild(css);
     }
     var box = document.createElement('div');
