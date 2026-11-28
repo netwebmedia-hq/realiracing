@@ -18,6 +18,7 @@
 
 ## All blog posts (newest first)
 
+- [Trading Paints for iRacing: Custom Liveries Setup, Files and Performance Cost](https://realiracing.com/blog/trading-paints-iracing-custom-liveries-setup-guide.html): How I install Trading Paints for iRacing, where the paint files live, what custom liveries cost in loading time and VRAM, and why a clean car helps on stream.
 - [iRacing Voice and Text Chat: Setup, Macros and Etiquette](https://realiracing.com/blog/iracing-voice-and-text-chat-setup-macros-etiquette.html): Set up iRacing push-to-talk, radio channels and text macros from a MOZA R9 rig, plus the chat etiquette that keeps lobbies friendly.
 - [iRacing Active Reset: Practise One Corner on Repeat](https://realiracing.com/blog/iracing-active-reset-practise-one-corner-on-repeat.html): How I use iRacing Active Reset on a MOZA R9 and CRP2 rig to drill a single braking zone: the two binds, the save point and a one-variable drill.
 - [Back Up Your iRacing Settings Before an Update or Reinstall: What I Copy and How I Restore on a MOZA R9 Rig](https://realiracing.com/blog/back-up-iracing-settings-before-update-reinstall-moza-r9.html): What to copy from Documents\iRacing, what lives in MOZA Pit House instead, and how I restore both on a MOZA R9 and CRP2 rig after an update or reinstall.
@@ -47,7 +48,6 @@
 - [Circuit Paul Ricard iRacing guide: chicane choice and Mistral straight](https://realiracing.com/blog/circuit-paul-ricard-iracing-chicane-mistral-guide.html): Master Paul Ricard's variable chicane and high-speed Mistral section. Learn when to take each line and how to maximize exit speed for the longest straight.
 - [Jerez de la Frontera iRacing guide: Turn 1, curbing, racing lines](https://realiracing.com/blog/jerez-de-la-frontera-iracing-guide.html): Master Jerez's quick succession of technical corners, aggressive kerb usage, and the high-speed esses. Setup and line strategy for consistent lap times.
 - [Gaming Laptops for iRacing: What to Expect vs. Reality](https://realiracing.com/blog/gaming-laptops-iracing-expectations-reality.html): Gaming laptops can run iRacing, but thermal limits, upgrade paths, and cost mean they're rarely the best choice for sim racing. Here's what actually happens.
-- [Throttle Pedal Feel: Travel, Spring and Calibration](https://realiracing.com/blog/throttle-pedal-feel-load-cell-travel-spring-calibration.html): How I set up the throttle on my MOZA CRP2 pedals for smoother exits: travel, spring choice, plate angle and calibration, with the mistakes I made first.
 
 ## More
 - Sitemap: https://realiracing.com/sitemap.xml

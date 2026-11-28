@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trading Paints for iRacing: Custom Liveries Setup, Files and Performance Cost</title>
+  <meta name="description" content="How I install Trading Paints for iRacing, where the paint files live, what custom liveries cost in loading time and VRAM, and why a clean car helps on stream." />
+  <link rel="canonical" href="https://realiracing.com/blog/trading-paints-iracing-custom-liveries-setup-guide.html" />
+  <meta property="og:title" content="Trading Paints for iRacing: Custom Liveries Setup, Files and Performance Cost" />
+  <meta property="og:description" content="How I install Trading Paints for iRacing, where the paint files live, what custom liveries cost in loading time and VRAM, and why a clean car helps on stream." />
+  <meta property="og:url" content="https://realiracing.com/blog/trading-paints-iracing-custom-liveries-setup-guide.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://realiracing.com/assets/photos/track-grid.jpg" />
+  <meta property="og:image:width" content="1000" />
+  <meta property="og:image:height" content="562" />
+  <meta property="og:image:alt" content="Cars lined up on the starting grid" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://realiracing.com/assets/photos/track-grid.jpg" />
+  <link rel="stylesheet" href="blog.css?v=20261123" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Trading Paints for iRacing: Custom Liveries Setup, Files and Performance Cost",
+    "description": "How I install Trading Paints for iRacing, where the paint files live, what custom liveries cost in loading time and VRAM, and why a clean car helps on stream.",
+    "author": { "@type": "Person", "@id": "https://realiracing.com/#carlos", "name": "Carlos Martinez", "url": "https://realiracing.com/", "sameAs": ["https://www.youtube.com/@realtape","https://www.instagram.com/realiracing"] },
+    "publisher": { "@type": "Organization", "name": "RealIRacing", "url": "https://realiracing.com" },
+    "mainEntityOfPage": "https://realiracing.com/blog/trading-paints-iracing-custom-liveries-setup-guide.html",
+    "image": "https://realiracing.com/assets/photos/track-grid.jpg",
+    "datePublished": "2026-11-28",
+    "dateModified": "2026-11-28"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://realiracing.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://realiracing.com/blog/"},{"@type":"ListItem","position":3,"name":"Trading Paints for iRacing: Custom Liveries Setup, Files and Performance Cost","item":"https://realiracing.com/blog/trading-paints-iracing-custom-liveries-setup-guide.html"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"The gear in this guide","itemListElement":[{"@type":"ListItem","position":1,"name":"MOZA R9 Direct Drive Wheelbase","description":"9 N·m direct drive — the base bolted to my rig right now","url":"https://realiracing.com/blog/trading-paints-iracing-custom-liveries-setup-guide.html#rir-gear"},{"@type":"ListItem","position":2,"name":"NVIDIA GeForce RTX 5060 Ti (8 GB)","description":"renders iRacing and NVENC-encodes the stream on the same chip","url":"https://realiracing.com/blog/trading-paints-iracing-custom-liveries-setup-guide.html#rir-gear"},{"@type":"ListItem","position":3,"name":"1440p 120 Hz+ G-SYNC Compatible Gaming Monitor","description":"my single-screen setup — high refresh matters more than size","url":"https://realiracing.com/blog/trading-paints-iracing-custom-liveries-setup-guide.html#rir-gear"}]}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need to pay to use Trading Paints?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. A free account lets you pick or upload paints and see the paints other drivers run. There is a paid Pro tier with extras, but it is optional and I do not need it for the setup described here." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why can't other drivers see my custom paint?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The other driver has to run Trading Paints as well. If they do not, they see your car in the stock iRacing paint scheme chosen in the iRacing UI. The same applies in reverse: you only see custom cars for drivers who use the service." }
+    },
+    {
+      "@type": "Question",
+      "name": "Where does iRacing store my custom paint file?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In your Documents folder, under iRacing/paint/ and then a folder for each car. Your own paint is named with your iRacing customer ID in the pattern car_(id).tga. Spec maps and custom number paints are separate files." }
+    },
+    {
+      "@type": "Question",
+      "name": "Will custom liveries slow down my PC?",
+      "acceptedAnswer": { "@type": "Answer", "text": "They can, mostly on smaller graphics cards. More custom paints use more VRAM and add loading time at session start. iRacing's graphics options control how many cars get custom paints loaded and drawn, so lower that setting if you see stutter or slow loads." }
+    }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <svg class="nav-logo-wheel" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="#e8ff00" stroke-width="2.5"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#2a2d35" stroke-width="7"/>
+        <circle cx="20" cy="20" r="11" fill="none" stroke="#e8ff00" stroke-width="2" stroke-dasharray="14 56" stroke-dashoffset="-10"/>
+        <line x1="20" y1="20" x2="7" y2="24" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="33" y2="16" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="20" y1="20" x2="20" y2="34" stroke="#e8ff00" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="3" fill="#e8ff00"/>
+      </svg>
+      <span>Real</span>IRacing
+    </a>
+    <ul class="nav-links">
+      <li><a href="/#media">Media</a></li>
+      <li><a href="/#content">Content</a></li>
+      <li><a class="active" href="/blog/">Blog</a></li>
+      <li><a href="/packs/">Setup Packs</a></li>
+      <li><a href="/forum/">Forum</a></li>
+      <li><a href="/gear.html">My Rig</a></li>
+      <li><a href="/#platforms">Platforms</a></li>
+      <li><a class="nav-cta" href="https://www.youtube.com/@realtape" target="_blank">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <main class="article-wrap">
+    <p class="section-label">Setup Guide · Liveries</p>
+    <h1>Trading Paints for iRacing: Custom Liveries Setup, Files and Performance Cost</h1>
+    <div class="article-meta">
+      <span class="author"><a href="https://dongaston.com/" rel="noopener" style="color:inherit">Carlos Martinez</a></span>
+      <span class="dot">·</span>
+      <span>Updated November 28, 2026</span>
+      <span class="dot">·</span>
+      <span>7 min read</span>
+      <span class="dot">·</span>
+      <a class="meta-gear" href="#rir-gear">Gear picks ↓</a>
+    </div>
+
+        <figure class="article-photo">
+          <img src="/assets/photos/track-grid.jpg" width="1000" height="562" alt="Cars lined up on the starting grid" srcset="/assets/photos/track-grid-sm.jpg 560w, /assets/photos/track-grid.jpg 1000w" sizes="(max-width: 760px) 100vw, 712px" loading="eager" fetchpriority="high" decoding="async">
+          <figcaption>Photo: <a href="https://commons.wikimedia.org/wiki/User:Just_a_Man" target="_blank" rel="noopener nofollow">Just a Man</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener nofollow">CC BY 4.0</a> · Source: <a href="https://commons.wikimedia.org/wiki/File:ProCar_4000_2024_Gran_Premio_Coronaci%C3%B3n_-_07.jpg" target="_blank" rel="noopener nofollow">Wikimedia Commons</a></figcaption>
+        </figure>
+
+    <div class="article-body">
+      <p class="disclosure">As an Amazon Associate I earn from qualifying purchases. Some links on this page may earn RealIRacing a commission at no extra cost to you. Gear I personally race on is called out as such; other picks are researched recommendations.</p>
+
+      
+
+      <p class="article-lead">The first time I watched one of my own race replays, I couldn't find myself. Twenty-odd cars in the same stock scheme, one of them mine, and I was scrubbing the timeline trying to spot my own door number through a pack at the first corner. That is when I stopped treating custom paints as cosmetic and started treating them as a tool. This is how I set up Trading Paints on the rig I actually race on: <a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9</a> on the fixed aluminium cockpit, <a href="https://www.amazon.com/dp/B0DSHYFW1V?tag=realiracing-20" data-aff="moza-crp2" target="_blank" rel="sponsored noopener">CRP2</a> pedals underneath, one 1440p monitor in front of me.</p>
+
+      <h2>What Trading Paints actually is</h2>
+
+      <p>Trading Paints is a third-party service for iRacing custom liveries. It is not made by iRacing, and that matters for how you think about it. You create an account, pick or upload a paint for the cars you drive, and a small downloader app runs in the background while the sim is open. That app fetches the paints that the other drivers in your session are running, so you see their custom cars. They see yours, but only if they also run it.</p>
+
+      <p>There is a paid Pro tier with extras. I am not going to talk about what it costs here, because the free account already does everything this guide needs: choosing a paint, uploading your own and seeing other people's. Decide on Pro later, once you know whether you use the basics.</p>
+
+      <p>The part people forget is the fallback. Without Trading Paints, everyone appears in the stock iRacing paint scheme chosen in the iRacing UI. Nothing breaks if the app is closed or a driver doesn't run it. They are simply a stock car on your screen, and you are a stock car on theirs.</p>
+
+      <h2>Installing it without making a mess</h2>
+
+      <ol>
+        <li>Create your Trading Paints account and link it to your iRacing customer ID when prompted. That ID is what ties your paints to your car in the sim.</li>
+        <li>Download and install the small downloader app, then let it start with your PC or launch it before iRacing. I keep it in the same routine as my wheel software: open everything, check it, then load the sim.</li>
+        <li>Pick a paint for each car you drive regularly. Do this per car, not once. A paint for one car does not follow you to the next.</li>
+        <li>Start iRacing, join a session and watch the app. It should pick up the paints in the session once the grid loads.</li>
+        <li>Check your own car in the garage or on track. If you see the stock scheme, the app is not running or your customer ID is not linked yet.</li>
+      </ol>
+
+      <p>Do the first test in a practice session, not a race. I have seen drivers install it five minutes before a start and then spend the formation lap troubleshooting. Nothing about the app is complicated, but the first run is when you find out if something is off.</p>
+
+      <h2>Picking a paint: Showroom or your own</h2>
+
+      <p>You have two realistic routes. You can browse the Showroom for community paints and apply one, or you can build your own from the official car template in Photoshop, GIMP or a similar editor.</p>
+
+      <p>My honest advice is to start with a community paint. Designing from a template looks like an evening of fun, and it is, but it is also an evening of discovering how the template wraps around a car you cannot see flat. A good community paint is already tested on the car.</p>
+
+      <p>If you do make your own, a few things hold up better than any trend:</p>
+
+      <ul>
+        <li>High contrast between the body and the roof. Roofs matter in replay and on broadcast cameras from above.</li>
+        <li>A bold, simple shape beats a detailed pattern. Detail turns to noise at distance, and your car is a few pixels wide most of the time.</li>
+        <li>Leave room for the number. A beautiful paint that hides the car number is a worse paint.</li>
+        <li>Keep a plain version saved. If a league asks for specific plates or banners, you want a clean base to edit rather than starting over.</li>
+      </ul>
+
+      <h2>Where the files live</h2>
+
+      <p>When Trading Paints downloads a paint, it writes ordinary files into the iRacing folder inside your Documents. The path is Documents/iRacing/paint/ followed by a folder for each car. Open that folder for a car you race and you will find the paint files sitting there.</p>
+
+      <p>Your own custom file is named with your iRacing customer ID, in the pattern car_(id).tga. Spec maps and custom number paints exist as separate files, which is why a paint can look right in direct light but flat or shiny in the wrong places if the spec map is missing or wrong.</p>
+
+      <p>Why does this matter? Three practical reasons.</p>
+
+      <ul>
+        <li>Troubleshooting. If a paint looks wrong, you can see whether the file is there and when it changed, instead of guessing.</li>
+        <li>Backups. If you built your own paint, copy that file somewhere safe. I treat it like my sim settings; I back them up before updates, and the paint file goes in the same pile.</li>
+        <li>Cleaning up. The folders collect files from other drivers over time. Knowing where they live means you can clear them if something looks stale.</li>
+      </ul>
+
+      <div class="tip-box">
+        <span class="box-label">Back it up first</span>
+        <p>Before you edit or delete anything in the paint folder, copy your own car_(id).tga file somewhere outside Documents. Deleting the wrong file is easy, and rebuilding a paint from the template is slower than you would think.</p>
+      </div>
+
+      <h2>What it costs: loading time and VRAM</h2>
+
+      <p>This is where the unpopular opinion lives. Custom paints are not free for your PC. Each one is a texture that has to be downloaded, loaded and kept in memory, and iRacing's graphics options control how many cars get custom paints loaded and drawn. More custom paints use more VRAM and add loading time at session start.</p>
+
+      <p>I am not going to quote a number of megabytes or seconds, because they depend on the car, the field size and the card. What I can say is that the cost scales with the grid. A small test session barely notices it. A full field on a big track is where you feel the longer load and where a smaller card can start running short of video memory.</p>
+
+      <p>If you are on a smaller GPU, reduce the custom paint setting. The practical result is that fewer cars get their custom scheme and the rest show the stock look, which is a very fair trade for a smoother session. I would rather have a stable frame rate and a few stock cars than a gorgeous grid and a stutter at the first braking zone.</p>
+
+      <p>On my single 1440p monitor I notice it most at session start rather than during the race. The sim takes a bit longer to settle while the paints come in, then it is quiet. If you want a wider look at what to trim for frame rate and visibility, I wrote about it in <a href="iracing-graphics-settings-higher-fps-visibility.html">my iRacing graphics settings guide</a>, and the same logic applies here: spend your GPU budget where it helps you see the track.</p>
+
+      <h3>A simple way to tune it</h3>
+
+      <ol>
+        <li>Run a practice session with a full field and the custom paint setting high. Note how long the load takes and whether the frame rate dips on the grid.</li>
+        <li>Lower the setting one step and repeat in a similar session.</li>
+        <li>Stop lowering when the dip goes away. That is your setting for that card, not a number from someone else's rig.</li>
+      </ol>
+
+      <p>I would also say this plainly: custom paints will not make you faster. They will not change grip, force feedback or your braking point. Through the R9 the car feels exactly the same wearing a stock scheme or a custom one. Treat the paint as visibility and presentation, and give it only as much of your hardware as it earns.</p>
+
+      <h2>Why it matters on stream</h2>
+
+      <p>On stream, a recognisable car does real work. Viewers find me in replays and on broadcast cams faster when my car is not one of many identical stock ones. In a busy pack at turn one, a distinct colour block on the roof and sides is the difference between viewers following me and viewers asking which one I am.</p>
+
+      <p>It also helps me. When I review a race, I can find my car in the replay without hunting for the number. That saves time and keeps me focused on what I did in the corner instead of where I was on screen.</p>
+
+      <p>One caveat on the streaming side: your viewers see what your sim shows. If a driver does not run Trading Paints, they are stock on your screen. Your own paint only shows for others who also run it, so do not assume everyone watching a different driver's stream sees your car the way you designed it.</p>
+
+      <h2>Etiquette and league rules</h2>
+
+      <p>Keep paints clean. No offensive content, no hateful imagery, nothing you would not want on a broadcast. A paint is visible to everyone in the session, and a joke that seemed fine in the editor does not look the same in front of a lobby.</p>
+
+      <p>League rules may also require number plates and class banners. Read the rules before you register, not after you have spent an evening on a design that is not allowed. If you are new to leagues, I have a separate walkthrough in my league racing getting-started post, and paint requirements are one of the first things I would check there.</p>
+
+      <div class="tip-box">
+        <span class="box-label">League-ready version</span>
+        <p>Keep one plain, league-compliant version of each paint with a clear number plate and banner area. It takes a few minutes to prepare and saves you from a last-minute edit before a race.</p>
+      </div>
+
+      <h2>My short checklist</h2>
+
+      <ul>
+        <li>Account created, customer ID linked, downloader app running before I launch the sim.</li>
+        <li>One simple, high-contrast paint per car I race regularly.</li>
+        <li>My own car_(id).tga copied to a safe place.</li>
+        <li>Custom paint setting matched to my card, tested with a full field.</li>
+        <li>A clean league version ready if the rules ask for plates or banners.</li>
+      </ul>
+
+      <p>None of this is difficult, and none of it makes you faster. It makes the sim a little more like a broadcast, it makes replays easier to read, and it makes my car easy to find. That is enough reason to spend an evening on it, as long as I keep an eye on what it costs my graphics card.</p>
+
+      
+      <div class="tip-box rir-pitstop-callout">
+        <span class="box-label">From the RealiRacing shop</span>
+        <p><strong>Before you go live, free up your rig.</strong> NWM PitStop is the clean-up + stream-priority script set we run before every session &mdash; our own product, not a third-party pick. <a href="/packs/nwm-pitstop.html?utm_source=realiracing&amp;utm_medium=blog_callout&amp;utm_campaign=pitstop&amp;utm_content=trading-paints-iracing-custom-liveries-setup-guide">See NWM PitStop &rarr;</a></p>
+      </div>
+
+      <div id="rir-gear"><div class="gear-box">
+        <span class="box-label">The gear in this guide</span>
+        <div class="table-scroll">
+          <table class="gear-table">
+            <thead><tr><th scope="col">Pick</th><th scope="col">Why it made the list</th><th scope="col">Tested?</th></tr></thead>
+            <tbody>
+            <tr><th scope="row"><a href="https://www.amazon.com/dp/B0FGCDTKSX?tag=realiracing-20" data-aff="moza-r9" target="_blank" rel="sponsored noopener">MOZA R9 Direct Drive Wheelbase</a></th><td>9 N·m direct drive — the base bolted to my rig right now</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=RTX+5060+Ti+8GB+graphics+card&amp;tag=realiracing-20" data-aff="gpu-rtx-5060-ti" target="_blank" rel="sponsored noopener">NVIDIA GeForce RTX 5060 Ti (8 GB)</a></th><td>renders iRacing and NVENC-encodes the stream on the same chip</td><td><span class="rig-badge">Raced on</span></td></tr>
+            <tr><th scope="row"><a href="https://www.amazon.com/s?k=1440p+144hz+g-sync+compatible+gaming+monitor&amp;tag=realiracing-20" data-aff="monitor-1440p-120" target="_blank" rel="sponsored noopener">1440p 120 Hz+ G-SYNC Compatible Gaming Monitor</a></th><td>my single-screen setup — high refresh matters more than size</td><td><span class="rig-badge">Raced on</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aff-note">As an Amazon Associate I earn from qualifying purchases. Some links are affiliate links — I may earn a commission at no cost to you.</p>
+      </div></div>
+
+      <div class="cta-box">
+        <h3>Watch it, don't just read about it</h3>
+        <p>I stream and upload iRacing races on my MOZA R9 rig — real laps, real force feedback, real mistakes. See the gear from this guide working before you spend a cent.</p>
+        <a class="btn-primary" href="https://www.youtube.com/@realtape" target="_blank">▶ Subscribe on YouTube</a>
+      </div>
+      <div class="cta-box rir-pack-cta">
+        <h3>Skip the trial and error</h3>
+        <p>The force-feedback, pedal and baseline settings I actually race, written up as setup packs for MOZA, iRacing, ACC and Le Mans Ultimate. The opening section of each pack is free to read.</p>
+        <a class="btn-primary" href="/packs/">See the setup packs &rarr;</a>
+      </div>
+      <div class="cta-box rir-join-box">
+        <h3>Free FFB tuning checklist</h3>
+        <p>The order I tune force feedback in, from rig to wheelbase software to iRacing, plus the clipping check. Enter your email and the checklist opens right here. No spam, unsubscribe anytime.</p>
+        <form class="rir-join" method="post" novalidate data-api="https://netwebmedia.com/api/public/forms/submit" data-form="hub-realiracing-ffb" data-source="blog-ffb-checklist" data-campaign="ffb-checklist" data-dl="/ffb-checklist.html" data-ok="You're in. Here's your checklist:" data-bad="Enter a valid email." data-err="Something went wrong. Please try again.">
+          <div class="jr"><input id="rir-join-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-label="Email address"><button class="btn-primary" type="submit">Send me the checklist</button></div>
+          <input class="hp" type="text" name="hp_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="jm" role="status" aria-live="polite"></p>
+          <p class="fine">See the <a href="/privacy.html">privacy notice</a>.</p>
+        </form>
+      </div>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <h3>Do I need to pay to use Trading Paints?</h3>
+        <p>No. A free account lets you pick or upload paints and see the paints other drivers run. There is a paid Pro tier with extras, but it is optional and I do not need it for the setup described here.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Why can't other drivers see my custom paint?</h3>
+        <p>The other driver has to run Trading Paints as well. If they do not, they see your car in the stock iRacing paint scheme chosen in the iRacing UI. The same applies in reverse: you only see custom cars for drivers who use the service.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Where does iRacing store my custom paint file?</h3>
+        <p>In your Documents folder, under iRacing/paint/ and then a folder for each car. Your own paint is named with your iRacing customer ID in the pattern car_(id).tga. Spec maps and custom number paints are separate files.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Will custom liveries slow down my PC?</h3>
+        <p>They can, mostly on smaller graphics cards. More custom paints use more VRAM and add loading time at session start. iRacing's graphics options control how many cars get custom paints loaded and drawn, so lower that setting if you see stutter or slow loads.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <div class="related-grid">
+      <a class="related-card" href="moza-pit-house-presets-iracing-one-per-car-class.html"><span>Setup Guide</span>MOZA Pit House Presets for iRacing: One Per Car Class</a>
+      <a class="related-card" href="sim-rig-cable-management-guide.html"><span>Setup Guide</span>Sim Rig Cable Management: A Practical Guide</a>
+      <a class="related-card" href="first-week-new-wheelbase-iracing-setup-checklist.html"><span>Setup Guide</span>First Week With a New Wheelbase: iRacing Setup Checklist</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RealIRacing · iRacing User: <strong>Carlos Martinez9</strong></p>
+    <p style="margin-top:6px;font-size:0.78rem;">
+      <a href="/">Home</a> · <a href="/blog/">Blog</a> ·
+      <a href="https://realiracing.com/go/" target="_blank">realiracing.com/go</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a>
+    </p>
+    <p class="dg-credit" style="margin-top:8px;font-size:0.78rem;text-align:center">A <a href="https://dongaston.com/" rel="noopener" style="color:inherit;text-decoration:underline">Don Gast&oacute;n</a> company</p>
+  <div class="nwm-credit" style="flex:1 1 100%;width:100%;box-sizing:border-box;margin-top:14px;padding-top:10px;border-top:1px solid rgba(128,128,128,.25);font-size:12px;line-height:1.6;text-align:center;opacity:1">Made by <a href="https://netwebmedia.com/?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;text-decoration:underline">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=realiracing&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener" style="color:inherit;font-weight:600;text-decoration:underline;white-space:nowrap">Want a site like this? Get a free audit →</a></div>
+  </footer>
+
+  <script src="/js/ga4.js" defer></script>
+  <script src="/js/nav.js" defer></script>
+  <script src="/js/affiliates.js" defer></script>
+  <script src="/js/join.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderGearBox === 'function') {
+        renderGearBox('rir-gear', ["moza-r9","gpu-rtx-5060-ti","monitor-1440p-120"], 'The gear in this guide');
+      }
+      if (window.RIR_AFF) { RIR_AFF.hydrateLinks(); }
+    });
+  </script>
+
+</body>
+</html>

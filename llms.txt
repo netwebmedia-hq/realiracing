@@ -18,6 +18,7 @@
 
 ## Latest blog posts (newest first)
 
+- [Trading Paints for iRacing: Custom Liveries Setup, Files and Performance Cost](https://realiracing.com/blog/trading-paints-iracing-custom-liveries-setup-guide.html): How I install Trading Paints for iRacing, where the paint files live, what custom liveries cost in loading time and VRAM, and why a clean car helps on stream.
 - [iRacing Voice and Text Chat: Setup, Macros and Etiquette](https://realiracing.com/blog/iracing-voice-and-text-chat-setup-macros-etiquette.html): Set up iRacing push-to-talk, radio channels and text macros from a MOZA R9 rig, plus the chat etiquette that keeps lobbies friendly.
 - [iRacing Active Reset: Practise One Corner on Repeat](https://realiracing.com/blog/iracing-active-reset-practise-one-corner-on-repeat.html): How I use iRacing Active Reset on a MOZA R9 and CRP2 rig to drill a single braking zone: the two binds, the save point and a one-variable drill.
 - [Back Up Your iRacing Settings Before an Update or Reinstall: What I Copy and How I Restore on a MOZA R9 Rig](https://realiracing.com/blog/back-up-iracing-settings-before-update-reinstall-moza-r9.html): What to copy from Documents\iRacing, what lives in MOZA Pit House instead, and how I restore both on a MOZA R9 and CRP2 rig after an update or reinstall.
@@ -37,7 +38,6 @@
 - [Night racing in iRacing: seeing the track after dark](https://realiracing.com/blog/night-racing-iracing-seeing-the-track-after-dark.html): How I set up my monitor, pick braking markers and handle headlights in the mirrors so night stints in iRacing endurance races stop feeling like guesswork.
 - [The beginner mistakes that cost new iRacing drivers the most](https://realiracing.com/blog/beginner-mistakes-first-season-iracing.html): The six habits that quietly cost new iRacing drivers the most positions in their first season, and how to fix each one from the MOZA R9 rig.
 - [iRacing Black Boxes Explained: Relative, Fuel, Tires](https://realiracing.com/blog/iracing-black-boxes-explained-relative-fuel-tires.html): What each iRacing black box shows, which one to keep up in a race, and how to map them to wheel buttons so fuel and tires are set before pit entry.
-- [ABS and Traction Control in iRacing: When to Use Them and When to Turn Them Off](https://realiracing.com/blog/abs-and-traction-control-in-iracing-when-to-use-them.html): ABS and traction control help you stay on track but hide feedback. Here is how I decide when to keep them on, when to lower them, and what they change.
 
 ## More
 - Every post, one line each: https://realiracing.com/llms-full.txt
