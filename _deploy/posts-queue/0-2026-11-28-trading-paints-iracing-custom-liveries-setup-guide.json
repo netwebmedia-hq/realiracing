@@ -1,0 +1,176 @@
+{
+  "slug": "trading-paints-iracing-custom-liveries-setup-guide",
+  "tag": "Setup Guide · Liveries",
+  "author": "Carlos Martinez",
+  "readTime": "7 min read",
+  "title": "Trading Paints for iRacing: Custom Liveries Setup, Files and Performance Cost",
+  "description": "How I install Trading Paints for iRacing, where the paint files live, what custom liveries cost in loading time and VRAM, and why a clean car helps on stream.",
+  "published": "2026-11-28",
+  "dateLabel": "November 28, 2026",
+  "gearKeys": [
+    "moza-r9",
+    "gpu-rtx-5060-ti",
+    "monitor-1440p-120"
+  ],
+  "sections": [
+    {
+      "p": "The first time I watched one of my own race replays, I couldn't find myself. Twenty-odd cars in the same stock scheme, one of them mine, and I was scrubbing the timeline trying to spot my own door number through a pack at the first corner. That is when I stopped treating custom paints as cosmetic and started treating them as a tool. This is how I set up Trading Paints on the rig I actually race on: MOZA R9 on the fixed aluminium cockpit, CRP2 pedals underneath, one 1440p monitor in front of me."
+    },
+    {
+      "h2": "What Trading Paints actually is"
+    },
+    {
+      "p": "Trading Paints is a third-party service for iRacing custom liveries. It is not made by iRacing, and that matters for how you think about it. You create an account, pick or upload a paint for the cars you drive, and a small downloader app runs in the background while the sim is open. That app fetches the paints that the other drivers in your session are running, so you see their custom cars. They see yours, but only if they also run it."
+    },
+    {
+      "p": "There is a paid Pro tier with extras. I am not going to talk about what it costs here, because the free account already does everything this guide needs: choosing a paint, uploading your own and seeing other people's. Decide on Pro later, once you know whether you use the basics."
+    },
+    {
+      "p": "The part people forget is the fallback. Without Trading Paints, everyone appears in the stock iRacing paint scheme chosen in the iRacing UI. Nothing breaks if the app is closed or a driver doesn't run it. They are simply a stock car on your screen, and you are a stock car on theirs."
+    },
+    {
+      "h2": "Installing it without making a mess"
+    },
+    {
+      "olist": [
+        "Create your Trading Paints account and link it to your iRacing customer ID when prompted. That ID is what ties your paints to your car in the sim.",
+        "Download and install the small downloader app, then let it start with your PC or launch it before iRacing. I keep it in the same routine as my wheel software: open everything, check it, then load the sim.",
+        "Pick a paint for each car you drive regularly. Do this per car, not once. A paint for one car does not follow you to the next.",
+        "Start iRacing, join a session and watch the app. It should pick up the paints in the session once the grid loads.",
+        "Check your own car in the garage or on track. If you see the stock scheme, the app is not running or your customer ID is not linked yet."
+      ]
+    },
+    {
+      "p": "Do the first test in a practice session, not a race. I have seen drivers install it five minutes before a start and then spend the formation lap troubleshooting. Nothing about the app is complicated, but the first run is when you find out if something is off."
+    },
+    {
+      "h2": "Picking a paint: Showroom or your own"
+    },
+    {
+      "p": "You have two realistic routes. You can browse the Showroom for community paints and apply one, or you can build your own from the official car template in Photoshop, GIMP or a similar editor."
+    },
+    {
+      "p": "My honest advice is to start with a community paint. Designing from a template looks like an evening of fun, and it is, but it is also an evening of discovering how the template wraps around a car you cannot see flat. A good community paint is already tested on the car."
+    },
+    {
+      "p": "If you do make your own, a few things hold up better than any trend:"
+    },
+    {
+      "list": [
+        "High contrast between the body and the roof. Roofs matter in replay and on broadcast cameras from above.",
+        "A bold, simple shape beats a detailed pattern. Detail turns to noise at distance, and your car is a few pixels wide most of the time.",
+        "Leave room for the number. A beautiful paint that hides the car number is a worse paint.",
+        "Keep a plain version saved. If a league asks for specific plates or banners, you want a clean base to edit rather than starting over."
+      ]
+    },
+    {
+      "h2": "Where the files live"
+    },
+    {
+      "p": "When Trading Paints downloads a paint, it writes ordinary files into the iRacing folder inside your Documents. The path is Documents/iRacing/paint/ followed by a folder for each car. Open that folder for a car you race and you will find the paint files sitting there."
+    },
+    {
+      "p": "Your own custom file is named with your iRacing customer ID, in the pattern car_(id).tga. Spec maps and custom number paints exist as separate files, which is why a paint can look right in direct light but flat or shiny in the wrong places if the spec map is missing or wrong."
+    },
+    {
+      "p": "Why does this matter? Three practical reasons."
+    },
+    {
+      "list": [
+        "Troubleshooting. If a paint looks wrong, you can see whether the file is there and when it changed, instead of guessing.",
+        "Backups. If you built your own paint, copy that file somewhere safe. I treat it like my sim settings; I back them up before updates, and the paint file goes in the same pile.",
+        "Cleaning up. The folders collect files from other drivers over time. Knowing where they live means you can clear them if something looks stale."
+      ]
+    },
+    {
+      "tip": "Before you edit or delete anything in the paint folder, copy your own car_(id).tga file somewhere outside Documents. Deleting the wrong file is easy, and rebuilding a paint from the template is slower than you would think.",
+      "tipLabel": "Back it up first"
+    },
+    {
+      "h2": "What it costs: loading time and VRAM"
+    },
+    {
+      "p": "This is where the unpopular opinion lives. Custom paints are not free for your PC. Each one is a texture that has to be downloaded, loaded and kept in memory, and iRacing's graphics options control how many cars get custom paints loaded and drawn. More custom paints use more VRAM and add loading time at session start."
+    },
+    {
+      "p": "I am not going to quote a number of megabytes or seconds, because they depend on the car, the field size and the card. What I can say is that the cost scales with the grid. A small test session barely notices it. A full field on a big track is where you feel the longer load and where a smaller card can start running short of video memory."
+    },
+    {
+      "p": "If you are on a smaller GPU, reduce the custom paint setting. The practical result is that fewer cars get their custom scheme and the rest show the stock look, which is a very fair trade for a smoother session. I would rather have a stable frame rate and a few stock cars than a gorgeous grid and a stutter at the first braking zone."
+    },
+    {
+      "p": "On my single 1440p monitor I notice it most at session start rather than during the race. The sim takes a bit longer to settle while the paints come in, then it is quiet. If you want a wider look at what to trim for frame rate and visibility, I wrote about it in <a href=\"iracing-graphics-settings-higher-fps-visibility.html\">my iRacing graphics settings guide</a>, and the same logic applies here: spend your GPU budget where it helps you see the track."
+    },
+    {
+      "h3": "A simple way to tune it"
+    },
+    {
+      "olist": [
+        "Run a practice session with a full field and the custom paint setting high. Note how long the load takes and whether the frame rate dips on the grid.",
+        "Lower the setting one step and repeat in a similar session.",
+        "Stop lowering when the dip goes away. That is your setting for that card, not a number from someone else's rig."
+      ]
+    },
+    {
+      "p": "I would also say this plainly: custom paints will not make you faster. They will not change grip, force feedback or your braking point. Through the R9 the car feels exactly the same wearing a stock scheme or a custom one. Treat the paint as visibility and presentation, and give it only as much of your hardware as it earns."
+    },
+    {
+      "h2": "Why it matters on stream"
+    },
+    {
+      "p": "On stream, a recognisable car does real work. Viewers find me in replays and on broadcast cams faster when my car is not one of many identical stock ones. In a busy pack at turn one, a distinct colour block on the roof and sides is the difference between viewers following me and viewers asking which one I am."
+    },
+    {
+      "p": "It also helps me. When I review a race, I can find my car in the replay without hunting for the number. That saves time and keeps me focused on what I did in the corner instead of where I was on screen."
+    },
+    {
+      "p": "One caveat on the streaming side: your viewers see what your sim shows. If a driver does not run Trading Paints, they are stock on your screen. Your own paint only shows for others who also run it, so do not assume everyone watching a different driver's stream sees your car the way you designed it."
+    },
+    {
+      "h2": "Etiquette and league rules"
+    },
+    {
+      "p": "Keep paints clean. No offensive content, no hateful imagery, nothing you would not want on a broadcast. A paint is visible to everyone in the session, and a joke that seemed fine in the editor does not look the same in front of a lobby."
+    },
+    {
+      "p": "League rules may also require number plates and class banners. Read the rules before you register, not after you have spent an evening on a design that is not allowed. If you are new to leagues, I have a separate walkthrough in my league racing getting-started post, and paint requirements are one of the first things I would check there."
+    },
+    {
+      "tip": "Keep one plain, league-compliant version of each paint with a clear number plate and banner area. It takes a few minutes to prepare and saves you from a last-minute edit before a race.",
+      "tipLabel": "League-ready version"
+    },
+    {
+      "h2": "My short checklist"
+    },
+    {
+      "list": [
+        "Account created, customer ID linked, downloader app running before I launch the sim.",
+        "One simple, high-contrast paint per car I race regularly.",
+        "My own car_(id).tga copied to a safe place.",
+        "Custom paint setting matched to my card, tested with a full field.",
+        "A clean league version ready if the rules ask for plates or banners."
+      ]
+    },
+    {
+      "p": "None of this is difficult, and none of it makes you faster. It makes the sim a little more like a broadcast, it makes replays easier to read, and it makes my car easy to find. That is enough reason to spend an evening on it, as long as I keep an eye on what it costs my graphics card."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need to pay to use Trading Paints?",
+      "a": "No. A free account lets you pick or upload paints and see the paints other drivers run. There is a paid Pro tier with extras, but it is optional and I do not need it for the setup described here."
+    },
+    {
+      "q": "Why can't other drivers see my custom paint?",
+      "a": "The other driver has to run Trading Paints as well. If they do not, they see your car in the stock iRacing paint scheme chosen in the iRacing UI. The same applies in reverse: you only see custom cars for drivers who use the service."
+    },
+    {
+      "q": "Where does iRacing store my custom paint file?",
+      "a": "In your Documents folder, under iRacing/paint/ and then a folder for each car. Your own paint is named with your iRacing customer ID in the pattern car_(id).tga. Spec maps and custom number paints are separate files."
+    },
+    {
+      "q": "Will custom liveries slow down my PC?",
+      "a": "They can, mostly on smaller graphics cards. More custom paints use more VRAM and add loading time at session start. iRacing's graphics options control how many cars get custom paints loaded and drawn, so lower that setting if you see stutter or slow loads."
+    }
+  ]
+}
